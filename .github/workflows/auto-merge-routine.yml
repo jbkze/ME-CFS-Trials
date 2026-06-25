@@ -74,9 +74,6 @@ jobs:
             echo "main already matches the run's data; nothing to commit."
             exit 0
           fi
-          git commit -m "Integrate routine data from ${BRANCH}
-
-Auto-applied so the dashboard updates without a manual merge.
-Source: ${BRANCH} @ ${HEAD_SHA}. Only data/generated files are copied."
+          git commit -m "Integrate routine data from ${BRANCH}" -m "Auto-applied so the dashboard updates without a manual merge. Source: ${BRANCH} @ ${HEAD_SHA}. Only data/generated files are copied."
           git push origin HEAD:main
           echo "Integrated routine data into main."
