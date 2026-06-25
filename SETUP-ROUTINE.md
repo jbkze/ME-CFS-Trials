@@ -53,10 +53,14 @@ leave the results in the repo and a GitHub issue.
    last_checked to today (use `date +%F`), set top-level last_check to today,
    and recompute each trial's flags (new / newly_open / status_changed /
    closed_since_last) versus the baseline. Then run
-   `python3 scripts/render_trials.py` and prepend a dated entry to
-   checks/CHANGELOG.md.
-4. Persist state: commit data/trials.json, TRIALS.md, and checks/CHANGELOG.md to
-   the default branch with message "Trial watch <YYYY-MM-DD>: N new, M changed".
+   `python3 scripts/render_trials.py` (this rebuilds both TRIALS.md and
+   docs/dashboard.json, the feed for the GitHub Pages dashboard) and prepend a
+   dated entry to checks/CHANGELOG.md. Optionally also record notable new papers
+   in data/papers.json (same confirm-first rule) — they show on the dashboard's
+   Papers tab.
+4. Persist state: commit data/trials.json, data/papers.json, TRIALS.md,
+   docs/dashboard.json and checks/CHANGELOG.md to the default branch with
+   message "Trial watch <YYYY-MM-DD>: N new, M changed".
    (If you cannot push to the default branch, push a claude/ branch and open a PR
    with the same summary.) This is essential — the next run reads the baseline
    from the default branch.
@@ -87,6 +91,20 @@ what previous runs committed there. That's why step 4 commits the updated
 `data/trials.json`. With *Allow unrestricted branch pushes* on, this is automatic.
 With it off, the run opens a PR instead and **you must merge it** before the next
 run, or the "new / changed since last check" detection silently resets.
+
+## Publish the dashboard (GitHub Pages) — one-time
+
+The dashboard lives in `docs/` (`index.html` + the generated `dashboard.json`).
+To put it online, enable Pages once:
+
+1. Repo → **Settings → Pages**.
+2. **Source:** *Deploy from a branch* → **Branch:** your default branch →
+   **Folder:** **`/docs`** → **Save**.
+3. After a minute it's live at **`https://jbkze.github.io/me-cfs-trials/`**.
+
+From then on it updates itself: each routine run regenerates and commits
+`docs/dashboard.json`, and Pages redeploys automatically. (`docs/.nojekyll` is
+included so GitHub serves the files as-is without Jekyll processing.)
 
 ## Notes & limits
 

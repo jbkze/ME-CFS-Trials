@@ -66,7 +66,9 @@ catches the moment they open. Do **not** report them as "open opportunities".
 - Set top-level `last_check` to today's date (YYYY-MM-DD).
 - Recompute `flags` every run (they describe change *since last check*, so a
   trial that was `new` last time and is unchanged now should have its flags cleared).
-- Regenerate the human view: `python3 scripts/render_trials.py`.
+- Regenerate the views: `python3 scripts/render_trials.py` — this rebuilds both
+  `TRIALS.md` and `docs/dashboard.json` (the feed for the GitHub Pages dashboard,
+  `docs/index.html`).
 - Append one entry to `checks/CHANGELOG.md` using the template at the top of that file.
 - A trial that drops out of scope (e.g. closed) is **not deleted** — update its
   status, flag it `closed_since_last`, and let it move to the archived section.
@@ -105,8 +107,8 @@ is no human in the loop, so two things differ from an interactive run:
 1. **State must persist on the default branch.** Each run clones the repo fresh
    from the default branch, so the *previous* run's `data/trials.json` is only
    visible if it was committed back to that branch. Therefore the run must
-   **commit** the updated `data/trials.json`, `TRIALS.md`, and
-   `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
+   **commit** the updated `data/trials.json`, `TRIALS.md`, `docs/dashboard.json`,
+   and `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
    commits straight to the default branch (recommended — keeps the baseline
    current automatically). Without it, it pushes a `claude/` branch and opens a
    PR, and **you must merge that PR** before the next run or the baseline goes stale.

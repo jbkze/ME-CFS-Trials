@@ -1,18 +1,29 @@
 #!/usr/bin/env python3
-"""Regenerate TRIALS.md (human-readable view) from data/trials.json (source of truth).
+"""Regenerate the human-readable views from the JSON sources of truth.
+
+Outputs:
+  - TRIALS.md            (Markdown table, from data/trials.json)
+  - docs/dashboard.json  (feed for the GitHub Pages dashboard, docs/index.html)
+
+Reads:
+  - data/trials.json     (studies; source of truth)
+  - data/papers.json     (papers; optional)
 
 Usage:  python3 scripts/render_trials.py
-No third-party dependencies. Run after every update to data/trials.json.
+No third-party dependencies. Run after every update to the data files.
 """
 from __future__ import annotations
 
 import json
 import pathlib
 import sys
+from datetime import datetime, timedelta
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "trials.json"
-OUT = ROOT / "TRIALS.md"
+PAPERS = ROOT / "data" / "papers.json"
+OUT_MD = ROOT / "TRIALS.md"
+OUT_DASH = ROOT / "docs" / "dashboard.json"
 
 STATUS_LABEL = {
     "recruiting": "🟢 Recruiting",
@@ -26,13 +37,26 @@ STATUS_LABEL = {
     "unknown": "❔ Unknown",
 }
 
+# Map the trial lifecycle status onto the dashboard's three visual buckets.
+# Statuses not listed here (completed / terminated / withdrawn / suspended /
+# unknown) are treated as archived and omitted from the dashboard.
+DASH_BUCKET = {
+    "recruiting": ("recruiting", "Recruiting"),
+    "enrolling_by_invitation": ("recruiting", "Enrolling (invite)"),
+    "not_yet_recruiting": ("soon", "Starts soon"),
+    "active_not_recruiting": ("planned", "Active, not recruiting"),
+}
+BUCKET_ORDER = {"recruiting": 0, "soon": 1, "planned": 2}
 
-def cell(text: str) -> str:
-    """Escape pipes so a value never breaks the Markdown table."""
+
+# --------------------------------------------------------------------------- #
+# TRIALS.md
+# --------------------------------------------------------------------------- #
+def cell(text) -> str:
     return str(text).replace("|", "\\|").replace("\n", " ").strip() or "—"
 
 
-def link(label: str, url: str | None) -> str:
+def link(label: str, url) -> str:
     return f"[{cell(label)}]({url})" if url else cell(label)
 
 
@@ -64,20 +88,7 @@ def render_row(t: dict) -> str:
     )
 
 
-def main() -> int:
-    if not DATA.exists():
-        print(f"error: {DATA} not found", file=sys.stderr)
-        return 1
-    db = json.loads(DATA.read_text(encoding="utf-8"))
-    trials = db.get("trials", [])
-
-    # Sort: open enrollment first, then high priority, then name.
-    trials.sort(key=lambda t: (
-        not t.get("open_for_enrollment", False),
-        t.get("priority") != "high",
-        (t.get("acronym") or t.get("name") or t.get("id") or "").lower(),
-    ))
-
+def render_markdown(db: dict, trials: list) -> None:
     open_now = [t for t in trials if t.get("open_for_enrollment")]
     watch = [t for t in trials if not t.get("open_for_enrollment")
              and t.get("status") in ("not_yet_recruiting", "active_not_recruiting")]
@@ -87,7 +98,6 @@ def main() -> int:
         "| Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |\n"
         "|---|---|---|---|---|---|---|---|\n"
     )
-
     lines = [
         "# ME/CFS drug trials in Germany — tracker",
         "",
@@ -100,7 +110,6 @@ def main() -> int:
         "- ⭐ = linked to Klaus Wirth or Carmen Scheibenbogen.",
         "",
     ]
-
     if not trials:
         lines += ["_No trials recorded yet. Run the routine in `ROUTINE.md` to populate this._", ""]
     else:
@@ -111,9 +120,107 @@ def main() -> int:
         if archived:
             lines += ["", "## Archived (closed / completed / withdrawn)", ""]
             lines += [header + "\n".join(render_row(t) for t in archived)]
+    OUT_MD.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
-    OUT.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
-    print(f"wrote {OUT} ({len(trials)} trials)")
+
+# --------------------------------------------------------------------------- #
+# docs/dashboard.json  (feed for docs/index.html)
+# --------------------------------------------------------------------------- #
+def study_location(germany: dict) -> str:
+    sites = [s for s in (germany.get("sites") or []) if s.get("institution") or s.get("city")]
+    if not sites:
+        return "Germany" if germany.get("has_german_site") else "—"
+    first = ", ".join(p for p in [sites[0].get("institution"), sites[0].get("city")] if p)
+    return first + (f" +{len(sites) - 1} more" if len(sites) > 1 else "")
+
+
+def to_study(t: dict):
+    bucket = DASH_BUCKET.get(t.get("status"))
+    if bucket is None:
+        return None  # archived / closed → not shown on the dashboard
+    flags = t.get("flags") or []
+    title = t.get("name") or t.get("id") or "Untitled study"
+    if t.get("acronym"):
+        title = f"{t['acronym']} — {title}"
+    reg = t.get("registry") or {}
+    return {
+        "title": title,
+        "status": bucket[0],
+        "statusLabel": bucket[1],
+        "location": study_location(t.get("germany") or {}),
+        "link": reg.get("url") or (t.get("links") or ["#"])[0] or "#",
+        "isNew": ("new" in flags) or ("newly_open" in flags),
+        "_priority": t.get("priority", "normal"),
+    }
+
+
+def load_papers() -> list:
+    if not PAPERS.exists():
+        return []
+    pdb = json.loads(PAPERS.read_text(encoding="utf-8"))
+    papers = []
+    for p in pdb.get("papers", []):
+        flags = p.get("flags") or []
+        papers.append({
+            "title": p.get("title", ""),
+            "authors": p.get("authors", ""),
+            "journal": p.get("journal", ""),
+            "date": p.get("date", ""),
+            "summary": p.get("summary", ""),
+            "why": p.get("why", ""),
+            "link": p.get("link") or "#",
+            "isNew": p.get("isNew", ("new" in flags)),
+        })
+    papers.sort(key=lambda p: not p["isNew"])  # new first, otherwise input order
+    return papers
+
+
+def format_run(last):
+    if not last:
+        return "Not run yet", "First scheduled run pending"
+    try:
+        d = datetime.strptime(last, "%Y-%m-%d")
+        return d.strftime("%d %b %Y"), "Next run ~" + (d + timedelta(days=7)).strftime("%d %b %Y")
+    except ValueError:
+        return str(last), ""
+
+
+def build_dashboard(db: dict, trials: list) -> int:
+    studies = [s for s in (to_study(t) for t in trials) if s]
+    studies.sort(key=lambda s: (not s["isNew"], BUCKET_ORDER.get(s["status"], 9),
+                                s["_priority"] != "high", s["title"].lower()))
+    for s in studies:
+        s.pop("_priority", None)
+    papers = load_papers()
+    last_run, next_run = format_run(db.get("last_check"))
+    out = {
+        "generated": db.get("last_check"),
+        "lastRun": last_run,
+        "nextRun": next_run,
+        "studies": studies,
+        "papers": papers,
+    }
+    OUT_DASH.parent.mkdir(parents=True, exist_ok=True)
+    OUT_DASH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return len(studies), len(papers)
+
+
+# --------------------------------------------------------------------------- #
+def main() -> int:
+    if not DATA.exists():
+        print(f"error: {DATA} not found", file=sys.stderr)
+        return 1
+    db = json.loads(DATA.read_text(encoding="utf-8"))
+    trials = db.get("trials", [])
+    trials.sort(key=lambda t: (
+        not t.get("open_for_enrollment", False),
+        t.get("priority") != "high",
+        (t.get("acronym") or t.get("name") or t.get("id") or "").lower(),
+    ))
+    render_markdown(db, trials)
+    n_studies, n_papers = build_dashboard(db, trials)
+    print(f"wrote {OUT_MD} ({len(trials)} trials)")
+    print(f"wrote {OUT_DASH} ({n_studies} studies, {n_papers} papers)")
     return 0
 
 
