@@ -31,12 +31,19 @@ below is ambiguous. In short:
 
 - **Scope filter — all must hold:** condition = ME/CFS · intervention =
   drug/pharmacological (immunoadsorption is borderline → include + note) ·
-  ≥1 recruiting site **in Germany** · status **`recruiting`** or
-  **`enrolling_by_invitation`** ("open for enrollment").
+  German connection (≥1 site in Germany, or — for a planned study without
+  confirmed sites — a German sponsor/institution) · status **`recruiting`**,
+  **`enrolling_by_invitation`**, **or `not_yet_recruiting`** (planned/announced
+  but not yet open). **All three statuses are relevant.**
+- **Report in two tiers:** *open for enrollment* (recruiting / enrolling_by_invitation)
+  first, then *planned / not yet recruiting* — both are surfaced, clearly labelled.
 - **Prioritise** anything linked to **Klaus Wirth** or **Carmen Scheibenbogen**
-  (`priority: "high"`); keep relevant `not_yet_recruiting` trials on the watchlist.
+  (`priority: "high"`), in either tier — e.g. **Mitodicure MDC002** is planned,
+  not yet registered, and is still high priority and reported.
 - **Never fabricate.** A trial enters `data/trials.json` only after confirmation
-  from a registry/institution. News/blogs are leads, not evidence.
+  from a registry **or** an official institutional/company page — the latter is
+  often the only source for a *planned* study (e.g. Mitodicure's site for MDC002).
+  News/blogs are leads, not evidence.
 - **Never hand-edit `TRIALS.md`** — it is generated; edit the JSON and re-run the script.
 - **Never delete** a trial that drops out of scope — update its status + flag it.
 - Sources list is a **floor, not a ceiling**; add durable new sources you find.

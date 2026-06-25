@@ -13,17 +13,22 @@ A trial is **in scope** only if **all** of these hold:
    such as immunoadsorption is borderline — include it, set `is_drug_study`
    by judgement, and say so in `notes`. Exclude pure exercise/diet/behavioural
    trials.
-3. **Germany** — at least one recruiting **site in Germany**.
-4. **Open for enrollment** — status is **`recruiting`** or
-   **`enrolling_by_invitation`**. Nothing else counts as "open".
+3. **Germany** — at least one site in Germany. For a *planned* study without
+   confirmed sites yet, a German sponsor/institution (e.g. Charité, Mitodicure)
+   satisfies this.
+4. **Status** — **`recruiting`** / **`enrolling_by_invitation`** (open for
+   enrollment) **or `not_yet_recruiting`** (planned / announced but not yet open).
+   All three are in scope.
+
+**Two reporting tiers.** Lead with **open for enrollment**, then **planned / not
+yet recruiting**. Planned studies are genuinely relevant — they let patients and
+clinicians prepare and catch the opening early — so report them (clearly labelled
+as planned), don't hide them. Flag the moment one flips to recruiting (`newly_open`).
 
 **Priority = HIGH** for any trial linked to **Klaus Wirth** or **Carmen
-Scheibenbogen** (set `priority: "high"`, list them in `associated_researchers`).
-These get reported first even if only on the watchlist.
-
-**Watchlist** — trials that are relevant but `not_yet_recruiting` (e.g. a Wirth /
-Mitodicure Phase 1 in planning). Keep them in `data/trials.json` so the next run
-catches the moment they open. Do **not** report them as "open opportunities".
+Scheibenbogen** (set `priority: "high"`, list them in `associated_researchers`),
+in either tier — e.g. **Mitodicure MDC002** is planned and not yet registered,
+but is still high priority and reported.
 
 ## Status vocabulary
 
@@ -45,7 +50,9 @@ catches the moment they open. Do **not** report them as "open opportunities".
    add it to `sources/search-sources.md`.
 3. **Confirm each candidate** against a registry or the institution's own
    clinical-research page before trusting it. Never enter a trial on the basis
-   of a blog post alone.
+   of a blog post alone. For a *planned* study not yet in any registry, an
+   official institutional/company announcement is acceptable evidence — record
+   it as `not_yet_recruiting` and link that source as the `registry`/`links`.
 4. **Diff against the baseline** and compute `flags` for each in-scope trial:
    - `new` — `id` not present in the previous `data/trials.json`.
    - `newly_open` — status changed **into** `recruiting` / `enrolling_by_invitation`.
@@ -75,9 +82,11 @@ catches the moment they open. Do **not** report them as "open opportunities".
 
 ## Reporting back
 
-Lead with what changed, newest first. For each new or changed trial give:
-**trial name · enrollment status · drug/intervention · patient eligibility ·
-registration link.** Call out Wirth/Scheibenbogen trials explicitly.
+Lead with what changed, newest first. Report in two tiers — **open for
+enrollment** first, then **planned / not yet recruiting** (label which is which).
+For each new or changed trial give: **trial name · enrollment status ·
+drug/intervention · patient eligibility · registration/source link.** Call out
+Wirth/Scheibenbogen trials explicitly, including planned ones.
 
 If nothing changed since `last_check`, say so in one line (e.g. *"No new or
 changed ME/CFS drug trials in Germany since 2026-06-25; N trials still tracked,

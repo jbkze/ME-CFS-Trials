@@ -42,13 +42,17 @@ leave the results in the repo and a GitHub issue.
 1. Read CLAUDE.md and ROUTINE.md in the repo root and follow ROUTINE.md exactly,
    including its "Running headless" section. data/trials.json on the default
    branch is your baseline of previously-known trials.
-2. Scope (all must hold): ME/CFS; drug/pharmacological intervention; at least one
-   recruiting site in Germany; status recruiting or enrolling-by-invitation.
-   Prioritise trials linked to Klaus Wirth (Mitodicure / MDC002) or Carmen
+2. Scope (all must hold): ME/CFS; drug/pharmacological intervention; a German
+   connection (a site in Germany, or — for a planned study without confirmed
+   sites — a German sponsor/institution); status recruiting, enrolling-by-
+   invitation, OR not_yet_recruiting (planned / announced but not yet open). All
+   three statuses are relevant. Prioritise trials linked to Klaus Wirth
+   (Mitodicure / MDC002 — planned, not yet registered, still report it) or Carmen
    Scheibenbogen (Charité Fatigue Centrum). Search sources/search-sources.md AND
    do fresh open-ended web search. Confirm every candidate against a registry
-   (DRKS, ClinicalTrials.gov, CTIS, WHO ICTRP) or the institution's own page
-   before recording it. Never fabricate a trial.
+   (DRKS, ClinicalTrials.gov, CTIS, WHO ICTRP) or an official institutional/
+   company page before recording it (for a planned study that page may be the
+   only source — record it as not_yet_recruiting). Never fabricate a trial.
 3. Update data/trials.json per data/schema.json: set first_seen once, refresh
    last_checked to today (use `date +%F`), set top-level last_check to today,
    and recompute each trial's flags (new / newly_open / status_changed /
@@ -65,11 +69,13 @@ leave the results in the repo and a GitHub issue.
    with the same summary.) This is essential — the next run reads the baseline
    from the default branch.
 5. Deliver the summary: open a GitHub issue titled "Trial watch <YYYY-MM-DD>"
-   listing new and changed trials newest-first — name, enrollment status,
-   drug/intervention, key eligibility, and registration link — with
-   Wirth/Scheibenbogen trials first. If nothing is new or changed, still do steps
-   3–4 and post a one-line issue comment / note saying no new or changed ME/CFS
-   drug trials in Germany since the last check.
+   listing new and changed trials newest-first, in two tiers — OPEN FOR
+   ENROLLMENT first, then PLANNED / NOT YET RECRUITING (label which is which) —
+   each with name, status, drug/intervention, key eligibility, and
+   registration/source link, Wirth/Scheibenbogen first (incl. planned ones). If
+   nothing is new or changed, still do steps 3–4 and post a one-line issue
+   comment / note saying no new or changed ME/CFS drug trials in Germany since
+   the last check.
 ```
 
 ## Network allowlist (if you choose Custom instead of Full)
