@@ -22,6 +22,7 @@ Full procedure and the copy-paste prompt: **[`ROUTINE.md`](ROUTINE.md)**.
 | Path | Role |
 |---|---|
 | **`ROUTINE.md`** | The playbook — scope rules, status vocabulary, step-by-step procedure, and the prompt to paste for a check. Start here. |
+| **`SETUP-ROUTINE.md`** | How to run this automatically on a schedule (cloud Routine) — setup steps, the autonomous prompt, and the network/state gotchas. |
 | **`sources/search-sources.md`** | Durable "where to look": registries (DRKS, ClinicalTrials.gov, CTIS, WHO ICTRP), the Wirth & Scheibenbogen leads, and reusable search queries. |
 | **`data/trials.json`** | **Source of truth** — structured state of every known trial. Enables "new / changed since last check". Starts empty. |
 | **`data/schema.json`** | JSON Schema documenting every field in a trial record. |

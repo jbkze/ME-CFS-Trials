@@ -94,3 +94,27 @@ M open for enrollment."*) — still bump `last_check` and add a CHANGELOG line.
 > and append to `checks/CHANGELOG.md`. Report new/changed trials newest-first
 > with name, status, intervention, eligibility, and link — or confirm briefly if
 > nothing changed.
+
+---
+
+## Running headless (as a scheduled Routine)
+
+When this runs unattended as a cloud **Routine** (see `SETUP-ROUTINE.md`), there
+is no human in the loop, so two things differ from an interactive run:
+
+1. **State must persist on the default branch.** Each run clones the repo fresh
+   from the default branch, so the *previous* run's `data/trials.json` is only
+   visible if it was committed back to that branch. Therefore the run must
+   **commit** the updated `data/trials.json`, `TRIALS.md`, and
+   `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
+   commits straight to the default branch (recommended — keeps the baseline
+   current automatically). Without it, it pushes a `claude/` branch and opens a
+   PR, and **you must merge that PR** before the next run or the baseline goes stale.
+2. **Deliver the summary somewhere you'll see it**, since there's no chat reply
+   to read. Default: open a GitHub issue titled `Trial watch <YYYY-MM-DD>` with
+   the new/changed trials (newest-first; Wirth/Scheibenbogen first). If nothing
+   changed, still commit the bumped `last_check` + CHANGELOG line and post a
+   one-line "no new or changed trials" note.
+
+Use the shell (`date +%F`) for today's date. The exact prompt to paste into the
+Routine form is in `SETUP-ROUTINE.md`.
