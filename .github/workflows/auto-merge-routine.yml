@@ -1,0 +1,50 @@
+name: Auto-merge routine PRs
+
+# The scheduled ME/CFS research-watch Routine commits its data on a `claude/*`
+# branch and opens a PR whenever it cannot push to the default branch directly
+# (the fallback path in SETUP-ROUTINE.md). This workflow merges those PRs into
+# the base branch automatically, so the data reaches `main` and the GitHub Pages
+# dashboard updates without any manual step.
+#
+# Safety: it acts ONLY on the routine's own PRs — same-repo `claude/*` head branch
+# with a "Trial watch" / "Research watch" title — and it never checks out the PR's
+# code (it only calls `gh`), so running under pull_request_target is safe here.
+# If a PR has a real merge conflict, the workflow leaves it open and comments.
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: auto-merge-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  auto-merge:
+    if: >-
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.event.pull_request.head.ref, 'claude/') &&
+      (startsWith(github.event.pull_request.title, 'Trial watch') ||
+       startsWith(github.event.pull_request.title, 'Research watch'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge the routine PR into its base branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            if gh pr merge "$PR" --repo "$REPO" --merge --delete-branch; then
+              echo "Merged PR #$PR into the base branch."
+              exit 0
+            fi
+            echo "Attempt $attempt: PR #$PR not mergeable yet (mergeability still computing, or a conflict). Waiting 20s..."
+            sleep 20
+          done
+          echo "::warning::Could not auto-merge PR #$PR after retries — likely a real merge conflict against the base branch."
+          gh pr comment "$PR" --repo "$REPO" --body "🤖 Auto-merge could not complete — likely a merge conflict against \`main\`. Please resolve and merge this PR manually so the dashboard updates." || true

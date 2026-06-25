@@ -110,10 +110,16 @@ package managers" checked.)
 ## State persistence — why it matters
 
 A Routine clones the **default branch** on every run, so it only "remembers"
-what previous runs committed there. That's why step 4 commits the updated
-`data/trials.json`. With *Allow unrestricted branch pushes* on, this is automatic.
-With it off, the run opens a PR instead and **you must merge it** before the next
-run, or the "new / changed since last check" detection silently resets.
+what previous runs committed there. That's why step 5 commits the updated data.
+With *Allow unrestricted branch pushes* on, the run commits to `main` directly.
+With it off, the run opens a PR instead — and an **auto-merge workflow**
+(`.github/workflows/auto-merge-routine.yml`) merges that PR into `main`
+automatically, so the dashboard still updates and the baseline stays current with
+no manual step. The workflow only touches the routine's own PRs (same-repo
+`claude/*` branch, "Trial watch"/"Research watch" title) and leaves any PR with a
+real merge conflict open for you to resolve. Enabling the setting is still
+slightly cleaner (no PR churn at all), but is no longer required for the dashboard
+to keep working.
 
 ## Publish the dashboard (GitHub Pages) — one-time
 
