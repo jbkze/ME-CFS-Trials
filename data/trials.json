@@ -68,64 +68,6 @@
       "notes": "Immunoadsorption is a medical device/apheresis procedure (borderline per tracking rules — included and noted). Non-interventional observational study documenting 12-month outcomes in ME/CFS patients already receiving IA as standard care. Actual start date March 11, 2026; estimated completion December 31, 2027; 50 participants planned. PI: Prof. Dr. Carmen Scheibenbogen, Charité Berlin."
     },
     {
-      "id": "charite-inebilizumab-mecfs",
-      "name": "Inebilizumab (Anti-CD19 Monoclonal Antibody) in Autoantibody-Mediated ME/CFS and Post-COVID Syndrome (Planned Pilot)",
-      "acronym": null,
-      "status": "not_yet_recruiting",
-      "open_for_enrollment": false,
-      "intervention": {
-        "name": "Inebilizumab (anti-CD19 monoclonal antibody)",
-        "type": "biologic",
-        "mechanism": "Monoclonal antibody targeting CD19 on B cells and plasmablasts; depletes autoantibody-producing cells; currently approved for neuromyelitis optica spectrum disorder"
-      },
-      "is_drug_study": true,
-      "associated_researchers": ["Carmen Scheibenbogen"],
-      "priority": "high",
-      "sponsor": "Charité - Universitätsmedizin Berlin",
-      "principal_investigator": "Prof. Dr. Carmen Scheibenbogen",
-      "germany": {
-        "has_german_site": true,
-        "sites": [
-          { "institution": "Charité - Universitätsmedizin Berlin", "city": "Berlin", "recruiting": false }
-        ]
-      },
-      "condition": "ME/CFS and post-COVID syndrome with autoantibody-mediated disease",
-      "phase": "Phase 2 (planned pilot, ~15 patients)",
-      "eligibility": {
-        "summary": "Planned to enroll ~15 ME/CFS and post-COVID syndrome patients with confirmed autoantibody-mediated disease who previously responded to immunoadsorption",
-        "key_inclusion": [
-          "ME/CFS or post-COVID syndrome with autoantibody evidence",
-          "Prior positive response to immunoadsorption (IA responders only)"
-        ],
-        "key_exclusion": [],
-        "age": "Not yet specified",
-        "sex": "All"
-      },
-      "registry": {
-        "name": "institutional",
-        "id": "n/a",
-        "url": "https://cfc.charite.de/en/clinical_research/"
-      },
-      "links": [
-        "https://thesicktimes.org/2026/05/26/international-me-cfs-conference-roundup-setbacks-and-new-hopes-for-therapeutic-research/"
-      ],
-      "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "last_status_change": null,
-      "status_history": [
-        { "date": "2026-06-25", "status": "not_yet_recruiting" }
-      ],
-      "flags": ["new"],
-      "relevance": {
-        "me_cfs": true,
-        "germany": true,
-        "open_enrollment": false,
-        "drug_study": true,
-        "wirth_or_scheibenbogen": true
-      },
-      "notes": "Announced by Scheibenbogen at the 4th International ME/CFS Conference, Berlin, May 2026. No trial registry ID yet. Federal funding secured (reported cost ~€165,000/cycle). Study to select only immunoadsorption responders to enrich for autoantibody-mediated subgroup. Watch for DRKS/NCT registration."
-    },
-    {
       "id": "mitodicure-mdc002-ph1",
       "name": "MDC002 — Phase 1 Clinical Trial in ME/CFS (Planned)",
       "acronym": null,
@@ -142,7 +84,7 @@
       "sponsor": "Mitodicure GmbH",
       "principal_investigator": null,
       "germany": {
-        "has_german_site": true,
+        "has_german_site": false,
         "sites": []
       },
       "condition": "ME/CFS; post-acute infection syndromes with post-exertional malaise (PEM)",
@@ -177,7 +119,7 @@
         "drug_study": true,
         "wirth_or_scheibenbogen": true
       },
-      "notes": "Not yet registered in any trial registry. Mitodicure's website states MDC002 is 'advancing towards clinical trials' and described as ready for GLP toxicity and safety pharmacology studies as of 2026. Klaus Wirth is CSO and Managing Director of Mitodicure GmbH (German company, founded 2022). No Phase 1 sites confirmed yet; German origin makes a German site likely. Check mitodicure.com and registries each run for new registration."
+      "notes": "Not yet registered in any trial registry. German connection via sponsor only (Mitodicure GmbH, German company, founded 2022; Klaus Wirth CSO). Mitodicure's website states MDC002 is 'advancing towards clinical trials' and ready for GLP toxicity and safety pharmacology studies as of 2026. No confirmed trial sites yet; has_german_site set false until a site is confirmed. Check mitodicure.com and registries each run for Phase 1 registration."
     }
   ]
 }
