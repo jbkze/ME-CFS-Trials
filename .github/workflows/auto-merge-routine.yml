@@ -4,9 +4,11 @@ name: Integrate routine data into main
 # branch whenever it can't push to the default branch directly. It does not
 # reliably open a PR (some runs only push the branch and file an issue), so this
 # workflow triggers on the **branch push** and integrates the run's data into
-# `main` — so the GitHub Pages dashboard updates with no manual step.
+# `main` — so the GitHub Pages dashboard updates with no manual step — then
+# deletes the run branch so no stragglers pile up.
 #
 # Safety:
+#   * Ignores branch-deletion events (so deleting the branch can't re-trigger it).
 #   * Ignores the human development branch.
 #   * Acts ONLY if the push changed nothing outside the routine's data/generated
 #     files (data/trials.json, data/papers.json, TRIALS.md, docs/dashboard.json,
@@ -31,7 +33,9 @@ concurrency:
 
 jobs:
   integrate:
-    if: github.ref_name != 'claude/nice-einstein-yqeyjo'
+    if: >-
+      github.event.deleted != true &&
+      github.ref_name != 'claude/nice-einstein-yqeyjo'
     runs-on: ubuntu-latest
     steps:
       - name: Check out main
@@ -40,7 +44,7 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Integrate data-only routine pushes into main
+      - name: Integrate data-only routine pushes into main, then delete the branch
         env:
           BRANCH: ${{ github.ref_name }}
           HEAD_SHA: ${{ github.sha }}
@@ -56,7 +60,8 @@ jobs:
           fi
           echo "Files changed on $BRANCH versus main:"; echo "$CHANGED"
 
-          # If anything outside the data set changed, this is development — skip.
+          # If anything outside the data set changed, this is development — skip
+          # (and do NOT delete the branch).
           for f in $CHANGED; do
             case " $ALLOWED " in
               *" $f "*) : ;;
@@ -72,8 +77,11 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "main already matches the run's data; nothing to commit."
-            exit 0
+          else
+            git commit -m "Integrate routine data from ${BRANCH}" -m "Auto-applied so the dashboard updates without a manual merge. Source: ${BRANCH} @ ${HEAD_SHA}. Only data/generated files are copied."
+            git push origin HEAD:main
+            echo "Integrated routine data into main."
           fi
-          git commit -m "Integrate routine data from ${BRANCH}" -m "Auto-applied so the dashboard updates without a manual merge. Source: ${BRANCH} @ ${HEAD_SHA}. Only data/generated files are copied."
-          git push origin HEAD:main
-          echo "Integrated routine data into main."
+
+          # The run branch is fully integrated — delete it so it doesn't linger.
+          git push origin --delete "$BRANCH" || echo "Could not delete $BRANCH (already gone?)."
