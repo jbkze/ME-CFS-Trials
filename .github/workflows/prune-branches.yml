@@ -1,0 +1,63 @@
+name: Prune stale routine branches
+
+# Safety net / housekeeping. The integration workflow already deletes each run
+# branch right after integrating it; this catches any leftovers (e.g. a run that
+# errored before integration, or branches created before self-delete existed).
+#
+# Deletes `claude/*` branches EXCEPT:
+#   * the human development branch (claude/nice-einstein-yqeyjo),
+#   * any branch that is the head of an OPEN pull request,
+#   * (on the schedule) branches whose tip is younger than 30 min, so an
+#     in-flight run that just pushed is never deleted before it integrates.
+# Run manually with "force" checked to ignore the age guard (one-off cleanup).
+
+on:
+  schedule:
+    - cron: '23 4 * * 1'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Ignore the 30-minute age guard and delete all integrated routine branches now'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: prune-branches
+  cancel-in-progress: false
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete integrated routine branches
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          DEV_BRANCH: claude/nice-einstein-yqeyjo
+          FORCE: ${{ github.event.inputs.force || 'false' }}
+        run: |
+          set -uo pipefail
+          OPEN_PR_HEADS="$(gh pr list --repo "$REPO" --state open --json headRefName -q '.[].headRefName' | sort -u)"
+          NOW="$(date +%s)"
+          BRANCHES="$(gh api --paginate "repos/$REPO/branches" -q '.[].name' | grep '^claude/' || true)"
+          if [ -z "$BRANCHES" ]; then echo "No claude/* branches."; exit 0; fi
+
+          for BR in $BRANCHES; do
+            if [ "$BR" = "$DEV_BRANCH" ]; then echo "keep (dev): $BR"; continue; fi
+            if printf '%s\n' "$OPEN_PR_HEADS" | grep -qx "$BR"; then echo "keep (open PR): $BR"; continue; fi
+            if [ "$FORCE" != "true" ]; then
+              ISO="$(gh api "repos/$REPO/commits/$BR" -q '.commit.committer.date' 2>/dev/null || echo '')"
+              if [ -n "$ISO" ]; then
+                TIP="$(date -d "$ISO" +%s 2>/dev/null || echo 0)"
+                if [ "$TIP" -ne 0 ] && [ "$(( NOW - TIP ))" -lt 1800 ]; then
+                  echo "keep (tip <30 min old): $BR"; continue
+                fi
+              fi
+            fi
+            echo "deleting: $BR"
+            gh api -X DELETE "repos/$REPO/git/refs/heads/$BR" && echo "  deleted" || echo "  delete failed"
+          done
