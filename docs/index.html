@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ME/CFS Research Watch</title>
+<meta name="description" content="New ME/CFS clinical-trial opportunities in Germany — drug studies, open for enrollment, prioritising Klaus Wirth and Carmen Scheibenbogen.">
+<meta name="theme-color" content="#02213C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<style>
+  /* --- copied verbatim from the design template --- */
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;background:#EEF1F5;}
+  a{text-decoration:none;}
+  @keyframes oepulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.82);}}
+</style>
+</head>
+<body>
+<!--
+  Design is copy-pasted verbatim from the supplied template (MECFS_Research_Dashboard.html):
+  every inline style string, SVG path, colour and spacing value is unchanged.
+  Only the proprietary {{ }} placeholders and <sc-for>/<sc-if> loops were replaced by
+  vanilla JS that renders the same markup from docs/dashboard.json.
+-->
+<div style="min-height:100vh;background:#FBFBFF;max-width:480px;margin:0 auto;box-shadow:0 0 40px rgba(2,33,60,.06);">
+
+  <div style="padding:26px 22px 0;">
+    <div style="font:700 11px/1 Poppins;color:#2296FC;letter-spacing:.1em;text-transform:uppercase;">ME/CFS Research Watch</div>
+    <div style="font:800 26px/1.14 Poppins;color:#02213C;margin-top:8px;letter-spacing:-.015em;">Today's intake</div>
+  </div>
+
+  <div style="margin:18px 22px 0;background:#02213C;border-radius:18px;padding:18px 19px;">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <span style="width:8px;height:8px;border-radius:999px;background:#56C8A4;animation:oepulse 2.4s var(--ease-standard,ease) infinite;"></span>
+      <span style="font:600 11px/1 Poppins;color:#9FB3C7;letter-spacing:.09em;text-transform:uppercase;">Last search run</span>
+    </div>
+    <div id="lastRun" style="font:700 16px/1.3 Poppins;color:#FBFBFF;margin-top:8px;">—</div>
+    <div id="nextRun" style="font:400 11.5px/1.4 Poppins;color:#7E93A8;margin-top:3px;"></div>
+    <div style="display:flex;gap:10px;margin-top:16px;">
+      <div style="flex:1;background:rgba(255,255,255,.06);border-radius:12px;padding:12px 13px;">
+        <div id="newStudyCount" style="font:800 26px/1 Poppins;color:#F4AE3E;">0</div>
+        <div style="font:500 11px/1.3 Poppins;color:#9FB3C7;margin-top:5px;">new studies</div>
+      </div>
+      <div style="flex:1;background:rgba(255,255,255,.06);border-radius:12px;padding:12px 13px;">
+        <div id="newPaperCount" style="font:800 26px/1 Poppins;color:#F4AE3E;">0</div>
+        <div style="font:500 11px/1.3 Poppins;color:#9FB3C7;margin-top:5px;">new papers</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position:sticky;top:0;z-index:5;background:#FBFBFF;display:flex;gap:8px;padding:18px 22px 12px;">
+    <button id="tabStudies" style="flex:1;border:1px solid #02213C;background:#02213C;color:#FFFFFF;font:600 13px/1 Poppins;padding:12px 0;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .12s var(--ease-standard,ease);">Studies<span id="studyBadge" style="font:700 11px/1 Poppins;background:rgba(244,174,62,.95);color:#02213C;border-radius:999px;padding:2px 6px;">0</span></button>
+    <button id="tabPapers" style="flex:1;border:1px solid #E5E8EE;background:#FFFFFF;color:#5A6B7B;font:600 13px/1 Poppins;padding:12px 0;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .12s var(--ease-standard,ease);">Papers<span id="paperBadge" style="font:700 11px/1 Poppins;background:#EEF1F5;color:#5A6B7B;border-radius:999px;padding:2px 6px;">0</span></button>
+  </div>
+
+  <div id="list" style="padding:2px 22px 8px;"></div>
+
+  <div style="padding:4px 22px 30px;font:400 11px/1.5 Poppins;color:#A5A5A5;">Updated automatically after each scheduled run.</div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Chip palette — copied verbatim from the template's chipMap.
+  var CHIP = {
+    recruiting: { bg: 'rgba(31,157,107,.13)', color: '#157A52' },
+    soon:       { bg: 'rgba(244,174,62,.22)', color: '#9A6A0E' },
+    planned:    { bg: '#EEF1F5',              color: '#5A6B7B' }
+  };
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  // Allow only http(s) links; anything else (incl. the placeholder "#") gets no href.
+  function safeHref(u) {
+    return /^https?:\/\//i.test(String(u || '')) ? esc(u) : '';
+  }
+
+  var ICON_PIN = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#8A98A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+  var ICON_EXT = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>';
+  var NEW_BADGE = '<span style="font:700 9px/1 Poppins;letter-spacing:.09em;text-transform:uppercase;background:#F4AE3E;color:#02213C;border-radius:999px;padding:4px 7px;">New</span>';
+  var NEW_BAR = '<div style="position:absolute;left:0;top:0;bottom:0;width:4px;background:#F4AE3E;"></div>';
+  var CARD_OPEN = '<div style="position:relative;background:#fff;border:1px solid #E5E8EE;border-radius:14px;padding:15px 16px 15px 17px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 2px rgba(2,33,60,.04);">';
+
+  // --- Study card: markup copied verbatim from the template's <sc-for> block ---
+  function studyCard(it) {
+    var c = CHIP[it.status] || { bg: 'transparent', color: '#5A6B7B' };
+    var href = safeHref(it.link);
+    var linkOpen = href ? '<a href="' + href + '" target="_blank" rel="noopener"' : '<span';
+    var linkClose = href ? '</a>' : '</span>';
+    return CARD_OPEN +
+      (it.isNew ? NEW_BAR : '') +
+      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;">' +
+        '<span style="font:600 11px/1 Poppins;padding:5px 9px;border-radius:999px;background:' + c.bg + ';color:' + c.color + ';">' + esc(it.statusLabel) + '</span>' +
+        (it.isNew ? NEW_BADGE : '') +
+      '</div>' +
+      '<div style="font:600 15px/1.4 Poppins;color:#02213C;margin-bottom:9px;">' + esc(it.title) + '</div>' +
+      '<div style="display:flex;align-items:center;gap:6px;color:#5A6B7B;font:400 12.5px/1.4 Poppins;margin-bottom:13px;">' +
+        ICON_PIN + '<span>' + esc(it.location) + '</span>' +
+      '</div>' +
+      linkOpen + ' style="display:inline-flex;align-items:center;gap:6px;font:600 12.5px/1 Poppins;color:#2296FC;">Registration &amp; details' + ICON_EXT + linkClose +
+    '</div>';
+  }
+
+  // --- Paper card: markup copied verbatim from the template's <sc-for> block ---
+  function paperCard(it) {
+    var href = safeHref(it.link);
+    var linkOpen = href ? '<a href="' + href + '" target="_blank" rel="noopener"' : '<span';
+    var linkClose = href ? '</a>' : '</span>';
+    return CARD_OPEN +
+      (it.isNew ? NEW_BAR : '') +
+      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:9px;flex-wrap:wrap;">' +
+        '<span style="font:600 10.5px/1 Poppins;color:#2296FC;letter-spacing:.04em;text-transform:uppercase;">' + esc(it.journal) + '</span>' +
+        '<span style="font:400 11.5px/1 Poppins;color:#8A98A6;">· ' + esc(it.date) + '</span>' +
+        (it.isNew ? NEW_BADGE : '') +
+      '</div>' +
+      '<div style="font:600 15px/1.4 Poppins;color:#02213C;margin-bottom:5px;">' + esc(it.title) + '</div>' +
+      '<div style="font:italic 400 12px/1.4 Poppins;color:#8A98A6;margin-bottom:9px;">' + esc(it.authors) + '</div>' +
+      '<div style="font:400 12.5px/1.55 Poppins;color:#5A6B7B;margin-bottom:11px;">' + esc(it.summary) + '</div>' +
+      '<div style="background:rgba(2,33,60,.045);border-radius:9px;padding:10px 12px;margin-bottom:12px;">' +
+        '<div style="font:700 9.5px/1 Poppins;color:#2296FC;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px;">Why it matters</div>' +
+        '<div style="font:400 12px/1.5 Poppins;color:#02213C;">' + esc(it.why) + '</div>' +
+      '</div>' +
+      linkOpen + ' style="display:inline-flex;align-items:center;gap:6px;font:600 12.5px/1 Poppins;color:#2296FC;">Read paper · DOI' + ICON_EXT + linkClose +
+    '</div>';
+  }
+
+  function emptyCard(kind) {
+    return '<div style="background:#fff;border:1px dashed #D7DCE5;border-radius:14px;padding:28px 18px;text-align:center;color:#8A98A6;font:400 13px/1.55 Poppins;">' +
+      'No new ' + kind + ' yet.<br>The next scheduled run will populate this.</div>';
+  }
+  function errorCard() {
+    return '<div style="background:#fff;border:1px dashed #E7C9C9;border-radius:14px;padding:28px 18px;text-align:center;color:#B0524B;font:400 13px/1.55 Poppins;">' +
+      'Could not load dashboard.json.<br>Open this page over HTTP (e.g. GitHub Pages), not from the file system.</div>';
+  }
+
+  function applyPill(btn, badge, active) {
+    btn.style.background = active ? '#02213C' : '#FFFFFF';
+    btn.style.color = active ? '#FFFFFF' : '#5A6B7B';
+    btn.style.borderColor = active ? '#02213C' : '#E5E8EE';
+    badge.style.background = active ? 'rgba(244,174,62,.95)' : '#EEF1F5';
+    badge.style.color = active ? '#02213C' : '#5A6B7B';
+  }
+
+  var DATA = { studies: [], papers: [], lastRun: '—', nextRun: '' };
+  var tab = 'studies';
+
+  var el = function (id) { return document.getElementById(id); };
+  var tabStudies = el('tabStudies'), tabPapers = el('tabPapers');
+  var studyBadge = el('studyBadge'), paperBadge = el('paperBadge'), list = el('list');
+
+  function countNew(arr) { return arr.filter(function (x) { return x.isNew; }).length; }
+
+  function render() {
+    el('lastRun').textContent = DATA.lastRun || '—';
+    el('nextRun').textContent = DATA.nextRun || '';
+    el('newStudyCount').textContent = countNew(DATA.studies);
+    el('newPaperCount').textContent = countNew(DATA.papers);
+    studyBadge.textContent = DATA.studies.length;
+    paperBadge.textContent = DATA.papers.length;
+    var isStudies = tab === 'studies';
+    applyPill(tabStudies, studyBadge, isStudies);
+    applyPill(tabPapers, paperBadge, !isStudies);
+    if (isStudies) {
+      list.innerHTML = DATA.studies.length ? DATA.studies.map(studyCard).join('') : emptyCard('studies');
+    } else {
+      list.innerHTML = DATA.papers.length ? DATA.papers.map(paperCard).join('') : emptyCard('papers');
+    }
+  }
+
+  tabStudies.addEventListener('click', function () { tab = 'studies'; render(); });
+  tabPapers.addEventListener('click', function () { tab = 'papers'; render(); });
+
+  render();
+
+  fetch('dashboard.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) {
+      DATA.studies = Array.isArray(d.studies) ? d.studies : [];
+      DATA.papers = Array.isArray(d.papers) ? d.papers : [];
+      DATA.lastRun = d.lastRun || '—';
+      DATA.nextRun = d.nextRun || '';
+      render();
+    })
+    .catch(function () { list.innerHTML = errorCard(); });
+})();
+</script>
+</body>
+</html>

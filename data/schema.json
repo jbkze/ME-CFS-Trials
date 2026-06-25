@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.local/me-cfs-trials/schema.json",
+  "title": "ME/CFS trial record",
+  "description": "Schema for a single entry in data/trials.json -> trials[]. Keep field names stable; the render script and the diff logic in ROUTINE.md depend on them.",
+  "type": "object",
+  "required": ["id", "name", "status", "open_for_enrollment", "intervention", "germany", "registry", "first_seen", "last_checked", "relevance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable slug. Prefer the lowercased registry id (e.g. 'drks00032963', 'nct07529197'). Otherwise 'sponsor-drug-phase' (e.g. 'mitodicure-mdc002-ph1'). Never reuse an id for a different trial."
+    },
+    "name": { "type": "string", "description": "Official / full trial title." },
+    "acronym": { "type": ["string", "null"], "description": "Short name or acronym, e.g. 'RIA'." },
+    "status": {
+      "type": "string",
+      "description": "Lifecycle status, aligned to ClinicalTrials.gov vocabulary.",
+      "enum": ["recruiting", "not_yet_recruiting", "enrolling_by_invitation", "active_not_recruiting", "suspended", "completed", "terminated", "withdrawn", "unknown"]
+    },
+    "open_for_enrollment": {
+      "type": "boolean",
+      "description": "TRUE only when status is 'recruiting' or 'enrolling_by_invitation'. This is the field the user cares about most."
+    },
+    "intervention": {
+      "type": "object",
+      "required": ["name", "type"],
+      "properties": {
+        "name": { "type": "string", "description": "e.g. 'MDC002', 'Immunoadsorption', 'BC007 / rovunaptabin', 'Low-dose naltrexone'." },
+        "type": { "type": "string", "enum": ["drug", "biologic", "apheresis", "device", "supplement", "other"] },
+        "mechanism": { "type": "string", "description": "One-line mechanism of action." }
+      }
+    },
+    "is_drug_study": { "type": "boolean", "description": "True for pharmacological / biologic interventions. Apheresis (immunoadsorption) is borderline — include it but set this per judgement; note it in 'notes'." },
+    "associated_researchers": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Named investigators / groups, e.g. ['Carmen Scheibenbogen'] or ['Klaus Wirth']."
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["high", "normal"],
+      "description": "'high' if associated with Klaus Wirth or Carmen Scheibenbogen, else 'normal'."
+    },
+    "sponsor": { "type": ["string", "null"] },
+    "principal_investigator": { "type": ["string", "null"] },
+    "germany": {
+      "type": "object",
+      "required": ["has_german_site"],
+      "properties": {
+        "has_german_site": { "type": "boolean" },
+        "sites": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "institution": { "type": "string" },
+              "city": { "type": "string" },
+              "recruiting": { "type": ["boolean", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "condition": { "type": "string", "description": "e.g. 'ME/CFS', 'post-COVID ME/CFS', 'Long COVID with PEM'." },
+    "phase": { "type": ["string", "null"], "description": "e.g. 'Phase 1', 'Phase 2', 'Observational'." },
+    "eligibility": {
+      "type": "object",
+      "properties": {
+        "summary": { "type": "string" },
+        "key_inclusion": { "type": "array", "items": { "type": "string" } },
+        "key_exclusion": { "type": "array", "items": { "type": "string" } },
+        "age": { "type": "string" },
+        "sex": { "type": "string" }
+      }
+    },
+    "registry": {
+      "type": "object",
+      "required": ["name", "id", "url"],
+      "properties": {
+        "name": { "type": "string", "enum": ["DRKS", "ClinicalTrials.gov", "CTIS", "WHO ICTRP", "institutional", "other"] },
+        "id": { "type": "string" },
+        "url": { "type": "string", "format": "uri" }
+      }
+    },
+    "links": { "type": "array", "items": { "type": "string" }, "description": "Additional source URLs (press releases, institutional pages)." },
+    "first_seen": { "type": "string", "description": "YYYY-MM-DD the trial first entered this file." },
+    "last_checked": { "type": "string", "description": "YYYY-MM-DD of the most recent check that confirmed this record." },
+    "last_status_change": { "type": ["string", "null"], "description": "YYYY-MM-DD the status last changed." },
+    "status_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "flags": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["new", "newly_open", "status_changed", "closed_since_last", "details_changed", "watchlist"] },
+      "description": "Set during a check to mark what changed since last time. Cleared/recomputed each run."
+    },
+    "relevance": {
+      "type": "object",
+      "description": "Why this trial is (or is not) in scope. All true = fully in scope for the user's request.",
+      "properties": {
+        "me_cfs": { "type": "boolean" },
+        "germany": { "type": "boolean" },
+        "open_enrollment": { "type": "boolean" },
+        "drug_study": { "type": "boolean" },
+        "wirth_or_scheibenbogen": { "type": "boolean" }
+      }
+    },
+    "notes": { "type": "string" }
+  }
+}
