@@ -1,50 +1,82 @@
-name: Auto-merge routine PRs
+name: Integrate routine data into main
 
-# The scheduled ME/CFS research-watch Routine commits its data on a `claude/*`
-# branch and opens a PR whenever it cannot push to the default branch directly
-# (the fallback path in SETUP-ROUTINE.md). This workflow merges those PRs into
-# the base branch automatically, so the data reaches `main` and the GitHub Pages
-# dashboard updates without any manual step.
+# The scheduled ME/CFS research-watch Routine commits its results on a `claude/*`
+# branch whenever it can't push to the default branch directly. It does not
+# reliably open a PR (some runs only push the branch and file an issue), so this
+# workflow triggers on the **branch push** and integrates the run's data into
+# `main` — so the GitHub Pages dashboard updates with no manual step.
 #
-# Safety: it acts ONLY on the routine's own PRs — same-repo `claude/*` head branch
-# with a "Trial watch" / "Research watch" title — and it never checks out the PR's
-# code (it only calls `gh`), so running under pull_request_target is safe here.
-# If a PR has a real merge conflict, the workflow leaves it open and comments.
+# Safety:
+#   * Ignores the human development branch.
+#   * Acts ONLY if the push changed nothing outside the routine's data/generated
+#     files (data/trials.json, data/papers.json, TRIALS.md, docs/dashboard.json,
+#     checks/CHANGELOG.md). Any other change → it's development, left untouched.
+#   * Never executes the branch's code — it only copies those data files — so it
+#     is safe even though it runs with a write token.
+#
+# The clean alternative is to enable "Allow unrestricted branch pushes" on the
+# Routine, which lets runs commit straight to `main` and makes this unnecessary.
 
 on:
-  pull_request_target:
-    types: [opened, reopened, synchronize]
+  push:
+    branches:
+      - 'claude/**'
 
 permissions:
   contents: write
-  pull-requests: write
 
 concurrency:
-  group: auto-merge-${{ github.event.pull_request.number }}
+  group: integrate-routine-data
   cancel-in-progress: false
 
 jobs:
-  auto-merge:
-    if: >-
-      github.event.pull_request.head.repo.full_name == github.repository &&
-      startsWith(github.event.pull_request.head.ref, 'claude/') &&
-      (startsWith(github.event.pull_request.title, 'Trial watch') ||
-       startsWith(github.event.pull_request.title, 'Research watch'))
+  integrate:
+    if: github.ref_name != 'claude/nice-einstein-yqeyjo'
     runs-on: ubuntu-latest
     steps:
-      - name: Merge the routine PR into its base branch
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Integrate data-only routine pushes into main
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR: ${{ github.event.pull_request.number }}
-          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+          HEAD_SHA: ${{ github.sha }}
         run: |
-          for attempt in 1 2 3 4 5 6; do
-            if gh pr merge "$PR" --repo "$REPO" --merge --delete-branch; then
-              echo "Merged PR #$PR into the base branch."
-              exit 0
-            fi
-            echo "Attempt $attempt: PR #$PR not mergeable yet (mergeability still computing, or a conflict). Waiting 20s..."
-            sleep 20
+          set -euo pipefail
+          ALLOWED="data/trials.json data/papers.json TRIALS.md docs/dashboard.json checks/CHANGELOG.md"
+
+          git fetch origin "$BRANCH"
+          CHANGED="$(git diff --name-only origin/main..."$HEAD_SHA" || true)"
+          if [ -z "$CHANGED" ]; then
+            echo "No changes versus main; nothing to integrate."
+            exit 0
+          fi
+          echo "Files changed on $BRANCH versus main:"; echo "$CHANGED"
+
+          # If anything outside the data set changed, this is development — skip.
+          for f in $CHANGED; do
+            case " $ALLOWED " in
+              *" $f "*) : ;;
+              *) echo "Non-data file '$f' changed → not a routine data push; skipping."; exit 0 ;;
+            esac
           done
-          echo "::warning::Could not auto-merge PR #$PR after retries — likely a real merge conflict against the base branch."
-          gh pr comment "$PR" --repo "$REPO" --body "🤖 Auto-merge could not complete — likely a merge conflict against \`main\`. Please resolve and merge this PR manually so the dashboard updates." || true
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for f in $ALLOWED; do
+            git checkout "$HEAD_SHA" -- "$f" 2>/dev/null || echo "  ($f absent on branch — skipping)"
+          done
+
+          if git diff --cached --quiet; then
+            echo "main already matches the run's data; nothing to commit."
+            exit 0
+          fi
+          git commit -m "Integrate routine data from ${BRANCH}
+
+Auto-applied so the dashboard updates without a manual merge.
+Source: ${BRANCH} @ ${HEAD_SHA}. Only data/generated files are copied."
+          git push origin HEAD:main
+          echo "Integrated routine data into main."
