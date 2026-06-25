@@ -54,6 +54,15 @@ notable ME/CFS science (e.g. DecodeME genetics, micro-clots, mitochondrial/muscl
 findings). Confirm each via its **DOI / journal / preprint page**; news/blogs are
 leads only — never fabricate.
 
+**Write summaries for laypeople.** Both `summary` and `why` must be understandable
+by someone with no medical background: short sentences, plain words, as many
+technical terms as necessary but as few as possible — and when a term is
+unavoidable, explain it in a few words right there (e.g. *"post-exertional malaise
+(a crash after activity)"*, *"autoantibodies (antibodies that mistakenly attack the
+body)"*). Avoid statistics, p-values, and acronyms unless essential. Aim for 1–2
+short sentences each. The existing entries in `data/papers.json` are the style
+reference — match their tone.
+
 ## Status vocabulary (trials)
 
 `recruiting`, `not_yet_recruiting`, `enrolling_by_invitation`,
@@ -103,7 +112,8 @@ leads only — never fabricate.
 - **Papers:** add confirmed new papers to `data/papers.json` (copy
   `templates/paper-entry.json`): `title`, `authors`, `journal`, `date`, a one-line
   `summary`, a one-line `why` (why it matters), `link` (DOI), `first_seen`, and
-  `isNew`. Refresh its `isNew` flags as above.
+  `isNew`. Write `summary` and `why` in **plain, layperson language** (see the
+  style note under "Scope — papers"). Refresh its `isNew` flags as above.
 - Set top-level `last_check` to today's date (YYYY-MM-DD) in both files.
 - Regenerate the views: `python3 scripts/render_trials.py` — rebuilds both
   `TRIALS.md` and `docs/dashboard.json` (the feed for the GitHub Pages dashboard,

@@ -65,7 +65,9 @@ research papers (broader).
    Scheibenbogen and their groups, but papers are NOT restricted to Germany. Use
    PubMed / Europe PMC, medRxiv / bioRxiv, and the journals/leads in
    sources/search-sources.md. Confirm each via its DOI / journal / preprint page;
-   news/blogs are leads only. Never fabricate.
+   news/blogs are leads only. Never fabricate. Write every paper's summary and
+   "why it matters" in plain, layperson language: short sentences, minimal jargon,
+   and explain any unavoidable technical term in a few words right there.
 
 4. Update the data: in data/trials.json set first_seen once, refresh last_checked
    and top-level last_check to today (use `date +%F`), and recompute each trial's

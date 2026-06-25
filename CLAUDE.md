@@ -52,7 +52,8 @@ below is ambiguous. In short:
   News/blogs are leads, not evidence.
 - **Papers track:** notable new ME/CFS research, prioritising Wirth/Scheibenbogen
   but **not** Germany-restricted; recent (~last 3 months / since `last_check`);
-  confirmed via DOI/journal/preprint. → `data/papers.json`.
+  confirmed via DOI/journal/preprint; `summary` + `why` written in **plain,
+  layperson language** (minimal jargon, explained inline). → `data/papers.json`.
 - **Never hand-edit `TRIALS.md` or `docs/dashboard.json`** — they are generated;
   edit the JSON and re-run the script.
 - **Never delete** a trial that drops out of scope — update its status + flag it.
