@@ -43,7 +43,7 @@ STATUS_LABEL = {
 DASH_BUCKET = {
     "recruiting": ("recruiting", "Recruiting"),
     "enrolling_by_invitation": ("recruiting", "Enrolling (invite)"),
-    "not_yet_recruiting": ("soon", "Starts soon"),
+    "not_yet_recruiting": ("soon", "Planned"),
     "active_not_recruiting": ("planned", "Active, not recruiting"),
 }
 BUCKET_ORDER = {"recruiting": 0, "soon": 1, "planned": 2}
@@ -115,7 +115,7 @@ def render_markdown(db: dict, trials: list) -> None:
     else:
         lines += ["## Open for enrollment", ""]
         lines += [header + "\n".join(render_row(t) for t in open_now)] if open_now else ["_None currently._"]
-        lines += ["", "## Watchlist (not yet open / not recruiting)", ""]
+        lines += ["", "## Planned / not yet recruiting (also relevant)", ""]
         lines += [header + "\n".join(render_row(t) for t in watch)] if watch else ["_None._"]
         if archived:
             lines += ["", "## Archived (closed / completed / withdrawn)", ""]
