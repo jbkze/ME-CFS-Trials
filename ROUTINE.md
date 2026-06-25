@@ -38,6 +38,11 @@ catches the moment they open. Do **not** report them as "open opportunities".
 2. **Search.** Work through `sources/search-sources.md`: registries first
    (DRKS → ClinicalTrials.gov → CTIS → WHO ICTRP), then the Wirth and
    Scheibenbogen leads, then news sources for anything not yet registered.
+   **That list is a floor, not a ceiling** — always also run fresh, open-ended
+   web searches each time (new investigators, new drug names, new institutions,
+   newer announcements). The curated sources guarantee coverage of the basics;
+   they do not limit where you may look. If you discover a durable new source,
+   add it to `sources/search-sources.md`.
 3. **Confirm each candidate** against a registry or the institution's own
    clinical-research page before trusting it. Never enter a trial on the basis
    of a blog post alone.

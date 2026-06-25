@@ -4,6 +4,12 @@ Durable "where to look" knowledge for the routine. This file rarely changes;
 trial *state* lives in `data/trials.json`, not here. Work through the registries
 top-to-bottom each run, then chase the named leads.
 
+> **This is a starting checklist, not a boundary.** Every run should *also* do
+> fresh, open-ended web search beyond this list — new trials, drugs,
+> investigators and announcements appear all the time. The list only guarantees
+> the essentials (especially DRKS for Germany) are never skipped. Found a useful
+> new durable source? Add it here.
+
 Scope reminder: **ME/CFS · drug/pharmacological · at least one site in Germany ·
 open for enrollment.** Prioritise anything linked to **Klaus Wirth** or
 **Carmen Scheibenbogen**.
