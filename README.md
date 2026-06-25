@@ -46,6 +46,25 @@ python3 scripts/render_trials.py
 To run a check, open [`ROUTINE.md`](ROUTINE.md) and follow it (or paste its
 "prompt for a check" to Claude).
 
+## Automation (hands-off)
+
+Set up once (see [`SETUP-ROUTINE.md`](SETUP-ROUTINE.md)), then it runs itself:
+
+1. The scheduled **Routine** runs on Anthropic's cloud, searches, and commits its
+   results — either straight to `main` (if *Allow unrestricted branch pushes* is
+   on) or to a `claude/*` branch.
+2. **`.github/workflows/auto-merge-routine.yml`** — on a branch push, integrates
+   the run's data files into `main`, then closes any PR it opened and deletes the
+   branch. So the data always reaches `main` even if the run couldn't push there.
+3. **GitHub Pages** rebuilds from `main/docs` on every push, so the live
+   dashboard always reflects the latest committed state.
+4. **`.github/workflows/prune-branches.yml`** — on every push to `main`, weekly,
+   or on demand, removes leftover integrated `claude/*` branches (keeping the dev
+   branch and any open-PR branch; a 30-minute age guard protects in-flight runs).
+
+Net effect: a run appears on the live dashboard and cleans up after itself with
+no manual step. Live site: **https://jbkze.github.io/ME-CFS-Trials/**
+
 ## Design notes
 
 - **JSON is the source of truth; Markdown is generated.** Avoids the two copies
