@@ -1,6 +1,125 @@
 {
   "schema_version": 1,
-  "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md. The first run after setup will (correctly) flag every relevant trial it finds as 'new', because this baseline starts empty. Do not hand-fabricate entries — only add trials confirmed from a registry or institutional source during a check.",
-  "last_check": null,
-  "trials": []
+  "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md.",
+  "last_check": "2026-06-25",
+  "trials": [
+    {
+      "id": "nct07529197",
+      "name": "Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
+      "acronym": "IMPACT",
+      "status": "recruiting",
+      "open_for_enrollment": true,
+      "intervention": {
+        "name": "Immunoadsorption with TheraSorb® column",
+        "type": "apheresis",
+        "mechanism": "Extracorporeal removal of autoantibodies (β2-adrenergic, GPCR) from blood plasma using TheraSorb® Ig column (Miltenyi); established treatment for autoimmune diseases"
+      },
+      "is_drug_study": false,
+      "associated_researchers": ["Carmen Scheibenbogen"],
+      "priority": "high",
+      "sponsor": "Charité - Universitätsmedizin Berlin",
+      "principal_investigator": "Prof. Dr. Carmen Scheibenbogen",
+      "germany": {
+        "has_german_site": true,
+        "sites": [
+          { "institution": "Charité - Universitätsmedizin Berlin", "city": "Berlin", "recruiting": true }
+        ]
+      },
+      "condition": "ME/CFS (post-infectious, autoantibody-positive)",
+      "phase": "Observational",
+      "eligibility": {
+        "summary": "Adults 18–65 with ME/CFS per Canadian Consensus Criteria, Bell Score <60, detectable autoantibodies, who are already receiving immunoadsorption as clinical care",
+        "key_inclusion": [
+          "ME/CFS per Canadian Consensus Criteria",
+          "Ages 18–65",
+          "Bell Score <60",
+          "Detectable autoantibodies (β2-adrenergic receptor or GPCR autoantibodies)"
+        ],
+        "key_exclusion": [
+          "Severe bedriddenness",
+          "Pregnancy",
+          "Active infections (COVID, HIV, hepatitis)"
+        ],
+        "age": "18–65 years",
+        "sex": "All"
+      },
+      "registry": {
+        "name": "ClinicalTrials.gov",
+        "id": "NCT07529197",
+        "url": "https://clinicaltrials.gov/study/NCT07529197"
+      },
+      "links": [
+        "https://cfc.charite.de/en/clinical_research/"
+      ],
+      "first_seen": "2026-06-25",
+      "last_checked": "2026-06-25",
+      "last_status_change": "2026-06-25",
+      "status_history": [
+        { "date": "2026-06-25", "status": "recruiting" }
+      ],
+      "flags": ["new"],
+      "relevance": {
+        "me_cfs": true,
+        "germany": true,
+        "open_enrollment": true,
+        "drug_study": false,
+        "wirth_or_scheibenbogen": true
+      },
+      "notes": "Immunoadsorption is a medical device/apheresis procedure (borderline per tracking rules — included and noted). Non-interventional observational study documenting 12-month outcomes in ME/CFS patients already receiving IA as standard care. Actual start date March 11, 2026; estimated completion December 31, 2027; 50 participants planned. PI: Prof. Dr. Carmen Scheibenbogen, Charité Berlin."
+    },
+    {
+      "id": "mitodicure-mdc002-ph1",
+      "name": "MDC002 — Phase 1 Clinical Trial in ME/CFS (Planned)",
+      "acronym": null,
+      "status": "not_yet_recruiting",
+      "open_for_enrollment": false,
+      "intervention": {
+        "name": "MDC002",
+        "type": "drug",
+        "mechanism": "Orally applicable small molecule stimulating Na⁺/K⁺-ATPase and mitochondrial Na⁺/Ca²⁺ exchanger (NCLX) in skeletal muscle; targets post-exertional malaise and exertional intolerance by restoring muscle cell ion homeostasis"
+      },
+      "is_drug_study": true,
+      "associated_researchers": ["Klaus Wirth"],
+      "priority": "high",
+      "sponsor": "Mitodicure GmbH",
+      "principal_investigator": null,
+      "germany": {
+        "has_german_site": false,
+        "sites": []
+      },
+      "condition": "ME/CFS; post-acute infection syndromes with post-exertional malaise (PEM)",
+      "phase": "Phase 1 (planned)",
+      "eligibility": {
+        "summary": "Trial design not yet announced. Target indication is ME/CFS and post-acute infection syndromes with post-exertional malaise.",
+        "key_inclusion": [],
+        "key_exclusion": [],
+        "age": "Not yet specified",
+        "sex": "All"
+      },
+      "registry": {
+        "name": "institutional",
+        "id": "n/a",
+        "url": "https://mitodicure.com/"
+      },
+      "links": [
+        "https://mitodicure.com/about-us/",
+        "https://mitodicure.com/science/"
+      ],
+      "first_seen": "2026-06-25",
+      "last_checked": "2026-06-25",
+      "last_status_change": null,
+      "status_history": [
+        { "date": "2026-06-25", "status": "not_yet_recruiting" }
+      ],
+      "flags": ["new"],
+      "relevance": {
+        "me_cfs": true,
+        "germany": true,
+        "open_enrollment": false,
+        "drug_study": true,
+        "wirth_or_scheibenbogen": true
+      },
+      "notes": "Not yet registered in any trial registry. German connection via sponsor only (Mitodicure GmbH, German company, founded 2022; Klaus Wirth CSO). Mitodicure's website states MDC002 is 'advancing towards clinical trials' and ready for GLP toxicity and safety pharmacology studies as of 2026. No confirmed trial sites yet; has_german_site set false until a site is confirmed. Check mitodicure.com and registries each run for Phase 1 registration."
+    }
+  ]
 }

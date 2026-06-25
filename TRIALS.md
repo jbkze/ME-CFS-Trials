@@ -2,8 +2,18 @@
 
 > Auto-generated from `data/trials.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last check: **never**
-- Trials tracked: **0** (open for enrollment: **0**, watchlist: **0**, archived: **0**)
+- Last check: **2026-06-25**
+- Trials tracked: **2** (open for enrollment: **1**, watchlist: **1**, archived: **0**)
 - ⭐ = linked to Klaus Wirth or Carmen Scheibenbogen.
 
-_No trials recorded yet. Run the routine in `ROUTINE.md` to populate this._
+## Open for enrollment
+
+| Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
+|---|---|---|---|---|---|---|---|
+| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption with TheraSorb® column | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin) | ClinicalTrials.gov NCT07529197 | 2026-06-25 | `new` |
+
+## Planned / not yet recruiting (also relevant)
+
+| Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
+|---|---|---|---|---|---|---|---|
+| ⭐ [MDC002 — Phase 1 Clinical Trial in ME/CFS (Planned)](https://mitodicure.com/) | 🟡 Not yet recruiting | MDC002 | Klaus Wirth | — | institutional n/a | 2026-06-25 | `new` |
