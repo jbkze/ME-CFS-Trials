@@ -100,7 +100,8 @@ To put it online, enable Pages once:
 1. Repo → **Settings → Pages**.
 2. **Source:** *Deploy from a branch* → **Branch:** your default branch →
    **Folder:** **`/docs`** → **Save**.
-3. After a minute it's live at **`https://jbkze.github.io/me-cfs-trials/`**.
+3. After a minute it's live at **`https://jbkze.github.io/ME-CFS-Trials/`**
+   (the repo-name path is **case-sensitive** — keep `ME-CFS-Trials` exactly).
 
 From then on it updates itself: each routine run regenerates and commits
 `docs/dashboard.json`, and Pages redeploys automatically. (`docs/.nojekyll` is
