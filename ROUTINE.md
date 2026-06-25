@@ -1,10 +1,16 @@
-# Routine: ME/CFS trial watch
+# Routine: ME/CFS research watch
 
-The repeatable procedure for finding new ME/CFS drug-trial opportunities in
-Germany. Run it on each check (manually, or paste the prompt below to Claude).
-It reads/writes the files described in `README.md`.
+The repeatable procedure for surfacing new ME/CFS **drug-trial opportunities in
+Germany** and notable new **ME/CFS research papers**. Run it on each check
+(manually, or as the scheduled Routine in `SETUP-ROUTINE.md`). It reads/writes
+the files described in `README.md`. Each run surfaces only what is *new* or
+*changed* since `last_check`.
 
-## Scope (the relevance filter)
+Two tracks, two scopes: **trials** are Germany-focused and tightly filtered;
+**papers** are broader (notable ME/CFS science, not Germany-restricted). Both
+prioritise **Klaus Wirth** and **Carmen Scheibenbogen**.
+
+## Scope — trials (the relevance filter)
 
 A trial is **in scope** only if **all** of these hold:
 
@@ -30,7 +36,25 @@ Scheibenbogen** (set `priority: "high"`, list them in `associated_researchers`),
 in either tier — e.g. **Mitodicure MDC002** is planned and not yet registered,
 but is still high priority and reported.
 
-## Status vocabulary
+## Scope — papers
+
+A paper is **in scope** if **all** hold:
+
+1. **Topic** — ME/CFS (incl. post-COVID / post-infectious ME/CFS, PEM): patho-
+   mechanism, biomarkers, drug targets, treatment / clinical-trial results, or
+   genetics/epidemiology that bears on mechanism or treatment.
+2. **Recency** — published or preprinted in roughly the **last 3 months**, or
+   since `last_check`.
+3. **Credibility** — a peer-reviewed journal or a major preprint server
+   (medRxiv / bioRxiv). Skip predatory/marginal venues and purely tangential work.
+
+Papers are **not** restricted to Germany (unlike trials). **Priority = HIGH** for
+**Wirth**, **Scheibenbogen** and their groups/co-authors, but include other
+notable ME/CFS science (e.g. DecodeME genetics, micro-clots, mitochondrial/muscle
+findings). Confirm each via its **DOI / journal / preprint page**; news/blogs are
+leads only — never fabricate.
+
+## Status vocabulary (trials)
 
 `recruiting`, `not_yet_recruiting`, `enrolling_by_invitation`,
 `active_not_recruiting`, `suspended`, `completed`, `terminated`, `withdrawn`,
@@ -38,22 +62,23 @@ but is still high priority and reported.
 
 ## Procedure
 
-1. **Read state.** Load `data/trials.json`. Note `last_check` and the existing
-   trials (their `id` and `status`) — this is your baseline for diffing.
-2. **Search.** Work through `sources/search-sources.md`: registries first
-   (DRKS → ClinicalTrials.gov → CTIS → WHO ICTRP), then the Wirth and
+1. **Read state.** Load `data/trials.json` **and** `data/papers.json`. Note
+   `last_check` and the existing ids/statuses — your baseline for diffing.
+2. **Search — trials.** Work through `sources/search-sources.md`: registries
+   first (DRKS → ClinicalTrials.gov → CTIS → WHO ICTRP), then the Wirth and
    Scheibenbogen leads, then news sources for anything not yet registered.
-   **That list is a floor, not a ceiling** — always also run fresh, open-ended
-   web searches each time (new investigators, new drug names, new institutions,
-   newer announcements). The curated sources guarantee coverage of the basics;
-   they do not limit where you may look. If you discover a durable new source,
-   add it to `sources/search-sources.md`.
-3. **Confirm each candidate** against a registry or the institution's own
-   clinical-research page before trusting it. Never enter a trial on the basis
-   of a blog post alone. For a *planned* study not yet in any registry, an
-   official institutional/company announcement is acceptable evidence — record
-   it as `not_yet_recruiting` and link that source as the `registry`/`links`.
-4. **Diff against the baseline** and compute `flags` for each in-scope trial:
+3. **Search — papers.** Use the literature sources in `sources/search-sources.md`
+   (PubMed / Europe PMC, medRxiv / bioRxiv, key journals) plus author searches for
+   Wirth and Scheibenbogen, limited to roughly the last 3 months / since `last_check`.
+   **The sources list is a floor, not a ceiling** — always also run fresh,
+   open-ended web search for both tracks (new investigators, drugs, institutions,
+   announcements, papers). Add durable new sources you find to the list.
+4. **Confirm each candidate.** Trials: against a registry or the institution's own
+   clinical-research page (for a *planned* study not yet registered, an official
+   institutional/company announcement is acceptable — record it as
+   `not_yet_recruiting` and link that source). Papers: against the DOI / journal /
+   preprint page. Never enter anything on the basis of a blog post alone.
+5. **Diff against the baseline** and compute `flags` for each in-scope trial:
    - `new` — `id` not present in the previous `data/trials.json`.
    - `newly_open` — status changed **into** `recruiting` / `enrolling_by_invitation`.
    - `status_changed` — any other status change (update `last_status_change`
@@ -61,50 +86,48 @@ but is still high priority and reported.
    - `closed_since_last` — was open last time, now closed/suspended/etc.
    - `details_changed` — material change (sites, eligibility, links) with same status.
    - (no flag) — unchanged since last check.
-5. **Update files** (see below).
-6. **Report** (see below).
+   For papers, mark `isNew: true` only if the `id` is new this run; set it back to
+   `false` on later runs.
+6. **Update files** (see below).
+7. **Report** (see below).
 
 ## Updating the files
 
-- For each in-scope trial, add or update its record in `data/trials.json`
-  following `data/schema.json`. Copy `templates/trial-entry.json` as a starting
-  point for new ones. Set `first_seen` once (never overwrite it); always refresh
-  `last_checked` to today.
-- Set top-level `last_check` to today's date (YYYY-MM-DD).
-- Recompute `flags` every run (they describe change *since last check*, so a
-  trial that was `new` last time and is unchanged now should have its flags cleared).
-- Regenerate the views: `python3 scripts/render_trials.py` — this rebuilds both
+- **Trials:** add/update each record in `data/trials.json` following
+  `data/schema.json` (copy `templates/trial-entry.json` for new ones). Set
+  `first_seen` once (never overwrite); always refresh `last_checked` to today.
+  Recompute `flags` every run (they describe change *since last check*, so a trial
+  that was `new` last time and is unchanged now has its flags cleared). A trial
+  that drops out of scope is **not deleted** — update its status, flag it
+  `closed_since_last`, let it move to the archived section.
+- **Papers:** add confirmed new papers to `data/papers.json` (copy
+  `templates/paper-entry.json`): `title`, `authors`, `journal`, `date`, a one-line
+  `summary`, a one-line `why` (why it matters), `link` (DOI), `first_seen`, and
+  `isNew`. Refresh its `isNew` flags as above.
+- Set top-level `last_check` to today's date (YYYY-MM-DD) in both files.
+- Regenerate the views: `python3 scripts/render_trials.py` — rebuilds both
   `TRIALS.md` and `docs/dashboard.json` (the feed for the GitHub Pages dashboard,
-  `docs/index.html`).
+  `docs/index.html`; studies from `trials.json`, papers from `papers.json`).
 - Append one entry to `checks/CHANGELOG.md` using the template at the top of that file.
-- A trial that drops out of scope (e.g. closed) is **not deleted** — update its
-  status, flag it `closed_since_last`, and let it move to the archived section.
+- **Never hand-edit `TRIALS.md` or `docs/dashboard.json`** — they are generated.
 
 ## Reporting back
 
-Lead with what changed, newest first. Report in two tiers — **open for
-enrollment** first, then **planned / not yet recruiting** (label which is which).
-For each new or changed trial give: **trial name · enrollment status ·
-drug/intervention · patient eligibility · registration/source link.** Call out
-Wirth/Scheibenbogen trials explicitly, including planned ones.
+Lead with what changed, newest first, in two parts:
 
-If nothing changed since `last_check`, say so in one line (e.g. *"No new or
-changed ME/CFS drug trials in Germany since 2026-06-25; N trials still tracked,
-M open for enrollment."*) — still bump `last_check` and add a CHANGELOG line.
+- **Trials** — two tiers: **open for enrollment** first, then **planned / not yet
+  recruiting** (label which is which). For each new or changed trial give:
+  **name · status · drug/intervention · patient eligibility · registration/source
+  link.** Note any that **closed or changed status** since last check.
+- **Papers** — **title · authors · journal · date · why it matters · DOI.**
 
----
+Call out Wirth/Scheibenbogen explicitly in both parts (including planned trials).
+If nothing is new or changed, say so in one line (e.g. *"No new or changed ME/CFS
+drug trials in Germany and no notable new papers since 2026-06-25."*) — still bump
+`last_check` and add a CHANGELOG line.
 
-## Copy-paste prompt for a check
-
-> Run the ME/CFS trial watch in this repo. Follow `ROUTINE.md`: load
-> `data/trials.json` as the baseline, search the sources in
-> `sources/search-sources.md` (Germany only, ME/CFS drug studies, open for
-> enrollment, prioritising Klaus Wirth and Carmen Scheibenbogen), confirm each
-> candidate against a registry, then update `data/trials.json`
-> (set `last_check`, recompute `flags`), run `python3 scripts/render_trials.py`,
-> and append to `checks/CHANGELOG.md`. Report new/changed trials newest-first
-> with name, status, intervention, eligibility, and link — or confirm briefly if
-> nothing changed.
+The full, self-contained prompt for both manual and scheduled runs lives in
+**`SETUP-ROUTINE.md`** ("Routine prompt").
 
 ---
 
@@ -114,18 +137,19 @@ When this runs unattended as a cloud **Routine** (see `SETUP-ROUTINE.md`), there
 is no human in the loop, so two things differ from an interactive run:
 
 1. **State must persist on the default branch.** Each run clones the repo fresh
-   from the default branch, so the *previous* run's `data/trials.json` is only
-   visible if it was committed back to that branch. Therefore the run must
-   **commit** the updated `data/trials.json`, `TRIALS.md`, `docs/dashboard.json`,
-   and `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
+   from the default branch, so the *previous* run's data is only visible if it was
+   committed back to that branch. Therefore the run must **commit** the updated
+   `data/trials.json`, `data/papers.json`, `TRIALS.md`, `docs/dashboard.json`, and
+   `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
    commits straight to the default branch (recommended — keeps the baseline
    current automatically). Without it, it pushes a `claude/` branch and opens a
    PR, and **you must merge that PR** before the next run or the baseline goes stale.
 2. **Deliver the summary somewhere you'll see it**, since there's no chat reply
-   to read. Default: open a GitHub issue titled `Trial watch <YYYY-MM-DD>` with
-   the new/changed trials (newest-first; Wirth/Scheibenbogen first). If nothing
-   changed, still commit the bumped `last_check` + CHANGELOG line and post a
-   one-line "no new or changed trials" note.
+   to read. Open a GitHub issue titled `Research watch <YYYY-MM-DD>` with a Trials
+   part (two tiers) and a Papers part (Wirth/Scheibenbogen first) — **only when
+   something is new or changed.** When nothing changed, skip the issue: the
+   committed CHANGELOG entry and the dashboard's updated "last run" date are the
+   record. If issue creation isn't available, put the summary in the commit body.
 
 Use the shell (`date +%F`) for today's date. The exact prompt to paste into the
 Routine form is in `SETUP-ROUTINE.md`.

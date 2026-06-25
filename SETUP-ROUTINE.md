@@ -35,47 +35,63 @@ create it as Weekly, then run `/schedule update` in the Desktop/CLI app.
 ## Routine prompt
 
 ```text
-Run the recurring ME/CFS clinical-trial watch for this repository. You are an
-autonomous cloud session with no human to reply to — finish the whole job and
-leave the results in the repo and a GitHub issue.
+Run the recurring ME/CFS research watch for this repository. You are an
+autonomous cloud session with no human to reply to during the run — finish the
+whole job and leave the results committed in the repo and summarised in a GitHub
+issue. It covers two tracks: clinical trials (Germany-focused) and notable new
+research papers (broader).
 
 1. Read CLAUDE.md and ROUTINE.md in the repo root and follow ROUTINE.md exactly,
-   including its "Running headless" section. data/trials.json on the default
-   branch is your baseline of previously-known trials.
-2. Scope (all must hold): ME/CFS; drug/pharmacological intervention; a German
-   connection (a site in Germany, or — for a planned study without confirmed
-   sites — a German sponsor/institution); status recruiting, enrolling-by-
-   invitation, OR not_yet_recruiting (planned / announced but not yet open). All
-   three statuses are relevant. Prioritise trials linked to Klaus Wirth
-   (Mitodicure / MDC002 — planned, not yet registered, still report it) or Carmen
-   Scheibenbogen (Charité Fatigue Centrum). Search sources/search-sources.md AND
-   do fresh open-ended web search. Confirm every candidate against a registry
-   (DRKS, ClinicalTrials.gov, CTIS, WHO ICTRP) or an official institutional/
-   company page before recording it (for a planned study that page may be the
-   only source — record it as not_yet_recruiting). Never fabricate a trial.
-3. Update data/trials.json per data/schema.json: set first_seen once, refresh
-   last_checked to today (use `date +%F`), set top-level last_check to today,
-   and recompute each trial's flags (new / newly_open / status_changed /
-   closed_since_last) versus the baseline. Then run
-   `python3 scripts/render_trials.py` (this rebuilds both TRIALS.md and
-   docs/dashboard.json, the feed for the GitHub Pages dashboard) and prepend a
-   dated entry to checks/CHANGELOG.md. Optionally also record notable new papers
-   in data/papers.json (same confirm-first rule) — they show on the dashboard's
-   Papers tab.
-4. Persist state: commit data/trials.json, data/papers.json, TRIALS.md,
-   docs/dashboard.json and checks/CHANGELOG.md to the default branch with
-   message "Trial watch <YYYY-MM-DD>: N new, M changed".
-   (If you cannot push to the default branch, push a claude/ branch and open a PR
-   with the same summary.) This is essential — the next run reads the baseline
-   from the default branch.
-5. Deliver the summary: open a GitHub issue titled "Trial watch <YYYY-MM-DD>"
-   listing new and changed trials newest-first, in two tiers — OPEN FOR
-   ENROLLMENT first, then PLANNED / NOT YET RECRUITING (label which is which) —
-   each with name, status, drug/intervention, key eligibility, and
-   registration/source link, Wirth/Scheibenbogen first (incl. planned ones). If
-   nothing is new or changed, still do steps 3–4 and post a one-line issue
-   comment / note saying no new or changed ME/CFS drug trials in Germany since
-   the last check.
+   including its "Running headless" section. data/trials.json and data/papers.json
+   on the default branch are your baselines; data/schema.json defines the trial
+   record format.
+
+2. TRIALS — a trial qualifies only if ALL hold: condition is ME/CFS (incl.
+   post-COVID/post-infectious ME/CFS); intervention is drug/pharmacological
+   (immunoadsorption is borderline — include and note it); a German connection
+   (a site in Germany, or — for a planned study without confirmed sites — a German
+   sponsor/institution); status is "recruiting", "enrolling by invitation", OR
+   "not_yet_recruiting" (planned/announced but not yet open). All three statuses
+   are relevant. Prioritise Klaus Wirth (Mitodicure / MDC002 — planned, not yet
+   registered, still report it) and Carmen Scheibenbogen (Charité Fatigue Centrum).
+   Work through sources/search-sources.md AND do fresh open-ended web search.
+   Confirm each candidate against a registry (DRKS, ClinicalTrials.gov, CTIS,
+   WHO ICTRP) or an official institutional/company page (the only source for a
+   planned study — record it as not_yet_recruiting and link it). Never fabricate.
+
+3. PAPERS — also search for notable new ME/CFS research papers (pathomechanism,
+   biomarkers, drug targets, treatment / clinical-trial results, genetics) from
+   roughly the last 3 months or since the last check. Prioritise Wirth,
+   Scheibenbogen and their groups, but papers are NOT restricted to Germany. Use
+   PubMed / Europe PMC, medRxiv / bioRxiv, and the journals/leads in
+   sources/search-sources.md. Confirm each via its DOI / journal / preprint page;
+   news/blogs are leads only. Never fabricate.
+
+4. Update the data: in data/trials.json set first_seen once, refresh last_checked
+   and top-level last_check to today (use `date +%F`), and recompute each trial's
+   flags (new / newly_open / status_changed / closed_since_last / details_changed)
+   vs the baseline. In data/papers.json add confirmed new papers (title, authors,
+   journal, date, one-line summary, one-line "why it matters", DOI link, first_seen,
+   isNew) and refresh last_check. Then run `python3 scripts/render_trials.py` — this
+   rebuilds TRIALS.md AND docs/dashboard.json (the GitHub Pages dashboard feed).
+   Prepend a dated entry to checks/CHANGELOG.md.
+
+5. Persist state — essential, because the next run re-clones the default branch:
+   commit data/trials.json, data/papers.json, TRIALS.md, docs/dashboard.json and
+   checks/CHANGELOG.md to the default branch with message
+   "Research watch <YYYY-MM-DD>: T new/changed trials, P new papers". If you
+   cannot push to the default branch, push a claude/ branch and open a PR with the
+   same summary.
+
+6. Deliver: if anything is new or changed, open a GitHub issue titled
+   "Research watch <YYYY-MM-DD>" with two parts — TRIALS (two tiers: OPEN FOR
+   ENROLLMENT first, then PLANNED / NOT YET RECRUITING, labelled; each with name,
+   status, drug/intervention, key eligibility, registration/source link; note any
+   that closed or changed status) and PAPERS (title · authors · journal · date ·
+   why-it-matters · DOI) — Wirth/Scheibenbogen first in both. If issue creation
+   isn't available to you, put the same summary in the commit body. If nothing is
+   new or changed, do NOT open an issue — the committed CHANGELOG entry and the
+   dashboard's updated "last run" date are the record.
 ```
 
 ## Network allowlist (if you choose Custom instead of Full)
@@ -83,7 +99,8 @@ leave the results in the repo and a GitHub issue.
 ```
 drks.de, clinicaltrials.gov, euclinicaltrials.eu, trialsearch.who.int,
 charite.de, cfc.charite.de, mitodicure.com, ncbi.nlm.nih.gov,
-pubmed.ncbi.nlm.nih.gov, mecfs.de, healthrising.org, thesicktimes.org
+pubmed.ncbi.nlm.nih.gov, europepmc.org, medrxiv.org, biorxiv.org,
+scholar.google.com, doi.org, mecfs.de, healthrising.org, thesicktimes.org
 ```
 
 Custom is tighter but will miss any source not on the list; **Full** is
