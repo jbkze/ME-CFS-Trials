@@ -87,3 +87,33 @@ General queries:
 `chronisches Fatigue-Syndrom Studie Teilnehmer gesucht`,
 `myalgische Enzephalomyelitis Arzneimittelstudie`,
 `Scheibenbogen Studie rekrutiert`, `Wirth MDC002 Phase 1`.
+
+---
+
+## 6. Literature / papers (broad — NOT Germany-restricted)
+
+For the **papers track**: notable new ME/CFS research (pathomechanism, biomarkers,
+drug targets, treatment / trial results, genetics), prioritising Wirth &
+Scheibenbogen but worldwide. Target roughly the **last 3 months / since `last_check`**.
+
+| Source | Entry point |
+|---|---|
+| **PubMed** | https://pubmed.ncbi.nlm.nih.gov/ — e.g. `("myalgic encephalomyelitis"[Title/Abstract] OR "chronic fatigue syndrome"[Title/Abstract]) AND 2026[pdat]`; author searches `Scheibenbogen C[Author]`, `Wirth K[Author]`. |
+| **Europe PMC** | https://europepmc.org/ — same queries, includes preprints. |
+| **medRxiv / bioRxiv** | https://www.medrxiv.org/ , https://www.biorxiv.org/ — search `ME/CFS`, `post-exertional malaise`; catches results months before journal publication. |
+| **Google Scholar** | https://scholar.google.com/ — sort by date for `ME/CFS` + mechanism/biomarker/treatment terms. |
+
+Journals that frequently publish relevant ME/CFS work: *Nature Communications*,
+*Cell Reports Medicine*, *Nature Genetics*, *Journal of Translational Medicine*,
+*Brain Behavior and Immunity*, *Frontiers in Immunology/Neurology*,
+*Journal of Clinical Medicine*. Big recurring efforts to watch: **DecodeME**
+(genetics), micro-clot / endothelial work, mitochondrial / skeletal-muscle studies.
+
+> Same rule as trials: blogs/news (Health Rising, The Sick Times) are *leads only*.
+> A paper enters `data/papers.json` only after confirmation via its **DOI /
+> journal / preprint page**.
+
+Useful paper queries:
+`Scheibenbogen ME/CFS 2026`, `Wirth ME/CFS skeletal muscle`, `ME/CFS autoantibody 2026`,
+`ME/CFS biomarker 2026`, `post-exertional malaise mechanism`, `DecodeME GWAS`,
+`long COVID ME/CFS mitochondria`.
