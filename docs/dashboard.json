@@ -1,25 +1,9 @@
 {
   "generated": "2026-06-26",
-  "lastRunAt": "2026-06-26T13:42:38Z",
+  "lastRunAt": "2026-06-26T14:12:32Z",
   "lastRun": "26 Jun 2026",
   "nextRun": "Next run ~27 Jun 2026",
   "studies": [
-    {
-      "title": "Phase 2 Study of Inebilizumab (Uplizna) in ME/CFS and Post-COVID Syndrome (NKSG/Charité)",
-      "status": "soon",
-      "statusLabel": "Planned",
-      "location": "Charité – Universitätsmedizin Berlin (NKSG), Berlin",
-      "link": "https://www.mecfs.de/therapie-von-me-cfs/",
-      "isNew": true
-    },
-    {
-      "title": "Semaglutide (GLP-1 Receptor Agonist) for ME/CFS Symptoms and Biomarker Identification (Scheibenbogen/Charité)",
-      "status": "soon",
-      "statusLabel": "Planned",
-      "location": "Charité – Universitätsmedizin Berlin, Institute of Medical Immunology, Berlin",
-      "link": "https://solvecfs.org/february-2026-catalyst-awards/",
-      "isNew": true
-    },
     {
       "title": "IMPACT — Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
       "status": "recruiting",
@@ -35,9 +19,65 @@
       "location": "—",
       "link": "https://mitodicure.com/",
       "isNew": false
+    },
+    {
+      "title": "Phase 2 Study of Inebilizumab (Uplizna) in ME/CFS and Post-COVID Syndrome (NKSG/Charité)",
+      "status": "soon",
+      "statusLabel": "Planned",
+      "location": "Charité – Universitätsmedizin Berlin (NKSG), Berlin",
+      "link": "https://www.mecfs.de/therapie-von-me-cfs/",
+      "isNew": false
+    },
+    {
+      "title": "Semaglutide (GLP-1 Receptor Agonist) for ME/CFS Symptoms and Biomarker Identification (Scheibenbogen/Charité)",
+      "status": "soon",
+      "statusLabel": "Planned",
+      "location": "Charité – Universitätsmedizin Berlin, Institute of Medical Immunology, Berlin",
+      "link": "https://solvecfs.org/february-2026-catalyst-awards/",
+      "isNew": false
     }
   ],
   "papers": [
+    {
+      "title": "Comparative Gut Microbiome Alterations in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome and Long COVID-19 Syndrome",
+      "authors": "Donchev D, Nikolova R, Vaseva K, Taskov H, Murdjeva M, Maes M, Ivanov IN",
+      "journal": "Biomedicines",
+      "date": "May 2026",
+      "summary": "Directly compared the gut bacteria of ME/CFS patients and long COVID patients, finding shared changes — particularly missing 'good' bacteria and excess of others — that were not seen in healthy people.",
+      "why": "The first head-to-head comparison of gut microbiome changes in ME/CFS and long COVID; the overlap supports the idea that both conditions share underlying gut-related biology, pointing toward shared treatment strategies such as gut microbiome repair.",
+      "link": "https://doi.org/10.3390/biomedicines14061183",
+      "isNew": true
+    },
+    {
+      "title": "Development and validation of blood-based diagnostic biomarkers for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) using EpiSwitch® 3-dimensional genomic regulatory immuno-genetic profiling",
+      "authors": "Hunter E, Alshaker H, Bundock O, Weston C, Bautista S, Gebregzabhar A, Virdi A, Croxford J, Dring A, Powell R, Vugrinec D, Kingdon C, Wilson C, Dowrick S, Green J, Akoulitchev A, Pchejetski D",
+      "journal": "Journal of Translational Medicine",
+      "date": "Oct 2025",
+      "summary": "Developed and validated a blood test using a novel technique that reads three-dimensional patterns of DNA folding; the test correctly identified ME/CFS patients versus healthy people with 96% accuracy in an independent test group.",
+      "why": "One of the highest-accuracy diagnostic blood tests ever reported for ME/CFS — a disease that currently has no objective diagnostic test — and reveals specific immune and brain-inflammation pathways as potential drug targets.",
+      "link": "https://doi.org/10.1186/s12967-025-07203-w",
+      "isNew": true
+    },
+    {
+      "title": "Heightened innate immunity may trigger chronic inflammation, fatigue and post-exertional malaise in ME/CFS",
+      "authors": "Che X, Ranjan A, Guo C, Zhang K, Goldsmith R, Levine S, Moneghetti KJ, Zhai Y, Ge L, Mishra N, Hornig M, Bateman L, Klimas NG, Montoya JG, Peterson DL, Klein SL, Fiehn O, Komaroff AL, Lipkin WI",
+      "journal": "npj Metabolic Health and Disease",
+      "date": "Sep 2025",
+      "summary": "Found that immune cells from ME/CFS patients overreact to signals from bacteria and viruses — producing far more inflammation-driving molecules than healthy controls — and that this overreaction is linked to disrupted energy production and gut bacteria imbalances.",
+      "why": "A large multi-institutional study (led by Ian Lipkin at Columbia) that pins down overactive 'first-response' immunity as a key driver of ME/CFS symptoms, and identifies several existing drugs — including metformin and rapamycin — as possible treatments to test.",
+      "link": "https://doi.org/10.1038/s44324-025-00079-w",
+      "isNew": true
+    },
+    {
+      "title": "Patient-reported treatment outcomes in ME/CFS and long COVID",
+      "authors": "Eckey M, Li P, Morrison B, Bergquist J, Davis RW, Xiao W",
+      "journal": "PNAS",
+      "date": "Jul 2025",
+      "summary": "A survey of nearly 4,000 patients across ME/CFS and long COVID asked what helped them from over 150 treatments; people with both conditions reported remarkably similar responses — and graded exercise therapy was rated least helpful.",
+      "why": "The largest real-world treatment survey in ME/CFS/long COVID, showing the two conditions behave similarly and pointing to which symptom subtypes (e.g. autonomic, cognitive) respond best to which drug classes — directly useful for designing future trials.",
+      "link": "https://doi.org/10.1073/pnas.2426874122",
+      "isNew": true
+    },
     {
       "title": "Pathophysiological, Translational, and Diagnostic Aspects of ME/CFS: A Focus on Skeletal Muscle Involvement",
       "authors": "Fanò-Illic G, Coscia F, Gigliotti PV, Checcaglini F, Carraro U, Fulle S, Mancinelli R",
@@ -46,7 +86,7 @@
       "summary": "A detailed review of how muscles in ME/CFS fail — they receive too little blood, build up harmful levels of sodium and calcium, produce too much oxidative stress, and lose their normal ability to contract — and how these changes might be detected by standard tests.",
       "why": "Integrates molecular, cellular, and clinical evidence into a single picture of why ME/CFS muscles don't work normally, and proposes markers that could be used for diagnosis — supporting the muscle-focused treatment approach being pursued by researchers including Wirth and Scheibenbogen.",
       "link": "https://doi.org/10.3390/diagnostics16071019",
-      "isNew": true
+      "isNew": false
     },
     {
       "title": "Hyperbaric oxygen therapy improves clinical symptoms and functional capacity and modulates thalamic connectivity in ME/CFS: a prospective cohort study",
