@@ -26,8 +26,9 @@ is `last_check` + `flags` in `data/trials.json`).
   - Kim L, Scheibenbogen C et al., J Transl Med Jun 2026: hyperbaric oxygen therapy — symptoms + thalamic connectivity (PMID 42249466) — HIGH PRIORITY (Scheibenbogen co-author)
   - Huhmar HM et al., Endocr Pract Jun 2026: low vasopressin in ME/CFS (PMID 41475665)
   - Saleem S et al., Blood Coagul Fibrinolysis Jun 2026: dynamic microclot profiling in long COVID/ME/CFS (PMID 42274123)
-- Trials tracked: 2 (open: 1, watchlist: 1) | Papers tracked: 16
-- Notes: All existing papers' isNew reset to false. ClinicalTrials.gov API confirmed only NCT07529197 recruiting in Germany for ME/CFS drug studies. BC007/rovunaptabin had no new ME/CFS trial registration. No new German drug trials in any registry.
+- **One-time deep-research backfill (same day):** +26 verified landmark/notable ME/CFS papers (2011–2025) added as a historical library (isNew=false) — incl. Wirth/Scheibenbogen unifying-hypothesis (2020) & skeletal-muscle (2021), Loebel 2016 & Sotzny 2018 (Scheibenbogen), Haffke 2022 endothelial, Schreiner/Prusty HHV-6, DecodeME GWAS, NIH deep-phenotyping (Walitt 2024), Hornig/Lipkin 2015, Montoya 2017, Naviaux 2016, Fluge PDH/RituxME/cyclophosphamide, Systrom & Keller CPET, Giloteaux/Xiong microbiome, Esfandyarpour nanoneedle, Nakatomi PET, BioMapAI & cell-free-RNA (2025), Komaroff/Lipkin 2021, ICC (2011) & IOM/SEID (2015), Lim 2020 prevalence.
+- Trials tracked: 2 (open: 1, watchlist: 1) | Papers tracked: 42 (3 new today + 39 library)
+- Notes: All existing papers' isNew reset to false; only today's 3 new finds are flagged. ClinicalTrials.gov confirmed only NCT07529197 recruiting in Germany for ME/CFS drug studies. Landmark trial *results* (RituxME, BC007, cyclophosphamide) are recorded as papers, not in trials.json (which stays scoped to recruiting/planned German drug trials).
 
 ## 2026-06-25 (second run — papers track)
 - Sources checked: ClinicalTrials.gov API (ME/CFS + Germany), DRKS, CTIS, WHO ICTRP, Mitodicure.com (unreachable — site down), Charité CFC, PubMed (Wirth/Scheibenbogen author + ME/CFS topic queries), Europe PMC, medRxiv
