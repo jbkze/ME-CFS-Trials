@@ -7,25 +7,28 @@ year: 2025
 venue: "Journal of Cachexia, Sarcopenia and Muscle"
 doi: 10.1002/jcsm.13669
 url: https://doi.org/10.1002/jcsm.13669
-pdf: https://doi.org/10.1002/jcsm.13669
-text: null
+pdf: literature/papers/2025-scheibenbogen-key-pathophysiological-role-skeletal/paper.pdf
+text: literature/papers/2025-scheibenbogen-key-pathophysiological-role-skeletal/paper.txt
 tags: [metabolism, skeletal-muscle, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: scheibenbogen2025
+cover: "[[literature/papers/2025-scheibenbogen-key-pathophysiological-role-skeletal/cover.png]]"
 ---
 
 # Key Pathophysiological Role of Skeletal Muscle Disturbance in Post COVID and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Accumulated Evidence
 
 ## Related files
+![[literature/papers/2025-scheibenbogen-key-pathophysiological-role-skeletal/paper.pdf]]
 - [[literature/papers/2025-scheibenbogen-key-pathophysiological-role-skeletal/citation.bib]]
+- [[literature/papers/2025-scheibenbogen-key-pathophysiological-role-skeletal/paper.txt]]
 
 ## Summary
 
 Pulls together evidence that ME/CFS muscles get too little blood and build up salt (sodium) and calcium, which damages the muscle cells' energy units.
 
-> _No PDF available_ — Wiley — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

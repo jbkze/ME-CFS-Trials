@@ -7,25 +7,28 @@ year: 2026
 venue: "Cell Reports Medicine"
 doi: 10.1016/j.xcrm.2026.102647
 url: https://doi.org/10.1016/j.xcrm.2026.102647
-pdf: https://doi.org/10.1016/j.xcrm.2026.102647
-text: null
+pdf: literature/papers/2026-hoel-charting-circulating-proteome-using/paper.pdf
+text: literature/papers/2026-hoel-charting-circulating-proteome-using/paper.txt
 tags: [immunology, skeletal-muscle, biomarker, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: hoel2026
+cover: "[[literature/papers/2026-hoel-charting-circulating-proteome-using/cover.png]]"
 ---
 
 # Charting the circulating proteome in ME/CFS using cross-system profiling to uncover mechanistic insights
 
 ## Related files
+![[literature/papers/2026-hoel-charting-circulating-proteome-using/paper.pdf]]
 - [[literature/papers/2026-hoel-charting-circulating-proteome-using/citation.bib]]
+- [[literature/papers/2026-hoel-charting-circulating-proteome-using/paper.txt]]
 
 ## Summary
 
 Measured thousands of proteins in patients' blood and found many that differ from healthy people — signs of an overactive immune system and poor blood flow to the muscles.
 
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
