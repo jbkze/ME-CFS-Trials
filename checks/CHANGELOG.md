@@ -15,6 +15,26 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-26 (run 3 — scheduled autonomous, 14:12 UTC)
+- Sources checked: ClinicalTrials.gov (Germany/ME/CFS all statuses), DRKS, CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC, mecfs.de/therapie, mecfs-research.org/researchupdate, PubMed (ME/CFS 2026 + author searches), medRxiv, bioRxiv, Health Rising, The Sick Times, riffreporter.de (BC007/APTA)
+- **Trials** — no new in-scope trials; all 4 existing trials verified unchanged
+  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charité) [HIGH PRIORITY]
+  - MDC002 (Mitodicure): still pre-clinical/not_yet_recruiting [HIGH PRIORITY]
+  - Inebilizumab Phase 2 (Scheibenbogen/NKSG): still not_yet_recruiting
+  - Semaglutide GLP-1 (Scheibenbogen/Charité): still not_yet_recruiting
+  - Flags cleared: new flags removed from inebilizumab and semaglutide (no longer new this run)
+  - Notable: Daratumumab CTIS 2024-520094-13-00 (ResetME Phase 2, 66 pts) confirmed Norway-only — no German sites; out of scope
+  - Notable: RAPID REVIVE (vidofludimus, CTIS 2024-511628-16-00, Frankfurt) — German multicenter but fully recruited (active_not_recruiting); out of scope for enrollment tracker
+  - Notable: BC007/rovunaptabin ME/CFS study (APTA Therapeutics, Erlangen) planned for 2026 — news lead only (riffreporter.de), no registry ID or official institutional page yet; not added until confirmed
+- **Papers** — 4 new confirmed papers added (47 total; 3 with PDF, 1 no OA PDF)
+  - Eckey M et al., PNAS Jul 2025: patient-reported treatment outcomes in ME/CFS + long COVID, 3,925 patients, 150+ treatments — PMID 40627388 (missed in June 26 backfill)
+  - Che X, Lipkin WI et al., npj Metab Health Dis Sep 2025: heightened innate immunity triggers PEM in ME/CFS; metformin/rapamycin suggested — DOI 10.1038/s44324-025-00079-w (missed in June 26 backfill)
+  - Hunter E et al., J Transl Med Oct 2025: EpiSwitch blood test, 96% accuracy for ME/CFS diagnosis — PMID 41057909 (missed in June 26 backfill)
+  - Donchev D et al., Biomedicines May 2026: comparative gut microbiome ME/CFS vs long COVID — DOI 10.3390/biomedicines14061183 (new)
+  - isNew cleared on fano-illic-2026-skeletal-muscle (no longer new this run)
+- Trials tracked: 4 (open: 1 [NCT07529197], watchlist: 3 [MDC002 + inebilizumab Phase 2 + semaglutide])
+- Notes: Nationale Dekade gegen Postinfektiöse Erkrankungen (NDPE) first funding call opened June 1, 2026 (deadline Sep 2, 2026) — new drug trials may emerge Q4 2026/Q1 2027. Watch for BC007/APTA Therapeutics official announcement and daratumumab expansion to German sites.
+
 ## 2026-06-26 (run 2 — correction, commit 52de042)
 - Correction to afternoon run below: VERI-LONG (NCT05697640, active_not_recruiting) removed from trials.json — status was never in the allowed intake set (recruiting / enrolling_by_invitation / not_yet_recruiting); TRIALS.md and dashboard.json regenerated
 - BibTeX key corrected: `fanò-illic2026` → `fano2026` (ASCII-safe, surnameYYYY convention); author format fixed: `Surname Initial` → `Surname, Initial`; summary frontmatter id/bibtex_key updated to match

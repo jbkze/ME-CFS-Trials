@@ -1,0 +1,1715 @@
+RESEARCH
+Open Access
+© The Author(s) 2025, corrected publication 2025. Open Access  This article is licensed under a Creative Commons Attribution 4.0 International 
+License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit 
+to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other 
+third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. 
+If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds 
+the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit ​h​t​t​p​:​/​/​c​r​e​a​t​i​v​e​c​o​m​
+m​o​n​s​.​o​r​g​/​l​i​c​e​n​s​e​s​/​b​y​/​4​.​0​/.
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+https://doi.org/10.1186/s12967-025-07203-w
+Journal of Translational 
+Medicine
+*Correspondence:
+Dmitri Pchejetski
+d.pshezhetskiy@uea.ac.uk
+Full list of author information is available at the end of the article
+Abstract
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a debilitating, multifactorial disorder characterised 
+by profound fatigue, post-exertional malaise, cognitive impairments, and autonomic dysfunction. Despite its 
+significant impact on quality of life, ME/CFS lacks definitive diagnostic biomarkers, complicating diagnosis and 
+management. Recent evidence highlights potential blood tests for ME/CFS biomarkers in immunological, genetic, 
+metabolic, and bioenergetic domains. Chromosome conformations (CCs) are potent epigenetic regulators of gene 
+expression and cross-tissue exosome signalling. We have previously developed an epigenetic assay, EpiSwitch®, that 
+employs an algorithm-based CCs analysis. Using EpiSwitch® technology, we have shown the presence of disease-
+specific CCs in peripheral blood mononuclear cells (PBMCs) of patients with amyotrophic lateral sclerosis (ALS), 
+rheumatoid arthritis (RA), prostate and colorectal cancers, diffuse Large B-cell lymphoma and severe COVID-19. In 
+a recent paper, we have identified a profile of systemic chromosome conformations in cancer patients reflective 
+of the predisposition to respond to immune checkpoint inhibitors, PD-1/PD-L1 antagonists, with 85% accuracy. In 
+this Retrospective case/control study (EPI-ME, Epigenetic Profiling Investigation in Myalgic Encephalomyelitis), we used 
+whole blood samples retrospectively collected from n = 47 patients with severe ME/CFS and n = 61 age-matched 
+healthy control patients to perform whole-genome 3D DNA screening for CCs correlating to ME/CFS diagnosis. 
+We identified a 200-marker model for ME/CFS diagnosis (Episwitch®CFS test). First testing on the retrospective 
+independent validation cohort demonstrated a strong systemic ME/CFS signal with a sensitivity of 92% and a 
+specificity of 98%.Pathways analysis revealed several likely contributors to the pathology of ME/CFS, including 
+interleukins, TNFα, neuroinflammatory pathways, toll-like receptor signalling and JAK/STAT. Comparison with 
+pathways involved in the action of Rituximab and glatiramer acetate (Copaxone) (therapies with potential in ME/
+Development and validation of blood-
+based diagnostic biomarkers for Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome 
+(ME/CFS) using EpiSwitch® 3-dimensional 
+genomic regulatory immuno-genetic profiling
+Ewan Hunter1, Heba Alshaker2, Oliver Bundock1, Cicely Weston1, Shekinah Bautista1, Abel Gebregzabhar1, Anya Virdi1, 
+Joseph Croxford1, Ann Dring1, Ryan Powell1, Dominik Vugrinec1, Caroline Kingdon3, Carol Wilson4, Sarah Dowrick4, 
+Jayne Green1, Alexandre Akoulitchev1 and Dmitri Pchejetski2,4*
+
+Page 2 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+Introduction
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome 
+(ME/CFS) is a debilitating, multifactorial disorder char­
+acterised by profound fatigue, post-exertional malaise, 
+cognitive impairments, and autonomic dysfunction. ME/
+CFS affects millions worldwide, presenting with hetero­
+geneous symptoms and unclear aetiology.
+Despite its significant impact on quality of life, ME/CFS 
+lacks definitive diagnostic biomarkers, complicating diag­
+nosis and management. The absence of specific diagnos­
+tic tests necessitates reliance on clinical criteria, which 
+can often lead to misdiagnosis or delayed diagnosis.
+Recent research has focused on identifying molecular 
+markers and developing blood-based diagnostic tests to 
+improve clinical outcomes. There is accumulating evi­
+dence on molecular biomarkers for ME/CFS, highlight­
+ing advancements in immunological, genetic, metabolic, 
+and bioenergetic domains (reviewed in [1]). Despite these 
+advances, researchers have not yet established objec­
+tive diagnostic tools or elucidated pathophysiological 
+mechanisms.
+The first hallmark of ME/CFS resulting from these 
+studies is Immune dysregulation. Studies have reported 
+altered cytokine profiles, including elevated pro-inflam­
+matory cytokines such as interleukin-1β (IL-1β), IL-6, 
+IL-10, tumour necrosis factor-alpha (TNF-α), and inter­
+feron gamma-induced protein 10 (IP-10) [1]. Addition­
+ally, increased expression of IL-8 and TNF-α suggests 
+activation of the NF-κB signalling pathway, contributing 
+to chronic inflammation [2]. Natural killer (NK) cell dys­
+function, characterised by reduced cytotoxicity, has been 
+observed in ME/CFS patients [3]. Autoantibodies target­
+ing neurotransmitter receptors, including β2-adrenergic 
+and muscarinic receptors, have also been identified, 
+implicating autoimmunity in disease pathogenesis [4]. 
+This was confirmed in a recent study where immune 
+phenotyping of cerebrospinal fluid of ME/CFS patients 
+revealed distinct immunotypes [5]. These findings over­
+lap with post-COVID patients who showed upregula­
+tion of JAK/STAT signalling and a prolonged immune 
+response [6].
+The second hallmark of ME/CFS is transcriptional or 
+epigenetic dysregulation in genes involved in immune 
+response, energy metabolism, and neurotransmission. 
+Notably, upregulation of purinergic receptors (P2 × 4, 
+P2 × 5), transient receptor potential vanilloid 1 (TRPV1), 
+and acid-sensing ion channel 3 (ASIC3) has been associ­
+ated with post-exertional malaise [7]. DNA methylation 
+changes have been implicated in ME/CFS. De Vega et al. 
+identified over 12,000 differentially methylated sites in 
+ME/CFS patients compared to healthy controls, mostly 
+involving immune and metabolic pathways [8]. MicroR­
+NAs (miRNAs), small non-coding RNAs regulating 
+gene expression, have emerged as potential biomark­
+ers. Altered expression of miR-21, miR-34a, miR-92a, 
+miR-126, and miR-200c has been reported in ME/CFS 
+patients [9]. Arcos-Burgos et al. showed that Neurodevel­
+opment Genes Encoding Olduvai Domains Link ME/CFS 
+to Neuropsychiatric Disorders [10].
+The third hallmark of ME/CFS is reported disruptions 
+in energy metabolism. Naviaux et al. reported abnor­
+malities in metabolites related to the tricarboxylic acid 
+(TCA) cycle, amino acid metabolism, and lipid metab­
+olism, indicating a hypometabolic state [11]. Raman 
+spectroscopy studies have demonstrated altered levels 
+of aromatic amino acids (tryptophan, tyrosine, phenyl­
+alanine), glycerol, glycogen, and glucose in PBMCs of 
+ME/CFS patients, reflecting impaired energy produc­
+tion and lipid metabolism [12]. Mitochondrial dysfunc­
+tion has been implicated in ME/CFS pathophysiology. A 
+nanoelectronics-based assay measuring cellular imped­
+ance in response to hyperosmotic stress revealed distinct 
+patterns in ME/CFS patients, suggesting impaired cellu­
+lar energy metabolism [13]. A recent large cohort study 
+identified hundreds of metabolomic traits that differed 
+significantly between cases and controls; however, single 
+traits could not clearly distinguish cases from controls, 
+and no combinatorial test was suggested [14].
+Despite promising findings, several challenges hinder 
+the clinical implementation of these biomarkers:
+ 	•
+Heterogeneity: ME/CFS exhibits diverse clinical 
+presentations, complicating the identification of 
+universal biomarkers.
+ 	•
+Reproducibility: Variability in study designs, 
+sample sizes, and analytical methods affects the 
+reproducibility of findings.
+ 	•
+Validation: Most studies require validation in larger, 
+independent cohorts to confirm the diagnostic utility 
+of proposed biomarkers.
+Future research should focus on standardising methodol­
+ogies, integrating multi-omics approaches, and conduct­
+ing longitudinal studies to establish reliable, clinically 
+applicable diagnostic tools.
+CFS treatment) identified IL2 as a shared pathway with clear patient clustering, indicating a possibility of a potential 
+responder group for targeted treatment.
+Keywords  Myalgic encephalomyelitis, Chronic fatigue syndrome, Autonomic dysregulation, ME/CFS, Diagnosis, 
+Chromosome conformations, Epigenetics, Blood-based biomarkers, 3D-genomic profiling, Blood test
+
+Page 3 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+While the reproducibility of findings between the 
+included publications was limited, the majority of the 
+studies validated the involvement of immune dysfunction 
+in the pathology of ME/CFS and the use of PBMCs as a 
+model to investigate the underlying pathology and the 
+mechanism of illness.
+Epigenetic changes are a powerful regulator of inflam­
+matory and metabolic processes [15]. Chromosomal 
+loops are the 3D chromatin structures that exist in all liv­
+ing cells and determine gene expression and genome net­
+work cross-regulation [16]. We have developed a novel 
+epigenetic assay (EpiSwitch® Explorer Assay), a bespoke 
+design based on Agilent SurePrint 1 M array, that allows 
+simultaneous screening for 106 of 3D chromosomal 
+conformations (CCs) in the circulating blood cells [17]. 
+Using EpiSwitch® technology, we have identified epigen­
+etic signatures correlating to metabolic conditions and 
+neuroinflammatory diseases such as amyotrophic lateral 
+sclerosis (ALS) [18] and inflammatory conditions such 
+as rheumatoid arthritis (RA) [19]. In two recent studies, 
+we have identified chromosome conformations specific 
+to the response to PD-1/PD-L1 immune therapy [20] and 
+urothelial cancer.
+Interestingly, although the 3D genomic regulatory 
+architecture encompasses the whole genome, by mapping 
+the top 3D genomic biomarkers to the closest genetic loci 
+captured by their topological control (within 3Kb), it is 
+possible to broaden the biological insights into genes, 
+pathways and protein networks under the influence of 3D 
+genomic regulation and associated cellular phenotype, 
+contributing to the pathology of a disease and identify 
+potential therapeutic strategies.
+In a recent study, we have used EpiSwitch® Explorer 
+array platform and Machine learning algorithms to pre­
+dict how individuals respond to COVID-19 infection. We 
+have developed a blood-based prognostic test to predict 
+the severity of infection, and 3D genomic markers iden­
+tified potential treatments in biological pathways with 
+direct relevance to immune system function, including 
+T-cell signalling, macrophage-stimulating protein (MSP)-
+RON signalling, and calcium signalling [21]. EpiSwitch®-
+based commercial tests are now available to diagnose 
+prostate cancer with 94% accuracy (PSE test) [22] and 
+response to immune checkpoint inhibitors across 14 can­
+cers with 85% accuracy (CiRT test) [20].
+In this Retrospective case/control study (EPI-ME, Epi­
+genetic Profiling Investigation in Myalgic Encephalomy­
+elitis), we used blood samples from n = 47 patients with 
+severe ME/CFS and n = 61 age-matched healthy controls. 
+Whole Genome DNA screening for CCs correlating to 
+ME/CFS diagnosis identified a 200-marker model for 
+ME/CFS diagnosis (Episwitch®CFS test). Independent 
+validation cohort testing demonstrated a remarkable sen­
+sitivity of 92% and specificity of 98% with overall diag­
+nostic accuracy of 96% for ME/CFS diagnosis. Gene and 
+pathway analysis revealed clear clustering in correlation 
+to IL2, indicating a possibility of a potential responder 
+group for targeted therapies.
+Materials and methods
+Patient characteristics
+In this proof-of-concept retrospective case-control study, 
+whole blood samples were obtained from the London 
+School of Hygiene & Tropical Medicine Biobank for 
+n = 47 patients with ME/CFS and n = 20 age-matched 
+control patients. In addition, samples for n = 41 control 
+patients were used from the OBD repository (Table 1). Of 
+note, the imbalance of ME/CFS towards female patients 
+reflects the proportional sex ratio in patients with severe 
+ME/CFS.
+Sample-size 
+and 
+power 
+calculations 
+using 
+the 
+automated sample size function with parameters 
+(delta = 0.379, sigma = 0.3, power = 0.85), determined that 
+24 samples per group are sufficient to achieve 85% statis­
+tical power, which corresponds to detecting an effect size 
+equivalent to a fold-change (FC) > 1.5 or an odds ratio 
+(OR) > 1.2. The chosen validation sample (19 cases / 41 
+controls) was intended as a moderate-sized independent 
+cohort to test generalisability and to obtain reasonably 
+informative estimates of sensitivity and specificity, suffi­
+cient for an initial, proof-of-concept validation.
+ME/CFS inclusion criteria: both biological sexes, age 
+20–80 years old, severe CFS – housebound.
+ME/CFS exclusion criteria: any history of chronic ill­
+nesses, current or previous cancer, autoimmune con­
+ditions or any DNA-modifying or disease-modifying 
+therapies or biological therapies. There was no available 
+data regarding minor comorbidities and previous infec­
+tion status, including glandular fever or COVID.
+Controls Inclusion criteria: both biological sexes with 
+a preferred equal distribution, and age 20–80 years old. 
+Reasonable exercise tolerance, none of the four key CFS 
+symptoms present or in the past. Preferably, an existing 
+history of glandular fever or COVID.
+Controls Exclusion criteria: any history of chronic ill­
+nesses, current or previous cancer, autoimmune con­
+ditions or any DNA-modifying or disease-modifying 
+therapies or biological therapies.
+Table 1  Summary of clinical characteristics for patient cohorts used for biomarker discovery
+Cohort
+N (total)
+Biobank
+OBD
+Male
+Female
+Age (mean)
+Control
+61
+20
+41
+39
+22
+50
+ME/CFS
+47
+47
+0
+8
+39
+45
+
+Page 4 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+The study was approved by the UK National Ethics 
+Service Research Ethics Service (NRES), Research Eth­
+ics Committee (REC), and conducted in accordance with 
+Good Clinical Practice guidelines and the Declaration of 
+Helsinki. All participants provided written informed con­
+sent. All data were pseudo-anonymised. All procedures 
+and protocols were performed in accordance with the 
+relevant guidelines and regulations.
+Preparation of 3D genomic templates
+A 5 mL full blood sample was collected from ME/CFS 
+patients and controls using BD Vacutainer® plastic EDTA 
+tubes. The tubes were frozen and stored at − 80 °C. Iso­
+lation of DNA from the whole cell lysate was performed 
+as previously described [18], and DNA was fixed with 
+formaldehyde. To identify interchromatin loops, fixed 
+chromatin was digested into fragments with TaqI restric­
+tion enzyme, and the resulting DNA strands were joined, 
+favouring cross-linked fragments. The cross-links were 
+reversed, and PCR was performed using the primers 
+designed using the algorithms of the EpiSwitch® software 
+(as described in detail in [18, 23–25]).
+CC libraries were quantified using the Quant-iTTM 
+Picogreen dsDNA Assay kit (Invitrogen) and normalised 
+to 5 ng/µL. The EpiSwitch® Explorer arrays were per­
+formed as published previously, with the modification 
+of only one sample being hybridised to each array slide 
+in the Cy3 channel. EpiSwitch® Explorer arrays, based on 
+the Agilent SureSelect array platform, allow for the highly 
+reproducible, non-biased interrogation of ~ 1.1  million 
+anchor sites for 3D genomic interactions (964,631 experi­
+mental probes and 2500 control probes).
+Custom microarray design
+Custom microarrays were designed through the 
+EpiSwitch® software that uses a pattern recognition algo­
+rithm based on DNA sequence, which operates on Bayes­
+ian modelling and yields a probability score of whether a 
+region is involved in long-range chromatin interactions. 
+GRCh38 human genome assembly was annotated across 
+~ 1.2 million sites, and the potential to form long-range 
+chromosome conformations [18, 19, 24–27]. The most 
+probable interactions were identified and filtered on 
+probabilistic score. Predicted interactions were limited 
+to EpiSwitch® sites larger than 10 kb and less than 300 kb 
+apart. Repeat masking and sequence analysis were used 
+to ensure unique marker sequences for each interaction. 
+The EpiSwitch® Explorer array (Agilent Technologies, 
+Product Code X-HS-AC-02), containing 60-mer oligonu­
+cleotide probes, was designed to interrogate potential 3D 
+genomic interactions. 964,631 experimental and 2,500 
+control probes were added to a 1 × 1 M CGH microar­
+ray slide design. The experimental probes were placed on 
+the design in singlicate with the controls in groups of 250. 
+The control probes consisted of six different EpiSwitch® 
+interactions generated during the extraction processes 
+and used to monitor library quality. Four external inline 
+control probe designs were added to detect non-human 
+(Arabidopsis thaliana) spike-in DNA during the sample 
+labelling protocol to provide a standard curve and con­
+trol for labelling. The external spike DNA consists of 
+400 bp ssDNA fragments from genomic regions of A. 
+thaliana. Array-based comparisons were performed as 
+described previously, with the modification of only one 
+sample being hybridised to each array slide in the Cy3 
+channel [18, 19, 24–27].
+Microarray statistical analysis
+The cohorts of analysed samples were normalised by 
+background correction and quantile normalisation, using 
+the EpiSwitch® R analytic package, which is built on the 
+Limma Rank Product, tidyverse libraries. The datasets 
+were combined into sample sets by processing batch. 
+Data were corrected for batch effects using ComBat R 
+script. The initial dataset was randomly partitioned into 
+training and test sets using the createDataPartition func­
+tion from the caret package in R. This partitioning was 
+performed prior to any statistical analysis, ensuring that 
+marker selection and model training were restricted to 
+the training set only. The top 200 EpiSwitch® CCS mark­
+ers were identified exclusively within the training sam­
+ples, and the predictive model was developed solely from 
+these data. To minimise potential bias, the following 
+safeguards were implemented. Randomisation: samples 
+were randomised prior to analysis and balanced across 
+batches to prevent systematic bias. Blinding: laboratory 
+staff processing samples were blinded to clinical status. 
+Batch correction: technical variation across processing 
+runs was addressed using ComBat, applied after initial 
+QC filtering. Independent validation: model performance 
+was assessed not only on the internal test partition but 
+also on independent external datasets, providing an unbi­
+ased measure of predictive accuracy. These steps were 
+designed to reduce risk of data leakage and batch-related 
+confounding, thereby ensuring that model performance 
+reflects true biological signal rather than technical or 
+procedural artifacts. Parametric (Limma R library, Linear 
+Regression) and non-parametric (EpiSwitch®RankProd 
+R library) statistical methods were performed to iden­
+tify 3D genomic changes that demonstrated a difference 
+in abundance between classes. The resulting data from 
+both procedures were further filtered based on p-value 
+and abundance scores (AS). Only 3D genomic markers 
+with p-value < = 0.01 and AS (-1.2< ; >1.2) were selected. 
+Both filtered lists from Limma and RankProd analysis 
+were compared and the intersection of the two lists was 
+selected for further processing.
+
+Page 5 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+Machine learning and modelling
+All analysis for this study was performed using libraries 
+which are developed for the R Statistical Language (R ver­
+sion 4.2.0). Feature engineering of the EpiSwitch®Markers 
+was performed using Recursive Feature Elimination 
+(RFE) utilising Xgbtree, The XGBoost algorithm model70 
+was used for final test optimisation [28]. The best-per­
+forming XGBoost model was obtained with 50 boosting 
+rounds (nrounds = 50) and shallow trees (max_depth = 
+3), using a moderate learning rate (eta = 0.6). Regulari­
+sation was implemented through a minimum loss reduc­
+tion requirement (gamma = 0.5) and a low threshold for 
+child node partitioning (min_child_weight = 0.5). To 
+further limit overfitting, we incorporated partial feature 
+sampling (colsample_bytree = 0.5) and row subsampling 
+(subsample = 0.5). The grid search algorithm was used to 
+optimise the hyperparameters and learning rate in each 
+iteration. For drawing inferences, we used SHapley Addi­
+tive exPlanations (SHAP) values that are computed by a 
+game theoretical approach, which quantifies the contri­
+bution of each feature within a model to the final predic­
+tion of an observation.
+Genomic mapping
+The 3D genomic markers from the statistically filtered 
+list with the greatest and lowest abundance scores were 
+selected for genome mapping. Mapping was carried out 
+using Bedtools closest function for the 3 closest protein 
+coding loci – upstream, downstream and within the long-
+range chromosome interaction (Gencode v33). All mark­
+ers were visualized using the EpiSwitch Analytical Portal.
+Biological network/pathway analysis
+Network analysis for functional/biological relevance of 
+the 3D genomic markers was performed using the Hall­
+mark Gene Sets and BioCarta and Reactome Canonical 
+Pathway gene sets from the Molecular Signatures Data­
+base (MSigDB) [29]. Protein interaction networks were 
+generated using the Search Tool for the Retrieval of 
+Interacting Proteins (STRING) database [30].
+Results
+Identifying epigenetic biomarkers
+We have performed whole-genome screening for poten­
+tial ME/CFS biomarkers, comparing full blood samples 
+from patients with severe ME/CFS (housebound) and 
+healthy controls.
+In contrast to prior studies in conditions such as pros­
+tate cancer, colorectal cancer, melanoma, ALS, and 
+rheumatoid arthritis [18, 19, 22, 23, 25, 31, 32], which 
+employed targeted or PCR-based approaches, we have 
+based our ME/CFS model exclusively on the whole-
+genome array format. Rather than reducing the findings 
+of a whole nucleome to 5–6 final markers transferred 
+into a PCR readout, we looked for the established multi-
+marker footprints of ME/CFS on each tested individual. 
+DNA microarray for 1 M CC markers was performed 
+for each sample as described in Materials and Methods. 
+This comprehensive approach allowed us to preserve the 
+complexity of epigenetic signatures associated with ME/
+CFS, avoiding data overfitting at the development stage 
+and enabling the detection of consistent patterns across 
+patients.
+To ensure balanced sex representation, control and 
+ME/CFS samples were rebalanced accordingly and sub­
+sequently divided into training and test sets using an 
+80:20 split (randomised with set.seed1999) (Fig. 1). The 
+training set (n = 39) was used to identify the top 200 dif­
+ferentially expressed markers using both parametric and 
+non-parametric approaches: linear modelling via limma 
+and Rank Product analysis. Markers common to both 
+methods were selected, and their statistical significance 
+was ranked using the limma t-statistic. The resulting top 
+200 overlapping features were used to train an XGBoost 
+classification model [28], employing the same training 
+dataset.
+Figure 2 demonstrates their mapping of the selected 
+200 markers to the human Genome.
+The genetic locality of the top 10 markers/probes that 
+mostly impacted on the model of the 200-marker set, is 
+listed in Table S1.
+These top-performing markers exhibited strong dis­
+criminatory power between ME/CFS patients and con­
+trols, suggesting their potential utility as diagnostic 
+indicators. The probes were distributed across various 
+Fig. 1  Train/test prediction model for identifying CCs corresponding to ME/CFS diagnosis
+ 
+
+Page 6 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+chromosomes, indicating that ME/CFS may involve a 
+complex interplay of genomic regions rather than a single 
+locus of dysregulation.
+24 ME/CFS and 45 control samples were set aside for a 
+final independent validation cohort. These samples were 
+not used at any point during the training phase, allow­
+ing for an unbiased evaluation of model performance. 
+Test performance evaluation and diagnostic accuracy 
+analysis showed a remarkable sensitivity of 92% and 
+specificity of 98% with overall accuracy of 96% (Table 2). 
+This high diagnostic accuracy underscores the strength 
+of the selected epigenetic markers and the utility of the 
+whole-genome approach in distinguishing ME/CFS from 
+healthy phenotypes.
+Identified signalling pathways and their significance
+We mapped the top 200 predictive 3D-genomic mark­
+ers from the EpiSwitch® whole-genome screen to near­
+est genes and then performed protein–protein/network 
+and pathway enrichment analysis (STRING, Reactome/
+Table 2  Test performance evaluation and diagnostic accuracy 
+on an independent validation cohort of 24 ME/CFS and 45 
+control patients
+Test
+Present
+n
+Absent
+n
+Total
+Yes
+True positive
+22
+False positive
+1
+23
+No
+False negative
+2
+True negative
+44
+46
+Total
+24
+45
+Statistic
+Value (%)
+95% Cl, %
+Sensitivity
+91.67
+73-98.97
+Specificity
+97.78
+88.23–99.94
+Positive Likelihood Ratio
+41.25
+5.92-287.58
+Negative Likelihood Ratio
+0.09
+0.02–0.32
+Disease prevalence
+34.78
+23.71–47.21
+Positive Predictive Value
+95.65
+75.94–99.35
+Negative Predictive value
+95.65
+85.36–98.81
+Accuracy
+95.65
+87.82–99.09
+Fig. 2  Whole genome mapping of top 200 CC markers. Red bars indicate mapped probes. Individual human chromosomes are shown on the y-axis 
+(chr1-chr22 and the X chromosome). The heatmap shows the number of markers within a 0.3 Mb genomic window, with black representing a low density 
+of markers and red indicating a high density of markers
+ 
+
+Page 7 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+MSigDB) [30]. The resulting network is densely con­
+nected and strongly enriched for immune and inflamma­
+tory signalling and cellular stress responses, consistent 
+with an immune-dysregulation signal in ME/CFS (Fig. 3, 
+Table S2).
+The key enriched pathways / network features 
+include:
+Interleukin signalling (IL-2, IL-10 and related cas­
+cades). IL-2 emerged as a central hub in the STRING 
+subnetwork: multiple top nodes connect to IL-2 signal­
+ling and T-cell regulation modules. IL-10 and other inter­
+leukins also feature prominently, suggesting dysregulated 
+cytokine networks and altered T-cell/ regulatory-T 
+cell balance. This converges with prior cytokine stud­
+ies reporting altered circulating interleukins in ME/CFS 
+[33].
+TNF / NF-κB axis and innate inflammation. Several 
+top markers map to genes participating in TNF signalling 
+and NF-κB mediated innate responses, consistent with 
+reports of elevated TNF and related inflammatory pro­
+teins in some ME/CFS cohorts. These pathways provide 
+a plausible mechanistic link to systemic symptoms [34].
+Toll-like receptor (TLR) signalling and innate immune 
+sensors. TLR and MyD88-dependent modules are 
+enriched, aligning with therapeutic and mechanistic 
+interest in TLR3 (rintatolimod) and innate immune 
+triggers in CFS. This supports a model in which altered 
+innate sensing contributes to persistent immune activa­
+tion [35, 36].
+JAK/STAT signalling and cytokine-driven transcrip­
+tional programmes. JAK/STAT pathway genes are over-
+represented, consistent with the centrality of cytokine 
+receptor signalling (IL-2, IL-6 families) in the network. 
+JAK/STAT dysregulation is a shared theme across auto­
+immune/inflammatory diseases and provides a mecha­
+nistic bridge between cytokine changes and downstream 
+transcriptional responses [37]. Overlap with autoimmune 
+and neuroinflammatory diseases (MS, RA, SLE, etc.).
+The ME/CFS network shows substantial overlap with 
+pathways implicated in multiple sclerosis, rheuma­
+toid arthritis and other chronic inflammatory disorders 
+(shared nodes: IL-2, IL-10, CD4-T cell markers). This 
+overlap is consistent with the concept of convergent 
+immune pathways across neuroimmune and systemic 
+inflammatory diseases, without implying identical aetiol­
+ogy [38, 39].
+The resulting network revealed extensive connectiv­
+ity between multiple cytokines (such as interleukins and 
+TNF-α), inflammatory disorders (including rheuma­
+toid arthritis, multiple sclerosis, and collagen-induced 
+Fig. 3  String map analysis of the protein–protein interaction network and signal transduction pathways related to the top 200 markers identified on 
+the CC whole genome array in ME/CFS patients versus controls. Nodes represent proteins mapped from the nearest genes to each CCS; edges indicate 
+high-confidence interactions (STRING confidence ≥ 0.8). The network demonstrates dense connectivity enriched for immune-regulatory and inflamma­
+tory pathways. Prominent hubs include IL-2, IL-10, TNFα, and TLR-related proteins, reflecting perturbations in cytokine signalling, innate immune sensing, 
+and downstream JAK/STAT and NF-κB cascades
+ 
+
+Page 8 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+arthritis), and inflammatory pathways (including neu­
+roinflammation, toll-like receptor signalling, and JAK/
+STAT). These results suggest a strong immunological 
+component in ME/CFS pathology, with epigenetic altera­
+tions aligning closely with known pathways involved in 
+chronic inflammation and immune dysregulation. There 
+was also significant overlap with other diseases (such 
+as Alzheimer’s, melanoma, non-Hodgkin’s lymphoma, 
+ankylosing spondylitis, allergic disease, and psoriasis). 
+This overlap highlights the possibility of shared epigene­
+tic signatures or convergent pathways in chronic systemic 
+and neuroinflammatory conditions.
+It was previously shown that subsets of ME/CFS 
+patients responded well to Rituximab [40]. Copaxone, a 
+therapy for multiple sclerosis, was also suggested for ME/
+CFS treatment [41]. We have compared ME/CFS string 
+networks to those of Rituximab and Copaxone (Figures 
+S1, 2 and Tables S3, 4).
+The comparative analysis of the pathways showed sig­
+nificant overlap in IL10, IL2 and CD4 in all three net­
+works, with more individual overlaps between ME/CFS 
+and each therapy individually (Fig. 4).
+This convergence supports the idea that epigenetic pro­
+files in ME/CFS may inform therapeutic stratification 
+and identify patients more likely to benefit from specific 
+immunomodulatory treatments.
+Of the three signalling molecules overlapping between 
+ME/CFS, rituximab and Copaxone, we have chosen IL-2 
+as the major autocrine and paracrine T cell growth factor, 
+which is, above all, responsible for the clonal expansion 
+of antigen-specific T cells [42]. It also participates in the 
+growth, differentiation, and activation of B cells, NK cells, 
+and cytotoxic T cells and is involved in multiple proin­
+flammatory conditions such as MS [43]. This central role 
+of IL-2 in immune regulation and activation suggests its 
+potential as both a biomarker and therapeutic target in 
+ME/CFS.
+Figure 5 shows the top 50 STRING-connected Nodes 
+in the IL-2-related pathways identified by String analysis 
+(details of pathways in table S5). These nodes revealed 
+tight clustering and robust interconnections, suggesting 
+coordinated dysregulation of IL-2-mediated signalling 
+cascades in ME/CFS patients.
+Biological interpretation & implications
+Immune-centred signal
+The pathway map points to coordinated disturbance of 
+cytokine signalling, innate immune sensing and down­
+stream JAK/STAT transcriptional programmes — a pat­
+tern compatible with (i) peripheral immune activation, 
+(ii) altered T-cell regulation (IL-2/IL-10 axis), and (iii) 
+neuroimmune cross-talk that can produce fatigue, cogni­
+tive symptoms and autonomic dysfunction described in 
+ME/CFS [44].
+Therapeutic stratification potential
+Overlap with therapeutic networks (rituximab, glat­
+iramer acetate/Copaxone) suggests a subset of patients 
+whose epigenetic regulatory architecture reflects path­
+ways targetable by B-cell depletion or T-cell-modulating 
+agents — consistent with prior reports of heterogeneous 
+rituximab responses in ME/CFS and the network overlap 
+we observe [40].
+Concordance with other omics
+The pathway themes mirror findings from DNA-methyla­
+tion and transcriptome studies in ME/CFS that implicate 
+immune, metabolic and neuroendocrine genes, support­
+ing the idea that 3D-genomic CCs capture a complemen­
+tary regulatory layer linked to known disease biology. 
+Methylation studies report immune-related DMPs and 
+pathway enrichment [45].
+A differential response to Rituximab [40] In ME/CFS 
+patients, highlighted the presence of cohorts of patients 
+(~ 60% of the total number), who were more prone to 
+respond. From the ME/CFS nucleome profile, we have 
+selected the most significant CCs (765) that are associ­
+ated with the 50 IL2 STRING genes/proteins. When 
+analysed for these CCs, ME/CFS patients exhibited clear 
+clustering with 18/29 division of the 47 patients analysed 
+(Fig. 6).
+This clear stratification indicates the potential for IL-
+2-related epigenetic markers to serve as a basis for patient 
+subgrouping and personalized treatment approaches.
+Discussion
+Epigenetic and immunological changes in ME/CFS
+Recent studies suggest that epigenetic dysregulation, par­
+ticularly DNA methylation, may contribute to the com­
+plex pathophysiology of ME/CFS, influencing immune, 
+metabolic, and neuroendocrine functions. Genome-
+wide methylation analyses using Illumina 450 K and 
+EPIC arrays, as well as reduced representation bisulfite 
+sequencing (RRBS), have identified thousands of differ­
+entially methylated positions (DMPs) in patients com­
+pared to healthy controls. Trivedi et al. identified over 
+17,000 DMPs across ~ 6,300 genes using the EPIC array, 
+with altered promoter methylation in immune signalling 
+genes [46]. Helliwell et al. utilised RRBS and found meth­
+ylation differences in genes related to neuroimmune and 
+metabolic regulation [45]. De Vega et al. examined gluco­
+corticoid sensitivity and found over 12,000 DMPs, mostly 
+hypermethylated in ME/CFS patients, particularly in 
+metabolism-associated genes [8]. Importantly, this man­
+uscript showed that methylation changes at immune and 
+mitochondrial genes correlated with clinical symptoms 
+and physical functioning scores (RAND-36), suggesting 
+biological links to fatigue and post-exertional malaise. 
+Dynamic methylation shifts during relapse and recovery 
+
+Page 9 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+phases in longitudinal ME/CFS cases implicated the con­
+tribution of stress and inflammatory response genes [47]. 
+Gene-specific studies further reinforce these patterns. 
+Hypomethylation at the NR3C1 promoter (glucocorti­
+coid receptor) has been repeatedly observed, implying 
+HPA-axis dysregulation [48]. Other genes, such as PRF1 
+(perforin) and BDNF (brain-derived neurotrophic fac­
+tor), show altered methylation with potential relevance to 
+immune function and neuroplasticity [49]. However, cau­
+sality remains unresolved, and other non-DNA methyla­
+tion markers (e.g., CCs, histone modifications, miRNAs) 
+have not been well studied.
+In this study, we have conducted a whole-genome CC 
+screen to identify potential biomarkers for ME/CFS using 
+whole blood samples from severely affected patients 
+and matched healthy controls. Unlike our prior studies 
+Fig. 4  Pathway overlap between ME/CFS, Rituximab and Copaxone. (A) Genes identified using Episwitch®CFS screening and String pathway analysis. (B) 
+The VENN diagram illustrates overlapping markers from the classifier EpiSwitch models, which are mapped to genes and then compared to the knowl­
+edge gene networks generated from Copaxone (Glatiramer Acetate) and Rituximab. (C) Names of shared genes between Rituximab, Copaxone and ME/
+CFS biomarker networks
+ 
+
+Page 10 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+Fig. 5  Top 50 STRING-connected Nodes in the IL-2-related pathways identified by String analysis (A) and Pathways Enrichment analysis (B). Pathway 
+enrichment (Reactome and KEGG databases) of the top 50 CCS markers. Significantly over-represented pathways (FDR-adjusted p < 0.05), ranked by 
+enrichment score. Key pathways include interleukin signalling (IL-2, IL-6, IL-10 families), T-cell activation and receptor pathways, inflammatory pathways, 
+and FOXP3 in COVID-19 transcriptional responses
+ 
+
+Page 11 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+in other conditions that focused on a limited number of 
+markers or employed PCR-based methods [18, 19, 22, 
+23, 25, 31, 32], this study utilised a comprehensive DNA 
+microarray platform encompassing 1 million conforma­
+tional capture (CC) markers, preserving the complexity 
+of the epigenetic landscape. A robust five-step train/test 
+predictive model employing XGBoost was applied (Fig. 
+1).
+The top 200 probes identified through feature impor­
+tance analysis were found to be distributed across mul­
+tiple chromosomal regions, suggesting a polygenic 
+signature of ME/CFS (Fig. 2).
+Pathway enrichment using STRING analysis revealed 
+significant involvement of immune and inflammatory 
+signalling pathways, including interleukin cascades, TNF, 
+Toll-like receptors, and JAK/STAT signalling. These 
+pathways demonstrated substantial overlap with those 
+implicated in other inflammatory and neuroimmune dis­
+orders such as multiple sclerosis, rheumatoid arthritis, 
+and Alzheimer’s disease (Fig. 3).
+Comparative network analysis revealed that the ME/
+CFS epigenetic signature shares key molecular nodes 
+(e.g., IL-2, IL-10, CD4) with immunomodulatory thera­
+pies such as Rituximab and Copaxone, which have shown 
+promise in ME/CFS treatment [41, 50].
+IL-2 is a pro-inflammatory cytokine produced primar­
+ily by activated CD4 + T lymphocytes and plays a pivotal 
+role in T-cell proliferation, survival, and differentiation 
+[51]. It is crucial for regulatory T cell (Treg) maintenance 
+and peripheral immune tolerance [52]. The expression 
+of IL-2 by Th17 cells, lymphocytes with a key role in the 
+pathogenesis of MS [53], was reported to be increased in 
+Fig. 6  Hierarchical cluster of CFS patients and IL2-associated CCSs. Rows represent EpiSwitch markers associated with IL2, clustered according to similar­
+ity in marker profiles. Columns represent individual CFS patients, clustered based on their IL2 EpiSwitch signatures. Patient sex is indicated by the color-
+coded annotation bar above the heatmap, as shown in the legend
+ 
+
+Page 12 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+the serum of patients with MS compared to healthy con­
+trols [54]. Higher IL-2 concentrations in CSF compared 
+to controls were also observed [55], and found to be 
+higher during a relapse of MS [56].
+While the aetiology of ME/CFS remains elusive, mul­
+tiple studies suggest that it is a neuroinflammatory con­
+dition (reviewed in [57]). Growing evidence implicates 
+immune dysregulation, particularly involving cytokines 
+such as Interleukin-2 (IL-2), in the pathogenesis of ME/
+CFS [58]. IL-2 may contribute to the neuroinflamma­
+tion observed in ME/CFS. It can cross the blood-brain 
+barrier and influence microglial activation, leading to 
+central sensitisation and cognitive symptoms [59]. Ani­
+mal studies support that peripheral IL-2 administration 
+can induce fatigue-like behaviour and cognitive deficits, 
+possibly via cytokine-induced sickness behaviour mecha­
+nisms [60].
+Therapeutic implications
+Given IL-2’s dual pro-inflammatory and regulatory roles, 
+modulating its signalling presents a therapeutic oppor­
+tunity. Treatments aimed at dampening excessive IL-
+2-driven T-cell activation, such as immunomodulators or 
+cytokine blockers, could be beneficial in subgroups with 
+elevated IL-2 activity. However, clinical trials targeting 
+IL-2 in ME/CFS are lacking, emphasising the need for 
+personalised, biomarker-driven therapeutic approaches 
+[61].
+Several potential therapeutic candidates could fill this 
+role. Patients receiving rituximab (a monoclonal antibody 
+binding CD20) exhibited a significant decline in IL-2 and 
+IFN-γ levels in peripheral blood, a substantial decrease 
+in T-cell activation markers and inflammatory cytokine 
+production, most prominent after repeated rituximab 
+courses [62]. In patients with rheumatoid arthritis, ritux­
+imab significantly reduced serum concentrations of CRP, 
+RF, anti-CCP, IL-2, IL-6, IL-7, IL-10, and ESR [63]. Simi­
+larly to Rituximab, Copaxone significantly reduced the 
+percentage of IL-2-producing CD4 + and CD8 + T cells 
+in patients with MS [64]. Kantegwa et al. showed that in 
+MS patients Copaxone reduced intracellular synthesis 
+of IL-2 and TNF-alpha by naive, memory and effector 
+CD4(+)T cells [65]. The same group showed a signifi­
+cant decrease in the frequency of CD4+ T cells primed 
+for secretion of IL-2 and TNF-α in patients treated with 
+Copaxone [66].
+Literature analysis suggests 12 potential therapies 
+that may simultaneously reduce IL-2 and CD4 + cells 
+and increase IL-10 (Table 3), ranging from biolog­
+ics like Rituximab to small molecules like Tofacitinib. 
+Table 3  12 potential therapies that May simultaneously reduce IL-2 and CD4 + cells and increase IL-10
+Therapy
+Mechanism Summary
+Effect on IL-2
+Effect on CD4 + T 
+Cells
+Effect on IL-10
+Clinical use / Notes
+Rituximab
+Anti-CD20 monoclonal antibody 
+depletes B cells
+Indirectly ↓ IL-2 
+(less T cell help)
+↓ CD4 + T cell 
+activation via B cell 
+depletion
+↑ IL-10 via regulatory 
+B cells
+RA, SLE, Non-Hodg­
+kin’s Lymphoma 
+(NHL), Chronic Lym­
+phocytic Leukemia 
+(CLL)
+Copaxone 
+(Glatiramer)
+Shifts immune profile toward Th2/
+regulatory phenotype
+↓ IL-2 
+production
+↓ Inflammatory 
+CD4 + T cells
+↑ IL-10 from Tregs
+MS
+Rapamycin 
+(Sirolimus)
+mTOR inhibitor, blocks IL-2-mediated T 
+cell proliferation
+↓ IL-2 signaling
+↓ CD4 + T cell 
+proliferation
+↑ IL-10 via Treg 
+expansion
+Autoimmune diseas­
+es, transplantation
+Tacrolimus (FK506)
+Calcineurin inhibitor, prevents IL-2 
+gene transcription
+Strong ↓ IL-2
+↓ CD4 + T cell 
+activation
+↑ IL-10 indirectly
+Used in transplant 
+and autoimmune 
+therapy
+Mycophenolate 
+Mofetil
+Inhibits purine synthesis, suppresses T 
+and B cell proliferation
+↓ IL-2 
+production
+↓ CD4 + proliferation
+↑ IL-10 
+(context-dependent)
+Autoimmune and 
+transplant medicine
+Azathioprine
+Purine analog, cytotoxic to proliferat­
+ing T cells
+↓ IL-2 
+production
+↓ CD4 + proliferation
+↑ IL-10 (indirectly)
+SLE, IBD, autoim­
+mune hepatitis
+Tofacitinib
+JAK inhibitor; blocks IL-2, IL-6, IFN 
+signaling
+↓ IL-2 signaling
+↓ CD4 + activation, 
+reduces inflammation
+↑ IL-10 in innate and 
+adaptive cells
+RA, psoriatic arthritis, 
+ulcerative colitis
+Methotrexate 
+(low-dose)
+Anti-folate; reduces T cell activation 
+and proliferation
+↓ IL-2 
+transcription
+↓ CD4 + T cell 
+numbers
+↑ IL-10 from T cells 
+and monocytes
+RA, psoriasis
+Corticosteroids
+Glucocorticoid receptor agonists, 
+broad immunosuppression
+Strong ↓ IL-2
+↓ CD4 + T cells via 
+apoptosis
+↑ IL-10 transcription
+Autoimmune/in­
+flammatory diseases
+Dimethyl Fumarate
+Activates Nrf2, suppresses proinflam­
+matory T cell pathways
+↓ IL-2 
+production
+↓ CD4 + activation
+↑ IL-10 via immune 
+modulation
+MS, psoriasis
+Hydroxychloroquine
+Interferes with antigen presentation 
+and TLR signaling
+↓ IL-2 from T 
+cells
+↓ CD4 + activation
+↑ IL-10 in macro­
+phages and DCs
+SLE, RA, Sjögren’s 
+syndrome
+Vitamin D3 (Calcitriol) Hormonal immune modulator pro­
+moting regulatory immune tone
+↓ IL-2 synthesis
+↓ Th1 CD4+, ↑ Tregs
+↑ IL-10 via Tregs
+
+Page 13 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+Several of these have already been trialled in ME/CFS or 
+closely related conditions, though safety, tolerability, and 
+immune impact remain critical considerations. Ritux­
+imab, a B–cell–depleting therapy, was evaluated in two 
+Norwegian randomised controlled trials. Early results 
+showed symptom improvement in some patients [40]. 
+A larger phase III trial, however, failed to meet primary 
+endpoints, though it confirmed the drug’s safety profile 
+in ME/CFS patients [50]. A recent publication describ­
+ing a follow-up of ME/CFS patients from two clinical tri­
+als of rituximab or cyclophosphamide showed that after 
+six years, 44.1% of the cyclophosphamide group scored 
+an SF-36 PF of at least 70, and 17.6% of at least 90, sug­
+gesting that cyclophosphamide in a subgroup may modu­
+late the disease course in a beneficial way [67]. However, 
+authors cautioned that cyclophosphamide has toxicity 
+concerns and suggest that, rather than clinical imple­
+mentation, these data should encourage efforts to better 
+understand the disease mechanisms and to search for 
+targeted and less toxic immune modulatory treatments.
+Copaxone (glatiramer acetate) has not been formally 
+trialled in ME/CFS, but its role in promoting regulatory 
+T cells and IL-10 suggests potential utility [68]. Other 
+agents like Rapamycin have shown promise. A recent 
+study of Rapamycin showed significant improvement in 
+fatigue and post-exertional malaise in ME/CFS patients 
+[69].
+Methotrexate, 
+Azathioprine, 
+and 
+Mycophenolate 
+Mofetil are well-established in autoimmunity and offer 
+predictable suppression of IL-2 and CD4 + T cells. While 
+not yet formally studied in ME/CFS, they may be repur­
+posed with careful dosing and monitoring due to the 
+known risks of infection and cytopenia.
+Tofacitinib, a JAK inhibitor, has shown efficacy in 
+inflammatory diseases like rheumatoid arthritis and 
+ulcerative colitis [70]. Its ability to reduce IL-2 signalling 
+and promote IL-10 makes it theoretically attractive for 
+ME/CFS, but risks like thrombosis and viral reactivation 
+would warrant caution.
+Other low-risk options, such as Vitamin D3 and 
+Hydroxychloroquine, offer safer starting points for tri­
+als, especially in mild or early-stage disease. Finally, Cor­
+ticosteroids are known to provide short-term relief but 
+are unsuitable for long-term use due to their side effect 
+profile.
+In conclusion, although not all 12 therapies have been 
+trialled in ME/CFS, many have mechanisms that align 
+with observed immune dysfunction. Future studies 
+should focus on low-dose, precision immunomodulation 
+with a careful eye on immunovigilance, infection risk, 
+and subgroup stratification.
+A focused analysis of IL-2-associated pathways high­
+lighted its central role in T cell regulation and immune 
+activation. Hierarchical clustering based on IL-2-linked 
+CCs demonstrated distinct patient subgroups, indicat­
+ing the potential for biomarker-driven stratification and 
+personalised therapeutic approaches in ME/CFS (Figs. 5 
+and 6).
+Diagnostic value
+Several diagnostic approaches and tests have been previ­
+ously suggested for ME/CFS (summarised in Table 4).
+The field of blood biomarkers for ME/CFs was recently 
+comprehensively reviewed by Clarke et al. [83]. It was 
+noted by the authors that while ‘proposed findings hold 
+promise as potential blood-based quantitative diagnostic 
+biomarkers for ME/CFS, further research is required to 
+determine their specificity to ME/CFS and adoptability 
+for clinical use’. While some studies achieved 90% accu­
+racy, the proposed methods required extensive time, 
+expense and expertise that is beyond current clinical 
+settings. Indeed, while some of the suggested methods 
+achieved ~ 90% accuracy, they required complex labora­
+tory workflows.
+Using an independent validation cohort, the whole 
+DNA approach achieved high classification perfor­
+mance with 92% sensitivity, 98% specificity, and 96% 
+overall accuracy for the detection of ME/CFS (Table 2), 
+Episwitch®CFS test. This high diagnostic accuracy under­
+scores the strength of the selected epigenetic markers 
+and the utility of the whole-genome approach in distin­
+guishing ME/CFS from healthy phenotypes. Based on 
+the observed effect sizes from our independent valida­
+tion cohort (accuracy = 96%, sensitivity = 92%, speci­
+ficity = 98%), the study achieves > 90% power to detect 
+diagnostic performance above 85% at α = 0.05. We 
+acknowledge that larger, multi-centre cohorts are needed 
+to confirm generalisability.
+In contrast to previously published tests, EpiSwitch® 
+has already been translated to clinical diagnostics (e.g., 
+prostate cancer), making it more scalable for clinical 
+adoption. The EpiSwitch® regulatory genome architec­
+ture platform has already demonstrated successful trans­
+lation into clinical diagnostics, distinguishing it from 
+exploratory biomarker modalities [84]. The technology 
+operates under ISO 13,485, ISO 9001, and ISO 15,189 
+standards in CLIA- and UKAS-accredited laboratories, 
+ensuring assay reproducibility, stability, and scalabil­
+ity. Examples of translation include the EpiSwitch PSE 
+test for prostate cancer, which achieved 94% accuracy 
+and reduced unnecessary biopsies by 79% in prospective 
+and real-world studies, and the CiRT test for immuno­
+therapy response, which predicts PD-1/PD-L1 response 
+with 85% accuracy, outperforming standard PD-L1 IHC 
+[20, 22, 85]. Both tests are now commercially available 
+in the US (CPT PLA codes 0433U and 0332U) and UK, 
+with established reimbursement and widespread clini­
+cal uptake. On this foundation, the current ME/CFS 
+
+Page 14 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+biomarkers can follow a clear path to clinical translation, 
+supported by further multi-center validation.
+Our epigenetic chromosome conformation blood test 
+demonstrated a high diagnostic sensitivity and specific­
+ity, surpassing the performance of previously published 
+biomarker-based approaches. In comparison to previous 
+studies, our study benefits from a larger cohort of patients 
+with a homogenous level of fatigue. Importantly, our 
+use of a whole-genome array allowed us to capture the 
+broad, systems-level epigenetic dysregulation associated 
+with ME/CFS, rather than focusing on individual path­
+ways or isolated biomarkers. This comprehensive view 
+reflects the underlying complexity and heterogeneity 
+of disease-related gene regulation. Our findings suggest 
+that chromatin architecture may be a more stable and 
+disease-specific marker in ME/CFS, potentially offering 
+a more reliable, reproducible, and clinically actionable 
+diagnostic platform.
+Although the EpiSwitch® CFS test showed high accu­
+racy in distinguishing ME/CFS from healthy controls, 
+its performance against other chronic inflammatory dis­
+eases has not yet been tested. STRING network analysis 
+indicated overlapping pathways with conditions such as 
+MS and RA, suggesting possible shared epigenetic archi­
+tecture. Future work with external disease cohorts will 
+be essential to confirm disease specificity and refine bio­
+marker panels capable of discriminating ME/CFS from 
+other systemic inflammatory or autoimmune disorders. 
+Given that our cohort was restricted to severe, house­
+bound patients, the applicability of these biomarkers to 
+moderate or mild ME/CFS remains to be investigated 
+in future studies. Although we employed independent 
+Table 4  Comparison of previously published ME/CFS diagnostic blood tests
+Paper Title
+Year 
+Published
+Diagnostic 
+Accuracy
+Method
+Limitations
+Discriminative Validity of Metabolic and Workload Measurements for Identify­
+ing People With Chronic Fatigue Syndrome [71].
+2013
+95.1% 
+accuracy
+Exercise and Gas 
+Exchange Data
+Needs hospital 
+adaptation
+Bottom-up proteomics suggests an association between differential expres­
+sion of mitochondrial proteins and chronic fatigue syndrome [72].
+2016
+sensitiv­
+ity 85%, 
+specificity 
+72%. AUC 
+0.793
+Nano-liquid chroma­
+tography electro­
+spray ionization mass 
+spectrometry
+Clinical test adap­
+tation required
+A nanoelectronics-blood-based diagnostic biomarker for myalgic encephalo­
+myelitis/chronic fatigue syndrome (ME/CFS) [13].
+2019
+n/a
+Blood cells 
+impedance
+Time, expense 
+and expertise
+Assessing cellular energy dysfunction in CFS/ME using a commercially avail­
+able laboratory test [73].
+2019
+n/a
+Mitochondrial 
+energy score
+Poor reliability 
+reported
+Identification of actin network proteins, talin-1 and filamin-A, in circulating 
+extracellular vesicles as blood biomarkers for human myalgic encephalomyeli­
+tis/chronic fatigue syndrome [74].
+2019
+AUROC for 
+circulating 
+EVs was 
+0.802
+Actin network pro­
+teins in circulating 
+extracellular vesicles
+Further validation 
+needed
+Profile of circulating microRNAs in myalgic encephalomyelitis and their rela­
+tion to symptom severity, and disease pathophysiology [75].
+2020
+90% 
+accuracy
+Circulating 
+microRNAs
+Eleven microRNAs, 
+clinical adaptation
+Cell-Based Blood Biomarkers for Myalgic Encephalomyelitis/Chronic Fatigue 
+Syndrome [76].
+2020
+89% sensi­
+tivity 77% 
+specificity
+mTORC1 activity and 
+PBMC viability
+Requires manual 
+counting and 
+microscopy
+Plasma proteomic profiling suggests an association between antigen driven 
+clonal B cell expansion and ME/CFS [77].
+2020
+AUCs of 
+0.774–0.838
+plasma proteomic 
+profiling via 
+UPLC-MS/MS
+Clinical test adap­
+tation required
+Multimodal MRI of myalgic encephalomyelitis/chronic fatigue syndrome: A 
+cross-sectional neuroimaging study toward its neuropathophysiology and 
+diagnosis [78].
+2022
+n/a
+Multimodal MRI
+Requires further 
+development
+Diagnosis of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome With 
+Partial Least Squares Discriminant Analysis: Relevance of Blood Extracellular 
+Vesicles [79].
+2022
+AUC = 0.71
+PBMC and Extracel­
+lular Vesicle miRNAs
+Limited diagnostic 
+power of individ­
+ual or combined 
+miRNA .
+Proteomics and cytokine analyses distinguish myalgic encephalomyelitis/
+chronic fatigue syndrome cases from controls [80].
+2023
+79,1% 
+accuracy
+Proteomics multiplex 
+assay
+Less accuracy 
+than other studies
+Developing a Blood Cell-Based Diagnostic Test for Myalgic Encephalomyelitis/
+Chronic Fatigue Syndrome Using Peripheral Blood Mononuclear Cells [12].
+2023
+91% 
+accuracy
+Raman spectroscopy 
+of PBMCs
+Specific single-cell 
+Raman platform
+Deficient butyrate-producing capacity in the gut microbiome is associated 
+with bacterial network disturbances and fatigue symptoms in ME/CFS [81].
+2023
+n/a
+Microbiome
+Requires further 
+development
+Discriminating Myalgic Encephalomyelitis/Chronic Fatigue Syndrome and 
+comorbid conditions using metabolomics in UK Biobank [82].
+2024
+83% 
+accuracy
+Metabolomics using 
+blood plasma NMR 
+profiles
+NMR translation 
+to hospital setting
+
+Page 15 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+training and validation subsets, both were derived from 
+overlapping biobank sources. Larger-scale, prospec­
+tive validation in multi-centre cohorts will be essential 
+to establish external validity. The observed epigenetic 
+changes may be downstream of chronic immune activa­
+tion; longitudinal and interventional studies (e.g., before/
+after immunomodulatory therapy) are needed to test 
+causality.
+Conclusion
+This study applied a genome-wide epigenetic screening 
+approach using CC microarray profiling to identify ME/
+CFS biomarkers from blood samples of severely affected 
+patients.
+The top 200 predictive probes mapped broadly across 
+the genome and revealed key epigenetic patterns asso­
+ciated with immune dysregulation. STRING analysis of 
+these markers identified enriched pathways involving 
+cytokines (e.g., IL-2, TNF), inflammatory signalling (e.g., 
+TLR, JAK/STAT), and overlap with other chronic inflam­
+matory diseases.
+IL-2 emerged as a central node linking ME/CFS to ther­
+apeutic networks of Rituximab and Copaxone. Hierarchi­
+cal clustering based on IL-2-associated markers showed 
+distinct patient subgroups, supporting potential for pre­
+cision diagnostics and targeted interventions. Targeted 
+modulation of IL-2 pathways may offer novel therapeu­
+tic strategies for ME/CFS, especially in immunologically 
+defined subtypes.
+A five-step XGBoost-based machine learning model, 
+validated across independent cohorts, achieved 92% 
+sensitivity and 98% specificity in diagnosing ME/CFS 
+(Episwitch®CFS test).
+Supplementary Information
+The online version contains supplementary material available at ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​
+g​/​1​0​.​1​1​8​6​/​s​1​2​9​6​7​-​0​2​5​-​0​7​2​0​3​-​w.
+Supplementary Material 1: Figure S1. String map analysis of the signal 
+transduction pathways related to the Copaxone Knowledge Network 
+(Pathways & Disease).
+Supplementary Material 2: Figure S2. String map analysis of the signal 
+transduction pathways related to the Rituximab Knowledge Network 
+(Pathways & Disease).
+Supplementary Material 3: Table S1. Genetic locality of the top 10 markers/
+probes that most impacted the model of the 200-marker set.
+Supplementary Material 4: Table S2. String analysis of signalling pathways 
+related to the top 200 markers identified on the CC whole genome array.
+Supplementary Material 5: Table S3. String analysis of signalling pathways 
+overlapping between the top 200 markers identified on the CC whole 
+genome array and Rituximab-related pathways.
+Supplementary Material 6: Table S4. String analysis of signalling pathways 
+overlapping between the top 200 markers identified on the CC whole 
+genome array and Copaxone-related pathways.
+Supplementary Material 7: Table S5. Top 50 STRING-connected Nodes in 
+the IL-2-related pathways.
+Acknowledgements
+We would like to thank Blake Robinson and Mutaz Issa for help with sample 
+preparation and analysis. We would like to thank Sophie Bellman, Daniel 
+Loftus, Craig Mewton and Tamsin Stickland for valuable suggestions and 
+comments.
+Author contributions
+EH, AA and DP conceived the study. KC, CW and SD supervised clinical 
+samples collection, provided clinical insight in the cohort stratification and 
+reviewed the manuscript. OB, CW, SB, AG, AV, JC, AD, RP, JG, conducted clinical 
+sample preparation and analysis. DV, EH, HA, TG, AA and DP analysed data, 
+wrote and reviewed the manuscript.
+Funding
+This work was funded by Oxford BioDynamics plc.
+Data availability
+Knowledge graphs were generated using the EpiSwitch 3D-Genomics large 
+language model (LLM), which employs a unique embedding approach. 
+This platform integrates advanced semantic parsing with over 1.5 billion 
+experimentally-verified 3D genome interactions. Leveraging proprietary AI 
+models trained on chromatin architecture, it enables mapping of regulatory 
+circuitry, identification of causal mechanisms, and prediction of the effects of 
+non-coding and structural variants within their native 3D genomic context. 
+These tools are deployed on Google Cloud in collaboration with Google. Data 
+is available on request ​h​t​t​p​s​:​/​/​w​w​w​.​o​x​f​o​r​d​b​i​o​d​y​n​a​m​i​c​s​.​c​o​m​/​c​o​n​t​a​c​t​-​u​s​#​c​o​n​t​
+a​c​t​-​u​s​-​f​o​r​m​-​w​r​a​p​p​e​r.
+Declarations
+Ethical approval
+All patients signed informed consent forms prior to providing blood samples. 
+All ethical guidelines were followed.
+Consent for publication
+Written informed consent for publication was obtained from all authors.
+Competing interests
+EH, OB, CW, SB, AG, AV, JC, AD, RP, DV, JG, and AA are full-time employees at 
+Oxford BioDynamics plc and have no other competing financial or other 
+interests. None of the remaining authors have competing interests.
+Author details
+1Oxford BioDynamics Plc, Oxford, UK
+2Norwich Medical School, University of East Anglia, Norwich, UK
+3The London School of Hygiene & Tropical Medicine, London, UK
+4Royal Cornwall Hospitals NHS Trust, Truro, UK
+Received: 27 July 2025 / Accepted: 17 September 2025
+References
+1.	
+Maksoud R, Magawa C, Eaton-Fitch N, Thapaliya K, Marshall-Gradisnik S. Bio­
+markers for myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): 
+a systematic review. BMC Med. 2023;21(1):189. PubMed PMID: 37226227. 
+Pubmed Central PMCID: 10206551.
+2.	
+Sweetman E, Noble A, Edgar C, Mackay A, Helliwell A, Vallings R et al. Current 
+research provides insight into the biological basis and diagnostic potential 
+for myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS). Diagnos­
+tics. 2019;9(3). PubMed PMID: 31295930. Pubmed Central PMCID: 6787691.
+3.	
+Brenu EW, van Driel ML, Staines DR, Ashton KJ, Ramos SB, Keane J, et al. 
+Immunological abnormalities as potential biomarkers in chronic fatigue syn­
+drome/myalgic encephalomyelitis. J Translational Med. 2011;9:81. PubMed 
+PMID: 21619669. Pubmed Central PMCID: 3120691.
+4.	
+Bynke A, Julin P, Gottfries CG, Heidecke H, Scheibenbogen C, Bergquist J. 
+Autoantibodies to beta-adrenergic and muscarinic cholinergic receptors in 
+Myalgic Encephalomyelitis (ME) patients - A validation study in plasma and 
+cerebrospinal fluid from two Swedish cohorts. Brain Behav Immun Health. 
+
+Page 16 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+2020;7:100107. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​j​.​b​b​i​h​.​2​0​2​0​.​1​0​0​1​0​7. PMID: 34589868; 
+PMCID: PMC8474431.
+5.	
+Bastos VC, Greene KA, Tabachnikova A, Bhattacharjee B, Sjogren P, Bertilson 
+B, et al. Cerebrospinal fluid immune phenotyping reveals distinct immuno­
+types of myalgic encephalomyelitis/chronic fatigue syndrome. J Immunol. 
+2025;214(7):1539–51. PubMed PMID: 40373264. Pubmed Central PMCID: 
+12311384.
+6.	
+Fineschi S, Klar J, Lopez Egido JR, Schuster J, Bergquist J, Kaden R, et al. 
+Comprehensive transcriptome assessment in PBMCs of post-COVID patients 
+at a median follow-up of 28 months after a mild COVID infection reveals 
+upregulation of JAK/STAT signaling and a prolonged immune response. 
+Front Immunol. 2025;16:1589589. PubMed PMID: 40519915. Pubmed Central 
+PMCID: 12162955.
+7.	
+White AT, Light AR, Hughen RW, Vanhaitsma TA, Light KC. Differences in 
+metabolite-detecting, adrenergic, and immune gene expression after moder­
+ate exercise in patients with chronic fatigue syndrome, patients with multiple 
+sclerosis, and healthy controls. Psychosom Med. 2012;74(1):46–54. PubMed 
+PMID: 22210239. Pubmed Central PMCID: 3256093.
+8.	
+de Vega WC, Herrera S, Vernon SD, McGowan PO. Epigenetic modifica­
+tions and glucocorticoid sensitivity in myalgic encephalomyelitis/chronic 
+fatigue syndrome (ME/CFS). BMC Med Genom. 2017;10(1):11. PubMed PMID: 
+28231836. Pubmed Central PMCID: 5324230.
+9.	
+Blauensteiner J, Bertinat R, Leon LE, Riederer M, Sepulveda N, Westermeier 
+F. Altered endothelial dysfunction-related MiRs in plasma from ME/CFS 
+patients. Sci Rep. 2021;11(1):10604. PubMed PMID: 34011981. Pubmed Cen­
+tral PMCID: 8134566.
+10.	 Arcos-Burgos M, Arcos-Holzinger M, Mastronardi C, Isaza-Ruget MA, Velez 
+JI, Lewis DP et al. Neurodevelopment genes encoding Olduvai domains 
+link myalgic encephalomyelitis to neuropsychiatric disorders. Diagnostics. 
+2025;15(12). PubMed PMID: 40564862. Pubmed Central PMCID: 12191824.
+11.	 Naviaux RK, Naviaux JC, Li K, Bright AT, Alaynick WA, Wang L, et al. 
+Metabolic features of chronic fatigue syndrome. Proc Natl Acad Sci USA. 
+2016;113(37):E5472–80. PubMed PMID: 27573827. Pubmed Central PMCID: 
+5027464.
+12.	 Xu J, Lodge T, Kingdon C, Strong JWL, Maclennan J, Lacerda E, et al. Devel­
+oping a blood Cell-Based diagnostic test for myalgic Encephalomyelitis/
+Chronic fatigue syndrome using peripheral blood mononuclear cells. Adv 
+Sci. 2023;10(30):e2302146. PubMed PMID: 37653608. Pubmed Central PMCID: 
+10602530.
+13.	 Esfandyarpour R, Kashi A, Nemat-Gorgani M, Wilhelmy J, Davis RW. A 
+nanoelectronics-blood-based diagnostic biomarker for myalgic encepha­
+lomyelitis/chronic fatigue syndrome (ME/CFS). Proc Natl Acad Sci USA. 
+2019;116(21):10250–7. PubMed PMID: 31036648. Pubmed Central PMCID: 
+6535016.
+14.	 Beentjes SV, Miralles Meharon A, Kaczmarczyk J, Cassar A, Samms GL, Hejazi 
+NS, et al. Replicated blood-based biomarkers for myalgic encephalomyelitis 
+not explicable by inactivity. EMBO Mol Med. 2025;17(7):1868–91. PubMed 
+PMID: 40537675. Pubmed Central PMCID: 12254397.
+15.	 Qiu Y, Feng D, Jiang W, Zhang T, Lu Q, Zhao M. 3D genome organiza­
+tion and epigenetic regulation in autoimmune diseases. Front Immunol. 
+2023;14:1196123. PubMed PMID: 37346038. Pubmed Central PMCID: 
+10279977.
+16.	 Feinberg AP. The key role of epigenetics in human disease prevention and 
+mitigation. N Engl J Med. 2018;378(14):1323–34. PubMed PMID: 29617578.
+17.	 Mukhopadhyay S, Ramadass AS, Akoulitchev A, Gordon S. Formation of 
+distinct chromatin conformation signatures epigenetically regulate macro­
+phage activation. Int Immunopharmacol. 2014;18(1):7–11. PubMed PMID: 
+24211766.
+18.	 Salter M, Corfield E, Ramadass A, Grand F, Green J, Westra J, et al. Initial identi­
+fication of a Blood-Based chromosome conformation signature for aiding in 
+the diagnosis of amyotrophic lateral sclerosis. EBioMedicine. 2018;33:169–84. 
+PubMed PMID: 29941342. Pubmed Central PMCID: 6085506.
+19.	 Carini C, Hunter E, Scottish Early Rheumatoid Arthritis Inception cohort I, 
+Ramadass AS, Green J, Akoulitchev A, et al. Chromosome conformation sig­
+natures define predictive markers of inadequate response to methotrexate in 
+early rheumatoid arthritis. J Translational Med. 2018;16(1):18. PubMed PMID: 
+29378619. Pubmed Central PMCID: 5789697.
+20.	 Hunter E, Salter M, Powell R, Dring A, Naithani T, Chatziioannou ME et al. 
+Development and validation of Blood-Based predictive biomarkers for 
+response to PD-1/PD-L1 checkpoint inhibitors: evidence of a universal 
+systemic core of 3D Immunogenetic profiling across multiple oncological 
+indications. Cancers. 2023;15(10). PubMed PMID: 37345033. Pubmed Central 
+PMCID: 10216232.
+21.	 Hunter E, Koutsothanasi C, Wilson A, Santos F, Salter M, Powell R et al. 3D 
+genomic capture of regulatory immuno-genetic profiles in COVID-19 
+patients for prognosis of severe COVID disease outcome. bioRxiv. 2021 2021. 
+PubMed PMID: PPR297676.
+22.	 Pchejetski D, Hunter E, Dezfouli M, Salter M, Powell R, Green J et al. Circulating 
+chromosome conformation signatures significantly enhance PSA positive 
+predicting value and overall accuracy for prostate cancer detection. Cancers. 
+2023;15(3). PubMed PMID: 36765779. Pubmed Central PMCID: 9913359.
+23.	 Bastonini E, Jeznach M, Field M, Juszczyk K, Corfield E, Dezfouli M, et al. 
+Chromatin barcodes as biomarkers for melanoma. Pigment Cell Melanoma 
+Res. 2014;27(5):788–800. PubMed PMID: 24807349.
+24.	 Jakub JW, Grotz TE, Jordan P, Hunter E, Pittelkow M, Ramadass A, et al. A pilot 
+study of chromosomal aberrations and epigenetic changes in periph­
+eral blood samples to identify patients with melanoma. Melanoma Res. 
+2015;25(5):406–11. PubMed PMID: 26225582.
+25.	 Alshaker H, Mills R, Hunter E, Salter M, Ramadass A, Skinner BM, et al. Chro­
+matin conformation changes in peripheral blood can detect prostate cancer 
+and stratify disease risk groups. J Translational Med. 2021;19(1):46. PubMed 
+PMID: 33509203. Pubmed Central PMCID: 7845038.
+26.	 Yan H, Hunter E, Akoulitchev A, Park P, Winchester DJ, Moo-Young TA, et al. 
+Epigenetic chromatin conformation changes in peripheral blood can detect 
+thyroid cancer. Surgery. 2019;165(1):44–9. PubMed PMID: 30377001.
+27.	 Hunter E, McCord R, Ramadass AS, Green J, Westra JW, Mundt K, et al. 
+Comparative molecular cell-of-origin classification of diffuse large B-cell 
+lymphoma based on liquid and tissue biopsies. Translational Med Commun. 
+2020;5(1):5. 2020/03/24;.
+28.	 Chen T, Guestrin C, XGBoost:. A Scalable Tree Boosting System. Proceedings 
+of the 22nd ACM SIGKDD International Conference on Knowledge Discovery 
+and Data Mining. 2016:785 – 94.
+29.	 Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, 
+et al. Gene set enrichment analysis: a knowledge-based approach for 
+interpreting genome-wide expression profiles. Proc Natl Acad Sci USA. 
+2005;102(43):15545–50. PubMed PMID: 16199517. Pubmed Central PMCID: 
+PMC1239896. Epub 20050930. 
+30.	 Szklarczyk D, Morris JH, Cook H, Kuhn M, Wyder S, Simonovic M, et al. The 
+STRING database in 2017: quality-controlled protein-protein association 
+networks, made broadly accessible. Nucleic Acids Res. 2017;45(D1):D362–8. 
+PubMed PMID: 27924014. Pubmed Central PMCID: 5210637.
+31.	 Alshaker H, Hunter E, Salter M, Ramadass A, Westra W, Winkler M, et al. 
+Monocytes acquire prostate cancer specific chromatin conformations upon 
+indirect co-culture with prostate cancer cells. Front Oncol. 2022;12:990842. 
+PubMed PMID: 36059613. Pubmed Central PMCID: 9437316.
+32.	 Hunter E, Alshaker H, Weston C, Issa M, Bautista S, Gebregzabhar A et al. A 
+new Blood-Based epigenetic diagnostic biomarker test (EpiSwitch((R)(R)) 
+NST) with high sensitivity and positive predictive value for colorectal cancer 
+and precancerous polyps. Cancers. 2025;17(3). PubMed PMID: 39941889. 
+Pubmed Central PMCID: 11816175.
+33.	 Yang T, Yang Y, Wang D, Li C, Qu Y, Guo J, et al. The clinical value of cytokines 
+in chronic fatigue syndrome. J Translational Med. 2019;17(1):213. PubMed 
+PMID: 31253154. Pubmed Central PMCID: 6599310.
+34.	 Strawbridge R, Sartor ML, Scott F, Cleare AJ. Inflammatory proteins are altered 
+in chronic fatigue syndrome-A systematic review and meta-analysis. Neurosci 
+Biobehav Rev. 2019;107:69–83. PubMed PMID: 31465778.
+35.	 Strayer DR, Carter WA, Stouch BC, Stevens SR, Bateman L, Cimoch PJ, et al. 
+A double-blind, placebo-controlled, randomized, clinical trial of the TLR-3 
+agonist Rintatolimod in severe cases of chronic fatigue syndrome. PLoS 
+ONE. 2012;7(3):e31334. PubMed PMID: 22431963. Pubmed Central PMCID: 
+3303772.
+36.	 Morris G, Maes M, Berk M, Puri BK. Myalgic encephalomyelitis or chronic 
+fatigue syndrome: how could the illness develop? Metab Brain Dis. 
+2019;34(2):385–415. PubMed PMID: 30758706. Pubmed Central PMCID: 
+6428797.
+37.	 Hu X, Li J, Fu M, Zhao X, Wang W. The JAK/STAT signaling pathway: from 
+bench to clinic. Signal Transduct Target Therapy. 2021;6(1):402. PubMed 
+PMID: 34824210. Pubmed Central PMCID: 8617206.
+38.	 Maier LM, Anderson DE, Severson CA, Baecher-Allan C, Healy B, Liu DV, et al. 
+Soluble IL-2RA levels in multiple sclerosis subjects and the effect of soluble 
+IL-2RA on immune responses. J Immunol. 2009;182(3):1541–7. PubMed PMID: 
+19155502. Pubmed Central PMCID: 3992946.
+
+Page 17 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+39.	 Peerlings D, Mimpen M, Damoiseaux J. The IL-2 - IL-2 receptor pathway: 
+key to Understanding multiple sclerosis. J Translational Autoimmun. 
+2021;4:100123. PubMed PMID: 35005590. Pubmed Central PMCID: 8716671.
+40.	 Fluge O, Risa K, Lunde S, Alme K, Rekeland IG, Sapkota D, et al. B-Lymphocyte 
+depletion in myalgic Encephalopathy/ chronic fatigue Syndrome. An Open-
+Label phase II study with rituximab maintenance treatment. PLoS ONE. 
+2015;10(7):e0129898. PubMed PMID: 26132314. Pubmed Central PMCID: 
+4488509.
+41.	 Jensen MA, Dafoe ML, Wilhelmy J, Cervantes L, Okumu AN, Kipp L, et al. 
+Catalytic antibodies May contribute to demyelination in myalgic Encephalo­
+myelitis/Chronic fatigue syndrome. Biochemistry. 2024;63(1):9–18. PubMed 
+PMID: 38011893. Pubmed Central PMCID: 10765373.
+42.	 Raeber ME, Sahin D, Karakus U, Boyman O. A systematic review of interleukin-
+2-based immunotherapies in clinical trials for cancer and autoimmune 
+diseases. EBioMedicine. 2023;90:104539. PubMed PMID: 37004361. Pubmed 
+Central PMCID: 10111960.
+43.	 Shouse AN, LaPorte KM, Malek TR. Interleukin-2 signaling in the regulation 
+of T cell biology in autoimmunity and cancer. Immunity. 2024;57(3):414–28. 
+PubMed PMID: 38479359. Pubmed Central PMCID: 11126276.
+44.	 VanElzakker MB, Brumfield SA, Lara Mejia PS. Neuroinflammation and cyto­
+kines in myalgic Encephalomyelitis/Chronic fatigue syndrome (ME/CFS): A 
+critical review of research methods. Front Neurol. 2018;9:1033. PubMed PMID: 
+30687207. Pubmed Central PMCID: 6335565.
+45.	 Helliwell AM, Sweetman EC, Stockwell PA, Edgar CD, Chatterjee A, Tate WP. 
+Changes in DNA methylation profiles of myalgic encephalomyelitis/chronic 
+fatigue syndrome patients reflect systemic dysfunctions. Clin Epigenetics. 
+2020;12(1):167. PubMed PMID: 33148325. Pubmed Central PMCID: 7641803.
+46.	 Trivedi MS, Oltra E, Sarria L, Rose N, Beljanski V, Fletcher MA, et al. Identifica­
+tion of myalgic Encephalomyelitis/Chronic fatigue Syndrome-associated 
+DNA methylation patterns. PLoS ONE. 2018;13(7):e0201066. PubMed PMID: 
+30036399. Pubmed Central PMCID: 6056050.
+47.	 Helliwell AM, Stockwell PA, Edgar CD, Chatterjee A, Tate WP. Dynamic epi­
+genetic changes during a relapse and recovery cycle in myalgic Encephalo­
+myelitis/Chronic fatigue syndrome. Int J Mol Sci. 2022;23(19). PubMed PMID: 
+36233152. Pubmed Central PMCID: 9570248.
+48.	 Van Den Vangeel E, Hompes T, Izzi B, Del Favero J, Moorkens G, et al. Chronic 
+fatigue syndrome and DNA hypomethylation of the glucocorticoid receptor 
+gene promoter 1F region: associations with HPA axis hypofunction and child­
+hood trauma. Psychosom Med. 2015;77(8):853–62. PubMed PMID: 26230484.
+49.	 Apostolou E, Rosen A. Epigenetic reprograming in myalgic encephalomy­
+elitis/chronic fatigue syndrome: A narrative of latent viruses. J Intern Med. 
+2024;296(1):93–115. PubMed PMID: 38693641.
+50.	 Fluge O, Rekeland IG, Lien K, Thurmer H, Borchgrevink PC, Schafer C, et al. 
+B-Lymphocyte depletion in patients with myalgic Encephalomyelitis/Chronic 
+fatigue syndrome: A Randomized, Double-Blind, Placebo-Controlled trial. 
+Ann Intern Med. 2019;170(9):585–93. PubMed PMID: 30934066.
+51.	 Boyman O, Sprent J. The role of interleukin-2 during homeostasis and activa­
+tion of the immune system. Nat Rev Immunol. 2012;12(3):180–90. PubMed 
+PMID: 22343569.
+52.	 Malek TR, Castro I. Interleukin-2 receptor signaling: at the interface between 
+tolerance and immunity. Immunity. 2010;33(2):153–65. PubMed PMID: 
+20732639. Pubmed Central PMCID: 2946796.
+53.	 Volpe E, Battistini L, Borsellino G. Advances in T helper 17 cell biology: 
+pathogenic role and potential therapy in multiple sclerosis. Mediat Inflamm. 
+2015;2015:475158. PubMed PMID: 26770017. Pubmed Central PMCID: 
+4685148.
+54.	 Capone A, Bianco M, Ruocco G, De Bardi M, Battistini L, Ruggieri S et al. 
+Distinct expression of inflammatory features in T helper 17 cells from multiple 
+sclerosis patients. Cells. 2019;8(6). PubMed PMID: 31167379. Pubmed Central 
+PMCID: 6628300.
+55.	 Duan H, Luo Y, Hao H, Feng L, Zhang Y, Lu D, et al. Soluble CD146 in cere­
+brospinal fluid of active multiple sclerosis. Neuroscience. 2013;235:16–26. 
+PubMed PMID: 23333866.
+56.	 Sharief MK, Thompson EJ. Correlation of interleukin-2 and soluble interleu­
+kin-2 receptor with clinical activity of multiple sclerosis. J Neurol Neurosurg 
+Psychiatry. 1993;56(2):169–74. PubMed PMID: 8437006. Pubmed Central 
+PMCID: 1014817.
+57.	 Lee JS, Sato W, Son CG. Brain-regional characteristics and neuroinflammation 
+in ME/CFS patients from neuroimaging: A systematic review and meta-analy­
+sis. Autoimmun Rev. 2024;23(2):103484. PubMed PMID: 38016575.
+58.	 Montoya JG, Holmes TH, Anderson JN, Maecker HT, Rosenberg-
+Hasson Y, Valencia IJ, et al. Cytokine signature associated with disease 
+severity in chronic fatigue syndrome patients. Proc Natl Acad Sci USA. 
+2017;114(34):E7150–8. PubMed PMID: 28760971. Pubmed Central PMCID: 
+5576836.
+59.	 Raison CL, Capuron L, Miller AH. Cytokines Sing the blues: inflammation and 
+the pathogenesis of depression. Trends Immunol. 2006;27(1):24–31. PubMed 
+PMID: 16316783. Pubmed Central PMCID: 3392963.
+60.	 Dantzer R, O’Connor JC, Freund GG, Johnson RW, Kelley KW. From inflamma­
+tion to sickness and depression: when the immune system subjugates the 
+brain. Nat Rev Neurosci. 2008;9(1):46–56. PubMed PMID: 18073775. Pubmed 
+Central PMCID: 2919277.
+61.	 Komaroff AL, Lipkin WI. Insights from myalgic encephalomyelitis/chronic 
+fatigue syndrome May help unravel the pathogenesis of postacute COVID-19 
+syndrome. Trends Mol Med. 2021;27(9):895–906. PubMed PMID: 34175230. 
+Pubmed Central PMCID: 8180841.
+62.	 Stroopinsky D, Katz T, Rowe JM, Melamed D, Avivi I. Rituximab-induced direct 
+Inhibition of T-cell activation. Cancer Immunol Immunother. 2012;61(8):1233–
+41. PubMed PMID: 22249775. Pubmed Central PMCID: 11029273.
+63.	 Hasan E, Olusi S, Al-Awadhi A, Mokaddem K, Sharma P, George S. Effects of 
+rituximab treatment on the serum concentrations of vitamin D and interleu­
+kins 2, 6, 7, and 10 in patients with rheumatoid arthritis. Biol : Targets Therapy. 
+2012;6:31–5. PubMed PMID: 22355257. Pubmed Central PMCID: 3280863.
+64.	 Blanco Y, Moral EA, Costa M, Gomez-Choco M, Torres-Peraza JF, Alonso-Mag­
+dalena L, et al. Effect of glatiramer acetate (Copaxone) on the immunophe­
+notypic and cytokine profile and BDNF production in multiple sclerosis: 
+a longitudinal study. Neurosci Lett. 2006;406(3):270–5. PubMed PMID: 
+16934924.
+65.	 Kantengwa S, Weber MS, Juillard C, Benkhoucha M, Fellay B, Zamvil SS, et 
+al. Inhibition of Naive Th1 CD4 + T cells by glatiramer acetate in multiple 
+sclerosis. J Neuroimmunol. 2007;185(1–2):123–9. PubMed PMID: 17306890.
+66.	 Fellay B, Chofflon M, Juillard C, Paunier AM, Landis T, Roth S, et al. Beneficial 
+effect of co-polymer 1 on cytokine production by CD4 T cells in multiple scle­
+rosis. Immunology. 2001;104(4):383–91. PubMed PMID: 11899423. Pubmed 
+Central PMCID: 1783317.
+67.	 Rekeland IG, Sorland K, Neteland LL, Fossa A, Alme K, Risa K, et al. Six-year 
+follow-up of participants in two clinical trials of rituximab or cyclophospha­
+mide in myalgic Encephalomyelitis/Chronic fatigue syndrome. PLoS ONE. 
+2024;19(7):e0307484. PubMed PMID: 39042627. Pubmed Central PMCID: 
+11265720.
+68.	 Putheti P, Soderstrom M, Link H, Huang YM. Effect of glatiramer acetate 
+(Copaxone) on CD4 + CD25high T regulatory cells and their IL-10 production 
+in multiple sclerosis. J Neuroimmunol. 2003;144(1–2):125 – 31. PubMed PMID: 
+14597106.
+69.	 Ruan BT, Bulbule S, Reyes A, Chheda B, Bateman L, Bell J et al. Low dose 
+Rapamycin alleviates clinical symptoms of fatigue and PEM in ME/CFS 
+patients via improvement of Autophagy. Research square. 2025. PubMed 
+PMID: 40502741. Pubmed Central PMCID: 12155199.
+70.	 Dhillon S, Tofacitinib. A review in rheumatoid arthritis. Drugs. 
+2017;77(18):1987–2001. PubMed PMID: 29139090.
+71.	 Snell CR, Stevens SR, Davenport TE, Van Ness JM. Discriminative validity of 
+metabolic and workload measurements for identifying people with chronic 
+fatigue syndrome. Phys Ther. 2013;93(11):1484–92. PubMed PMID: 23813081.
+72.	 Ciregia F, Kollipara L, Giusti L, Zahedi RP, Giacomelli C, Mazzoni MR, et al. 
+Bottom-up proteomics suggests an association between differential expres­
+sion of mitochondrial proteins and chronic fatigue syndrome. Translational 
+Psychiatry. 2016;6(9):e904. PubMed PMID: 27676445. Pubmed Central PMCID: 
+5048217.
+73.	 Tomas C, Lodge TA, Potter M, Elson JL, Newton JL, Morten KJ. Assessing cel­
+lular energy dysfunction in CFS/ME using a commercially available laboratory 
+test. Sci Rep. 2019;9(1):11464. PubMed PMID: 31391529. Pubmed Central 
+PMCID: 6686017.
+74.	 Eguchi A, Fukuda S, Kuratsune H, Nojima J, Nakatomi Y, Watanabe Y, et al. 
+Identification of actin network proteins, talin-1 and filamin-A, in Circulating 
+extracellular vesicles as blood biomarkers for human myalgic encephalo­
+myelitis/chronic fatigue syndrome. Brain Behav Immun. 2020;84:106–14. 
+PubMed PMID: 31759091. Pubmed Central PMCID: 7010541.
+75.	 Nepotchatykh E, Elremaly W, Caraus I, Godbout C, Leveau C, Chalder L, 
+et al. Profile of Circulating MicroRNAs in myalgic encephalomyelitis and 
+their relation to symptom severity, and disease pathophysiology. Sci Rep. 
+2020;10(1):19620. PubMed PMID: 33184353. Pubmed Central PMCID: 
+7665057.
+
+Page 18 of 18
+Hunter et al. Journal of Translational Medicine         (2025) 23:1048 
+76.	 Missailidis D, Sanislav O, Allan CY, Annesley SJ, Fisher PR. Cell-Based blood bio­
+markers for myalgic Encephalomyelitis/Chronic fatigue syndrome. Int J Mol 
+Sci. 2020;21(3). PubMed PMID: 32046336. Pubmed Central PMCID: 7037777.
+77.	 Milivojevic M, Che X, Bateman L, Cheng A, Garcia BA, Hornig M, et al. Plasma 
+proteomic profiling suggests an association between antigen driven clonal B 
+cell expansion and ME/CFS. PLoS ONE. 2020;15(7):e0236148. PubMed PMID: 
+32692761. Pubmed Central PMCID: 7373296.
+78.	 Shan ZY, Mohamed AZ, Andersen T, Rendall S, Kwiatek RA, Fante PD, et al. 
+Multimodal MRI of myalgic encephalomyelitis/chronic fatigue syndrome: A 
+cross-sectional neuroimaging study toward its neuropathophysiology and 
+diagnosis. Front Neurol. 2022;13:954142. PubMed PMID: 36188362. Pubmed 
+Central PMCID: 9523103.
+79.	 Gonzalez-Cebrian A, Almenar-Perez E, Xu J, Yu T, Huang WE, Gimenez-Orenga 
+K, et al. Diagnosis of myalgic Encephalomyelitis/Chronic fatigue syndrome 
+with partial least squares discriminant analysis: relevance of blood extracel­
+lular vesicles. Front Med. 2022;9:842991. PubMed PMID: 35433768. Pubmed 
+Central PMCID: 9011062.
+80.	 Giloteaux L, Li J, Hornig M, Lipkin WI, Ruppert D, Hanson MR. Proteomics and 
+cytokine analyses distinguish myalgic encephalomyelitis/chronic fatigue 
+syndrome cases from controls. J Translational Med. 2023;21(1):322. PubMed 
+PMID: 37179299. Pubmed Central PMCID: 10182359.
+81.	 Guo C, Che X, Briese T, Ranjan A, Allicock O, Yates RA, et al. Deficient butyrate-
+producing capacity in the gut Microbiome is associated with bacterial 
+network disturbances and fatigue symptoms in ME/CFS. Cell Host Microbe. 
+2023;31(2):288–304. e8. PubMed PMID: 36758522. Pubmed Central PMCID: 
+10183837.
+82.	 Huang K, A GCdS, Thomas N, Phair RD, Gooley PR, Ascher DB, et al. Discrimi­
+nating myalgic Encephalomyelitis/Chronic fatigue syndrome and comorbid 
+conditions using metabolomics in UK biobank. Commun Med. 2024;4(1):248. 
+PubMed PMID: 39592839. Pubmed Central PMCID: 11599898.
+83.	 Clarke KSP, Kingdon CC, Hughes MP, Lacerda EM, Lewis R, Kruchek EJ, et al. 
+The search for a blood-based biomarker for myalgic Encephalomyelitis/ 
+chronic fatigue syndrome (ME/CFS): from biochemistry to electrophysiol­
+ogy. J Translational Med. 2025;23(1):149. PubMed PMID: 39905423. Pubmed 
+Central PMCID: 11792299.
+84.	 Mellor J, Hunter E, Akoulitchev A, Paradigm Lost. Cancers. 2025;17(13). 
+PubMed PMID: 40647485. Pubmed Central PMCID: 12249029.
+85.	 Berghausen J, Abdo J, Mathis R, Hunter E, Akoulitchev A, Pohlman GD. 
+EpiSwitch PSE blood test reduces unnecessary prostate biopsies: A Real-
+World clinical utility study. Cancers. 2025;17(13). PubMed PMID: 40647492. 
+Pubmed Central PMCID: 12249354.
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
