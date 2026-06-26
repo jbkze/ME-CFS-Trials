@@ -1,0 +1,884 @@
+Circulating cell-free RNA signatures for the characterization 
+and diagnosis of myalgic encephalomyelitis/chronic fatigue 
+syndrome
+Anne E. Gardellaa,b, Daniel Eweis-LaBollea,b, Conor J. Loya,b, Emma D. Belcherb, Joan S. 
+Lenzb, Carl J. Franconia, Sally Y. Scofieldb, Andrew Grimsona, Maureen R. Hansona,1, Iwijn 
+De Vlaminckb,1
+aDepartment of Molecular Biology and Genetics, Cornell University, Ithaca, NY 14850
+bMeinig School of Biomedical Engineering, Cornell University, Ithaca, NY 14850
+Abstract
+People living with myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) experience 
+heterogeneous and debilitating symptoms that lack sufficient biological explanation, compounded 
+by the absence of accurate, noninvasive diagnostic tools. To address these challenges, we explored 
+circulating cell-free RNA (cfRNA) as a blood-borne bioanalyte to monitor ME/CFS. cfRNA is 
+released into the bloodstream during cellular turnover and reflects dynamic changes in gene 
+expression, cellular signaling, and tissue-specific processes. We profiled cfRNA in plasma by 
+RNA sequencing for 93 ME/CFS cases and 75 healthy sedentary controls, then applied machine 
+learning to develop diagnostic models and advance our understanding of ME/CFS pathobiology. 
+A generalized linear model with least absolute shrinkage selector operator regression trained on 
+condition-specific signatures achieved a test-set AUC of 0.81 and an accuracy of 77%. Immune 
+cfRNA deconvolution revealed differences in platelet-derived cfRNA between cases and controls, 
+as well as elevated levels of plasmacytoid dendritic, monocyte, and T cell–derived cfRNA in 
+ME/CFS. Biological network analysis further implicated immune dysfunction in ME/CFS, with 
+signatures of cytokine signaling and T cell exhaustion. These findings demonstrate the utility of 
+This article is distributed under Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0(CC BY-NC-ND).
+1To whom correspondence may be addressed. maureen.hanson@cornell.edu or vlaminck@cornell.edu.
+Author contributions: A.E.G., A.G., M.R.H., and I.D.V. designed research; A.E.G., E.D.B., and J.S.L. performed research; C.J.F. 
+contributed new reagents/analytic tools; A.E.G., D.E.-L., C.J.L., and S.Y.S. analyzed data; A.G. and I.D.V. supervised research; and 
+A.E.G., A.G., M.R.H., and I.D.V. wrote the paper.
+Contributed by Maureen R. Hanson; received March 28, 2025; accepted June 30, 2025; reviewed by Christopher Armstrong and Y. M. 
+D. Lo
+Reviewers: C.A., The University of Melbourne School of BioSciences; and Y.M.D.L., The Chinese University of Hong Kong.
+Data, Materials, and Software Availability.
+All codes have been deposited to GitHub (72). Deidentified RNA sequencing data has been deposited in the NIH/National Center for 
+Biotechnology Information (NCBI) Gene Expression Omnibus (GEO) repository through GEO Series accession number GSE293840 
+(73).
+Competing interest statement: I.D.V. is a member of the Scientific Advisory Board of Karius Inc., Kanvas Biosciences and GenDX, 
+and receives consulting fees from Eurofins Viracor. I.D.V. is listed as an inventor on submitted patents pertaining to cell-free nucleic 
+acids (US patent applications 63/237,367, 63/429,733, 63/056,249, 63/015,095, 16/500,929, 41614P-10551-01-US). M.R.H. is on 
+the Scientific Advisory Boards of the Open Medicine Foundation, Simarron Research, and Solve ME/CFS initiative, which support 
+research on ME/CFS.
+HHS Public Access
+Author manuscript
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Published in final edited form as:
+Proc Natl Acad Sci U S A. 2025 August 19; 122(33): e2507345122. doi:10.1073/pnas.2507345122.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+RNA liquid biopsy as a minimally invasive tool for unraveling the complex biology behind chronic 
+illnesses.
+Keywords
+cell-free RNA; diagnosis; ME/CFS; cell signaling; machine learning
+Myalgic encephalomyelitis (ME), also referred to as chronic fatigue syndrome (CFS) 
+and commonly referred to as ME/CFS, is a multisystem, heterogeneous, chronic illness. 
+ME/CFS is characterized by persistent symptoms of postexertional malaise (PEM), extreme 
+fatigue, unrefreshing sleep, cognitive impairment, and orthostatic intolerance (1, 2). An 
+estimated 1.3% of the US population and 65 million individuals worldwide are affected 
+by ME/CFS (3-5). Despite its high global prevalence, the underlying pathobiology of 
+ME/CFS remains poorly understood. Currently, there are no clinically validated biomarkers 
+for objective diagnosis nor are there any standardized therapeutic strategies. Diagnosis of 
+ME/CFS relies on subjective clinical evaluation of patient-reported symptoms and exclusion 
+of other chronic conditions that could explain the symptoms (2, 6).
+Since the COVID-19 pandemic, millions of individuals have been diagnosed with Long 
+COVID (LC) (7, 8). Given the remarkable similarity in symptoms shared by some 
+individuals with LC and ME/CFS, there is speculation that the illnesses share disease 
+mechanisms (9). The rise in LC has sparked an urgent global need to better understand these 
+conditions together and independently. To maintain the distinction between LC and ME/CFS 
+that is not initiated by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), this 
+study focuses solely on patients diagnosed with ME/CFS prior to the onset of the COVID-19 
+pandemic.
+Several recent lines of evidence have implicated immune system dysregulation in ME/CFS 
+pathogenesis and/or pathophysiology (10, 11). Peripheral immune cells, including both 
+innate and adaptive populations, exhibit abnormalities in ME/CFS (12). Single-cell RNA 
+sequencing (scRNA-seq) of peripheral blood mononuclear cells (PBMCs) from ME/CFS 
+cases and sedentary controls has revealed significant dysregulation in classical monocytes 
+and T cells, with markers of T cell exhaustion and chronic inflammation observed in 
+patients (13, 14). Other studies have reported alterations in monocyte and natural killer 
+(NK) cell surface markers (15, 16), increased neutrophil apoptosis (17), and metabolic and 
+cytokine production abnormalities in T lymphocytes (18). Dysregulation of B cells has 
+also been implicated (19, 20). Furthermore, plasma levels of pro- and anti-inflammatory 
+cytokines, including elevated transforming growth factor beta (21), correlate with ME/CFS 
+disease severity and duration (22-24). Despite these emerging insights, current methods for 
+diagnosing ME/CFS rely on symptomology due to the lack of diagnostic molecular markers 
+(25).
+Circulating cell-free RNA (cfRNA) is a promising bioanalyte to explore ME/CFS 
+pathobiology and diagnostic strategies. cfRNA is released into the bloodstream during 
+cellular turnover and reflects dynamic changes in gene expression, intercellular signaling, 
+and tissue-specific processes (26, 27). Plasma-derived cfRNA provides a minimally invasive 
+Gardella et al.
+Page 2
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+window into cellular health and has shown potential to predict, diagnose, and monitor 
+diverse medical conditions, as well as distinguish between causes of inflammatory disease 
+(28, 29). Here, we examine plasma cfRNA for ME/CFS cases and healthy sedentary controls 
+at baseline, independent from symptom provocation through exercise. By profiling cfRNA, 
+this research aims to uncover disease-specific biomarkers, characterize immune system 
+dysfunction, and advance our understanding of ME/CFS pathobiology to inform diagnoses 
+and treatment strategies.
+Results
+ME/CFS Cohort for cfRNA Sequencing.
+The ME/CFS case–control cohort analyzed in this study was part of an initiative led by the 
+Cornell-NIH ME/CFS Center (30). We collected a total of 175 plasma samples from three 
+test sites: Ithaca College, Weill Cornell Medicine in New York City, and the ID Med clinic 
+in Los Angeles (Fig. 1 A and C). Patients with reported comorbidities or samples that did 
+not meet the cfRNA quality control criteria were excluded (Materials and Methods). A total 
+of 168 samples were included in the analysis (n = 93 confirmed ME/CFS cases, n = 75 
+sedentary controls, SI Appendix, Fig. S1).
+To capture the heterogeneity of symptoms seen in ME/CFS patients, the cohort included 
+cases with a range of disease severities, assessed using self-reported SF-36 general health 
+(GH) and multidimensional fatigue inventory (MFI-20) scores (Materials and Methods and 
+Dataset S1). GH survey scores ranged from 0 (worst health) to 100 (perfect health), whereas 
+MFI-20 ranged from 100 (highest fatigue) to 0 (no fatigue). GH was significantly lower 
+in cases for both male and female subjects (Fig. 1B). As expected, GH and MFI-20 were 
+inversely correlated, with higher fatigue scores associated with lower GH scores. Disease 
+duration among cases varied widely, spanning 6 mo to 38 y (Fig. 1B). A control cohort 
+included sedentary individuals matched for sex, age, and VO2 peak (Fig. 1D). Lastly, the 
+cohorts were predominantly female (approximately 75%; n = 126 females, n = 42 males) 
+reflecting the greater prevalence of females within the ME/CFS population.
+We isolated and sequenced cfRNA from plasma to generate circulating cfRNA profiles for 
+each subject. We obtained an average of 40.8 million reads per sample (range: 6.1 to 79.1 
+million). The mean number of gene features, or reads assigned to annotated genes, per 
+sample was 9.0 million (range: 1.2 to 41.4 million), with a mean alignment rate of 50.7% 
+(range: 13 to 83%). The alignment rates are consistent with those reported in previous 
+cfRNA studies across various disease contexts (29, 31, 32). While these rates are lower 
+than what is typically observed in whole-blood transcriptomics, this is expected given the 
+lower RNA biomass in plasma and reflects the unique biological nature of cfRNA (27). 
+Sequencing output metrics, including total reads, feature counts, and alignment rates, did 
+not differ significantly between cases and controls (Fig. 1E). We also observed a mean 
+ribosomal RNA (rRNA) rate of 9.1% and a mean mitochondrial RNA (mtRNA) rate 
+of 17.7% across all samples. While the rRNA rate did not differ significantly between 
+phenotypes, the mtRNA rate was significantly lower in cases (mean of 19.4% in controls and 
+16.4% in cases; Mann–Whitney U test P-value < 0.01, Fig. 1F).
+Gardella et al.
+Page 3
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+cfRNA Biomarker Discovery for an ME/CFS Diagnostic Tool.
+To date, no clinically validated biomarkers for objective diagnosis of ME/CFS have been 
+established. Current diagnostic methods rely primarily on clinical symptom assessment, and 
+occasionally, cardiopulmonary exercise testing (CPET) (2, 33). Liquid biopsies analyzing 
+circulating cfRNA present an opportunity for unbiased and minimally invasive diagnostic 
+approaches. We implemented differential abundance analysis (DESeq2, Materials and 
+Methods) and identified 743 unique features that differed between cases and controls 
+[Benjamini–Hochberg (BH) adjusted P-values (P-adj) threshold of < 0.05 and a log2 fold 
+change cutoff of ±0.5]. Of these, 608 features were elevated in cases, and 135 were 
+elevated in controls. Genes such as IL18R1, CCR7, FCRL5, PRF1, and IFNLR1 were 
+more abundant in cases, whereas genes such as CCL3, TGFB2, CD109, and COL1A1 were 
+more abundant in controls (Fig. 2A). In addition, we observed changes in abundance of 
+several mtRNA transcripts between cases and controls. Notably, levels of a mitochondrial 
+ribosome assembly factor (MTG1) were significantly increased, while several transcripts 
+(MTND1P23, MT-TL1, MT-TV, MT-TH, MT-TS2, MT-TT, MTATP8P1, MTND6P3, and 
+MTRNR2L3) were significantly decreased. Many of these mtRNA transcripts are inversely 
+correlated with MTG1 in cases (SI Appendix, Fig. S2). These findings support a role for 
+mitochondrial dysfunction in ME/CFS, with dysregulated mtRNA expression potentially 
+contributing to altered energy metabolism (34-36).
+Unsupervised clustering based on the differentially abundant features demonstrated 
+separation between cases and controls (Fig. 2B). To build machine learning classifiers, 
+we used Monte Carlo cross-validation by repeatedly partitioning the dataset into training 
+(70%) and test (30%) sets, while balancing for phenotype, sex, and test site. This process 
+was repeated 100 times, generating 100 unique train–test splits (Materials and Methods). 
+From each training set, we selected features using differential abundance criteria (P-value 
+< 0.001 and base mean > 50) and trained 15 machine learning models (Fig. 2C). This 
+approach yielded approximately 1,500 models. We evaluated performance based on test set 
+accuracy, sensitivity, specificity, and area under the receiver operating characteristic curve 
+(AUC-ROC), assessing both the average metrics and the best-performing seed for each 
+model (Fig. 2D).
+As expected, tree-based algorithms such as ExtraTrees, Random Forest (RF), and C5 
+exhibited strong training performance, reflecting their capacity to fit complex patterns. 
+However, these models tended to overfit the training data as evidenced by poor performance 
+on the test set. Models with robust performance demonstrated high accuracy and AUC-ROC 
+values for both the training and test sets. Across all models, each sample was included in 
+the test set approximately 450 times (~30% of all iterations). We observed variability in 
+individual classification rates, with some samples classified correctly >90% of the time, 
+while others classified correctly as low as 11% of the time (Fig. 2E). This result suggests 
+that certain samples possessed unique features which drove consistent correct or incorrect 
+classification.
+We highlight one particularly promising model identified based on the highest test AUC-
+ROC. This generalized linear model with regularized regression using the least absolute 
+shrinkage and selection operator (GLMNET Lasso) achieved a training AUC-ROC of 0.86 
+Gardella et al.
+Page 4
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+(95% CI: [0.789 to 0.932]) and a testing AUC-ROC of 0.81 (95% CI: [0.694 to 0.926], 
+Fig. 2F), with case–control separation determined by a Youden threshold of 0.65. The 
+training set reached 80% accuracy, 71% sensitivity, and 92% specificity, whereas the test 
+set reached 77% accuracy, 84% sensitivity, and 68% specificity (Fig. 2G). This GLMNET 
+Lasso identified a 21-gene signature, including genes with roles in RNA processing, 
+transcriptional regulation, immune response, and metabolic regulation—key processes 
+implicated in ME/CFS pathophysiology. HNRNPLL, a regulator of alternative splicing and 
+mRNA stability in immune pathways, was the strongest contributor to model performance 
+(Fig. 2H). The model performance was consistent across sample characteristics, with no 
+significant differences observed with test site or sex (Fig. 2I). Notably, severity metrics, 
+including GH scores for all samples and MFI-20 scores for cases, were not correlated with 
+classification performance (Fig. 2J).
+To confirm that models were trained on ME/CFS-specific features, we conducted a 
+phenotype permutation test in which we randomly shuffled the sample phenotype labels 
+(Fig. 2K). As expected, most models exhibited a sharp drop in AUC-ROC following 
+label shuffling. This effect was particularly pronounced for the selected GLMNET Lasso 
+classifier, which exhibited a substantial performance decline in both training and test sets, 
+reinforcing the biological relevance of the identified cfRNA signatures (Fig. 2L). The only 
+exception was the RPART (recursive partitioning and regression trees) model which showed 
+improved test performance on shuffled data, a clear indication of overfitting.
+Bioinformatic Deconvolution of cfRNA Cell Types of Origin.
+Vu et al. (2024) recently used scRNA-seq of PBMCs to demonstrate immune cell 
+dysregulation in ME/CFS patients (14). To examine this through the lens of plasma cfRNA, 
+we performed deconvolution of the cell types that contribute cfRNA to the plasma mixture. 
+We used a Bayesian algorithm for deconvolution (BayesPrism, Materials and Methods) (37) 
+and the ME/CFS PBMC scRNA-seq atlas created by Vu et al. as a reference (Fig. 3A) (14). 
+This atlas spanned 28 cell types from 58 case–control subjects, 40 of which overlapped 
+with our cohort (Fig. 3B). Although this reference lacked solid tissue cell types, when we 
+performed deconvolution with the Tabula Sapiens single-cell reference (38), the contribution 
+of solid tissue-derived cfRNA was minimal and no significant differences were observed 
+between phenotypes (SI Appendix, Fig. S3).
+Using this approach, we identified six cell types that differed significantly between cases 
+and controls (P-adj < 0.05, Fig. 3C). In order of significance, these included plasmacytoid 
+dendritic cells (pDCs), monocytes (Fig. 3B; cluster 26), naïve CD8+ T cells, T cells (Fig. 
+3B; cluster 16), mucosal-associated invariant T (MAIT) cells, and platelets (Fig. 3D). To 
+understand deconvolution differences by sex, we first analyzed only female subjects (n = 
+126) and identified six cell types with significant differential abundance (Fig. 3E). While 
+statistical comparisons between female and male ME/CFS cases remained challenging due 
+to sample size, we identified some cell types with patterns that suggested potential sex-based 
+differences in immune responses. For instance, we found effector/memory (E/M) CD8+ T 
+cells (Fig. 3B; cluster 5) to be significantly elevated only in female cases versus controls 
+and not significantly different when we included both sexes. Additionally, we saw classical 
+Gardella et al.
+Page 5
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+monocytes as elevated in both female cases and controls compared to their male counterparts 
+(Fig. 3E).
+Biological Networks Underlying ME/CFS.
+To gain insight into the biological systems underlying ME/CFS pathobiology, we performed 
+Ingenuity Pathway Analysis (IPA, Materials and Methods). The top canonical pathways 
+enriched in cases versus controls, ranked by −log(P-value) and ∣z-score∣, included focal 
+adhesion kinase signaling, NFKBIE signaling, lipid antigen presentation by CD1, IL-4 
+signaling, neural cell adhesion molecule signaling, and T cell exhaustion signaling (Fig. 
+4A). These pathways are closely linked to immune dysregulation, chronic inflammation, 
+altered cell signaling, and impaired energy metabolism, all hallmarks of ME/CFS biology 
+(13, 39-43). Interestingly, the pathway we identified with the most decreased activity in 
+cases compared to controls was CTLA4 signaling in cytotoxic T lymphocytes. This is a 
+critical pathway involved in immune checkpoint activity and prevention of overactivation of 
+the immune system (40). This finding suggests potential differences in immune tolerance or 
+suppression mechanisms in ME/CFS cases compared to controls. Network analysis of the 
+significantly different pathways revealed key biological themes in ME/CFS, including: 1. 
+Cytokine signaling driven by CSF2, IFNG, IL2, IL21, and TNF. 2. Immune cell activation 
+and stimulation with an increase in leukocytes, T cells, and other immune cells. 3. JAK-
+STAT pathway involving STAT1 and STAT4 as immune regulators (Fig. 4B). Collectively, 
+this network reflects widespread immune dysregulation in ME/CFS.
+To further explore these pathways, we generated a heatmap using 69 marker genes from 
+the top 10 pathways activated in ME/ CFS as well as the most inhibited pathway (Fig. 4C). 
+Additionally, we analyzed the cfRNA abundance levels of the 20 most significantly different 
+pathway related genes between cases and controls (Fig. 4D). Among these, three genes, 
+ADAM12, TGFB2, and MMP2, were significantly reduced in ME/CFS cases compared to 
+controls, while the remaining 17 genes, including, IL18R1, TNFSF15, ITGA10, and several 
+T cell receptor genes, were elevated in cases. These changes in transcript abundance suggest 
+an altered immune response and potential dysregulation of tissue repair and inflammation 
+pathways in ME/CFS.
+Absence of Consistent Viral cfRNA Signatures Associated with ME/CFS.
+To investigate the potential presence of circulating viral RNA, we performed cfRNA 
+metagenomic analysis (Kraken2, Bracken, Materials and Methods). We first mapped all 
+cfRNA reads that aligned to the human genome to a database of microbial references. After 
+filtering reads from known contaminants (Materials and Methods and SI Appendix, Fig. 
+S4), the top three most abundant viral families detected were Retroviridae, Herpesviridae, 
+and Flaviviridae (Fig. 5A). However, we found no significant differences in the log10 
+transformed counts per million (CPM) +1 values of total viral burden between phenotypes 
+(Fig. 5B) nor did we observe differences in the burden of individual viral families (Fig. 5C). 
+Additionally, there was no significantly different detectable signal from the Picornaviridae 
+family, which includes enteroviruses (Fig. 5D), a viral genus that has been suspected in the 
+onset of ME/CFS (44-46).
+Gardella et al.
+Page 6
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Interestingly, we identified one case and one control who exhibited highly elevated levels 
+of total viral reads (>4 log10(CPM +1), Fig. 5B). These reads mapped primarily to the 
+Flaviviridae family, specifically the Pegivirus hominis (HPgV) virus (Fig. 5C). HPgV 
+infections are common and typically asymptomatic. HPgV has been shown to modulate 
+immune responses and interact with other viral infections such as HIV but has not been 
+associated with a specific disease (47). The cfRNA reads derived from HPgV accounted for 
+10.5% of the total reads in the case subject, and 3.0% of the total reads in the control subject 
+(Fig. 5C). Apart from these individual samples, the overall viral burden detected by cfRNA 
+in cases and controls was low, and no consistent viral signatures were detected within the 
+cohort.
+Discussion
+There is a growing need for objective, minimally invasive, and accurate tools for diagnosing 
+chronic illnesses. Developing a laboratory test for ME/CFS has been particularly challenging 
+due to the complex range of patient-reported experiences (48). Currently, the primary 
+diagnostic strategy for ME/CFS relies on meeting clinical symptom criteria and excluding 
+other similarly presenting illnesses.
+Advances in omics measurements have enabled researchers to identify potential biomarkers 
+for ME/CFS (30, 48-52). However, due to small sample sizes and disease heterogeneity, no 
+study has generated a definitive diagnostic tool. In this study, we investigated the potential of 
+RNA liquid biopsy as a tool for both diagnosis and characterization of the pathobiology of 
+ME/CFS. Recent research has demonstrated that cfRNA can predict, diagnose, and monitor 
+other complex inflammatory and infectious diseases. Some of these include pediatric 
+conditions, such as Kawasaki disease and multisystem inflammatory syndrome in children 
+(32), complications following hematopoietic stem cell transplantation (53, 54), COVID-19 
+(28), and tuberculosis (29).
+The use of an untargeted platform for plasma-derived RNA sequencing has not previously 
+been reported in ME/CFS. Using unbiased cfRNA sequencing, we identified significant 
+differences in the abundance of over 700 transcripts in cases versus controls. We developed 
+a GLMNET Lasso model with a train and test AUC of 0.86 and 0.81, respectively. This 
+model selected 21 cfRNA features, including TGFB2, FCRL2, and HNRNPLL, which 
+are related to cytokine response, B cell function, and mRNA stability, particularly in T 
+cell activation. Other selected features are broadly involved in transcriptional regulation, 
+cellular stress, and oxygen transport. Pathway analysis highlighted key biological processes 
+associated with ME/CFS, including dysregulated cytokine signaling, immune cell activation, 
+and the JAK-STAT signaling pathway. Enrichment of pathways such as T cell exhaustion, 
+IL-4 signaling, and lipid antigen presentation aligns with impaired immune regulation and 
+chronic inflammation. Additionally, the downregulation of the CTLA4 signaling pathway 
+suggests possible deficits in immune checkpoint control, which may contribute to prolonged 
+inflammation.
+We observed that across all samples in the test sets, there was an uneven distribution of 
+successful classification predictions. Certain samples, when placed into the test set, were 
+Gardella et al.
+Page 7
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+classified correctly in more than 90% of the models, while others were classified correctly 
+in as few as 11%. We found this distribution to be dependent not on a clinical metric, 
+such as phenotype, nor test site, but rather on the fraction of platelet-derived cfRNA (SI 
+Appendix, Fig. S5). The relative platelet fraction of each sample was determined by cell 
+type of origin deconvolution. We further showed that this correlation was not due to a 
+difference in sample collection protocols across set sites, but a true biological difference in 
+platelets between cases and controls. This finding supports the notion that ME/CFS patients 
+experience platelet dysfunction at baseline (14).
+Our findings support the hypothesis that immune dysregulation underlies ME/CFS 
+pathology. Through deconvolution analysis with a disease-specific scRNA-seq reference 
+from Vu et al. (14), we identified significant differences in cfRNA contributions from 
+multiple immune cell types. Notably, we observed a decrease in platelet-derived cfRNA and 
+an increase in pDCs, monocytes, and certain T cell subset-derived cfRNA in cases compared 
+to controls. Previous studies, including scRNA-seq analyses with our matched cohort, also 
+show similar trends of improper platelet activation in ME/CFS patients (14, 55). The most 
+significantly elevated cfRNA cell type of origin in cases versus controls are pDCs. pDCs are 
+a critical component of the innate immune system and are responsible for producing type I 
+interferons in response to viral infections. Activity of pDCs has been implicated in various 
+autoimmune and inflammatory diseases, and their activity here suggests a heightened 
+interferon-mediated antiviral response and persistent immune stimulation in ME/CFS 
+patients. Similarly, monocytes displayed increased cfRNA fraction in cases. Monocytes are 
+key mediators of inflammation and tissue repair, and their heightened presence may indicate 
+sustained immune activation and aberrant monocyte trafficking. Prior studies have also 
+reported altered monocyte transcriptomes and inflammatory cytokine production in ME/CFS 
+(13, 14, 24, 50).
+Among T cell subtypes, we found significant differences in naive CD8+ T cells, MAIT cells, 
+and other T cell clusters. Naive CD8+ T cells are essential for adaptive immunity, and their 
+increased cfRNA contribution in cases, although unexpected as these are an unactivated and 
+relatively stable cell type, may suggest altered T cell homeostasis or impaired differentiation 
+into effector and memory subsets. MAIT cells, which comprise a T cell subset involved 
+in mucosal immunity and microbial defense, have been increasingly recognized for their 
+role in chronic inflammatory diseases (11). We also observed an increased contribution 
+of E/M CD8+ T cells in females with ME/CFS, suggesting potential sex-specific immune 
+alterations. E/M CD8+ T cells play a crucial role in long-term immune surveillance and 
+rapid responses to antigen re-exposure, and their elevation may indicate impaired resolution 
+of inflammation and/or chronic immune activation in female cases.
+Our cfRNA metagenomic analysis did not detect significant differences in viral RNA 
+burden between phenotypes. Although viral reads mapping to Retroviridae, Herpesviridae, 
+Flaviviridae, and others were detected, their levels were not significantly altered between 
+phenotypes. Nevertheless, given that few of our reads were from solid tissue, we cannot rule 
+out the presence of viral reservoirs whose cfRNA was not captured from the circulation. 
+Most reports of persistent virus in ME/CFS involve tissues and organs rather than blood 
+(46).
+Gardella et al.
+Page 8
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+This study has limitations. Most importantly, our analyses focused solely on baseline 
+samples to examine exercise-independent differences between phenotypes. Future studies 
+could extend this work by investigating cfRNA dynamics during PEM in ME/CFS patients, 
+in contrast to healthy individuals who do not experience adverse effects after exercise. Such 
+work would have the potential to provide insight into the biological responses that lead to 
+PEM as cfRNA reflects both immune and tissue injury through cell turnover.
+In summary, our results provide evidence of immune dysregulation in ME/CFS and highlight 
+key pathways that may contribute to pathobiology. Given the observed immune shifts and 
+altered mtRNA profiles, potential therapeutic avenues for ME/CFS may include targeting 
+inflammatory pathways, type I interferon signaling, or mitochondrial function. Expanding 
+the cohort size will also be crucial for capturing patient heterogeneity, ultimately improving 
+the robustness and generalizability of cfRNA-based biomarkers for ME/CFS.
+Materials and Methods
+Patient Cohort.
+The human subject research described here is part of a multisite initiative of the Cornell 
+Collaborative Research Center for the study of ME/CFS. All human subject protocols 
+were approved by the Institutional Review Boards of Weill Cornell Medical College 
+(Protocol 1708018518) and Ithaca College (IRB 1017-12Dx2). Written informed consent 
+was obtained prior to screening and written informed consent was obtained prior to medical 
+review and the subsequent protocols as previously described (30). Participants accepted into 
+the study completed testing at one of three sites: Ithaca College, Weill Cornell Medicine 
+in New York City, and the ID Med clinic in Los Angeles. Subjects provided demographic 
+information, donated blood, and many participated in CPETs as part of the larger study 
+(33). Each patient fulfilled the Institute of Medicine and Canadian Consensus Criteria for 
+diagnosis (6) and was required to have disease onset prior to the emergence of the SARS-
+CoV-2 pandemic. This cohort was selected using sex, age, body mass index (BMI), and 
+VO2 peak from CPETs performed on the day of sample collection (33, 56). Controls were 
+screened for sedentary behavior, which was quantified using the VO2 peak measurement, a 
+measure of cardiovascular fitness, as previously described (30) (Fig. 1D). Sex was matched 
+to the approximate disease prevalence being greater in females than males (57, 58). Chi-
+squared tests were used to evaluate the difference between sex within the cases and controls. 
+Age ranges were matched between and within the phenotype groups and BMI was matched 
+for the males only, as determined by Mann–Whitney U Test (Fig. 1D).
+Several surveys were employed to measure disease severity in this cohort, regarding fatigue 
+(59), GH (60), and PEM (61). These surveys have been described previously (14).
+Plasma Collection.
+Whole blood was collected from each participant in K2 ethylenediaminetetraacetic acid 
+(EDTA) tubes (n = 175 samples) and left at room temperature for no more than 4 h before 
+processing. Plasma was separated by centrifugation at 500×g for 5 min at room temperature 
+Gardella et al.
+Page 9
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+and immediately stored in 1 mL aliquots at −80 °C. Transfer of plasma occurred on dry ice, 
+and samples were stored at −80 °C until getting processed.
+Plasma cfRNA Isolation and Library Preparation.
+Prior to cfRNA library preparation, plasma was thawed at room temperature, then ~500 μL 
+samples were aliquoted and centrifuged at 3,000× g for 8 min at 4 °C. cfRNA libraries 
+were prepared for sequencing using methods previously described (29), with the following 
+modification: Each pool was sequenced using the Illumina NovaSeq 6000 platform (paired-
+end, 150 bp).
+Bioinformatic Processing and Filtering.
+Sequencing results were processed using a custom bioinformatics pipeline as previously 
+described (29), with the following modifications: Reads were not trimmed to 61 bp prior 
+to processing and samples were filtered based on total read counts, alignment rate, total 
+feature counts, DNA contamination, and RNA degradation (62-65) (SI Appendix, Fig. S1A). 
+Samples which passed the quality filter all had greater than five million reads, greater 
+than 100,000 feature counts, greater than 10% alignment rate, less than onefold intron to 
+exon ratio, less than three SD from the mean of the 5′ to 3′ bias, and less than 95% 
+duplication rate. We confirmed that sample collection date had minimal impact on cfRNA 
+sequencing quality metrics, including total read count, alignment rate, and 5′ to 3′ bias. 
+While collection date was statistically associated with 5′ to 3′ bias, the correlation was 
+weak (r = 0.17) (SI Appendix, Fig. S1B).
+Differential Abundance Analysis.
+Comparative analysis of differentially abundant genes was performed similarly to methods 
+previously reported (28), with the following modifications: a BH adjusted P-value (P-adj) 
+threshold of <0.05 and a log2 fold change cutoff of ±0.5 was applied (66). Biological 
+pathways were identified using QIAGEN IPA software (v01-23-01).
+Machine Learning.
+Machine learning and model training were performed using DESeq2 (v1.34.0) (66), Caret33 
+(v6.0.90) (67), and pROC34 (v1.18.0) (68) R packages. The sample metadata and count 
+matrices were first split into a training set (70%) and a test set (30%), which were evenly 
+partitioned across phenotype, sex, and test site. We repeated the split 100 times, for 100 
+different iterations of the train and test groups. Within each of the 100 training sets, feature 
+selection was performed using differential abundance analysis which selected genes with 
+a base mean of greater than 50 and a P-value less than 0.001. These genes were used 
+to train 15 machine learning algorithms using fivefold cross-validation and grid search 
+hyperparameter tuning. For each iteration of each model, accuracy, sensitivity, and AUC-
+ROC were used to measure test performance.
+The 15 classification models include generalized linear models with Ridge and LASSO 
+feature selection (GLMNET Ridge and GLMNET Lasso), support vector machines with 
+linear and radial basis function kernel (SVMLin and SVMRAD), RF, RF ExtraTrees 
+(EXTRATREES), neural networks (NNET), linear discriminant analysis (LDA), nearest 
+Gardella et al.
+Page 10
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+shrunken centroids (PAM), C5.0 (C5), k-nearest neighbors (KNN), naive bayes (NB), CART 
+(RPART), generalized linear models (GLM), and very greedy forward search algorithm 
+(GFSu), as described previously (29).
+Cell Type Deconvolution.
+Cell type of origin deconvolution of cfRNA was performed using BayesPrism (37) (V3.1.3) 
+with a ME/CFS PBMC single-cell RNA-seq atlas as a reference (14). As described 
+previously, approximately 5,000 PBMCs per sample, from 30 case and 28 control subjects, 
+were analyzed using the 10× Genomics platform. Of the 58 subjects, 40 are also included in 
+our cfRNA study cohort. The cell types were grouped into 29 clusters using Seurat (v4.1.0). 
+The maximum count of each cluster was input into BayesPrism as the reference.
+Deconvolution was also performed using the Tabula Sapiens single-cell RNA-seq atlas 
+(Release 1) as a reference. Cells from this atlas were grouped as previously described in 
+Vorperian et al. (69). Cell types with more than 100,000 unique molecular identifiers were 
+included in the reference and subsampled to 300 cells using ScanPy (v1.8.1) (70).
+Metagenomic Classification.
+Metagenomic classification of unaligned reads was performed using Kraken2 with 
+the default database and parameters. Bracken was used to quantify species level 
+abundances, and a custom python script was used for formatting. To normalize the 
+count outputs from Bracken, we divided the new estimated counts by the number 
+of sequenced reads and multiplied that by one million for CPM. Count values 
+were log10 +1 transformed. The following background viral families (nonmammalian 
+infecting) were removed: Siphoviridae, Baculoviridae, Tospoviridae, Autographiviridae, 
+Alphaflexiviridae, Virgaviridae, Tymoviridae, Bromoviridae, Myoviridae, Solemoviridae, 
+Genomoviridae, Endornaviridae, Tombusviridae, Casjensviridae, Herelleviridae, 
+Chrysoviridae, Phycodnaviridae, Straboviridae, Potyviridae, Marnaviridae.
+Quantification and Statistical Analysis.
+All statistical analyses were performed using R (v4.2.3). All statistical analyses were 
+performed using R (v4.1.0). Data wrangling and visualization were performed using 
+Python (3.9.1), Pandas (1.3.0) matplotlibvenn (0.11.6), R (v4.1.0), Tidyverse (v1.3.1), 
+and ggplot2 (v3.3.5). Bioinformatic pipelines were run using the Snakemake workflow 
+management system (71). Statistical significance was tested using Mann–Whitney U tests, 
+unless otherwise stated. All sequencing data were aligned to the GRCh38 Gencode v38 
+Primary Assembly and features counted using the GRCh38 Gencode v38 Primary Assembly 
+Annotation (62). Visualizations were created using Adobe Illustrator 2024 software (v.28.0).
+Supplementary Material
+Refer to Web version on PubMed Central for supplementary material.
+Gardella et al.
+Page 11
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+ACKNOWLEDGMENTS.
+We are grateful to the individuals who participated in this study and all those involved in recruiting and diagnosing 
+subjects with ME/CFS as well as collecting patients’ data and samples. We thank members of the De Vlaminck 
+lab and the Cornell ME/CFS Collaborative Research Center for scientific discussion. This work was supported by 
+an award cofunded by the NIH; National Institute of Neurological Disorders and Stroke, Office of the Director 
+(OD), National Institute on Drug Abuse, National Heart, Lung, and Blood Institute, and National Human Genome 
+Research Institute grant # U54 NS105541. Additional funding was from the NIH National Institute of Allergy and 
+Infectious Diseases grant # U54 AI178855, and the National Center for Advancing Translational Sciences grant # 
+UL1TR002384. Funding was also provided by the WE&ME Foundation. The funders had no role in study design, 
+data collection and analysis, decision to publish, or preparation of the manuscript.
+References
+1. CDC, Clinical overview of ME/CFS. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (2024). 
+https://www.cdc.gov/me-cfs/hcp/clinical-overview/index.html. Accessed 16 July 2024.
+2. Committee on the Diagnostic Criteria for Myalgic Encephalomyelitis/Chronic Fatigue 
+Syndrome, Board on the Health of Select Populations, Institute of Medicine, Beyond Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome: Redefining an Illness (National Academies Press 
+(US), 2015).
+3. Lim E-J et al. , Systematic review and meta-analysis of the prevalence of chronic fatigue syndrome/
+myalgic encephalomyelitis (CFS/ME). J. Transl. Med 18, 100 (2020). [PubMed: 32093722] 
+4. Hanson MR, Germain A, Letter to the editor of metabolites. Metabolites 10, 216 (2020). [PubMed: 
+32466160] 
+5. Valdez AR et al. , Estimating prevalence, demographics, and costs of ME/CFS using large scale 
+medical claims data and machine learning. Front. Pediatr 6, 412 (2019). [PubMed: 30671425] 
+6. Carruthers BM et al. , Myalgic encephalomyelitis/chronic fatigue syndrome: Clinical working case 
+definition, diagnostic and treatment protocols. J. Chronic Fatigue Syndr 11, 7–115 (2003).
+7. CDC, Clinical overview of long COVID. COVID-19 (2024). https://www.cdc.gov/covid/hcp/
+clinical-overview/index.html. Accessed 25 July 2024.
+8. Wong TL, Weitzer DJ, Long COVID and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome 
+(ME/CFS)—A systemic review and comparison of clinical presentation and symptomatology. 
+Medicina 57, 418 (2021). [PubMed: 33925784] 
+9. Forum on Microbial Threats et al., Toward a Common Research Agenda in Infection-Associated 
+Chronic Illnesses: Proceedings of a Workshop, Biffl C, Ashby E, Liao J, Snair M, Eds. (National 
+Academies Press, 2024).
+10. Komaroff AL, Buchwald DS, Chronic fatigue syndrome: An update. Annu. Rev. Med 49, 1–13 
+(1998). [PubMed: 9509246] 
+11. Maya J., Surveying the metabolic and dysfunctional profiles of T cells and NK cells in Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome. Int. J. Mol. Sci 24, 11937 (2023). [PubMed: 
+37569313] 
+12. Walitt B. et al. , Deep phenotyping of post-infectious myalgic encephalomyelitis/chronic fatigue 
+syndrome. Nat. Commun 15, 907 (2024). [PubMed: 38383456] 
+13. Iu DS et al. , Transcriptional reprogramming primes CD8+ T cells toward exhaustion in Myalgic 
+encephalomyelitis/chronic fatigue syndrome. Proc. Natl. Acad. Sci. U.S.A 121, e2415119121 
+(2024). [PubMed: 39621903] 
+14. Vu LT et al. , Single-cell transcriptomics of the immune system in ME/CFS at baseline and 
+following symptom provocation. Cell Rep. Med 5, 101373 (2024). [PubMed: 38232699] 
+15. Eaton-Fitch N, du Preez S, Cabanas H, Staines D, Marshall-Gradisnik S, A systematic review 
+of natural killer cells profile and cytotoxic function in myalgic encephalomyelitis/chronic fatigue 
+syndrome. Syst. Rev 8, 279 (2019). [PubMed: 31727160] 
+16. Maher KJ, Klimas NG, Fletcher MA, Chronic fatigue syndrome is associated with diminished 
+intracellular perforin. Clin. Exp. Immunol 142, 505–511 (2005). [PubMed: 16297163] 
+17. Kennedy G, Spence V, Underwood C, Belch JJF, Increased neutrophil apoptosis in chronic fatigue 
+syndrome. J. Clin. Pathol 57, 891–893 (2004). [PubMed: 15280416] 
+Gardella et al.
+Page 12
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+18. Gil A. et al. , Identification of CD8 T-cell dysfunction associated with symptoms in myalgic 
+encephalomyelitis/chronic fatigue syndrome (ME/CFS) and long COVID and treatment with a 
+nebulized antioxidant/anti-pathogen agent in a retrospective case series. Brain Behav. Immun. 
+Health 36, 100720 (2023). [PubMed: 38327880] 
+19. Sato W. et al. , Skewing of the B cell receptor repertoire in myalgic encephalomyelitis/chronic 
+fatigue syndrome. Brain Behav. Immun 95, 245–255 (2021). [PubMed: 33794313] 
+20. Milivojevic M. et al. , Plasma proteomic profiling suggests an association between antigen driven 
+clonal B cell expansion and ME/CFS. PLoS One 15, e0236148 (2020). [PubMed: 32692761] 
+21. Sanjabi S, Zenewicz LA, Kamanaka M, Flavell RA, Anti- and pro-inflammatory roles of TGF-β, 
+IL-10, and IL-22 in immunity and autoimmunity. Curr. Opin. Pharmacol 9, 447–453 (2009). 
+[PubMed: 19481975] 
+22. Hornig M. et al. , Distinct plasma immune signatures in ME/CFS are present early in the course of 
+illness. Sci. Adv 1, e1400121 (2015). [PubMed: 26079000] 
+23. Blundell S, Ray KK, Buckland M, White PD, Chronic fatigue syndrome and circulating cytokines: 
+A systematic review. Brain Behav. Immun 50, 186–195 (2015). [PubMed: 26148446] 
+24. Montoya JG et al. , Cytokine signature associated with disease severity in chronic fatigue 
+syndrome patients. Proc. Natl. Acad. Sci. U.S.A 114, E7150–E7158 (2017). [PubMed: 28760971] 
+25. Bateman L. et al. , Myalgic encephalomyelitis/chronic fatigue syndrome: Essentials of diagnosis 
+and management. Mayo Clin. Proc 96, 2861–2878 (2021). [PubMed: 34454716] 
+26. Drag MH, Kilpeläinen TO, Cell-free DNA and RNA—Measurement and applications in clinical 
+diagnostics with focus on metabolic disorders. Physiol. Genomics 53, 33–46 (2021). [PubMed: 
+33346689] 
+27. Loy C, Ahmann L, De Vlaminck I, Gu W, Liquid biopsy based on cell-free DNA and RNA. Annu. 
+Rev. Biomed. Eng 26, 110222–111259 (2024).
+28. Loy CJ et al. , Nucleic acid biomarkers of immune response and cell and tissue damage in children 
+with COVID-19 and MIS-C. Cell Rep. Med 4, 101034 (2023). [PubMed: 37279751] 
+29. Chang A. et al. , Circulating cell-free RNA in blood as a host response biomarker for detection of 
+tuberculosis. Nat. Commun 15, 4949 (2024). [PubMed: 38858368] 
+30. Germain A. et al. , Plasma metabolomics reveals disrupted response and recovery following 
+maximal exercise in myalgic encephalomyelitis/chronic fatigue syndrome. JCI Insight 7, e157621 
+(2023).
+31. Moufarrej MN et al. , Early prediction of preeclampsia in pregnancy with cell-free RNA. Nature 
+602, 689–694 (2022). [PubMed: 35140405] 
+32. Loy CJ et al. , Plasma cell-free RNA signatures of inflammatory syndromes in children. Proc. Natl. 
+Acad. Sci. U.S.A 121, e2403897121 (2024). [PubMed: 39240972] 
+33. Keller B. et al. , Cardiopulmonary and metabolic responses during a 2-day CPET in 
+myalgic encephalomyelitis/chronic fatigue syndrome: Translating reduced oxygen consumption 
+to impairment status to treatment considerations. J. Transl. Med 22, 627 (2024). [PubMed: 
+38965566] 
+34. Fernandez-Guerra P. et al. , Bioenergetic and proteomic profiling of immune cells in myalgic 
+encephalomyelitis/chronic fatigue syndrome patients: An exploratory study. Biomolecules 11, 961 
+(2021). [PubMed: 34209852] 
+35. Tomas C. et al. , Cellular bioenergetics is impaired in patients with chronic fatigue syndrome. 
+PLoS One 12, e0186802 (2017). [PubMed: 29065167] 
+36. Tomas C, Elson JL, Strassheim V, Newton JL, Walker M, The effect of myalgic encephalomyelitis/
+chronic fatigue syndrome (ME/CFS) severity on cellular bioenergetic function. PLoS One 15, 
+e0231136 (2020). [PubMed: 32275686] 
+37. Chu T, Wang Z, Pe’er D, Danko CG, Cell type and gene expression deconvolution with 
+BayesPrism enables Bayesian integrative analysis across bulk and single-cell RNA sequencing 
+in oncology. Nat. Cancer 3, 505–517 (2022). [PubMed: 35469013] 
+38. Tabula Sapiens Consortium et al. , The Tabula Sapiens: A multiple-organ, single-cell 
+transcriptomic atlas of humans. Science 376, eabl4896 (2022). [PubMed: 35549404] 
+39. Serrels A. et al. , Nuclear FAK controls chemokine transcription, tregs, and evasion of anti-tumor 
+immunity. Cell 163, 160–173 (2015). [PubMed: 26406376] 
+Gardella et al.
+Page 13
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+40. Buchbinder EI, Desai A, CTLA-4 and PD-1 pathways. Am. J. Clin. Oncol 39, 98–106 (2016). 
+[PubMed: 26558876] 
+41. Murphy JM et al. , FAK and Pyk2 activity promote TNF-α and IL-1β-mediated pro-inflammatory 
+gene expression and vascular inflammation. Sci. Rep 9, 7617 (2019). [PubMed: 31110200] 
+42. Oh A. et al. , NF-κB signaling in neoplastic transition from epithelial to mesenchymal phenotype. 
+Cell Commun. Signal 21, 291 (2023). [PubMed: 37853467] 
+43. Schiefner A, Wilson IA, Presentation of lipid antigens by CD1 glycoproteins. Curr. Pharm. Des 15, 
+3311–3317 (2009). [PubMed: 19860680] 
+44. Chia JKS, The role of enterovirus in chronic fatigue syndrome. J. Clin. Pathol 58, 1126–1132 
+(2005). [PubMed: 16254097] 
+45. Chia J, Chia A, Voeller M, Lee T, Chang R, Acute enterovirus infection followed by myalgic 
+encephalomyelitis/chronic fatigue syndrome (ME/CFS) and viral persistence. J. Clin. Pathol 63, 
+165–168 (2010). [PubMed: 19828908] 
+46. O’Neal AJ, Hanson MR, The enterovirus theory of disease etiology in myalgic encephalomyelitis/
+chronic fatigue syndrome: A critical review. Front. Med. (Lausanne) 8, 688486 (2021). [PubMed: 
+34222292] 
+47. Chivero ET, Stapleton JT, Tropism of human pegivirus (formerly known as GB virus C/hepatitis G 
+virus) and host immunomodulation: Insights into a highly successful viral infection. J. Gen. Virol 
+96, 1521–1532 (2015). [PubMed: 25667328] 
+48. Huang K, Lidbury BA, Thomas N, Gooley PR, Armstrong CW, Machine learning and multi-omics 
+in precision medicine for ME/CFS. J. Trans. Med 23, 68 (2025).
+49. Nepotchatykh E. et al. , Circulating microRNA expression signatures accurately discriminate 
+myalgic encephalomyelitis from fibromyalgia and comorbid conditions. Sci. Rep 13, 1896 (2023). 
+[PubMed: 36732593] 
+50. Giloteaux L. et al. , Proteomics and cytokine analyses distinguish myalgic encephalomyelitis/
+chronic fatigue syndrome cases from controls. J. Transl. Med 21, 322 (2023). [PubMed: 
+37179299] 
+51. Yagin FH et al. , Development of an expert system for the classification of myalgic 
+encephalomyelitis/chronic fatigue syndrome. PeerJ Comput. Sci 10, e1857 (2024).
+52. Xu J. et al. , Developing a blood cell-based diagnostic test for Myalgic Encephalomyelitis/Chronic 
+Fatigue Syndrome using peripheral blood mononuclear cells. Adv. Sci 10, 2302146 (2023).
+53. Cheng AP et al. , Cell-free DNA profiling informs all major complications of hematopoietic cell 
+transplantation. Proc. Natl. Acad. Sci. U.S.A 119, e2113476118 (2022). [PubMed: 35058359] 
+54. Loy C. et al. , Plasma cell-free RNA captures immune dynamics and predicts GVHD after 
+hematopoietic stem cell transplantation. medRxiv [Preprint] (2025). https://www.medrxiv.org/
+content/10.1101/2024.05.15.24307448v2 (Accessed 17 April 2025).
+55. Nunes JM, Kruger A, Proal A, Kell DB, Pretorius E, The occurrence of hyperactivated platelets 
+and fibrinaloid microclots in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS). 
+Pharmaceuticals (Basel) 15, 931 (2022). [PubMed: 36015078] 
+56. Keller BA, Pryor JL, Giloteaux L, Inability of myalgic encephalomyelitis/chronic fatigue syndrome 
+patients to reproduce VO2peak indicates functional impairment. J. Transl. Med 12, 104 (2014). 
+[PubMed: 24755065] 
+57. Bakken IJ et al. , Two age peaks in the incidence of chronic fatigue syndrome/myalgic 
+encephalomyelitis: A population-based registry study from Norway 2008–2012. BMC Med. 12, 
+167 (2014). [PubMed: 25274261] 
+58. Jason LA et al. , A community-based study of chronic fatigue syndrome. Arch. Intern. Med 159, 
+2129–2137 (1999). [PubMed: 10527290] 
+59. Smets EMA, Garssen B, Bonke B, De Haes JCJM, The multidimensional fatigue inventory (MFI) 
+psychometric qualities of an instrument to assess fatigue. J. Psychosom. Res 39, 315–325 (1995). 
+[PubMed: 7636775] 
+60. Ware JE, User’s Manual for the SF36v2 Health Survey (Quality Metric, Lincoln RI, ed. 2, 2007).
+61. Baraniuk JN et al. , A chronic fatigue syndrome (CFS) severity score based on case designation 
+criteria. Am. J. Transl. Res 5, 53–68 (2013). [PubMed: 23390566] 
+Gardella et al.
+Page 14
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+62. Frankish A. et al. , Gencode reference annotation for the human and mouse genomes. Nucleic 
+Acids Res. 47, D766–D773 (2019). [PubMed: 30357393] 
+63. Dobin A et al. , STAR: Ultrafast universal RNA-seq aligner. Bioinformatics 29, 15–21 (2013). 
+[PubMed: 23104886] 
+64. Liao Y, Smyth GK, Shi W, featureCounts: An efficient general purpose program for assigning 
+sequence reads to genomic features. Bioinformatics 30, 923–930 (2014). [PubMed: 24227677] 
+65. García-Alcalde F. et al. , Qualimap: Evaluating next-generation sequencing alignment data. 
+Bioinformatics 28, 2678–2679 (2012). [PubMed: 22914218] 
+66. Love MI, Huber W, Anders S, Moderated estimation of fold change and dispersion for RNA-seq 
+data with DESeq2. Genome Biol. 15, 550 (2014). [PubMed: 25516281] 
+67. Kuhn M., Building predictive models in R using the caret package. J. Stat. Softw 28, 1–26 (2008). 
+[PubMed: 27774042] 
+68. Robin X. et al. , pROC: An open-source package for R and S+ to analyze and compare ROC 
+curves. BMC Bioinformatics 12, 77 (2011). [PubMed: 21414208] 
+69. Vorperian SK, Moufarrej MN, Quake SR, Cell types of origin of the cell-free transcriptome. Nat. 
+Biotechnol 40, 855–861 (2022). [PubMed: 35132263] 
+70. Wolf FA, Angerer P, Theis FJ, SCANPY: Large-scale single-cell gene expression data analysis. 
+Genome Biol. 19, 15 (2018). [PubMed: 29409532] 
+71. Köster J, Rahmann S, Snakemake–A scalable bioinformatics workflow engine. Bioinformatics 28, 
+2520–2522 (2012). [PubMed: 22908215] 
+72. Gardella AE, aegardella/cfRNA_MECFS. GitHub. https://github.com/aegardella/cfRNA_MECFS. 
+Deposited 1 July 2025.
+73. Gardella AE et al. , Data from “Circulating cell-free RNA signatures for the characterization and 
+diagnosis of myalgic encephalomyelitis/chronic fatigue syndrome.” Gene Expression Omnibus. 
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293840. Deposited 4 April 2025.
+Gardella et al.
+Page 15
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Significance
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a debilitating illness 
+that affects millions of individuals worldwide. Despite the growing prevalence of ME/
+CFS, patients suffer from the unavailability of laboratory diagnostic tests. Here, we 
+establish cell-free RNA (cfRNA) as a minimally invasive bioanalyte for investigating 
+circulating biomarkers and the pathobiology of ME/CFS. Using machine learning, we 
+develop a cfRNA-based diagnostic model with high accuracy. We find evidence of 
+immune system dysfunction in patients, with elevated levels of immune cell-derived 
+transcripts as well as chronic inflammatory signaling pathways. These findings highlight 
+the potential of circulating cfRNA to advance biomarker discovery and uncover disease 
+mechanisms for ME/CFS.
+Gardella et al.
+Page 16
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Fig. 1. 
+Cohort metrics of controls and cases. (A) Case and control subjects were recruited to 
+Los Angeles (n = 30), Ithaca (n = 110), and New York City (n = 35) to collect ~500 
+μL plasma samples for cfRNA analysis (n = 168 passed QC, Materials and Methods). 
+The map illustration was created using BioRender (https://biorender.com). (B) Clinical 
+parameters of cohort. General health (GH) score is significantly higher in controls. GH score 
+and multidimensional fatigue inventory (MFI-20 Total) for cases are inversely correlated 
+(Pearson r = −0.3, P-value < 0.03). Histogram plot of disease duration in cases (range 6 
+mo to 38 y). (C) Composition of cohort subjects. (D) Comparison of age, BMI, and VO2 
+peak by sex and phenotype. VO2 peak measurements obtained via cardiopulmonary exercise 
+testing (CPET) as part of a larger study (n = 120). (E) Comparison of cfRNA sequencing 
+total read counts, alignment rate, and total feature counts, by phenotype. (F) Comparison of 
+rRNA and mtRNA rates before filtering between phenotypes. Dashed lines indicate mean 
+value of all samples. Asterisks indicate statistical significance by Mann–Whitney U test, 
+unless otherwise noted, using P-values as follows; *P < 0.05, **P < 0.01, ***P < 0.001, or 
+not significant if left blank.
+Gardella et al.
+Page 17
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Fig. 2. 
+Machine learning for ME/CFS classification. (A) Volcano plot of differential abundance 
+analysis of exercise-independent cfRNA between cases and controls (DESeq2). 608 
+transcripts are elevated in cases (blue, BH adjusted P-values (P-adj) < 0.05, log2FoldChange 
+> 0.5) and 135 transcripts are elevated in controls (red, P-adj < 0.05, log2FoldChange < 
+−0.5). (B) Variance stabilizing transformation (VST) values of significantly differentially 
+abundant genes (n = 281 genes, P-adj < 0.05, abs(log2FoldChange) > 0.75) between 
+phenotypes. Samples and genes are clustered based on correlation. (C) Workflow of machine 
+learning pipeline. (D) Bar chart of average performance across 100 iterations for each 
+machine learning model for train (purple) and test (orange) sets. Dots indicated the top-
+performing iteration for each model. (E) Fraction of successful classification for each 
+subject in the test set (left y-axis). Number of times each sample is assigned to the test 
+set (right y-axis) shown by a LOESS smoothed line (black) across samples color coded by 
+phenotype. (F) AUC-ROC plot of model performance for one GLMNET Lasso train (purple) 
+and test (orange) set distinguishing cases from controls. (G) Violin plots of classifier scores 
+for training (specificity: 0.92, sensitivity: 0.71, accuracy: 0.80) and test sets (specificity: 
+0.68, sensitivity: 0.84, accuracy: 0.77). Youden threshold cutoff (0.65) shown with dashed 
+line. (H) 21 gene features selected by the GLMNET Lasso ranked by absolute coefficient. 
+(I) Comparison of model performance and phenotype (***P < 1e – 12), test site, and sex. 
+Gardella et al.
+Page 18
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Dashed lines indicate Youden threshold (y = 0.65). (J) Correlation of model performance 
+and disease severity determined by MFI-20 and GH for cases (blue) or controls (red). (K) 
+Workflow for phenotype permutation test. (L) Average AUC across each model before 
+(black) and after (red) shuffling the sample phenotypes.
+Gardella et al.
+Page 19
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Fig. 3. 
+Bioinformatic cell type of origin deconvolution of plasma cfRNA. (A) Deconvolution 
+workflow using a scRNA-seq PBMC reference from the ME/CFS cohort and BayesPrism 
+(12). (B) Uniform manifold approximation and projection (UMAP) from Vu et al. (14) 
+depicts 28 PBMC cell type clusters defined by Seurat (11). (C) Average predicted fraction 
+of cfRNA derived from the top five cell types and others between phenotypes. (D) Topmost 
+significantly different cell type proportions between phenotypes (P-adj values as follows; *P 
+< 0.05, **P < 0.023, ***P < 0.004). (E) Dot plot comparing the relative mean cell type 
+fraction (dot size) and the cell type z-score (dot color) within each cell type for cases and 
+controls separated by sex (* indicates significance P < 0.05, black: both sexes, pink: only 
+females, or not significant if left blank).
+Gardella et al.
+Page 20
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Fig. 4. 
+Biological pathway analysis of ME/CFS. (A) Top 10 most significantly activated (blue) 
+pathways and most significantly inhibited (red) pathways in cases as determined by −log(P-
+value) and a nonzero z-score. (B) Network analysis of the predicted pathways of ME/CFS 
+(Qiagen, IPA). (C) Heatmap of activated (blue) and inhibited (red) pathway marker genes 
+for the selected pathways (n = 69 genes). (D) VST counts of the top 20 most significantly 
+differentially pathway marker genes between controls and cases (P-adj values as follows; *P 
+< 0.05, **P < 0.01, ***P < 0.005).
+Gardella et al.
+Page 21
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
+
+Fig. 5. 
+Detection of circulating viral cfRNA. (A) Top six and other (gray) most abundant viral 
+families with background viral reads removed (Kraken2, Bracken). (B) Comparison between 
+phenotypes of log10 scaled CPM +1 sum of all viral reads (total viral) after background 
+removal. (C) Log10 scaled (CPM) +1 sum of top three individual viral families (Flaviviridae, 
+Herpesviridae, and Retroviridae) between phenotypes were not significantly different. (D) 
+Log10 scaled (CPM) +1 sum of Enterovirus family (Picornaviridae) was not significantly 
+different.
+Gardella et al.
+Page 22
+Proc Natl Acad Sci U S A. Author manuscript; available in PMC 2026 February 23.
+Author Manuscript
+Author Manuscript
+Author Manuscript
+Author Manuscript
