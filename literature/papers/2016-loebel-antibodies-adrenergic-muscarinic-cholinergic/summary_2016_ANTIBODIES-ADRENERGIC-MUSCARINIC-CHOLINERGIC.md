@@ -7,25 +7,28 @@ year: 2016
 venue: "Brain, Behavior, and Immunity"
 doi: 10.1016/j.bbi.2015.09.013
 url: https://doi.org/10.1016/j.bbi.2015.09.013
-pdf: https://doi.org/10.1016/j.bbi.2015.09.013
-text: null
+pdf: literature/papers/2016-loebel-antibodies-adrenergic-muscarinic-cholinergic/paper.pdf
+text: literature/papers/2016-loebel-antibodies-adrenergic-muscarinic-cholinergic/paper.txt
 tags: [autoimmunity, immunology, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: loebel2016
+cover: "[[literature/papers/2016-loebel-antibodies-adrenergic-muscarinic-cholinergic/cover.png]]"
 ---
 
 # Antibodies to β adrenergic and muscarinic cholinergic receptors in patients with Chronic Fatigue Syndrome
 
 ## Related files
+![[literature/papers/2016-loebel-antibodies-adrenergic-muscarinic-cholinergic/paper.pdf]]
 - [[literature/papers/2016-loebel-antibodies-adrenergic-muscarinic-cholinergic/citation.bib]]
+- [[literature/papers/2016-loebel-antibodies-adrenergic-muscarinic-cholinergic/paper.txt]]
 
 ## Summary
 
 Found that many ME/CFS patients carry raised 'self-attacking' antibodies against receptors that control blood vessels and the nervous system.
 
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

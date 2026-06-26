@@ -1,0 +1,1581 @@
+Clinical and Translational Report
+Multi-‘omics of gut microbiome-host interactions in
+short- and long-term myalgic encephalomyelitis/
+chronic fatigue syndrome patients
+Graphical abstract
+Highlights
+d Multi-‘omics identiﬁed phenotypic, gut microbial, and
+metabolic biomarkers for ME/CFS
+d Reduced gut microbial diversity and increased plasma
+sphingomyelins in ME/CFS
+d Short-term patients had more severe gut microbial dysbiosis
+with decreased butyrate
+d Long-term patients had more signiﬁcant metabolic and
+clinical aberrations
+Authors
+Ruoyun Xiong, Courtney Gunter,
+Elizabeth Fleming, Suzanne D. Vernon,
+Lucinda Bateman, Derya Unutmaz,
+Julia Oh
+Correspondence
+julia.oh@jax.org
+In brief
+ME/CFS is an understudied
+multisystemic disease. Xiong et al.
+present an integrated multi-‘omics
+analysis comparing ME/CFS patients with
+matched controls. Short-term disease
+was characterized by greater gut
+microbial dysbiosis, particularly a
+depletion of butyrate-producing
+microbes; long-term disease was
+associated with more severe phenotypic
+and metabolic abnormalities.
+Xiong et al., 2023, Cell Host & Microbe 31, 273–287
+February 8, 2023 ª 2023 Elsevier Inc.
+https://doi.org/10.1016/j.chom.2023.01.001
+ll
+
+Clinical and Translational Report
+Multi-‘omics of gut microbiome-host interactions
+in short- and long-term myalgic encephalomyelitis/
+chronic fatigue syndrome patients
+Ruoyun Xiong,1,2 Courtney Gunter,1 Elizabeth Fleming,1 Suzanne D. Vernon,3 Lucinda Bateman,3 Derya Unutmaz,1
+and Julia Oh1,4,*
+1The Jackson Laboratory, Farmington, CT 06032, USA
+2The University of Connecticut Health Center, Farmington, CT 06030, USA
+3Bateman Horne Center, Salt Lake City, UT 84102, USA
+4Lead contact
+*Correspondence: julia.oh@jax.org
+https://doi.org/10.1016/j.chom.2023.01.001
+SUMMARY
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a complex, debilitating disorder manifest-
+ing as severe fatigue and post-exertional malaise. The etiology of ME/CFS remains elusive. Here, we present
+a deep metagenomic analysis of stool combined with plasma metabolomics and clinical phenotyping of two
+ME/CFS cohorts with short-term (<4 years, n = 75) or long-term disease (>10 years, n = 79) compared with
+healthy controls (n = 79). First, we describe microbial and metabolomic dysbiosis in ME/CFS patients.
+Short-term patients showed signiﬁcant microbial dysbiosis, while long-term patients had largely resolved
+microbial dysbiosis but had metabolic and clinical aberrations. Second, we identiﬁed phenotypic, microbial,
+and metabolic biomarkers speciﬁc to patient cohorts. These revealed potential functional mechanisms un-
+derlying disease onset and duration, including reduced microbial butyrate biosynthesis and a reduction in
+plasma butyrate, bile acids, and benzoate. In addition to the insights derived, our data represent an important
+resource to facilitate mechanistic hypotheses of host-microbiome interactions in ME/CFS.
+INTRODUCTION
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)
+is a complex, multi-system debilitating illness. The syndrome in-
+cludes severe fatigue that is not alleviated by rest, post-exer-
+tional malaise (PEM), muscle and joint pain, headaches, sleep
+problems, hypersensitivity to sensory stimuli, and gastrointes-
+tinal (GI) symptoms.1–3 In the US alone, ME/CFS affects up to
+2.5 million people.4 Our limited understanding of both the
+physiological changes associated with the syndrome and the
+underlying biological mechanisms are major impediments to
+identifying and developing both speciﬁc therapies and reliable
+biomarker-based diagnostics.5,6
+The human microbiome—the body’s trillions of bacteria, fungi,
+and viruses—has recently emerged as an important potential
+contributor to, or biomarker of ME/CFS.7 Patients have frequent
+GI disturbances, and in lower-resolution studies based on 16S
+rRNA gene sequencing, altered gut microbiota.7–13 Compared
+with healthy controls, the microbial dysbiosis observed in
+ME/CFS patients was characterized by decreased bacterial
+diversity, overrepresentation of putative pro-inﬂammatory spe-
+cies, and reductions in putative anti-inﬂammatory species.11,13
+However, sample sizes for these studies were relatively small
+with limited taxonomic resolution. Much remains underexplored
+vis a vis the potential functional consequences of ME/CFS-asso-
+ciated microbial changes.
+An important function of the intestinal microbiota is meta-
+bolism,14,15 feeding both microbial and host processes in its
+dynamic, symbiotic, and mutualistic relationship with the host.
+For example, the metabolic products of gut microbiota can feed
+intohostpathwaysasenergysources16orfunctionasimmunereg-
+ulators,17–19 including short-chain fatty acids (SFCAs),20 metabo-
+lites of bile acids,21 or amino acid metabolites like tryptophan,22
+respectively. Thus, the microbiome can modulate host physiology
+via direct stimulatory effects23,24 or through secondary pathways
+coupled to metabolic processes.25 Such host-microbe interac-
+tions can be identiﬁed both through mechanistic studies26 but
+also inferred by high-resolution proﬁling27,28 and integrated ana-
+lyses of the gut microbiome29—the microbial ﬁngerprint—and
+the host metabolome—the collective chemical ﬁngerprint.
+Here, we performed a high-resolution characterizationof the gut
+microbiome and the plasma metabolome in two ME/CFS cohorts
+compared with healthy controls. In an important departure from
+current studies, we proﬁled a ‘‘short-term’’ cohort (diagnosed
+within the previous 4 years), vs. a ‘‘long-term’’ cohort (patients
+who have been suffering from ME/CFS for more than 10 years).
+Our goal was to gain an understanding of the baseline molecular
+mechanisms by which changes in the ME/CFS microbiome may
+Cell Host & Microbe 31, 273–287, February 8, 2023 ª 2023 Elsevier Inc.
+273
+ll
+
+be reﬂected in circulating metabolic markers, which could then
+potentiate further alterations in host physiology. In addition, we
+sought to identify potential molecular and biological markers of
+ME/CFS progression between the short- and long-term cohorts.
+Finally, we collected detailed clinical and lifestyle survey metadata
+for association analysis. Shotgun sequencing of the fecal micro-
+biome of 149 ME/CFS patients (74 short- and 75 long-term
+patients) vs. 79 age- and sex-matched healthy controls, we found
+that short-term ME/CFS patients had more signiﬁcant microbial
+and GI abnormalities and that long-term patients tended to estab-
+lish a stable, but individualized, gut microbiome. However, long-
+term patients had signiﬁcantly more irreversible health problems
+and
+progressive
+metabolic
+aberrations.
+Finally,
+integrating
+detailed clinical and lifestyle survey metadata with these high-res-
+olution ‘omics data allowed us to develop a highly accurate
+ME/CFS disease classiﬁer. Taken together, our study presents a
+high-resolution, multi-cohort, and multi-‘omics analysis, and
+provides a mechanistic hypotheses of host-microbiome interac-
+tions in ME/CFS.
+RESULTS
+Data characteristics
+We enrolled 228 participants: 149 with ME/CFS (74 short- and 75
+long-term patients) and 79 approximately age- and sex-matched
+healthy controls (Figure 1; Tables S1 and S2). The short-term
+and long-term cohorts were designed to obtain a better under-
+standing of the biological processes during the progression of
+ME/CFS. The cohort was 96.5% Caucasian, with an average age
+of43years and 67% female, characteristics consistentwith epide-
+miological reports that women are from three to four times more
+susceptible to ME/CFS than men.30 We collected detailed clinical
+metadata (Tables S1 and S2), stool samples for shotgun metage-
+nomics, and blood for targeted metabolomic analysis. Clinical
+metadata (n = 228) and blood samples (n = 184) were collected
+at the time of enrollment, followed by self-collection of fecal
+samples (n = 224) within the following 2 weeks (n = 180 complete
+datasets of metadata, blood, and stool). We established a work-
+ﬂow to integrate the 906 clinical features into major disease
+markers tooptimizedatadimensionality (Figure1).Whole-genome
+shotgun metagenomic sequencingofthe stool samples generated
+an average of 10,801,733 high-quality and classiﬁable reads per
+sample, which were then reconstructed to examine gut micro-
+biome composition (species N = 384, Table S3) and gene function
+(gene N = 9,652, Table S4). Plasma was fractionated from blood
+and sent for targeted liquid chromatography-mass spectrometry
+(LC-MS) analysis, where 1,278 metabolites were identiﬁed for
+host molecular ‘omics proﬁling (Table S5). Finally, we analyzed
+each data type individually, then altogether to build multi-‘omics
+models to describe and predict onset, stage ofdisorder, and asso-
+ciated microbial and metabolic features. This allowed us to target
+microbial pathways likely to affect host-microbiome interactions
+Figure 1. Summary of study design and analytical pipeline
+We collected detailed clinical metadata, fecal samples, and blood samples for 228 individuals in three cohorts: healthy controls, patients with short-term (<4 years)
+or long-term (>10 years) ME/CFS. A comprehensive ‘omics workﬂow was constructed with the multi-data types (phenotypic, metagenomics, and metabolomics,
+respectively) and multi-computational models to understand potential host-microbe interactions. LC-MS, liquid chromatography-mass spectrometry.
+ll
+Clinical and Translational Report
+274
+Cell Host & Microbe 31, 273–287, February 8, 2023
+
+and alter the disease pathophysiology. For all datatypes, we per-
+formedtwo primary comparisons:(1) ME/CFSvs. healthycontrols,
+tounderstandthebroaddifferencesinherenttothedisease,and(2)
+short- vs. long-term ME/CFS vs. healthy controls, to understand
+disease progression.
+The host phenotype in ME/CFS
+To understand and interpret the host phenotype of ME/CFS
+comparedwithhealthy controls, wecollected comprehensive clin-
+ical metadata including detailed demographics and lifestyle infor-
+mation, an itemized dietary intake survey, medical history records,
+three general questionnaires regarding the physical and mental
+health of all participants, and ﬁve patient-speciﬁc surveys encom-
+passingME/CFSclinicalsymptomsandmeasurements(TablesS1
+and S2). We ﬁrst excluded possible dietary biases and then estab-
+lished that the dietary habits were comparable among all groups
+(Figure S1; Tables S1 and S2). We also found that the frequency
+of previous acute infections (Figure S1, chi-squared test,
+p < 0.001), which supports the potential association of infections
+with the onset of ME/CFS.31 Our naive Bayesian classiﬁcation
+model (Figure S2A, a measure of classiﬁcation accuracy, area un-
+der the curve [AUC] = 0.85), which we used to identify clinical fea-
+tures that discriminate healthy controls vs. patients, showed that,
+besides someannounced dysfunctionslikeorthostatic intolerance
+and ﬁbromyalgia, most ME/CFS patients also suffered from
+additional complications, such as depression, headaches, consti-
+pation, and anxiety32,33 (Figure S2B). Altogether, these high-reso-
+lution data echo the known pathophysiologies of ME/CFS and
+established the clinical characteristics of our cohorts.34
+ME/CFS patients have decreased gut microbial diversity
+and greater heterogeneity
+To begin to identify potential microbial mechanism(s) related to
+these symptoms, we ﬁrst decoded the microbiota of ME/CFS pa-
+tients. After classiﬁcation of our shotgun metagenomic dataset to
+the species level (384 species passing quality cutoffs, see STAR
+Methods and Table S3), we examined community-wide metrics
+to understand if broad dysbiosis was observed in patients
+compared with controls. Clustering using principal coordinate
+analysis (Bray-Curtis dissimilarity distance, which reﬂects the sim-
+ilarity of microbiome composition between each pairwise set of
+samples) showed (1) most of sample variation was explained by
+the onset ofME/CFS(Figure2F,permutational analysisofvariance
+[PERMANOVA], p = 0.002) and was not inﬂuenced by the age dif-
+ference between the control and patient groups (Figure S3;
+Table S7), (2) patient samples had higher heterogeneity, as a pop-
+ulation comparedwithcontrols(Figure2G,p < 0.01,control N = 79,
+ME/CFS N = 149, heterogeneity was calculated over N = 384 spe-
+cies, Wilcoxon rank-sum test with Bonferroni correction). Interest-
+ingly, high heterogeneity was also observed in our recent study of
+frail older adults,35,36 suggesting a non-uniform adjustment to the
+host’s changing physiological conditions.
+High microbial biodiversity has increasingly been associated
+with ecosystem health,37 with a less diverse (fewer members)
+and less even structure (i.e., more heavily weighted with fewer
+members) associated with decreased resilience and susceptibil-
+ity to pathogenic colonization.38 ME/CFS patients had fewer
+community members (Figure 2A, Chao 1 index; p < 0.001, control
+N = 79, ME/CFS N = 149, Chao 1 index was calculated over
+N = 384 species, Wilcoxon rank-sum test with Bonferroni correc-
+tion), and lower Evar evenness (Figure 2B, p < 0.05, Wilcoxon
+rank-sum test with Bonferroni correction). To understand if there
+were speciﬁc species lacking in patients, we calculated a rarity
+and dominance index. A decrease of Chao 1 (Figure 2A) and rar-
+ity (Figure 2C, p < 0.05, Wilcoxon rank-sum test with Bonferroni
+correction) indicated that ME/CFS patients had fewer low-abun-
+dance members. The lower Gini index from those dominant
+species implied greater equality (Figure 2D, p < 0.01, Wilcoxon
+rank-sum test with Bonferroni correction), with highly abundant
+commensal species. We also noted a modest change in the ratio
+of the overall relative abundance of Firmicutes to Bacteroidetes
+phyla (Figure 2E), a common metric for comparing broad compo-
+sitional differences between microbiota, including IBD and other
+inﬂammatory diseases.25,39,40
+Finally, we predicted in situ growth rate of individual microbes
+with our growth rate index (GRiD) algorithm, which leverages
+coverage differences over a microbe’s genome to infer microbial
+growth rate, a proxy for metabolic activity in a community.41
+Interestingly, the species that grew slower in ME/CFS were pri-
+marily Firmicutes (Figure 2H), suggesting a further nuance to
+the
+already
+disproportionate
+Firmicutes:Bacteroides
+ratio.
+Taken together, the gut microbiome of ME/CFS, similar to that
+in aging and other chronic inﬂammatory disorders, was charac-
+terized by modest but broad dysbiosis, including a less diverse
+and more uneven gut microbiome community with higher hetero-
+geneity and altered Firmicutes:Bacteroidetes ratio, supported by
+a group of slower-replicating Firmicutes species.
+Microbial dysbiosis occurs in short-term ME/CFS and
+stabilizes in long-term disease
+Our analyses thus far investigated major differentiating features
+between ME/CFS patients and healthy controls. We wondered
+if microbial and metabolomic markers changed signiﬁcantly
+during the progression of ME/CFS, or if early features could
+predict later severity. We analyzed our dataset comparing the
+short-term with the long-term group. First, we evaluated the ef-
+fect of age as a confounder but found no signiﬁcant differences
+(PERMANOVA with age as a variate, p > 0.05, Wilcoxon rank-
+sum test with Bonferroni correction, p > 0.05 (%50 years old
+vs. >50-year-old subgroups, Figure S3; Table S7).
+We then examined overall microbial composition differences
+between the patient cohorts as previously performed (Figure 3A).
+Interestingly, differences in the gut microbiome were more pro-
+nounced and variable during early stages of the disease
+compared with long-term patients and controls (Figures 3C–
+3F, p < 0.05, pairwise Wilcoxon rank-sum test with Bonferroni
+correction). As noted, heterogeneity was a feature we observed
+associated with aging, particularly frail aging. As we found no
+confounding effect of age, we conjectured that these differences
+were driven by ME/CFS disease duration. A signiﬁcant shift in the
+Bacteroidetes (77.5%) to Firmicutes (19.4%) ratio was observed
+only in short-term but not long-term patients (Figure 3B, pairwise
+Wilcoxon rank-sum test with Bonferroni correction, p < 0.05
+short term; p > 0.1 long term vs. controls), explaining the modest
+difference previously observed (Figure 2E).
+To further resolve species-level differences between short-
+term and long-term patients, we performed a pairwise compari-
+son for the mean relative abundance of every species in the top
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287, February 8, 2023
+275
+
+ﬁve most abundant phyla (Figure 3F). We discovered that spe-
+cies that had atypical relative abundance in short-term patients
+with respect to healthy controls (e.g., Bacteroidetes sp.) tended
+to stabilize in late-stage patients, i.e., become relatively closer to
+the relative abundance observed in controls.
+Taken together, we found that microbial dysbiosis is most
+marked early in ME/CFS disease, characterized by a loss of di-
+versity driven by low-abundance bacteria with high heterogene-
+ity. Over time, we conjecture that the microbiota then stabilizes
+and reverts to an ecosystem more characteristic of healthy con-
+trols, with the reacquisition of some low-abundance species and
+normalization of diversity. These results highlight the importance
+of stratifying by disease duration to identify features relevant to
+disease progression.
+ME/CFS is distinguishable with microbiome and
+metabolomics features
+Currently, there are no approved laboratory diagnostics avail-
+able for ME/CFS,6 likely due to the heterogeneity of the disease.
+We hypothesized that the combination of environmental and
+clinical factors may assist in a more comprehensive disease
+classiﬁcation. We constructed multiple state-of-the-art classi-
+ﬁers for deep proﬁling. For metagenomic data, we used both
+microbial species as well as gene relative abundance (identiﬁed
+by KEGG gene proﬁling, see STAR Methods and Table S4) for
+our classiﬁer, as we hypothesized that both species relative
+abundance as well as gene-level differences could differ be-
+tween cohorts. Thus, we constructed four models based on (1)
+species and (2) KEGG gene relative abundances, (3) normalized
+abundance of plasma metabolites, or (4) a combination of all
+three (multi-‘omics, see STAR Methods), in addition to the clin-
+ical classiﬁer described above. Irrespective of the model, results
+obtained using multi-‘omics data (gradient boosting [GDBT]
+model, AUC = 0.90) outperformed any individual dataset, fol-
+lowed by the metabolome (AUC = 0.82), KEGG gene proﬁle
+(AUC = 0.73), and species relative abundance (AUC = 0.73,
+GDBT model, Figure 4B; LASSO logistic, support vector ma-
+chine [SVM], and random forest [RF], Figure S4). This improved
+performance of multi-‘omics for differentiating ME/CFS patients
+from healthy controls underscores the complementarity of
+different ‘omics in describing the molecular processes that can
+occur with shifts in the host physiological state.
+A
+B
+C
+D
+E
+F
+G
+H
+Figure 2. Microbial dysbiosis in ME/CFS is characterized by decreased diversity and greater heterogeneity
+(A–E) Comparing controls vs. ME/CFS patients (irrespective of disease stage), community structure differed in ME/CFS with (A) decreased richness (Chao 1
+index, which measures the number of observed species); (B) decreased evenness (lower values of Smith and Wilson’s Evar index); (C) decreased rarity (smaller
+proportion of the least abundant species [<0.2% relative abundance]); (D) decreased inequality (smaller Gini index of the dominant species [>0.2% relative
+abundance]); (E) decreased Firmicutes/Bacteroidetes ratio. p values were computed by Wilcoxon rank-sum test.
+(F) First and second principal coordinates of dimensionality reduction for Bray-Curtis dissimilarity distances, which measures pairwise similarity of two given
+samples. Values in brackets indicate the amount of total variability explained by each principal coordinates. p value and R2 were calculated by permutational
+multivariate analysis of variance (PERMANOVA) test with patient/control as a variable.
+(G) Increased heterogeneity observed in ME/CFS as measured by divergence, or Bray-Curtis dissimilarity. p value was computed by Wilcoxon rank-sum test.
+(H) Volcano plot showing differences in predicted growth rate in select species in ME/CFS. Each dot indicates a microbe, sized by the value of its inferred growth rate.
+Thexaxisshowstheabsolutedifference(meangrowthrateinpatient—meangrowthrateincontrol)andthey axisisthelog10(pvalue,Wilcoxonrank-sumtest).Species
+that were predicted to grow faster in patients were colored red and slower in blue. p value > 0.05 was considered not signiﬁcant (gray). See also Table S3.
+ll
+Clinical and Translational Report
+276
+Cell Host & Microbe 31, 273–287, February 8, 2023
+
+We then examined the most discriminatory features for each of
+the individual ‘omics models to identify potential biomarkers and
+to further biological interpretation (Figures 4A and S5). Low-
+abundance microbes comprised the most discriminatory fea-
+tures, including microbes implicated in tryptophan, butyrate,
+and propionic acid production that were largely depleted in
+ME/CFS (Wilcoxon rank-sum test with Bonferroni correction
+with over N = 384 species, p < 0.01, Figure S4). Metabolites
+of both pathways are key immunomodulatory molecules that
+regulate metabolic and endocrine functions.22,42–45 Microbial
+genes that discriminated ME/CFS and were decreased included
+genes involved in betaine production (grdD, grdE, and grdI), an
+A
+B
+C
+D
+E
+F
+Figure 3. Signiﬁcant microbial dysbiosis in observed in short-term ME/CFS
+(A) Taxonomic classiﬁcation at species-level resolution for all individuals in the three cohorts: healthy controls, short-term patients, and long-term patients.
+Relative abundances of the most abundant gut species (top 25) are presented with gray representing the aggregate relative abundance of the remaining species.
+Gastrointestinal symptom rating scale (GSRS) score, indicating the scale of gastrointestinal abnormality, is shown above for each individual.
+(B–D) Similar to Figure 2, we showed differences in the microbial community structures in short-term and long-term patients in (B) composition at phylum level—
+decreased Firmicutes/Bacteroidetes ratio in short-term patients; (C) reduced richness in short- and long-term (Chao 1 index, which measures the number of
+observed species); (D) decreased evenness in short-term (lower values of Smith and Wilson’s Evar index). p values were computed by Wilcoxon rank-sum test.
+(E) Increased heterogeneity observed in long-term cohort as measured by divergence, or Bray-Curtis dissimilarity. p value was computed by Wilcoxon rank-sum test.
+(F) Each species in the ﬁve most abundant phyla were compared among three groups to observe the dynamics of gut community with respect to progression of
+disease. Here, each point represents the average relative abundance for a given species, connected with a line that is colored by increase (red) or decrease (blue). p
+valueswere computed by Wilcoxon signed-rank test. p value annotation legend: ns: p > 0.05, *0.01 < p % 0.05, **0.001 < p % 0.01, ***1e4 < p % 0.001, ****p % 1e4.
+See also Table S3.
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287, February 8, 2023
+277
+
+anti-inﬂammatory metabolite.46,47 Besides betaine, sphingo-
+myelin, serotonin, and cholesterol were highly discriminatory
+features and have also been previously reported to be altered
+in ME/CFS patients.6,48–50
+Finally, because of inherent heterogeneity of ME/CFS, it
+is possible that clinical or lifestyle factors could confound
+this analysis. We sought to determine whether biomarkers of
+interest were disease or confounder driven. We applied an
+A
+B
+Figure 4. Out-performing multi-‘omics model identiﬁes microbial, metagenomic, and metabolic biomarkers for ME/CFS compared to
+controls
+(A) Biomarkers from three supervised gradient boosting (GDBT) models are shown. Models from top to bottom: species relative abundance, relative abundance
+of KEGG gene proﬁle, normalized abundance of plasma metabolomics. The top ten most important features in each model are shown together with their general
+functional class, raw abundance, and variance. From left to right: (1) functional annotations: species relative abundance model—the metabolic function (capacity
+of butyrate, tryptophan, and propionate pathway); KEGG gene proﬁle model—the class identiﬁcation of the enzyme; metabolomics models—the superfamily for
+the metabolite; (2) feature importance: features were ranked by their contribution to the model on the y axis; the x axis indicates the feature importance value from
+each model; (3) average feature abundance in control and patient groups (Figure S4); (4) variation in mean relative abundance in control and patient groups with
+coefﬁcient of variation.
+(B) Performance of the classiﬁers using area under the curve (AUC) was evaluated using 10 randomized and 10-fold cross-validations for each model: species
+relative abundance (pink), KEGG gene proﬁle (blue) or metabolites (orange) alone, or taken altogether (‘omics, green), which used the combination of the top 30
+features from three models. See also Figure S4 and Tables S3–S5.
+ll
+Clinical and Translational Report
+278
+Cell Host & Microbe 31, 273–287, February 8, 2023
+
+unbiased general linear test (see STAR Methods and Table S7)
+with an extensive array of metadata features. We found that
+none of these biomarkers were signiﬁcantly correlated with
+confounders. Additionally, from this general association study,
+we observed that broader microbiome features, such as alpha
+diversity, were not biased by metadata. However, a few metab-
+olites (importantly, not those features selected in the ME/CFS
+classiﬁcation model below) were inﬂuenced by gender, age,
+and IBS(Irritable Bowel Syndrome) score (Figure S6). Despite
+this, we concluded our microbiome and metabolomic analyses
+are largely unconfounded by individual clinical and behavioral
+features.
+Severe phenotypic and metabolic abnormalities in long-
+term ME/CFS
+We then constructed individual and multi-‘omics models to
+differentiate disease durations and controls. We followed this
+by overrepresentation analysis (ORA) on metabolic pathways
+and Bayesian classiﬁcation on phenotypic abnormalities to
+further pinpoint distinctive patterns in different stages of
+ME/CFS (see STAR Methods). Overall classiﬁcation accuracy
+was lower than for overall disease but still relatively accurate
+leveraging multi-‘omics data (AUC = 0.82, GDBT model, Fig-
+ure S5). Low (<0.5%) relative abundance bacteria, including
+several putative butyrate producers (Clostridium sp.),51 were
+identiﬁed as potential biomarkers. The metabolomics model
+also identiﬁed two cholesterol and several lipid metabolites as
+discriminatory (Figure 5A; Table S6), consistent with the pheno-
+typic classiﬁer, which identiﬁed many metabolic-related abnor-
+malities (Figure 5C)52–59 to be more predictive in long-term
+ME/CFS. However, we note that some of these phenotypes
+also can increase with age, which is largely matched in our
+cohort but may contribute to these differences.60,61 In addition,
+we found that ﬁbromyalgia62 was a key feature distinguishing
+short- vs. long-term disease, as was a trend toward worsening
+sleep problems and more pronounced PEM in the later stage
+of the disease (Figure 5B). Interestingly, we identiﬁed poor appe-
+tite63 to be the most distinguishable phenotype in the short-term
+group, which is consistent with a trend of more GI disturbances
+in the early stage (Figures 3A and 5B).
+ORA with the metabolomics proﬁles identiﬁed the most strik-
+ing differences between short- and long-term patients and
+controls. Unlike trends observed in the microbiome data with
+the greatest dysbiosis observed in short-term patients, long-
+term patients had more metabolites differentiating them from
+healthy controls, especially in sphingolipids and diacylglycerol
+metabolites (Figure 5C), conﬁrming previous metabolomic ﬁnd-
+ings. Interestingly, most metabolic species either decreased
+across experimental groups (control > short term > long term;
+e.g., xanthine), or increased (control < short term < long term;
+e.g., sphingomyelins, diacylglycerol, phosphatidylcholine, and
+ceramides, p < 0.01, pairwise Wilcoxon rank-sum test with Bon-
+ferroni correction with N = 1,278 metabolites, see Figure 5D),
+suggesting that metabolic irregularities associated with ME/
+CFS may gradually worsen over time (Figure 5D). Taken
+together, we postulate that long-term ME/CFS patients have
+developed a unique but stable pathophysiology characterized
+by more severe clinical symptoms and an array of altered host
+metabolic reactions.
+Gut and plasma butyrate is reduced in early-stage
+disease and is associated with host abnormal
+physiology
+We noted in our metagenomics classiﬁcation model a particular
+refrain
+of
+a
+depletion
+of
+butyrate-synthesizing
+microbes,
+including Roseburia and F. prausnitzii in ME/CFS. Butyrate is a
+major energy source for colonic epithelial cells and one of the
+main intestinal anti-inﬂammatory metabolites.42,64 We thus per-
+formed a focused metagenomic and metabolomic analysis of
+the butyrate pathway to better understand its potential role in
+the crosstalk between the gut microbiota and host physiology
+in ME/CFS.
+Strikingly, we found a depletion in plasma isobutyrate in the
+short-term group (Figure 6A, p = 0.03, Wilcoxon rank-sum test
+with Bonferroni correction with over N = 1,278 metabolites).65
+Thus, we sought to link plasma metabolite abundance to gene-
+coding potential of the microbiome. We performed differential
+abundance analysis of KEGG gene matrix (p value computed
+by Wilcoxon rank-sum test with Bonferroni correction over N =
+9,652 genes) and found that butanoate synthesis (KEGG
+map00650) differentiated between patients and controls (Fig-
+ure 6C; fold change and p value of each gene in butyrate
+pathway is shown in Figure 6D, also in Table S4). Finally, we in-
+ferred gut butyrate abundance from metagenomic data using a
+Markov chain Monte Carlo (MCMC) metabolite prediction algo-
+rithm (see STAR Methods), in the absence of matched gut me-
+tabolomic data. Inferred concentrations of isobutyrate were
+signiﬁcantly decreased in ME/CFS (Wilcoxon rank-sum test
+with Bonferroni correction, p = 0.05), especially in the short-
+term group (Figure 6B, pairwise Wilcoxon rank-sum test with
+Bonferroni correction, p < 0.01).
+Finally, we performed a Spearman correlation analysis with the
+relative abundance of (1) butyrate-producing microbes or (2)
+KEGG enzymes with plasma metabolites to identify the degree
+to which this pathway may inﬂuence circulating metabolite levels
+(Figure 6D; Table S4, p value computed by Spearman correlation
+and correlated by Holm’s method with N = 18 species + N = 113
+butyrate genes  N = 1,278 metabolites, see STAR Methods).
+From the thousands of plasma metabolites tested, we identiﬁed
+24 positive correlations, including moieties from propionates,
+succinates, tryptophans, and hippurates, consistent with results
+of our differential abundance analysis, as well as 12 negative cor-
+relations, including sulfate and ursodeoxycholate moieties. The
+further suggests that changes in the ability of the gut microbiome
+to metabolize or synthesize SFCAs is reﬂected in dysbiosis of
+these and related metabolites in plasma.
+Microbiome and metabolomic biomarkers are shared
+across additional ME/CFS cohorts
+To explore the generalizability of our ﬁndings, we compared our
+ﬁndings with those identiﬁed in (1) an additional time point for
+our current cohort: we collected metagenomics and metabolo-
+mics data again 1 year after their initial recruitment (n = 107
+patients, n = 59 controls); (2) two independent cohorts: the mi-
+crobiome cohort from Guo et al.66 with 197 long-term partici-
+pants (n = 106 patients, n = 91 controls) and the metabolome
+cohort from Germain et al.48 with 56 female individuals (n = 26
+patients, n = 26 controls). While there are notable biological dif-
+ferences in study design (e.g., long-term patients only vs. our
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287, February 8, 2023
+279
+
+short- and long-term cohort, gender), we found that the main
+conclusions and the identiﬁed biomarkers in ME/CFS were
+largely shared across all cohorts, supporting the robustness of
+our models and the validity of our ﬁndings.
+First, the loss of gut microbial diversity in ME/CFS was
+observed in both the external microbiome cohort and our second
+time point. Guo et al. also found decreased evenness in the dis-
+ease (Figure 2B). Most microbiome features that we at time point
+1 were similar 1 year later (Figures 7A and 7B). Similarly, external
+cohorts and our second time point supported the depletion of
+butyrate producers and key butyrate-producing genes, indi-
+cating that the microbial butyrate biosynthesis capability was
+reduced in ME/CFS. Guo’s cohort measured fecal SCFAs (ace-
+tate, propionate, and butyrate) by GC-MS and found signiﬁcant
+decreases of acetate and butyrate in ME/CFS (Figure 7G). We
+then validated our classiﬁers with plasma metabolomics data
+A
+B
+C
+D
+Figure 5. Phenotypical and metabolic abnormality are most pronounced in long-term patients
+(A) Multi-gradient boosting models identiﬁed most important species, genes, and metabolites differentiating controls, short-, or long-term ME/CFS. In each
+model, the top ten features are ranked by their contribution to the model on the y axis, and the x axis indicates the feature importance value. The heatmap shows
+the average feature abundance or relative abundance in each group. For full classiﬁcation model performance (AUCs), see also Figure S5.
+(B) Naive Bayesian model based on medical history records classiﬁed the stage of disease and identiﬁed nine signiﬁcant clinical phenotypes in the long-term
+cohort and one signiﬁcant phenotype in the short-term cohort. For each feature, the probability of experiencing the symptom in the long-term patients was
+presented to the left on the x axis and the probability in the short-term patients was presented to the right.
+(C) Overrepresentation analysis (ORA) on the plasma metabolome identiﬁed the most differential metabolites and pathways in the long-term group. For each
+pathway, two comparisons were conducted, control vs. short term and control vs. long term. p values were computed by linear global t test, and the counts of
+differential metabolites presented on the x axis.
+(D) The trend of gradually changing metabolic irregularities along with the progression of disease are indicated by the difference between control, short-term and
+long-term cohorts. Here, each point represents the average normalized abundance for a given metabolite in the top ﬁve most abundant superfamilies, connected
+with a line that is colored by if increasing (red) or decreasing (blue). p values were computed by Wilcoxon signed-rank test. p value annotation legend: *0.01 < p %
+0.05, **0.001 < p % 0.01, ***1e4 < p % 0.001, ****p % 1e4. See also Tables S5 and S6.
+ll
+Clinical and Translational Report
+280
+Cell Host & Microbe 31, 273–287, February 8, 2023
+
+A
+B
+C
+D
+Figure 6. Limited microbial butyrate biosynthesis capacity associates with reduced plasma isobutyrate and multiple blood metabolites
+(A and B) In the blood and gut environment, decreased butyrate abundance in the short-term patient was indicated by (A) signiﬁcantly reduced plasma isobutyrate
+normalized abundance and (B) decreased predicted gut isobutyrate in patients, especially in short-term patients. Boxes show median relative abundance and
+interquartile ranges (IQRs); whiskers specify ±1.5 * IQR from the box’s quartile. p values were computed by Wilcoxon rank-sum test.
+(C) The reduced abundance of most key enzymes in the butanoate mechanism (KEGG pathway map00650) indicated a more limited microbial butyrate
+biosynthesis capacity in ME/CFS. Differentiating enzymes were colored and annotated on the map (decreased in blue and increased in red).
+(D) Correlation of plasma metabolite normalized abundance and relative abundance of microbial butyrate biosynthesis features, with fold changes. Heatmap
+shows signiﬁcant correlations (Spearman, p < 0.05) with the top bar indicating the metabolite superfamily. The top half shows the key enzymes in the KEGG
+(legend continued on next page)
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287, February 8, 2023
+281
+
+from our second time point (Figure 7C) and Germain’s cohort
+(Figure 7D). The performance of the models was strong (accu-
+racy > 70%) and numerous shared biomarkers among cohorts.
+Out of ten metabolic biomarkers identiﬁed from time point 1,
+six were shared among cohorts (Figure 7E).
+Taken together, we found that our microbial and metabolic
+biomarkers were robust to cohort, supporting the reproducibility
+of our conclusions in ME/CFS.
+DISCUSSION
+Here, we performed a large-scale multi-‘omics investigation
+integrating detailed clinical and lifestyle data, gut metagenomics,
+and plasma metabolomics in short- and long-term ME/CFS pa-
+tients compared with healthy controls. Several studies have re-
+ported a disrupted gut microbiome in ME/CFS11,13 as well as
+changes in blood cytokine and metabolite levels. However, our
+cohort design differentiating short- and long-term patients was
+important to identify microbial and metabolic features that may
+contribute to disease progression.
+Notably, the most signiﬁcant microbial dysbiosis occurred in
+short-term ME/CFS. Compositional differences in short-term
+ME/CFS were consistent with previous studies using lower-res-
+olution sequencing67 and an independent microbiome study
+from Guo et al.66 co-published in this issue, identifying a broad
+reduction in microbial diversity,68 alterations in the ratio of
+Bacteroides:Firmicutes microbiota,10 and increased heteroge-
+neity of low-abundance organisms. This latter feature has
+recently been associated with the microbiome of frail older
+adults and supports its general association with reduced health
+outcomes.35 There are several potential explanations for this
+early-stage dysbiosis. First, short-term patients suffer more GI
+disturbances, and gut microbiome changes may reﬂect these
+environmental changes. Second, it is possible that patients
+may try a range of interventions that impact their gut micro-
+biome, which is dynamic and inﬂuenced by numerous intrinsic
+and extrinsic factors, including age and diet.69 Diet can not
+only dramatically shift gut microbial community composition,
+but it can alter the metabolic potential of the microbes and pro-
+duction of immunomodulatory metabolites. We also analyzed
+the detailed dietary metadata, showing that most dietary habits
+are comparable among our cohorts, except infrequent sugar
+intake in our short-term patients, which might also contribute
+to the microbial differences observed in early stages of disease
+(Table S1; Figure S1).
+The return of the gut microbiome of long-term patients to a
+conﬁguration more similar to healthy controls (with notable
+differences nonetheless, in low-abundance species and in het-
+erogeneity) as well as the reduced occurrence of GI illness in
+this cohort, suggests a return to a relative homeostasis. Howev-
+er, we conjecture that microbial dysbiosis seen in short-term
+patients may have cumulative and long-term effects, where
+damage may be caused by an initial trigger, resulting in
+cascading events. Long-term patients, despite their relatively
+more ‘‘control-like’’ gut microbiome, have more severe clinical
+symptoms and metabolic dysbiosis. Thus, we hypothesize that
+ME/CFS progression may begin with loss of beneﬁcial microbes,
+particularly SCFA producers, resulting in more pervasive GI
+phenotypes that is later reﬂected in plasma metabolite levels. In-
+dividual-speciﬁc changes then lead to the irreversible metabolic
+and phenotypic changes and unrecoverable ME/CFS. Other
+possibilities for this ‘‘normalization’’ observed in long-term ME/
+CFS include survival bias, as the cohort design for this study is
+cross-sectional, not truly longitudinal, and it is possible that the
+>10 years cohort is comprised individuals who have not seen
+signiﬁcant improvement or decline in their symptoms, not that
+disease progression normalizes by default.
+The abnormalities in the short-term cohort could result in
+potential increases in aberrant translocation of microbial metab-
+olites that could affect host immune and metabolic processes.
+For example, one of the changes we noted in short-term patients
+was a reduction in potential immunomodulatory organisms
+(butyrate and tryptophan producers, e.g., F. prausnitzii), which
+we speculate could lead to long-term metabolic dysbiosis. The
+reduced prevalence of the butanoate synthesis pathway and
+the reduced relative abundance of butyrate-producing bacteria
+among all patients, but especially in the short-term group, sug-
+gested a loss of butyrate in the intestinal environment. This
+was consistent with the decrease of isobutyrate measured in
+the blood. We additionally note that some of these microbial sig-
+natures, such as these changes in SCFA producers, have been
+identiﬁed in other disease cohorts. For example, a particularly
+interesting study examining the gut microbiome and metabo-
+lome of cardiovascular disease70 suggested that major alter-
+ations in both feature sets might begin signiﬁcantly before
+clinical onset of disease, including a depletion of butyrate
+producers. One possibility is that the microbial and metabolic
+features identiﬁed here are less speciﬁc to ME/CFS but more
+generally biomarkers of future disease risk.
+Butyrate, tryptophan, and other microbial metabolites have
+been linked to mucosal immune regulation, and our team pre-
+viously showed a striking immune dysbiosis in different blood
+immune markers, including changes in the functional capacity
+of mucosal associated invariant T (MAIT) cells and Th17 cells,
+and a decrease in the frequency of CD8+ T cells and natural
+killer cells in long-term ME/CFS patients.71 This is an exciting
+association because each of these cell types have been linked
+to bacterial or fungal infections, respond to microbial metabo-
+lites, and have been linked to the pathogenesis of autoimmune
+or chronic inﬂammatory diseases. Thus, it is possible that the
+microbiome primes or sustains an aberrant immune response
+following disease onset. This is supported by an observed shift
+from
+a
+predominantly
+Th1
+to
+Th2
+immune
+response
+in
+ME/CFS.72
+butanoate pathway. On the left, different fold changes between the two patient cohorts (short term vs. control and long term vs. control, respectively) indicated a
+signiﬁcant decrease in butyrate biosynthetic capacity in the early stages of ME/CFS. p values were calculated in each group with Wilcoxon rank-sum test. Finally,
+the bottom half shows the correlation between the relative abundance of predicted butyrate producers and plasma metabolites. Microbes were ordered by
+relative abundance. For each microbe, the size of the dot indicates the mean abundance in each group and the color indicated fold change over the control group.
+p value was computed by Kruskal-Wallis H test. p value annotation legend: *0.01 < p % 0.05, **0.001 < p % 0.01, ***1e4 < p % 0.001.
+See also Table S6.
+ll
+Clinical and Translational Report
+282
+Cell Host & Microbe 31, 273–287, February 8, 2023
+
+There is currently no standard diagnostic test for ME/CFS
+because of many phenotypes of ME/CFS are shared with other
+disorders,5,6 such as ﬁbromyalgia. Here, our integration of multi-
+ple ‘omics data signiﬁcantly increased classiﬁcation accuracy
+and identiﬁed microbial and metabolic features that could
+pinpoint potential hypotheses for further investigation and thera-
+peutic strategies. Longitudinal sampling of short-term patients,
+particularly as they progress to long-term disease, would help
+to untangle directionality of microbial dysbiosis and potential ef-
+fects on the blood metabolome. For example, recent studies
+performing large-scale associations with the gut microbiome
+and blood metabolome have identiﬁed that a signiﬁcant fraction
+(upward of 15%) of blood metabolites can be predicted by gut
+microbiome composition.73 However, understanding of the
+temporal nature of this association is limited. Here, our ‘omics
+workﬂows could be one of the guiding frameworks to intergrad-
+ing microbiome, metabolome, and host phenotypes, and thus,
+bring a more understanding to host-microbiome interactions.
+Finally, we believe that recent potential associations between
+the chronic immune dysfunctions in ME/CFS patients and ‘‘long
+COVID’’ increase the relevance of the results reported here.
+Long COVID refers to phenotypes suffered by numerous patients
+infected by SARS-CoV-2 (COVID-19) that have ‘‘recovered,’’ but
+did not return to full health. Notably, it manifests as numerous
+phenotypical abnormalities shared with ME/CFS, including
+lingering chronic fatigue and myalgias. In ME/CFS, key symp-
+toms might also be triggered by acute infections including
+SARS coronavirus, MERS,74 the Epstein-Barr virus (EBV),75 or
+other agents, and such infections were reported to be more
+frequent in the medical histories of our patient cohort, even
+preceding the onset of ME/CFS symptoms.76,77 Understanding
+the biological mechanisms underlying ME/CFS may now have
+further urgency and generalizability in the worldwide COVID-19
+pandemic. Taken together, we have established a framework to
+study host-microbiome interactions leveraging ‘omics to identify
+host and microbial metabolites and functions implicit in ME/CFS,
+A
+B
+C
+D
+E
+F
+G
+Figure 7. Microbial and metabolomic features of ME/CFS identiﬁed in additional cohorts
+(A–D) (A) Decreased richness and (B) increased heterogeneity (Bray-Curtis dissimilarity) in the gut microbiota were consistent in our second time point (Wilcoxon
+rank-sum test). (B) The performance of our classiﬁers was assessed using ROC curves in (C) our second time point and (D) an independent cohort.48 The models
+were colored by species relative abundance (pink), KEGG gene proﬁle (blue), and metabolites (orange).
+(E) The fold change of important metabolic subpathways and biomarkers are shown from three cohorts: time points 1, 2, and an independent cohort. The shared
+features with Germain’s study were highlighted in blue.
+(F) The fold change of microbial biomarkers from the classiﬁer in time points 1 and 2. The shared biomarkers with Guo’s study are highlighted in blue.
+(G) The fold change of key genes in the butyrate pathway across three cohorts. The shared essential genes from the acetyl-CoA branch are highlighted in blue.
+See also Figure S7.
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287, February 8, 2023
+283
+
+presenting a rich clinical and ‘omics dataset to further mecha-
+nistic hypotheses to better understand this debilitating disease.
+Limitations of the study
+This study was designed to recruit age-, sex-, and diet-matched
+healthy cohort and patient cohort. However, we note that our
+long-term cohort is slightly but signiﬁcantly older than the
+short-term cohort (though age-matched in our healthy controls),
+which could contribute to some of the phenotypes, particularly
+clinical
+abnormalities,
+observed.
+Additionally,
+we
+do
+not
+have matched cohorts with other disorders with overlapping
+phenotypes, such as IBS, neuroinﬂammatory disorders, and
+others. This is particularly relevant because ME/CFS is often
+misdiagnosed. While our results support that we can very accu-
+rately discriminate healthy individuals from ME/CFS patients,
+future studies would include cohorts with matched individuals
+with differing diagnoses to pinpoint microbial/metabolomic
+changes that are speciﬁc to ME/CFS rather than general disease
+risk. In addition, a rigorous control of exposures and co-morbid-
+ities could more effectively narrow down on microbial and
+metabolomic features that are ME/CFS-speciﬁc vs. a generaliz-
+able risk or protective factors for inﬂammatory disease. In
+advance of these data, the use of these features as potential
+diagnostic biomarkers may be premature.
+STAR+METHODS
+Detailed methods are provided in the online version of this paper
+and include the following:
+d KEY RESOURCES TABLE
+d RESOURCE AVAILABILITY
+B Lead contact
+B Materials availability
+B Data and code availability
+d EXPERIMENTAL MODEL AND SUBJECT DETAILS
+B Cohort and study design
+B Participants
+d METHOD DETAILS
+B Clinical metadata collection and preprocess
+B Plasma sample collection and preparation
+B Plasma untargeted metabolome by UPLC-MS/MS
+B Fecal sample collection and DNA extraction
+B Metagenomic shotgun sequencing
+d QUANTIFICATION AND STATISTICAL ANALYSIS
+B Metabolome enrichment study
+B Taxonomic and KEGG gene proﬁling of metagenomics
+samples
+B Microbial community structure analysis
+B Gut metabolic status prediction
+B Multi-‘omics classiﬁcation models
+B Confounder analysis
+B Interaction study and targeted pathway analysis
+B Statistical Analysis
+SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j.
+chom.2023.01.001.
+ACKNOWLEDGMENTS
+We are thankful to the Oh, Unutmaz, and Li laboratories for inspiring discus-
+sions, and we acknowledge the contribution of the Genome Technologies Ser-
+vice at The Jackson Laboratory for expert assistance with sample sequencing
+for the work described in this publication. We also thank the clinical support
+team at the Bateman Horne Center and all the individuals who participated
+in this study. This work was funded by 1U54NS105539. J.O. is additionally
+supported by the NIH (1 R01 AR078634-01, DP2 GM126893-01, 1 U19
+AI142733, and 1 R21 AR075174).
+AUTHOR CONTRIBUTIONS
+Conceptualization, D.U., J.O., S.D.V., L.B., and R.X.; data curation, R.X., C.G.,
+S.D.V., and L.B.; formal analysis, R.X.; funding acquisition, D.U., J.O., S.D.V.,
+and L.B.; clinical sample design and collection, S.D.V. and L.B.; investigation,
+R.X., C.G., E.F., S.D.V., and L.B.; project administration, J.O., D.U., L.B.,
+S.D.V., and C.G.; resources, D.U., J.O., S.D.V., and L.B.; supervision, J.O.;
+visualization and writing, R.X. and J.O.; writing – review & editing, R.X., C.G.,
+S.D.V., L.B., D.U., and J.O.
+DECLARATION OF INTERESTS
+S.D.V. is afﬁliated and has a ﬁnancial interest with The BioCollective, a com-
+pany that provided the BioCollector, the collection kit used for at home stool
+collection discussed in this manuscript.
+Received: April 27, 2022
+Revised: September 14, 2022
+Accepted: December 30, 2022
+Published: February 8, 2023
+REFERENCES
+1. Afari, N., and Buchwald, D. (2003). Chronic fatigue syndrome: a review. Am.
+J. Psychiatry 160, 221–236. https://doi.org/10.1176/appi.ajp.160.2.221.
+2. Nacul, L., O’Boyle, S., Palla, L., Nacul, F.E., Mudie, K., Kingdon, C.C., Cliff,
+J.M., Clark, T.G., Dockrell, H.M., and Lacerda, E.M. (2020). How Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) progresses: the
+natural history of ME/CFS. Front. Neurol. 11, 826. https://doi.org/10.
+3389/fneur.2020.00826.
+3. Holgate, S.T., Komaroff, A.L., Mangan, D., and Wessely, S. (2011). Chronic
+fatigue syndrome: understanding a complex illness. Nat. Rev. Neurosci.
+12, 539–544. https://doi.org/10.1038/nrn3087.
+4. Bested,
+A.C.,
+and
+Marshall,
+L.M.
+(2015).
+Review
+of
+myalgic
+Encephalomyelitis/Chronic
+Fatigue
+Syndrome:
+an
+evidence-based
+approach to diagnosis and management by clinicians. Rev. Environ.
+Health 30, 223–249. https://doi.org/10.1515/reveh-2015-0026.
+5. Pheby, D.F.H., Araja, D., Berkis, U., Brenna, E., Cullinan, J., de Korwin,
+J.D., Gitto, L., Hughes, D.A., Hunter, R.M., Trepel, D., et al. (2020). A liter-
+ature review of GP knowledge and understanding of ME/CFS: A report
+from the socioeconomic working group of the European network on ME/
+CFS (EUROMENE). Medicina (Kaunas) 57, 7. https://doi.org/10.3390/me-
+dicina57010007.
+6. Naviaux, R.K., Naviaux, J.C., Li, K., Bright, A.T., Alaynick, W.A., Wang, L.,
+Baxter, A., Nathan, N., Anderson, W., and Gordon, E. (2016). Metabolic
+features of chronic fatigue syndrome. Proc. Natl. Acad. Sci. USA 113,
+E5472–E5480. https://doi.org/10.1073/pnas.1607571113.
+7. Navaneetharaja, N., Grifﬁths, V., Wileman, T., and Carding, S.R. (2016). A
+role for the intestinal microbiota and virome in Myalgic Encephalomyelitis/
+Chronic Fatigue Syndrome (ME/CFS)? J. Clin. Med. 5, E55. https://doi.
+org/10.3390/jcm5060055.
+8. Sheedy, J.R., Wettenhall, R.E.H., Scanlon, D., Gooley, P.R., Lewis, D.P.,
+McGregor, N., Stapleton, D.I., Butt, H.L., and Meirleir, K.L.D.E. (2009).
+Increased d-lactic Acid intestinal bacteria in patients with chronic fatigue
+syndrome. Vivo Athens Greece 23, 621–628.
+ll
+Clinical and Translational Report
+284
+Cell Host & Microbe 31, 273–287, February 8, 2023
+
+9. Fre´ mont, M., Coomans, D., Massart, S., and De Meirleir, K. (2013). High-
+throughput 16S rRNA gene sequencing reveals alterations of intestinal mi-
+crobiota in myalgic encephalomyelitis/chronic fatigue syndrome patients.
+Anaerobe 22, 50–56. https://doi.org/10.1016/j.anaerobe.2013.06.002.
+10. Shukla, S.K., Cook, D., Meyer, J., Vernon, S.D., Le, T., Clevidence, D.,
+Robertson, C.E., Schrodi, S.J., Yale, S., and Frank, D.N. (2015).
+Changes in Gut and plasma microbiome following Exercise Challenge in
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS). PloS
+One 10, e0145453. https://doi.org/10.1371/journal.pone.0145453.
+11. Giloteaux, L., Goodrich, J.K., Walters, W.A., Levine, S.M., Ley, R.E., and
+Hanson, M.R. (2016). Reduced diversity and altered composition of the gut
+microbiome in individuals with myalgic encephalomyelitis/chronic fatigue
+syndrome. Microbiome 4, 30. https://doi.org/10.1186/s40168-016-0171-4.
+12. Giloteaux, L., Hanson, M.R., and Keller, B.A. (2016). A pair of identical
+twins discordant for myalgic encephalomyelitis/chronic fatigue syndrome
+differ in physiological parameters and gut microbiome composition. Am. J.
+Case Rep. 17, 720–729. https://doi.org/10.12659/ajcr.900314.
+13. Nagy-Szakal, D., Williams, B.L., Mishra, N., Che, X., Lee, B., Bateman, L.,
+Klimas, N.G., Komaroff, A.L., Levine, S., Montoya, J.G., et al. (2017). Fecal
+metagenomic proﬁles in subgroups of patients with myalgic encephalo-
+myelitis/chronic fatigue syndrome. Microbiome 5, 44. https://doi.org/10.
+1186/s40168-017-0261-y.
+14. Visconti, A., Le Roy, C.I., Rosa, F., Rossi, N., Martin, T.C., Mohney, R.P.,
+Li, W., de Rinaldis, E., Bell, J.T., Venter, J.C., et al. (2019). Interplay be-
+tween the human gut microbiome and host metabolism. Nat. Commun.
+10, 4505. https://doi.org/10.1038/s41467-019-12476-z.
+15. Wikoff, W.R., Anfora, A.T., Liu, J., Schultz, P.G., Lesley, S.A., Peters, E.C.,
+and Siuzdak, G. (2009). Metabolomics analysis reveals large effects of gut
+microﬂora on mammalian blood metabolites. Proc. Natl. Acad. Sci. USA
+106, 3698–3703. https://doi.org/10.1073/pnas.0812874106.
+16. Turnbaugh, P.J., Ley, R.E., Mahowald, M.A., Magrini, V., Mardis, E.R., and
+Gordon, J.I. (2006). An obesity-associated gut microbiome with increased
+capacity for energy harvest. Nature 444, 1027–1031. https://doi.org/10.
+1038/nature05414.
+17. Hooper, L.V., Littman, D.R., and Macpherson, A.J. (2012). Interactions be-
+tween the microbiota and the immune system. Science 336, 1268–1273.
+https://doi.org/10.1126/science.1223490.
+18. Nicholson, J.K., Holmes, E., Kinross, J., Burcelin, R., Gibson, G., Jia, W.,
+and Pettersson, S. (2012). Host-gut microbiota metabolic interactions.
+Science 336, 1262–1267. https://doi.org/10.1126/science.1223813.
+19. Valdes, A.M., Walter, J., Segal, E., and Spector, T.D. (2018). Role of the gut
+microbiota in nutrition and health. BMJ 361, k2179. https://doi.org/10.
+1136/bmj.k2179.
+20. Correˆ a-Oliveira, R., Fachi, J.L., Vieira, A., Sato, F.T., and Vinolo, M.A.R.
+(2016). Regulation of immune cell function by short-chain fatty acids.
+Clin. Transl. Immunology 5, e73. https://doi.org/10.1038/cti.2016.17.
+21. Fiorucci, S., Biagioli, M., Zampella, A., and Distrutti, E. (2018). Bile acids
+activated receptors regulate innate immunity. Front. Immunol. 9, 1853.
+https://doi.org/10.3389/ﬁmmu.2018.01853.
+22. Sorgdrager, F.J.H., Naude´ , P.J.W., Kema, I.P., Nollen, E.A., and Deyn,
+P.P.D. (2019). Tryptophan metabolism in inﬂammaging: from biomarker
+to therapeutic target. Front. Immunol. 10, 2565. https://doi.org/10.3389/
+ﬁmmu.2019.02565.
+23. Bellono, N.W., Bayrer, J.R., Leitch, D.B., Castro, J., Zhang, C., O’Donnell,
+T.A., Brierley, S.M., Ingraham, H.A., and Julius, D. (2017). Enterochromafﬁn
+cells are gut chemosensors that couple to sensory neural pathways. Cell
+170, 185–198.e16. https://doi.org/10.1016/j.cell.2017.05.034.
+24. Bian, X., Chi, L., Gao, B., Tu, P., Ru, H., and Lu, K. (2017). The artiﬁcial
+sweetener acesulfame potassium affects the gut microbiome and body
+weight gain in CD-1 mice. PLOS One 12, e0178426. https://doi.org/10.
+1371/journal.pone.0178426.
+25. Martin, A.M., Sun, E.W., Rogers, G.B., and Keating, D.J. (2019). The inﬂu-
+ence of the gut microbiome on host metabolism through the regulation of
+gut hormone release. Front. Physiol. 10, 428. https://doi.org/10.3389/
+fphys.2019.00428.
+26. Singh, K.S., Kumar, S., Mohanty, A.K., Grover, S., and Kaushik, J.K. (2018).
+Mechanistic insights into the host-microbe interaction and pathogen
+exclusion mediated by the Mucus-binding protein of Lactobacillus planta-
+rum. Sci. Rep. 8, 14198. https://doi.org/10.1038/s41598-018-32417-y.
+27. Xu, L., Sun, L., Zhang, S., Wang, S., and Lu, M. (2019). High-resolution
+proﬁling of gut bacterial communities in an invasive beetle using PacBio
+SMRT sequencing system. Insects 10, E248. https://doi.org/10.3390/
+insects10080248.
+28. Noecker, C., McNally, C.P., Eng, A., and Borenstein, E. (2017). High-reso-
+lution characterization of the human microbiome. Transl. Res. 179, 7–23.
+https://doi.org/10.1016/j.trsl.2016.07.012.
+29. McHardy, I.H., Goudarzi, M., Tong, M., Ruegger, P.M., Schwager, E.,
+Weger, J.R., Graeber, T.G., Sonnenburg, J.L., Horvath, S., Huttenhower,
+C., et al. (2013). Integrative analysis of the microbiome and metabolome
+of the human intestinal mucosal surface reveals exquisite inter-relation-
+ships. Microbiome 1, 17. https://doi.org/10.1186/2049-2618-1-17.
+30. Lim, E.-J., Ahn, Y.-C., Jang, E.-S., Lee, S.-W., Lee, S.-H., and Son, C.-G.
+(2020). Systematic review and meta-analysis of the prevalence of chronic
+fatigue syndrome/myalgic encephalomyelitis (CFS/ME). J. Transl. Med.
+18, 100. https://doi.org/10.1186/s12967-020-02269-0.
+31. Shikova,E.,Reshkova,V.,Kumanova,A.,Raleva,S.,Alexandrova,D.,Capo,
+N., and Murovska, M.; European Network on ME/CFS (EUROMENE) (2020).
+Cytomegalovirus, Epstein-Barr virus, and human herpesvirus-6 infections in
+patients with myalgic fncephalomyelitis/chronic fatigue syndrome. J. Med.
+Virol. 92, 3682–3688. https://doi.org/10.1002/jmv.25744.
+32. van Campen, C.L.M.C., Verheugt, F.W.A., Rowe, P.C., and Visser, F.C.
+(2020). Cerebral blood ﬂow is reduced in ME/CFS during head-up tilt
+testing even in the absence of hypotension or tachycardia: a quantitative,
+controlled study using Doppler echography. Clin. Neurophysiol. Pract. 5,
+50–58. https://doi.org/10.1016/j.cnp.2020.01.003.
+33. De Becker, P., McGregor, N., and De Meirleir, K. (2001). A deﬁnition-based
+analysis of symptoms in a large cohort of patients with chronic fatigue syn-
+drome. J. Intern. Med. 250, 234–240. https://doi.org/10.1046/j.1365-
+2796.2001.00890.x.
+34. Roma, M., Marden, C.L., Flaherty, M.A.K., Jasion, S.E., Cranston, E.M., and
+Rowe, P.C. (2019). Impaired health-related quality of life in adolescent
+myalgic encephalomyelitis/chronic fatigue syndrome: the impact of core
+symptoms. Front. Pediatr. 7, 26. https://doi.org/10.3389/fped.2019.00026.
+35. Larson, P.J., Oh, J., Robison, J., Grady, J., and Kuchel, G. (2020). 1206.
+Association of aging, frailty and place of residence with skin, oral and
+gut microbiome characteristics and pathogenicity reservoirs. Open
+Forum Infect. Dis. 7, S625. https://doi.org/10.1093/oﬁd/ofaa439.1391.
+36. Larson, P.J., Zhou, W., Santiago, A., Driscoll, S., Fleming, E., Voigt, A.Y.,
+Chun, O.K., Grady, J.J., Kuchel, G.A., Robison, J.T., et al. (2022).
+Associations of the skin, oral and gut microbiome with aging, frailty and
+infection risk reservoirs in older adults. Nat. Aging 2, 941–955. https://
+doi.org/10.1038/s43587-022-00287-9.
+37. Mosca,A., Leclerc, M., and Hugot, J.P. (2016). Gut microbiota diversity and
+human diseases: should we reintroduce key predators in our ecosystem?
+Front. Microbiol. 7, 455. https://doi.org/10.3389/fmicb.2016.00455.
+38. Haahtela, T. (2019). A biodiversity hypothesis. Allergy 74, 1445–1456.
+https://doi.org/10.1111/all.13763.
+39. Behary, J., Amorim, N., Jiang, X.-T., Raposo, A., Gong, L., McGovern, E.,
+Ibrahim, R., Chu, F., Stephens, C., Jebeili, H., et al. (2021). Gut microbiota
+impact on the peripheral immune response in non-alcoholic fatty liver dis-
+ease related hepatocellular carcinoma. Nat. Commun. 12, 187. https://doi.
+org/10.1038/s41467-020-20422-7.
+40. Mun˜ iz Pedrogo, D.A., Chen, J., Hillmann, B., Jeraldo, P., Al-Ghalith, G.,
+Taneja, V., Davis, J.M., Knights, D., Nelson, H., Faubion, W.A., et al.
+(2019). An increased abundance of Clostridiaceae characterizes arthritis
+in inﬂammatory bowel disease and rheumatoid arthritis: A cross-sectional
+study. Inﬂam. Bowel Dis. 25, 902–913. https://doi.org/10.1093/ibd/izy318.
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287, February 8, 2023
+285
+
+41. Emiola, A., and Oh, J. (2018). High throughput in situ metagenomic mea-
+surement of bacterial replication at ultra-low sequencing coverage. Nat.
+Commun. 9, 4956. https://doi.org/10.1038/s41467-018-07240-8.
+42. Canani, R.B., Costanzo, M.D., Leone, L., Pedata, M., Meli, R., and
+Calignano, A. (2011). Potential beneﬁcial effects of butyrate in intestinal
+and extraintestinal diseases. World J. Gastroenterol. 17, 1519–1528.
+https://doi.org/10.3748/wjg.v17.i12.1519.
+43. Ferrer-Pico´ n, E., Dotti, I., Corraliza, A.M., Mayorgas, A., Esteller, M.,
+Perales, J.C., Ricart, E., Masamunt, M.C., Carrasco, A., Trista´ n, E., et al.
+(2020). Intestinal inﬂammation modulates the epithelial response to buty-
+rate in patients with inﬂammatory bowel disease. Inﬂam. Bowel Dis. 26,
+43–55. https://doi.org/10.1093/ibd/izz119.
+44. Hosseini, E., Grootaert, C., Verstraete, W., and Van de Wiele, T. (2011).
+Propionate as a health-promoting microbial metabolite in the human gut.
+Nutr. Rev. 69, 245–258. https://doi.org/10.1111/j.1753-4887.2011.00388.x.
+45. Taleb, S. (2019). Tryptophan dietary impacts gut barrier and metabolic dis-
+eases.Front.Immunol.10,2113.https://doi.org/10.3389/ﬁmmu.2019.02113.
+46. Go, E.K., Jung, K.J., Kim, J.Y., Yu, B.P., and Chung, H.Y. (2005). Betaine
+suppresses proinﬂammatory signaling during aging: the involvement of
+nuclear factor-kB via nuclear factor-inducing kinase/IkB kinase and
+mitogen-activated protein kinases. J. Gerontol. A Biol. Sci. Med. Sci. 60,
+1252–1264. https://doi.org/10.1093/gerona/60.10.1252.
+47. Zhao, G., He, F., Wu, C., Li, P., Li, N., Deng, J., Zhu, G., Ren, W., and Peng,
+Y. (2018). Betaine in inﬂammation: mechanistic aspects and applications.
+Front. Immunol. 9, 1070. https://doi.org/10.3389/ﬁmmu.2018.01070.
+48. Germain, A., Barupal, D.K., Levine, S.M., and Hanson, M.R. (2020).
+Comprehensive circulatory metabolomics in ME/CFS reveals disrupted
+metabolism of acyl lipids and steroids. Metabolites 10, 34. https://doi.
+org/10.3390/metabo10010034.
+49. Nkiliza, A., Parks, M., Cseresznye, A., Oberlin, S., Evans, J.E., Darcey, T.,
+Aenlle, K., Niedospial, D., Mullan, M., Crawford, F., et al. (2021). Sex-spe-
+ciﬁc plasma lipid proﬁles of ME/CFS patients and their association with
+pain, fatigue, and cognitive symptoms. J. Transl. Med. 19, 370. https://
+doi.org/10.1186/s12967-021-03035-6.
+50. Noda, M., Ifuku, M., Hossain, Md.S., and Katafuchi, T. (2018). Glial activation
+and expression of the serotonin transporter in chronic fatigue syndrome.
+Front. Psychiatry 9, 589. https://doi.org/10.3389/fpsyt.2018.00589.
+51. Guo, P., Zhang, K., Ma, X., and He, P. (2020). Clostridium species as pro-
+biotics: potentials and challenges. J. Anim. Sci. Biotechnol. 11, 24. https://
+doi.org/10.1186/s40104-019-0402-1.
+52. Brkic, S., Tomic, S., Maric, D., Novakov Mikic, A.N., and Turkulov, V.
+(2010). Lipid peroxidation is elevated in female patients with chronic fa-
+tigue syndrome. Med. Sci. Monit. 16, CR628–CR632.
+53. Tomic, S., Brkic, S., Maric, D., and Mikic, A.N. (2012). Lipid and protein
+oxidation in female patients with chronic fatigue syndrome. Arch. Med.
+Sci. 8, 886–891. https://doi.org/10.5114/aoms.2012.31620.
+54. Ruiz-Nu´ n˜ ez, B., Tarasse, R., Vogelaar, E.F., Janneke Dijck-Brouwer, D.A.,
+and Muskiet, F.A.J. (2018). Higher prevalence of ‘‘low T3 syndrome’’ in pa-
+tients with chronic fatigue syndrome: a case–control study. Front.
+Endocrinol. 9, 97. https://doi.org/10.3389/fendo.2018.00097.
+55. Flores, S., Brown, A., Adeoye, S., Jason, L., and Evans, M. (2013).
+Examining the impact of obesity on individuals with CFS. Workplace
+Health Saf. 61, 299–307. https://doi.org/10.3928/21650799-20130617-12.
+56. Germain, A.,Ruppert, D., Levine,S.M., andHanson,M.R.(2018).Prospective
+biomarkersfromplasmametabolomicsofmyalgicencephalomyelitis/chronic
+fatigue syndrome implicate redox imbalance in disease symptomatology.
+Metabolites 8, 90. https://doi.org/10.3390/metabo8040090.
+57. Lakhan, S.E., and Kirchgessner, A. (2010). Gut inﬂammation in chronic fa-
+tigue syndrome. Nutr. Metab. (Lond) 7, 79. https://doi.org/10.1186/1743-
+7075-7-79.
+58. Jackson, M.L., and Bruck, D. (2012). Sleep abnormalities in chronic fatigue
+syndrome/myalgic encephalomyelitis: a review. J. Clin. Sleep Med. 8,
+719–728. https://doi.org/10.5664/jcsm.2276.
+59. Boneva, R.S., Lin, J.-M.S., Wieser, F., Nater, U.M., Ditzen, B., Taylor, R.N.,
+and Unger, E.R. (2019). Endometriosis as a comorbid condition in chronic
+fatigue syndrome (CFS): secondary analysis of data from a CFS case-con-
+trol study. Front. Pediatr. 7, 195. https://doi.org/10.3389/fped.2019.00195.
+60. Pataky, M.W., Young, W.F., and Nair, K.S. (2021). Hormonal and meta-
+bolic changes of aging and the inﬂuence of lifestyle modiﬁcations. Mayo
+Clin. Proc. 96, 788–814. https://doi.org/10.1016/j.mayocp.2020.07.033.
+61. Jura, M., and Kozak, L.P. (2016). Obesity and related consequences to
+ageing. Age (Dordr) 38, 23. https://doi.org/10.1007/s11357-016-9884-3.
+62. Natelson, B.H. (2019). Myalgic encephalomyelitis/chronic fatigue syn-
+drome and ﬁbromyalgia: deﬁnitions, similarities and differences. Clin.
+Ther. 41, 612–618. https://doi.org/10.1016/j.clinthera.2018.12.016.
+63. Harris, S., Gilbert, M., Beasant, L., Linney, C., Broughton, J., and Crawley,
+E. (2017). A qualitative investigation of eating difﬁculties in adolescents with
+chronic fatigue syndrome/myalgic encephalomyelitis. Clin. Child Psychol.
+Psychiatry 22, 128–139. https://doi.org/10.1177/1359104516646813.
+64. Donohoe, D.R., Garge, N., Zhang, X., Sun, W., O’Connell, T.M., Bunger,
+M.K., and Bultman, S.J. (2011). The microbiome and butyrate regulate en-
+ergy metabolism and autophagy in the mammalian colon. Cell Metab. 13,
+517–526. https://doi.org/10.1016/j.cmet.2011.02.018.
+65. M€uller, M., Herna´ ndez, M.A.G., Goossens, G.H., Reijnders, D., Holst, J.J.,
+Jocken, J.W.E., van Eijk, H., Canfora, E.E., and Blaak, E.E. (2019).
+Circulating but not faecal short-chain fatty acids are related to insulin
+sensitivity, lipolysis and GLP-1 concentrations in humans. Sci. Rep. 9,
+12515. https://doi.org/10.1038/s41598-019-48775-0.
+66. Guo, C., Che, X., Briese, T., Allicock, O., Yates, R.A., Cheng, A., Ranjan, A.,
+March, D., Hornig, M., Komaroff, A.L., et al. (2021). Deﬁcient butyrate-pro-
+ducing capacity in the gut microbiome of myalgic Encephalomyelitis/
+Chronic Fatigue Syndrome patients is associated with fatigue symptoms.
+Preprint at medRxiv. https://doi.org/10.1101/2021.10.27.21265575.
+67. Proal, A., and Marshall, T. (2018). Myalgic encephalomyelitis/chronic fatigue
+syndrome in the era of the human microbiome: persistent pathogens drive
+chronic symptoms by interfering with host metabolism, gene expression,
+and
+immunity.
+Front.
+Pediatr.
+6,
+373.
+https://doi.org/10.3389/fped.
+2018.00373.
+68. Lupo, G.F.D., Rocchetti, G., Lucini, L., Lorusso, L., Manara, E., Bertelli, M.,
+Puglisi, E., and Capelli, E. (2021). Potential role of microbiome in chronic
+fatigue syndrome/myalgic Encephalomyelits (CFS/ME). Sci. Rep. 11,
+7043. https://doi.org/10.1038/s41598-021-86425-6.
+69. Sanchez-Morate, E., Gimeno-Mallench, L., Stromsnes, K., Sanz-Ros, J.,
+Roma´ n-Domı´nguez, A., Parejo-Pedrajas, S., Ingle´ s, M., Olaso, G.,
+Gambini, J., and Mas-Bargues, C. (2020). Relationship between diet, mi-
+crobiota, and healthy aging. Biomedicines 8, 287. https://doi.org/10.
+3390/biomedicines8080287.
+70. Fromentin,
+S.,
+Forslund,
+S.K.,
+Chechi,
+K.,
+Aron-Wisnewsky,
+J.,
+Chakaroun, R., Nielsen, T., Tremaroli, V., Ji, B., Prifti, E., Myridakis, A.,
+et al. (2022). Microbiome and metabolome features of the cardiometabolic
+disease spectrum. Nat. Med. 28, 303–314. https://doi.org/10.1038/
+s41591-022-01688-4.
+71. Karhan, E., Gunter, C.L., Ravanmehr, V., Horne, M., Kozhaya, L., Renzullo,
+S., Placek, L., George, J., Robinson, P.N., Vernon, S.D., et al. (2019).
+Perturbation of effector and regulatory T cell subsets in myalgic encepha-
+lomyelitis/chronic fatigue syndrome (ME/CFS). Preprint at bioRxiv. https://
+doi.org/10.1101/2019.12.23.887505.
+72. Russell, L., Broderick, G., Taylor, R., Fernandes, H., Harvey, J., Barnes, Z.,
+Smylie, A., Collado, F., Balbin, E.G., Katz, B.Z., et al. (2016). Illness pro-
+gression in chronic fatigue syndrome: a shifting immune baseline. BMC
+Immunol. 17, 3. https://doi.org/10.1186/s12865-016-0142-3.
+73. Bar, N., Korem, T., Weissbrod, O., Zeevi, D., Rothschild, D., Leviatan, S.,
+Kosower, N., Lotan-Pompan, M., Weinberger, A., Le Roy, C.I., et al. (2020).
+A reference map of potential determinants for the human serum metabo-
+lome. Nature 588, 135–140. https://doi.org/10.1038/s41586-020-2896-2.
+74. Yancey, J.R., and Thomas, S.M. (2012). Chronic fatigue syndrome: diag-
+nosis and treatment. Am. Fam. Phys. 86, 741–746.
+ll
+Clinical and Translational Report
+286
+Cell Host & Microbe 31, 273–287, February 8, 2023
+
+75. Hickie, I., Davenport, T., Wakeﬁeld, D., Vollmer-Conna, U., Cameron, B.,
+Vernon, S.D., Reeves, W.C., and Lloyd, A.; Dubbo Infection Outcomes
+Study Group (2006). Post-infective and chronic fatigue syndromes precip-
+itated by viral and non-viral pathogens: prospective cohort study. BMJ
+333, 575. https://doi.org/10.1136/bmj.38933.585764.AE.
+76. Pendergrast, T., Brown, A., Sunnquist, M., Jantke, R., Newton, J.L.,
+Strand, E.B., and Jason, L.A. (2016). Housebound versus nonhousebound
+patients with myalgic encephalomyelitis and chronic fatigue syndrome.
+Chronic Illn. 12, 292–307. https://doi.org/10.1177/1742395316644770.
+77. Komaroff, A.L., and Bateman, L. (2021). Will COVID-19 lead to myalgic
+encephalomyelitis/chronic fatigue syndrome? Front. Med. 7, 1132.
+https://doi.org/10.3389/fmed.2020.606824.
+78. Beghini, F., McIver, L.J., Blanco-Mı´guez, A., Dubois, L., Asnicar, F.,
+Maharjan, S., Mailyan, A., Manghi, P., Scholz, M., Thomas, A.M., et al.
+(2021). Integrating taxonomic, functional, and strain-level proﬁling of
+diverse microbial communities with bioBakery 3. eLife 10, e65088.
+https://doi.org/10.7554/eLife.65088.
+79. Langmead, B., and Salzberg, S.L. (2012). Fast gapped-read alignment
+with
+Bowtie
+2. Nat
+Methods
+9,
+357–359.
+https://doi.org/10.1038/
+nmeth.1923.
+80. Edgar, R.C. (2010). Search and clustering orders of magnitude faster than
+BLAST. Bioinformatics 26, 2460–2461. https://doi.org/10.1093/bioinfor-
+matics/btq461.
+81. Fukuda, K., Straus, S.E., Hickie, I., Sharpe, M.C., Dobbins, J.G., and
+Komaroff, A. (1994). The chronic fatigue syndrome: a comprehensive
+approach to its deﬁnition and study. International chronic fatigue syn-
+drome study group. Ann. Intern. Med. 121, 953–959. https://doi.org/10.
+7326/0003-4819-121-12-199412150-00009.
+82. Carruthers, B.M. (2007). Deﬁnitions and aetiology of myalgic encephalo-
+myelitis: how the Canadian consensus clinical deﬁnition of myalgic
+encephalomyelitis works. J. Clin. Pathol. 60, 117–119. https://doi.org/
+10.1136/jcp.2006.042754.
+83. Committee on the Diagnostic Criteria for Myalgic Encephalomyelitis/
+Chronic Fatigue Syndrome; Board on the Health of Select Populations;
+Institute of Medicine (2015). Beyond Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome: Redeﬁning an Illness (National Academies Press).
+84. Love, M.I., Huber, W., and Anders, S. (2014). Moderated estimation of fold
+change and dispersion for RNA-seq data with DESeq2. Genome Biol. 15,
+550. https://doi.org/10.1186/s13059-014-0550-8.
+85. Garza, D.R., van Verk, M.C., Huynen, M.A., and Dutilh, B.E. (2018).
+Towards predicting the environmental metabolome from metagenomics
+with a mechanistic model. Nat. Microbiol. 3, 456–460. https://doi.org/10.
+1038/s41564-018-0124-8.
+86. Mallick, H., Rahnavard, A., McIver, L.J., Ma, S., Zhang, Y., Nguyen, L.H.,
+Tickle, T.L., Weingart, G., Ren, B., Schwager, E.H., et al. (2021).
+Multivariable association discovery in population-scale meta-omics
+studies. PLoS Comput. Biol. 17, e1009442. https://doi.org/10.1371/jour-
+nal.pcbi.1009442.
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287, February 8, 2023
+287
+
+STAR+METHODS
+KEY RESOURCES TABLE
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Biological samples
+Stool samples from ME/CFS
+patients and healthy donors
+This study
+N/A
+Plasma samples from ME/CFS
+patients and healthy donors
+This study
+N/A
+Critical commercial assays
+QIAamp 96 DNA QIAcube HT Kit
+QIAGEN
+#51331
+BioCollector fecal collection kit
+The BioCollective,
+Denver, CO
+https://www.thebiocollective.
+com/products-services
+OMNIgen GUT tube
+DNA Genotek
+OMR-200
+Deposited data
+Metagenomics sequencing raw data
+This study
+NCBI-SRA: Bioproject PRJNA878603
+Software and algorithms
+R version (v4.0.4)
+N/A
+N/A
+Python (v3.10.4)
+N/A
+N/A
+scythe (v0.994)
+Buffalo, 2014 (software)
+https://github.com/vsbuffalo/scythe
+sickle (v1.33)
+Joshi and Fass,
+2011 (software)
+https://github.com/najoshi/sickle
+MetaPhlAn3
+Beghini et al.78
+https://huttenhower.sph.harvard.edu/
+metaphlan/
+Bowtie2 (v2.3.1)
+Langmead and
+Salzberg79
+https://github.com/BenLangmead/
+bowtie2
+GRiD (v1.3)
+Emiola et al.41
+https://github.com/ohlab/GRiD
+USEARCH (v8.0.1517)
+Edgar80
+https://www.drive5.com/usearch/
+dplyr_1.0.5
+R package
+https://dplyr.tidyverse.org/index.html
+microbiome_1.12.0
+R package
+https://microbiome.github.io/tutorials/
+phyloseq_1.34.0
+R package
+https://joey711.github.io/phyloseq/
+maaslin2_1.8.0
+R package
+https://huttenhower.sph.harvard.edu/
+maaslin/
+globaltest_5.44.0
+R package
+https://www.bioconductor.org/packages/
+release/bioc/html/globaltest.html
+bcdstats_0.0.0.9005
+R package
+https://github.com/bcdudek/bcdstats/
+lme4_1.1-29
+R package
+https://cran.r-project.org/web/
+packages/lme4/index.html
+vegan_2.6-2
+R package
+https://cran.r-project.org/web/
+packages/vegan/index.html
+deseq2_v1.18.1
+R package
+https://bioconductor.org/
+packages/release/bioc/html/
+DESeq2.html
+scipy_1.8.0
+python package
+https://scipy.org/
+jupyter_4.9.2
+python package
+https://jupyter.org/
+numpy_1.22.3
+python package
+https://numpy.org/
+pandas_1.4.2
+python package
+https://pandas.pydata.org/
+scikit-learn_1.0.2
+python package
+https://scikit-learn.org/stable/
+index.html
+ll
+Clinical and Translational Report
+e1
+Cell Host & Microbe 31, 273–287.e1–e5, February 8, 2023
+
+RESOURCE AVAILABILITY
+Lead contact
+Further information and requests for resources and reagents should be directed to the lead contact, Julia Oh (julia.oh@jax.org).
+Materials availability
+This study did not generate new unique reagents.
+Data and code availability
+Metagenomics data have been deposited at PRJNA878603 and are publicly available as of the date of publication. Accession
+numbers are listed in the key resources table.
+All original code has been deposited at https://github.com/ohlab/MECFS_2021 and is publicly available as of the date of
+publication.
+Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.
+EXPERIMENTAL MODEL AND SUBJECT DETAILS
+Cohort and study design
+All subjects were recruited at Bateman Horne Center, Salt Lake City, UT, based on who met the 1994 CDC Fukuda81 and/or Canadian
+consensus criteria for ME/CFS.82 Healthy controls were frequency-matched to cases on age, sex, race/ethnicity, geographic/clinical
+site, and season of sampling. Patients or controls taking antibiotics or who had any infections in the prior one month, or who were
+taking any immunomodulatory medications were excluded from the study. The study was approved by The Jackson Laboratory IRB
+(Study number 17-JGM-13) and written informed consent and verbal assent when appropriate were obtained from all participants in
+this study. We enrolled a total of 149 ME/CFS patients (of which 74 had been diagnosed with ME/CFS <4 years before recruitment
+and 75 had been diagnosed with ME/CFS >10 years before recruitment) and 79 healthy controls. Among them, 107 patients and 59
+healthy controls were followed one year after the recruitment as timepoint 2. Subject characteristics are shown in Table S1.
+Participants
+149 ME/CFS patients who had been seen at Bateman Horne Center (Salt Lake City, UT) for routine clinical care between February
+2018 and September 2019 and 79 matched HCs were recruited for the study. The 149 MECFS subjects included 74 sick with ME/CFS
+for <4 years and 75 sick for greater than 10 years. The age range of ME/CFS participants and HCs was 18-65 years at the time of
+informed consent. HCs were matched with <4 ME/CFS participants by age (± 5 years), gender and ethnicity. Enrolled ME/CFS par-
+ticipants were required to fulﬁll the International Chronic Fatigue Syndrome Study Group research criteria,81 the Canadian
+Consensus Criteria,82 and the IOM clinical diagnostic criteria.83 HCs were recruited from the Salt Lake City metropolitan area using
+advertisements posted on social media, the clinic webpage or by phone contact with a volunteer pool from previous studies. HCs
+were considered generally healthy and between 18 to 65 years of age. HCs were excluded if they fulﬁlled ME/CFS diagnostic criteria
+or had a history of illness, had a BMI>40 or had been treated with long-term (longer than 2 weeks) antiviral medication or immune
+modulatory medications within the past 6 months or had been treated with short-term (less than 2 weeks) antiviral or antibiotic medi-
+cation within the past 30 days.
+METHOD DETAILS
+Clinical metadata collection and preprocess
+Clinical symptoms and baseline health status was assessed on the day of physical examination and biological sample collection
+from both case and control subjects. For each participant, we collected demographic information (including age, gender, diet,
+race, family, work, and education), medical histories, and three questionnaires regarding the general physical and mental health
+condition (RAND-36 form), sleep quality (PSQI form) and gastrointestinal health (GSRS form). The summary of analyzed clinical
+features and questionnaires are shown in Table S2. Age and diet were analyzed and discussed as potential confounders
+(Figures S1 and S4). Medical histories were simpliﬁed into binary features (0 - no records, 1, had/having the disease) and further
+constructed naı¨ve Bayesian classiﬁcation models. Every questionnaire was transformed into a 0–100 scale to facilitate combina-
+tion and comparison wherein a score of 100 is equivalent to maximum disability or severity and a score of zero is equivalent to no
+disability or disturbance.
+Plasma sample collection and preparation
+Healthy and patient blood samples were obtained from Bateman Horne Center, Salt Lake City, UT and approved by JAX IRB. One
+4 mL lavender top tube (K2EDTA) was collected, and tube slowly inverted 8-10 times immediately after collection. Blood was centri-
+fuged within 30 minutes of collection at 1000 x g with low brake for 10 minutes. 250 uL of plasma was transferred into three 1 mL
+cryovial tubes, and tubes were frozen upright at -80C. Frozen plasma samples were batch shipped overnight on dry ice to The Jack-
+son Laboratory, Farmington, CT, and stored at -80C.
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287.e1–e5, February 8, 2023
+e2
+
+Plasma untargeted metabolome by UPLC-MS/MS
+Plasma samples were sent to Metabolon platform and processed by Ultrahigh Performance Liquid Chromatography-Tandem
+Mass Spectroscopy (UPLC-MS/MS) following the CFS cohort pipeline. In brief, samples were prepared using the automated
+MicroLab STAR system from Hamilton Company. The extract was divided into ﬁve fractions: two for analysis by two separate
+reverse phases (RP)/UPLC-MS/MS methods with positive ion mode electrospray ionization (ESI), one for analysis by RP/UPLC-
+MS/MS with negative ion mode ESI, one for analysis by HILIC/UPLC-MS/MS with negative ion mode ESI, and one sample was
+reserved for backup. QA/QC were analyzed with several types of controls were analyzed including a pooled matrix sample gener-
+ated by taking a small volume of each experimental sample (or alternatively, use of a pool of well-characterized human plasma),
+extracted water samples, and a cocktail of QC standards that were carefully chosen not to interfere with the measurement of
+endogenous compounds were spiked into every analyzed sample, allowed instrument performance monitoring, and aided chro-
+matographic alignment. Compounds were identiﬁed by comparison to Metabolon library entries of puriﬁed standards or recurrent
+unknown entities. The output raw data included the annotations and the value of peaks quantiﬁed using area-under-the-curve for
+metabolites.
+Fecal sample collection and DNA extraction
+Stool was self-collected at home by volunteers using a BioCollector fecal collection kit (The BioCollective, Denver, CO) according to
+manufacturer instructions for preservation for sequencing prior to sending the sample in a provided Styrofoam container with a cold
+pack. Upon receipt, stool and OMNIgene samples were immediately aliquoted and frozen at –80C for storage. Prior to aliquoting,
+OMNIgene stool samples were homogenized by vortexing (using the metal bead inside the OMNIgene tube), then divided into 2 mi-
+crofuge tubes, one with 100mL aliquot and one with 1mL. DNA was extracted using the Qiagen (Germantown, MD, USA) QIAamp 96
+DNA QIAcube HT Kit with the following modiﬁcations: enzymatic digestion with 50mg of lysozyme (Sigma, St. Louis, MO, USA) and 5U
+each of lysostaphin and mutanolysin (Sigma) for 30 min at 37 C followed by bead-beating with 50 mg 0.1 mm of zirconium beads for
+6 min on the Tissuelyzer II (Qiagen) prior to loading onto the Qiacube HT. DNA concentration was measured using the Qubit high
+sensitivity dsDNA kit (Invitrogen, Carlsbad, CA, USA).
+Metagenomic shotgun sequencing
+Approximately 50mL of thawed OMNIgene preserved stool sample was added to a microfuge tube containing 350 mL Tissue and Cell
+lysis buffer and 100 mg 0.1 mm zirconia beads. Metagenomic DNA was extracted using the QiaAmp 96 DNA QiaCube HT kit (Qiagen,
+5331) with the following modiﬁcations: each sample was digested with 5mL of Lysozyme (10 mg/mL, Sigma-Aldrich, L6876), 1mL
+Lysostaphin (5000U/mL, Sigma-Aldrich, L9043) and 1mL oh Mutanolysin (5000U/mL, Sigma-Aldrich, M9901) were added to each
+sample to digest at 37C for 30 minutes prior to the bead-beating in the in the TissueLyser II (Qiagen) for 2 x 3 minutes at 30 Hz.
+Each sample was centrifuged for 1 minute at 15000 x g prior to loading 200ml into an S-block (Qiagen, 19585) Negative (environ-
+mental) controls and positive (in-house mock community of 26 unique species) controls were extracted and sequenced with each
+extraction and library preparation batch to ensure sample integrity.
+Sequencing adapters and low-quality bases were removed from the metagenomic reads using scythe (v0.994) and sickle (v1.33),
+respectively, with default parameters. Host reads were removed by mapping all sequencing reads to the hg19 human reference
+genome using Bowtie2 (v2.3.1), under ‘very-sensitive’ mode. Unmapped reads (i.e., microbial reads) were used to estimate the rela-
+tive abundance proﬁles of the microbial species in the samples using MetaPhlAn3.
+QUANTIFICATION AND STATISTICAL ANALYSIS
+Metabolome enrichment study
+From the raw data (peaks area-under-the-curve), we ﬁrst kept metabolic features present in >50% of the samples for further analysis,
+and missing values were imputed with the minimum value. To remove batch variability, for each metabolite, the values in the exper-
+imental samples are divided by the median of those samples in each instrument batch, giving each batch and thus the metabolite a
+median of one. For each metabolite, the minimum value across all batches in the median scaled data is imputed for the missing
+values. We ﬁrst applied qualitative enrichment analysis (Over Representation Analysis ORA) in two patient cohorts (short-term vs.
+control, and long-term vs. control). We conducted Wilcoxon rank-sum test on all metabolites and counted the signiﬁcantly differential
+metabolites in every sub pathway. Fisher test with Benjamini-Hochberg adjustment was followed to identify the distributions of the
+over-representated genes in the pathway. For every sub pathway, we also applied a global quantitative enrichment analysis with
+linear globaltest in R to compute the association between a group of metabolites from that pathway and the duration of disease (con-
+trol, short-term, and long-term).
+Taxonomic and KEGG gene proﬁling of metagenomics samples
+Taxonomic compositions were proﬁled using Metaphlan3.078 and the species whose average relative abundance > 1e-5 were kept
+for further analysis, giving 384 species. The gene proﬁling was computed with USEARCH(v8.0.15)80 (with parameters: evalue 1e-9,
+accel 0.5, top_hits_only) to KEGG Orthology (KO) database v54, giving a total of 9452 annotated KEGG genes. The reads count pro-
+ﬁle was normalized by DeSeq2 in R.84 Metagenomics read depth was considered as potential confounders and analyzed as below
+(see confounder analysis).
+ll
+Clinical and Translational Report
+e3
+Cell Host & Microbe 31, 273–287.e1–e5, February 8, 2023
+
+Microbial community structure analysis
+The overall community structures was examined by Correspondence Analysis (PCoA) and PERMANOVA were performed in R with
+the adonis function in the R package vegan to analyze the partitioning of variation giving potential confounders including age and
+gender. The heterogeneity index (Inter-individual divergence) and community indexes including chao1, evenness(evar), rarity(lo-
+w_abundance) and inequality(dominance_gini) were computed by R package microbiome. The species replication rate was pre-
+dicted using GRiD with default settings.41 Metagenomics read depth was considered as potential confounders and analyzed as
+below (see confounder analysis).
+Gut metabolic status prediction
+Here, we adapted from the MAMBO85 pipeline and predicted 224 metabolites status of the microbial community in our cohort. We
+ﬁrst constrained the Genome-scale metabolic models (GSMMs) community of all 384 microbes identiﬁed in the species proﬁle. We
+started with the same gut metabolic environment for all samples giving randomized 224 metabolites initialization and using a Markov
+chain Monte Carlo (MCMC) to sample metabolites. In each step, we sampled one metabolite and used the Flux balance analysis to
+model reaction ﬂux with a slight change of the target metabolites and accepted the step only if the probed growth rate is correlated
+with the species relative abundance. Samples were ﬁrst subjected to 100,000 search steps, and 100,000 steps were subsequently
+added until a high Pearson correlation (r > 0.6) with the target metagenomic abundance proﬁle was achieved. Finally, the 10% time
+points with the highest Pearson correlation scores between the biomass proﬁle and the metagenomic abundance proﬁle were aver-
+aged, yielding a robustly predicted metabolome.
+Multi-‘omics classiﬁcation models
+To identify phenotypic, metagenomic, and metabolomic markers of the onset(control/patient) of the disease, we constructed a naı¨ve
+Bayesian classiﬁcation model with medical history records and three individual classiﬁcation models based on the species abun-
+dance, normalized KEGG gene abundance, and normalized metabolite proﬁle and one combination multi-omics model with all
+top ten features collected from each model. We also tested four different classiﬁcation methods, LASSO logistic regression, Support
+vector machine (SVM), Random Forest (RF), and Gradient Boosting (GDBT). The same Multi-‘omics classiﬁcation model system was
+also applied to classify the duration(control/short-term/long-term) of the disease.
+All analyses were carried out using the Python package ‘scikit-learn’. Normalized KEGG gene and normalized plasma metab-
+olome were standardized (by centering to mean 0 and dividing by the standard deviation of each feature) before ﬁtting into the
+models. The models were optimized by ﬁve-fold RandomizedSearchCV to probe the best parameters giving lists of candidates.
+Models were then validated by 10-fold stratiﬁed cross-validation testing (we resampled dataset partitions 10 times). In each test,
+the accuracy of the model was examined using ROC (area under the curve). The comparison among models showed that GDBT
+outcompeted the rest three and reached the best performance. In the Gradient boosting model, two steps were carried out. In the
+ﬁrst step, the model was constructed using each of the three proﬁles (species abundance, KEGG gene abundance, and metabolite
+proﬁle) individually to compute the feature importance as the feature contributions to the classiﬁcation. In the second step, the
+collective model was constructed using a combination of top ten important features determined from the species relative abun-
+dance model + top ten important features determined from the KEGG gene model + top ten important features determined from
+the plasma metabolite model.
+Confounder analysis
+Confounder analysis was done by R package MaAsLin2.86 The demographic features (including age, gender, ethnicity, and
+race), diet records, antivirals, antifungals, antibiotics, and probiotics medications, and self-reported IBS scores are considered
+potential confounders. We ran general linear tests to determine the multivariable association between each meta feature and
+each microbial and metabolomic features (including microbiome diversity indexes, specie abundance, KEGG gene abundance,
+plasma metabolites). The three formulas for ﬁxed effects: 1) Demographic model: expr  age + gender + ethnic + race + IBS; 2)
+Diet model: expr  diet_meat + diet_sugar + diet_veg + diet_grains + diet_fruit; 3) expr  antifungals + antibiotics + probiotics +
+antivirals. The expr in these formulas have combined microbiome diversity indexes and 3 ‘omics in the model training and
+covered all features in the differentiation analysis. Metagenomics reads depth was also considered as another confounder.
+The general linear tests were computed with all microbiome features by the formula: reads_count  microbiome diversity
+indexes + specie abundance + KEGG gene abundance. No microbiome features were signiﬁcantly selected by the model.
+All signiﬁcant features identiﬁed by the association models are shared in Table S7. The codes and run log ﬁles are shared
+on our GitHub.
+Interaction study and targeted pathway analysis
+We computed the Spearman correlation for the butyrate pathway genes (N = 113) and butyrate producers (N = 18) with metabolites
+(N = 1278) along with the fold change of the elements. P-value was correlated by Holm’s method.
+Statistical Analysis
+The dimensionality reduction analysis was conducted by Principal Correspondence Analysis (PCoA) using sklearn.mani-
+fold.MDS function for both gut microbiome Bray-Curtis dissimilarity distance matrix and normalized plasma metabolome proﬁle.
+ll
+Clinical and Translational Report
+Cell Host & Microbe 31, 273–287.e1–e5, February 8, 2023
+e4
+
+The statistically signiﬁcant differences among independent groups (healthy/patient/short-term/long-term) were determined by
+nonparametric test using pairwise Wilcoxon rank-sum test two-sided with Bonferroni correction. The average abundances of
+each species, genes and metabolites were determined to be signiﬁcantly elevated or depleted in short-term or long-term
+groups by pairwise nonparametric comparison using Wilcoxon signed-rank test with Bonferroni correction over N=384 species,
+N=9652 genes and N=1278 metabolites, respectively. Chi-squared test was used to compare the infection frequencies between
+healthy and patient groups. The correlation analysis was done by Spearman’s rank correlation, and the p-values were corre-
+lated
+by
+Holm’s
+method.
+P
+value
+annotations:
+ns:
+p
+>
+0.05,
+*:
+0.01
+<
+p
+<=
+0.05,
+**:
+0.001
+<
+p
+<=
+0.01,
+***: 1e-04 < p <= 0.001, ****: p <= 1e-04.
+ll
+Clinical and Translational Report
+e5
+Cell Host & Microbe 31, 273–287.e1–e5, February 8, 2023

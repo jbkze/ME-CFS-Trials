@@ -7,25 +7,28 @@ year: 2018
 venue: "Autoimmunity Reviews"
 doi: 10.1016/j.autrev.2018.01.009
 url: https://doi.org/10.1016/j.autrev.2018.01.009
-pdf: https://doi.org/10.1016/j.autrev.2018.01.009
-text: null
+pdf: literature/papers/2018-sotzny-evidence-autoimmune-disease/paper.pdf
+text: literature/papers/2018-sotzny-evidence-autoimmune-disease/paper.txt
 tags: [autoimmunity, immunology, treatment, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: sotzny2018
+cover: "[[literature/papers/2018-sotzny-evidence-autoimmune-disease/cover.png]]"
 ---
 
 # Myalgic Encephalomyelitis/Chronic Fatigue Syndrome — Evidence for an autoimmune disease
 
 ## Related files
+![[literature/papers/2018-sotzny-evidence-autoimmune-disease/paper.pdf]]
 - [[literature/papers/2018-sotzny-evidence-autoimmune-disease/citation.bib]]
+- [[literature/papers/2018-sotzny-evidence-autoimmune-disease/paper.txt]]
 
 ## Summary
 
 A review gathering the evidence that ME/CFS — at least in a subgroup of patients — behaves like an autoimmune disease, where the immune system attacks the body.
 
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
