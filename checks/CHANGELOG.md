@@ -15,6 +15,14 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-26 (one-time deep-research backfill — papers)
+- One-time comprehensive backfill of the ME/CFS research literature via deep web research; **every paper verified via DOI/PubMed/journal**. Not a routine trial check.
+- **Papers: +26 landmark/notable papers (2011–2025)** added → **39 total**. All set `isNew: false` (historical library baseline; the "New" badge is reserved for genuine new finds in future daily runs, so the counter reads 0).
+- Added (selection): Wirth/Scheibenbogen *Unifying Hypothesis* (2020) & skeletal-muscle (2021); Loebel 2016 & Sotzny 2018 autoimmunity (Scheibenbogen); Haffke 2022 endothelial; Schreiner/Prusty 2020 HHV-6; DecodeME GWAS (2025); NIH deep-phenotyping (Walitt 2024); Hornig/Lipkin 2015; Montoya 2017; Naviaux 2016; Fluge PDH 2016, RituxME 2019, cyclophosphamide 2020; Systrom 2021 & Keller 2014 CPET; Giloteaux 2016 & Xiong 2023 microbiome; Esfandyarpour 2019 nanoneedle; Nakatomi 2014 PET; BioMapAI (Xiong 2025); cell-free RNA (Gardella 2025); Komaroff/Lipkin 2021; ICC (Carruthers 2011); IOM/SEID (2015); Lim 2020 prevalence.
+- **Trials: unchanged** (2 tracked — IMPACT recruiting, MDC002 planned). Scope stays per ROUTINE.md (Germany drug trials); landmark trial *results* (RituxME, BC007, etc.) are recorded as papers, not in trials.json.
+- Papers tracked: 39 | Trials tracked: 2 (open: 1, watchlist: 1)
+- Notes: top-level `last_check`/`last_run_at` bumped to 2026-06-26 to reflect today's data refresh. Future daily runs resume normal "new since last check" flagging.
+
 ## 2026-06-25 (second run — papers track)
 - Sources checked: ClinicalTrials.gov API (ME/CFS + Germany), DRKS, CTIS, WHO ICTRP, Mitodicure.com (unreachable — site down), Charité CFC, PubMed (Wirth/Scheibenbogen author + ME/CFS topic queries), Europe PMC, medRxiv
 - **Trials** — no new trials; both confirmed unchanged (flags cleared)

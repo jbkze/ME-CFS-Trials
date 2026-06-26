@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "description": "Companion to trials.json: notable new ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted; recent (~last 3 months / since last_check). Shown on the dashboard's Papers tab. Confirm each via DOI/journal/preprint before recording; never fabricate. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words.",
-  "last_check": "2026-06-25",
+  "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
+  "last_check": "2026-06-26",
   "papers": [
     {
       "id": "wirth-2026-neurotransmitter",
@@ -13,11 +13,9 @@
       "why": "From the two leading German ME/CFS researchers: it links the disease's effects in the muscles to its effects in the brain, reinforcing the case for the treatments they are developing.",
       "link": "https://doi.org/10.3390/ijms27094041",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42123618. Published April 30, 2026. Int J Mol Sci 27(9):4041."
     },
     {
@@ -30,11 +28,9 @@
       "why": "The largest blood-protein study in ME/CFS so far; it maps what is going wrong in the body and could lead to a blood test and new treatment targets.",
       "link": "https://doi.org/10.1016/j.xcrm.2026.102647",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published March 4, 2026. From the Fluge/Mella group (Bergen, Norway)."
     },
     {
@@ -47,11 +43,9 @@
       "why": "One of the first studies of this fluid in ME/CFS; the patterns it found could become markers for sorting patients into the right treatment groups.",
       "link": "https://doi.org/10.1038/s41598-026-46965-1",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Sci Rep 16:15848 (2026)."
     },
     {
@@ -64,11 +58,9 @@
       "why": "Offers a clear, testable explanation for ME/CFS's defining symptom — crashing after exertion — and points toward energy- and inflammation-based treatments.",
       "link": "https://doi.org/10.3389/fimmu.2026.1774310",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published April 13, 2026. Frontiers in Immunology vol. 17."
     },
     {
@@ -81,11 +73,9 @@
       "why": "These substances could serve as a blood marker, and the link to a common virus hints at new treatment ideas.",
       "link": "https://doi.org/10.3389/fimmu.2026.1827700",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published June 5, 2026. PMID 42327760."
     },
     {
@@ -98,11 +88,9 @@
       "why": "Because independent labs got the same result, this faulty cell 'gate' is one of the most reliable biological signs of ME/CFS and a possible drug target.",
       "link": "https://doi.org/10.3389/fmed.2025.1703924",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published January 8, 2026. Frontiers in Medicine vol. 12."
     },
     {
@@ -115,11 +103,9 @@
       "why": "The first trial of this approach in ME/CFS; the strong, lasting improvement supports the idea that misguided antibodies drive the illness, and a larger trial is planned.",
       "link": "https://doi.org/10.3389/fmed.2025.1607353",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published July 9, 2025. Fluge/Mella group, Haukeland University Hospital, Bergen, Norway."
     },
     {
@@ -132,11 +118,9 @@
       "why": "The first properly controlled trial showing benefit from removing these antibodies — strong support for antibody-targeting treatments that are also being explored in ME/CFS.",
       "link": "https://doi.org/10.1016/j.eclinm.2025.103358",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published July 22, 2025. University Hospital Erlangen, Germany. This is the reCOVer trial result."
     },
     {
@@ -149,12 +133,10 @@
       "why": "A cornerstone of the Wirth/Scheibenbogen theory and the direct rationale for their drug MDC002, which aims to fix exactly this muscle problem.",
       "link": "https://doi.org/10.1002/jcsm.13669",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
-      "notes": "Published February 2025. PMID 39727052. J Cachexia Sarcopenia Muscle 16(1). Wirth + Scheibenbogen joint review — HIGH PRIORITY."
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Published February 2025. PMID 39727052. J Cachexia Sarcopenia Muscle 16(1). Wirth + Scheibenbogen joint review."
     },
     {
       "id": "fehrer-2026-cfc-conference",
@@ -166,11 +148,9 @@
       "why": "Lays out the Scheibenbogen group's current priorities and the thinking behind their trials (immunoadsorption and the planned inebilizumab study).",
       "link": "https://doi.org/10.1016/j.autrev.2026.104043",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 41895458. Lead author Annick Fehrer, Charité Berlin. Epub March 25 2026. Confirmed via Elsevier."
     },
     {
@@ -183,11 +163,9 @@
       "why": "Points to the gut as a possible lever on the immune system, supporting microbiome- and immune-based treatment ideas.",
       "link": "https://doi.org/10.1002/mbo3.70333",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42325052. Microbiologyopen 15(3):e70333. Confirmed via PubMed."
     },
     {
@@ -200,11 +178,9 @@
       "why": "Better-designed hormone studies could uncover treatment targets; gives practical guidance for trials, especially those with mostly female participants.",
       "link": "https://doi.org/10.1016/j.yfrne.2026.101268",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42320559. Front Neuroendocrinol. Confirmed via PubMed."
     },
     {
@@ -217,12 +193,400 @@
       "why": "Supports treating gut problems as central to ME/CFS, which could shape who is enrolled in drug trials and how improvement is measured.",
       "link": "https://doi.org/10.1186/s12967-026-08442-1",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42321833. J Transl Med. Confirmed via PubMed."
+    },
+    {
+      "id": "wirth-scheibenbogen-2020-unifying-hypothesis",
+      "title": "A Unifying Hypothesis of the Pathophysiology of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Recognitions from the finding of autoantibodies against ß2-adrenergic receptors",
+      "authors": "Wirth KJ, Scheibenbogen C",
+      "journal": "Autoimmunity Reviews",
+      "date": "2020",
+      "summary": "Proposes one framework that ties ME/CFS together: 'self-attacking' antibodies against receptors that control blood vessels lead to poor blood flow and too little oxygen reaching muscles and brain.",
+      "why": "The central Wirth/Scheibenbogen theory — it underpins their drug MDC002 and the autoantibody-removal treatments now being tested.",
+      "link": "https://doi.org/10.1016/j.autrev.2020.102527",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Autoimmun Rev 19(4):102527. Landmark Wirth + Scheibenbogen hypothesis paper."
+    },
+    {
+      "id": "wirth-scheibenbogen-2021-skeletal-muscle",
+      "title": "Pathophysiology of skeletal muscle disturbances in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)",
+      "authors": "Wirth KJ, Scheibenbogen C",
+      "journal": "Journal of Translational Medicine",
+      "date": "2021",
+      "summary": "Explains in detail how poor blood flow and a buildup of sodium and calcium could damage how ME/CFS muscles make energy.",
+      "why": "Builds the muscle-level mechanism behind the Wirth/Scheibenbogen theory and the rationale for their drug MDC002.",
+      "link": "https://doi.org/10.1186/s12967-021-02833-2",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "J Transl Med 19(1):162. PMID 33882940. Wirth + Scheibenbogen."
+    },
+    {
+      "id": "loebel-2016-autoantibodies",
+      "title": "Antibodies to β adrenergic and muscarinic cholinergic receptors in patients with Chronic Fatigue Syndrome",
+      "authors": "Loebel M, Grabowski P, Heidecke H, et al. (Scheibenbogen C, senior author)",
+      "journal": "Brain, Behavior, and Immunity",
+      "date": "Feb 2016",
+      "summary": "Found that many ME/CFS patients carry raised 'self-attacking' antibodies against receptors that control blood vessels and the nervous system.",
+      "why": "A foundational finding for the autoimmune theory of ME/CFS and the basis for treatments that remove these antibodies (immunoadsorption, BC007). From the Scheibenbogen group.",
+      "link": "https://doi.org/10.1016/j.bbi.2015.09.013",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Brain Behav Immun 52:32-39. PMID 26399744. Scheibenbogen group."
+    },
+    {
+      "id": "sotzny-2018-autoimmune-review",
+      "title": "Myalgic Encephalomyelitis/Chronic Fatigue Syndrome — Evidence for an autoimmune disease",
+      "authors": "Sotzny F, Blanco J, Capelli E, Castro-Marrero J, Steiner S, Murovska M, Scheibenbogen C (EUROMENE)",
+      "journal": "Autoimmunity Reviews",
+      "date": "2018",
+      "summary": "A review gathering the evidence that ME/CFS — at least in a subgroup of patients — behaves like an autoimmune disease, where the immune system attacks the body.",
+      "why": "Framed the autoimmune model that drives much of today's treatment research. From the Scheibenbogen group / European EUROMENE network.",
+      "link": "https://doi.org/10.1016/j.autrev.2018.01.009",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Autoimmun Rev 17(6):601-609. Scheibenbogen group."
+    },
+    {
+      "id": "haffke-2022-endothelial-dysfunction",
+      "title": "Endothelial dysfunction and altered endothelial biomarkers in patients with post-COVID-19 syndrome and chronic fatigue syndrome (ME/CFS)",
+      "authors": "Haffke M, Freitag H, Rudolf G, et al. (Scheibenbogen C, Sotzny F)",
+      "journal": "Journal of Translational Medicine",
+      "date": "2022",
+      "summary": "Found that the inner lining of blood vessels (the endothelium) doesn't work properly in many ME/CFS and Long COVID patients.",
+      "why": "Supports the idea that poor blood-vessel function drives ME/CFS symptoms, and points to treatments that target the vessels. From the Scheibenbogen group.",
+      "link": "https://doi.org/10.1186/s12967-022-03346-2",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "J Transl Med 20(1):138. PMID 35317812. Scheibenbogen group."
+    },
+    {
+      "id": "schreiner-2020-hhv6-mitochondria",
+      "title": "Human Herpesvirus-6 Reactivation, Mitochondrial Fragmentation, and the Coordination of Antiviral and Metabolic Phenotypes in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome",
+      "authors": "Schreiner P, Harrer T, Scheibenbogen C, Lamer S, Schlosser A, Naviaux RK, Prusty BK",
+      "journal": "ImmunoHorizons",
+      "date": "Apr 2020",
+      "summary": "Suggests that reactivation of a common herpesvirus (HHV-6) can shatter cells' energy factories (mitochondria), switching the body into a protective but energy-starved state.",
+      "why": "Connects a viral trigger to the energy failure seen in ME/CFS — a possible mechanism linking an old infection to lasting illness. Co-authored by Scheibenbogen, Naviaux and Prusty.",
+      "link": "https://doi.org/10.4049/immunohorizons.2000006",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "ImmunoHorizons 4(4):201-215. PMID 32327453. Scheibenbogen co-author."
+    },
+    {
+      "id": "decodeme-2025-gwas",
+      "title": "Initial findings from the DecodeME genome-wide association study of myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Ponting CP, et al. (DecodeME Consortium)",
+      "journal": "medRxiv (preprint)",
+      "date": "Aug 2025",
+      "summary": "The largest genetic study of ME/CFS (over 15,000 patients) found eight spots in our DNA linked to the illness, several involved in how the body fights infection.",
+      "why": "First strong genetic evidence that ME/CFS has a biological basis involving the immune and nervous systems — and a source of new drug targets.",
+      "link": "https://doi.org/10.1101/2025.08.06.25333109",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "medRxiv 2025.08.06.25333109. Led by Chris Ponting, Univ. of Edinburgh. Preprint (peer review pending)."
+    },
+    {
+      "id": "walitt-2024-nih-deep-phenotyping",
+      "title": "Deep phenotyping of post-infectious myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Walitt B, Singh K, et al. (NIH intramural study)",
+      "journal": "Nature Communications",
+      "date": "Feb 2024",
+      "summary": "An intensive US National Institutes of Health study found measurable brain, immune and metabolic differences in people whose ME/CFS began after an infection.",
+      "why": "A high-profile government study confirming the illness has real biological abnormalities (though its 'effort preference' wording was controversial among patients).",
+      "link": "https://doi.org/10.1038/s41467-024-45107-3",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Nat Commun 15:907. PMID 38383456. NIH intramural deep-phenotyping cohort."
+    },
+    {
+      "id": "xiong-2025-biomapai-multiomics",
+      "title": "AI-driven multi-omics modeling of myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Xiong R, Aiken E, Caldwell R, Vernon SD, Kozhaya L, Gunter C, Bateman L, Unutmaz D, Oh J",
+      "journal": "Nature Medicine",
+      "date": "2025",
+      "summary": "Used artificial intelligence on four years of layered biological data (gut, blood, immune, metabolism) to pick out ME/CFS biomarkers and predict how severe symptoms are.",
+      "why": "A cutting-edge, data-driven map of the disease that could improve diagnosis and reveal new mechanisms.",
+      "link": "https://doi.org/10.1038/s41591-025-03788-3",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Nat Med 2025. 'BioMapAI' deep neural network. Jackson Laboratory (Oh/Unutmaz) + Bateman Horne Center."
+    },
+    {
+      "id": "gardella-2025-cellfree-rna",
+      "title": "Circulating cell-free RNA signatures for the characterization and diagnosis of myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Gardella AE, Eweis-LaBolle D, Loy CJ, et al. (Hanson MR, De Vlaminck I)",
+      "journal": "PNAS",
+      "date": "Aug 2025",
+      "summary": "A blood test reading fragments of genetic material (RNA) floating in plasma told ME/CFS patients from healthy people with about 77% accuracy, and flagged immune and platelet differences.",
+      "why": "A promising step toward an objective blood test for a disease that currently has none, plus fresh clues about immune involvement. Cornell (Hanson) group.",
+      "link": "https://doi.org/10.1073/pnas.2507345122",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "PNAS 122 (2025). PMID 40789036. Cornell (Hanson) / De Vlaminck."
+    },
+    {
+      "id": "naviaux-2016-metabolic-features",
+      "title": "Metabolic features of chronic fatigue syndrome",
+      "authors": "Naviaux RK, Naviaux JC, Li K, et al.",
+      "journal": "PNAS",
+      "date": "Sep 2016",
+      "summary": "Found that ME/CFS patients' blood chemistry shows a widespread 'slowed-down' metabolism — the body acting as if in a low-energy survival mode.",
+      "why": "A widely-cited study arguing ME/CFS is a measurable disorder of how the body makes and uses energy, not a psychological problem.",
+      "link": "https://doi.org/10.1073/pnas.1607571113",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "PNAS 113(37):E5472-E5480. PMID 27573827."
+    },
+    {
+      "id": "fluge-2016-pyruvate-dehydrogenase",
+      "title": "Metabolic profiling indicates impaired pyruvate dehydrogenase function in myalgic encephalopathy/chronic fatigue syndrome",
+      "authors": "Fluge Ø, Mella O, Bruland O, et al.",
+      "journal": "JCI Insight",
+      "date": "Dec 2016",
+      "summary": "Blood chemistry pointed to a blocked step in how cells turn food into energy — a key enzyme (pyruvate dehydrogenase) appears to be held back.",
+      "why": "A concrete, testable defect in energy production that could explain the exhaustion and serve as a drug target. Bergen (Fluge/Mella) group.",
+      "link": "https://doi.org/10.1172/jci.insight.89376",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "JCI Insight 1(21):e89376. PMID 28018972."
+    },
+    {
+      "id": "montoya-2017-cytokine-signature",
+      "title": "Cytokine signature associated with disease severity in chronic fatigue syndrome patients",
+      "authors": "Montoya JG, Holmes TH, Anderson JN, et al. (Davis MM)",
+      "journal": "PNAS",
+      "date": "Aug 2017",
+      "summary": "Levels of several immune-signaling molecules (cytokines) in the blood rose in step with how severe a patient's ME/CFS was.",
+      "why": "Links the immune system directly to symptom severity and points to inflammation-based markers and treatments. Stanford group.",
+      "link": "https://doi.org/10.1073/pnas.1710519114",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "PNAS 114(34):E7150-E7158. PMID 28760971."
+    },
+    {
+      "id": "hornig-2015-immune-signatures",
+      "title": "Distinct plasma immune signatures in ME/CFS are present early in the course of illness",
+      "authors": "Hornig M, Montoya JG, Klimas NG, et al. (Lipkin WI)",
+      "journal": "Science Advances",
+      "date": "Feb 2015",
+      "summary": "Patients ill for under three years had a distinctive blood immune pattern that faded in those ill longer — showing the disease has stages.",
+      "why": "Early hard evidence that ME/CFS is biological and changes over time, and a hint that treating early might matter. Columbia (Lipkin) group.",
+      "link": "https://doi.org/10.1126/sciadv.1400121",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Sci Adv 1(1):e1400121. PMC4465185."
+    },
+    {
+      "id": "nakatomi-2014-neuroinflammation-pet",
+      "title": "Neuroinflammation in Patients with Chronic Fatigue Syndrome/Myalgic Encephalomyelitis: An 11C-(R)-PK11195 PET Study",
+      "authors": "Nakatomi Y, Mizuno K, Ishii A, et al.",
+      "journal": "Journal of Nuclear Medicine",
+      "date": "Jun 2014",
+      "summary": "Brain scans showed signs of inflammation (activated immune cells) in several brain regions of ME/CFS patients.",
+      "why": "Among the first direct evidence of brain inflammation in ME/CFS, supporting the 'encephalomyelitis' (brain inflammation) part of the disease's name.",
+      "link": "https://doi.org/10.2967/jnumed.113.131045",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "J Nucl Med 55(6):945-950. RIKEN, Japan."
+    },
+    {
+      "id": "joseph-2021-invasive-cpet",
+      "title": "Insights From Invasive Cardiopulmonary Exercise Testing of Patients With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome",
+      "authors": "Joseph P, Arevalo C, Oliveira RKF, et al. (Systrom DM)",
+      "journal": "Chest",
+      "date": "Aug 2021",
+      "summary": "Using exercise tests with catheters in the blood vessels, found that ME/CFS patients' blood doesn't return and circulate properly during exertion ('preload failure'), alongside nerve abnormalities.",
+      "why": "Gives a physical, measurable explanation for exercise intolerance and points to circulation- and nerve-targeted treatments. Harvard (Systrom) group.",
+      "link": "https://doi.org/10.1016/j.chest.2021.01.082",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Chest 160(2):642-651."
+    },
+    {
+      "id": "keller-2014-twoday-cpet",
+      "title": "Inability of myalgic encephalomyelitis/chronic fatigue syndrome patients to reproduce VO2peak indicates functional impairment",
+      "authors": "Keller BA, Pryor JL, Giloteaux L",
+      "journal": "Journal of Translational Medicine",
+      "date": "Apr 2014",
+      "summary": "On two exercise tests 24 hours apart, ME/CFS patients could not match their day-1 performance on day 2 — an objective sign of the 'crash' after exertion.",
+      "why": "Provides an objective, measurable test of post-exertional malaise — important for diagnosis and disability assessment.",
+      "link": "https://doi.org/10.1186/1479-5876-12-104",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "J Transl Med 12:104. PMID 24755065. Two-day CPET."
+    },
+    {
+      "id": "giloteaux-2016-gut-microbiome",
+      "title": "Reduced diversity and altered composition of the gut microbiome in individuals with myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Giloteaux L, Goodrich JK, Walters WA, Levine SM, Ley RE, Hanson MR",
+      "journal": "Microbiome",
+      "date": "2016",
+      "summary": "ME/CFS patients had less varied gut bacteria and signs of a 'leaky' gut letting microbes into the bloodstream.",
+      "why": "Early evidence linking the gut microbiome to ME/CFS, opening microbiome-based diagnosis and treatment ideas. Cornell (Hanson) group.",
+      "link": "https://doi.org/10.1186/s40168-016-0171-4",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Microbiome 4:30. PMID 27338587."
+    },
+    {
+      "id": "xiong-2023-microbiome-multiomics",
+      "title": "Multi-'omics of gut microbiome-host interactions in short- and long-term myalgic encephalomyelitis/chronic fatigue syndrome patients",
+      "authors": "Xiong R, Gunter C, Fleming E, et al. (Hanson MR, Oh J, Unutmaz D)",
+      "journal": "Cell Host & Microbe",
+      "date": "Feb 2023",
+      "summary": "A detailed gut analysis showed ME/CFS patients lack bacteria that make butyrate (a fuel that nourishes the gut lining); the pattern differed depending on how long they had been ill.",
+      "why": "One of the most rigorous microbiome studies in ME/CFS, strengthening the gut-disease link and possible treatments.",
+      "link": "https://doi.org/10.1016/j.chom.2023.01.001",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Cell Host Microbe 31(2):273-287. Companion paper to Guo et al. 2023."
+    },
+    {
+      "id": "esfandyarpour-2019-nanoneedle",
+      "title": "A nanoelectronics-blood-based diagnostic biomarker for myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)",
+      "authors": "Esfandyarpour R, Kashi A, Nemat-Gorgani M, Wilhelmy J, Davis RW",
+      "journal": "PNAS",
+      "date": "May 2019",
+      "summary": "A tiny electronic 'nanoneedle' blood test separated ME/CFS patients from healthy people by how their cells cope with stress.",
+      "why": "A candidate objective diagnostic test for a disease that currently has none. Stanford / Open Medicine Foundation (Davis) group.",
+      "link": "https://doi.org/10.1073/pnas.1901274116",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "PNAS 116(21):10250-10257. PMID 31036648."
+    },
+    {
+      "id": "fluge-2019-rituximab-rituxme",
+      "title": "B-Lymphocyte Depletion in Patients With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Randomized, Double-Blind, Placebo-Controlled Trial (RituxME)",
+      "authors": "Fluge Ø, Rekeland IG, Lien K, et al. (Mella O)",
+      "journal": "Annals of Internal Medicine",
+      "date": "2019",
+      "summary": "A large, rigorous trial of rituximab — a drug that wipes out B-cells (an immune cell type) — found it did NOT help ME/CFS patients overall.",
+      "why": "A pivotal negative result that ended hopes for rituximab and redirected the field; a landmark in ME/CFS research history. Bergen (Fluge/Mella) group.",
+      "link": "https://doi.org/10.7326/M18-1451",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Ann Intern Med 170(9):585-593. The definitive phase-3 RituxME trial (negative)."
+    },
+    {
+      "id": "rekeland-2020-cyclophosphamide",
+      "title": "Intravenous Cyclophosphamide in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. An Open-Label Phase II Study",
+      "authors": "Rekeland IG, Fosså A, Lande A, et al. (Fluge Ø, Mella O)",
+      "journal": "Frontiers in Medicine",
+      "date": "Apr 2020",
+      "summary": "An open-label study (no placebo group) of the immune-suppressing drug cyclophosphamide reported that about half of ME/CFS patients improved.",
+      "why": "An early signal that calming the immune system may help some patients — needs placebo-controlled confirmation, but supports the autoimmune treatment line.",
+      "link": "https://doi.org/10.3389/fmed.2020.00162",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Front Med 7:162. PMID 32411717. Bergen (Fluge/Mella) group."
+    },
+    {
+      "id": "komaroff-2021-longcovid-mecfs",
+      "title": "Insights from myalgic encephalomyelitis/chronic fatigue syndrome may help unravel the pathogenesis of post-acute COVID-19 syndrome",
+      "authors": "Komaroff AL, Lipkin WI",
+      "journal": "Trends in Molecular Medicine",
+      "date": "2021",
+      "summary": "A review arguing that Long COVID and ME/CFS likely share the same underlying biology.",
+      "why": "Helped place ME/CFS at the centre of Long COVID research, bringing the field new attention and funding.",
+      "link": "https://doi.org/10.1016/j.molmed.2021.06.002",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Trends Mol Med 27(9):895-906."
+    },
+    {
+      "id": "carruthers-2011-icc",
+      "title": "Myalgic encephalomyelitis: International Consensus Criteria",
+      "authors": "Carruthers BM, van de Sande MI, De Meirleir KL, et al.",
+      "journal": "Journal of Internal Medicine",
+      "date": "2011",
+      "summary": "An international expert panel defined stricter ways to diagnose the illness, centred on symptoms getting worse after exertion, and recommended dropping the name 'chronic fatigue syndrome'.",
+      "why": "Widely-used research and clinical criteria that put the disease's hallmark feature — post-exertional worsening — at the centre of diagnosis.",
+      "link": "https://doi.org/10.1111/j.1365-2796.2011.02428.x",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "J Intern Med 270(4):327-338. The 'ICC' criteria."
+    },
+    {
+      "id": "iom-2015-seid",
+      "title": "Beyond Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Redefining an Illness",
+      "authors": "Institute of Medicine (US) Committee (National Academies)",
+      "journal": "National Academies Press (IOM/NAM report)",
+      "date": "2015",
+      "summary": "A major US expert panel concluded ME/CFS is a serious physical disease, proposed simpler diagnostic criteria, and suggested renaming it 'systemic exertion intolerance disease' (SEID).",
+      "why": "A landmark report that medically legitimised the illness and reshaped how it is diagnosed.",
+      "link": "https://www.ncbi.nlm.nih.gov/books/NBK274235/",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "IOM/National Academy of Medicine report, Feb 2015. NCBI Bookshelf NBK274235. Proposed the SEID criteria."
+    },
+    {
+      "id": "lim-2020-prevalence",
+      "title": "Systematic review and meta-analysis of the prevalence of chronic fatigue syndrome/myalgic encephalomyelitis (CFS/ME)",
+      "authors": "Lim EJ, Ahn YC, Jang ES, et al.",
+      "journal": "Journal of Translational Medicine",
+      "date": "2020",
+      "summary": "Pooled dozens of studies to estimate how common ME/CFS is worldwide (roughly 0.5–1% of people, depending on the definition used).",
+      "why": "Establishes the scale of the disease — many millions affected — strengthening the case for research funding and services.",
+      "link": "https://doi.org/10.1186/s12967-020-02269-0",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "J Transl Med 18:100."
     }
   ]
 }

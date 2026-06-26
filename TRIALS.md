@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/trials.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last check: **2026-06-25**
+- Last check: **2026-06-26**
 - Trials tracked: **2** (open for enrollment: **1**, watchlist: **1**, archived: **0**)
 - ⭐ = linked to Klaus Wirth or Carmen Scheibenbogen.
 
