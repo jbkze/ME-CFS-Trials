@@ -23,6 +23,18 @@ is `last_check` + `flags` in `data/trials.json`).
 - Trials tracked: 2 (open: 1 [NCT07529197], watchlist: 1 [MDC002])
 - Papers: unchanged (47 total)
 
+## 2026-06-26 (run 4 — scheduled autonomous, 14:28 UTC)
+- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC/NKSG, mecfs.de, mecfs-research.org, PubMed, medRxiv, bioRxiv, Health Rising, The Sick Times (May 2026 Berlin conference roundup)
+- **Trials** — no new in-scope trials; all 4 existing trials verified unchanged
+  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charité) [HIGH PRIORITY]
+  - MDC002 (Mitodicure): still pre-clinical/not_yet_recruiting [HIGH PRIORITY]
+  - Inebilizumab Phase 2 (Scheibenbogen/NKSG): still not_yet_recruiting
+  - Semaglutide GLP-1 (Scheibenbogen/Charité): still not_yet_recruiting
+  - Notable: Berlin conference (May 7–8, 2026) — IA-PACS-CFS (immunoadsorption RCT) and PoCoVIT (methylprednisolone) both failed primary endpoints; both completed before our tracking began
+- **Papers** — no new papers since last check (14:12 UTC); isNew cleared for 4 papers added in run 3 (donchev, hunter, che, eckey)
+- Trials tracked: 4 (open: 1 [NCT07529197], watchlist: 3)
+- Notes: No changes. Watch: BC007/APTA announcement, NDPE-funded drug trials (expected Q4 2026).
+  - *(Note: run 4 saw inebilizumab/semaglutide as tracked; both subsequently removed by correction entry above.)*
 
 ## 2026-06-26 (run 3 — scheduled autonomous, 14:12 UTC)
 - Sources checked: ClinicalTrials.gov (Germany/ME/CFS all statuses), DRKS, CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC, mecfs.de/therapie, mecfs-research.org/researchupdate, PubMed (ME/CFS 2026 + author searches), medRxiv, bioRxiv, Health Rising, The Sick Times, riffreporter.de (BC007/APTA)
