@@ -1,6 +1,6 @@
 ---
 type: paper
-id: fanò-illic2026
+id: fano2026
 title: "Pathophysiological, Translational, and Diagnostic Aspects of ME/CFS: A Focus on Skeletal Muscle Involvement"
 authors: ["Fanò-Illic G", "Coscia F", "Gigliotti PV", "Checcaglini F", "Carraro U", "Fulle S", "Mancinelli R"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [skeletal-muscle, biomarker, treatment, review]
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: fanò-illic2026
+bibtex_key: fano2026
 cover: "[[literature/papers/2026-fanò-illic-pathophysiological-translational-diagnostic-aspects/cover.png]]"
 ---
 
