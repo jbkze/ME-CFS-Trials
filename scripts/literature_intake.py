@@ -111,8 +111,32 @@ def unpaywall_pdf_urls(doi: str) -> list:
     return [l["url_for_pdf"] for l in sorted(locs, key=rank)]
 
 
+def pmcid_for_doi(doi: str) -> str | None:
+    """Resolve a DOI to its PMCID via the NCBI ID Converter (authoritative, exact
+    match) so we never fetch the wrong PMC record from a hand-guessed id."""
+    if not doi:
+        return None
+    url = ("https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
+           f"?ids={urllib.parse.quote(doi)}&format=json&tool=mecfs-watch&email={EMAIL}")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        data = json.load(urllib.request.urlopen(req, timeout=30))
+        for rec in data.get("records", []):
+            if rec.get("pmcid"):
+                return rec["pmcid"]
+    except Exception:
+        pass
+    return None
+
+
 def candidate_urls(doi: str, p: dict) -> list:
     urls = unpaywall_pdf_urls(doi) if doi else []
+    # Europe PMC serves a headless-downloadable PDF for PMC-deposited articles;
+    # resolve the PMCID from the exact DOI first so the URL can't point elsewhere.
+    pmcid = pmcid_for_doi(doi) if doi else None
+    if pmcid:
+        urls.append(f"https://europepmc.org/articles/{pmcid}?pdf=render")
+        urls.append(f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextPDF")
     # Publisher OA URL patterns that are known to serve headless.
     if doi and doi.startswith("10.3389/"):           # Frontiers
         urls.append(f"https://www.frontiersin.org/articles/{doi}/pdf")
@@ -121,6 +145,52 @@ def candidate_urls(doi: str, p: dict) -> list:
     if doi and doi.startswith("10.3390/"):           # MDPI — resolve via landing
         urls.append(f"https://doi.org/{doi}")
     return list(dict.fromkeys(urls))                 # dedup, keep order
+
+
+def elsevier_pdf(doi: str, dest: pathlib.Path) -> bool:
+    """Full-text PDF via the Elsevier Article Retrieval API. Active only when
+    ELSEVIER_API_KEY is present in the environment — the key is read from there
+    and NEVER written to the repo. Rejects abstract-only "article in press" stubs
+    by requiring at least 2 pages (a 1-page return is just the abstract)."""
+    key = os.environ.get("ELSEVIER_API_KEY", "").strip()
+    if not key or not doi or not doi.startswith("10.1016/"):
+        return False
+    run(["curl", "-sS", "--max-time", "90", "-o", str(dest),
+         "-H", f"X-ELS-APIKey: {key}", "-H", "Accept: application/pdf",
+         f"https://api.elsevier.com/content/article/doi/{doi}"])
+    if not (dest.exists() and dest.stat().st_size > 10240):
+        dest.exists() and dest.unlink()
+        return False
+    with open(dest, "rb") as fh:
+        if not fh.read(5).startswith(b"%PDF"):
+            dest.unlink(); return False
+    try:
+        import fitz
+        if fitz.open(dest).page_count < 2:           # abstract-only stub
+            dest.unlink(); return False
+    except Exception:
+        pass
+    return True
+
+
+def pdf_is_paper(pdf: pathlib.Path, p: dict) -> bool:
+    """True if the PDF's first-page text contains the first-author surname AND at
+    least 2 distinctive title words — guards a *freshly fetched* PDF against a
+    wrong-record download. Existing on-disk PDFs are trusted (never re-checked)."""
+    try:
+        import fitz
+        head = "".join(pg.get_text() for pg in fitz.open(pdf))[:8000].lower()
+    except Exception:
+        return True   # no fitz → can't verify; keep legacy permissive behaviour
+    sn = surname(p.get("authors", "")).lower()
+    if sn and sn not in head:
+        return False
+    stop = {"the", "and", "for", "with", "from", "this", "that", "based", "study",
+            "into", "their", "have", "are", "may", "help", "associated", "disease",
+            "syndrome", "chronic", "fatigue", "patients", "evidence", "insights"}
+    toks = [w for w in (m.lower() for m in re.findall(r"[A-Za-z][A-Za-z\-]{4,}", p.get("title", "")))
+            if w not in stop]
+    return sum(1 for t in toks[:8] if t in head) >= 2
 
 
 def try_download(urls: list, dest: pathlib.Path) -> bool:
@@ -226,7 +296,8 @@ def blocker_for(doi, journal):
     pref = (doi or "").split("/")[0]
     j = (journal or "").lower()
     if pref == "10.1016" or "lancet" in j or "cell" in j or "elsevier" in j:
-        return "Elsevier/ScienceDirect — paywalled, blocks headless download."
+        return ("Elsevier/ScienceDirect — paywalled; set ELSEVIER_API_KEY in the "
+                "environment to fetch full text via the Elsevier Article API.")
     if pref in ("10.1002", "10.1111") or "wiley" in j:
         return "Wiley — paywalled, blocks headless download."
     if pref == "10.1007" or "springer" in j:
@@ -269,8 +340,17 @@ def main():
 
         pdf = folder / "paper.pdf"
         has_pdf = pdf.exists() and pdf.stat().st_size > 10240
+        newly = False
         if not has_pdf and not no_fetch and doi:
-            has_pdf = try_download(candidate_urls(doi, p), pdf)
+            # open-access routes first, then the Elsevier API (if a key is set)
+            if try_download(candidate_urls(doi, p), pdf) or elsevier_pdf(doi, pdf):
+                has_pdf = newly = True
+        # A freshly fetched PDF must actually be THIS paper — else discard it so a
+        # wrong PMCID / mismatched record can never be filed. Existing PDFs trusted.
+        if newly and not pdf_is_paper(pdf, p):
+            print(f"  identity mismatch, discarding fetched PDF for {slug}")
+            pdf.unlink(missing_ok=True)
+            has_pdf = False
         has_txt = (folder / "paper.txt").exists()
         has_cov = (folder / "cover.png").exists()
         if has_pdf and not has_txt:

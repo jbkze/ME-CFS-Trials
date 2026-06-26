@@ -126,9 +126,13 @@ reference — match their tone.
 - **Literature archive:** run `pip install -q pymupdf` then
   `python3 scripts/literature_intake.py` — for every paper in `data/papers.json` it
   creates/refreshes `literature/papers/<slug>/` (BibTeX + plain-language note + the
-  open-access PDF, extracted text and cover when fetchable; paywalled papers get a
-  `_No PDF available_` note, DOI kept). Idempotent — existing PDFs are kept. Commit
-  the new `literature/` folders. See `literature/README.md`.
+  full-text PDF, extracted text and cover when fetchable; unobtainable papers get a
+  `_No PDF available_` note, DOI kept). PDF chain: Unpaywall → the DOI's PMC copy
+  (NCBI ID Converter → Europe PMC) → publisher OA → the **Elsevier Article API for
+  `10.1016/…` DOIs when `ELSEVIER_API_KEY` is set in the environment** (key read from
+  the env only, never committed). Freshly fetched PDFs are identity-checked (author
+  surname + title words) so a wrong record is discarded. Idempotent — existing PDFs
+  are kept. Commit the new `literature/` folders. See `literature/README.md`.
 - **Never hand-edit `TRIALS.md` or `docs/dashboard.json`** — they are generated.
 
 ## Reporting back

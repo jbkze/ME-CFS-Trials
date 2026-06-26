@@ -21,6 +21,13 @@ tools are *not* durable: they expire after 7 days and die when the session ends.
    would return `403`. Edit the environment and set **Network access = Full**
    (simplest for open web research), or **Custom** with at least the domains
    listed in *"Network allowlist"* below.
+   - **Elsevier full text (optional):** in the same environment config, add an
+     environment variable **`ELSEVIER_API_KEY`** = your key from
+     [dev.elsevier.com](https://dev.elsevier.com). `literature_intake.py` then
+     pulls full-text PDFs for paywalled ScienceDirect papers (`10.1016/…` DOIs)
+     via the Elsevier Article API. Store it as an environment secret — **never**
+     commit the key to the repo. (Custom network must then also allow
+     `api.elsevier.com`; Full already does.)
 6. **Trigger:** choose **Schedule → Daily** (minimum interval is 1 hour). Pick any
    time of day — the dashboard shows when the last run happened, in your timezone.
 7. **Permissions:** enable **Allow unrestricted branch pushes** for this repo so
@@ -106,8 +113,9 @@ research papers (broader).
 ```
 drks.de, clinicaltrials.gov, euclinicaltrials.eu, trialsearch.who.int,
 charite.de, cfc.charite.de, mitodicure.com, ncbi.nlm.nih.gov,
-pubmed.ncbi.nlm.nih.gov, europepmc.org, medrxiv.org, biorxiv.org,
-scholar.google.com, doi.org, mecfs.de, healthrising.org, thesicktimes.org
+pubmed.ncbi.nlm.nih.gov, europepmc.org, ebi.ac.uk, medrxiv.org, biorxiv.org,
+scholar.google.com, doi.org, mecfs.de, healthrising.org, thesicktimes.org,
+api.unpaywall.org, api.elsevier.com
 ```
 
 Custom is tighter but will miss any source not on the list; **Full** is

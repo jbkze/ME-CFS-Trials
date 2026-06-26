@@ -25,7 +25,7 @@ bibtex_key: thomas2026
 
 Argues that hormone studies in ME/CFS and Long COVID disagree because they ignore differences by time of day and menstrual-cycle phase, and recommends accounting for these.
 
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+> _No PDF available_ — Elsevier — article in press; the API serves only the abstract/first page, full text not yet released. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 
