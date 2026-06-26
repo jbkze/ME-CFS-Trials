@@ -2,7 +2,7 @@
   "schema_version": 1,
   "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md. The first run after setup will (correctly) flag every relevant trial it finds as 'new', because this baseline starts empty. Do not hand-fabricate entries — only add trials confirmed from a registry or institutional source during a check.",
   "last_check": "2026-06-26",
-  "last_run_at": "2026-06-26T08:20:26Z",
+  "last_run_at": "2026-06-26T13:42:38Z",
   "trials": [
     {
       "id": "nct07529197",
@@ -135,7 +135,219 @@
         "drug_study": true,
         "wirth_or_scheibenbogen": true
       },
-      "notes": "Not yet registered in any trial registry. German criterion satisfied by German sponsor (Mitodicure GmbH). As of May 2026 (The Sick Times, 14 May 2026), Mitodicure is still seeking funding for initial GLP toxicology/safety-pharmacology studies before advancing to Phase 1 human trials. Mitodicure.com accessible on 2026-06-26 check — status still 'advancing towards clinical trials'; no Phase 1 registration or new funding announcement. Watch for Phase 1 registration on DRKS or ClinicalTrials.gov."
+      "notes": "Not yet registered in any trial registry. German criterion satisfied by German sponsor (Mitodicure GmbH). Pipeline page (mitodicure.com/pipeline/) confirms MDC002 is 'ready for GLP toxicity and GLP safety pharmacology studies' as of June 2026 — i.e. still pre-clinical; no Phase 1 registration or new funding announcement. Watch for Phase 1 registration on DRKS or ClinicalTrials.gov."
+    },
+    {
+      "id": "nct05697640",
+      "name": "Study to Investigate Improvement in Physical Function with Vericiguat Compared with Placebo in Participants with Post-COVID-19 Syndrome (VERI-LONG)",
+      "acronym": "VERI-LONG",
+      "status": "active_not_recruiting",
+      "open_for_enrollment": false,
+      "intervention": {
+        "name": "Vericiguat (VERQUVO™ / BAY 1021189)",
+        "type": "drug",
+        "mechanism": "Oral soluble guanylate cyclase (sGC) stimulator — bridges endothelial dysfunction to improve microvascular perfusion and tissue blood flow. Developed for heart failure; being repurposed for post-COVID vascular dysfunction."
+      },
+      "is_drug_study": true,
+      "associated_researchers": [],
+      "priority": "normal",
+      "sponsor": "Charité – Universitätsmedizin Berlin (NKSG; German government funded)",
+      "principal_investigator": "NKSG Charité (PI not publicly listed)",
+      "germany": {
+        "has_german_site": true,
+        "sites": [
+          {
+            "institution": "Charité – Universitätsmedizin Berlin, Campus Buch (Experimental and Clinical Research Center, ECRC)",
+            "city": "Berlin",
+            "recruiting": false
+          }
+        ]
+      },
+      "condition": "Post-COVID-19 syndrome (PCS), with or without fulfilment of ME/CFS criteria",
+      "phase": "Phase 2a",
+      "eligibility": {
+        "summary": "Adults 18–50 with post-COVID syndrome (WHO definition) or post-infectious ME/CFS (Canadian Consensus Criteria), including post-COVID ME/CFS. Must reside in Berlin or Brandenburg. 104 participants randomised 1:1 to vericiguat or placebo for 10 weeks plus 30-day follow-up.",
+        "key_inclusion": [
+          "Age 18–50",
+          "Post-COVID syndrome (WHO) OR post-infectious ME/CFS (Canadian Consensus Criteria)",
+          "Resident in Berlin or Brandenburg"
+        ],
+        "key_exclusion": [
+          "Age >50 (independent vascular changes)",
+          "Pregnancy"
+        ],
+        "age": "18–50",
+        "sex": "All"
+      },
+      "registry": {
+        "name": "ClinicalTrials.gov",
+        "id": "NCT05697640",
+        "url": "https://clinicaltrials.gov/study/NCT05697640"
+      },
+      "links": [
+        "https://cfc.charite.de/en/clinical_research/nksg/trial_veri_long",
+        "https://mrr.mecfs-research.org/en/mrr/projects/WHo2Gec2STaIFXU01fMHvw"
+      ],
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "last_status_change": null,
+      "status_history": [
+        {
+          "date": "2026-06-26",
+          "status": "active_not_recruiting"
+        }
+      ],
+      "flags": [
+        "new"
+      ],
+      "relevance": {
+        "me_cfs": true,
+        "germany": true,
+        "open_enrollment": false,
+        "drug_study": true,
+        "wirth_or_scheibenbogen": false
+      },
+      "notes": "Recruitment started June 2023; 104 participants enrolled; planned completion April 2025. As of December 2024 (last ME/CFS Research Registry update) status was 'ongoing'. Results expected in 2026 (mecfs.de). Enrollment now complete — trial is active_not_recruiting (data analysis phase). Not in scope for enrollment but tracked for its results, which will be the first RCT of a vascular drug (vericiguat) in post-COVID/ME/CFS. Stratified by diagnosis (with/without ME/CFS) and sex."
+    },
+    {
+      "id": "nksg-inebilizumab-ph2",
+      "name": "Phase 2 Study of Inebilizumab (Uplizna) in ME/CFS and Post-COVID Syndrome (NKSG/Charité)",
+      "acronym": null,
+      "status": "not_yet_recruiting",
+      "open_for_enrollment": false,
+      "intervention": {
+        "name": "Inebilizumab (Uplizna)",
+        "type": "drug",
+        "mechanism": "CD19-directed monoclonal antibody; depletes B cells and plasmablasts (including pre-B cells), reducing production of GPCR autoantibodies. Approved for neuromyelitis optica. Being tested to eliminate autoantibody-producing cells in ME/CFS."
+      },
+      "is_drug_study": true,
+      "associated_researchers": [
+        "Carmen Scheibenbogen"
+      ],
+      "priority": "high",
+      "sponsor": "Charité – Universitätsmedizin Berlin / NKSG (funded by BMFTR, Nationale Dekade gegen Postinfektiöse Erkrankungen, up to €18M)",
+      "principal_investigator": "Prof. Dr. Carmen Scheibenbogen (NKSG)",
+      "germany": {
+        "has_german_site": true,
+        "sites": [
+          {
+            "institution": "Charité – Universitätsmedizin Berlin (NKSG)",
+            "city": "Berlin",
+            "recruiting": false
+          }
+        ]
+      },
+      "condition": "ME/CFS and post-COVID syndrome (autoantibody-mediated subgroup)",
+      "phase": "Phase 2",
+      "eligibility": {
+        "summary": "Planned for patients who responded to prior immunoadsorption (IA) — to select the autoantibody-mediated disease subgroup. Full criteria not yet published.",
+        "key_inclusion": [
+          "Prior response to immunoadsorption (IA)",
+          "ME/CFS or post-COVID syndrome with evidence of autoantibody-mediated disease"
+        ],
+        "key_exclusion": [],
+        "age": "TBD",
+        "sex": "TBD"
+      },
+      "registry": {
+        "name": "other",
+        "id": "not-yet-registered",
+        "url": "https://www.mecfs.de/therapie-von-me-cfs/"
+      },
+      "links": [
+        "https://www.mecfs.de/therapie-von-me-cfs/",
+        "https://www.bmftr.bund.de/DE/Forschung/Gesundheit/MedizinischeForschung/Postinfekti%C3%B6seErkrankungen/postinfekti%C3%B6seerkrankungen_node.html"
+      ],
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "last_status_change": null,
+      "status_history": [
+        {
+          "date": "2026-06-26",
+          "status": "not_yet_recruiting"
+        }
+      ],
+      "flags": [
+        "new"
+      ],
+      "relevance": {
+        "me_cfs": true,
+        "germany": true,
+        "open_enrollment": false,
+        "drug_study": true,
+        "wirth_or_scheibenbogen": true
+      },
+      "notes": "BMFTR announced Phase 2 funding in January 2026 as part of the Nationale Dekade gegen Postinfektiöse Erkrankungen (National Decade Against Post-Infectious Diseases, 2026–2036; €500M total). The inebilizumab trial is part of the NKSG multi-drug clinical platform at Charité. Design: only immunoadsorption-responders enrolled, to select for autoantibody-mediated cases. Not yet registered on DRKS or ClinicalTrials.gov as of June 2026. Watch for DRKS/NCT registration. European Commission approved inebilizumab (Uplizna) for generalised myasthenia gravis in February 2026."
+    },
+    {
+      "id": "charite-semaglutide-glp1",
+      "name": "Semaglutide (GLP-1 Receptor Agonist) for ME/CFS Symptoms and Biomarker Identification (Scheibenbogen/Charité)",
+      "acronym": null,
+      "status": "not_yet_recruiting",
+      "open_for_enrollment": false,
+      "intervention": {
+        "name": "Semaglutide (GLP-1 receptor agonist)",
+        "type": "drug",
+        "mechanism": "GLP-1 receptor agonist (same class as Ozempic/Wegovy); reduces body weight, modulates inflammation and immune function. Being tested in ME/CFS patients with overweight to assess symptom improvement and identify responder biomarkers."
+      },
+      "is_drug_study": true,
+      "associated_researchers": [
+        "Carmen Scheibenbogen"
+      ],
+      "priority": "high",
+      "sponsor": "Charité – Universitätsmedizin Berlin / Institute of Medical Immunology (Solve ME Catalyst Award)",
+      "principal_investigator": "Prof. Dr. Carmen Scheibenbogen",
+      "germany": {
+        "has_german_site": true,
+        "sites": [
+          {
+            "institution": "Charité – Universitätsmedizin Berlin, Institute of Medical Immunology",
+            "city": "Berlin",
+            "recruiting": false
+          }
+        ]
+      },
+      "condition": "ME/CFS (overweight/obese subgroup)",
+      "phase": "Phase not yet defined",
+      "eligibility": {
+        "summary": "ME/CFS patients who are overweight and receiving treatment for obesity. Aims to assess whether semaglutide improves ME/CFS symptoms and quality of life, and to identify biomarkers predicting response.",
+        "key_inclusion": [
+          "ME/CFS diagnosis",
+          "Overweight (receiving treatment for overweight)"
+        ],
+        "key_exclusion": [],
+        "age": "TBD",
+        "sex": "TBD"
+      },
+      "registry": {
+        "name": "other",
+        "id": "not-yet-registered",
+        "url": "https://solvecfs.org/february-2026-catalyst-awards/"
+      },
+      "links": [
+        "https://solvecfs.org/february-2026-catalyst-awards/",
+        "https://solvecfs.org/wp-content/uploads/2026/04/GLP1_SolveME_16.4.26_FINAL.pdf"
+      ],
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "last_status_change": null,
+      "status_history": [
+        {
+          "date": "2026-06-26",
+          "status": "not_yet_recruiting"
+        }
+      ],
+      "flags": [
+        "new"
+      ],
+      "relevance": {
+        "me_cfs": true,
+        "germany": true,
+        "open_enrollment": false,
+        "drug_study": true,
+        "wirth_or_scheibenbogen": true
+      },
+      "notes": "Funded by Solve ME's ME/CFS Catalyst Awards, announced February 24, 2026. PI: Prof. Carmen Scheibenbogen. Educational webinar held April 16, 2026 (slides available). Also includes patient-involvement component and biomarker discovery aim. Rationale: GLP-1 agonists reduce inflammation, may modulate dysregulated immune responses and vasodilation. Not yet registered on DRKS or ClinicalTrials.gov as of June 2026. Watch for DRKS/NCT registration."
     }
   ]
 }
