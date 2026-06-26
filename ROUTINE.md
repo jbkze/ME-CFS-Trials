@@ -123,6 +123,12 @@ reference — match their tone.
   `TRIALS.md` and `docs/dashboard.json` (the feed for the GitHub Pages dashboard,
   `docs/index.html`; studies from `trials.json`, papers from `papers.json`).
 - Append one entry to `checks/CHANGELOG.md` using the template at the top of that file.
+- **Literature archive:** run `pip install -q pymupdf` then
+  `python3 scripts/literature_intake.py` — for every paper in `data/papers.json` it
+  creates/refreshes `literature/papers/<slug>/` (BibTeX + plain-language note + the
+  open-access PDF, extracted text and cover when fetchable; paywalled papers get a
+  `_No PDF available_` note, DOI kept). Idempotent — existing PDFs are kept. Commit
+  the new `literature/` folders. See `literature/README.md`.
 - **Never hand-edit `TRIALS.md` or `docs/dashboard.json`** — they are generated.
 
 ## Reporting back

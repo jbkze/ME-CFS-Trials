@@ -77,11 +77,15 @@ research papers (broader).
    journal, date, one-line summary, one-line "why it matters", DOI link, first_seen,
    isNew) and refresh last_check. Then run `python3 scripts/render_trials.py` — this
    rebuilds TRIALS.md AND docs/dashboard.json (the GitHub Pages dashboard feed).
-   Prepend a dated entry to checks/CHANGELOG.md.
+   Prepend a dated entry to checks/CHANGELOG.md. Then archive the papers locally:
+   `pip install -q pymupdf && python3 scripts/literature_intake.py` — writes
+   literature/papers/<slug>/ per paper (open-access PDF + extracted text + cover +
+   BibTeX + plain-language summary note; paywalled papers get a _No PDF available_
+   note). Idempotent; existing PDFs are kept.
 
 5. Persist state — essential, because the next run re-clones the default branch:
-   commit data/trials.json, data/papers.json, TRIALS.md, docs/dashboard.json and
-   checks/CHANGELOG.md to the default branch with message
+   commit data/trials.json, data/papers.json, TRIALS.md, docs/dashboard.json,
+   checks/CHANGELOG.md and the new literature/ folders to the default branch with message
    "Research watch <YYYY-MM-DD>: T new/changed trials, P new papers". If you
    cannot push to the default branch, push a claude/ branch and open a PR with the
    same summary.
