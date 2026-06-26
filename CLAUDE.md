@@ -28,7 +28,8 @@ below is ambiguous. In short:
    ClinicalTrials.gov, CTIS, WHO ICTRP) or the institution's page; papers against
    the DOI / journal / preprint page.
 4. Update the JSON (set `first_seen`/`isNew` once, refresh `last_checked`, set
-   top-level `last_check`, recompute trial `flags`), then run
+   top-level `last_check` + `last_run_at` (UTC timestamp with time), recompute
+   trial `flags`), then run
    `python3 scripts/render_trials.py`, then append to `checks/CHANGELOG.md`.
 5. Report newest-first: trials in two tiers (open, then planned), then papers —
    Wirth/Scheibenbogen first. If nothing changed, confirm in one line.

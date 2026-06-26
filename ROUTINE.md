@@ -114,7 +114,11 @@ reference — match their tone.
   `summary`, a one-line `why` (why it matters), `link` (DOI), `first_seen`, and
   `isNew`. Write `summary` and `why` in **plain, layperson language** (see the
   style note under "Scope — papers"). Refresh its `isNew` flags as above.
-- Set top-level `last_check` to today's date (YYYY-MM-DD) in both files.
+- Set top-level `last_check` to today's date (YYYY-MM-DD) in both files, and set
+  top-level `last_run_at` in `data/trials.json` to the current timestamp **with
+  time** (UTC ISO-8601, e.g. `date -u +%FT%TZ` → `2026-06-25T14:21:48Z`). The
+  dashboard localises this to the viewer's timezone and shows the time next to
+  the date; `nextRun` is computed as `last_run_at + 1 day` (daily cadence).
 - Regenerate the views: `python3 scripts/render_trials.py` — rebuilds both
   `TRIALS.md` and `docs/dashboard.json` (the feed for the GitHub Pages dashboard,
   `docs/index.html`; studies from `trials.json`, papers from `papers.json`).
