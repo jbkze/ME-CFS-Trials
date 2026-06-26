@@ -167,7 +167,11 @@ is no human in the loop, so two things differ from an interactive run:
    `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
    commits straight to the default branch (recommended — keeps the baseline
    current automatically). Without it, it pushes a `claude/` branch and opens a
-   PR, and **you must merge that PR** before the next run or the baseline goes stale.
+   PR. **The agent must then merge that PR itself**: wait for the `integrate`
+   CI check to pass (`success`), address any automated review comments (e.g.
+   from cubic), then merge with squash. Do not leave the PR open for the human
+   to merge — an unmerged PR means the next scheduled run clones stale `main`
+   and re-discovers the same trials/papers as new.
 2. **Deliver the summary somewhere you'll see it**, since there's no chat reply
    to read. Open a GitHub issue titled `Research watch <YYYY-MM-DD>` with a Trials
    part (two tiers) and a Papers part (Wirth/Scheibenbogen first) — **only when
