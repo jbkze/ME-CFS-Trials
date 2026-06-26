@@ -48,9 +48,12 @@ below is ambiguous. In short:
   (`priority: "high"`), in either tier — e.g. **Mitodicure MDC002** is planned,
   not yet registered, and is still high priority and reported.
 - **Never fabricate.** A trial enters `data/trials.json` only after confirmation
-  from a registry **or** an official institutional/company page — the latter is
-  often the only source for a *planned* study (e.g. Mitodicure's site for MDC002).
-  News/blogs are leads, not evidence.
+  from (a) a registry entry (DRKS / NCT / CTIS / ICTRP) **or** (b) a **dedicated
+  trial-specific page** on the institution's or company's clinical-research site
+  (e.g. a named Charité CFC subpage per trial, or a named-compound pipeline page).
+  **Not acceptable** as sole source: general therapy-overview pages, grant/award
+  announcement pages, press releases, or news/blog posts — these are *leads only*.
+  MDC002 qualifies because mitodicure.com/pipeline/ names it specifically.
 - **Papers track:** notable new ME/CFS research, prioritising Wirth/Scheibenbogen
   but **not** Germany-restricted; recent (~last 3 months / since `last_check`);
   confirmed via DOI/journal/preprint; `summary` + `why` written in **plain,

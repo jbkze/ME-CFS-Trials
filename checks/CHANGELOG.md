@@ -15,6 +15,14 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-26 (correction — intake-standard tightening)
+- **Two trials removed:** `nksg-inebilizumab-ph2` (Inebilizumab Ph2, Charité NKSG) and `charite-semaglutide-glp1` (Semaglutide, Scheibenbogen) deleted from `data/trials.json`.
+  - Reason: both were sourced solely from a general therapy-overview page (mecfs.de/therapie) and a grant-announcement page (solvecfs.org/catalyst-awards) respectively — neither has a dedicated trial-specific registry entry or a named clinical-research subpage. Under the tightened intake standard these are *leads only*, not confirmation.
+  - Both trials remain scientific leads: if/when a DRKS/NCT registration or a dedicated Charité CFC trial subpage appears, they can be re-added.
+- **ROUTINE.md + CLAUDE.md updated:** confirmation standard for `not_yet_recruiting` planned trials now explicitly requires either (a) a registry entry or (b) a dedicated trial-specific institutional/company page — general overview pages, grant announcements, and press releases are leads only.
+- Trials tracked: 2 (open: 1 [NCT07529197], watchlist: 1 [MDC002])
+- Papers: unchanged (47 total)
+
 ## 2026-06-26 (run 3 — scheduled autonomous, 14:12 UTC)
 - Sources checked: ClinicalTrials.gov (Germany/ME/CFS all statuses), DRKS, CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC, mecfs.de/therapie, mecfs-research.org/researchupdate, PubMed (ME/CFS 2026 + author searches), medRxiv, bioRxiv, Health Rising, The Sick Times, riffreporter.de (BC007/APTA)
 - **Trials** — no new in-scope trials; all 4 existing trials verified unchanged
