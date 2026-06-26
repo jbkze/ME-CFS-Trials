@@ -37,7 +37,10 @@
       <span style="width:8px;height:8px;border-radius:999px;background:#56C8A4;animation:oepulse 2.4s var(--ease-standard,ease) infinite;"></span>
       <span style="font:600 11px/1 Poppins;color:#9FB3C7;letter-spacing:.09em;text-transform:uppercase;">Last search run</span>
     </div>
-    <div id="lastRun" style="font:700 16px/1.3 Poppins;color:#FBFBFF;margin-top:8px;">—</div>
+    <div style="margin-top:8px;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;">
+      <span id="lastRun" style="font:700 16px/1.3 Poppins;color:#FBFBFF;">—</span>
+      <span id="lastRunTime" style="font:500 11.5px/1.3 Poppins;color:#7E93A8;"></span>
+    </div>
     <div id="nextRun" style="font:400 11.5px/1.4 Poppins;color:#7E93A8;margin-top:3px;"></div>
     <div style="display:flex;gap:10px;margin-top:16px;">
       <div style="flex:1;background:rgba(255,255,255,.06);border-radius:12px;padding:12px 13px;">
@@ -148,7 +151,7 @@
     badge.style.color = active ? '#02213C' : '#5A6B7B';
   }
 
-  var DATA = { studies: [], papers: [], lastRun: '—', nextRun: '' };
+  var DATA = { studies: [], papers: [], lastRunAt: null, lastRun: '—', nextRun: '' };
   var tab = 'studies';
 
   var el = function (id) { return document.getElementById(id); };
@@ -157,9 +160,21 @@
 
   function countNew(arr) { return arr.filter(function (x) { return x.isNew; }).length; }
 
+  var DFMT = { day: '2-digit', month: 'short', year: 'numeric' };
+
   function render() {
-    el('lastRun').textContent = DATA.lastRun || '—';
-    el('nextRun').textContent = DATA.nextRun || '';
+    // Prefer the ISO timestamp so the date+time show in the viewer's own
+    // timezone; fall back to the server-rendered strings. Cadence is daily.
+    var at = DATA.lastRunAt ? new Date(DATA.lastRunAt) : null;
+    if (at && !isNaN(at.getTime())) {
+      el('lastRun').textContent = at.toLocaleDateString('en-GB', DFMT);
+      el('lastRunTime').textContent = '· ' + at.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
+      el('nextRun').textContent = 'Next run ~' + new Date(at.getTime() + 86400000).toLocaleDateString('en-GB', DFMT);
+    } else {
+      el('lastRun').textContent = DATA.lastRun || '—';
+      el('lastRunTime').textContent = '';
+      el('nextRun').textContent = DATA.nextRun || '';
+    }
     el('newStudyCount').textContent = countNew(DATA.studies);
     el('newPaperCount').textContent = countNew(DATA.papers);
     studyBadge.textContent = DATA.studies.length;
@@ -184,6 +199,7 @@
     .then(function (d) {
       DATA.studies = Array.isArray(d.studies) ? d.studies : [];
       DATA.papers = Array.isArray(d.papers) ? d.papers : [];
+      DATA.lastRunAt = d.lastRunAt || null;
       DATA.lastRun = d.lastRun || '—';
       DATA.nextRun = d.nextRun || '';
       render();

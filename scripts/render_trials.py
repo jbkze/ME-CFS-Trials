@@ -175,14 +175,28 @@ def load_papers() -> list:
     return papers
 
 
-def format_run(last):
-    if not last:
-        return "Not run yet", "First scheduled run pending"
-    try:
-        d = datetime.strptime(last, "%Y-%m-%d")
-        return d.strftime("%d %b %Y"), "Next run ~" + (d + timedelta(days=7)).strftime("%d %b %Y")
-    except ValueError:
-        return str(last), ""
+def format_run(db: dict):
+    """Return (last_run_at_iso, lastRun_date_str, nextRun_str).
+
+    last_run_at is an ISO-8601 timestamp (with time) when available — the HTML
+    localises it to the viewer's timezone and shows the time next to the date.
+    The date/next-run strings are plain fallbacks. Cadence is daily (+1 day).
+    """
+    at = db.get("last_run_at")  # ISO with time, e.g. "2026-06-25T14:21:48Z"
+    last = db.get("last_check")  # date only, e.g. "2026-06-25"
+    if not at and not last:
+        return None, "Not run yet", "First scheduled run pending"
+    d = None
+    for candidate in (at[:10] if at else None, last):
+        if candidate:
+            try:
+                d = datetime.strptime(candidate, "%Y-%m-%d")
+                break
+            except ValueError:
+                continue
+    if d is None:
+        return at, (last or "—"), ""
+    return at, d.strftime("%d %b %Y"), "Next run ~" + (d + timedelta(days=1)).strftime("%d %b %Y")
 
 
 def build_dashboard(db: dict, trials: list) -> int:
@@ -192,9 +206,10 @@ def build_dashboard(db: dict, trials: list) -> int:
     for s in studies:
         s.pop("_priority", None)
     papers = load_papers()
-    last_run, next_run = format_run(db.get("last_check"))
+    last_run_at, last_run, next_run = format_run(db)
     out = {
         "generated": db.get("last_check"),
+        "lastRunAt": last_run_at,
         "lastRun": last_run,
         "nextRun": next_run,
         "studies": studies,

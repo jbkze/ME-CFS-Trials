@@ -21,8 +21,8 @@ tools are *not* durable: they expire after 7 days and die when the session ends.
    would return `403`. Edit the environment and set **Network access = Full**
    (simplest for open web research), or **Custom** with at least the domains
    listed in *"Network allowlist"* below.
-6. **Trigger:** choose **Schedule → Weekly** (clinical registries move slowly;
-   weekly is plenty. Minimum interval is 1 hour). Pick any weekday/time.
+6. **Trigger:** choose **Schedule → Daily** (minimum interval is 1 hour). Pick any
+   time of day — the dashboard shows when the last run happened, in your timezone.
 7. **Permissions:** enable **Allow unrestricted branch pushes** for this repo so
    the run can commit updated state to the default branch (see *State* below).
    If you'd rather review every change, leave it off and merge the PR it opens
@@ -70,7 +70,8 @@ research papers (broader).
    and explain any unavoidable technical term in a few words right there.
 
 4. Update the data: in data/trials.json set first_seen once, refresh last_checked
-   and top-level last_check to today (use `date +%F`), and recompute each trial's
+   and top-level last_check to today (use `date +%F`), set top-level last_run_at
+   to the current UTC timestamp with time (use `date -u +%FT%TZ`), and recompute each trial's
    flags (new / newly_open / status_changed / closed_since_last / details_changed)
    vs the baseline. In data/papers.json add confirmed new papers (title, authors,
    journal, date, one-line summary, one-line "why it matters", DOI link, first_seen,
