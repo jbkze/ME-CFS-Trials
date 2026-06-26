@@ -1,8 +1,59 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable new ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted; recent (~last 3 months / since last_check). Shown on the dashboard's Papers tab. Confirm each via DOI/journal/preprint before recording; never fabricate. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words.",
-  "last_check": "2026-06-25",
+  "last_check": "2026-06-26",
   "papers": [
+    {
+      "id": "kim-2026-hbot-mecfs",
+      "title": "Hyperbaric oxygen therapy improves clinical symptoms and functional capacity and modulates thalamic connectivity in ME/CFS: a prospective cohort study",
+      "authors": "Kim L, Cammà G, Peters CK, Mantwill M, Müller O, Leprêtre N, Heindrich C, Rust R, Krill M, Hartung TJ, Reeß LG, Krohn S, Heymann CV, Wittke K, Finke C, Scheibenbogen C",
+      "journal": "Journal of Translational Medicine",
+      "date": "Jun 2026",
+      "summary": "ME/CFS patients who received hyperbaric oxygen treatment (breathing pure oxygen in a pressurised chamber) showed improved symptoms and physical function; brain scans also revealed changes in an area linked to fatigue.",
+      "why": "Involves Carmen Scheibenbogen's team and is one of the first studies to link symptom improvement with measurable brain changes after oxygen treatment — potentially pointing to both a therapy and a biological marker of response.",
+      "link": "https://doi.org/10.1186/s12967-026-08324-6",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "PMID 42249466. Published June 5, 2026. J Transl Med 24(1):744. Scheibenbogen is senior co-author — HIGH PRIORITY. Linked to completed trial NCT06118138 at Charité Berlin."
+    },
+    {
+      "id": "huhmar-2026-vasopressin",
+      "title": "Low Vasopressin in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome",
+      "authors": "Huhmar HM, Soinne LS, Bertilson BC, Ghatan PH, Bragée BA, Polo OJ",
+      "journal": "Endocrine Practice",
+      "date": "Jun 2026",
+      "summary": "Found that levels of vasopressin — a hormone that helps control water balance, blood flow, and stress responses — were lower in ME/CFS patients than in healthy people.",
+      "why": "Low vasopressin could help explain symptoms like dizziness, excessive thirst, and fatigue, and may become a diagnostic marker or a target for treatment.",
+      "link": "https://doi.org/10.1016/j.eprac.2025.12.020",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "PMID 41475665. Epub Dec 29 2025; print Jun 2026. Endocr Pract 32(6):902-908."
+    },
+    {
+      "id": "saleem-2026-microclots",
+      "title": "Dynamic microclot profiling: thromboelastography advances precision management in long COVID and myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Saleem S, Hussain A, Haroon M, Raza A, Afzal U, Anwar MF, Imran S, Iqbal MU, Hajj F",
+      "journal": "Blood Coagulation & Fibrinolysis",
+      "date": "Jun 2026",
+      "summary": "Used a specialised clotting test to measure tiny blood clots (microclots) in long COVID and ME/CFS patients, finding different clotting patterns among individuals that could guide personalised treatment.",
+      "why": "Adds to the growing evidence that abnormal clotting and poor circulation contribute to ME/CFS; the profiling method it describes could help identify which patients might benefit from anti-clotting therapies.",
+      "link": "https://doi.org/10.1097/MBC.0000000000001439",
+      "first_seen": "2026-06-26",
+      "last_checked": "2026-06-26",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "PMID 42274123. Published online June 11, 2026. Blood Coagul Fibrinolysis (ahead of print)."
+    },
     {
       "id": "wirth-2026-neurotransmitter",
       "title": "Imbalance of Excitatory and Inhibitory Neurotransmitter Systems in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome",
@@ -13,11 +64,9 @@
       "why": "From the two leading German ME/CFS researchers: it links the disease's effects in the muscles to its effects in the brain, reinforcing the case for the treatments they are developing.",
       "link": "https://doi.org/10.3390/ijms27094041",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42123618. Published April 30, 2026. Int J Mol Sci 27(9):4041."
     },
     {
@@ -30,11 +79,9 @@
       "why": "The largest blood-protein study in ME/CFS so far; it maps what is going wrong in the body and could lead to a blood test and new treatment targets.",
       "link": "https://doi.org/10.1016/j.xcrm.2026.102647",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published March 4, 2026. From the Fluge/Mella group (Bergen, Norway)."
     },
     {
@@ -47,11 +94,9 @@
       "why": "One of the first studies of this fluid in ME/CFS; the patterns it found could become markers for sorting patients into the right treatment groups.",
       "link": "https://doi.org/10.1038/s41598-026-46965-1",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Sci Rep 16:15848 (2026)."
     },
     {
@@ -64,11 +109,9 @@
       "why": "Offers a clear, testable explanation for ME/CFS's defining symptom — crashing after exertion — and points toward energy- and inflammation-based treatments.",
       "link": "https://doi.org/10.3389/fimmu.2026.1774310",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published April 13, 2026. Frontiers in Immunology vol. 17."
     },
     {
@@ -81,11 +124,9 @@
       "why": "These substances could serve as a blood marker, and the link to a common virus hints at new treatment ideas.",
       "link": "https://doi.org/10.3389/fimmu.2026.1827700",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published June 5, 2026. PMID 42327760."
     },
     {
@@ -98,11 +139,9 @@
       "why": "Because independent labs got the same result, this faulty cell 'gate' is one of the most reliable biological signs of ME/CFS and a possible drug target.",
       "link": "https://doi.org/10.3389/fmed.2025.1703924",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published January 8, 2026. Frontiers in Medicine vol. 12."
     },
     {
@@ -115,11 +154,9 @@
       "why": "The first trial of this approach in ME/CFS; the strong, lasting improvement supports the idea that misguided antibodies drive the illness, and a larger trial is planned.",
       "link": "https://doi.org/10.3389/fmed.2025.1607353",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published July 9, 2025. Fluge/Mella group, Haukeland University Hospital, Bergen, Norway."
     },
     {
@@ -132,11 +169,9 @@
       "why": "The first properly controlled trial showing benefit from removing these antibodies — strong support for antibody-targeting treatments that are also being explored in ME/CFS.",
       "link": "https://doi.org/10.1016/j.eclinm.2025.103358",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published July 22, 2025. University Hospital Erlangen, Germany. This is the reCOVer trial result."
     },
     {
@@ -149,11 +184,9 @@
       "why": "A cornerstone of the Wirth/Scheibenbogen theory and the direct rationale for their drug MDC002, which aims to fix exactly this muscle problem.",
       "link": "https://doi.org/10.1002/jcsm.13669",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "Published February 2025. PMID 39727052. J Cachexia Sarcopenia Muscle 16(1). Wirth + Scheibenbogen joint review — HIGH PRIORITY."
     },
     {
@@ -166,11 +199,9 @@
       "why": "Lays out the Scheibenbogen group's current priorities and the thinking behind their trials (immunoadsorption and the planned inebilizumab study).",
       "link": "https://doi.org/10.1016/j.autrev.2026.104043",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 41895458. Lead author Annick Fehrer, Charité Berlin. Epub March 25 2026. Confirmed via Elsevier."
     },
     {
@@ -183,11 +214,9 @@
       "why": "Points to the gut as a possible lever on the immune system, supporting microbiome- and immune-based treatment ideas.",
       "link": "https://doi.org/10.1002/mbo3.70333",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42325052. Microbiologyopen 15(3):e70333. Confirmed via PubMed."
     },
     {
@@ -200,11 +229,9 @@
       "why": "Better-designed hormone studies could uncover treatment targets; gives practical guidance for trials, especially those with mostly female participants.",
       "link": "https://doi.org/10.1016/j.yfrne.2026.101268",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42320559. Front Neuroendocrinol. Confirmed via PubMed."
     },
     {
@@ -217,11 +244,9 @@
       "why": "Supports treating gut problems as central to ME/CFS, which could shape who is enrolled in drug trials and how improvement is measured.",
       "link": "https://doi.org/10.1186/s12967-026-08442-1",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-06-26",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42321833. J Transl Med. Confirmed via PubMed."
     }
   ]

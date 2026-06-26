@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md. The first run after setup will (correctly) flag every relevant trial it finds as 'new', because this baseline starts empty. Do not hand-fabricate entries — only add trials confirmed from a registry or institutional source during a check.",
-  "last_check": "2026-06-25",
-  "last_run_at": "2026-06-25T14:21:48Z",
+  "last_check": "2026-06-26",
+  "last_run_at": "2026-06-26T08:20:26Z",
   "trials": [
     {
       "id": "nct07529197",
@@ -59,7 +59,7 @@
         "https://cfc.charite.de/en/clinical_research/nksg/trial_ria/"
       ],
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
+      "last_checked": "2026-06-26",
       "last_status_change": null,
       "status_history": [
         {
@@ -119,7 +119,7 @@
         "https://thesicktimes.org/2026/05/14/breaking-the-vicious-cycle-how-two-german-scientists-seek-to-solve-me/"
       ],
       "first_seen": "2026-06-25",
-      "last_checked": "2026-06-25",
+      "last_checked": "2026-06-26",
       "last_status_change": null,
       "status_history": [
         {
@@ -135,7 +135,7 @@
         "drug_study": true,
         "wirth_or_scheibenbogen": true
       },
-      "notes": "Not yet registered in any trial registry. German criterion satisfied by German sponsor (Mitodicure GmbH). As of May 2026, Mitodicure is still seeking funding for initial GLP toxicology/safety-pharmacology studies before advancing to Phase 1 human trials (The Sick Times, 14 May 2026). Watch for Phase 1 registration on DRKS or ClinicalTrials.gov. mitodicure.com was unreachable during the 2026-06-25 (second) check — status presumed unchanged; recheck next run."
+      "notes": "Not yet registered in any trial registry. German criterion satisfied by German sponsor (Mitodicure GmbH). As of May 2026 (The Sick Times, 14 May 2026), Mitodicure is still seeking funding for initial GLP toxicology/safety-pharmacology studies before advancing to Phase 1 human trials. Mitodicure.com accessible on 2026-06-26 check — status still 'advancing towards clinical trials'; no Phase 1 registration or new funding announcement. Watch for Phase 1 registration on DRKS or ClinicalTrials.gov."
     }
   ]
 }

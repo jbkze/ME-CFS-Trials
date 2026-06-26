@@ -15,6 +15,20 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-26
+- Sources checked: ClinicalTrials.gov (Germany/ME/CFS, recruiting + not_yet_recruiting), DRKS, CTIS, WHO ICTRP, Mitodicure.com (accessible — no new announcement), Charité CFC, PubMed (Wirth/Scheibenbogen author searches + ME/CFS topic, Jun 2026), Europe PMC, medRxiv (403 blocked), Health Rising, The Sick Times, mecfs.de
+- **Trials** — no new trials; both confirmed unchanged
+  - New: none | Newly open: none | Status changed: none | Closed: none
+  - MDC002 (Mitodicure): mitodicure.com accessible this run — still "advancing towards clinical trials," no new funding or registration announcement
+  - Inebilizumab ME/CFS trial (Scheibenbogen/Charité): still unregistered — no DRKS or ClinicalTrials.gov entry found
+  - NCT05710770 / NCT05629988: both completed predecessors to IMPACT; not added (superseded by NCT07529197)
+- **Papers** — 3 new confirmed papers added (16 total)
+  - Kim L, Scheibenbogen C et al., J Transl Med Jun 2026: hyperbaric oxygen therapy — symptoms + thalamic connectivity (PMID 42249466) — HIGH PRIORITY (Scheibenbogen co-author)
+  - Huhmar HM et al., Endocr Pract Jun 2026: low vasopressin in ME/CFS (PMID 41475665)
+  - Saleem S et al., Blood Coagul Fibrinolysis Jun 2026: dynamic microclot profiling in long COVID/ME/CFS (PMID 42274123)
+- Trials tracked: 2 (open: 1, watchlist: 1) | Papers tracked: 16
+- Notes: All existing papers' isNew reset to false. ClinicalTrials.gov API confirmed only NCT07529197 recruiting in Germany for ME/CFS drug studies. BC007/rovunaptabin had no new ME/CFS trial registration. No new German drug trials in any registry.
+
 ## 2026-06-25 (second run — papers track)
 - Sources checked: ClinicalTrials.gov API (ME/CFS + Germany), DRKS, CTIS, WHO ICTRP, Mitodicure.com (unreachable — site down), Charité CFC, PubMed (Wirth/Scheibenbogen author + ME/CFS topic queries), Europe PMC, medRxiv
 - **Trials** — no new trials; both confirmed unchanged (flags cleared)
