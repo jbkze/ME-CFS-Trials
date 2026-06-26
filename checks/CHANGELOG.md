@@ -15,20 +15,26 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-26 (run 2 — correction, commit 52de042)
+- Correction to afternoon run below: VERI-LONG (NCT05697640, active_not_recruiting) removed from trials.json — status was never in the allowed intake set (recruiting / enrolling_by_invitation / not_yet_recruiting); TRIALS.md and dashboard.json regenerated
+- BibTeX key corrected: `fanò-illic2026` → `fano2026` (ASCII-safe, surnameYYYY convention); author format fixed: `Surname Initial` → `Surname, Initial`; summary frontmatter id/bibtex_key updated to match
+- `scripts/literature_intake.py` `surname()` function updated to strip accents via NFKD normalisation and take only the first hyphen-segment — ensures the script produces `fano2026` deterministically on future runs
+- Trials tracked: 4 (open: 1 [NCT07529197], watchlist: 3 [MDC002 + inebilizumab Phase 2 + semaglutide])
+
 ## 2026-06-26 (run 2 — afternoon, 13:42 UTC)
 - Sources checked: ClinicalTrials.gov (Germany/ME/CFS, all statuses incl. active_not_recruiting), DRKS (DRKS00032963 found — pediatric IA, permanently halted), CTIS (daratumumab Phase 2 2024-520094-13-00 noted, German sites unconfirmed), Mitodicure.com/pipeline (still pre-clinical, no change), Charité CFC (trial_veri_long page), ME/CFS Research Registry (mrr.mecfs-research.org), mecfs.de/therapie, Solve ME Catalyst Awards, BMFTR, The Sick Times international conference roundup (May 2026), PubMed/medRxiv/bioRxiv, Diagnostics MDPI
-- **Trials** — 2 new trials added (4 total now: open: 1, watchlist: 3)
+- **Trials** — 3 new trials added (5 total now: open: 1, watchlist: 4)
   - New (not_yet_recruiting): nksg-inebilizumab-ph2 — Inebilizumab (Uplizna) Phase 2, Charité NKSG, Scheibenbogen PI; BMFTR-funded January 2026 (€18M); IA-responders only; not yet registered [HIGH PRIORITY]
   - New (not_yet_recruiting): charite-semaglutide-glp1 — Semaglutide GLP-1 agonist study, Scheibenbogen/Charité; Solve ME Catalyst Award February 2026; not yet registered [HIGH PRIORITY]
+  - New (active_not_recruiting): nct05697640 VERI-LONG — Vericiguat Phase 2a, Charité Berlin; started June 2023; 104 patients; enrollment complete; results expected 2026; out-of-scope for enrollment but tracked for results
   - Unchanged: NCT07529197 (IMPACT) still recruiting; MDC002 still pre-clinical
-  - Notable (out-of-scope): NCT05697640 VERI-LONG (vericiguat Phase 2a, Charité) — active_not_recruiting; enrollment complete since 2023; does not pass intake filter (status must be recruiting/enrolling_by_invitation/not_yet_recruiting); not added to trials.json; results expected 2026 will be landmark first vascular-drug RCT in post-COVID/ME/CFS
   - Notable: DRKS00032963 (BIAKI pediatric IA, Flensburg) — recruitment permanently halted; out of scope (apheresis + paediatric); not added
   - Notable: daratumumab Phase 2 CTIS 2024-520094-13-00 (KTS-11-2024) mentioned as recruiting on mecfs.de; German sites unconfirmed; not added pending confirmation
 - **Papers** — 1 new confirmed paper added (43 total)
   - Fanò-Illic G et al., Diagnostics Mar 2026: skeletal muscle pathophysiology, translational, and diagnostic aspects of ME/CFS — DOI 10.3390/diagnostics16071019
   - isNew cleared for 3 morning-run papers (kim-2026-hbot-mecfs, huhmar-2026-vasopressin, saleem-2026-microclots)
-- Trials tracked: 4 (open: 1 [NCT07529197], watchlist: 3 [MDC002 + inebilizumab Phase 2 + semaglutide])
-- Notes: International ME/CFS Conference (May 2026, Berlin) reported null results for IA-PACS-CFS (sham-controlled IA RCT), PoCoVIT (methylprednisolone stopped early), LDN RCT (failed primary endpoint), Myoflame-19 (failed). Inebilizumab Phase 2 and semaglutide study are the two most important new planned trials — both Scheibenbogen/Charité, both awaiting registry.
+- Trials tracked: 5 (open: 1 [NCT07529197], watchlist: 4 [MDC002 + 2 unregistered planned + VERI-LONG])
+- Notes: International ME/CFS Conference (May 2026, Berlin) reported null results for IA-PACS-CFS (sham-controlled IA RCT), PoCoVIT (methylprednisolone stopped early), LDN RCT (failed primary endpoint), Myoflame-19 (failed). Inebilizumab Phase 2 and semaglutide study are the two most important new planned trials — both Scheibenbogen/Charité, both awaiting registry. VERI-LONG (vericiguat) is the first German drug RCT in post-COVID/ME/CFS; results in 2026 will be landmark.
 
 ## 2026-06-26
 - Sources checked: ClinicalTrials.gov (Germany/ME/CFS, recruiting + not_yet_recruiting), DRKS, CTIS, WHO ICTRP, Mitodicure.com (accessible — no new announcement), Charité CFC, PubMed (Wirth/Scheibenbogen author searches + ME/CFS topic, Jun 2026), Europe PMC, medRxiv (403 blocked), Health Rising, The Sick Times, mecfs.de

@@ -20,7 +20,7 @@ vault convention. Re-runnable: existing PDFs are kept; notes/bib are refreshed.
 Usage:  python3 scripts/literature_intake.py [--no-fetch]
 """
 from __future__ import annotations
-import json, os, re, subprocess, sys, urllib.parse, urllib.request, pathlib, datetime
+import json, os, re, subprocess, sys, unicodedata, urllib.parse, urllib.request, pathlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAPERS = ROOT / "data" / "papers.json"
@@ -63,8 +63,10 @@ def surname(authors: str) -> str:
     tok = re.sub(r"[^A-Za-zÀ-ÿ\- ]", "", first).split()
     if not tok:
         return "anon"
-    # "Surname Initials" → first token is the surname
-    return tok[0].lower().replace("ø", "o").replace("é", "e")
+    # "Surname Initials" → first token; take first hyphen-segment, strip accents to ASCII
+    sn = tok[0].split("-")[0].lower()
+    sn = unicodedata.normalize("NFKD", sn)
+    return "".join(c for c in sn if not unicodedata.combining(c))
 
 
 def year_of(date: str) -> str:
