@@ -66,5 +66,6 @@ below is ambiguous. In short:
 `sources/search-sources.md` where to look · `data/trials.json` + `data/papers.json`
 sources of truth · `data/schema.json` field docs · `TRIALS.md` generated view ·
 `docs/` GitHub Pages dashboard (`index.html` + generated `dashboard.json`) ·
-`scripts/render_trials.py` renderer · `templates/` entry skeletons ·
+`scripts/render_trials.py` renderer · `literature/papers/` per-paper PDF + summary +
+BibTeX archive (`scripts/literature_intake.py`) · `templates/` entry skeletons ·
 `checks/CHANGELOG.md` run log.
