@@ -7,25 +7,28 @@ year: 2019
 venue: "PNAS"
 doi: 10.1073/pnas.1901274116
 url: https://doi.org/10.1073/pnas.1901274116
-pdf: https://doi.org/10.1073/pnas.1901274116
-text: null
+pdf: literature/papers/2019-esfandyarpour-nanoelectronics-blood-based-diagnostic/paper.pdf
+text: literature/papers/2019-esfandyarpour-nanoelectronics-blood-based-diagnostic/paper.txt
 tags: [biomarker]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: esfandyarpour2019
+cover: "[[literature/papers/2019-esfandyarpour-nanoelectronics-blood-based-diagnostic/cover.png]]"
 ---
 
 # A nanoelectronics-blood-based diagnostic biomarker for myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)
 
 ## Related files
+![[literature/papers/2019-esfandyarpour-nanoelectronics-blood-based-diagnostic/paper.pdf]]
 - [[literature/papers/2019-esfandyarpour-nanoelectronics-blood-based-diagnostic/citation.bib]]
+- [[literature/papers/2019-esfandyarpour-nanoelectronics-blood-based-diagnostic/paper.txt]]
 
 ## Summary
 
 A tiny electronic 'nanoneedle' blood test separated ME/CFS patients from healthy people by how their cells cope with stress.
 
-> _No PDF available_ — PNAS — open access but blocks headless download; use the PMC copy. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

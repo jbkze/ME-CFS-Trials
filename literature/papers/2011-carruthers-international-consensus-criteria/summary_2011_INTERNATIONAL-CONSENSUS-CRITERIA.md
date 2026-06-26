@@ -7,25 +7,28 @@ year: 2011
 venue: "Journal of Internal Medicine"
 doi: 10.1111/j.1365-2796.2011.02428.x
 url: https://doi.org/10.1111/j.1365-2796.2011.02428.x
-pdf: https://doi.org/10.1111/j.1365-2796.2011.02428.x
-text: null
+pdf: literature/papers/2011-carruthers-international-consensus-criteria/paper.pdf
+text: literature/papers/2011-carruthers-international-consensus-criteria/paper.txt
 tags: [exercise-physiology, post-exertional-malaise, biomarker, diagnostic-criteria]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: carruthers2011
+cover: "[[literature/papers/2011-carruthers-international-consensus-criteria/cover.png]]"
 ---
 
 # Myalgic encephalomyelitis: International Consensus Criteria
 
 ## Related files
+![[literature/papers/2011-carruthers-international-consensus-criteria/paper.pdf]]
 - [[literature/papers/2011-carruthers-international-consensus-criteria/citation.bib]]
+- [[literature/papers/2011-carruthers-international-consensus-criteria/paper.txt]]
 
 ## Summary
 
 An international expert panel defined stricter ways to diagnose the illness, centred on symptoms getting worse after exertion, and recommended dropping the name 'chronic fatigue syndrome'.
 
-> _No PDF available_ — Wiley — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

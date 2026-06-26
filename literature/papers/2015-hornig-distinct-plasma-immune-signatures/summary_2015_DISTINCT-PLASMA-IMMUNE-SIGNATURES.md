@@ -7,25 +7,28 @@ year: 2015
 venue: "Science Advances"
 doi: 10.1126/sciadv.1400121
 url: https://doi.org/10.1126/sciadv.1400121
-pdf: https://doi.org/10.1126/sciadv.1400121
-text: null
+pdf: literature/papers/2015-hornig-distinct-plasma-immune-signatures/paper.pdf
+text: literature/papers/2015-hornig-distinct-plasma-immune-signatures/paper.txt
 tags: [immunology, biomarker]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: hornig2015
+cover: "[[literature/papers/2015-hornig-distinct-plasma-immune-signatures/cover.png]]"
 ---
 
 # Distinct plasma immune signatures in ME/CFS are present early in the course of illness
 
 ## Related files
+![[literature/papers/2015-hornig-distinct-plasma-immune-signatures/paper.pdf]]
 - [[literature/papers/2015-hornig-distinct-plasma-immune-signatures/citation.bib]]
+- [[literature/papers/2015-hornig-distinct-plasma-immune-signatures/paper.txt]]
 
 ## Summary
 
 Patients ill for under three years had a distinctive blood immune pattern that faded in those ill longer — showing the disease has stages.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

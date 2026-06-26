@@ -1,0 +1,901 @@
+A nanoelectronics-blood-based diagnostic biomarker
+for myalgic encephalomyelitis/chronic fatigue
+syndrome (ME/CFS)
+R. Esfandyarpoura,1, A. Kashib, M. Nemat-Gorganib,c, J. Wilhelmyc, and R. W. Davisb,c,1
+aDepartment of Electrical Engineering and Computer Science, University of California, Irvine, CA 92697; bStanford Genome Technology Center, Stanford
+University, Stanford, CA 94304; and cDepartment of Biochemistry, School of Medicine, Stanford University, Stanford, CA 94304
+Contributed by R. W. Davis, March 26, 2019 (sent for review February 5, 2019; reviewed by Javad Gatabi and David R. Hillyard)
+There is not currently a well-established, if any, biological test to
+diagnose myalgic encephalomyelitis/chronic fatigue syndrome
+(ME/CFS). The molecular aberrations observed in numerous studies
+of ME/CFS blood cells offer the opportunity to develop a diagnostic
+assay from blood samples. Here we developed a nanoelectronics
+assay designed as an ultrasensitive assay capable of directly
+measuring biomolecular interactions in real time, at low cost, and
+in a multiplex format. To pursue the goal of developing a reliable
+biomarker for ME/CFS and to demonstrate the utility of our platform
+for point-of-care diagnostics, we validated the array by testing pa-
+tients with moderate to severe ME/CFS patients and healthy con-
+trols. The ME/CFS samples’ response to the hyperosmotic stressor
+observed as a unique characteristic of the impedance pattern and
+dramatically different from the response observed among the con-
+trol samples. We believe the observed robust impedance modula-
+tion difference of the samples in response to hyperosmotic stress
+can potentially provide us with a unique indicator of ME/CFS. More-
+over, using supervised machine learning algorithms, we developed
+a classifier for ME/CFS patients capable of identifying new patients,
+required for a robust diagnostic tool.
+myalgic encephalomyelitis/chronic fatigue syndrome | diagnostic
+biomarker | nanoelectronics biosensor | artificial intelligence |
+machine learning
+M
+yalgic encephalomyelitis/chronic fatigue syndrome (ME/
+CFS) is a disease that affects at least 2 million Americans
+and millions more globally (1–3). Several studies have found that
+this disease may be triggered by a combination of factors such as
+major life stressors, infection (viral: ENV, HHV-6, HHV-7, stomach
+viruses, cytomegalovirus, and bacterial infections), toxin exposure,
+immunodeficiency, nutritional deficiencies, genetic susceptibility,
+and several others (1, 4, 5). There is currently no single bio-
+marker to diagnose ME/CFS (1, 6). As a result, diagnosing ME/
+CFS patients is a lengthy and costly process, which constitutes a
+fundamental impediment to patient care. This lag in diagnosis
+also causes barriers to research, complicating patient recruitment
+and the handling of heterogeneous samples of patients with only
+marginally similar conditions. However, in one of these very
+recent studies (1), patients with ME/CFS showed abnormalities
+in 20 out of 63 biochemical pathways, suggesting such metabolic
+features as potential biomarkers. All the while, ME/CFS patients
+experience one of the lowest quality of life illnesses, with an
+unadjusted EuroQol 5-dimensional 3-level (EQ-5D-3L) mean of
+0.47 compared with a mean of 0.69 recorded for lung cancer (7, 8).
+This clearly indicates the central importance of identifying a reliable
+biomarker for ME/CFS. Researchers have investigated a panoply
+of potential biomarkers, many of which would indicate improper
+immune function and signs of autoimmunity (5, 9), for example,
+differences in cytokine profiles; natural killer cells; 5-HT auto-
+immune activity; and the responsiveness of T cells (4, 5, 9–19).
+The immune system is a typical focal point for ME/CFS research
+supported by the observation that CFS is often preceded by a viral
+infection and has many long-term flu-like symptoms (4, 5, 20).
+Various researchers have even hypothesized that the source of the
+illness is viral in nature (19, 21). There are other subsets of symptoms
+beyond the flu-like symptoms and fatigue, such as muscle joint pain;
+unrefreshing sleep; and high sensitivity to light, sound, odor, taste,
+touch, and vibration. Many of the patients usually suffer from dif-
+ferent types of paresthesias, such as tingling and numbness in different
+parts of the body. Other symptoms include postural orthostatic
+tachycardia syndrome; light-headedness; gastrointestinal symptoms
+such as nausea and abdominal pain; headaches of a new type, pattern,
+or severity; autonomic and endocrine symptoms such as poor tem-
+perature regulation; cold or heat intolerance; and recurrent sore
+throats. In some instances, researchers have linked cytokine profiles
+and inflammation to the severity of ME/CFS in patients (4). One
+study examined cytokine profiles postexertion to explore potential
+differences in ME/CFS and sedentary controls (2). Others have
+focused on finding physiological anomalies by looking at exercise
+intolerance and cardiac impairment (2, 22). Molecular aberrations
+have also been observed in numerous studies of ME/CFS blood
+cells (1, 4). In addition, several studies have shown that inducing a
+biological stressor on peripheral blood mononuclear cells (PBMCs)
+in the form of hyperosmotic stress forces the cells to consume ATP,
+a key metabolite, which is hypothesized to be deficient in ME/CFS
+patients (1, 23, 24).
+Significance
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is
+a disease which afflicts approximately 2 million people in the
+United States and many more around the globe. A combination
+of factors might trigger ME/CFS, and there is currently no well-
+established blood-based biomarker to diagnose it. Taking ad-
+vantage of advancements in micro/nanofabrication, direct elec-
+trical detection of cellular and molecular properties, microfluidics,
+and artificial intelligence techniques, we developed a nano-
+electronics blood-based assay that can potentially establish a di-
+agnostic biomarker and a drug-screening platform for ME/CFS.
+Given the significance of this assay, we envision it has the po-
+tential to be widely employed in research laboratories and clinics
+in the future as an aid to physicians as well as to our colleagues in
+the ME/CFS research community.
+Author contributions: R.E. and R.W.D. designed research; R.E. and J.W. performed re-
+search; R.E. and J.W. contributed new reagents/analytic tools; R.E., A.K., and R.W.D. an-
+alyzed data; R.E., A.K., M.N.-G., J.W., and R.W.D. wrote the paper; and A.K. helped
+run experiments.
+Reviewers: J.G., R-Water LLC; and D.R.H., University of Utah School of Medicine.
+Conflict of interest statement: R.W.D. is Director of the Scientific Advisory Board of the
+Open Medicine Foundation.
+Published under the PNAS license.
+1To whom correspondence may be addressed. Email: rahimes@uci.edu or krhong@
+stanford.edu.
+This article contains supporting information online at www.pnas.org/lookup/suppl/doi:10.
+1073/pnas.1901274116/-/DCSupplemental.
+Published online April 29, 2019.
+10250–10257
+|
+PNAS
+|
+May 21, 2019
+|
+vol. 116
+|
+no. 21
+www.pnas.org/cgi/doi/10.1073/pnas.1901274116
+
+To explore the aforementioned ATP hypothesis and to study
+the biology of the disease and its molecular aberrations, we
+applied a nanoelectronic array, called nanoneedle bioarray, to mon-
+itor blood cells’ electrical responses to an induced stressor. The
+nanoneedle bioarray is a versatile, ultrasensitive, and high-throughput
+nanoelectronic device developed to detect molecular and cellular
+interactions and their electrical properties in real time. The array
+directly measures the impedance modulations resulting from cel-
+lular and/or molecular interactions. We developed this ultrasensi-
+tive, cost-effective assay by exploiting recent advancements in
+nanofabrication and microfluidics. We posit that this assay can
+potentially offer an outstanding biomarker to rapidly and inex-
+pensively diagnose ME/CFS with high accuracy. In addition, this
+assay may offer a remarkable opportunity for the discovery of new
+treatments for this debilitating disease. In this study, we used ME/
+CFS PBMCs as the model of study. PBMCs are generally the cells
+of choice in many fields of research since they are well character-
+ized and can be easily isolated (25) (SI Appendix). We also applied
+different machine learning algorithms to make our platform a more
+robust and precise potential diagnostic tool for ME/CFS.
+Results and Discussion
+Initial Motivation. The cardinal feature of ME/CFS is considered
+to be a worsening of symptoms postexertion known as post-
+exertional malaise (20). To mimic this condition on a cellular
+level, we introduced a stressor into the patient’s clinical samples,
+composed of isolated PBMCs incubated in their own plasma. We
+initially hypothesized that stressing PBMCs (in a high-salt envi-
+ronment) would result in extensive consumption and potential
+depletion of ATP, a high-energy metabolite. Salt stress, and, more
+generally, hyperosmotic stress, is a commonly applied stress model
+in studies on various types of cells such as plant, yeast, bacteria,
+mice, and human (26–32). To stimulate hyperosmotic stress in our
+study, we increased the plasma’s NaCl concentration to 200 mmol/L.
+NaCl is a typical stimulator of the osmotic response, which acts
+in essentially the same way as many other agents, such as sugars
+(33). However, as shown in Fig. 1C, the promising experimental
+findings produced by the use of our assay led us to the conclusion
+that the significantly different impedance response of the hyperosmotic-
+stressed PBMCs we identified constitutes a reliable method of
+differentiating CFS patients from healthy controls, which is the
+main focus of this work.
+Fig. 1.
+(A) Schematic of a single nanoelectronic sensor (not to scale). (B) Circuit model of a sensor−solution interface, where Zm-s is media−sensor surface
+interactions, Zc-c is cell−cell interactions, Zc-s is cell−sensor surface adhesion, Zc is a cell impedance (membrane capacitance Cm, and cytoplasm conductivity of
+the cells, σcp), and Rs is resistance of the solution. (C) The experimentally obtained impedance versus time curves illustrating the electrical response of
+hyperosmotic-stressed samples of a bed-bound ME/CFS patient and a healthy control in real time. A gray region is defined experimentally and its top and
+bottom borders are shown with orange and green lines, respectively (for further details see Trial Population and Statistical Analysis). (D) Array of nanoneedle
+sensors fabricated on a 4-in wafer. (E and F) SEM images of a nanoelectronic sensor tips, (E) top view and (F) from the microfluidics channel side.
+Esfandyarpour et al.
+PNAS
+|
+May 21, 2019
+|
+vol. 116
+|
+no. 21
+|
+10251
+ENGINEERING
+IMMUNOLOGY AND
+INFLAMMATION
+
+Features of Assay and Theory of How Assay Operates. Our assay is
+designed as an ultrasensitive assay capable of directly measuring
+biomolecular interactions in real time, at low cost, and in a mul-
+tiplex format. The array processing and multiplexing is an im-
+portant feature to enable high-throughput sensing and monitoring
+tasks on a large scale. Fabrication of an array of thousands of
+sensors in parallel in a microfluidic channel integrated with their
+individual on-chip amplifiers and read-out systems can provide a
+single, portable platform that features a variety of clinical appli-
+cations, including the detection of various biomarkers in parallel
+for improved early-stage disease diagnosis. The way in which the
+assay operates is theorized as follows: The assay detects any im-
+pedance modulation due to the presence and/or interactions of
+biomolecules of interest at the active sensing region of the sensors.
+Impedance (Z), briefly, is the ratio of applied voltage (V) to the
+induced current (A). It has two components: resistance, the in-
+phase component (Zre), and reactance, the out-of-phase compo-
+nent (Zim). With respect to an electrochemical system, the re-
+sistance component is commonly dominated by a change in local
+conductivity (e.g., change of ion concentration in osmolytes) (34),
+while the reactance component is commonly dominated by a
+change in local relative dielectric permittivity (34, 35) (e.g., local
+replacement of buffer molecules with biomolecules) (for further
+details, see SI Appendix). Using our sensors, we recorded and
+calculated three parameters of in-phase impedance (Zre), out-of-
+phase impedance (Zim), and impedance magnitudes to further
+enhance the precision and accuracy of the sensors. Utility of the
+assay for label-free detection of proteins and nucleic acids has
+previously been demonstrated (34–40). In this study, we applied
+the assay to objectively and continually quantify the effect of
+hyperosmotic stress on patients’ clinical samples. For each ex-
+periment, each of which lasted approximately 3 h, the sensors
+collected ∼40,000 data points with a sampling frequency of 5 Hz.
+Configuration and Microfabrication of Assay. The nanoelectronic
+assay structure consists of two conductive layers with an in-
+sulating layer in between. There are two additional protective
+oxide layers above and underneath the sensors (Fig. 1A). The
+nanometer-sized sensing region of the sensor consists of a 30-
+nm-thin oxide layer sandwiched between two 100-nm-thin gold
+layers. The top protective oxide layer is intended to prevent the
+exposure of the top conductive electrodes to the solutions. There
+is a thermally grown oxide layer underneath the bottom elec-
+trodes to electrically insulate the sensors from the substrate.
+Each sensor’s width is ∼3 μm to 5 μm. A scanning electron mi-
+croscopy (SEM) image of a single sensor is shown in Fig. 1 E and F.
+The sensors are designed in 3D format to improve the molecules-to-
+sensors hit rate and to help diffusion occur in multiple directions.
+The sensors were fabricated on 4-in silicon wafers (Fig. 1D)
+following several optical photolithography, deposition, and
+etching procedures. (Details of the fabrication process can be
+found in Materials and Methods.)
+Real-Time Impedance Measurements. To demonstrate the clinical
+utility of the assay presented here for disease diagnostic appli-
+cations, we monitored the electrical response of hyperosmotic-
+stressed samples of a bed-bound ME/CFS patient and a healthy
+control in real time. Prepared samples (Materials and Methods
+and SI Appendix) consisted of PBMCs (200 cells per μL) in-
+cubated in their plasma and prepared within 5 h of use. Fig. 1C
+illustrates the experimentally obtained impedance versus time
+curves of these experiments. Before the electrochemical im-
+pedance spectroscopy (Vrms = 250 mV at f = 15 KHz) (Materials
+and Methods), all sensors were subjected to an extensive cleaning
+procedure to eliminate any potential for contamination (Mate-
+rials and Methods). For each experiment, there was a waiting
+time of ∼20 min for the impedance to reach a baseline value.
+The baseline value is defined as <2% impedance fluctuation.
+After reaching the baseline, we introduced a small volume (∼6 μL)
+of hyperosmotic stressor to the samples. Testing of the sample
+from the healthy control showed a transient decrease in im-
+pedance signal after raising the plasma’s NaCl concentration to
+200 mmol/L. The signal gradually returned to a value near the
+baseline signal (0.88% ± 0.2, 2.69% ± 0.2, and 1.17% ± 0.28 for
+jZj, Zre, and Zimg, respectively) generated in the unstressed state
+and did not change with time when tested across ∼3 h. Electrical
+impedance data were continually collected until the impedance
+reached a plateau (<0 slope for >500 s). The same steps were
+followed for the ME/CFS patient samples. Similarly, this sample
+established a baseline impedance value that did not change in
+the absence of the stressor. The hypertonic stressor added to this
+sample also resulted in a transient decrease in measured im-
+pedance, comparable to the healthy control’s sample, which
+gradually returned to the baseline after about 40 min. However,
+the increase in impedance was followed by a marked excursion
+above the initial baseline value by 74.92% ± 0.69, 301.67% ±
+3.55, and 64.73% ± 0.62, for jZj, Zre, and Zimg, respectively,
+figures that are significantly greater than the values observed for
+the healthy control. As shown in Fig. 1C, the ME/CFS samples’
+response to the stressor is a unique characteristic of the im-
+pedance pattern and is dramatically different from the response
+observed among the control samples. We believe the observed
+robust impedance modulation difference of the samples in re-
+sponse to hyperosmotic stress (ME/CFS versus healthy) can
+potentially provide us with a unique indicator of ME/CFS. One
+should also note that, for both experiments, the baseline point
+served as a reference point for data normalization purposes. It
+allowed us to eliminate possible critical variations such as human
+error, possible dissimilarity of the sensors due to the complicated
+microfabrication process, and possible blood sample alterations
+due to the lengthy sample preparation process.
+Trial Population and Statistical Analysis. To pursue the goal of
+developing a reliable biomarker for ME/CFS and to demonstrate
+the utility of our platform for point-of-care diagnostics, we fur-
+ther validated the array by testing patients with moderate to
+severe ME/CFS. A total of 40 patients and healthy controls were
+prospectively included. All of the ME/CFS patients included in
+this study had previously been diagnosed by a physician in line
+with the Canadian Consensus Criteria (CCC) (20). These ex-
+periments were approved by Stanford IRB, and written consent
+was obtained following Stanford IRB-40146 before any testing or
+analysis began. Of the 20 ME/CFS patients studied, 5 were se-
+verely ill and 15 were moderately affected by their condition. Of
+the 20 healthy controls studied, 5 were age- and gender-matched
+to 5 of our ME/CFS patients (with both sets of samples collected
+simultaneously), 10 were selected at random and recruited by us,
+and 5 were anonymous donors collected by the Stanford Blood
+Center. The recruited healthy controls (excluding the blood
+center samples) were not diagnosed with ME/CFS or related
+diseases and had no blood relatives diagnosed with ME/CFS.
+Patient and control samples were handled exactly the same in all
+preprocessing steps. For each experiment, we analyzed and
+recorded all three parameters of in-phase impedance (Zre), out-
+of-phase impedance (Zim), and the impedance magnitudes
+(Materials and Methods). Impedance signal excursion above the
+initial
+baseline
+value
+for
+ME/CFS
+patients
+ranged
+from
+75.61% ± 12.69 to 406.2% ± 1.32, 12.46% ± 0.13 to 94.98% ±
+0.92, and 7.42% ± 1.45 to 81.49% ± 0.88 for Zre, jZj, and Zimg,
+respectively. The ranges for healthy controls were −27.33% ±
+0.56 to 34.7% ± 5.18, −14.89% ± 0.32 to 18.02% ± 0.41, and
+−16.44% ± 0.22 to 18.38% ± 0.44 for Zre, jZj, and Zimg, re-
+spectively. Additionally, minimum-to-plateau impedance signal
+change for ME/CFS patients ranged from 95.79% ± 12.8 to
+427.29% ± 1.57, 14.13% ± 1.24 to 109.25% ± 0.95, and
+13.36% ± 0.99 to 94.99% ± 0.9 for Zre, jZj, and Zimg, respectively.
+10252
+|
+www.pnas.org/cgi/doi/10.1073/pnas.1901274116
+Esfandyarpour et al.
+
+Experimentally calculated values of these signals for healthy con-
+trols are 0.05% ± 0.53 to 49.15% ± 4.64, 1.15% ± 0.17 to 19.69% ±
+0.46, and 0.16% ± 0.71 to 19.29% ± 0.74 for Zre, jZj, and Zimg,
+respectively (Fig. 2 B and C). According to our analyses, the in-
+phase impedance (Zre) from the baseline to plateau showed the
+greatest separability (P = 4.48E-9), while out-of-phase impedance
+(Zim) and magnitude (jZj) signals were also significantly separable
+(P = 2.73E-5 and P = 1.12E-5, respectively). Supplementary to
+analyzing the percentage change to the plateau from the baseline,
+the percentage change to the plateau from the minimum also
+showed strong separability, as shown in Fig. 2 D and E. Similarly,
+in-phase impedance showed the greatest separability (P = 7.27E-9),
+while Zim and jZj signals were also significantly separable (P =
+5.06E-5 and P = 2.67E-5, respectively). Furthermore, other pa-
+rameters such as slopes and the time taken to reach both the
+minimum and plateau were also analyzed. Most notably, the max-
+imum positive slope showed the greatest separability (P = 1.19E-7,
+P = 1.67E-5, and P = 2.22E-5 for Zre, jZj, and Zimg, respectively),
+although it was not as significant as the percentage change from the
+minimum to the plateau (P = 7.27E-9 for Zre) and from the
+baseline to the plateau (P = 4.48E-9 for Zre). Fig. 2A shows the
+experimentally obtained impedance versus time curves of all ME/
+CFS and healthy control samples. To generate each plot, about
+∼40,000 data points per experiment were collected. Fig. 2A also
+shows an experimentally defined gray region. According to our
+experimental results, the ME/CFS signals that lay in the top range
+of this gray region belonged to the moderately affected ME/CFS
+patients, while severely ill patients all showed signals far above the
+gray region. Considering these findings, we think there might be a
+correlation between the level of disease severity and signal strength.
+Additionally, the healthy controls that lay in the bottom range of
+the gray region had a familial link to fibromyalgia. Also, the re-
+peatability and reproducibility of the assay were validated for both
+ME/CFS patients and healthy controls (Fig. 2 F and G). Repeating
+the experiments for the healthy control showed the baseline-to-
+plateau impedance signal varied at 7.08% ± 0.23, 18.95% ± 0.69,
+and 5.04% ± 0.36 for jZj, Zre, and Zimg, respectively, while varia-
+tions for the minimum-to-plateau signals were 5.96% ± 0.35,
+16.23% ± 0.65, and 4.02% ± 0.47 for jZj, Zre, and Zimg, re-
+spectively. For the ME/CFS sample, variations for jZj, Zre, and Zimg
+were 1.66% ± 0.42, 14.09% ± 2.71, and 1.35% ± 0.41, and 1.68% ±
+0.41, 17.71% ± 2.62, and 1.29% ± 0.41 for the baseline-to-plateau
+and for the minimum-to-plateau signals, respectively.
+Sample Selection. To adapt this assay for use as a potential di-
+agnostic tool for ME/CFS, we optimized the assay using several
+different clinical samples. We tested patients’ PBMCs in their
+whole-blood, serum, and plasma samples to find the most reli-
+able and distinguishable indicators. According to our experi-
+mental data, both serum and plasma samples showed a unique,
+A
+B
+C
+D
+E
+F
+G
+H
+I
+Fig. 2.
+Trial population and statistical analysis. (A) The experimentally obtained impedance versus time curves of 40 ME/CFS and healthy control samples used
+in this study with an experimentally defined gray region. Top and bottom borders of the gray region are shown with orange and green lines, respectively. To
+generate each plot, about ∼40,000 data points per experiment were collected. (B−E) Analyzed percentage change of (B) minimum-to-plateau and (C) baseline-
+to-plateau impedance signals, in which both showed a strong separability, (D) with P = 7.27E-9 for minimum-to-plateau and (E) P = 4.48E-9 for baseline-to-
+plateau impedance signals. (F and G) Repeatability and reproducibility validation of the assay for both ME/CFS patients and healthy controls. (H) Primary ME/
+CFS classifier created by applying supervised SVM machine learning algorithm to our experimental datasets. (I) Perfect linearly separable dataset in PCA space
+after performing PCA on a data matrix comprising six features of impedance change signals from the baseline and minimum to the plateau for all three
+components of impedance (jZj, Zre, and Zim). *P < 1e-8.
+Esfandyarpour et al.
+PNAS
+|
+May 21, 2019
+|
+vol. 116
+|
+no. 21
+|
+10253
+ENGINEERING
+IMMUNOLOGY AND
+INFLAMMATION
+
+reliable, and repeatable pattern, while such a pattern was not
+observed for the whole-blood samples. As a result, platform
+validations and optimization studies were performed for the
+plasma samples. Furthermore, we explored a number of differ-
+ent preparation and storage methods to minimize the need for
+freshly drawn blood, and to provide the possibility of using pa-
+tient samples collected around the globe. We conducted the
+assay with samples kept at 4 °C, room temperature, and in a
+37 °C storage cabinet, as well as those frozen in −20 °C freezers
+and in liquid nitrogen (at 200 cells per μL). We concluded that
+plasma used within 5 h of preparation at 200 cells per μL gives
+the most reliable and reproducible results. The other most successful
+techniques tested were 24 h storage at room temperature and liquid
+nitrogen freezing for 1 wk, both of which preserved the pattern of
+fresh samples, although the response was slightly attenuated.
+Discussion. Although the initial hypothesis of this study was that
+the ATP consumption rate differs in ME/CFS patients’ blood
+cells compared with healthy control blood cells, our experi-
+mental results on 40 ME/CFS individual patients and healthy
+controls revealed that ME/CFS hyperosmotic-stressed samples
+(PBMCs in plasma) display a unique characteristic in their im-
+pedance pattern, and one that is significantly different than what
+was observed in the controls. Our work thus far indicates that the
+impedance signature itself can potentially represent a distinctive
+indicator of ME/CFS patients versus controls and can potentially
+establish a diagnostic metric for the disease. Furthermore, it can
+also provide insights into the biology of this complex syndrome.
+Previous studies have also sought to find a differentiating at-
+tribute of ME/CFS by inducing exertional malaise (41). While
+the exact mechanisms behind the discovered differences remain
+unclear and further analysis is needed to pinpoint their precise
+source, we envision that a number of mechanisms may be trig-
+gered when plasma samples containing PBMCs are exposed to a
+stressor. To this end, frequency-resolved impedance readings (10
+Hz to 1 MHz) at different time points were subjected to a
+mathematical model developed by Giaever and Keese (42) to
+understand the exciting circuit model representing the sensor−
+solution interface components. The impedance results are inte-
+grations of the impedance that are attributed to the media−
+sensor surface interactions (Zm-s), cell−cell interactions (Zc-c),
+cell−sensor surface adhesion (Zc-s), impedance of cells (mem-
+brane capacitance Cm, cytoplasm conductivity of the cells, σcp),
+resistance of the solution (Rs), and other components (e.g.,
+proteins, exosomes, and lipids) in plasma. The assumption here
+is that the current flows radially into the space between the cell’s
+ventral surface and the substrate and then escapes between the
+cells. The current density is assumed to be consistent in the y
+direction, and the cells are disk-shaped objects with membrane
+surfaces and filled with a conducting electrolyte. Moreover, to
+identify the mechanisms and components involved at the cellular
+and molecular levels, we have started to investigate the plasma
+components (e.g., proteins, exosomes, and lipids) and individual
+cell types (e.g., T cells) separately. This investigation forms part
+of on-going studies that require further investigation before
+mechanisms may be suggested with a good degree of certainty.
+In terms of the mechanisms involved, one of the first candi-
+dates to be considered is Na/K ATPase, which is present in the
+plasma membrane of all cells. It is responsible for pumping so-
+dium and potassium ions across the cell membrane using an
+active transport mechanism that requires the consumption of
+ATP. The normal intracellular concentration of PBMCs is
+around 10 mM, while that of plasma is about 135 mM. The re-
+verse is true for potassium (around 140 mM intracellular and
+5 mM extracellular). Upon the increase in extracellular sodium
+ion concentration, passage of some additional Na ions into cells
+may occur by diffusion, depending on the permeability of the
+PBMCs to this ion. As for the active transport of the ions by Na/K
+ATPase, the pumping of three Na ions to the outside of the
+cell and two K ions to the inside takes place in each cycle of
+operation, thereby sustaining the large excess of Na ions outside
+and high concentration of K ions inside required for maintaining
+cell potential. Accordingly, increasing sodium concentration in
+plasma while keeping its original low potassium level unchanged
+would be in line with the main function of the membrane enzyme
+in preserving the concentration gradients of Na and K ions
+across PBMC plasma membranes. While an increase in Na ion
+concentration per se does not appear to be antagonistic to the
+normal functioning of Na/K ATPase, it may act as a factor
+causing osmotic stress. In such a situation, some specific mech-
+anisms may be triggered as a response to the new, unfavorable
+situation to achieve intracellular water homeostasis (43). Indeed,
+a number of reports in the literature indicate that the addition of
+salts or other osmotic agents to the cell environment may induce
+the production of inflammatory cytokines (20, 39–44). These
+studies indicate that the development of inflammation as a
+consequence of osmotic stress may be a general phenomenon
+affecting PBMCs (44, 45) and a number of other cell types (46–
+50). Both lower (20 mM to 41 mM) (48) and higher (100 mM to
+135 mM) (47) concentrations of NaCl than the amount tested in
+the present study (65 mM) have been investigated. In a study on
+the effect of osmotic stress on human bronchial epithelial cells,
+IL-8 production was stimulated by additional NaCl (ranging
+from 50 mM to 150 mM) in a time- and dose-dependent manner
+(50). These findings confirm the ability of cells to alter gene
+expression in response to changes in the osmotic environment
+(51). These mechanisms may contribute to altering media−
+sensor surface interactions (Zm-s), cell−cell interactions (Zc-c),
+cell−sensor surface adhesion (Zc-s), impedance of cells (membrane
+capacitance Cm, cytoplasm conductivity of the cells σcp), re-
+sistance of the solution (Rs), and other plasma components (e.g.,
+proteins, exosomes, and lipids), which can modulate the value of
+the impedance signals measured by our sensors. A number of
+other mechanisms have been reported as being involved in the
+effect of high salt concentration on cells other than PBMCs,
+which may play a role relevant to the present study. These in-
+clude a size change induced by an increase in osmotic pressure,
+and accumulation of glycerol and amino acids (27), which might
+contribute to altering the impedance of cells (membrane ca-
+pacitance Cm, cytoplasm conductivity of the cells, σcp), cell−cell
+interactions (Zc-c), and cell−sensor surface adhesion (Zc-s),
+which can modulate the value of the impedance signals mea-
+sured by the sensors here. However, the simultaneous standard
+live microscopy imaging of heterogeneous population of the
+PBMCs at different critical points of the experiments was not
+able to distinguish a significant visually detectable cell size dif-
+ference between ME/CFS patient cells and healthy control cells.
+Nonetheless, high-resolution imaging (e.g., transmission electron
+microscopy) of specific cell types at different critical points of the
+experiments might help us to better understand the possible
+contribution of this mechanism to our results. Additionally,
+phospholipid synthesis and expansion of endoplasmic reticulum
+membrane (52) can also contribute to altering the impedance of
+cells (membrane capacitance Cm, and cytoplasm conductivity of
+the cells σcp), which can modulate the value of the impedance
+signals measured by the sensors. A change in the composition of
+the plasma membrane (28) is another possible mechanism that
+can contribute to altering the impedance of cells (membrane
+capacitance Cm), cell−cell interactions (Zc-c), and cell−sensor
+surface adhesion (Zc-s), all of which can modulate the value of
+the impedance signals measured by the sensors. Moreover, the
+reinforcing of the membrane by increasing the concentration of
+ubiquinone-8 can also contribute to altering the impedance of
+cells (membrane capacitance Cm), cell−cell interactions (Zc-c),
+and cell−sensor surface adhesion (Zc-s), and to modulating the
+value of the impedance signals measured by our sensors. Although
+10254
+|
+www.pnas.org/cgi/doi/10.1073/pnas.1901274116
+Esfandyarpour et al.
+
+all of the above are possible contributing mechanisms, further ex-
+periments are required to understand the precise contributing
+mechanisms behind the observed differences, and whether they are
+specific to ME/CFS or whether the response might be found among
+other similar diseases.
+Additionally, our very attractive preliminary results (not in-
+cluded in this paper) involving severely ill ME/CFS patients and
+healthy controls indicated a clear difference in the behavior of
+PBMCs among ME/CFS patients when placed in the patients’
+own plasma compared with when they were incubated in healthy
+plasma. These observations were one of the motivations behind
+experimenting with the components of ME/CFS patients’ plasma
+at the molecular level, in addition to studying cells. The observed
+impedance patterns may be due to the presence or absence of
+plasma-associated factors. Interestingly, cytokine production by
+PBMCs (53) and human retina pigment epithelium cells (48)
+treated with lipopolysaccharide have been found to be enhanced
+by hyperosmotic stress, a finding that may be related to the
+present study. It is also tempting to speculate that these reports
+and our own findings are relevant to some recent studies indicating
+an important inflammatory component in ME/CFS (4, 9, 54).
+Moreover, to create a classifier for ME/CFS patients capable of
+identifying new patients, required for a robust diagnostic tool, we
+developed a trained kernel Support Vector Machine (SVM), a
+supervised machine-learning algorithm, using our experimental
+data. To classify new patients based on whether they fall to the
+right of the decision boundary, we initially selected the two fea-
+tures with the largest significance: change from the baseline to the
+plateau and change from the minimum to the plateau for the in-
+phase components of the impedance. Using these features, a cubic
+polynomial kernel SVM was able to classify the two populations,
+although the two features are highly correlated, as shown in Fig.
+2H. To further improve the robustness of the classifier by de-
+creasing the correlation between the two axes, a principal com-
+ponent analysis
+(PCA)
+was
+performed
+on
+a
+data
+matrix
+comprising six features: the change in impedance from the base-
+line and minimum to the plateau for all three components of
+impedance (jZj, Zre, and Zim). The results (n = 2) yielded a
+seamless dataset that is linearly separable in PCA space (Fig. 2I).
+Next, we aim to perform further experiments to understand
+the specific mechanisms contributing to the observed results, and
+to test the performance of the assay on other similar condition
+diseases. Additionally, we are working on adapting the technol-
+ogy to a platform capable of preclinical testing of drugs and
+therapies on cells from ME/CFS patients, leading toward de-
+velopment of a portable, handheld, and easy-to-use platform that
+can be operated by researchers and clinicians at any skill level.
+In summary, there is currently no well-established blood-based
+biomarker to diagnose ME/CFS, which afflicts ∼2 million people
+in the United States and many more around the globe. The
+molecular aberrations observed in numerous studies of ME/CFS
+blood cells offer the opportunity to develop a diagnostic assay for
+blood samples. Taking advantage of recent advancements in
+micro/nanofabrication, direct electrical detection of cellular and
+molecular properties, and microfluidics, we developed an ultra-
+sensitive and cost-effective nanoelectronic assay capable of
+continual monitoring of cellular and molecular events in real
+time from a very small sample volume (∼50 μL). By studying
+ME/CFS at the molecular level, we demonstrate the clinical
+utility of the assay for disease diagnostic applications. According
+to our experimental results, ME/CFS blood cells display a unique
+characteristic in their impedance pattern when subjected to
+hyperosmotic stress that is significantly different from the control
+(P < 4.5E-9, n = 40). To make our platform a more robust di-
+agnostic tool, potentially capable of accurately identifying new
+patients, we developed a precise ME/CFS classifier by applying a
+supervised SVM machine learning algorithm to our experimental
+datasets. In addition, we performed PCA on a data matrix of
+important features, which established a seamless linearly sepa-
+rable dataset in PCA space. This technology is a blood-based
+impedance biomarker that can potentially establish a di-
+agnostic biomarker and a drug-screening platform for ME/CFS
+in conjunction with preexisting evaluation measures such as the
+CCC. This is a low-cost, rapid, miniaturized, minimally invasive,
+and highly sensitive assay. Given the significance of this assay
+and its reliability, we envision it has the potential to be widely
+employed in other research laboratories and clinics in the near
+future as an aid to physicians as well as to our colleagues in the
+ME/CFS research community.
+Materials and Methods
+Fabrication. We fabricated the arrays using the following protocol: First,
+200 nm of SiO2 was thermally grown on a silicon wafer to insulate the
+substrate from the other layers. This process was done in a high-temperature
+atmospheric furnace to grow silicon dioxide (SiO2) on silicon wafers (∼3 h at
+1,100 °C). In subsequent steps, the bottom conductive electrodes were pat-
+terned and deposited through optical photolithography, and metal de-
+position processes, followed by lift-off steps. To do that, first, standard
+silicon wafers were prebaked on a hot plate at 200 °C for ∼2 h. Then the
+manual resist spinning step was performed by applying 10 drops of
+hexamethyldisilizane to the wafers as an adhesive layer. This was followed by
+the coating of the wafers with MaP 1215 photoresists. The wafers were then
+transferred to a contact aligner system to perform precision mask-to-wafer
+alignment followed by near-UV photoresist exposure (∼3 s). Exposed pho-
+toresists were developed, and the patterned wafers were transferred to an
+evaporation system to deposit the bottom metallic electrodes. In the evap-
+oration system, first, 3 nm of Cr was deposited as an adhesive layer, which
+was followed by the deposit of 100 nm of gold to create the sensors’ bottom
+conductive electrodes. The wafers then went through a metal lift-off process
+(∼30 min in Acetone) to remove the remaining photoresists and form the
+final configuration of the bottom electrodes. The next step was deposition
+of 30 nm of silicon dioxide (sensing region) using plasma-assisted atomic
+layer deposition technique. This is a high-quality, conformal, uniform, pinhole-
+and particle-free oxide film to minimize the electrical shorting effect and
+maximize the sensors’ yield. This was followed by the fabrication of the top
+conductive electrodes. A similar procedure as for the bottom electrodes was
+followed to fabricate the top electrodes. These conductive electrodes were
+then coated with a protective oxide layer (SiO2). These protective layers
+were deposited using a plasma-enhanced chemical vapor deposition system.
+Several etching steps followed by a lithography step were performed to
+form channels underneath the sensors. Then, the oxide from electrical
+measuring pads, called bonding pads, was removed. To achieve this, the
+patterned wafers went through a wet etching process (6:1 Buffered Oxide
+Etch) to expose these bonding pads. The final step was further cleaning of
+the sensing tips and forming them with sharp edges in the channel. This step
+was achieved using the focused ion beam etching process.
+Statistical Analysis. The critical points we used for analysis of the impedance
+versus time curves were baseline, minimum, and plateau levels; minimum and
+maximum slope; and the time taken to reach the minimum and plateau. The
+baseline, defined earlier, functioned as a reference point to normalize any
+process variations. The baseline was calculated by averaging the impedance
+for 200 s starting at 250 s before the addition of the stressor. The real-time
+impedance was then normalized by the baseline yielding a value of 1 at the
+baseline. To determine the remaining features, when salt is introduced, we
+split the data into two sections to remove the large drop in impedance as-
+sociated with the introduction of salt. The first section contained the baseline
+and the initial drop, while the second contained the sample’s response to the
+addition of salt. A high-order polynomial (d = 14) was fit to the second
+section and used to estimate the rest of the critical points in closed form. The
+minimum was the point at which the fitted curve is at its lowest. The plateau
+was the point after the minimum where the impedance is at its largest in the
+fitted portion. To calculate the minimum and maximum slopes, the fitted
+polynomial was differentiated. The minimum slope was determined as the
+minimum value of the differentiated curve between the start of the fitted
+section and the time of the minimum. Similarly, the maximum slope was
+determined as the maximum value of the differentiated curve between the
+time of the minimum, and the time of the plateau. The uncertainty in the
+measurement of the baseline minimum and plateau was estimated as the SD
+of the raw data from 60 s before the critical point to 60 s after. All P values
+were two-tailed and calculated using Welch’s t test.
+Esfandyarpour et al.
+PNAS
+|
+May 21, 2019
+|
+vol. 116
+|
+no. 21
+|
+10255
+ENGINEERING
+IMMUNOLOGY AND
+INFLAMMATION
+
+Electrochemical Impedance Spectroscopy. To perform electrochemical im-
+pedance spectroscopy, a Versa STAT3 potentiostat (Princeton Instruments)
+was used. An operating voltage of 250 mV RMS was established. We chose to
+measure impedance at a frequency of 15 KHz, as this frequency was shown to
+be the optimal working frequency of the sensors (34). The sampling rate was
+five samples for all experiments. All measurements were performed at
+room temperature.
+Nanosensors’ Preexperiment Cleaning. To eliminate the potential for sensor
+contamination, we conducted an extensive sensor cleaning process before
+each experiment. The cleaning procedure consisted of two main steps: (i)
+series of liquid washes to remove macroscopic particles, (ii) followed by ul-
+traviolet ozone (UVO) cleaning to eliminate organic contaminants. The liq-
+uid wash was performed by dipping a Micro CleanFoam TX757B swab
+(Texwipe) in 2% SDS and then using the swab to remove any oils or fats
+deposited on the wafer, by gently rubbing the swab on the silicon surface.
+The wafer was then rinsed with an excess of deionized (DI) water to wash off
+the SDS residue. An acetone rinse was then performed using a new foam
+swab to dislodge any remaining particles. A wash of isopropanol was then
+performed to remove the residue left by the acetone. The final wash was
+performed using DI water, and the sensors were then dried with compressed
+air. Next, the sensors were sanitized using a UVO cleaner (Model 42; Jetlight)
+for 30 min to remove organic contamination and hydrophilize the SiO2
+surface. The full cleaning procedure (liquid wash steps followed by the UVO
+cleaning step) was repeated twice more (three times in total) to fully elim-
+inate any contamination, residue, and organic contamination.
+Sample Preparation. For each subject, blood was collected in an 8-mL sodium
+citrate CPT tube and a 6-mL lithium heparin tube. Following the protocol
+explained in SI Appendix, PBMCs were isolated from the whole-blood
+plasma, and the cells were adjusted to a concentration of 200 cells per μL
+and delivered for the experiments.
+Experimental Setup. To make electrical connections to the sensors’ small
+(50 μm × 50 μm) measuring pads, an S-1160 probe station (Signatone) was
+used. A biocompatible silicone wells FlexWell Incubation Chamber (Grace
+Bio-Labs) was cut and placed over a sensor as a microfluidic well to contain
+the sample. For each experiment, 50 μL of the prepared sample (SI Appendix)
+was injected into the microfluidic wells, and real-time electrical impedance
+measurements were then recorded.
+ACKNOWLEDGMENTS. We thank Dr. Laurel Diane Crosby, Professor Craig
+Heller, and Dr. Bruce Schaar for useful comments, discussions, and support.
+This work was supported by National Institutes of Health Grant P01 HG000205
+and Open Medicine Foundation.
+1. Naviaux RK, et al. (2016) Metabolic features of chronic fatigue syndrome. Proc Natl
+Acad Sci USA 113:E5472–E5480.
+2. Moneghetti KJ, et al. (2018) Value of circulating cytokine profiling during submaximal
+exercise testing in myalgic encephalomyelitis/chronic fatigue syndrome. Sci Rep 8:
+2779.
+3. Prins JB, van der Meer JWM, Bleijenberg G (2006) Chronic fatigue syndrome. Lancet
+367:346–355.
+4. Montoya JG, et al. (2017) Cytokine signature associated with disease severity in
+chronic fatigue syndrome patients. Proc Natl Acad Sci USA 114:E7150–E7158.
+5. Lorusso L, et al. (2009) Immunological aspects of chronic fatigue syndrome.
+Autoimmun Rev 8:287–291.
+6. Devanur LD, Kerr JR (2006) Chronic fatigue syndrome. J Clin Virol 37:139–150.
+7. Falk Hvidberg M, Brinth LS, Olesen AV, Petersen KD, Ehlers L (2015) The health-
+related quality of life for patients with myalgic encephalomyelitis/chronic fatigue
+syndrome (ME/CFS). PLoS One 10:e0132421.
+8. Brea J (2016) What happens when you have a disease doctors can’t diagnose. Available
+at https://me-pedia.org/wiki/What_happens_when_you_have_a_disease_doctors_can%
+27t_diagnose_-_TED_Talk_(2016). Accessed April 16, 2019.
+9. Maes M, et al. (2013) In myalgic encephalomyelitis/chronic fatigue syndrome, in-
+creased autoimmune activity against 5-HT is associated with immuno-inflammatory
+pathways and bacterial translocation. J Affect Disord 150:223–230.
+10. Jason LA, Corradi K, Torres-Harding S, Taylor RR, King C (2005) Chronic fatigue syn-
+drome: The need for subtypes. Neuropsychol Rev 15:29–58.
+11. Aoki T, Miyakoshi H, Usuda Y, Herberman RB (1993) Low NK syndrome and its
+relationship to chronic fatigue syndrome. Clin Immunol Immunopathol 69:
+253–265.
+12. Fang H, et al. (2006) Gene expression profile exploration of a large dataset on chronic
+fatigue syndrome. Pharmacogenomics 7:429–440.
+13. Caligiuri M, et al. (1987) Phenotypic and functional deficiency of natural killer cells in
+patients with chronic fatigue syndrome. J Immunol 139:3306–3313.
+14. Maher KJ, Klimas NG, Fletcher MA (2005) Chronic fatigue syndrome is associated with
+diminished intracellular perforin. Clin Exp Immunol 142:505–511.
+15. Natelson BH, Haghighi MH, Ponzio NM (2002) Evidence for the presence of immune
+dysfunction in chronic fatigue syndrome. Clin Diagn Lab Immunol 9:747–752.
+16. Carlo-Stella N, et al. (2006) A first study of cytokine genomic polymorphisms in CFS:
+Positive association of TNF-857 and IFNgamma 874 rare alleles. Clin Exp Rheumatol
+24:179–182.
+17. Tomoda A, et al. (2005) Cytokine production and modulation: Comparison of pa-
+tients with chronic fatigue syndrome and normal controls. Psychiatry Res 134:
+101–104.
+18. Robertson MJ, et al. (2005) Lymphocyte subset differences in patients with chronic
+fatigue syndrome, multiple sclerosis and major depression. Clin Exp Immunol 141:
+326–332.
+19. Kennedy G, Spence V, Underwood C, Belch JJF (2004) Increased neutrophil apoptosis
+in chronic fatigue syndrome. J Clin Pathol 57:891–893.
+20. Carruthers BM, et al. (2003) Myalgic encephalomyelitis/chronic fatigue syndrome:
+Clinical working case definition, diagnostic and treatment protocols. J Chronic
+Fatigue Syndr 11:7–115.
+21. Grinde B (2008) Is chronic fatigue syndrome caused by a rare brain infection of a
+common, normally benign virus? Med Hypotheses 71:270–274.
+22. Hollingsworth KG, Hodgson T, Macgowan GA, Blamire AM, Newton JL (2012) Im-
+paired cardiac function in chronic fatigue syndrome measured using magnetic reso-
+nance cardiac tagging. J Intern Med 271:264–270.
+23. Booth NE, Myhill S, McLaren-Howard J (2012) Mitochondrial dysfunction and the
+pathophysiology of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS). Int
+J Clin Exp Med 5:208–220.
+24. Gerwyn M, Maes M (2017) Mechanisms explaining muscle fatigue and muscle pain in
+patients with myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): A review
+of recent findings. Curr Rheumatol Rep 19:1.
+25. Delves PJ, Martin SJ, Burton DR, Roitt IM (2011) Roitt’s Essential Immunology (Wiley-
+Blackwell, Hoboken, NJ), 12th Ed.
+26. Dixit AK, Jayabaskaran C (2012) Phospholipid mediated activation of calcium de-
+pendent protein kinase 1 (CaCDPK1) from chickpea: A new paradigm of regulation.
+PLoS One 7:e51591.
+27. Andreishcheva EN, et al. (1999) Adaptation to salt stress in a salt-tolerant strain of the
+yeast Yarrowia lipolytica. Biochemistry (Mosc) 64:1061–1067.
+28. Sévin DC, Sauer U (2014) Ubiquinone accumulation improves osmotic-stress tolerance
+in Escherichia coli. Nat Chem Biol 10:266–272.
+29. Kim J, Oh J, Sung GH (2016) Regulation of MAP kinase Hog1 by calmodulin during
+hyperosmotic stress. Biochim Biophys Acta 1863:2551–2559.
+30. Csonka LN (1989) Physiological and genetic responses of bacteria to osmotic stress.
+Microbiol Rev 53:121–147.
+31. Farabaugh KT, et al. (2017) Protein kinase R mediates the inflammatory response
+induced by hyperosmotic stress. Mol Cell Biol 37:e00521-16.
+32. Brocker C, Thompson DC, Vasiliou V (2012) The role of hyperosmotic stress in in-
+flammation and disease. Biomol Concepts 3:345–364.
+33. Hohmann S (2002) Osmotic stress signaling and osmoadaptation in yeasts. Microbiol
+Mol Biol Rev 66:300–372.
+34. Esfandyarpour R, et al. (2013) Label-free electronic probing of nucleic acids and
+proteins at the nanoscale using the nanoneedle biosensor. Biomicrofluidics 7:
+044114.
+35. Esfandyarpour R, Yang L, Koochak Z, Harris JS, Davis RW (2016) Nanoelectronic three-
+dimensional (3D) nanotip sensing array for real-time, sensitive, label-free sequence
+specific detection of nucleic acids. Biomed Microdevices 18:7.
+36. Esfandyarpour R, Esfandyarpour H, Javanmard M, Harris JS, Davis RW (2013) Micro-
+needle biosensor: A method for direct label-free real time protein detection. Sens
+Actuators B Chem 177:848–855.
+37. Esfandyarpour R, Esfandyarpour H, Harris JS, Davis RW (2013) Simulation and fabri-
+cation of a new novel 3D injectable biosensor for high throughput genomics and
+proteomics in a lab-on-a-chip device. Nanotechnology 24:465301.
+38. Esfandyarpour R, Javanmard M, Koochak Z, Harris JS, Davis RW (2014) Nanoelectronic
+impedance detection of target cells. Biotechnol Bioeng 111:1161–1169.
+39. Esfandyarpour R, Esfandyarpour H, Javanmard M, Harris JS, Davis RW (2012) Electrical
+detection of protein biomarkers using nanoneedle biosensors. MRS Proc 1414:mrsf11-
+1414-hh04-04.
+40. Esfandyarpour R, Javanmard M, Koochak Z, Esfandyarpour H, Harris JS, Davis RW
+(2013) Thin film nanoelectronic probe for protein detection. MRS Proc 1572:mrss13-
+1572-ss01-10.
+41. Keller BA, Pryor JL, Giloteaux L (2014) Inability of myalgic encephalomyelitis/chronic
+fatigue syndrome patients to reproduce VO2peak indicates functional impairment.
+J Transl Med 12:104.
+42. Giaever I, Keese CR (1991) Micromotion of mammalian cells measured electrically.
+Proc Natl Acad Sci USA 88:7896–7900.
+43. Ho SN (2006) Intracellular water homeostasis and the mammalian cellular osmotic
+stress response. J Cell Physiol 206:9–15.
+44. Shapiro L, Dinarello CA (1995) Osmotic regulation of cytokine synthesis in vitro. Proc
+Natl Acad Sci USA 92:12230–12234.
+45. Shapiro L, Dinarello CA (1997) Hyperosmotic stress as a stimulant for proinflammatory
+cytokine production. Exp Cell Res 231:354–362.
+46. Li DQ, et al. (2006) JNK and ERK MAP kinases mediate induction of IL-1beta, TNF-
+alpha and IL-8 following hyperosmolar stress in human limbal epithelial cells. Exp Eye
+Res 82:588–596.
+10256
+|
+www.pnas.org/cgi/doi/10.1073/pnas.1901274116
+Esfandyarpour et al.
+
+47. Hashimoto S, et al. (1999) Hyperosmolarity-induced interleukin-8 expression in hu-
+man bronchial epithelial cells through p38 mitogen-activated protein kinase. Am J
+Respir Crit Care Med 159:634–640.
+48. Hubert A, Cauliez B, Chedeville A, Husson A, Lavoinne A (2004) Osmotic stress, a
+proinflammatory signal in Caco-2 cells. Biochimie 86:533–541.
+49. Zhang D, et al. (2015) High-salt enhances the inflammatory response by retina pigment
+epithelium cells following lipopolysaccharide stimulation. Mediators Inflamm 2015:197521.
+50. Loitsch SM, et al. (2000) Reactive oxygen intermediates are involved in IL-8 production
+induced by hyperosmotic stress in human bronchial epithelial cells. Biochem Biophys
+Res Commun 276:571–578.
+51. Finan JD, Guilak F (2010) The effects of osmotic stress on the structure and function of
+the cell nucleus. J Cell Biochem 109:460–467.
+52. Schuck S, Prinz WA, Thorn KS, Voss C, Walter P (2009) Membrane expansion alleviates
+endoplasmic reticulum stress independently of the unfolded protein response. J Cell
+Biol 187:525–536.
+53. Otto NM, et al. (2008) Hyperosmotic stress enhances cytokine production and de-
+creases phagocytosis in vitro. Crit Care 12:R107.
+54. Stringer EA, et al. (2013) Daily cytokine fluctuations, driven by leptin, are associated
+with fatigue severity in chronic fatigue syndrome: Evidence of inflammatory pathology.
+J Transl Med 11:93.
+Esfandyarpour et al.
+PNAS
+|
+May 21, 2019
+|
+vol. 116
+|
+no. 21
+|
+10257
+ENGINEERING
+IMMUNOLOGY AND
+INFLAMMATION

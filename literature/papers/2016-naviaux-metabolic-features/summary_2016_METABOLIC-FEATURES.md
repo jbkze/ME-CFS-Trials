@@ -7,25 +7,28 @@ year: 2016
 venue: "PNAS"
 doi: 10.1073/pnas.1607571113
 url: https://doi.org/10.1073/pnas.1607571113
-pdf: https://doi.org/10.1073/pnas.1607571113
-text: null
+pdf: literature/papers/2016-naviaux-metabolic-features/paper.pdf
+text: literature/papers/2016-naviaux-metabolic-features/paper.txt
 tags: [metabolism]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: naviaux2016
+cover: "[[literature/papers/2016-naviaux-metabolic-features/cover.png]]"
 ---
 
 # Metabolic features of chronic fatigue syndrome
 
 ## Related files
+![[literature/papers/2016-naviaux-metabolic-features/paper.pdf]]
 - [[literature/papers/2016-naviaux-metabolic-features/citation.bib]]
+- [[literature/papers/2016-naviaux-metabolic-features/paper.txt]]
 
 ## Summary
 
 Found that ME/CFS patients' blood chemistry shows a widespread 'slowed-down' metabolism — the body acting as if in a low-energy survival mode.
 
-> _No PDF available_ — PNAS — open access but blocks headless download; use the PMC copy. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

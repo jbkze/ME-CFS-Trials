@@ -7,25 +7,28 @@ year: 2017
 venue: "PNAS"
 doi: 10.1073/pnas.1710519114
 url: https://doi.org/10.1073/pnas.1710519114
-pdf: https://doi.org/10.1073/pnas.1710519114
-text: null
+pdf: literature/papers/2017-montoya-cytokine-signature-associated-disease/paper.pdf
+text: literature/papers/2017-montoya-cytokine-signature-associated-disease/paper.txt
 tags: [immunology, biomarker, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: montoya2017
+cover: "[[literature/papers/2017-montoya-cytokine-signature-associated-disease/cover.png]]"
 ---
 
 # Cytokine signature associated with disease severity in chronic fatigue syndrome patients
 
 ## Related files
+![[literature/papers/2017-montoya-cytokine-signature-associated-disease/paper.pdf]]
 - [[literature/papers/2017-montoya-cytokine-signature-associated-disease/citation.bib]]
+- [[literature/papers/2017-montoya-cytokine-signature-associated-disease/paper.txt]]
 
 ## Summary
 
 Levels of several immune-signaling molecules (cytokines) in the blood rose in step with how severe a patient's ME/CFS was.
 
-> _No PDF available_ — PNAS — open access but blocks headless download; use the PMC copy. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
