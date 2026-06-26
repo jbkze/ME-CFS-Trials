@@ -83,10 +83,16 @@ reference — match their tone.
    open-ended web search for both tracks (new investigators, drugs, institutions,
    announcements, papers). Add durable new sources you find to the list.
 4. **Confirm each candidate.** Trials: against a registry or the institution's own
-   clinical-research page (for a *planned* study not yet registered, an official
-   institutional/company announcement is acceptable — record it as
-   `not_yet_recruiting` and link that source). Papers: against the DOI / journal /
-   preprint page. Never enter anything on the basis of a blog post alone.
+   dedicated clinical-research page. For a *planned* study not yet registered, the
+   source must be either (a) a registry entry (DRKS / NCT / CTIS / ICTRP) **or**
+   (b) a **dedicated trial-specific page** on the institution's or company's
+   clinical-research site (e.g. a Charité CFC subpage per trial, or a named-compound
+   pipeline page on mitodicure.com). **Not acceptable as sole confirmation:**
+   general therapy-overview pages (e.g. mecfs.de/therapie), grant/award announcement
+   pages (e.g. solvecfs.org/catalyst-awards), press releases, or news/blog posts —
+   these are *leads only*; do not enter a trial on their basis alone. Papers: against
+   the DOI / journal / preprint page. Never enter anything on the basis of a blog
+   post alone.
 5. **Diff against the baseline** and compute `flags` for each in-scope trial:
    - `new` — `id` not present in the previous `data/trials.json`.
    - `newly_open` — status changed **into** `recruiting` / `enrolling_by_invitation`.
