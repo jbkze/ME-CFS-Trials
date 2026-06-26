@@ -23,6 +23,7 @@ is `last_check` + `flags` in `data/trials.json`).
 - Trials tracked: 2 (open: 1 [NCT07529197], watchlist: 1 [MDC002])
 - Papers: unchanged (47 total)
 
+
 ## 2026-06-26 (run 3 — scheduled autonomous, 14:12 UTC)
 - Sources checked: ClinicalTrials.gov (Germany/ME/CFS all statuses), DRKS, CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC, mecfs.de/therapie, mecfs-research.org/researchupdate, PubMed (ME/CFS 2026 + author searches), medRxiv, bioRxiv, Health Rising, The Sick Times, riffreporter.de (BC007/APTA)
 - **Trials** — no new in-scope trials; all 4 existing trials verified unchanged
