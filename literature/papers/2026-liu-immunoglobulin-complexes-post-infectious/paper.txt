@@ -1,0 +1,1372 @@
+Immunoglobulin G complexes from post-infectious ME/CFS, including 
+post-COVID ME/CFS disrupt cellular energetics and alter inflammatory 
+marker secretion☆
+Zheng Liu a, Claudia Hollmann a, Sharada Kalanidhi b, Stephanie Lamer c, Andreas Schlosser c,  
+Emils Edgars Basens d, Georgy Nikolayshvili d, Liba Sokolovska d, Gabriela Riemekasten e,  
+Rebekka Rust f,g, Judith Bellmann-Strobl f,g, Friedemann Paul f,g, Robert K. Naviaux h,  
+Zaiga Nora-Krukle d, Franziska Sotzny i, Carmen Scheibenbogen i, Bhupesh K. Prusty a,d,*
+a Institute of Virology and Immunobiology, University of Würzburg, Germany
+b Stanford Genome Technology Center, Stanford University School of Medicine, Stanford, CA, USA
+c Rudolf Virchow Center, Center for Translational Bioimaging, Julius-Maximilians-University of Würzburg, Germany
+d Institute of Microbiology and Virology, Riga Stradin¸ˇs University Research Center, Riga, Latvia
+e Klinik für Rheumatologie, Universit¨atsklinikum Schleswig-Holstein, Lübeck, Germany
+f Experimental and Research Center (ECRC), Charit´e - Universit¨atsmedizin Berlin, Corporate Member of Freie Universit¨at Berlin, Humboldt Universit¨at zu Berlin and 
+Berlin Institute of Health, Berlin, Germany
+g NeuroCure Research Centre, Charit´e - Universit¨atsmedizin Berlin, Corporate Member of Freie Universit¨at Berlin, Humboldt Universit¨at zu Berlin and Berlin Institute of 
+Health, Berlin, Germany
+h Departments of Medicine, Pediatrics, and Pathology, University of California, San Diego School of Medicine, San Diego, USA
+i Institute of Medical Immunology, Charit´e – Universit¨atsmedizin Berlin, Corporate Member of Freie Universit¨at Berlin and Humboldt Universit¨at zu Berlin and Berlin 
+Institute of Health, Berlin, Germany
+A R T I C L E  I N F O
+Keywords:
+Immunoglobulin
+Antigen
+Antibody
+Mitochondria
+Post-viral chronic illnesses
+ME/CFS
+Post COVID
+A B S T R A C T
+Background: Autoimmunity is a key clinical feature in both post-infectious Myalgic encephalomyelitis/chronic 
+fatigue syndrome (ME/CFS) and Post-Acute Sequelae of COVID (PASC). Passive transfer of immunoglobulins 
+from patients' sera into mice induces some clinical features of PASC. However, the physiological effects of im­
+munoglobulins on cellular alterations remain elusive. In this study, we tested the potential effects of immuno­
+globulins from ME/CFS patients on endothelial cell dysfunction.
+Methods: We have isolated immunoglobulins from 106 individuals, including ME/CFS (n = 39), PCS-CFS (n =
+15), MS (n = 20) patients, and healthy controls (n = 41). Protein composition of the isolated immune complexes 
+was studied using mass spectrometry. The effect of isolated immune complexes on mitochondria was evaluated 
+using confocal microscopy and a Seahorse XFe96 Extracellular Flux Analyzer, and the impact on inflammatory 
+cytokine secretion was studied using a multiplex bead-based assay.
+Results: Here, we demonstrate that IgG isolated from post-infectious ME/CFS patients selectively induces mito­
+chondrial fragmentation in human endothelial cells and alters cellular energetics. This effect is lost upon 
+cleavage of IgG into its Fab and Fc fragments. The digested Fab fragment from ME/CFS alone was able to alter the 
+cellular energetics, resembling the effect of intact IgG. IgG from post-infectious ME/CFS, including post-COVID 
+ME/CFS patients, induced distinct but separate cytokine secretion profiles in healthy PBMCs. Proteomics analysis 
+of IgG-bound immune complexes revealed significant changes in immune complexes from ME/CFS patients, 
+affecting extracellular matrix organization, whereas those from post-COVID ME/CFS patients pointed to alter­
+ations in hemostasis and blood clot regulation.
+Conclusions: We demonstrate that IgGs from ME/CFS patients carry a chronic protective stress response that 
+promotes mitochondrial adaptation via fragmentation, without altering mitochondrial ATP generation capacity 
+☆One Sentence Summary: IgG immune complexes from ME/CFS patients differ from those of healthy individuals and affect mitochondrial structure and 
+energetics.
+* Corresponding author. Institute of Virology and Immunobiology, University of Würzburg, Germany.
+E-mail address: bhupesh.prusty@rsu.lv (B.K. Prusty). 
+Contents lists available at ScienceDirect
+Brain, Behavior, & Immunity - Health
+journal homepage: www.editorialmanager.com/bbih/default.aspx
+https://doi.org/10.1016/j.bbih.2026.101187
+Received 23 January 2026; Accepted 25 January 2026  
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+Available online 4 February 2026 
+2666-3546/© 2026 The Authors. Published by Elsevier Inc. This is an open access article under the CC BY-NC license ( http://creativecommons.org/licenses/by- 
+nc/4.0/ ). 
+
+in endothelial cells. Together, these results highlight a potential pathogenic role of IgG in post-infectious ME/CFS 
+and point to novel therapeutic strategies targeting antibody-mediated metabolic dysregulation.
+1. Background
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is 
+a complex, debilitating, chronic, long-term illness that involves immune 
+dysfunction, autonomic nervous system dysfunction, and metabolic al­
+terations (Myhill et al., 2009; Mandarano et al., 2020; Zinn and Jason, 
+2021). Key symptoms of ME/CFS include fatigue, which can be both 
+mental and physical in nature, such as post-exertional malaise (PEM) 
+(Brown and Jason, 2020), cognitive dysfunction (“brain fog”), etc 
+(Cvejic et al., 2016).
+Emerging evidence implicates endothelial cell dysfunction as a key 
+contributor to the chronicity of ME/CFS. Recent studies have observed 
+reduced macro- and microvascular endothelial function in ME/CFS pa­
+tients compared to matched controls, suggesting impaired vasodilation 
+and compromised vascular homeostasis (Sandvik et al., 2023; Haffke 
+et al., 2022). Endothelial cells, by virtue of their role in regulating blood 
+flow, nutrient and oxygen delivery, and leukocyte trafficking, become 
+central in this pathology. Endothelial cell dysfunction can provide a 
+unifying explanation for both physical and mental fatigue in ME/CFS 
+and its persistence over time. Endothelial dysfunction can lead to a 
+combination of vascular, metabolic, and neuro-immune perturbations 
+that create a self-reinforcing feedback loop, locking patients into a state 
+of chronic, disproportionate fatigue and worsening post-exertional 
+symptoms. In vitro experiments showed that endothelial cells exposed 
+to plasma from ME/CFS patients secreted less nitric oxide (NO) and 
+exhibited reduced eNOS activity, linking circulating factors to impaired 
+endothelial responsiveness (Bertinat et al., 2022).
+ME/CFS patients frequently exhibit altered regulation of the auto­
+nomic and immune systems (Sotzny et al., 2018). In recent years, several 
+studies have focused on the role of autoimmunity in ME/CFS, showing 
+elevated levels of antibodies targeting β2 adrenergic receptors (β2 AdR) 
+and muscarinic M3 and M4 acetylcholine receptors in subsets of ME/CFS 
+patients (Bynke et al., 2020; Loebel et al., 2016; Scheibenbogen et al., 
+2018; Hartwig et al., 2020). The correlation of these autoantibodies with 
+clinical symptoms suggests their functional role in ME/CFS (Sotzny 
+et al., 2022). Two recent studies reported the induction of ME/CFS and 
+long COVID-like symptoms in mice following the passive transfer of IgG 
+from patients (Chen et al., 2024; Santos Guedes de Sa et al., 2024). These 
+findings collectively highlight the potential role of autoantibodies in the 
+pathophysiology of ME/CFS, particularly in disrupting the regulation of 
+autonomic and immune systems. In this study, we investigated the po­
+tential role of circulating human IgGs in mitochondrial, cellular, and 
+immunological alterations in vitro.
+2. Results
+2.1. Passive transfer of IgGs from ME/CFS patients induces mitochondrial 
+fragmentation
+Mitochondrial alterations are among the most powerful drivers of 
+endothelial cell dysfunction because endothelial cells rely heavily on 
+tightly regulated mitochondrial signaling, not primarily for ATP pro­
+duction, but for redox balance, nitric oxide (NO) signaling, calcium 
+handling, and inflammatory control. When mitochondrial homeostasis 
+is disrupted, multiple endothelial pathways essential for vascular health 
+collapse simultaneously. Immune dysregulation is closely associated 
+with mitochondrial dysfunction, which is a characteristic feature of ME/ 
+CFS. Several groups, including ours, have previously shown that serum- 
+derived unknown factors from ME/CFS patients can induce mitochon­
+drial alterations in healthy cells (Schreiner et al., 2020; Fluge et al., 
+2016; Esfandyarpour et al., 2019). A lack of complement activation and 
+pathogen clearance can allow several opportunistic pathogens to repli­
+cate, resulting in the production of a wide array of IgG and IgM auto­
+antibodies in the serum. We hypothesized that some of the altered 
+antibodies in serum or altered antigen-antibody complexes might induce 
+chronic mitochondrial dysfunction. To investigate this in vitro, we pu­
+rified IgGs (Fig. 1A) from human serum and exposed them to two in­
+dependent cell types, primary human foreskin fibroblasts (HFFs) and 
+primary human umbilical vein endothelial cells (HUVECs), and followed 
+their entry into the cells using immunoblotting (Fig. 1B). HUVECs were 
+permissive to human IgG, while HFFs did not allow entry of IgG into the 
+cells (Fig. 1C), suggesting cell-specific selective entry of IgG into human 
+cells. IgG entry into HUVEC cells was also confirmed using immuno­
+fluorescence staining of human IgG (Fig. 1D). IgG that entered HUVEC 
+cells was efficiently detectable up to 16 h post-exposure (Fig. 1E). 
+However, IgG levels decreased within the cells in a time-dependent 
+manner (Fig. 1E), suggesting potential IgG recycling and degradation 
+within the cell. Fc-specific fragments (~35 kDa) of IgG remained 
+abundantly detectable within the cells till 48 h post-exposure (Fig. 1E). 
+No significant differences in IgG entry and survival of Fc-specific IgG 
+fragments were observed between different disease groups (Fig. 1F).
+Exposure to as low as 1 μg/ml of IgGs from ME/CFS and PCS-CFS 
+patients significantly fragmented mitochondria in HUVECs within 16 
+h of exposure, as assessed by confocal imaging (Fig. 2A) and subsequent 
+quantification of average mitochondrial surface area (Fig. 2B). Although 
+the statistical significance for changes in average mitochondrial surface 
+area was strong for the ME/CFS cohort (HD vs. ME/CFS, P = 0.0004), 
+IgG-induced alterations in mitochondrial surface area were not distinct 
+in the entire ME/CFS cohort. Only a subgroup of patients induced sig­
+nificant mitochondrial fragmentation. Hence, we conducted a gender- 
+based analysis, which revealed substantial IgG-induced mitochondrial 
+fragmentation in female ME/CFS and PCS-CFS patients compared with 
+male patients (Fig. 2C). IgG-induced mitochondrial fragmentation was 
+also not observed when cells were exposed to IgGs from patients with 
+multiple sclerosis (Fig. 2B–C). Multiple linear regression analysis 
+involving disease severity (as measured by Bell score), gender, and 
+average mitochondrial surface area did not show any significant asso­
+ciations in ME/CFS and PCS-CFS (Supplementary Fig. S1; see Supple­
+mentary methods for more details). However, disease severity was 
+significantly predictive of average mitochondrial surface area in MS 
+patients.
+Drp1 protein play a key role in mitochondrial fragmentation and its 
+functional significance in mitochondrial quality control (Wang et al., 
+2025). Hence, we tested if IgG-induced mitochondrial fragmentation is 
+Drp1-dependent. IgG from ME/CFS and PCS-CFS patients decreased the 
+protein levels of Drp1, mitofilin, Miga1, and PLD6 (Fig. 2D and E). 
+Interestingly, the levels of the mitophagy marker protein LC3β showed a 
+trend toward decreased levels in the presence of IgG from ME/CFS and 
+PCS-CSF patients (Fig. 2D and E), but this difference was not statistically 
+significant. Blocking the Fc receptors on the HUVEC cell surface did not 
+completely prevent IgG entry into cells (Fig. 2F). Higher concentrations 
+of the Fc blocker resulted in decreased IgG entry (Fig. 2F). However, 
+there was significant cell loss at that concentration, as evident from a 
+decrease in Drp1, p53, Tom20, and Vinculin protein levels. To under­
+stand the mechanism of IgG entry into cells, we digested IgG and 
+separated both Fab and Fc fragments (Fig. 2G). Both fragments were 
+able to enter the cell with equal efficiency (Fig. 2H). However, separated 
+Fab and Fc fragments did not induce a fragmented mitochondrial 
+phenotype (Fig. 2I) with the same efficiency as their IgG counterpart. 
+These results suggest that intact IgG from ME/CFS patients induces 
+mitochondrial fragmentation, which might be independent of the clas­
+sical Drp1-induced pathways.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+2 
+
+2.2. IgGs from ME/CFS patients alter cellular energetics
+We then asked if IgG-induced changes in mitochondrial architecture 
+also alter mitochondrial energetics. To assess the functional changes in 
+the cellular energetics profile, we performed mitochondrial stress tests 
+using the Seahorse XFe96 Extracellular Flux Analyzer. Following 36 h 
+IgG exposure, HUVECs were analyzed for changes in oxygen consump­
+tion rate (OCR) and extracellular acidification rate (ECAR). Sequential 
+injections of oligomycin, FCCP, and rotenone/antimycin A allowed for 
+assessment of mitochondrial respiration parameters. Given the pro­
+nounced and well-documented interplate variability in the seahorse 
+assay, as evident in our data and others (Yepez et al., 2018; 
+Mercier-Letondal et al., 2021), we conducted our assays in two separate 
+groups. Each group included IgG from ME/CFS patients, either with a 
+strong mitochondrial fragmentation phenotype or without it. On each 
+assay plate, we tested 10 healthy controls, 10 ME/CFS patients, and 
+either 10 PCS-CFS patients or 10 MS patients. IgG from healthy controls, 
+PCS-CFS, and MS patients induced similar OCR patterns in HUVECs, 
+while HUVECs exposed to IgG from ME/CFS patients with mitochondrial 
+fragmentation phenotype exhibited a trend towards higher basal respi­
+ration (not statistically significant) and significantly increased (Fig. 3A) 
+spared respiration capacity. However, this phenomenon was not detec­
+ted with IgG from ME/CFS patients without a mitochondrial fragmen­
+tation phenotype (Supplementary Fig. S2A). This suggests that 
+Fig. 1. Selective entry of IgG into human cells and its turnover. 
+A. The quality and quantity of purified IgG were assessed by running them on denaturing SDS-PAGE gels and staining with Coomassie. 
+B. Schematics of IgG entry assay. 
+C. Immunoblot analysis reveals the presence of intracellular IgG heavy and light chains in HUVECs, but not in HFFs, following exposure to 1 μg/mL purified IgG from 
+ME/CFS patients or control sera for 12 h. Vinculin was used as a loading control. 
+D. Confocal microscopy images show intracellular human IgG in primary HUVECs exposed to 1 μg/mL purified IgG from patient and control sera. Two representative 
+images are shown for each condition. 
+E. Immunoblot analysis reveals degradation of intracellular IgG heavy and light chains in HUVECs at 16, 36, 48, and 72 h following exposure to 1 μg/mL purified IgG 
+from ME/CFS patients or control sera. Vinculin was used as a loading control. Fc-specific secondary antibody was used (middle panel) to detect the full-length heavy 
+chain of IgG and cleaved Fc fragments. 
+F. Immunoblot analysis comparing intracellular IgG heavy and Fc-specific fragments in HUVECs at 16 h following exposure to 1 μg/mL purified IgG from HD, ME/ 
+CFS, and PCS-CFS patient sera. Vinculin was used as a loading control. Fc-specific secondary antibody was used to detect the full-length heavy chain of IgG and 
+cleaved Fc fragments.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+3 
+
+(caption on next page)
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+4 
+
+IgG-induced mitochondrial fragmentation is directly associated with 
+increased spared respiration capacity. In the meantime, ECAR, which 
+indicates glycolytic activity, showed no differences in patterns. Baseline 
+ECAR levels were comparable among all four patient groups (Fig. 3B, 
+Supplementary Fig. S2B). ATP measurement assays did not reveal any 
+significant changes in glycolytic, mitochondrial, or total ATP levels in 
+response to IgG treatment (Supplementary Fig. S2C–S2H).
+To force the cells to rely exclusively on oxidative phosphorylation 
+(OXPHOS), we replaced glucose-containing culture media with 
+galactose-containing media, thereby isolating mitochondrial function 
+from glycolysis. Due to the substitution with galactose, the cells had 
+already reached their maximum respiratory capacity at baseline 
+(Fig. 3C). In contrast to cells cultured in glucose-containing media, 
+HUVECs exposed to IgGs from the three study groups did not exhibit 
+differences in OCR or ECAR patterns (Fig. 3D). These results showed that 
+the ME/CFS IgG-induced increase in maximal respiratory capacity of 
+cells is possibly not compensated by mitochondrial oxidative phos­
+phorylation alone, and the observed effect is masked when cells are 
+forced to rely solely on OXPHOS.
+We then compared the potential effects of separated Fab and Fc 
+fragments on cellular energetics to those of the intact IgGs. Fab frag­
+ments of IgG mimicked the intact IgG effects of ME/CFS patients 
+(Fig. 4A), indicating their predominant role in increasing the respiration 
+of HUVECs induced by IgGs from ME/CFS. On the contrary, Fc frag­
+ments from healthy controls induced an overall metabolic rate of 
+respiration in HUVECs. This was also reflected in total, glycolytic, as 
+well as mitochondrial ATP levels of HUVECs in the presence of Fc 
+fragment from healthy controls (Fig. 4B). However, due to large varia­
+tions in ATP counts across the 5 healthy controls, we could not detect a 
+statistically significant difference in ATP levels in these studies (Fig. 4B). 
+Taken together, our results suggest that IgG-induced alterations in 
+mitochondrial morphology and energetics are potentially two inde­
+pendent phenotypes.
+2.3. IgGs from ME/CFS patients induce secretion of specific inflammatory 
+cytokines
+Mitochondria play a significant role beyond energetics. Alterations 
+in mitochondrial structure and function can release various mitochon­
+drial components and metabolic products that can function as damage- 
+associated molecular patterns (DAMPs) and promote inflammation 
+when released into the cytosol (Marchi et al., 2023). Alternatively, 
+direct interaction of IgG-TLR complexed ligands can induce 
+pro-inflammatory cytokines (Vogelpoel et al., 2014). Therefore, we 
+tested whether passive transfer of IgG to healthy PBMCs can trigger 
+inflammatory markers often associated with the ME/CFS (Fig. 5A). Ten 
+well-known cytokines were measured in a multiplexed bead-based 
+assay. The same IgGs were exposed to two separate PBMC samples 
+from independent healthy donors, and two independent biological 
+replicates were carried out for each IgG treatment. IgGs from a large 
+subset of ME/CFS patients induced the secretion of four cytokines, 
+including IL-1β (P = 0.0460, IFNγ (P = 0.0675), TNFα (P = 0.1653) and 
+IL-6 (P = 0.0675), (Fig. 5B). However, this inflammatory cytokine in­
+duction phenotype was not uniform for all ME/CFS patients, making the 
+differences statistically insignificant (Fig. 5B) except for IL-1β. Notably, 
+48 h exposure of PBMCs to IgG from MS patients significantly induced 
+the levels of 3 cytokines, including IL-5, IL-10, and TNFβ, and reduced 
+levels of TGFα (Fig. 5B). A similar trend was also observed when PBMCs 
+were treated with IgG from PCS-CFS patients. However, IgGs from 
+ME/CFS patients had no effect on the secretion of these cytokines. Levels 
+of IFNα2 were not altered by IgG from all 4 study groups. We verified 
+alterations in some of these cytokines using alternative ELISA-based 
+commercial assays (Supplementary Fig. S3A) that mostly replicated 
+the multiplex assay results. In these studies, IgGs from ME/CFS patients 
+exhibited a contrasting phenotype compared with those from PCS-CFS 
+patients. In summary, these results demonstrated that patient IgG can 
+induce the secretion of specific inflammatory cytokines; however, they 
+could not establish a direct causal link between IgG-induced mito­
+chondrial fragmentation and inflammation, suggesting a role for a 
+mitochondria-independent pathway.
+Fig. 2. IgG from ME/CFS patients induces mitochondrial fragmentation. 
+A. Representative confocal microscopy images show mitochondrial architecture in primary HUVECs expressing stable GFP within mitochondria and exposed to 1 μg/ 
+mL purified IgG from ME/CFS, PCS-CFS, and MS patient and control sera. One representative image is shown for each condition. 
+B. Quantification of average mitochondrial surface area in primary HUVECs exposed to 1 μg/mL purified IgG from ME/CFS (n = 39), PCS-CFS (n = 15), MS (n = 20) 
+patients, and healthy controls (n = 41). At least 10 cells were imaged per sample, derived from 3 replicates. In the left panel, each point represents the mean surface 
+area across all images for each subject. In the right panel, each point represents the surface area measured from a single image. Two-tailed Mann-Whitney U test. 
+(Left) HD vs ME/CFS, ***P = 0.0004. HD vs PCS-CFS, *P = 0.0164. HD vs MS, ns P = 0.8676. (Right) HD vs ME/CFS, ****P < 0.0001. HD vs PCS-CFS, **P = 0.0067. 
+HD vs MS, ns P = 0.4794. 
+C. Gender-based separation of average mitochondrial surface area from the above experiment. Each point represents the surface area measured from a single image. 
+Two-tailed Mann-Whitney U test. (Female) HD vs ME/CFS, **P = 0.0018. HD vs PCS-CFS, *P = 0.0173. HD vs MS, ns P = 0.4938. (Male) HD vs ME/CFS, ns P =
+0.0976. HD vs PCS-CFS, ns P = 0.5058. HD vs MS, ns P = 0.4462. 
+D. Capillary-based automated Immunoblot analysis of Mitofilin, Drp1, TIMM23, PLD6, Miga1, LC3β, Pink1 protein levels in HUVEC cells 36 h after exposure to 1 μg/ 
+mL of purified IgG from ME/CFS (n = 12), PCS-CFS (n = 12), and MS (n = 11) patient and control (n = 12) sera. Vinculin was used as a loading control. 
+E. Fold change values from the above immunoblot analysis were derived from densitometric analysis of bands, normalized to the same value for vinculin. Two-tailed 
+Mann-Whitney U test. (Drp1) HD vs ME/CFS, ns P = 0.0684. HD vs PCS-CFS, *P = 0.0387. HD vs MS, ns P = 0.7859. (PLD6) HD vs ME/CFS, ****P < 0.0001. HD vs 
+PCS-CFS, ***P = 0.0007. HD vs MS, ns P = 0.6075. (Timm23) HD vs ME/CFS, ns P = 0.1402. HD vs PCS-CFS, *P = 0.0317. HD vs MS, *P = 0.0106. (Miga1) HD vs 
+ME/CFS, *P = 0.0284. HD vs PCS-CFS, *P = 0.0449. HD vs MS, ns P = 0.1896. (LC3β) HD vs ME/CFS, ns P = 0.0684. HD vs PCS-CFS, ns P = 0.1600. HD vs MS, ns P 
+= 0.6075. (Mitofilin) HD vs ME/CFS, **P = 0.0056. HD vs PCS-CFS, **P = 0.0029. HD vs MS, ns P = 0.3164. 
+F. Immunoblot analysis shows a decreased amount of intracellular IgG heavy and light chains in HUVECs pretreated with Fc blocker before the exposure to 1 μg/mL 
+purified IgG from ME/CFS patients or control sera for 12 h. Vinculin was used as a loading control. 
+G. Schematics of IgG cleavage assay. 
+H. Immunoblot analysis shows the presence of intracellular IgG heavy and light chains in HUVECs after exposure to 1 μg/mL purified IgG, purified Fab fragments, and 
+Fc fragments from ME/CFS patients or control sera for 12 h. Vinculin was used as a loading control. Fc-specific secondary antibody was used (second panel) to detect 
+the full-length heavy chain of IgG and cleaved Fc fragments. 
+I. Quantification of average mitochondrial surface area in primary HUVECs exposed to 1 μg/mL purified IgG or Fab Fragment or Fc fragment from 5 ME/CFS, and 5 
+controls. In the upper panel, each point represents the mean surface area across all images for each individual. In the lower panel, each point represents the surface 
+area measured from a single image. Two-tailed Mann-Whitney U test. (Upper Panel) HD vs ME/CFS IgG, *P = 0.0317. HD vs ME/CFS Fab, ns P = 0.8413. HD vs ME/ 
+CFS Fc, ns P = 0.6905. (Lower Panel) HD vs ME/CFS IgG, *P = 0.0130. HD vs ME/CFS Fab, ns P = 0.5572. HD vs ME/CFS Fc, ns P = 0.3662. (For interpretation of the 
+references to colour in this figure legend, the reader is referred to the Web version of this article.)
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+5 
+
+2.4. Autoantibodies as a potential cause of mitochondrial fragmentation
+IgG-induced mitochondrial fragmentation can be caused by specific 
+autoantibodies enriched in ME/CFS and PCS-CFS patients. Numerous 
+publications have shown that one or more autoantibodies are elevated in 
+ME/CFS patients, making it challenging to correlate a specific autoan­
+tibody with the mitochondrial phenotype. We conducted a proof-of- 
+concept pilot study utilizing commercial protein microarrays. To test 
+potential IgG and IgM responses to selective autoantigens frequently 
+involved in autoimmune diseases, we measured IgG and IgM levels 
+against 120 autoantigens (Supplementary Table 2) in a small cohort of 
+mild-to-severe ME/CFS patients (n = 12) and healthy controls (n = 3). 
+Samples were blinded throughout the experimental procedure and data 
+analysis. Multivariate clustering of log-transformed data revealed that 
+patients could be separated into distinct groups, comprising healthy, 
+mild/moderate, and severe patients (Fig. 5C), based on IgM antibody 
+levels against antigens such as PCNA, collagen V and VI, complement 
+C3, and CRP (Fig. 5D–F). IgM against fibronectin was negatively asso­
+ciated with disease severity. A similar analysis of IgG levels against 
+autoantigens failed to differentiate cases from controls (Supplementary 
+Fig. S3B). One major limitation of our current approach, Sepharose G 
+bead-based IgG purification, is that it does not purify the majority of 
+natural IgM, which are pentameric structures, making it challenging to 
+correlate IgM autoantibody levels to mitochondrial fragmentation. 
+While these results suggest that IgM levels against known autoantigens 
+can distinguish between ME/CFS disease groups and healthy in­
+dividuals, they may not be responsible for mitochondrial fragmentation.
+2.5. Proteomic analysis of immune complexes
+Immunoglobulin-mediated alterations in cellular energetics could be 
+transmitted via antigen-antibody complexes. ME/CFS is closely associ­
+ated with immune dysregulation, yet no definitive biomarkers have been 
+identified. Plasma proteomic analysis has been shown to be a powerful 
+tool to identify biomarkers in certain diseases (Ward et al., 2024; Geyer 
+et al., 2017), including ME/CFS (Germain et al., 2021; Milivojevic et al., 
+2020). Purified IgG from human serum mainly contains immunoglob­
+ulin fractions with freely available Fc receptors along with associated 
+immune complex proteins. Unlike plasma proteomics, which analyzes 
+all circulating proteins, immune complex proteomics enriches for 
+antibody-bound proteins, making it specific for identifying immune 
+complex-related proteins and disease-specific immune functions, such as 
+those associated with autoimmune diseases. To identify fine changes 
+within the immune complex compositions, we carried out mass spec­
+trometry analysis of purified immunoglobulin fractions from ME/CFS (n 
+= 40), PCS-CFS (n = 16), healthy controls (n = 39), and multiple scle­
+rosis (n = 11) (Fig. 6A). Our analysis did not detect any EBV or HHV-6A 
+protein signature within the immune complex proteome. Based on the 
+Fig. 3. ME/CFS IgGs alter metabolic energetics in HUVECs. 
+(A-D) Cellular energetics profiles from Seahorse XF Cell Mito Stress Test are shown from HUVECs exposed to 1 μg/mL IgGs from healthy control (HD) (n = 10), ME/ 
+CFS (n = 10), PCS-CFS (n = 10) patients. Normalized OCR (A, C) and normalized ECAR (B, D) are shown. 
+For A-B, HUVECs were grown in medium containing glucose and for C-D, cells were grown in galactose containing media. 
+Each patient IgG was exposed to independent cells in three separate wells on each assay plate. Additionally, the same assay was performed at least three times on 
+three separate days, and one representative result is shown here.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+6 
+
+identified peptide signatures, we conducted a 3D principal component 
+analysis (PCA) that nicely separated healthy controls from all three 
+disease groups. Although there was no clear separation among the three 
+disease groups, ME/CFS patients clustered slightly farther from the 
+PCS-CFS and MS groups (Fig. 6B), as indicated by specific proteins that 
+distinguished the individual comparison groups (Fig. 6C). A fold-change 
+analysis was conducted to identify the most significant up- and 
+down-regulated proteins within the immune complex across different 
+groups (Fig. 6D–G). Immune complexes from ME/CFS patients were 
+enriched for several immunoglobulin heavy chain variable region genes 
+(IGHVs), including IGHV1-58, IGHV4-8, IGHV3-16, IGHV3-66, and 
+IGHV1-69-2 (Fig. 6D). Interestingly, striated muscle-enriched protein 
+kinase (SPEG), important for muscle maintenance, a kinase involved in 
+muscle development and calcium handling, and Carboxypeptidase N 
+Subunit 1 (CPN1), a metalloprotease and a plasma metalloenzyme that 
+regulates inflammatory peptides, were also increased within the im­
+mune complex of ME/CFS patients. One key protein involved in blood 
+hemostasis, immune modulation, and vascularization, called Von Wil­
+lebrand Factor (VWF) was significantly decreased within the immune 
+complex of ME/CFS patients (Fig. 6C and D). IGHV1-58 showed 
+increased presence within the Immune complexes of PCS-CFS patients 
+(Fig. 6E) along with the protein kallikrein B (KLKB1). Similarly, 
+IGHV3-16 was enriched within the immune complex of MS patients 
+(Fig. 6F).
+We hypothesized that proteins that do not typically bind to immune 
+complexes and are elevated within immune complexes from patients 
+with a particular disease may represent proteins targeted by disease- 
+specific autoantibodies (Fig. 7A). Similarly, proteins that decrease 
+within the immune complexes of a specific disease are potentially 
+essential for the correct functioning and regulation of the immune 
+Fig. 4. Fab and Fc fragments of IgG have variable effects on metabolic energetics in HUVECs. 
+A. Normalized OCR and ECAR in HUVECs exposed to 1 μg/mL IgGs, Fab fragments, and Fc fragments from the same 5 ME/CFS and 5 healthy controls measured by 
+Seahorse assay mito stress test. 
+B-D. Seahorse real-time ATP rate assay in HUVECs exposed to 1 μg/mL IgGs, Fab fragments, and Fc fragments from the same 5 ME/CFS and 5 controls. 
+B. Glycolytic ATP production rate. HD-IgG vs ME/CFS-IgG, ns P = 0.3095. HD-Fab vs ME/CFS-Fab, ns P = 0.1508. HD-Fc vs ME/CFS-Fc, ns P = 0.0952. 
+C. Mitochondrial ATP production rate. HD-IgG vs ME/CFS-IgG, ns P = 0.4524. HD-Fab vs ME/CFS-Fab, ns P = 0.0635. HD-Fc vs ME/CFS-Fc, ns P = 0.2222. 
+D. Total ATP production rate. HD-IgG vs ME/CFS-IgG, ns P = 0.3095. HD-Fab vs ME/CFS-Fab, ns P = 0.1032. HD-Fc vs ME/CFS-Fc, ns P = 0.0952.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+7 
+
+(caption on next page)
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+8 
+
+system. These proteins may not be downregulated at the translational 
+level. Instead, they may not be incorporated into the immune complex 
+for some reason and, therefore, accumulate more in the serum and vice 
+versa (Fig. 7A). To validate this, we tested serum levels of several po­
+tential proteins that were either up- or down-regulated within the im­
+mune complex. KLKB-1 protein, which showed a significantly increased 
+presence within the immune complex of PCS-CFS patients (Fig. 6C), 
+exhibited a trend of decreased presence in the total serum (P = 0.126) 
+(Fig. 7B), but showed a significant decrease in the serum of ME/CFS 
+patients (P = 0.005). AZU1, which showed reduced presence within the 
+immune complex across all three disease groups (Fig. 6C), exhibited a 
+trend toward increased serum levels in PCS-CSF patients (P = 0.115) 
+(Fig. 7B). VWF levels within the immune complex showed a trend of 
+increased presence in the total serum of PCS-CSF patients (P = 0.160) 
+(Fig. 7B). FCN2 and serotransferrin (TF) were detected in reduced 
+amounts within the immune complexes of all 3 disease groups and 
+showed a significant increase in serum in these patients (Fig. 7C). The 
+SPEG protein showed a comparative difference in its presence within the 
+immune complex of HD and ME/CFS patients (Fig. 6C and D); however, 
+it was barely detectable in the serum of a few patients by ELISA, making 
+validation difficult.
+We performed gene set enrichment analysis (GSEA) using the im­
+mune complex proteome data. Only one significant positive enrichment 
+for extracellular matrix reorganization was observed in the GSEA 
+Reactome analysis of the immune proteome in ME/CFS patients 
+compared to healthy controls (Fig. 7D). No significant enrichment was 
+observed in the immune proteome of PCS-CSF and MS patients. How­
+ever, several significant differences were observed when the immune 
+proteome of ME/CFS patients was compared to PCS-CSF. Gene Ontology 
+(GO) analysis of biological processes showed a decreased response to 
+bacterial infection in PCS-CSF patients (Fig. 7E). GSEA Reactome anal­
+ysis revealed increased hemostasis (Fig. 7F), platelet activation 
+(Fig. 7G), platelet Ca2+ response (Fig. 7H), and fibrin clot formation 
+(Fig. 7I) in the PCS-CSF patient immune proteome compared to ME/CFS. 
+These results suggest specific alterations in the immune proteome of 
+ME/CFS patients that distinguish them from healthy controls and PCS- 
+CFS patients.
+3. Discussions
+We have recently demonstrated serum-transferrable innate immune 
+activity in ME/CFS patients that induces a state of low mitochondrial 
+activity, accompanied by changes in mitochondrial dynamics that may 
+contribute to the disease's pathophysiology (Schreiner et al., 2020). 
+Immunoglobulins are a potential candidate serum factor responsible for 
+mitochondrial alterations. Several studies have suggested a possible role 
+for autoantibodies in mitochondrial dysfunction (Kadaja et al., 2004; 
+Klein and Berg, 1990). In this study, we investigated human IgG com­
+plexes as a potential serum-derived component and their roles in mito­
+chondrial morphology, mitochondrial and cellular energetics, and 
+inflammation. Here, we demonstrate that IgG from post-infectious 
+ME/CFS 
+patients 
+induces 
+mitochondrial 
+fragmentation 
+in 
+a 
+cell-specific manner without altering the cells' ATP-generating capacity. 
+We showed IgG from female patients had a tendency to fragment 
+mitochondria more effectively than IgG from male patients. This sug­
+gests that IgGs from ME/CFS and PCS-CFS patients can directly influence 
+mitochondrial dynamics and correlate with the gender differences 
+observed in these diseases. However, we did not observe a correlation 
+between IgG-induced mitochondrial fragmentation and disease severity 
+in ME/CFS and PCS-CFS (Supplementary Fig. S1). Interestingly, 
+IgG-induced changes in mitochondrial surface area significantly pre­
+dicted disease severity in patients with MS. Current results are not 
+enough to explain these correlation results, but the physiological dif­
+ferences in IgG's effect on mitochondria separate MS from both ME/CFS 
+and PCS-CFS. This also suggests that mitochondrial fragmentation is not 
+a general feature of autoimmune conditions but may be disease-specific 
+and involve disease-specific autoantibodies. Further analysis revealed 
+that this mitochondrial fragmentation is not caused by excessive mito­
+chondrial fission, which is typically mediated by Drp1. Instead, we 
+observed a general reduction in multiple mitochondrial proteins, 
+including Drp1, PLD6, Miga1, and mitofilin (Fig. 2D), indicating po­
+tential mitochondrial destabilization and degradation in ME/CFS, which 
+was not observed in MS.
+In our study, IgGs from ME/CFS patients induced distinct metabolic 
+energetics, which likely connect to the mitochondrial structural changes 
+observed earlier. IgGs from ME/CFS patients increased mitochondrial 
+respiration and glycolytic activity (Fig. 3A), suggesting that endothelial 
+cells were under high energy demand in the presence of IgG, a possible 
+indication of cellular stress. To assess mitochondrial function indepen­
+dent of glycolysis, we replaced glucose with galactose in the assay me­
+dium, which forces cells to rely exclusively on OXPHOS. The higher 
+spared respiration capacity induced by IgGs from ME/CFS was not dis­
+played anymore in the presence of galactose (Fig. 3C), suggesting 
+glycolytic compensation as a primary source of stress in ME/CFS. 
+However, this can be cell type dependent, as HUVECs rely heavily on 
+glycolysis. Another study has reported a significant increase in ATP 
+production in PBMCs from ME/CFS, primarily due to non-mitochondrial 
+respiration, such as glycolysis (Lawson et al., 2016). Here, we demon­
+strate that IgGs from ME/CFS exhibit greater glycolytic compensation. 
+Elevated glycolysis could potentially lead to oxidative stress, increased 
+ROS production (Shankar et al., 2025), and impaired energy meta­
+bolism, ultimately contributing to mitochondrial dysfunction (Hu et al., 
+2012; Bhatti et al., 2017). Interestingly, IgGs from PCS-CFS patients did 
+not alter the cellular energetics to the same level as those from ME/CFS 
+patients. Overall, ME/CFS IgGs induced mitochondrial fragmentation 
+and metabolic stress, without necessarily impairing oxidative phos­
+phorylation (OXPHOS) function in HUVECs. We did not observe sig­
+nificant alterations in IgG-induced mitochondrial ATP generation in 
+HUVEC cells. This is expected as endothelial cells rely on glycolysis for 
+basal energy. But they need mitochondria for other major activities, 
+Fig. 5. IgG induces inflammation and an autoantibody signature in ME/CFS. 
+A. Schematics of experimental setup to measure inflammatory cytokines produced by IgG-induced inflammation. 
+B. Violin plots showing results of multiplex bead-based assays to measure secreted inflammatory cytokines from PBMCs of two healthy donors after 48 h of exposure 
+of PBMCs to IgG from ME/CFS (n = 20), PCS-CFS (n = 15), MS (n = 11), and healthy donors (n = 20). Two-tailed Mann-Whitney U test. (IL-1β) HD vs ME/CFS, *P =
+0.0460. HD vs PCS-CFS, ns P = 0.4785. HD vs MS, ns P = 0.7132. (IFNγ) HD vs ME/CFS, ns P = 0.0675; HD vs PCS-CFS, ns P = 0.9345; HD vs MS, ns P = 0.8550. 
+(TNFα) HD vs ME/CFS, ns P = 0.1653. HD vs PCS-CFS, ns P = 0.8307. HD vs MS, ns P = 0.1566. (IL-6) HD vs ME/CFS, ns P = 0.0675; HD vs PCS-CFS, ns P = 0.9345; 
+HD vs MS, ns P = 0.9514. (IL-5) HD vs ME/CFS, ns P = 0.8201, ***P = 0.0005; HD vs MS, **P = 0.0030. (IL-10) HD vs ME/CFS, ns P = 0.4612; HD vs PCS-CFS, ns P 
+= 0.0545; HD vs MS, **P = 0.0016. (TGFα) HD vs ME/CFS, ns P = 0.7329. HD vs PCS-CFS, ns P = 0.2302. HD vs MS, *P = 0.0144. (TNFβ) HD vs ME/CFS, ns P =
+0.6783; HD vs PCS-CFS, *P = 0.0143; HD vs MS, *P = 0.0202. (IFNα2) HD vs ME/CFS, ns P = 0.1803. HD vs PCS-CFS, ns P = 0.5366. HD vs MS, ns P = 0.7838. 
+C. Multivariate analysis of clusters based on distance metrics derived from IgM antibody levels for a panel of autoantigens. Log-transformed scaled data showing 
+relative differences between different variables in both healthy controls and patients. 
+D. The Variables Factor map for the Principal Components (combining data from patients and healthy controls) shows the projection of the top 10 Autoantigen 
+variables onto the plane spanned by the first two Principal Components. 
+E. The Contribution map shows the contributions of the top 10 Autoantigens to the top 10 dimensions. 
+F. Biplot of PCA analysis showing the plot of individuals for the PCA in the Fig. 5C-D.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+9 
+
+Fig. 6. Immune proteome analysis shows distinct alterations in disease groups. 
+A. Schematics of IgG-bound immune complex mass spectrometry-based proteomics. 
+B. 3-Dimensional Principal Component Analysis (PCA) showing distribution of various disease groups and healthy controls on 3 different axis (PC1, PC2, and PC3). 
+ME/CFS (n = 39), PCS-CFS (n = 15), MS (n = 11) patients, and healthy controls (n = 41). 
+C. Venn diagram showing differentially detected proteins and commonly detected proteins within individual comparison groups as detected from mass spectrometry 
+analysis of the immune proteome. 
+D-G. Volcano plots of log2 fold changes and log10 adjusted P values for individual proteins detected by mass spectrometry. Top candidate genes upregulated (red) or 
+downregulated (blue) with logFC >1 and adjusted P value < 0.05 are indicated. 
+Differentially detected proteins between healthy controls (HD) and ME/CFS (D), HD vs PCS-CFS (E), HD vs MS (F), and ME/CFS vs PCS-CFS (G). (For interpretation of 
+the references to colour in this figure legend, the reader is referred to the Web version of this article.)
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+10 
+
+Fig. 7. Gene Set Enrichment Analysis (GSEA) identified key altered pathways in patients with ME/CFS. 
+A. Schematics showing potential alterations within antigen-antibody complexes and their effect on immunity. 
+B. Serum KLKB1, AZU1, and VWF levels in healthy controls, ME/CFS, and PCS-CFS patients. Two-tailed Mann-Whitney U test. (KLKB1) HD vs ME/CFS, **P = 0.0046. 
+HD vs PCS-CFS, ns P = 0.1286. (AZU1) HD vs ME/CFS, ns P = 0.5123. HD vs PCS-CFS, ns P = 0.1054. (VWF) HD vs ME/CFS, ns P = 0.3705. HD vs PCS-CFS, ns P =
+0.1642. 
+C. Serum FCN2 and TF levels in healthy controls, ME/CFS, PCS-CFS, Systemic Sclerosis (SS) and Multiple Sclerosis (MS) patients. Two-tailed Mann-Whitney U test. 
+(FCN2) HD vs ME/CFS, *P = 0.0287. HD vs SS, *P = 0.0104. (TF) HD vs ME/CFS, ****P < 0.0001. HD vs PCS-CFS, *P = 0.0191. HD vs SS, ***P = 0.0008. HD vs MS, 
+**P = 0.0087. D. GSEA Reactome analysis of the immune proteome identified enhanced extracellular matrix organization in ME/CFS patients compared to healthy 
+controls. 
+E. Gene Ontology (GO) analysis of biological processes in the immune proteome identified a reduced defense response to bacterial pathogens in PCS-CFS patients 
+compared with ME/CFS patients. 
+F-I. GSEA Reactome analysis of the immune proteome identified increased hemostasis (F), platelet activation and signalling (G), response to elevated platelet-derived 
+cytosolic Ca+2 (H), formation of fibrin clot (I) in PCS-CFS patients compared to ME/CFS patients.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+11 
+
+including redox regulation, stress adaptation, angiogenesis, and re­
+sponses to shear stress. Mitochondrial alterations could block these 
+adaptive mechanisms, making endothelial cells unable to respond to 
+increased metabolic demand (e.g., during exertion) and, in turn, driving 
+PEM-like physiology.
+Immune complex proteomics specifically isolates antibody-bound 
+proteins, enriching for antigens, autoantigens, and immune mediators. 
+While plasma proteomics provides a broader overview of circulating 
+proteins, immune complex proteomics offers a more targeted and 
+enriched assay for studying autoimmune diseases, where immune ac­
+tivity plays a dominant role in disease progression and treatment out­
+comes (Ohyama et al., 2015). Our immune proteome analysis revealed 
+specific changes in the immune complex of ME/CFS patients compared 
+to healthy controls and other disease controls, which may be relevant to 
+many of ME/CFS's clinical features. We observed increased SPEG protein 
+amounts within the immune complex of ME/CFS patients (Fig. 6C and 
+D), suggesting the presence of autoantibodies against SPEG in ME/CFS. 
+SPEG are muscle-expressed protein kinases. They play an essential role 
+in muscle differentiation and maintenance (Hsieh et al., 2000). Loss of 
+SPEG results in structural muscle defects, including mislocalization of 
+focal adhesion proteins and abnormal calcium handling, which could 
+potentially contribute to the pathophysiology in ME/CFS (Luo et al., 
+2021). SPEG is mostly intracellular, found in cardiac and skeletal muscle 
+cells (Hsieh et al., 2000). It is unlikely to be found in significant amounts 
+in serum samples. However, in the event of muscle or cardiac injury, 
+SPEG may be released into the serum (Martinez-Amat et al., 2005). We 
+demonstrated a decreased presence of VWF proteins within the immune 
+complexes of ME/CFS and concurrently validated their concurrent in­
+crease in serum. VWF is primarily involved in hemostasis by mediating 
+platelet adhesion and stabilizing coagulation Factor VIII, thereby initi­
+ating clot formation (Federici, 2011). Additionally, VWF binds to C1q, 
+reducing phagocytosis and pro-inflammatory cytokine secretion by 
+macrophages (Donat et al., 2019). Studies have shown that VWF plays a 
+role in regulating blood vessel formation and in vascular dysregulation 
+(Randi and Laffan, 2017). In ME/CFS, dysfunction in these processes has 
+been reported (van Campen et al., 2023). We detected reduced levels of 
+several key proteins, including AZU1, ARG1, ZNF185, and LYZ, within 
+the immune complexes of all three disease groups (Fig. 6C), suggesting a 
+potential common role of IgGs in immune dysfunction and 
+autoimmunity.
+Our immune proteome analysis revealed several significant alter­
+ations in pathways and biological processes. Only one significant 
+alteration (extracellular matrix (ECM) organization) was predicted in 
+ME/CFS patients through GSEA Reactome analysis (Fig. 7A). In a pre­
+vious study, we demonstrated a significantly elevated serum fibronectin 
+(FN1) level in both ME/CFS and post-COVID patients, but not in MS 
+patients (Liu et al., 2023). In this study, FN1 was detected at lower levels 
+in the immune complexes of a subset of patients. Alterations in ECM can 
+lead to neuroinflammation (Sorokin, 2010), vascular dysfunction 
+(Zhang et al., 2025), mitochondrial dysfunction (Zhang et al., 2024), 
+fibrosis, and tissue stiffness (Herrera et al., 2018; He et al., 2024). The 
+ECM is essential in maintaining vascular integrity and permeability. 
+Dysregulation of the ECM could lead to capillary leakage, inadequate 
+tissue perfusion, and altered mechanotransduction signaling in endo­
+thelial cells, resulting in orthostatic intolerance, postural orthostatic 
+tachycardia syndrome (POTS), and other signs of microvascular dysre­
+gulation commonly observed in ME/CFS patients. The ECM may act as a 
+regulatory interface among the immune, nervous, and vascular systems 
+in ME/CFS. Aberrant ECM remodeling could be a downstream effect of 
+chronic inflammation, infection, or autoimmunity, and in turn, perpet­
+uates the disease cycle. We did not observe similar pathway enrichments 
+for PCS-CFS patients. However, several key differences were predicted 
+between ME/CFS and PCS-CFS groups, including lower antibacterial 
+defense, increased hemostasis, platelet activation and signaling, and 
+fibrin clot formation (Fig. 7B–F). These pathways were enriched in the 
+PCS-CFS groups compared to the ME/CFS group. All these processes are 
+altered in post-COVID patients and have been an intense topic of study 
+recently (Davis et al., 2023). Our results demonstrate the potential for 
+developing disease markers based on the proteome of immune com­
+plexes. However, more data and in-depth studies are required to validate 
+some of these markers.
+SARS-CoV-2 infection-induced ME/CFS (PCS-CFS) patients share 
+clinical features with ME/CFS patients with unknown etiology. Our 
+study offers a biological perspective for comparing various molecular 
+aspects of these two conditions. While IgG-induced mitochondrial 
+fragmentation and alteration in energetics were more prominent in post- 
+infectious ME/CFS patients, IgG-induced alterations in inflammation- 
+associated cytokines were prominent in PCS-CFS patients. IgG prote­
+omics also showed distinct signatures within the immune complex of 
+these two groups. We hypothesize that PCS-CFS patients represent an 
+early stage of ME/CFS, where inflammation dominates clinical out­
+comes, whereas ME/CFS patients represent the chronic nature of the 
+disease, characterized by hypometabolism and consequent metabolic 
+alterations that influence clinical presentation. In summary, our data 
+provide a mechanistic basis for considering therapeutic strategies tar­
+geting autoantibody-mediated pathology.
+4. Methods
+4.1. Experimental methods
+Details of key resources are provided in the form of a table within 
+Supplementary methods.
+4.1.1. Patient recruitment and serum collection
+Postinfectious ME/CFS, including post-COVID ME/CFS (PCS-CFS) 
+patients, relapsing-remitting multiple sclerosis (MS) patients, and 
+gender- and age-matched healthy controls, were recruited at the 
+outpatient clinic of the Charit´e Universit¨atsmedizin, Berlin, between 
+2020 and 2023. The diagnosis of ME/CFS was based on the 2003 Ca­
+nadian Consensus Criteria and on the exclusion of other medical or 
+neurological diseases that may cause fatigue through a comprehensive 
+clinical and laboratory evaluation. MS patients have been suffering from 
+fatigue relevant to everyday life and have to be free from relapses as well 
+as from steroid treatment for at least 6 months. Biosamples of ME/CFS 
+patients and healthy controls were collected by the group of Prof. 
+Scheibenbogen, and biosamples of MS patients were collected by the 
+group of Prof. Paul. The study was approved by the Ethics Committee of 
+Charit´e 
+Universit¨atsmedizin 
+Berlin 
+(EA2/067/20; 
+EA2_066_22; 
+EA4_174_22) in accordance with the 1964 Declaration of Helsinki and its 
+subsequent amendments, as well as by the Medizinische Ethikkommis­
+sion of JMU, Würzburg (83/23). A total of 21 serum samples from pa­
+tients diagnosed with systemic sclerosis were collected by the group of 
+Prof. Riemekasten at the Clinic for Rheumatology and Clinical Immu­
+nology, University Hospital Schleswig-Holstein, Lübeck, Germany, as 
+part of the same approved study. These samples were only used for 
+potential biomarker validation. All donors gave informed consent. 
+Whole blood samples from each subject were allowed to clot at room 
+temperature, then centrifuged at 2000×g for 10 min. The serum was 
+stored in aliquots at −80 ◦C. Patient demographic is presented in Sup­
+plementary Table 1.
+4.1.2. Cell culture
+U2-OS (HTB-96) cells were purchased from ATCC, and HUVEC- 
+TERT2 cells (CHT-006-0008) were purchased from Evercyte, Austria. 
+Human foreskin fibroblast cells (HFF-TERT) were kindly provided by 
+Prof. Michael Weekes (Cambridge Institute for Medical Research, Uni­
+versity of Cambridge, UK). U2-OS and HFF-TERT cells were grown in 
+McCoy's 5A (Gibco, 16600082) and DMEM media (Gibco, 11965092), 
+respectively, supplemented with heat-inactivated 10% fetal bovine 
+serum (FBS) (Sigma-Aldrich, S0615) and 1% penicillin-streptomycin 
+(Gibco, 15140122). HUVEC-TERT2 cells were grown in EBM basal 
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+12 
+
+medium (Lonza, Cat#CC-3121) supplemented with Components of EGM 
+SingleQuot Kit (Lonza, Cat# CC-4133: BBE, hEGF, hydrocortisone, 
+ascorbic acid), 10% FBS, and 20 μg/ml G418. All cell lines were cultured 
+at 37 ◦C with 5% CO2. Cells carrying stable GFP expression in mito­
+chondria were developed as described previously (Hennig et al., 2022). 
+Cells 
+stably 
+expressing 
+GFP 
+were 
+created 
+by 
+cloning 
+the 
+mitochondrial-targeted GFP into pLVTHM vector backbone and trans­
+ducing target cells with the lentivirus as mentioned before (50). All cell 
+lines were frequently tested for Mycoplasma contamination and, where 
+necessary, authenticated by sequencing.
+4.1.3. Immunoglobulin purification
+150 μl Protein G Sepharose 4 Fast Flow (#17061801, Cytiva) was 
+loaded onto Poly-Prep Chromatography Columns (#731-1550, BIO- 
+RAD). After washing the beads with PBS, 500 μL of serum sample was 
+loaded and passed through the column three times, which was followed 
+by three washes with PBS. Protein G-bound serum IgG was eluted by 
+Glycine pH 2.7 and then neutralised with 1M Tris-HCl pH 8.0. IgG elute 
+was dialyzed against PBS in Slide-A-Lyzer MINI Dialysis Devices 
+(#88404, Thermo Fisher Scientific). IgG concentration was measured by 
+Easy-Titer Human IgG (H + L) Assay Kit (#23310, Thermo Fisher 
+Scientific).
+4.1.4. Fab fragments purification
+Fab fragments of immunoglobulin G were purified using the Pierce 
+Fab Micro Preparation Kit (#44685, Thermo Fisher Scientific), accord­
+ing to the manufacturer's protocol. Fab fragments and flow-through 
+containing digested Fc fragments were dialyzed against PBS in Slide- 
+A-Lyzer MINI Dialysis Devices (#88401, Thermo Fisher Scientific). 
+The concentrations of these fragments were quantified using a Nano­
+Drop™ 2000 Spectrophotometer (Thermo Fisher Scientific).
+4.1.5. IgG exposure in cell culture
+U2-OS or HUVEC-TERT2 cells carrying soluble mitoGFP were seeded 
+on 6-well plates and cultured overnight. Cell culture medium was 
+replaced by fresh medium containing 1 μg/ml serum IgG or 0.5 μg/ml 
+Fab fragments or flow-through, allowing cells to be exposed to serum- 
+derived IgG, Fab fragments, or flow-through containing Fc fragments. 
+Cells were collected after 16 h and 36 h for Western blot or immuno­
+fluorescence experiments.
+4.1.6. Fc receptor blocking assay
+One hour prior to IgG exposure, the cell culture medium was 
+replaced with fresh medium containing (20 μL) Azide Free Fc Receptor 
+Blocker (#NB335, Innovex Biosciences). Following incubation, an equal 
+volume of culture medium containing 2 μg/mL serum IgG was added to 
+each well.
+4.1.7. Immunofluorescence microscopy
+Cells were seeded in 12-well plates on glass coverslips overnight and 
+exposed to IgG. Cells were washed in PBS and fixed with 4% para­
+formaldehyde for 30 min. After washing, the cells were permeabilized 
+with 0.2% Triton X-100 in PBS for 10 min and blocked with 10% FCS in 
+PBS for 1 h. Cells were then incubated for 1 h with Anti-Human IgG (H +
+L) CF594 (#SAB4600097, Sigma-Aldrich) in 2% FCS-PBS and washed 3 
+times in PBS. DAPI was used for staining cell nuclei. When GFP mito­
+chondria and DAPI are the only channels required, the DAPI staining 
+was followed directly after fixation. Samples were mounted onto slides 
+using ProLong Glass Antifade Mountant with NucBlue Stain (#P36981, 
+Invitrogen). Samples were analyzed on a confocal microscope (LSM 510 
+Meta, Carl Zeiss AG).
+4.1.8. Average mitochondrial surface area and mitochondrial number 
+analysis
+Software and a modified algorithm for mitochondrial size and 
+number measurement were previously described by us in detail (Hennig 
+et al., 2022; Chowdhury et al., 2017). All image-processing and analysis 
+steps were performed using Fiji (Schindelin et al., 2012).
+4.1.9. Immunoblotting
+Immunoblotting was carried out as described before (Gulve et al., 
+2016; Prusty et al., 2018) using antibodies: Drp1 antibody (#sc-101270, 
+Santa Cruz Biotechnology), Mfn1 antibody (#sc-166644, Santa Cruz 
+Biotechnology), Mfn2 antibody (#sc-515647, Santa Cruz Biotech­
+nology), PLD6 antibody (#ab237612, Abcam), FAM73A Antibody 
+(#PA553611, Invitrogen), p53 antibody (#sc-126, Santa Cruz Biotech­
+nology), TOMM20 antibody (#sc-17764, Santa Cruz Biotechnology), 
+TIMM23 antibody (#sc-514463, Santa Cruz Biotechnology), LC3β 
+antibody (#sc-376404, Santa Cruz Biotechnology). Equal protein 
+loading was confirmed by the following antibodies: Actin antibody 
+(#sc-8432, Santa Cruz Biotechnology) and Vinculin antibody 
+(#sc-73614, Santa Cruz Biotechnology). All primary antibodies were 
+used at a dilution of 1:1000 to 1:3000. HRP-conjugated secondary an­
+tibodies, which are HRP Rabbit Anti-Human IgG (whole molecule) 
+(#A8792, Sigma-Aldrich), Goat Anti-Human IgG (Fc specific) HRP 
+(#A0170, 
+Sigma-Aldrich), 
+Goat 
+Anti-Mouse 
+IgG 
+Antibody, 
+HRP-conjugate (#12-348, Sigma-Aldrich), and Goat Anti-Rabbit IgG 
+Antibody, HRP-conjugate (#12-349, Sigma-Aldrich), were used at a 
+dilution of 1:2000 to 1:10,000.
+1 μL of HUVEC protein lysates after IgG exposure were run in parallel 
+on an automated capillary Simple Western (JESS from Bio-Techne) for 
+proper quantification. Simple Western was performed according to the 
+manufacturer's protocol using 12-230 kDa (#SM-W004, Bio-Techne) or 
+2-40 kDa (#SM-W004, Bio-Techne) separation modules with chemilu­
+minescent Anti-Mouse (#DM-002, Bio-Techne), Anti-Rabbit (#DM-001, 
+Bio-Techne) or fluorescent Anti-Mouse (#DM-009, Bio-Techne), Anti- 
+Rabbit (#DM-007, Bio-Techne) detection modules, and results were 
+analyzed using Compass software (version 6.3.0). Assays were per­
+formed using antibodies: Mitofilin antibody (#ab245764, Abcam), Drp1 
+antibody (#sc-101270, Santa Cruz Biotechnology), TIMM23 (#sc- 
+514463, Santa Cruz Biotechnology), PLD6 antibody (#ab237612, 
+Abcam), FAM73A (Miga1) Antibody (#PA553611, Invitrogen), LC3β 
+antibody (#18725-1-AP, Proteintech), PINK1 antibody (#NB100-644, 
+Novus Biologicals). Equal protein loading was confirmed by Vinculin 
+antibody (#sc-73614, Santa Cruz Biotechnology). All primary anti­
+bodies were used at a dilution of 1:50 to 1:500.
+4.1.10. Seahorse assay extracellular flux analysis
+Mitochondrial function was assessed using the Seahorse XF Cell Mito 
+Stress Test on the XFe96 Extracellular Flux Analyzer (Seahorse Biosci­
+ence). XFe96/XF pro cell culture microplates (#103793-100, Agilent) 
+were pre-coated with 0.1% gelatin (#0646.1, Carl Roth) and seeded 
+with 4000 HUVECs per well. After overnight incubation, cells were 
+exposed to purified serum IgG for 16 h. All experimental conditions were 
+performed in triplicate. On the day of the assay, the culture medium was 
+replaced with Seahorse XF RPMI medium (#103576-100, Agilent), 
+supplemented with 10 mM D-glucose (#G8769, Sigma Aldrich), 2 mM L- 
+glutamine (#A2916801, Gibco), and 1 mM sodium pyruvate 
+(#11360070, Gibco), and adjusted to pH 7.4. When required, 10 mM D- 
+glucose was replaced to 10 mL D-Galactose (#G5388, Sigma Aldrich). 
+Plates were incubated for 1 h at 37 ◦C in a non-CO2 incubator prior to 
+measurement. The Mito Stress Test was conducted according to the 
+manufacturer's instructions. Briefly, baseline oxygen consumption rate 
+(OCR) and extracellular acidification rate (ECAR) were measured, fol­
+lowed by sequential injections of 1.5 μM oligomycin (ATP synthase in­
+hibitor), 1.0 μM FCCP (mitochondrial uncoupler), and 0.5 μM rotenone 
+combined with 0.5 μM antimycin A (Complex I and III inhibitors, 
+respectively). Each injection step included three measurement cycles, 
+each comprising a mixing and a measuring phase. Following the Sea­
+horse assay, cells were lysed in 0.1 M NaOH containing protease in­
+hibitors and incubated at room temperature for 10 min. Protein 
+concentration was quantified using Pierce BCA Protein Assay Kit 
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+13 
+
+(#23225, Thermo Fisher Scientific) according to the manufacturer's 
+protocol, for normalization of Seahorse assay data. Seahorse assay data 
+were recorded, processed, and analyzed using software Wave (Agilent). 
+Mito Stress Test reports were generated according to the Seahorse XF 
+Cell Mito Stress Test Report Generator template. OCR and ECAR values 
+were analyzed to calculate key mitochondrial parameters, including 
+basal respiration, ATP-linked respiration, proton leak, maximal respi­
+ration, spare respiratory capacity, and non-mitochondrial respiration. 
+To quantify ATP production rates, the same Seahorse data set from the 
+Mito Stress Test was reanalyzed using Seahorse XF Real-Time ATP Rate 
+Assay Report Generator. OCR and ECAR values obtained before and 
+after injection of oligomycin and rotenone/antimycin A were used to 
+calculate mitochondrial ATP production, glycolytic ATP production, and 
+total ATP production rates.
+For experiments related to Fig. 3 and Supplementary Fig. S2A–S2B, 
+we have separated ME/CFS patients into two arbitrary subgroups. This 
+separation is based on the mitochondrial surface area quantification 
+data shown in Fig. 2B. IgGs that induce strong mitochondrial fragmen­
+tation show reduced average mitochondrial surface area. For the 
+experimental results shown in Fig. 3A–B, we randomly selected 10 ME/ 
+CFS patients from the group that exhibited a reduction in average 
+mitochondrial surface area relative to the mean surface area of healthy 
+controls. For the experimental results shown in Fig. S2A–S2B, we 
+randomly selected 10 ME/CFS patients from the group that did not alter 
+or increase mitochondrial surface area compared to healthy controls.
+4.1.11. IgG-induced inflammation assay using human PBMCs
+a. Experimental setup
+Peripheral blood was obtained from an apparently healthy adult 
+donor under the ethical approval of Riga Stradin¸ˇs University (RSU) 
+Research Ethics Committee (2-P¯EK-4/784/2025). PBMCs were isolated 
+by density gradient centrifugation using Histopaque-1077 (Sigma- 
+Aldrich, Cat# 10771) according to the manufacturer's instructions. After 
+centrifugation, the PBMC layer was collected, washed twice with sterile 
+phosphate-buffered saline (Sigma-Aldrich, Cat# D8537), and resus­
+pended in complete RPMI 1640 medium (ThermoFisher Scientific, Cat# 
+22400-089) supplemented with 10% heat-inactivated, filtered fetal 
+bovine serum (FBS) and 1% Penicillin-Streptomycin.
+Cells were seeded in flat-bottom 96-well plates (Sarstedt, Cat# 
+83.1835.300) at a density of 2 × 105 cells per well in 200 μL of culture 
+medium. Dialyzed IgG (final concentration: 50 μg/mL) from serum 
+samples of healthy controls, patients with ME/CFS, PCS-CFS, or MS was 
+added to the freshly isolated PBMCs immediately upon plating. Cells 
+were incubated at 37 ◦C in a humidified atmosphere containing 5% CO2 
+for 48 h. Following incubation, culture supernatants were collected and 
+centrifuged at 400×g for 5 min to remove cell debris. Concentrations of 
+interleukin-6 (IL-6), interleukin-1β (IL-1β), and tumor necrosis factor 
+alpha (TNF-α) were measured using commercially available enzyme- 
+linked immunosorbent assay (ELISA) kits (ThermoFisher Scientific: IL- 
+6, Cat# 88-7066-88; IL-1β, Cat# 88-7346-88; TNF-α, Cat# 88-7261- 
+88) following the manufacturer's protocols. Absorbance was measured 
+at 450 nm using a microplate reader (ThermoFisher, Varioskan LUX), 
+and cytokine concentrations were calculated from standard curves 
+generated with recombinant standards provided in each kit. 
+b. 
+Multiplex 
+bead-based 
+assay 
+for 
+inflammatory 
+marker 
+measurements
+The cell culture supernatant from PBMCs was centrifuged at 5000 g 
+for 5 min to obtain a cell- and debris-free supernatant. TNF-α, IFNγ, IL-5, 
+IL-10, IL-6, IL-1β, IFNα2, sCD40L, TGFα, and TNF-α levels in cell culture 
+supernatants were quantified using the Milliplex MAP Human Cytokine, 
+Chemokine, and Growth Factor Panel A Magnetic Bead Panel kit 
+(HCYTA-60K, Millipore) according to the manufacturer's protocol. 
+Briefly, the samples were combined with marker-specific antibody- 
+coupled magnetic beads in a 96-well plate and incubated overnight at 
+4 ◦C. Following incubation, the plate was washed on a magnet, followed 
+by incubations with biotinylated detection antibodies and streptavidin- 
+phycoerythrin. Finally, the plate was washed on a magnet, and beads 
+were resuspended in xMAP Sheath Fluid Plus (40-50021, Luminex). The 
+plate was read using the Luminex 200 instrument and xPONENT soft­
+ware, and the results were analyzed using GraphPad Prism to construct a 
+7-point standard curve using a 5-parameter logistic curve-fitting 
+method. Each plate included a background and two quality controls. 
+Before reading the plate, the Luminex 200 instrument was calibrated 
+and verified using the Luminex 100/200 Calibration and Performance 
+Verifications kits (LX2R-CAL-K25 and LX2R-PVER-K25, Luminex). Each 
+IgG was tested in two separate biological replicates per PBMC sample. 
+Two such independent experiments were carried out using separate 
+donor-derived PBMCs. The obtained results were combined, and the 
+average values for each cytokine were used.
+4.1.12. Mass spectrometry
+a. Mass spectrometry sample preparation
+A fraction of serum IgG-bound protein G beads from IgG purification 
+was eluted by NuPAGE LDS Sample Buffer (4X) (#NP0007, Thermo 
+Fisher Scientific). The eluates were sent for mass spectrometry. 
+b. Single-pot, solid-phase-enhanced sample preparation (SP3)
+Samples were processed using an adapted SP3 protocol (Hughes 
+et al., 2019). Briefly, 200 μl reconstitution solution was added to each 
+sample prepared in 50 μl NuPAGE LDS sample buffer (Life Technolo­
+gies). Reduction was performed using 5 mM DTT, followed by alkylation 
+with 20 mM iodoacetamide. 10 mM additional DTT was used for 
+quenching. Equal volumes of two types of Sera-Mag Speed Beads 
+(Cytiva, #45152101010250 and #65152105050250) were combined, 
+washed with water, and 10 μL of the bead mix was added to each sample. 
+260 μl 100% ethanol was added, and samples were incubated for 5 min 
+at 24 ◦C, 1000 rpm. Beads were captured on a magnetic rack for 2 min, 
+and the supernatant was removed. Beads were washed twice with 200 μl 
+of 80% ethanol (Chromasolv, Sigma) and once with 1000 μl of 80% 
+ethanol. Digestion was performed on beads with 0.25 μg Trypsin (Gold, 
+Mass Spectrometry Grade, Promega) and 0.25 μg Lys-C (Wako) in 100 μl 
+100 mM ammonium bicarbonate at 37 ◦C overnight. Peptides were 
+desalted using C-18 Stage Tips (Rappsilber et al., 2003). Each Stage Tip 
+was prepared using three C-18 Empore SPE Discs (3 M) in a 200 μl 
+pipette tip. Peptides were eluted with 60 % acetonitrile in 0.1 % formic 
+acid, dried in a vacuum concentrator (Eppendorf), and stored at −20 ◦C. 
+Peptides were dissolved in 2 % acetonitrile/0.1 % formic acid prior to 
+nanoLC-MS/MS analysis. 
+c. NanoLC-MS/MS analysis
+NanoLC-MS/MS analyses were performed on an Orbitrap Fusion 
+(Thermo Scientific) equipped with a PicoView Ion Source (New Objec­
+tive) and coupled to an EASY-nLC 1000 (Thermo Scientific). Peptides 
+were loaded on a trapping column (2 cm × 150 μm ID, PepSep) and 
+separated on a capillary column (30 cm × 150 μm ID, PepSep) both 
+packed with 1.9 μm C18 ReproSil and separated with a 120-min linear 
+gradient from 3% to 30% acetonitrile and 0.1 % formic acid and a flow 
+rate of 500 nl/min. Both MS and MS/MS scans were acquired in the 
+Orbitrap analyzer with a resolution of 60,000 for MS scans and 30,000 
+for MS/MS scans. HCD fragmentation with 35 % normalized collision 
+energy was applied. A Top Speed data-dependent MS/MS method with a 
+fixed cycle time of 3 s was used. Dynamic exclusion was applied with a 
+repeat count of 1 and an exclusion duration of 90 s; singly charged 
+precursors were excluded from selection. The minimum signal threshold 
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+14 
+
+for precursor selection was set to 50,000. Predictive AGC was used with 
+AGC a target value of 4 × 105 for MS scans and 5 × 104 for MS/MS scans. 
+EASY-IC was used for internal calibration. 
+d. Mass spectrometry data analysis
+Raw mass spectrometry data files were analyzed with MaxQuant 
+version 1.6.2.2 (Cox and Mann, 2008). A database search was performed 
+using Andromeda, integrated into the version of MaxQuant used. The 
+search was performed against the UniProt Human Reference Proteome 
+database (Release, 2024_3, UP000005640, 82518 entries), the UniProt 
+EBV database (Release, 2024_3, UP000272970, 55 entries), and the 
+UniProt HHV-6A database (Release, 2024_3, UP000009295, 99 entries). 
+Additionally, a database containing common contaminants was used. 
+The search was performed with trypsin cleavage specificity, allowing up 
+to 3 miscleavages. Protein identification was controlled by the 
+false-discovery rate (FDR; <1% FDR at the protein and peptide spectrum 
+match (PSM) levels). In addition to the MaxQuant default settings, the 
+search was performed against the following variable modifications: 
+Protein N-terminal acetylation, Gln-to-pyro-Glu formation (N-terminal 
+Gln), and oxidation (Met). Carbamidomethyl (Cys) was set as a fixed 
+modification. LFQ intensities were used for protein quantitation (Cox 
+et al., 2014).
+The raw MaxQuant output files revealed expression data for 783 
+proteins. We focused on raw intensity values and label-free quantifica­
+tion (LFQ) intensity values for further analysis. The data processing and 
+analysis work consisted of 4 components: Data processing, Clustering 
+and PCA, Differential expression analysis, and pathway enrichment 
+analysis. The first step of data processing involved contaminant filtering, 
+removing proteins with excessive missing values, imputing missing 
+values, and applying a log transformation. We removed contaminants 
+and low-quality proteins from the MaxQuant output data. Proteins 
+filtered out included those with Potential contaminant value +, Reverse 
+value +, and site value +. Locally developed Python code was used for 
+this purpose. To remove proteins with excessive missing values, we 
+removed proteins with raw intensity values equaling 0 for at least 70% 
+of the samples within the group. Missing values were evaluated using 
+plots generated with the Amelia (v1.8.1) R package's missmap (.) 
+function, with default parameters. Imputation was performed on LFQ 
+intensity data, although proteins with missing values were identified 
+based on raw intensity. Specifically, when the raw intensity value for a 
+protein was 0, it was considered a missing value; subsequently, the LFQ 
+intensity was imputed. If samples with missing values exceeded 70% of 
+all samples within a group, the LFQ intensity values were imputed to be 
+0. If samples with missing values did not exceed 70% of all samples 
+within a group, KNN imputation was performed. The scikit-learn 
+(v0.23.2) Python package was invoked, using the KNNImputer func­
+tion, which was applied with the neighbor number (k) set to the sample 
+size for the group. Locally developed Python code was used to summa­
+rize the results.
+Log transformation (base 2) was performed for imputed LFQ in­
+tensity values using locally developed Python code. Data were visualized 
+using density distributions and box plots, generated with the Matplotlib 
+Python package (version 3.7.5). Hierarchical clustering analysis was 
+performed for all proteins using the pheatmap (version 1.0.12) R 
+package. ggplot2 (v3.5.1) R package was used to generate clustering 
+plots. PCA was performed using the gmodels R package (version 2.19.1). 
+ggplot2 (v3.5.1) and scatterplot3d (v0.3.44) R packages were used to 
+generate 2D and 3D PCA plots, respectively.
+Differential expression analysis was performed using the limma 
+(version 3.62.1) R package. The volcano plot was generated using 
+ggplot2 (v3.5.1) R packages. Heatmaps of differentially expressed pro­
+teins were generated using the pheatmap (version 1.0.12) R package. 
+GSEA was performed using the fgsea (version 1.32.2) and clusterProfiler 
+(version 4.14.4) packages. An adjusted P-value <0.05 was used to select 
+significant enrichment pathways. Pathway enrichment analysis was 
+carried out to identify enriched GO terms among up- and down- 
+regulated proteins using the DAVID (v2023q4) web tools (https://davi 
+dbioinformatics.nih.gov/). A FDR cut-off of 0.05 was adopted to select 
+significant pathways. ggplot2 (v3.5.1) R package was used to generate 
+bubble plots. Gene set enrichment analysis (GSEA) using Gene Ontology 
+(GO) terms, including Biological Process (BP), Cellular Component (CC), 
+and Molecular Function (MF), as well as using the Reactome dataset, for 
+the six pair-wise comparisons between the four groups of samples. Four 
+GSEA sets were conducted for each of the 6 pairwise comparisons, for a 
+total of 24 sets of analysis attempted. 
+e. Enzyme-Linked Immunosorbent Assay (ELISA)
+ELISA was performed using the following kits according to the 
+manufacturers’ protocols: Human Ficolin-2 ELISA Kit (#EH192RB, 
+Invitrogen), Transferrin ELISA Kit (#EHTF, Invitrogen), Human Pre­
+kallikrein 1B ELISA Kit (#ab202405, Abcam), Human Azurocidin/ 
+CAP37 ELISA Kit (#EH39RB, Invitrogen) and Human von Willebrand 
+Factor (VWF) ELISA Kit (#EHVWF, Invitrogen).
+4.1.13. Antigen microarray pilot study
+a. Antigen Microarray experimental setup
+Microarray studies for IgG and IgM against autoantigens were car­
+ried out in collaboration with Creative Biolabs, USA. Frozen serum 
+samples without a prior freeze-thaw cycle were used for the assay. Each 
+serum was digested with DNase I for 30 min at room temperature on a 
+shaker. For the control, no serum sample was added. Slides carrying 
+antigens against 120 autoantigens (for details of the antigens, please see 
+Supplementary Table 2) were blocked in 100 μL blocking buffer at room 
+temperature for 30 min on a shaker. Afterwards, the slides were washed 
+twice with PBST, each for 5 min. 90 μl PBST was added to each serum 
+sample or control mix. Diluted samples were added to each well of the 
+slide (100 μl each) and incubated at room temperature for 1 h on a 
+shaker. Slides were washed with 100 μl PBST/well for 5 min on the 
+shaker. Subsequently, slides were washed with blocking buffer 100 μl/ 
+each well for 5 min on a shaker and then with PBST 100 μl/each well) for 
+5 min on a shaker. Anti-human IgM secondary antibody was diluted to 
+1:1000 in PBST, and 100 μl of secondary antibody was added to each 
+well. Slides were incubated at room temperature for 1 h on the shaker, 
+then washed 3 times with 100 μL PBST per well, 5 min on the shaker. 
+Slides were then washed twice each: first with 45 ml PBS in a 50 ml tube 
+for 5 min on the shaker, then with 45 ml nuclease-free water in a 50 ml 
+tube for 5 min on the shaker. GenePix 4000B microarray systems were 
+used to scan the slide. The 532 nm channel was used to scan Cy3 fluo­
+rescence, and the 635 nm channel was used to scan Alexa Fluor-647 
+fluorescence. 
+b. Microarray data analysis
+Each chip had serially diluted anti-IgM and IgM as positive controls 
+to monitor the experimental process, and PBS was used as a negative 
+control. The obtained chip image was read using the LuxScan 3.0 soft­
+ware to extract the original data. Statistical tests were then carried out 
+on the chip background and on the signal intensities of the positive and 
+negative control sites. The results showed that the Ig control signal value 
+was higher and uniform across different samples. In addition, the PBS 
+anti-Ig control and background signal values were both low, meeting the 
+quality control requirements. The chip of the test sample was scanned 
+with the LuxScan 10K-B scanner. The autoantigen microarray chip/ 
+Pathogen-associated antigen microarray chip had 256 points in total. 
+After removing the 8 anti-IgM and 8 Ig control points, 240 data points 
+were obtained. Each protein on the chip was present as two technical 
+repetitions, representing 120 autoantigens. The chip is read by LuxScan 
+3.0 software to obtain the original data, including foreground signal (F 
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+15 
+
+Median), background signal (B Median), and so on. Foreground Median, 
+Background Median columns were extracted from the.LSR file. The 
+fluorescence intensity value of each site was calculated by the formula: 
+Net Fluorescence Intensity (NFI) Value = (Foreground Median - Back­
+ground Median); SNR = (Foreground Median - Background Median)/SD 
+(Background). SNR was used to filter unreasonable data. The net fluo­
+rescence value was set as SNR <0.05 and SNR to 0.001. The net fluo­
+rescence value was calculated after subtracting the blank control. The 
+NFI and SNR of the following unreasonable situations were set to 0.001. 
+NFI<20 and SNR>5; SNR<0.05 and NFI>20; NFI<0.05. RLM Normal­
+ization was used to normalize the NFI and calculate the effect values of 
+different blocks and slides. For the microarray data clustering and 
+multivariate analysis, first a log transformation was applied, and then 
+‘pheatmap’ in the R package was used with Ward.D2 clustering to 
+perform the cluster analysis. 
+c. Machine learning and Multivariate analysis of autoantigen IgM 
+microarray data
+Multivariate analysis of patient clusters based on distance metrics 
+derived from IgM antibody levels against a panel of autoantigens. Col­
+umns with zero variation (constant values) were removed. Log- 
+transformed scaled data showing relative differences between patients 
+was used because the data in its raw form had different orders of 
+magnitude, making analysis and comparison difficult. The analysis was 
+performed using the R package “pheatmap” using the Ward.D2 clus­
+tering method and Euclidean distances.
+A Random Forest classifier using the R package randomForest was fit 
+to predict ME/CFS as the outcome on two types of data: raw and log- 
+scaled. The purpose of this fit was to provide a rapid screen of vari­
+ables for further analysis. The Variable Importance Plot for the fits was 
+plotted. The top 10 candidates from the Log Variable Importance Plots 
+were selected for Principal Component Analysis (PCA), a statistical 
+methodology for dimension reduction. PCA was performed using the R 
+packages stats (prcomp) and FactoMineR.
+4.1.14. Other statistical analysis
+All statistical calculations were performed using GraphPad Prism 
+10.0. Error bars displayed on graphs represent the means ± SD of three 
+or more independent replicates of an experiment. Statistical significance 
+was calculated separately for each experiment and is described within 
+individual figure legends. For image analysis, three or more biological 
+replicates per sample condition were used to generate the represented 
+data. The results were considered significant at P ≤0.05.
+CRediT authorship contribution statement
+Zheng Liu: Formal analysis, Investigation, Methodology, Project 
+administration, Validation, Visualization, Writing – original draft, 
+Writing – review & editing. Claudia Hollmann: Investigation, Meth­
+odology. Sharada Kalanidhi: Data curation, Formal analysis, Method­
+ology. Stephanie Lamer: Data curation, Formal analysis, Investigation. 
+Andreas Schlosser: Formal analysis, Investigation, Methodology. Emils 
+Edgars Basens: Formal analysis, Investigation, Methodology. Georgy 
+Nikolayshvili: Investigation, Methodology. Liba Sokolovska: Investi­
+gation, Methodology. Gabriela Riemekasten: Resources. Rebekka 
+Rust: Resources. Judith Bellmann-Strobl: Resources. Friedemann 
+Paul: Resources. Robert K. Naviaux: Conceptualization, Methodology, 
+Supervision. Zaiga Nora-Krukle: Resources. Franziska Sotzny: Re­
+sources. Carmen Scheibenbogen: Resources. Bhupesh K. Prusty: 
+Conceptualization, Funding acquisition, Methodology, Supervision, 
+Visualization, Writing – original draft, Writing – review & editing.
+Lead contact
+Further information and requests for resources and reagents should 
+be directed to Bhupesh K Prusty (bhupesh.prusty@rsu.lv).
+Ethics approval and consent to participate
+The study was approved by the Ethics Committee of Charit´e Uni­
+versit¨atsmedizin Berlin (EA2/067/20; EA2_066_22; EA4_174_22) in 
+accordance with the 1964 Declaration of Helsinki and its subsequent 
+amendments, as well as by the Medizinische Ethikkommission of JMU, 
+Würzburg (83/23). All donors gave informed consent.
+Materials availability
+This study did not generate new, unique reagents.
+Data and code availability
+The mass spectrometry proteomics data for the serum immuno­
+globulin proteome study have been deposited in the ProteomeXchange 
+Consortium via the PRIDE partner repository with the dataset identifier 
+PXD065439. The raw experimental data are submitted to the Mendley 
+database (doi: 10.17632/ph4mbrh26h.1).
+Any additional information required to reanalyze the data reported 
+in this paper is available from the lead contact upon request.
+Funding
+This work was supported by grants from ME Research UK, with the 
+financial support of the Gordon Parish Charitable Trust (to BKP), the 
+Amar Foundation, USA (to BKP), and the Bundesministerium für Bil­
+dung und Forschung (BMBF) (grant number 01EJ2204E) (to BKP). ZL 
+was supported by a fellowship from Bundesverband für ME/CFS - Fati­
+gatio e.V.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgement
+We thank the Core Unit for Confocal Microscopy and Flow 
+Cytometry-Based Cell Sorting at the IZKF Würzburg for their support of 
+this study. We also thank Vera Kozjak-Pavlovic (Biocenter, University of 
+Würzburg) for sharing a custom macro for mitochondrial analysis. We 
+appreciate AccuraScience, USA, for their assistance with mass spec­
+trometry data analysis and Dr. Archana Prusty for her help in estab­
+lishing the in-house IgG purification pipeline.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.bbih.2026.101187.
+References
+Bertinat, R., et al., 2022. Decreased NO production in endothelial cells exposed to plasma 
+from ME/CFS patients. Vascul Pharmacol 143, 106953.
+Bhatti, J.S., Bhatti, G.K., Reddy, P.H., 2017. Mitochondrial dysfunction and oxidative 
+stress in metabolic disorders - a step towards mitochondria based therapeutic 
+strategies. Biochim. Biophys. Acta Mol. Basis Dis. 1863, 1066–1077.
+Brown, A., Jason, L.A., 2020. Meta-analysis investigating post-exertional malaise 
+between patients and controls. J. Health Psychol. 25, 2053–2071.
+Bynke, A., et al., 2020. Autoantibodies to beta-adrenergic and muscarinic cholinergic 
+receptors in Myalgic Encephalomyelitis (ME) patients - a validation study in plasma 
+and cerebrospinal fluid from two Swedish cohorts. Brain Behav Immun Health 7, 
+100107.
+Chen, H.-J., et al., 2024. Transfer of IgG from long COVID patients induces 
+symptomology in mice. bioRxiv 2024.2005.2030, 596590.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+16 
+
+Chowdhury, S.R., et al., 2017. Chlamydia preserves the mitochondrial network necessary 
+for replication via microRNA-dependent inhibition of fission. J. Cell Biol. 216, 
+1071–1089.
+Cox, J., Mann, M., 2008. MaxQuant enables high peptide identification rates, 
+individualized p.p.b.-range mass accuracies and proteome-wide protein 
+quantification. Nat. Biotechnol. 26, 1367–1372.
+Cox, J., et al., 2014. Accurate proteome-wide label-free quantification by delayed 
+normalization and maximal peptide ratio extraction, termed MaxLFQ. Mol. Cell. 
+Proteomics 13, 2513–2526.
+Cvejic, E., Birch, R.C., Vollmer-Conna, U., 2016. Cognitive dysfunction in chronic fatigue 
+syndrome: a review of recent evidence. Curr. Rheumatol. Rep. 18, 24.
+Davis, H.E., McCorkell, L., Vogel, J.M., Topol, E.J., 2023. Long COVID: major findings, 
+mechanisms and recommendations. Nat. Rev. Microbiol. 21, 133–146.
+Donat, C., Thanei, S., Trendelenburg, M., 2019. Binding of von Willebrand Factor to 
+Complement C1q Decreases the Phagocytosis of Cholesterol Crystals and Subsequent 
+IL-1 Secretion in Macrophages. Front. Immunol. 10, 2712.
+Esfandyarpour, R., Kashi, A., Nemat-Gorgani, M., Wilhelmy, J., Davis, R.W., 2019. 
+A nanoelectronics-blood-based diagnostic biomarker for myalgic encephalomyelitis/ 
+chronic fatigue syndrome (ME/CFS). Proceedings of the National Academy of 
+Sciences of the United States of America 116, 10250–10257.
+Federici, A.B., 2011. The von Willebrand factor from basic mechanisms to clinical 
+practice. Blood Transfus 9 (Suppl. 2), s1–s2.
+Fluge, O., et al., 2016. Metabolic profiling indicates impaired pyruvate dehydrogenase 
+function in myalgic encephalopathy/chronic fatigue syndrome. JCI Insight 1, 
+e89376.
+Germain, A., Levine, S.M., Hanson, M.R., 2021. In-Depth analysis of the plasma proteome 
+in ME/CFS exposes disrupted ephrin-eph and immune System signaling. Proteomes 
+9.
+Geyer, P.E., Holdt, L.M., Teupser, D., Mann, M., 2017. Revisiting biomarker discovery by 
+plasma proteomics. Mol. Syst. Biol. 13, 942.
+Gulve, N., et al., 2016. Anti-herpesviral effects of a novel broad range anti-microbial 
+quaternary ammonium silane, K21. Antivir. Res. 131, 166–173.
+Haffke, M., et al., 2022. Endothelial dysfunction and altered endothelial biomarkers in 
+patients with post-COVID-19 syndrome and chronic fatigue syndrome (ME/CFS). 
+J. Transl. Med. 20, 138.
+Hartwig, J., et al., 2020. IgG stimulated β2 adrenergic receptor activation is attenuated in 
+patients with ME/CFS. Brain, Behavior, & Immunity - Health 3, 100047.
+He, J., Cheng, X., Fang, B., Shan, S., Li, Q., 2024. Mechanical stiffness promotes skin 
+fibrosis via Piezo1-Wnt2/Wnt11-CCL24 positive feedback loop. Cell Death Dis. 15, 
+84.
+Hennig, T., et al., 2022. Selective inhibition of miRNA processing by a herpesvirus- 
+encoded miRNA. Nature 605, 539–544.
+Herrera, J., Henke, C.A., Bitterman, P.B., 2018. Extracellular matrix as a driver of 
+progressive fibrosis. J. Clin. Investig. 128, 45–53.
+Hsieh, C.M., et al., 2000. Striated muscle preferentially expressed genes alpha and beta 
+are two serine/threonine protein kinases derived from the same gene as the aortic 
+preferentially expressed gene-1. J. Biol. Chem. 275, 36966–36973.
+Hu, Y., et al., 2012. K-ras(G12V) transformation leads to mitochondrial dysfunction and 
+a metabolic switch from oxidative phosphorylation to glycolysis. Cell Res. 22, 
+399–412.
+Hughes, C.S., et al., 2019. Single-pot, solid-phase-enhanced sample preparation for 
+proteomics experiments. Nat. Protoc. 14, 68–85.
+Kadaja, L., et al., 2004. IgG from patients with liver diseases inhibit mitochondrial 
+respiration in permeabilized oxidative muscle cells: impaired function of 
+intracellular energetic units? Mol. Cell. Biochem. 256–257, 291–303.
+Klein, R., Berg, P.A., 1990. Demonstration of "naturally occurring mitochondrial 
+antibodies" in family members of patients with primary biliary cirrhosis. Hepatology 
+12, 335–341.
+Lawson, N., Hsieh, C.H., March, D., Wang, X., 2016. Elevated energy production in 
+chronic fatigue syndrome patients. J. Nat. Sci. 2.
+Liu, Z., et al., 2023. Increased circulating fibronectin, depletion of natural IgM and 
+heightened EBV, HSV-1 reactivation in ME/CFS and long COVID. medRxiv.
+Loebel, M., et al., 2016. Antibodies to beta adrenergic and muscarinic cholinergic 
+receptors in patients with Chronic Fatigue Syndrome. Brain Behav. Immun. 52, 
+32–39.
+Luo, S., et al., 2021. SPEG binds with desmin and its deficiency causes defects in triad 
+and focal adhesion proteins. Hum. Mol. Genet. 29, 3882–3891.
+Mandarano, A.H., et al., 2020. Myalgic encephalomyelitis/chronic fatigue syndrome 
+patients exhibit altered T cell metabolism and cytokine associations. J. Clin. Investig. 
+130, 1491–1505.
+Marchi, S., Guilbaud, E., Tait, S.W.G., Yamazaki, T., Galluzzi, L., 2023. Mitochondrial 
+control of inflammation. Nat. Rev. Immunol. 23, 159–173.
+Martinez-Amat, A., et al., 2005. Release of alpha-actin into serum after skeletal muscle 
+damage. Br. J. Sports Med. 39, 830–834.
+Mercier-Letondal, P., Marton, C., Godet, Y., Galaine, J., 2021. Validation of a method 
+evaluating T cell metabolic potential in compliance with ICH Q2 (R1). J. Transl. 
+Med. 19, 21.
+Milivojevic, M., et al., 2020. Plasma proteomic profiling suggests an association between 
+antigen driven clonal B cell expansion and ME/CFS. PLoS One 15, e0236148.
+Myhill, S., Booth, N.E., McLaren-Howard, J., 2009. Chronic fatigue syndrome and 
+mitochondrial dysfunction. Int. J. Clin. Exp. Med. 2, 1–16.
+Ohyama, K., et al., 2015. Proteomic profiling of antigens in circulating immune 
+complexes associated with each of seven autoimmune diseases. Clin. Biochem. 48, 
+181–185.
+Prusty, B.K., Chowdhury, S.R., Gulve, N., Rudel, T., 2018. Peptidase inhibitor 15 (PI15) 
+regulates chlamydial CPAF activity. Front. Cell. Infect. Microbiol. 8, 183.
+Randi, A.M., Laffan, M.A., 2017. Von Willebrand factor and angiogenesis: basic and 
+applied issues. J Thromb Haemost 15, 13–20.
+Rappsilber, J., Ishihama, Y., Mann, M., 2003. Stop and go extraction tips for matrix- 
+assisted laser desorption/ionization, nanoelectrospray, and LC/MS sample 
+pretreatment in proteomics. Anal. Chem. 75, 663–670.
+Sandvik, M.K., et al., 2023. Endothelial dysfunction in ME/CFS patients. PLoS One 18, 
+e0280942.
+Santos Guedes de Sa, K., et al., 2024. A causal link between autoantibodies and 
+neurological symptoms in long COVID. medRxiv.
+Scheibenbogen, C., et al., 2018. Immunoadsorption to remove ss2 adrenergic receptor 
+antibodies in Chronic Fatigue Syndrome CFS/ME. PLoS One 13, e0193672.
+Schindelin, J., et al., 2012. Fiji: an open-source platform for biological-image analysis. 
+Nat. Methods 9, 676–682.
+Schreiner, P., et al., 2020. Human Herpesvirus-6 reactivation, mitochondrial 
+fragmentation, and the coordination of antiviral and metabolic phenotypes in 
+Myalgic Encephalomyelitis/Chronic fatigue syndrome. Immunohorizons 4, 201–215.
+Shankar, V., et al., 2025. Oxidative stress is a shared characteristic of ME/CFS and long 
+COVID. Proceedings of the National Academy of Sciences of the United States of 
+America 122, e2426564122.
+Sorokin, L., 2010. The impact of the extracellular matrix on inflammation. Nat. Rev. 
+Immunol. 10, 712–723.
+Sotzny, F., et al., 2018. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome - Evidence 
+for an autoimmune disease. Autoimmun. Rev. 17, 601–609.
+Sotzny, F., et al., 2022. Dysregulated autoantibodies targeting vaso- and 
+immunoregulatory receptors in Post COVID Syndrome correlate with symptom 
+severity. Front. Immunol. 13, 981532.
+van Campen, C., Rowe, P.C., Visser, F.C., 2023. Worsening symptoms is associated with 
+larger cerebral blood flow abnormalities during tilt-testing in Myalgic 
+Encephalomyelitis/Chronic fatigue syndrome (ME/CFS). Medicina (Kaunas) 59.
+Vogelpoel, L.T., et al., 2014. Fc gamma receptor-TLR cross-talk elicits pro-inflammatory 
+cytokine production by human M2 macrophages. Nat. Commun. 5, 5444.
+Wang, N., Wang, X., Lan, B., Gao, Y., Cai, Y., 2025. DRP1, fission and apoptosis. Cell 
+Death Discov. 11, 150.
+Ward, B., et al., 2024. Deep plasma proteomics with data-independent acquisition: 
+clinical Study protocol optimization with a COVID-19 cohort. J. Proteome Res. 23, 
+3806–3822.
+Yepez, V.A., et al., 2018. OCR-Stats: robust estimation and statistical testing of 
+mitochondrial respiration activities using Seahorse XF Analyzer. PLoS One 13, 
+e0199938.
+Zhang, H., et al., 2024. The extracellular matrix integrates mitochondrial homeostasis. 
+Cell 187, 4289–4304 e4226.
+Zhang, L., Zhou, J., Kong, W., 2025. Extracellular matrix in vascular homeostasis and 
+disease. Nat. Rev. Cardiol. 22, 333–353.
+Zinn, M.A., Jason, L.A., 2021. Cortical autonomic network connectivity predicts 
+symptoms in myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS). Int. J. 
+Psychophysiol. 170, 89–101.
+Z. Liu et al.                                                                                                                                                                                                                                       
+Brain, Behavior, & Immunity - Health 52 (2026) 101187 
+17 

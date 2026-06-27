@@ -1,0 +1,994 @@
+Academic Editor: Marco Fiore
+Received: 27 March 2026
+Revised: 21 May 2026
+Accepted: 27 May 2026
+Published: 29 May 2026
+Copyright: © 2026 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license.
+Article
+Raman Spectroscopy Combined with Machine Learning Reveals
+Myalgic Encephalomyelitis–Associated Biomolecular Signatures
+at Rest and After Standardized Stress
+Maryam Heidarifard 1,2,3,†
+, Atefeh Moezzi 4,5,6,7,†
+, Frédérick Dallaire 2,8, Katherine Ember 2,8,
+Wesam Elremaly 5,6,7
+, Iurie Caraus 5,6,7, Anita Franco 5,6,7
+, Frédéric Leblond 2,8, Alain Moreau 4,5,6,7,9,‡
+and Mathieu Dehaes 1,3,10,*,‡
+1
+Azrieli Research Center, CHU Sainte-Justine, Montreal, QC H3T 1C5, Canada
+2
+Research Center, CHUM, Montreal, QC H2X 0A9, Canada
+3
+Institute of Biomedical Engineering, Université de Montréal, Montreal, QC H3T 1J4, Canada
+4
+Department of Biochemistry and Molecular Medicine, Faculty of Medicine, Université de Montréal,
+Montreal, QC H3T 1J4, Canada
+5
+Viscogliosi Laboratory in Molecular Genetics of Musculoskeletal Diseases, Azrieli Research Center,
+CHU Sainte-Justine, Montreal, QC H3T 1C5, Canada
+6
+Open Medicine Foundation ME Collaborative Center, CHU Sainte-Justine/Université de Montréal,
+Montreal, QC H3T 1C5, Canada
+7
+ICanCME Research Network, Azrieli Research Center, CHU Sainte-Justine, Montreal, QC H3T 1C5, Canada
+8
+Department of Engineering Physics, Polytechnique Montreal, Montreal, QC H3T 0A3, Canada
+9
+Department of Stomatology, Faculty of Dentistry, Université de Montréal, Montreal, QC H3T 1J4, Canada
+10
+Department of Radiology, Radio-Oncology and Nuclear Medicine, Université de Montréal,
+Montreal, QC H3T 1J4, Canada
+*
+Correspondence: mathieu.dehaes@umontreal.ca
+†
+These authors contributed equally to this work.
+‡
+These authors also contributed equally as senior authors.
+Abstract
+Myalgic encephalomyelitis (ME) is characterized by profound fatigue, post-exertional
+malaise (PEM), and cognitive dysfunction. Despite its clinical significance, the pathophysi-
+ology of PEM and disease heterogeneity remain unclear, and no validated biomarkers are
+available for rapid diagnosis or monitoring. We aimed to develop a screening approach
+combining label-free Raman spectroscopy (RS) and machine learning modeling (ML) to
+detect biomolecular changes in blood plasma and differentiate patients with ME from
+sedentary healthy controls. Blood plasma was collected from 115 patients with ME and
+45 controls at rest (T0) and 90 min after a standardized, non-invasive stress test designed
+to induce PEM. Plasma samples were analyzed by RS, and ML models were developed
+independently at each time point to differentiate patients with ME and controls. The
+RS-ML models identified spectral features consistent with contributions from proteins,
+lipids, and low-molecular-weight metabolites. At T0 and T90, the area under the receiver
+operating characteristic curve, accuracy, specificity and sensitivity were 0.85 and 0.83,
+79% and 84%, 82% and 90%, and 73% and 69%, respectively. RS-ML provides a rapid,
+low-cost approach to detect ME-associated biomolecular signatures in plasma and capture
+biochemical alterations associated with standardized stress.
+Keywords: myalgic encephalomyelitis; post-exertional malaise; label-free Raman spectroscopy;
+machine learning modeling; blood plasma; biomarkers
+Int. J. Mol. Sci. 2026, 27, 4937
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+2 of 15
+1. Introduction
+Myalgic encephalomyelitis (ME), also referred to as chronic fatigue syndrome, is a
+complex, multisystem, chronic illness of unknown etiology that affects approximately
+600,000 Canadians and up to 2.5 million Americans [1,2], with a global prevalence es-
+timated at 0.4–2.5%. Clinically, ME is characterized by unexplained fatigue persisting
+for at least six months, sleep disturbances, orthostatic intolerance, cognitive impairment,
+and post-exertional malaise (PEM) [3,4]. PEM is the cardinal feature of the disease and is
+characterized by symptom exacerbation following minimal physical or mental exertion;
+however, its underlying molecular mechanisms remain poorly understood [5]. Given the
+highly dynamic and heterogeneous nature of ME, clinical characterization alone may be
+insufficient to fully elucidate disease-related molecular processes [6]. Accordingly, mon-
+itoring disease progression and evaluating temporal biomolecular changes in response
+to PEM are clinically relevant. A rapid, non-invasive, and label-free approach for identi-
+fying biomolecular changes could provide valuable insights for early diagnosis and the
+development of novel therapeutic strategies.
+The pathophysiology of PEM remains poorly understood; however, metabolic distur-
+bances and immune dysregulation have been described following exercise [7]. Although
+a majority of patients with ME report a prodromal illness consistent with infection, no
+single infectious agent has been consistently implicated [8]. These prodromal infections
+are frequently linked to viral triggers such as Epstein–Barr virus [9], beta coronaviruses
+associated with severe acute and Middle East respiratory syndromes [10,11], and COVID-19
+(often referred to as “Long-COVID”) [7,12]. The lack of convergence in identifying a specific
+causative agent suggests that shared host responses to multiple microbial triggers may
+play an important role in disease pathogenesis, and that ME and related post-infectious
+syndromes may represent a broader clinical category.
+Raman spectroscopy (RS) is a light-based, label-free technique used to assess the
+biomolecular composition (e.g., proteins, amino acids, nucleic acids, and lipids) of a sam-
+ple [13]. RS is a non-destructive method based on the excitation of molecules by light
+illumination and the determination of their molecular vibrational modes via detection of
+scattered light [14,15]. RS is a rapid and relatively low-cost technique, making it suitable
+for potential clinical implementation. Previous studies have utilized single-cell Raman
+microspectroscopy to differentiate patients with ME from controls in peripheral blood
+mononuclear cells [16–18]. However, this technique is costly, low-speed, and unsuitable for
+large-scale testing required for broad clinical implementation.
+Previous studies have combined RS with machine learning (ML) modeling to enhance
+ME diagnosis, achieving accuracies up to 91% [16–21]. To our knowledge, RS-ML has not
+previously been applied to classify patients with ME and healthy controls in response to a
+standardized post-exertional stress test and identify potential disease-specific biomarkers
+associated with PEM. In this study, we developed a RS-ML screening tool to identify
+biomolecular changes in blood plasma at rest and in response to PEM in patients with ME,
+and to differentiate them from controls. We hypothesized that this methodology could
+capture biomolecular perturbations associated with chronic inflammation and PEM in ME,
+thereby supporting the development of targeted therapeutic strategies.
+2. Results
+2.1. Clinical and Demographic Variables of Study Participants
+The clinical and demographic characteristics of study participants are summarized
+in Table 1. The study cohort included 115 patients with ME (100 females/15 males) and
+45 sedentary healthy controls (28 females/17 males) who were recruited prospectively and
+consecutively prior to the COVID-19 pandemic. Age and sex differed between patients
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+3 of 15
+with ME and healthy controls (HC). Mental and physical scores from the short-form health
+survey (SF-36) questionnaires were lower in patients with ME compared to HC. All domains
+from the Multidimensional fatigue inventory-20 (MFI-20) were higher in patients with ME
+compared to HC. Compared to HC, patients with ME showed higher DePaul symptom
+questionnaire (DSQ) scores. The median illness duration among patients with ME was
+seven years (IQR: 3–16), indicating a chronically affected population.
+Table 1. Clinical and demographic characteristics of patients with myalgic encephalomyelitis (ME)
+and healthy controls (HC).
+Characteristics
+ME
+(N = 115)
+HC
+(N = 45)
+p-Value
+Age a, median (IQR)
+45 (39–58)
+42 (34–51)
+0.0205
+Sex, N (%)
+Male
+15 (13)
+17 (38)
+0.0004
+Female
+100 (87)
+28 (62)
+Illness duration a,
+median (IQR), (years)
+7 (3–16)
+N/A
+BMI b (kg/m2), median (IQR)
+25 (22–29)
+27 (23–30)
+0.1237
+36-item short-form health survey
+(SF-36) scores, median (IQR)
+Mental score
+45 (27–55)
+89 (86–95)
+<0.0001
+Physical score
+32 (24–39)
+92 (86–97)
+<0.0001
+Multidimensional fatigue
+inventory-20 (MFI-20) scores,
+median (IQR)
+General fatigue
+17 (15–20)
+6 (5–9)
+<0.0001
+Physical fatigue
+16 (14–19)
+6 (4–9)
+<0.0001
+Reduced activity c
+17 (14–18)
+5 (4–8)
+<0.0001
+Reduced motivation
+10 (8–19)
+5 (4–8)
+<0.0001
+Mental fatigue
+16 (13–18)
+7 (5–10)
+<0.0001
+DePaul symptom questionnaire
+(DSQ) scores, median (IQR)
+Autonomic, neuroendocrine and
+immune dysfunction score c
+40 (30–53)
+6 (3–12)
+<0.0001
+Cognitive dysfunction score c
+54 (39–68)
+8 (3–16)
+<0.0001
+PEM score c
+72 (61–82)
+5 (4–12)
+<0.0001
+Sleep disturbance score c
+48 (38–63)
+13 (8–21)
+<0.0001
+Sex, general fatigue, mental and physical fatigue scores, and reduced motivation were available for all patients with
+ME. Sample sizes were incomplete for the following variables: a age and illness duration (N = 113), b BMI (N = 110),
+c autonomic, neuroendocrine, and immune dysfunction, cognitive dysfunction, PEM, and sleep disturbance
+(N = 114). All variables were available for HC. Abbreviations: BMI, body mass index; IQR, interquartile range
+(25th–75th percentile); PEM, post-exertional malaise. N/A indicates not applicable.
+2.2. RS-ML Modeling Performance and Extracted Spectral Features
+Two RS-ML models were developed to classify patients with ME and HC at baseline
+(T0) and at 90 min following the post-exertional stress test (T90). Biomolecular assignments
+of spectral features extracted by these models were made based on literature values [22–35]
+and summarized in Table 2 with peak centers and ranges. The performance of these two
+models is summarized in Table 3: the model at T0 achieved an area under the receiver
+operating characteristic curve (AUC) value of 0.85, an accuracy of 79%, a specificity of 82%
+and a sensitivity of 73%, while the model at T90 demonstrated an AUC value of 0.83, an
+accuracy of 84%, with a specificity of 90% and a sensitivity of 69%.
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+4 of 15
+Table 2. Raman peaks, centers, ranges, and corresponding biomolecular assignments for spectral
+features extracted by the models classifying patients with myalgic encephalomyelitis (ME) and
+healthy controls (HC) at baseline (T0) and at 90 min following the post-exertional stress test (T90).
+Extracted Peak
+(cm−1)
+Peak Center
+(cm−1)
+Peak Range
+(cm−1)
+Biomolecular Assignments
+Patients with ME vs. HC at T0
+829
+827
+821–833
+Protein (tyrosine), lactic acid, citrate
+851
+851
+843–859
+Glycerol, protein (tyrosine, alanine, leucine, lysine, proline)
+1000, 1009
+1005
+998–1012
+Protein (phenylalanine, tryptophan) and urea
+1124
+1129
+1122–1136
+Fatty acid (C–C), lipid (C=C), protein (C–N, serine), glucose
+1422
+1416
+1408–1423
+Lipid [CH2]
+1640
+1654
+1633–1677
+Lipid (C=C), protein (amide I)
+Patients with ME vs. HC at T90
+855
+851
+843–859
+Glycerol, protein (tyrosine, alanine, leucine, lysine, proline)
+1009
+1005
+998–1012
+Protein (phenylalanine, tryptophan) and urea
+1133
+1129
+1122–1136
+Fatty acid (C–C), lipid (C=C), protein (C–N, serine), glucose
+1212
+1207
+1201–1213
+Protein (tyrosine)
+1339
+1339
+1331–1347
+Protein (C–H, aspartate, histidine, proline, valine, tryptophan)
+1409, 1421
+1416
+1408–1423
+Lipid [CH2]
+1588
+1593
+1582–1604
+Protein (amide II)
+1621
+1625
+1617–1632
+Protein (tyrosine, tryptophan, phenylalanine)
+1636
+1654
+1633–1677
+Lipid (C=C), protein (amide I)
+Notes: Amino acids listed alongside the proteins may either present freely in the blood plasma or be bound within
+protein structures. Assignments were made from literature values [22–35].
+Table 3. Performance of machine learning models classifying patients with myalgic encephalomyelitis
+(ME) and healthy controls (HC) at baseline (T0) and at 90 min following the post-exertional stress
+test (T90).
+Classification Models
+Accuracy (%)
+Specificity (%)
+Sensitivity (%)
+AUC
+Patients with ME vs. HC at T0
+79
+82
+73
+0.85
+Patients with ME vs. HC at T90
+84
+90
+69
+0.83
+Notes: Model performance was evaluated using accuracy, specificity, sensitivity, and the area under the receiver
+operating characteristic curve (AUC).
+For each RS-ML model, mean Raman spectra are presented with the extracted key
+features highlighted by vertical dotted lines (Figure 1a,b). The distribution of the intensity
+values of the Raman peaks extracted by each model are illustrated in Figure 1c,d. Confusion
+matrices are shown in Figure 2, with the corresponding AUC value, along with sensitivity
+and specificity.
+At T0, Raman features were localized at 829, 851, 1000, 1009, 1124, 1422, and 1640 cm−1.
+Compared with HC, Raman signal intensities corresponding to proteins, lactic acid, and
+citrate (829 cm−1), as well as fatty acid, lipid trans-conformation (C=C), proteins, and
+glucose (1124 cm−1) were increased in patients with ME, whereas the peaks at 1009 (protein
+[phenylalanine, tryptophan] and urea) and 1422 cm−1 (lipids in the form of CH2) were
+reduced. In addition, an increased signal in the peak at 1124 cm−1 was observed in patients
+with ME, reflecting contributions from both proteins, lipids, fatty acids, and/or glucose.
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+5 of 15
+Figure 1. Classification of patients with myalgic encephalomyelitis (ME) and healthy controls (HC)
+at rest (T0) and 90 min following the post-exertional stress test (T90). Mean Raman spectra with
+extracted features highlighted by vertical lines for patients with ME (N = 115; orange) and healthy
+controls (N = 45; gray) at T0 (a) and at T90 (b). Box-and-whisker plots showing the relative intensities
+of Raman features extracted by the machine learning model at T0 (c) and T90 (d). * p < 0.05, ** p < 0.01,
+*** p < 0.001.
+Figure 2. Classification of patients with myalgic encephalomyelitis (ME) and healthy controls (HC)
+at rest (T0) and at 90 min following the post-exertional stress test (T90). Confusion matrix and area
+under the receiver operating characteristic curve (AUC) at T0 (a,b) and T90 (c,d), respectively. The
+red dot corresponds to the classification threshold used to maximize the difference between the true
+and false positive rates (Youden’s J Statistic).
+The spectral features selected by the model at T90 differed partially from those iden-
+tified at baseline and were centered at 855, 1009, 1133, 1212, 1339, 1409, 1421, 1588, 1621,
+and 1636 cm−1. Compared with HC, patients with ME showed increased Raman signal
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+6 of 15
+intensities at 1133 cm−1 (fatty acid, lipid trans-conformation [C=C], proteins, and glucose)
+and 1588 cm−1 (proteins [amide II]) whereas the phenylalanine/tryptophan (1009 cm−1)
+and CH2-lipids (1409 and 1421 cm−1) peaks were reduced.
+3. Discussion
+ME remains a diagnostically challenging condition, largely due to the absence of
+rapid, objective, and scalable biomarkers capable of capturing its complex and dynamic
+biology. Current diagnostic approaches rely on symptom-based criteria, which limits early
+detection, patient stratification, and clinical monitoring. There is therefore a critical need
+for technologies that are not only biologically informative but also label-free, cost-effective,
+and compatible with real-world clinical implementation.
+In this study, we demonstrate that a RS-ML approach applied directly to plasma
+samples can discriminate patients with ME from healthy controls with consistent perfor-
+mance at rest and following a standardized stress challenge. The RS-ML models iden-
+tified reproducible spectral patterns reflecting contributions from proteins, lipids, and
+low-molecular-weight metabolites, indicating that this label-free approach can capture
+systemic biochemical alterations associated with ME using very low volumes of plasma.
+Importantly, these Raman-derived features represent integrated biochemical signatures
+rather than direct measurements of individual metabolites, consistent with the composite
+nature of Raman signals in complex biofluids.
+A key contribution of this work lies in the integration of a controlled stress paradigm
+designed to induce PEM, a defining feature of ME. While most biomarker studies focus
+on resting conditions, this approach enables the simultaneous interrogation of baseline
+biochemical alterations and dynamic responses to physiological stress at the earliest stage
+possible. Modeling performance at T90 allowed to reduce the number of false positive
+by half compared with T0. Also, the identification of spectral features that are preserved
+across baseline and post-exertional conditions suggests the presence of stable, trait-like
+abnormalities in ME. In contrast, the modulation of specific features following exertion,
+including the protein-related Raman peaks at 1207, 1339, 1593, and 1625 cm−1, supports the
+existence of stress-sensitive, state-dependent biochemical responses. In addition, the peak
+at 827 cm−1 originally extracted at rest was not selected by the model at T90. This dual
+profiling framework provides a functional dimension to biomarker development and may
+enhance disease specificity, as immediate changes leading to PEM represent a clinically
+distinctive trait of ME.
+The 1005 cm−1 Raman band is commonly associated with phenylalanine ring breathing
+modes and may also include contributions from other plasma constituents such as urea
+and protein-associated vibrations. The decreased intensity of this band in patients with
+ME at both time points suggests alterations in protein-related or low-molecular-weight
+metabolite signatures. However, given the composite nature of Raman spectral features in
+plasma, these signals should be interpreted as reflecting integrated biochemical changes
+rather than direct quantification of specific metabolites. Other selected features at 1129,
+1207, 1339, and 1416 cm−1 fall within spectral regions typically associated with C–C, C–N,
+and CH2 vibrational modes, which may reflect contributions from lipids, amino acids, and
+protein backbones. Similarly, the bands at 1593 and 1625 cm−1 are located within regions
+commonly attributed to aromatic amino acids and amide-related vibrations, suggesting
+potential alterations in protein conformation or composition. These assignments remain
+putative due to the overlapping contributions of multiple biomolecular species in plasma.
+Notably, while some spectral regions were also selected by the model at baseline, their
+discriminatory contribution differed between time points. These features (1005, 1129 and
+1416 cm−1) reached stronger statistical significance at T90, indicating that their relevance for
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+7 of 15
+group separation may be enhanced under post-exertional conditions. These observations
+support the notion that standardized stress may modulate disease-associated biochemical
+signatures detectable in plasma.
+The spectral signatures identified in this study are consistent with prior evidence of
+metabolic dysregulation in ME. Protein-related Raman features associated with amino acid
+residues—including phenylalanine, tryptophan, tyrosine, alanine, leucine, lysine, proline,
+and serine—align with previous reports of altered amino acid metabolism and its role in
+mitochondrial function, immune regulation, and energy homeostasis [36]. Metabolomic
+studies have consistently reported disturbances in amino acid pathways in ME, including
+alterations linked to impaired energy production and lipid metabolism [3,37,38]. In addi-
+tion, changes in circulating amino acids involved in neurotransmission may contribute to
+cognitive dysfunction and “brain fog” frequently reported by patients [38,39].
+The more pronounced difference between groups at the 1005 cm−1 Raman peak
+following exertion further supports the involvement of aromatic amino acid metabolism in
+ME [22,23,25]. In particular, dysregulation of tryptophan metabolism and the kynurenine
+pathway have been implicated in neuroinflammation and cognitive impairment [17,36,40].
+These findings suggest that physiological stress may exacerbate underlying metabolic
+vulnerabilities, providing a biochemical basis for PEM and related symptoms [41]. This
+peak is also assigned to urea, which was lower in patients with ME compared with controls
+at T90, potentially indicating exertion-associated alterations in nitrogen metabolism in ME.
+Previous studies have shown that dysregulation of the urea cycle, protein synthesis, and
+xenobiotic metabolism in ME is associated with persistent cellular stress and fatigue [42,43].
+Alterations in protein structure and composition are also suggested by the persistent
+extraction of Raman features at 851, 1005, 1129, and 1640 cm−1 across both time points.
+These signals, associated with protein backbone and amino acid side-chain vibrations, likely
+reflect global changes in protein organization rather than isolated metabolite shifts. Their
+persistence at T90 suggests that exertion may further modulate protein-related biochemical
+states associated with fatigue and PEM [44].
+Lipid metabolism plays a critical role in ME through its involvement in energy pro-
+duction, immune regulation, and mitochondrial function [45]. In the present study, Raman
+signal intensity in the 1129 cm−1 region (fatty acid, unsaturated fat [C=C], and glucose) was
+increased in patients with ME compared with controls at rest and remained elevated follow-
+ing exertional stress. In contrast, saturated lipids (CH2 form, 1416 cm−1) were decreased
+in patients with ME compared with controls at both time points. Consistent with these
+findings, previous studies have reported dysregulated fatty acid metabolism in ME, which
+correlates with pain severity and cognitive dysfunction [46]. Such dysregulation has also
+been linked to mitochondrial and peroxisomal impairments, which can lead to triglyceride
+accumulation due to reduced peroxisomal activity [47]. Patients with ME also frequently
+exhibit impaired glucose regulation, presenting as hypoglycemia due to adrenal dysfunc-
+tion or as hyperglycemia and insulin resistance, both of which contribute to disrupted
+energy homeostasis [48]. Altered glucose metabolism and elevated lactate levels are key
+metabolic features of ME and have been implicated in muscle pain, fatigue, and cognitive
+impairment [49]. These abnormalities may be driven in part by mitochondrial dysfunction,
+which forces cells to rely on less efficient modes of energy production [50]. Additionally,
+dysregulated astrocyte-mediated energy metabolism may contribute to glycogen depletion
+in brain and muscle, thereby contributing to fatigue and unrefreshing sleep [51,52].
+Citric acid (citrate), an important intermediate in the tricarboxylic acid (TCA) cycle,
+provides additional insight into mitochondrial energy metabolism in ME [53]. Previ-
+ous studies have reported elevated citrate levels after exercise in ME, suggesting dis-
+ruption of the TCA cycle, impaired mitochondrial energy metabolism, and altered lipid
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+8 of 15
+metabolism [43,54]. Within this context, the Raman feature extracted at 827 cm−1 (tyrosine,
+lactic acid and citrate) along with contributions from low-molecular-weight metabolites
+may reflect broader disturbances in energy metabolism, although Raman spectroscopy
+does not allow direct metabolite quantification.
+The Raman peak at 1416 cm−1, assigned to lipid-related vibrations, was extracted
+by the RS-ML models at both time points. The persistence of this signal suggests that
+alterations in lipid metabolism in ME may represent a stable component of the disease
+phenotype rather than a transient response to exertional stress. Consistent with this inter-
+pretation, previous studies have reported lipid dysregulation and chronic energetic strain in
+patients with ME, with alterations in lipid classes linked to disease pathophysiology [55,56].
+In addition, sustained lipid abnormalities may reflect ongoing oxidative stress, which has
+been implicated in mitochondrial dysfunction and inflammation in ME [57].
+Previous studies have demonstrated the potential of Raman spectroscopy in detect-
+ing ME in peripheral blood mononuclear cells outside of point-of-care settings [16–18].
+However, these approaches have not yet met the requirements for rapid and affordable
+point-of-care analysis. Several limitations contribute to this gap, including reliance on
+microscope-based Raman systems and sample preparation steps that are incompatible
+with clinical workflows. In approaches involving dried biofluid samples, sample drying is
+time-consuming, with a 2 µL droplet requiring up to 30–45 min to dry, and heterogeneous
+drying can introduce intra-sample variability when the laser interrogates only a small
+region of the sample. Additionally, the use of high-magnification microscope objectives
+increases sensitivity to focal distance and sample positioning, potentially leading to vari-
+ability in signal intensity due to instrument-dependent factors [16,17]. These limitations
+pose significant barriers to the clinical applicability and point-of-care translation of these
+Raman-based diagnostic tools.
+The baseline classification capability is particularly relevant for clinical implemen-
+tation, as it supports potential applications in patient triaging, prognosis, and treatment
+planning in a rapid (<3 min) and reagent-free manner. Clinically, the combined analysis of
+baseline and post-exertional states may provide complementary information on both un-
+derlying disease biology and physiological responses to stress. Given that ME is associated
+with an estimated annual economic burden of up to $51 billion in the United States [43], the
+development of scalable and accessible diagnostic tools remains a priority. However, for
+screening applications, particularly in low-prevalence populations, high specificity will be
+required. Further validation in larger and more diverse cohorts will therefore be necessary
+to improve model performance and to assess disease specificity relative to related condi-
+tions such as fibromyalgia or multiple sclerosis. The RS system used in this study requires
+only a low volume of plasma and is portable and user-friendly. It can be placed on a small
+cart within an enclosure, allowing easy transport to hospitals, clinics, or pharmacies. The
+overall cost of the system is lower than that of commercially available Raman microscopes.
+Moreover, the results presented here open the door for the future integration of RS-ML
+into a rapid, point-of-care, plasma-based screening and monitoring tool for ME, including
+potential assessment of PEM severity in housebound or bedbound patients, and extension
+to related conditions such as fibromyalgia and Long-COVID syndromes.
+While our RS-ML approach demonstrates promising potential as a rapid and scalable
+tool for ME classification, this pilot study has several limitations. There was an imbalance
+between the number of males and females, which is due to the higher prevalence of
+ME in women and the consecutive nature of the recruitment. However, analyses were
+adjusted for sex to account for this potential confounding factor. The use of a single
+post-exertional time point at 90 min may not fully capture the temporal dynamics of
+PEM, particularly in patients exhibiting delayed or prolonged responses. Future studies
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+9 of 15
+should incorporate longitudinal sampling strategies and stratify patients according to
+PEM severity using validated instruments such as the DePaul Post-Exertional Malaise
+Questionnaire [58,59]. The control cohort size was relatively modest, which may have
+influenced model performance and generalizability; expanding the control population will
+be important to improve robustness and refine classification thresholds. Although RS-ML
+successfully differentiated patients with ME from healthy controls at baseline, external
+validation in independent cohorts is required to confirm reproducibility and to assess
+disease specificity relative to clinically overlapping conditions such as fibromyalgia or
+multiple sclerosis. This pilot study provided AUC values of 0.83–0.85 with accuracies of
+0.79–0.84, which is promising but modest for a clinical diagnostic. However, a future study
+including a larger population would potentially increase the modeling performance and
+therefore limit the number of false positive and negative cases. RS measurements from
+the same sample were acquired at a single spot, which may not represent the complete
+molecular composition of the sample. However, blood plasma lacks large elements such as
+cells which reduce homogeneity and can sediment out, as occurs in whole blood [60]. Prior
+to measurements, the plasma samples were vortexed to increase molecular motion, which
+ensured that the spectra captured molecules diffusing through the sample in different
+conformations and spatial distributions. The asymmetric nature of some Raman peaks may
+also complexify data interpretation: while 1000 and 1009 cm−1 were extracted at T0 and
+associated with the same peak (centered at 1005 cm−1), only data at 1009 cm−1 significantly
+differed between groups. Finally, while Raman spectroscopy enables rapid, label-free
+profiling of plasma, its spectral features represent composite biochemical signatures and
+do not provide direct quantification of individual metabolites, which should be considered
+when interpreting mechanistic associations.
+4. Materials and Methods
+4.1. Study Design and Participants
+Patients who met the standard Canadian Consensus Criteria (CCC) for ME diagnosis
+were consecutively recruited. Clinical variables and demographics were collected through
+medical records. The study was approved by the Ethics Review Board of the Centre
+de recherche Azrieli du CHU Sainte-Justine (Montreal, QC, Canada; #4047). Written
+informed consent was obtained from all participants. Exclusion criteria for healthy controls
+included any family history of ME or related conditions such as fibromyalgia or multiple
+sclerosis [61].
+4.2. Questionnaires
+Patients with ME and controls completed three validated, self-reported standardized
+questionnaires prior to undergoing the stress test: the MFI-20, the SF-36 and the DSQ. The
+SF-36 was used to assess both physical and mental health, while the MFI-20 evaluated
+fatigue across five dimensions: general fatigue, physical fatigue, mental fatigue, reduced
+activity, and reduced motivation [62]. The total MFI-20 score (0 to 100) classified participants
+into two categories: mild to moderate (51–85) and severe (86–100) [63]. The DSQ assessed
+the core symptom profile of ME, categorizing responses across four domains: autonomic
+and neuroendocrine-immune dysfunction, cognitive dysfunction, sleep disturbances, and
+PEM [64]. Collectively, these questionnaires provided a comprehensive clinical evaluation
+of symptom burden and health-related quality of life in participants.
+4.3. Post-Exertional Stress Challenge
+To safely elicit PEM in participants, a post-exertional stress challenge was conducted
+using a therapeutic massage device (ABR therapeutic massager device, Panacis Medical
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+10 of 15
+Ltd., Ottawa, ON, Canada). This validated method is non-invasive and employs an
+inflatable cuff placed on the arm to deliver pulsatile compressions with variable amplitudes
+(0–4 psi at 0.006 Hz) [58]. The stimulation period was short (90 min) and enabled a rapid
+and immediate assessment of molecular responses to PEM.
+4.4. Sample Collection
+Blood samples from participants were collected at T0 and 90 min following the post-
+exertional stress test in EDTA-coated tubes. Plasma was separated by centrifugation at
+216× g for 10 min at room temperature. The isolated plasma was aliquoted and stored at
+−80 ◦C to prevent degradation before analysis.
+4.5. Raman Spectroscopy System, Data Acquisition and Preprocessing
+The RS system was based on a 785 nm excitation wavelength and captured inelasti-
+cally scattered light within the spectral range of 600–1800 cm−1. Light was emitted using
+a 100 mW laser (IPS, Plainsboro, NJ, USA), providing high signal-to-noise ratio (SNR)
+while avoiding sample degradation. The collected light was analyzed with a spectrom-
+eter (Wasatch, Morrisville, NC, USA) equipped with a 1024-pixel CCD camera (grating
+of 600 ± 0.5 lines/mm, spectral resolution of 8 cm−1) and optimized for high SNR with
+short exposure times. Short integration times (300–1000 ms per measurement) were used to
+enable equivalent Raman signal levels between samples. Plasma samples (100 µL) were
+placed in a 400 µL enhanced chemical resistance aluminum cuvette and positioned at
+11 mm from the laser probe to minimize noise and prevent signal contamination from the
+cuvette walls. Liquid plasma samples were used to provide high Raman spectral accuracy.
+Before data acquisition, plasma samples were thawed using a controlled procedure: plasma
+samples were transferred from dry ice to regular ice for 30 min and rested in room tempera-
+ture for another 30 min. Samples were further vortexed for 60 s to ensure molecular mixing.
+Spectral data preprocessing steps included: (1) data averaging from 20 measurements
+performed at a single spot (size at the tip 170 µm, collection area ~1 mm diameter) per
+sample, (2) cosmic-ray artifact removal, (3) baseline subtraction of the autofluorescence
+signal using the Bubble Fill algorithm [65], (4) smoothing using a Savitzky–Golay filter of
+order 3 with a window size of 11 [66], and (5) standard normal variate normalization [67].
+At each time point, 160 Raman averaged spectra were considered: 115 for patients with ME
+and 45 for HC. Codes were developed in Python 3.12.4 software.
+4.6. Features Selection and Machine Learning Modeling
+To reduce the feature space from 1200 to 26, a linear support vector machine (SVM)
+with L1 regularization was utilized. These 26 universal peaks were included in a library and
+fitted with Gaussian functions to reduce the spectrum to the full width at half maximum
+of these peaks. A statistical weight for each peak was provided by the L1-regularized
+SVM [67]. Features were ranked according to their weight. A gradient boosting model
+based on decision trees was used to classify participants based on Raman data, age and sex
+as inputs. Age and sex were included as they were previously identified as risk factors for
+ME [68]. This approach was selected for its efficiency in handling mixed data types and its
+ability to capture non-linear relationships, while minimizing overfitting through ensemble
+averaging and regularization [69]. Hyperparameters optimization was carried out using a
+grid search approach that ran over various combinations of hyperparameters including
+class weight, learning rate, number of estimators, minimum loss reduction, L1 and L2
+regularization terms, and maximum tree depth. To account for imbalanced sample sizes
+between patients with ME (N = 115) and HC (N = 45), the class weight hyperparameter
+was defined by the ratio 115/45 for the class ME while the class weight equaled 1 for HC.
+During data training, the penalty term associated with the misclassification of patients
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+11 of 15
+with ME was higher than that of HC. A five-fold cross-validation approach was used to
+assess model classification performance. The datasets were randomly partitioned into five
+equal-sized folds, with 80% of the data used for training and 20% for testing. To mitigate
+classification bias and prevent data leakage, samples from the same participant were
+included exclusively in either the training or the testing set during cross-validation. Model
+performance was evaluated using the area under the receiver operating characteristic curve,
+and results are reported for the hyperparameters configuration yielding the highest AUC,
+together with the corresponding sensitivity, specificity, and accuracy. Confusion matrices
+were generated and reported alongside the selected Raman features to facilitate model
+interpretation. Classification was performed using Python 3.12.4 (libraries Xgboost and
+Scikit Learn).
+4.7. Statistical Analyses
+Variables are reported as median and interquartile range (IQR, 25th–75th percentile)
+for non-normally distributed continuous variables. Categorical variables are expressed as
+frequencies and percentages. Student’s t-test was used to compare normally distributed
+continuous variables between groups, while the non-parametric Mann–Whitney U test was
+used for non-normally distributed continuous variables. Raman spectral features were
+compared between groups with multivariate regression analyses adjusted for age and sex.
+Sex between groups was compared using the chi-square test. A comparison at p < 0.05 was
+defined as statistically significant. Statistical analyses were performed using Python 3.12.4.
+5. Conclusions
+In summary, this study shows that a label-free RS-ML approach applied to plasma
+can identify reproducible biochemical signatures associated with ME at rest and following
+a standardized stress challenge. At rest and 90 min following the stress test, the AUC,
+accuracy, specificity and sensitivity were 0.85 and 0.83, 79% and 84%, 82% and 90%, and
+73% and 69%, respectively. The observed spectral patterns are consistent with disturbances
+in amino acid biology, lipid regulation, and energy metabolism that have previously been
+implicated in ME. By combining rapid acquisition, minimal sample preparation, and scal-
+able instrumentation, this approach represents a promising step toward the development
+of accessible tools for ME screening and monitoring. With further validation in larger and
+more diverse cohorts, RS-ML may contribute to improved patient stratification, more objec-
+tive assessment of disease activity, and a better understanding of the biological mechanisms
+underlying ME.
+Author Contributions: Conceptualization, M.H., A.M. (Atefeh Moezzi), F.L., A.M. (Alain Moreau)
+and M.D.; methodology, M.H., F.D. and A.M. (Atefeh Moezzi); formal analysis, M.H. and F.D.;
+writing—original draft preparation, M.H. and M.D.; writing—reviewing and editing, M.H., A.M.
+(Atefeh Moezzi), F.D., K.E., W.E., A.F., I.C., F.L., A.M. (Alain Moreau) and M.D.; supervision, F.L.,
+A.M. (Alain Moreau) and M.D.; funding acquisition, A.M. (Alain Moreau), F.L. and M.D. All authors
+have read and agreed to the published version of the manuscript.
+Funding: We acknowledge financial support from the ICanCME Research Network funded by the
+Canadian Institutes of Health Research (CIHR, to Prs. Dehaes and Leblond), Open Medicine Founda-
+tion (OMF #E9287 to Prs. Moreau, Dehaes and Leblond), the Fonds de Recherche du Québec—Santé
+(FRQS, award #32600 to Pr. Dehaes), the Natural Sciences and Engineering Research Council of
+Canada (NSERC, Alliance program, grant #ALLRP 555121-20 to Prs. Dehaes and Leblond), and the
+Canadian Foundation for Innovation (CFI, Exceptional Opportunities Fund program, grant #40880 to
+Prs. Leblond and Dehaes). The content of this report is solely the responsibility of the authors and
+does not necessarily represent the official views of the Funders.
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+12 of 15
+Institutional Review Board Statement: The study was conducted in accordance with the Declaration
+of Helsinki and approved by the Institutional Review Board of the Centre de recherche Azrieli du
+CHU Sainte-Justine, Montreal, QC, Canada (protocol #4047, date of approval 20 January 2015). All
+experiments were performed following relevant guidelines and human ethics regulations.
+Informed Consent Statement: Written informed consent has been obtained from each participant.
+Data Availability Statement: The original contributions presented in this study are included in the
+article. Further inquiries can be directed to the corresponding author.
+Acknowledgments: We would like to express our profound gratitude to all individuals who gen-
+erously participated in this study. We also appreciate the exceptional nursing support provided by
+Sophie Perreault, R.N., Hélène Gagnon, R.N., Frédérique Provencher, R.N., and Patrick Perras, R.N.,
+for their valuable assistance. Maryam Heidarifard was the recipient of an Excellence Scholarship
+in the field of COVID-19 and its impacts and the Bourse de Mérite in Artificial Intelligence from
+the Faculty of Medicine at Université de Montréal, the FRQS (PhD scholarship: #351519), and a
+PhD Bursary from CHU Sainte-Justine Foundation. Atefeh Moezzi was a recipient of a ME Stars of
+Tomorrow PhD Scholarship Award (2023–2025) from The ICanCME Research Network.
+Conflicts of Interest: Co-senior author Pr. Alain Moreau is the Director of the Interdisciplinary
+Canadian Collaborative Myalgic Encephalomyelitis (ICanCME) Research Network, a national re-
+search network funded by the Canadian Institutes of Health Research (grant MNC–166142 and grant
+MNC–196095 to A.M.). Pr. Moreau is also a member of the Scientific Advisory Board of the Open
+Medicine Foundation (Agoura Hills, CA, USA). The remaining authors declare that the research was
+conducted in the absence of any commercial or financial relationships that could be construed as
+potential conflict of interest.
+Abbreviations
+The following abbreviations are used in this manuscript:
+AUC
+Area under the receiver operating characteristic curve
+BMI
+Body mass index
+CCC
+Canadian Consensus Criteria
+CCD
+Charge-coupled device
+Cm−1
+Inverse centimeters (Raman shift unit)
+DSQ
+DePaul Symptom Questionnaire
+DTA
+Ethylenediaminetetraacetic acid
+Hz
+Hertz
+IQR
+Interquartile range
+L1
+Lasso (L1) regularization
+L1-SVM
+L1-regularized support vector machine
+L2
+Ridge (L2) regularization
+ME
+Myalgic encephalomyelitis
+MFI-20
+Multidimensional Fatigue Inventory (20-item version)
+ML
+Machine learning
+PEM
+Post-exertional malaise
+Psi
+Pounds per square inch
+RS
+Raman spectroscopy
+RS-ML
+Raman spectroscopy-machine learning
+SD
+Standard deviation
+SF-36
+36-item Short-Form Health Survey
+SNR
+Signal-to-noise ratio
+SVM
+Support vector machine
+T0
+Baseline time point (before stress test)
+T90
+90 min after the post-exertional stress test
+TCA
+Tricarboxylic acid (cycle)
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+13 of 15
+References
+1.
+Missailidis, D.; Annesley, S.J.; Fisher, P.R. Pathological Mechanisms Underlying Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome. Diagnostics 2019, 9, 80. [CrossRef]
+2.
+Chu, L.; Valencia, I.J.; Garvert, D.W.; Montoya, J.G. Onset Patterns and Course of Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome. Front. Pediatr. 2019, 7, 12. [CrossRef] [PubMed]
+3.
+Hoel, F.; Hoel, A.; Pettersen, I.K.; Rekeland, I.G.; Risa, K.; Alme, K.; Sørland, K.; Fosså, A.; Lien, K.; Herder, I.; et al. A map
+of metabolic phenotypes in patients with myalgic encephalomyelitis/chronic fatigue syndrome. JCI Insight 2021, 6, e149217.
+[CrossRef]
+4.
+Committee on the Diagnostic Criteria for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome; Board on the Health of Select
+Populations; Institute of Medicine. The National Academies Collection: Reports funded by National Institutes of Health. In Beyond
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Redefining an Illness; National Academies Press: Washington, DC, USA, 2015.
+5.
+Eaton-Fitch, N.; Johnston, S.C.; Zalewski, P.; Staines, D.; Marshall-Gradisnik, S. Health-related quality of life in patients with
+myalgic encephalomyelitis/chronic fatigue syndrome: An Australian cross-sectional study. Qual. Life Res. 2020, 29, 1521–1531.
+[CrossRef] [PubMed]
+6.
+Hare, P.J.; LaGree, T.J.; Byrd, B.A.; DeMarco, A.M.; Mok, W.W.K. Single-Cell Technologies to Study Phenotypic Heterogeneity and
+Bacterial Persisters. Microorganisms 2021, 9, 2277. [CrossRef]
+7.
+Komaroff, A.L.; Lipkin, W.I. Insights from myalgic encephalomyelitis/chronic fatigue syndrome may help unravel the pathogene-
+sis of postacute COVID-19 syndrome. Trends Mol. Med. 2021, 27, 895–906. [CrossRef]
+8.
+Briese, T.; Tokarz, R.; Bateman, L.; Che, X.; Guo, C.; Jain, K.; Kapoor, V.; Levine, S.; Hornig, M.; Oleynik, A.; et al. A multicenter
+virome analysis of blood, feces, and saliva in myalgic encephalomyelitis/chronic fatigue syndrome. J. Med. Virol. 2023, 95, e28993.
+[CrossRef] [PubMed]
+9.
+Ruiz-Pablos, M.; Paiva, B.; Montero-Mateo, R.; Garcia, N.; Zabaleta, A. Epstein-Barr Virus and the Origin of Myalgic En-
+cephalomyelitis or Chronic Fatigue Syndrome. Front. Immunol. 2021, 12, 656797. [CrossRef]
+10.
+Anderson, D.E.; Tan, C.W.; Chia, W.N.; Young, B.E.; Linster, M.; Low, J.H.; Tan, Y.J.; Chen, M.I.; Smith, G.J.D.; Leo, Y.S.; et al. Lack
+of cross-neutralization by SARS patient sera towards SARS-CoV-2. Emerg. Microbes Infect. 2020, 9, 900–902. [CrossRef]
+11.
+Cairns, R.; Hotopf, M. A systematic review describing the prognosis of chronic fatigue syndrome. Occup. Med. 2005, 55, 20–31.
+[CrossRef]
+12.
+Poenaru, S.; Abdallah, S.J.; Corrales-Medina, V.; Cowan, J. COVID-19 and post-infectious myalgic encephalomyelitis/chronic
+fatigue syndrome: A narrative review. Ther. Adv. Infect. Dis. 2021, 8, 20499361211009385. [CrossRef]
+13.
+Giansante, S.; Giana, H.E.; Fernandes, A.B.; Silveira, L., Jr. Analytical performance of Raman spectroscopy in assaying biochemical
+components in human serum. Lasers Med. Sci. 2022, 37, 287–298. [CrossRef]
+14.
+Dent, E.S.G. Modern Raman S Pectroscopy: A Practical Approach; John Wiley & Sons Ltd.: Hoboken, NJ, USA, 2005.
+15.
+Shipp, D.W.; Sinjab, F.; Notingher, I. Raman spectroscopy: Techniques and applications in the life sciences. Adv. Opt. Photonics
+2017, 9, 315–428. [CrossRef]
+16.
+Xu, J.; Lodge, T.; Kingdon, C.; Strong, J.W.L.; Maclennan, J.; Lacerda, E.; Kujawski, S.; Zalewski, P.; Huang, W.E.; Morten, K.J.
+Developing a Blood Cell-Based Diagnostic Test for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome Using Peripheral
+Blood Mononuclear Cells. Adv. Sci. 2023, 10, e2302146. [CrossRef]
+17.
+Xu, J.; Potter, M.; Tomas, C.; Elson, J.L.; Morten, K.J.; Poulton, J.; Wang, N.; Jin, H.; Hou, Z.; Huang, W.E. A new approach to find
+biomarkers in chronic fatigue syndrome/myalgic encephalomyelitis (CFS/ME) by single-cell Raman micro-spectroscopy. Analyst
+2019, 144, 913–920, Erratum in Analyst 2019, 144, 4121. [CrossRef]
+18.
+Clarke, K.S.P.; Kingdon, C.C.; Hughes, M.P.; Lacerda, E.M.; Lewis, R.; Kruchek, E.J.; Dorey, R.A.; Labeed, F.H. The search
+for a blood-based biomarker for Myalgic Encephalomyelitis/ Chronic Fatigue Syndrome (ME/CFS): From biochemistry to
+electrophysiology. J. Transl. Med. 2025, 23, 149. [CrossRef] [PubMed]
+19.
+Huang, K.; Lidbury, B.A.; Thomas, N.; Gooley, P.R.; Armstrong, C.W. Machine learning and multi-omics in precision medicine for
+ME/CFS. J. Transl. Med. 2025, 23, 68. [CrossRef] [PubMed]
+20.
+Yagin, F.H.; Alkhateeb, A.; Raza, A.; Samee, N.A.; Mahmoud, N.F.; Colak, C.; Yagin, B. An Explainable Artificial Intelligence
+Model Proposed for the Prediction of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome and the Identification of Distinctive
+Metabolites. Diagnostics 2023, 13, 3495. [CrossRef] [PubMed]
+21.
+Lacasa, M.; Prados, F.; Alegre, J.; Casas-Roma, J. A synthetic data generation system for myalgic encephalomyelitis/chronic
+fatigue syndrome questionnaires. Sci. Rep. 2023, 13, 14256. [CrossRef]
+22.
+Atkins, C.G.; Buckley, K.; Blades, M.W.; Turner, R.F.B. Raman Spectroscopy of Blood and Blood Components. Appl. Spectrosc.
+2017, 71, 767–793. [CrossRef]
+23.
+Qu, J.Y.; Wilson, B.C.; Suria, D. Concentration measurements of multiple analytes in human sera by near-infrared laser Raman
+spectroscopy. Appl. Opt. 1999, 38, 5491–5498. [CrossRef]
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+14 of 15
+24.
+Berger, A.J.; Koo, T.W.; Itzkan, I.; Horowitz, G.; Feld, M.S. Multicomponent blood analysis by near-infrared Raman spectroscopy.
+Appl. Opt. 1999, 38, 2916–2926. [CrossRef]
+25.
+Rygula, A.; Majzner, K.; Marzec, K.M.; Kaczor, A.; Pilarczyk, M.; Baranska, M. Raman spectroscopy of proteins: A review. J. Raman
+Spectrosc. 2013, 44, 1061–1076. [CrossRef]
+26.
+Czamara, K.; Majzner, K.; Pacia, M.Z.; Kochan, K.; Kaczor, A.; Baranska, M. Raman spectroscopy of lipids: A review. J. Raman
+Spectrosc. 2015, 46, 4–20. [CrossRef]
+27.
+Zhu, G.; Zhu, X.; Fan, Q.; Wan, X. Raman spectra of amino acids and their aqueous solutions. Spectrochim. Acta A Mol. Biomol.
+Spectrosc. 2011, 78, 1187–1195. [CrossRef] [PubMed]
+28.
+Falamas, A.; Kalra, S.; Chis, V.; Notingher, I. Monitoring the RNA distribution in human embryonic stem cells using Raman
+micro-spectroscopy and fluorescence imaging. Proc. AIP Conf. Proc. 2013, 1565, 43–47.
+29.
+Shao, J.; Lin, M.; Li, Y.; Li, X.; Liu, J.; Liang, J.; Yao, H. In vivo blood glucose quantification using Raman spectroscopy. PLoS ONE
+2012, 7, e48127. [CrossRef]
+30.
+Huang, Z.; Chen, X.; Li, Y.; Chen, J.; Lin, J.; Wang, J.; Lei, J.; Chen, R. Quantitative determination of citric acid in seminal plasma
+by using Raman spectroscopy. Appl. Spectrosc. 2013, 67, 757–760. [CrossRef]
+31.
+Movasaghi, Z.; Rehman, S.; Rehman, I.U. Raman spectroscopy of biological tissues. Appl. Spectrosc. Rev. 2007, 42, 493–541.
+[CrossRef]
+32.
+Baranska, M.; Roman, M.; Cz Dobrowolski, J.; Schulz, H.; Baranski, R. Recent advances in Raman analysis of plants: Alkaloids,
+carotenoids, and polyacetylenes. Curr. Anal. Chem. 2013, 9, 108–127. [CrossRef]
+33.
+Angiboust, C.G.; Van-Gulick, L.; Jeannesson, P.; Piot, O. Probing In Vitro Ribose Induced DNA-Glycation Using Raman
+Microspectroscopy. Anal. Chem. 2015, 87, 2655–2664. [CrossRef]
+34.
+Long, Z.; Zhu, T.; Zhou, Y.; Xiang, Z.; Zeng, Q.; Qiu, Y.; Hu, J.; Wang, Y. The Relationship Between Blood Urea Nitrogen to
+Creatinine Ratio and Severe Acute Exacerbation of COPD Patients: A Propensity Score Matching Study. Int. J. Chron. Obs. Pulmon
+Dis. 2024, 19, 2529–2543. [CrossRef] [PubMed]
+35.
+Mas,taleru, A.; Popescu, G.; Abdulan, I.M.; Cumpăt, C.M.; Costache, A.D.; Grosu, C.; Leon, M.M. Association between Serum
+Lipids and Asthma in Adults-A Systematic Review. Nutrients 2024, 16, 2070. [CrossRef]
+36.
+Knol, M.G.E.; Wulfmeyer, V.C.; Müller, R.U.; Rinschen, M.M. Amino acid metabolism in kidney health and disease. Nat. Rev.
+Nephrol. 2024, 20, 771–788. [CrossRef] [PubMed]
+37.
+Armstrong, C.W.; McGregor, N.R.; Lewis, D.P.; Butt, H.L.; Gooley, P.R. Metabolic profiling reveals anomalous energy metabolism
+and oxidative stress pathways in chronic fatigue syndrome patients. Metabolomics 2015, 11, 1626–1639. [CrossRef]
+38.
+Naviaux, R.K.; Naviaux, J.C.; Li, K.; Bright, A.T.; Alaynick, W.A.; Wang, L.; Baxter, A.; Nathan, N.; Anderson, W.; Gordon, E.
+Metabolic features of chronic fatigue syndrome. Proc. Natl. Acad. Sci. USA 2016, 113, E5472–E5480, Erratum in Proc. Natl. Acad.
+Sci. USA 2017, 144, E3749. [CrossRef]
+39.
+Simonato, M.; Dall’Acqua, S.; Zilli, C.; Sut, S.; Tenconi, R.; Gallo, N.; Sfriso, P.; Sartori, L.; Cavallin, F.; Fiocco, U.; et al. Tryptophan
+Metabolites, Cytokines, and Fatty Acid Binding Protein 2 in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Biomedicines
+2021, 9, 1724. [CrossRef]
+40.
+Badawy, A.A.; Morgan, C.J.; Llewelyn, M.B.; Albuquerque, S.R.; Farmer, A. Heterogeneity of serum tryptophan concentration
+and availability to the brain in patients with the chronic fatigue syndrome. J. Psychopharmacol. 2005, 19, 385–391. [CrossRef]
+41.
+Schwarcz, R.; Bruno, J.P.; Muchowski, P.J.; Wu, H.Q. Kynurenines in the mammalian brain: When physiology meets pathology.
+Nat. Rev. Neurosci. 2012, 13, 465–477. [CrossRef]
+42.
+Yamano, E.; Sugimoto, M.; Hirayama, A.; Kume, S.; Yamato, M.; Jin, G.; Tajima, S.; Goda, N.; Iwai, K.; Fukuda, S.; et al. Index
+markers of chronic fatigue syndrome with dysfunction of TCA and urea cycles. Sci. Rep. 2016, 6, 34990. [CrossRef]
+43.
+Che, X.; Ranjan, A.; Guo, C.; Zhang, K.; Goldsmith, R.; Levine, S.; Moneghetti, K.J.; Zhai, Y.; Ge, L.; Mishra, N.; et al. Heightened
+innate immunity may trigger chronic inflammation, fatigue and post-exertional malaise in ME/CFS. npj Metab. Health Dis. 2025,
+3, 34. [CrossRef] [PubMed]
+44.
+Annesley, S.J.; Missailidis, D.; Heng, B.; Josev, E.K.; Armstrong, C.W. Unravelling shared mechanisms: Insights from recent
+ME/CFS research to illuminate long COVID pathologies. Trends Mol. Med. 2024, 30, 443–458. [CrossRef]
+45.
+Castro-Marrero, J.; Zaragozá, M.C.; Domingo, J.C.; Martinez-Martinez, A.; Alegre, J.; von Schacky, C. Low omega-3 index and
+polyunsaturated fatty acid status in patients with chronic fatigue syndrome/myalgic encephalomyelitis. Prostaglandins Leukot.
+Essent. Fat. Acids 2018, 139, 20–24. [CrossRef]
+46.
+Germain, A.; Ruppert, D.; Levine, S.M.; Hanson, M.R. Metabolic profiling of a myalgic encephalomyelitis/chronic fatigue
+syndrome discovery cohort reveals disturbances in fatty acid and lipid metabolism. Mol. Biosyst. 2017, 13, 371–379. [CrossRef]
+47.
+Vankoningsloo, S.; Piens, M.; Lecocq, C.; Gilson, A.; De Pauw, A.; Renard, P.; Demazy, C.; Houbion, A.; Raes, M.; Arnould, T.
+Mitochondrial dysfunction induces triglyceride accumulation in 3T3-L1 cells: Role of fatty acid beta-oxidation and glucose.
+J. Lipid Res. 2005, 46, 1133–1149. [CrossRef]
+https://doi.org/10.3390/ijms27114937
+
+Int. J. Mol. Sci. 2026, 27, 4937
+15 of 15
+48.
+Heng, B.; Gunasegaran, B.; Krishnamurthy, S.; Bustamante, S.; Pires, A.S.; Chow, S.; Ahn, S.B.; Paul-Heng, M.; Maciver, Y.; Smith,
+K.; et al. Mapping the complexity of ME/CFS: Evidence for abnormal energy metabolism, altered immune profile, and vascular
+dysfunction. Cell Rep. Med. 2025, 6, 102514. [CrossRef] [PubMed]
+49.
+Rutherford, G.; Manning, P.; Newton, J.L. Understanding Muscle Dysfunction in Chronic Fatigue Syndrome. J. Aging Res. 2016,
+2016, 2497348. [CrossRef]
+50.
+Sheedy, J.R.; Wettenhall, R.E.; Scanlon, D.; Gooley, P.R.; Lewis, D.P.; McGregor, N.; Stapleton, D.I.; Butt, H.L.; KL, D.E.M. Increased
+d-lactic Acid intestinal bacteria in patients with chronic fatigue syndrome. Vivo 2009, 23, 621–628.
+51.
+Renz-Polster, H.; Tremblay, M.E.; Bienzle, D.; Fischer, J.E. The Pathobiology of Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome: The Case for Neuroglial Failure. Front. Cell Neurosci. 2022, 16, 888232. [CrossRef] [PubMed]
+52.
+Cortes Rivera, M.; Mastronardi, C.; Silva-Aldana, C.T.; Arcos-Burgos, M.; Lidbury, B.A. Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome: A Comprehensive Review. Diagnostics 2019, 9, 91. [CrossRef]
+53.
+Choi, I.; Son, H.; Baek, J.H. Tricarboxylic Acid (TCA) Cycle Intermediates: Regulators of Immune Responses. Life 2021, 11, 69.
+[CrossRef]
+54.
+Yatsuga, S.; Fujita, Y.; Ishii, A.; Fukumoto, Y.; Arahata, H.; Kakuma, T.; Kojima, T.; Ito, M.; Tanaka, M.; Saiki, R.; et al. Growth
+differentiation factor 15 as a useful biomarker for mitochondrial disorders. Ann. Neurol. 2015, 78, 814–823. [CrossRef]
+55.
+Pineda-Torra, I.; Siddique, S.; Waddington, K.E.; Farrell, R.; Jury, E.C. Disrupted Lipid Metabolism in Multiple Sclerosis: A Role
+for Liver X Receptors? Front. Endocrinol. 2021, 12, 639757. [CrossRef]
+56.
+Choutka, J.; Jansari, V.; Hornig, M.; Iwasaki, A. Unexplained post-acute infection syndromes. Nat. Med. 2022, 28, 911–923,
+Correction in Nat. Med. 2022, 28, 1723. [CrossRef] [PubMed]
+57.
+Shankar, V.; Wilhelmy, J.; Curtis, E.J.; Michael, B.; Cervantes, L.; Mallajosyula, V.; Davis, R.W.; Snyder, M.; Younis, S.; Robinson,
+W.H.; et al. Oxidative stress is a shared characteristic of ME/CFS and Long COVID. Proc. Natl. Acad. Sci. USA 2025, 122,
+e2426564122. [CrossRef] [PubMed]
+58.
+Nepotchatykh, E.; Caraus, I.; Elremaly, W.; Leveau, C.; Elbakry, M.; Godbout, C.; Rostami-Afshari, B.; Petre, D.; Khatami,
+N.; Franco, A.; et al. Circulating microRNA expression signatures accurately discriminate myalgic encephalomyelitis from
+fibromyalgia and comorbid conditions. Sci. Rep. 2023, 13, 1896. [CrossRef]
+59.
+Nepotchatykh, E.; Elremaly, W.; Caraus, I.; Godbout, C.; Leveau, C.; Chalder, L.; Beaudin, C.; Kanamaru, E.; Kosovskaia, R.;
+Lauzon, S.; et al. Profile of circulating microRNAs in myalgic encephalomyelitis and their relation to symptom severity, and
+disease pathophysiology. Sci. Rep. 2020, 10, 19620. [CrossRef]
+60.
+Mathew, J.; Sankar, P.; Varacallo, M.A. Physiology, Blood Plasma; StatPearls Publishing LLC.: Treasure Island, FL, USA, 2025.
+61.
+Dalan, R.; Liew, H.; Goh, L.L.; Gao, X.; Chew, D.E.; Boehm, B.O.; Leow, M.K. The haptoglobin 2-2 genotype is associated with
+inflammation and carotid artery intima-media thickness. Diab Vasc. Dis. Res. 2016, 13, 373–376. [CrossRef] [PubMed]
+62.
+Ware, J.E., Jr. SF-36 health survey update. Spine 2000, 25, 3130–3139. [CrossRef]
+63.
+Smets, E.M.; Garssen, B.; Bonke, B.; De Haes, J.C. The Multidimensional Fatigue Inventory (MFI) psychometric qualities of an
+instrument to assess fatigue. J. Psychosom. Res. 1995, 39, 315–325. [CrossRef]
+64.
+Jason, L.A.; Sunnquist, M.; Brown, A.; Furst, J.; Cid, M.; Farietta, J.; Kot, B.; Bloomer, C.; Nicholson, L.; Williams, Y.; et al. Factor
+Analysis of the DePaul Symptom Questionnaire: Identifying Core Domains. J. Neurol. Neurobiol. 2015, 1. [CrossRef] [PubMed]
+65.
+Sheehy, G.; Picot, F.; Dallaire, F.; Ember, K.; Nguyen, T.; Petrecca, K.; Trudel, D.; Leblond, F. Open-sourced Raman spectroscopy
+data processing package implementing a baseline removal algorithm validated from multiple datasets acquired in human tissue
+and biofluids. J. Biomed. Opt. 2023, 28, 025002. [CrossRef] [PubMed]
+66.
+Savitzky, A.; Golay, M.J.E. Smoothing and Differentiation of Data by Simplified Least Squares Procedures. Anal. Chem. 1964, 36,
+1627–1639. [CrossRef]
+67.
+Grosset, A.A.; Dallaire, F.; Nguyen, T.; Birlea, M.; Wong, J.; Daoust, F.; Roy, N.; Kougioumoutzakis, A.; Azzi, F.; Aubertin, K.;
+et al. Identification of intraductal carcinoma of the prostate on tissue specimens using Raman micro-spectroscopy: A diagnostic
+accuracy case-control study with multicohort validation. PLoS Med. 2020, 17, e1003281. [CrossRef] [PubMed]
+68.
+Bakken, I.J.; Tveito, K.; Gunnes, N.; Ghaderi, S.; Stoltenberg, C.; Trogstad, L.; Håberg, S.E.; Magnus, P. Two age peaks in the
+incidence of chronic fatigue syndrome/myalgic encephalomyelitis: A population-based registry study from Norway 2008–2012.
+BMC Med. 2014, 12, 167.
+69.
+AlShourbaji, I.; Helian, N.; Sun, Y.; Hussien, A.G.; Abualigah, L.; Elnaim, B. An efficient churn prediction model using gradient
+boosting machine and metaheuristic optimization. Sci. Rep. 2023, 13, 14441. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+https://doi.org/10.3390/ijms27114937

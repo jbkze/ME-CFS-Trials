@@ -1,0 +1,1645 @@
+Academic Editor: Malgorzata Kloc
+Received: 30 January 2026
+Revised: 17 February 2026
+Accepted: 23 February 2026
+Published: 28 February 2026
+Copyright: © 2026 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license.
+Article
+Extracellular Vesicle Protein and MiRNA Signatures
+as Biomarkers for Post-Infectious ME/CFS Patients
+Martina Seifert 1,2,3,*
+, Johannes Schäfers 1, Fiona F. Douglas 1, Carl Schwarzburg 1, Diana Boristowski 1,
+Anne Birke 1
+, Oliver Klein 2, Franziska Sotzny 1
+, Kerstin Rubarth 4
+, Lara Windzio 1
+, Christien M. Beez 5
+,
+Claudia Kedor Peters 1
+, Kirsten Wittke 1, Carmen Scheibenbogen 1
+and Anna Greco 1
+1
+Institute for Medical Immunology, Charité-Universitätsmedizin Berlin, Corporate Member of Freie
+Universität Berlin and Humboldt Universität zu Berlin, 10117 Berlin, Germany;
+johannes.schaefers@charite.de (J.S.); fiona.douglas@fu-berlin.de (F.F.D.); schwarzburg.carl@gmail.com (C.S.);
+diana.boristowski@gmail.com (D.B.); birke@vrc.uni-frankfurt.de (A.B.); franziska.sotzny@charite.de (F.S.);
+lara.windzio@charite.de (L.W.); claudia.kedor@charite.de (C.K.P.); kirsten.wittke@charite.de (K.W.);
+carmen.scheibenbogen@charite.de (C.S.); anna.greco@charite.de (A.G.)
+2
+BIH-Center for Regenerative Therapies (BCRT), Berlin Institute of Health (BIH)
+at Charité-Universitätsmedizin Berlin, 13353 Berlin, Germany; oliver.klein@bih-charite.de
+3
+German Centre for Cardiovascular Research (DZHK), 10785 Berlin, Germany
+4
+Institute of Biometry and Clinical Epidemiology, Charité-Universitätsmedizin Berlin, Corporate Member
+of Freie Universität Berlin and Humboldt Universität zu Berlin, 10117 Berlin, Germany;
+kerstin.rubarth@charite.de
+5
+Department of Cardiothoracic and Vascular Surgery, Deutsches Herzzentrum der Charité (DHZC),
+13353 Berlin, Germany; christien.beez@dhzc-charite.de
+*
+Correspondence: martina.seifert@charite.de
+Abstract
+Post-infectious Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a
+chronic disease with unresolved pathophysiology and limited diagnostic options. Extracel-
+lular vesicles (EVs) carry disease-specific protein and miRNA signatures and may enable
+improved disease profiling. We aimed to identify novel protein and miRNA markers as po-
+tential biomarkers in plasma EVs from female ME/CFS patients, including post-COVID-19
+ME/CFS and post-infectious ME/CFS of other origins, compared with healthy controls.
+EVs were isolated from plasma by size-exclusion chromatography and characterized for
+number, size, morphology, and surface marker expression. Flow cytometry showed that
+small EVs strongly expressed tetraspanins, with only minor differences between ME/CFS
+patients and healthy donors. Proteomic profiling of EVs from ME/CFS patients identi-
+fied altered cargo proteins, including hemoglobin subunit alpha and insulin-like growth
+factor-binding protein acid labile subunit compared with healthy controls (n ≤10/cohort).
+Small RNA sequencing followed by qPCR revealed significant downregulation of hsa-
+let-7b-5p in EVs from post-COVID-19 ME/CFS patients (n = 12) versus healthy controls
+(n = 15). Reduced hsa-let-7b-5p expression correlated with impaired physical functioning
+and increased fatigue, pain, and immune activation. These findings indicate that EV cargo
+differences, particularly hemoglobin subunit alpha and insulin-like growth factor-binding
+protein acid labile subunit, as well as hsa-let-7b-5p, represent promising candidates for
+ME/CFS diagnosis and patient stratification.
+Keywords: extracellular vesicles; protein cargo; miRNA; post-COVID syndrome; Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome
+Int. J. Mol. Sci. 2026, 27, 2314
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+2 of 30
+1. Introduction
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a debilitating,
+chronic disease affecting multiple systems within the body. Patients suffer from a variety of
+symptoms, including profound fatigue, cognitive and autonomic impairment, pain, and
+post-exertional malaise (PEM), resulting in severe impairment of quality of life [1]. In its
+most severe form, ME/CFS leads to substantial limitations in daily functioning, including
+profound occupational disability and dependence on caregiver support [2]. Recent global
+estimates suggest a prevalence of up to 1%, with females accounting for approximately
+75–85% of ME/CFS cases [3]. ME/CFS can be triggered by various infections, including
+Epstein–Barr virus, influenza virus, human herpes virus, and also SARS-CoV-2 [4–6]. The
+COVID-19 pandemic and the associated Post-COVID Syndrome (PCS), often referred to as
+Long-COVID, have brought increased attention to ME/CFS. PCS shares significant clinical
+similarities with ME/CFS, particularly in terms of persistent fatigue, cognitive impairment
+and PEM, highlighting the overlap and potential common underlying mechanisms between
+these conditions. However, only a subgroup of PCS patients meets the diagnostic criteria
+for ME/CFS [7,8]. The pathomechanism of the ME/CFS disease is not yet fully under-
+stood [9,10]. Dysregulation of the immune system, disturbances of the autonomic nervous
+system and vascular function, cognitive impairment, and metabolic disturbances contribute
+to this complex multisystemic syndrome [3,6]. The heterogeneity in symptom severity
+and comorbidities among patients, influenced by diverse disease triggers and individual
+responses, further exacerbates the complexity. Consequently, research efforts must consider
+the interplay of various biological systems rather than focusing on a single etiological
+factor [11–14]. Recent studies increasingly support the concept that overlapping disease
+pathologies linked to ME/CFS and PCS, as well as their combined effects, contribute to the
+observed heterogeneity of the condition [15]. Current research is directed at deciphering
+how these system-wide disruptions arise and at identifying common molecular pathways.
+Studies have demonstrated biomedical dysregulations across multiple organ systems,
+including metabolic, muscular, cardiovascular and gastrointestinal disturbances [16–20].
+Abnormalities in mitochondrial function and energy production have been documented in
+ME/CFS and may contribute to the profound fatigue experienced by patients [11].
+At present, ME/CFS diagnosis relies exclusively on internationally agreed clinical cri-
+teria, as no specific biomarkers are available [21,22]. Over the years, various attempts have
+been made to discover potential biomarkers for ME/CFS, so far with limited success [23].
+In a variety of other diseases, including COVID-19, EVs have recently gained considerable
+interest as carriers of soluble mediators [24,25]. EVs represent a complex group of small,
+bilayered membranous vesicles produced by various cell types. Initially, EV classification
+was based on size and biogenesis, resulting in three main groups (exosomes, microvesicles,
+apoptotic bodies/EVs), with the smallest EVs ranging between 50 and 150 nm [22]. Despite
+the distinct features and subtypes of EVs, all share certain surface markers, namely the
+tetraspanins CD9, CD63, and CD81 [26]. EVs are present in almost all body fluids and
+reflect characteristics of their parent cells [27]. They play crucial roles in intercellular com-
+munication and are pivotal in various biological processes, including disease and infections,
+due to their involvement in both innate and adaptive immune response [28]. The cargo
+of EVs includes proteins, DNA, lipids, or RNA, such as messenger RNA or miRNA [27].
+MiRNAs have garnered particular interest owing to their influence on a wide range of
+infection-triggered diseases and relative gene expression regulation processes [29–31]. EVs
+can modulate vascular inflammation processes through their secretion, as well as through
+their cargo, which is altered during inflammatory states [32–34].
+Studies investigating EVs in ME/CFS patients have revealed aberrant EV profiles com-
+pared to healthy controls (HCs). Specifically, several studies found significantly increased
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+3 of 30
+levels of circulating EVs in ME/CFS patients compared to HCs [35,36]. Additionally, other
+studies focused on the protein cargo of the plasma EVs. In 2019, Eguchi et al. identified a
+distinct EV protein profile in ME/CFS, enriched for proteins involved in focal adhesion,
+regulation of the actin cytoskeleton, the phosphoinositide 3-kinase (PI3K)–Akt signaling
+pathway, and EBV infection [37]. Moreover, the cytokine cargo of EVs was investigated,
+and differences in inter-cytokine correlations were found in the ME/CFS group compared
+to HCs [38]. In recent studies, the EV proteome of ME/CFS patients in comparison to HCs
+was analyzed before and after maximal physical exercise [39,40]. Herein, exercise elicited
+differential changes in the EV proteome of ME/CFS patients relative to HCs, with several
+altered EV proteins correlating with symptom severity. These findings suggest alterations
+in EV signaling dynamics involved in processes including blood coagulation and muscle
+contraction, energy metabolism, the complement system, and the stress response of the
+endoplasmic reticulum. Differentially expressed proteins found in this study could be
+associated with PEM in ME/CFS patients. As these studies were conducted using pre-
+pandemic cohorts, it remains to be determined whether similar EV alterations occur in
+patients who developed ME/CFS following COVID-19. Initial studies were performed to
+analyze the spectrum of miRNAs in serum or plasma of ME/CFS patients compared to
+HCs [41,42]. A computational analysis of published miRNA data from ME/CFS patients by
+Kaczmarek et al., which included findings from other studies [41,43], revealed that vascular
+endothelial growth factor A was the primary target of upregulated circulating miRNAs [43].
+Another study identified a specific miRNA pattern associated with symptom severity in
+severely ill ME/CFS patients following PEM induction [44].
+Despite encouraging results in the search for either specific protein or miRNA markers
+for ME/CFS in serum or plasma EVs, no unique marker for post-infectious ME/CFS
+has yet been identified or validated in independent cohorts. Therefore, in the present
+exploratory study, we aimed to identify and confirm differentially expressed protein and
+miRNA markers of plasma EVs from post-infectious ME/CFS patients. These markers
+were initially identified by us in exploratory study cohorts and subsequently verified in
+validation cohorts. In addition, we aimed to compare the potential markers in ME/CFS
+after COVID-19 with those following another disease trigger. Here, we provide both protein
+and miRNA candidate markers for post-infectious ME/CFS, as we believe they could be
+instrumental in improving patient diagnosis in future large-scale cohort studies.
+2. Results
+2.1. Study Design
+Plasma samples were collected from three study groups: post-COVID-19 ME/CFS
+(pcME/CFS) patients, post-infectious ME/CFS (piME/CFS) patients and the corresponding
+healthy controls with self-reported SARS-CoV2 infection (pcHC) and pre-pandemic healthy
+donors (HC), respectively (see Figure 1). EVs were isolated from all samples using size-
+exclusion chromatography (SEC). To ensure the quality and purity of the isolated EVs, SEC
+fractions were characterized by nanoparticle tracking analysis (NTA), transmission electron
+microscopy (TEM) and marker expression profiles (including tetraspanins) using the MAC-
+SPlex Exosome Kit and flow cytometric analysis. Pooled EV fractions from the exploratory
+cohorts were further examined by RNA sequencing (see Supplementary Table S1) and
+liquid-separation electrospray ionization mass spectrometry (liquid chromatography–mass
+spectrometry; see Supplementary Tables S2 and S3) to profile miRNA and protein cargo,
+respectively. Identified miRNA and protein markers of interest were subsequently analyzed
+in independent validation cohorts by enzyme-linked immunosorbent assay (ELISA) or
+qPCR. The female patient and control groups in the validation cohorts for protein markers
+(Table 1) and miRNA markers (Table 2) were similar in their age and body mass index. The
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+4 of 30
+piME/CFS group was younger and had a longer disease duration (median 24.45 months vs.
+10 months in pcME/CFS). For the HCs, the self-reported time since the last SARS- CoV-2
+infection was approximately 10 months. Both patients study groups showed similar disease
+and symptom severity (Table 1).
+Figure 1. Schematic overview of the experimental study design. Acid-citrate-dextrose plasma from
+all study cohorts (pcHC/HC, pcME/CFS, piME/CFS) was used to isolate EVs by size-exclusion
+chromatography (SEC). EVs were characterized by nanoparticle tracking analysis, transmission
+electron microscopy, and flow cytometric analysis of surface marker expression using the MACSPlex
+assay. Pooled SEC fractions (F2–F4) from EV isolations were screened in exploratory cohorts by
+small RNA sequencing and liquid chromatography–mass spectrometry-based proteomics to identify
+both, differentially transported miRNAs and proteins. Selected candidate markers were tested in
+validation cohorts by qPCR and ELISA, respectively. Created with BioRender.com.
+Table 1. Characteristics of the study groups (pcME/CFS, piME/CFS, pcHC) included in the protein
+marker validation. The median (interquartile range) of various parameters within the respective
+study group were presented. Statistical analysis was performed by Mann–Whitney U test (p-values)
+for the comparison of two groups and the Kruskal–Wallis test (q-values) for comparisons between all
+three groups. NA = not applicable; NI = no information.
+pcME/CFS
+(n = 11)
+Median with IQR
+piME/CFS
+(n = 8)
+Median with IQR
+pcHC
+(n = 10)
+Median with IQR
+p-Value/
+q-Value
+Age [years]
+36 (29–42)
+25 (21–35)
+33.5 (32–37)
+0.06 a
+0.63 b
+0.11c
+Female sex [%]
+100
+100
+100
+NA
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+5 of 30
+Table 1. Cont.
+pcME/CFS
+(n = 11)
+Median with IQR
+piME/CFS
+(n = 8)
+Median with IQR
+pcHC
+(n = 10)
+Median with IQR
+p-Value/
+q-Value
+BMI
+23.1 (22.3–24.3)
+21 (19.1–28.3)
+NI
+0.36
+disease duration/
+time since last SARS-CoV-2
+infection [months]
+12 (9.5–22.5)
+24.5 (12–54)
+10 * (5–14) §
+0.24 a
+0.37 b
+0.09 c
+Bell Score
+40 (30–40)
+40 (30–40)
+NA
+>0.99
+SF-36 physical functioning
+35 (30–60)
+47.5 (41.3–57.5)
+NA
+0.45
+Symptom severity scores:
+•
+Fatigue Score
+8 (6–8)
+8.3 (6.4–8.8)
+NA
+0.50
+•
+Immune Score
+3.3 (2.3–4.8)
+4.7 (2.8–7.6)
+NA
+0.28
+•
+Cognitive Score
+6.2 (4.2–7.7)
+6.7 (4.5–8)
+NA
+0.68
+•
+Muscle Pain
+6 (5–8)
+7.5 (4.8–8)
+NA
+0.54
+•
+Joint Pain
+5 (1–7)
+6 (3.3–6.8)
+NA
+0.70
+PEM score
+34 (26–38)
+35.5 (24.5–36.8)
+NA
+0.89
+§ Information on self-reported SARS-CoV-2 infection was available from 7/10 of the HCs; * Time since last
+SARS-CoV2 infection; a = pcMECFS vs. piME/CFS; b = pc/MECFS vs. pcHC; c = piME/CFS vs. pcHC.
+Table 2. Characteristics of the study groups included in the miRNA marker validation (pcME/CFS,
+pcHC). The median (interquartile range) of various parameters within the respective study group is
+presented. Statistical analysis was performed by Mann–Whitney test. NA = not applicable.
+pcME/CFS
+(n = 12)
+Median with IQR
+pcHC
+(n = 15)
+Median with IQR
+p-Value
+Age [years]
+39.5 (34–49)
+37 (33–45)
+0.28
+Female sex [%]
+100
+100
+NA
+Disease duration/
+Time since last SARS-CoV-2 infection [months]
+14 (10–21)
+11 * (8–13.3) §
+0.10
+Bell Score
+40 (30–40)
+NA
+NA
+SF36 physical
+functioning
+42.5 (25–63.8)
+NA
+NA
+Symptom severity scores:
+•
+Fatigue score
+8 (7.8–9.5)
+NA
+NA
+•
+Immune score
+4.5 (3.3–7.3)
+NA
+NA
+•
+Cognitive score
+7.5 (6.1–8)
+NA
+NA
+•
+Muscle Pain
+7.5 (6.3–8)
+NA
+NA
+•
+Joint Pain
+5 (3–8)
+NA
+NA
+PEM score
+34 (30–41)
+NA
+NA
+§ Information on self-reported SARS-CoV-2 infection was available from 12/15 of the pcHCs; * Time since last
+SARS-CoV-2 infection.
+2.2. Isolated Plasma EVs from Both ME/CFS Patients and HCs Show Expected Characteristics
+Acid-citrate-dextrose (ACD) plasma was collected and used for EV isolation by SEC
+on IZON qEV columns, as shown in the overview scheme (Figure 1). Particle concen-
+trations and diameter size were analyzed by NTA, and protein content was determined
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+6 of 30
+by bicinchoninic acid. Shown are the NTA and BCA profiles for a representative HC
+donor (Figure 2A), a pcME/CFS patient (Figure 2B), and a piME/CFS patient (Figure 2C)
+for each fraction (F1-F6) of the SEC isolation. The predominant EV-containing fractions
+corresponded to F2–F4 in all study groups. As expected for SEC-based EV isolation, pro-
+tein concentrations were minimal in F1 and gradually increased toward protein-rich late
+fractions (F5–F6), reaching approximately 1000–2000 mg/mL in F6. To optimize particle-to-
+protein ratios, fractions F2-F4 were pooled for all further analyses. The pooled fractions
+were used to verify the typical morphology and size of the isolated particles by transmission
+electron microscopy (TEM, Figure 2). Across all study groups, EVs displayed characteristic
+cup-shaped morphology and occasional vesicle clustering, as illustrated by representative
+TEM images for HC, pcME/CFS, and piME/CFS samples (Figure 2D–F).
+Figure 2. Characteristics of isolated plasma EVs from all cohorts. The particle concentration and pro-
+tein concentration for each SEC fraction (F1–F6) were determined by NTA and BCA for representative
+samples of HC, pcME/CFS, and piME/CFS cohorts, respectively. Shown are the number of parti-
+cles/mL (left y-axis) and protein concentration in µg/mL (right y-axis) for (A) HC, (B) pcME/CFS,
+and (C) piME/CFS. EVs from pooled SEC fractions F2–F4 of HCs, pcME/CFS, and piME/CFS
+patients were examined by TEM. Representative images are shown for (D) HC, (E) pcME/CFS,
+and (F) piME/CFS. In some cases, EVs clustered (black arrow) and showed a cup-shaped morphol-
+ogy (asterisk). Scale bars: 100 nm. HC = healthy control; pcME/CFS = post-COVID-19 ME/CFS;
+piME/CFS = post-infectious ME/CFS.
+The presence of the three characteristic tetraspanin molecules (CD9, CD63, CD81) in
+isolated EVs of all study groups was verified using a bead-based flow cytometry assay.
+Indeed, CD9 (Figure 3A), CD63 (Figure 3B), and CD81 (Figure 3C) were observed at similar
+fluorescence intensities on the isolated EVs of each study group, with CD81 showing
+the highest relative abundance and CD63 the lowest. Notably, EVs from the piME/CFS
+patient group showed significantly (p = 0.011) higher levels of CD81 (Figure 3C) and
+significantly (p = 0.032) lower CD9 detection (Figure 3A) compared to corresponding HC-
+EVs. Together, the presence of these tetraspanins across all cohorts confirms successful EV
+isolation. Additionally, 37 other cellular markers were analyzed in parallel, as depicted
+exemplarily in Figure S1, displaying expression profiles for representative HC, pcME/CFS,
+and piME/CFS EV samples. Several markers were only detectable at very low levels or not
+at all in EV preparations, whereas others showed a clear presence in HC and patient groups
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+7 of 30
+(Figures 3D–F and S1), with only marginal differences, as shown for selected markers
+CD62P (Figure 3D), CD41b (Figure 3E), and CD29 (Figure 3F). The endothelial marker
+CD62P tended to be more abundant (p = 0.089) in pcME/CFS than in HC-EVs (Figure 3D).
+Integrin CD29 was significantly (p = 0.011) lower expressed in piME/CFS-EVs compared
+to HC-EVs (Figure 3F).
+Figure 3. Relative abundance of extracellular vesicle (EV) surface markers in ME/CFS cohorts.
+EVs isolated from post-COVID-19 ME/CFS (pcME/CFS) and post-infectious ME/CFS (piME/CFS)
+patients and their respective healthy controls were analyzed using a bead-based multiplex flow
+cytometry assay. The relative abundance of each surface marker was calculated by normalizing the
+median fluorescence intensity (MFI) of each analyte to the combined MFI of the three tetraspanins
+CD9, CD63, and CD81, as described in the Methods. Shown are the medians with interquartile ranges
+and individual data points for (A) CD9, (B) CD63, (C) CD81, (D) CD62P, (E) CD41b, and (F) CD29.
+Comparisons between pcHC and pcME/CFS, and between pre-pandemic HC and piME/CFS, are
+separated by a vertical dotted line. Statistical significance was assessed using the Mann–Whitney U
+test, with p-values indicated. Sample sizes were pcHC (n = 10), pcME/CFS (n = 10), HC (n = 9), and
+piME/CFS (n = 9).
+2.3. Identification of Distinct Proteomic Signatures for pcME/CFS and piME/CFS in
+Exploratory Cohorts
+Two independent mass spectrometry analyses in exploratory cohorts detected a total of
+416 proteins in the comparison of pcME/CFS to pcHC and 278 proteins in the comparison
+of piME/CFS and pre-pandemic HCs. An initial Search Tool for the Retrieval of Interacting
+Genes/Proteins (STRING) database analysis was performed for all study groups separately
+based on gene ontology (GO) terms categorized into groups of proteins: cellular component,
+biological processes, subcellular localization and (patho)-physiology. GO-terms not meeting
+the defined criteria, as described in the Methods section, were excluded along with their
+associated proteins, resulting in a set of 192 and 180 proteins for the pcME/CFS and
+pcHC study groups, respectively. Out of the initially detected 278 proteins found in the
+piME/CFS and pre-pandemic HC dataset, 154 and 128 proteins for the respective study
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+8 of 30
+groups remained after filtering. Afterwards, unique protein candidates for all study groups
+were identified, as shown in Supplementary Table S4. One particular protein, the insulin-
+like growth factor acid labile subunit (ALS/IGFALS), was detected as a unique candidate
+protein in both ME/CFS patient groups.
+In a second approach, all EV proteins initially found by mass spectrometry anal-
+ysis were depicted as a VENN diagrams (Figure 4) to compare EV proteins between
+piME/CFS vs. HC (Figure 4A) and between pcME/CFS vs. pcHC (Figure 4B). As ex-
+pected, a substantial proportion of EV proteins overlapped between the corresponding
+patient and control groups in each proteomic dataset. Moreover, several candidate pro-
+teins in the mass spectrometry analyses were consistent with those highlighted by the
+STRING-based qualitative assessment. Interestingly, ALS/IGFALS was detected in both
+patient groups and was prioritized for validation in the independent cohorts (Table S4).
+Notably, more unique protein hits were identified in the piME/CFS group (52) than in
+the pcME/CFS group (19), while a higher number of unique proteins were found in the
+pcHC group (41) than in the HC (31) group. As highlighted (red), only LYAM1/L-selectin
+was present in three out of nine patients in the pcME/CFS group (Figure 4A, green box).
+In contrast, several unique proteins were identified in at least three individuals of the
+piME/CFS group (Figure 4B, blue box), including AFAM/Afamin, APOH/ß2-glycoprotein-
+1, CO7/Complement factor 7, FA11/coagulation factor XI, KLKB1/plasma kallikrein, and
+a variable immunoglobulin chain (HV64D). Furthermore, only in the pcHC group, but not
+in the pre-pandemic HC group, were several proteins found in at least three participants,
+including CALL5/Calmodulin-like protein 5 and LYAM3/P-selectin, as well as several vari-
+able chains of immunoglobulins (HV309,348,373,439, KV439), as highlighted in Figure 4A
+(gray box).
+Figure 4. Unique EV protein candidates identified in ME/CFS cohorts. Venn diagrams show EV-
+associated proteins from (A) the post-COVID-19 ME/CFS (pcME/CFS) cohort compared with its
+matched post-COVID healthy controls (pcHC), and (B) the post-infectious ME/CFS (piME/CFS)
+cohort compared with pre-pandemic healthy controls (HC). Proteins uniquely detected in ≥3 in-
+dividuals within each respective ME/CFS group are highlighted in red. Sample sizes were pcHC
+(n = 9), pcME/CFS (n = 12), HC (n = 10), and piME/CFS (n = 10).
+Next, the complete set of EV proteins identified in both mass spectrometry analyses
+were examined after normalizing the datasets, as described in the Methods, resulting in
+251 candidate proteins for the pcME/CFS vs. pcHC comparison and 295 candidates for
+the piME/CFS vs. pre-pandemic HC comparison. Limma analysis was applied to statisti-
+cally determine the differentially regulated proteins between the patient groups and their
+respective HC groups. This comparative analysis of exploratory mass spectrometry data
+revealed 16 proteins that were significantly altered in the pcME/CFS group compared
+to pcHC (log2-fold change ≥±1, p < 0.05), as shown in the volcano plot (Figure 5A). Of
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+9 of 30
+these, three proteins were upregulated and thirteen were downregulated. In piME/CFS
+patients, 23 proteins were significantly different compared to the pre-pandemic HC group
+(Figure 5B), with 18 upregulated and 5 downregulated proteins. Potentially diagnosti-
+cally relevant proteins—including Complement C1q tumor necrosis factor-related protein
+3 (C1QT3), Glycoprotein Ib Platelet Subunit Alpha (GP1bA), Thrombospondin (TSP),
+Hemopexin (HEMO), and hemoglobin subunit alpha (HBA)—were selected for further
+validation by ELISA in an independent cohort and are listed with their names, logFC, and
+p-values in Supplementary Tables S5 and S6, respectively.
+Figure 5. Differential EV protein signatures in ME/CFS cohorts. EV-associated proteins quantified by
+LC–MS from post-COVID-19 ME/CFS (pcME/CFS) and post-infectious ME/CFS (piME/CFS) patients
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+10 of 30
+and their respective healthy controls were analyzed using normalized label-free quantification
+intensities as described in the Methods. Volcano plots display log2 fold change versus −log10
+(p value), with significance thresholds set at p < 0.05 and |log2 fold change| ≥1 (dashed lines),
+for (A) pcME/CFS versus pcHC and (B) piME/CFS versus pre-pandemic HC. Proteins meeting
+these criteria are highlighted and annotated with their UniProt identifiers. Reactome pathway
+enrichment based on significantly regulated proteins is shown for (C) pcME/CFS versus pcHC and
+(D) piME/CFS versus HC using STRING analysis, plotted as −log(FDR) at a similarity score of 1.0.
+(E) Semiquantitative analysis of normalized label-free quantification values (log10 area of the top
+three peptides) for C1QT3 and GP1bA in pcME/CFS versus pcHC, and (F) for HBA and HEMO in
+piME/CFS versus HC. Statistical significance was assessed using the Mann–Whitney U test (n = 9–12
+per group).
+Analyzing the normalized data (top-3 peptide-area) from label-free quantification
+by mass spectrometry for all patients and HC samples, the differential abundance of the
+selected protein candidates was confirmed by visualizing the individual values in each
+study group (Figure 5E,F). As already shown in the volcano plots (Figure 5A), where the
+values for the proteins C1QT3 and GP1bA were significantly lower in the pcME/CFS
+study group compared to the pcHC group, the same significantly reduced levels were
+observed in the pcME/CFS group when examining the summarized top-3 peptide areas
+(Figure 5E). Similarly, proteins HBA and HEMO, which showed significant upregulation in
+the piME/CFS group compared with the corresponding HC group in the statistical analysis
+(Figure 5B), also exhibited significantly higher normalized LFQ values in the piME/CFS
+cohort when analyzing the top-3 peptide-area values (Figure 5F).
+Analyzing the significantly regulated protein candidates from each of the two pro-
+teomic datasets in the STRING database for functional enrichment, we found that the
+majority of proteins belong to the following cellular compartments: blood microparticles,
+the extracellular space, the extracellular region, and extracellular exosomes (Supplemen-
+tary Figure S2A,B). Interestingly, the most strongly enriched Reactome pathways differed
+between the pcME/CFS and piME/CFS proteomic studies (Figure 5C,D). In the pcME/CFS
+analysis, the main pathways were fibrin clot formation, regulation of the complement
+cascade, and hemostasias (Figure 5C), whereas in the piME/CFS setting, they included
+heme degradation, heme signaling, hemostasis, and oxygen uptake and carbon monoxide
+release by erythrocytes (Figure 5D).
+2.4. A Selection of Identified Plasma EV Markers Shows Higher Plasma Levels in Validation
+Cohorts of Pime/CfS Patients Compared to HCS
+Next, the expression of five selected protein candidates, namely HBA, HEMO, C1QT3,
+GP1bA, and TSP-1, as one member of the TSP family and a substitute for TSP-4, which
+were identified in the quantitative analysis (see Figure 5), and one protein, ALS/IGFALS,
+identified in the qualitative analysis (see Supplementary Table S4), was analyzed by ELISA
+in plasma samples to validate their potential as biomarkers.
+Plasma samples from the validation cohort (Table 1), consisting of pcME/CFS (n = 11),
+piME/CFS (n = 8), and pcHC (n = 10), were analyzed for the selected protein candidates
+(Figure 6). Significantly higher plasma concentrations of ALS/IGFALS (Figure 6A; p = 0.046)
+and HBA (Figure 6B; p = 0.011) were detected in the piME/CFS group compared to HC.
+TSP-1 concentrations tended (p = 0.068) to be higher in the piME/CFS group compared to
+the HCs and was significantly higher (p = 0.020) compared to pcME/CFS group (Figure 6D).
+Protein concentrations of the other candidates (HEMO, GP1bA, C1QT3) were similar
+between patients and HCs (Figure 6C–F). GP1bA, which was identified as a downregulated
+EV candidate in the proteomics analysis (Figure 5B), was detectable only in a subset of
+plasma samples across all study groups and did not show significant group differences
+(Figure 6E).
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+11 of 30
+Figure 6. Plasma concentrations of selected protein candidates in ME/CFS groups. Plasma levels
+of candidate proteins were quantified by ELISA in post-COVID-19 ME/CFS (pcME/CFS), post-
+infectious ME/CFS (piME/CFS), and post-COVID healthy control (pcHC) cohorts. Violin plots
+show the median (solid line), interquartile range (dotted lines), and individual sample values for
+(A) ALS/IGFALS, (B) HBA, (C) HEMO, (D) TSP-1, (E) GP1bA, and (F) C1QT3. Protein concentrations
+are reported in µg/mL or ng/mL, depending on the analyte. Statistical significance was assessed
+using one-way ANOVA for panel (A), the Kruskal–Wallis test with Benjamini–Yekutieli–Krieger false
+discovery rate correction for panel (B), and the Mann–Whitney U test for panel (D). Sample sizes
+were pcME/CFS (n = 11), piME/CFS (n = 8), and pcHC (n = 10).
+2.5. Identification of Significantly Regulated miRNAs in EV Cargo Associated with pcME/CFS
+and Correlation with Symptom Severity
+In addition to the investigation of protein markers in the EV cargo, this study also
+aimed to characterize the miRNAome of isolated plasma EVs. Consequently, miRNA was
+isolated from EVs of pcHCs and pcME/CFS patients (n = 3/cohort), and RNA-seq was per-
+formed as described in the Methods section. On average, 3.3 × 106 reads were sequenced
+in the pcHC samples and 2.8 × 106 reads in the pcME/CFS samples. From these reads, an
+average of 117 miRNAs were mapped in the pcHC samples, while 91 miRNAs were suc-
+cessfully mapped in the pcME/CFS patients. In total, 55 miRNAs were identified across all
+samples and used for differential expression analysis between the two groups (Figure 7A).
+Four small RNAs were found to be significantly differentially expressed between the pcHC
+donors and the pcME/CFS patients (Figure 7B). MT-TQ-201 (log2 fold change = 3.5), a
+transfer RNA, was the only small RNA that was significantly upregulated in pcME/CFS pa-
+tients (Figure 7A). In contrast, the two miRNAs hsa-miR-374a-5p (log2 fold change = −3.1)
+and has-let-7b-5p (log2 fold change = −3.6), as well as the Piwi-interacting RNA piR-32837
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+12 of 30
+(log2 fold change = −4.2), were significantly downregulated in patients compared to the
+HC group (Figure 7A).
+Figure 7. Identification and validation of differentially expressed EV-associated small RNAs in
+post-COVID-19 ME/CFS. (A) Volcano plot showing differential expression of small RNAs in EVs
+from post-COVID-19 ME/CFS (pcME/CFS) patients versus post-COVID healthy controls (pcHC)
+in the discovery cohort (n = 3 per group). The x-axis represents log2 fold change (pcME/CFS vs.
+pcHC) and the y-axis −log10(p value). Significantly differentially expressed RNAs are highlighted
+in red and annotated (hsa-piR-32837, hsa-let-7b-5p, hsa-miR-374a-5p, MT-TQ-201); non-significant
+RNAs are shown in blue. (B) Table of significantly differentially expressed small RNAs (p < 0.05),
+including p-values and false discovery rate (FDR).Validation by qPCR was performed as described in
+the Methods, and relative expression was calculated using the 2−∆∆Ct method. Violin plots display
+the median (solid line), interquartile range (dotted lines), and individual values for (C) hsa-let-7b-
+5p, (D) hsa-miR-374a-5p, and (E) hsa-miR-126-3p. Statistical significance was assessed using the
+Mann–Whitney U test. Sample sizes were pcME/CFS (n = 12) and pcHC (n = 15).
+Subsequently, RNA was isolated from peak fractions of two SEC runs and cDNA was
+synthesized as described in the Methods section. Then, qPCRs were performed for the
+two significantly dysregulated miRNAs found in the RNA-seq experiment. In addition to
+hsa-miR-374a-5p and hsa-let-7b-5p, we further assessed the expression of hsa-miR-126-3p,
+previously reported to be altered in plasma from ME/CFS patients [45]. The exogenous
+spike-in ath-miR-159a was used to monitor technical quality; its stable expression across all
+samples indicated no extraction- or batch-related variation. Furthermore, hsa-miR-186-5p,
+used as the endogenous normalization control, displayed stable expression in all samples ().
+The qPCR results for the pcHC and pcME/CFS patient cohorts are shown as fold changes in
+expression for hsa-let-7b-5p (Figure 7C), hsa-miR-374a-5p (Figure 7D) and hsa-miR-126-3p
+(Figure 7E). Interestingly, a significantly lower expression of hsa-let-7b-5p was detected
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+13 of 30
+by qPCR in the pcME/CFS cohort compared to pcHCs (p = 0.002) (Figure 7C). Expression
+of hsa-miR-126-3p expression also tended to be lower (p = 0.055) in pcME/CFS patients
+compared to pcHCs (Figure 7E). This non-significant downward trend for hsa-miR-126-3p
+was also observed in the RNA-seq dataset (log2 fold change = –1.4; p = 0.297,). The hsa-
+miR-374a-5p expression level did not differ (p = 0.262) between pcME/CFS patients and
+pcHCs (Figure 7D).
+In correlation analysis of qPCR results for all tested small RNAs with clinical symptom
+scores in the pcME/CFS validation cohort, we found a significant positive correlation
+(r = 0.7101; p = 0.0255) between the expression levels of hsa-let 7b-5p and physical function-
+ing as assessed by the short form health survey 36 (SF-36) questionnaire (Figure 8A). In
+addition, significant negative correlations were observed between hsa-let-7b-5p expression
+and the severity of muscle pain, joint pain, fatigue, and immune symptoms (Figure 8B–E).
+Moreover, reduced hsa-let-7b-5p expression tended to correlate (r = 0.5402; p = 0.0729)
+with increased patient’s disability as assessed by the Bell score in the pcME/CFS vali-
+dation cohort (Figure 8F). No correlations between miRNA expression and age or BMI
+were observed.
+Figure 8. EV-associated hsa-let-7b-5p and clinical symptom severity in post-COVID-19 ME/CFS.
+Scatter plots show correlations between the relative expression of hsa-let-7b-5p and clinical scores in
+post-COVID-19 ME/CFS (pcME/CFS) patients for (A) SF-36 Physical Functioning, (B) muscle pain,
+(C) joint pain, (D) fatigue score, (E) immune score, and (F) Bell score. Each data point represents
+one patient (n = 10–12). Spearman’s rank correlation coefficients (ρ) and corresponding p-values are
+shown in the upper right corner of each plot, with statistically significant correlations highlighted
+in red.
+When analyzing the potential associations between the three miRNAs by correlation
+analysis (Figure S3), no significant correlations were detected between hsa-miR-374a-5p
+or hsa-miR-126-3p and hsa-let-7b-5p, nor between hsa-miR-126-3p and hsa-miR-374a-5p
+(Supplementary Figure S3A–C).
+3. Discussion
+In this study, we comparatively investigated EVs isolated from the plasma of post-
+infectious ME/CFS patients and HCs to characterize their protein and miRNA cargo
+profiles. In addition, identified EV protein and miRNA markers were correlated with clini-
+cal symptom severity. For the protein markers, ME/CFS patients were further categorized
+by the cause of their disease, differentiating between SARS-CoV-2 infection and other infec-
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+14 of 30
+tious triggers. Firstly, we isolated small EVs from the plasma of post-infectious patients
+using the highly reproducible SEC method and characterized them comprehensively. This
+allowed us to confirm that small EVs with typical size and morphology are released into
+the plasma by different types of cells. Moreover, the expression of canonical EV surface
+tetraspanins (CD9, CD63, and CD81) was confirmed via multiplex flow cytometry. This
+analysis revealed differences in the relative expression levels of the various tetraspanins.
+Among these, CD81 was consistently the most abundantly expressed, whereas CD9 and
+CD63 showed comparable but lower expression levels.
+Moreover, our surface marker analysis similarly revealed only marginal differences
+between study groups. Interestingly, the only statistically significant differences involved
+CD9 and CD81 expression levels, which differed between EVs from HCs and piME/CFS
+patients, but not between pcME/CFS patients and pcHCs. The biological significance of
+increased CD81 on piME/CFS-derived EVs remains unclear. In the immune system, CD81
+regulates the immunological synapse, the grouping of receptors in the cell membrane,
+and reduces the immune response [46]. CD9, which tended to be reduced on piME/CFS-
+derived EVs, is known as an anti-inflammatory marker of monocytes and IL-10 producing
+regulatory B cells [47]. Differences in tetraspanins levels have not been described in the
+context of ME/CFS to date, but may be worth monitoring in the future due to their known
+functional role in immune cells. Other EV markers originating from different cellular
+sources were found to differ in their abundance in post-infectious ME/CFS when EVs were
+analyzed directly in plasma via flow cytometry without prior isolation [48].
+To date, no published study has used the MACSPlex Exosome Kit to profile the
+surface marker composition of plasma-derived extracellular vesicles in ME/CFS patients.
+Using this method, we could demonstrate the expression not only of tetraspanins, but
+also of markers originating from different cellular sources. Despite the comprehensive
+profiling, we observed only limited differences between patient and control EVs. A notable
+exception was integrin CD29, which showed significantly reduced expression on EVs from
+piME/CFS patients compared to HCs (Figure 3F). All other analyzed markers did not
+display any differential expression between the cohorts. In contrast, other studies have
+reported significant changes in EVs from patients with acute SARS-CoV-2 infection that
+could serve as indicators of infection severity [49]. Burrello et al. found high expression
+of CD4, CD45, and CD142 in deceased patients, with CD142 exhibiting the strongest
+correlation with disease prognosis. Another study found evidence that the sera of COVID-
+19 patients with mild infection contained higher levels of CD24-expressing EVs. Those EVs
+acted as indicators of mild infection, while severe COVID-19 patients showed higher levels
+of CD82-expressing EVs [50].
+However, in our study of post-infectious ME/CFS patients, we could not identify a
+specific surface marker differentially expressed on plasma EVs. To obtain a thorough profile
+of protein alterations, we therefore investigated the EV proteome and applied two different
+independent mass spectrometry analyses for (1) pcME/CFS patients and (2) piME/CFS
+patients with their corresponding HCs. In each of our two exploratory EV proteome studies,
+we were able to detect a comparable number of candidate proteins. First, we performed a
+qualitative analysis using the STRING database, taking into account that not all proteins
+present in plasma EVs are abundant enough to be detected in the LC-MS analyses. Another
+argument in favor of an initial qualitative overview of the EV proteome is that we analyzed
+the proteome of an isolated small subpopulation of vesicles rather than the entire plasma.
+Therefore, we performed a stepwise selection based on existing knowledge of the EV
+source and the known pathomechanistic pathways/processes involved in ME/CFS, using
+an appropriate selection of STRING-based GO terms such as cellular component, biological
+process, and subcellular localization, as described in detail in the Methods section. This
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+15 of 30
+approach opened the possibility of identifying novel, interesting plasma EV-associated
+targets related to ME/CFS that may develop either after SARS-CoV-2 or after another type
+of infection.
+Interestingly, ALS/IGFALS was consistently identified as a unique candidate in both
+piME/CFS and pcME/CFS patients compared to their corresponding HCs (Supplementary
+Table S4). This molecule has previously been described in the context of ME/CFS [35] in pre-
+pandemic EV and plasma samples from HCs and ME/CFS patients. Accordingly, we found
+significantly enhanced ALS/IGFALS levels in the piME/CFS cohort (Figure 6A), but not
+in the pcME/CFS cohort, resembling the findings of others [35]. This molecule, although
+largely under-recognized, warrants further investigation in the context of ME/CFS due to
+its involvement in immune processes, including antiviral signaling, and its suppression
+by interleukin-1 beta. It facilitates the formation of a complex between tumor necrosis
+factor, receptor-associated factor 6 and interleukin-1 receptor-associated kinase 1, thereby
+enabling subsequent activation of pathways for antiviral protein expression. The elevated
+ALS/IGFALS concentrations in plasma found in this study may reflect a consequence of
+the viral trigger for ME/CFS. Furthermore, its known role in the regulation of insulin-like
+growth factors 1 and 2, and consequently the regulation of metabolism, may be relevant in
+the context of ME/CFS. Other studies have shown that higher ALS/IGFALS levels correlate
+with higher immunoglobulin E levels in patients with childhood asthma, whereas reduced
+ALS/IGFALS levels were reported in autoimmune cirrhosis and acute COVID-19 patients.
+By analyzing all proteins identified in the proteome analyses via FunRich, we found
+unique protein candidates for both the pcME/CFC vs. pcHC and piME/CFS vs. HC
+comparisons. However, only a few of these unique proteins were present in more than
+three samples within each group. L-selectin, which we identified in the pcME/CFS group,
+and P-selectin in the piME/CFS group are proteins previously discussed as serum markers
+in Long-COVID [51–53]. P-selectin, in particular, could contribute to endothelial dysregu-
+lation and thrombocyte activation in ME/CFS and Long-COVID. Interestingly, L-selectin
+may be involved in the solubility and activity of lipidated Wingless/Integrated signaling
+family members in body fluids [54]. Another candidate identified in the piME/CFS group
+is β2-glycoprotein-I, which binds negatively charged molecules, prevents activation of the
+intrinsic blood coagulation cascade, and is the primary antigen in the autoimmune disease
+antiphospholipid syndrome [55]. Future screening of patient sera could therefore include
+these proteins, specifically to test their association with post-infectious ME/CFS. In our
+exploratory quantitative EV proteome analysis comparing pcME/CFS with pcHCs, we
+identified 16 significantly up- or downregulated proteins (Figure 5A), while 23 proteins
+were found to be upregulated in the piME/CFS analysis compared to the corresponding
+HCs (Figure 5B). It is striking that both proteome analyses revealed distinct proteins as-
+sociated with different Reactome pathways. These differences may be attributed to the
+considerably shorter disease duration in the pcME/CFS group (median 12 months; Supple-
+mentary Table S2) compared to the piME/CFS group (median 78 months; Supplementary
+Table S3). For example, proteins involved in complement activation and clot formation
+predominate in the pcME/CFS group, whereas proteins and pathways involved in heme
+binding and the maintenance of homeostasis and erythrocyte function dominated in the
+piME/CFS group. This divergence could be due to the fact that the pcME/CFS cohort was
+examined closer to the time of the initial trigger. Alternatively, distinct infectious triggers
+may cause altered protein expression and thus distinct Reactome profiles. This finding
+should be taken into account in future diagnostic analyses.
+Interestingly, some of the identified proteins, such as HEMO and HBA, have also been
+reported in other studies [35,39,56,57]. While many studies stop at exploratory findings, we
+aimed to validate selected EV-associated candidate proteins in independent patient cohorts
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+16 of 30
+by ELISAs using plasma as an easily accessible source. By measuring HBA in plasma using
+an ELISA that detects both the unmodified α subunit and its glycated form, HbA1c, we
+found significantly elevated levels in piME/CFS patients compared to HCs (Figure 6B).
+Glycation of HBA occurs through non-enzymatic glucose modification and results in the
+formation of HbA1c—a standard clinical marker for long-term glucose homeostasis and
+diabetes management. Notably, elevated HbA1c has been associated with increased body
+pain and fatigue in type 1 diabetes patients [58,59]. Moreover, higher HbA1c plasma levels
+were recently documented in post-acute sequelae of COVID-19 (PACS) [60] and identified as
+a risk factor for developing Long-COVID in type 2 diabetic patients [61,62]. In this context,
+higher HbA1c levels were linked to a greater risk of respiratory symptoms and cognitive
+dysfunction, including brain fog [62]. However, in contrast to these findings, our study
+did not detect significantly enhanced HBA/HbA1c plasma level in the pcME/CFS cohort,
+suggesting that post-COVID and post-infectious ME/CFS may differ in their metabolic
+signatures or in the extent to which glucose dysregulation contributes to disease pathology.
+Although others have recently identified HEMO in the plasma proteome of post-COVID-19
+patients as a promising biomarker within a set of four markers [63], showing nearly 10-fold
+higher expression in patients versus HCs, we could not validate a significant increase in
+HEMO levels by ELISA, despite the initial elevation observed in our EV proteome dataset
+for piME/CFS vs. HC (Figure 5B). Nevertheless, the occurrence of this marker in our
+proteome study identified it as a potentially relevant diagnostic candidate [39]. Giloteaux
+et al. [39] reported that the ratio of 24 h/15 min HEMO levels in EVs from ME/CFS
+patients after cardiopulmonary exercise testing was negatively correlated with SF-36 scores
+measuring health status. In another plasma proteome study by Cervia-Hasler et al. [57],
+lower HEMO level was identified in Long-COVID patients compared to HCs. Moreover, in
+this study, lower HEMO concentrations were associated with increased levels of circulating
+heme, which could promote oxidative damage [57]. Besides HEMO, haptoglobin, another
+heme-binding protein, has come into focus as a diagnostic marker for PEM in ME/CFS.
+Moezzi et al. observed that ME/CFS patients demonstrated a significant reduction in
+haptoglobin levels following post-exertional stress and that lower baseline concentrations
+were associated with impaired cognitive performance [64]. Moreover, another potential
+diagnostic marker found in other studies [57] is TSP-1, which showed increased plasma
+levels in patients. In our study, we observed a trend toward elevated plasma concentrations
+in the piME/CFS group compared to HCs (Figure 6D), and no elevation was detected
+in the pcME/CFS patient group. In a recent targeted plasma proteome study, Nunes
+et al. reported significantly elevated expression of TSP-1 in ME/CFS patients relative to
+HCs, with neither group having a history of SARS-CoV-2 infection [56]. Contractionary
+plasma proteome-based results have been recently described, with TSP-1 downregulated in
+Long-COVID patients versus HCs [65] or upregulated in acute COVID-19 and convalescent
+COVID-19 patients [66]. Thrombospondin-1, a multifunctional, matricellular, and highly
+glycosylated protein primarily released by platelets, can exert diverse biological effects
+through interactions with its receptors CD36 and CD47 [67]. Its anti-angiogenic activity
+may be relevant to post-infectious ME/CFS pathogenesis and potentially contribute to
+vascular dysfunction. In addition, its involvement in clot formation through incorporation
+into fibrin—recently described in Long-COVID—could promote thrombo-inflammatory
+alterations [68,69].
+In summary, HBA was the only marker among the identified proteins in our quan-
+titative analyses that could be validated by ELISA, exclusively in the piME/CFS cohort.
+Moreover, ALS/IGFALS, identified by our qualitative approach, also displayed signif-
+icantly enhanced levels only in the piME/CFS cohort. However, to reliably assess the
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+17 of 30
+clinical significance of these findings, validation in larger and well- characterized patient
+cohorts will be essential.
+To explore further potential diagnostic biomarkers for ME/CFS, we investigated the
+miRNA cargo of plasma EVs. First, we conducted an RNA sequencing analysis focused
+exclusively on the pcME/CFS cohort and the corresponding pcHC group. Among the
+differentially expressed candidates, the two miRNAs that were significantly downregu-
+lated in this sequencing approach, namely hsa-miR-374a-5p and hsa-let-7b-5p (Figure 7),
+were tested in a larger validation cohort. While we observed no significant differences
+between pcME/CFS and pcHC groups for hsa-miR374a-5p, a significantly lower level was
+found for hsa-let-7b-5p in the patient group. Hsa-let-7b-5p emerges as a novel miRNA of
+interest, as it has not previously been reported in ME/CFS or Long-COVID. Within the
+let-7 family, only hsa-let-7d-5p has been described in EVs from ME/CFS patients, where
+it was upregulated compared to HCs [41]. In contrast, hsa-let-7b-5p appears biologically
+more complex. Evidence from autoimmune disease suggests an anti-inflammatory func-
+tion. For instance, reduced expression in the cerebrospinal fluid correlates with increased
+inflammation and clinical severity in multiple sclerosis, supporting its putative role as a
+suppressor of inflammatory pathways [70]. However, in rheumatoid arthritis, hsa-let-7b-5p
+has been proposed to act pro-inflammatory within synovial EVs, with transforming growth
+factor beta receptor 1 and insulin-like growth factor 1 receptor identified as candidate
+downstream mediators [71]. Moreover, reduced EV-associated hsa-let-7b-5p expression
+has been documented in psoriatic arthritis, where lower levels correlate with more severe
+clinical presentation [72]. The function of this miRNA appears to be dependent on the
+specific target molecule, as a pro-inflammatory role has been reported through Toll-like
+receptor 7 activation in neurodegeneration [73] and in rheumatoid arthritis [74].
+We hypothesize that in our pcME/CFS patients, the reduced expression of hsa-let-7b-
+5p may contribute to an insufficiently regulated immune response and persistent low-grade
+inflammation. This assumption is supported by the strong and statistically significant
+correlations found with clinical symptom scores (Figure 8), most prominently its negative
+association with the severity of immune symptoms (Figure 8A). The negative correlations
+with the severity of muscle and joint pain (Figure 8B,C) are consistent with previous sug-
+gestions of tissue-specific miRNA release into plasma EVs [41,75]. The markedly lower
+expression of hsa-let-7b-5p in human plasma EVs could serve as a valuable and promis-
+ing biomarker candidate for piME/CFS, at least for the subgroup of ME/CFS patients
+triggered by an SARS-CoV-2 infection. Interestingly, hsa-let-7b-5p has also been found
+to be significantly reduced in the nasopharyngeal swabs of acute COVID-19 patients [76].
+In line with this, it has been demonstrated that hsa-let-7b-5p regulates genes such as
+angiotensin-converting enzyme 2 and dipeptidyl peptidase-4, both required for SARS-CoV-
+2 entry. Whether hsa-let-7b-5p downregulation also occurs in ME/CFS patients with other
+infectious trigger remains unknown and should be investigated in future studies. Sev-
+eral other differentially expressed miRNAs have been described in ME/CFS patients—for
+instance hsa-miR-127-3p, hsa-miR-140-5p, and hsa-miR-374b-5p—which were found to
+be upregulated in plasma samples of patients compared to HCs [41,42,77,78]. In contrast,
+hsa-miR374b-5p levels were significantly downregulated as measured by RNA sequencing
+and showed a downward trend when measured by qPCR in independent pcME/CFS
+cohorts compared to pcHCs (Figure 7D). An involvement of this miRNA is supported by its
+established multifaceted immunological functions, including its capacity to inhibit neuroin-
+flammation via NLR family pyrin domain containing 3 inflammasome regulation [79], its
+role as a modulator of inflammation in obesity [80], and its ability to regulate inflammatory
+gene expression and monocyte activity in inflammatory bowel disease [81]. Thus, the
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+18 of 30
+involvement of hsa-miR-374b-5p in the pathogenesis of post-infectious ME/CFS remains a
+biologically plausible hypothesis and warrants deeper investigation.
+Another miRNA candidate, hsa-miR-126-3p, has previously been reported as differ-
+entially expressed in the plasma of ME/CFS [15,45,82,83] and Long-COVID [84] patients.
+Hsa-miR-126-3p is a key regulator of endothelial biology, capable of enhancing VEGF
+signaling via suppression of two negative pathway regulators [85]. In our present study,
+we observed reduced hsa-miR126-3p expression in pcME/CFS patients compared to HCs,
+although this was also only observed as a trend (Figure 7E). This aligns with findings
+by Cheema et al. [84]. However, other studies reported a significant upregulation of this
+miRNA in mild or severely affected ME/CFS cohorts [41,45,82]. Differences in patient
+characteristics, disease phase, or infectious triggers may underlie these divergent observa-
+tions. In our experiment, we focused exclusively on female patients whose ME/CFS was
+triggered by COVID-19, factors that may contribute to the observed response pattern.
+Despite the identification of several promising markers for post-infectious ME/CFS
+in this study, certain limitations must be acknowledged, particularly the relatively small
+sample sizes in both the exploratory groups and validation cohorts. This limited size may
+affect the detection of protein markers in plasma as well as the assessment of miRNA
+expression in isolated EVs. In addition, the time passed since the initial SARS-CoV-2
+infection differed between pcME/CFS and pcHC individuals in the proteome exploration
+cohort. Nevertheless, despite the limited number of patients included in the miRNA
+analyses, we demonstrated robust and statistically significant correlations between hsa-
+let-7b-5p expression levels and multiple clinical symptom scores within the pcME/CFS
+cohort. These findings support the role of hsa-let-7b-5p as a strong molecular candidate
+associated with clinical disease severity in this patient population. Moreover, given the
+relatively small sample size of the validation cohorts, only the miRNA candidates could be
+correlated with clinical scores and symptom parameters. For the identified protein markers,
+correlation analyses in substantially larger patient cohorts will be required, along with a
+systematic evaluation of diagnostic specificity and sensitivity, either for individual proteins
+or marker combinations. Furthermore, miRNA detection by qPCR was performed using
+a limited subset of miRNAs identified in our initial RNA sequencing screen. However,
+the initial correlation analysis with clinical symptom scores was successful and provides
+indicative evidence for the potential pathomechanistic involvement of these candidates
+in ME/CFS.
+4. Material and Methods
+4.1. Study Cohorts/Patients
+All patients were diagnosed with ME/CFS based on the Canadian Consensus Criteria
+at the Charité Fatigue Centre [86]. Patients included in this study developed ME/CFS
+either following SARS-CoV-2 infection (pcME/CFS) or after another non-SARS-CoV-2
+infection (piME/CFS). All participants signed an informed consent form prior to study
+enrolment. All studies in this patient cohort were approved by the ethics committee of
+Charité Universitätsmedizin Berlin, Germany (EA2/067/20, EA2/066/20, EA2/070/20),
+following the 1964 Declaration of Helsinki and its subsequent amendments.
+Plasma from piME/CFS and HCs (without self-reported SARS-CoV-2 infection) were
+collected between 2020 and 2021. Plasma samples from HC with previous self-reported
+SARS-CoV-2 infection (referred to as pcHC), as well as from pcME/CFS patients, were
+collected between 2022 and 2023.
+Detailed cohort information is displayed in Tables 1, 2 and S1–S3. To reduce biological
+heterogeneity in this exploratory study, only female participants were included, reflecting
+the strong female predominance of ME/CFS. Severity of disease and symptoms were eval-
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+19 of 30
+uated in patients with appropriate questionnaires. The functional disability was assessed
+using the Bell score, ranging from 0 to 100 (100 indicating no restrictions) [87], and physical
+function was evaluated using the SF-36, ranging from 0 to 100 (higher scores indicating
+better function) [88]. The severity of the key symptoms, fatigue, pain, cognitive impairment
+and immune symptoms, was quantified using a Likert scale (1 = no symptoms to 10 =
+severe symptoms). PEM severity was assessed according to the brief DePaul Symptom
+Questionnaire—post-exertional malaise, with scores ranging from 0 to 46 (higher scores
+indicating more frequent/severe PEM) [89]. Autonomic dysfunction was assessed using
+the Composite Autonomic Symptom Score 31, ranging from 0 to 100 (higher scores indicat-
+ing stronger impairment) [90]. Study data, including clinical parameters, were collected
+and managed using REDCap electronic data capture tools (version 15.5.35, Vanderbilt
+University, Nashville, TN, USA) hosted at Charité Universitätsmedizin Berlin [91,92].
+4.2. Sample Collection and Preparation of Platelet-Free Plasma
+Patient and HC blood samples were collected in ACD tubes (Greiner Bio-One GmbH,
+Kremsmünster, Germany). Within one hour of collection, the blood samples were cen-
+trifuged for 15 min at 2500× g. The plasma was then transferred into a new tube and
+centrifuged again for 15 min at 2500× g. Subsequently, the plasma was collected and stored
+at −80 ◦C until further use.
+4.3. Size-Exclusion Chromatography (SEC) for Isolation of EVs
+SEC was performed to isolate plasma EVs using the IZON automatic fraction collec-
+tor and compatible qEVoriginal/35 nm columns (Izon Science Ltd., Christchurch, New
+Zealand). Each column was used for a maximum of ten EV collections, and different
+columns were used for each individual study cohort. The IZON automatic fraction col-
+lector was prepared for collection by washing the qEVoriginal/35 nm column with 10 mL
+0.5 M NaOH (Merck, Darmstadt, Germany) and subsequently equilibrating the column
+with 20 mL of 1× Dulbecco’s phosphate-buffered saline (DPBS) (Thermo Fisher Scientific,
+Waltham, MA, USA). Washing and equilibration were performed similarly after each sam-
+ple isolation. Then, 1 mL plasma sample was thawed and centrifuged at room temperature
+at 2500× g for 10 min. After transferring the supernatant to a new tube, it was centrifuged
+again at 4 ◦C at 4500× g for 30 min. The supernatant was filtered through a 0.22 µm
+syringe filter (Sartorius, Göttingen, Germany) and then transferred into a low-binding tube
+(Sarstedt, Nümbrecht, Germany). The column was then loaded with 500 µL of filtered
+plasma, and the isolation process was started. During collection, 6 mL of 1× DPBS was
+added as running buffer for the isolation process. Six fractions with a volume of 500 µL
+each were collected into low-binding tubes and stored at −80 ◦C for further use.
+4.4. EV Quantification by Nanoparticle Tracking Analysis (NTA)
+The ZetaView Particle Tracking Analyzer equipped with ZetaView software (ver-
+sion 8.05.16 SP3, Particle Metrix, Inning, Germany) was used to determine the size and
+concentration of EV fractions after initial calibration (100 nm solution). The EV fractions
+were diluted with 1× DPBS to dilutions ranging from 1:500 to 1:4000. The dilutions were
+dependent on the optimal particle range of the instrument (10–1000 nm). Nine distinct
+camera positions were used to optically track and count the particles. The mean particle
+concentration (p/cm3) was automatically calculated and multiplied by the corresponding
+dilution factor. Moreover, the size of the particles was determined using calibration beads
+as reference.
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+20 of 30
+4.5. Transmission Electron Microscopy (TEM)
+EVs from the SEC peak fraction were positive-negatively stained as already de-
+scribed [93] and evaluated for morphology and diameter by TEM at the electron microscopy
+facility of Charité-Universitätsmedizin Berlin. Briefly, 15 µL of the EV sample was placed
+for 20 min on formvar-carbon-coated copper EM grids (Electron Microscopy Sciences,
+Hatfield, PA, USA). For fixation, the grids were incubated with 2% paraformaldehyde
+(Carl Roth, Karlsruhe, Germany) in 0.2 M PBS for 20 min, followed by incubation with
+1% glutaraldehyde (Sigma-Aldrich, St. Louis, MO, USA) in 0.2 M PBS for 5 min. Here-
+after, the grids were washed six times with distilled water. After the last washing step,
+the grids were incubated with 30 µL of 4% uranyl acetate and 2% methylcellulose (both
+Sigma-Aldrich, St. Louis, MO, USA) for 10 min at 4 ◦C. The grids were picked up with an
+eyelet, excess liquid was sucked off using filter paper, and the grids were allowed to dry
+overnight in the dark. After complete drying, the grids were carefully removed from the
+eyelet and stored in a grid box. Samples were examined by a Zeiss Leo 906 transmission
+electron microscope (Carl Zeiss Microscopy GmbH, Jena, Germany).
+4.6. Bicinchoninic Acid (BCA) Assay for Measurement of Protein Concentration
+All collected EV-containing pooled SEC fractions (F2–F4) were analyzed for pro-
+tein concentration using the Pierce BCA Protein Assay Kit (Thermo Fisher Scientific,
+Waltham, MA, USA) according to the manufacturer’s instructions for the detection range
+25–2000 µg/mL. All samples were tested in duplicate in a 96-well plate (Thermo Fisher
+Scientific, Waltham, MA, USA). Absorbance was measured using a Tecan Spark plate reader
+(Tecan Group Ltd., Männedorf, Switzerland) at 562 nm.
+4.7. Characterization of EV Surface Markers by MACSPlex
+In order to characterize the surface epitopes of isolated EVs, the MACSPlex EV kit for
+immune-oncology, human from Miltenyi (Miltenyi Biotec, Bergisch Gladbach, Germany) was
+used according to the manufacturer’s instructions. This kit is recommended under the
+MISEV guidelines [94]. Briefly, 30–45 µL, corresponding to 5–10 µg protein of pooled EVs,
+were diluted to 120 µL using MACSPlex buffer in low-binding tubes (Sarstedt, Nümbrecht,
+Germany). As a negative control, 120 µL of the buffer was used. Then, 15 µL of Exosome
+Capture beads was added to each tube and incubated overnight on a tube rotator under
+continuous motion. All samples were measured using a CytoFlex LX flow cytometer
+(Beckman Coulter Life Science, Brea, CA, USA) within one hour and analyzed using FlowJo
+(version 10, BD Life Sciences, Ashland, OR, USA).
+The relative abundance of each surface marker was calculated as follows: First, the
+median fluorescence signal intensity (MFI) of each bead population from the blank control
+was subtracted from the corresponding MFI in each sample. Then, a normalization factor
+was determined by calculating the median intensity of the three tetraspanins CD9, CD63,
+and CD81 for each sample. Finally, the signal intensity of each bead population was divided
+by the sample-specific normalization factor to determine the relative expression level of
+each marker.
+4.8. Proteomic Characterization of EV
+Differentially expressed proteins in EVs from patients and HCs were detected using
+liquid chromatography–mass spectrometry (LC-MS). This was performed in two indepen-
+dent proteome analyses: one comparing pcME/CFS patients to their matched pcHCs, and
+another comparing the piME/CFS cohort with their corresponding controls, according
+to the procedure previously described in [93]. Cohort characteristics are displayed in
+Supplementary Tables S1 and S2.
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+21 of 30
+4.8.1. Sample Preparation
+EV samples were prepared for proteomics analyses using the filter-aided sample
+preparation method [95]. Briefly, samples were mixed with 200 µL of 8 M urea in 0.1 mM
+Tris-HCl (pH 8.5; Sigma-Aldrich) and incubated for 10 min at room temperature. On-
+filter digestion was carried out using sequencing-grade modified porcine trypsin (20 µg;
+Promega Corporation, Madison, WI, USA) in 800 µL of 50 mM ammonium bicarbonate
+(Sigma-Aldrich). Digestion was performed in Amicon Ultra centrifugal filter units with
+a 10 kDa molecular weight cutoff (Merck Chemicals GmbH, Darmstadt, Germany) and
+incubated overnight at 37 ◦C. The resulting peptide mixtures were desalted using ZipTip
+C18 pipette tips (Merck Chemicals GmbH) according to the manufacturer’s instructions.
+4.8.2. Mass Spectrometry Analyses
+For mass spectrometric analysis, 2 µL of each peptide extract eluate was injected into
+a high-performance liquid chromatography (nano-HPLC) system (Dionex Ultimate 3000,
+Thermo Fisher Scientific, Waltham, MA, USA). Peptide separation was performed using
+a 60 min gradient of 2–44% acetonitrile in 0.1% formic acid at a flow rate of 300 nL/min,
+employing a pre-column (trap column) and an analytical C18 column. The HPLC system
+was coupled to an ESI-QTOF mass spectrometer Impact II (Bruker Daltonik, Bremen,
+Germany) via a CaptiveSpray ion source. The ionization voltage was set to 1600 V, and the
+source temperature was maintained at 150 ◦C. Data acquisition was carried out in data-
+dependent acquisition (DDA) mode using the Instant Expertise method. The scan range
+was 150–2200 Da. Spectra were acquired at a rate of 2 Hz in MS mode and at 4–16 kHz in
+MS/MS mode, with a cycle time of 3 s in the QTOF reflector analyzer.
+4.8.3. Protein Identification
+Protein identification was performed using PEAKS Studio software (version 10.6, Bioin-
+formatics Solutions, Waterloo, ON, Canada). The generated peptide lists were searched
+against human entries in the UniProt database. Additionally, PEAKS de novo sequencing
+and the post-translational modification search tool were used to detect peptides not ex-
+plicitly listed in the database but homologous to known sequences. A maximum of three
+variable post-translational modifications per peptide was allowed. Retention time shift
+tolerance was set to one minute. All search tools were integrated within the PEAKS X Pro
+platform. The false discovery rate was estimated using the target–decoy fusion method and
+set to 1%. Analysis parameters were set as follows: taxonomy restricted to Homo sapiens
+(20,175 sequences), trypsin as the proteolytic enzyme with a maximum of one missed
+cleavage, monoisotopic mass values, a peptide mass tolerance of 10 ppm, a fragment mass
+tolerance of 0.05 Da, and oxidation set as a variable modification. Significance filters were
+applied at −lgP > 20 for peptides and at −lgP > 15 for proteins, with the unique peptide
+filter set to 1.
+4.9. Proteomic Data Processing
+Proteins selected for downstream analysis were first identified using a qualitative
+approach. All proteins significantly detected (−lgP > 20 and a protein significance filter
+of −lgP > 15) in at least one sample from the patient groups (piMECFS and pcME/CFS)
+and their corresponding healthy donors were subjected to functional annotation using the
+STRING database (European Molecular Biology Laboratory & University of Zurich, Zurich,
+Switzerland). To systematically categorize these proteins, STRING enrichment analysis was
+performed across “GO” terms for “Cellular Component”, “Biological Process”, and “Subcel-
+lular Localization”. For each category, the enriched GO terms and their associated proteins
+were exported to Microsoft Excel (version 365, Microsoft Corporation, Redmond, WA, USA)
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+22 of 30
+and manually screened. Inclusion criteria focused on biological relevance to extracellular
+vesicles, endothelial or muscle biology, immune regulation, coagulation, angiogenesis,
+inflammation, and responses to oxidative stress. Within the “Subcellular Localization”
+category, proteins were prioritized based on GO terms associated with vesicles, exosomes,
+the cell surface, the complement system, actin-related structures, and platelets. Proteins
+not assigned to relevant GO terms in earlier rounds were carried forward and re-evaluated
+at each subsequent step. After these three enrichment rounds, a refined list of proteins was
+generated for each ME/CFS group (pcME/CFS and piME/CFS) and their matched healthy
+donors, identifying unique protein hits after the removal of overlapping entries. In parallel,
+VENN-analysis using FunRich software (version 3.1.3, La Trobe University, Melbourne,
+VIC, Australia) [96,97] was performed on all EV proteins initially found by LC-MS analysis
+to identify proteins present exclusively in one study group or shared between both groups
+within each proteomic dataset.
+Label-free quantification was performed using PEAKS Studio software (version 10.6,
+Bioinformatics Solutions, Waterloo, ON, Canada), with automatic detection of the reference-
+sample and alignment of sample runs. The protein significance filter was adjusted to 1,
+the unique peptide filter was maintained at 1, and the protein fold change filter was set
+to 1. Finally, PEAKS analysis was conducted to identify differentially abundant proteins
+(significance mode PEAKSQ) using total ion count normalization.
+To identify differentially expressed proteins between piME/CFS and HC cohorts, the
+normalized proteomic data were log2-transformed to approximate normality and reduce
+heteroscedasticity. A linear model was fitted to the transformed expression data, and
+empirical Bayes moderation was applied to obtain moderated t-statistics and adjusted
+p-values. Differentially expressed proteins were ranked accordingly. Volcano plots were
+generated to visualize log2 fold changes versus −log10(p) values, with statistical significance
+thresholds set at p < 0.05 and |log2 fold change| ≥1. Proteins exceeding these thresholds
+were highlighted in color.
+4.10. Validation of Candidate Proteins with ELISA Systems
+Plasma or EVs from patient cohorts and HCs were analyzed using commercial
+ELISA kits according to the manufacturer’s instructions for the following analytes:
+thrombospondin-1 (R&D Systems, Minneapolis, MN, USA), HEMO (Thermo Fisher Sci-
+entific, Waltham, MA, USA), GP1bA (MyBioSource, San Diego, CA, USA), ALS/IGFALS
+(BioLegend, San Diego, CA, USA), C1QT3 (Biolegend, San Diego, CA, USA) and HBA
+(Abcam, Cambridge, UK). However, due to insufficient assay sensitivity for detecting these
+proteins in isolated EV fractions, all measurements were ultimately performed using plasma
+samples. Samples and standard curves were run in duplicate and diluted as instructed
+by the manuals. Absorbance at 450 nm was recorded using a Tecan SPARK plate reader
+(Tecan Group Ltd., Männedorf, Switzerland). Protein concentrations were calculated from
+the respective standard curves and adjusted by appropriate dilution factors.
+4.11. miRNA Isolation and Sequencing
+For miRNA isolation, EV-containing fractions (F2–F4) from two independent SEC
+runs per donor were pooled and transferred into ultracentrifugation tubes. After adding
+33 mL of DPBS, samples were centrifuged at 29,000 rpm for 2:45 h at 4 ◦C using an Optima
+L-80XP Ultracentrifuge (Beckman Coulter, Brea, CA, USA). The resulting EV pellet was
+resuspended in 700 µL QIAzol Lysis Reagent (Qiagen, Hilden, Germany) together with
+4 µL of spike-in control (ath-miR-159a, 1 fmol/µL). Pellets were homogenized for 30 s
+using a T25 digital ULTRA-TURRAX homogenizer (IKA-Werke GmbH & Co. KG, Staufen,
+Germany). Total RNA was extracted using two phenol–chloroform extractions, after which
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+23 of 30
+the aqueous phase was mixed with 1.5 volumes of 100% ethanol (Serva Electrophoresis
+GmbH, Heidelberg, Germany) and loaded onto spin columns. miRNAs were isolated via
+the RNA Clean & Concentrator-5′ Kit (Zymo Research, Irvine, CA, USA). Following RNA
+isolation, samples underwent a final cleanup according to the manufacturer’s protocol
+optimized for retention of small RNAs (>17 nt), ensuring recovery of miRNAs within the
+expected size range (~20–24 nt) and suitability for downstream small RNA sequencing.
+Finally, RNA concentration and purity were assessed with a Nanodrop ND-1000 Spec-
+trophotometer (Thermo Fisher Scientific, Waltham, MA, USA) at 230, 260 and 280 nm.
+Library preparation, sequencing and downstream bioinformatics analysis were performed
+for three RNA samples per group by the company GenXPro (Frankfurt am Main, Germany)
+using the ultra-sensitive TrueQuant small RNA-Seq kit. Sequences were produced using
+an NextSeq 500 system (Illumina, SanDiego, CA, USA) with 1 × 75 base pairs. Dedu-
+plication based on unique molecular identifiers was carried out using in-house scripts.
+Unprocessed sequencing reads underwent adapter and quality trimming using Cutadapt
+(version 4.3, Max Planck Institute for Developmental Biology, Tübingen, Germany). Quality
+assessment of the sequenced reads was performed with FastQC (Version 0.11.9, Babraham
+Bioinformatics, Cambridge, UK). Processed sequencing reads were aligned to the human
+reference genome using Bowtie2 (version 2.4.4, Johns Hopkins University, Baltimore, MD,
+USA) [98] and alignments were analyzed by Samtools (version 1.19/1.14, Wellcome Sanger
+Institute, Hinxton, UK). Aggregated sequencing QC software (MultiQC-version 1.16, SciL-
+ifeLab, Stockholm, Sweden) was used for aggregated quality assessment and differential
+expression analysis was performed using DE-Seq2. Targets were identified as differentially
+expressed upon a log2 fold change of −1< or >1 and a p value < 0.05. Results were compiled
+and visualized by GenXPro in a summary report.
+4.12. cDNA Synthesis and Real-Time Quantitative PCR for Selected miRNAs
+For cDNA synthesis, isolated miRNAs were reverse-transcribed using the TaqMan
+Advanced miRNA cDNA Synthesis-Kit (Thermo Fisher Scientific, Waltham, MA, USA)
+according to the manufacturer’s instructions. The resulting cDNA templates were analyzed
+by qPCR using TaqMan Advanced miRNA Assays (Thermo Fisher Scientific, Waltham,
+MA, USA). The following miRNA targets were selected for analysis: hsa-miR-126-3p, hsa-
+miR-374a-5p, and hsa-let-7b-5p, with hsa-miR-186-5p serving as the endogenous control
+and ath-miR-159a as the exogenous spike-in control. All qPCR samples were run in
+technical triplicates on a CFX Duet Real-Time PCR System (Bio-Rad Laboratories, Inc.
+Hercules, CA, USA). The 2−∆∆Ct method was used to determine fold expression changes.
+Briefly, individual Ct values for each miRNA from every sample were normalized to the
+endogenous control: ∆Ct = CtmiR–Cthsa-miR-186-5p. Then, ∆∆Ct was calculated by
+normalizing to the median of HC samples: ∆∆Ct = ∆Ct–median ∆CtHC. Fold expression
+changes were calculated as 2−∆Ct.
+4.13. Statistical Analysis
+Statistical analyses were performed using GraphPad Prism Version 9.1.2 (GraphPad
+Software, San Diego, CA, USA) and R package (version 4.5.1, R Foundation for Statistical
+Computing, Vienna, Austria).
+Patient characteristics are reported as median and range for continuous variables
+stratified by study group. Univariate comparisons of independent groups were performed
+using the Kruskal–Wallis test with a two-tailed p value ≤0.05. For comparisons be-
+tween two independent groups, either an unpaired t-test (normally distributed data) or a
+Mann–Whitney U test (non-normally distributed data) was applied. All datasets were first
+evaluated descriptively, and mean values with interquartile ranges (IQRs) were calculated
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+24 of 30
+from untransformed and background-corrected data (protein ELISA) or normalized values
+(MACSplex, qPCR values for miRNA). For the LC-MS dataset, individual sample values
+were visualized as log10 transformed peptide areas (top-3-peptides) to improve scaling.
+Normality of MACSplex, ELISA and qPCR data was assessed using the Shapiro–Wilk
+and D’Agostino and Pearson tests. Comparative analyses of quantitative variables were
+performed using one-way ANOVA test without pairing for normally distributed data
+or a Kruskal–Wallis test with Benjamini, Krieger, and Yekutieli FDR correction for non-
+parametric data and multiple pairwise comparisons. A q-value ≤0.05 was considered
+as statistically significant. For two group comparisons, the Mann–Whitney U test was
+applied. As the majority of variables did not follow a normal distribution, Spearman
+correlation analysis was performed. Unless otherwise specified, two-tailed p-values ≤0.05
+were regarded as statistically significant.
+5. Conclusions
+In this study, we identified potential diagnostic markers in the proteome and miRNA
+cargo of plasma-derived extracellular vesicles from two post-infectious ME/CFS cohorts:
+those triggered by SARS-CoV-2 (pcME/CFS) and those triggered by other infections
+(piME/CFS). The proteomic markers ALS/IGFALS and HBA were significantly elevated
+exclusively in the piME/CFS group, indicating that marker profiles differ depending on
+the initial disease trigger. This suggests that multi-analyte panels, rather than a single
+universal marker, may be required. In contrast, EV-associated miRNAs provided more
+robust and clinically meaningful results in pcME/CFS, with hsa-let-7b-5p emerging as a
+particularly strong candidate. It was significantly downregulated compared to HCs and
+correlated with multiple clinical severity parameters. This positions hsa-let-7b-5p as a
+promising diagnostic and pathophysiological marker specifically for COVID-19-associated
+ME/CFS. Testing this miRNA in additional piME/CFS cohorts will now be essential to
+determine whether its biomarker potential extends across the disease regardless of the
+infectious trigger. Overall, the integration of proteomic and miRNA profiles from EVs rep-
+resents a compelling strategy to enhance diagnostic sensitivity, stratify patient subgroups,
+and advance the mechanistic understanding of piME/CFS. With the expansion of these
+findings to larger, well-characterized cohorts, these approaches could lay the groundwork
+for improved diagnostics and the development of targeted therapeutics.
+Supplementary Materials: The following supporting information can be downloaded at: https:
+//www.mdpi.com/article/10.3390/ijms27052314/s1.
+Author Contributions: Conceptualization, M.S.; Data Curation, J.S., F.F.D., A.B., D.B., C.S. (Carl
+Schwarzburg), O.K. and A.G.; Funding Acquisition, M.S.; Investigation, J.S., F.F.D., C.S. (Carl
+Schwarzburg), K.R., O.K., M.S. and C.M.B.; Methodology, J.S., F.F.D., A.B., D.B., C.S. (Carl
+Schwarzburg), O.K. and C.M.B.; Project administration, M.S. and F.S.; Supervision, M.S.; Scien-
+tific Insights, A.G., C.S. (Carmen Scheibenbogen), F.S., M.S. and C.M.B.; Writing—Original Draft,
+M.S. and A.G.; Writing—Review and Editing, M.S., A.G., J.S., F.F.D., A.B., D.B., F.S., C.S. (Carl
+Schwarzburg), L.W., C.K.P., K.W., K.R., O.K., C.M.B. and C.S. (Carmen Scheibenbogen). All authors
+have read and agreed to the published version of the manuscript.
+Funding: The study was funded by the Charité Chronic Fatigue Center (CFC) of the Charité Univer-
+sitätsmedizin Berlin and the German Society for ME/CFS. The study was also supported partly by
+the BMFTR-funded projects BioSig-PEM (01EJ2408D) and VADYS-ME (01EJ2406A). J.S., D.B., F.F.D.
+and L.W. received a scholarship from the Lost Voices Foundation e.V.
+Institutional Review Board Statement: The study was conducted in accordance with the Declaration
+of Helsinki and was approved by the Charité ethical committee (EA2/067/20, approved on 3 June
+2020, EA2/066/20 approved on 29 October 2020, EA2/070/20, approved on 3 June 2020).
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+25 of 30
+Informed Consent Statement: All study participants gave written informed consent.
+Data Availability Statement: The raw and processed miRNA expression data generated during this
+study have been deposited in the NCBI Gene Expression Omnibus (GEO) under accession number
+GSE317067. The mass spectrometry proteomics data have been deposited to the ProteomeXchange
+Consortium via the PRIDE [99] partner repository with the dataset identifier PXD073644.
+Acknowledgments: The authors would like to thank Sandra Bauer for helpful technical assistance
+and the nurses of the outpatient clinics for ME/CFS at the Charité Fatigue Center. Many thanks to
+Sophie Steiner for support with flow cytometry measurements. We would like to thank the Charité
+Core Facility Electron Microscopy, for support in TEM analysis of the plasma vesicles. Thanks to the
+Imaging Mass Spectrometry Unit of the Berlin Institute of Health (BIH) for support in the LC-MS
+analysis of our isolated vesicle pools. Thanks also to the company GenXPro for their support with
+NGS analysis.
+Conflicts of Interest: The authors declare no conflicts of interest.
+Abbreviations
+The following abbreviations are used in this manuscript:
+ALS/IGFALS
+Insulin-like growth factor acid labile subunit
+C1QT3
+Complement C1q tumor necrosis factor-related protein 3
+DPBS
+Dulbecco’s phosphate-buffered saline
+ELISA
+Enzyme-linked immunosorbent assay
+EVs
+Extracellular vescicles
+FDR
+False discovery rate
+GP1bA
+Glycoprotein Ib platelet subunit alpha
+HbA1c
+Glycated hemoglobin A1c
+HBA
+Hemoglobin subunit alpha
+HC
+Healthy control
+HEMO
+Hemopexin
+IQR
+Interquartile range
+ME/CFS
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome
+MFI
+Median fluorescence intensity
+NTA
+Nanoparticle tracking analysis
+PACS
+Post-acute sequelae of COVID-19
+PCS
+Post-COVID syndrome
+PEM
+Post-exertional malaise
+SARS-CoV-2
+Severe acute respiratory syndrome coronavirus 2
+SEC
+Size-exclusion chromatography
+TEM
+Transmission electron microscopy
+References
+1.
+Carruthers, B.M.; van de Sande, M.I.; De Meirleir, K.L.; Klimas, N.G.; Broderick, G.; Mitchell, T.; Staines, D.; Powles, A.C.; Speight,
+N.; Vallings, R.; et al. Myalgic encephalomyelitis: International Consensus Criteria. J. Intern. Med. 2011, 270, 327–338. Correction
+in J. Intern. Med. 2017, 282, 353. [CrossRef]
+2.
+Nacul, L.; Authier, F.J.; Scheibenbogen, C.; Lorusso, L.; Helland, I.B.; Martin, J.A.; Sirbu, C.A.; Mengshoel, A.M.; Polo, O.;
+Behrends, U.; et al. European Network on Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (EUROMENE): Expert
+Consensus on the Diagnosis, Service Provision, and Care of People with ME/CFS in Europe. Medicina 2021, 57, 510. [CrossRef]
+3.
+Arron, H.E.; Marsh, B.D.; Kell, D.B.; Khan, M.A.; Jaeger, B.R.; Pretorius, E. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome:
+The biology of a neglected disease. Front. Immunol. 2024, 15, 1386607. [CrossRef]
+4.
+Jacobson, S.K.; Daly, J.S.; Thorne, G.M.; McIntosh, K. Chronic parvovirus B19 infection resulting in chronic fatigue syndrome:
+Case history and review. Clin. Infect. Dis. Off. Publ. Infect. Dis. Soc. Am. 1997, 24, 1048–1051. [CrossRef]
+5.
+Ortega-Hernandez, O.D.; Shoenfeld, Y. Infection, vaccination, and autoantibodies in chronic fatigue syndrome, cause or coinci-
+dence? Ann. N. Y. Acad. Sci. 2009, 1173, 600–609. [CrossRef] [PubMed]
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+26 of 30
+6.
+Sotzny, F.; Blanco, J.; Capelli, E.; Castro-Marrero, J.; Steiner, S.; Murovska, M.; Scheibenbogen, C. Myalgic Encephalomyeli-
+tis/Chronic Fatigue Syndrome—Evidence for an autoimmune disease. Autoimmun. Rev. 2018, 17, 601–609. [CrossRef]
+7.
+Kedor, C.; Freitag, H.; Meyer-Arndt, L.; Wittke, K.; Hanitsch, L.G.; Zoller, T.; Steinbeis, F.; Haffke, M.; Rudolf, G.; Heidecker,
+B.; et al. A prospective observational study of post-COVID-19 chronic fatigue syndrome following the first pandemic wave in
+Germany and biomarkers associated with symptom severity. Nat. Commun. 2022, 13, 5104. Correction in Nat. Commun. 2022,
+13, 6009.[CrossRef] [PubMed]
+8.
+Haffke, M.; Freitag, H.; Rudolf, G.; Seifert, M.; Doehner, W.; Scherbakov, N.; Hanitsch, L.; Wittke, K.; Bauer, S.; Konietschke, F.;
+et al. Endothelial dysfunction and altered endothelial biomarkers in patients with post-COVID-19 syndrome and chronic fatigue
+syndrome (ME/CFS). J. Transl. Med. 2022, 20, 138. [CrossRef] [PubMed]
+9.
+Fluge, Ø.; Tronstad, K.J.; Mella, O. Pathomechanisms and possible interventions in myalgic encephalomyelitis/chronic fatigue
+syndrome (ME/CFS). J. Clin. Investig. 2021, 131, e150377. [CrossRef] [PubMed]
+10.
+Wirth, K.; Scheibenbogen, C. A Unifying Hypothesis of the Pathophysiology of Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome (ME/CFS): Recognitions from the finding of autoantibodies against ß2-adrenergic receptors. Autoimmun. Rev. 2020,
+19, 102527. [CrossRef]
+11.
+Missailidis, D.; Annesley, S.J.; Fisher, P.R. Pathological Mechanisms Underlying Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome. Diagnostics 2019, 9, 80. [CrossRef]
+12.
+Capelli, E.; Zola, R.; Lorusso, L.; Venturini, L.; Sardi, F.; Ricevuti, G. Chronic fatigue syndrome/myalgic encephalomyelitis: An
+update. Int. J. Immunopathol. Pharmacol. 2010, 23, 981–989. [CrossRef]
+13.
+Rohrhofer, J.; Hauser, L.; Lettenmaier, L.; Lutz, L.; Koidl, L.; Gentile, S.A.; Ret, D.; Stingl, M.; Untersmayr, E. Immunological
+Patient Stratification in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. J. Clin. Med. 2024, 13, 275. [CrossRef]
+14.
+Xiong, R.; Gunter, C.; Fleming, E.; Vernon, S.D.; Bateman, L.; Unutmaz, D.; Oh, J. Multi-‘omics of gut microbiome-host interactions
+in short- and long-term myalgic encephalomyelitis/chronic fatigue syndrome patients. Cell Host Microbe 2023, 31, 273–287.e5.
+[CrossRef]
+15.
+Annesley, S.J.; Missailidis, D.; Heng, B.; Josev, E.K.; Armstrong, C.W. Unravelling shared mechanisms: Insights from recent
+ME/CFS research to illuminate long COVID pathologies. Trends Mol. Med. 2024, 30, 443–458. [CrossRef]
+16.
+Appelman, B.; Charlton, B.T.; Goulding, R.P.; Kerkhoff, T.J.; Breedveld, E.A.; Noort, W.; Offringa, C.; Bloemers, F.W.; van Weeghel,
+M.; Schomakers, B.V.; et al. Muscle abnormalities worsen after post-exertional malaise in long COVID. Nat. Commun. 2024, 15, 17.
+[CrossRef] [PubMed]
+17.
+Jäkel, B.; Kedor, C.; Grabowski, P.; Wittke, K.; Thiel, S.; Scherbakov, N.; Doehner, W.; Scheibenbogen, C.; Freitag, H. Hand grip
+strength and fatigability: Correlation with clinical parameters and diagnostic suitability in ME/CFS. J. Transl. Med. 2021, 19, 159.
+[CrossRef] [PubMed]
+18.
+Lim, E.J.; Ahn, Y.C.; Jang, E.S.; Lee, S.W.; Lee, S.H.; Son, C.G. Systematic review and meta-analysis of the prevalence of chronic
+fatigue syndrome/myalgic encephalomyelitis (CFS/ME). J. Transl. Med. 2020, 18, 100. [CrossRef] [PubMed]
+19.
+Snell, C.R.; Stevens, S.R.; Davenport, T.E.; Van Ness, J.M. Discriminative validity of metabolic and workload measurements for
+identifying people with chronic fatigue syndrome. Phys. Ther. 2013, 93, 1484–1492. [CrossRef]
+20.
+Kim, J.M.; Park, K.I.; Choi, S.Y.; Park, H.E.; Lee, H.; Bae, H.M. Dynamic Alterations in Cerebral Hemodynamics Measured by
+Portable Near-Infrared Spectroscopy in Orthostatic Hypotension and Intolerance. Am. J. Hypertens. 2023, 36, 385–393. [CrossRef]
+21.
+Carruthers, B.M. Definitions and aetiology of myalgic encephalomyelitis: How the Canadian consensus clinical definition of
+myalgic encephalomyelitis works. J. Clin. Pathol. 2007, 60, 117–119. [CrossRef] [PubMed]
+22.
+van Niel, G.; D’Angelo, G.; Raposo, G. Shedding light on the cell biology of extracellular vesicles. Nat. Rev. Mol. Cell Biol. 2018, 19,
+213–228. [CrossRef] [PubMed]
+23.
+Clarke, K.S.P.; Kingdon, C.C.; Hughes, M.P.; Lacerda, E.M.; Lewis, R.; Kruchek, E.J.; Dorey, R.A.; Labeed, F.H. The search
+for a blood-based biomarker for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): From biochemistry to
+electrophysiology. J. Transl. Med. 2025, 23, 149. [CrossRef]
+24.
+Beck, S.; Hochreiter, B.; Schmid, J.A. Extracellular Vesicles Linking Inflammation, Cancer and Thrombotic Risks. Front. Cell Dev.
+Biol. 2022, 10, 859863. [CrossRef]
+25.
+Liu, Y.J.; Wang, C. A review of the regulatory mechanisms of extracellular vesicles-mediated intercellular communication. Cell
+Commun. Signal 2023, 21, 77. [CrossRef]
+26.
+Crescitelli, R.; Lässer, C.; Szabó, T.G.; Kittel, A.; Eldh, M.; Dianzani, I.; Buzás, E.I.; Lötvall, J. Distinct RNA profiles in subpopula-
+tions of extracellular vesicles: Apoptotic bodies, microvesicles and exosomes. J. Extracell. Vesicles 2013, 2, 20677. [CrossRef]
+27.
+Chatterjee, V.; Yang, X.; Ma, Y.; Wu, M.H.; Yuan, S.Y. Extracellular vesicles: New players in regulating vascular barrier function.
+Am. J. Physiol. Heart Circ. Physiol. 2020, 319, H1181–H1196. [CrossRef]
+28.
+Kalluri, R.; LeBleu, V.S. The biology, function, and biomedical applications of exosomes. Science 2020, 367, eaau6977. [CrossRef]
+[PubMed]
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+27 of 30
+29.
+Kabekkodu, S.P.; Shukla, V.; Varghese, V.K.; Jeevitha, D.S.; Chakrabarty, S.; Satyamoorthy, K. Clustered miRNAs and their role in
+biological functions and diseases. Biol. Rev. Camb. Philos. Soc. 2018, 93, 1955–1986. [CrossRef]
+30.
+Lv, J.; Xiong, X. Extracellular Vesicle microRNA: A Promising Biomarker and Therapeutic Target for Respiratory Diseases. Int. J.
+Mol. Sci. 2024, 25, 9147. [CrossRef]
+31.
+Kimura, M.; Kothari, S.; Gohir, W.; Camargo, J.F.; Husain, S. MicroRNAs in infectious diseases: Potential diagnostic biomarkers
+and therapeutic targets. Clin. Microbiol. Rev. 2023, 36, e0001523. [CrossRef] [PubMed]
+32.
+Budden, C.F.; Gearing, L.J.; Kaiser, R.; Standke, L.; Hertzog, P.J.; Latz, E. Inflammasome-induced extracellular vesicles harbour
+distinct RNA signatures and alter bystander macrophage responses. J. Extracell. Vesicles 2021, 10, e12127. [CrossRef] [PubMed]
+33.
+Wang, X.; He, B. Insight into endothelial cell-derived extracellular vesicles in cardiovascular disease: Molecular mechanisms and
+clinical implications. Pharmacol. Res. 2024, 207, 107309. [CrossRef]
+34.
+Di Febo, R.; Saeed, Z.; Serafini, F.; Brocco, D.; D’Ascanio, F.; Pizzi, A.D.; Tinari, N.; Crescitelli, R.; Lanuti, P.; Renda, G. Diagnostic
+and prognostic roles of endothelial- and platelet-derived extracellular vesicles in cardiovascular diseases. J. Transl. Med. 2025,
+23, 553. [CrossRef]
+35.
+Giloteaux, L.; Li, J.; Hornig, M.; Lipkin, W.I.; Ruppert, D.; Hanson, M.R. Proteomics and cytokine analyses distinguish myalgic
+encephalomyelitis/chronic fatigue syndrome cases from controls. J. Transl. Med. 2023, 21, 322. [CrossRef]
+36.
+Castro-Marrero, J.; Serrano-Pertierra, E.; Oliveira-Rodríguez, M.; Zaragozá, M.C.; Martínez-Martínez, A.; Blanco-López, M.D.C.;
+Alegre, J. Circulating extracellular vesicles as potential biomarkers in chronic fatigue syndrome/myalgic encephalomyelitis: An
+exploratory pilot study. J. Extracell. Vesicles 2018, 7, 1453730. [CrossRef]
+37.
+Eguchi, A.; Fukuda, S.; Kuratsune, H.; Nojima, J.; Nakatomi, Y.; Watanabe, Y.; Feldstein, A.E. Identification of actin network pro-
+teins, talin-1 and filamin-A, in circulating extracellular vesicles as blood biomarkers for human myalgic encephalomyelitis/chronic
+fatigue syndrome. Brain Behav. Immun. 2020, 84, 106–114. [CrossRef]
+38.
+Giloteaux, L.; O’Neal, A.; Castro-Marrero, J.; Levine, S.M.; Hanson, M.R. Cytokine profiling of extracellular vesicles isolated from
+plasma in myalgic encephalomyelitis/chronic fatigue syndrome: A pilot study. J. Transl. Med. 2020, 18, 387. [CrossRef]
+39.
+Giloteaux, L.; Glass, K.A.; Germain, A.; Franconi, C.J.; Zhang, S.; Hanson, M.R. Dysregulation of extracellular vesicle protein
+cargo in female myalgic encephalomyelitis/chronic fatigue syndrome cases and sedentary controls in response to maximal
+exercise. J. Extracell. Vesicles 2024, 13, e12403. [CrossRef]
+40.
+Glass, K.A.; Giloteaux, L.; Zhang, S.; Hanson, M.R. Extracellular vesicle proteomics uncovers energy metabolism, complement
+system, and endoplasmic reticulum stress response dysregulation postexercise in males with myalgic encephalomyelitis/chronic
+fatigue syndrome. Clin. Transl. Med. 2025, 15, e70346. [CrossRef] [PubMed]
+41.
+Almenar-Perez, E.; Sarria, L.; Nathanson, L.; Oltra, E. Assessing diagnostic value of microRNAs from peripheral blood mononu-
+clear cells and extracellular vesicles in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Sci. Rep. 2020, 10, 2064. [CrossRef]
+42.
+Nepotchatykh, E.; Caraus, I.; Elremaly, W.; Leveau, C.; Elbakry, M.; Godbout, C.; Rostami-Afshari, B.; Petre, D.; Khatami,
+N.; Franco, A.; et al. Circulating microRNA expression signatures accurately discriminate myalgic encephalomyelitis from
+fibromyalgia and comorbid conditions. Sci. Rep. 2023, 13, 1896. [CrossRef]
+43.
+Kaczmarek, M.P. Heterogenous circulating miRNA changes in ME/CFS converge on a unified cluster of target genes: A
+computational analysis. PLoS ONE 2023, 18, e0296060. [CrossRef]
+44.
+Nepotchatykh, E.; Elremaly, W.; Caraus, I.; Godbout, C.; Leveau, C.; Chalder, L.; Beaudin, C.; Kanamaru, E.; Kosovskaia, R.;
+Lauzon, S.; et al. Profile of circulating microRNAs in myalgic encephalomyelitis and their relation to symptom severity, and
+disease pathophysiology. Sci. Rep. 2020, 10, 19620. [CrossRef] [PubMed]
+45.
+Blauensteiner, J.; Bertinat, R.; León, L.E.; Riederer, M.; Sepúlveda, N.; Westermeier, F. Altered endothelial dysfunction-related
+miRs in plasma from ME/CFS patients. Sci. Rep. 2021, 11, 10604, Erratum in Sci. Rep. 2021, 11, 16386. https://doi.org/10.1038/s4
+1598-021-95087-3. [CrossRef]
+46.
+Levy, S. Function of the tetraspanin molecule CD81 in B and T cells. Immunol. Res. 2014, 58, 179–185. [CrossRef] [PubMed]
+47.
+Brosseau, C.; Colas, L.; Magnan, A.; Brouard, S. CD9 Tetraspanin: A New Pathway for the Regulation of Inflammation? Front.
+Immunol. 2018, 9, 2316. [CrossRef]
+48.
+Bonilla, H.; Hampton, D.; Marques de Menezes, E.G.; Deng, X.; Montoya, J.G.; Anderson, J.; Norris, P.J. Comparative Analysis of
+Extracellular Vesicles in Patients with Severe and Mild Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Front. Immunol.
+2022, 13, 841910. [CrossRef]
+49.
+Burrello, J.; Caporali, E.; Gauthier, L.G.; Pianezzi, E.; Balbi, C.; Rigamonti, E.; Bolis, S.; Lazzarini, E.; Biemmi, V.; Burrello, A.; et al.
+Risk stratification of patients with SARS-CoV-2 by tissue factor expression in circulating extracellular vesicles. Vascul Pharmacol.
+2022, 145, 106999. [CrossRef]
+50.
+Tertel, T.; Tomi´c, S.; Ðoki´c, J.; Radojevi´c, D.; Stevanovi´c, D.; Ili´c, N.; Giebel, B.; Kosanovi´c, M. Serum-derived extracellular vesicles:
+Novel biomarkers reflecting the disease severity of COVID-19 patients. J. Extracell. Vesicles 2022, 11, e12257. [CrossRef] [PubMed]
+51.
+Lai, Y.J.; Liu, S.H.; Manachevakul, S.; Lee, T.A.; Kuo, C.T.; Bello, D. Biomarkers in long COVID-19: A systematic review. Front.
+Med. 2023, 10, 1085988. [CrossRef]
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+28 of 30
+52.
+Patel, M.A.; Knauer, M.J.; Nicholson, M.; Daley, M.; Van Nynatten, L.R.; Martin, C.; Patterson, E.K.; Cepinskas, G.; Seney, S.L.;
+Dobretzberger, V.; et al. Elevated vascular transformation blood biomarkers in Long-COVID indicate angiogenesis as a key
+pathophysiological mechanism. Mol. Med. 2022, 28, 122. [CrossRef] [PubMed]
+53.
+Garcia-Larragoiti, N.; Cano-Mendez, A.; Jimenez-Vega, Y.; Trujillo, M.; Guzman-Cancino, P.; Ambriz-Murillo, Y.; Viveros-
+Sandoval, M.E. Inflammatory and Prothrombotic Biomarkers Contribute to the Persistence of Sequelae in Recovered COVID-19
+Patients. Int. J. Mol. Sci. 2023, 24, 17468. [CrossRef] [PubMed]
+54.
+Mihara, E.; Hirai, H.; Yamamoto, H.; Tamura-Kawakami, K.; Matano, M.; Kikuchi, A.; Sato, T.; Takagi, J. Active and water-soluble
+form of lipidated Wnt protein is maintained by a serum glycoprotein afamin/α-albumin. Elife 2016, 5, e11621. [CrossRef]
+55.
+McDonnell, T.; Wincup, C.; Buchholz, I.; Pericleous, C.; Giles, I.; Ripoll, V.; Cohen, H.; Delcea, M.; Rahman, A. The role of
+beta-2-glycoprotein I in health and disease associating structure with function: More than just APS. Blood Rev. 2020, 39, 100610.
+[CrossRef] [PubMed]
+56.
+Nunes, M.; Vlok, M.; Proal, A.; Kell, D.B.; Pretorius, E. Data-independent LC-MS/MS analysis of ME/CFS plasma reveals a
+dysregulated coagulation system, endothelial dysfunction, downregulation of complement machinery. Cardiovasc. Diabetol. 2024,
+23, 254. [CrossRef]
+57.
+Cervia-Hasler, C.; Brüningk, S.C.; Hoch, T.; Fan, B.; Muzio, G.; Thompson, R.C.; Ceglarek, L.; Meledin, R.; Westermann, P.;
+Emmenegger, M.; et al. Persistent complement dysregulation with signs of thromboinflammation in active Long Covid. Science
+2024, 383, eadg7942. [CrossRef]
+58.
+Menting, J.; Nikolaus, S.; van der Veld, W.M.; Goedendorp, M.M.; Tack, C.J.; Knoop, H. Severe fatigue in type 1 diabetes:
+Exploring its course, predictors and relationship with HbA(1c) in a prospective study. Diabetes Res. Clin. Pract. 2016, 121, 127–134,
+Erratum in Diabetes Res. Clin. Pract. 2017, 126, 325. [CrossRef]
+59.
+Molvaer, A.K.; Iversen, M.M.; Igland, J.; Peyrot, M.; Tell, G.S.; Holte, K.B.; Monnier, V.M.; Seljeflot, I.; Berg, T.J. Metabolic
+predictors of pain, fatigue, depression and quality of life in people with long-term type 1 diabetes-the Dialong study. Diabet. Med.
+2023, 40, e15009. [CrossRef]
+60.
+Erlandson, K.M.; Geng, L.N.; Selvaggi, C.A.; Thaweethai, T.; Chen, P.; Erdmann, N.B.; Goldman, J.D.; Henrich, T.J.; Hornig,
+M.; Karlson, E.W.; et al. Differentiation of Prior SARS-CoV-2 Infection and Postacute Sequelae by Standard Clinical Laboratory
+Measurements in the RECOVER Cohort. Ann. Intern. Med. 2024, 177, 1209–1221. [CrossRef]
+61.
+Matviichuk, A.; Yerokhovych, V.; Ilkiv, Y.; Krasnienkov, D.; Korcheva, V.; Gurbych, O.; Shcherbakova, A.; Botsun, P.; Falalyeyeva,
+T.; Sulaieva, O.; et al. HbA1c and leukocyte mtDNA levels as major factors associated with post-COVID-19 syndrome in type 2
+diabetes patients. Sci. Rep. 2024, 14, 25533. [CrossRef] [PubMed]
+62.
+Soff, S.; Yoo, Y.J.; Bramante, C.; Reusch, J.E.B.; Huling, J.D.; Hall, M.A.; Brannock, D.; Sturmer, T.; Butzin-Dozier, Z.; Wong, R.;
+et al. Association of glycemic control with Long COVID in patients with type 2 diabetes: Findings from the National COVID
+Cohort Collaborative (N3C). BMJ Open Diabetes Res. Care 2025, 13, e004536. [CrossRef] [PubMed]
+63.
+Medori, M.C.; Dhuli, K.; Tezzele, S.; Micheletti, C.; Maltese, P.E.; Cecchin, S.; Bonetti, G.; Fioretti, F.; Calzoni, A.; Praderio, A.; et al.
+Serum proteomic profiling reveals potential inflammatory biomarkers in long-COVID patients: A comparative analysis with
+healthy controls. Eur. Rev. Med. Pharmacol. Sci. 2023, 27, 1–12. [CrossRef]
+64.
+Moezzi, A.; Ushenkina, A.; Widgren, A.; Bergquist, J.; Li, P.; Xiao, W.; Rostami-Afshari, B.; Leveau, C.; Elremaly, W.; Caraus,
+I.; et al. Haptoglobin phenotypes and structural variants associate with post-exertional malaise and cognitive dysfunction in
+myalgic encephalomyelitis. J. Transl. Med. 2025, 23, 970. [CrossRef] [PubMed]
+65.
+Gu, X.; Wang, S.; Zhang, W.; Li, C.; Guo, L.; Wang, Z.; Li, H.; Zhang, H.; Zhou, Y.; Liang, W.; et al. Probing long COVID through a
+proteomic lens: A comprehensive two-year longitudinal cohort study of hospitalised survivors. EBioMedicine 2023, 98, 104851.
+[CrossRef]
+66.
+Wang, K.; Khoramjoo, M.; Srinivasan, K.; Gordon, P.M.K.; Mandal, R.; Jackson, D.; Sligl, W.; Grant, M.B.; Penninger, J.M.; Borchers,
+C.H.; et al. Sequential multi-omics analysis identifies clinical phenotypes and predictive biomarkers for long COVID. Cell Rep.
+Med. 2023, 4, 101254. [CrossRef]
+67.
+Liu, B.; Yang, H.; Song, Y.S.; Sorenson, C.M.; Sheibani, N. Thrombospondin-1 in vascular development, vascular function, and
+vascular disease. Semin. Cell Dev. Biol. 2024, 155, 32–44. [CrossRef]
+68.
+Kruger, A.; Vlok, M.; Turner, S.; Venter, C.; Laubscher, G.J.; Kell, D.B.; Pretorius, E. Proteomics of fibrin amyloid microclots in long
+COVID/post-acute sequelae of COVID-19 (PASC) shows many entrapped pro-inflammatory molecules that may also contribute
+to a failed fibrinolytic system. Cardiovasc. Diabetol. 2022, 21, 190. [CrossRef]
+69.
+Kell, D.B.; Pretorius, E. The Proteome Content of Blood Clots Observed Under Different Conditions: Successful Role in Predicting
+Clot Amyloid(ogenicity). Molecules 2025, 30, 668. [CrossRef]
+70.
+Mandolesi, G.; Rizzo, F.R.; Balletta, S.; Stampanoni Bassi, M.; Gilio, L.; Guadalupi, L.; Nencini, M.; Moscatelli, A.; Ryan, C.P.;
+Licursi, V.; et al. The microRNA let-7b-5p Is Negatively Associated with Inflammation and Disease Severity in Multiple Sclerosis.
+Cells 2021, 10, 330. [CrossRef]
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+29 of 30
+71.
+Foers, A.D.; Garnham, A.L.; Chatfield, S.; Smyth, G.K.; Cheng, L.; Hill, A.F.; Wicks, I.P.; Pang, K.C. Extracellular Vesicles in
+Synovial Fluid from Rheumatoid Arthritis Patients Contain miRNAs with Capacity to Modulate Inflammation. Int. J. Mol. Sci.
+2021, 22, 4910. [CrossRef]
+72.
+Pasquali, L.; Svedbom, A.; Srivastava, A.; Rosén, E.; Lindqvist, U.; Ståhle, M.; Pivarcsi, A.; Sonkoly, E. Circulating microRNAs in
+extracellular vesicles as potential biomarkers for psoriatic arthritis in patients with psoriasis. J. Eur. Acad. Dermatol. Venereol. 2020,
+34, 1248–1256. [CrossRef]
+73.
+Lehmann, S.M.; Krüger, C.; Park, B.; Derkow, K.; Rosenberger, K.; Baumgart, J.; Trimbuch, T.; Eom, G.; Hinz, M.; Kaul, D.; et al.
+An unconventional role for miRNA: Let-7 activates Toll-like receptor 7 and causes neurodegeneration. Nat. Neurosci. 2012, 15,
+827–835. [CrossRef] [PubMed]
+74.
+Kim, S.J.; Chen, Z.; Essani, A.B.; Elshabrawy, H.A.; Volin, M.V.; Volkov, S.; Swedler, W.; Arami, S.; Sweiss, N.; Shahrara, S.
+Identification of a Novel Toll-like Receptor 7 Endogenous Ligand in Rheumatoid Arthritis Synovial Fluid That Can Provoke
+Arthritic Joint Inflammation. Arthritis Rheumatol. 2016, 68, 1099–1110. [CrossRef] [PubMed]
+75.
+Rishik, S.; Hirsch, P.; Grandke, F.; Fehlmann, T.; Keller, A. miRNATissueAtlas 2025: An update to the uniformly processed and
+annotated human and mouse non-coding RNA tissue atlas. Nucleic Acids Res 2025, 53, D129–D137. [CrossRef]
+76.
+Latini, A.; Vancheri, C.; Amati, F.; Morini, E.; Grelli, S.; Matteucci, C.; Petrone, V.; Colona, V.L.; Murdocca, M.; Andreoni, M.; et al.
+Expression analysis of miRNA hsa-let7b-5p in naso-oropharyngeal swabs of COVID-19 patients supports its role in regulating
+ACE2 and DPP4 receptors. J. Cell Mol. Med. 2022, 26, 4940–4948. [CrossRef]
+77.
+González-Cebrián, A.; Almenar-Pérez, E.; Xu, J.; Yu, T.; Huang, W.E.; Giménez-Orenga, K.; Hutchinson, S.; Lodge, T.; Nathanson,
+L.; Morten, K.J.; et al. Diagnosis of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome With Partial Least Squares Discriminant
+Analysis: Relevance of Blood Extracellular Vesicles. Front. Med. 2022, 9, 842991. [CrossRef]
+78.
+Soffritti, I.; Gravelsina, S.; D’Accolti, M.; Bini, F.; Mazziga, E.; Vilmane, A.; Rasa-Dzelzkaleja, S.; Nora-Krukle, Z.; Krumina, A.;
+Murovska, M.; et al. Circulating miRNAs Expression in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Int. J. Mol. Sci.
+2023, 24, 10582. [CrossRef] [PubMed]
+79.
+Chen, Z.; Hu, Y.; Lu, R.; Ge, M.; Zhang, L. MicroRNA-374a-5p inhibits neuroinflammation in neonatal hypoxic-ischemic
+encephalopathy via regulating NLRP3 inflammasome targeted Smad6. Life Sci. 2020, 252, 117664. [CrossRef]
+80.
+Doumatey, A.P.; He, W.J.; Gaye, A.; Lei, L.; Zhou, J.; Gibbons, G.H.; Adeyemo, A.; Rotimi, C.N. Circulating MiR-374a-5p is a
+potential modulator of the inflammatory process in obesity. Sci. Rep. 2018, 8, 7680. [CrossRef]
+81.
+Perez-Sanchez, C.; Barbera Betancourt, A.; Lyons, P.A.; Zhang, Z.; Suo, C.; Lee, J.C.; McKinney, E.F.; Modis, L.K.; Ellson, C.; Smith,
+K.G.C. miR-374a-5p regulates inflammatory genes and monocyte function in patients with inflammatory bowel disease. J. Exp.
+Med. 2022, 219, e20211366. [CrossRef]
+82.
+Petty, R.D.; McCarthy, N.E.; Le Dieu, R.; Kerr, J.R. MicroRNAs hsa-miR-99b, hsa-miR-330, hsa-miR-126 and hsa-miR-30c: Potential
+Diagnostic Biomarkers in Natural Killer (NK) Cells of Patients with Chronic Fatigue Syndrome (CFS)/Myalgic Encephalomyelitis
+(ME). PLoS ONE 2016, 11, e0150904. [CrossRef]
+83.
+Cheema, A.K.; Sarria, L.; Bekheit, M.; Collado, F.; Almenar-Pérez, E.; Martín-Martínez, E.; Alegre, J.; Castro-Marrero, J.; Fletcher,
+M.A.; Klimas, N.G.; et al. Unravelling myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): Gender-specific changes
+in the microRNA expression profiling in ME/CFS. J. Cell Mol. Med. 2020, 24, 5865–5877. [CrossRef]
+84.
+Reyes-Long, S.; Cortés-Altamirano, J.L.; Bandala, C.; Avendaño-Ortiz, K.; Bonilla-Jaime, H.; Bueno-Nava, A.; Ávila-Luna, A.;
+Sánchez-Aparicio, P.; Clavijo-Cornejo, D.; Dotor, L.A.L.; et al. Role of the MicroRNAs in the Pathogenic Mechanism of Painful
+Symptoms in Long COVID: Systematic Review. Int. J. Mol. Sci. 2023, 24, 3574. [CrossRef]
+85.
+Fish, J.E.; Santoro, M.M.; Morton, S.U.; Yu, S.; Yeh, R.F.; Wythe, J.D.; Ivey, K.N.; Bruneau, B.G.; Stainier, D.Y.; Srivastava, D.
+miR-126 regulates angiogenic signaling and vascular integrity. Dev. Cell 2008, 15, 272–284. [CrossRef] [PubMed]
+86.
+Carruthers, B.M.; Jain, A.K.; De Meirleir, K.L.; Peterson, D.L.; Klimas, N.G.; Lerner, A.M.; Bested, A.C.; Flor-Henry, P.; Joshi, P.;
+Powles, A.C.P.; et al. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Clinical Working Case Definition, Diagnostic and
+Treatment Protocols. J. Chronic Fatigue Syndr. 2003, 11, 7–115. [CrossRef]
+87.
+Bell, D.S. The Doctor’s Guide to Chronic Fatigue Syndrome: Understanding, Treating, and Living with CFIDS; Da Capo Press: New York,
+NY, USA, 1995.
+88.
+Ware, J.E., Jr. SF-36 health survey update. Spine (Phila Pa 1976) 2000, 25, 3130–3139. [CrossRef]
+89.
+Cotler, J.; Holtzman, C.; Dudun, C.; Jason, L.A. A Brief Questionnaire to Assess Post-Exertional Malaise. Diagnostics 2018, 8, 66.
+[CrossRef]
+90.
+Sletten, D.M.; Suarez, G.A.; Low, P.A.; Mandrekar, J.; Singer, W. COMPASS 31: A refined and abbreviated Composite Autonomic
+Symptom Score. Mayo Clin. Proc. 2012, 87, 1196–1201. [CrossRef] [PubMed]
+91.
+Harris, P.A.; Taylor, R.; Minor, B.L.; Elliott, V.; Fernandez, M.; O’Neal, L.; McLeod, L.; Delacqua, G.; Delacqua, F.; Kirby, J.; et al.
+The REDCap consortium: Building an international community of software platform partners. J. Biomed. Inform. 2019, 95, 103208.
+[CrossRef] [PubMed]
+https://doi.org/10.3390/ijms27052314
+
+Int. J. Mol. Sci. 2026, 27, 2314
+30 of 30
+92.
+Harris, P.A.; Taylor, R.; Thielke, R.; Payne, J.; Gonzalez, N.; Conde, J.G. Research electronic data capture (REDCap)--a metadata-
+driven methodology and workflow process for providing translational research informatics support. J. Biomed. Inform. 2009, 42,
+377–381. [CrossRef]
+93.
+Beez, C.M.; Schneider, M.; Haag, M.; Pappritz, K.; Van Linthout, S.; Sittinger, M.; Seifert, M. Cardiac Extracellular Vesicles (EVs)
+Released in the Presence or Absence of Inflammatory Cues Support Angiogenesis in Different Manners. Int. J. Mol. Sci. 2019,
+20, 6363. [CrossRef]
+94.
+Welsh, J.A.; Goberdhan, D.C.I.; O’Driscoll, L.; Buzas, E.I.; Blenkiron, C.; Bussolati, B.; Cai, H.; Di Vizio, D.; Driedonks, T.A.P.;
+Erdbrügger, U.; et al. Minimal information for studies of extracellular vesicles (MISEV2023): From basic to advanced approaches.
+J. Extracell. Vesicles 2024, 13, e12404. Erratum in J. Extracell. Vesicles 2024, 13, e12451. [CrossRef] [PubMed]
+95.
+Wi´sniewski, J.R.; Zougman, A.; Nagaraj, N.; Mann, M. Universal sample preparation method for proteome analysis. Nat. Methods
+2009, 6, 359–362. [CrossRef] [PubMed]
+96.
+Pathan, M.; Keerthikumar, S.; Chisanga, D.; Alessandro, R.; Ang, C.S.; Askenase, P.; Batagov, A.O.; Benito-Martin, A.; Camussi,
+G.; Clayton, A.; et al. A novel community driven software for functional enrichment analysis of extracellular vesicles data. J.
+Extracell. Vesicles 2017, 6, 1321455. [CrossRef]
+97.
+Fonseka, P.; Pathan, M.; Chitti, S.V.; Kang, T.; Mathivanan, S. FunRich enables enrichment analysis of OMICs datasets. J. Mol. Biol.
+2021, 433, 166747. [CrossRef] [PubMed]
+98.
+Langmead, B.; Salzberg, S.L. Fast gapped-read alignment with Bowtie 2. Nat. Methods 2012, 9, 357–359. [CrossRef]
+99.
+Perez-Riverol, Y.; Bandla, C.; Kundu, D.J.; Kamatchinathan, S.; Bai, J.; Hewapathirana, S.; John, N.S.; Prakash, A.; Walzer, M.;
+Wang, S.; et al. The PRIDE database at 20 years: 2025 update. Nucleic Acids Res. 2025, 53, D543–D553. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+https://doi.org/10.3390/ijms27052314

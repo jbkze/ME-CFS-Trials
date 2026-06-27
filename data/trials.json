@@ -2,7 +2,7 @@
   "schema_version": 1,
   "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md. The first run after setup will (correctly) flag every relevant trial it finds as 'new', because this baseline starts empty. Do not hand-fabricate entries — only add trials confirmed from a registry or institutional source during a check.",
   "last_check": "2026-06-27",
-  "last_run_at": "2026-06-27T12:09:37Z",
+  "last_run_at": "2026-06-27T12:04:05Z",
   "trials": [
     {
       "id": "nct07529197",
@@ -20,13 +20,13 @@
         "Carmen Scheibenbogen"
       ],
       "priority": "high",
-      "sponsor": "Charté University, Berlin (supported by German Federal Ministry of Research and Weidenhammer-Zöbele Foundation)",
+      "sponsor": "Charité University, Berlin (supported by German Federal Ministry of Research and Weidenhammer-Zöbele Foundation)",
       "principal_investigator": "Prof. Dr. Carmen Scheibenbogen",
       "germany": {
         "has_german_site": true,
         "sites": [
           {
-            "institution": "Charté - Universitätsmedizin Berlin, Institute for Medical Immunology",
+            "institution": "Charité - Universitätsmedizin Berlin, Institute for Medical Immunology",
             "city": "Berlin",
             "recruiting": true
           }
@@ -136,6 +136,84 @@
         "wirth_or_scheibenbogen": true
       },
       "notes": "Not yet registered in any trial registry. German criterion satisfied by German sponsor (Mitodicure GmbH). Pipeline page (mitodicure.com/pipeline/) confirms MDC002 is 'ready for GLP toxicity and GLP safety pharmacology studies' as of June 2026 — i.e. still pre-clinical; no Phase 1 registration or new funding announcement. Watch for Phase 1 registration on DRKS or ClinicalTrials.gov."
+    },
+    {
+      "id": "drks00033897",
+      "name": "Observational study on immune adsorption (IA) in patients with GPCR autoantibody-positive post-COVID/post-vac syndrome (IA-Surv)",
+      "acronym": "IA-Surv",
+      "status": "recruiting",
+      "open_for_enrollment": true,
+      "intervention": {
+        "name": "Immunoadsorption (IA apheresis)",
+        "type": "apheresis",
+        "mechanism": "5 immunoadsorption apheresis sessions targeting GPCR autoantibodies; outcomes assessed at baseline, after 5th session, and at 6, 12, and 24 weeks post-treatment."
+      },
+      "is_drug_study": false,
+      "associated_researchers": [],
+      "priority": "normal",
+      "sponsor": "Universitätsmedizin Charité Berlin (institutional budget, no external funding)",
+      "principal_investigator": "Prof. Dr. med. Harald Matthes, Charité – Universitätsmedizin Berlin",
+      "germany": {
+        "has_german_site": true,
+        "sites": [
+          {
+            "institution": "Gemeinschaftskrankenhaus Havelhöhe",
+            "city": "Berlin",
+            "recruiting": true
+          },
+          {
+            "institution": "Arztpraxis (medical practice)",
+            "city": "Potsdam",
+            "recruiting": true
+          }
+        ]
+      },
+      "condition": "Post-COVID-19/post-vaccination syndrome with ME/CFS and GPCR autoantibodies",
+      "phase": "Observational cohort",
+      "eligibility": {
+        "summary": "Adults 18–75 with post-COVID or post-vaccination syndrome lasting ≥6 months, positive GPCR autoantibodies, and valid German health insurance.",
+        "key_inclusion": [
+          "Post-COVID or post-vaccination syndrome lasting ≥6 months since infection/vaccination",
+          "GPCR autoantibody positive",
+          "Valid German health insurance",
+          "Informed consent"
+        ],
+        "key_exclusion": [
+          "Detectable spike protein",
+          "Insufficient peripheral veins for apheresis",
+          "Pregnancy",
+          "Serious comorbidities incompatible with apheresis",
+          "Inadequate German language proficiency"
+        ],
+        "age": "18–75",
+        "sex": "All"
+      },
+      "registry": {
+        "name": "DRKS",
+        "id": "DRKS00033897",
+        "url": "https://drks.de/search/en/trial/DRKS00033897"
+      },
+      "links": [
+        "https://drks.de/search/en/trial/DRKS00033897"
+      ],
+      "first_seen": "2026-06-27",
+      "last_checked": "2026-06-27",
+      "last_status_change": null,
+      "status_history": [
+        {
+          "date": "2026-06-27",
+          "status": "recruiting"
+        }
+      ],
+      "flags": ["new"],
+      "relevance": {
+        "me_cfs": true,
+        "germany": true,
+        "open_enrollment": true,
+        "drug_study": false,
+        "wirth_or_scheibenbogen": false
+      },
+      "notes": "Immunoadsorption is apheresis (borderline for drug/pharmacological criterion) — included per ROUTINE.md: 'immunoadsorption is borderline → include + note it'; is_drug_study set to false. Registered DRKS January 27, 2025; actual start January 23, 2025; planned completion December 31, 2026. Target n=82. PI is Prof. Matthes at Gemeinschaftskrankenhaus Havelhöhe (Berlin), not directly affiliated with Scheibenbogen's IMPACT trial (NCT07529197) — different PI and sites, though both use IA apheresis for GPCR autoantibody-positive post-infectious conditions. Confirmed recruiting on DRKS 2026-06-27."
     }
   ]
 }
