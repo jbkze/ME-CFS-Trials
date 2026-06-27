@@ -1,15 +1,18 @@
-name: Prune stale routine branches
+name: Prune integrated routine branches
 
-# Safety net / housekeeping. The integration workflow already deletes each run
-# branch right after integrating it; this catches any leftovers (e.g. a run that
-# errored before integration, or branches created before self-delete existed).
+# Housekeeping backstop. The integration workflow already deletes each run branch
+# right after copying its data onto main; this catches any leftovers.
 #
-# Deletes `claude/*` branches EXCEPT:
-#   * the human development branch (claude/nice-einstein-yqeyjo),
-#   * any branch that is the head of an OPEN pull request,
-#   * (on the schedule) branches whose tip is younger than 30 min, so an
-#     in-flight run that just pushed is never deleted before it integrates.
-# Run manually with "force" checked to ignore the age guard (one-off cleanup).
+# DATA-LOSS GUARD (the important change): a branch is deleted ONLY once its data is
+# provably on `main`. The integration commit records the branch tip as
+# "… @ <sha>", so before deleting we require a commit on main that references this
+# branch's CURRENT tip sha. A branch that has never been integrated (e.g. one the
+# integration step skipped, or a dev branch) is KEPT and flagged — never deleted
+# with un-merged data. This is what previously could have lost a run's results.
+#
+# Also kept: the human development branch, any open-PR head, and (on the schedule)
+# branches whose tip is younger than 30 min. Run manually with "force" to ignore
+# the age guard (but the integration-marker guard always applies).
 
 on:
   push:
@@ -20,7 +23,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: 'Ignore the 30-minute age guard and delete all integrated routine branches now'
+        description: 'Ignore the 30-minute age guard (the integration-marker guard still applies)'
         type: boolean
         default: false
 
@@ -36,7 +39,13 @@ jobs:
   prune:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete integrated routine branches
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Delete only branches whose data is already on main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
@@ -52,6 +61,10 @@ jobs:
           for BR in $BRANCHES; do
             if [ "$BR" = "$DEV_BRANCH" ]; then echo "keep (dev): $BR"; continue; fi
             if printf '%s\n' "$OPEN_PR_HEADS" | grep -qx "$BR"; then echo "keep (open PR): $BR"; continue; fi
+
+            SHA="$(gh api "repos/$REPO/commits/$BR" -q '.sha' 2>/dev/null || echo '')"
+            if [ -z "$SHA" ]; then echo "keep (cannot resolve tip): $BR"; continue; fi
+
             if [ "$FORCE" != "true" ]; then
               ISO="$(gh api "repos/$REPO/commits/$BR" -q '.commit.committer.date' 2>/dev/null || echo '')"
               if [ -n "$ISO" ]; then
@@ -61,6 +74,12 @@ jobs:
                 fi
               fi
             fi
-            echo "deleting: $BR"
-            gh api -X DELETE "repos/$REPO/git/refs/heads/$BR" && echo "  deleted" || echo "  delete failed"
+
+            # DATA-LOSS GUARD: require an integration marker for this exact tip sha.
+            if git log origin/main --grep="$SHA" --max-count=1 --pretty=format:%H | grep -q .; then
+              echo "deleting (integrated: $SHA on main): $BR"
+              gh api -X DELETE "repos/$REPO/git/refs/heads/$BR" && echo "  deleted" || echo "  delete failed"
+            else
+              echo "::warning title=Un-integrated routine branch kept::$BR ($SHA) is NOT on main yet — not deleting. The integration workflow should pick it up; investigate if it persists."
+            fi
           done
