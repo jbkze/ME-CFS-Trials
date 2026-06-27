@@ -6,7 +6,7 @@ is `last_check` + `flags` in `data/trials.json`).
 
 <!-- TEMPLATE — copy this block to the top for each new check:
 ## YYYY-MM-DD
-- Sources checked: DRKS, ClinicalTrials.gov, CTIS, WHO ICTRP, Mitodicure, Charité CFC, …
+- Sources checked: DRKS, ClinicalTrials.gov, CTIS, WHO ICTRP, Mitodicure, Charté CFC, …
 - New: <trial name + id> — <one line> | none
 - Newly open: <…> | none
 - Status changed: <trial — old → new> | none
@@ -16,36 +16,36 @@ is `last_check` + `flags` in `data/trials.json`).
 -->
 
 ## 2026-06-27 (run 1 — scheduled autonomous, 12:09 UTC)
-- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC clinical research pages, mecfs-research.org/researchupdate, PubMed (ME/CFS Jun 24–27 2026 + author searches), Europe PMC, medRxiv, The Sick Times, Health Rising, Science for ME
+- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charté CFC clinical research pages, mecfs-research.org/researchupdate, PubMed (ME/CFS Jun 24–27 2026 + author searches), Europe PMC, medRxiv, The Sick Times, Health Rising, Science for ME
 - **Trials** — no new in-scope trials; both existing trials verified unchanged
-  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charité) [HIGH PRIORITY]
+  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charté) [HIGH PRIORITY]
   - MDC002 (Mitodicure): still pre-clinical/not_yet_recruiting; pipeline page confirms "ready for GLP toxicity/safety pharmacology studies" — Phase 1 not yet registered [HIGH PRIORITY]
   - New: none | Newly open: none | Status changed: none | Closed: none
 - **Papers** — no new papers since last check (2026-06-26); PubMed returned no results for ME/CFS Jun 24–27 2026
 - Trials tracked: 2 (open: 1 [NCT07529197], watchlist: 1 [MDC002])
 - Papers tracked: 47 (unchanged)
 - Notes:
-  - IA-PACS-CFS (NCT05710770, Charité immunoadsorption RCT): ClinicalTrials.gov status confirmed "completed" as of Jan 15, 2026; preliminary negative results presented at 3rd International CFC Conference (May 2026) — no significant difference vs placebo sham. Tracked as background; not in trials.json (completed = out of scope).
-  - Inebilizumab pilot at Charité (Scheibenbogen): still unregistered — no DRKS/NCT entry found. Mentioned at May 2026 conference as planned/initiating. Remains watch-only until a registry entry or dedicated CFC trial page appears.
+  - IA-PACS-CFS (NCT05710770, Charté immunoadsorption RCT): ClinicalTrials.gov status confirmed "completed" as of Jan 15, 2026; preliminary negative results presented at 3rd International CFC Conference (May 2026) — no significant difference vs placebo sham. Tracked as background; not in trials.json (completed = out of scope).
+  - Inebilizumab pilot at Charté (Scheibenbogen): still unregistered — no DRKS/NCT entry found. Mentioned at May 2026 conference as planned/initiating. Remains watch-only until a registry entry or dedicated CFC trial page appears.
   - BC007/APTA Therapeutics: new Long COVID/ME/CFS studies announced for 2026 in German press (riffreporter.de) — no registry ID yet; lead only.
   - NDPE funding call (Nationale Dekade gegen Postinfektiöse Erkrankungen): deadline Sep 2, 2026 — new drug trials may emerge Q4 2026.
-  - VERI-LONG (vericiguat, NCT05697640, Charité): active_not_recruiting; results expected 2026.
+  - VERI-LONG (vericiguat, NCT05697640, Charté): active_not_recruiting; results expected 2026.
 
 ## 2026-06-26 (correction — intake-standard tightening)
-- **Two trials removed:** `nksg-inebilizumab-ph2` (Inebilizumab Ph2, Charité NKSG) and `charite-semaglutide-glp1` (Semaglutide, Scheibenbogen) deleted from `data/trials.json`.
+- **Two trials removed:** `nksg-inebilizumab-ph2` (Inebilizumab Ph2, Charté NKSG) and `charite-semaglutide-glp1` (Semaglutide, Scheibenbogen) deleted from `data/trials.json`.
   - Reason: both were sourced solely from a general therapy-overview page (mecfs.de/therapie) and a grant-announcement page (solvecfs.org/catalyst-awards) respectively — neither has a dedicated trial-specific registry entry or a named clinical-research subpage. Under the tightened intake standard these are *leads only*, not confirmation.
-  - Both trials remain scientific leads: if/when a DRKS/NCT registration or a dedicated Charité CFC trial subpage appears, they can be re-added.
+  - Both trials remain scientific leads: if/when a DRKS/NCT registration or a dedicated Charté CFC trial subpage appears, they can be re-added.
 - **ROUTINE.md + CLAUDE.md updated:** confirmation standard for `not_yet_recruiting` planned trials now explicitly requires either (a) a registry entry or (b) a dedicated trial-specific institutional/company page — general overview pages, grant announcements, and press releases are leads only.
 - Trials tracked: 2 (open: 1 [NCT07529197], watchlist: 1 [MDC002])
 - Papers: unchanged (47 total)
 
 ## 2026-06-26 (run 4 — scheduled autonomous, 14:28 UTC)
-- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC/NKSG, mecfs.de, mecfs-research.org, PubMed, medRxiv, bioRxiv, Health Rising, The Sick Times (May 2026 Berlin conference roundup)
+- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charté CFC/NKSG, mecfs.de, mecfs-research.org, PubMed, medRxiv, bioRxiv, Health Rising, The Sick Times (May 2026 Berlin conference roundup)
 - **Trials** — no new in-scope trials; all 4 existing trials verified unchanged
-  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charité) [HIGH PRIORITY]
+  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charté) [HIGH PRIORITY]
   - MDC002 (Mitodicure): still pre-clinical/not_yet_recruiting [HIGH PRIORITY]
   - Inebilizumab Phase 2 (Scheibenbogen/NKSG): still not_yet_recruiting
-  - Semaglutide GLP-1 (Scheibenbogen/Charité): still not_yet_recruiting
+  - Semaglutide GLP-1 (Scheibenbogen/Charté): still not_yet_recruiting
   - Notable: Berlin conference (May 7–8, 2026) — IA-PACS-CFS (immunoadsorption RCT) and PoCoVIT (methylprednisolone) both failed primary endpoints; both completed before our tracking began
 - **Papers** — no new papers since last check (14:12 UTC); isNew cleared for 4 papers added in run 3 (donchev, hunter, che, eckey)
 - Trials tracked: 4 (open: 1 [NCT07529197], watchlist: 3)
@@ -53,12 +53,12 @@ is `last_check` + `flags` in `data/trials.json`).
   - *(Note: run 4 saw inebilizumab/semaglutide as tracked; both subsequently removed by correction entry above.)*
 
 ## 2026-06-26 (run 3 — scheduled autonomous, 14:12 UTC)
-- Sources checked: ClinicalTrials.gov (Germany/ME/CFS all statuses), DRKS, CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC, mecfs.de/therapie, mecfs-research.org/researchupdate, PubMed (ME/CFS 2026 + author searches), medRxiv, bioRxiv, Health Rising, The Sick Times, riffreporter.de (BC007/APTA)
+- Sources checked: ClinicalTrials.gov (Germany/ME/CFS all statuses), DRKS, CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charté CFC, mecfs.de/therapie, mecfs-research.org/researchupdate, PubMed (ME/CFS 2026 + author searches), medRxiv, bioRxiv, Health Rising, The Sick Times, riffreporter.de (BC007/APTA)
 - **Trials** — no new in-scope trials; all 4 existing trials verified unchanged
-  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charité) [HIGH PRIORITY]
+  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charté) [HIGH PRIORITY]
   - MDC002 (Mitodicure): still pre-clinical/not_yet_recruiting [HIGH PRIORITY]
   - Inebilizumab Phase 2 (Scheibenbogen/NKSG): still not_yet_recruiting
-  - Semaglutide GLP-1 (Scheibenbogen/Charité): still not_yet_recruiting
+  - Semaglutide GLP-1 (Scheibenbogen/Charté): still not_yet_recruiting
   - Flags cleared: new flags removed from inebilizumab and semaglutide (no longer new this run)
   - Notable: Daratumumab CTIS 2024-520094-13-00 (ResetME Phase 2, 66 pts) confirmed Norway-only — no German sites; out of scope
   - Notable: RAPID REVIVE (vidofludimus, CTIS 2024-511628-16-00, Frankfurt) — German multicenter but fully recruited (active_not_recruiting); out of scope for enrollment tracker
@@ -79,11 +79,11 @@ is `last_check` + `flags` in `data/trials.json`).
 - Trials tracked: 4 (open: 1 [NCT07529197], watchlist: 3 [MDC002 + inebilizumab Phase 2 + semaglutide])
 
 ## 2026-06-26 (run 2 — afternoon, 13:42 UTC)
-- Sources checked: ClinicalTrials.gov (Germany/ME/CFS, all statuses incl. active_not_recruiting), DRKS (DRKS00032963 found — pediatric IA, permanently halted), CTIS (daratumumab Phase 2 2024-520094-13-00 noted, German sites unconfirmed), Mitodicure.com/pipeline (still pre-clinical, no change), Charité CFC (trial_veri_long page), ME/CFS Research Registry (mrr.mecfs-research.org), mecfs.de/therapie, Solve ME Catalyst Awards, BMFTR, The Sick Times international conference roundup (May 2026), PubMed/medRxiv/bioRxiv, Diagnostics MDPI
+- Sources checked: ClinicalTrials.gov (Germany/ME/CFS, all statuses incl. active_not_recruiting), DRKS (DRKS00032963 found — pediatric IA, permanently halted), CTIS (daratumumab Phase 2 2024-520094-13-00 noted, German sites unconfirmed), Mitodicure.com/pipeline (still pre-clinical, no change), Charté CFC (trial_veri_long page), ME/CFS Research Registry (mrr.mecfs-research.org), mecfs.de/therapie, Solve ME Catalyst Awards, BMFTR, The Sick Times international conference roundup (May 2026), PubMed/medRxiv/bioRxiv, Diagnostics MDPI
 - **Trials** — 3 new trials added (5 total now: open: 1, watchlist: 4)
-  - New (not_yet_recruiting): nksg-inebilizumab-ph2 — Inebilizumab (Uplizna) Phase 2, Charité NKSG, Scheibenbogen PI; BMFTR-funded January 2026 (€18M); IA-responders only; not yet registered [HIGH PRIORITY]
-  - New (not_yet_recruiting): charite-semaglutide-glp1 — Semaglutide GLP-1 agonist study, Scheibenbogen/Charité; Solve ME Catalyst Award February 2026; not yet registered [HIGH PRIORITY]
-  - New (active_not_recruiting): nct05697640 VERI-LONG — Vericiguat Phase 2a, Charité Berlin; started June 2023; 104 patients; enrollment complete; results expected 2026; out-of-scope for enrollment but tracked for results
+  - New (not_yet_recruiting): nksg-inebilizumab-ph2 — Inebilizumab (Uplizna) Phase 2, Charté NKSG, Scheibenbogen PI; BMFTR-funded January 2026 (€18M); IA-responders only; not yet registered [HIGH PRIORITY]
+  - New (not_yet_recruiting): charite-semaglutide-glp1 — Semaglutide GLP-1 agonist study, Scheibenbogen/Charté; Solve ME Catalyst Award February 2026; not yet registered [HIGH PRIORITY]
+  - New (active_not_recruiting): nct05697640 VERI-LONG — Vericiguat Phase 2a, Charté Berlin; started June 2023; 104 patients; enrollment complete; results expected 2026; out-of-scope for enrollment but tracked for results
   - Unchanged: NCT07529197 (IMPACT) still recruiting; MDC002 still pre-clinical
   - Notable: DRKS00032963 (BIAKI pediatric IA, Flensburg) — recruitment permanently halted; out of scope (apheresis + paediatric); not added
   - Notable: daratumumab Phase 2 CTIS 2024-520094-13-00 (KTS-11-2024) mentioned as recruiting on mecfs.de; German sites unconfirmed; not added pending confirmation
@@ -91,14 +91,14 @@ is `last_check` + `flags` in `data/trials.json`).
   - Fanò-Illic G et al., Diagnostics Mar 2026: skeletal muscle pathophysiology, translational, and diagnostic aspects of ME/CFS — DOI 10.3390/diagnostics16071019
   - isNew cleared for 3 morning-run papers (kim-2026-hbot-mecfs, huhmar-2026-vasopressin, saleem-2026-microclots)
 - Trials tracked: 5 (open: 1 [NCT07529197], watchlist: 4 [MDC002 + 2 unregistered planned + VERI-LONG])
-- Notes: International ME/CFS Conference (May 2026, Berlin) reported null results for IA-PACS-CFS (sham-controlled IA RCT), PoCoVIT (methylprednisolone stopped early), LDN RCT (failed primary endpoint), Myoflame-19 (failed). Inebilizumab Phase 2 and semaglutide study are the two most important new planned trials — both Scheibenbogen/Charité, both awaiting registry. VERI-LONG (vericiguat) is the first German drug RCT in post-COVID/ME/CFS; results in 2026 will be landmark.
+- Notes: International ME/CFS Conference (May 2026, Berlin) reported null results for IA-PACS-CFS (sham-controlled IA RCT), PoCoVIT (methylprednisolone stopped early), LDN RCT (failed primary endpoint), Myoflame-19 (failed). Inebilizumab Phase 2 and semaglutide study are the two most important new planned trials — both Scheibenbogen/Charté, both awaiting registry. VERI-LONG (vericiguat) is the first German drug RCT in post-COVID/ME/CFS; results in 2026 will be landmark.
 
 ## 2026-06-26
-- Sources checked: ClinicalTrials.gov (Germany/ME/CFS, recruiting + not_yet_recruiting), DRKS, CTIS, WHO ICTRP, Mitodicure.com (accessible — no new announcement), Charité CFC, PubMed (Wirth/Scheibenbogen author searches + ME/CFS topic, Jun 2026), Europe PMC, medRxiv (403 blocked), Health Rising, The Sick Times, mecfs.de
+- Sources checked: ClinicalTrials.gov (Germany/ME/CFS, recruiting + not_yet_recruiting), DRKS, CTIS, WHO ICTRP, Mitodicure.com (accessible — no new announcement), Charté CFC, PubMed (Wirth/Scheibenbogen author searches + ME/CFS topic, Jun 2026), Europe PMC, medRxiv (403 blocked), Health Rising, The Sick Times, mecfs.de
 - **Trials** — no new trials; both confirmed unchanged
   - New: none | Newly open: none | Status changed: none | Closed: none
   - MDC002 (Mitodicure): mitodicure.com accessible this run — still "advancing towards clinical trials," no new funding or registration announcement
-  - Inebilizumab ME/CFS trial (Scheibenbogen/Charité): still unregistered — no DRKS or ClinicalTrials.gov entry found
+  - Inebilizumab ME/CFS trial (Scheibenbogen/Charté): still unregistered — no DRKS or ClinicalTrials.gov entry found
   - NCT05710770 / NCT05629988: both completed predecessors to IMPACT; not added (superseded by NCT07529197)
 - **Papers** — 3 new confirmed papers added (16 total)
   - Kim L, Scheibenbogen C et al., J Transl Med Jun 2026: hyperbaric oxygen therapy — symptoms + thalamic connectivity (PMID 42249466) — HIGH PRIORITY (Scheibenbogen co-author)
@@ -109,7 +109,7 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: All existing papers' isNew reset to false; only today's 3 new finds are flagged. ClinicalTrials.gov confirmed only NCT07529197 recruiting in Germany for ME/CFS drug studies. Landmark trial *results* (RituxME, BC007, cyclophosphamide) are recorded as papers, not in trials.json (which stays scoped to recruiting/planned German drug trials).
 
 ## 2026-06-25 (second run — papers track)
-- Sources checked: ClinicalTrials.gov API (ME/CFS + Germany), DRKS, CTIS, WHO ICTRP, Mitodicure.com (unreachable — site down), Charité CFC, PubMed (Wirth/Scheibenbogen author + ME/CFS topic queries), Europe PMC, medRxiv
+- Sources checked: ClinicalTrials.gov API (ME/CFS + Germany), DRKS, CTIS, WHO ICTRP, Mitodicure.com (unreachable — site down), Charté CFC, PubMed (Wirth/Scheibenbogen author + ME/CFS topic queries), Europe PMC, medRxiv
 - **Trials** — no new trials; both confirmed unchanged (flags cleared)
   - New: none | Newly open: none | Status changed: none | Closed: none
 - **Papers** — 4 new confirmed papers added to existing 9 (13 total)
@@ -121,20 +121,20 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: Mitodicure.com timed out — MDC002 status presumed unchanged. Inebilizumab pilot (Scheibenbogen, announced May 2026) still unregistered — watching. No new German drug trials in any registry.
 
 ## 2026-06-25 (Research watch — first real check)
-- Sources checked: ClinicalTrials.gov API (Germany/ME/CFS filter), DRKS search, Mitodicure website, Charité CFC clinical research pages, The Sick Times ME/CFS Conference roundup (May 2026), PubMed, Europe PMC, Health Rising, mecfs-research.org
-- New trials: **NCT07529197 (IMPACT)** — Scheibenbogen immunoadsorption at Charité, recruiting | **mitodicure-mdc002-ph1** — MDC002 (Klaus Wirth), planned/not yet registered
+- Sources checked: ClinicalTrials.gov API (Germany/ME/CFS filter), DRKS search, Mitodicure website, Charté CFC clinical research pages, The Sick Times ME/CFS Conference roundup (May 2026), PubMed, Europe PMC, Health Rising, mecfs-research.org
+- New trials: **NCT07529197 (IMPACT)** — Scheibenbogen immunoadsorption at Charté, recruiting | **mitodicure-mdc002-ph1** — MDC002 (Klaus Wirth), planned/not yet registered
 - Newly open: NCT07529197 (first check; flagged `new`)
 - Status changed: none (first check)
 - Closed since last: none (first check)
 - Trials tracked: 2 (open: 1, watchlist: 1)
 - New papers: 9 — including Wirth/Scheibenbogen 2026 neurotransmitter review (IJMS Apr 2026); Cell Reports Medicine serum proteomics (Hoel et al. Mar 2026); daratumumab pilot (Fluge et al. Jul 2025); BC007/reCOVer RCT (Hohberger et al. Jul 2025); CSF proteomics (Bragée et al. Sci Rep 2026); PEM pathophysiology (Jin et al. Apr 2026); TRPM3 (Sasso et al. Jan 2026); IL-11/MMP-9 (Chinnappan et al. Jun 2026); Wirth/Scheibenbogen skeletal muscle review (J Cachexia Feb 2025)
-- Notes: VERI-LONG (NCT05697640, vericiguat, Charité) is active_not_recruiting as of Jan 2026 — out of scope (completed enrollment); results pending. IA-PACS-CFS sham-controlled immunoadsorption trial at Charité completed with negative result (May 2026 conference). PoCoVIT (methylprednisolone, NCT05986422) terminated Mar 2025 due to serious adverse events. Rituximab trial NCT06952413 is Japan-only. Inebilizumab ME/CFS trial at Charité mentioned at May 2026 conference but no registry entry found yet.
+- Notes: VERI-LONG (NCT05697640, vericiguat, Charté) is active_not_recruiting as of Jan 2026 — out of scope (completed enrollment); results pending. IA-PACS-CFS sham-controlled immunoadsorption trial at Charté completed with negative result (May 2026 conference). PoCoVIT (methylprednisolone, NCT05986422) terminated Mar 2025 due to serious adverse events. Rituximab trial NCT06952413 is Japan-only. Inebilizumab ME/CFS trial at Charté mentioned at May 2026 conference but no registry entry found yet.
 
 ## 2026-06-25 (setup)
 - **Repository / routine set up.** No trial search performed yet — `data/trials.json`
   intentionally starts empty so the first real check flags every in-scope trial as `new`.
 - Leads pre-loaded into `sources/search-sources.md`: Mitodicure **MDC002** (Klaus Wirth;
-  trials in planning), Charité immunoadsorption / **NCT07529197** & Trial RIA and
+  trials in planning), Charté immunoadsorption / **NCT07529197** & Trial RIA and
   **BC007** (Carmen Scheibenbogen).
 - Trials tracked: 0 (open: 0, watchlist: 0)
 - Next: run the routine to perform the first real check.

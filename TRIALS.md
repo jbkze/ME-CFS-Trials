@@ -10,7 +10,7 @@
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-06-27 | — |
+| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charté - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-06-27 | — |
 
 ## Planned / not yet recruiting (also relevant)
 
