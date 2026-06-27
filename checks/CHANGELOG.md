@@ -15,6 +15,22 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-27 (run 1 — scheduled autonomous, 12:09 UTC)
+- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC clinical research pages, mecfs-research.org/researchupdate, PubMed (ME/CFS Jun 24–27 2026 + author searches), Europe PMC, medRxiv, The Sick Times, Health Rising, Science for ME
+- **Trials** — no new in-scope trials; both existing trials verified unchanged
+  - NCT07529197 (IMPACT): still recruiting (Scheibenbogen immunoadsorption, Charité) [HIGH PRIORITY]
+  - MDC002 (Mitodicure): still pre-clinical/not_yet_recruiting; pipeline page confirms "ready for GLP toxicity/safety pharmacology studies" — Phase 1 not yet registered [HIGH PRIORITY]
+  - New: none | Newly open: none | Status changed: none | Closed: none
+- **Papers** — no new papers since last check (2026-06-26); PubMed returned no results for ME/CFS Jun 24–27 2026
+- Trials tracked: 2 (open: 1 [NCT07529197], watchlist: 1 [MDC002])
+- Papers tracked: 47 (unchanged)
+- Notes:
+  - IA-PACS-CFS (NCT05710770, Charité immunoadsorption RCT): ClinicalTrials.gov status confirmed "completed" as of Jan 15, 2026; preliminary negative results presented at 3rd International CFC Conference (May 2026) — no significant difference vs placebo sham. Tracked as background; not in trials.json (completed = out of scope).
+  - Inebilizumab pilot at Charité (Scheibenbogen): still unregistered — no DRKS/NCT entry found. Mentioned at May 2026 conference as planned/initiating. Remains watch-only until a registry entry or dedicated CFC trial page appears.
+  - BC007/APTA Therapeutics: new Long COVID/ME/CFS studies announced for 2026 in German press (riffreporter.de) — no registry ID yet; lead only.
+  - NDPE funding call (Nationale Dekade gegen Postinfektiöse Erkrankungen): deadline Sep 2, 2026 — new drug trials may emerge Q4 2026.
+  - VERI-LONG (vericiguat, NCT05697640, Charité): active_not_recruiting; results expected 2026.
+
 ## 2026-06-26 (correction — intake-standard tightening)
 - **Two trials removed:** `nksg-inebilizumab-ph2` (Inebilizumab Ph2, Charité NKSG) and `charite-semaglutide-glp1` (Semaglutide, Scheibenbogen) deleted from `data/trials.json`.
   - Reason: both were sourced solely from a general therapy-overview page (mecfs.de/therapie) and a grant-announcement page (solvecfs.org/catalyst-awards) respectively — neither has a dedicated trial-specific registry entry or a named clinical-research subpage. Under the tightened intake standard these are *leads only*, not confirmation.
