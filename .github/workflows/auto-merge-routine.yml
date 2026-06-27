@@ -1,28 +1,37 @@
 name: Integrate routine data into main
 
 # The scheduled ME/CFS research-watch Routine commits its results on a `claude/*`
-# branch whenever it can't push to the default branch directly. It does not
-# reliably open a PR (some runs only push the branch and file an issue), so this
-# workflow triggers on the **branch push** and integrates the run's data into
-# `main` — so the GitHub Pages dashboard updates with no manual step — then
-# deletes the run branch so no stragglers pile up.
+# branch when it cannot push to `main` directly. This workflow copies that run's
+# OUTPUT — data files, the whole `literature/` archive, the generated views, the
+# changelog and the sources list — onto `main`, so the GitHub Pages dashboard and
+# the literature archive update with no manual merge, then retires the branch.
 #
-# Safety:
-#   * Ignores branch-deletion events (so deleting the branch can't re-trigger it).
-#   * Ignores the human development branch.
-#   * Acts ONLY if the push changed nothing outside the routine's data/generated
-#     files (data/trials.json, data/papers.json, TRIALS.md, docs/dashboard.json,
-#     checks/CHANGELOG.md). Any other change → it's development, left untouched.
-#   * Never executes the branch's code — it only copies those data files — so it
-#     is safe even though it runs with a write token.
+# THE BUG THIS FIXES: the previous version allow-listed only the five data/
+# generated files, so any run that also added a paper under `literature/` tripped
+# its "non-data file -> skip" guard and was silently left un-merged (green, but no
+# merge, no delete). The allow-list now lives in
+# scripts/integrate_routine_branches.sh and includes the entire `literature/` tree.
 #
-# The clean alternative is to enable "Allow unrestricted branch pushes" on the
-# Routine, which lets runs commit straight to `main` and makes this unnecessary.
+# SAFETY: the script copies ONLY routine-output files and NEVER runs the branch's
+# code, so it is safe with a write token. A branch that also changes development
+# files (scripts, .github/, docs/index.html, CLAUDE.md, data/schema.json, …) is
+# recognised as a human dev branch and left for manual review (loud warning, never
+# silently dropped, never deleted).
+#
+# TRIGGERS:
+#   * push to claude/**     -> integrate that branch immediately.
+#   * schedule + manual run -> sweep EVERY claude/* branch, so a run whose push
+#     event was missed is still integrated within hours. This scheduled sweep is
+#     the safety net that makes "a run created a branch but it never merged" not
+#     recur, even if a single push event is dropped.
 
 on:
   push:
     branches:
       - 'claude/**'
+  schedule:
+    - cron: '17 */6 * * *'   # every 6 hours — catch any orphaned routine branch
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -34,9 +43,11 @@ concurrency:
 
 jobs:
   integrate:
+    # On a push: ignore branch-deletion events and the human development branch.
+    # On schedule/dispatch: always run the full sweep.
     if: >-
-      github.event.deleted != true &&
-      github.ref_name != 'claude/nice-einstein-yqeyjo'
+      github.event_name != 'push' ||
+      (github.event.deleted != true && github.ref_name != 'claude/nice-einstein-yqeyjo')
     runs-on: ubuntu-latest
     steps:
       - name: Check out main
@@ -45,54 +56,15 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Integrate data-only routine pushes into main, then delete the branch
+      - name: Integrate routine branch(es) into main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
-          BRANCH: ${{ github.ref_name }}
-          HEAD_SHA: ${{ github.sha }}
+          DEV_BRANCH: claude/nice-einstein-yqeyjo
         run: |
           set -euo pipefail
-          ALLOWED="data/trials.json data/papers.json TRIALS.md docs/dashboard.json checks/CHANGELOG.md"
-
-          git fetch origin "$BRANCH"
-          CHANGED="$(git diff --name-only origin/main..."$HEAD_SHA" || true)"
-          if [ -z "$CHANGED" ]; then
-            echo "No changes versus main; nothing to integrate."
-            exit 0
-          fi
-          echo "Files changed on $BRANCH versus main:"; echo "$CHANGED"
-
-          # If anything outside the data set changed, this is development — skip
-          # (and do NOT delete the branch).
-          for f in $CHANGED; do
-            case " $ALLOWED " in
-              *" $f "*) : ;;
-              *) echo "Non-data file '$f' changed → not a routine data push; skipping."; exit 0 ;;
-            esac
-          done
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in $ALLOWED; do
-            git checkout "$HEAD_SHA" -- "$f" 2>/dev/null || echo "  ($f absent on branch — skipping)"
-          done
-
-          if git diff --cached --quiet; then
-            echo "main already matches the run's data; nothing to commit."
+          if [ "${{ github.event_name }}" = "push" ]; then
+            bash scripts/integrate_routine_branches.sh "${{ github.ref_name }}"
           else
-            git commit -m "Integrate routine data from ${BRANCH}" -m "Auto-applied so the dashboard updates without a manual merge. Source: ${BRANCH} @ ${HEAD_SHA}. Only data/generated files are copied."
-            git push origin HEAD:main
-            echo "Integrated routine data into main."
-          fi
-
-          # The run branch is fully integrated. Close any PR it opened (its data
-          # is now on main, so merging it later would regress the dashboard) and
-          # delete the branch so nothing lingers.
-          CLOSED_VIA_PR=false
-          for prnum in $(gh pr list --repo "$REPO" --head "$BRANCH" --state open --json number -q '.[].number'); do
-            gh pr close "$prnum" --repo "$REPO" --delete-branch --comment "Data already integrated into \`main\` by the routine-integration workflow — closing as superseded." && CLOSED_VIA_PR=true || true
-          done
-          if [ "$CLOSED_VIA_PR" != "true" ]; then
-            git push origin --delete "$BRANCH" || echo "Could not delete $BRANCH (already gone?)."
+            bash scripts/integrate_routine_branches.sh --all
           fi
