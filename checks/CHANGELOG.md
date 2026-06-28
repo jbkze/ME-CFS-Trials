@@ -15,6 +15,19 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-28 (scheduled autonomous, 04:10 UTC)
+- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC/NKSG, Solve ME/CFS Catalyst Awards, PubMed (Scheibenbogen/Wirth/ME/CFS 2026), medRxiv, Science for ME, Health Rising, The Sick Times
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- **Papers — 1 new confirmed:**
+  - Watton P, Prusty BK, J Transl Med May 2026 — unified mechanistic model of ME/CFS as disorder of impaired adaptive capacity; published May 22, 2026 (PMID 42174604) [Prusty group]
+- isNew cleared: 9 papers from 2026-06-27 run (liu, seifert, desa, wirth-myasthenia, souma, heidarifard, tomic, azcue, huang-mgwas)
+- flags cleared: `drks00033897` (was `new`, now `[]` — unchanged since last check)
+- Trials tracked: 3 (open: 2 [NCT07529197, DRKS00033897], watchlist: 1 [MDC002])
+- Notes: MDC002 still pre-clinical. Semaglutide/Scheibenbogen Catalyst Award confirmed but no registry entry found — remains a lead. Inebilizumab/Scheibenbogen still unregistered. DRKS00032963 (pediatric IA, Flensburg) is suspended — out of scope. National Decade funding call closes Sep 2 2026; new trial registrations expected Q4 2026.
+
 ## 2026-06-27 (scheduled autonomous, 12:04 UTC)
 - Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC, PubMed (Scheibenbogen C[Author], Wirth K[Author], ME/CFS 2026), Europe PMC, medRxiv, bioRxiv, Health Rising, The Sick Times
 - **New trials:**
