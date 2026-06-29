@@ -15,6 +15,19 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-29 (scheduled autonomous, 04:11 UTC)
+- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, Mitodicure.com/pipeline, Charité CFC/NKSG, Solve ME/CFS Catalyst Awards, PubMed (ME/CFS 2026 Jun–Jul, Scheibenbogen/Wirth author searches), medRxiv, Science for ME, Health Rising, The Sick Times, Phoenix Rising forums
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- **Papers — 1 new confirmed:**
+  - Frank J et al. (Klimas group, Nova Southeastern), Int J Mol Sci May 2026 — molecular reclassification of ME/CFS via multi-omics + ML; innate immune activation, T cell exhaustion, mitochondrial dysfunction as targets (PMID 42196410)
+- isNew cleared: `watton-2026-reframing-mecfs-unified` (was `true` from 2026-06-28 run)
+- flags cleared: none (all trials already `[]`)
+- Trials tracked: 3 (open: 2 [NCT07529197, DRKS00033897], watchlist: 1 [MDC002])
+- Notes: NCT05710770 (IA-PACS-CFS RCT, Charité/Pruess) confirmed **Completed** Jan 2026 — never in our database; results (negative: no benefit vs sham) presented at May 2026 ME/CFS Symposium. Rituximab NCT06952413 is Japan-only (no German site) — out of scope. Semaglutide/Scheibenbogen still no registry entry (lead only). NCT06952413 no German site. No new qualifying trials found.
+
 ## 2026-06-28 (scheduled autonomous, 04:10 UTC)
 - Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, WHO ICTRP, Mitodicure.com/pipeline, Charité CFC/NKSG, Solve ME/CFS Catalyst Awards, PubMed (Scheibenbogen/Wirth/ME/CFS 2026), medRxiv, Science for ME, Health Rising, The Sick Times
 - New trials: none
