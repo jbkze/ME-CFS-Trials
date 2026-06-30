@@ -11,8 +11,20 @@ top-to-bottom each run, then chase the named leads.
 > new durable source? Add it here.
 
 Scope reminder: **ME/CFS · drug/pharmacological · at least one site in Germany ·
-open for enrollment.** Prioritise anything linked to **Klaus Wirth** or
-**Carmen Scheibenbogen**.
+open for enrollment** (incl. *planned / not yet recruiting*). Prioritise anything
+linked to **Klaus Wirth** or **Carmen Scheibenbogen**.
+
+> **Post-COVID counts — search it explicitly.** "ME/CFS" here **includes
+> post-COVID / post-infectious ME/CFS** (see ROUTINE.md). Many relevant German
+> drug trials are registered and announced under **"Post-COVID-Syndrom" / "Long
+> COVID" / "Post-Acute COVID-19 (PASC)"**, *not* "ME/CFS" — and run out of
+> infectiology/pneumology/psychiatry departments or national platforms rather than
+> the Charité Fatigue Centrum. A query on ME/CFS terms alone will miss them. So
+> every run must **also** search the post-COVID condition terms and the NAPKON/NUM
+> platform (§3a below). A post-COVID **drug** trial at a German site that enrolls
+> the fatigue/PEM/orthostatic ME/CFS-overlapping population (e.g. by Bell score) is
+> **in scope**. Purely observational or purely cognitive/psychiatric Long-COVID
+> studies with no drug are *out* (note as a lead only if borderline).
 
 ---
 
@@ -20,9 +32,9 @@ open for enrollment.** Prioritise anything linked to **Klaus Wirth** or
 
 | Priority | Registry | Why | Search entry point |
 |---|---|---|---|
-| ★★★ | **DRKS — Deutsches Register Klinischer Studien** | The German national register. Best coverage of Germany-only trials. | https://drks.de/search/de — search `ME/CFS`, `chronisches Fatigue-Syndrom`, `myalgische Enzephalomyelitis`, `post-exertional`, plus drug names below. Filter recruitment status = *recruiting*. |
-| ★★★ | **ClinicalTrials.gov** | Largest register; many German sites list here. | https://clinicaltrials.gov/search?cond=ME%2FCFS&country=Germany&aggFilters=status:rec — also query by intervention (e.g. `MDC002`) and by investigator (`Scheibenbogen`). |
-| ★★ | **CTIS — EU Clinical Trials Information System** (EMA) | Mandatory portal for new EU drug trials since 2022; replaced EudraCT/EU-CTR. | https://euclinicaltrials.eu/ (public search). Filter country = Germany, condition = ME/CFS / post-COVID. |
+| ★★★ | **DRKS — Deutsches Register Klinischer Studien** | The German national register. Best coverage of Germany-only trials. | https://drks.de/search/de — search `ME/CFS`, `chronisches Fatigue-Syndrom`, `myalgische Enzephalomyelitis`, `post-exertional`, **AND the post-COVID terms `Post-COVID-Syndrom`, `Long COVID`, `Post-COVID`, `PASC`** (then check each hit for a drug intervention + ME/CFS-overlapping eligibility), plus drug names below. Filter recruitment status = *recruiting*. |
+| ★★★ | **ClinicalTrials.gov** | Largest register; many German sites list here. | https://clinicaltrials.gov/search?cond=ME%2FCFS&country=Germany&aggFilters=status:rec — **also run `cond=Post-COVID Syndrome` and `cond=Long COVID` with `country=Germany`** — and query by intervention (e.g. `MDC002`, `vidofludimus`) and by investigator (`Scheibenbogen`, `Vehreschild`). |
+| ★★ | **CTIS — EU Clinical Trials Information System** (EMA) | Mandatory portal for new EU drug trials since 2022; replaced EudraCT/EU-CTR. **This is where post-COVID drug RCTs like RAPID_REVIVE (2024-511628-16-00) live** — they often never appear under an "ME/CFS" condition label. | https://euclinicaltrials.eu/ (public search). Filter country = Germany; run **both** condition = `ME/CFS` **and** condition = `Post-COVID` / `Long COVID` / `PASC`. |
 | ★★ | **WHO ICTRP** | Meta-search across national registries; catches anything missed above. | https://trialsearch.who.int/ — query condition + `Germany`. |
 
 Status vocabulary to record is defined in `../ROUTINE.md`. "Open for enrollment"
@@ -63,6 +75,34 @@ Status vocabulary to record is defined in `../ROUTINE.md`. "Open for enrollment"
 
 ---
 
+## 3a. Post-COVID drug-trial platforms & centers (the gap that hid RAPID_REVIVE)
+
+Post-COVID/Long-COVID **drug** trials in Germany are often run by national
+platforms or by infectiology/pneumology departments — not the Fatigue Centrum —
+and registered under a post-COVID label. Check these every run:
+
+- **NAPKON / Netzwerk Universitätsmedizin (NUM)** — the federal university-medicine
+  post-COVID research network and its adaptive platform trials.
+  - https://www.netzwerk-universitaetsmedizin.de/ and https://napkon.de/
+  - **RAPID** platform (Randomized Adaptive assessment of Post-covID syndrome
+    treatments); first arm **RAPID_REVIVE** = vidofludimus calcium / IMU-838,
+    sponsor Goethe University Frankfurt (Prof. **Maria Vehreschild**), 11 German
+    sites incl. **Charité Berlin** — CTIS `2024-511628-16-00`, protocol
+    PMC12366011. Watch for new RAPID arms (each is a new drug appendix).
+- **BMBF / Goethe-Uni & other university-clinic post-COVID studies** — university
+  hospital "Probanden gesucht" / study pages list recruiting trials that never hit
+  an ME/CFS query, e.g. Frankfurt (unimedizin-ffm.de), Tübingen, Charité pneumology
+  (Witzenrath). Scan these for drug interventions.
+- **Lungeninformationsdienst — klinische Studien** (Helmholtz Munich) — curated list
+  of recruiting SARS-CoV-2 / post-COVID trials with eligibility:
+  https://www.lungeninformationsdienst.de/klinische-studien/aktuelle-klinische-studien/sars-cov-2-covid-19
+
+> Triage rule: for each post-COVID hit, keep it only if it has a **drug/
+> pharmacological intervention** AND eligibility that captures the ME/CFS-overlapping
+> phenotype (fatigue/PEM/orthostatic, often a **Bell score** cutoff). Confirm via the
+> registry (CTIS/DRKS/NCT) or the protocol, then record. Observational-only or
+> purely cognitive/psychiatric Long-COVID studies → lead/skip, not a trial entry.
+
 ## 4. Secondary / news sources (catch announcements before registration)
 
 - **#MEAction / Deutsche Gesellschaft für ME/CFS** — https://www.mecfs.de/ (news, studies)
@@ -80,13 +120,20 @@ Status vocabulary to record is defined in `../ROUTINE.md`. "Open for enrollment"
 
 Drug / intervention names worth querying directly each run:
 `MDC002`, `Mitodicure`, `BC007`, `rovunaptabin`, `immunoadsorption ME/CFS`,
-`low-dose naltrexone ME/CFS`, `daratumumab ME/CFS`, `efgartigimod fatigue`.
+`low-dose naltrexone ME/CFS`, `daratumumab ME/CFS`, `efgartigimod fatigue`,
+`vidofludimus post-COVID`, `IMU-838 post-COVID`.
 
 General queries:
 `ME/CFS clinical trial Germany recruiting`,
 `chronisches Fatigue-Syndrom Studie Teilnehmer gesucht`,
 `myalgische Enzephalomyelitis Arzneimittelstudie`,
 `Scheibenbogen Studie rekrutiert`, `Wirth MDC002 Phase 1`.
+
+Post-COVID queries (run these too — they surface drug trials that ME/CFS terms miss):
+`Post-COVID-Syndrom Arzneimittelstudie Deutschland rekrutiert`,
+`Long COVID drug trial Germany recruiting`, `Post-COVID Medikamentenstudie Teilnehmer gesucht`,
+`NAPKON RAPID Post-COVID trial`, `Netzwerk Universitätsmedizin Post-COVID Studie`,
+`post-COVID fatigue Bell score trial Germany`.
 
 ---
 

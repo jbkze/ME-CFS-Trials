@@ -15,6 +15,16 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-30 (manual — missed-trial root-cause fix, 19:23 UTC)
+- Trigger: a user-flagged recruiting study at Uniklinik Frankfurt that the watch never surfaced.
+- Sources checked: CTIS (Post-COVID), DRKS, ClinicalTrials.gov, NAPKON/NUM platform, Lungeninformationsdienst, Goethe-Uni Frankfurt, unimedizin-ffm.de, published protocol (PMC12366011).
+- **New trial:**
+  - `rapid-revive` — RAPID_REVIVE: Phase 2 double-blind, placebo-controlled RCT of **vidofludimus calcium (IMU-838)** for Post-COVID Syndrome; ~376 patients, **11 German sites incl. Charité Berlin**; eligibility by Bell Disability Scale 20–60 + fatigue/cognitive/orthostatic (post-COVID ME/CFS-overlapping population); recruiting since Sep 2024; sponsor Goethe-Uni Frankfurt (Vehreschild); confirmed via CTIS 2024-511628-16-00.
+- **Root cause of the miss:** registry queries used only ME/CFS terms (never `Post-COVID-Syndrom`/`Long COVID`) and the NAPKON/NUM post-COVID platform was not a monitored source — so post-COVID **drug** trials (even with a Charité site) were invisible, despite post-COVID ME/CFS being in scope.
+- **Fix:** `sources/search-sources.md` updated — scope reminder now mandates post-COVID condition queries; DRKS/CTgov/CTIS rows add them; new §3a (NAPKON/NUM, university-clinic study pages, Lungeninformationsdienst) with a drug+ME/CFS-phenotype triage rule; post-COVID reusable queries added.
+- The user-flagged page itself (CARE-MIND, Frankfurt psychiatry) is an **observational** Long-COVID cognition/metabolism study (no drug) → out of scope; logged as a lead only.
+- Trials tracked: 4 (open: 3 — IMPACT, IA-Surv, RAPID_REVIVE; planned: 1 — MDC002).
+
 ## 2026-06-30 (scheduled autonomous, 04:10 UTC)
 - Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS recruiting+not_yet_recruiting), CTIS, Mitodicure.com/pipeline, Charité CFC, APTA Therapeutics (BC007/rovunaptabin), PubMed (ME/CFS Jun–Jul 2026, Scheibenbogen/Wirth author searches), Europe PMC, medRxiv, ScienceDaily, Health Rising, The Sick Times, ME/CFS Research Foundation news
 - New trials: none

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md. The first run after setup will (correctly) flag every relevant trial it finds as 'new', because this baseline starts empty. Do not hand-fabricate entries — only add trials confirmed from a registry or institutional source during a check.",
   "last_check": "2026-06-30",
-  "last_run_at": "2026-06-30T04:10:38Z",
+  "last_run_at": "2026-06-30T19:23:02Z",
   "trials": [
     {
       "id": "nct07529197",
@@ -214,6 +214,81 @@
         "wirth_or_scheibenbogen": false
       },
       "notes": "Immunoadsorption is apheresis (borderline for drug/pharmacological criterion) — included per ROUTINE.md: 'immunoadsorption is borderline → include + note it'; is_drug_study set to false. Registered DRKS January 27, 2025; actual start January 23, 2025; planned completion December 31, 2026. Target n=82. PI is Prof. Matthes at Gemeinschaftskrankenhaus Havelhöhe (Berlin), not directly affiliated with Scheibenbogen's IMPACT trial (NCT07529197) — different PI and sites, though both use IA apheresis for GPCR autoantibody-positive post-infectious conditions. Confirmed recruiting on DRKS 2026-06-27."
+    },
+    {
+      "id": "rapid-revive",
+      "name": "Randomized Adaptive Assessment of Post-COVID Syndrome Treatments — REVIVE arm (vidofludimus calcium)",
+      "acronym": "RAPID_REVIVE",
+      "status": "recruiting",
+      "open_for_enrollment": true,
+      "intervention": {
+        "name": "Vidofludimus calcium (IMU-838)",
+        "type": "drug",
+        "mechanism": "Oral selective DHODH inhibitor with anti-inflammatory and antiviral activity (also activates the neuroprotective transcription factor Nurr1). Dosing 22.5 mg/day for 7 days, then 45 mg/day for 49 days, vs placebo. Rationale: reduce inflammatory activity in Post-COVID Syndrome."
+      },
+      "is_drug_study": true,
+      "associated_researchers": [],
+      "priority": "normal",
+      "sponsor": "Goethe University Frankfurt (Prof. Dr. Maria J. G. T. Vehreschild); part of the NAPKON / Netzwerk Universitätsmedizin (NUM) post-COVID platform, BMBF-funded, co-financed by a pharmaceutical manufacturer.",
+      "principal_investigator": "Prof. Dr. Maria J. G. T. Vehreschild (Infectiology, University Hospital Frankfurt); trial coordination University Medical Center Göttingen",
+      "germany": {
+        "has_german_site": true,
+        "sites": [
+          {
+            "institution": "University Hospital Frankfurt (sponsor / coordinating)",
+            "city": "Frankfurt am Main",
+            "recruiting": true
+          },
+          {
+            "institution": "Charité – Universitätsmedizin Berlin (Prof. Martin Witzenrath)",
+            "city": "Berlin",
+            "recruiting": true
+          }
+        ]
+      },
+      "condition": "Post-COVID Syndrome (PCS) with moderate–severe disability — overlaps the post-COVID ME/CFS population (fatigue, PEM-adjacent exertional intolerance, cognitive and orthostatic symptoms)",
+      "phase": "Phase 2 (double-blind, placebo-controlled, 1:1 response-adaptive randomised platform arm; n≈376 across 11 German sites)",
+      "eligibility": {
+        "summary": "Adults ≥18 with Post-COVID Syndrome persisting >12 weeks after COVID-19, moderate–severe disability (Bell Disability Scale 20–60), and ≥2 PCS symptoms of moderate/severe intensity (e.g. fatigue FSS ≥36, cognitive impairment MoCA 10–25, dyspnea mMRC ≥2, or orthostatic dysfunction).",
+        "key_inclusion": [
+          "Post-COVID Syndrome symptoms persisting >12 weeks after COVID-19",
+          "Moderate–severe disability: Bell Disability Scale 20–60",
+          "≥2 PCS symptoms incl. fatigue (FSS ≥36), cognitive impairment (MoCA 10–25), dyspnea (mMRC ≥2), or orthostatic dysfunction"
+        ],
+        "key_exclusion": [],
+        "age": "≥18",
+        "sex": "All"
+      },
+      "registry": {
+        "name": "CTIS",
+        "id": "2024-511628-16-00",
+        "url": "https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00"
+      },
+      "links": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12366011/",
+        "https://www.lungeninformationsdienst.de/klinische-studien/aktuelle-klinische-studien/sars-cov-2-covid-19/rapid-revive",
+        "https://aktuelles.uni-frankfurt.de/en/forschung/post-covid-syndrom-bmbf-gefoerderte-medikamentenstudie-startet/"
+      ],
+      "first_seen": "2026-06-30",
+      "last_checked": "2026-06-30",
+      "last_status_change": null,
+      "status_history": [
+        {
+          "date": "2026-06-30",
+          "status": "recruiting"
+        }
+      ],
+      "flags": [
+        "new"
+      ],
+      "relevance": {
+        "me_cfs": true,
+        "germany": true,
+        "open_enrollment": true,
+        "drug_study": true,
+        "wirth_or_scheibenbogen": false
+      },
+      "notes": "Added 2026-06-30 after this trial was found to have been missed by earlier runs. ROOT CAUSE of the miss: registry searches used only ME/CFS-specific terms (ME/CFS, chronisches Fatigue-Syndrom, myalgische Enzephalomyelitis, post-exertional) and never 'Post-COVID-Syndrom'/'Long COVID', and the NAPKON/NUM post-COVID platform was not a monitored source — so a post-COVID drug RCT (even one with a Charité site) was invisible. Targets PCS broadly, not ME/CFS-exclusively, but eligibility (Bell 20–60, fatigue/PEM-adjacent, orthostatic) heavily overlaps post-COVID ME/CFS, which is explicitly in scope. RAPID is the adaptive platform; REVIVE is its first intervention-specific arm ('reducing inflammatory activity in PCS'). Confirmed via CTIS 2024-511628-16-00 and the published protocol (PMC12366011); first patient enrolled Sep 2024; ~376 patients, 11 German sites incl. Charité Berlin (Prof. Witzenrath). Not a Wirth/Scheibenbogen trial (priority normal)."
     }
   ]
 }
