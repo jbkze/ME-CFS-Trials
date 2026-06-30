@@ -15,6 +15,18 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-06-30 (scheduled autonomous, 04:10 UTC)
+- Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS recruiting+not_yet_recruiting), CTIS, Mitodicure.com/pipeline, Charité CFC, APTA Therapeutics (BC007/rovunaptabin), PubMed (ME/CFS Jun–Jul 2026, Scheibenbogen/Wirth author searches), Europe PMC, medRxiv, ScienceDaily, Health Rising, The Sick Times, ME/CFS Research Foundation news
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- Papers — 0 new confirmed (no new notable ME/CFS papers indexed since 2026-06-29)
+- isNew cleared: `frank-2026-molecular-reclassification` (was `true` from 2026-06-29 run)
+- flags cleared: none (all trials already `[]`)
+- Trials tracked: 3 (open: 2 [NCT07529197, DRKS00033897], watchlist: 1 [MDC002])
+- Notes: MDC002 still pre-clinical (no new Mitodicure announcement). Inebilizumab and semaglutide from Scheibenbogen still unregistered (leads only). APTA Therapeutics (BC007/rovunaptabin) planning new trials for end of 2026, still no registry entry for ME/CFS indication. ME/CFS Research Foundation 2026 funding announcement expected ~June 30 — not yet published at time of this run. NDPE funding call (BMFTR) open until Sep 2, 2026; new drug trial registrations expected Q4 2026. VERI-LONG (NCT05697640, vericiguat, Charité) results still pending. PubMed returned no new results for Jun 29–30 (normal 1–3 day indexing lag). No new qualifying trials found.
+
 ## 2026-06-29 (scheduled autonomous, 04:11 UTC)
 - Sources checked: DRKS, ClinicalTrials.gov (Germany/ME/CFS), CTIS, Mitodicure.com/pipeline, Charité CFC/NKSG, Solve ME/CFS Catalyst Awards, PubMed (ME/CFS 2026 Jun–Jul, Scheibenbogen/Wirth author searches), medRxiv, Science for ME, Health Rising, The Sick Times, Phoenix Rising forums
 - New trials: none

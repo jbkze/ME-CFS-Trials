@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-06-29",
+  "last_check": "2026-06-30",
   "papers": [
     {
       "id": "frank-2026-molecular-reclassification",
@@ -13,9 +13,9 @@
       "why": "Lays out a roadmap for 'precision medicine' in ME/CFS — where each patient subgroup receives treatment matched to their specific biology — and identifies overactive innate immunity, exhausted immune T cells, and cellular energy failure as the likeliest targets for the first such treatments. From leading US ME/CFS researcher Nancy Klimas's group.",
       "link": "https://doi.org/10.3390/ijms27104436",
       "first_seen": "2026-06-29",
-      "last_checked": "2026-06-29",
+      "last_checked": "2026-06-30",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "PMID 42196410. Int J Mol Sci 27(10):4436. Published May 15, 2026. Frank (Nova Southeastern University, Klimas group) et al. Comprehensive review covering multi-omics (transcriptomics, proteomics, metabolomics), machine learning diagnostics (monocyte subsets, cell-free RNA), and precision medicine approaches; identifies innate immune activation, CD8+ T cell exhaustion with TOX/EOMES upregulation, and mitochondrial dysfunction as key molecular signatures."
     },
     {
