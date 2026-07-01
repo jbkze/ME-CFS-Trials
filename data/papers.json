@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-06-30",
+  "last_check": "2026-07-01",
   "papers": [
+    {
+      "id": "ryback-2026-myoblast-mitochondria-replication",
+      "title": "Indistinguishable mitochondrial phenotypes after exposure of healthy myoblasts to myalgic encephalomyelitis/chronic fatigue syndrome or control serum",
+      "authors": "Ryback AA, Hillier CB, Loureiro CM, Ponting CP, Dalton CF",
+      "journal": "PLOS ONE",
+      "date": "Feb 2026",
+      "summary": "A large, carefully pre-planned study tried to repeat a well-known 2016 finding that blood serum from ME/CFS patients changes how healthy muscle cells produce energy. Using blood from 67 patients and 53 healthy people and over 1,700 lab measurements, they found no such difference this time.",
+      "why": "A rigorous negative replication from Chris Ponting's group (who also leads the DecodeME genetics study already in this database) — it challenges a widely-cited piece of evidence for a 'blood-borne factor' in ME/CFS and shows the field is actively re-testing its own key claims.",
+      "link": "https://doi.org/10.1371/journal.pone.0341334",
+      "first_seen": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "flags": [],
+      "isNew": true,
+      "notes": "PMID 41632778. PLOS ONE, published Feb 3 2026. Pre-registered attempted replication of a 2016 finding (Tomas et al./Newcastle) re serum effects on myoblast mitochondrial function; found no significant difference vs healthy control serum. Ponting is also senior author of DecodeME (decodeme-2025-gwas, already in this file)."
+    },
+    {
+      "id": "rydland-2026-extracellular-vesicles",
+      "title": "Exploring differences in protein cargo of extracellular vesicles from ME/CFS patient plasma compared to healthy controls",
+      "authors": "Rydland A, Yran ES, Nyman TA, Strand EB, Trøseid AS, Øvstebø R, Heinicke F, Lie BA, Viken MK",
+      "journal": "Biochemistry and Biophysics Reports",
+      "date": "Jun 2026",
+      "summary": "Looked at tiny particles that cells shed into the blood (extracellular vesicles) in 49 ME/CFS patients versus 50 healthy people. Patients had more of these particles overall, and a handful of the proteins they carried differed, though none of those individual differences held up after strict statistical checking.",
+      "why": "The largest such extracellular-vesicle study in ME/CFS so far; a mostly exploratory result, but it adds a new (Norwegian) patient group to this growing biomarker approach, alongside similar work already in this database from the Scheibenbogen group.",
+      "link": "https://doi.org/10.1016/j.bbrep.2026.102679",
+      "first_seen": "2026-07-01",
+      "last_checked": "2026-07-01",
+      "flags": [],
+      "isNew": true,
+      "notes": "PMID 42375682. Biochem Biophys Rep, published online Jun 20 2026 (eCollection Sep 2026). Oslo University Hospital / University of Oslo group. Distinct cohort from the Charité/Scheibenbogen extracellular-vesicle paper (seifert-2026-extracellular-vesicle-biomarker) already in this database."
+    },
     {
       "id": "frank-2026-molecular-reclassification",
       "title": "Toward a Molecular Reclassification of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Integrating Multi-Omics, Machine Learning, and Precision Medicine",

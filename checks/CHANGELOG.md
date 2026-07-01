@@ -15,6 +15,22 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-01 (scheduled autonomous, 04:13 UTC)
+- Sources checked — trials: ClinicalTrials.gov API, DRKS (incl. post-COVID terms), CTIS/euclinicaltrials.eu (partially blocked — SPA shell), WHO ICTRP, Charité CFC/NKSG (all 5 trial subpages), Mitodicure.com (pipeline/news/about-us), NAPKON/NUM + num.charite.de, Lungeninformationsdienst, healthrising.org, thesicktimes.org, mecfs.de, RiffReporter, APTA Therapeutics.
+- Sources checked — papers: PubMed (date-sorted + Scheibenbogen/Wirth author searches), Europe PMC, medRxiv/bioRxiv, healthrising.org, thesicktimes.org, meassociation.org.uk, s4me.info.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged (NCT07529197, DRKS00033897, RAPID_REVIVE recruiting; MDC002 still pre-clinical/not_yet_recruiting).
+- **Papers — 2 new confirmed:**
+  - Ryback AA et al. (Ponting/DecodeME-linked group), PLOS ONE, Feb 2026 — large pre-registered replication attempt found no mitochondrial-function difference in myoblasts exposed to ME/CFS vs healthy serum (negative result re: a widely-cited 2016 "blood-borne factor" finding). DOI 10.1371/journal.pone.0341334.
+  - Rydland A et al. (Oslo University Hospital), Biochemistry and Biophysics Reports, Jun 2026 — largest extracellular-vesicle protein-cargo study in ME/CFS so far (49 patients vs 50 controls); mostly exploratory, no differences survived correction. DOI 10.1016/j.bbrep.2026.102679.
+- isNew set true: `ryback-2026-myoblast-mitochondria-replication`, `rydland-2026-extracellular-vesicles` (both new this run, will clear next run)
+- flags cleared: `rapid-revive` (`new` → `[]`, no longer new since last check)
+- Trials tracked: 4 (open: 3 — IMPACT, IA-Surv, RAPID_REVIVE; planned: 1 — MDC002)
+- Notes: Borderline leads not entered (no registry entry, wrong status, or no German site) — VERI-LONG/NCT05697640 (active_not_recruiting, watch for reopen), inebilizumab (Scheibenbogen, funded but unregistered), BC007/rovunaptabin (APTA Therapeutics — new site is Coimbra, Portugal, not Germany), semaglutide (Scheibenbogen — grant announcement only, no trial page), PoCoVIT (cognition-only eligibility, doesn't clearly meet ME/CFS-overlap phenotype), daratumumab larger RCT (Fluge/Bergen, no German site), anakinra NCT05926505 (German site but respiratory-only phenotype). A single-author medRxiv preprint (Lee, ME/CFS-IBS-psychiatric genetic overlap) was flagged but not added pending author-affiliation verification. Literature archive updated for both new papers (full-text PDFs fetched via Unpaywall/PMC).
+
 ## 2026-06-30 (manual — missed-trial root-cause fix, 19:23 UTC)
 - Trigger: a user-flagged recruiting study at Uniklinik Frankfurt that the watch never surfaced.
 - Sources checked: CTIS (Post-COVID), DRKS, ClinicalTrials.gov, NAPKON/NUM platform, Lungeninformationsdienst, Goethe-Uni Frankfurt, unimedizin-ffm.de, published protocol (PMC12366011).
