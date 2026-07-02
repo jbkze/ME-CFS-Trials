@@ -2,20 +2,20 @@
 
 > Auto-generated from `data/trials.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last check: **2026-07-01**
-- Trials tracked: **4** (open for enrollment: **3**, watchlist: **1**, archived: **0**)
+- Last check: **2026-07-02**
+- Trials tracked: **4** (open for enrollment: **2**, watchlist: **2**, archived: **0**)
 - ⭐ = linked to Klaus Wirth or Carmen Scheibenbogen.
 
 ## Open for enrollment
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-07-01 | — |
-| [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) | 🟢 Recruiting | Immunoadsorption (IA apheresis) | — | Berlin (Gemeinschaftskrankenhaus Havelhöhe), Potsdam (Arztpraxis (medical practice)) | DRKS DRKS00033897 | 2026-07-01 | — |
-| [RAPID_REVIVE](https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00) | 🟢 Recruiting | Vidofludimus calcium (IMU-838) | — | Frankfurt am Main (University Hospital Frankfurt (sponsor / coordinating)), Berlin (Charité – Universitätsmedizin Berlin (Prof. Martin Witzenrath)) | CTIS 2024-511628-16-00 | 2026-07-01 | — |
+| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-07-02 | — |
+| [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) | 🟢 Recruiting | Immunoadsorption (IA apheresis) | — | Berlin (Gemeinschaftskrankenhaus Havelhöhe), Potsdam (Arztpraxis (medical practice)) | DRKS DRKS00033897 | 2026-07-02 | — |
 
 ## Planned / not yet recruiting (also relevant)
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| ⭐ [MDC002 Phase 1 Clinical Trial in ME/CFS (planned)](https://mitodicure.com/) | 🟡 Not yet recruiting | MDC002 | Klaus Wirth | — | other not-yet-registered | 2026-07-01 | — |
+| ⭐ [MDC002 Phase 1 Clinical Trial in ME/CFS (planned)](https://mitodicure.com/) | 🟡 Not yet recruiting | MDC002 | Klaus Wirth | — | other not-yet-registered | 2026-07-02 | — |
+| [RAPID_REVIVE](https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00) | 🟠 Active, not recruiting | Vidofludimus calcium (IMU-838) | — | Frankfurt am Main (University Hospital Frankfurt (sponsor / coordinating)), Berlin (Charité – Universitätsmedizin Berlin (Prof. Martin Witzenrath)) | CTIS 2024-511628-16-00 | 2026-07-02 | `status_changed` `closed_since_last` |

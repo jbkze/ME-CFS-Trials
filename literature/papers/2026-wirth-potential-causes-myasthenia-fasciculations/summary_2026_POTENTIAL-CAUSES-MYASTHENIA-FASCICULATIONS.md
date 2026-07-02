@@ -1,6 +1,6 @@
 ---
 type: paper
-id: wirth2026a
+id: wirth2026b
 title: "The potential causes of myasthenia and fasciculations in severely ill ME/CFS patients: the role of disturbed electrophysiology"
 authors: ["Wirth KJ", "Steinacker JM"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [metabolism, skeletal-muscle, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: wirth2026a
+bibtex_key: wirth2026b
 cover: "[[literature/papers/2026-wirth-potential-causes-myasthenia-fasciculations/cover.png]]"
 ---
 

@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-01",
-  "lastRunAt": "2026-07-01T04:13:01Z",
-  "lastRun": "01 Jul 2026",
-  "nextRun": "Next run ~02 Jul 2026",
+  "generated": "2026-07-02",
+  "lastRunAt": "2026-07-02T04:15:10Z",
+  "lastRun": "02 Jul 2026",
+  "nextRun": "Next run ~03 Jul 2026",
   "studies": [
     {
       "title": "IMPACT — Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
@@ -21,23 +21,63 @@
       "isNew": false
     },
     {
-      "title": "RAPID_REVIVE — Randomized Adaptive Assessment of Post-COVID Syndrome Treatments — REVIVE arm (vidofludimus calcium)",
-      "status": "recruiting",
-      "statusLabel": "Recruiting",
-      "location": "University Hospital Frankfurt (sponsor / coordinating), Frankfurt am Main +1 more",
-      "link": "https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00",
-      "isNew": false
-    },
-    {
       "title": "MDC002 Phase 1 Clinical Trial in ME/CFS (planned)",
       "status": "soon",
       "statusLabel": "Planned",
       "location": "—",
       "link": "https://mitodicure.com/",
       "isNew": false
+    },
+    {
+      "title": "RAPID_REVIVE — Randomized Adaptive Assessment of Post-COVID Syndrome Treatments — REVIVE arm (vidofludimus calcium)",
+      "status": "planned",
+      "statusLabel": "Active, not recruiting",
+      "location": "University Hospital Frankfurt (sponsor / coordinating), Frankfurt am Main +1 more",
+      "link": "https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00",
+      "isNew": false
     }
   ],
   "papers": [
+    {
+      "title": "Laxity Comes with Consequences: Connective Tissue Disorders and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)",
+      "authors": "Wirth KJ",
+      "journal": "Preprints.org (preprint, not yet peer-reviewed)",
+      "date": "May 2026",
+      "summary": "Klaus Wirth proposes that loose, stretchy connective tissue (as seen in some joint-hypermobility conditions) and ME/CFS can make each other worse in a two-way cycle: low oxygen and overactive immune cells in ME/CFS may weaken the 'glue' that holds collagen fibres together, while pre-existing loose ligaments and an unstable neck can trigger the blood-flow and blood-pressure problems seen in ME/CFS.",
+      "why": "From Wirth (Mitodicure): extends his muscle/blood-flow theory of ME/CFS to connective tissue and joint hypermobility, a link some patients report — but this is an early, not-yet-peer-reviewed hypothesis paper (posted to a preprint server, not medRxiv/bioRxiv), and other researchers have publicly questioned some of its claims, so treat it as a working idea rather than established science.",
+      "link": "https://doi.org/10.20944/preprints202605.0876.v1",
+      "isNew": true
+    },
+    {
+      "title": "Identification of novel reproducible combinatorial genetic risk factors for myalgic encephalomyelitis in the DecodeME patient cohort and commonalities with long COVID",
+      "authors": "Sardell J, Das S, Pearson M, Kolobkov D, et al. (PrecisionLife)",
+      "journal": "Journal of Translational Medicine",
+      "date": "Apr 2026",
+      "summary": "Using an AI method that looks at combinations of gene variants (not just single genes), researchers re-analysed the large DecodeME genetic dataset and found over 22,000 reproducible variant-combinations pointing to about 250 'core' genes involved in nerve/brain signalling, inflammation, cell-stress response, and calcium handling; 76 of these genes are also linked to long COVID.",
+      "why": "A deeper follow-up analysis of the DecodeME genetics study already in this database — it turns raw genetic data into specific biological pathways and proposes two existing drugs (ampligen and apremilast) as candidates worth testing.",
+      "link": "https://doi.org/10.1186/s12967-026-08167-1",
+      "isNew": true
+    },
+    {
+      "title": "Symptom clusters in ME/CFS reflect distinct neuroimmune and autonomic pathophysiological mechanisms: a translational model",
+      "authors": "Habermann-Horstmeier L, Horstmeier LM",
+      "journal": "Journal of Translational Medicine",
+      "date": "Apr 2026",
+      "summary": "Studying symptom surveys from 748 German ME/CFS patients, the authors showed that groups of symptoms which tend to occur together (e.g. brain fog, sensory sensitivity, and sleep problems as one group) statistically line up with specific underlying biological processes, such as immune, nerve, or gut-related dysfunction.",
+      "why": "A German patient-cohort study (the APAV-ME/CFS study) supporting the idea that ME/CFS should be split into biological subgroups rather than treated as one uniform illness — relevant to designing more targeted future drug trials.",
+      "link": "https://doi.org/10.1186/s12967-026-08159-1",
+      "isNew": true
+    },
+    {
+      "title": "Mapping the Symptom Profile and Burden of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Insights from the TIMES Survey",
+      "authors": "Tyson SF, Fleming R",
+      "journal": "medRxiv (preprint)",
+      "date": "Jun 2026",
+      "summary": "Over 1,000 adults with ME/CFS filled out a detailed symptom questionnaire; on average their overall symptom burden was severe, with cognitive problems (like brain fog) rated the worst and fatigue the most universal symptom, and women reporting a heavier symptom load than men.",
+      "why": "One of the largest patient-reported symptom-burden surveys in ME/CFS to date; mainly descriptive rather than mechanistic, but useful for quantifying how disabling the illness is across body systems and for designing outcome measures for future drug trials.",
+      "link": "https://doi.org/10.64898/2026.06.17.26355870",
+      "isNew": true
+    },
     {
       "title": "Indistinguishable mitochondrial phenotypes after exposure of healthy myoblasts to myalgic encephalomyelitis/chronic fatigue syndrome or control serum",
       "authors": "Ryback AA, Hillier CB, Loureiro CM, Ponting CP, Dalton CF",
@@ -46,7 +86,7 @@
       "summary": "A large, carefully pre-planned study tried to repeat a well-known 2016 finding that blood serum from ME/CFS patients changes how healthy muscle cells produce energy. Using blood from 67 patients and 53 healthy people and over 1,700 lab measurements, they found no such difference this time.",
       "why": "A rigorous negative replication from Chris Ponting's group (who also leads the DecodeME genetics study already in this database) — it challenges a widely-cited piece of evidence for a 'blood-borne factor' in ME/CFS and shows the field is actively re-testing its own key claims.",
       "link": "https://doi.org/10.1371/journal.pone.0341334",
-      "isNew": true
+      "isNew": false
     },
     {
       "title": "Exploring differences in protein cargo of extracellular vesicles from ME/CFS patient plasma compared to healthy controls",
@@ -56,7 +96,7 @@
       "summary": "Looked at tiny particles that cells shed into the blood (extracellular vesicles) in 49 ME/CFS patients versus 50 healthy people. Patients had more of these particles overall, and a handful of the proteins they carried differed, though none of those individual differences held up after strict statistical checking.",
       "why": "The largest such extracellular-vesicle study in ME/CFS so far; a mostly exploratory result, but it adds a new (Norwegian) patient group to this growing biomarker approach, alongside similar work already in this database from the Scheibenbogen group.",
       "link": "https://doi.org/10.1016/j.bbrep.2026.102679",
-      "isNew": true
+      "isNew": false
     },
     {
       "title": "Toward a Molecular Reclassification of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Integrating Multi-Omics, Machine Learning, and Precision Medicine",

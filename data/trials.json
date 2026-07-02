@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md. The first run after setup will (correctly) flag every relevant trial it finds as 'new', because this baseline starts empty. Do not hand-fabricate entries — only add trials confirmed from a registry or institutional source during a check.",
-  "last_check": "2026-07-01",
-  "last_run_at": "2026-07-01T04:13:01Z",
+  "last_check": "2026-07-02",
+  "last_run_at": "2026-07-02T04:15:10Z",
   "trials": [
     {
       "id": "nct07529197",
@@ -59,7 +59,7 @@
         "https://cfc.charite.de/en/clinical_research/nksg/trial_ria/"
       ],
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-01",
+      "last_checked": "2026-07-02",
       "last_status_change": null,
       "status_history": [
         {
@@ -75,7 +75,7 @@
         "drug_study": false,
         "wirth_or_scheibenbogen": true
       },
-      "notes": "Immunoadsorption is apheresis (borderline for drug/pharmacological criterion) — included per ROUTINE.md: 'immunoadsorption is borderline → include + note it'; is_drug_study set to false. Status verified recruiting on ClinicalTrials.gov (April 2026). Contact: Dr. Elisa A Stein, elisa.stein@charite.de, +49 450 624354. Successor to the earlier Trial RIA (NCT05629988). Re-confirmed unchanged (RECRUITING, statusVerifiedDate 2026-04) via ClinicalTrials.gov API on 2026-07-01."
+      "notes": "Immunoadsorption is apheresis (borderline for drug/pharmacological criterion) — included per ROUTINE.md: 'immunoadsorption is borderline → include + note it'; is_drug_study set to false. Status verified recruiting on ClinicalTrials.gov (April 2026). Contact: Dr. Elisa A Stein, elisa.stein@charite.de, +49 450 624354. Successor to the earlier Trial RIA (NCT05629988). Re-confirmed unchanged (RECRUITING, last update posted 2026-04-14) via ClinicalTrials.gov API on 2026-07-02."
     },
     {
       "id": "mitodicure-mdc002-ph1",
@@ -119,7 +119,7 @@
         "https://thesicktimes.org/2026/05/14/breaking-the-vicious-cycle-how-two-german-scientists-seek-to-solve-me/"
       ],
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-01",
+      "last_checked": "2026-07-02",
       "last_status_change": null,
       "status_history": [
         {
@@ -135,7 +135,7 @@
         "drug_study": true,
         "wirth_or_scheibenbogen": true
       },
-      "notes": "Not yet registered in any trial registry. German criterion satisfied by German sponsor (Mitodicure GmbH). Pipeline page (mitodicure.com/pipeline/) confirms MDC002 is 'ready for GLP toxicity and GLP safety pharmacology studies' as of June 2026 — i.e. still pre-clinical; no Phase 1 registration or new funding announcement. Watch for Phase 1 registration on DRKS or ClinicalTrials.gov. Re-checked 2026-07-01: pipeline/news pages unchanged (most recent news item still Mar 2025); still no registry entry."
+      "notes": "Not yet registered in any trial registry. German criterion satisfied by German sponsor (Mitodicure GmbH). Pipeline page (mitodicure.com/pipeline/) confirms MDC002 is 'ready for GLP toxicity and GLP safety pharmacology studies' as of June 2026 — i.e. still pre-clinical; no Phase 1 registration or new funding announcement. Watch for Phase 1 registration on DRKS or ClinicalTrials.gov. Re-checked 2026-07-02: pipeline/news pages unchanged, still no registry entry. The Sick Times (May 14, 2026) corroborates the status quo — Wirth still needs to complete unfunded 4-week GLP toxicology studies before Phase 1 can start; venture capital has been reluctant; German patient advocacy groups (Fatigatio etc.) are lobbying the Research Ministry for funding. Also watch Germany's new 'Nationale Dekade gegen Postinfektiöse Erkrankungen' (announced Jan 2026, €500M/2026-2036) as a possible future funding route — no MDC002-specific award yet."
     },
     {
       "id": "drks00033897",
@@ -197,7 +197,7 @@
         "https://drks.de/search/en/trial/DRKS00033897"
       ],
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-01",
+      "last_checked": "2026-07-02",
       "last_status_change": null,
       "status_history": [
         {
@@ -213,14 +213,14 @@
         "drug_study": false,
         "wirth_or_scheibenbogen": false
       },
-      "notes": "Immunoadsorption is apheresis (borderline for drug/pharmacological criterion) — included per ROUTINE.md: 'immunoadsorption is borderline → include + note it'; is_drug_study set to false. Registered DRKS January 27, 2025; actual start January 23, 2025; planned completion December 31, 2026. Target n=82. PI is Prof. Matthes at Gemeinschaftskrankenhaus Havelhöhe (Berlin), not directly affiliated with Scheibenbogen's IMPACT trial (NCT07529197) — different PI and sites, though both use IA apheresis for GPCR autoantibody-positive post-infectious conditions. Confirmed recruiting on DRKS 2026-06-27. Re-confirmed unchanged ('Rekrutierung läuft', last DRKS update 2026-01-30) on 2026-07-01."
+      "notes": "Immunoadsorption is apheresis (borderline for drug/pharmacological criterion) — included per ROUTINE.md: 'immunoadsorption is borderline → include + note it'; is_drug_study set to false. Registered DRKS January 27, 2025; actual start January 23, 2025; planned completion December 31, 2026. Target n=82. PI is Prof. Matthes at Gemeinschaftskrankenhaus Havelhöhe (Berlin), not directly affiliated with Scheibenbogen's IMPACT trial (NCT07529197) — different PI and sites, though both use IA apheresis for GPCR autoantibody-positive post-infectious conditions. Confirmed recruiting on DRKS 2026-06-27. Re-confirmed unchanged ('Recruiting ongoing', last DRKS update 2026-01-30) on 2026-07-02."
     },
     {
       "id": "rapid-revive",
       "name": "Randomized Adaptive Assessment of Post-COVID Syndrome Treatments — REVIVE arm (vidofludimus calcium)",
       "acronym": "RAPID_REVIVE",
-      "status": "recruiting",
-      "open_for_enrollment": true,
+      "status": "active_not_recruiting",
+      "open_for_enrollment": false,
       "intervention": {
         "name": "Vidofludimus calcium (IMU-838)",
         "type": "drug",
@@ -270,23 +270,27 @@
         "https://aktuelles.uni-frankfurt.de/en/forschung/post-covid-syndrom-bmbf-gefoerderte-medikamentenstudie-startet/"
       ],
       "first_seen": "2026-06-30",
-      "last_checked": "2026-07-01",
-      "last_status_change": null,
+      "last_checked": "2026-07-02",
+      "last_status_change": "2026-07-02",
       "status_history": [
         {
           "date": "2026-06-30",
           "status": "recruiting"
+        },
+        {
+          "date": "2026-07-02",
+          "status": "active_not_recruiting"
         }
       ],
-      "flags": [],
+      "flags": ["status_changed", "closed_since_last"],
       "relevance": {
         "me_cfs": true,
         "germany": true,
-        "open_enrollment": true,
+        "open_enrollment": false,
         "drug_study": true,
         "wirth_or_scheibenbogen": false
       },
-      "notes": "Added 2026-06-30 after this trial was found to have been missed by earlier runs. ROOT CAUSE of the miss: registry searches used only ME/CFS-specific terms (ME/CFS, chronisches Fatigue-Syndrom, myalgische Enzephalomyelitis, post-exertional) and never 'Post-COVID-Syndrom'/'Long COVID', and the NAPKON/NUM post-COVID platform was not a monitored source — so a post-COVID drug RCT (even one with a Charité site) was invisible. Targets PCS broadly, not ME/CFS-exclusively, but eligibility (Bell 20–60, fatigue/PEM-adjacent, orthostatic) heavily overlaps post-COVID ME/CFS, which is explicitly in scope. RAPID is the adaptive platform; REVIVE is its first intervention-specific arm ('reducing inflammatory activity in PCS'). Confirmed via CTIS 2024-511628-16-00 and the published protocol (PMC12366011); first patient enrolled Sep 2024; ~376 patients, 11 German sites incl. Charité Berlin (Prof. Witzenrath). Not a Wirth/Scheibenbogen trial (priority normal). Re-checked 2026-07-01: CTIS record itself not directly fetchable (SPA), but NUM/Charité project pages confirm the trial remains active on the NAPKON-TIP platform (>100 patients enrolled at 10 sites as of ~Mar 2025; a Feb 2026 NUM seminar discussed early results) with no formal status-change or completion notice found — treating as unchanged/recruiting pending a clean CTIS pull next cycle."
+      "notes": "Added 2026-06-30 after this trial was found to have been missed by earlier runs. ROOT CAUSE of the miss: registry searches used only ME/CFS-specific terms (ME/CFS, chronisches Fatigue-Syndrom, myalgische Enzephalomyelitis, post-exertional) and never 'Post-COVID-Syndrom'/'Long COVID', and the NAPKON/NUM post-COVID platform was not a monitored source — so a post-COVID drug RCT (even one with a Charité site) was invisible. Targets PCS broadly, not ME/CFS-exclusively, but eligibility (Bell 20–60, fatigue/PEM-adjacent, orthostatic) heavily overlaps post-COVID ME/CFS, which is explicitly in scope. RAPID is the adaptive platform; REVIVE is its first intervention-specific arm ('reducing inflammatory activity in PCS'). Confirmed via CTIS 2024-511628-16-00 and the published protocol (PMC12366011); first patient enrolled Sep 2024; ~376 patients, 11 German sites incl. Charité Berlin (Prof. Witzenrath). Not a Wirth/Scheibenbogen trial (priority normal). STATUS CHANGE 2026-07-02: CTIS record itself still not directly fetchable (SPA, blocked), but the dedicated NAPKON institutional page (https://www.netzwerk-universitaetsmedizin.de/forschung/napkon-tip/studie-rapid-revive, 'Stand: Juli 2025') now states enrollment is full at all sites and no further recruitment is possible ('Es wurden bereits so viele Patient:innen an allen Standorten in die Studie eingeschlossen, dass derzeit keine weiteren rekrutiert werden können'), corroborated by a March 24, 2025 NUM news item (>100 of a planned 150 patients enrolled) and a Feb 9, 2026 Universitätsmedizin Halle NUM-Insights event titled 'Erste Ergebnisse aus RAPID_REVIVE' presented by Prof. Vehreschild, indicating the trial has moved into results/analysis. Status changed from recruiting to active_not_recruiting (enrollment complete, results pending); no longer open for enrollment. Recommend a follow-up attempt at the formal CTIS record next cycle to get the official EU status label."
     }
   ]
 }

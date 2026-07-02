@@ -1,6 +1,6 @@
 ---
 type: paper
-id: wirth2026
+id: wirth2026a
 title: "Imbalance of Excitatory and Inhibitory Neurotransmitter Systems in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome"
 authors: ["Wirth KJ", "Scheibenbogen C"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [neuroinflammation, skeletal-muscle, treatment, review]
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: wirth2026
+bibtex_key: wirth2026a
 cover: "[[literature/papers/2026-wirth-imbalance-excitatory-inhibitory-neurotransmitter/cover.png]]"
 ---
 

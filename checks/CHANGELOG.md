@@ -15,6 +15,24 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-02 (scheduled autonomous, 04:15 UTC)
+- Sources checked — trials: ClinicalTrials.gov API, DRKS (incl. post-COVID terms), CTIS/euclinicaltrials.eu (blocked — SPA shell), WHO ICTRP, Charité CFC clinical-research listing, Mitodicure.com (pipeline/news/about-us), NAPKON/NUM (incl. dedicated RAPID_REVIVE study page), Lungeninformationsdienst, healthrising.org, thesicktimes.org, mecfs.de, drug/investigator-name queries.
+- Sources checked — papers: PubMed (date-sorted + Scheibenbogen/Wirth author searches), Europe PMC, medRxiv/bioRxiv, Preprints.org, Google Scholar, s4me.info, meassociation.org.uk.
+- New trials: none
+- Newly open: none
+- **Status changed:** `rapid-revive` (RAPID_REVIVE) — **recruiting → active_not_recruiting**. The dedicated NAPKON institutional page now states enrollment is full at all 11 sites and closed to further recruitment (confirmed >100 of a planned 150 patients enrolled by mid-2025; a Feb 2026 NUM-Insights talk by Prof. Vehreschild presented "first results"). Formal CTIS status label still unconfirmed (portal blocked) — recheck next cycle.
+- Closed since last: `rapid-revive` (no longer open for enrollment; flagged `closed_since_last`)
+- All 3 other tracked trials re-verified unchanged: NCT07529197 (IMPACT, recruiting), DRKS00033897 (IA-Surv, recruiting), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry).
+- **Papers — 4 new confirmed:**
+  - Wirth KJ, Preprints.org (not peer-reviewed), May 2026 — "Laxity Comes with Consequences: Connective Tissue Disorders and ME/CFS"; hypothesis paper linking connective-tissue laxity/hypoxia/mast-cell activity to ME/CFS pathology. HIGH PRIORITY (Wirth-authored); flagged as an unreviewed preprint with some claims contested on s4me.info. DOI 10.20944/preprints202605.0876.v1.
+  - Sardell J et al. (PrecisionLife), J Transl Med, Apr 2026 — combinatorial-genetics follow-up on the DecodeME cohort; >22,000 reproducible variant-combinations, ~250 core genes, 76 shared with long COVID, drug-repurposing candidates (ampligen, apremilast). DOI 10.1186/s12967-026-08167-1.
+  - Habermann-Horstmeier L & Horstmeier LM, J Transl Med, Apr 2026 — German APAV-ME/CFS cohort (n=748) shows symptom clusters statistically track distinct neuroimmune/autonomic mechanisms, supporting subgroup-based treatment. DOI 10.1186/s12967-026-08159-1.
+  - Tyson SF & Fleming R, medRxiv (preprint), Jun 2026 — TIMES symptom-burden survey, n=1,028 ME/CFS patients; severe overall burden, cognitive symptoms worst, women more affected than men. DOI 10.64898/2026.06.17.26355870.
+- isNew set true: `wirth-2026-connective-tissue-laxity`, `sardell-2026-decodeme-combinatorial-genetics`, `habermann-horstmeier-2026-symptom-clusters`, `tyson-2026-times-survey` (all new this run, will clear next run)
+- isNew cleared: `ryback-2026-myoblast-mitochondria-replication`, `rydland-2026-extracellular-vesicles` (no longer new since last check)
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; active/not recruiting: 1 — RAPID_REVIVE)
+- Notes: New-trial candidates found but excluded (no German connection, no drug intervention, or wrong phenotype/status) — NCT03773003/IMPROFA (probiotic supplement, mixed cancer+CFS population), NCT05926505/PRECISION-anakinra Jena site (respiratory-only phenotype, not_yet_recruiting locally), NCT07352254/ACCESS Hannover (telemedicine outreach, not a drug), CTIS 2024-512500-19-00/ResetME-daratumumab (Bergen, Norway sponsor — no German site), NCT07285473 low-dose naltrexone (US-only). Germany's new "Nationale Dekade gegen Postinfektiöse Erkrankungen" (announced Jan 2026, €500M/2026–2036) is a funding-pipeline signal to watch for future MDC002/other trial registrations, not yet a trial itself. One paper lead excluded for marginal fit/unconfirmed authorship: Xu/OuYang/Chen NHIS diagnostic nomogram (Frontiers in Neurology, Apr 2026). Literature archive updated for all 4 new papers (PDFs fetched where available).
+
 ## 2026-07-01 (scheduled autonomous, 04:13 UTC)
 - Sources checked — trials: ClinicalTrials.gov API, DRKS (incl. post-COVID terms), CTIS/euclinicaltrials.eu (partially blocked — SPA shell), WHO ICTRP, Charité CFC/NKSG (all 5 trial subpages), Mitodicure.com (pipeline/news/about-us), NAPKON/NUM + num.charite.de, Lungeninformationsdienst, healthrising.org, thesicktimes.org, mecfs.de, RiffReporter, APTA Therapeutics.
 - Sources checked — papers: PubMed (date-sorted + Scheibenbogen/Wirth author searches), Europe PMC, medRxiv/bioRxiv, healthrising.org, thesicktimes.org, meassociation.org.uk, s4me.info.

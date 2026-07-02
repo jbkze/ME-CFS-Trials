@@ -1,0 +1,1900 @@
+RESEARCH
+Open Access
+© The Author(s) 2026. Open Access  This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 
+International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you 
+give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the 
+licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or 
+other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the 
+material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or 
+exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit ​h​t​t​p​:​/​/​c​r​e​a​t​i​
+v​e​c​o​m​m​o​n​s​.​o​r​g​/​l​i​c​e​n​s​e​s​/​b​y​-​n​c​-​n​d​/​4​.​0​/.
+Habermann-Horstmeier and Horstmeier 
+Journal of Translational Medicine          (2026) 24:606 
+https://doi.org/10.1186/s12967-026-08159-1
+Journal of Translational 
+Medicine
+*Correspondence:
+Lotte Habermann-Horstmeier
+Habermann-Horstmeier@viph-public-health.de
+Full list of author information is available at the end of the article
+Abstract
+Background  Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a debilitating multisystem 
+disease characterized by heterogeneous symptom patterns. Previous work suggested that specific symptoms 
+tend to co‑occur, pointing toward underlying biological mechanisms. This study aimed to empirically validate 
+literature‑based, hypothesis‑driven symptom clusters and assess whether they reflect distinct neuroimmune and 
+autonomic pathophysiological pathways.
+Methods  Symptom data from 748 adults with ME/CFS (≥20 years) participating in the APAV‑ME/CFS study were 
+analyzed. Symptoms were assigned to predefined mechanistic groups informed by current pathophysiological 
+hypotheses. Exploratory and Confirmatory Factor Analyses, followed by Structural Equation Modeling (SEM), evaluated 
+the coherence, distinctiveness, and hierarchical structure of each cluster. Robustness was tested using a stratified, 
+randomized training dataset.
+Results  A coherent Brain factor (brain fog, sensory hypersensitivity, visual disturbances, sleep disturbances, 
+headaches) showed excellent fit (RMSEA = 0.021; CFI = 0.996). Gastrointestinal symptoms demonstrated stronger 
+internal consistency than Immune symptoms, and model comparisons supported a two‑factor Gut–Immune structure. 
+Across all analyses, symptom groups emerged as internally consistent and statistically distinct. A higher‑order SEM 
+including a common latent factor yielded excellent fit for the Autonomic symptom complex.
+Conclusions  The findings support ME/CFS as a complex neuroimmune–autonomic multisystem disorder and 
+suggest that symptom clusters align with functional biological systems. Mechanism-aligned symptom subgrouping 
+may enable pathophysiology-guided diagnostics, patient stratification, and targeted therapeutic development. The 
+proposed interpretations of underlying mechanisms derive from the integration of existing literature and were not 
+directly measured in this study. The identified clusters therefore indicate mechanistic alignment rather than direct 
+mechanistic validation.
+Symptom clusters in ME/CFS reflect 
+distinct neuroimmune and autonomic 
+pathophysiological mechanisms: 
+a translational model
+Lotte Habermann-Horstmeier1*
+ and Lukas M. Horstmeier2
+
+Page 2 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+Introduction
+Myalgic encephalomyelitis/chronic fatigue syndrome 
+(ME/CFS; ICD‑10‑GM‑2025: G93.3) is a debilitating 
+multisystem disease characterized by a wide range of 
+symptoms [1] and substantial impairment in daily func­
+tioning. In most cases, ME/CFS follows an infectious 
+trigger and is associated with long‑lasting disability and 
+markedly reduced quality of life [2]. Current evidence 
+indicates disturbances across multiple regulatory sys­
+tems—including the nervous, endocrine, and immune 
+systems—as well as impaired cellular energy metabolism 
+and chronic low‑grade inflammation, suggesting a break­
+down of physiological homeostasis in several intercon­
+nected biological networks [3–7].
+A hallmark feature of ME/CFS is post‑exertional mal­
+aise (PEM), a delayed and prolonged exacerbation of 
+symptoms following minimal physical or cognitive exer­
+tion. PEM is accompanied by profound reductions in 
+physical and mental energy, rapid deterioration of overall 
+functioning, and a broad array of fluctuating symptoms, 
+including neurocognitive impairment, immunological 
+disturbances, sleep dysfunction, and autonomic dysregu­
+lation [5].
+Despite the multisystemic nature of ME/CFS, little is 
+known about how symptoms cluster interact, or evolve 
+over the course of the disease. In a previous exploratory 
+study (Study 1), we identified preliminary patterns sug­
+gesting that certain symptoms co‑occur more frequently 
+than expected, pointing toward underlying mechanistic 
+relationships [8]. These findings motivated the present 
+study (Study 2), which aims to empirically test and vali­
+date these hypothesized symptom clusters using Explor­
+atory and Confirmatory Factor Analyses and Structural 
+Equation Modeling.
+We hypothesized that distinct symptom groups would 
+emerge that align with known pathophysiological path­
+ways—particularly neuroimmune, autonomic, gastro­
+intestinal, and central nervous system mechanisms. 
+Identifying such mechanism‑aligned symptom clusters 
+may support more precise diagnostics, inform stratifica­
+tion strategies, and guide the development of targeted 
+therapeutic approaches. Building on these findings, the 
+subsequent phases of this research program (Studies 3–5; 
+see Fig. 1) will investigate potential modifiers of symp­
+tom architecture, with a particular focus on sex and ill­
+ness duration. Studies 3 and 4 will examine possible 
+sex-related differences in the Brain/Brain2 and Auto­
+nomic clusters (Study 3) as well as in the Gut/Immune/
+Immune2 clusters (Study 4), relating these patterns to 
+established pathophysiological processes in ME/CFS and 
+contributing to the development of an integrated patho­
+physiological model. Study 5 will investigate potential 
+changes in ME/CFS symptom clusters over the course of 
+the disease, aiming to classify these changes pathophysi­
+ologically while differentiating between sexes.
+Methods
+This study is based on data from the APAV-ME/CFS 
+study. The predominantly qualitative APAV-ME/CFS 
+study focused primarily on the doctor-patient relation­
+ship in ME/CFS from the perspective of patients and 
+their relatives. In addition, a range of basic data on gen­
+der/sex, age, etc., as well as information on whether the 
+participant has a medical diagnosis of ME/CFS was also 
+collected (see below).
+Sampling
+A total of 1,238 people (ME/CFS patients and their close 
+relatives) took part in the APAV-ME/CFS study. They 
+were recruited through voluntary participation and 
+snowball sampling. To this end, contact was made in 
+summer 2022 with six ME/CFS patient organizations in 
+Germany as well as the Fatigue Centre at Charité in Ber­
+lin and the Chronic Fatigue Centre for Young People at 
+the Technical University of Munich. The organizations 
+forwarded the call for study participation to ME/CFS 
+patients and their relatives. Through them, the infor­
+mation reached other affected persons. Long-term or 
+post-COVID patients who did not meet the Canadian or 
+International Consensus Criteria for ME/CFS were not 
+included in the study.
+The recruitment strategy via patient organizations and 
+snowball sampling may introduce selection bias. How­
+ever, this approach is widely used in ME/CFS research 
+due to the absence of population-based registries and the 
+limited availability of clinically diagnosed cohorts.
+Study participants
+The present study (Study 2) includes data from the 748 
+adult participants in the APAV-ME/CFS study who 
+had already been medically diagnosed with ME/CFS 
+(>20 years; 608 ♀, 137 ♂, 3 non-binary). The gender dis­
+tribution in our sample (≈81% women) is consistent with 
+international epidemiological data reporting a female 
+predominance of 70–80%. Importantly, the aim of this 
+study was not to estimate population prevalence but to 
+examine the internal structure of symptom clusters. 
+Data from participating children and adolescents (up to 
+20 years of age), relatives of ME/CFS patients, and the 
+diseased individuals who had not yet been medically 
+Keywords  Myalgic Encephalomyelitis/Chronic Fatigue Syndrome, Symptom clusters, Neuroimmune mechanisms, 
+Autonomic dysfunction, Translational modelling, Factor analysis, Structural equation modeling
+
+Page 3 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+diagnosed of ME/CFS were excluded. In addition, ques­
+tionnaires lacking information on the relevant key vari­
+ables – such as gender/sex, age, or conformation of 
+medical ME/CFS diagnosis – were removed from the 
+analysis (Table 1, Fig. 2).
+Prior to participation, all respondents were informed 
+about the study’s objectives, structure, and content. 
+Participation was voluntary and anonymous, with no 
+possibility of linking responses to individual identities. 
+Informed consent was obtained through completion of 
+the online questionnaire. To ensure appropriate inclu­
+sion, participants provided basic demographic and diag­
+nostic information or symptom-related self-reports.
+Study implementation and data processing
+Almost all respondents completed the questionnaire we 
+developed online (n = 1,118). The questionnaire consisted 
+of a short quantitative and a more extensive qualitative 
+section. In addition, the questionnaire was also available 
+for download, enabling an additional 120 participants to 
+return the completed questionnaire by email, fax, or post. 
+The quantitative part of the questionnaire primarily col­
+lected basic information through closed questions, for 
+example on the respondents’ age and gender. Additional 
+questions include illness duration (self-assessed), the 
+presence of a medical diagnosis, the date of diagnosis, the 
+medical specialty and number of physicians consulted, 
+the number of hospital and rehabilitation stays, the pre­
+dominant ME/CFS symptoms, and whether symptoms 
+improved or worsened following these hospitalizations.
+Data analysis
+All reported symptoms were coded as dichotomous vari­
+ables (presence vs. absence). Dichotomizing symptoms 
+into yes/no categories reduces variance and can attenuate 
+factor loadings, internal consistency (Cronbach’s α), and 
+SEM fit indices, particularly in heterogeneous domains 
+such as the Immune and Autonomic clusters. This meth­
+odological constraint likely contributed to the moderate 
+loadings observed in these domains. Nevertheless, global 
+model fit indices remained excellent, indicating that the 
+underlying latent structure was robust despite reduced 
+measurement sensitivity. In the subsequent statistical 
+analysis of the symptoms regularly occurring in the par­
+ticipants - except PEM and fatigue, as these are the core 
+diagnostic criteria for an ME/CFS diagnosis and must 
+therefore be present in all patients - tests for bivariate 
+associations were first conducted, including a check of 
+internal consistency (cross-tabulations, Cramér’s V and 
+tetrachoric correlations). The Exploratory Factor Analysis 
+(EFA) and Confirmatory Factor Analysis (CFA) were then 
+used to examine whether the previously defined, hypoth­
+esis-driven and pathophysiologically based subgroups 
+could be identified as statistically detectable clusters.
+All analyses were based on the sample of 748 patients, 
+providing a sufficient number of cases for exploratory and 
+confirmatory factor analyses. Although it is methodolog­
+ically desirable to perform EFA and CFA on separate sub­
+samples, we opted for a combined analysis because the 
+sample size is too small to be split. To assess the robust­
+ness of the findings, the same analyses were repeated on 
+Table 1  Description of the adult subjects (>20 years) with medically diagnosed ME/CFS, differentiated by gender and age group
+Age groups
+21–30 yrs.
+31–40 yrs.
+41–50 yrs.
+51–60 yrs.
+≥60 yrs.
+Total
+[n]
+%
+[n]
+%
+[n]
+%
+[n]
+%
+[n]
+%
+[n]
+%
+Women
+51
+8.4
+115
+18.9
+183
+30.1
+197
+32.4
+62
+10.2
+608
+100
+Men
+14
+10.2
+28
+20.4
+30
+21.9
+49
+35.8
+16
+11.7
+137
+100
+Non-binar
+3
+100.0
+0
+0.0
+0
+0.0
+0
+0.0
+0
+0.0
+3
+100
+Total
+68
+9.1
+143
+19.1
+213
+28.5
+247
+33.0
+78
+10.4
+748
+100
+Abbreviations: n = number of individuals, % = percentage, yrs. = years
+Fig. 1  Chronological placement of study 2 within the sequence of studies
+ 
+
+Page 4 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+a stratified, randomized subsample (hereafter referred to 
+as the training dataset) derived from the full sample1. The 
+training dataset was stratified by sex and illness duration 
+to ensure that both variables were proportionally repre­
+sented across all subsamples, and randomization within 
+each stratum was applied to minimize potential biases 
+and prevent systematic distortions. This procedure is 
+particularly relevant in ME/CFS research, as sex and ill­
+ness duration are known to influence symptom profiles 
+and underlying pathophysiological mechanisms. The 
+successful replication of all models in the stratified, ran­
+domized training dataset provides preliminary evidence 
+for the structural stability of the identified clusters across 
+demographic subgroups. Given that factor-analytic 
+methods are comparatively robust to moderate sampling 
+heterogeneity, this approach strengthens confidence in 
+the stability and representativeness of the results and 
+allows for cautious group-level comparisons.
+All CFA and SEM models were originally estimated 
+using maximum likelihood (ML). While ML is robust 
+in large samples, it is not the optimal estimator for 
+1 The results of these investigations can be viewed upon request from the 
+corresponding author.
+dichotomous indicators. Categorical estimators such as 
+WLSMV (Weighted Least Squares Means and Variance 
+adjusted) are generally recommended for binary data. We 
+therefore acknowledge this as a methodological limita­
+tion. Importantly, sensitivity checks using tetrachoric 
+correlations and replicated analyses in the stratified train­
+ing dataset yielded consistent factor structures, suggest­
+ing that the substantive conclusions are robust. Future 
+phases of this research program will re-estimate all latent 
+models using WLSMV to further strengthen method­
+ological rigor.
+Measurement invariance across sex, age groups, and 
+illness duration could not be tested due to sample size 
+constraints and the dichotomous nature of the indicators.
+Cluster definition
+In the following, hypothesis-led subgroups will be 
+compared with the empirical-statistical symptom groups.
+In other words, it should be shown,
+ 	
+– which theoretically defined clusters are statistically 
+confirmed,
+ 	
+– where there may be deviations or overlaps and
+ 	
+– how new hypotheses or subtypes can be derived 
+from this.
+Fig. 2  Composition of the study sample
+ 
+
+Page 5 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+Table 2 shows the four hypothesized subgroups (Brain, 
+Autonomic, Gut and Immune) including the most impor­
+tant pathophysiological mechanisms discussed in the 
+literature.
+The Gut and Immune clusters consisted of two indica­
+tors each. Two-indicator factors are statistically identi­
+fied but do not allow meaningful evaluation of model 
+fit. These constructs should therefore be interpreted 
+as minimal representations of broader physiological 
+domains. Their inclusion was justified by strong theo­
+retical grounding in the literature, but future studies will 
+incorporate additional indicators to improve reliability 
+and model testability.
+Some symptoms (e.g., gastrointestinal complaints and 
+breathing difficulties) were defined a priori as potential 
+bridging variables because prior literature suggests that 
+they may involve more than one physiological subsys­
+tem (e.g., autonomic–enteric or autonomic–respiratory 
+interactions). In the analytical framework, these symp­
+toms were therefore permitted to load on more than one 
+hypothesized latent domain. Their statistical behavior 
+was examined both within clusters and across clusters to 
+assess potential cross-domain associations and interface 
+effects. This approach allowed us to evaluate whether 
+these symptoms function as linking elements between 
+functional subsystems. Their role and statistical charac­
+teristics are described in more detail in the subsequent 
+sections, and will be examined further in a dedicated fol­
+low-up analysis within the broader study program to bet­
+ter characterize their potential bridging function across 
+symptom domains.
+Results
+Neurocognitive-sensory symptom group (Brain)
+For the statistical validation of the theoretically defined 
+clusters, cross-tabulation analyses and calculations of 
+Cramér’s V and tetrachoric correlations were first carried 
+out in the area of the potential neurocognitive-sensory 
+symptom group (Brain). An exploratory factor analysis 
+was then carried out, followed by a Confirmatory Fac­
+tor Analysis, which was used to test the fit of the Brain 
+model to the data collected.
+To improve readability, association metrics are summa­
+rized at the group level rather than interpreted for each 
+symptom pair. Tetrachoric correlations consistently indi­
+cated medium-to-large latent associations across all clus­
+ters, and χ2 tests were significant throughout
+Bivariate associations and internal consistency
+First, a neurocognitive-sensory symptom group (Brain) 
+was defined, in which pathophysiological changes in the 
+brain are assumed to be the central triggers for early-
+onset ME/CFS symptoms: (1) cognitive impairment 
+(brain fog), (2) sensory hypersensitivity, (3) sleep dis­
+turbances, (4) visual disturbances and (5) headaches. 
+Cross-tabulations and χ2 -tests revealed significant asso­
+ciations, especially between cognitive impairment and 
+sleep disturbances or sensory hypersensitivity as well as 
+between visual disturbances and sensory hypersensitivity. 
+The tetrachoric correlations (r) were consistently above 
+the values of Cramér’s V and more adequately reflect the 
+underlying continuous relationships. Almost all symptom 
+pairs showed medium to high correlations (r ≥ 0.34), indi­
+cating substantial latent coupling. The consistency of the 
+Table 2  Classification of the ME/CFS symptoms surveyed into functional clusters based on pathophysiological concepts
+Subgroup
+Symptoms
+Possible pathophysiological mechanisms
+Neurocognitive-
+sensory (Brain)
+-Brain fog
+-Sleep disorders
+-Sensory hypersensitivity
+-Visual disturbances
+-Headaches
+-Neuroinflammation (microglia activation in the CNS) → cognitive dysfunctions
+-Mitochondrial dysfunction and reduced cerebral blood flow → lack of energy in the brain
+-Imbalance in the neurotransmitter balance (e.g. glutamate/GABA, serotonin) → sensory hypersensi­
+tivity & sleep disorders
+-Dysfunction of the blood-brain barrier → Increased irritability of the nervous system
+Autonomic 
+Dysregulation 
+(Autonomic)
+-Cardiovascular problems
+-Temperature regulation 
+disorders
+-Respiratory problems
+-Gastrointestinal problems
+-Autoantibodies against adrenergic and muscarinic receptors → Dysregulation of the autonomic 
+nervous system
+-Impaired baroreflex control → tachycardia, orthostatic intolerance
+-Decreased blood volume/hypovolemia → Circulatory problems
+-Dysfunction of peripheral vascular regulation → Temperature and circulatory disorders
+Gastrointestinal 
+(Gut)
+Gastrointestinal problems
+(Food) intolerances
+Dysbiosis (change in the microbiome) → increased pro-inflammatory metabolites, reduced short-
+chain fatty acids
+“Leaky gut” (increased intestinal permeability) → endotoxemia, immune activation
+Enteric nerve dysfunction (as part of autonomic dysregulation) → Motility disorders
+Altered tryptophan and serotonin metabolization → gut-brain axis
+Immunological 
+(Immune)
+Flu-like symptoms
+Susceptibility to infections
+Chronic low-grade immune activation (e.g. cytokine signature: IL-6, TNF-α, IFN-γ) → feeling ill, fatigue
+Exhausted NK cell function → reduced defense against viruses
+Persistent viral fragments (e.g. EBV, HHV-6, SARS-CoV-2) → permanent immune response
+Autoimmunity → against receptors and cellular structures
+Literature sources see discussion
+
+Page 6 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+results is confirmed by the consistency of the ranking of 
+the association strengths in both metrics (Table 3).
+Explorative factor analysis
+The exploratory factor analysis (EFA) as a multivariate 
+method for data reduction and structure identification 
+serves to uncover latent factors behind the observed vari­
+ables without a priori model specification (for details on 
+the model specification and the eigenvalue criterion, see 
+Box 1). The first eigenvalue was 1.20, all other eigenvalues 
+were below 1.
+Box 1: Model specification and eigenvalue criterion
+Method
+Principal factors on five binary symptoms:
+-Brain fog
+-Sensory hypersensitivity
+-Headache
+-Visual disturbances
+-Sleep disorders
+Retention according to Kaiser criterion (eigenvalue > 1): One factor
+The likelihood ratio test against the independence 
+model showed a significant deviation [χ2 (10) = 378.20, 
+p < 0.0001], which indicates substantial correlations 
+between the items. The factor loadings on the first fac­
+tor ranged from 0.43 to 0.55 and were thus classified as 
+moderate. However, the uniqueness values of 0.70–0.82 
+showed that only 18–30% of the variance of the symp­
+toms could be explained by the common factor. Since 
+only one factor was extracted, the Varimax rotation did 
+not lead to any change, as expected.
+Confirmatory factor analysis
+A Confirmatory Factor Analysis (CFA) within the Struc­
+tural Equation Modeling (SEM) was used to estimate 
+the strength of the relationships between the latent fac­
+tor Brain and the observed variables (Box 2). The model 
+was fitted using maximum likelihood estimation. Table 4 
+shows that all factor loadings were high and statistically 
+significant (p < 0.001). The residual variances of 0.06 to 
+0.17 prove that the factor explains a large part of the vari­
+ance in the respective indicators. The latent variance of 
+the Brain factor was estimated at 0.0301 (SE = 0.0048). 
+The 95% confidence interval was completely above zero, 
+which indicates a significant variance of the factor.
+Box 2: Model specification
+One-factor model with latent variable Brain
+Five binary indicators:
+-Brain fog
+-Sensory hypersensitivity
+-Headache
+-Visual disturbances
+-Sleep disorders
+Estimation with maximum likelihood (by default [ML])
+Factor loading of Brain fog fixed to 1 to set the scale of the factor
+Table 3  Statistical correlations in the neurocognitive-sensory symptom group (Brain). Cross-tabulations and tetrachoric correlations
+Pair of variables
+N (total)
+Tetrachoric ϱ (SE)
+χ2 (df)
+p-value
+Brain fog ↔ Headache
+748
+0.4404 (0.067)
+38.27
+<0.0001
+Brain fog ↔ Visual disturbances
+748
+0.5418 (0.061)
+57.30
+<0.0001
+Brain fog ↔ Sleep disorders
+748
+0.5622 (0.065)
+70.00
+<0.0001
+Brain fog ↔ Sensory hypersensitivity
+748
+0.5659 (0.063)
+72.36
+<0.0001
+Visual disturbances ↔ Headache
+748
+0.3589 (0.055)
+37.56
+<0.0001
+Visual disturbances ↔ Sleep disorders
+748
+0.3888 (0.064)
+32.84
+<0.0001
+Visual disturbances ↔ Sensory hypersensitivity
+748
+0.5283 (0.055)
+69.24
+<0.0001
+Headache ↔ Sleep disorders
+748
+0.3418 (0.067)
+25.14
+<0.0001
+Headache ↔ Sensory hypersensitivity
+748
+0.4906 (0.057)
+60.33
+<0.0001
+Sleep disorders ↔ Sensory hypersensitivity
+748
+0.4635 (0.066)
+47.43
+<0.0001
+Abbreviations: N = number; tetrachoric ϱ (SE) = tetrachoric correlation coefficient (standard error); χ2 (df) = Chi2 test (degrees of freedom); p-value = probability
+Table 4a  Confirmatory factor analysis (CFA) for the ‘neurocognitive-sensory symptom group model’ (Brain). Step 1: charges, residual 
+variances and intercepts
+Indicator
+Factor loading λ
+SE
+z-value
+p-value
+95% CI for λ
+Residual variance
+Brain fog
+1 (fixed)
+-
+-
+-
+-
+0.0654
+Sensory hypersensitivity
+1.2522
+0.1417
+8.84
+<0.001
+[0.975, 1.530]
+0.0911
+Sleep disorders
+0.9263
+0.1091
+8.45
+<0.001
+[0.712, 1.140]
+0.0958
+Visual disturbances
+1.3846
+0.1634
+8.47
+<0.001
+[1.064, 1.705]
+0.1741
+Headache
+1.1718
+0.1512
+7.75
+<0.001
+[0.875, 1.468]
+0.1727
+Abbreviations: λ = lambda; SE = standard error, p-value = probability; z-value measures how many standard deviations a data point is away from the mean; 
+CI = confidence interval
+Table 4b  Step 2: latent variance
+Value
+Variance of “Brain”
+0.0301
+SE
+0.0048
+95% CI
+[0.0230, 0.0411]
+⟶ Factorized variance significant > 0
+
+Page 7 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+We would like to point out that all analyses were con­
+ducted in Stata 12, which does not implement categorical 
+SEM estimators such as WLSMV. Maximum likelihood 
+estimation was therefore used for CFA/SEM models, 
+supported by tetrachoric correlations and replication in 
+a stratified training dataset. Although WLSMV would 
+be preferable for dichotomous indicators, the conver­
+gence of results across analytic approaches suggests that 
+the latent structure is robust. Future studies will employ 
+software that supports categorical estimators to further 
+refine the modeling framework.
+In summary, the high and significant loadings (Table 
+4) confirm that the symptoms brain fog, sensory hyper­
+sensitivity, visual disturbances, sleep disturbances and 
+headaches represent a coherent construct Brain. The low 
+residual variances indicate that the latent factor explains 
+a high proportion of the symptom variance. The global fit 
+indices (non-significant χ2, RMSEA = 0.021, CFI = 0.996, 
+SRMR = 0.016) indicate a very good model fit.
+Symptom group Autonomic dysregulation (Autonomic)
+Bivariate associations and internal consistency
+Vegetative symptoms showed substantial associations, 
+with tetrachoric correlations between 0.48 and 0.62 (all 
+p < 0.001). These values indicate a coherent latent struc­
+ture despite expected heterogeneity. See Table 5 for 
+details.”
+Explorative factor analysis
+A one-factor solution on four Autonomic indicators (car­
+diovascular, respiratory problems, temperature intoler­
+ance, gastrointestinal complaints) resulted in a single 
+eigenvalue > 1 (eigenvalue = 1.153), which explains 28.8% 
+of the total variance. The unweighted factor loadings 
+ranged from 0.477 to 0.585, uniqueness values were 
+between 0.658 and 0.773. The factor analysis thus sup­
+ports a unidimensional autonomic construct (Autonomic; 
+Table 6).
+Logistic regression
+In a logistic regression model for the prediction of car­
+diovascular problems (0/1)2 by breathing problems, tem­
+perature intolerance and gastrointestinal complaints, the 
+values summarized in Table 7 were found. Respiratory 
+problems and the intolerance of hot and cold (outside) 
+2 The notation “(0/1)” indicates that the target variable is dichotomous—
+i.e., it has only two possible values—and that the logistic regression aims to 
+model the probability of the value 1 (occurrence of problems).
+Table 4c  Step 3: global fit indices
+Fit index
+Value
+Recom­
+mended limit 
+value
+Interpretation
+χ2 (df = 5)
+6.658
+p > 0.05
+Not significant 
+⟶ good fit
+RMSEA
+0.021
+≤0.05
+Excellent fit
+90% CI RMSEA
+[0.000, 
+0.058]
+-
+Tight interval
+pclose
+0.886
+>0.05
+RMSEA ≤ 0.05 is 
+plausible
+CFI
+0.996
+>0.95
+Excellent fit
+TLI
+0.991
+>0.95
+Excellent fit
+SRMR
+0.016
+≤0.08
+Excellent
+CD (R2 equivalent)
+0.645
+-
+Explains 64.5% of 
+the total variance
+Abbreviations: χ2 (df) = Chi2 test (degrees of freedom); p-value = probability; 
+RMSEA = Root Mean Square Error of Approximation; CI = confidence interval; 
+pclose = Probability RMSEA; CFI = Comperative Fit Index; TLI = Tucker-Lewis 
+Index; SRMR = Standardized Root Mean Square Residual; CD = Coefficient of 
+Determination; R2 = statistical measure of how closely the data fit the fitted 
+regression line
+Table 5  Bivariate associations and reliability of autonomic 
+symptoms
+Variable pair
+N 
+(total)
+Tetra­
+choric 
+ϱ (SE)
+χ2 
+(df = 1)
+p 
+-value
+Cardiovascular problems ↔ 
+Breathing problems
+748
+0.605 
+(0.049)
+101.25
+<0.001
+Cardiovascular problems ↔ 
+Temperature intolerance
+748
+0.620 
+(0.048)
+110.75
+<0.001
+Abbreviations: N = number; tetrachoric ϱ (SE) = tetrachoric rho (standard error); 
+χ2 (df) = Chi2 test (degrees of freedom); p-value = probability
+Table 6  Principal factors of the four autonomic indicators
+Variable
+Load 
+weight 
+λ to fac­
+tor 1
+Uniqueness
+Eigen­
+value 
+factor 
+1
+Ex­
+plained 
+variance 
+(%)
+Cardiovascular 
+problems
+0.585
+0.658
+1,153
+28,8%
+Breathing problems
+0.553
+0.716
+Temperature 
+incompatibility
+0.547
+0.701
+Gastrointestinal 
+complaints
+0.477
+0.773
+LR test: χ2 (6)=370.2, p < 0.001 (against independence assumption)
+Table 7  Predictors for cardiovascular problems (0/1) - logistic 
+regression
+Predictor
+β (SE)
+z
+p
+95% CI 
+(β)
+OR [95% 
+CI]
+Breathing problems
+1.466 
+(0.226)
+6.49
+<0.001
+[1.024, 
+1.909]
+4.33 [2.79, 
+7.10]
+Temperature 
+incompatibility
+1.521 
+(0.223)
+6.82
+<0.001
+[1.084, 
+1.958]
+4.58 [2.96, 
+8.03]
+Gastrointestinal 
+complaints
+0.703 
+(0.226]
+3.11
+0.002
+[0.259, 
+1.146]
+2.02 [1.30, 
+3.14]
+Constant
+−0.606 
+(0.193)
+−3.14
+0.002
+[−0.983, 
+−0.228]
+-
+Pseudo R2
+0.233
+
+Page 8 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+temperatures multiply the odds for cardiovascular prob­
+lems by a factor of 4 to 4.5, gastrointestinal complaints 
+by a factor of 2. The pseudo-R2 according to McFadden is 
+0.233, indicating a reasonably good model fit compared 
+to a null model.
+Confirmatory factor analysis
+Structural Equation Modeling (SEM) with a common 
+latent factor Autonomic for all four autonomic indicators 
+provided excellent fit indices. The factor loadings were 
+high and significant (Table 8). The residual variances 
+ranged from θ=0.0879 to θ=0.1600, and the latent vari­
+ance of the factors was φ=0.0617 (SE = 0.0085). Proposed 
+covariances between residuals of cardiovascular and gas­
+trointestinal problems and between respiratory problems 
+and temperature intolerance could not be confirmed 
+either substantively or statistically.
+Gastrointestinal symptom group (Gut) and immunological 
+symptom group (Immune)
+To test the dimensional structure of gastrointestinal and 
+immunological symptoms, three structural equation 
+models (SEM) were estimated: a one-factor model for 
+gastrointestinal and immune-related symptoms, respec­
+tively, and a two-factor model with correlated latent vari­
+ables. The most important parameters and fit indices are 
+summarized in Table 9.
+Both Cramér’s V and tetrachoric correlations were cal­
+culated to assess the association within the Gut (gastro­
+intestinal complaints, (food) intolerances) and Immune 
+(susceptibility to infections, flu-like symptoms) symptom 
+groups. With a Cramér’s V of 0.405 and a tetrachoric cor­
+relation of r = 0.614 (SE = 0.044), the Gut group showed a 
+significantly stronger association between the symptoms 
+than the Immune group (V = 0.294; r = 0.505, SE = 0.053). 
+These results suggest a higher symptomatic coher­
+ence within the Gut symptom group (Table 10a). While 
+Cramér’s V as a dimensionless measure describes the 
+strength of the association between two categorical vari­
+ables, the tetrachoric correlation allows an estimation of 
+the relationship between the underlying latent constructs 
+under the assumption of a bivariate normal distribution. 
+The parallel consideration of both measures thus pro­
+vides complementary evidence for the structural coher­
+ence of the respective symptom groups.
+In addition, internal consistency was determined as a 
+measure of the reliability of the groups using Cronbach’s 
+alpha. A higher value of α = 0.575 was found for the Gut 
+group than for Immune (α = 0.450). Although both val­
+ues are below the threshold value of 0.70 often used as a 
+guideline in psychometric studies, lower reliabilities are 
+often to be expected with clinical symptom data due to 
+great heterogeneity and are nevertheless meaningful. The 
+combination of effect sizes and consistency scores thus 
+Table 8  SEM model with a latent-variable factor for autonomic symptoms and fit indices for a common factor autonomic
+Indicator
+Load weight λ
+SE
+Residual variance (SE)
+Latent variance (SE)
+Cardiovascular problems
+1 (fixed)
+-
+0.0879 (0.0073)
+0.0617 (0.0085)
+Breathing problems
+1.056
+0.109
+0.1536 (0.0105)
+Temperature incompatibility
+1.048
+0.106
+0.1352 (0.0096)
+Gastrointestinal complaints
+0.883
+0.103
+0.1600 (0.0099)
+χ2 (2)
+p
+RMSEA [90% CI]
+pclose
+CFI
+TLI
+SRMR
+AIC
+BIC
+5.38
+0.068
+0.047 [0.000–0.098]
+0.445
+0.991
+0.972
+0.015
+3237.65
+3293.06
+Abbreviations: λ = Lambda; SE = Standard error, χ2 (df) = Chi2 test (degrees of freedom); p-value = Probability; RMSEA = Root Mean Square Error of Approximation; CI = Convidence Interval; pclose = Probability RMSEA; 
+CFI = Comperative Fit Index; TLI = Tucker-Lewis Index; SRMR = Standardized Root Mean Square Residual; AIC = Akaike information criterion, BIC = Bayes information criterion
+
+Page 9 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+supports the assumption that the Gut symptom group 
+represents a more homogeneous sub-construct within 
+the ME/CFS symptom spectrum than the Immune symp­
+tom group (Table 10b).
+The separately estimated models converged without 
+any problems and yielded plausible factor loadings. In 
+particular, the model for immune-related symptoms (sus­
+ceptibility to infection, flu-like symptoms) showed a high 
+factor loading of λ = 0.74 with simultaneously low resid­
+ual variance, which indicates a strong link between the 
+indicators and the underlying factor.
+In contrast, the joint one-factor model showed a signif­
+icantly poorer model fit (χ2 (2) = 23.78, p < 0.001), indicat­
+ing that the joint variance of all four symptoms cannot be 
+adequately explained by a single latent factor. The results 
+therefore clearly support a differentiated modeling, i.e. 
+the symptoms should be recorded in two separate groups 
+- a gastrointestinal group (Gut) consisting of gastrointes­
+tinal complaints and (food) intolerances and an immu­
+nological group (Immune) consisting of susceptibility to 
+infections and flu-like symptoms.
+At the same time, the cross-tabulation of GutScore and 
+ImmuneScore reveals a significant association between 
+gastrointestinal and immune-related symptoms (χ2 
+(4) = 89.24, p < 0.001). This indicates that many partici­
+pants exhibit symptoms in both domains simultaneously. 
+For example, among those with high GutScore (=both 
+Gut symptoms are present), more than half (54.4%) also 
+show high ImmuneScore (=both Immune symptoms are 
+Table 9  Comparison of three structural equation model variants. 
+Models A and B are separately estimated one-factor models, 
+model C is a jointly estimated two-factor model with correlated 
+latent variables
+Separate 1-fac­
+tor model A
+Separate 1-fac­
+tor model B
+2-factor model C
+Symptom 
+group
+Gut (gastrointes­
+tinal group)
+Immune (Im­
+mune Group)
+Gut & Immune
+Factor
+Latent factor Gut
+Latent factor 
+Immune
+Common factor for 
+all four symptoms
+Indicators
+Gastrointestinal 
+problems,
+(Food) 
+intolerances
+Flu-like 
+symptoms
+Susceptibility to 
+infections
+All four symptoms
+Factor 
+loading
+(Food) intoler­
+ances: 0.43
+Infektanfälligkeit: 
+0.74
+(Food) intoleranc­
+es: 1.00 (fixed)
+Gastrointestinal 
+problems 0.91
+Flu-like symptoms 
+0.54
+Susceptibility to 
+infections 0.74
+Table 10a  Statistical correlations in the two symptom groups Gut and Immune. Cross-tabulations, Cramér’s V and tetrachoric 
+correlations
+Variable pair
+N 
+(total)
+χ2 (df)
+p-value
+Cra­
+mér’s 
+V
+Interpretation V ac­
+cording to Cohen
+Tetrachoric 
+r
+Interpretation 
+r according to 
+Cohen
+Cron­
+bach’s 
+Alpha
+Inter­
+item 
+cova­
+riance
+Gut: Gastrointestinal problems 
+↔ (Food) intolerances
+748
+122.541
+<0.001
+0.405
+Moderate to strong 
+(clear) correlation
+0.614 
+(SE = 0.044)
+strong effect
+0.575
+0.090
+Immune: Flu-like symptoms ↔ 
+Susceptibility to infections
+748
+64.7201
+<0.001
+0.294
+almost moderate 
+correlation
+0.505 
+(SE = 0.053)
+strong effect
+0.450
+0.063
+Table 10b  SEM analysis
+Model
+Indicator
+Factor loading 
+λ (SE)
+Residual variance 
+(SE)
+Latent 
+variance 
+(SE)
+χ2 (df), p
+RMSEA
+(90% CI), 
+pclose
+CFI
+TLI
+SRMR
+Gut
+(1- factor)
+Gastrointestinal complaints
+1 (fixed)
+≈0*
+0.2391 
+(0.0233)
+– (df = 0)
+1.000
+1.000
+(Food) intolerances
+0.4338 (0.0179)
+0.19995 (0.01083)
+Immune
+(1-factor)
+Flu-like symptoms
+1 (fixed)
+≈0*
+0.2491 
+(0.0323)
+– (df = 0)
+1.000
+1.000
+Susceptibility to infection
+0.3448 (0.0183)
+0.22758 (0.01204)
+Gut & Immune
+(2-factors)
+Susceptibility to infection
+1 (fixed)
+0.19934 (0.01269)
+0.04342
+23.78(2),
+≤0.000
+0.121 
+[0.080, 
+0.166], 
+0.003
+0.923
+0.769
+0.038
+Flu-like symptoms
+0.7330 (0.1063)
+0.15459 (0.00912)
+Gastrointestinal complaints
+1.2327 (0.1722)
+0.13250 (0.11057)
+(Food) intolerances
+1.3526 (0.1878)
+0.14803 (0.01298)
+Covariance Gut 
+– Immune
+0.03792 (0.00675)
+*Fixed charge leads to arithmetically vanishing residual variance
+Abbreviations: N = number; χ2 (df) = Chi2 test (degrees of freedom); p-value = probability; Cramér’s V = variable V, which quantifies the statistical relationship between 
+two nominally scaled variables; Tetrachoric r = Tetrachoric correlation coefficient, RMSEA = Root Mean Square Error of Approximation; CI = Convidence Interval; 
+pclose = Probability RMSEA; CFI = Comperative Fit Index; TLI = Tucker-Lewis Index; SRMR = Standardized Root Mean Square Residual
+
+Page 10 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+present), suggesting a frequent co-occurrence of these 
+symptom clusters.
+Special features of the symptoms ‘gastrointestinal 
+complaints’ and ‘breathing difficulties’
+Two of the symptoms ticked by the participants (gastro­
+intestinal complaints and breathing difficulties) could 
+each be assigned to two symptom groups, so they play a 
+special role.
+Gastrointestinal complaints
+Gastrointestinal complaints belong to the Autonomic 
+subgroup, but together with (food) intolerances they 
+define the Gut subgroup. The results of the factor analysis 
+in the Autonomic subgroup (Table 8) show that gastroin­
+testinal complaints only load moderately on the general 
+autonomic factor (λ = 0.477; Uniqueness = 0.773). At the 
+same time, the two-factorial Structural Equation Model­
+ing (SEM; Gut vs. Immune, Table 10b) resulted in a factor 
+loading of λ = 1.00 for gastrointestinal complaints in the 
+pure Gut model, while (food) intolerances were associ­
+ated with λ = 0.434. The bivariate associations also sup­
+port these findings. Thus, gastrointestinal complaints 
+correlated significantly with other autonomic indicators 
+(e.g. Cramér’s V: 0.37–0.39; tetrachoric r ≈ 0.62). On the 
+one hand, they reflect the generalized autonomic dys­
+regulation; on the other hand, the Gut construct forms 
+an independent, relatively homogeneous dimension of 
+gastrointestinal phenomena (Cronbach’s α = 0.575; inter­
+item covariance = 0.090), which will be discussed further 
+in the discussion and in the planned fourth part of our 
+five-stage study series.
+Breathing problems
+The statistical analyses (cross-tabulations, association 
+and reliability measures), which are not explained in 
+detail here, show a moderate association between muscle 
+and breathing problems (Cramér’s V = 0.292; ρ = 0.530), 
+which indicates a clear, but not very strong, co-occur­
+rence of these symptoms. At the same time, there is a 
+low internal consistency (Cronbach’s α = 0.433), which 
+is below established threshold values for scale homoge­
+neity (α ≥ 0.70). This means that muscle and breathing 
+problems form a partially overlapping but not uniform 
+dimension. At the same time, the symptom “breathing 
+difficulties” is part of the autonomic subgroup, which 
+shows in Table 8 that breathing difficulties load moder­
+ately on the general autonomic factor (λ = 0.553; unique­
+ness = 0.716). Possible pathophysiological correlations 
+underlying this will be discussed in a later publication.
+Brief summary of the statistical results
+Highly significant correlations were found within the 
+previously 
+pathophysiologically 
+defined 
+symptom 
+subgroups. The statistical calculations confirmed symp­
+tom clusters in the following areas:
+ 	
+– neurocognitive
+ 	
+– sensory
+ 	
+– autonomic
+ 	
+– gastrointestinal
+ 	
+– immunological
+The fact that the neurocognitive-sensory symptoms in 
+particular represent a coherent Brain construct was 
+shown above all by the high and significant loadings in 
+the factor analysis. At the same time, low residual vari­
+ances indicated that the latent factor explains a high pro­
+portion of the symptom variance. In addition, the global 
+fit indices demonstrated a very good model fit. Structural 
+Equation Modeling (SEM) with a common latent factor 
+also provided very good fit indices for the Autonomic 
+symptom complex. A comparison of the two one-factor 
+models for the gastrointestinal symptoms (Gut) and the 
+symptoms assigned to the immune group (Immune) with 
+a joint two-factor model with correlated latent variables 
+showed a significantly poorer model fit for the two-factor 
+model. This supports the assumption of two clearly dis­
+tinguishable but related latent constructs.
+Comparison of hypothesis-driven symptom groups and 
+empirically-statistically found symptom clusters
+The aim of this study was to empirically test and validate 
+hypothesized ME/CFS symptom groups using statisti­
+cal methods. Table 11 summarizes the extent to which 
+the four theoretically defined ME/CFS subgroups were 
+confirmed by the statistical analyses performed and also 
+indicates the identified overlaps (“bridging phenomena”). 
+Bridging phenomena are defined here as those cases 
+in which symptoms can be assigned to more than one 
+functional subsystem, as they mediate both statistically 
+and pathophysiologically between two subgroups. They 
+therefore not represent pure markers of a single sub­
+group, but instead connect two dimensions, demonstrat­
+ing that the subgroups are not strictly separated from one 
+another but are functionally networked.
+While cross-loading or bifactor models would be 
+methodically ideal to formally capture such overlap, these 
+models were not estimable with dichotomous indicators 
+in the available software environment. In line with this 
+interpretation, the poor fit of the joint one-factor Gut–
+Immune model (χ2 = 23.78, p < 0.001) further supports 
+the assumption that these domains represent distinct 
+but interconnected constructs. Future work will apply 
+more flexible modeling approaches (e.g., ESEM, Bayesian 
+SEM, or network models) to better account for symptom 
+overlap.
+
+Page 11 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+Discussion
+The present study represents the second phase of a 
+multi‑stage research program aimed at elucidating the 
+symptom architecture of ME/CFS. Building on prelimi­
+nary findings from Study 1, which suggested sex‑specific 
+patterns and co‑occurrence of symptoms [8], this study 
+sought to empirically validate predefined, hypothe­
+sis‑driven symptom clusters using factor analytic meth­
+ods and structural equation modeling (SEM). Across a 
+large cohort of clinically diagnosed ME/CFS patients, we 
+identified four robust and internally coherent symptom 
+domains—Brain, Immune, Autonomic, and Gut—that 
+align closely with current pathophysiological hypotheses. 
+Replication in a stratified, randomized training data­
+set confirmed the stability of these clusters, underscor­
+ing their structural validity. It is important to emphasize 
+that the biological mechanisms discussed here were not 
+directly assessed in this study. Mechanistic interpreta­
+tions are inferred from converging evidence in the litera­
+ture and should be understood as alignment rather than 
+empirical validation.
+Symptom clusters reflect distinct neuroimmune and 
+autonomic mechanisms
+Brain cluster
+The Brain cluster, comprising neurocognitive, sensory, 
+and sleep‑related symptoms, is consistent with extensive 
+evidence of central nervous system abnormalities in ME/
+CFS. Neuroimaging studies have demonstrated struc­
+tural and functional alterations in the brainstem, thala­
+mus, and prefrontal cortex [9–14], including reduced 
+cerebral blood flow [15], neuroglial dysfunction [13], and 
+widespread neuroinflammation [14]. Altered sleep archi­
+tecture has also been documented [16]. These findings 
+support the interpretation of the Brain cluster as a mani­
+festation of network‑level dysregulation within thal­
+amo‑cortical and brainstem circuits.
+Immune cluster
+The Immune cluster aligns with well‑established immu­
+nological abnormalities in ME/CFS, including impaired 
+NK‑cell function [17], genetically inferred immune dys­
+regulation [18], chronic activation of pro‑inflammatory 
+cytokines [18, 19], and reactivation of latent herpesvi­
+ruses such as HHV‑6 [20] and EBV [21]. These processes 
+contribute to sickness‑behavior‑like symptoms [22], 
+neuroinflammation [4, 23], and increased susceptibil­
+ity to infections. The coherence of this cluster reinforces 
+the role of immune dysregulation as a central biological 
+driver of symptom expression.
+Autonomic cluster
+The Autonomic cluster reflects autonomic dysfunction 
+across cardiovascular, respiratory, and thermoregula­
+tory domains. Reduced heart rate variability, orthostatic 
+intolerance, tachycardia, and chronotropic incompetence 
+have been repeatedly documented [24, 25]. Dysregula­
+tion of vagal pathways may contribute to nausea and 
+delayed gastric emptying [26], while altered chemorecep­
+tor and baroreceptor function may influence respiratory 
+rate, CO₂ regulation, and cerebral perfusion [15]. Ther­
+moregulatory instability and vascular tone dysregulation 
+have also been reported [27]. These findings support the 
+conceptualization of ME/CFS as a disorder of integrated 
+neuroimmune–autonomic regulation [28].
+Table 11  Extent to which the four theoretically defined ME/CFS subgroups were confirmed by the statistical analyses performed
+Subgroup (theory)
+Core symptoms
+Empirical evidence
+Key findings
+Brain
+(neurocognitive-sensory)
+- Brain fog- Sleep disorders- Sensory hyper­
+sensitivity - Visual disturbances- Headaches
+- Bivariate associations: r ≥ 0.34–0.56 
+(strong effects)
+- EFA: One factor (Eigenvalue = 1.20)- CFA: 
+χ2 (5) = 6.66, p = 0.246; RMSEA = 0.021; 
+CFI = 0.996; SRMR = 0.016
+Very coherent 1-factor 
+construct, high loadings 
+(λ = 0.93–1.38), low residual 
+variances
+Autonomic
+(autonomic)
+- Cardiovascular problems
+- Breathing problems
+- Temperature intolerance
+- Gastrointestinal complaints
+- Cramér’s V ≈ 0.37–0.39; r ≈ 0.60–0.62
+- EFA: 1 Faktor, 28.8% Varianz
+- SEM (Autonomic): χ2 (2) = 5.38, p = 0.068; 
+RMSEA = 0.047; CFI = 0.991; SRMR = 0.015
+Unidimensional autonomic 
+scale with high loadings 
+(λ = 0.88–1.06) and good 
+model fit
+Gut
+(gastrointestinal)
+- Gastrointestinal complaints
+- (Food) intolerances
+- Cramér’s V = 0.405, r = 0.614
+- SEM (1-Faktor): λ₁ = 1.00; λ₂ = 0.434; 
+φ = 0.208; perfectly identified
+Homogeneous gastrointesti­
+nal construct, high symptom­
+atic coherence (α = 0.575)
+Immune
+(immunological)
+- Flu-like symptoms
+- Susceptibility to infections
+- Cramér’s V = 0.294, r = 0.505
+- SEM (1-Faktor): λ₁ = 1.00; λ₂ = 0.345; 
+φ = 0.181; perfectly identified
+Stand-alone immune con­
+struct with moderate intern. 
+consistency (α = 0.450)
+‚Bridge phenomena‘
+Gastrointestinal complaints are carriers of the pure good factor (λ = 1.00), but at the same time load moderately on the 
+autonomic factor (Autonomic; λ = 0.477).
+Although breathing problems correlate with muscle and autonomic symptoms, they do not form a uniform scale 
+(α = 0.433).
+
+Page 12 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+Gut cluster
+The Gut cluster captures gastrointestinal symptoms 
+that extend beyond autonomic dysregulation and reflect 
+distinct enteric pathomechanisms. Dysbiosis, reduced 
+microbial diversity, and altered microbiota composition 
+have been documented in ME/CFS [29, 30], alongside 
+increased intestinal permeability and bacterial transloca­
+tion [31, 32]. These abnormalities may activate immune 
+pathways through the gut–brain–immune axis [33, 34]. 
+The separation of Gut and Immune clusters, despite 
+their functional interconnections, highlights the pres­
+ence of partially independent but interacting biological 
+subsystems.
+Analyses conducted on the stratified, randomized 
+training dataset yielded directionally consistent factor 
+loadings and comparable fit indices to the full dataset. 
+No structural deviations were observed, supporting the 
+robustness of the identified clusters. Detailed results are 
+available in the additional online media.
+Overall model reflecting distinct neuroimmune and 
+autonomic mechanisms
+Together, these findings demonstrate that ME/CFS symp­
+toms do not occur randomly but cluster in patterns that 
+correspond to functional body systems and known bio­
+logical pathways. The presence of “bridging symptoms” 
+across clusters underscores the interconnected nature of 
+neuroimmune, autonomic, and enteric mechanisms. Our 
+model integrates clinical symptom domains with con­
+vergent pathophysiological mechanisms to depict four 
+mechanistically defined clusters (Brain, Autonomic, Gut, 
+Immune). Each cluster represents a symptom constella­
+tion anchored in specific biological processes, including 
+neuroinflammation and cerebral hypoperfusion (Brain), 
+receptor-mediated autonomic dysfunction and impaired 
+baroreflex control (Autonomic), microbiome alterations 
+and intestinal barrier dysfunction (Gut), and chronic 
+low-grade immune activation with NK cell dysfunction 
+(Immune).
+Interconnecting physiological axes (neuroimmune, 
+gut–brain, autonomic–immune, and gut–immune path­
+ways) illustrate bidirectional signaling and cross-system 
+modulation. Symptoms located at the interfaces between 
+clusters mark zones where different phenotypes overlap. 
+They indicate shared mechanisms and reciprocal bio­
+logical influences between the involved regulatory sys­
+tems. In this way, the model makes visible how symptom 
+structure functions as a systemic architecture that links 
+molecular dysfunction to the clinical phenotype (Fig. 3).
+Fig. 3  Translational model of ME/CFS symptom architecture. The model depicts four pathophysiologically aligned symptom clusters (Brain, Autonomic, 
+Gut, Immune), their underlying pathophysiological mechanisms, and the physiological axes linking them (neuroimmune-autonomic, gut–brain, auto­
+nomic–immune, and gut–immune). Symptoms positioned at cluster interfaces illustrate overlapping functional domains and highlight sites of inter-
+system interaction
+ 
+
+Page 13 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+Comparison with previous cluster and factor analytic 
+studies
+Our results are broadly consistent with earlier cluster 
+and factor analyses, which also identified neurocogni­
+tive, autonomic, and immune‑related symptom domains 
+[6, 35–39]. However, the present study extends previ­
+ous work in several important ways. First, we tested 
+predefined mechanistic clusters derived from patho­
+physiological hypotheses rather than relying solely on 
+data‑driven approaches. Second, our sample is among 
+the largest analyzed to date in ME/CFS cluster research. 
+Third, replication in a stratified dataset strengthens the 
+robustness and generalizability of the findings. The emer­
+gence of a distinct Gut cluster and the identification of 
+bridging phenomena provide additional granularity that 
+has been underrepresented in earlier studies.
+Implications for diagnostic refinement and translational 
+research
+The identified clusters have direct implications for diag­
+nostic practice and translational research. Current diag­
+nostic instruments, including CCC‑based questionnaires 
+[40] and widely used clinical tools in Germany [41], do 
+not fully capture the biological architecture of ME/CFS. 
+Several relevant symptoms—such as visual disturbances, 
+muscle weakness, and gastrointestinal or respiratory 
+bridging symptoms—are insufficiently represented or 
+absent. Our findings suggest that diagnostic tools should 
+incorporate mechanism‑aligned subscales reflecting neu­
+rocognitive, immune, autonomic, and enteric domains. 
+Such differentiation may improve diagnostic precision, 
+support patient stratification, and guide individualized 
+therapeutic strategies.
+From a translational perspective, the clusters provide 
+testable mechanistic hypotheses for biomarker develop­
+ment. Integrating symptom clusters with immune profil­
+ing [3, 17, 18], microbiome analyses [30–33], metabolic 
+markers, and neuroimaging [9–15] could refine pheno­
+type definitions and identify biological signatures associ­
+ated with specific symptom domains. This approach may 
+facilitate the development of targeted interventions and 
+improve the design of clinical trials by enabling more 
+homogeneous subgroup selection.
+However, the diagnostic and stratification implica­
+tions outlined here should be understood as conceptual 
+and hypothesis-generating. Clinical implementation will 
+require validation with biological markers, longitudinal 
+data, and independent cohorts.
+Recent biomarker studies have demonstrated immune 
+activation and metabolic abnormalities not explicable by 
+inactivity [3], while deep phenotyping studies have high­
+lighted multisystem involvement [1]. Qualitative research 
+further indicates that patients consistently describe bio­
+logical triggers—most commonly viral infections—and 
+report frequent misdiagnosis in psychosomatic contexts 
+[42, 43]. The present findings thus contribute to the 
+growing body of evidence supporting a biological disease 
+model.
+Methodological considerations and future directions
+Despite the excellent fit indices of our SEM models, sev­
+eral methodological limitations warrant consideration. 
+Dichotomous symptom coding reduces variance and 
+may obscure gradations in symptom severity. Measure­
+ment invariance across sex, age, and illness duration has 
+not yet been assessed. Moderate Cronbach’s α values are 
+therefore not unexpected in multisystem conditions such 
+as ME/CFS, where symptom domains are inherently het­
+erogeneous. In this context, moderate internal consis­
+tency does not weaken the construct’s validity, especially 
+when it is supported by converging evidence from EFA, 
+CFA, and SEM.
+Differences in explained variance between EFA and 
+CFA are expected because CFA applies a more con­
+strained structure, which typically increases the pro­
+portion of variance attributed to the latent factor. These 
+differences do not indicate inconsistency but reflect the 
+distinct purposes of exploratory versus confirmatory 
+modeling. Importantly, the biological mechanisms dis­
+cussed in this manuscript were not directly measured. 
+They represent literature-based interpretations aligned 
+with the observed symptom structure rather than empiri­
+cal validation.
+Future studies should employ polytomous symptom 
+scales, incorporate invariance testing, and validate the 
+identified clusters in larger, independent, and ideally 
+longitudinal cohorts. Epidemiological studies indicate 
+age‑related incidence peaks [44] and substantial disease 
+burden [2], underscoring the need for refined phenotyp­
+ing across demographic subgroups. The next phases of 
+this research program will therefore examine how symp­
+tom clusters vary by sex, age, and disease duration and 
+explore their associations with biological markers. Such 
+work will be essential for advancing precision-medicine 
+approaches and developing targeted preventive and ther­
+apeutic strategies.
+Limitations
+Participants were recruited via ME/CFS self-help groups 
+and the two German treatment centers in Berlin and 
+Munich. As recruitment was based on self-selection and 
+snowballing, selection and homogeneity effects may have 
+occurred, but with a sample size of n = 748 these can be 
+considered moderate. A comparison with the actual gen­
+der- and age-related prevalence/incidence in Germany 
+was not possible due to a lack of reliable data. Women 
+are likely slightly overrepresented (611 women vs. 138 
+men), but prevalence and incidence peaks correspond to 
+
+Page 14 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+international findings (incidence peak: 30–39 years; prev­
+alence peak: 40–59 years) [44, 45].
+Participants’ medical diagnoses and symptoms were 
+self‑reported and did not rely on clinical verification. This 
+may introduce selection and diagnostic bias. However, 
+the aim of the study was not to estimate prevalence or 
+evaluate diagnostic accuracy but to examine the internal 
+structure of symptom clusters. Factor-analytic methods 
+are comparatively robust to such sampling heterogeneity.
+Self-report Data may also be affected by recall bias. In 
+addition, the pathophysiological classifications discussed 
+in this study are derived from existing literature, rather 
+than from direct biological measurements. Given the 
+limited sample size, exploratory and confirmatory fac­
+tor analyses (EFA and CFA) could not be conducted on 
+independent subsamples; instead, the full dataset was 
+used. To assess the robustness of the findings, additional 
+analyses were performed using a randomized, stratified 
+training subsample stratified by sex and disease duration. 
+While this procedure improves representativeness and 
+reduces the risk of systematic bias, it does not replace 
+validation in fully independent samples.
+The dichotomization of symptoms (yes/no) further 
+constitutes a methodological constraint, as binary indi­
+cators reduces reduce variability and statistical power in 
+structural equation modeling (SEM) and may attenuate 
+factor loadings. This likely contributed to the moderate 
+loadings observed in domains such as the Brain cluster. 
+Dichotomous items are nevertheless common in clinical 
+epidemiology because they reduce respondent burden 
+and minimize recall bias. However, they capture sever­
+ity gradients only indirectly. Despite this limitation, all 
+CFA and SEM models demonstrated excellent global fit 
+indices, indicating that the underlying latent structure 
+is robust. Future phases of this research program will 
+therefore employ polytomous symptom scales to capture 
+severity more precisely and further strengthen measure­
+ment sensitivity. Finally, potential effects of sex, age, or 
+disease duration on the latent factors were not exam­
+ined in the present analyses. Likewise, formal tests of 
+measurement invariance across demographic subgroups 
+were not feasible. These aspects will be addressed in later 
+phases of the research program.
+The use of maximum likelihood (ML) estimation with 
+binary indicators represents a methodological limita­
+tion. Although ML performs adequately in large samples, 
+categorical estimators such as WLSMV are generally 
+preferable for dichotomous data and will therefore be 
+implemented in future analyses. This limitation does not 
+substantially affect the overall interpretation of the latent 
+structure but should be addressed in later phases of the 
+research program.
+In addition, we were unable to elegantly map local 
+dependencies of certain symptoms (e.g. heart ↔ gut) 
+using the Stata 12 software available to us. As a result, 
+parameters could be distorted or fit indices misleading. 
+Multiple model comparisons risked alpha inflation. Thus, 
+Bonferroni correction was applied. Data on psychiatric 
+comorbidities, medication use, and socioeconomic sta­
+tus were not available in the APAV-ME/CFS dataset and 
+could therefore not be included as covariates. Conse­
+quently, potential confounding factors could not be con­
+trolled, which may have influenced symptom reporting 
+and biased the identified symptom clusters. Moreover, 
+recorded psychiatric diagnoses may themselves represent 
+misdiagnoses [42], further complicating the interpreta­
+tion of these effects. Although these limitations must be 
+acknowledged, the primary focus of this study was on 
+the internal structure of symptom clusters rather than on 
+causal inference, and factor-analytic methods are com­
+paratively robust to such confounding influences. Future 
+studies will incorporate these variables to allow more 
+comprehensive modeling and to further refine the inter­
+pretation of symptom domains.
+Conclusions
+Exploratory and Confirmatory Factor Analyses, together 
+with Structural Equation Modeling (SEM), consistently 
+revealed distinct, internally coherent symptom clusters 
+in ME/CFS that demonstrate excellent model fit and 
+align with current neuroimmune and autonomic patho­
+physiological hypotheses. These findings strengthen the 
+conceptualization of ME/CFS as a complex multisys­
+tem disorder and provide translationally relevant evi­
+dence that the symptom patterns observed here reflect 
+the underlying biological mechanisms. The statistically 
+validated clusters correspond closely to previous obser­
+vations and provide a basis for mechanism-informed 
+diagnostics and individualized therapeutic strategies. 
+However, although the identified clusters align with the 
+aforementioned neuroimmune and autonomic mecha­
+nisms, they do not directly validate them, as the bio­
+logical signaling pathways were derived from previous 
+research and were not measured in the present dataset. 
+Furthermore, the Gut and Immune factors were defined 
+by only two indicators, resulting in perfectly identified 
+models that do not permit evaluation of global fit. This 
+limits the reliability of these constructs and should be 
+addressed in future work by expanding the item sets.
+Our results also highlight the need for diagnostic 
+instruments that more accurately reflect the biological 
+architecture of ME/CFS. Future questionnaires should 
+incorporate differentiated subscales—such as gastro­
+intestinal, immune, neurocognitive, and autonomic 
+domains—to better capture disease heterogeneity and 
+guide targeted interventions. Additional symptom 
+domains, including muscle and ocular symptoms, war­
+rant inclusion as separate subscales.
+
+Page 15 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+Further research should replicate these clusters in 
+larger, independent, and ideally longitudinal cohorts, 
+while integrating biological markers such as immune 
+signatures, microbiome profiles, metabolic parameters, 
+and neuroimaging findings to refine mechanistic under­
+standing. Analytic approaches should also be expanded 
+to include machine-learning approaches (e.g., clustering 
+algorithms, random forests, or network-based commu­
+nity detection) to complement factor-analytic techniques 
+and explore potential nonlinear or higher-order symp­
+tom structures.
+Despite the excellent fit indices of our SEM mod­
+els, methodological limitations must be acknowledged. 
+Dichotomous symptom coding reduces variance and 
+may obscure subtle effects, and measurement invari­
+ance across sex, age, and illness duration has not yet been 
+assessed. Future studies should therefore employ polyto­
+mous symptom scales and incorporate invariance testing 
+to enhance robustness and generalizability. In addition, 
+examining symptom clusters across demographic and 
+clinical subgroups may support the development of tai­
+lored preventive and therapeutic approaches.
+Acknowledgements
+The authors would like to thank all study participants who gave us their 
+time to participate in the study. Many thanks also to the ME/CFS patient 
+organizations and the two ME/CFS centers in Berlin and Munich for 
+forwarding the call for participation in the study and to the state parliament of 
+Baden-Württemberg for partially funding the study (AZ: M57-5434-9/2).
+Author’s contributions
+LHH contributed to the development and conception of the research 
+project, the preparation, collection, procurement, and provision of the data, 
+the analysis and interpretation of the data, the review of the sources, the 
+conclusions drawn from these findings, and the writing of the manuscript. 
+LMH contributed to the preparation, provision, and interpretation of the data.
+Funding
+The survey of ME/CFS patients underlying this publication was partially 
+funded by the Ministry of Social Affairs, Health and Integration using state 
+funds approved by the Baden-Württemberg State Parliament (file number: 
+M57-5434-9/2). All subsequent studies based on this survey, including the 
+present study, were not funded.
+Data availability
+All data supporting the results of this study are included in the article or can 
+be requested from the corresponding author.
+Declarations
+Ethical approval
+This study was conducted in 2022 in accordance with the Declaration of 
+Helsinki and approved by the Ethics Committee of Furtwangen University, 
+Germany (application number: 22–057).
+Consent for publication
+Not applicable.
+Consent to participate & written consent for publication
+All participants were fully informed about the objectives and procedure 
+before the study began and gave their written consent to participate. See 
+Information and declaration of consent in the “Supplementary files” section.
+Code availability
+Not applicable.
+Additional notes
+The translation from German was supported by ​h​t​t​p​:​/​/​w​w​w​.​D​e​e​p​L​.​c​o​m​/​T​r​a​n​
+s​l​a​t​o​r (free version). Furthermore, we would like to thank the AI tool ChatGPT 
+(OpenAI) for language editing and wording optimization in individual sections 
+under human guidance. All ideas, data and interpretations originate from the 
+authors. 
+Conflicts of interest
+The corresponding author declares on behalf of all authors that there is no 
+conflict of interest.
+Author details
+1Villingen Institute of Public Health (VIPH), Klosterring 5, 
+D-78050 Villingen-Schwenningen, Germany
+2Institute for Medical Biometry and Statistics, Section for Health Services 
+Research and Rehabilitation Research (SEVERA), University Hospital 
+Freiburg, Hugstetter Str. 49, D-79106 Freiburg, Germany
+Received: 5 January 2026 / Accepted: 12 April 2026
+References
+1.	
+Walitt B, Singh K, LaMunion SR, Hallett M, Jacobson S, Chen K, et al. Deep 
+phenotyping of post-infectious myalgic encephalomyelitis/chronic fatigue 
+syndrome. Nat Commun. 2024;15(1):907. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​3​8​/​s​4​1​4​6​7​-​0​2​
+4​-​4​5​1​0​7​-​3.
+2.	
+Vyas J, Muirhead N, Singh R, Ephgrave R, Finlay AY. Impact of myalgic 
+encephalomyelitis/chronic fatigue syndrome (ME/CFS) on the quality of life 
+of people with ME/CFS and their partners and family members: an online 
+cross-sectional survey. BMJ Open. 2022;12(5):e058128. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​3​
+6​/​b​m​j​o​p​e​n​-​2​0​2​1​-​0​5​8​1​2​8.
+3.	
+Beentjes SV, Miralles Méharon A, Kaczmarczyk J, Cassar A, Samms GL, Hejazi 
+NS, et al. Replicated blood-based biomarkers for myalgic encephalomyelitis 
+not explicable by inactivity. EMBO Mol Med. 2025;17(7):1868–91. ​h​t​t​p​s​:​/​/​d​o​i​.​o​
+r​g​/​1​0​.​1​0​3​8​/​s​4​4​3​2​1​-​0​2​5​-​0​0​2​5​8​-​8.
+4.	
+Tate W, Walker M, Sweetman E, Helliwell A, Peppercorn K, Edgar C, et al. 
+Molecular mechanisms of neuroinflammation in ME/CFS and long COVID to 
+sustain disease and promote relapses. Front Neurol. 2022;13:877772. ​h​t​t​p​s​:​/​/​d​
+o​i​.​o​r​g​/​1​0​.​3​3​8​9​/​f​n​e​u​r​.​2​0​2​2​.​8​7​7​7​7​2.
+5.	
+Stussman B, Williams A, Snow J, Gavin A, Scott R, Nath A, et al. Characteriza­
+tion of post–exertional malaise in patients with myalgic Encephalomyelitis/
+Chronic fatigue syndrome. Front Neurol. 2020;11:1025. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​8​
+9​/​f​n​e​u​r​.​2​0​2​0​.​0​1​0​2​5.
+6.	
+Huber KA, Sunnquist M, Jason LA. Latent class analysis of a heterogeneous 
+international sample of patients with myalgic encephalomyelitis/chronic 
+fatigue syndrome. Fatigue: Biomed, Health Behav. 2018;6(3):163–78. ​h​t​t​p​s​:​/​/​d​
+o​i​.​o​r​g​/​1​0​.​1​0​8​0​/​2​1​6​4​1​8​4​6​.​2​0​1​8​.​1​4​9​4​5​3​0.
+7.	
+Krumina A, Vecvagare K, Svirskis S, Gravelsina S, Nora-Krukle Z, Gintere S, et al. 
+Clinical profile and aspects of differential diagnosis in patients with ME/CFS 
+from Latvia. Medicina. 2021;57(9):958. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​9​0​/​m​e​d​i​c​i​n​a​5​7​0​9​
+0​9​5​8.
+8.	
+Habermann-Horstmeier L, Horstmeier LM. Myalgic encephalomyelitis/
+chronic fatigue syndrome (ME/CFS) symptoms during the disease course. 
+Präv Gesundheitsf. 2025. Received: August 16, 2025, Accepted: October 27, 
+2025. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​0​7​/​s​1​1​5​5​3​-​0​2​5​-​0​1​2​8​0​-​x.
+9.	
+Finkelmeyer A, He J, Maclachlan L, Watson S, Gallagher P, Newton JL, et al. 
+Grey and white matter differences in chronic fatigue syndrome – a voxel-
+based morphometry study. NeuroImage. Clin. 2018;17:24–30. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​
+1​0​.​1​0​1​6​/​j​.​n​i​c​l​.​2​0​1​7​.​0​9​.​0​2​4.
+10.	 Barnden LR, Kwiatek R, Crouch B, Burnet R, Del Fante P. Autonomic correla­
+tions with MRI are abnormal in the brainstem vasomotor centre in chronic 
+fatigue syndrome. NeuroImage. Clin. 2016;11:530–37. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​
+/​j​.​n​i​c​l​.​2​0​1​6​.​0​3​.​0​1​7.
+11.	 Barnden LR, Shan ZY, Staines DR, Marshall-Gradisnik S, Finegan K, Ireland T, et 
+al. Hyperintense sensorimotor T1 spin echo MRI is associated with brainstem 
+abnormality in chronic fatigue syndrome. NeuroImage. Clin. 2018;20:102–09. ​
+h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​j​.​n​i​c​l​.​2​0​1​8​.​0​7​.​0​1​1.
+
+Page 16 of 16
+Habermann-Horstmeier and Horstmeier Journal of Translational Medicine          (2026) 24:606 
+12.	 Kuratsune H, Yamaguti K, Lindh G, Evengård B, Hagberg G, Matsumura K, et 
+al. Brain regions involved in fatigue sensation: reduced acetylcarnitine uptake 
+into the brain. Neuroimage. 2002;17(3):1256–65. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​0​6​/​n​i​m​
+g​.​2​0​0​2​.​1​2​6​0.
+13.	 Renz-Polster H, Tremblay ME, Bienzle D, Fischer JE. The pathobiology of 
+myalgic encephalomyelitis/chronic fatigue syndrome: the case for neuroglial 
+failure. Front Cell Neurosci. 2022;16:888232. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​8​9​/​f​n​c​e​l​.​2​0​2​
+2​.​8​8​8​2​3​2.
+14.	 Lee JS, Sato W, Son CG. Brain-regional characteristics and neuroinflammation 
+in ME/CFS patients from neuroimaging: a systematic review and meta-analy­
+sis. Autoimmun Rev. 2024;23(2):103484. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​j​.​a​u​t​r​e​v​.​2​0​2​3​.​
+1​0​3​4​8​4.
+15.	 Christopoulos EM, Tantanis D, Huang K, Schneider-Futschik EK, Gooley PR, 
+Moneghetti KJ, et al. Mapping cerebral blood flow in myalgic encephalomy­
+elitis/chronic fatigue syndrome (ME/CFS) and orthostatic intolerance: insights 
+from a systematic review. J Transl Med. 2025;23(1):963. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​
+6​/​s​1​2​9​6​7​-​0​2​5​-​0​6​9​5​4​-​w.
+16.	 Bechny M, Scutari M, van der Meer J, et al. Unveiling sleep dysregulation in 
+chronic fatigue syndrome with and without fibromyalgia through Bayesian 
+networks. arXiv. 2025. Available from: ​h​t​t​p​s​:​/​/​a​r​x​i​v​.​o​r​g​/​h​t​m​l​/​2​5​0​3​.​1​0​2​7​1​v​1.
+17.	 Brenu EW, van Driel ML, Staines DR, Ashton KJ, Hardcastle SL, Keane J, et 
+al. Longitudinal investigation of natural killer cells and cytokines in chronic 
+fatigue syndrome/myalgic encephalomyelitis. J Transl Med. 2012;10(1):88. ​h​t​t​
+p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​6​/​1​4​7​9​-​5​8​7​6​-​1​0​-​8​8.
+18.	 Duan L, Yang J, Zhao J, Chen Z, Yang H, Cai D. Evaluating the causal role of 
+genetically inferred immune cells and inflammatory cytokines on myalgic 
+encephalomyelitis/chronic fatigue syndrome. Biomedicines. 2025;13(5):1200. ​
+h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​9​0​/​b​i​o​m​e​d​i​c​i​n​e​s​1​3​0​5​1​2​0​0.
+19.	 Jonsjö MA, Olsson GL, Wicksell RK, Alving K, Holmström L, Andreasson A. 
+The role of low-grade inflammation in ME/CFS (myalgic Encephalomyelitis/
+Chronic fatigue syndrome) - associations with symptoms. Psychoneuroendo­
+crinology. 2020;113:104578. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​j​.​p​s​y​n​e​u​e​n​.​2​0​1​9​.​1​0​4​5​7​8.
+20.	 Kasimir F, Toomey D, Liu Z, Kaiping AC, Ariza ME, Prusty BK. Tissue specific 
+signature of HHV-6 infection in ME/CFS. Front Mol Biosci. 2022;9:1044964. ​h​t​t​
+p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​8​9​/​f​m​o​l​b​.​2​0​2​2​.​1​0​4​4​9​6​4.
+21.	 Rasa S, Nora-Krukle Z, Henning N, Eliassen E, Shikova E, Harrer T, et al. Chronic 
+viral infections in myalgic encephalomyelitis/chronic fatigue syndrome (ME/
+CFS). J Transl Med. 2018;16(1):268. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​6​/​s​1​2​9​6​7​-​0​1​8​-​1​6​4​
+4​-​y.
+22.	 Morris G, Anderson G, Galecki P, Berk M, Maes M. A narrative review on the 
+similarities and dissimilarities between myalgic encephalomyelitis/chronic 
+fatigue syndrome (ME/CFS) and sickness behavior. BMC Med. 2013;11(1):64. ​h​
+t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​6​/​1​7​4​1​-​7​0​1​5​-​1​1​-​6​4.
+23.	 Tate WP, Walker MOM, Peppercorn K, Blair ALH, Edgar CD. Towards a better 
+understanding of the complexities of myalgic encephalomyelitis/chronic 
+fatigue syndrome and long COVID. Int J Mol Sci. 2023;24(6):5124. ​h​t​t​p​s​:​/​/​d​o​i​.​o​
+r​g​/​1​0​.​3​3​9​0​/​i​j​m​s​2​4​0​6​5​1​2​4.
+24.	 Miwa K. Orthostatic intolerance and chronotropic incompetence in patients 
+with myalgic encephalomyelitis or chronic fatigue syndrome. Circ Rep. 
+2023;5(2):55–61. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​2​5​3​/​c​i​r​c​r​e​p​.​C​R​-​2​2​-​0​1​1​4.
+25.	 Nunes JM, Kell DB, Pretorius E. Cardiovascular and haematological pathology 
+in myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): a role for 
+viruses. Blood Rev. 2023;60:101075. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​j​.​b​l​r​e​.​2​0​2​3​.​1​0​1​0​7​
+5.
+26.	 Steinsvik EK, Hausken T, Fluge Ø, Mella O, Gilja OH. Gastric dysmotility and 
+gastrointestinal symptoms in myalgic encephalomyelitis/chronic fatigue 
+syndrome. Scand. J. Gastroenterol. 2023;58(7):718–25. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​8​0​
+/​0​0​3​6​5​5​2​1​.​2​0​2​3​.​2​1​7​3​5​3​3.
+27.	 Cambras T, Zerón-Rugerio MF, Díez-Noguera A, Zaragozá MC, Domingo 
+JC, Sanmartin-Sentañes R, et al. Skin Temperature circadian rhythms and 
+dysautonomia in myalgic Encephalomyelitis/Chronic fatigue syndrome: 
+the role of endothelin-1 in the vascular tone dysregulation. Int J Mol Sci. 
+2023;24(5):4835. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​9​0​/​i​j​m​s​2​4​0​5​4​8​3​5.
+28.	 Wirth KJ, Scheibenbogen C, Paul F. An attempt to explain the neurological 
+symptoms of myalgic encephalomyelitis/chronic fatigue syndrome. J Transl 
+Med. 2021;19(1):471. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​6​/​s​1​2​9​6​7​-​0​2​1​-​0​3​1​4​3​-​3. Erratum 
+in:J Transl Med. 2022, 20(1):25. https:/​/doi.or​g/10.11​86/s​12967-021-03216-3.
+29.	 Lakhan SE, Kirchgessner A. Gut inflammation in chronic fatigue syndrome. 
+Nutr Metab (Lond). 2010;7(1):79. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​6​/​1​7​4​3​-​7​0​7​5​-​7​-​7​9.
+30.	 Stallmach A, Quickert S, Puta C, Reuken PA. The gastrointestinal microbiota in 
+the development of ME/CFS: a critical view and potential perspectives. Front 
+Immunol. 2024;15:1352744. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​8​9​/​f​​i​m​m​u​.​2​0​2​4​.​1​3​5​2​7​4​4.
+31.	 Borrego-Ruiz A, Borrego JJ. Microbial involvement in myalgic encepha­
+lomyelitis/chronic fatigue syndrome pathophysiology. Microbes Immun. 
+2024;2(1):17–26. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​6​9​2​2​/​m​i​.​4​7​8​3.
+32.	 Martín F, Blanco-Suarez M, Zambrano P, Cáceres O, Almirall M, Alegre-Martín 
+J, et al. Increased gut permeability and bacterial translocation are associated 
+with fibromyalgia and myalgic encephalomyelitis/chronic fatigue syndrome: 
+implications for disease-related biomarker discovery. Front Immunol. 
+2023;14:1253121. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​3​3​8​9​/​f​​i​m​m​u​.​2​0​2​3​.​1​2​5​3​1​2​1.
+33.	 Uk MER. Leaky gut and the immune system in ME/CFS. 2023. Sep 6. Available 
+from: ​h​t​t​p​s​:​/​/​w​w​w​.​m​e​r​e​s​e​a​r​c​h​.​o​r​g​.​u​k​/​l​e​a​k​y​-​g​u​t​-​a​n​d​-​t​h​e​-​i​m​m​u​n​e​-​s​y​s​t​e​m​-​i​
+n​-​m​e​-​c​f​s​/.
+34.	 Hsu CY, Ahmad I, Maya RW, Abass MA, Gupta J, Singh A, et al. The potential 
+therapeutic approaches targeting gut health in myalgic encephalomyeli­
+tis/chronic fatigue syndrome (ME/CFS): a narrative review. J Transl Med. 
+2025;23(1):530. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​6​/​s​1​2​9​6​7​-​0​2​5​-​0​6​5​2​7​-​x.
+35.	 Jason LA, Corradi K, Torres-Harding S. Toward an empirical case definition of 
+CFS. J Soc Service Res. 2007;34(2):43–54. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​3​0​0​/​J​0​7​9​v​3​4​n​0​2​
+_​0​4.
+36.	 Leonard A J, et al. Factor analysis of the DePaul symptom questionnaire: 
+identifying core domains. J Neurol Neurobiol. 2015;1(4). ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​6​
+9​6​6​/​2​3​7​9​-​7​1​5​0​.​1​1​4.
+37.	 Friedberg F, Dechene L, McKenzie MJ, Fontanetta R. Symptom patterns in 
+long-duration chronic fatigue syndrome. J Psychosom Res. 2000;48(1):59–68. ​
+h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​1​6​/​S​0​0​2​2​-​3​9​9​9​(​9​9​)​0​0​0​7​7​-​X.
+38.	 Nisenbaum R, Reyes M, Unger ER, Reeves WC. Factor analysis of symptoms 
+among subjects with unexplained chronic fatigue: what can we learn about 
+chronic fatigue syndrome? J Psychosom Res. 2004;56(2):171–78. ​h​t​t​p​s​:​/​/​d​o​i​.​o​
+r​g​/​1​0​.​1​0​1​6​/​S​0​0​2​2​-​3​9​9​9​(​0​3​)​0​0​0​3​9​-​4.
+39.	 Jonsjö MA, Wicksell RK, Holmström L, Andreasson A, Bileviciute-Ljungar 
+I, Olsson GL. Identifying symptom subgroups in patients with ME/CFS – 
+relationships to functioning and quality of life. Fatigue: Biomed, Health Behav. 
+2017;5(1):33–42. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​8​0​/​2​1​6​4​1​8​4​6​.​2​0​1​7​.​1​2​8​7​5​4​6.
+40.	 Carruthers BM, Jain AK, De Meirleir KL, Peterson DL, Klimas NG, Lerner AM, 
+et al. Myalgic encephalomyelitis/chronic fatigue syndrome: clinical working 
+case definition, diagnostic and treatment protocols. J Chronic Fatigue Syndr. 
+2003;11(1):7–115. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​3​0​0​/​J​0​9​2​v​1​1​n​0​1​_​0​2.
+41.	 Habermann-Horstmeier L, Horstmeier LM. Implications of the quality of the 
+doctor-patient relationship on health in adult ME/CFS patients. A qualitative 
+public health study from a patien perspective. MMW - Fortschr der Medizin. 
+2023;165(Suppl S5):16–27. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​0​7​/​s​1​5​0​0​6​-​0​2​3​-​2​8​9​4​-​z.
+42.	 Habermann-Horstmeier L, Horstmeier LM. Systemisches Denken, subjek­
+tive Befunde und das diagnostische „Schubladendenken“bei ME/CFS – Eine 
+vorwiegend qualitative Public-Health-Studie aus Patientensicht. Dtsch Med 
+Wochenschr. 2024, Published online. 149(04):e19–36. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​5​5​
+/​a​-​2​1​9​7​-​6​4​7​9.
+43.	 Habermann-Horstmeier L, Horstmeier LM. Perception of gender aspects in 
+the relationship between physicians and patients with myalgic encepha­
+lomyelitis/chronic fatigue syndrome (ME/CFS). Präv Gesundheitsf. 2025, 
+Published online Jan 26. 20(1):48–60. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​0​0​7​/​s​1​1​5​5​3​-​0​2​3​-​0​1​
+0​9​8​-​5.
+44.	 Bakken IJ, Tveito K, Gunnes N, Ghaderi S, Stoltenberg C, Trogstad L, et al. Two 
+age peaks in the incidence of chronic fatigue syndrome/myalgic encepha­
+lomyelitis: a population-based registry study from Norway 2008¿2012. BMC 
+Med. 2014;12(1):167. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​1​8​6​/​P​R​E​A​C​C​E​P​T​-​1​8​4​3​6​8​4​9​8​0​1​3​1​0​4​
+1.
+45.	 Lim EJ, Ahn YC, Jang ES, Lee S-W, Lee S-H, Son C-G. Systematic review and 
+meta-analysis of the prevalence of chronic fatigue syndrome/myalgic 
+encephalomyelitis (CFS/ME). J Transl Med. 2020;18(1):100. ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​g​/​1​0​.​1​
+1​8​6​/​s​1​2​9​6​7​-​0​2​0​-​0​2​2​6​9​-​0.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
