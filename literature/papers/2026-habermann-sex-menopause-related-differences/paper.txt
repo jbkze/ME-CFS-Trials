@@ -1,0 +1,1533 @@
+Sex- and Menopause-Related Differences in
+Immune and Gastrointestinal Symptom
+Architecture in ME/CFS: Evidence from Factor
+Analysis and Structural Equation Modeling
+Lotte Habermann-Horstmeier 
+Villingen Institute of Public Health https://orcid.org/0000-0001-6912-7999
+Lukas Maximilian Horstmeier 
+Freiburg University Hospital: Albert-Ludwigs-Universitat Freiburg Universitatsklinikum Freiburg
+Research Article
+Keywords: ME/CFS, symptom clusters, sex differences, neuroimmune dysfunction, gastrointestinal
+symptoms, menopause, dysbiosis, structural equation modeling.
+Posted Date: June 30th, 2026
+DOI: https://doi.org/10.21203/rs.3.rs-9825975/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.  
+Read Full License
+
+1 
+ 
+Title: 
+ 
+ Sex- and Menopause-Related Differences in Immune 
+and Gastrointestinal Symptom Architecture in 
+ME/CFS: Evidence from Factor Analysis and 
+Structural Equation Modeling 
+ 
+ 
+ 
+ 
+ 
+ 
+Authors: 
+(1) Dr. med. LoƩe Habermann-Horstmeier; MPH, MSc1  
+Villingen Institute of Public Health (VIPH)  
+Klosterring 5 
+D-78050 Villingen-Schwenningen 
+Email: Habermann-Horstmeier@viph-public-health.de 
+ 
+ 
+(2) Lukas M. Horstmeier, PhD   
+University Hospital Freiburg, Institute for Medical Biometry and Statistics, Section for Health Services 
+Research and Rehabilitation Research (SEVERA)  
+Hugstetter Str. 49 
+D-79106 Freiburg 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 Corresponding Author 
+
+2 
+ 
+Abstract 
+Background: 
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a multisystem disorder 
+characterized by neuroimmune, autonomic, and gastrointestinal dysfunction. Previous studies 
+identified coherent symptom domains involving Brain, Autonomic, Gut, and Immune 
+manifestations and demonstrated pronounced sex-specific differences in neurocognitive–
+sensory and autonomic symptom organization. However, whether immune-related and 
+gastrointestinal symptoms form distinct or integrated latent structures in women and men with 
+ME/CFS remains unclear. In addition, the potential influence of menopausal status on these 
+symptom domains has not been systematically investigated. 
+Methods: 
+Data from 748 adults with medically diagnosed ME/CFS (608 women, 137 men) from the 
+APAV-ME/CFS study were analyzed. Symptoms were coded dichotomously. Sex-stratified 
+analyses included cross-tabulations, Cramér’s V, tetrachoric correlations, logistic and linear 
+regression models, exploratory factor analysis, and structural equation modeling (SEM). 
+Additional subgroup analyses compared pre- and postmenopausal women. Model robustness 
+was evaluated using a stratified training dataset. 
+Results: 
+In women, Immune (flu-like symptoms, susceptibility to infections) and Gut (gastrointestinal 
+complaints, food intolerances) symptoms formed two distinct but related clusters, characterized 
+by moderate within-cluster correlations (tetrachoric ρ = .47–.60) and weaker cross-cluster 
+associations (ρ = .30–.35). Exploratory factor analysis supported a two-factor solution, and 
+SEM demonstrated superior fit for a two-factor model (CFI = .913; RMSEA = .119). 
+In men, all four symptoms loaded onto a single integrated Gut/Immune factor, with consistently 
+high intercorrelations across domains (ρ = .43–.68). SEM confirmed excellent fit for a one-
+factor model (CFI = .981; RMSEA = .074). Susceptibility to infections emerged as the dominant 
+predictor in regression analyses. 
+Among women, menopausal status selectively affected immune-related symptoms. 
+Premenopausal women reported flu-like symptoms more frequently than postmenopausal 
+women, whereas gastrointestinal symptoms and food intolerances remained stable across 
+groups. These findings suggest differential hormonal sensitivity of immune versus 
+gastrointestinal symptom trajectories. 
+Conclusions: 
+Immune and gastrointestinal symptoms in ME/CFS exhibit sex-specific latent structures. 
+Women demonstrate two partially separable but related symptom domains, whereas men show 
+
+3 
+ 
+a more integrated immune–gastrointestinal architecture. Furthermore, menopausal status 
+appears to selectively modulate immune-related symptom expression while leaving 
+gastrointestinal symptom patterns comparatively stable. Together, these findings support the 
+concept of sex-dependent neuroimmune–autonomic mechanisms in ME/CFS and are consistent 
+with a dynamic, hormonally modulated immune component alongside a more persistent gut-
+related process. The results highlight the importance of sex- and hormone-sensitive approaches 
+to phenotyping, mechanistic research, and therapeutic stratification in ME/CFS. 
+ 
+Keywords: 
+ME/CFS; symptom clusters; sex differences; neuroimmune dysfunction; gastrointestinal 
+symptoms; menopause; dysbiosis; structural equation modeling. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+4 
+ 
+Introduction  
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a debilitating multisystem 
+disease [1] characterized by post-exertional malaise (PEM) [2], neurocognitive impairment [3], 
+autonomic dysfunction [4], immunological abnormalities [5, 6], and a broad spectrum of 
+fluctuating somatic symptoms [7]. The disorder is typically triggered by infectious events and 
+involves disturbances across multiple regulatory systems—including the nervous, endocrine, 
+and immune systems—as well as impaired cellular energy metabolism and chronic low-grade 
+inflammation, potentially contributing to disturbed physiological homeostasis [8, 9]. These 
+findings are consistent with recent multi-omics and immunometabolic research reporting 
+evidence for exaggerated innate immune responses, chronic inflammation, metabolic 
+dysfunction, and gut dysbiosis in ME/CFS patients. 
+Despite the multisystemic nature of ME/CFS, relatively little is known about how symptoms 
+co-occur, cluster, or interact across biological domains. In a previous population-based study 
+(Study 1), we showed that many symptoms appear in parallel across the disease course and that 
+gastrointestinal and immunological symptoms frequently emerge early, particularly in women 
+[8]. Building on these observations, Study 2 statistically validated four hypothesis-driven 
+symptom clusters—Brain, Autonomic, Gut, and Immune—using exploratory and confirmatory 
+factor analyses and structural equation modeling (SEM). These clusters demonstrated strong 
+internal coherence and distinctiveness, supporting the hypothesis that ME/CFS symptom 
+architecture may reflect underlying neuroimmune and autonomic processes [9]. 
+Study 3 extended this work by examining sex-specific differences in the Brain/Brain22 and 
+Autonomic clusters3. The results revealed marked sex-related divergence: women exhibited 
+more homogeneous neurocognitive-sensory and autonomic clusters, whereas men showed more 
+heterogeneous patterns suggesting vascular–metabolic and sympathetic involvement [10]. 
+These findings align with established sex differences in immune function, where women 
+typically show stronger adaptive immune responses and higher autoimmune activation, while 
+men may exhibit weaker humoral immunity and greater susceptibility to certain infections [11]. 
+Gastrointestinal symptoms are particularly relevant in ME/CFS. Multiple studies have 
+documented alterations in the gut microbiota, reduced microbial diversity, and shifts toward 
+pro-inflammatory taxa, suggesting a role for dysbiosis in disease pathophysiology. Recent 
+ 
+1 The Brain cluster consisted of the symptoms brain fog, headaches, sleep disorders, visual disturbances, and 
+sensory hypersensiƟvity. The Brain2 cluster addiƟonally includes the symptom of temperature incompaƟbility. 
+3 The Autonomic cluster includes symptoms such as cardiovascular problems, breathing problems, 
+gastrointesƟnal complaints, and temperature incompaƟbility. 
+
+5 
+ 
+reviews highlight that dysbiosis may contribute to intestinal barrier dysfunction (“Leaky Gut”), 
+microbial translocation, oxidative stress, and systemic immune activation, potentially 
+exacerbating ME/CFS symptoms [12, 13]. Although causality remains unproven, these 
+mechanisms are biologically plausible and consistent with broader evidence linking gut 
+dysbiosis to neuroinflammation and blood–brain barrier alterations [14]. A 2024 review further 
+emphasizes that gastrointestinal microbiota changes may influence immunological and 
+inflammatory pathways relevant to ME/CFS, even though current evidence is largely 
+associative [15]. 
+Taken together, these findings suggest that immune and gastrointestinal symptoms may 
+form interconnected clusters, potentially mediated by gut–immune–brain interactions. 
+However, whether these clusters manifest similarly in women and men remains unclear. 
+Preliminary evidence from Study 2 and Study 3 suggests that women may exhibit distinct 
+Immune and Gut clusters, whereas in men these symptoms may converge into a single 
+integrated cluster. Such sex-specific differences would be consistent with known biological 
+patterns: women generally exhibit stronger adaptive immune responses and may show greater 
+vulnerability to immune–gut interactions, whereas men may display stronger sympathetic and 
+vascular–metabolic involvement as well as greater susceptibility to certain infections [11, 16-
+18]. 
+The present study (Study 4) therefore aims to: (1) determine whether Immune and Gut 
+symptoms form two distinct clusters in women but a single integrated cluster (Combined 
+Gut/Immune) in men; (2) evaluate the statistical coherence, distinctiveness, and latent structure 
+of these clusters using bivariate associations, factor analysis, and SEM; and (3) situate these 
+findings within a broader mechanistic framework linking immune–gut interactions to 
+autonomic and neurocognitive symptom domains. 
+By integrating statistical modeling with emerging biological insights, this study seeks to 
+clarify sex-specific symptom architectures in ME/CFS and contribute to a hypothesis-
+generating model that reflects divergent neuroimmune–autonomic pathways in women and 
+men. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+6 
+ 
+Methods 
+Study Design and Data Source 
+This study (Study 4) is part of a multi-phase research program investigating symptom 
+architecture in myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS). It builds on 
+findings from: (1) a population-based descriptive study of symptom frequencies (Study 1), (2) 
+a factor-analytic validation of mechanistic symptom clusters (Study 2), and (3) an analysis of 
+sex-specific differences in neurocognitive-sensory and autonomic clusters (Study 3). 
+Study 4 focuses on the immune-related and gastrointestinal symptom domains. All analyses 
+were conducted using data from the APAV-ME/CFS study, a predominantly qualitative 
+investigation of the doctor–patient relationship that also collected quantitative symptom data. 
+Participants 
+A total of 1,238 individuals participated in the APAV-ME/CFS study. For the present analyses, 
+we included only adult participants (>20 years) with a medically confirmed ME/CFS diagnosis 
+(n = 748; 608 women, 137 men, 3 non-binary). Exclusion criteria were: 
+▪ 
+age ≤20 years, 
+▪ 
+absence of a medical ME/CFS diagnosis, 
+▪ 
+relatives of ME/CFS patients, 
+▪ 
+incomplete information on key demographic variables (sex, age, diagnosis). 
+The sex distribution (≈81% women) is consistent with epidemiological data reporting a female 
+predominance of 70–80% in ME/CFS (Figure 1). 
+Figure 1 Chronological placement of study 4 within the sequence of studies. 
+
+7 
+ 
+Symptom Assessment and Coding 
+Participants reported whether each symptom had occurred regularly in recent months. All 
+symptoms were coded as dichotomous variables (0 = absent, 1 = present). Dichotomization 
+reduces variance and may attenuate factor loadings and SEM fit indices; however, global model 
+fit indices in Studies 2 and 3 demonstrated that the latent structure remains robust despite this 
+limitation. 
+The present study focused on four symptoms forming the hypothesized Immune and Gut 
+clusters: 
+▪ 
+Immune: 
+- flu-like symptoms 
+- increased susceptibility to infections 
+▪ Gut: 
+- gastrointestinal complaints 
+- food and other intolerances 
+For integration analyses, we also considered the previously validated Autonomic and 
+Brain/Brain2 clusters. 
+Statistical Analyses 
+All analyses were performed separately for women and men to examine sex-specific symptom 
+structures. The latent variables identified in the present analyses represent statistical symptom 
+structures rather than directly measured biological mechanisms. 
+1. Bivariate Associations 
+We first examined pairwise associations between symptoms using: 
+▪ 
+cross-tabulations and Pearson’s χ² tests, 
+▪ 
+Cramér’s V (effect size for dichotomous variables), 
+▪ 
+Pearson correlations, 
+▪ 
+tetrachoric correlations, which assume an underlying continuous latent distribution and 
+are appropriate for binary indicators. 
+ 
+ 
+ 
+
+8 
+ 
+2. Logistic Regression 
+Binary logistic regression models were estimated to assess the predictive relationships between 
+symptoms. Depending on the analysis, either flu-like symptoms or susceptibility to infections 
+served as the dependent variable. Model fit was evaluated using pseudo-R² statistics. 
+3. Linear Regression 
+Composite symptom scores were calculated by summing dichotomous symptom indicators to 
+approximate continuous variation in symptom burden. Scores represented the sum of present 
+symptom indicators and were treated as approximately continuous variables. The Immune score 
+consisted of two dichotomous items (flu‑like symptoms, increased infection susceptibility), 
+yielding a possible range of 0–2. The Gut score likewise comprised two dichotomous items 
+(gastrointestinal complaints, food intolerances), also ranging from 0–2. The Combined 
+Gut/Immune score represented the sum of all four indicators and therefore ranged from 0–4. No 
+standardization or z‑transformation was applied. All analyses were conducted using raw sum 
+scores to preserve interpretability. 
+4. Factor Analysis 
+Exploratory factor analysis (EFA) with Varimax rotation was performed to evaluate the latent 
+structure of the four symptoms. In women, we examined whether Immune and Gut symptoms 
+separated into two distinct factors, whereas in men we tested a single-factor solution 
+representing a Combined Gut/Immune construct. Given that each domain comprises only two 
+indicators and the overall model includes four items, the factor analyses are considered 
+exploratory and hypothesis-driven. Accordingly, we do not interpret the factor loadings in detail 
+but use them to assess whether the observed symptom patterns align with the proposed latent 
+structure. 
+5. Structural Equation Modeling (SEM) 
+Confirmatory factor analyses (CFA) and SEM were conducted to test the fit of one-factor vs. 
+two-factor models. All models were estimated using maximum likelihood (ML) in Stata 12.0 
+because categorical SEM estimators (e.g., WLSMV) were not available in the software version 
+used. Because the indicators were binary, ML estimation may yield biased standard errors and 
+fit indices. However, tetrachoric correlations and cross-validation analyses suggested that the 
+latent structure was sufficiently robust.  
+
+9 
+ 
+This limitation was addressed by: 
+• 
+using tetrachoric correlations, 
+• 
+cross-validating results with CFA convergence, 
+• 
+replicating all analyses in a stratified training dataset. 
+Model fit was evaluated using: 
+• 
+χ² statistics, 
+• 
+Comparative Fit Index (CFI), 
+• 
+Root Mean Square Error of Approximation (RMSEA), 
+• 
+Standardized Root Mean Square Residual (SRMR). 
+However, ML can skew standard errors for dichotomous items, distort the RMSEA, and affect 
+factor loadings. Results should therefore be interpreted cautiously, particularly the absolute fit 
+indices. Furthermore, the male subgroup size was relatively small for latent variable modelling. 
+Therefore, these findings should also be interpreted cautiously and considered preliminary. 
+ 
+6. Stratified Training Dataset 
+To assess robustness, all analyses were repeated in a stratified, randomized training dataset 
+derived from the full sample. Stratification was based on sex and illness duration to ensure 
+proportional representation and minimize sampling bias. Results were directionally consistent 
+across datasets. 
+7. Software 
+All analyses were conducted using Stata 12.0. Graphical models were created using Microsoft 
+PowerPoint. 
+ 
+Results 
+Sample Characteristics 
+Analyses were based on 748 adults with a medically confirmed ME/CFS diagnosis (608 
+women, 137 men, 3 non-binary). Because the non-binary group was too small for statistical 
+modeling, results are reported for women and men only. Symptom frequencies for the Immune 
+and Gut domains were consistent with previous studies: flu-like symptoms were reported by 
+
+10 
+ 
+76.8% of women and 73.0% of men; gastrointestinal complaints by 71.9% of women and 64.5% 
+of men; food intolerances by 63.2% of women and 47.8% of men; and increased susceptibility 
+to infections by 48.0% of women and 43.8% of men. 
+ 
+1. Bivariate Associations 
+In both sexes, within-domain associations were stronger than cross-domain associations. 
+Associations tended to be stronger in men than in women (Tables 1 and 2). 
+Table 1 Bivariate associations within the immunological symptom group (Immune) by sex 
+Feature 
+Women (n=608) 
+Men (n=137) 
+Pearson χ² (1) 
+44.5853 
+22.4052 
+p-value 
+< .001 
+< .001 
+Cramér’s V 
+ .2708 
+ .4044 
+Pearson correlation 
+ .27 (p < .001) 
+ .40 (p < .001) 
+Tetrachoric correlation 
+ .47 (SE = .060, p < .001) 
+ .681 (SE = .097, p < .001) 
+Logistic regression – Pseudo R² 
+ .0709 
+ .1581 
+OR (95% CI) 
+4.08 (2.65–6.27), p < .001 
+10.50 (3.46–31.87), p < .001 
+ 
+Bivariate associations within the gastrointestinal symptom group (Gut) by sex 
+ 
+Feature 
+Women (n=608) 
+Men (n=137) 
+Pearson χ² (1) 
+94.5498 
+23.5576 
+p-value 
+< .001 
+< .001 
+Cramér’s V 
+ .3943 
+ .4147 
+Pearson correlation 
+ .39 (p < .001) 
+.41 (p < .001) 
+Tetrachoric correlation 
+ .603 (SE = .050, p < .001) 
+ .630 (SE = .097, p < .001) 
+Logistic regression – Pseudo R² 
+ .1288 
+ .1387 
+OR (95% CI) 
+6.18 (4.20–9.09), p < .001 
+6.83 (3.01–15.49), p < .001 
+ 
+Cross-cluster associations (Immune ↔ Gut) in men were markedly stronger (tetrachoric ρ: .43-
+.60) than in women (tetrachoric ρ: .30 to .35). 
+ 
+
+11 
+ 
+ 
+2. Logistic Regression 
+Women 
+In women, both immune-related and gastrointestinal symptoms contributed to the prediction of 
+flu-like symptoms. In men, susceptibility to infections emerged as the only significant predictor 
+(Table 3). 
+ 
+Table 3 Logistic regression (Outcome: flu-like symptoms) 
+Feature 
+Women 
+Men 
+Pseudo R² 
+ .0924 
+ .1764 
+Increased susceptibility to infections 
+OR 3.448 (SE: .7768), p < .001 
+OR 7.5766 (SE: 4.5197), p = .001 
+Gastrointestinal complaints 
+OR 1.6868 (SE: .3848), p = .022 
+OR 1.5833 (SE: .7459), p = .329 
+Food intolerances 
+OR 1.5278 (SE: .3389), p = .056 
+OR 1.6019 (SE: .7994), p = .345 
+ 
+ 
+3. Structural Equation Modeling (SEM) 
+To examine the dimensional structure of Gut and Immune symptoms, three structural equation 
+models (SEMs) were estimated: two separate one-factor models for Gut and Immune symptoms, 
+respectively, and one combined one-factor model including all four symptom indicators.  
+The first model represented a latent Gut factor indicated by gastrointestinal complaints and food 
+intolerances. The factor loading for food intolerances was moderate (λ = .4231), while residual 
+variance remained relatively high, suggesting a weaker association with the latent construct. 
+The second model represented a latent Immune factor indicated by flu-like symptoms and 
+susceptibility to infections. In this model, susceptibility to infections showed a comparatively 
+strong factor loading (λ = .74) and lower residual variance, indicating a strong association with 
+the latent immune-related construct. These models are just-identified (df = 0). Therefore, fit 
+indices for the separate two-indicator models are not informative. 
+A third model specifying a single latent factor underlying all four symptom indicators 
+demonstrated substantially poorer fit to the data, χ²(2) = 23.78, p < .001. Within this combined 
+model, gastrointestinal symptoms loaded strongly on the latent factor (λ = .91 and λ = 1.00), 
+whereas immune-related symptoms showed considerably weaker loadings (λ = .54 and λ = .74).  
+
+12 
+ 
+Taken together, these findings support the distinction between two symptom domains rather 
+than a single common construct. Accordingly, gastrointestinal symptoms (gastrointestinal 
+complaints and food intolerances) and immune-related symptoms (susceptibility to infections 
+and flu-like symptoms) were treated as separate latent dimensions in subsequent analyses. 
+Overall, the findings suggest sex-specific differences in the organization of gastrointestinal and 
+immune-related symptoms. In women, the data support a differentiated two-domain structure, 
+whereas in men the symptom domains appear more integrated into a single latent construct 
+(Tables 4 and 5). However, findings in men should be interpreted cautiously due to the smaller 
+sample size. 
+ 
+Table 4 Factor loadings of the Combined one-factor model (Gut and Immune) 
+Women 
+Indicator 
+Loading (λ) 
+p 
+ 
+Unstandardised 
+Standardised 
+ 
+Susceptibility to infections 
+1.00 (fixed) 
+ 
+.39 
+— 
+Flu-like symptoms 
+.757 
+ 
+.35 
+< .001 
+Gastrointestinal complaints 
+1.36 
+ 
+.60 
+< .001 
+Food intolerances 
+1.51 
+ 
+.66 
+< .001 
+ 
+Men 
+Indicator 
+Loading (λ) 
+p 
+ 
+Unstandardised 
+Standardised 
+ 
+Susceptibility to infections 
+1.00 (fixed) 
+.68 
+— 
+Flu-like symptoms 
+.67 
+.51 
+< .001 
+Gastrointestinal complaints 
+.85 
+.59 
+< .001 
+Food intolerances 
+.88 
+.60 
+< .001 
+Table 5 Fit indices of the Combined one-factor model (Gut and Immune) 
+Fit index 
+Women 
+Men 
+χ²(df) 
+19.315 (2) 
+3.501 (2) 
+p value 
+< .0001 
+.174 
+RMSEA 
+.119 
+.074 
+90% CI RMSEA 
+.075–.170 
+.000–.200 
+CFI 
+.913 
+.981 
+Fit index 
+Women 
+Men 
+TLI 
+.739 
+.944 
+SRMR 
+.040 
+.028 
+CD 
+.598 
+.698 
+AIC 
+2988.532 
+690.806 
+BIC 
+3041.454 
+725.846 
+ 
+
+13 
+ 
+4. Communalities and uniquenesses 
+The analysis of communalities (h²) and uniquenesses (u²) revealed clear sex-specific differences 
+in the underlying factor structure. Among women, the two immune-related indicators 
+Susceptibility to infections and Flu-like symptoms showed very low communalities (h² = .15 
+and .12, respectively), indicating that these items were only weakly accounted for by a common 
+latent factor. In contrast, the gastrointestinal indicators Gastrointestinal complaints and Food 
+intolerances demonstrated moderate communalities (h² = .36 and .44), reflecting a substantially 
+stronger association with a GI-related factor. This pattern supports the identification of a two-
+factor solution in women, comprising distinct immune and gastrointestinal dimensions. 
+In men, a more homogeneous pattern emerged: all four indicators showed moderate 
+communalities (h² = .26–.46), suggesting that each item contributed meaningfully to a single 
+latent construct. Correspondingly, uniqueness values were in the mid-range (u² = .54–.74), with 
+no indicator standing out as poorly represented. This profile is consistent with a unified, 
+overarching factor integrating both immune-related and gastrointestinal symptoms. Overall, the 
+communality patterns strongly support the sex-specific model differences: a two-factor 
+structure in women versus a one-factor structure in men (Table 6). 
+Table 6 Communalities (h²) and uniquenesses (u²) 
+Women 
+ 
+ 
+ 
+Indicator 
+λ_std 
+h² 
+u² 
+Susceptibility to infections 
+0.39 
+0.15 
+0.85 
+Flu-like symptoms 
+0.35 
+0.12 
+0.88 
+Gastrointestinal complaints 
+0.60 
+0.36 
+0.64 
+Food intolerances 
+0.66 
+0.44 
+0.56 
+ 
+Men 
+ 
+ 
+ 
+Indicator 
+λ_std 
+h² 
+u² 
+Susceptibility to infections 
+.68 
+0.46 
+0.54 
+Flu-like symptoms 
+.51 
+0.26 
+0.74 
+Gastrointestinal complaints 
+.59 
+0.35 
+0.65 
+Food intolerances 
+.60 
+0.36 
+0.64 
+ 
+ 
+
+14 
+ 
+7. Prevalence and latent factor scores 
+ 
+Despite structural differences, women and men do not differ in the frequency of immune-related 
+symptoms or in the mean Immune symptom score (all p > .05). These findings suggest that sex 
+differences are more apparent in the structural organization of these symptoms than in overall 
+symptom burden. 
+ 
+8. Impact of hormonal transitions on immune and autonomic regulation 
+ 
+Given the known impact of hormonal transitions on immune and autonomic regulation, we 
+additionally explored whether the observed sex-specific factor structures differed between pre- 
+and postmenopausal women. These analyses were considered exploratory due to limited 
+subgroup sample sizes and because we could only roughly estimate which women were pre- 
+and postmenopausal based on their age, since that information was not collected in the study. 
+Analyses stratified by illness duration revealed distinct patterns for immune- and gut-related 
+symptoms. Across the total sample, flu-like symptoms did not differ significantly between 
+duration categories. However, when stratified by menopausal status, a significant association 
+emerged only in postmenopausal women, with flu-like symptoms decreasing as illness duration 
+increased (χ²(2)=7.01, p=.030, V=0.15). A similar pattern was observed for susceptibility to 
+infections, which also declined with longer illness duration in postmenopausal women 
+(χ²(2)=7.99, p=.018, V=0.16), whereas no significant association was found in premenopausal 
+women. 
+In contrast, gastrointestinal symptoms and food intolerances increased with illness duration in 
+both groups. Gastrointestinal complaints showed a significant duration effect in premenopausal 
+women (χ²(2)=8.92, p=.012, V=0.15) and a trend in postmenopausal women. Food intolerances 
+demonstrated strong associations with illness duration in both groups (postmenopausal: 
+χ²(2)=17.72, p<.001, V=0.23; premenopausal: χ²(2)=8.73, p=.013, V=0.14). 
+These findings indicate that immune‑related symptoms are modulated by both menopausal 
+status and disease stage, whereas gut‑related symptoms show a progressive, duration‑dependent 
+increase independent of menopausal status (Table 7). 
+ 
+ 
+
+15 
+ 
+Table 7. Symptom prevalence across illness duration categories in pre‑ and postmenopausal women (Duration of 
+the disease: ≤ 2 years, 3–8 years, > 8 years; Menopausal status: premenopausal: age ≤ 50 years, postmenopausal: 
+age > 50 years) 
+Flu-like symptoms 
+Group 
+χ²(df=2) 
+p-value 
+Cramer's V 
+Interpretation 
+Total 
+3.51 
+0.173 
+0.07 
+No correlation 
+Postmenopausal 
+7.01 
+0.030 
+0.15 
+Symptoms decrease with disease duration 
+Premenopausal 
+2.04 
+0.361 
+0.07 
+No correlation 
+ 
+ 
+SuscepƟbility to infecƟons 
+Group 
+χ²(df=2) 
+p-value 
+Cramer's V 
+Interpretation 
+Postmenopausal 
+7.99 
+0.018 
+0.16 
+Decrease over time 
+Premenopausal 
+5.11 
+0.078 
+0.11 
+Trend, not significant 
+ 
+ 
+GastrointesƟnal complaints 
+Group 
+χ²(df=2) 
+p-value 
+Cramer's V 
+Interpretation 
+Postmenopausal 
+4.40 
+ .111 
+ .12 
+Trend 
+Premenopausal 
+8.92 
+ .012 
+ .15 
+Increase over time 
+ 
+ 
+Food intolerances 
+Group 
+χ²(df=2) 
+p-value 
+Cramer's V 
+Interpretation 
+Postmenopausal 
+17.72 
+< .001 
+ .23 
+Significant increase over time 
+Premenopausal 
+8.73 
+ .013 
+ .14 
+Increase over time 
+ 
+Symptom burden 
+Across the full sample, women exhibited a significantly higher overall symptom burden 
+compared to men. A linear regression model confirmed that the composite symptom score was 
+higher in women (β = –0.307, p = 0.010), consistent with the group difference observed in the 
+t-test (t = 2.5907). When examining the two symptom clusters separately, a clear pattern 
+emerged: the Gut symptom score was significantly higher in women (β = –0.226, p = 0.002), 
+whereas the Immune symptom score did not differ between sexes (β = –0.080, p = 0.255). Thus, 
+the sex difference in overall symptom burden (Combined Gut/Immune) was driven exclusively 
+by the Gut cluster. 
+
+16 
+ 
+Among women, menopausal status was associated with distinct symptom patterns. 
+Postmenopausal women showed a significantly lower overall symptom burden than 
+premenopausal women (β = –0.236, p = 0.018). This effect was specific to the Immune cluster, 
+where postmenopausal women reported markedly fewer symptoms (β = –0.177, p = 0.003). In 
+contrast, Gut symptoms did not differ by menopausal status (β = –0.059, p = 0.358). Interaction 
+models including age (menopausal status × age) showed no evidence that age modified the 
+association between menopausal status and either Immune or Gut symptoms (all p > 0.65). This 
+indicates that the observed menopausal effect is not attributable to age differences, as the 
+strength and direction of the association remained stable across the age range. 
+Because fewer women were represented at older ages, the corresponding estimates show larger 
+standard errors and wider confidence intervals. Together, these results demonstrate that sex 
+differences in symptom burden are cluster-specific and that menopausal status selectively 
+influences Immune-related symptoms. 
+ 
+8. Summary of Sex-Specific Patterns 
+Taken together, the analyses reveal a consistent pattern of sex-specific differences in the 
+organization of immune-related and gastrointestinal symptoms. 
+Symptom clusters across sexes. Flu-like symptoms and susceptibility to infections formed a 
+coherent Immune cluster in both women and men, although associations were stronger in men, 
+as reflected in higher tetrachoric correlations, higher factor loadings, and larger pseudo-R² 
+values, pointing to a more tightly integrated immune symptom structure. Gastrointestinal 
+complaints and (food) intolerances likewise formed a robust Gut cluster in both sexes, with 
+comparable effect sizes but slightly higher bivariate correlations in men. 
+Combined Gut/Immune structure. When the four symptoms were modeled jointly, the 
+analyses suggested a sex difference. In men, a one-factor solution fit the data very well (χ²(2) = 
+3.50, p = .174; RMSEA = .074; CFI = .981), consistent with a common immune–
+gastrointestinal dimension. In women, the same model fit poorly (χ²(2) = 19.30, p = .0001; 
+RMSEA = .119; CFI = .913), indicating a separation into at least two distinct factors. Figure 1 
+summarizes these sex-specific factor structures.  
+
+17 
+ 
+Figure 2 summarizes the findings regarding the sex-specific pattern of gastrointestinal and 
+immune-related symptoms. 
+ 
+Figure 2 Sex-specific factor structures of immune-related and gastrointestinal symptoms.   
+Standardized factor loadings are shown. For women, a two-factor model provided the best representation of the 
+data, separating immune-related symptoms (Susceptibility to infections, Flu-like symptoms) from gastrointestinal 
+symptoms (Gastrointestinal complaints, Food intolerances). This model is just-identified (df = 0); therefore, global 
+fit indices are not informative. For men, a one-factor model showed good fit (χ²(2) = 3.50, p = .174; CFI = .981; 
+TLI = .944; RMSEA = .074, 90% CI: .000–.200; SRMR = .028), indicating that immune-related and 
+gastrointestinal symptoms load on a single latent dimension. 
+ 
+Women. In women, Immune and Gut symptoms constituted two statistically distinct clusters 
+with only modest cross-cluster correlations. Both logistic and linear models showed distributed 
+predictive patterns, and factor analysis as well as SEM results were consistent with a two-
+domain conceptualization. Furthermore, women showed a higher overall symptom burden than 
+men, driven exclusively by stronger Gut-related symptoms, while Immune-related symptoms 
+did not differ between sexes. 
+Pre- versus postmenopausal women. The two-factor architecture remained stable across 
+menopausal status, indicating that menopause does not alter the underlying symptom 
+
+18 
+ 
+organization. Flu-like symptoms were significantly more frequent in premenopausal women, 
+consistent with the hypothesis that estrogen-related immune modulation may contribute to this. 
+Premenopausal women showed persistently high Immune symptom levels independent of 
+illness duration, potentially reflecting sustained immune-related symptom expression in the 
+context of estrogen exposure. In contrast, Immune-related symptoms decreased with illness 
+duration only in postmenopausal women, potentially consistent with a shift in symptom 
+presentation across illness stages. Gastrointestinal symptoms and food intolerances increased 
+with illness duration in both groups, possibly reflecting progressive alterations in gut-related 
+symptomatology independent of menopausal status. Overall, Immune symptoms in women 
+appear to be hormonally modulated, whereas Gut symptoms may represent a more stable, 
+chronic symptom domain that progresses irrespective of the menopausal transition. 
+Postmenopausal women reported fewer overall symptoms than premenopausal women, mainly 
+due to lower Immune-related symptom burden. Gut symptoms were unaffected by menopausal 
+status, and the effect was independent of age. 
+Men. In men, Immune and Gut symptoms formed a single integrated Combined Gut/Immune 
+cluster with high cross-cluster correlations, and susceptibility to infections emerged as the 
+dominant predictor across all models. Factor analysis and SEM consistently supported the one-
+factor structure. These findings should, however, be interpreted with caution given the smaller 
+male subsample and the correspondingly wider confidence intervals. Therefore, replication in 
+larger samples is required. 
+ 
+Discussion 
+This study provides robust evidence for sex-specific differences in the structure of immune 
+related and gastrointestinal symptoms in ME/CFS. Across all statistical approaches—including 
+tetrachoric correlations, logistic and linear regression, factor analysis, and structural equation 
+modeling—women exhibited two distinct clusters (Immune and Gut), whereas men showed a 
+single integrated cluster (Combined Gut/Immune) encompassing all four symptoms. 
+Importantly, these structural differences do not coincide with differences in symptom 
+prevalence or mean Immune factor scores. Symptom burden is comparable across sexes, but the 
+latent organization of symptoms differs—it is not the frequency of symptoms but their inter 
+symptom coupling that distinguishes women and men. These findings extend the results of 
+Study 2, which validated the existence of Immune and Gut clusters in the overall sample [9], 
+
+19 
+ 
+and Study 3, which demonstrated sex-specific differences in neurocognitive sensory and 
+autonomic symptom domains [11]. Together, these studies suggest that the symptom 
+architecture of ME/CFS is not uniform but reflects sex-dependent neuroimmune–autonomic 
+organization (Figure 2). 
+However, the proposed neuroimmune-autonomic mechanisms should be interpreted as 
+biologically informed models derived from symptom architecture rather than direct mechanistic 
+proof. Because microbiome composition, autonomic physiology, cytokine profiles, and 
+intestinal permeability markers —to name but a few—were not directly measured, the present 
+findings remain hypothesis-generating and require multimodal biological validation.  
+ 
+Sex-specific clustering patterns 
+- Women: Distinct Immune and Gut clusters 
+In women, immune related symptoms (flu-like symptoms, susceptibility to infections) and 
+gastrointestinal symptoms (gastrointestinal complaints, food intolerances) formed two 
+statistically separable clusters. Cross cluster correlations were modest, factor analysis yielded 
+a clear two factor solution, and SEM confirmed a two-factor model fit the data substantially 
+better than a one-factor model. Notably, when a unified one-factor Combined Gut/Immune 
+model was tested in women, it showed poor fit, indicating the need for at least two latent 
+dimensions. This structural divergence suggests that immunological and gastrointestinal 
+symptoms are more differentiated in women and may be modulated by distinct hormonal, 
+immunological, or neuro gastrointestinal mechanisms. These findings indicate that immune and 
+gastrointestinal symptoms represent related but distinct biological axes in women. 
+This pattern aligns with known sex differences in immune function [19]. Women exhibit 
+stronger adaptive immune responses, higher rates of autoimmune activation, and more 
+pronounced cytokine reactivity than men [11]. They also show greater susceptibility to 
+dysbiosis related gastrointestinal symptoms and higher prevalence of food intolerances, 
+consistent with the stronger Gut cluster observed here. Study 1 similarly found that 
+gastrointestinal symptoms and intolerances increased markedly during the early disease course 
+in women, supporting the notion that these symptoms represent a distinct and clinically 
+meaningful domain [8]. 
+
+20 
+ 
+- Men: A Combined Gut/Immune Cluster 
+In contrast, men showed a markedly different pattern. All four symptoms loaded onto a single 
+latent factor, with high tetrachoric correlations across domains and excellent SEM fit for a one-
+factor model. Across all analytic approaches, men consistently showed stronger associations 
+than women: higher tetrachoric correlations, larger effect sizes in regression models, and higher 
+factor loadings. The immunological symptom pattern (flu-like symptoms and susceptibility to 
+infections) 
+appeared 
+particularly 
+homogeneous, 
+suggesting 
+a more 
+synchronized 
+immunological response profile, and a similar—though slightly less pronounced—pattern 
+emerged for gastrointestinal symptoms. Susceptibility to infections emerged as the dominant 
+predictor in both logistic and linear regression models, suggesting that immune vulnerability 
+may serve as a central organizing feature of symptom expression in men. 
+This Combined Gut/Immune cluster is consistent with biological evidence that men exhibit 
+weaker humoral immunity, higher susceptibility to infections, and stronger sympathetic 
+activation than women. Sympathetic overactivation can amplify inflammatory responses, 
+impair gut barrier function, and promote gastrointestinal dysmotility—mechanisms that may 
+couple immune and gut symptoms more tightly in men. Study 3 similarly found that men's 
+autonomic symptom structure was dominated by respiratory and cardiovascular dysregulation, 
+reflecting a sympathetic–metabolic axis rather than the vagal–inflammatory axis observed in 
+women [10]. 
+Mechanistic interpretation: Dysbiosis, intestinal permeability, and 
+neuroimmune signaling 
+The sex-specific clustering patterns observed here may be interpreted within a mechanistic 
+framework involving gut dysbiosis, intestinal barrier dysfunction (often reffered to as ‘Leaky 
+Gut’), and neuroimmune–autonomic signaling. 
+- Dysbiosis and intestinal barrier dysfunction 
+Multiple studies have documented reduced microbial diversity, loss of butyrate-producing 
+species, and increased abundance of pro-inflammatory taxa in ME/CFS [20, 21]. Dysbiosis can 
+impair epithelial tight junctions, increase intestinal permeability, and facilitate translocation of 
+microbial products such as lipopolysaccharides (LPS). These processes can trigger systemic 
+immune activation, oxidative stress, and cytokine release—mechanisms that plausibly 
+contribute to both immune and gastrointestinal symptoms [22]. 
+
+21 
+ 
+- Sex-specific pathways 
+The findings are consistent with a model in which women may exhibit a vagal–hormonal–
+inflammatory pathway: In women estrogen modulates and may enhance immune responses, 
+epithelial barrier integrity, and vagal tone [23]. Dysbiosis-induced permeability may lead to 
+LPS translocation and activation of the cholinergic anti-inflammatory reflex. This could 
+contribute to why Immune and Gut symptoms remain distinct but interconnected in women 
+[22]. 
+The findings are consistent with a model in which men may exhibit a sympathetic–metabolic–
+vascular pathway: In men sympathetic dominance can impair gut motility, reduce mucosal 
+perfusion, and promote inflammatory signaling [24, 25]. Vascular–metabolic stress may 
+amplify immune vulnerability and gastrointestinal symptoms simultaneously [26]. This is 
+compatible with the Combined Gut/Immune cluster observed in men. 
+These mechanisms are consistent with findings from Study 3, where women showed stronger 
+vagal involvement in autonomic clusters, while men showed stronger sympathetic involvement 
+[10]. 
+- The role of menopause 
+In this study, we observed that flu-like symptoms were more prevalent among premenopausal 
+women, whereas gastrointestinal symptoms and food intolerances did not differ between 
+pre- and postmenopausal participants. These findings suggest that menopausal status modulates 
+specific symptom domains but does not uniformly affect the broader symptom architecture. The 
+pattern aligns with known immuno-endocrine mechanisms: estrogen modulates and may 
+enhance antiviral and inflammatory immune responses [11, 18, 27-30], increase mast-cell 
+reactivity and amplify central sensitivity to peripheral cytokine signals [31-33]. As a result, 
+premenopausal women may exhibit a lower threshold for mounting a pronounced sickness 
+response, which is characterized by fatigue, myalgia, and flu-like malaise [34]. After 
+menopause, declining estrogen levels attenuate these immune-driven responses, which is 
+compatible with the lower frequency of flu-like symptoms in older women. 
+Importantly, disease duration likely contributes to these differences. In our sample, 
+postmenopausal women were older and had been ill for a longer period of time. Early disease 
+stages in ME/CFS are typically marked by stronger antiviral and inflammatory signatures, 
+
+22 
+ 
+including interferon activity, cytokine peaks, and mast-cell activation—all of which drive 
+flu-like symptoms [35-39].  
+One possible interpretation is that, over time, these acute immune features diminish in at least 
+a subset of patients and are replaced by more chronic metabolic, autonomic, and vascular 
+dysfunctions [40-42]. Thus, the combination of higher estrogen-dependent immune reactivity 
+and shorter disease duration may predispose premenopausal women to more pronounced 
+flu-like symptoms, whereas postmenopausal women may show attenuated immune-driven 
+symptom expression due to both hormonal decline and longer disease chronicity. 
+In contrast, gastrointestinal symptoms and food intolerances were remarkably stable across 
+menopausal status. This stability suggests that gut-related pathology may represent a more 
+persistent and less hormonally responsive process. Current evidence indicates that once gut-
+barrier dysfunction is established—characterized by epithelial impairment, dysbiosis, and 
+microbial translocation—it may become self-sustaining through ongoing immune activation 
+and microbiome alterations. Menopause has been associated with long-lasting shifts in gut 
+microbiome composition, reduced microbial diversity, and persistent markers of barrier 
+dysfunction and microbial translocation [40, 43-46]. These findings support the possibility that 
+gut dysfunction may persist beyond menopausal transition and may be less sensitive to 
+hormonal modulation than immune-related symptoms. This may help explain why 
+gastrointestinal symptoms did not differ between pre- and postmenopausal women in our cohort 
+despite clear hormonal modulation of immune-related symptoms. 
+Our additional analyses revealed that disease duration modulated immune‑related symptoms 
+only in postmenopausal women. In this group, both flu‑like symptoms and susceptibility to 
+infections decreased with longer illness duration, whereas no such pattern was observed in 
+premenopausal women. This potentially aligns with the previously described notion that 
+immune‑driven symptoms are strongest in early disease stages and attenuate over time, 
+particularly once estrogen‑dependent immune amplification is lost. In contrast, gastrointestinal 
+symptoms and food intolerances increased with disease duration in both groups, indicating a 
+progressive and hormonally independent process consistent with persistent gut‑barrier 
+dysfunction. Together, these findings reinforce a dual‑process model in which immune‑related 
+symptoms are shaped by both hormonal status and disease stage, whereas Gut‑related 
+symptoms reflect a stable, chronic pathology that progresses irrespective of menopausal 
+transition. 
+
+23 
+ 
+Taken together, our findings suggest a dual-process model: immune-related symptoms are 
+dynamic and hormonally modulated, whereas Gut-related symptoms reflect a stable, structural 
+pathology that persists independently of menopausal status. This distinction may have 
+implications for personalized treatment strategies, highlighting the need to consider both 
+hormonal context and disease stage when interpreting symptom profiles in women with 
+ME/CFS. 
+The present findings also align with the broader symptom architecture identified in Studies 2 
+and 3 [9, 10]. 
+- Women: A multi-axis, interconnected system 
+Women show distinct Immune and Gut clusters, a coherent Autonomic cluster, a homogeneous 
+Brain/Brain2 cluster, and moderate correlations across clusters. 
+This pattern suggests a vagal–hormonal–inflammatory network, in which immune, 
+gastrointestinal, autonomic, and neurocognitive symptoms are interconnected but retain distinct 
+latent structures. Women exhibit a pattern of partially segregated but interconnected symptom 
+clusters, consistent with recent systems‑immunology and neuroendocrine research. 
+Contemporary work shows that women display more coherent yet distinctly modular immune 
+and gut signatures, shaped by estrogen‑dependent transcriptional programs and X‑linked 
+immune regulation [23, 47]. At the same time, multimodal analyses are consistent with 
+moderately correlated but structurally separable immune, metabolic, autonomic, and 
+neurocognitive modules, reflecting sex‑specific integration across inflammatory, hormonal, and 
+neurovisceral axes [48]. Neurocognitive domains in women also tend to form more 
+homogeneous clusters, consistent with hormone‑sensitive neuroimmune coupling [49]. 
+Together, these findings support the interpretation of a vagal–hormonal–inflammatory network 
+in which immune, gastrointestinal, autonomic, and brain‑related symptoms remain distinct in 
+their latent structure while being functionally linked through shared regulatory pathways. 
+- Men: A more integrated, sympathetic-driven system 
+Men show a Combined Gut/Immune cluster, an Autonomic cluster dominated by respiratory and 
+cardiovascular symptoms, and a more heterogeneous Brain/Brain2 cluster. 
+This pattern suggests a sympathetic–metabolic–vascular network, in which immune and 
+gastrointestinal symptoms are tightly coupled and interact strongly with autonomic 
+
+24 
+ 
+dysregulation. Recent neuroimmune and autonomic research supports the interpretation that 
+men exhibit a more integrated sympathetic–metabolic–vascular network, consistent with a 
+unified Combined Gut/Immune cluster and stronger coupling between immune and 
+gastrointestinal symptoms. Contemporary work demonstrates that sympathetic activation 
+tightly links metabolic stress, vascular tone, and inflammatory signaling, producing coherent 
+immune–gastrointestinal modules that interact strongly with autonomic dysregulation [50, 51]. 
+Parallel findings in gastrointestinal neuroimmune disorders show that immune and gut 
+pathways become increasingly synchronized under sympathetic dominance, reinforcing the 
+emergence of a single immune–gastrointestinal cluster [52]. Moreover, studies of the gut–
+immune–brain axis indicate that men display more heterogeneous neurocognitive patterns 
+alongside stronger immune–autonomic coupling, aligning with a more variable Brain/Brain2 
+cluster and a distinct autonomic cluster dominated by respiratory and cardiovascular symptoms 
+[53]. Together, these findings support a model in which immune, gastrointestinal, autonomic, 
+and neurocognitive symptoms in men are organized by a sympathetic–metabolic–vascular 
+architecture, producing tighter interconnections than those observed in women (Table 1). The 
+exploratory factor analysis further reinforces these sex-specific patterns. In women, as 
+described above, immune and gastrointestinal symptoms separated cleanly into two latent 
+factors, with moderate loadings for immune symptoms and stronger, more coherent loadings 
+for Gut symptoms. This structure indicates that immune and gastrointestinal domains represent 
+distinct but interconnected biological axes, consistent with a modular, vagal–hormonal–
+inflammatory architecture. In men, by contrast, all four symptoms loaded onto a single 
+integrated factor, reflecting a tightly coupled immune–gastrointestinal dimension. The high 
+cross domain correlations and unified factor structure support the interpretation that men exhibit 
+a sympathetic–metabolic–vascular pathway, in which immune vulnerability, gastrointestinal 
+dysregulation, and autonomic activation converge into one latent construct. Together, these 
+EFA findings align with the broader SEM results and underscore that the organization of 
+Immune and Gut symptoms in ME/CFS is fundamentally sex-dependent. 
+Clinical and methodological implications 
+Taken together, these results underscore the importance of sex-specific modeling in ME/CFS 
+research (Figure 3). Because symptom prevalence and mean factor scores are comparable 
+between sexes while the latent symptom architecture differs fundamentally, analyses that pool 
+men and women risk obscuring clinically relevant structural patterns. The findings therefore 
+provide a foundation for more nuanced diagnostic approaches and sex-tailored therapeutic 
+
+25 
+ 
+strategies that target the distinct neuroimmune–autonomic configurations observed in women 
+and men. 
+Clinical and translational implications 
+These findings have several implications: 
+(a) Sex-specific diagnostic patterns 
+Pre- and postmenopausal women may benefit from separate assessment of immune and 
+gastrointestinal symptoms. In men, these symptoms may represent a single underlying process. 
+Sex‑specific differences in symptomatology and immune function suggest that tailored 
+diagnostic assessment may increase diagnostic precision. In cardiology, sex‑specific 
+high‑sensitivity troponin thresholds have been shown to reduce underdiagnosis of myocardial 
+infarction in women and to identify high‑risk patients who would otherwise be missed [54-56]. 
+Up to now, sex‑specific differences in symptom patterns, immune and hormonal profiles in 
+ME/CFS are increasingly well documented [6, 57-59], but prospective studies demonstrating a 
+direct clinical benefit of sex‑stratified diagnostic pathways are still lacking.  
+ 
+ 
+ 
+ 
+
+26 
+ 
+ 
+Figure 3 Mechanistic model of sex-specific neuroimmune–autonomic pathways in ME/CFS 
+Illustration summarizing hypothesized biological mechanisms linking intestinal dysbiosis and 
+barrier dysfunction (often referred to as ‘Leaky Gut’) to immune activation and neuroimmune–
+autonomic symptom clustering in myalgic encephalomyelitis/chronic fatigue syndrome 
+(ME/CFS). The central panel (top) depicts increased intestinal permeability and microbial 
+translocation (lipopolysaccharides [LPS], cytokines) as initiating events. Left pathway 
+(women): LPS induced cytokine release activates vagal afferents and estrogen modulated 
+immune signaling, producing distinct Immune and Gut clusters mediated by a vagal–hormonal–
+inflammatory axis. Right pathway (men): the same inflammatory stimuli amplify sympathetic 
+activity, vascular stress, and metabolic dysregulation, generating a Combined Gut/Immune 
+cluster through a sympathetic–metabolic–vascular axis. Both pathways converge on 
+downstream Brain/Brain2 (neurocognitive) and Autonomic clusters, illustrating how peripheral 
+immune–gut processes interact with central regulation to form sex-dependent symptom 
+networks in ME/CFS (see middle panel below). 
+ 
+ 
+
+27 
+ 
+b) Potential biomarkers 
+The sex-specific symptom architectures identified in this study may also have implications for 
+biomarker research in ME/CFS. The distinct separation of immune and gastrointestinal 
+symptom clusters in women, compared with the integrated Combined Gut/Immune cluster 
+observed in men, suggests that different biological pathways may underlie symptom 
+organization across sexes and may therefore require sex-stratified biomarker approaches. 
+In women, biomarkers related to intestinal barrier dysfunction, microbiome composition, and 
+vagal–immune regulation may be particularly relevant. Potential candidates include short-chain 
+fatty acid (SCFA) profiles, markers of microbial translocation and intestinal permeability such 
+as zonulin, lipopolysaccharide-binding protein (LBP), and soluble CD14 (sCD14), as well as 
+estrogen-sensitive cytokine signatures and mast-cell–associated mediators. Because the female 
+symptom architecture was characterized by partially distinct but interconnected immune and 
+gastrointestinal domains, autonomic measures reflecting vagal regulation—particularly heart 
+rate variability (HRV)—may also provide useful indicators of neuroimmune integration. 
+In men, the tightly coupled Combined Gut/Immune cluster and stronger association with 
+autonomic dysregulation suggest that biomarkers related to sympathetic activation, vascular 
+stress, and metabolic dysfunction may be more informative. Potential candidates include 
+catecholamine-associated autonomic markers, sympathetic HRV indices, endothelial 
+dysfunction markers, inflammatory-metabolic stress markers, and immune profiles associated 
+with infection susceptibility or chronic low-grade inflammation. The stronger convergence of 
+immune and gastrointestinal symptoms in men may reflect a more integrated neuroimmune–
+metabolic response pattern. Altered natural killer cell function and immune dysregulation have 
+repeatedly been described in ME/CFS and may contribute to the immune-related symptom 
+architecture observed here [60}. 
+Importantly, these proposed biomarkers should be considered hypothesis-generating rather than 
+disease-specific indicators. Because the present study did not directly assess microbiome 
+composition, autonomic physiology, cytokine profiles, or intestinal permeability, the suggested 
+biomarker pathways remain inferential and require validation in multimodal longitudinal 
+studies. Future research integrating symptom-network analysis with immune, autonomic, 
+microbiome, metabolic, and vascular biomarkers may help identify biologically meaningful 
+sex-specific endophenotypes in ME/CFS. 
+
+28 
+ 
+(c) Therapeutic strategies 
+The present findings suggest that sex-specific symptom architectures in ME/CFS may also have 
+implications for the development of more individualized therapeutic approaches. Because 
+women and men showed fundamentally different patterns of immune–gastrointestinal coupling, 
+therapeutic strategies targeting neuroimmune, autonomic, and gastrointestinal pathways may 
+need to be adapted according to sex-specific biological organization. 
+In women, the separation of Immune and Gut clusters together with the broader vagal–
+hormonal–inflammatory pattern may indicate that interventions targeting gut-barrier integrity, 
+microbiome composition, and neuroimmune regulation could be particularly relevant. Potential 
+approaches may include microbiota-targeted interventions, dietary modulation, anti-
+inflammatory therapies, mast-cell–stabilizing strategies, and treatments aimed at improving 
+vagal regulation, such as breathing-based autonomic interventions or vagal nerve stimulation. 
+Because immune-related symptoms in women are consistent with a model in which these are 
+influenced by menopausal status and disease duration, hormonal context and disease stage may 
+be important considerations when evaluating therapeutic responses. 
+In men, the integrated Combined Gut/Immune cluster and stronger association with 
+sympathetic–metabolic–vascular dysregulation suggest that therapies targeting autonomic 
+imbalance, vascular function, and metabolic stress may warrant further investigation. Potential 
+approaches could include autonomic regulation strategies, breathing and pacing interventions, 
+treatments aimed at reducing sympathetic overactivation, vascular-supportive therapies, and 
+infection-related or immunomodulatory interventions in selected patients. The tighter coupling 
+between immune and gastrointestinal symptoms observed in men may indicate that combined 
+neuroimmune–metabolic interventions are particularly relevant in this subgroup. 
+Importantly, these proposed therapeutic implications remain exploratory and should not be 
+interpreted as evidence-based treatment recommendations. The present study did not directly 
+assess autonomic physiology, microbiome composition, inflammatory biomarkers, or treatment 
+responses. Consequently, the suggested therapeutic pathways are derived from symptom-
+network architecture and mechanistic interpretation rather than direct interventional evidence. 
+Nevertheless, the findings support the broader concept that ME/CFS may comprise biologically 
+distinct, sex-dependent neuroimmune–autonomic phenotypes that could benefit from more 
+stratified and personalized treatment approaches. 
+
+29 
+ 
+Future prospective studies combining symptom-network analysis with biological profiling and 
+longitudinal treatment outcomes may help determine whether sex-specific therapeutic strategies 
+improve clinical response, symptom burden, or disease progression in ME/CFS. 
+ 
+Limitations 
+Several limitations should be considered when interpreting these findings. First, menopausal 
+status was operationalized using an age-based cutoff (<50 vs. ≥50 years), which provides only 
+a proxy for biological menopausal transition and does not capture perimenopausal fluctuations, 
+hormonal variability, or the potential influence of hormone replacement therapy. Because 
+detailed menopausal information was not collected, classification into pre- and postmenopausal 
+groups remained approximate. 
+Second, the analyses relied on cross-sectional data, precluding conclusions about temporal 
+dynamics or causal relationships between hormonal status and symptom expression. The 
+identified latent variables therefore represent statistical symptom structures rather than directly 
+observed biological mechanisms. 
+Third, all symptoms were assessed via self-report and dichotomized prior to analysis. 
+Dichotomization reduces variance and may attenuate factor loadings, while self-report 
+measures are additionally susceptible to recall and reporting biases. Because each latent domain 
+was represented by only two indicators and the overall model included four binary items, the 
+factor analyses should be considered exploratory and hypothesis-driven. Accordingly, the 
+factor loadings are interpreted primarily as indicators of whether the observed symptom patterns 
+are consistent with the proposed latent structure, rather than as precise estimates of underlying 
+biological processes. 
+Fourth, confirmatory factor analyses (CFA) and SEM were estimated using maximum 
+likelihood (ML) in Stata 12.0 because categorical estimators such as WLSMV were not 
+available in the software version used. Given the binary nature of the indicators, ML estimation 
+may produce biased standard errors and fit indices. However, supplementary analyses based on 
+tetrachoric correlations and cross-validation suggested that the latent structure was reasonably 
+robust. 
+
+30 
+ 
+Fifth, subgroup sample sizes, while adequate for the primary analyses, limited statistical power 
+to detect subtle structural differences between pre- and postmenopausal women and prevented 
+formal tests of measurement invariance across groups. 
+Finally, no biological markers were collected. Consequently, proposed mechanisms involving 
+autonomic regulation, microbiome alterations, inflammatory pathways, or related physiological 
+processes remain inferential and should be regarded as hypothesis-generating. In addition, the 
+analyses focused on a relatively restricted set of immune-related and gastrointestinal symptoms; 
+broader symptom domains such as autonomic, neurological, or musculoskeletal symptoms may 
+reveal additional menopausal effects not captured in the present study. 
+ 
+Conclusions 
+Immune and gastrointestinal symptoms in ME/CFS demonstrate fundamentally different 
+clustering patterns in women and men. Women exhibit two partially separable symptom 
+clusters, whereas men show a more integrated symptom architecture. These sex-specific 
+patterns may reflect divergent neuroimmune–autonomic mechanisms and support the 
+assumption that biological sex substantially shapes symptom organization in ME/CFS. 
+Accordingly, the present findings provide further support for the development of sex-sensitive 
+diagnostic frameworks, mechanistic models, and therapeutic approaches. In combination with 
+Studies 1–3, the current results contribute to an emerging translational model of ME/CFS as a 
+sex-modulated neuroimmune–autonomic disorder characterized by distinct immunological and 
+gastrointestinal symptom trajectories. 
+Furthermore, our findings indicate that menopausal status selectively modulates immune-
+related symptom expression, whereas gastrointestinal symptoms remain remarkably stable 
+across pre- and postmenopausal women. Flu-like symptoms were more prevalent in 
+premenopausal participants, consistent with evidence for estrogen-dependent amplification of 
+antiviral and pro-inflammatory immune pathways as well as the heightened neuroimmune 
+reactivity typically associated with earlier or more active disease stages. By contrast, food 
+intolerances and related gastrointestinal symptom patterns did not differ significantly between 
+pre- and postmenopausal groups. This observation may support the hypothesis that 
+gastrointestinal manifestations in ME/CFS are linked to persistent alterations of intestinal 
+
+31 
+ 
+barrier integrity and gut–immune interactions that, once established, become relatively chronic 
+and less dependent on hormonal status. 
+Taken together, these findings support a dual-process model in which immune-related 
+symptoms appear comparatively dynamic and hormonally modulated, whereas gastrointestinal 
+symptoms may represent a more stable and self-perpetuating pathophysiological process. The 
+apparent dissociation between immune and gastrointestinal symptom trajectories further 
+suggests that partially distinct biological mechanisms contribute to symptom persistence in 
+ME/CFS. Recognizing these differential trajectories may improve clinical phenotyping, 
+facilitate stratification in future research, and support the development of more targeted and 
+individualized therapeutic interventions, particularly for women across different hormonal 
+stages. 
+Several limitations should nevertheless be considered. The cross-sectional design precludes 
+causal inference regarding the temporal relationship between hormonal changes and symptom 
+development. In addition, menopausal status was assessed categorically rather than through 
+direct hormonal measurements, and symptom data relied on self-report measures. Future 
+longitudinal studies integrating endocrine, immunological, autonomic, and microbiome-related 
+biomarkers will be important to further clarify the mechanistic interplay between sex hormones, 
+neuroimmune regulation, and gastrointestinal dysfunction in ME/CFS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+32 
+ 
+Acknowledgements 
+The authors would like to thank all study participants who gave us their time to participate in 
+the study. Many thanks also to the ME/CFS patient organizations and the two ME/CFS centers 
+in Berlin and Munich for forwarding the call for participation in the study and to the state 
+parliament of Baden-Württemberg for partially funding the study (AZ: M57-5434-9/2). 
+Author’s Contributions  
+(1) LHH contributed to the development and conception of the research project, the 
+preparation, collection, procurement, and provision of the data, the analysis and 
+interpretation of the data, the review of the sources, the conclusions drawn from these 
+findings, and the writing of the manuscript. 
+(2) LMH contributed to the preparation, provision, and interpretation of the data. 
+ 
+Funding 
+The survey of ME/CFS patients underlying this publication was partially funded by the Ministry 
+of Social Affairs, Health and Integration using state funds approved by the Baden-Württemberg 
+State Parliament (file number: M57-5434-9/2). All subsequent studies based on this survey, 
+including the present study, were not funded. 
+Data availability 
+All data supporting the results of this study are included in the article or can be requested from 
+the corresponding author. 
+ 
+Declarations 
+Ethic approval 
+This study was conducted in 2022 in accordance with the Declaration of Helsinki and approved 
+by the Ethics Committee of Furtwangen University, Germany (application number: 22-057). 
+Consent for publication 
+Not applicable 
+Consent to participate & written Consent for publication  
+
+33 
+ 
+All participants were fully informed about the objectives and procedure before the study began 
+and gave their written consent to participate. See Information and declaration of consent in the 
+"Supplementary files" section 
+Code availability 
+Not applicable. 
+Additional Notes 
+The translation from German was supported by www.DeepL.com/Translator (free version).  
+Furthermore, we would like to thank the AI tool ChatGPT (OpenAI) for language editing and 
+wording optimization in individual sections under human guidance. All ideas, data and 
+interpretations originate from the authors. 
+Conflicts of interest 
+The corresponding author declares on behalf of all authors that there is no conflict of interest. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+34 
+ 
+References 
+1. Dudova D, Bozhkova M, Petrov S, Nikolova R, Kalfova T, Ivanovska M, et al. 
+Insights into the complex biological network underlying myalgic 
+encephalomyelitis/chronic fatigue syndrome. Int J Mol Sci. 2026;27(1):268. 
+https://doi.org/10.3390/ijms27010268 
+2. Scheibenbogen C, Wirth K. Key pathophysiological role of skeletal muscle 
+disturbance in post COVID and myalgic encephalomyelitis/chronic fatigue syndrome 
+(ME/CFS): accumulated evidence. J Cachexia Sarcopenia Muscle. 2025;16:e13669. 
+https://doi.org/10.1002/jcsm.13669  
+3. Sandoval A, Li M, Jason LA. Two neurocognitive domains identified for patients with 
+myalgic encephalomyelitis/chronic fatigue syndrome and post-acute sequelae of 
+COVID-19. Front Neurol. 2025;16:1612548. 
+https://doi.org/10.3389/fneur.2025.1612548  
+4. Ryabkova VA, Rubinskiy AV, Marchenko VN, Trofimov VI, Churilov LP. Similar 
+patterns of dysautonomia in myalgic encephalomyelitis/chronic fatigue and post-
+COVID-19 syndromes. Pathophysiology. 2024;31:1-17. 
+https://doi.org/10.3390/pathophysiology31010001  
+5. Cliff JM, King EC, Lee JS, Sepúlveda N, Wolf AS, Kingdon C, et al. Cellular immune 
+function in myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS). Front 
+Immunol. 2019;10:796. https://doi.org/10.3389/fimmu.2019.00796  
+6. Wirth K, Scheibenbogen C. A unifying hypothesis of the pathophysiology of myalgic 
+encephalomyelitis/chronic fatigue syndrome (ME/CFS): recognitions from the finding 
+of autoantibodies against ß2-adrenergic receptors. Autoimmun Rev. 
+2020;19(6):102527. https://doi.org/10.1016/j.autrev.2020.102527 
+7. Marks DF. Converging evidence of similar symptomatology of ME/CFS and PASC 
+indicating multisystemic dyshomeostasis. Biomedicines. 2023;11(1):180. 
+https://doi.org/10.3390/biomedicines11010180  
+8. Habermann-Horstmeier L, Horstmeier LM. Symptome der myalgischen 
+Enzephalomyelitis/des chronischen Fatigue-Syndroms (ME/CFS) im 
+Krankheitsverlauf. [Symptoms of myalgic encephalomyelitis/chronic fatigue 
+syndrome (ME/CFS) throughout the course of the disease]. Präv Gesundheitsf. 2025. 
+https://doi.org/10.1007/s11553-025-01280-x 
+9. Habermann-Horstmeier L, Horstmeier LM. Symptom clusters in ME/CFS reflect 
+distinct neuroimmune and autonomic pathophysiological mechanisms: a translational 
+model. J Transl Med. 2026;24:606. https://doi.org/10.1186/s12967-026-08159-1 
+10. Habermann-Horstmeier L, Horstmeier LM. Sex-specific differences in 
+neurocognitive-sensory and autonomic ME/CFS symptomatology: evidence from 
+structural equation modeling with implications for a pathophysiological model. Under 
+review at Bull Natl Res Cent. 
+11. Klein SL, Flanagan KL. Sex differences in immune responses. Nat Rev Immunol. 
+2016;16(10):626-638. https://doi.org/10.1038/nri.2016.90 
+12. Seton KA, Defernez M, Telatin A, Tiwari SK, Savva GM, Hayhoe A, et al. 
+Investigating antibody reactivity to the intestinal microbiome in severe myalgic 
+encephalomyelitis/chronic fatigue syndrome (ME/CFS): a feasibility study. Int J Mol 
+Sci. 2023;24(20):15316. https://doi.org/10.3390/ijms242015316  
+13. Seton KA, Carding SR. Profiling antibody reactivity to gut microbes in ME/CFS 
+patients. In: Tate W, Peppercorn K, editors. Myalgic encephalomyelitis/chronic 
+fatigue syndrome (ME/CFS). Methods Mol Biol. 2025;2920. New York: Humana; 
+2025. https://doi.org/10.1007/978-1-0716-4498-0_16  
+
+35 
+ 
+14. Aburto MR, Cryan JF. Gastrointestinal and brain barriers: unlocking gates of 
+communication across the microbiota–gut–brain axis. Nat Rev Gastroenterol Hepatol. 
+2024;21:222-247. https://doi.org/10.1038/s41575-023-00890-0  
+15. Stallmach A, Quickert S, Puta C, Reuken PA. The gastrointestinal microbiota in the 
+development of ME/CFS: a critical view and potential perspectives. Front Immunol. 
+2024;15:1352744. https://doi.org/10.3389/fimmu.2024.1352744  
+16. Sharma P, Guo A, Poudel S, et al. Early methionine availability attenuates T cell 
+exhaustion. Nat Immunol 2025;26:1384–1396. https://doi.org/10.1038/s41590-025-
+02223-6  
+17. Nowak TJ, Muehlenbein MP. Toward understanding sexual immune dimorphism in 
+humans. Front Immunol. 2025;16:1570565. 
+https://doi.org/10.3389/fimmu.2025.1570565  
+18. Rio P, Caldarelli M, Miccoli E, Guazzarotti G, Gasbarrini A, Gambassi G, et al. Sex 
+differences in immune responses to infectious diseases: the role of genetics, hormones, 
+and aging. Diseases. 2025;13(6):179. https://doi.org/10.3390/diseases13060179 
+19. Mauvais-Jarvis F, Bairey Merz N, Barnes PJ, Brinton RD, Carrero JJ, DeMeo DL, et 
+al. Sex and gender: modifiers of health, disease, and medicine. Lancet. 
+2020;396(10250):565-582. https://doi.org/10.1016/S0140-6736(20)31561-0 
+20. Giloteaux L, Goodrich JK, Walters WA, Levine SM, Ley RE, Hanson MR. Reduced 
+diversity and altered composition of the gut microbiome in individuals with myalgic 
+encephalomyelitis/chronic fatigue syndrome. Microbiome. 2016;4(1):30. 
+https://doi.org/10.1186/s40168-016-0171-4 
+21. Prylińska-Jaśkowiak M, Tabisz H, Kujawski S, et al. The gut microbial composition is 
+different in chronic fatigue syndrome than in healthy controls. Sci Rep. 
+2025;15:33075. https://doi.org/10.1038/s41598-025-16438-y  
+22. Di Vincenzo F, Del Gaudio A, Petito V, Lopetuso LR, Scaldaferri F. Gut microbiota, 
+intestinal permeability, and systemic inflammation: a narrative review. Intern Emerg 
+Med. 2024;19(2):275-293. https://doi.org/10.1007/s11739-023-03374-w 
+23. Hoffmann JP, Liu JA, Seddu K, Klein SL. Sex hormone signaling and regulation of 
+immune function. Immunity. 2023;56(11):2472-2491. 
+https://doi.org/10.1016/j.immuni.2023.10.008 
+24. Straub RH, Wiest R, Strauch UG, Härle P, Schölmerich J. The role of the sympathetic 
+nervous system in intestinal inflammation. Gut. 2006;55(11):1640-1649. 
+https://doi.org/10.1136/gut.2006.091322 
+25. Wan Y, Cao C, Zeng W. The sympathetic neurons in the gut: perspectives on 
+metabolic and immune health and diseases. Curr Opin Neurobiol. 2025;93:103051. 
+https://doi.org/10.1016/j.conb.2025.103051 
+26. Mihăiluță F, Chioașcă TP, Onofrei A, Chelmu Vodă C, Baltă AAȘ, Arghir OC, et al. 
+The vulnerable vascular network: endothelial dysfunction as a central driver of 
+intestinal inflammation—a systematic review. Biomedicines. 2025;13(11):2690. 
+https://doi.org/10.3390/biomedicines13112690 
+27. Kovats S. Estrogen receptors regulate innate immune cells and signaling pathways. 
+Cell Immunol. 2015;294(2):63-69. https://doi.org/10.1016/j.cellimm.2015.01.018  
+28. Oertelt-Prigione S. The influence of sex and gender on the immune response. 
+Autoimmun Rev. 2012;11(6-7):A479-A485. 
+https://doi.org/10.1016/j.autrev.2011.11.022 
+29. Vegeto E, Benedusi V, Maggi A. Estrogen anti-inflammatory activity in brain: a 
+therapeutic opportunity for menopause and neurodegenerative diseases. Front 
+Neuroendocrinol. 2008;29(4):507-519. https://doi.org/10.1016/j.yfrne.2008.04.001 
+30. Straub RH. The complex role of estrogens in inflammation. Endocr Rev. 
+2007;28(5):521-574. https://doi.org/10.1210/er.2007-0001 
+
+36 
+ 
+31. Zierau O, Zenclussen AC, Jensen F. Role of female sex hormones, estradiol and 
+progesterone, in mast cell behavior. Front Immunol. 2012;3:169. 
+https://doi.org/10.3389/fimmu.2012.00169 
+32. Theoharides TC, Alysandratos KD, Angelidou A, Delivanis DA, Sismanopoulos N, 
+Zhang B, et al. Mast cells and inflammation. Biochim Biophys Acta. 2012;1822(1):21-
+33. https://doi.org/10.1016/j.bbadis.2010.12.014 
+33. Zaitsu M, Narita S, Lambert KC, Grady JJ, Estes DM, Curran EM, et al. Estradiol 
+activates mast cells via a non-genomic estrogen receptor-alpha and calcium influx. 
+Mol Immunol. 2007;44(8):1977-1985. https://doi.org/10.1016/j.molimm.2006.09.030 
+34. Dantzer R, O'Connor JC, Freund GG, Johnson RW, Kelley KW. From inflammation 
+to sickness and depression: when the immune system subjugates the brain. Nat Rev 
+Neurosci. 2008;9(1):46-56. https://doi.org/10.1038/nrn2297 
+35. Shahbaz S, Osman M, Syed H, et al. Integrated immune, hormonal, and transcriptomic 
+profiling reveals sex-specific dysregulation in long COVID patients with ME/CFS. 
+Cell Rep Med. 2025;6(11):102449. https://doi.org/10.1016/j.xcrm.2025.102449 
+36. Hornig M, Montoya JG, Klimas NG, Levine S, Felsenstein D, Bateman L, et al. 
+Distinct plasma immune signatures in ME/CFS are present early in the course of 
+illness. Sci Adv. 2015;1(1):e1400121. https://doi.org/10.1126/sciadv.1400121 
+37. Montoya JG, Holmes TH, Anderson JN, Maecker HT, Rosenberg-Hasson Y, Valencia 
+IJ, et al. Cytokine signature associated with disease severity in chronic fatigue 
+syndrome patients. Proc Natl Acad Sci U S A. 2017;114(34):E7150-E7158. 
+https://doi.org/10.1073/pnas.1710519114 
+38. Blomberg J, Gottfries CG, Elfaitouri A, Rizwan M, Rosén A. Infection elicited 
+autoimmunity and myalgic encephalomyelitis/chronic fatigue syndrome: an 
+explanatory model. Front Immunol. 2018;9:229. 
+https://doi.org/10.3389/fimmu.2018.00229 
+39. Komaroff AL, Lipkin WI. Insights from myalgic encephalomyelitis/chronic fatigue 
+syndrome may help unravel the pathogenesis of postacute COVID-19 syndrome. 
+Trends Mol Med. 2021;27(9):895-906. https://doi.org/10.1016/j.molmed.2021.06.002  
+40. Ley D, Saha S. Menopause and gastrointestinal health and disease. Nat Rev 
+Gastroenterol Hepatol. 2025;22:556-569. https://doi.org/10.1038/s41575-025-01075-7 
+41. Giefing-Kröll C, Berger P, Lepperdinger G, Grubeck-Loebenstein B. How sex and age 
+affect immune responses, susceptibility to infections, and response to vaccination. 
+Aging Cell. 2015;14(3):309-321. https://doi.org/10.1111/acel.12326 
+42. Gameiro CM, Romão F, Castelo-Branco C. Menopause and aging: changes in the 
+immune system—a review. Maturitas. 2010;67(4):316-320. 
+https://doi.org/10.1016/j.maturitas.2010.08.003  
+43. Saleem I, Waseem H, Jamal M, Zulfiqar Ali H, Amin R, Naz S, et al. Association of 
+gut dysbiosis with hormonal imbalance in perimenopausal women. JHWCR. 
+2026;4(7):1-12. https://doi.org/10.61919/svr7y536   
+44. Fang J, He X, Zhou J. Multi-site microbiota crosstalk in the postmenopausal period: 
+from dysbiosis mechanisms to precision interventions. Front Microbiol. 
+2026;17:1702700. https://doi.org/10.3389/fmicb.2026.1702700 
+45. Peters BA, Hanna DB, Xue X, Weber K, Appleton AA, Kassaye SG, et al. Menopause 
+and estrogen associations with gut barrier, microbial translocation, and immune 
+activation biomarkers in women with and without HIV. J Acquir Immune Defic 
+Syndr. 2024;96(3):214-222. https://doi.org/10.1097/QAI.0000000000003419  
+46. Peters BA, Santoro N, Kaplan RC, Qi Q. Spotlight on the gut microbiome in 
+menopause: current insights. Int J Womens Health. 2022;14:1059-1072. 
+https://doi.org/10.2147/IJWH.S340491  
+
+37 
+ 
+47. Chaulagain S, Liu JA, McCombs JE, et al. Sex differences in immune responses to 
+viruses, bacteria and vaccines. Nat Immunol. 2026;27:660-673. 
+https://doi.org/10.1038/s41590-026-02470-1  
+48. Escrivà-Font J, Cao T, Rosat Consiglio C. Decoding sex differences in human 
+immunity through systems immunology. Oxford Open Immunol. 2025;6(1):iqaf006. 
+https://doi.org/10.1093/oxfimm/iqaf006  
+49. Roy S, Banerjee D, Banerjee A, et al. Sex hormones and gender differences in 
+immune responses and anticancer immunity: a comprehensive review. Biol Futura. 
+2026;77:1-27. https://doi.org/10.1007/s42977-025-00291-1  
+50. Jacobson A, Yang D, Vella M, Chiu IM. The intestinal neuro-immune axis: crosstalk 
+between neurons, immune cells, and microbes. Mucosal Immunol. 2021;14(3):555-
+565. https://doi.org/10.1038/s41385-020-00368-1  
+51. Martinez-Sanchez N, Sweeney O, Sidarta-Oliveira D, Caron A, Stanley SA, 
+Domingos AI. The sympathetic nervous system in the 21st century: neuroimmune 
+interactions in metabolic homeostasis and obesity. Neuron. 2022;110(21):3597-3626. 
+https://doi.org/10.1016/j.neuron.2022.10.017  
+52. Pace LA, Kong N, Itani MI, et al. The neuroimmune axis in gastrointestinal 
+disorders—an underrecognized problem. Curr Gastroenterol Rep. 2025;27:28. 
+https://doi.org/10.1007/s11894-025-00973-9 
+53. O'Riordan KJ, Moloney GM, Keane L, Clarke G, Cryan JF. The gut microbiota-
+immune-brain axis: therapeutic implications. Cell Rep Med. 2025;6:101982. 
+https://doi.org/10.1016/j.xcrm.2025.101982  
+54. Shah ASV, Griffiths M, Lee KK, et al. High sensitivity cardiac troponin and the 
+under-diagnosis of myocardial infarction in women: prospective cohort study. BMJ. 
+2015;350:g7873. https://doi.org/10.1136/bmj.g7873  
+55. Mehta LS, Beckie TM, DeVon HA, et al. Acute myocardial infarction in women: a 
+scientific statement from the American Heart Association. Circulation. 
+2016;133(9):916-947. https://doi.org/10.1161/CIR.0000000000000351  
+56. Anand A, et al. HiSTORIC Investigators. High-sensitivity cardiac troponin on 
+presentation to rule out myocardial infarction: a stepped-wedge cluster randomized 
+controlled trial. Circulation. 2021;143(23):2214-2224. 
+https://doi.org/10.1161/CIRCULATIONAHA.120.052380  
+57. Loebel M, Grabowski P, Heidecke H, Bauer S, Hanitsch LG, Wittke K, et al. 
+Antibodies to β-adrenergic and muscarinic cholinergic receptors in patients with 
+chronic fatigue syndrome. Brain Behav Immun. 2016;52:32-39. 
+https://doi.org/10.1016/j.bbi.2015.09.013  
+58. Kedor C, Freitag H, Meyer-Arndt L, et al. A prospective observational study of post-
+COVID-19 chronic fatigue syndrome following the first pandemic wave in Germany 
+and biomarkers associated with symptom severity. Nat Commun. 2022;13:5104. 
+https://doi.org/10.1038/s41467-022-32507-6  
+59. Jason LA, Sunnquist M, Brown A, Evans M, Vernon SD, Furst J, et al. Examining 
+case definition criteria for chronic fatigue syndrome and myalgic encephalomyelitis. 
+Fatigue. 2014;2(1):40-56. https://doi.org/10.1080/21641846.2013.862993  
+60. Brenu E, van Driel ML, Staines DR, et al. Immunological abnormalities as potential 
+biomarkers in chronic fatigue syndrome/myalgic encephalomyelitis. J Transl Med. 
+2011;9:81. https://doi.org/10.1186/1479-5876-9-81  
+ 
+ 
+ 
+
+Supplementary Files
+This is a list of supplementary files associated with this preprint. Click to download.
+CalculationsCombinedImmuneGutImmuneandGut.docx
+ResultsPostmenopausalAgeinImmuneaundGut.docx
+ResultswithtrainigdataImmuneGut.docx
+ResultswithtrainigdataGut.docx
+ResultswithtrainingdataImmune.docx
