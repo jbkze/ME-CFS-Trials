@@ -1,0 +1,1134 @@
+iPSC-Derived Myogenic Progenitor Cells from People with
+ME/CFS Reveal Altered Genes and Pathways with Drug
+Repurposing Potential
+Dao Nguyen 
+School of Medicine, Deakin University https://orcid.org/0000-0002-2412-0408
+Research Article
+Keywords: Myalgic Encephalomyelitis, Chronic fatigue syndrome, patient-derived iPSC, muscle, RNA sequencing, pathway
+enrichment, drug repurposing, treatment
+Posted Date: June 16th, 2026
+DOI: https://doi.org/10.21203/rs.3.rs-10015511/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.   Read Full License
+Additional Declarations: The authors declare no competing interests.
+Page 1/27
+
+Abstract
+Background
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a debilitating multisystem disorder characterised by
+profound fatigue, post-exertional malaise, muscle pain and weakness. Although skeletal muscle abnormalities and
+mitochondrial alterations have been reported in people with ME/CFS, the underlying biological processes remain poorly
+understood, and no validated disease models, biomarkers or effective treatments are currently available. This study used
+patient-derived induced pluripotent stem cell (iPSC) myogenic progenitor (MP) cells to investigate intrinsic transcriptomic
+abnormalities in ME/CFS and identify potential drug repurposing candidates.
+Methods
+MP cells were generated from iPSCs derived from people with ME/CFS and healthy controls, and successfully
+characterised. Global mRNA sequencing was performed to compare transcriptomic profiles between ME/CFS and control
+MP cells (n = 6 ME/CFS; n = 7 controls). Differentially expressed genes and pathways were identified, followed by drug
+repurposing analysis using the Library of Integrated Network-based Cellular Signatures drug database (LINCS2) and
+supporting literature review.
+Results
+RNA sequencing identified seven differentially expressed genes at adjusted p < 0.05, including MIR205HG, FEZF1, HLA-DMB,
+SLC1A2, SYT13, GALNT4, and SLC2A14. Pathway analysis identified 73 differentially expressed pathways, of which 96%
+were downregulated in ME/CFS MP cells. Downregulated pathways included those involved in cell cycle regulation, DNA
+replication, mismatch repair, immune response and muscle cytoskeleton regulation-related pathways. In contrast,
+upregulated pathways were associated with metabolic reprogramming, including increased reliance on branched-chain
+amino acids for energy production. These findings suggest intrinsic abnormalities in ME/CFS-derived MP cells, particularly
+involving metabolic regulation, mitochondrial function and muscle-related cellular processes. Based on the differentially
+expressed genes, LINCS2-based drug repurposing analysis and literature review identified 22 candidate drugs with
+potential relevance to ME/CFS. These included safe and widely available agents such as leflunomide, melatonin and
+midodrine, which target pathways related to antiviral defence, immunomodulation, neurotransmitter modulation, autonomic
+regulation and vascular function.
+Conclusions
+Patient-derived iPSC-MP cells provide a useful model for investigating intrinsic skeletal muscle-related abnormalities in
+ME/CFS. Transcriptomic profiling revealed altered pathways related to cell cycle regulation, immune function, cytoskeletal
+organisation and energy metabolism, supporting the involvement of mitochondrial and metabolic dysfunction in ME/CFS
+pathobiology. Drug repurposing analysis identified several clinically relevant candidates that may warrant further functional
+validation as potential therapeutic options for ME/CFS.
+Introduction
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a chronic disease known to affect around 67 million
+people worldwide [1]. ME/CFS affects the quality of life of both patients and their caregivers, and imposes a significant
+economic burden estimated to cost up to US$362 billion annually in the USA [2] and up to $14 billion in Australia [3].
+However, approximately 84–91% of individuals with ME/CFS remain undiagnosed, largely due to the diagnostic complexity
+Page 2/27
+
+of the condition, heterogeneity, overlap with other disorders, the absence of validated biomarkers and effective treatments
+that incentivise help seeking [4]. Despite decades of research, there are still no approved drug treatments, biomarkers, or
+clinical practice guidelines for ME/CFS [5].
+Post-exertional malaise (PEM) is recognised as a hallmark of ME/CFS [6]. Muscle pain (myalgia) and weakness, which can
+worsen for several days following even minor physical exertion, are common and are often reported to be more disabling
+than the fatigue itself [7]. Reduction of hand grip strength and quadricep strength are frequently observed in ME/CFS
+patients and correlate with the severity of disease progression [8, 9]. MRI, electron imaging and histology studies have
+shown damage to skeletal muscle, mitochondrial dysfunction and an increase in anaerobic metabolism in skeletal muscle
+of ME/CFS patients [6, 10, 11]. While identifying specific molecular targets for ME/CFS remains an ideal goal, it has been
+largely elusive and target-based drug discovery in ME/CFS has yet to translate into successful clinical treatments [12].
+Cells derived from induced pluripotent stem cells (iPSCs) retain the genetic information of the original donor [13], enabling
+the identification of genetic signatures and pathway alterations that may distinguish patients and healthy cohorts, and
+which can facilitate the discovery of disease biomarkers and accelerate the development of new therapeutic approaches
+through drug repurposing and drug discovery. Gene expression signatures (GES) obtained via RNA sequencing from iPSC-
+derived cells have been successfully used to identify biomarkers and screen potential drug candidates for
+neurodegenerative diseases such as Alzheimer’s disease and frontotemporal dementia [14, 15], as well as major
+depressive disorder [16, 17], for which primary cells are difficult or impossible to obtain. One of the key advantages of using
+iPSC-derived cells is that transcriptomic data from RNA-sequencing of these cells can allow us to bypass the lack of known
+pathophysiological mechanisms to identify potential novel therapeutics [18]. When combined with drug databases,
+transcriptomic profiles enable the screening of drugs that may reverse the gene expression differences observed between
+cells derived from patients and healthy controls. Drug repurposing candidates include those that are generally already
+approved or undergoing clinical trials, with established mechanisms of action and known safety profiles. This approach
+significantly shortens the timeline for therapeutic development, which is typically lengthy and uncertain in conventional
+drug discovery. Thus, iPSC-derived cells from ME/CFS patients and healthy donors can serve as a powerful tool for
+uncovering disease-specific gene expression signatures in muscle cells and identifying targeted drug candidates capable
+of reversing transcriptomic abnormalities in muscle cells of people with ME/CFS.
+The present study is the first to use induced pluripotent stem cell - derived myogenic progenitors (iPSC-MPs) generated
+from blood samples collected from both people with ME/CFS and healthy controls. The aim is to discover gene and
+pathway signatures associated with the disease, and to identify transcriptomic targeted drug candidates for repurposing
+based on the alignment of data from transcriptomic signatures, the LINCS2 drug database, and literature review. Findings
+from this study will contribute to advancing drug repurposing efforts, bolster the translational potential of identified
+approved drugs, and add to the development of diagnostic biomarkers and novel therapeutic strategies for ME/CFS.
+Methods details
+This study received ethics approval from Barwon Health Human Research Ethics Committee (20/202) and Deakin
+University Human Research Ethics Committee (2021 − 165), Australia.
+Study design, participant recruitment and sample collection
+A case-control study was conducted at the School of Medicine, Deakin University, Australia. Thirteen participants, including
+six ME/CFS cases and seven healthy controls were recruited to donate blood samples for generating iPSCs. Potential
+participants with ME/CFS were identified through the Geelong ME/CFS Support Group and Emerge Australia. Control
+participants were recruited from the community via advertisement flyers. After a telephone screen, eligible participants
+were invited to join the study. Recruitment occurred between June 2021 and December 2023. Inclusion criteria included:
+aged 18 to 65 years, diagnosed with ME/CFS by an independent physician and fulfil the criteria for ME/CFS using the
+Page 3/27
+
+Canadian Consensus Criteria [19], and have the capacity to consent to and comply with study procedures. Participants
+currently under any form of therapy for ME/CFS needed to have been on that therapy for at least 4 weeks prior to
+enrolment. Exclusion criteria included known or suspected active and unstable systemic medical disorder, acute suicidality,
+current diagnosis of a psychotic disorder (including bipolar disorder, substance abuse/dependence, eating disorder, or
+personality disorder), or a diagnosis of epilepsy. Trained researchers conducted the screening assessments.
+Peripheral blood samples were collected from all participants by a trained nurse, processed to isolate peripheral blood
+mononuclear cells (PBMCs), and subsequently reprogrammed into iPSCs. The pluripotency of the iPSCs was validated
+using standard quality control assays. These cells were then differentiated into myogenic progenitor cells (MPs) and used
+for RNA sequencing, gene signature analysis, and in silico drug screening (Fig. 1).
+Hand Grip strength test
+Repeat hand grip strength was tested using a hand-held dynamometer. Participants were seated comfortably with their
+forearms resting on the arms of the chair and asked to squeeze the dynamometer for as long and as tightly as possible,
+then rest for 30 seconds and repeat another two times. The process was then repeated for the other hand.
+Karnofsky Performance Status Measurement
+The functional status of participants was assessed using the Australian-modified Karnofsky Performance Status (AKPS)
+scale, a validated instrument for quantifying a patient’s ability to carry out daily activities and self-care functions [20]. The
+AKPS score ranges from 100 (normal, no complaints or evidence of disease) to 0 (death), in 10-point increments reflecting
+progressive levels of disability. Participants were asked to describe their ability to perform routine work and personal
+activities, along with any limitations related to fatigue, pain, or other disabling symptoms. Scoring adhered to the original
+Karnofsky criteria, with adjustments where appropriate to reflect chronic illness populations, which were used to assess
+overall functional capacity. Lower scores among ME/CFS participants indicated greater disability, consistent with disease
+severity, whereas healthy controls were expected to score within the 80–100 range.
+Multidimensional Fatigue Scale assessment
+Fatigue severity and its impact on daily functioning were assessed using the Multidimensional Fatigue Scale (MFI), a
+validated instrument commonly used in chronic illness populations, including ME/CFS [21]. The MFI is a 20-item self-report
+questionnaire that evaluates the perceived impact of fatigue on five key domains: general fatigue, physical fatigue, reduced
+motivation, reduced activity, and mental fatigue. Respondents use a scale ranging from 1 to 7 to indicate how much they
+agree or disagree with certain statements regarding fatigue to represent their experiences. Scores were summed up to
+produce a total fatigue impact score (range: 0–84), with higher scores indicating greater fatigue-related impairment. The
+MFI assessment was administered either electronically or on paper, depending on participant preference and accessibility.
+PBMC isolation from participant blood samples and generation of iPSCs
+Peripheral blood samples were collected from participants using EDTA vacutainer tubes (Becton Dickinson Sciences).
+Samples were diluted 1:2 (v/v) with phosphate-buffered saline (PBS, Gibco) containing 2% fetal bovine serum (FBS, Gibco)
+and 2 mM EDTA (Invitrogen), then transferred to SepMate™-15 tubes (STEMCELL Technologies) preloaded with
+Lymphoprep (STEMCELL Technologies). Following centrifugation at 1,200 × g for 10 min at room temperature, the PBMC
+layer was collected and transferred to a fresh tube. PBMCs were washed once with wash buffer and centrifuged at 300 × g
+for 10 min. To remove residual erythrocytes, the cell pellet was briefly resuspended in ice-cold Milli-Q water, followed by an
+additional wash in wash buffer and centrifugation at 300 × g for 10 min. The resulting PBMC pellet was cultured in
+Page 4/27
+
+StemSpan™ SFEM II medium (STEMCELL Technologies) supplemented with StemSpan™ erythroid expansion supplement
+(STEMCELL Technologies). Reprogramming was performed using the Epi5™ Episomal iPSC Reprogramming Kit (Thermo
+Fisher Scientific) delivered via the Neon™ Transfection System (Thermo Fisher Scientific) according to the manufacturer’s
+instructions. Transduced cells were plated onto Geltrex™-coated (Gibco) culture dishes and maintained in complete
+mTeSR™ Plus medium (STEMCELL Technologies) with daily medium changes. Individual iPSC colonies with characteristic
+morphology were manually selected and expanded in Geltrex-coated flasks in complete mTeSR™ Plus medium. Passaging
+was performed using ReLeSR™ (STEMCELL Technologies). iPSCs at passages 5 and 10 were cryopreserved in liquid
+nitrogen for long-term storage. Characterisation of all iPSC lines was conducted between passages 10 and 12 to confirm
+pluripotency and genomic stability. Cell stocks were stored in liquid nitrogen for subsequent experiments.
+Karyotyping
+Cells at passages 10–12 were dissociated using TrypLE (Gibco), centrifuged at 300 x g for 5 min, and cell pellet was stored
+at -20°C until analysis. Karyotyping analysis was performed using the Illumina Infinium GSA-24 v3.0 array and aligned to the
+GRCh38/hg38 human reference genome (Dec 2013) (Victorian Clinical Genetics Services, VIC, Australia).
+Mycoplasma testing
+Mycoplasma contamination was assessed using the MycoAlert® Mycoplasma Detection Kit (Lonza Bioscience) following
+the manufacturer’s protocol. Cells were cultured in T25 flasks containing 8 mL of medium without a medium change for 48
+h. Subsequently, 1 mL of conditioned medium was collected for testing. Results were interpreted against assay negative
+and positive controls, with ratios < 0.9 indicating a negative result and > 1.2 indicating a positive result (Supplementary
+Table 1).
+Flow cytometry analysis
+Cells at passages 10–12 were harvested using TrypLE and stained with BD Horizon™ Fixable Viability Stain 570 (Becton
+Dickinson Sciences) for 15 min to assess viability. Then, cells were fixed with 4% paraformaldehyde (Thermo Fisher
+Scientific) for 15 min, followed by incubation with conjugated antibodies against CD9, SSEA4, and EPCAM for 30 min.
+Samples were analysed on a BD FACSCanto™ (Becton Dickinson Sciences).
+Pluripotency marker immunocytochemistry
+Cells were seeded into Geltrex-coated 24-well plates and grown to ~ 60% confluency. After washing with warm PBS, cells
+were fixed in 4% paraformaldehyde (ProSciTech) for 15 min at room temperature, permeabilised with 0.5% Triton X-100
+(Sigma-Aldrich) in PBS for 15 min and blocked with blocking buffer (3% bovine serum albumin (Sigma-Aldrich) in PBS) for 1
+h. Primary antibodies diluted in blocking solution were applied for 3 h at room temperature. Following three washes in PBS,
+cells were incubated with secondary antibodies diluted in blocking buffer for 1 h, then washed a further three times with
+PBS. Nuclei were counterstained with NucBlue® (Hoechst 33342; Invitrogen) during the final wash for 5 min. Imaging was
+performed using an EVOS M700 Imaging System (Thermo Fisher Scientific) with a 10x objective; images are unprocessed,
+with scale bars representing 275um.
+Germ layer differentiation
+Trilineage differentiation of iPSCs into ectoderm, mesoderm, and endoderm was performed using the STEMdiff™ Trilineage
+Differentiation Kit (STEMCELL Technologies). iPSCs were seeded on Matrigel-coated (Corning) plates in
+mesoderm/endoderm plating medium or ectoderm medium. After 24 h, lineage-specific STEMdiff™ medium was added,
+with daily medium changes until day 5 for mesoderm and endoderm or day 7 for ectoderm. Cells were passaged on day 5
+(mesoderm and endoderm) or day 7 (ectoderm) and cultured for a further 2 days. Cells were then fixed with 4%
+Page 5/27
+
+paraformaldehyde in PBS for immunofluorescence analysis or harvested in RLT buffer (Qiagen) for gene expression.
+Imaging was performed on an EVOS M700 Imaging System (Thermo Fisher Scientific,) using a 20× objective; images are
+unprocessed, with scale bars representing 150 µm.
+Proliferation
+Cells were seeded into 24-well plates coated with Geltrex and cultured for 72 hours in complete mTeSR™ Plus medium, with
+daily medium changes. Cells were harvested in QuickExtract DNA Extraction Solution (Biosearch Technologies), and gDNA
+was extracted according to the manufacturer’s instructions. Total DNA was quantified using a NanoDrop
+spectrophotometer (Thermo Fisher Scientific) at 0, 24, 48, and 72 hours. Analysis shows normalised values to 0h (total
+number of cells seeded = amount of DNA seeded in each well).
+RNA Extraction and quantitative PCR
+RNA was extracted using RNeasy® mini kits (Qiagen) and reverse-transcribed to produce cDNA using Maxima H Minus
+first strand cDNA synthesis kit (Thermo Fisher Scientific) following the manufacturer’s instructions. The Quant-iT™
+OliGreen® ssDNA Assay Kit (Invitrogen) was used to quantify the cDNA concentration in each sample as per the
+manufacturer’s instructions. Real-time quantitative PCR (qPCR) was used to measure the expression of specific genes, as
+shown in Supplementary Table 2. The experiments were performed on a QuantStudio 3 Real-time PCR system (Thermo
+Fisher Scientific), using the following protocol: 95° for 7 min, 40 cycles of 95° for 30s and 60° for 1 min followed by data
+acquisition, 60° for 30s, 55–95°, data acquisition and 20° for 10s. Gene expression data was quantified using the ΔΔCt
+method normalised to the measured cDNA concentration and housekeeping gene GAPDH expression levels, then
+categorised into ME/CFS and control groups.
+MP differentiation
+Myogenic progenitor (MP) cells were differentiated from iPSCs. Briefly, iPSCs were seeded at a density of 3.4 × 10⁶ cells
+per well in Matrigel-coated 6-well plates using DMEM/F-12 GlutaMAX (Gibco) supplemented with STEMdiff™ Myogenic
+Progenitor supplements A, B, C or D (STEMCELL Technologies). Media was changed daily as follows: Medium A (days 0–
+1), Medium B (days 2–3), Medium C (days 4–5), and Medium D (days 6–29). On day 29, MPs at passage 0 (P0) were
+passaged into P1 using TrypLE and collagenase (STEMCELL Technologies), then seeded at 1.92 x 105 cells per well in
+Matrigel-coated 6-well plates and cultured in DMEM (1000 mg/L D-Glucose; STEMCELL Technologies) supplemented with
+10% MyoCult™-SF Expansion 10X Supplement (STEMCELL Technologies). Y-27632 (10 µM; ROCK inhibitor, STEMCELL
+Technologies) was included only in the seeding medium immediately after passaging and was omitted from all subsequent
+medium changes. MPs at P1 were subsequently passaged to P2 using Accutase (Gibco), seeded at 9.6 × 104 cells per well
+in Matrigel-coated 6-well plates, and cultured in DMEM (1000 mg/L D-Glucose) supplemented with 10% MyoCult™-SF
+Expansion 10X Supplement. Cells were cryopreserved in CryoStor CS10 (STEMCELL Technologies) at P2 and stored in
+liquid nitrogen for downstream applications. Immunocytochemistry was performed on P2 MPs to characterise the
+progenitor markers MyoD and MyoG (as previously described).
+RNA sequencing
+Total RNA from iPSCs at passage 10–12 and MPs at passage 2 were harvested using TRIzol (Life Technologies) with
+Qiagen RNeasy column purification (Qiagen), following the manufacturers’ instructions. RNA-seq libraries were prepared
+using the Illumina Total RNA with Ribo-Zero Plus Library Prep Kit according to the manufacturer’s instructions. The
+sequencing was performed on the Illumina NovaSeq X platform, generating 150 bp paired-end reads with a depth of
+100 million reads per sample for whole transcriptome analysis.
+Differential gene expression analysis
+Raw sequencing data in FASTQ format were processed using the Galaxy Docker Image locally [22]. Quality control and
+adapter trimming of raw reads were performed using fastp [23]. Filtered reads were aligned to the human reference
+Page 6/27
+
+genome (GRCh38) using HISAT2 [24] in RF-stranded mode. Gene-level quantification was performed using featureCounts
+[25]. Gene expression counts were compiled into an m × n matrix, where m represents genes and n represents samples (n 
+= 13), for downstream differential expression analysis. Normalisation was performed using the median-of-ratios method
+implemented in the DESeq2 package in R [26]. Genes with low expression levels-defined as < 0.5 count per million (CPM) in
+more than 30% of samples-were excluded. Differential expression analysis was conducted using DESeq2, with significance
+determined by an adjusted p-value (false discovery rate, FDR) < 0.05, using the Benjamini-Hochberg correction for multiple
+testing. To account for unmeasured confounding variables, surrogate variable analysis was conducted using the sva
+package in R [27], applying the model formula: “~ Diagnosis + Sample Type”. Biological function information of differentially
+expressed genes was extracted from GeneCards® - The Human Gene Database (www.genecards.org). Raw sequencing
+data in FASTQ format were processed using the Galaxy Docker Image locally [22].
+Pathway enrichment analysis
+To identify biologically relevant pathways enriched among the differentially expressed genes, gene set enrichment analysis
+(GSEA) was performed using the clusterProfiler package in R. KEGG pathway annotations were used, and pathways with an
+adjusted p-value < 0.05 were considered significantly enriched. Gene Ontology (GO) annotations were also used to analyse
+the top pathways and their distribution across different biological categories. Visualisation of enriched pathways was
+conducted using the Cytoscape platform [28]. Nodes represented individual pathways, and a q-value threshold of 0.05 was
+applied to highlight the most significantly enriched pathways.
+In silico identification of drug repurposing candidates
+In silico drug repurposing was conducted using a subset of the top 100 up- and down-regulated genes based on false
+discovery rate (FDR). These genes were queried against the Library of Integrated Network-based Cellular Signatures
+(LINCS2) database using the signatureSearch [29] package in R. Compounds were ranked based on the normalised
+connectivity score (NCS), with lower NCS values indicating stronger inverse associations with the gene expression
+signature, suggesting potential to reverse disease-associated gene expression patterns. Compounds with a weighted
+connectivity score (WTCS) FDR < 0.05 were further investigated.
+To prioritise drug candidates for repurposing, a literature review was performed on the top-ranking compounds. Exclusion
+criteria included investigational drugs, agents with black box warnings, veterinary medications, topical treatments, and
+cytotoxic chemotherapy agents. This filtering ensured that shortlisted drugs had the highest translational potential for safe
+repurposing in the targeted disease context.
+Statistical analysis
+Differential gene expression, pathway enrichment and drug in silico identification analyses were described above. qPCR
+results were analysed using the ΔΔCt method and normalised to cDNA concentration, then categorised into ME/CFS and
+control groups. Participants’ clinical parameters, gene expression levels, and proliferation assay results were recorded and
+grouped accordingly. Multiple t-test was used to assess data normality and Mann-Whitney u-test was applied to non-
+normally distributed data statistical comparisons. These analyses were performed using GraphPad Prism version 10.3.1.
+Results
+Clinical and demographic information and statistical analysis of participant information are in Table 1. Thirteen female
+participants were included (ME/CFS: n = 6; healthy controls: n = 7). Mean age did not differ between groups (ME/CFS 48.2 ± 
+16.2 years; controls 45.5 ± 8.4 years; p = 0.58); age ranges were 29–65 and 35–57 years, respectively. Patients with
+ME/CFS had a mean Karnofsky Performance Score of 58.0 ± 11.0 and a MFI of 81.2 ± 5.1 (control values not collected).
+Hand grip strength was lower in the ME/CFS group (23.5 ± 10.4) compared with controls (32.6 ± 7.6), with a significant
+between-group difference (p = 0.001).
+Page 7/27
+
+Table 1
+Participant information.
+Age
+ME/CFS
+(n = 6)
+Healthy control
+(n = 7)
+p
+48.2 ± 16.2
+45.5 ± 8.4
+0.58
+Age range
+29–65
+35–57
+ 
+Gender (M/F)
+0/6
+0/7
+ 
+Karnofsky score
+58.0 ± 11.0
+N/A
+ 
+Multidimensional Fatigue Inventory (MFI)
+81.2 ± 5.1
+N/A
+ 
+Hand Grip Strength
+23.5 ± 2.1
+32.6 ± 1.8
+0.001
+Note: data is presented as mean ± SD.
+iPSCs and MPs characterization
+PBMCs were isolated and reprogrammed into iPSCs using episomal vectors expressing Oct4, Sox2, Lin28, Klf4, and L-Myc.
+All 13 lines exhibited typical iPSC morphology, forming tightly packed colonies with a high nucleus-to-cytoplasm ratio and
+prominent nucleoli (representative lines shown in Fig. 2A; images of all lines in Supplementary Fig. 1). Pluripotency was
+confirmed by immunofluorescence staining for TRA-1-60 and OCT4 (Fig. 2A; Supplementary Fig. 1), and by flow cytometry
+for SSEA4, EPCAM, and CD9 (Fig. 2D; Supplementary File 1). Trilineage differentiation potential was demonstrated
+following five days of directed differentiation, with immunofluorescence detection of ectoderm (PAX6, Nestin), endoderm
+(AFP, SOX17), and mesoderm (NCAM, Brachyury T) markers (Fig. 2B; Supplementary Fig. 2), supported by qPCR analysis
+(Fig. 2G).
+All lines tested negative for mycoplasma by luminescence assay (Supplementary Table 1) and showed normal molecular
+karyotypes with genotypes identical to their parental PBMCs, as determined by SNP array (Supplementary File 2). No
+significant differences were observed between ME/CFS and control iPSCs in key pluripotency gene expression or
+proliferation capacity (Fig. 2E, 2F, 2G). Finally, upon myogenic differentiation, immunocytochemistry revealed expression of
+MyoD and MyoG, confirming specification toward the myogenic progenitor lineage (representative lines shown in Fig. 2C;
+full dataset in Supplementary Fig. 3).
+RNA-Seq Data and differentially expressed genes
+RNA sequencing was performed on 13 myogenic progenitor (MP) cell lines derived from iPSCs that passed quality control
+assessment. Principal component (PC) analysis showed that first two PCs captured 60% of the total variance in gene
+expression across the dataset, with PC1 and PC2 explaining 44% and 16% respectively (Supplementary File 3). Following
+normalisation, differential expression analysis identified 1,323 genes differentially expressed between ME/CFS and healthy
+controls at nominal p < 0.05 (Supplementary Table 3). After the false discovery rate (FDR) correction (adjusted p < 0.05), 7
+genes remained significantly differentially expressed (Table 2). Detailed information on the known biological functions of
+these genes is presented in Table 2. Five genes (MIR205HG, FEZF1, SLC1A2, SYT13, and GALNT4) were selected for
+validation by qPCR. Of these, only HLA-DMB and SYT13 were confirmed as significantly differentially expressed, with HLA-
+DMB downregulated (p < 0.001) and SYT13 upregulated (p = 0.004) in ME/CFS compared with healthy controls (Table 2).
+Page 8/27
+
+Table 2
+DEGs with adjusted p < 0.05 and functions
+Gene
+Symbol
+Description
+log2Fold
+Change
+Adjusted
+p
+log2Fold
+change
+(qPCR)
+Biological function*
+MIR205HG
+MIR205 Host Gene (Non-Protein
+Coding)
+-16.9
+< 0.001
+ND
+MIR205HG is a long noncoding
+RNA that regulates prolactin
+production, involved in prolactin
+metabolic process, affects
+metabolic homeostasis by
+regulating key enzymes and
+transporters that are associated
+with glucose and lipid
+metabolism.
+FEZF1
+FEZ Family Zinc Finger 1
+12.3
+< 0.001
+ND
+FEZF1 is a gene that encodes a
+transcriptional repressor and
+has been shown to repress the
+transcription factor HES5, which
+is activated downstream of the
+Notch pathway
+HLA-DMB
+Major Histocompatibility
+Complex, Class II, DM Beta
+-5.7
+0.008
+-4.26 (p 
+< 0.001)
+HLA-DMB plays a critical role in
+antigen processing and
+presentation by facilitating
+peptide loading onto MHC class
+II molecules in antigen-
+presenting cells like dendritic
+cells and B cells.
+SLC1A2
+Solute Carrier Family 1 Member
+2
+-1.4
+0.040
+ND
+SLC1A2 encodes for the
+membrane-bound protein, a
+principal transporter that clears
+the excitatory neurotransmitter
+glutamate from the extracellular
+space at synapses in the central
+nervous system.
+SYT13
+Synaptotagmin 13
+1.6
+0.040
+2.09 (p 
+= 0.004)
+SYT13 belongs to a family of
+membrane-trafficking proteins,
+specifically those containing C2
+domains of certain
+synaptotagmins that bind
+calcium. Synaptotagmins are
+proposed to function as calcium
+sensors involved in the
+regulation of neurotransmitter
+release and hormone secretion.
+GALNT4
+Polypeptide N-
+Acetylgalactosaminyltransferase
+4
+-0.8
+0.047
+NR
+GALNT4 gene encodes a
+member of the UDP-N-acetyl-α-
+D-galactosamine:polypeptide N-
+acetylgalactosaminyltransferase
+(GalNAc-T) family of enzymes.
+GALNT4 initiates mucin-type O-
+linked glycosylation in the golgi
+apparatus by catalysing the
+transfer of GalNAc to serine and
+threonine residues on target
+proteins.
+SLC2A14
+Solute Carrier Family 2 Member
+14
+-2.4
+0.047
+NR
+SLC2A14 encodes a member of
+the solute carrier family 2
+(facilitated glucose
+transporters), which is involved
+in glucose transport across cell
+membranes.
+Page 9/27
+
+ND = Not detected; Ct value was undetermined or exceeded the threshold in all replicates, indicating no detectable
+expression under the experimental conditions using primers designed for known validated gene variants from NIH Entrez
+database. NR = Not run; gene not selected for qPCR validation. *Biological functions were extracted from GeneCards® -
+The Human Gene Database (www.genecards.org).
+Pathway Enrichment Analysis
+KEGG annotation analysis was employed to examine differential pathways in RNA-seq data from iPSC-MPs from both
+ME/CFS cases and healthy controls, aiming to identify distinct biological pathway signatures. A complete list of 358
+enriched pathways is provided in Supplementary Table 4. Among these, 73 differentially expressed pathways with q-values 
+< 0.05 were identified and are presented in Fig. 3A, the majority of which were downregulated (96%). Only the “autophagy”
+and “valine, leucine, and isoleucine degradation” pathways were upregulated (Fig. 3A). The top 20 pathways, revealed by
+both KEGG and GO analyses (Figs. 3B and 3C), showed substantial overlap, including two pathways associated with
+skeletal muscle structure: “cytoskeleton in muscle cells” and “regulation of actin cytoskeleton”. Most of the downregulated
+pathways were related to cell cycle and DNA maintenance, while a notable subset was associated with immune and
+inflammatory responses, and cell adhesion and cytoskeleton (Fig. 3D).
+Drug repurposing candidates for treatment of ME/CFS
+A subset of the top 100 upregulated and downregulated DEGs were queried against the LINCS2 database to identify
+potential drug candidates for repurposing. A complete list of identified compounds with an FDR < 0.05 was retained for
+further analysis (Supplementary Table 5). The top 100 compounds were then reviewed in detail, and drugs were selected
+based on a literature review, applying the pre-defined exclusion criteria. The final list of shortlisted repurposing candidates
+is presented in Table 3. There are 22 drugs that met the inclusion criteria and are currently approved for use in humans.
+Supporting evidence from the literature for each selected candidate is summarised in Supplementary Table 6.
+Page 10/27
+
+Table 3
+Selected drug candidates with repurposing potential for treatment of ME/CFS
+Drug
+NCS
+WTCS
+- FDR
+Mechanism of action
+Approved therapeutic indication
+Acyclovir
+-1.55
+0.003
+DNA polymerase inhibitor
+Cold sores
+Genital herpes
+Tetrahydrobiopterin
+-1.53
+0.003
+Nitric oxide synthase stimulant
+Phenylalanine 4-hydroxylase
+stimulant
+Phenylketonuria
+Leflunomide
+-1.51
+0.003
+Dihydroorotate dehydrogenase
+inhibitor
+PDGFR receptor inhibitor
+Active rheumatoid arthritis
+Multiple sclerosis
+Naftidrofuryl
+-1.50
+0.003
+Adrenergic receptor antagonist
+Peripheral vascular disorders
+Tacrine
+-1.49
+0.003
+Acetylcholine release stimulant
+Acetylcholinesterase inhibitor
+Butyrylcholinesterase inhibitor
+Potassium channel antagonist
+Alzheimer disease
+Zolmitriptan
+-1.48
+0.003
+Serotonin receptor agonist
+Migraine with aura
+Migraine without aura
+Nalbuphine
+-1.46
+0.003
+Opioid receptor agonist
+Opioid receptor antagonist
+Pain
+Melatonin
+-1.46
+0.003
+Serotonin receptor agonist
+Insomnia, jet lag, circadian rhythm
+disorders
+Erythromycin
+-1.44
+0.003
+NFkB pathway inhibitor
+Listeriosis
+Diphtheria
+Respiratory tract infections
+Bacterial endocarditis
+Staphylococcal dermatitis
+Vinpocetine
+-1.44
+0.003
+Phosphodiesterase inhibitor
+Sodium channel blocker
+Vascular dementia
+Sirolimus
+-1.43
+0.003
+MTOR inhibitor
+Lymphangioleiomyomatosis
+Nitrendipine
+-1.43
+0.003
+Calcium channel blocker
+Hypertension
+Noscapine
+-1.42
+0.003
+Bradykinin receptor antagonist
+Tubulin inhibitor
+Chronic Cough
+Fenofibrate
+-1.40
+0.003
+PPAR receptor agonist
+Hypertriglyceridemia
+Primidone
+-1.40
+0.003
+GABA receptor antagonist
+Focal epileptic seizures
+Psychomotor epileptic seizures
+Page 11/27
+
+Drug
+NCS
+WTCS
+- FDR
+Mechanism of action
+Approved therapeutic indication
+Grand mal epileptic seizures
+Everolimus
+-1.39
+0.003
+MTOR inhibitor
+HER2 negative breast cancer
+Neuroendocrine tumours
+Advanced renal cell carcinoma
+Disulfiram
+-1.37
+0.003
+Aldehyde dehydrogenase inhibitor
+DNA methyltransferase inhibitor
+TRPV agonist (especially post-
+infectious subtypes)
+Chronic alcoholism
+Clofibric-acid
+-1.36
+0.003
+PPAR receptor agonist
+Hyperlipoproteinemia
+Perindopril
+-1.36
+0.003
+ACE inhibitor
+Stable coronary artery disease
+Hypertension
+Zidovudine
+-1.36
+0.003
+Reverse transcriptase inhibitor
+HIV-1 infection
+Donepezil
+-1.35
+0.003
+Acetylcholinesterase inhibitor
+Alzheimer disease
+Midodrine
+-1.35
+0.003
+Adrenergic receptor agonist
+Orthostatic hypotension
+NCS = Normalised Connectivity Score. This value represents the strength of the connection between a drug-induced gene
+expression signature and the ME/CFS gene expression profile. A more negative NCS indicates a greater potential for the
+drug to reverse the disease signature. The shortlisted drugs are ranked by NCS values.
+WTCS-FDR = Weighted connectivity Score-False discovery rate. The WTCS-FDR represents the adjusted p-value (FDR) for a
+drug’s connectivity score, estimating how likely the observed match/mismatch between a compound and a gene signature
+is due to chance.
+Discussion
+While numerous clinical trials have been conducted involving pharmacological compounds, nutraceuticals, and exercise
+therapy, no effective treatment has been approved for ME/CFS, primarily due to the limited understanding of its
+pathophysiology. Using iPSC-MPs, transcriptomic differences in cells derived from ME/CFS cases and healthy controls
+were identified in this study. Mapping the data using KEGG annotation revealed 73 significantly altered biological pathways.
+Subsequent analysis using the LINCS2 database identified 22 drugs with potential for repurposing to treat ME/CFS.
+Differentially expressed genes between ME/CFS patients and healthy
+controls
+This is the first study to identify transcriptomic signatures of ME/CFS using iPSC-MPs, with seven genes reaching
+significance based on an adjusted p-value < 0.05. Among these genes, some have previously been linked to ME/CFS in the
+literature. For example, MIR205HG is a non-long coding gene that regulates the prolactin expression, primarily through its
+modulatory effects on transcriptional and post-transcriptional signalling pathways [30]. Given the documented
+neuroendocrine dysregulation in ME/CFS, this finding adds a novel molecular link between altered gene expression and
+disrupted hormonal responses in affected individuals. Previous studies have reported heightened prolactin responses to
+serotonergic and dopaminergic challenge tests in ME/CFS patients, despite baseline prolactin levels being typically normal.
+Page 12/27
+
+For instance, increased prolactin secretion was observed following d-fenfluramine and buspirone administration,
+suggesting hypersensitivity of serotonergic signalling pathways [31–33]. An exaggerated prolactin response to sulpiride is
+however described in depression, indexing possible dopamine supersensitivity [34]. The increase of prolactin hormonal
+responses have been proposed as potential biomarkers distinguishing ME/CFS from other fatigue-related conditions and
+may be associated with impaired hypothalamic-pituitary axis regulation [33]. It is possible that reduced MIR205HG
+expression diminishes its regulatory control over prolactin synthesis or release, contributing to the heightened sensitivity of
+the prolactin axis seen in ME/CFS. Furthermore, the sex-specific nature of prolactin regulation, particularly its stronger
+association in female patients [35] and the present study including only female samples, warrants additional investigation
+into whether MIR205HG downregulation exhibits sex-biased expression patterns in ME/CFS cohorts.
+HLA-DMB (Major Histocompatibility Complex (MHC), Class II, DM Beta) was also identified and confirmed by qPCR, a gene
+that facilitates loading of antigenic peptides onto MHC class II molecules in antigen-presenting cells, particularly in
+dendritic cells and B cells, which play important roles in antigen processing and presentation [36]. Impaired expression of
+this gene can disrupt immune surveillance and contribute to immune dysregulation, leading to reduced efficiency in antigen
+recognition and an inadequate immune response [36, 37]. Several abnormalities in B cells have been reported in ME/CFS,
+including altered B cell phenotypes, reduced memory B cell numbers, and increased plasma blast differentiation [38–40].
+While a recent transcriptomic study of PBMCs from ME/CFS patients reported upregulation of transcription factors
+associated with CD4⁺ and CD8⁺ T cell activation and inflammatory responses [41, 42], our data from iPSC-MPs identified a
+significant downregulation of HLA-DMB. Its reduced expression may impair local antigen presentation in skeletal muscle
+cells, thereby contributing to dysregulated CD4⁺ T cell activation or tolerance. Although direct evidence linking HLA-DMB to
+ME/CFS in the literature is limited, previous studies have reported associations between ME/CFS and other HLA class II
+alleles, including HLA-DQA101* and HLA-DQB103:03* [43]. Additionally, other HLA genes, particularly class II alleles, have
+also been implicated in post-infectious ME/CFS pathogenesis and altered responses to Epstein–Barr virus [44], a known
+environmental trigger of the disease. Our findings suggest that antigen presentation defects-specifically involving HLA-DMB
+may extend beyond traditional immune cells, potentially contributing to aberrant T cell responses through impaired B cell-T
+cell crosstalk in muscle-resident progenitor compartments. This highlights the importance of examining non-
+haematopoietic cells in ME/CFS pathophysiology and supports a broader model of immune dysregulation involving both
+peripheral and tissue-specific components, warranting further investigation into its role in ME/CFS.
+SYT13 is a member of the synaptotagmin family, and plays a role in vesicle trafficking, membrane repair, calcium-
+dependent exocytosis [45], and glucose transport to cells [46]. Its upregulation in genome-wide transcriptomics and qPCR
+observed in the present study could imply changes in intracellular calcium signalling [47] and intracellular glucose levels
+[46], which are critical in muscle contraction and mitochondrial energy regulation. Upregulation of SYT13 may represent a
+compensatory response to cellular stress, such as impaired mitochondrial function or calcium dysregulation, both of which
+have been widely reported in ME/CFS and reviewed in recent publications [6, 48]. Additionally, SYT13 has been implicated in
+regulating vesicle trafficking pathways that could influence intracellular glucose handling, including trafficking of glucose
+transporters (such as GLUTs) or metabolic enzymes to the cell membrane [2, 6]. Evidence from β-cell models has shown
+that reduced SYT13 expression impairs insulin secretion by disrupting granule trafficking, highlighting its importance in
+maintaining secretory and metabolic function [6]. Although skeletal muscle is not a classical secretory tissue, upregulation
+of SYT13 may reflect an adaptive mechanism to preserve intracellular glucose uptake or utilisation under energy-restricted
+conditions. Notably, mitochondrial dysfunction and impaired glycolytic flux have been observed in ME/CFS skeletal muscle
+and immune cells, consistent with cellular stress responses that might drive SYT13 expression [3, 7, 8].
+Significantly enriched pathways
+KEGG and GO pathway analysis revealed most significant differential pathways were downregulated in ME/CFS compared
+with healthy controls. These pathways were mainly linked to cell cycle and DNA repair pathways, immune-related pathways,
+and pathways related to muscle function, cytoskeleton in muscle cells and regulation of the actin cytoskeleton pathways.
+Cell cycle and DNA repair pathways
+Page 13/27
+
+The observed downregulation of cell cycle and DNA repair pathways including p53 signalling, mismatch repair, and base
+excision repair in ME/CFS-derived MPs suggests a broad impairment in their proliferative and regenerative potential. These
+pathways are essential for maintaining genomic integrity, facilitating proper mitotic progression, and executing damage
+response mechanisms during cellular stress [49–52]. Suppression of the p53 signalling pathway, in particular, may reflect
+an imbalance between cell cycle arrest, apoptosis and DNA repair activation as cells respond to stress which can drive
+accumulated DNA damage and cellular senescence [49, 53]. Mondarano et al. (2020) reported significant telomere
+shortening in ME/CFS patients, especially in CD8 + T cells and NK cells, suggesting replicative exhaustion and reduced
+regenerative potential of immune cells [54]. Telomere attrition, which activates DNA damage responses and p53 signalling,
+may persist due to inefficient resolution of genotoxic stress. Additionally, mitochondrial dysfunction, widely reported in
+ME/CFS [6, 7, 48], may further exacerbate genomic instability. Reactive oxygen species generated by dysfunctional
+mitochondria can induce oxidative DNA damage, necessitating robust repair via base excision and mismatch repair
+pathways [9]. Impairment of these systems in MPs could therefore reflect both an intrinsic vulnerability and a secondary
+consequence of chronic metabolic stress.
+Immune-related pathways
+Evidence of immune dysfunction in ME/CFS is well documented, with numerous studies reporting the impairments of
+genes/pathways related to the immune response in affected individuals [38–42, 44, 55, 56]. Our KEGG-based
+transcriptomic analysis of iPSC-derived muscle progenitors (MPs) revealed broad enrichment in immune-related pathways,
+with 26 out of 73 significantly altered pathways associated with immune function. In contrast to transcriptomic studies
+using peripheral immune cells, which report widespread upregulation of immune and viral response pathways in ME/CFS
+patients [38, 40, 41], our analysis showed broad downregulation of these pathways in ME/CFS-derived MPs.
+This discrepancy may reflect tissue-specific immune regulation. In peripheral blood mononuclear cells (PBMCs), chronic
+activation of monocytes and T cells as evidenced from sustained expression of inflammatory mediators, has been linked to
+immune cell exhaustion, characterised by diminished responsiveness and altered transcriptional profiles [38, 40, 41, 55].
+This exhausted state may impair these immune cells' ability to coordinate systemic immune responses, including
+communication via cytokines and chemokines with peripheral tissues such as muscle. Our study observed a
+downregulation of multiple key immune signalling pathways, such as cytokine-cytokine receptor interaction, TNF signalling,
+IL-17 signalling, JAK-STAT signalling, and T-cell receptor signalling. These pathways play essential roles in mediating
+immune communication, inflammation, and cellular responses to infection or injury [57, 58]. Their suppression suggests a
+diminished capacity of muscle progenitor cells to respond to systemic immune cues or inflammatory signals. In particular,
+the cytokine-cytokine receptor interaction pathway integrates upstream signalling from inflammatory mediators [59], while
+the JAK-STAT and T-cell receptor pathways are critical for downstream gene transcription and T cell activation [57]. The
+TNF and IL-17 signalling cascades further coordinate inflammatory and immune cell recruitment processes [58, 60].
+Therefore, the broad suppression of these signalling modules in MPs may indicate impaired immune responsiveness within
+skeletal muscle, which may limit regenerative capacity and underlie the impaired recovery and post-exertional symptom
+exacerbation characteristic of ME/CFS. In addition to canonical immune signalling suppression, our KEGG analysis also
+revealed downregulation of several viral-related immune pathways, including those associated with Epstein-Barr virus
+infection, cytomegalovirus infection, Kaposi sarcoma-associated herpesvirus infection, and viral protein-cytokine
+interaction. These pathways typically reflect the host cell’s capacity to detect and respond to latent or active viral infections
+through cytokine signalling, interferon responses, and antigen processing [61]. Their downregulation in ME/CFS-derived
+MPs may reflect impaired viral recognition and clearance in muscle tissue, contributing to persistent immune
+dysregulation. Taken together, while circulating immune cells in ME/CFS patients may exhibit chronic activation, MPs
+display a distinct pattern of blunted immune responsiveness. This cell-type specific immune modulation supports a model
+in which ME/CFS pathophysiology involves differential immune states across tissues, with systemic immune activation
+coexisting alongside local immune suppression or signalling failure in affected peripheral tissues such as skeletal muscle.
+Page 14/27
+
+Cytoskeleton pathways
+There are several differentially expressed pathways related to muscle function such as cytoskeleton in muscle cells and
+regulation of the actin cytoskeleton pathways. The cytoskeleton in muscle cells pathway involves a network of structural
+and regulatory proteins essential for maintaining muscle cell integrity, facilitating contraction, and mediating
+mechanotransduction. Key components include actin and myosin filaments, sarcomeric structures, costameres,
+desmosomes, intermediate filaments such as desmin, and the LINC complex, which links the nucleus to the cytoskeleton.
+These components work together to preserve muscle cellular structure and transmit mechanical force during muscle
+contraction [62, 63]. Disruptions in this pathway have been linked to various skeletal muscle disorders, including Duchenne
+muscular dystrophy [64], desminopathies [65], laminopathies [66], and congenital myopathies [67]. In the context of
+ME/CFS, dysregulation of genes within this pathway may impair muscle structure and contractile function, contributing to
+the hallmark symptoms of fatigue and muscle weakness [5, 6]. Our findings reveal that several genes involved in the
+“Cytoskeleton in Muscle Cells” pathway were significantly downregulated in iPSC-derived MP cells from ME/CFS patients,
+including COL9A1, ITGA11, ITGA2, PKP2, COL9A3, SDC1, DAAM2, DIAPH3, and FBN3. These genes play critical roles in
+extracellular matrix organisation, cell adhesion, and actin cytoskeleton regulation, suggesting that their altered expression
+may contribute to cytoskeletal instability and reduced mechanical efficiency in ME/CFS muscle cells.
+The regulation of the actin cytoskeleton pathway plays a central role in maintaining cellular architecture, intracellular
+trafficking, signal transduction, and contractile force generation, particularly in muscle cells. Actin filaments are dynamic
+structures regulated by a range of signalling molecules such as Rho GTPases, kinases (e.g., ROCK, PAK), and actin-binding
+proteins, which coordinate polymerisation and depolymerisation processes to adapt to mechanical and metabolic
+demands [68]. In skeletal muscle, correct organisation and regulation of actin filaments is essential for sarcomere
+structure, muscle contraction, and repair following stress or injury [62]. Disruption of this pathway can lead to altered
+muscle fibre structure, impaired contractility, and abnormal cell signalling. These abnormalities may contribute to muscle
+fatigue and reduced physical endurance, which are hallmark symptoms of ME/CFS. Previous studies have suggested that
+ME/CFS is associated with impaired energy metabolism and muscle dysfunction, potentially linked to abnormalities in
+cytoskeletal regulation [55, 69]. Altered expression of genes involved in actin cytoskeleton regulation may therefore provide
+insight into the cellular mechanisms underlying muscle symptoms in ME/CFS and serve as potential targets for therapeutic
+intervention. Findings from this study show that the regulation of genes involved in the actin cytoskeleton pathway is
+downregulated in iPSC-derived MP cells from ME/CFS patients, highlighting the need for further investigation to evaluate
+their potential as disease biomarkers or therapeutic targets.
+Upregulation of amino acids degradation pathway
+The upregulation of the valine, leucine, and isoleucine degradation pathway in ME/CFS-derived MPs suggests a metabolic
+shift toward increased reliance on branched-chain amino acids (BCAAs) for energy production. BCAAs are primarily
+metabolised in peripheral tissues such as skeletal muscle and serve as key alternative fuel sources, feeding intermediates
+like acetyl-CoA and succinyl-CoA into the tricarboxylic acid (TCA) cycle, especially under conditions of glucose deprivation
+or mitochondrial stress [70, 71]. This upregulation may reflect a compensatory adaptation to the energetic challenges
+frequently reported in ME/CFS, including mitochondrial dysfunction, reduced glycolytic flux, and impaired fatty acid
+oxidation [72, 73]. Several metabolomic and transcriptomic studies in ME/CFS cohorts have reported altered BCAA levels,
+with some suggesting increased BCAA catabolism to support ATP production in the face of systemic energy deficits [74,
+75]. Increased degradation of BCAAs may also attempt to counteract the accumulation of toxic intermediates or oxidative
+stress. For example, while moderate BCAA breakdown replenishes TCA intermediates, overactivation may lead to excess
+production of branched-chain keto acids (BCKAs) and reactive species, further exacerbating mitochondrial strain [74, 75].
+Thus, while the transcriptional upregulation of BCAA degradation may reflect a metabolically adaptive response, it may also
+signal a state of metabolic inflexibility in ME/CFS muscle progenitors. Furthermore, BCAA catabolism intersects with
+important metabolic signalling pathways such as mTOR, AMPK, and PPARα, which regulate autophagy, protein synthesis,
+Page 15/27
+
+and mitochondrial biogenesis [76, 77]. Increased flux through BCAA degradation could therefore influence cell growth,
+differentiation, and stress responses in MPs. However, the long-term effects of sustained BCAA catabolism are not
+necessarily beneficial, particularly if it reflects chronic compensation for deficits in primary metabolic pathways.
+Interestingly, the upregulation of this pathway in MPs aligns with broader hypotheses in ME/CFS that propose muscle and
+immune cells are forced to shift to less efficient energy production pathways due to underlying mitochondrial impairments
+[41, 78–80]. In this context, increased BCAA degradation may serve to buffer TCA cycle activity, sustain ATP production,
+and mitigate energetic collapse. These results add to a growing body of evidence that ME/CFS involves not only immune
+and mitochondrial dysfunction, but also complex metabolic reprogramming. Whether this shift represents a protective
+adaptation or a contributor to metabolic exhaustion remains to be clarified, but it clearly underscores the bioenergetic
+strain faced by MPs in ME/CFS.
+Potential drug candidates for repurposing ME/CFS
+Using transcriptomic profiles derived from ME/CFS MPs and LINCS2-based reverse gene signature screening, we identified
+a shortlist of candidate drugs with potential to reverse ME/CFS-associated gene expression patterns. Following literature-
+based screening, 22 compounds are proposed for further investigation, representing diverse biological mechanisms
+relevant to ME/CFS pathology. A notable subset of these drugs includes antiviral or antimicrobial agents, such as acyclovir,
+zidovudine, erythromycin, and disulfiram. Their identification is consistent with extensive literature implicating persistent or
+latent viral infections, particularly Epstein-Barr virus and human herpesvirus 6, in ME/CFS onset and progression [2, 6, 39,
+41–43, 55]. Disulfiram, an inhibitor of viral proteases, for instance, has shown activity against intracellular pathogens and
+has recently gained attention for its potential to reactivate and clear latent viruses such as HIV [81], and reduce SARS-CoV-
+2 infection [82]. These drugs may support viral clearance and help resolve chronic immune activation observed in ME/CFS
+patients.
+Several candidates also fall under the category of immunomodulators, including leflunomide, sirolimus, everolimus,
+clofibric acid, and fenofibrate. These agents modulate key immune pathways implicated in ME/CFS, such as T-cell
+activation, cytokine regulation, and mTOR signalling [83–86]. Both sirolimus and everolimus inhibit mTORC1 [87], a
+metabolic and immune checkpoint regulator that has been associated with immune exhaustion and metabolic
+reprogramming in T cells [88]. The identification of PPAR-α agonists (e.g. fenofibrate, clofibric acid) is also relevant, as they
+modulate inflammation, lipid metabolism, and regulate mitochondrial function [89], all of which have been implicated in the
+pathophysiology of ME/CFS [83–86].
+Drugs with neuroprotective or neurotransmitter-modulating effects also featured prominently including tacrine, donepezil,
+and tetrahydrobiopterin (BH4). These drugs may impact cognitive function and address neurotransmitter dysregulation [90,
+91], which correspond with observed symptoms in ME/CFS such as cognitive fog and central fatigue. BH4, a cofactor for
+monoamine synthesis, could help restore serotonergic and dopaminergic tone [91], both implicated in ME/CFS
+pathophysiology and hypothalamic-pituitary axis dysfunction. Additionally, melatonin, a serotonin receptor agonist may
+have multifaceted effects by regulating circadian rhythm, sleep patterns, neuroprotective effects, mitochondrial oxidative
+stress, and immune responses [92, 93]. Notably, clinical trials reported that ME/CFS patients showed improvements in
+fatigue, motivation, concentration and activity after treatment with 1-5mg of melatonin for three months [92, 94]. Thus,
+these selected neuroprotective drugs have potential for ME/CFS repurposing; however, further studies are needed to
+holistically evaluate their treatment doses, times and ME/CFS subtype efficacy.
+Drugs targeting autonomic dysfunction and vascular dysregulation, including midodrine, naftidrofuryl, perindopril, and
+nitrendipine, may alleviate orthostatic intolerance and improve cerebral perfusion, common symptoms in ME/CFS.
+Midodrine for instance, which is an anti-hypotensive compound that increases blood pressure by activating the alpha 1-
+receptor, has already been used to treat postural orthostatic tachycardia syndrome (POTS), which frequently overlaps with
+ME/CFS [95]. In a case study, Naschitz et al. (2004) reported that ME/CFS patients with abnormal haemodynamic instability
+Page 16/27
+
+score treated with midodrine resulted in correction of the dysautonomia followed by improvement of fatigue [96]. They
+suggested that midodrine might be used for ME/CFS patients with autonomic dysfunction; however, there are no further
+placebo-controlled trials on the efficacy of midodrine on ME/CFS since.
+The short list of potential drugs also includes zolmitriptan, nalbuphine, and noscapine. These drugs may offer symptomatic
+relief for headaches, pain, or the neuroinflammatory aspects of the disease. While these agents may not directly modify
+disease mechanisms, they may contribute to multi-modal treatment strategies.
+Limitations and future directions
+Despite the strengths of this study, several limitations should be acknowledged. First, the sample size was limited, and
+although consistent transcriptomic differences were observed, larger cohorts may be required to validate the
+generalisability of these findings across the heterogenous ME/CFS population. For example, all participants in this study
+were female, limiting the applicability of our findings to male patients, who may exhibit distinct molecular signatures. While
+iPSC-MPs provide a muscle-relevant platform that captures patient-specific molecular alterations, they do not fully
+recapitulate the complex multisystemic features of ME/CFS, including immune-neuroendocrine interactions and post-
+exertional symptom exacerbation. Further, in vitro and in vivo functional validation of identified compounds remains
+necessary to confirm therapeutic potential and disease relevance. Future studies should aim to incorporate multi-tissue
+iPSC models, longitudinal sampling, and single cell analyses to better capture disease dynamics and cellular heterogeneity.
+Integration with proteomic, metabolomic, and clinical phenotyping datasets may further advance biomarker discovery and
+precision medicine approaches for ME/CFS.
+We present the first transcriptomic characterisation of patient-derived iPSC-MPs in ME/CFS, establishing a novel disease-
+relevant in vitro model to investigate pathogenic mechanisms and therapeutic opportunities. The identified drugs span key
+pathophysiological domains identified in ME/CFS - immune dysregulation, neuroinflammation, autonomic instability,
+mitochondrial impairment, and viral persistence, underscoring the potential of patient-specific iPSC-MPs to serve as a
+scalable and mechanistically informative platform for ME/CFS modelling and rational drug repurposing. The present study
+adds to the growing utility of GES of diseases that are then used for screening drug candidates [97, 98] such as
+candesartan and trimetazidine to treat bipolar depression, which are currently undergoing clinical trials. By leveraging a
+model that captures disease-relevant molecular features and aligns with known pharmacological mechanisms, this
+approach can address key barriers in ME/CFS research, including its elusive aetiology, lack of validated biomarkers, and the
+current absence of effective therapeutics.
+Declarations
+Ethics approval and consent to participate
+Ethics approval for this study was obtained from the Barwon Health Human Research Ethics Committee (20/202) and the
+Deakin University Human Research Ethics Committee (2021 − 165), Australia. The study was conducted in accordance with
+the ethical requirements approved by these Human Research Ethics Committees and the Australian National Statement on
+Ethical Conduct in Human Research. Written informed consent was obtained from all participants before participation.
+Consent for publication
+Not applicable.
+Competing interests
+The authors have no competing interests to declare.
+Page 17/27
+
+Lead contact
+Requests for further information and resources should be directed to and will be fulfilled by the lead contact, Ken Walder
+(ken.walder@deakin.edu.au).
+Funding
+This work was supported by funding from the National Health and Medical Research Council (NHMRC), GNT1199363 and
+KW is CIA. JHK is supported by the Australian Research Council Future Fellowship (FT220100351). MB is supported by a
+NHMRC Leadership 3 Investigator grant (GNT2017131).
+Author Contributions
+Conceptualisation: KW, MB, CB, JHK, BP, DN
+Acknowledgments
+The authors sincerely thank all individuals with ME/CFS and healthy control participants who generously donated their time
+and biological samples to support this research. Their contributions have been essential in advancing our understanding of
+ME/CFS and enabling the development of patient-specific disease models. We are especially grateful to the Geelong
+ME/CFS Support Group and Emerge Australia for their valuable assistance with participant recruitment for this project, this
+work would not have been possible without their support.
+Data and code availability
+RNA-seq data, original code, and any additional information required to reanalyse the data reported in this paper will be
+made available upon manuscript acceptance and can also be obtained from the lead contact upon reasonable request.
+References
+1. Hanson MR, Germain R (2020) Letter to the Editor of Metabolites. Metabolites 10(5):216.
+https://doi.org/10.3390/metabo10050216
+2. Mirin AA, Dimmock ME, Jason LA (2022) Updated ME/CFS prevalence estimates reflecting post-COVID increases and
+associated economic costs and funding implications, vol 10. Biomedicine, Health & Behavior, Fatigue, pp 83–93.
+2https://doi.org/10.1080/21641846.2022.2062169
+3. Zhao T et al (2023) The economic burden of myalgic encephalomyelitis/chronic fatigue syndrome in Australia. Aust
+Health Rev 47(6):707–715. https://doi.org/10.1071/ah23106
+4. Huang K et al (2025) Machine learning and multi-omics in precision medicine for ME/CFS. J Translational Med
+23(1):68. https://doi.org/10.1186/s12967-024-05915-z
+5. Fong K (2019) Myalgic Encephalomyelitis/Chronic Fatigue Syndrome Advisory Committee: Report to the NHMRC Chief
+Executive Officer. https://www.nhmrc.gov.au/sites/default/files/documents/attachments/publications/MECFS-CEO-
+Report-accessible.pdf
+6. Scheibenbogen C, Wirth KJ (2025) Key Pathophysiological Role of Skeletal Muscle Disturbance in Post COVID and
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Accumulated Evidence. J Cachexia Sarcopenia
+Muscle 16(1):e13669. https://doi.org/10.1002/jcsm.13669
+Page 18/27
+
+7. Wirth KJ, Scheibenbogen C (2021) Pathophysiology of skeletal muscle disturbances in Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS). J Transl Med 19(1):162. https://doi.org/10.1186/s12967-021-
+02833-2
+8. Jäkel B et al (2021) Hand grip strength and fatigability: correlation with clinical parameters and diagnostic suitability in
+ME/CFS. J Translational Med 19(1):159. https://doi.org/10.1186/s12967-021-02774-w
+9. Jammes Y et al (2020) Maximal handgrip strength can predict maximal physical performance in patients with chronic
+fatigue. Clin Biomech Elsevier Ltd 73:162–165. https://doi.org/10.1016/j.clinbiomech.2020.01.003
+10. Hejbøl EK et al (2022) Myopathy as a cause of fatigue in long-term post-COVID-19 symptoms: Evidence of skeletal
+muscle histopathology. Eur J Neurol 29(9):2832–2841. https://doi.org/10.1111/ene.15435
+11. Agergaard J et al (2023) Myopathy as a cause of Long COVID fatigue: Evidence from quantitative and single fiber EMG
+and muscle histopathology. Clin Neurophysiol 148:65–75. https://doi.org/10.1016/j.clinph.2023.01.010
+12. NICE Evidence Reviews Collection, in Evidence reviews for the non-pharmacological management of ME/CFS: Myalgic
+encephalomyelitis (or encephalopathy) / chronic fatigue syndrome: diagnosis and management: Evidence review G.
+(2021) National Institute for Health and Care Excellence (NICE) Copyright © NICE 2021, London
+13. Poetsch MS, Strano A, Guan K (2022) Human Induced Pluripotent Stem Cells: From Cell Origin, Genomic Stability, and
+Epigenetic Memory to Translational Medicine. Stem Cells 40(6):546–555. https://doi.org/10.1093/stmcls/sxac020
+14. McInvale JJ, Canoll P, Hargus G (2024) Induced pluripotent stem cell models as a tool to investigate andtest fluid
+biomarkers in Alzheimer’s disease andfrontotemporal dementia. Brain Pathol 34(4).
+https://doi.org/10.1111/bpa.13231
+15. Williams G et al (2019) Drug repurposing for Alzheimer's disease based on transcriptional profiling of human iPSC-
+derived cortical neurons. Transl Psychiatry 9(1):220. https://doi.org/10.1038/s41398-019-0555-x
+16. Lu K et al (2023) Depressive patient-derived GABA interneuronsreveal abnormal neural activity associatedwith HTR2C.
+EMBO Mol Med 15(1). https://doi.org/10.15252/emmm.202216364
+17. Vadodaria KC et al (2019) Serotonin-induced hyperactivity in SSRI-resistant major depressive disorder patient-derived
+neurons. Mol Psychiatry 24(6):795–807. https://doi.org/10.1038/s41380-019-0363-y
+18. Berk M et al (2025) A novel discovery platform for targeted drug repurposing: application for psychiatric disorders.
+Lancet Psychiatry. https://doi.org/10.1016/S2215-0366(25)00066-5
+19. Carruthers BM et al (2003) Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Clinical Working Case Definition,
+Diagnostic and Treatment Protocols. J Chronic Fatigue Syndrome 11(1):7–115.
+https://doi.org/10.1300/J092v11n01_02
+20. Abernethy AP et al (2005) The Australia-modified Karnofsky Performance Status (AKPS) scale: a revised scale for
+contemporary palliative care clinical practice [ISRCTN81117481]. BMC Palliat Care 4(1):7.
+https://doi.org/10.1186/1472-684X-4-7
+21. Smets EM et al (1995) The Multidimensional Fatigue Inventory (MFI) psychometric qualities of an instrument to
+assess fatigue. J Psychosom Res 39(3):315–325. https://doi.org/10.1016/0022-3999(94)00125-o
+22. Community TG (2024) The Galaxy platform for accessible, reproducible, and collaborative data analyses: 2024 update.
+Nucleic Acids Res 52(W1). https://doi.org/10.1093/nar/gkae410. p. W83-W94
+23. Chen S et al (2018) fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics 34(17).
+https://doi.org/10.1093/bioinformatics/bty560. p. i884-i890
+24. Kim D et al (2019) Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype. Nat Biotechnol
+37(8):907–915. https://doi.org/10.1038/s41587-019-0201-4
+25. Liao Y, Smyth GK, Shi W (2014) featureCounts: an efficient general purpose program for assigning sequence reads to
+genomic features. Bioinformatics 30(7):923–930. https://doi.org/10.1093/bioinformatics/btt656
+Page 19/27
+
+26. Love MI, Huber W, Anders S (2014) Moderated estimation of fold change and dispersion for RNA-seq data with
+DESeq2. Genome Biol 15(12):550. https://doi.org/10.1186/s13059-014-0550-8
+27. Leek JT et al (2012) The sva package for removing batch effects and other unwanted variation in high-throughput
+experiments. Bioinformatics 28(6):882–883. https://doi.org/10.1093/bioinformatics/bts034
+28. Shannon P et al (2003) Cytoscape: a software environment for integrated models of biomolecular interaction
+networks. Genome Res 13(11):2498–2504. https://doi.org/10.1101/gr.1239303
+29. Duan Y et al (2020) signatureSearch: environment for gene expression signature searching and functional
+interpretation. Nucleic Acids Res 48(21):e124. https://doi.org/10.1093/nar/gkaa878
+30. Du Q et al (2019) MIR205HG Is a Long Noncoding RNA that Regulates Growth Hormone and Prolactin Production in
+the Anterior Pituitary. Dev Cell 49(4):618–631. https://doi.org/10.1016/j.devcel.2019.03.012. .e615
+31. Cleare AJ et al (1995) Contrasting neuroendocrine responses in depression and chronic fatigue syndrome. J Affect
+Disord 34(4):283–289. https://doi.org/10.1016/0165-0327(95)00026-j
+32. Bearn J et al (1995) Neuroendocrine responses to d-fenfluramine and insulin-induced hypoglycemia in chronic fatigue
+syndrome. Biol Psychiatry 37(4):245–252. https://doi.org/10.1016/0006-3223(94)00121-i
+33. Sharpe M et al (1996) Increased prolactin response to buspirone in chronic fatigue syndrome. J Affect Disord
+41(1):71–76. https://doi.org/10.1016/0165-0327(96)00075-4
+34. Verbeeck WJ et al (2001) The prolactin response to sulpiride in major depression: the role of the D2 receptor in
+depression. Eur neuropsychopharmacology: J Eur Coll Neuropsychopharmacol 11(3):215–220.
+https://doi.org/10.1016/s0924-977x(01)00086-4
+35. Weaver SA et al (2010) Sex differences in plasma prolactin response to tryptophan in chronic fatigue syndrome
+patients with and without comorbid fibromyalgia. J Womens Health (Larchmt) 19(5):951–958.
+https://doi.org/10.1089/jwh.2009.1697
+36. Amria S et al (2008) HLA-DM negatively regulates HLA-DR4-restricted collagen pathogenic peptide presentation and T
+cell recognition. Eur J Immunol 38(7):1961–1970. https://doi.org/10.1002/eji.200738100
+37. Yin L et al (2015) Evaluating the Role of HLA-DM in MHC Class II-Peptide Association Reactions. J Immunol
+195(2):706–716. https://doi.org/10.4049/jimmunol.1403190
+38. Vu LT et al (2024) Single-cell transcriptomics of the immune system in ME/CFS at baseline and following symptom
+provocation. Cell Rep Med 5(1). https://doi.org/10.1016/j.xcrm.2023.101373
+39. Cliff JM et al (2019) Cellular Immune Function in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS).
+Front Immunol 10:796. https://doi.org/10.3389/fimmu.2019.00796
+40. Walitt B et al (2024) Deep phenotyping of post-infectious myalgic encephalomyelitis/chronic fatigue syndrome. Nat
+Commun 15(1):907. https://doi.org/10.1038/s41467-024-45107-3
+41. Sun Y et al (2024) Immunometabolic changes and potential biomarkers in CFS peripheral immune cells revealed by
+single-cell RNA sequencing. J Transl Med 22(1):925. https://doi.org/10.1186/s12967-024-05710-w
+42. Karhan E et al (2019) Perturbation of effector and regulatory T cell subsets in Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome (ME/CFS). bioRxiv, : p. 2019.2012.2023.887505. https://doi.org/10.1101/2019.12.23.887505
+43. Lande A et al (2020) Human Leukocyte Antigen alleles associated with Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome (ME/CFS). Sci Rep 10(1):5267. https://doi.org/10.1038/s41598-020-62157-x
+44. Ruiz-Pablos M, Paiva B, Zabaleta A (2023) Epstein–Barr virus-acquired immunodeficiency in myalgic
+encephalomyelitis-Is it present in long COVID? J Translational Med 21(1):633. https://doi.org/10.1186/s12967-023-
+04515-7
+45. Bakhti M et al (2022) Synaptotagmin-13 orchestrates pancreatic endocrine cell egression and islet morphogenesis.
+Nat Commun 13(1):4540. https://doi.org/10.1038/s41467-022-31862-8
+Page 20/27
+
+46. Xu H et al (2024) Synaptotagmins family affect glucose transport in retinal pigment epithelial cells through their
+ubiquitination-mediated degradation and glucose transporter-1 regulation. World J Diabetes 15(5):958–976.
+https://doi.org/10.4239/wjd.v15.i5.958
+47. Ofori JK et al (2022) The highly expressed calcium-insensitive synaptotagmin-11 and synaptotagmin-13 modulate
+insulin secretion. Acta Physiol (Oxf) 236(1):e13857. https://doi.org/10.1111/apha.13857
+48. Syed AM et al (2025) Mitochondrial Dysfunction in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Physiology
+(Bethesda), 40(4): p. 0. https://doi.org/10.1152/physiol.00056.2024
+49. Wang H et al (2023) Targeting p53 pathways: mechanisms, structures and advances in therapy. Signal Transduct
+Target Therapy 8(1):92. https://doi.org/10.1038/s41392-023-01347-1
+50. Li J, Qian WP, Sun QY (2019) Cyclins regulating oocyte meiotic cell cycle progression†. Biol Reprod 101(5):878–881.
+https://doi.org/10.1093/biolre/ioz143
+51. Li GM (2008) Mechanisms and functions of DNA mismatch repair. Cell Res 18(1):85–98.
+https://doi.org/10.1038/cr.2007.115
+52. Gohil D, Sarker AH, Roy R (2023) Base Excision Repair: Mechanisms and Impact in Biology, Disease, and Medicine. Int J
+Mol Sci 24(18). https://doi.org/10.3390/ijms241814186
+53. Vousden KH, Lane DP (2007) 53 in health and disease. Nat Rev Mol Cell Biol 8(4):275–283.
+https://doi.org/10.1038/nrm2147
+54. Mandarano AH et al (2020) Myalgic encephalomyelitis/chronic fatigue syndrome patients exhibit altered T cell
+metabolism and cytokine associations. J Clin Invest 130(3):1491–1505. https://doi.org/10.1172/jci132185
+55. Missailidis D, Annesley SJ, Fisher PR (2019) Pathological Mechanisms Underlying Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome. Diagnostics (Basel) 9(3). https://doi.org/10.3390/diagnostics9030080
+56. Trivedi MS et al (2018) Identification of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome-associated DNA
+methylation patterns. PLoS ONE 13(7):e0201066. https://doi.org/10.1371/journal.pone.0201066
+57. Fortelny N et al (2024) JAK-STAT signaling maintains homeostasis in T cells and macrophages. Nat Immunol
+25(5):847–859. https://doi.org/10.1038/s41590-024-01804-1
+58. Gaffen SL (2009) Structure and signalling in the IL-17 receptor family. Nat Rev Immunol 9(8):556–567.
+https://doi.org/10.1038/nri2586
+59. Spangler JB et al (2015) Insights into cytokine-receptor interactions from cytokine engineering. Annu Rev Immunol
+33:139–167. https://doi.org/10.1146/annurev-immunol-032713-120211
+60. Caldito NG (2023) Role of tumor necrosis factor-alpha in the central nervous system: a focus on autoimmune
+disorders. Front Immunol 14:1213448. https://doi.org/10.3389/fimmu.2023.1213448
+61. Dulfer EA, Joosten LAB, Netea MG (2024) Enduring echoes: Post-infectious long-term changes in innate immunity. Eur
+J Intern Med 123:15–22. https://doi.org/10.1016/j.ejim.2023.12.020
+62. Sanger JW et al (2010) Assembly and dynamics of myofibrils. J Biomed Biotechnol, 2010: p. 858606.
+https://doi.org/10.1155/2010/858606
+63. Rassier DE, Kashina A (2019) Protein arginylation of cytoskeletal proteins in the muscle: modifications modifying
+function. Am J Physiol Cell Physiol 316(5). https://doi.org/10.1152/ajpcell.00500.2018. p. C668-c677
+64. Angulski AB et al (2023) Duchenne muscular dystrophy: disease mechanism and therapeutic strategies. Front Physiol
+14:1183101. https://doi.org/10.3389/fphys.2023.1183101
+65. Clemen CS et al (2013) Desminopathies: pathology and mechanisms. Acta Neuropathol 125(1):47–75.
+https://doi.org/10.1007/s00401-012-1057-6
+66. Bhide S et al (2024) Genetic and Pathophysiological Basis of Cardiac and Skeletal Muscle Laminopathies. Genes
+(Basel) 15(8). https://doi.org/10.3390/genes15081095
+Page 21/27
+
+67. Ravenscroft G et al (2018) Recent advances in understanding congenital myopathies. F1000Res 7.
+https://doi.org/10.12688/f1000research.16422.1
+68. Spiering D, Hodgson L (2011) Dynamics of the Rho-family small GTPases in actin regulation and motility. Cell Adh Migr
+5(2):170–180. https://doi.org/10.4161/cam.5.2.14403
+69. Tomas C, Newton J, Watson S (2013) A review of hypothalamic-pituitary-adrenal axis function in chronic fatigue
+syndrome. ISRN Neurosci, 2013: p. 784520. https://doi.org/10.1155/2013/784520
+70. Neinast M, Murashige, Arany Z (2019) Branched Chain Amino Acids. Annu Rev Physiol 81:139–164.
+https://doi.org/10.1146/annurev-physiol-020518-114455
+71. Mann G et al (2021) Branched-chain Amino Acids: Catabolism in Skeletal Muscle and Implications for Muscle and
+Whole-body Metabolism. Front Physiol 12:702826. https://doi.org/10.3389/fphys.2021.702826
+72. Armstrong CW et al (2014) Metabolism in chronic fatigue syndrome. Adv Clin Chem 66:121–172.
+https://doi.org/10.1016/b978-0-12-801401-1.00005-0
+73. Germain A et al (2017) Metabolic profiling of a myalgic encephalomyelitis/chronic fatigue syndrome discovery cohort
+reveals disturbances in fatty acid and lipid metabolism. Mol Biosyst 13(2):371–379.
+https://doi.org/10.1039/c6mb00600k
+74. Lynch CJ, Adams SH (2014) Branched-chain amino acids in metabolic signalling and insulin resistance. Nat Reviews
+Endocrinol 10(12):723–736. https://doi.org/10.1038/nrendo.2014.171
+75. White PJ, Newgard CB (2019) Branched-chain amino acids in disease. Science 363(6427):582–583.
+https://doi.org/10.1126/science.aav0558
+76. Feige JN (2025) An mTOR paradox in sarcopenia via BCAA catabolism. Nat Aging 5(3):341–343.
+https://doi.org/10.1038/s43587-025-00815-3
+77. Wu SC et al (2025) Dysfunctional BCAA degradation triggers neuronal damage through disrupted AMPK-mitochondrial
+axis due to enhanced PP2Ac interaction. Commun Biology 8(1):105. https://doi.org/10.1038/s42003-025-07457-6
+78. Fluge Ø et al (2016) Metabolic profiling indicates impaired pyruvate dehydrogenase function in myalgic
+encephalopathy/chronic fatigue syndrome. JCI Insight 1(21):e89376. https://doi.org/10.1172/jci.insight.89376
+79. Nilsson I et al (2020) Metabolic Dysfunction in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome Not Due to Anti-
+mitochondrial Antibodies. Front Med 7–2020. https://doi.org/10.3389/fmed.2020.00108
+80. Tomas C et al (2017) Cellular bioenergetics is impaired in patients with chronic fatigue syndrome. PLoS ONE
+12(10):e0186802. https://doi.org/10.1371/journal.pone.0186802
+81. Elliott JH et al (2015) Short-term administration of disulfiram for reversal of latent HIV infection: a phase 2 dose-
+escalation study. Lancet HIV 2(12). https://doi.org/10.1016/s2352-3018(15)00226-x. p. e520-529
+82. Fillmore N et al (2021) Disulfiram use is associated with lower risk of COVID-19: A retrospective cohort study. PLoS
+ONE 16(10):e0259061. https://doi.org/10.1371/journal.pone.0259061
+83. Breedveld FC, Dayer JM (2000) Leflunomide: mode of action in the treatment of rheumatoid arthritis. Ann Rheum Dis
+59(11):841–849. https://doi.org/10.1136/ard.59.11.841
+84. Gollomp K, Teachey DT (2023) TORing the impact of sirolimus on immune health. Blood 141(3):212–214.
+https://doi.org/10.1182/blood.2022018568
+85. Levitsky J et al (2016) Immunoregulatory Effects of Everolimus on In Vitro Alloimmune Responses. PLoS ONE
+11(6):e0156535. https://doi.org/10.1371/journal.pone.0156535
+86. Corcoran J et al (2015) Effects of the lipid regulating drug clofibric acid on PPARα-regulated gene transcript levels in
+common carp (Cyprinus carpio) at pharmacological and environmental exposure levels. Aquat Toxicol 161:127–137.
+https://doi.org/10.1016/j.aquatox.2015.01.033
+87. Sehgal SN (2003) Sirolimus: its discovery, biological properties, and mechanism of action. Transplant Proc, 35(3 Suppl):
+p. 7s-14s. https://doi.org/10.1016/s0041-1345(03)00211-2
+Page 22/27
+
+88. Bar-Tana J (2025) mTORC1 syndrome (TorS): unifying paradigm for PASC, ME/CFS and PAIS. J Transl Med 23(1):297.
+https://doi.org/10.1186/s12967-025-06220-z
+89. Montaigne D, Butruille L, Staels B (2021) PPAR control of metabolism and cardiovascular functions. Nat Reviews
+Cardiol 18(12):809–823. https://doi.org/10.1038/s41569-021-00569-6
+90. Wagstaff AJ, McTavish D (1994) Tacrine. A review of its pharmacodynamic and pharmacokinetic properties, and
+therapeutic efficacy in Alzheimer's disease. Drugs Aging 4(6):510–540. https://doi.org/10.2165/00002512-199404060-
+00006
+91. Fanet H et al (2021) Tetrahydrobioterin (BH4) Pathway: From Metabolism to Neuropsychiatry. Curr Neuropharmacol
+19(5):591–609. https://doi.org/10.2174/1570159x18666200729103529
+92. Heukelom RO et al (2006) Influence of melatonin on fatigue severity in patients with chronic fatigue syndrome and late
+melatonin secretion. Eur J Neurol 13(1):55–60. https://doi.org/10.1111/j.1468-1331.2006.01132.x
+93. Tordjman S et al (2017) Melatonin: Pharmacology, Functions and Therapeutic Benefits. Curr Neuropharmacol
+15(3):434–443. https://doi.org/10.2174/1570159x14666161228122115
+94. Castro-Marrero J et al (2021) Effect of Melatonin Plus Zinc Supplementation on Fatigue Perception in Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome: A Randomized, Double-Blind, Placebo-Controlled Trial. Antioxid (Basel)
+10(7). https://doi.org/10.3390/antiox10071010
+95. Gaglio CL et al (2022) Orthostatic intolerance and neurocognitive impairment in Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome (ME/CFS). Epidemiol Methods 11(1):20210033. https://doi.org/10.1515/em-2021-0033
+96. Naschitz J et al (2004) Midodrine treatment for chronic fatigue syndrome. Postgrad Med J 80(942):230–232.
+https://doi.org/10.1136/pgmj.2003.011429
+97. Bortolasci CC et al (2023) Use of a gene expression signature to identify trimetazidine for repurposing to treat bipolar
+depression. Bipolar Disord 25(8):661–670. https://doi.org/10.1111/bdi.13319
+98. Kidnapillai S et al (2020) The use of a gene expression signature and connectivity map to repurpose drugs for bipolar
+disorder. World J Biol Psychiatry 21(10):775–783. https://doi.org/10.1080/15622975.2018.1492734
+Figures
+Page 23/27
+
+Figure 1
+Study workflow from iPSC generation to in-silico drug prioritisation. Blood samples were collected from both ME/CFS
+patients and healthy controls. Induced pluripotent stem cells (iPSCs) were generated from peripheral blood mononuclear
+cells (PBMCs) and intensively characterised to confirm their pluripotency. Myogenic progenitor cells (MPs) were then
+differentiated from the iPSCs and used for RNA sequencing, differential expression and pathway enrichment analyses, and
+in silico drug screening.
+Page 24/27
+
+Figure 2
+iPSCs and MPs characterisation. All 13 iPSC lines exhibited typical morphology (Figure 2A) and proliferation capacity
+(Figure 2F), expressed pluripotency markers by immunofluorescence (TRA-1-60, OCT4; Figure 2A, scale bar = 275 µm) and
+flow cytometry (CD9, SSEA4 and EPCAM; Figure 2D), demonstrated differentiation potential into ectoderm, mesoderm, and
+endoderm lineages by immunofluorescence (Figure 2B, scale bar = 150 µm) and qPCR (Figure 2G), and exhibited MyoD and
+MyoG progenitor markers (Figure 2C, scale bar = 150 µm). No significant differences were observed between ME/CFS and
+control lines in key gene expression or proliferation (Figure 2E, 2G). Additional information for all lines in supplementary
+Page 25/27
+
+materials. Panels A, B, C and D are representative cell lines; full data for all cell lines are in Supplementary Files 1 and
+Supplementary Figure 1, 2 and 3.
+Figure 3
+GSEA results using KEGG and GO pathways (A). Enrichment map of GSEA results in MP using KEGG pathway analysis,
+each node represents a significantly enriched pathway (q-value<0.05), node size reflects the absolute Normalized
+Enrichment Score (NES); green indicates positive NES (upregulated), and red indicates negative NES (downregulated), edge
+thickness corresponds to the number of overlapping genes between pathways. (B) top 20 differential pathways of ME/CFS
+Page 26/27
+
+vs healthy controls using KEGG pathways analysis, (C) top 20 differential pathways of ME/CFS vs healthy controls using
+GO ontology analysis. (D) top 20 KEGG pathways grouped by biological theme. BP=Biological processes, CC=cellular
+components.
+Page 27/27

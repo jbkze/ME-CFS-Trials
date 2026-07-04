@@ -1,0 +1,1912 @@
+ 
+ 
+1 
+ 
+ 
+ 
+PREPRINT: Cluster analysis of ME/CFS symptoms in 
+DecodeME reveals two subgroups and a link to onset type 
+ 
+ 
+Christa St-Jean1, Joshua J. Dibble2, Chris Ponting2, and Regina Prigge1* 
+ 
+ 
+1. Usher Institute, University of Edinburgh, Edinburgh, Scotland, EH4 2XU, UK 
+2. MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh, 
+Edinburgh, Scotland, EH4 2XU, UK 
+ 
+* regina.prigge@ed.ac.uk 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+NOTE: This preprint reports new research that has not been certified by peer review and should not be used to guide clinical practice.
+
+ 
+2 
+Abstract 
+ 
+Background:  
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a debilitating, often infection-
+triggered illness with no cure and no effective treatment. Marked symptom heterogeneity 
+hampers diagnosis, disease management, and trial design. Using phenotype data from the 
+world’s largest ME/CFS cohort, this study aimed to identify groups of patients with similar 
+symptom profiles using cluster analysis, to assess the association between cluster membership 
+and onset type, and to explore genetic associations with cluster membership.  
+Methods: This study included 19,019 DecodeME participants, ages 16 and over, with ME/CFS in 
+the UK, from 2022-2024. We performed a k-modes cluster analysis of individuals based on 
+similar symptoms. Cluster metrics identified the optimal number of clusters, which were 
+characterised and compared. A sex-stratified subgroup analysis explored differences between 
+clusters among males and females. The association between ME/CFS onset type (infectious, 
+non-infectious, or unknown) and cluster membership was assessed with logistic regression 
+models, adjusting for sex, age, deprivation, and ethnicity. Genetic associations with cluster 
+membership were assessed using a genome-wide association study.   
+Results: We identified two clusters in our study population: a high symptom burden cluster 
+(HSBC; 57% of participants) and a lower symptom burden cluster (LSBC; 43%). The HSBC was 
+characterised by higher prevalence of symptoms across all domains, more comorbidities, and 
+greater illness severity. Individuals with infectious and unknown onset had 1.24 times (95% CI: 
+1.15-1.35) and 1.30 times (95% CI: 1.18-1.43) higher adjusted odds of HSBC membership 
+relative to non-infectious onset, respectively. A similar pattern was observed in the sex-
+stratified analyses, although it showed an overall higher symptom prevalence for females and a 
+higher proportion of females in the HSBC compared to males. No genetic variant was 
+significantly associated with cluster membership. 
+Conclusions: This large-scale cluster analysis of DecodeME symptom data reinforces that 
+ME/CFS is a heterogeneous condition with clinical subtypes. The identification of symptom-
+based phenotypes, along with sex-based differences in symptom burden and cluster 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+3 
+characteristics, highlights the importance of incorporating symptom burden and sex in future 
+research, clinical decision-making, and public health strategies. Tailoring future interventions to 
+these subgroups could enhance patient management and improve outcomes.   
+ 
+ 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+4 
+Lay Summary 
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a serious illness affecting tens 
+of millions of people worldwide. Severe fatigue, cognitive symptoms (problems with thinking, 
+concentration, or memory), and post-exertional malaise (a prolonged worsening of symptoms, 
+or new symptoms, after even minor mental or physical effort) are core ME/CFS symptoms, 
+though individuals can experience a wide variety of other symptoms. Some of these symptoms 
+overlap with other illnesses, making diagnosis difficult. Determining if there are subgroups of 
+individuals with ME/CFS that share similar symptoms can help doctors and researchers better 
+understand the different ways that ME/CFS affects people, which could lead to improved 
+treatments, and can help direct research into its underlying causes. The present study analysed 
+ME/CFS symptom data from a large UK-based sample using a computer program that sorts 
+individuals into groups purely based on their shared symptoms. Two groups were consistently 
+found: one where people had a wide range of ME/CFS symptoms, and another where people 
+had fewer symptoms. Females tended to have more symptoms overall and so were more likely 
+than males to be in the group with widespread symptoms. Many individuals report that an 
+infection triggered their ME/CFS symptoms, but there are other possible triggers (e.g., physical 
+or emotional trauma). The study found a link between ME/CFS being triggered by an infection 
+and having more symptoms. These findings indicate that ME/CFS is not a “one-size-fits-all” 
+disease, that we need more research to understand what causes ME/CFS, and that healthcare 
+should be tailored to each person’s needs.  
+ 
+ 
+ 
+ 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+5 
+Introduction 
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a chronic, debilitating 
+neurological condition characterised by severe fatigue that is not alleviated by rest (typically at 
+least 6 months in duration), cognitive impairment, and post-exertional malaise (PEM; a 
+prolonged worsening of symptoms, or new symptoms, after mental or physical exertion) (1). 
+Although ME/CFS primarily affects the nervous and immune systems, individuals with ME/CFS 
+can experience a multitude of symptoms affecting many other body systems (e.g., 
+gastrointestinal, genitourinary, respiratory), often fluctuating in type and severity throughout 
+the course of illness and causing a significant reduction in functional capacity and quality of life 
+(2). ME/CFS symptoms place a substantial burden on patients, their loved ones, and their 
+carers.  
+The exact causes of ME/CFS are uncertain. A recent review found that 50%-80% of individuals 
+with ME/CFS began symptoms at the time of or following an infectious disease, suggesting 
+possible immune system dysfunction at disease onset (1). The review also found evidence from 
+multiple studies of a potential genetic link. To investigate a potential genetic component, the 
+world’s largest cohort of individuals with ME/CFS was formed as part of the DecodeME study, 
+which was co-produced by researchers, ME/CFS patients, their carers, ME/CFS charities, 
+industry professionals, and members of the public (3,4).  
+While preliminary results of the DecodeME genetic study support a heritable component to 
+ME/CFS (4), many knowledge gaps remain regarding the causes of ME/CFS, and how to 
+diagnose and manage the disease. A recent James Lind Alliance Priority Setting Partnership (JLA 
+PSP) was formed to identify the Top 10 research priorities for ME/CFS stakeholders to direct 
+future research and funding (5). The present study aims to address research priority #5: “Are 
+there different types of ME/CFS linked to different causes and how severe it becomes? Do 
+different types of ME/CFS need different treatments or have different chances of recovery?” 
+(6). The JLA PSP emphasises the wide variety of symptoms and variation in terms of which 
+symptoms cause individuals the most disability, suggesting that future research and disease 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+6 
+management would benefit greatly from ME/CFS being categorised into subgroups of 
+individuals with similar symptoms, prognosis, or underlying biology (6).  
+The aim of this study is to identify groups of patients with similar symptom profiles using cluster 
+analysis, to determine whether cluster characteristics differ by sex, to assess the association 
+between cluster membership and onset type, and to explore genetic associations with cluster 
+membership.   
+Methods 
+Study Population 
+In this cross-sectional study, we analysed phenotype data from DecodeME. Over 26,000 UK 
+residents aged 16 years and older and with a self-reported clinical diagnosis of ME/CFS were 
+recruited between September 2022 and November 2023. Participants were enrolled through a 
+combination of charity-led mail-outs, digital marketing initiatives, traditional and social media 
+campaigns, and person-to-person recruitment (7). We obtained de-identified data from the 
+23,029 participants who agreed to share their data with other researchers. Exclusion criteria 
+included: a self-diagnosis of ME/CFS, not meeting either the Canadian Consensus Criteria (CCC) 
+or Institute of Medicine/National Academy of Medicine (IOM/NAM) case definitions for 
+ME/CFS, and hospitalisation from COVID-19 and/or heart or lung damage due to severe COVID-
+19 in those individuals who reported they had a COVID-19 infection at the onset of their 
+ME/CFS symptoms (7). Additionally, individuals whose sex at birth was indicated as ‘intersex’ or 
+‘prefer not to say’ were excluded from the cluster analysis due to very low numbers of 
+individuals in those categories, prohibiting subgroup or sensitivity analyses. Individuals without 
+an active study status or who had withdrawn from the study were also excluded, as was one 
+individual whose very high reported age (123 years) was determined to be an extreme outlier. 
+The very small number of participants with missing information on ethnicity (n = 51, 0.26%) and 
+comorbidities (£ 0.21% missing data for each of the 34 comorbidities) were excluded from the 
+analysis. 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+7 
+This present study was covered under the existing ethical approval of the DecodeME study 
+which received a favourable opinion from the North West – Liverpool Central Research Ethics 
+Committee (21/NW/0169).  
+All data cleaning, preprocessing, exploration, and analyses were performed using R version 
+4.1.2 (8).  
+ME/CFS Symptoms 
+This analysis is based on 67 binary symptom variables, ascertained through the DecodeME 
+study baseline questionnaire (9) which was developed from the CCC and IOM/NAM diagnostic 
+criteria by individuals with lived experience of ME/CFS (3). Variables assessing the presence of 
+fatigue and PEM were excluded from the cluster analysis as they are present in 100% of 
+participants (required to meet both CCC and IOM/NAM case definitions). Similarly, the 
+following four additional symptom variables that are present in over 90% of individuals were 
+excluded: 1) unrefreshing sleep, 2) confusion or ‘brainfog’, 3) finding it hard to concentrate, and 
+4) a variable assessing the type of fatigue experienced (physical, mental, both, or none). These 
+symptoms were excluded because variables with minimal variability are not useful for 
+discriminating between clusters and may reduce clustering performance and introduce bias 
+(10).  
+Covariates 
+Participants’ outward postcodes were used as a proxy for socioeconomic status by linking them 
+to Index of Multiple Deprivation (IMD) deciles via the 2019 Harmonised IMD dataset for UK 
+countries (11) and the February 2025 Office for National Statistics postcode directory dataset 
+for the UK (ONSPD) (12). Each postcode was assigned to its most common lower-layer super 
+output area and matched to an IMD decide, which was then converted to a quintile to simplify 
+analysis and enhance statistical power. For two individuals (0.01%), their postcodes did not map 
+to an LSOA. These values were imputed using mode imputation. Due to small numbers of 
+individuals in ethnic minority groups, the levels ‘Asian or Asian British’, ‘Black, African, 
+Caribbean, or Black British’, ‘Mixed or multiple ethic groups’, and ‘Other ethnic group’ were 
+collapsed into one ‘Ethnic minority’ level. Additionally, due to small numbers of individuals 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+8 
+having COVID-19 at ME/CFS onset, the three infection categories (glandular fever, COVID-19, 
+and other infection) were collapsed into an ‘Infectious onset’ category. Individuals who 
+answered “Don’t know” to whether they had an infection at the time of, or just prior, to 
+ME/CFS symptom onset are defined as “unknown” onset type. In this study, males and females 
+are defined by sex at birth.  
+Statistical Analyses 
+ 
+Cluster Analysis 
+We conducted k-modes clustering to identify subgroups of participants with similar symptom 
+profiles using the klaR() package in R (13). The k-modes algorithm was chosen for its ability to 
+handle categorical data. Additionally, a recent study examining different clustering methods 
+used with a dataset of 69 binary variables found that the k-modes algorithm consistently 
+performed better than latent class analysis, agglomerative hierarchical clustering, and k-
+medoids clustering, based on a variety of clustering metrics (14). To determine the optimal 
+number of clusters (k) we generated elbow plots based on the within-cluster dissimilarity across 
+a range of k values (k=2 to k=10), identifying the point at which additional clusters provided 
+minimal improvement in model fit. This selection was further validated using silhouette 
+analysis, including both graphical inspection of silhouette plots and evaluation of average 
+silhouette widths, to assess the cohesion and separation of clusters. The procedure was 
+repeated for the total sample and for the sex-stratified subsamples to capture potential 
+differences in cluster characteristics between females and males. As the number of males was 
+substantially smaller than the number of females in the sample, we performed a bootstrap 
+analysis (100 replicates) to assess the stability of the sex-specific clusters. Cluster stability was 
+measured using the Adjusted Rand Index (ARI) (15). 
+Cluster Characterisation 
+Differences in baseline characteristics between clusters were assessed using a two-sample t-
+test for the age variable, and Chi-squared or Fisher’s exact tests for the categorical variables, 
+with Bonferroni correction (16) applied for multiple testing.  
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+9 
+We evaluated the distribution of each condition across clusters using two complementary 
+measures. First, we calculated the Adjusted Relative Frequency (ARF) (14) to quantify the 
+extent to which a condition was over- or under-represented in a cluster compared with its 
+prevalence in the total cohort. An ARF value of 1 indicates equal prevalence, while values above 
+or below 1 reflect over- and under-representation, respectively. Second, we assessed statistical 
+significance of these differences using Fisher’s exact test (two-sided, α = 0.05), applying a 
+Bonferroni correction to adjust for multiple testing. Statistically significant ARF values were 
+subsequently visualized using a bubble heat map to facilitate comparison across clusters. 
+To determine which symptoms were drivers of cluster separation, we calculated effect sizes for 
+each symptom using Cohen’s h for both the total sample and sex-stratified clusters. Cohen’s h 
+values of 0.5 were used to indicate moderate effect, and 0.8 to indicate large effect (17). To 
+formally test whether the between-cluster difference for each symptom varied by sex, we fitted 
+symptom-specific logistic regression models including a cluster-by-sex interaction term in the 
+total sample.  
+Inferential Analysis 
+To assess whether symptom–cluster associations differed by sex, we conducted symptom-
+specific binomial logistic regression analyses in the total sample, with each binary symptom as 
+the outcome and cluster, sex, and a cluster-by-sex interaction term as predictors. The 
+interaction term tested whether the difference in symptom prevalence between the high- and 
+low-symptom burden clusters varied significantly between males and females; false discovery 
+rate correction was applied across symptoms. 
+To examine the association between onset type and cluster membership, we conducted 
+univariable and multivariable logistic regression analyses for the total sample and sex-stratified 
+subgroups. The multivariable models adjusted for age, sex (in the total sample), ethnicity, and 
+IMD decile. We evaluated the linearity of age with the log-odds of the outcome by comparing 
+models using continuous, categorical (10-year bins), and spline-transformed age, selecting the 
+best-fitting approach based on AIC, likelihood ratio tests, and plots of predicted probabilities. 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+10 
+Model selection and interaction effects were explored using the glmulti() function in R (18), 
+which compared all possible models and pairwise interactions based on AIC. We assessed 
+model diagnostics by examining residual deviance, Cook’s distance, leverage, and deleted 
+residuals to detect influential points, and used variance inflation factors (VIF) to check for 
+multicollinearity among independent variables. 
+Genome-Wide Association Study 
+Genetic data from DecodeME participants was extracted from the jointly imputed case-control 
+dataset for GWAS-1 (4). For this analysis, we retained only participants who were included in 
+DecodeME GWAS-1 and had matching questionnaire data, leading to a dataset with 15,328 
+participants. Of these, 2,401 participants were allocated to the LSBC, and 3,264 to the HSBC. 
+We used REGENIE (19) for genome-wide association testing using the same parameters as for 
+GWAS-1 (4) for autosomal variants with minor allele frequencies ≥ 1% and imputation INFO 
+scores ≥ 0.9. For covariates, we included sex, principal components 1-20 calculated for GWAS-1, 
+and genotyping batch. Effects due to population stratification were well controlled (λ = 1.044). 
+Results 
+Study Population 
+The study population included 19,019 participants aged 16 years and over (Figure 1). Most 
+participants were female (85%) and of white ethnicity (97%). The average age of the sample 
+was 48.7 years (sd = 14.5) (Supplemental Table 1).  
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+11 
+ 
+Figure 1. Flow diagram of sample selection 
+ 
+Cluster Analysis 
+Analysis of the elbow plot for the total sample showed a two-cluster solution was optimal 
+(Supplemental Figures 1A, 1B, and 2).  
+Characterisation of the clusters indicated that the primary distinction between subtypes was 
+overall symptom burden, separating participants into a high symptom burden cluster (HSBC) 
+and a lower symptom burden cluster (LSBC). (Supplemental Table 2). The HSBC contained more 
+individuals (n = 10,849, 57%) than the LSBC (n = 8,170, 43%), and a higher proportion of females 
+(89% vs 80% in the LSBC, p < 0.001). The mean age of individuals in the HSBC was lower than 
+that of the LSBC (46.7 years versus 51.5 years, p < 0.001). There was no difference in ethnicity 
+between clusters. Compared to the LSBC, there were slightly higher proportions of individuals 
+in the HSBC living in areas of higher deprivation (e.g., 22.6% vs 19.3% for Quartile 1, and 24.9% 
+vs 23.7% for Quartile 2, p < 0.001). Approximately 61% of individuals in both clusters reported 
+an infectious onset. The HSBC had slightly fewer individuals with non-infectious onset (15.5% vs 
+17.5%, p < 0.001) and more individuals with unknown onset (23.4% vs 21.2%, p < 0.001). Over 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+12 
+half of participants in both clusters had ME/CFS for ≥10 years, and about 10% for <3 years. 
+Severe and very severe illness were both around three times more common in the HSBC than in 
+the LSBC (severe: 18% vs 6%, p < 0.001; very severe: 1.1% vs 0.3%, p < 0.001). The HSBC also 
+had more individuals reporting worsening illness (22.7% vs 11.4%, p < 0.001) and fewer 
+reporting improvement (1.2% vs 4.3%, p < 0.001). Comorbidities were generally more prevalent 
+in the HSBC, while cancer was the only comorbidity more prevalent in the LSBC (p < 0.001).  
+Overall, individuals in the HSBC showed a broad overrepresentation of symptoms across nearly 
+all domains, while those in the LSBC showed corresponding underrepresentation (Figure 2). The 
+most prominent differences were observed for flu-like symptoms (sore throat, fever or chills, 
+swollen glands, and viral infections) and sensory sensitivities (light, noise, and smell). Marked 
+differences were also seen for musculoskeletal symptoms (muscle pain, stiffness, weakness, 
+and pain spread), as well as cognitive and coordination-related symptoms, such as slow 
+thinking, memory problems, and balance difficulties. In addition, autonomic and 
+neuroendocrine symptoms (e.g., dizziness, palpitations, temperature regulation problems, 
+excessive sweating) were more common in the HSBC, along with mood and energy-related 
+symptoms, such as mood swings and racing thoughts. In this analysis, 58 out of the 67 
+symptoms, all of which are more prevalent in the HSBC, have moderate-to-large effects on 
+cluster separation, based on Cohen’s h ³ 0.5 (Table 1). 
+ 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+13 
+ 
+Figure 2. Bubble heat map showing symptom over- and under-representation in each cluster for both the total 
+sample and for females and males. The magnitude represents the level of over- (red bubbles) or under- (blue 
+bubbles) representation, where the larger the magnitude (larger the bubble), the greater the degree to which the 
+symptom is over- or under- represented in the cluster, relative to the prevalence of the symptom in the entire 
+sample. 
+  
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+ 
+14 
+Table 1. Influential symptoms driving cluster separation, based on Cohen’s h, for the total sample and sex-based subgroups.
+Characteristic 
+Females 
+(n = 16,135) 
+Males 
+(n = 2,884) 
+Total 
+(n = 19,019) 
+ 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+COLD OR FLU-LIKE SYMPTOMS 
+        Sore throat 
+        Flu-like feeling 
+        Fever or chills 
+        Swollen or tender neck/armpit glands 
+        Viral infections with long recovery 
+        Fewer viral infections than I used to get 
+ 
+SENSITIVITIES 
+        Alcohol 
+        Chemicals 
+        Food 
+        Medicine 
+        Smells 
+        Other things 
+        Light 
+        Noise 
+        Touch 
+ 
+GUT SYMPTOMS 
+        Feeling sick (nausea) 
+        Gut or irritable bowel-type symptoms   
+        Heartburn 
+ 
+HEADACHES 
+        Headache 
+        Migraine 
+        Eye pain or pain behind eyes 
+        Feeling of head/base of skull pressure 
+ 
+28.9% 
+27.5% 
+39.6% 
+33.9% 
+- 
+- 
+ 
+ 
+- 
+23.4% 
+29.6% 
+22.4% 
+38.9% 
+- 
+31.1% 
+19.8% 
+41.5% 
+ 
+ 
+43.3% 
+18.7% 
+30.1% 
+ 
+ 
+26.8% 
+33.2% 
+43.0% 
+38.1% 
+ 
+0.61 
+0.64 
+0.83 
+0.69 
+- 
+- 
+ 
+ 
+- 
+0.52 
+0.60 
+0.53 
+0.80 
+- 
+0.68 
+0.53 
+0.87 
+ 
+ 
+0.91 
+0.56 
+0.62 
+ 
+ 
+0.65 
+0.69 
+0.90 
+0.83 
+ 
+32.4% 
+30.4% 
+38.6% 
+35.0% 
+- 
+- 
+ 
+ 
+- 
+20.3% 
+32.0% 
+16.8% 
+27.9% 
+- 
+36.9% 
+27.0% 
+29.0% 
+ 
+ 
+46.2% 
+26.7% 
+36.4% 
+ 
+ 
+32.0% 
+28.1% 
+47.5% 
+41.5% 
+ 
+0.66 
+0.69 
+0.83 
+0.73 
+- 
+- 
+ 
+ 
+- 
+0.51 
+0.67 
+0.44 
+0.62 
+- 
+0.77 
+0.63 
+0.67 
+ 
+ 
+0.97 
+0.67 
+0.75 
+ 
+ 
+0.72 
+0.63 
+1.00 
+0.89 
+ 
+30.5% 
+27.3% 
+39.7% 
+34.9% 
+- 
+- 
+ 
+ 
+- 
+23.9% 
+31.2% 
+22.6% 
+39.4% 
+- 
+35.0% 
+21.8% 
+41.9% 
+ 
+ 
+44.3% 
+20.1% 
+31.1% 
+ 
+ 
+27.8% 
+33.9% 
+43.8% 
+38.3% 
+ 
+0.64 
+0.64 
+0.83 
+0.71 
+- 
+- 
+ 
+ 
+- 
+0.54 
+0.63 
+0.54 
+0.81 
+- 
+0.77 
+0.58 
+0.89 
+ 
+ 
+0.93 
+0.59 
+0.64 
+ 
+ 
+0.67 
+0.71 
+0.92 
+0.84 
+Only moderate (Cohen’s h ³ 0.5) or large effects (Cohen’s h ³ 0.8; highlighted in bold) are shown.  
+ 
+ 
+
+ 
+15 
+Table 1 (continued). Influential symptoms driving cluster separation, based on Cohen’s h, for the total sample and sex-based subgroups.
+Characteristic 
+Females 
+(n = 16,135) 
+Males 
+(n = 2,884) 
+Total 
+(n = 19,019) 
+ 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+MUSCLE/JOINT SYMPTOMS 
+        Muscle pain 
+        Muscle twitching/spasms 
+        Muscle stiffness 
+        Joint pain with no swelling or redness 
+        Migratory joint pain (no swell/redness) 
+        Muscle weakness 
+        Chest pain 
+ 
+PROBLEMS WITH THINKING, SENSATION, OR 
+MOVEMENT 
+        Temporary eyesight/focus problems 
+        Numbness or tingling in arms or legs 
+        Poor standing balance/steadiness 
+        Poor walking coordination/steadiness 
+        Short-term memory problems 
+        Disorientation  
+        Hard to understand things/think clearly 
+        Problems finding or saying words 
+        Hard to remember things 
+        Slow thinking 
+        Hard to make decisions 
+        Speech problems 
+        Ringing in ears (Tinnitus) 
+ 
+SLEEP 
+        Problems with sleep quality or length 
+        Night sweats 
+        Feeling more sleepy than is normal 
+ 
+18.9% 
+41.9% 
+27.7% 
+24.2% 
+38.1% 
+24.3% 
+36.4% 
+ 
+ 
+ 
+42.8% 
+41.7% 
+41.1% 
+45.8% 
+29.0% 
+42.7% 
+24.3% 
+16.6% 
+16.2% 
+22.8% 
+21.6% 
+40.9% 
+29.3% 
+ 
+ 
+- 
+31.3% 
+- 
+ 
+0.59 
+0.89 
+0.64 
+0.50 
+0.78 
+0.64 
+0.79 
+ 
+ 
+ 
+0.89 
+0.87 
+0.94 
+0.96 
+0.64 
+0.89 
+0.59 
+0.50 
+0.50 
+0.56 
+0.53 
+0.87 
+0.60 
+ 
+ 
+- 
+0.64 
+- 
+ 
+23.9% 
+40.2% 
+32.9% 
+28.5% 
+39.7% 
+25.6% 
+40.3% 
+ 
+ 
+ 
+44.4% 
+48.0% 
+45.2% 
+48.2% 
+27.4% 
+45.8% 
+25.9% 
+22.8% 
+18.5% 
+22.5% 
+23.3% 
+41.0% 
+27.8% 
+ 
+ 
+- 
+35.2% 
+- 
+ 
+0.65 
+0.86 
+0.75 
+0.59 
+0.82 
+0.66 
+0.87 
+ 
+ 
+ 
+0.92 
+1.00 
+1.00 
+1.01 
+0.63 
+0.95 
+0.63 
+0.59 
+0.55 
+0.57 
+0.57 
+0.88 
+0.57 
+ 
+ 
+- 
+0.72 
+- 
+ 
+20.0% 
+40.7% 
+28.2% 
+25.5% 
+38.4% 
+24.0% 
+37.7% 
+ 
+ 
+ 
+42.6% 
+41.9% 
+41.1% 
+45.9% 
+27.9% 
+42.6% 
+24.5% 
+17.8% 
+16.4% 
+22.5% 
+21.9% 
+40.9% 
+28.8% 
+ 
+ 
+- 
+32.3% 
+- 
+ 
+0.62 
+0.87 
+0.67 
+0.53 
+0.79 
+0.64 
+0.81 
+ 
+ 
+ 
+0.88 
+0.88 
+0.95 
+0.97 
+0.62 
+0.88 
+0.60 
+0.52 
+0.51 
+0.56 
+0.55 
+0.86 
+0.59 
+ 
+ 
+- 
+0.66 
+- 
+Only moderate (Cohen’s h ³ 0.5) or large effects (Cohen’s h ³ 0.8; highlighted in bold) are shown.  
+ 
+ 
+
+ 
+16 
+Table 1 (continued). Influential symptoms driving cluster separation, based on Cohen’s h, for the total sample and sex-based subgroups.
+Characteristic 
+Females 
+(n = 16,135) 
+Males 
+(n = 2,884) 
+Total 
+(n = 19,019) 
+ 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+Proportion difference 
+between clusters  
+(%) 
+Cohen’s h  
+( > 0.5) 
+NEUROENDOCRINE SYMPTOMS 
+        Symptoms worse with stress 
+        Difficulty in very hot/cold places 
+        Less interest in sex/sexual dysfunction  
+        Unusual change in appetite or weight 
+ 
+AUTOMATIC BODY FUNCTIONS 
+        Difficulty remaining standing 
+        Dizzy or faint when standing 
+        Palpitations while standing/other times 
+        Light-headedness 
+        Having a very pale face 
+        Excessive sweating 
+        Cold hands or feet 
+        Bladder problems 
+        Breathing difficulty during activity/effort 
+        Feeling of being sick or unwell 
+        Tight feeling in the chest 
+        Feeling of burning in the lungs 
+ 
+MOOD 
+        Feeling easily anxious or nervous 
+        Feeling low or down 
+        Feeling easily annoyed or irritable 
+        Mood swings 
+        Racing thoughts 
+        Feeling worried 
+ 
+- 
+25.2% 
+24.0% 
+36.7% 
+ 
+ 
+30.0% 
+42.5% 
+40.5% 
+43.4% 
+30.9% 
+36.1% 
+22.9% 
+31.5% 
+41.6% 
+42.5% 
+33.2% 
+11.1% 
+ 
+ 
+23.1% 
+- 
+- 
+34.5% 
+32.8% 
+27.5% 
+ 
+- 
+0.63 
+0.49 
+0.77 
+ 
+ 
+0.67 
+0.93 
+0.84 
+0.97 
+0.65 
+0.75 
+0.48 
+0.64 
+0.86 
+0.92 
+0.73 
+0.44 
+ 
+ 
+0.52 
+- 
+- 
+0.71 
+0.67 
+0.58 
+ 
+- 
+32.5% 
+24.2% 
+41.1% 
+ 
+ 
+39.9% 
+47.5% 
+43.8% 
+48.6% 
+23.3% 
+34.5% 
+35.6% 
+28.2% 
+44.5% 
+45.1% 
+40.5% 
+13.9% 
+ 
+ 
+28.1% 
+- 
+- 
+36.3% 
+36.7% 
+32.9% 
+ 
+- 
+0.71 
+0.50 
+0.85 
+ 
+ 
+0.84 
+1.03 
+0.92 
+1.06 
+0.53 
+0.73 
+0.73 
+0.57 
+0.92 
+0.94 
+0.90 
+0.51 
+ 
+ 
+0.63 
+- 
+- 
+0.74 
+0.75 
+0.69 
+ 
+- 
+27.2% 
+23.5% 
+37.4% 
+ 
+ 
+32.0% 
+42.8% 
+42.0% 
+43.3% 
+31.5% 
+35.8% 
+28.2% 
+30.8% 
+42.0% 
+43.1% 
+36.9% 
+11.9% 
+ 
+ 
+23.3% 
+- 
+- 
+33.8% 
+32.7% 
+28.4% 
+ 
+- 
+0.67 
+0.49 
+0.78 
+ 
+ 
+0.71 
+0.94 
+0.87 
+0.98 
+0.66 
+0.75 
+0.59 
+0.63 
+0.87 
+0.93 
+0.82 
+0.47 
+ 
+ 
+0.53 
+- 
+- 
+0.69 
+0.67 
+0.60 
+Only moderate (Cohen’s h ³ 0.5) or large effects (Cohen’s h ³ 0.8; highlighted in bold) are shown.  
+ 
+ 
+ 
+
+ 
+ 
+17 
+Inferential Analysis 
+Lastly, we explored the association between infectious disease onset and cluster membership 
+(Table 2). In multivariable logistic regression adjusted for sex, age, deprivation, and ethnicity, 
+infectious onset was associated with a 24% increased odds (OR = 1.24, 95% CI: 1.15–1.35), and 
+unknown onset with 30% increased odds (OR = 1.30, 95% CI: 1.18–1.43) of belonging to the 
+HSBC, relative to non-infectious disease onset. The association was similar for males and 
+females, although estimation was imprecise for males due to reduced power.  
+Sex-Specific Clusters 
+A two-cluster solution was also found to be optimal in the subgroup analyses for both females 
+(Supplemental Figures 3A-B, 4) and males (Supplemental Figures 3C-D, 5). Assessment of ARI 
+values based on 100 bootstrap replicates showed the clusters for both subgroups were stable 
+(female meanARI = 0.78, male meanARI = 0.91) (Supplemental Figure 6). 
+Clustering of females, and separately males, also each resulted in two clusters characterised as 
+a HSBC and a LSBC (Supplemental Table 2). For females, a higher proportion of individuals were 
+allocated to the HSBC (61.6%) compared to the LSBC (38.4%), whereas for males, the LSBC had 
+a higher proportion of individuals (52.0%) compared to the HSBC (48.0%). Patterns in baseline 
+characteristics across clusters for females and males are generally similar to the total sample, 
+with differences in statistical significance likely due to the smaller number of males (n = 2,884) 
+compared to females (n = 16,135). Symptom burden across both clusters was generally higher 
+in females than males. There were also sex differences in the individual symptoms most 
+strongly contributing to separation of the HSBC and LSBC (Table 1). Several symptoms within 
+the pain, cognitive/neurological, autonomic, gut, and mood domains had larger between-
+cluster differences in males than females. After false discovery rate correction, only heartburn, 
+extremity numbness or tingling, eye pain, and chest tightness showed statistically significant 
+cluster-by-sex interactions; for each of these symptoms, the HSBC-LSBC contrast was larger in 
+males than in females.  
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+ 
+18 
+Table 2. Unadjusted and adjusted odds ratios for the association between onset type and high symptom burden cluster membership for the total sample and 
+sex-based subgroups. 
+ 
+Females (n = 16,135) 
+Males (n = 2,884) 
+Total Sample (n = 19,019) 
+ 
+OR [95% CI] 
+p-value 
+OR [95% CI] 
+p-value 
+OR [95% CI] 
+p-value 
+UNADJUSTED 
+Onset Type 
+      Non-infectious       
+      Infectious  
+      Unknown onset 
+ 
+ 
+Reference 
+1.13 [1.04 – 1.25] 
+1.28 [1.15 – 1.41] 
+ 
+ 
+- 
+2.00x10-03 
+2.82x10-06 
+ 
+ 
+Reference 
+1.16 [0.93 – 1.44] 
+1.20 [0.94– 1.54] 
+ 
+ 
+- 
+0.18 
+0.14 
+ 
+ 
+Reference 
+1.13 [1.04 – 1.22] 
+1.24 [1.13 – 1.37] 
+ 
+ 
+- 
+3.53x10-03 
+4.40x10-06 
+ADJUSTED 
+Onset Type 
+      Non-Infectious 
+      Infectious 
+      Unknown 
+Sex 
+      Female 
+      Male 
+Age 
+      16 – 25 
+      26 – 35 
+      36 – 45 
+      46 – 55 
+      56 – 65 
+      66 – 75 
+      76 and over 
+IMD Group 
+      Quintile 1 (most deprived) 
+      Quintile 2 
+      Quintile 3 
+      Quintile 4 
+      Quintile 5 (least deprived) 
+Ethnicity 
+      White 
+      Ethnic Minority 
+ 
+ 
+Reference 
+1.25 [1.15 – 1.37] 
+1.33 [1.20 – 1.47] 
+ 
+ 
+ 
+ 
+Reference 
+0.91 [0.76 – 1.07] 
+0.88 [0.75 – 1.04] 
+0.85 [0.73 – 1.00] 
+0.62 [0.53 – 0.73] 
+0.35 [0.29 – 0.41] 
+0.21 [0.16 – 0.27] 
+ 
+Reference 
+0.91 [0.82 – 1.00] 
+0.87 [0.78 – 0.96] 
+0.81 [0.73 – 0.89] 
+0.74 [0.66 – 0.82] 
+ 
+Reference 
+1.03 [0.85 – 1.25] 
+ 
+ 
+- 
+5.03x10-07 
+1.04x10-07 
+ 
+ 
+ 
+ 
+- 
+0.26 
+0.13 
+0.05 
+5.69x10-09 
+<2x10-16 
+<2x10-16 
+ 
+- 
+0.05 
+4.79x10-03 
+3.52x10-05 
+1.05x10-07 
+ 
+- 
+0.73 
+ 
+ 
+Reference 
+1.17 [0.94 – 1.46] 
+1.17 [0.91 – 1.50] 
+ 
+ 
+ 
+ 
+Reference 
+1.46 [0.96 – 2.22] 
+1.58 [1.07 – 2.36] 
+1.64 [1.12 – 2.42] 
+1.09 [0.74 – 1.61] 
+0.74 [0.49 – 1.11] 
+0.42 [0.24 – 0.72] 
+ 
+Reference 
+0.83 [0.66 – 1.04] 
+0.76 [0.61 – 0.96] 
+0.88 [0.70 – 1.11] 
+0.64 [0.49 – 0.83] 
+ 
+Reference 
+1.50 [0.97 – 2.34] 
+ 
+ 
+- 
+0.15 
+0.23 
+ 
+ 
+ 
+ 
+- 
+0.08 
+0.02 
+0.01 
+0.66 
+0.14 
+1.89x10-03 
+ 
+- 
+0.10 
+0.02 
+0.30 
+8.89x10-04 
+ 
+- 
+0.07 
+ 
+ 
+Reference 
+1.24 [1.15 – 1.35] 
+1.30 [1.18 – 1.43] 
+ 
+Reference 
+0.52 [0.48– 0.56] 
+ 
+Reference 
+0.95 [0.81 – 1.11] 
+0.93 [0.80 – 1.08] 
+0.90 [0.78 – 1.04] 
+0.65 [0.56 – 0.75] 
+0.37 [0.32 – 0.43] 
+0.21 [0.17 – 0.26] 
+ 
+Reference 
+0.90 [0.82 – 0.98] 
+0.86 [0.79 – 0.94] 
+0.81 [0.74 – 0.89] 
+0.69 [0.62 – 0.77] 
+ 
+Reference 
+1.08 [0.91 – 1.29] 
+ 
+ 
+- 
+1.85x10-07 
+6.53x10-08 
+ 
+- 
+<2x10-16 
+ 
+- 
+0.54 
+0.33 
+0.15 
+6.20x10-09 
+<2x10-16 
+<2x10-16 
+ 
+- 
+0.01 
+1.47x10-03 
+7.33x10-06 
+2.93x10-12 
+ 
+- 
+0.37 
+An OR > 1 indicates a higher likelihood of High Symptom Burden Cluster membership. P-values < 0.05 are in bold. Ethnic minority = Asian, Asian British, Black, African,  
+Caribbean, Black British, mixed or multiple ethnic minority groups, or other ethnic group. CI = confidence interval. IMD = index of multiple deprivation.
+
+ 
+ 
+19 
+Genome-Wide Association Study 
+No variant reached genome-wide significance at the standard threshold of p < 5 x 10-8. At a less 
+stringent threshold of p < 8 x 10-7 three associations were identified (Figure 3, Supplemental 
+Table 3), among which approximately one is expected to be a false positive discovery (20). 
+Nearby protein-coding genes are involved in chronobiology, inflammation and pain sensing 
+(Supplemental Table 3).  
+ 
+ 
+Figure 3. No genome-wide significant associations to HSBC/LSBC status. Manhattan plot showing the 
+chromosomal position of DNA variants (x-axis) against −log10p (y-axis) from genome-wide association tests for 
+HSBC status accounting for sex, genotyping batch and genetic ancestry. The upper horizontal dashed line indicates 
+the threshold used to define genome-wide significant associations (p < 5 x 10-8); the lower horizontal dashed line 
+indicates p < 1 x 10-5. Three loci on chromosome 15 (RORA), 7 (RARRES2) and 2 (SPP2 / TRPM8) have associations 
+with p < 8 x 10-7. 
+Discussion 
+This study applied a data-driven approach to identify symptom-based ME/CFS subtypes in the 
+DecodeME cohort, using k-modes clustering and sex-stratified analyses. Two consistent clusters 
+emerged: a HSBC and a LSBC. The HSBC was characterised by more symptoms, greater illness 
+severity, greater proportion of people with worsening illness course, and higher comorbidity 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+20 
+prevalence, particularly for fibromyalgia, IBS, and clinical depression. The HSBC included more 
+females, younger individuals, and those from more deprived areas. Similar clustering patterns 
+were observed in females and males, although females in the HSBC showed higher overall 
+symptom prevalence and more pronounced sensory sensitivities, whereas males showed larger 
+differences between clusters for cognitive, autonomic, and mood symptoms. Individuals with 
+infectious or unknown onset were more likely to belong to the HSBC, even after accounting for 
+differences in age, sex, ethnicity and socioeconomic deprivation. Although the identified 
+genetic associations were suggestive rather than definitive, the proximity of the implicated loci 
+to genes involved in chronobiology, inflammation, and pain processing is notable given the 
+prominence of sleep disturbance, post-exertional malaise, and sensory hypersensitivity in 
+ME/CFS. 
+Previous studies employing clustering techniques (e.g., latent class analysis, k-means, 
+hierarchical agglomerative clustering) on ME/CFS symptom data from single and combined 
+datasets revealed a polysymptomatic/high symptom burden cluster akin to the HSBC (21–29), 
+an oligosymptomatic/low symptom burden cluster akin to the LSBC (22,24,25,28) and clusters 
+characterised by a dominant symptom type, including pain (primarily muscle or joint) 
+(37,39,42), PEM (27,28,31), mood symptoms (29,32,33), and autonomic dysfunction (e.g., GI 
+symptoms, circulatory symptoms, dysautonomia) (26,32,34). Comparability between studies is 
+limited by inconsistent or absent case definitions and heterogeneity in symptom lists and 
+analytic inputs (e.g., raw vs factor-reduced data). Furthermore, sample sizes were frequently 
+small (n < 160), and in some studies very small clusters (<10% of the sample) were reported, 
+reducing statistical power, the reliability of rare subtypes, and external validity. Additionally, we 
+identified only one study that conducted sex-stratified clustering (35), with very small male 
+groups (<20 males per cluster), below recommended thresholds (53). Their findings aligned 
+with our analyses, where females were more likely to be in the HSBC and exhibited higher 
+symptom prevalence overall. 
+The observed association between infectious or unknown onset and membership in the HSBC 
+suggests that these onset types could delineate clinically and potentially biologically distinct 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+21 
+ME/CFS subtypes. Individuals with an infectious onset were more likely to experience severe 
+symptomatology, supporting prior evidence that post-infectious cases can result in a more 
+debilitating disease course (25). This aligns with longitudinal findings from post-viral fatigue 
+studies, such as those involving Epstein-Barr virus and COVID-19, where the severity of the 
+initial illness predicted long-term symptom burden (25,36). 
+Interestingly, individuals who reported not knowing whether an infection was involved at onset 
+also showed increased odds of being in the HSBC. However, interpretation is limited by the 
+survey wording: participants were asked only whether an infection occurred ‘when, or just 
+before, [their] first ME/CFS symptoms started’, not about other possible triggers or whether the 
+onset circumstances were uncertain. Consequently, the ‘don’t know’ response may conflate 
+several distinct scenarios, including uncertainty about infection involvement, genuinely 
+unknown onset circumstances, and non-infectious triggering events. Future studies could 
+improve onset characterization by distinguishing between infection-related onset, specific non-
+infectious triggers, no identifiable trigger, and lack of information about onset.  
+These clinical patterns can be considered alongside genetic findings from DecodeME, while 
+distinguishing between ME/CFS risk loci and the exploratory GWAS undertaken in the present 
+subtype analysis. The wider DecodeME GWAS identified eight genome-wide significant loci 
+associated with ME/CFS risk, including loci near genes involved in immune response and 
+neurological function, and reported stronger genetic signals among participants with infection 
+at onset (4). This provides broader support for immunological and neurological contributions to 
+ME/CFS and is consistent with our observation that infectious onset was associated with 
+membership of the HSBC. In contrast, the GWAS conducted as part of the present analysis did 
+not identify any genome-wide significant subtype-associated variants, and the three suggestive 
+associations should therefore be interpreted cautiously, particularly as approximately one 
+would be expected to be false positive at the threshold used. Nevertheless, the proximity of 
+these suggestive loci to genes implicated in circadian regulation, inflammatory signalling, and 
+sensory or pain processing is notable in relation to the clinical profile of the HSBC, which was 
+marked by greater illness severity, sleep-related symptoms, sensory sensitivities, pain-
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+22 
+associated comorbidities, and higher prevalence of infectious or uncertain onset. Taken 
+together, the genetic findings do not validate the symptom clusters directly, but they provide a 
+plausible biological frame for interpreting them and suggest that symptom burden, onset type, 
+sex, and comorbidity profile may be important stratification variables in future genetic and 
+mechanistic studies of ME/CFS. 
+The primary strength of this study is its large sample size, which enabled sex-stratified 
+clustering and analysis of raw symptom data, capturing a wide range of symptoms without pre-
+defined assumptions. Despite the cohort being predominantly White, it included more ethnic 
+minority participants than previous UK ME/CFS studies, enabling preliminary exploration of 
+cluster distribution across ethnic groups. Additional strengths include requiring a clinical 
+diagnosis and applying both clinical and research case definitions, ensuring a heterogeneous yet 
+relevant sample. The k-modes clustering method was internally validated and showed high 
+cluster stability, even in the smaller male subgroup.  
+This study has several limitations. First, there is the potential for Type 1 errors given the large 
+sample size and extensive number of variables, although corrections for multiple testing were 
+applied to reduce this risk. Additionally, clustering may reflect sample-specific patterns despite 
+internal validation. To address this, future studies should aim to externally validate the clusters 
+using independent ME/CFS datasets with similar symptom variables to assess replicability and 
+generalisability. Meta-clustering approaches that integrate results across multiple datasets or 
+reapplying the clustering solution to new cohorts could further strengthen confidence in the 
+identified symptom subgroups. Second, self-selection bias is another potential limitation. 
+Recruitment via online platforms and patient networks may have resulted in an 
+overrepresentation of individuals who are more health literate, motivated, or able to 
+participate. This may bias the sample towards individuals with particular demographic or illness 
+characteristics. For instance, the mental and physical burden of participation could deter those 
+with more severe ME/CFS, potentially leading to underestimation of the effect sizes observed, 
+particularly those relating to symptom severity or comorbidity burden. Older individuals and 
+people from ethnic minority groups appear underrepresented in ME/CFS cohorts, consistent 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+23 
+with English GP data showing fewer diagnoses in older individuals than expected and 
+disproportionate underdiagnosis among ethnic minority groups (37), as well as 
+underrepresentation of older individuals in DecodeME (4). The results of this study are also not 
+generalisable to paediatric or adolescent populations, whose presentation of ME/CFS can differ 
+from that of adults (38).  
+While the clustering analysis identifies symptom-based subgroups, these groupings may still 
+have relevance for clinical care. Because current ME/CFS management guidance and care 
+recommendations include severity-based adaptations (39),  healthcare professionals likely 
+already respond differently to patients with high versus low symptom burden; cluster 
+characteristics could therefore support a more structured understanding of patient 
+heterogeneity. This may help guide awareness of differential needs, particularly in settings 
+where a more nuanced approach is not consistently applied. For example, individuals in the 
+high symptom burden group may benefit from more proactive care or support, including 
+signposting to services such as social care, occupational therapy, or benefit systems to help 
+manage functional limitations. These findings emphasise the importance of recognising 
+heterogeneity in ME/CFS and underscore the need to address the specific presentation of the 
+individual, rather than relying on a uniform model of the disease.   
+The association between infectious or unknown onset and membership in the HSBC 
+membership underscores the value of incorporating onset type into clinical assessments. 
+Although most individuals recover fully from infections, a subset develop ME/CFS (40), and 
+among those with ME/CFS, individuals with an infectious onset are more likely to carry a higher 
+symptom burden. Closer monitoring following certain infections, particularly in cases involving 
+prolonged or atypical recovery, may help identify early signs of ME/CFS. However, given the low 
+absolute risk of ME/CFS following most infections (40), any targeted post-infection surveillance 
+strategies must be proportionate and guided by further research. These findings also highlight 
+the importance of mechanistic studies to better understand why infectious onset may be 
+associated with more severe disease, potentially revealing biological pathways that could 
+inform both preventive strategies and therapeutic development. 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+24 
+Although curative treatment remains the ideal goal, no effective interventions currently exist 
+for ME/CFS (41). In the meantime, multidisciplinary care focused on symptom management is 
+essential. This study reinforces the importance of ensuring that such care is widely accessible 
+and responsive to complex clinical needs. Symptom management may include advice on pacing, 
+comorbidity screening, sensory modulation, social and psychological support, and 
+pharmacologic treatment to alleviate specific symptoms (42). 
+While nearly all symptoms were less prevalent in the LSBC, reflecting a generally milder and less 
+multisystem pattern, this was not an inevitable outcome given the known heterogeneity of 
+ME/CFS symptoms. That such a distinction emerged underscores the potential value of 
+clustering approaches in elucidating population-level symptom patterns. We selected k-modes 
+because it is well suited to large categorical datasets and was found to perform well in a recent 
+study using a similar type of dataset (14). Work is also needed to determine whether clusters 
+correspond to objective clinical or physiological measures, predict meaningful outcomes, and 
+remain stable over time. In parallel, combining genetic data from studies like DecodeME with 
+detailed clinical features, such as symptom-based clusters and onset history, may further refine 
+ME/CFS subtypes and help reveal underlying biological pathways, supporting the development 
+of more precise diagnostic tools and targeted interventions. 
+Conclusions 
+This clustering analysis of ME/CFS symptoms in the DecodeME study applied an unsupervised 
+machine learning approach to the largest cohort to date, identifying two symptom-based 
+clusters. These findings reinforce the heterogeneity of ME/CFS and are consistent with prior 
+research, while benefiting from greater statistical power and demographic breadth. The 
+observed associations between symptom burden, sex, and onset type, and particularly the 
+heightened symptom severity linked to infectious and unknown onset, suggest the existence of 
+clinically meaningful subtypes, potentially reflecting distinct biological mechanisms. 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+25 
+Acknowledgements 
+The authors would like to thank the DecodeME participants and DecodeME staff for their 
+contributions to this study. The authors would like to acknowledge that DecodeME was funded 
+by the National Institute for Health and Care Research (NIHR) and Medical Research Council 
+(MRC), grant number MC_PC_20005, and that JJD’s research is funded by generous donations. 
+The authors would like to thank Sian Leary for providing thoughtful feedback on this preprint 
+and Lauren DeLong for providing early guidance on cluster analysis. The authors would also like 
+to acknowledge that this work made use of the resources provided by the Edinburgh Compute 
+and Data Facility.  
+ 
+Conflict of Interest Statement 
+The authors declare they have no competing interests.  
+ 
+ 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+26 
+References 
+1. Cortes Rivera M, Mastronardi C, Silva-Aldana CT, Arcos-Burgos M, Lidbury BA. Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome: A Comprehensive Review. Diagnostics 
+(Basel). 2019 Aug 7;9(3):91. doi:10.3390/diagnostics9030091 PubMed PMID: 31394725; 
+PubMed Central PMCID: PMC6787585. 
+2. Pheby DFH, Araja D, Berkis U, Brenna E, Cullinan J, de Korwin JD, et al. The Development of 
+a Consistent Europe-Wide Approach to Investigating the Economic Impact of Myalgic 
+Encephalomyelitis (ME/CFS): A Report from the European Network on ME/CFS 
+(EUROMENE). Healthcare (Basel). 2020 Apr 7;8(2):88. doi:10.3390/healthcare8020088 
+PubMed PMID: 32272608; PubMed Central PMCID: PMC7349118. 
+3. Devereux-Cooke A, Leary S, McGrath SJ, Northwood E, Redshaw A, Shepherd C, et al. 
+DecodeME: community recruitment for a large genetics study of myalgic encephalomyelitis 
+/ chronic fatigue syndrome. BMC Neurology. 2022 Jul 19;22(1):269. doi:10.1186/s12883-
+022-02763-6 
+4. The DecodeME Team. Initial findings from the DecodeME genome-wide association study of 
+myalgic encephalomyelitis/chronic fatigue syndrome [Internet]. medRxiv; 2025 [cited 2025 
+Oct 17]. p. 2025.08.06.25333109. Available from: 
+https://www.medrxiv.org/content/10.1101/2025.08.06.25333109v1 
+doi:10.1101/2025.08.06.25333109 
+5. Tyson S, Stanley K, Gronlund TA, Leary S, Emmans Dean M, Dransfield C, et al. Research 
+priorities for myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): the results of a 
+James Lind alliance priority setting exercise. Fatigue: Biomedicine, Health & Behavior. 2022 
+Oct 2;10(4):200–11. doi:10.1080/21641846.2022.2124775 
+6. Defining future ME/CFS research: The ME/CFS Priority Setting Partnership [Internet]. Action 
+for ME; 2022 [cited 2025 Jan 25]. Available from: https://psp-me.co.uk/wp-
+content/uploads/2022/05/Defining-future-ME-CFS-research-The-ME-CFS-Priority-Setting-
+Partnership.pdf 
+7. Bretherick AD, McGrath SJ, Devereux-Cooke A, Leary S, Northwood E, Redshaw A, et al. 
+Typing myalgic encephalomyelitis by infection at onset: A DecodeME study. NIHR Open Res. 
+2023 Aug 21;3:20. doi:10.3310/nihropenres.13421.4 
+8. R: The R Project for Statistical Computing [Internet]. [cited 2025 Oct 17]. Available from: 
+https://www.r-project.org/ 
+9. The DecodeME Team. Institute of Genetics and Cancer [Internet]. 2025 [cited 2025 Nov 8]. 
+Study documents | DecodeME : The world’s largest ME/CFS study. Available from: 
+https://institute-genetics-cancer.ed.ac.uk/decodeme-the-worlds-largest-mecfs-
+study/study-documents 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+27 
+10. Everitt B, Landau S, Leese M, Stahl D. Cluster Analysis [Internet]. 5th ed. 2011 [cited 2025 
+Apr 8]. (Wiley Series in Probability and Statistics). Available from: 
+https://cicerocq.wordpress.com/wp-content/uploads/2019/05/cluster-
+analysis_5ed_everitt.pdf 
+11. Data: CDRC Harmonised IMD 2019 - Index of Multiple Deprivation (IMD) | CDRC Data 
+[Internet]. [cited 2025 Apr 26]. Available from: https://data.cdrc.ac.uk/dataset/index-
+multiple-deprivation-imd/resource/data-cdrc-harmonised-imd-2019 
+12. Open Geography Portal [Internet]. [cited 2025 Apr 26]. Available from: 
+https://geoportal.statistics.gov.uk/search?q=PRD_ONSPD%20FEB_2025 
+13. Christian Roever, Nils Raabe, Karsten Luebke, Uwe Ligges, Gero Szepannek, Marc Zentgraf, 
+David Meyer. klaR: Classification and Visualization [Internet]. 2004 [cited 2025 May 25]. p. 
+1.7-3. Available from: https://CRAN.R-project.org/package=klaR 
+doi:10.32614/CRAN.package.klaR 
+14. DeLong LN, Fleetwood K, Prigge R, Galdi P, Guthrie B, Fleuriot JD. Investigating associations 
+between physical multimorbidity clusters and subsequent depression: cluster and survival 
+analysis of UK Biobank data [Internet]. medRxiv; 2024 [cited 2025 Apr 8]. p. 
+2024.07.05.24310004. Available from: 
+https://www.medrxiv.org/content/10.1101/2024.07.05.24310004v1 
+doi:10.1101/2024.07.05.24310004 
+15. Adjusted Rand Index - an overview | ScienceDirect Topics [Internet]. [cited 2025 May 1]. 
+Available from: https://www.sciencedirect.com/topics/computer-science/adjusted-rand-
+index 
+16. Bonferroni Correction - an overview | ScienceDirect Topics [Internet]. [cited 2025 Oct 17]. 
+Available from: https://www.sciencedirect.com/topics/computer-science/bonferroni-
+correction 
+17. Lee DK. Alternatives to P value: confidence interval and effect size. Korean J Anesthesiol. 
+2016 Dec;69(6):555–62. doi:10.4097/kjae.2016.69.6.555 PubMed PMID: 27924194; 
+PubMed Central PMCID: PMC5133225. 
+18. Calcagno V, Mazancourt C de. glmulti: An R Package for Easy Automated Model Selection 
+with (Generalized) Linear Models. Journal of Statistical Software. 2010 May 31;34:1–29. 
+doi:10.18637/jss.v034.i12 
+19. Mbatchou J, Barnard L, Backman J, Marcketta A, Kosmicki JA, Ziyatdinov A, et al. 
+Computationally efficient whole-genome regression for quantitative and binary traits. Nat 
+Genet. 2021 Jul;53(7):1097–103. doi:10.1038/s41588-021-00870-7 
+20. Chen Z, Boehnke M, Wen X, Mukherjee B. Revisiting the genome-wide significance 
+threshold for common variant GWAS. G3 (Bethesda). 2021 Feb 9;11(2):jkaa056. 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+28 
+doi:10.1093/g3journal/jkaa056 PubMed PMID: 33585870; PubMed Central PMCID: 
+PMC8022962. 
+21. Wilson A, Hickie I, Hadzi-Pavlovic D, Wakefield D, Parker G, Straus SE, et al. What is chronic 
+fatigue syndrome? Heterogeneity within an international multicentre study. Aust N Z J 
+Psychiatry. 2001 Aug;35(4):520–7. doi:10.1046/j.1440-1614.2001.00888.x PubMed PMID: 
+11531735. 
+22. Arroll M, Senior V. Symptom Typology and Sub-grouping in Chronic Fatigue Syndrome - 
+University of Surrey [Internet]. International Association for CFS/ME; 2009 Jan [cited 2025 
+Feb 6]. (Bulletin of the IACFS/ME). Available from: 
+https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/Symptom-Typology-and-
+Sub-grouping-in-Chronic/99511577802346 
+23. Collin SM, Nikolaus S, Heron J, Knoop H, White PD, Crawley E. Chronic fatigue syndrome 
+(CFS) symptom-based phenotypes in two clinical cohorts of adult patients in the UK and The 
+Netherlands. Journal of Psychosomatic Research. 2016 Feb 1;81:14–23. 
+doi:10.1016/j.jpsychores.2015.12.006 
+24. Collin SM, Heron J, Nikolaus S, Knoop H, Crawley E. Chronic fatigue syndrome (CFS/ME) 
+symptom-based phenotypes and 1-year treatment outcomes in two clinical cohorts of adult 
+patients in the UK and The Netherlands. Journal of Psychosomatic Research. 2018 Jan 
+1;104:29–34. doi:10.1016/j.jpsychores.2017.11.007 
+25. Hickie I, Lloyd A, Hadzi-Pavlovic D, Parker G, Bird K, Wakefield D. Can the chronic fatigue 
+syndrome be defined by distinct clinical features? Psychological Medicine. 1995 
+Sep;25(5):925–35. doi:10.1017/S0033291700037417 
+26. Huber KA, Sunnquist M, Jason LA. Latent class analysis of a heterogeneous international 
+sample of patients with myalgic encephalomyelitis/chronic fatigue syndrome. Fatigue: 
+Biomedicine, Health & Behavior. 2018 Jul 3;6(3):163–78. 
+doi:10.1080/21641846.2018.1494530 PubMed PMID: 31435490. 
+27. Jason LA, Boulton A, Porter NS, Jessen T, Njoku MG, Friedberg F. Classification of Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome by Types of Fatigue. Behavioral Medicine. 
+2010 Feb 24;36(1):24–31. doi:10.1080/08964280903521370 PubMed PMID: 20185398. 
+28. Vaes AW, Van Herck M, Deng Q, Delbressine JM, Jason LA, Spruit MA. Symptom-based 
+clusters in people with ME/CFS: an illustration of clinical variety in a cross-sectional cohort. 
+Journal of Translational Medicine. 2023 Feb 10;21(1):112. doi:10.1186/s12967-023-03946-6 
+29. Williams TE, Chalder T, Sharpe M, White PD. Heterogeneity in chronic fatigue syndrome – 
+empirically defined subgroups from the PACE trial. Psychological Medicine. 2017 
+Jun;47(8):1454–65. doi:10.1017/S0033291716003615 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+29 
+30. Castro-Marrero J, Zacares M, Almenar-Pérez E, Alegre-Martín J, Oltra E. Complement 
+Component C1q as a Potential Diagnostic Tool for Myalgic Encephalomyelitis/Chronic 
+Fatigue Syndrome Subtyping. JCM. 2021 Sep 15;10(18):4171. doi:10.3390/jcm10184171 
+31. Brown AA, Evans MA, Jason LA. Examining the energy envelope and associated symptom 
+patterns in chronic fatigue syndrome: does coping matter? Chronic Illness. 2013 
+Dec;9(4):302–11. doi:10.1177/1742395313478220 
+32. Murga I, Aranburu L, Gargiulo PA, Gómez Esteban JC, Lafuente JV. Clinical Heterogeneity in 
+ME/CFS. A Way to Understand Long-COVID19 Fatigue. Front Psychiatry. 2021 Oct 11;12. 
+doi:10.3389/fpsyt.2021.735784 
+33. Terman M, Levine SM, Terman JS, Doherty S. Chronic fatigue syndrome and seasonal 
+affective disorder: comorbidity, diagnostic overlap, and implications for treatment. The 
+American Journal of Medicine. 1998 Sep;105(3):115S-124S. doi:10.1016/S0002-
+9343(98)00172-7 
+34. Słomko J, Estévez-López F, Kujawski S, Zawadka-Kunikowska M, Tafil-Klawe M, Klawe JJ, et 
+al. Autonomic Phenotypes in Chronic Fatigue Syndrome (CFS) Are Associated with Illness 
+Severity: A Cluster Analysis. J Clin Med. 2020 Aug 5;9(8):2531. doi:10.3390/jcm9082531 
+PubMed PMID: 32764516; PubMed Central PMCID: PMC7464864. 
+35. Tseng CL, Natelson BH. Few Gender Differences Exist Between Women and Men with 
+Chronic Fatigue Syndrome. Journal of Clinical Psychology in Medical Settings. 2004 Mar 
+1;11(1):55–62. doi:10.1023/B:JOCS.0000016270.13052.cf 
+36. Sudre CH, Murray B, Varsavsky T, Graham MS, Penfold RS, Bowyer RC, et al. Attributes and 
+predictors of long COVID. Nat Med. 2021 Apr;27(4):626–31. doi:10.1038/s41591-021-
+01292-y PubMed PMID: 33692530; PubMed Central PMCID: PMC7611399. 
+37. Samms GL, Ponting CP. Unequal access to diagnosis of myalgic encephalomyelitis in 
+England. BMC Public Health. 2025 Apr 22;25(1):1417. doi:10.1186/s12889-025-22603-9 
+38. Davies S, Crawley E. Chronic fatigue syndrome in children aged 11 years old and younger. 
+Arch Dis Child. 2008 May;93(5):419–21. doi:10.1136/adc.2007.126649 PubMed PMID: 
+18192312. 
+39. Recommendations | Myalgic encephalomyelitis (or encephalopathy)/chronic fatigue 
+syndrome: diagnosis and management | Guidance | NICE [Internet]. NICE; 2021 [cited 2025 
+Mar 27]. Available from: 
+https://www.nice.org.uk/guidance/ng206/chapter/recommendations#box-1-severity-of-
+mecfs 
+40. Hickie I, Davenport T, Wakefield D, Vollmer-Conna U, Cameron B, Vernon SD, et al. Post-
+infective and chronic fatigue syndromes precipitated by viral and non-viral pathogens: 
+prospective cohort study. BMJ. 2006 Sep 16;333(7568):575. 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 
+
+ 
+30 
+doi:10.1136/bmj.38933.585764.AE PubMed PMID: 16950834; PubMed Central PMCID: 
+PMC1569956. 
+41. Arron HE, Marsh BD, Kell DB, Khan MA, Jaeger BR, Pretorius E. Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome: the biology of a neglected disease. Front 
+Immunol. 2024 Jun 3;15:1386607. doi:10.3389/fimmu.2024.1386607 PubMed PMID: 
+38887284; PubMed Central PMCID: PMC11180809. 
+42. Bateman L, Bested AC, Bonilla HF, Chheda BV, Chu L, Curtin JM, et al. Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome: Essentials of Diagnosis and Management. 
+Mayo Clinic Proceedings. 2021 Nov 1;96(11):2861–78. doi:10.1016/j.mayocp.2021.07.004 
+ 
+ 
+ . 
+CC-BY 4.0 International license
+It is made available under a 
+ is the author/funder, who has granted medRxiv a license to display the preprint in perpetuity. 
+(which was not certified by peer review)
+The copyright holder for this preprint 
+this version posted July 1, 2026. 
+; 
+https://doi.org/10.64898/2026.06.29.26356818
+doi: 
+medRxiv preprint 

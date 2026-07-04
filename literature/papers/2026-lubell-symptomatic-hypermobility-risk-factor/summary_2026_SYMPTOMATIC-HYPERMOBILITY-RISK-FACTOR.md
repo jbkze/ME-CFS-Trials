@@ -7,25 +7,28 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.06.24.26356475
 url: https://doi.org/10.64898/2026.06.24.26356475
-pdf: https://doi.org/10.64898/2026.06.24.26356475
-text: null
+pdf: literature/papers/2026-lubell-symptomatic-hypermobility-risk-factor/paper.pdf
+text: literature/papers/2026-lubell-symptomatic-hypermobility-risk-factor/paper.txt
 tags: [exercise-physiology, post-exertional-malaise, neuroinflammation, infection-trigger, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: lubell2026
+cover: "[[literature/papers/2026-lubell-symptomatic-hypermobility-risk-factor/cover.png]]"
 ---
 
 # Symptomatic hypermobility as a risk factor for Long COVID with high post-exertional symptom exacerbation: further analysis of data from a retrospective online survey of adults in the United States and United Kingdom
 
 ## Related files
+![[literature/papers/2026-lubell-symptomatic-hypermobility-risk-factor/paper.pdf]]
 - [[literature/papers/2026-lubell-symptomatic-hypermobility-risk-factor/citation.bib]]
+- [[literature/papers/2026-lubell-symptomatic-hypermobility-risk-factor/paper.txt]]
 
 ## Summary
 
 In a survey of over 1,800 adults who'd had COVID-19, people with symptomatic hypermobility (unusually loose, flexible joints that cause problems) combined with symptoms like dizziness on standing or brain fog were about 9-10 times more likely to develop severe Long COVID with heavy post-exertional symptom exacerbation — a crash after physical or mental activity, the hallmark symptom of ME/CFS.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

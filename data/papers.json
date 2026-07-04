@@ -1,8 +1,68 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-03",
+  "last_check": "2026-07-04",
   "papers": [
+    {
+      "id": "kumar-2026-erp-sensory-processing",
+      "title": "Higher-order brain processes, rather than early processing, underlie sensory problems in ME/CFS: evidence from ERPs",
+      "authors": "Kumar S, Veldhuis A, Yazdani F",
+      "journal": "Frontiers in Medicine",
+      "date": "Jun 2026",
+      "summary": "Using brain-wave recordings (ERPs) during sound tests in 31 people with ME/CFS and 30 healthy people, basic sound processing in the brain was normal, but a later brain signal linked to attention and mental effort was weaker in the ME/CFS patients.",
+      "why": "Suggests sensory overload in ME/CFS comes from how the brain manages attention and higher-level processing rather than from broken basic senses — pointing future treatments toward this higher-level brain function rather than the sense organs themselves.",
+      "link": "https://doi.org/10.3389/fmed.2026.1842841",
+      "first_seen": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "PMID 42396162. Published June 18, 2026. Confirmed via the Frontiers in Media article page. Not Wirth/Scheibenbogen-affiliated."
+    },
+    {
+      "id": "nguyen-2026-ipsc-myogenic-drug-repurposing",
+      "title": "iPSC-Derived Myogenic Progenitor Cells from People with ME/CFS Reveal Altered Genes and Pathways with Drug Repurposing Potential",
+      "authors": "Nguyen D",
+      "journal": "Research Square (preprint, not yet peer-reviewed)",
+      "date": "Jun 2026",
+      "summary": "Muscle precursor cells grown in the lab from stem cells taken from ME/CFS patients showed altered activity in genes involved in cell division, DNA repair, immune response and muscle structure, and used certain nutrients for energy differently than cells from healthy people.",
+      "why": "Lab evidence that ME/CFS muscle cells are genuinely different at a molecular level, not just 'deconditioned' — and the authors computationally flag 22 existing drugs (including leflunomide, melatonin and midodrine) as candidates that could be tested faster than developing a new drug, though this is an early, not-yet-peer-reviewed preprint using a lab stem-cell model.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10015511/v1",
+      "first_seen": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Posted Research Square Jun 16, 2026. Single-author preprint, not yet peer-reviewed. Confirmed via Europe PMC REST API (title/author/date match). Not Wirth/Scheibenbogen-affiliated."
+    },
+    {
+      "id": "pimminger-2026-vienna-pem-questionnaire",
+      "title": "Development and initial content validation of the Vienna Post-Exertional Malaise Questionnaire: an iterative mixed-methods study",
+      "authors": "Pimminger T, Ahrens-Schwabe A, Fragner T, Brandl T, Kotzian S, Wüst RC, Waldhör T, Kapan A",
+      "journal": "Research Square (preprint, not yet peer-reviewed)",
+      "date": "Jun 2026",
+      "summary": "An Austrian team worked with patients and experts through several rounds of feedback to build a new 13-question survey that specifically measures post-exertional malaise (PEM) — the 'crash' after activity that is the hallmark symptom of ME/CFS.",
+      "why": "A patient-informed, purpose-built way to measure PEM could improve diagnosis and become a standard outcome measure in future ME/CFS drug trials, though full scientific validation is still pending.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10040145/v1",
+      "first_seen": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Posted Research Square Jun 16, 2026. Not yet peer-reviewed. Confirmed via Europe PMC REST API (title/author/date match). Not Wirth/Scheibenbogen-affiliated."
+    },
+    {
+      "id": "kaplan-2026-plasma-exchange-review",
+      "title": "Therapeutic plasma exchange and immunomodulatory strategies in post-infectious syndromes: A review of immune dysregulation in PTLDS, long COVID, ME/CFS, and PANS/PANDAS",
+      "authors": "Kaplan G",
+      "journal": "Transfusion and Apheresis Science",
+      "date": "Jun 2026",
+      "summary": "A review article argues that ME/CFS, long COVID, chronic Lyme disease, and certain childhood post-infectious conditions all involve the immune system misfiring in similar ways — including inflammation and self-attacking antibodies — and discusses whether blood-filtering treatments like plasma exchange could help.",
+      "why": "Argues that past large trials of these therapies underperformed because they enrolled patients without using biomarkers to pick who was likely to benefit — a lesson for how future ME/CFS drug trials should select patients.",
+      "link": "https://doi.org/10.1016/j.transci.2026.104482",
+      "first_seen": "2026-07-04",
+      "last_checked": "2026-07-04",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "PMID 42391726. Published online Jun 26, 2026 (print issue Aug 2026). Narrative review/opinion synthesis, not new primary data — single-author piece, lower-confidence than a primary study. Confirmed via Crossref + Elsevier. Not Wirth/Scheibenbogen-affiliated."
+    },
     {
       "id": "wirth-2026-connective-tissue-laxity",
       "title": "Laxity Comes with Consequences: Connective Tissue Disorders and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)",
@@ -973,11 +1033,9 @@
       "why": "This helps confirm that ME/CFS is not one single illness but at least two distinguishable patterns tied to how someone got sick — information that could help future drug trials pick more consistent patient groups. No specific gene explained the split, so the cause of the two patterns is still unclear.",
       "link": "https://doi.org/10.64898/2026.06.29.26356818",
       "first_seen": "2026-07-03",
-      "last_checked": "2026-07-03",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-07-04",
+      "flags": [],
+      "isNew": false,
       "notes": "Posted medRxiv 2026-06-29 (Europe PMC first-indexed 2026-07-01). Follow-up symptom-architecture analysis of the DecodeME cohort (Ponting group), which already contributes the original GWAS and the PrecisionLife combinatorial-genetics paper to this tracker. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
     },
     {
@@ -990,11 +1048,9 @@
       "why": "A direct follow-up on the same German patient cohort already tracked here, adding evidence that ME/CFS may need to be split into sex- and menopause-specific subgroups — relevant to designing better-targeted future drug trials.",
       "link": "https://doi.org/10.21203/rs.3.rs-9825975/v1",
       "first_seen": "2026-07-03",
-      "last_checked": "2026-07-03",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-07-04",
+      "flags": [],
+      "isNew": false,
       "notes": "Posted Research Square 2026-06-30. Follow-up on the same APAV-ME/CFS German cohort (n=748) behind the authors' already-tracked April 2026 J Transl Med symptom-clusters paper (habermann-horstmeier-2026-symptom-clusters). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
     },
     {
@@ -1007,11 +1063,9 @@
       "why": "Independent survey evidence for a hypermobility/connective-tissue link to post-exertional crashes, the same mechanism Klaus Wirth proposed in his already-tracked May 2026 hypothesis paper on connective tissue and ME/CFS — worth watching as corroborating support even though the authors are unrelated to Wirth.",
       "link": "https://doi.org/10.64898/2026.06.24.26356475",
       "first_seen": "2026-07-03",
-      "last_checked": "2026-07-03",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-07-04",
+      "flags": [],
+      "isNew": false,
       "notes": "Borderline inclusion: studies a Long COVID survey cohort (not formally ME/CFS-diagnosed), but the outcome measured — high post-exertional symptom exacerbation — is the ME/CFS-defining PEM phenotype, and the finding directly corroborates the connective-tissue-laxity mechanism proposed in Wirth KJ's already-tracked preprint (wirth-2026-connective-tissue-laxity). Posted medRxiv 2026-06-24 (Europe PMC first-indexed 2026-07-01). Confirmed via Europe PMC REST API (title/authors/date match). Authors not Wirth/Scheibenbogen-affiliated."
     }
   ]
