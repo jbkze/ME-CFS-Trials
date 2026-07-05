@@ -1,0 +1,1378 @@
+Academic Editor: Elisa Oltra
+Received: 15 April 2026
+Revised: 12 May 2026
+Accepted: 15 May 2026
+Published: 17 May 2026
+Copyright: © 2026 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license.
+Article
+Comprehensive Immunophenotyping of Monocytes and
+Dendritic Cells Suggests Distinct Pathophysiology in Chronic
+Fatigue Syndrome and Long COVID
+Steliyan Petrov 1,*
+, Martina Bozhkova 1,2
+, Mariya Ivanovska 1,2
+, Teodora Kalfova 1
+, Dobrina Dudova 1,
+Yana Todorova 3,4
+, Radostina Dimitrova 3,4, Marianna Murdjeva 5,6
+, Hristo Taskov 4
+, Maria Nikolova 3,4
+and Michael Maes 4,7,8,9
+1
+Department of Medical Microbiology and Immunology “Prof. Dr. Elissay Yanev”, Medical University of
+Plovdiv, 4002 Plovdiv, Bulgaria; martina.bozhkova@mu-plovdiv.bg (M.B.);
+mariya.ivanovska@mu-plovdiv.bg (M.I.); teodora.kalfova@mu-plovdiv.bg (T.K.);
+dobrina.dudova@mu-plovdiv.bg (D.D.)
+2
+Research Institute, Medical University of Plovdiv, 4002 Plovdiv, Bulgaria
+3
+National Reference Laboratory of Immunology, National Center of Infectious and Parasitic Diseases (NCIPD),
+1504 Sofia, Bulgaria; y_todorova@abv.bg (Y.T.); radostinad6@gmail.com (R.D.); mr_nklv@yahoo.com (M.N.)
+4
+Research and Innovation Program for the Development of MU-PLOVDIV (SRIPD-MUP), Creation of a
+Network of Research Higher Schools, National Plan for Recovery and Sustainability,
+EuropeanUnion–NextGenerationEU, Medical University of Plovdiv, 4002 Plovdiv, Bulgaria;
+hristotaskov@gmail.com (H.T.); dr.michaelmaes@hotmail.com (M.M.)
+5
+Department of Microbiology and Virology, Medical University of Pleven, 5800 Pleven, Bulgaria;
+mmurdjeva@yahoo.com
+6
+Institute of Innovation and Smart Technology, University of Telecommunication and Posts,
+1700 Sofia, Bulgaria
+7
+Sichuan Provincial Center for Mental Health, Sichuan Provincial People’s Hospital, School of Medicine,
+University of Electronic Science and Technology of China, Chengdu 610072, China
+8
+Key Laboratory of Psychosomatic Medicine, Chinese Academy of Medical Sciences, Chengdu 610072, China
+9
+Department of Psychiatry, Medical University of Plovdiv, 4002 Plovdiv, Bulgaria
+*
+Correspondence: steliyan.petrov@mu-plovdiv.bg
+Abstract
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) and long Coronavirus
+Disease 2019 (long COVID) are complex chronic conditions that often follow infectious trig-
+gers with overlapping clinical features but poorly defined pathophysiological relationships.
+This study aimed to identify disease-specific immune signatures through multiparam-
+eter immunophenotyping of monocytes, dendritic cells, and T cell subsets. A total of
+207 participants were included (ME/CFS: n = 103; long COVID: n = 63; healthy controls:
+n = 41). Peripheral blood mononuclear cells were analyzed using multiparameter flow
+cytometry. Statistical analyses included non-parametric testing, age-adjusted Analysis of
+covariance (ANCOVA), correlation network analysis, and principal component analysis
+(PCA). Long COVID was characterized by increased M2-like monocyte polarization, ele-
+vated CD80 expression across monocyte subsets, expansion of dendritic cells, and reduced
+expression of activation markers, indicating persistent immune activation with features
+of immune exhaustion. In contrast, ME/CFS exhibited reduced costimulatory molecule
+expression, impaired C-C chemokine receptor type 7 (CCR7)-mediated immune cell traffick-
+ing, and less coordinated activation patterns, consistent with a state of immune suppression.
+Correlation network analysis revealed more extensive and integrated immune interactions
+in long COVID, while PCA identified distinct immunophenotypic components and enabled
+moderate discrimination between the two conditions. These findings demonstrate that
+ME/CFS and long COVID are characterized by distinct immune profiles, supporting the
+Int. J. Mol. Sci. 2026, 27, 4488
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+2 of 25
+concept of divergent immunopathological mechanisms. The identified signatures may
+contribute to biomarker development and guide targeted therapeutic approaches.
+Keywords: long COVID; ME/CFS; flow cytometry; monocyte polarization; dendritic cells
+1. Introduction
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) and long COVID
+are debilitating complex chronic conditions that often follow infectious triggers. They
+have emerged as significant public health challenges, affecting millions of individuals
+worldwide [1,2]. Both conditions share striking clinical similarities, including intractable
+fatigue, post-exertional malaise, cognitive dysfunction (“brain fog”), and dysautonomia
+with orthostatic intolerance [1,3,4]. The COVID-19 pandemic has dramatically increased
+awareness of post-viral syndromes, with approximately 10% of SARS-CoV-2-infected
+individuals developing long COVID, and a substantial proportion of patients meeting the
+diagnostic criteria for ME/CFS [5,6].
+The phenotypic similarities between ME/CFS and long COVID encompass multiple
+pathophysiological domains. Both conditions demonstrate autonomic dysfunction, with
+comparable rates of reduced orthostatic cerebral blood flow velocity, widespread autonomic
+failure, small fiber neuropathy, and postural orthostatic tachycardia syndrome [1,7–10]. It
+was hypothesized that the somatic and mental symptoms of both long COVID and CFS
+are underpinned by activated immune-inflammatory and oxidative and nitrosative stress
+(IO & NS) pathways, as a result of imbalanced immune regulatory mechanism [11,12].
+Indeed, at the molecular level, both conditions exhibit elevated oxidative stress in periph-
+eral blood lymphocytes, with aberrations in reactive oxygen species clearance pathways,
+elevated glutathione levels, and mitochondrial dysfunction [2]. Proteomic analyses of
+peripheral blood mononuclear cells have identified overlapping protein clusters and en-
+riched molecular pathways, particularly involved in immune functions and mitochondrial
+energy production [5]. Several studies have tried to elucidate immune phenotypic and
+functional signatures describing this imbalance and possibly differentiating between the
+two conditions.
+Standard laboratory tests and routine clinical assessments consistently fail to distin-
+guish between ME/CFS and long COVID. Novak et al. demonstrated that comprehensive
+laboratory analyses covering metabolic, inflammatory, autoimmune, and hormonal pro-
+files did not differentiate between the two conditions [1]. Similarly, Kedor et al. found
+that disease severity and symptom burden were comparable between post-COVID-19
+ME/CFS and non-COVID-19 ME/CFS patients, with standard biomarkers showing
+similar patterns [13]. This diagnostic limitation has significant clinical implications,
+as both conditions currently lack approved treatments and rely on symptom-based di-
+agnostic criteria [2,14]. The absence of distinguishing biomarkers has fuelled debate
+about whether long COVID and ME/CFS represent the same condition with different
+triggers or partially distinct pathophysiological entities requiring different therapeutic
+approaches.
+Emerging evidence suggests that deeper immunological investigation may reveal
+important distinctions obscured by conventional testing. Gene expression analyses using
+immune exhaustion panels have demonstrated that ME/CFS is characterized by down-
+regulated interferon signaling and immunoglobulin genes, suggesting a state of immune
+suppression or exhaustion, while long COVID exhibits dysregulated expression of genes
+related to antigen presentation, cytokine signaling, and persistent immune activation [15].
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+3 of 25
+Single-cell RNA sequencing has revealed extensive peripheral immune remodeling in long
+COVID with ME/CFS features, including marked reduction in naïve T cells, regulatory
+T cells, MAIT cells, and γδT cells, accompanied by monocyte transcriptional skewing—
+alterations that are less pronounced in idiopathic ME/CFS [16].
+Understanding how different immune cell populations and activation states differ be-
+tween these conditions may provide insights into the mechanisms driving chronic immune
+dysregulation. Monocytes and monocyte-derived dendritic cells are strategic immune com-
+ponents that participate all along the inducing, effector, and regulatory stages of adaptive
+immunity, and may contribute to its imbalance. While M1-like monocytes are activated by
+pathogen invasion and primarily promote inflammation and tissue damage, the M2-like sub-
+set, on the other hand, have anti-inflammatory properties, and are involved in angiogenesis,
+tissue repair and remodeling [17]. DCs are both involved in innate defense and the initiation
+and regulation of adaptive T cell responses [18]. Because persistent immune activation and
+T cell exhaustion have been implicated in both ME/CFS and long COVID, we additionally
+evaluated T cell differentiation subsets associated with naïve, central memory, and activation-
+prone phenotypes, including CD4+ and CD8+ populations expressing CD45RA, CD62L, and
+CD95. These markers were selected to assess adaptive immune remodeling and potential
+exhaustion-related changes accompanying monocyte and dendritic cell dysregulation. As
+monocytes and dendritic cells play crucial roles in the immune response to COVID-19, their
+dysfunction can contribute to immune imbalance underlying the persistence of symptoms [19].
+Thus, long-term changes observed in the levels of certain monocyte and dendritic cell sub-
+sets, as well as the extensive epigenetic changes in monocytes from convalescent patients,
+exposing genes related to cytokine production and leukocyte activation were proposed to
+enhance chronic inflammation and tissue damage observed in long COVID [20,21]. Studies
+on monocyte subsets in chronic fatigue syndrome (CFS) also revealed significant changes
+in the balance between M1 and M2 subsets, and the expression of some monocyte specific
+markers [22]. However, comparative comprehensive characterization of these compartments
+in long COVID and ME/CFS are lacking.
+High-dimensional flow cytometry methods enabling simultaneous measurement of
+over 40 markers on individual cells provide comprehensive assessment of immune cell sub-
+sets and their functional states [23]. Such approaches have identified unique immunotypes
+within ME/CFS based on cerebrospinal fluid immune phenotyping, revealing distinct pa-
+tient clusters with different pathogen exposure histories and inflammatory profiles despite
+similar clinical presentations [24]. Traditional flow cytometry studies (typically measuring
+6–12 markers) have identified various immune alterations in ME/CFS, including changes
+in NK cell subsets, T cell populations, and dendritic cell function, but these have not consis-
+tently identified distinct immunotype clusters [25–27]. In long COVID, multidimensional
+immune profiling has identified distinguishing features including marked differences in
+circulating myeloid and lymphocyte populations, exaggerated humoral responses against
+SARS-CoV-2, elevated antibody responses against non-SARS-CoV-2 viral pathogens (par-
+ticularly Epstein–Barr virus), and reduced cortisol levels [28]. Combining biomarkers of
+endothelial dysfunction and inflammation with clinical outcome measures has enabled
+differentiation between ME/CFS and long COVID using discriminant analysis of princi-
+pal components, demonstrating that multiparametric approaches can achieve diagnostic
+separation where individual markers fail.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+4 of 25
+The present study further addresses this critical knowledge gap by performing mul-
+tiparameter immunophenotyping of monocyte subsets (M1-like and M2-like), dendritic
+cells, and T cell populations in patients with ME/CFS, and long COVID, in relation to
+the severity of psychosomatic symptoms, and healthy controls. We hypothesized that the
+implementation of correlation network analysis and principal component analysis might
+help identify disease-specific immune signatures that could serve as composite biomark-
+ers and provide mechanistic insights into the distinct pathophysiology of ME/CFS and
+long COVID.
+2. Results
+2.1. Participants
+A total of 207 participants were included in the study. The demographic characteristics
+of the subgroups are given in Table 1. The overall cohort included 54 males and 153 females.
+The sex distribution did not differ significantly between the study groups (χ2 = 0.454,
+df = 2, p = 0.797). As expected, a higher proportion of females was observed in the CFS
+group, consistent with the known female predominance of this condition reported in
+epidemiological studies. Age differed significantly between healthy subjects and the other
+two groups (Kruskal–Wallis H = 24.79, df = 2, p < 0.001), indicating heterogeneity in age
+distribution among healthy controls, CFS patients, and LC individuals (Table 1).
+Table 1. Demographic characteristics of the study population.
+Variable
+HC (n = 41)
+CFS (n = 103)
+LC (n = 63)
+p Value
+Male, n(%)
+9 (22.0)
+28 (27.2)
+17 (27.0)
+0.797
+Female, n(%)
+32 (78.0)
+75 (72.8)
+46 (73.0)
+Age, median (IQR)
+27 (22)
+48 (20)
+48 (19)
+<0.001
+Participants with CFS had a longer median duration since symptom onset (36 months)
+compared to those with long COVID (23 months, p = 0.001), with sex-specific medians of
+24 and 36 months in men and women with CFS, and 25 and 20 months in men and women
+with long COVID, respectively.
+2.2. M2-like Monocytes
+The distribution of monocyte polarization subsets differed between groups. The pro-
+portion of M2-like monocytes (CD14+CD3−HLA-DR+CD206highCD163high) increased in
+chronic fatigue syndrome patients (median 0.10%), and even more so in LC patients (me-
+dian 0.20%), with a statistically significant increase in LC as compared to HC (median 0.1%)
+(Figure 1A). Analysis of activation markers (Figure 1B) showed that the MFI of CD69+CD38
+M2-like monocytes was significantly lower in LC (median 135155), while comparable levels
+were observed between HC (median 193425) and CFS (median 193851). The expression of
+the costimulatory molecule CD80 showed changes between the groups. Specifically, CD80
+MFI on M2-like monocytes was highest in LC (median 230), statistically exceeding CFS
+(median 137.1), while HC showed intermediate levels (median 143.4) (Figure 1C). CD197
+expression was lowest in CFS (MFI 345), as compared to LC (408) and HC (458), without
+reaching statistical significance.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+5 of 25
+A 
+B 
+Figure 1.
+Immunophenotypic characterization of M2-like monocytes (CD14+CD3−HLA-
+DR+CD206highCD163high): (A) Distribution in the three studied groups (HC, n = 41; CFS, n = 103;
+LC, n = 63): (B) CD69+CD38 expression (MFI) (C) CD80 expression (MFI). Individual values are
+presented (circles), together with median values and interquartile ranges (whiskers); Exact p values
+(Age-adjusted ANCOVA test results) are provided.
+2.3. M1-like Monocytes
+A similar trend was observed for M1-like monocytes (CD14+CD3−HLA-DR+CD206low)
+in terms of CD80 MFI, which was increased in LC (median 157.8), as compared to HC
+(median 118.4) and CFS (median 112.2, p < 0.05) (Figure 2A). Chemokine receptor expression
+also differed between groups. LC and CFS were distinguished with a significantly decreased
+CD197 (CCR7) expression on M1-like cells: (median MFI) 236 and 280 for CFS and LC, vs.
+315 for HC (Figure 2B). Likewise, CD69+CD38 expression decreased in CFS (11841), and
+LC (10249) as compared to HC (12508), without reaching statistical significance.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+6 of 25
+A 
+B 
+Figure 2.
+Immunophenotypic characterization of M1-like monocytes (CD14+CD3−HLA-
+DR+CD206low) in the three studied groups (HC, n = 41; CFS, n = 103; LC, n = 63): (A) CD80
+expression (MFI) (B) CD197 expression (MFI, η2p = 0.004). Individual values are presented, together
+with median values and interquartile ranges; Exact p values (Age-adjusted ANCOVA) are provided.
+2.4. Dendritic Cells
+The frequency of circulating dendritic cells (CD3−CD14−HLA-DR+) also differed
+across the study groups (Figure 3A). The highest levels were detected in LC patients
+(median 9.7%), significantly exceeding CFS (median 7%) and HC (median 7.5%). Activation
+marker analysis revealed that the expression of activation markers on dendritic cells was
+lower in CFS as compared to LC (CD38+CD69+ MFI) 2941 vs. 5532. Likewise, CD80
+expression was lowest in CFS (MFI) 380 vs. 438 and 483 for LC and HC. (Figure 3B). A
+similar trend was observed for CD197 expression which was decreased in LC (median MFI
+263) and CFS (266.5) as compared to HC (308.5).
+A 
+B 
+Figure 3. Immunophenotypic characterization of dendritic cells (CD3−CD14−HLA-DR+) in the three
+studied groups (HC, n = 41; CFS, n = 103; LC, n = 63): (A) Total DC in the three studied groups;
+(B) CD69+CD38 (MFI). Individual values are presented (circles), together with median values and
+interquartile ranges (whiskers); Exact p values (Age-adjusted ANCOVA) are provided.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+7 of 25
+2.5. T Cell Differentiation and Activation Phenotypes
+Comparison of mild and moderate disease forms did not affect the interactions be-
+tween M1-like/M-2 like parameters, but revealed significant differences in T cell pheno-
+types. Given the established interaction between antigen-presenting cells and adaptive
+immune responses, T cell differentiation phenotypes were additionally evaluated, based
+on surface expression of CD45-RA and CD62L. Patients with moderate disease exhibited
+significantly higher percentages of CD3+CD4+CD62L+ T cells (median for CFS 16.20%,
+median for LC 17.0%) compared with HC (median 11.3%) (Figure 4A). Conversely, the
+proportion of CD3+CD4+CD45RA+ T cells was significantly lower in moderate CFS and
+LC (medians CFS 20.05%, and LC 17.7% respectively) as compared to HC (median 24.1%)
+(Figure 4B).
+A 
+B 
+Figure 4. Effect of symptoms severity on T cell differentiation status in the three studied groups.
+(A) Percentage of CD3+CD4+CD62L+ T cells, (B) percentage of CD3+CD4+CD45RA+ T cells. Results
+are presented as median values and interquartile ranges. Exact p values from age-adjusted ANCOVA
+are provided.
+2.6. Association Between Symptom Severity and Immune Phenotypes
+A composite score was calculated based on the total number of points from the
+three questionnaires (HAM-A, HAM-D, FibroFatigue). Exploratory threshold was set at 50.
+People with a score above the threshold were considered to have moderate symptomatology,
+and those with a total score under 50 were considered as mild cases. Both CFS (median
+51.50) and LC (median 48.00) had significantly higher total scores, compared to HC (median
+25.00) (Figure 5).
+Additionally, patients with moderate LC showed significantly increased expression of
+CD69+CD38 activation markers on their DC as compared to mild cases and HC (median
+6012 vs. 1259.5 and 3906). At the same time, CD80 expression was decreased on DC from
+moderate LC cases (median 89, 3) as compared to mild cases and HC (median 222.5 and
+95.53 respectively). The patients with moderate CFS also showed significantly increased
+MFI of CD69+CD38+ dendritic cells (median 5486) and decreased CD80 expression (median
+79.9) as compared to mild cases, and HC (84.10 and 95.53) (Figure 6).
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+8 of 25
+Figure 5. Results from age-adjusted ANCOVA, showing total score from the three questionnaires in
+the three studied groups (HC, n = 41; CFS, n = 103; LC, n = 63). Exact p values are provided. Results
+are presented as median values and interquartile ranges (whiskers).
+A 
+B 
+Figure 6.
+Effect of symptoms severity on DC functional status in the three studied groups.
+(A) Percentage of CD69+CD38+ expression (MFI), (B) CD80 expression (MFI). Results are presented
+as median values and interquartile ranges. Exact p values from age-adjusted ANCOVA are provided.
+2.7. Correlation Analysis
+In CFS patients, strong positive correlations were observed between several activation
+markers within the monocyte compartment (Figure 7A). Notably, HLA-DR expression cor-
+related between M2-like and M1-like monocytes, and CD80 expression showed a positive
+correlations with HLA-DR in both M1-like and M2-like populations. Additionally, CD80
+expression of M1-like monocytes correlated positively with the total number of M2-like mono-
+cytes. Within M2-like cells, CD80 expression positively correlated with HLA-DR and CD197.
+Similarly, CD80 and CD197 expressions in M1-like cells showed a strong positive association.
+A strong positive correlation was also observed between CD95 expression on CD4+ and CD8+
+T cells, as well as between naïve T cell populations defined as CD62L+CD45RA+ within CD4+
+and CD8+ T cells. Several strong negative correlations were detected. The total number of
+DC inversely correlated with total M1-like monocytes. In addition, CD80 expression within
+M1-like monocytes negatively correlated with the total M1-like cell numbers. Within M2-like
+cells, CD80 expression negatively correlated with CD206 and CD69+CD38 expression, while
+CD197 expression negatively correlated with CD206. Score from the pHAM-D correlated neg-
+atively with HLA-DR and CD80 on M2-like monocytes and HLA-DR on M1-like monocytes.
+Positive correlation was established with CD69+CD38 on M1-like monocytes.
+The correlation network in LC patients was more extensive and involved both monocyte
+subsets and dendritic cells (Figure 7B). Strong positive correlations were observed between
+HLA-DR expression on M1-like monocytes and total M2-like numbers, as well as between
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+9 of 25
+HLA-DR expression on M1-like and M2-like monocytes. Activation markers were also
+coordinated across subsets, with CD69+CD38 expression on M1-like cells positively correlating
+with the same markers on M2-like cells. In addition, M2-like CD69+CD38 cells positively
+correlated with both M2-like CD206 expression and total M1-like numbers. Costimulatory
+signaling showed strong associations, with CD80 expression on M1-like cells positively
+correlating with HLA-DR, CD206, and CD197 expression across monocyte subsets. Similarly,
+CD197 expression was strongly correlated between M1-like and M2-like populations. DC
+were strongly integrated into this network. Total DC numbers positively correlated with total
+M2-like monocytes, HLA-DR expression on M1-like and M2-like cells, and CD80 expression
+across monocyte populations. Furthermore, CD69+CD38 DC expression correlated positively
+with activation markers (HLA-DR and CD80) in both M1-like and M2-like subsets. Several
+negative correlations were also detected in LC patients. Total M1-like monocytes inversely
+correlated with M1-like HLA-DR, M2-like CD80, and M2-like CD197 expression. Additionally,
+CD80 expression on M2-like cells negatively correlated with CD69+CD38 expression in both
+M1-like and M2-like populations. pHAM-D scores correlated negatively with CD80 on DC
+and M1-like monocytes, HLA-DR on both M1 and M2-like monocytes. Positive correlations
+were reported with CD206 on M2-like monocytes, as well as with CD69+CD38 on both M1
+and M2-like monocytes. pHAM-A scores correlated positively with CD69+CD38 on DC.
+ 
+A 
+Figure 7. Cont.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+10 of 25
+B 
+Figure 7. Heatmaps generated from a correlation matrix displaying pairwise correlations between
+the different phenotypic markers for CFS (A) and LC (B) samples. Colors indicate the strength and
+direction of the correlations (blue = negative, red = positive). Correlation coefficients were calculated
+using Spearman’s method. Significance levels were adjusted for multiple comparisons using the FDR
+correction. Relationships are shown between.
+2.8. Principal Component Analysis
+Principal component analysis without rotation was performed on the selected immune
+biomarkers across all participants to identify underlying dimensions of immune function.
+The Kaiser–Meyer–Olkin measure of sampling adequacy was 0.774, indicating good suit-
+ability for factor analysis. Bartlett’s test of sphericity was significant (p < 0.001), confirming
+that the correlation matrix was appropriate for PCA. PCA identified four components
+with eigenvalues greater than 1, which together explained a substantial proportion of the
+total variance (Table 2). The first component was characterized by high positive loadings
+(>0.6) of monocyte-associated markers, including HLA-related measures (M2-like+HLA-
+DR, M1-like+HLA-DR) and CD80 expression, alongside negative loadings of activation
+markers such as CD69/CD38 (Table 3). The second component showed strong loadings
+of T cell differentiation markers, particularly CD4+ and CD8+ subsets reflecting naïve
+versus memory phenotypes (CD3+CD4+62L+CD45-RA-, CD3+CD4+CD45-RA+CD62L-,
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+11 of 25
+CD3+CD8+CD45-RA+CD62L-). The third component was defined by markers related to T
+cell activation and maturation, including CD62L/CD45RA.
+Table 2. Total variance explained by PCA.
+Component
+Initial Eigenvalues
+Extraction Sums of Squared Loadings
+Total
+% of Variance
+Cumulative %
+Total
+% of Variance
+Cumulative %
+1
+4.737
+31.577
+31.577
+4.737
+31.577
+31.577
+2
+2.562
+17.079
+48.656
+2.562
+17.079
+48.656
+3
+1.769
+11.796
+60.452
+1.769
+11.796
+60.452
+4
+1.095
+7.298
+67.750
+5
+0.940
+6.270
+74.020
+6
+0.767
+5.110
+79.130
+7
+0.629
+4.191
+83.321
+8
+0.506
+3.373
+86.694
+9
+0.454
+3.028
+89.722
+10
+0.375
+2.500
+92.222
+11
+0.345
+2.299
+94.521
+12
+0.249
+1.657
+96.178
+13
+0.224
+1.491
+97.669
+14
+0.193
+1.286
+98.956
+15
+0.157
+1.044
+100.000
+Extraction Method: Principal Component Analysis. PCA of selected immune biomarkers identified four com-
+ponents with eigenvalues greater than 1, accounting for a cumulative 67.75% of the total variance. The first
+component explained 31.57% of the variance, followed by the second (17.08%), and third (11.79%) components.
+Table 3. Component matrix showing loadings of monocyte, dendritic cell, and T cell immune
+phenotypes on the extracted principal components.
+Component Matrix
+Component
+1
+2
+3
+DC+CD80
+0.520
+−0.151
+0.055
+M2-like+HLA-DR
+0.741
+−0.017
+−0.239
+M1-like+HLA-DR
+0.680
+−0.004
+−0.273
+M2-like+CD69+CD38+
+−0.738
+0.297
+0.189
+M1-like+CD69+CD38+
+−0.799
+0.181
+0.250
+M1-like+CD80
+0.783
+−0.199
+−0.137
+CD3+CD4+CD95
+−0.328
+0.288
+−0.767
+CD3+CD4+CD62L+CD45-RA-
+0.136
+0.797
+−0.238
+CD3+CD4+CD62L+CD45-RA+
+0.614
+0.268
+0.594
+CD3+CD4+45RA+CD62L-
+−0.217
+−0.858
+0.249
+CD3+CD8+CD62L+CD45-RA+
+0.626
+0.323
+0.543
+DC+CD69+CD38+
+−0.516
+0.141
+0.319
+M1-like monocytes were defined as CD14+CD3−HLA-DR+CD206low cells, whereas M2-like monocytes were
+defined as CD14+CD3−HLA-DR+CD206highCD163high cells. Dendritic cells were identified as CD3−CD14−HLA-
+DR+ events.
+2.9. Associations Between Immune Components and Clinical Symptoms
+Multiple regression analysis was performed to examine the association between PCA-
+derived immune components and anxiety symptoms (HAM-A), controlling for age and sex.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+12 of 25
+The model revealed that Component 1 (innate immune activation axis) was signif-
+icantly and inversely associated with anxiety (β = −0.23, p = 0.015), while Component
+2 (T cell differentiation axis) was positively associated with anxiety (β = 0.20, p = 0.035).
+Component 3, age, and sex were not significant predictors.
+A similar regression model was conducted for depressive symptoms (HAM-D).
+Component 1 showed a strong negative association with depression (β = −0.50,
+p < 0.001), whereas Component 2 was positively associated with depression severity
+(β = 0.31, p < 0.001). Additionally, sex was a significant predictor (β = 0.20, p = 0.011),
+while age and Component 3 were not significant.
+For fatigue (FF), the overall regression model was not statistically significant. However,
+Component 2 (T cell differentiation axis) remained a significant positive predictor of fatigue
+severity (β = 0.26, p = 0.007). No significant associations were observed for Component 1,
+Component 3, age, or sex.
+Partial least squares discriminant analysis was performed on the selected immune
+biomarkers in the clinically more homogeneous subgroup of participants with total ques-
+tionnaire scores above 50 (Figure 8A).
+Figure 8. (A) Scatter plot of predicted class probabilities for individual samples. Each point represents
+a participant, with colors indicating group membership (HC vs. LC/CFS); (B) Permutation test for
+model validation. The original model (blue line) demonstrates a higher predictive performance
+compared to permuted models (orange points), with intercept values indicating that the model is
+not overfitted (empirical p < 0.01); (C) cross-validated predictive accuracy across different numbers
+of features. Model performance improves with increasing feature number, reaching an accuracy of
+approximately 69%, indicating moderate classification capability. (D) ROC curve for the PLS-DA
+model. The model achieved an area under the curve (AUC) of 0.758 (95% CI: 0.633–0.88), reflecting
+moderate discriminative performance; (E) variable importance in projection scores identifying the
+most influential biomarkers contributing to group separation.
+The model demonstrated moderate goodness-of-fit (R2Y = 0.393), indicating that
+approximately 39% of the variance in group classification was explained by the model.
+However, the predictive ability was limited (Q2 = 0.113, 7-fold cross-validation), suggesting
+modest generalizability to unseen data (Figure 8B).
+Permutation testing confirmed that the model performed significantly better than
+chance (empirical p < 0.01), indicating that the observed class discrimination was not due
+to random variation (Figure 8C). Additionally, receiver operating characteristic (ROC)
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+13 of 25
+analysis yielded an area under the curve (AUC) of 0.758 (95% CI: 0.633–0.88), indicat-
+ing moderate discriminatory performance (Figure 8D). VIP scores identified several key
+biomarkers contributing to group discrimination. The most influential features included:
+CD4+CD62L+CD45RA−, CD4+CD45RA+CD62L+, CD69+CD38+ on M1 and M2 monocytes,
+DC%, CD95 expression on CD4+ T cells (Figure 8E).
+3. Discussion
+The comprehensive phenotypic analysis of monocyte, dendritic and T cell subsets of
+LC and CFS patients with different severity of depression and anxiety symptoms, revealed
+significant differences in the activation, differentiation and functional status in comparison
+to healthy controls, as well as between the two pathological states.
+Our finding of progressive M2 dominance (HC < CFS < LC) with reciprocal M1 reduc-
+tion aligns with emerging evidence of immune exhaustion and altered macrophage activa-
+tion in both conditions [29]. The significantly increased M2 percentage in LC, combined
+with elevated M2+CD80 expression, suggests a paradoxical state where anti-inflammatory
+M2 cells express costimulatory molecules typically associated with immune activation.
+This may reflect the persistent low-grade inflammation and monocyte activation docu-
+mented in LC, where monocytes exhibit mixed phenotypes with both pro-inflammatory
+and regulatory features [30].
+In contrast, CFS patients in our cohort showed intermediate M2 levels between healthy
+controls and LC, suggesting a distinct immunopathological trajectory. This finding is
+supported by recent single-cell RNA sequencing data from Sun et al., who observed a
+significant reduction in total monocyte numbers in ME/CFS patients, along with enhanced
+cell–cell communication networks converging on monocytes [31]. Furthermore, Zheng
+et al. identified monocytic dysregulation as a mechanism of fatigue in ME/CFS, with
+upregulation of inflammatory targets (IL1β, CCL2, TLR2, STAT1, IFIH1) predominantly
+enriched in classical monocytes [32]. This may suggest that while CFS exhibits monocyte
+activation, the pattern differs fundamentally from the M2-dominant, profibrotic phenotype
+characteristic of LC.
+The concept of “trained immunity” may partially explain the persistent M2 polariza-
+tion in LC. Gu et al. demonstrated that severe COVID-19 induces extensive epigenetic
+reprogramming in hematopoietic stem and progenitor cells (HSPCs), leading to durable al-
+terations in monocyte phenotypes that persist despite their short lifespan [33]. IL-6 appears
+pivotal for imprinting these epigenetic modifications during acute infection, potentially
+explaining the sustained M2 phenotype and elevated inflammatory markers observed
+months after initial SARS-CoV-2 infection [33]. This mechanism may be less prominent in
+CFS, where the initiating infectious triggers are often more remote in time, and diverse,
+potentially resulting in different patterns of HSPC reprogramming.
+Our finding of significantly elevated CD80 expression on both M1- like and M2- like
+monocytes in LC, in contrast to decreased CD80 in CFS, represents a critical distinction
+between these conditions. CD80 (B7-1) is a key costimulatory molecule that, together with
+CD86 (B7-2), provides essential signals for T cell activation through CD28 and CTLA-4
+binding [34]. The upregulation of CD80 on both M1 and M2 monocytes in LC suggests
+ongoing antigen presentation and immune activation, consistent with Hopkins et al.’s
+observation of sustained CD86 expression on monocytes and dendritic cells 6–7 months
+post-COVID-19 [21].
+The paradoxical elevation of CD80 on M2 cells in LC is particularly intriguing. M2
+macrophages are traditionally considered anti-inflammatory and involved in tissue repair,
+yet their expression of costimulatory molecules suggests a hybrid activation state. This
+may represent a “failed resolution phenotype” where anti-inflammatory M2 cells attempt
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+14 of 25
+to activate adaptive immunity but cannot effectively resolve inflammation. Pinto et al.
+demonstrated that CD86 expression on monocytes in chronic Chagas disease influences
+an immunomodulatory profile through CTLA-4 engagement and regulatory T cell acti-
+vation [35]. A similar mechanism may operate in LC, where elevated M2+CD80 could
+engage CTLA-4 on T cells, contributing to T cell exhaustion while maintaining chronic
+low-grade inflammation.
+In contrast, the significantly decreased M1+CD80 expression in CFS suggests pro-
+foundly impaired immune induction ability rather than persistent activation. This aligns
+with Eaton-Fitch et al.’s gene expression analysis showing downregulated interferon sig-
+naling and immunoglobulin genes in ME/CFS, indicating a state of immune suppression
+distinct from the persistent activation observed in LC [15]. The reduced costimulatory
+capacity of monocytes in CFS may contribute to the immunodeficiency features frequently
+reported in this population, including increased susceptibility to infections and impaired
+NK cell function [26,36–38].
+The significantly decreased CD69+CD38 expression in LC, despite the high M2 num-
+bers, provides compelling evidence for immune exhaustion in the monocyte compartment.
+CD69 is an early activation marker rapidly upregulated upon immune cell stimulation,
+while CD38 is a multifunctional ectoenzyme involved in calcium signaling and NAD+
+metabolism [39]. The co-expression of these markers typically indicates recent activation,
+and their reduction in LC M2 cells might suggest either anergy or exhaustion despite other
+indicators of an ongoing low-grade inflammation.
+The above finding contrasts sharply with the elevated DC+CD38+CD69 expression
+in moderate LC. This compartment-specific activation pattern suggests that while den-
+dritic cells remain activated and capable of antigen presentation, monocytes/macrophages
+have entered an exhausted or tolerized state. Aid et al. recently demonstrated that LC
+is characterized by persistent activation of proinflammatory and immune exhaustion
+pathways, including upregulation of JAK-STAT, IL-6, complement, and T cell exhaustion
+pathways [40]. Our data extend these findings to the myeloid compartment, raising the
+question whether immune exhaustion is not limited to T cells but affects multiple immune
+cell lineages.
+The reduction in CD38 expression may have additional metabolic implications. CD38
+is a major NAD+ consumer, and its activity has been linked to cellular senescence and
+metabolic dysfunction [39]. Reduced CD38 expression on M2 cells in LC could represent
+an adaptive response to preserve NAD+ pools in the context of chronic inflammation and
+metabolic stress. However, this may come at the cost of impaired calcium signaling and
+immune cell function, contributing to the persistent symptoms, characteristic of LC.
+Our finding of decreased M1+CD197 (CCR7) in both pathological states, but more im-
+portant in CFS represents a critical distinction in immune cell trafficking capacity between
+these conditions. CCR7 is essential for lymph node homing of T cells and dendritic cells,
+controlling their migration to areas where T cell priming and adaptive immune response ini-
+tiation occur [41–43]. The progressive reduction in CCR7 expression suggests increasingly
+impaired immune cell trafficking, and immune response induction, most severe in CFS.
+The intermediate CCR7 expression in LC may reflect a partial recovery of the migratory
+capacity compared to CFS, but still represents significant impairment compared to healthy
+controls. Scott et al. demonstrated that LC patients with unresolved lung injury exhibit
+high monocyte expression of CXCR6 and preferential migration toward CXCL16, which
+is abundantly expressed in the lung [44]. This suggests a shift in chemokine receptor
+expression patterns, with reduced CCR7-mediated lymph node homing and increased
+tissue-specific chemokine receptor expression. Such altered trafficking patterns could
+contribute to persistent tissue inflammation while impairing systemic immune surveillance.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+15 of 25
+Recent work by Chen et al. provides additional mechanistic insight, demonstrating
+that during inflammation, CCL21 is downregulated in lymph node high endothelial venules,
+and lymphocytes become dependent on oxysterols and the receptor EBI2 for inflamed
+lymph node entry [45]. This inflammatory switch in chemoattractant requirements may
+explain how immune cell trafficking is maintained despite reduced CCR7 expression in LC.
+However, in CFS, where CCR7 expression is most profoundly reduced, this compensatory
+mechanism may be insufficient, contributing to more severe immune trafficking defects.
+The correlation between reduced CCR7 expression and disease severity is supported
+by genome-wide association studies showing strong associations between the CCL21/CCR7
+axis and disease severity in multiple autoimmune conditions, including rheumatoid arthri-
+tis, Sjögren’s syndrome, and systemic lupus erythematosus [46]. Therapeutic strategies
+targeting the CCR7 network have shown promise in regulating dendritic cell migration and
+managing inflammatory diseases, which raises the question whether CCR7 modulation
+could represent a potential therapeutic target in both CFS and LC [47].
+The elevated DC numbers in LC may reflect an ongoing process of antigen presentation
+and immune activation. Guerrera et al. identified an immunological signature of LC in
+some patients characterized by reduced plasmacytoid and conventional dendritic cell
+subsets, but with those remaining showing heightened activation [48]. This apparent
+contradiction may reflect heterogeneity within the LC population, with some patients
+showing DC depletion (similar to acute COVID-19) while others show DC expansion and
+activation. Our cohort appears to represent the latter phenotype, characterized by DC
+expansion and elevated costimulatory molecule expression.
+In CFS, the intermediate DC numbers suggest a different trajectory of immune dysreg-
+ulation. Sun et al.’s single-cell RNA sequencing study reported significant reductions in
+conventional and plasmacytoid dendritic cells in ME/CFS patients, while our flow cytom-
+etry data show intermediate levels between healthy controls and long COVID [31]. This
+discrepancy may reflect differences in patient selection, disease duration, or methodological
+approaches. However, both studies agree that DC alterations are a prominent feature of
+CFS immunopathology.
+Our results show that moderate CFS and long COVID have significantly higher
+CD4+CD62L+CD45-RA- cells and lower CD4+CD45RA+CD62L- cells provide important
+insights into T cell dynamics in these conditions. This pattern may suggest a shift from
+naïve (CD45RA+) to central memory (CD62L+CD45RA-) phenotypes, representing ongoing
+immune activation and differentiation. The reduction in naïve T cells is consistent with T
+cell exhaustion and depletion of the naïve T cell pool, which may contribute to impaired
+responses to new antigens and ongoing immune dysregulation.
+Wiech et al. demonstrated that T cell remodeling during LC depends on the severity
+of the initial SARS-CoV-2 infection, with severe convalescents showing polarization toward
+exhausted/senescent CD4+ and CD8+ T cells, significant decrease in naïve cell populations,
+and increased terminal effector cells expressing CD57 [49]. Our data extend these observa-
+tions to individuals with persistent moderate symptom burden, suggesting that naïve T
+cell depletion and altered differentiation may occur across a broader spectrum of post-viral
+chronic illness.
+Importantly, similar alterations in T cell metabolism, differentiation, and exhaustion
+have also been described in ME/CFS and other post-infectious syndromes, supporting the
+concept that chronic immune remodeling may represent a shared feature of prolonged post-
+viral disease states rather than a mechanism unique to Long COVID [16,50]. In this context,
+the observed reduction in naïve T cell populations together with increased activation- and
+apoptosis-associated markers may reflect persistent antigenic stimulation, inflammatory
+signaling, or impaired immune recovery following infection.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+16 of 25
+Recent studies have further suggested that sustained inflammatory pathways involv-
+ing IL-6 signaling, altered CD4+/CD8+ immune balance, and NK-cell dysregulation may
+contribute to long-term immune perturbations following SARS-CoV-2 infection, including
+effects extending beyond classical antiviral immunity [51]. Although our study did not
+directly assess cytokine signaling or NK-cell functionality, the coordinated alterations ob-
+served in monocyte, dendritic cell, and T cell compartments are consistent with the broader
+concept of persistent post-viral immune dysregulation.
+The increased CD4+CD62L+CD45-RA- cells in moderate disease may represent cen-
+tral memory T cells that have differentiated from naïve precursors. CD62L (L-selectin) is
+expressed on both naïve and central memory T cells and is essential for lymph node hom-
+ing [27,52]. The expansion of CD62L+ cells despite reduced CD45RA+ naïve cells suggests
+active T cell differentiation and memory formation. However, this may come at the cost of
+depleting the naïve T cell pool, potentially impairing long-term immune competence.
+Berentschot et al. reported that LC is characterized by T-lymphocyte senescence,
+with increased exhausted CD8+ T-lymphocytes expressing markers of terminal differentia-
+tion [29]. The severity of fatigue correlated with increases in intermediate and non-classical
+monocytes and higher CD8+ T-lymphocyte counts, suggesting that T cell and monocyte
+activation are linked in LC pathophysiology [29]. Our finding of reduced naïve T cells in
+moderate disease supports this model, suggesting that ongoing immune activation drives
+T cell differentiation and exhaustion even in patients with moderate symptom severity.
+The negative correlation between CD4+CD62L+CD45RA+ naïve/central memory
+cells and CD4+CD95+ apoptosis-prone cells in LC suggests that naïve T cell depletion is
+associated with increased T cell apoptosis. CD95 (Fas) is a death receptor that mediates
+activation-induced cell death, and its upregulation on T cells indicates susceptibility to
+apoptosis [49]. This mechanism may contribute to the progressive depletion of naïve
+T cells observed in moderate and severe LC, potentially explaining the long-term immune
+dysfunction characteristic of this condition.
+The extensive correlation networks observed in both CFS and LC, with notably more
+complex patterns in LC, provide insights into the integrated nature of immune dysregula-
+tion in these conditions. In LC, the strong positive correlations between DC total numbers
+and M2-like populations, along with extensive correlations between CD80 expression
+across myeloid cell types, suggest coordinated activation of the myeloid compartment.
+This integration may reflect common upstream signals, such as persistent viral antigens,
+inflammatory cytokines, or metabolic factors that simultaneously affect multiple immune
+cell lineages.
+The negative correlations between total M1/M2-like cell numbers and their activation
+markers (HLA-DR, CD80) in LC suggest a homeostatic mechanism where increased cell
+numbers are associated with decreased per-cell activation. This pattern may represent
+an attempt to maintain overall immune function while limiting excessive inflammation.
+However, this compensation appears insufficient, as LC patients continue to experience
+persistent symptoms and immune dysregulation.
+In CFS, the correlation network reveals different patterns of immune dysregulation.
+The negative correlation between total DC and total M1 cells may reflect competitive
+differentiation pathways or reciprocal regulation between these cell types. The negative
+correlations between CD80/CD197 and CD69+CD38 in M2 cells suggest that activated cells
+have reduced costimulatory capacity and migratory potential, potentially contributing to
+impaired immune responses. These patterns differ fundamentally from LC, suggesting
+distinct immunopathological mechanisms.
+The correlation between CD8+CD62L+CD45RA+ and CD4+CD62L+CD45RA+ cells in
+CFS, and the negative correlation between CD4+CD62L+CD45RA+ and CD4+CD95+ in
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+17 of 25
+LC, highlight different patterns of T cell regulation. In CFS, naïve/central memory CD4+
+and CD8+ T cells appear coordinately regulated, suggesting T cell homeostasis in CFS is
+less affected in comparison to LC. In LC, the inverse relationship between naïve/central
+memory cells and apoptosis-prone cells suggests that T cell depletion is driven by activation-
+induced cell death, a mechanism consistent with chronic antigen exposure and immune
+exhaustion [40,49].
+The positive association between T cell differentiation markers and anxiety, depres-
+sion, and fatigue is well-supported by recent evidence. Studies demonstrate that ME/CFS
+patients exhibit altered T cell metabolism with reduced glycolysis and mitochondrial dys-
+function, particularly in CD8+ T cells [50]. Severe ME/CFS is characterized by higher
+proportions of activated lymphocytes (CD69+, CD38+) and increased pro-inflammatory
+cytokine production (IFN-γ, TNF, IL-17), consistent with prolonged non-specific inflam-
+mation [53]. Long COVID with ME/CFS shows marked T cell exhaustion, expansion of
+effector T cells, and depletion of naïve CD4+ and CD8+ T cells [16]. These alterations
+correlate with fatigue severity and cognitive impairment [29,54].
+The T cell differentiation axis likely reflects chronic immune activation and exhaustion,
+a state where persistent antigen exposure or viral reactivation drives T cells toward terminal
+differentiation [15,55]. This process is associated with increased inflammatory cytokines
+(IL-1, TNF-α) that directly correlate with fatigue, mood symptoms, and autonomic dysfunc-
+tion [56,57]. The finding that this axis predicts symptom severity across multiple domains
+supports a model where adaptive immune dysregulation is a central driver of the post-viral
+syndrome phenotype.
+The inverse relationship between monocyte HLA expression/antigen-presenting ac-
+tivity and psychiatric symptoms is indeed counterintuitive but has mechanistic prece-
+dent. While increased monocyte activation (intermediate and non-classical monocytes,
+CCL2/CCL7 expression) correlates with greater fatigue severity in Long COVID, the spe-
+cific pattern of HLA-DR expression may reflect different functional states [29]. Recent
+single-cell analyses reveal that monocytes in Long COVID exhibit transcriptional skewing
+with reduced phagocytosis-associated genes and increased pro-inflammatory cytokine
+genes, suggesting functional heterogeneity within the innate compartment [16,30].
+The protective association observed may reflect several mechanisms. First, adequate
+HLA-mediated antigen presentation is critical for viral clearance; weak HLA-antigen bind-
+ing to viral antigens is associated with ME/CFS susceptibility, potentially allowing viral
+persistence [58]. Second, certain monocyte activation states may represent compensatory
+anti-inflammatory responses rather than pathogenic inflammation. Third, the timing and
+phase of immune activation matters—early robust innate responses may prevent progres-
+sion to chronic adaptive dysregulation [59].
+4. Materials and Methods
+4.1. Patients’ Characteristics
+This study was conducted and reported following STROBE guidelines for observational
+research. The study included a total of 207 participants, divided into 3 subgroups: (i) CFS
+group (n = 103), consisting of 28 males (43.96 ± 13.33 y.o.) and 75 females (46.75 ± 12.36 y.o.);
+(ii) long COVID (LC) group (n = 63), consisting of 17 males (42.88 ± 10.30 y.o.) and
+46 females (49.96 ± 11.9 y.o.); and (iii) healthy control (HC) group (n = 41), consisting of
+9 males (28.69 ± 10.17 y.o.) and 32 females (36.09 ± 15.5 y.o.).
+4.2. Inclusion Criteria
+CFS patients were included in the study according to the diagnostic criteria pro-
+posed by the Institute of Medicine (IOM) in 2015, based on the following three symptoms:
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+18 of 25
+1. Significant reduction or limitation in the ability to perform pre-illness levels of daily
+activities that persists for more than 6 months, accompanied by fatigue that is often pro-
+found, of recent or definite (not lifelong) onset, and is not substantially relieved by rest.
+2. Post-exertional malaise. 3. Unrefreshing sleep. At least one of the following is also
+required—cognitive impairment or orthostatic intolerance [60]. LC group participants
+were categorized, based on a positive SARS-CoV-2 PCR test and persistence of symp-
+toms (fatigue/post-exertional malaise, dyspnea, joint pain, cognitive impairment, sleep
+disturbances, cardiovascular and gastrointestinal symptoms) that cannot be explained by
+other conditions for more than 4 months after recovery [61,62]. Healthy subjects were
+enrolled based on the absence of an active SARS-CoV-2 infection, confirmed by positive
+PCR/anti-SARS-CoV-2 IgG, and absence of: LC/CFS symptoms; systemic autoimmune
+diseases, administration of immunostimulatory or immunosuppressive drugs, history of
+chronic disease (including diabetes, impaired renal or hepatic function), hospitalization
+or viral/bacterial infection in the last 2 months preceding the study, abnormal complete
+blood count and/or biochemical status, increased C-reactive protein, chronic HIV infection,
+alcohol addiction and other dependencies.
+4.3. Exclusion Criteria
+We excluded pregnant and breastfeeding women. Subjects who suffered from psy-
+chiatric disorders such as major depressive disorder, generalized anxiety disorder, bipolar
+disorder, panic disorder, schizo-affective disorder, schizophrenia, psycho-organic syn-
+drome, autism spectrum disorder, and substance use disorders (except tobacco use disorder
+(TUD), in attempt to avoid excessive exclusion) were not included in the study. We also
+excluded patients with cancer, systemic autoimmune diseases such as rheumatoid arthritis,
+diabetes mellitus, psoriasis, inflammatory bowel disease, neurodegenerative diseases (e.g.,
+multiple sclerosis, Parkinson’s or Alzheimer’s disease) and stroke, as well as those with
+renal and liver disease. Medication including antidepressants (SSRIs), low-dose naltrexone,
+antihistamines, corticosteroids, beta-blockers, and antivirals in the last 2 months preceding
+the study was an exclusion criterion for both patients groups.
+All participants signed a written consent form. The study was conducted in accordance
+with the Declaration of Helsinki, and approved by the Scientific Ethics Committee at the
+Medical University of Plovdiv, Protocol No. 3/30 May 2023, for studies involving humans.
+4.4. Clinical Examination
+The participants’ health status, including their physical, mental, and behavioral well-
+being, were assessed by an experienced team of immunology specialists using a methodical
+interview. Sociodemographic, clinical, and psychological details were gathered through
+semi-structured interviews. Hamilton depression rating scale (HDRS) and the Hamilton
+anxiety rating scale (HAMA) were used to measure the degree of depression and anxiety,
+respectively. For this study, no physical symptoms from HAMD-17 (pure HAMD, pHAMD)
+and HAMA-14 (pure HAMA, pHAMA) were considered to calculate only the scores for
+pure depression and anxiety. Using HAMD, we created two subdomains: physiosomatic
+HAMD, which included somatic anxiety, gastrointestinal (GIS) anxiety, genitourinary
+anxiety, and hypochondriasis; and pure depression HAMD: depressed mood, guilt feelings,
+suicidal thoughts, and loss of interest. The HAMA was also divided into two subdomains:
+physiosomatic pHAMA—somatic sensory, cardiovascular, genitourinary, and autonomic
+symptoms, as well as GIS; pure anxiety HAMA—anxious mood, tension, fears, anxiety,
+and anxious behavior during the interview [11]. Additionally, a pure FibroFatigue-12 (pFF)
+score was calculated by adding the following items to the pFF scale: muscular pain, muscle
+tension, fatigue, autonomous symptoms, GIS, headache, and flu-like malaise [11,63–65].
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+19 of 25
+qSUM was also evaluated, representing the total score from the questionnaires. Scores
+on the pHAMA-14, pHAMD-17, and pFF-12 were interpreted using established severity
+thresholds [63,66–71]. To capture the overall burden of neuropsychiatric and physiosomatic
+symptoms, a composite score was constructed by integrating results from the pHAMD,
+pHAMA, and pFF questionnaires. The established severity thresholds for each instrument
+were used as reference points, and a combined threshold was defined to reflect the presence
+of clinically relevant symptomatology across domains. This approach was adopted to
+provide a more comprehensive assessment of symptom burden, given the overlap between
+affective and somatic symptoms in the studied population. As no validated composite
+index exists for these instruments, this metric should be considered exploratory. This
+approach was chosen to account for the multidimensional nature of the condition, where
+fatigue, anxiety, and depressive symptoms frequently co-occur and may not be adequately
+captured by a single scale.
+4.5. Sample Collection and Processing
+Whole peripheral blood (6 mL) was collected into sodium heparinized collection
+tubes between 9 a.m. and 12 a.m. Peripheral mononuclear cells were isolated by gradient
+centrifugation as previously described [72], cryopreserved in fetal bovine serum (FBS;
+Corning Inc., Corning, NY, USA) with 10% dimethyl sulfoxide (DMSO; Sigma Aldrich,
+St. Louis, MO, USA) and 60% RPMI 1640 media (Sigma Aldrich) and stored in liquid N2
+until analysis. After thawing, cells were treated with 1ug/mL DNAse I (Roche Diagnostics,
+Basel, Switzerland, cat # 10104159001) and left for 2 h at RT in 10% RPMI before staining
+for flow cytometry analysis.
+4.6. Multicolor Phenotyping Analysis of Surface Markers
+Multiparameter flow cytometry was used on peripheral blood mononuclear cells
+(PBMCs) to identify specific subpopulation of monocytes, T cells and dendritic cells. A
+12-parameter flow cytometry panel was designed including the following surface mark-
+ers: CD4-BUV496 (clone SK3, cat #612937), CD3-BUV-395 (clone UCHT1, cat #563546),
+CD80-BV786 (clone SK1, cat #344732 ), CD163-BV711 (GHI/61, cat #333630), CD69+CD38-
+BV650 (clone FN50/HB-7, cat #310934/356620), CD45RA-BV605 (clone HI100, cat #304134),
+CD8-BV510 (clone SK1, cat #344732), CD14-BV421 (clone M5E2, cat #301830), CD27-
+AlexaFluor700 (clone M-T271, cat #356416), CD206-APC (clone 15-2, cat #321110), CD62L-
+PE-Cy7 (clone DREG-56, cat #304822), CD197-PE-Cy5.5 (clone G043H7, cat #353220), and
+anti-HLA-DR-PE (clone L243, cat #307606). Samples were stained by adding pre-titrated
+concentrations of directly conjugated antibodies suspended in staining buffer (cat# 342417,
+BD, San Jose, CA, USA), followed by 15 min incubation at room temperature in the dark,
+and repeated washing with PBS (Corning, cat # 21-031-CV). After preparation, samples
+were acquired immediately on FACS Aria II (BD Biosciences) and analyzed with FACS Diva
+v. 9.0.1 (BD Biosciences, San Jose, CA, USA) and FlowJo software v.10.8.1 (FlowJo, LLC).
+Gating strategy: singlets were isolated on a FSC-H vs. FSC-A plot, lymphocytes were
+defined on a FSC vs. SSC plot, and T cells were identified as CD3+ events. Monocytes and
+dendritic cells were gated initially on FSC vs. SSC plot and further identified as CD14+CD3-
+and CD3-CD14-HLA-DR+ events. Monocytes were identified as CD14+CD3−HLA-DR+
+events. M1-like monocytes were defined as CD206low cells, whereas M2-like monocytes
+were identified based on high CD206 expression and confirmed by high CD163 expression.
+Dendritic cells were identified as CD3−CD14−HLA-DR+ events. T cell subsets were
+identified within CD3+ lymphocytes using CD4, CD8, CD45RA, CD62L, and CD95 markers
+to characterize naïve, memory, and activation-prone phenotypes (Suppl. Figure S1). Results
+for CD markers with continuous expression are presented as median fluorescence intensity
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+20 of 25
+(MFI). Fluorescence Minus One (FMO) controls were used for setting gates on markers
+with continuous expression (CD206, CD80, HLA-DR, CCR7).
+4.7. Statistical Analysis
+Statistical analyses were performed using IBM SPSS Statistics version 23.0 (IBM Corp.,
+Armonk, NY, USA). Graphical representations were generated using GraphPad Prism
+version 8.0 (GraphPad Software, San Diego, CA, USA). Normality of data distribution was
+assessed using the Shapiro–Wilk test. As most variables did not show normal distribution,
+continuous data are presented as median with interquartile range (Q1–Q3). Group com-
+parisons were performed using the Kruskal–Wallis test for continuous variables and the
+Chi-square test for categorical variables such as sex distribution. Effect sizes were calculated
+for non-parametric comparisons using rank-based measures to estimate the magnitude of
+observed differences. Associations between variables were assessed using Spearman’s rank
+correlation. To account for differences in age between groups, a rank-transformed analysis
+of covariance (ANCOVA) was applied for selected parameters where age was identified
+as a potential confounding factor. Outcome variables were rank-transformed and entered
+into a general linear model with group as the main factor and age as the covariate. To
+control for multiple comparisons, false discovery rate (FDR) correction was applied using
+the Benjamini–Hochberg procedure. FDR correction was performed separately for each
+family of related statistical tests. Post hoc power analyses were conducted and demon-
+strated that all evaluated parameters had sufficient statistical power (≥0.80) to detect the
+observed differences. A p-value < 0.05 was considered statistically significant. Principal
+component analysis (PCA) was performed to explore multivariate relationships among
+measured biomarkers and clinical parameters. PCA was conducted for all subjects using
+standardized variables, and components with eigenvalues greater than 1 were retained
+according to the Kaiser criterion. PCA score plots were used to visualize clustering patterns
+and relationships among variables. Cases with missing values were excluded pairwise
+from the relevant analyses, and no data imputation was performed. Partial least squares
+discriminant analysis (PLS-DA) was conducted using MetaboAnalyst ver. 6.0. to assess
+group discrimination based on selected immune biomarkers. Data were log-transformed
+and auto-scaled prior to analysis. Model performance was evaluated using 7-fold cross-
+validation, and statistical significance was assessed using permutation testing. Variable
+importance in projection (VIP) scores were used to identify the most influential features.
+5. Conclusions
+These findings suggest partially divergent immune profiles despite substantial clinical
+overlap between ME/CFS and long COVID. Long COVID shows features of persistent
+immune activation characterized by progressive M2-like monocyte polarization, increased
+costimulatory molecule expression (particularly CD80), dendritic cell expansion, and im-
+mune exhaustion, suggesting a “failed resolution” state with possible ongoing antigen
+presentation. In contrast, CFS exhibits immune suppression with reduced M1-like costim-
+ulatory capacity, impaired CCR7-mediated immune cell trafficking, and more integrated
+systemic immune dysregulation, indicating defects in immune activation and migration
+rather than chronic overstimulation. Differences in T cell composition, dendritic cell
+activity, and correlation network structure further support distinct immunological archi-
+tectures between the diseases. Together, these findings raise the question whether these
+two conditions represent differentially weighted immune pathways, with implications
+for biomarker development, patient stratification, and the design of disease-specific thera-
+peutic strategies targeting the underlying immune pathways, if validated in independent
+prospective cohorts.
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+21 of 25
+6. Limitations
+Several limitations of this study warrant consideration. COVID-19 vaccination status
+was not included in the analysis. Although participants in the CFS cohort had no reported
+history of SARS-CoV-2 infection, and approximately half reported symptom onset prior
+to the COVID-19 pandemic, vaccination-related immune effects cannot be completely
+excluded. The cross-sectional design limits assessing temporal dynamics of immune
+changes, and longitudinal studies are needed to determine whether the observed patterns
+represent stable disease states or evolving processes. The sample size, while adequate
+for identifying major immunophenotypic differences, may be insufficient to detect subtle
+variations or to fully characterize disease heterogeneity within CFS and long COVID
+populations with different disease severity. Phenotypic data would be more convincing if
+completed with functional assays. Additionally, our study is focused on peripheral blood
+immune cells, while tissue-resident immune populations may exhibit different patterns of
+activation and exhaustion.
+Supplementary Materials: The following supporting information can be downloaded at: https://
+www.mdpi.com/article/10.3390/ijms27104488/s1.
+Author Contributions: Conceptualization, S.P., H.T. and M.N.; methodology, S.P. and Y.T.; valida-
+tion, S.P., M.N., Y.T. and R.D.; formal analysis, S.P.; investigation, S.P., Y.T., R.D. and M.N.; data
+curation, S.P.; writing—original draft preparation, S.P.; writing—review and editing, M.N., Y.T.,
+R.D., M.I., T.K., D.D., M.B., M.M. (Marianna Murdjeva), M.M. (Michael Maes) and H.T.; visualiza-
+tion, S.P.; supervision, M.N. and H.T. All authors have read and agreed to the published version of
+the manuscript.
+Funding: “Strategic Research and Innovation Programme for the Development of the Medical
+University–Plovdiv (SRIPD-MUP)” Contract No BG-RRP-2.004-0007-C01.
+Institutional Review Board Statement: The study was conducted in accordance with the Declaration
+of Helsinki and approved by the Scientific Ethics Committee at Medical University of Plovdiv,
+Protocol No. 3/30, 30 May 2023, for studies involving humans.
+Informed Consent Statement: Informed consent was obtained from all subjects involved in the study.
+Data Availability Statement: Data are contained within the article.
+Conflicts of Interest: The authors declare no conflicts of interest.
+Abbreviations
+The following abbreviations are used in this manuscript:
+ME/CFS
+Myalgic encephalomyelitis/chronic fatigue syndrome
+COVID
+Coronavirus disease
+PCA
+Principal Component Analysis
+DC
+Dendritic cells
+MAIT
+Mucosal-associated invariant T cells
+NK
+Natural killer cells
+HDRS
+Hamilton depression rating scale
+HAMA
+Hamilton anxiety rating scale
+TUD
+Tobacco use disorder
+HIV
+Human immunodeficiency virus
+PBMCs
+peripheral blood mononuclear cells
+MFI
+Median fluorescence intensity
+FSC
+Forward scatter
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+22 of 25
+SSC
+Side scatter
+FMO
+Fluorescence minus one
+ANCOVA
+analysis of covariance
+FDR
+False discovery rate
+PLS-DA
+Partial least squares discriminant analysis
+VIP
+Variable importance in projection
+LC
+Long COVID-19
+FF
+Fibro fatigue
+IL
+interleukin
+RNA
+Ribonucleic acid
+CD
+Cluster of differentiation
+CCR
+CC chemokine receptor
+CXCL
+chemokine (C-X-C motif) ligand
+IFN
+interferon
+TNF
+Tumor necrosis factor
+HLA
+Human leukocyte antigen
+CTLA
+Cytotoxic T-lymphocyte associated protein
+References
+1.
+Novak, P.; Systrom, D.M.; Witte, A.; Marciano, S.P.; Felsenstein, D.; Milunsky, J.M.; Milunsky, A.; Krier, J.; Fishman, M.C. Shared
+autonomic phenotype of long COVID and myalgic encephalomyelitis/chronic fatigue syndrome. PLoS ONE 2026, 21, e0341278.
+[CrossRef] [PubMed]
+2.
+Shankar, V.; Wilhelmy, J.; Curtis, E.J.; Michael, B.; Cervantes, L.; Mallajosyula, V.; Davis, R.W.; Snyder, M.; Younis, S.; Robinson,
+W.H.; et al. Oxidative stress is a shared characteristic of ME/CFS and Long COVID. Proc. Natl. Acad. Sci. USA 2025, 122,
+e2426564122. [CrossRef] [PubMed]
+3.
+Joseph, P.; Singh, I.; Oliveira, R.; Capone, C.A.; Mullen, M.P.; Cook, D.B.; Stovall, C.A.; Squires, J.; Madsen, K.; Waxman, A.B.; et al.
+Exercise Pathophysiology in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome and Postacute Sequelae of SARS-CoV-2:
+More in Common Than Not? Chest 2023, 164, 717–726. [CrossRef]
+4.
+Annesley, S.J.; Missailidis, D.; Heng, B.; Josev, E.K.; Armstrong, C.W. Unravelling shared mechanisms: Insights from recent
+ME/CFS research to illuminate long COVID pathologies. Trends Mol. Med. 2024, 30, 443–458. [CrossRef] [PubMed]
+5.
+Peppercorn, K.; Edgar, C.D.; Kleffmann, T.; Tate, W.P. A pilot study on the immune cell proteome of long COVID patients shows
+changes to physiological pathways similar to those in myalgic encephalomyelitis/chronic fatigue syndrome. Sci. Rep. 2023, 13,
+22068. [CrossRef]
+6.
+Vernon, S.D.; Zheng, T.; Do, H.; Marconi, V.C.; Jason, L.A.; Singer, N.G.; Natelson, B.H.; Sherif, Z.A.; Bonilla, H.F.; Taylor, E.; et al.
+Incidence and Prevalence of Post-COVID-19 Myalgic Encephalomyelitis: A Report from the Observational RECOVER-Adult
+Study. J. Gen. Intern. Med. 2025, 40, 1085–1094. [CrossRef]
+7.
+Novak, P.; Mukerji, S.S.; Alabsi, H.S.; Systrom, D.; Marciano, S.P.; Felsenstein, D.; Mullally, W.J.; Pilgrim, D.M. Multisystem
+Involvement in Post-Acute Sequelae of Coronavirus Disease 19. Ann. Neurol. 2022, 91, 367–379. [CrossRef]
+8.
+Falco, P.; Litewczuk, D.; Di Stefano, G.; Galosi, E.; Leone, C.; De Stefano, G.; Di Pietro, G.; Tramontana, L.; Ciardi, M.R.; Pasculli,
+P.; et al. Small fibre neuropathy frequently underlies the painful long-COVID syndrome. Pain 2024, 165, 2002–2010. [CrossRef]
+9.
+Azcue, N.; Del Pino, R.; Acera, M.; Fernández-Valle, T.; Ayo-Mentxakatorre, N.; Pérez-Concha, T.; Murueta-Goyena, A.; Lafuente,
+J.V.; Prada, A.; Lopez de Munain, A.; et al. Dysautonomia and small fiber neuropathy in post-COVID condition and Chronic
+Fatigue Syndrome. J. Transl. Med. 2023, 21, 814. [CrossRef]
+10.
+Gopinathannair, R.; Olshansky, B.; Chung, M.K.; Gordon, S.; Joglar, J.A.; Marcus, G.M.; Mar, P.L.; Russo, A.M.; Srivatsa, U.N.;
+Wan, E.Y.; et al. Cardiac Arrhythmias and Autonomic Dysfunction Associated With COVID-19: A Scientific Statement From the
+American Heart Association. Circulation 2024, 150, e449. [CrossRef]
+11.
+Al-Hakeim, H.K.; Al-Rubaye, H.T.; Almulla, A.F.; Al-Hadrawi, D.S.; Maes, M. Chronic Fatigue, Depression and Anxiety
+Symptoms in Long COVID Are Strongly Predicted by Neuroimmune and Neuro-Oxidative Pathways Which Are Caused by the
+Inflammation during Acute Infection. J. Clin. Med. 2023, 12, 511. [CrossRef] [PubMed]
+12.
+Maes, M.; Kubera, M.; Kota´nska, M. Aberrations in the Cross-Talks Among Redox, Nuclear Factor-κB, and Wnt/β-Catenin
+Pathway Signaling Underpin Myalgic Encephalomyelitis and Chronic Fatigue Syndrome. Front. Psychiatry 2022, 13, 822382.
+[CrossRef]
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+23 of 25
+13.
+Kedor, C.; Freitag, H.; Meyer-Arndt, L.; Wittke, K.; Hanitsch, L.G.; Zoller, T.; Steinbeis, F.; Haffke, M.; Rudolf, G.; Heidecker,
+B.; et al. A prospective observational study of post-COVID-19 chronic fatigue syndrome following the first pandemic wave in
+Germany and biomarkers associated with symptom severity. Nat. Commun. 2022, 13, 5104. Correction in Nat. Commun. 2022, 13,
+6009. [CrossRef]
+14.
+Maksoud, R.; Magawa, C.; Eaton-Fitch, N.; Thapaliya, K.; Marshall-Gradisnik, S. Biomarkers for myalgic encephalomyeli-
+tis/chronic fatigue syndrome (ME/CFS): A systematic review. BMC Med. 2023, 21, 189. [CrossRef]
+15.
+Eaton-Fitch, N.; Rudd, P.; Er, T.; Hool, L.; Herrero, L.; Marshall-Gradisnik, S. Immune exhaustion in ME/CFS and long COVID.
+JCI Insight 2024, 9, e183810. [CrossRef] [PubMed]
+16.
+Shahbaz, S.; Bozorgmehr, N.; Rahmati, A.; Abouda, A.; Syed, H.; Osman, M.; Elahi, S. Single-cell analysis reveals immune
+remodeling of monocytes, NK cells, T cell exhaustion, and Galectin-9-associated depletion of gamma delta and mucosal-associated
+invariant T cells in Long COVID with ME/CFS. Front. Immunol. 2026, 17, 1745933. [CrossRef]
+17.
+Fukui, S.; Iwamoto, N.; Takatani, A.; Igawa, T.; Shimizu, T.; Umeda, M.; Nishino, A.; Horai, Y.; Hirai, Y.; Koga, T.; et al. M1 and
+M2 Monocytes in rheumatoid arthritis: A contribution of imbalance of M1/M2 monocytes to osteoclastogenesis. Front. Immunol.
+2018, 8, 307698. [CrossRef]
+18.
+Abbaszadeh, M.; Naseri, B.; Taghizadeh-Teymorloei, M.; Mardi, A.; Javan, M.R.; Masoumi, J.; Ghorbaninezhad, F.; Hatami-Sadr,
+A.; Tural, S.; Baradaran, B.; et al. Overview of dendritic cells subsets and their involvement in immune-related pathological
+disease. BioImpacts 2025, 15, 30671. [CrossRef]
+19.
+Winheim, E.; Rinke, L.; Lutz, K.; Reischer, A.; Leutbecher, A.; Wolfram, L.; Rausch, L.; Kranich, J.; Wratil, P.R.; Huber, J.E.; et al.
+Impaired function and delayed regeneration of dendritic cells in COVID-19. PLoS Pathog. 2021, 17, e1009742. [CrossRef] [PubMed]
+20.
+Godoy-Tena, G.; Barmada, A.; Morante-Palacios, O.; de la Calle-Fabregat, C.; Martins-Ferreira, R.; Ferreté-Bonastre, A.G.; Ciudad,
+L.; Ruiz-Sanmartin, A.; Martinez-Gallo, M.; Ferrer, R.; et al. Epigenetic and transcriptomic reprogramming in monocytes of severe
+COVID-19 patients reflects alterations in myeloid differentiation and the influence of inflammatory cytokines. Genome Med. 2022,
+14, 134. [CrossRef]
+21.
+Hopkins, F.R.; Govender, M.; Svanberg, C.; Nordgren, J.; Waller, H.; Nilsdotter-Augustinsson, Å.; Henningsson, A.J.; Hag-bom,
+M.; Sjowall, J.; Nystrom, S.; et al. Major alterations to monocyte and dendritic cell subsets lasting more than 6 months after
+hospitalization for COVID-19. Front. Immunol. 2023, 13, 1082912. [CrossRef]
+22.
+Heng, B.; Gunasegaran, B.; Krishnamurthy, S.; Bustamante, S.; Pires, A.S.; Chow, S.; Ahn, S.B.; Paul-Heng, M.; Maciver, Y.; Smith,
+K.; et al. Mapping the complexity of ME/CFS: Evidence for abnormal energy metabolism, altered immune profile, and vascular
+dysfunction. Cell Rep. Med. 2025, 6, 102514. [CrossRef] [PubMed]
+23.
+Gibson, A.; Chometon, T.Q.; Damani, T.; Brooks, A.E.S. Deep Immunophenotyping in ME/CFS Using Spectral Flow Cytometry.
+Methods Mol. Biol. 2025, 2920, 59–82. [CrossRef]
+24.
+Bastos, V.C.; Greene, K.A.; Tabachnikova, A.; Bhattacharjee, B.; Sjogren, P.; Bertilson, B.; Reifert, J.; Zhang, M.; Kamath, K.; Shon, J.;
+et al. Cerebrospinal fluid immune phenotyping reveals distinct immunotypes of myalgic encephalomyelitis/chronic fatigue
+syndrome. J. Immunol. 2025, 214, 1539–1551. [CrossRef]
+25.
+Rivas, J.L.; Palencia, T.; Fernández, G.; García, M. Association of T and NK cell phenotype with the diagnosis of myalgic
+encephalomyelitis/chronic fatigue syndrome (ME/CFS). Front. Immunol. 2018, 9, 341493. [CrossRef]
+26.
+Cliff, J.M.; King, E.C.; Lee, J.S.; Sepúlveda, N.; Wolf, A.S.; Kingdon, C.; Bowman, E.; Dockrell, H.M.; Nacul, L.; Lacerda, E.; et al.
+Cellular Immune Function in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS). Front. Immunol. 2019, 10, 796.
+[CrossRef]
+27.
+Hardcastle, S.L.; Brenu, E.W.; Johnston, S.; Nguyen, T.; Huth, T.; Wong, N.; Ramos, S.; Staines, D.; Marshall-Gradisnik, S.
+Characterisation of cell functions and receptors in Chronic Fatigue Syndrome/Myalgic Encephalomyelitis (CFS/ME). BMC
+Immunol. 2015, 16, 35. [CrossRef]
+28.
+Klein, J.; Wood, J.; Jaycox, J.R.; Dhodapkar, R.M.; Lu, P.; Gehlhausen, J.R.; Tabachnikova, A.; Greene, K.; Tabacof, L.; Malik, A.A.;
+et al. Distinguishing features of long COVID identified through immune profiling. Nature 2023, 623, 139–148. [CrossRef]
+29.
+Berentschot, J.C.; Drexhage, H.A.; Aynekulu Mersha, D.G.; Wijkhuijs, A.J.M.; GeurtsvanKessel, C.H.; Koopmans, M.P.G.;
+Voermans, J.J.C.; Hendriks, R.W.; Nagtzaam, N.M.A.; de Bie, M.; et al. Immunological profiling in long COVID: Overall low
+grade inflammation and T-lymphocyte senescence and increased monocyte activation correlating with increasing fatigue severity.
+Front. Immunol. 2023, 14, 1254899. [CrossRef] [PubMed]
+30.
+Kumar, S.; Li, C.; Zhou, L.; Zhan, Q.; Alaswad, A.; Volland, S.; Costa, B.; Kroos, S.A.; Klefenz, I.; Schmaus, H.; et al. A distinct
+monocyte transcriptional state links systemic immune dysregulation to pulmonary impairment in long COVID. Nat. Immunol.
+2026, 27, 200–212. [CrossRef] [PubMed]
+31.
+Sun, Y.; Zhang, Z.; Qiao, Q.; Zou, Y.; Wang, L.; Wang, T.; Lou, B.; Li, G.; Xu, M.; Wang, Y.; et al. Immunometabolic changes
+and potential biomarkers in CFS peripheral immune cells revealed by single-cell RNA sequencing. J. Transl. Med. 2024, 22, 925.
+[CrossRef]
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+24 of 25
+32.
+Zheng, D.; Li, X.; Wang, P.; Zhu, Q.; Huang, Z.; Zhao, T. Exploring the shared mechanism of fatigue between systemic lupus
+erythematosus and myalgic encephalomyelitis/chronic fatigue syndrome: Monocytic dysregulation and drug repurposing. Front.
+Immunol. 2024, 15, 1440922. [CrossRef]
+33.
+Gu, J.; Liu, Q.; Zhang, J.; Xu, S. COVID-19 and trained immunity: The inflammatory burden of long covid. Front. Immunol. 2023,
+14, 1294959. [CrossRef]
+34.
+Reiser, H.; Stadecker, M.J. Costimulatory B7 Molecules in the Pathogenesis of Infectious and Autoimmune Diseases. N. Engl. J.
+Med. 1996, 335, 1369–1377. [CrossRef]
+35.
+Pinto, B.F.; Medeiros, N.I.; Teixeira-Carvalho, A.; Eloi-Santos, S.M.; Fontes-Cal, T.C.M.; Rocha, D.A.; Dutra, W.O.; Correa-Oliveira,
+R.; Gomes, J.A.S. CD86 Expression by Monocytes Influences an Immunomodulatory Profile in Asymptomatic Patients with
+Chronic Chagas Disease. Front. Immunol. 2018, 9, 454. [CrossRef] [PubMed]
+36.
+Dudova, D.; Bozhkova, M.; Petrov, S.; Nikolova, R.; Kalfova, T.; Ivanovska, M.; Vaseva, K.; Nikolova, M.; Ivanov, I.N. Insights into
+the Complex Biological Network Underlying Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Int. J. Mol. Sci. 2026, 27,
+268. [CrossRef] [PubMed]
+37.
+Bjørklund, G.; Dadar, M.; Pivina, L.; Do¸sa, M.D.; Semenova, Y.; Maes, M. Environmental, Neuro-immune, and Neuro-oxidative
+Stress Interactions in Chronic Fatigue Syndrome. Mol. Neurobiol. 2020, 57, 4598–4607. [CrossRef] [PubMed]
+38.
+Brenu, E.W.; Huth, T.K.; Hardcastle, S.L.; Fuller, K.; Kaur, M.; Johnston, S.; Ramos, S.B.; Staines, D.R.; Marshall-Gradisnik, S.M.
+Role of adaptive and innate immune cells in chronic fatigue syndrome/myalgic encephalomyelitis. Int. Immunol. 2014, 26,
+233–242. [CrossRef]
+39.
+Horenstein, A.L.; Faini, A.C.; Malavasi, F. CD38 in the age of COVID-19: A medical perspective. Physiol. Rev. 2021, 101, 1457–1486.
+[CrossRef]
+40.
+Aid, M.; Boero-Teyssier, V.; McMahan, K.; Dong, R.; Doyle, M.; Belabbaci, N.; Borducchi, E.; Colloer, A.Y.; Mullington, J.; Barouch,
+D.H.; et al. Long COVID involves activation of proinflammatory and immune exhaustion pathways. Nat. Immunol. 2026, 27,
+61–71, Correction in Nat. Immunol. 2026, 27, 637. [CrossRef]
+41.
+Förster, R.; Davalos-Misslitz, A.C.; Rot, A. CCR7 and its ligands: Balancing immunity and tolerance. Nat. Rev. Immunol. 2008, 8,
+362–371. Erratum in Nat. Immunol. 2026, 27, 61–71. https://doi.org/10.1038/nri2297. [CrossRef]
+42.
+Charo, I.F.; Ransohoff, R.M. The Many Roles of Chemokines and Chemokine Receptors in Inflammation. N. Engl. J. Med. 2006,
+354, 610–621. [CrossRef]
+43.
+Hauser, M.A.; Legler, D.F. Common and biased signaling pathways of the chemokine receptor CCR7 elicited by its ligands CCL19
+and CCL21 in leukocytes. J. Leukoc. Biol. 2016, 99, 869–882. [CrossRef] [PubMed]
+44.
+Scott, N.A.; Pearmain, L.; Knight, S.B.; Brand, O.; Morgan, D.J.; Jagger, C.; Harbach, S.; Khan, S.; Shuwa, H.A.; Franklin, M.; et al.
+Monocyte migration profiles define disease severity in acute COVID-19 and unique features of long COVID. Eur. Respir. J. 2023,
+61, 2202226. [CrossRef] [PubMed]
+45.
+Chen, K.Y.; De Giovanni, M.; Xu, Y.; An, J.; Kirthivasan, N.; Lu, E.; Jiang, K.; Brooks, S.; Ranucci, S.; Yang, J.; et al. Inflammation
+switches the chemoattractant requirements for naive lymphocyte entry into lymph nodes. Cell 2025, 188, 1019–1035.e22. [CrossRef]
+[PubMed]
+46.
+Han, L.; Zhang, L. CCL21/CCR7 axis as a therapeutic target for autoimmune diseases. Int. Immunopharmacol. 2023, 121, 110431.
+[CrossRef]
+47.
+Hong, W.; Yang, B.; He, Q.; Wang, J.; Weng, Q. New Insights of CCR7 Signaling in Dendritic Cell Migration and Inflammatory
+Diseases. Front. Pharmacol. 2022, 13, 841687. [CrossRef]
+48.
+Guerrera, G.; Sambucci, M.; Timperi, E.; Picozza, M.; Misiti, A.; Placido, R.; Corbisiero, S.; D’Orso, S.; Termine, A.; Fabrizio, C.;
+et al. Identification of an immunological signature of long COVID syndrome. Front. Immunol. 2024, 15, 1502937. [CrossRef]
+49.
+Wiech, M.; Chroscicki, P.; Swatler, J.; Stepnik, D.; De Biasi, S.; Hampel, M.; Brewinska-Olchowik, M.; Maliszewska, A.; Sklinda, K.;
+Durlik, M.; et al. Remodeling of T Cell Dynamics During Long COVID Is Dependent on Severity of SARS-CoV-2 Infection. Front.
+Immunol. 2022, 13, 886431. [CrossRef]
+50.
+Mandarano, A.H.; Maya, J.; Giloteaux, L.; Peterson, D.L.; Maynard, M.; Gottschalk, C.G.; Hanson, M.R. Myalgic encephalomyeli-
+tis/chronic fatigue syndrome patients exhibit altered T cell metabolism and cytokine associations. J. Clin. Investig. 2020, 130,
+1491–1505. [CrossRef]
+51.
+Chia, S.B.; Johnson, B.J.; Hu, J.; Valenca-Pereira, F.; Chadeau-Hyam, M.; Guntoro, F.; Montgomery, H.; Boorgula, M.P.; Sreekanth,
+V.; Goodspeed, A.; et al. Respiratory viral infections awaken metastatic breast cancer cells in lungs. Nature 2025, 645, 496–506.
+[CrossRef]
+52.
+Straus, S.E.; Fritz, S.; Dale, J.K.; Gould, B.; Strober, W. Lymphocyte phenotype and function in the chronic fatigue syndrome.
+J. Clin. Immunol. 1993, 13, 30–40. [CrossRef]
+53.
+Lee, J.S.; Lacerda, E.; Kingdon, C.; Abken, E.; Susannini, G.; Dockrell, H.M.; Nacul, L.; Cliff, J.M. Abnormal T-Cell activation and
+cytotoxic T-Cell frequency discriminate symptom severity in myalgic encephalomyelitis/chronic fatigue syndrome. J. Transl. Med.
+2025, 24, 68. [CrossRef]
+https://doi.org/10.3390/ijms27104488
+
+Int. J. Mol. Sci. 2026, 27, 4488
+25 of 25
+54.
+Elahi, S.; Rezaeifar, M.; Osman, M.; Shahbaz, S. Exploring the role of galectin-9 and artemin as biomarkers in long COVID with
+chronic fatigue syndrome: Links to inflammation and cognitive function. Front. Immunol. 2024, 15, 1443363. [CrossRef]
+55.
+Gupta, G.; Buonsenso, D.; Wood, J.; Mohandas, S.; Warburton, D. Mechanistic Insights Into Long Covid: Viral Persistence,
+Immune Dysregulation, and Multi-Organ Dysfunction. Compr. Physiol. 2025, 15, e70019. [CrossRef]
+56.
+Masoodi, W.T.M.A.; Radhi, S.W.; Abdalsada, H.K.; Niu, M.; Al-Hakeim, H.K.; Maes, M. Increased galanin-galanin receptor 1
+signaling, inflammation, and insulin resistance are associated with affective symptoms and chronic fatigue syndrome due to long
+COVID. PLoS ONE 2025, 20, e0316373. [CrossRef]
+57.
+Maes, M.; Twisk, F.N.M.; Kubera, M.; Ringel, K. Evidence for inflammation and activation of cell-mediated immunity in Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Increased interleukin-1, tumor necrosis factor-α, PMN-elastase,
+lysozyme and neopterin. J. Affect. Disord. 2012, 136, 933–939. [CrossRef] [PubMed]
+58.
+Georgopoulos, A.P.; James, L.M.; Peterson, P.K. HLA and pathogens in myalgic encephalomyelitis/chronic fatigue syndrome
+(ME/CFS) and other post-infection conditions. Sci. Rep. 2025, 15, 37303. [CrossRef] [PubMed]
+59.
+Raijmakers, R.P.H.; Lund Berven, L.; Keijmel, S.P.; Rodrigo, C.; Wyller, V.B.B.; Katz, B.Z.; Buchwald, D.; Evans, R.A.; Ger-ardin, P.;
+Knoop, H.; et al. Immunological associations in post-infective fatigue syndromes including Long COVID—A systematic review
+and meta-analysis. eBioMedicine 2025, 121, 105970. [CrossRef]
+60.
+Committee on the Diagnostic Criteria for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome; Board on the Health of Select
+Populations; Institute of Medicine. Beyond Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Redefining an Illness; National
+Academies Press: Washington, DC, USA, 2015; pp. 1–282. [CrossRef]
+61.
+Yong, S.J. Long COVID or post-COVID-19 syndrome: Putative pathophysiology, risk factors, and treatments. Infect. Dis. 2021, 53,
+737–754. [CrossRef] [PubMed]
+62.
+Davis, H.E.; McCorkell, L.; Vogel, J.M.; Topol, E.J. Long COVID: Major findings, mechanisms and recommendations. Nat. Rev.
+Microbiol. 2023, 21, 133. Correction in Nat. Rev. Microbiol. 2023, 21, 408. [CrossRef]
+63.
+Zachrisson, O.; Regland, B.; Jahreskog, M.; Kron, M.; Gottfries, C.G. A rating scale for fibromyalgia and chronic fatigue syndrome
+(the FibroFatigue scale). J. Psychosom. Res. 2002, 52, 501–509. [CrossRef]
+64.
+Hamilton, M. A rating scale for depression. J. Neurol. Neurosurg. Psychiatry 1960, 23, 56–62. [CrossRef]
+65.
+Hamilton, M. The Assessment of Anxiety States by Rating. Br. J. Med. Psychol. 1959, 32, 50–55. [CrossRef] [PubMed]
+66.
+Matza, L.S.; Morlock, R.; Sexton, C.; Malley, K.; Feltner, D. Identifying HAM-A cutoffs for mild, moderate, and severe generalized
+anxiety disorder. Int. J. Methods Psychiatr. Res. 2010, 19, 223–232. [CrossRef]
+67.
+Shapiro, C.M.; Moller, H.J. Chronic fatigue: Listen and measure. J. Psychosom. Res. 2002, 52, 427–436. [CrossRef] [PubMed]
+68.
+Zimmerman, M.; Martinez, J.H.; Young, D.; Chelminski, I.; Dalrymple, K. Severity classification on the Hamilton depression
+rating scale. J. Affect. Disord. 2013, 150, 384–388. [CrossRef] [PubMed]
+69.
+Tolentino, J.C.; Schmidt, S.L. DSM-5 criteria and depression severity: Implications for clinical practice. Front. Psychiatry 2018, 9,
+412752. [CrossRef]
+70.
+Al-Jassas, H.K.; Al-Hakeim, H.K.; Maes, M. Intersections between pneumonia, lowered oxygen saturation percentage and
+immune activation mediate depression, anxiety, and chronic fatigue syndrome-like symptoms due to COVID-19: A nomothetic
+network approach. J. Affect. Disord. 2021, 297, 233. [CrossRef]
+71.
+Al-Hadrawi, D.S.; Al-Rubaye, H.T.; Almulla, A.F.; Al-Hakeim, H.K.; Maes, M. Lowered oxygen saturation and increased
+body temperature in acute COVID-19 largely predict chronic fatigue syndrome and affective symptoms due to Long COVID:
+A precision nomothetic approach. Acta Neuropsychiatr. 2023, 35, 76–87. [CrossRef]
+72.
+Patrone, D.; Alessio, N.; Antonucci, N.; Brigida, A.L.; Peluso, G.; Galderisi, U.; Siniscalco, D. Optimization of Peripheral Blood
+Mononuclear Cell Extraction from Small Volume of Blood Samples: Potential Implications for Children-Related Diseases. Methods
+Protoc. 2022, 5, 20. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+https://doi.org/10.3390/ijms27104488

@@ -1,0 +1,1812 @@
+Academic Editor: Hans-Peter
+Hartung
+Received: 27 March 2026
+Revised: 5 May 2026
+Accepted: 7 May 2026
+Published: 12 May 2026
+Copyright: © 2026 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license.
+Review
+Human Endogenous Retroviruses in Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome: Emerging Roles
+in Pathogenesis, Immunity, Biomarkers and Therapeutics
+Krishani Dinali Perera 1
+, Elisa Oltra 2,*
+and Simon R. Carding 1,3,*
+1
+Food, Microbiome and Health Research Programme, Quadram Institute Bioscience, Norwich Research Park,
+Norwich NR4 7UQ, UK; krishani.perera@quadram.ac.uk
+2
+Department of Pathology, School of Health Sciences, Universidad Catolica de Valencia, 46001 Valencia, Spain
+3
+Norwich Medical School, University East Anglia, Norwich NR4 7UQ, UK
+*
+Correspondence: elisa.oltra@ucv.es (E.O.); simon.carding@quadram.ac.uk (S.R.C.)
+Abstract
+Human endogenous retroviruses (HERVs) are potential driving forces of the pathophysi-
+ology of Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), linking post-
+infectious immune dysfunction to chronic inflammation and immune and neurocognitive
+dysfunction that are hallmark features of ME/CFS. Accumulating evidence from related
+autoimmune diseases and cancers has shown that reactivated HERVs can contribute to
+disease pathogenesis by amplifying immune activation through viral protein-mediated
+innate sensing, long terminal repeat (LTR)-driven transcription, and disrupting epigenetic
+silencing. HERV signatures are therefore promising biomarkers for diagnosis, patient
+stratification for drug-repurposing trials, and therapy monitoring. Accumulating evidence
+suggests a possible correlation between HERV expression and ME/CFS symptom severity,
+alterations in immune phenotypes, function and inflammatory gene networks. Importantly,
+locus-specific HERV profiling is a promising approach for distinguishing ME/CFS from
+overlapping or co-morbid conditions and healthy controls. Furthermore, HERV-targeted
+antibodies, immune modulators, epigenetic and antiviral interventions offer promise as
+concomitant therapeutic strategies for ME/CFS. Additional research incorporating viromics
+and other-omics validation, functional assays, and HERV-stratified clinical trials is now
+needed to realise this potential and to transform ME/CFS from a symptom-based syndrome
+into a mechanism-driven, treatable condition.
+Keywords: ME/CFS; HERVs; immunity; biomarker; patients; classification
+1. Introduction
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a complex, hetero-
+geneous, and debilitating illness characterised by multi-organ dysregulation that compro-
+mises cellular energy production and metabolism, leading to a wide range of symptoms
+and impaired physical and cognitive function [1,2]. The most common patient-reported
+symptoms include post-exertional malaise (PEM), cognitive impairment, persistent fatigue,
+unrefreshing sleep, immune and gastrointestinal dysfunction, flu-like symptoms, and a
+general reduction in energy levels [3]. ME/CFS is not a sex-restricted condition, but it
+is more frequently reported in females [4–8], with its prevalence varying significantly
+across different age groups [6–8]. Epidemiological studies further suggest that ME/CFS is
+diagnosed more often among non-Hispanic white populations compared to those of other
+Int. J. Mol. Sci. 2026, 27, 4309
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+2 of 31
+ethnic backgrounds, including Black or Asian groups [6,7]. In the UK alone, approximately
+0.6% of the population appears to be affected by ME/CFS [6], and globally, the condition
+could impact up to 70 million people [9]. Nevertheless, factors such as socioeconomic
+status, healthcare access, disease awareness, cultural stigma, and underreporting contribute
+to delays and discrepancies in diagnosis and data collection.
+Although ME/CFS has diverse aetiological factors, infection has been identified as the
+trigger for 50% or more of ME/CFS sufferers [3]. However, no single or specific pathogen
+has yet been identified, with various viruses, bacteria, and fungi being associated with
+the onset or perpetuation of ME/CFS symptoms. Of these, virus infections are considered
+the most likely infectious trigger, with many patients reporting the onset of symptoms
+following a flu-like illness, initiated by an acute viral infection (e.g., SARS-CoV-2, influenza
+virus) or chronic infection and reactivation of latent viruses (e.g., Epstein–Barr virus or EBV,
+human herpesviruses or HHVs, enterovirus) [10–12]. Emerging evidence from transcrip-
+tomic, proteomic, and serological studies has highlighted a possible contribution by Human
+Endogenous Retroviruses (HERVs) to disease pathogenesis, with HERV transcriptomes in
+immune cells and tissues of ME/CFS patients differentiating them from healthy controls
+and from patients with fibromyalgia (FM) [13]. This review provides an overview of HERV
+biology and discusses the current findings from published studies investigating HERV
+expression in ME/CFS and HERV-related pathophysiological mechanisms that may drive
+the disease. We also discuss the implications these findings might have on the diagnosis
+and treatment of ME/CFS.
+2. HERV Biology
+2.1. HERVs
+HERVs are viral “fossils” in the human genome, originating from exogenous retroviral
+infections that integrated into the mammalian germline cells, with many HERV families
+becoming fixed during the evolution of primate ancestors millions of years ago. Today,
+HERV sequences make up 8% of the human genome and are transmitted vertically in the
+population [14–16]. The integrated proviral HERVs contain internal viral coding regions:
+gag (group-specific antigen), pro (protease), pol (polymerase), and env (envelope), flanked
+by long terminal repeats (LTRs), that mimic the integrated forms of other exogenous
+retroviruses. However, many of these integrated proviruses can, over time, accumulate
+mutations and deletions through multiple recombination events, rendering them silent
+and non-infectious. As a result, no naturally occurring autonomously replicating HERV
+has been identified to date [17–19]. Most HERVs often lack one or more essential coding
+sequences, such as the env gene, but retain LTRs, and these often exist as solo LTRs [18–22].
+Consequently, HERVs are classified as a subclass of transposable elements (TEs), which
+comprise approximately 45% of the human genome, and consist of DNA transposons
+and retrotransposons [15]. HERVs specifically belong to the LTR retrotransposon family,
+distinguishing them from non-LTR retrotransposons, such as long interspersed nuclear
+elements (LINEs) and short interspersed nuclear elements (SINEs).
+2.2. HERV Classification
+HERVs can be classified by the tRNAs that initiate reverse transcription at their primer
+binding sites, such as lysine tRNA for most HERV-K elements, or based on the nearby genes
+or characteristic amino acid motifs (for example, HERV-FRD) [23,24]. HERVs are grouped
+into three major classes based on their phylogenetic relatedness to exogenous retroviruses:
+class I gamma/epsilon-like viruses (HERV-H, -W, -E), class II alpha/beta/delta-like viruses
+(mainly HERV-K), and class III spumavirus-like viruses (HERV-L and -S) [22–25]. Class I
+contains the largest and mostly defective set of HERV families [24,26] while class II rep-
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+3 of 31
+resents the second largest group, dominated by HERV-K [27]. Within class II, HERV-K
+elements are further classified into HML-1 to HML-11 subgroups, with HML-2 representing
+the most recent, best preserved integrations, mainly comprising intact envelope genes [27].
+Most HML-2 proviruses are further classified into type 2 (intact proviruses that encode a
+nuclear export factor Rec, and a fusion-competent env glycoprotein) and type 1 (possessing
+a 292 bp pol-env deletion that abolishes canonical splicing for Rec/env proteins but pro-
+duces a nuclear Np9 protein) [28,29]. However, some HML-2 loci can have larger deletions,
+evading this binary classification [27]. Class III elements are the least numerous and cluster
+with, yet remain distinct from, true spumaviruses [24].
+2.3. HERV Transcription and Regulation
+Expression of HERVs and their LTRs is tightly regulated by transcriptional silencing,
+either through evolutionary mechanisms such as the accumulation of point mutations and
+deletions or through epigenetic mechanisms. Nevertheless, low basal levels of HERV/LTR
+expression are observed across various cell types and tissues. This expression appears to be
+regulated by cell-specific epigenetic mechanisms and transcriptional regulatory elements
+that change throughout the human lifespan [30–33]. Thus, basal HERV expression levels
+vary across tissue types and may correlate with biological factors such as sex, ethnicity,
+and age, thereby collectively shaping the HERV transcriptome. Investigations of age-
+associated expression of HERV families revealed that several proviruses are moderately
+affected, leading to age-dependent expression profiles [34]. Thus, de-repression of HERV-
+K and other endogenous retroviruses in ageing and senescent human cells may be an
+active process that drives and amplifies cellular senescence and tissue ageing. This occurs
+partly through the production of retrovirus-like particles (RVLPs) that activate innate
+immune pathways (such as cyclic GMP-AMP synthase—stimulator of interferon genes or
+cGAS–STING pathway), propagating senescence to neighbouring cells [35]. Interestingly,
+drug-mediated inhibition could potentially alleviate this senescence and age-related tissue
+degeneration [35].
+Basal HERV transcription is regulated primarily by two mechanisms: epigenetic con-
+trol and so-called “leaky” expression. Epigenetic regulation of HERVs and their LTRs is
+essential for cellular homeostasis, with controlled HERV/LTR expression in the germline
+but not in somatic tissues, occurring through coordinated epigenetic mechanisms [36,37].
+These tight epigenetic regulatory mechanisms include DNA methylation at CpG-rich LTR
+promoter regions, repressive histone markers such as H3K9 trimethylation (H3K9me3),
+and the activity of chromatin re-modellers, including SET domain bifurcated histone lysine
+methyltransferase 1 (SETDB1) and tripartite motif–containing 28 (TRIM28 or KAP1) [38].
+Among these, DNA methylation has been extensively investigated as a key epigenetic
+regulatory mechanism for repressing HERV/LTR transcription. Differential methylation of
+HERV LTRs governs cell-type-specific transcriptional activity [39], exemplified by placental
+expression of syncytin—fusogenic env glycoproteins encoded by ERVW-1 (syncytin-1)
+and ERVFRD-1 (syncytin-2), which is tightly regulated by DNA methylation and histone
+modifications at their 5′ LTRs [40]. In some contexts, DNA hypomethylation of HERV
+LTRs is associated with tissue-specific enhancer activity [39,41]. However, loss of epi-
+genetic silencing of HERV/LTRs could preferentially reactivate evolutionarily younger
+HERVs, such as HERV-K (HML-2), driving locus-specific transcription and dysregulation
+of nearby immune genes by acting as enhancers or alternative promoters [36,39,40,42]. In
+contrast, HERVs can also be transcribed autonomously when their 5′ LTR promoters escape
+epigenetic silencing [43,44], resulting in stronger, locus-specific transcripts.
+During “leaky” expression, RNA polymerase II continues transcribing from actively
+expressed host genes into neighbouring HERV elements, passively producing chimeric host–
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+4 of 31
+HERV transcripts that contribute to the baseline, cell-type-specific HERV expression [45,46].
+The functions of many HERV-derived RNAs remain poorly understood, although they may
+have important physiological roles in transcriptional regulation.
+2.4. HERV-Mediated Host Gene Regulation
+HERVs and their LTRs often act as regulatory elements involved in long-range chro-
+mosomal interactions modulating host gene expression. They act as enhancers, pro-
+moters, transcription factor binding sites, polyadenylation sites, splice sites, or RNA
+interference-related elements [16,21,47–56]. Many HERV/LTRs have also been co-opted
+as cis-regulatory elements that control the expression of embryonic developmental genes,
+noncoding RNAs, and immune responses. Therefore, HERV insertions are important con-
+tributors to genome evolution and form a vital integral component of host gene regulatory
+networks [16,50,52–54,56].
+During embryogenesis, specific HERV envelopes mediate key developmental pro-
+cesses. As already noted, HERV-W encodes the fusogenic env protein syncytin-1, whereas
+HERV-FRD produces syncytin-2, required for trophoblast fusion in the placenta, which facil-
+itates tolerance of the maternal immune system toward the developing foetus [16,40,57–59].
+As demonstrated by reporter assays, HERV/LTRs also regulate neighbouring genes, pro-
+viding evidence that LTR sequences could enhance transcription from nearby promot-
+ers [37,60]. Examples include HERV-9 looping to globin promoters via Nuclear Factor Y
+(NF-Y)/GATA binding protein 2 (GATA-2), HERV-E driving endothelin B receptor (ED-
+NRB)/Apolipoprotein C-I (apoC-I) expression, and HERV-H serving as an alternative
+Gasdermin (GSDM) promoter [55,60,61].
+HERVs also contribute to immune regulation, acting as endogenous sources of vi-
+ral mimics that interact with Toll-like receptors (TLRs), Retinoic acid–inducible gene I
+(RIG-I)/Melanoma differentiation-associated protein 5 (MDA5)-Mitochondrial antiviral
+signalling protein (MAVS) that activate downstream type I IFN and Nuclear factor κB (NF-
+κB) pathways [62]. Depending on the context, this activity can enhance antiviral defence or
+anti-tumour immunity, drive chronic inflammation, or exert immunosuppressive effects
+via shared envelope domains. Certain HERV-K LTRs contain binding sites for cellular
+transcription factors, such as NF-κB and Activator Protein 1 (AP-1) motifs, and can drive
+cytokine production in positive-feedback loops that promote inflammation, which could
+be exacerbated by the age-associated decline in sex hormone production [35,63,64]. HERVs
+also modulate innate immunity through IFN-induced genes and AIM2 inflammasome ac-
+tivity [65]. Additionally, HERVs can generate full-length long non-coding RNAs (lncRNAs)
+that modulate host innate immune responses, particularly during RNA virus infections [66].
+Specific HERVs, such as HERV-K18, may function as superantigens (SAgs) that activate
+specific T cell receptor (TCR) Vβ expressing T cells that are enriched in Tregs, which are
+discussed in more detail in subsequent sections [62,67]. Alternatively, HERV-K env proteins
+also act as HLA-presented self-antigens to shape T cell repertoires [68]. Collectively, these
+findings underscore the need for comprehensive genomic annotations and precise analysis
+of HERV cis-regulatory mechanisms to fully understand their roles in human development,
+immunity, and disease.
+3. Pathophysiological Implications of HERV Activation
+HERV silencing mechanisms can be compromised, allowing their reactivation in re-
+sponse to environmental factors including exogenous viral infections, cellular ageing, or
+stress (e.g., oxidative or hypoxic conditions), or via epigenetic de-repression through inhi-
+bition of DNA methylation or histone deacetylation. Under these permissive conditions,
+especially evolutionarily younger HERV subfamilies, such as HERV-K, HERV-W, and HERV-
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+5 of 31
+H, which retain open reading frames for gag, pol, and env, can produce functional viral
+proteins and virus-like particles (VLPs), resulting in pathogenic outcomes. Consequently,
+dysregulation of HERV expression can contribute to pathophysiology in various contexts,
+including embryogenesis and placentation [40], cancer [39,40,42,69–71], neurodegenera-
+tion [38], autoimmunity [72–76], and ageing [35], where HERV overexpression, altered
+splicing, or transactivation can drive cytotoxicity, immune activation, or senescence [35,50].
+Evidence of HERV Reactivation in ME/CFS
+To date, only one study has documented HERV expression in ME/CFS at the locus-
+level, while others have relied on global PCR-based amplification methods with limited
+genome-association precision (Table 1). Earlier, now disproved claims of exogenous retro-
+viruses, such as Human T-lymphotropic virus 1 or 2 (HTLV-I/II) [77], and Xenotropic
+murine leukaemia virus-related virus (XMRV) associations with ME/CFS have been at-
+tributed to contamination [78–84]. Similarly, Oakes et al. found no significant differences in
+HERV-K18 env transcripts or Human Herpesviruses-6 and -7 (HHV-6/HHV-7) viral loads
+in PBMCs between ME/CFS patients and healthy controls, with no correlation to symptom
+severity [85].
+Table 1. Published studies reporting HERV activation in ME/CFS patients.
+ME/CFS Diagnostic
+Criteria
+Cohorts
+Samples
+Technique Used
+Findings
+Reference
+Fukuda
+39 CFS patients
+9 healthy controls
+PBMC
+RT-qPCR
+No difference in HERV-K18 env
+transcripts or viral copy numbers
+of HHV-6 and HHV-7 between
+CFS patients and healthy controls.
+[85]
+Canadian consensus
+criteria (CCC) and
+Fukuda
+12 ME/CFS patients
+8 healthy controls
+Duodenal and
+stomach punch
+biopsies
+Immunohistochemistry
+8/12 duodenal samples showed
+HERV proteins, whereas none
+were detected in control samples.
+The observed immunoreactivity
+seems to be localised to pDCs.
+No HERV antigens detected in
+stomach biopsies.
+[86]
+Fukuda and CCC
+75 moderate chronic
+fatigue patients
+(ME/CFSm)
+25 severe chronic
+fatigue patients
+(ME/CFSs)
+70 healthy controls
+PBMC
+RT-qPCR
+HERV-K was overexpressed only
+in moderately affected
+individuals, but HERV-W showed
+no difference.
+[87]
+CCC and/or
+International
+Consensus Criteria
+(ICC)
+14 female FM
+patients with or
+without ME/CFS
+14 female healthy
+controls
+PBMC
+RT-qPCR
+HERV-H, -K and -W
+overexpressed in immune cells
+from FM patients with or without
+comorbid ME/CFS, and patients
+with increased HERV expression
+also show increased levels of
+IFN-β and IFN-γ.
+[88]
+CCC
+95 ME/CFS patients
+110 healthy controls
+50 pre-COVID
+plasma samples
+PBMC and saliva
+Immunoassay
+Three to six months after mild or
+asymptomatic SARS-CoV-2
+infection, reactivation of latent
+viruses, including EBV, HHV6,
+and HERV-K, was stronger in
+ME/CFS patients.
+[89]
+CCC and ICC
+43 female subjects
+(8 ME/CFS patients
+10 FM patients
+16 co-diagnosed
+patients
+9 matched healthy
+controls)
+PBMC
+HERV-V3
+high-density
+microarrays
+Distinct HERV expression profiles
+in immune cells could
+differentiate ME/CFS patients,
+fibromyalgia patients,
+co-diagnosed patients, and
+healthy controls.
+[13]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+6 of 31
+In duodenal biopsies analysed by immunohistology, 8 out of 12 ME patients showed
+the presence of HERV-K gag and env proteins of HERV-K18.1, HERV-FRD, and HERV-R,
+which were absent in 8 controls [86]. Interestingly, HERV protein expression co-localised
+with plasmacytoid dendritic cells (pDCs), implicating pDCs in ME pathology or inflam-
+mation [86]. Similarly, Rodrigues et al. reported statistically higher transcriptional activity
+of HERV-K env in PBMCs from moderate ME/CFS patients compared to healthy controls,
+suggesting a possible role in immune dysregulation that may vary with disease sever-
+ity [87]. Furthermore, HERV-H, -K, and -W types were overexpressed in immune cells from
+patients with FM with or without ME/CFS as a comorbidity, with these increased levels of
+HERVs correlating with elevated IFNβ and IFNγ levels [88]. FM symptomology overlaps
+with ME/CFS, with this increase in HERV expression, along with elevated cytokine levels
+presumed to contribute to disease pathology.
+Notably, ME/CFS is often regarded as a multifactorial illness triggered by a viral
+(re)infection [10], although the precise mechanisms responsible for the development of
+ME/CFS following such an infection remain unclear. Numerous studies have explored
+the possibility of ongoing active infections or reactivation of latent viruses, including her-
+pesviruses, in individuals with ME/CFS, but results have been inconsistent and remain
+inconclusive. Many of the viruses consistently linked to ME/CFS are herpesviruses, includ-
+ing EBV, HHV-6a/b, HHV-7, enteroviruses, in addition to RNA viruses, including SARS-
+CoV-2. Several studies have discussed the overlap between COVID-19 and ME/CFS [90,91].
+SARS-CoV-2 infection increases HERV-W env antigenemia, which, together with differ-
+ent cytokine profiles, discriminates post-COVID from ME/CFS or FM [92]. Similarly,
+3–6 months after mild/asymptomatic SARS-CoV-2 infection, saliva antibodies against EBV,
+HHV-6, and HERV-K are substantially increased in non-vaccinated ME/CFS patients and
+controls [89]. Of note, ME/CFS patients showed an overall stronger antibody response
+against these latent viruses, including higher IgG titres against EBV nuclear antigen-1
+(EBNA1), and higher IgG responses to HERV-K, particularly in female patients [89]. Ad-
+ditionally, ME/CFS patients showed higher baseline EBV viral capsid antigen (VCA) IgG
+levels even without SARS-CoV-2 infection [89]. This suggests that even mild or asymp-
+tomatic infections can trigger or worsen latent virus reactivation, which might contribute
+to immune dysregulation in ME/CFS. Notably, antibody responses to infection-triggered
+reactivation of latent viruses are more evident and pronounced in oral mucosal samples
+than in plasma [89], emphasising the importance of identifying mucosal virus reservoirs,
+which could be sites of HERV reactivation in ME/CFS [93].
+A landmark study by Giménez–Orenga and colleagues provides clear evidence of
+HERV dysregulation in ME/CFS. Using HERV microarrays in immune cells from a small
+but well-characterised, all-female cohort, the authors demonstrate distinct HERV expres-
+sion profiles that differentiate ME/CFS from FM, co-diagnosed cases, and healthy controls.
+ME/CFS samples showed greater dysregulation, mainly involving solitary LTRs from
+33 families, including HERV-H and HERV-P, compared with FM or co-diagnosed pa-
+tients [13]. Within the ME/CFS group, the more severe subgroup showed greater HERV
+dysregulation, supporting the potential use of HERVs for patient subtyping in personalised
+treatments and drug repurposing trials, and as possible severity markers [13]. Although a
+subset of HERVs was generally downregulated across all patient groups, ME/CFS samples
+showed 258 upregulated and 78 downregulated HERV loci [13]. Many of these were solitary
+LTRs associated with or functionally linked to genes involved in pathogen sensing, T cell
+activation, and Th17 differentiation [13]. The more severe ME/CFS subgroup also showed
+coordinated immune alterations, including increased plasma cells and resting CD4 memory
+T cells, alongside decreased γδ T cells and altered immune response-related gene expres-
+sion [13]. Importantly, activation of specific HERVs and immune-related genes positively
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+7 of 31
+correlated with ME/CFS diagnosis and with disease symptoms, including physical and
+mental fatigue [13].
+Collectively, these findings suggest HERV dysregulation is a candidate molecular
+signature of ME/CFS, differentiating patients from healthy controls and those with over-
+lapping comorbidities. Furthermore, locus-specific HERV upregulation links immune
+activation with symptom severity, supporting a possible contribution of HERVs to disease
+heterogeneity. Additionally, HERV dysregulation and anti-HERV immune responses in
+blood and tissues of ME/CFS patients suggest that HERVs may also serve as a biomarker,
+although variations in methodology and cohorts may explain inconsistencies. Recent
+microarray and loci-related studies [13] further support the potential diagnostic and mech-
+anistic relevance of HERVs in ME/CFS. HERV expression in ME/CFS may be driven by
+epigenetic de-repression involving silencers like SETDB1 and TRIM28, which are ampli-
+fied by infectious triggers such as SARS-CoV-2 or the reactivation of latent herpesviruses.
+Large-scale longitudinal studies are now required to confirm the identified dysregulated
+HERV signatures and to determine their role in disease initiation or progression that would
+underpin the development of HERV-targeted therapies for ME/CFS management.
+4. Mechanisms of HERV Reactivation in Chronic Disease
+HERV-driven chronic immune activation could contribute to chronic immune dys-
+regulation and pathophysiology characteristic of various diseases. These include nu-
+merous cancers, such as melanoma, lymphoma, leukaemia, glioblastoma, and cancers
+of the pancreas, breast, prostate, ovaries, liver, kidney, cervix, oesophagus, colon, and
+stomach [69–71,94–101]. Multiple studies have shown that increased HERV expression
+(e.g., expression of HERV-K env upregulated in tumours compared to normal tissues)
+correlates with tumour progression (including migration, invasion, and growth), immune
+infiltration, and overall disease-specific survival and prognosis [69–71,94–101]. Similarly,
+immune-relevant HERV loci may contribute to systemic autoimmunity, including the devel-
+opment of type I diabetes (T1D) [73,102] and multiple sclerosis (MS) [103–105]. Moreover,
+in gastrointestinal inflammatory disorders, altered HERV expression and impaired epi-
+genetic repression are associated with the dysregulated immune responses in Crohn’s
+disease, irritable bowel syndrome (IBS), ulcerative colitis and celiac disease [106–109]. How
+HERVs are reactivated in ME/CFS is unknown, with existing evidence limited to correlative
+transcriptomic profiles indicating locus-specific upregulation associated with immune dys-
+regulation. Nonetheless, inferences can be drawn from similar conditions such as post-viral
+infection syndromes, autoimmune diseases (MS) and cancer, where comparable triggers,
+particularly virus infection and reactivation, may initiate chronic immune dysregulation
+leading to ME/CFS.
+4.1. Viral Triggers Enhance HERV Expression
+A plethora of viruses can activate various HERV families [110–112]: EBV [113], HHV-
+6A [114], HHV-6B [115], SARS-CoV-2 [89,116–118], HIV-1 [119–121], Adenovirus 5 [122], Hu-
+man Cytomegalovirus (HCMV) [123,124], Hepatitis viruses [125,126], Dengue virus [127],
+Influenza A [128–130], and Herpes Simplex virus (HSV) [131,132]. Notably, viruses such as
+SARS-CoV-2 can reactivate latent viruses like EBV and HHV-6 [89,133], exacerbating dysregu-
+lation, particularly in already ill patients, such as those with ME/CFS. This could explain why
+50% or more of long COVID patients meet ME/CFS diagnostic criteria [134–136], with these
+patients being more functionally impaired than the non-ME/CFS long COVID patients [137].
+Virus-driven HERV reactivation could be influenced by the viral life cycle stage, host cell type,
+immune status, and individual differences, all of which can confound attempts to assess and
+identify HERV activation profiles. Overall, available data support multiple convergent mecha-
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+8 of 31
+nisms by which exogenous viruses induce HERV expression, leading to immune dysregulation,
+inflammation, and disease development.
+4.1.1. Virus Infection-Mediated Activation of HERVs
+Central to HERV reactivation is virus-triggered activation of host transcription factors
+that activate HERV LTRs either directly or in a bystander manner. Many viral infections
+lead to the expression of viral proteins, including replication-related and accessory proteins
+that activate transcription factors such as NF-κB, AP-1, octamer-binding transcription
+factor-1 (Oct-1), and interferon-responsive regulators that have binding sites within HERV
+LTRs [121,131,132]. For example, HERV-K LTRs contain conserved binding sites for tran-
+scription factors involved in innate immunity and inflammation, including multiple NF-κB
+sites [63,64]. The hepatitis B virus X protein (HBx), a multifunctional oncoprotein, up-
+regulates HERV-W env [125]. Similarly, HSV-1 immediate early protein ICP0 modulates
+HERV transcription through upregulating AP-1 [131], while immediate early protein 1
+(IE1) activates the HERV-W LTR by increasing Oct-1 DNA-binding activity at an Oct-1 site
+within the LTR [132]. While viral gene products and replication-independent signalling
+play a critical role, full viral replication is not essential for HERV activation. For example,
+HCMV induces HERV expression mainly through early and late gene products rather
+than immediate early genes [123]. Similarly, HHV-6B can activate HERV-K18 env through
+receptor engagement (glycoprotein H–CD46 interaction) without requiring viral DNA
+synthesis [115].
+4.1.2. Induction of HERV-Encoded SAgs
+Among virus-induced HERV products, HERV-encoded SAgs have significant im-
+munopathogenic potential. The best-characterised example is HERV-K18 env, which en-
+codes a SAg capable of MHC class II–dependent activation of specific T cells bearing
+antigen receptors encoded by specific T cell receptor Vβ genes, leading to polyclonal T-cell
+activation [67,138]. EBV interacts with CD21 and rapidly induces HERV-K18 env tran-
+scription in resting B cells, with the signalling mediated by latent membrane protein 2A
+(LMP-2A), which mimics B-cell receptor activation through its immunoreceptor tyrosine-
+based activation motifs (ITAMs) [113,139]. Similarly, HHV-6A and HHV-6B can induce
+production of HERV-K18 env independently of complete viral replication, either through
+interferon-mediated pathways or receptor-triggered signalling requiring de novo host
+protein synthesis [114,115]. This capacity of multiple herpesviruses to activate the same
+endogenous retroviral SAg indicates an evolutionarily convergent mechanism that subtly
+alters host T-cell responses, the immunological effects of such could be substantial. It is
+possible that minimal SAg activity can alter T-cell repertoires, promote chronic immune
+activation, and decrease thresholds for developing autoimmunity. This aligns with obser-
+vations linking herpesvirus exposure, HERV-W and HERV-K activation, and autoimmune
+diseases such as MS, where HERV-W env expression correlates with HHV6-A/B antibody
+titres and EBV viral load [140,141].
+4.1.3. Immune Signalling Mediated HERV Activation
+Innate immune signalling and interferon responses are another major pathway con-
+necting viral infection to HERV expression. Viral detection via dsDNA/dsRNA pathways
+or by pattern recognition receptors (PRRs) elicits interferon production, which can either
+directly stimulate HERV transcription or foster a permissive environment for expression.
+Furthermore, some HERVs are integrated within host genes involved in antiviral signalling,
+which can influence the functioning of these pathways. For example, adenovirus infection
+induces HERV-K expression, which is linked to the upregulation of F-box only protein 17
+(FBXO17), a gene encoding an intronic HERV-K sequence that negatively regulates type
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+9 of 31
+I interferon signalling [122]. This illustrates how HERV activation can fine-tune innate
+immunity during viral challenges. Similarly, HHV-6A can indirectly induce HERV-K18
+through IFN-α produced by infected cells [114], as IFN-α strongly upregulates HERV-K18
+expression in peripheral blood lymphocytes [138].
+At the cellular level, cell type-specificity and immune context strongly influence HERV
+responses. Monocytes, B cells, epithelial cells, and cancer cells are sensitive to induced
+HERV activation, exhibiting donor-to-donor variation [115,123]. Consistent with this, env
+proteins of HERV-W and HERV-K are linked to proinflammatory signalling, immune cell
+activation, and tissue pathology, with persistent expression associated with chronic or post-
+acute disease states such as progressive MS and Long COVID [116,117,140,142]. In some
+cases, HERV activation may also enhance viral replication, as indicated by interactions
+between HIV-1 and HERV-K18 env [143]. Elevated HERV expression in vivo correlates
+with high viral loads or chronic immune activation, as seen in CMV-infected transplant
+recipients, HIV-viraemic individuals, hepatitis-associated liver disease, certain MS cohorts
+with herpesvirus serological markers, and COVID-19 patients [116,118,124,126,140,144].
+Notably, HERV-FRD is highly upregulated in bronchoalveolar lavage fluid from COVID-19
+patients, but not in PBMCs, with a senescence-related increase in HERV expression in
+human bronchial epithelial cells that may contribute to poorer outcomes in older popula-
+tions [145].
+4.1.4. Epigenetic Regulation of HERV Expression
+Apart from cellular and immune influences, epigenetic regulation constitutes a major
+driver of HERV activity. Viruses drive chromatin remodelling by decreasing repressive
+histone marks or increasing transcription factor activity, as observed for HERV-W during
+influenza infection [128]. Chromatin remodelling can upregulate HERV expression, thereby
+driving pathogenesis. This is exemplified in systemic lupus erythematosus (SLE), where
+hypomethylation of HERV-E clone 4-1 in CD4+ T cells promotes global DNA hypomethy-
+lation and IL-17–mediated inflammation via the miR-302d/Methyl-CpG binding domain
+protein 2 (MBD2) axis [146]. Similarly, impaired methylation of the HERV prototype HRES-
+1 in resting and anti-IgM–stimulated SLE B cells increases HRES-1/p28 expression [147].
+Locus-specific polymorphisms (rs451401) synergise with methylation changes to elevate
+HRES-1/RAB4 in T cells, enhancing mechanistic target of rapamycin (mTOR) signalling
+upon TCR stimulation and connecting environmental stress to abnormal T cell activation in
+SLE [148]. Chromatin remodelling also involves dysregulation of regulatory proteins such
+as TRIM28 and SETDB1. Increased HERV transcription coincides with impaired expression
+of TRIM28, a key repressor that scaffolds SETDB1 and Krüppel-associated box zinc finger
+proteins (KRAB-ZFP) complexes to maintain retroviral silencing. Aberrant expression of
+TRIM28 and SETDB1 in inflammatory bowel disease (IBD) and related disorders (IBS, celiac
+disease) correlates with HERV derepression [108,109,149], driving Treg deficiency, reactive
+T cell expansion, and chronic immune activation, suggesting that failure to constrain HERV
+activity may be a common driver of persistent inflammation.
+4.1.5. Relevance to ME/CFS
+The general principles of virus-driven HERV reactivation are relevant to ME/CFS.
+Many of the implicated viruses are frequently linked with ME/CFS pathophysiology. EBV,
+HHV-6A/B, HHV-7, adenoviruses, enteroviruses, parvovirus B19, and SARS-CoV-2 are
+known to induce HERV expression in other disease contexts. EBV is commonly associated
+with ME/CFS, establishing lifelong latency in B cells and reactivating under immune stress,
+leading to increased viral loads and antibody responses, including anti-EBV-dUTPase
+antibodies [89,150–156]. Similarly, HHV-6A/B, which also shows patient subgroup-specific
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+10 of 31
+associations with ME/CFS, displays tissue-specific reactivation [157–162]. HHV-7 activa-
+tion often co-occurs with EBV, favouring enhanced immune dysregulation [158,159,161].
+Additionally, SARS-CoV-2 infection often causes reactivation of EBV, HHV-6, adenovirus,
+and HERVs, especially in saliva, and is a major trigger of ME/CFS-like illness in long
+COVID [89,135,136,151,163,164]. On the other hand, adenoviruses, which persist in tonsil-
+lar and airway tissues, can activate HERV-K through interferon–modulatory pathways [122]
+and may serve as chronic mucosal irritants that promote broader viral and HERV reacti-
+vation in ME/CFS [164]. Enteroviruses and parvovirus B19, both implicated in ME/CFS
+pathophysiology [165–170], can contribute to a landscape of persistent immune activation
+that is conducive to HERV expression. Indeed, these virus infections or latent virus reac-
+tivation can cause increased HERV transcription in ME/CFS [88,89,92]. However, these
+observations remain preliminary and correlative and require more detailed and mechanistic
+investigations. As noted earlier, most research on viruses linked to ME/CFS has focused on
+blood analyses, with only a few studies investigating the mucosal virome [93]. This leaves
+significant questions regarding tissue-specific HERV activation and the significance and
+outcomes of systemic versus localised immune interactions largely unexamined.
+Epigenetic alterations have also been observed in ME/CFS, including DNA methy-
+lation changes, histone modifications, and dysregulated non-coding RNAs. These often
+follow viral triggers (~70% of cases) such as EBV and HHV-6, which employ miRNAs and
+LTR transactivators to manipulate host gene expression and sustain HERV activity [171].
+Several genome-wide studies have investigated the epigenetic reprogramming in ME/CFS,
+revealing differential methylation patterns, hyper- or hypomethylation, particularly in
+promoter regions regulating immune or immune-related signalling genes [172,173]. Addi-
+tionally, elevated histone deacetylase activity and reduced plasma cortisol levels have also
+been reported [174]. Importantly, upregulated HERV loci in ME/CFS, which were discussed
+in Section Evidence of HERV Reactivation in ME/CFS, correlate with T-cell activation, epi-
+genetic regulators (SETDB1, TRIM28), and shifts in immune populations, including reduced
+γδ T cells and increased plasma and resting CD4 memory T cells [13]. Enrichment of tran-
+scription factor binding sites in these HERVs highlights the role of epigenetic regulators in
+disease-related transcriptional changes. Moreover, dynamic, patient-specific methylation
+changes have also been observed during relapses, affecting promoters and enhancers linked
+to metabolic, immune, and TGF-β pathways, indicating physiological distress [175,176].
+At the systemic level, these alterations seem to converge on immune, metabolic, neuronal,
+and endothelial pathways, also contributing to hypothalamic–pituitary–adrenal (HPA) axis
+dysfunction. Taken together, although there is a potential link between the activation of
+silenced transposable elements and the symptomatology of ME/CFS [172], more compre-
+hensive genome-wide analyses are necessary to identify the specific loci at the single cell
+level and to explore the potential of HERV/LTRs in ME/CFS patient stratification and
+therapeutic opportunities.
+In summary, the overlap between viruses associated with ME/CFS and those capable
+of activating HERVs supports a disease model in which initial viral triggers of ME/CFS
+create an environment allowing subsequent HERV reactivation. Research indicates that
+receptor-mediated signalling, stress responses, or the synthesis of new host or viral proteins
+is sufficient to induce HERV transcription. A bidirectional interaction between virus and
+HERV offers a plausible mechanistic link between post-infectious viral exposure and the
+ongoing, immune-mediated pathology observed in ME/CFS.
+4.2. HERV-Mediated Immune Dysfunction
+Activated HERVs and their LTRs have widespread effects on innate and adaptive
+immunity, which can be categorised into distinct but overlapping mechanisms. These
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+11 of 31
+include innate immune sensing, inflammatory amplification via LTRs, superantigen ac-
+tivity, immune suppression and modulation of antiviral restriction, and chronic immune
+dysregulation across various disease contexts.
+Several HERV env proteins act as direct activators of innate immune receptors,
+functioning in a manner analogous to pathogen-associated molecular pattern molecules
+(PAMPs). The most extensively characterised example is the surface subunit of HERV-W
+env, which binds CD14/TLR4 on monocytes and dendritic cells [177]. This interaction
+elicits production of proinflammatory cytokines, including TNF-α, IL-6, and IL-1β and
+promotes dendritic cell maturation [177]. TLR4 activation by HERV-W env further drives T
+helper 1 (Th1) polarisation, characterised by high IFN-γ secretion [177]. Similarly, HERV-W
+env binds to TLR4 on pancreatic β-cells in T1D, inhibiting insulin secretion, reducing
+viability, and downregulating pancreatic and duodenal homeobox 1 (PDX-1)/V-maf mus-
+culoaponeurotic fibrosarcoma oncogene homologue A (Maf-A) transcription factors, while
+upregulating NF-κB/myeloid differentiation factor 88 (MyD88)/ TIR-domain-containing
+adapter-inducing interferon-β (TRIF) signalling [73]. This promotes the recruitment of
+macrophages to the pancreas, stimulates proinflammatory cytokines (TNF-α, IL-6, IL-12)
+in monocytes, promotes Th1 differentiation by dendritic cells, and triggers SAg-like T-cell
+responses that drive autoimmunity [73]. The expression of HERV-W env is increased in
+serum, PBMCs and pancreata from T1D patients [73,102,178] where HERV-W env expres-
+sion correlates with macrophage infiltration [178]. HERV-W env can directly inhibit insulin
+secretion in human Langerhans islets by affecting β-cell viability [178]. In the central
+nervous system, HERV-W env activates TLR4/MyD88 signalling in glial cells, inducing
+TNF-α and IL-10 by inhibiting the negative regulator MyD88s [179]. In gliomas, HERV-W
+env expression can be detected in glioma cells as well as microglial and myeloid cells
+within the tumour microenvironment, where it promotes microglia-dependent secretion
+of proinflammatory cytokines (TNF-α, IL-6, IL-1β) and other cytokines (MCP-1, CSF-1)
+which promote tumour cell clustering and migration [180]. In SLE, the endogenous retro-
+viral sequence HRES-1/Rab4 drives abnormal mTOR activation in T cells, connecting
+environmental stress, epigenetic dysregulation, and immune dysfunction [148]. HERV-E
+further enhances Th17-mediated inflammation through DNA hypomethylation and IL-17
+signalling in SLE [146]. Therefore, HERV env-mediated skewing of immune responses
+provides a mechanistic link between HERV-W expression and chronic inflammatory or
+demyelinating diseases, including MS.
+HERV SAgs, particularly associated with HERV-K18 env, have been implicated in
+multiple autoimmune diseases [181–184] with associations between specific HERV-K18
+haplotypes and susceptibility to autoimmune conditions being identified [185]. Elevated
+HERV-K18 SAg levels have been reported in juvenile rheumatoid arthritis [183]. In T1D,
+HERV-K18–derived SAg activity was suspected of inducing the expansion of Vβ7+ bearing
+T cells in pancreatic islets [181,184], although this association has been challenged by later
+studies [73,186,187]. However, in a murine model of MS, the surface subunit of HERV-K18
+env induced envelope-specific plasma IgG in immunised mice and T cell proliferation [188].
+In contrast, HERVs also encode immunosuppressive activities like those of exogenous
+retroviruses. The transmembrane (TM) protein of HERV-K contains an immunosuppressive
+domain that inhibits immune cell activation by modulating cytokine release, including the
+induction of IL-10 in human PBMCs [189]. Furthermore, HERV-K (HML-2) env antagonises
+tetherin (also known as bone marrow stromal antigen 2 or BST-2), a host restriction factor
+that prevents the release of enveloped viral particles, by binding to tetherin without causing
+its degradation [190]. This enables the release of HERV-K-like particles and potentially
+contributes to the evolutionary persistence of this proviral family [190]. This mechanism
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+12 of 31
+illustrates how HERVs can modulate antiviral defences while remaining immunologi-
+cally active.
+Beyond protein-mediated signalling, HERV LTRs serve as inflammation-responsive
+regulatory elements, containing conserved binding sites for cellular transcription factors
+such as NF-κB [63,64]. Additionally, HERV-K (HML2) env strongly induces transcription
+factors ETV4, ETV5, and EGR1, which are downstream effectors of the MAPK ERK1/2
+pathway and are linked to cellular transformation in breast cancer [191]. In amyotrophic
+lateral sclerosis (ALS), IgG antibody responses against HERV-K env correlate with disease
+severity, and are associated with increased env glycoprotein levels in B cells and NK cells,
+as well as HERV peptide-induced cytokine and chemokine shifts [192]. These include
+heightened IL-6 and IFN-γ production by B cells and changes in MIP-1α, MCP-1, and
+TNF-α secretion by CD8+ T cells, indicating ongoing immune activation [192]. On the
+other hand, pro-inflammatory cytokines like TNF-α and IL-6 can also activate the same
+transcription factors, creating autocrine loops that upregulate HERV-K [64]. Together, these
+findings suggest that HERVs promote maladaptive shifts in immune cell function rather
+than resolving inflammation.
+Relevance to ME/CFS Immune Dysfunction
+Collectively, the literature demonstrates that ME/CFS is characterised by persistent
+immune dysfunction that involves impaired cytotoxic lymphocyte responses, altered im-
+mune cell profiles, chronic immune activation, immune exhaustion and immune metabolic
+abnormalities [193–197]. Reduced NK cell cytotoxicity has been reported in several in-
+dependent studies with abnormal frequencies of CD56 bright CD16−NK cells, altered
+expression of activation and receptor molecules, and low cytotoxicity often associated with
+symptom severity [193,198–202]. Parallel impairments are also observed in CD8+ T-cell
+mediated cytotoxicity, with altered expression of adhesion molecules, receptors, perforin
+and granzyme B, and reduced mitochondrial membrane potential and glycolytic capacity,
+indicating defective effector function and impaired metabolic fitness [198,203–205]. Other
+studies report altered T-cell homeostasis, including altered CD4:CD8 ratios, reduced prolif-
+erative responses, expansion or contraction of effector memory subsets, and abnormalities
+in mucosal-associated invariant T (MAIT) cells [204,206–208]. Additionally, abnormalities
+of regulatory T-cells (Tregs) have also been reported, with both increased and decreased
+frequencies and altered forkhead box P3 (FOXP3) expression, suggesting defective immune
+regulation and loss of immunological homeostasis [198,200,206,209]. These findings in-
+dicate impaired cytokine production and cytotoxic function, supporting the presence of
+chronic antigenic stimulation or immune dysregulation.
+Importantly, immune abnormalities in ME/CFS may extend beyond lymphocytes, as
+emerging single-cell-based evidence reveals monocyte and platelet dysregulation corre-
+lating with disease severity, implicating vascular–immune interfaces in ME/CFS patho-
+physiology [210]. Cytokine studies also consistently demonstrate an altered inflammatory
+signature, including elevations in IFN-γ, TNF-α, IL-1β, IL-6, IL-10, IL-17, and multiple
+chemokines that correlate with disease severity, indicating a dynamic and evolving im-
+munopathology [195,211–213]. Transcriptomic and proteomic studies further support
+this state of immune suppression that appears to coexist with immune activation, reveal-
+ing downregulated interferon signalling, altered immunoglobulin gene expression, and
+enrichment of inflammatory and stress–response pathways [194,214,215].
+Notably, immune dysfunction in ME/CFS is tightly coupled with metabolic failure:
+PBMCs, NK cells, and T cells display reduced glycolysis, impaired oxidative phosphoryla-
+tion, altered fatty-acid oxidation, reduced ATP production, and mitochondrial structural
+and signalling defects, which ultimately leave immune cells unable to meet energetic
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+13 of 31
+demands during activation and stress [195,197,205,216–220]. These metabolic constraints
+closely resemble profiles of immune exhaustion and senescence, supported by increased
+immune checkpoint proteins such as programmed cell death protein 1 (PD-1), cytotoxic
+T-lymphocyte-associated antigen 4 (CTLA-4), lymphocyte-activation gene 3 (LAG-3), al-
+tered CD28/CD57 expression, and transcriptional programmes associated with exhausted
+T cells [194,195,197,221]. Accordingly, mitochondrial dysfunction in immune cells may pro-
+mote exhaustion, while exhausted or chronically activated immune cells further exacerbate
+damage through sustained oxidative stress and inflammation in a bidirectional loop [197].
+Severity-stratified studies in ME/CFS also reveal distinct immune phenotypes, in
+which milder disease is associated with early immunosenescence and enhanced cyto-
+toxic effector molecule expression, whereas severe ME/CFS is characterised by sustained
+T-cell activation, heightened pro-inflammatory cytokine production, and general dysreg-
+ulation of T cells, NK cells, and MAIT cells [208]. Collectively, these findings support a
+model in which ME/CFS involves a severely compromised immunomodulatory system
+characterised by defective immune regulation, chronic inflammatory signalling, immune
+exhaustion/senescence, and an interwoven failure to regulate cellular energy metabolism,
+thus preventing immune cells from restoring or maintaining homeostasis. These findings
+also emphasise the importance of patient stratification in both mechanistic studies and
+clinical management.
+Nevertheless, the potential contribution of HERVs to immune and metabolic dysreg-
+ulation in ME/CFS remains underexplored. The persistent expression of HERV/LTRs
+that activate TLR4-mediated innate sensing (e.g., HERV-W env), interferon-inducible SAg
+activity (e.g., HERV-K18), or LTR-driven inflammatory feedback loops may result in low-
+level, continuous immune stimulation as in chronic viral infection, even in the absence of
+exogenous viral replication. This type of chronic antigen stimulation could lock T and NK
+cells into a dysfunctional state, where they display phenotypic changes associated with
+anergy, exhaustion, or senescence [193,195], resulting in immune system exhaustion and
+impaired antiviral defences. Taken together, ME/CFS immune abnormalities support a
+model where chronic antigenic stimulation that includes HERV elements drives sustained
+innate and adaptive responses leading to progressive immunometabolic reprogramming,
+which links HERV-associated pathways to ongoing dysfunction. Further studies are now
+needed to determine if HERVs are primary drivers or secondary amplifiers of immune
+dysfunction in ME/CFS.
+4.3. HERV Reactivation Amplifies Neuroimmune Pathology
+HERV activation in the central nervous system (CNS) and its contribution to neu-
+ropathology is another aspect of HERV biology with relevance to ME/CFS. Reactivation of
+HERVs, especially HERV-W and HERV-K, has become increasingly associated with neuro-
+logical and psychiatric disorders, including MS, ALS, schizophrenia, and epilepsy. In these
+conditions, HERV-encoded env proteins may function as innate immune agonists, trigger-
+ing neuroinflammation through TLR-mediated signalling and microglial activation [38].
+Large-scale transcriptomic analyses reveal extensive expression and genetic regulation of
+HERVs in the adult human cortex, implicating them as contributors to psychiatric and
+neurological susceptibility [222]. At the tissue level, HERV activation correlates with
+neuroinflammatory and neurodegenerative pathology. In gliomas, HERV-W env expres-
+sion in microglial and myeloid cells drives the release of proinflammatory cytokines and
+chemokines, which promote tumour cell clustering and migration [180]. In ALS, increased
+HERV-K transcripts are detected in brain tissue, particularly the motor cortex, where it
+strongly associates with transactive response DNA binding protein 43 kDa (TDP-43) pathol-
+ogy, linking HERV-driven immune activation to neurodegeneration [223,224]. HERV-K
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+14 of 31
+env protein is also neurotoxic, and its expression in mice induces motor neuron degen-
+eration and progressive motor dysfunction, potentially through disruption of nucleolar
+function [224]. HERV-W env similarly exerts potent immunopathological effects in the CNS.
+It activates TLR4/MyD88 signalling in microglia and astrocytes, inducing TNF-α, IL-6, and
+IL-1β while inhibiting negative regulatory pathways such as MyD88s, thus maintaining
+glial cell activation [179].
+Amongst neurological diseases, MS shows the strongest evidence for HERV-W
+pathogenicity. HERV-W mRNA and protein are found in peripheral blood, cerebrospinal
+fluid, brain tissue, active lesions, macrophages, and microglia of MS patients, with ex-
+pression linked to inflammatory activity and demyelination [104,225–227]. Although a
+transcriptomic analysis reports similar HERV-W expression patterns in MS and healthy
+brains [228], protein-level data and disease-stage-specific associations support a pathogenic
+role, particularly in relapsing and progressive MS [140,141]. Alternatively, HERV-H, HERV-
+K18, HERV-E, RTVL, HERV-K10, and HERV Fc1 have also been associated with MS, al-
+though to a lesser extent [103,226]. Several herpesviruses, including EBV and HHV-6, have
+also been linked to the transactivation of HERV-W and K in MS [105,140,141]. Mecha-
+nistically, HERV-W env activates TLR4 signalling in MS lesions, both in microglia and
+in adjacent TLR4-expressing oligodendroglial precursor cells, inducing proinflammatory
+cytokine production, nitric oxide synthase activity, and nitrotyrosine formation [229,230].
+These processes promote neurotoxic microglial activation, reduce myelin protein expression
+and clearance, impair oligodendrocyte differentiation, and ultimately cause axonal damage
+and remyelination failure [38,229,230], explaining the poor efficacy of immunomodulators
+against neurodegeneration [38]. Importantly, a phase 2b double-blind trial of temelimab,
+a monoclonal antibody neutralising HERV-W env, failed to reduce acute inflammation in
+relapsing-remitting MS but showed promising anti-neurodegenerative effects [231]. This
+supports the role of HERV-W in neurodegenerative processes and raises the possibility of
+similar HERV-mediated mechanisms being relevant in ME/CFS.
+Relevance to Neuroimmune Pathology in ME/CFS
+ME/CFS is classified as a neurological disorder characterised by cognitive impair-
+ment, psychomotor slowing, sleep disturbance, sensory hypersensitivity, pain, and dysau-
+tonomia [232–234]. These features indicate central regulatory dysfunction rather than
+isolated peripheral pathology. Neuroinflammatory models of ME/CFS focus on chronic
+glial activation, blood–brain barrier (BBB) disruption, and dysregulated neuroimmune
+signalling, especially involving the hypothalamic paraventricular nucleus and brainstem
+regions [232–234]. Peripheral immune stress caused by viral infection/reactivation and
+persistence, mitochondrial dysfunction, with episodic cytokine surges repeatedly activat-
+ing microglia and astrocytes through neurovascular pathways, leads to relapse–recovery
+patterns typical of ME/CFS and Long COVID. Within this framework, HERV reactivation
+is a plausible molecular amplifier connecting peripheral immune activation to ongoing
+CNS inflammation. Consistent with this model, loss of heterochromatin in mice causes
+HERV reactivation, chronic neuroinflammation, and cognitive decline, showing how failed
+epigenetic control of HERV could drive CNS dysfunction [235]. HERV envelope proteins,
+particularly HERV-W env, can serve as MAMP mimics, activating TLR4 on glial cells and
+triggering the release of the proinflammatory TNF-α, IL-6, and IL-1β. This further exac-
+erbates BBB dysfunction and neuroinflammatory signalling. Chronic HERV expression,
+driven by, for example, interferon signalling, epigenetic stress, or viral reactivation, can
+enhance immune signals entering the CNS, maintaining limbic and brainstem inflamma-
+tion, autonomic dysregulation, and impaired remyelination. Supporting this, increased
+expression of HERV loci has been detected in ME/CFS peripheral blood samples mirroring
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+15 of 31
+symptom severity, alongside TNF-α–driven inflammatory signatures and compensatory
+upregulation of NF-κB inhibitory pathways [13]. Furthermore, elevated levels of IL-8
+and TNF-α, along with negative regulators of NF-κB (e.g., NF-kappa-B inhibitor alpha
+or NFKBIA that encodes IκBα and TNF alpha-induced protein 3 or TNFAIP3 encoding
+A20), suggest a cycle in which inflammation fails to resolve [233]. This persistent low-level
+NF-κB activity continuously depletes cellular resources, sustains metabolic stress, and
+epigenetically contributes to immune exhaustion, reflecting ME/CFS characteristic PEM
+intolerance and inflammatory flares, without evident tissue damage.
+HPA axis dysfunction in ME/CFS most likely results from downstream effects of
+chronic immune–neuroinflammatory and oxidative/nitrosative stress, or infection-related
+immune activation. In ME/CFS, increased oxidative and nitrosative stress (O&NS), de-
+creased antioxidants (e.g., zinc, coenzyme Q10), and chronic immune activation damage
+lipids, proteins, and DNA, which can lead to autoimmune responses against neo-antigens,
+including NO-modified epitopes driven by heightened iNOS activity [236]. Sustained
+cytokine signalling, such as TNF-α, redox damage, and impaired glucocorticoid receptor
+sensitivity, suppresses hypothalamic corticotropin-releasing hormone (CRH) output, pro-
+ducing characteristic HPA hypoactivity, reinforcing a self-perpetuating loop that drives
+fatigue, post-exertional malaise, pain, and cognitive dysfunction [236]. Alternatively, as
+observed in a subgroup of ME/CFS patients, high Treg levels and increased IL-10/TGF-β1
+activation can cause hypocortisolism and HPA axis hypoactivity [236], which can suppress
+effector immunity and is linked to fatigue severity. HPA axis dysfunction can also occur
+following viral infection/reactivation, or independently of immune activation [236]. Yet
+any or all these pathways can produce chronic cycling between HPA hypoactivity and
+immune–inflammatory pathways.
+Taken together, evidence from different neurological diseases supports a model in
+which HERV reactivation, particularly HERV-W and HERV-K, acts as a potent amplifier of
+neuroimmune pathology. In ME/CFS, HERVs can activate glial cells, cause cytokine imbal-
+ances, oxidative stress, and HPA axis suppression once neuroinflammation is established,
+contributing to disease chronicity, impaired recovery, and relapsing symptom patterns
+without the need for ongoing external infection.
+4.4. HERV Re-Activation and ME/CFS Pathophysiology: A Hypothesis
+In ME/CFS, HERVs (such as HERV-W and HERV-K families) may act as endogenous
+amplifiers of ongoing immune and neuroinflammatory pathology following exposure to
+viral and non-viral stressors. We hypothesise that acute or persistent virus infections histor-
+ically associated with ME/CFS (i.e., EBV, HHV-6A/B, HHV-7, adenoviruses, enteroviruses,
+parvovirus B19, and SARS-CoV-2) initiate HERV derepression. In parallel, non-viral trig-
+gers including autoimmunity and chronic inflammation, oxidative and cellular stress
+(i.e., mitochondrial dysfunction, oxidative stress, and DNA damage), cancer-associated
+cellular stresses (hypoxia, altered chromatin regulation, and inflammatory tumour mi-
+croenvironments), and pharmacological triggers (such as epigenetic or immunomodulatory
+drugs) may converge on the same inflammatory and epigenetic control pathways. Together,
+these triggers can cause locus-specific HERV de-repression involving viral transactiva-
+tor proteins, interferon-driven innate immune signalling, NF-κB/AP-1/Oct-1 activation,
+and disruption of epigenetic silencing (e.g., reduced DNA methylation, loss of H3K9me3,
+and impaired SETDB1/TRIM28 repression) [64,131,132,171]. These epigenetic alterations
+lead to derepression of silenced HERV loci and increased LTR-mediated enhancer activity.
+This de-repression could also be shaped by host immune state, affected cell type, and
+inter-individual genetic and epigenetic variability, leading to persistent or recurrent expres-
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+16 of 31
+sion of HERV LTRs and proteins, including SAg, even in the absence of productive viral
+replication [111,115,123].
+Once expressed, HERV products contribute to a state of low-level chronic antigen
+stimulation and immune dysregulation through multiple non-exclusive mechanisms: (i) di-
+rect innate immune activation via TLR4/CD14 signalling (e.g., by HERV-W env) occurs in
+various cell types, including monocytes, dendritic cells, microglia, and astrocytes, leading
+to the production of proinflammatory cytokines such as TNF-α, IL-6, IL-1β, and iNOS.
+This strengthens NF-κB–dependent inflammatory responses [177,179] and eventually con-
+tributes to T/NK cell dysfunction and senescence; (ii) interferon-inducible SAg activity
+(e.g., HERV-K18 env) leading to MHC class II–dependent skewing and chronic activation
+and exhaustion of specific T cell receptor Vβ expressing T cells, similar to that described in
+EBV-associated autoimmunity [67,113,114]; and (iii) LTR-mediated enhancer activity that
+dysregulates adjacent immune and metabolic genes, maintaining low-grade inflammation
+and immune–metabolic stress [42,63,233]. Increased mitochondrial stress and impaired
+cellular metabolism further exacerbate these inflammatory feedback loops.
+Alternatively, peripheral immune activation and oxidative stress cause neurovas-
+cular dysfunction. This leads to increased BBB permeability, allowing cytokines and
+viral or HERV-derived proteins to access the CNS. In the CNS, HERVs (such as HERV-W
+env) contribute to microglial priming and astrocytic activation via TLR4/MyD88 path-
+ways, paralleling mechanisms in MS, also leading to impaired remyelination, altered
+neuronal signalling, BBB disruption, O&NS, impaired oligodendroglial support, and sus-
+tained neuroinflammation in limbic and brainstem regions, which have been implicated
+in ME/CFS neuropathology [229,230,232,233]. HERV-driven ongoing immune–glial
+activation [235] could indirectly suppress the function of the hypothalamic paraven-
+tricular nucleus (PVN) and HPA axis signalling by inhibiting the release of CRH from
+the hypothalamus and the secretion of adrenocorticotropic hormone (ACTH) from the
+pituitary, resulting in reduced adrenal cortisol output and impaired stress-induced HPA
+axis responsiveness. This cortisol deficiency hampers recovery following physiological
+or cognitive stressors, leading to symptom relapse and reinforcing fatigue, PEM, pain,
+autonomic dysfunction, sensory hypersensitivity, and cognitive impairment [236]. Thus,
+these combined processes create self-reinforcing cycles of HERV reactivation, inflamma-
+tion, neuroendocrine dysfunction, and relapse–recovery dynamics, culminating in PEM
+and persistent chronic disease.
+Collectively, this hypothetical model (Figure 1) positions HERVs as stress-responsive,
+epigenetically activated elements that transform transient viral or inflammatory insults
+into self-sustaining immune exhaustion and senescence, neuroinflammation, and impaired
+recovery in individuals with ME/CFS. It provides a mechanistic link between the onset
+of post-viral infection, chronic immune activation, and CNS dysfunction in the absence of
+ongoing exogenous viral replication. Given that HERVs can be reactivated in a wide array
+of cells, including non-immune cells such as mucosal cells, it is notable that most studies to
+date on HERV reactivation have been conducted on peripheral blood cells.
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+17 of 31
+Figure 1. A proposed model of HERV-driven immunometabolic, neuroinflammatory, and neuroen-
+docrine dysfunction in ME/CFS. Viral infection, inflammation, cellular stress, and pharmacolog-
+ical factors initiate epigenetic derepression and transcriptional activation of silenced HERV loci
+(e.g., HERV-K/W) in both immune and non-immune cells (including in mucosal sites), leading to
+the production of HERV proteins and viral-like particles (VLPs). The release of viral proteins and
+VLPs acts as persistent antigens and TLR ligands, driving chronic immunometabolic dysfunction,
+T/NK cell senescence, and pro-inflammatory cytokine release. Increased BBB permeability allows
+systemic mediators and HERV proteins to trigger microglial activation and neuroinflammation,
+which manifest as cognitive and sensory symptoms. Concurrently, persistent inflammatory signalling
+suppresses the HPA axis (CRH/ACTH inhibition), resulting in hypocortisolism and impaired stress
+responsiveness. These intersecting processes create self-reinforcing cycles of HERV reactivation,
+inflammation, neuroendocrine dysfunction, and relapse–recovery dynamics, culminating in PEM
+and persistent chronic disease. Arrows indicate the direction of activation, signalling, or feedback
+between processes. (Created in https://BioRender.com (accessed on 30 January 2026)).
+5. Therapeutic and Diagnostic Outlook for HERVs
+We have described how abnormal expression of HERVs/LTRs is linked to the de-
+velopment of various diseases. However, compelling evidence of a causal role for HERV
+activation in disease pathology remains elusive. Identifying disease-relevant, functional
+HERV loci with validated, locus-specific assays is essential, as broad-spectrum HERV detec-
+tion methods cannot distinguish pathogenic activity from ubiquitous baseline retroelement
+expression, hindering their clinical utility as biomarkers or therapeutic targets. For HERVs
+to be used as clinical biomarkers, their expression must be consistent and reproducible
+across different cohorts and correlate with disease presence, severity, or progression, as
+for HERV-W in MS, and HERV-K in ALS, where targeted clinical trials are already in
+progress [231,237,238]. Currently, HERVs largely remain as investigational biomarkers.
+The ability to utilise HERVs to differentiate between ME/CFS and FM, co-diagnosed
+cases, and healthy controls, identify ME/CFS-specific HERV loci linked to fatigue severity,
+and observe immune shifts demonstrates the potential use of HERVs as disease-specific
+signatures that surpass symptom-based measures [13]. Importantly, locus-specific profiling
+overcomes the limitations of earlier, more global HERV profiling studies that reported
+inconsistent results, emphasising the potential value of HERV fingerprints for diagnosis, pa-
+tient subtyping, and therapeutic monitoring, including normalisation of HERV expression
+following rituximab treatment [239]. However, validation in larger, multi-cohort studies
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+18 of 31
+remains essential for clinical translation, with complementary serological and tissue-based
+evidence further supporting the utility of this biomarker.
+Animal models provide a controlled framework to investigate the functional conse-
+quences of HERV activation and their regulatory roles in vivo. Studies across organisms,
+including humans, rodents, and others, demonstrate that HERV LTRs can modulate host
+gene expression [240–242]. Transgenic models offer gene-specific mechanistic insight; for
+example, mice expressing HERV-W env show behavioural and cognitive deficits with
+altered brain transcriptomes, suggesting a direct pathogenic role [243]. Animal models
+have also been used to study ME/CFS, typically via physical stress, immune activation, or
+psychological paradigms that mimic aspects of fatigue and immune dysfunction [244–246].
+However, these models fail to capture the multifactorial nature of ME/CFS, and their repro-
+ducibility is limited by experimental design variability. Incorporating HERV biology into
+these in vivo models requires more refined and standardised designs that can recapitulate
+locus-specific HERV expression and host–immune interactions to determine if or how they
+contribute to ME/CFS pathophysiology.
+Therapeutically, other diseases demonstrate the clinical feasibility of HERV-targeted
+therapies for complex chronic diseases affecting multiple organ systems. This has been
+investigated in MS, providing insights into the potential role of HERVs in disease patho-
+genesis. In MS, natalizumab decreased HERV-W env expression in PBMCs [237], while
+temelimab demonstrated neuroprotective effects despite limited influence on acute inflam-
+mation [231] and are currently being evaluated in clinical trials. In ALS, most patients
+responded to treatment with a combination of anti-retrovirals and showed reduced HERV-K
+levels and slower disease progression trends, supporting HML-2’s potential role in ALS
+pathophysiology [238]. In oncology, epigenetic therapies such as DNA methyltransferase
+inhibitors (azacitidine, decitabine) induce HERV expression, leading to viral mimicry,
+activation of dsRNA sensors (MDA5/interferon induced with helicase C domain 1 or
+IFIH1), type I interferon responses, and immune-mediated tumour clearance [247,248].
+Additional strategies, including HERV-K–targeted vaccines, monoclonal antibodies, re-
+verse transcriptase inhibitors, CRISPR-Cas9 approaches, and anti-HIV reverse transcriptase
+(RT) drugs, have shown immunomodulatory or anti-tumour effects in HERV-associated
+cancers [96,249,250].
+By contrast, ME/CFS treatment remains symptomatic, with most clinical trials focus-
+ing on downstream manifestations rather than the underlying aetiology [251]. The strong
+link between HERV dysregulation, immune phenotypes, and symptom severity supports a
+move towards mechanism-based, stratified interventions (Figure 2). Potential strategies
+include epigenetic modulators such as DNA methyltransferase (DNMT) or histone deacety-
+lase (HDAC) inhibitors to restore SETDB1/TRIM28-mediated silencing of derepressed
+HERV loci; NF-κB antagonists to interrupt HERV-driven inflammatory feedback loops;
+anti-herpesvirus agents (e.g., valacyclovir) or anti-retroviral compounds (e.g., tenofovir);
+and senolytics to address senescence-associated secretory phenotype (SASP)-like inflam-
+mation. Diagnostic panels combining HERV expression profiles and anti-HERV serology
+could facilitate precision drug repurposing trials by prioritising HERV-high expressing
+subgroups for anti-retroviral or epigenetic therapies. Notably, a reported EBV-seropositive
+ME/CFS patient later diagnosed with MS showed significant clinical improvement and
+normalisation of HERV expression following rituximab treatment, implicating possible
+B-cell–HERV regulatory loops in disease modulation [239]. Such observations emphasise
+the importance of patient stratification in future trials.
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+19 of 31
+Figure 2. Proposed diagnosis and treatment strategy for ME/CFS based on HERV expression.
+(A) Clinical diagnosis of ME/CFS, followed by exploratory molecular screening of HERV expression
+in blood or mucosal samples, could enable stratification of patients into HERV-positive (HERV+)
+or negative (HERV−) cohorts. Patients within the HERV+ cohort could then be further evaluated
+to characterise the specific HERV loci involved and may potentially benefit from the proposed
+personalised interventions outlined in the panel (C). (B) Mapping HERV activation could uncover
+disease-specific profiles linked to PEM, neuroinflammation, and immune dysregulation. Isolated LTRs
+and HERV family-specific patterns identified in patient samples support personalised interventions,
+including immune-targeted therapies, antivirals, epigenetic regulators, and symptom management.
+(Created in https://BioRender.com (accessed on 13 January 2026)).
+Future research should emphasise multi-omics validation of HERV signatures, func-
+tional CRISPR-based screens to determine causality, and randomised controlled trials
+testing HERV-stratified interventions. Collectively, these efforts could transform ME/CFS
+from a syndromic diagnosis into a molecularly defined, mechanism-driven, and ultimately
+treatable condition.
+6. Conclusions and Future Directions
+The limited number of studies to date implicate HERVs as molecular players in the
+immune, metabolic and neuroimmune abnormalities observed in ME/CFS. This is evident
+in the identification of distinct HERV signatures that correlate with symptom severity,
+immune dysregulation, and disease subtypes. These findings highlight the potential of
+HERVs as biomarkers that can more effectively distinguish ME/CFS from related syn-
+dromes, comorbidities, and healthy states than traditional symptom-based criteria alone.
+Furthermore, insights gained from other HERV-associated diseases, such as MS and ALS,
+demonstrate the feasibility of targeting HERV-derived proteins or their epigenetic regula-
+tion to modify disease progression. Therefore, therapeutic strategies that regulate HERV
+activity, such as epigenetic modulators, anti-retroviral agents, or immunomodulatory inter-
+ventions, offer promising mechanistic approaches that can be used alongside conventional
+symptomatic treatments.
+Future research should focus on the mechanistic interpretation and clinical translation
+of HERVs’ role in ME/CFS. This includes comprehensive, multi-omics validation of HERV
+signatures across large, geographically diverse, and longitudinal ME/CFS cohorts to
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+20 of 31
+establish reproducible molecular phenotypes. Functional assays and models will help
+determine the causal contributions of specific HERV loci and their regulatory effects on
+immune, metabolic, and neuroimmune networks. Ultimately, randomised controlled
+trials stratified by HERV expression will be vital to assess HERV-targeted interventions,
+potentially turning ME/CFS from a symptom-based diagnosis into a condition defined by
+molecular markers that are clinically actionable.
+Author Contributions: Conceptualization, K.D.P. and S.R.C.; investigation and original draft prepa-
+ration, K.D.P.; review and editing, K.D.P., E.O. and S.R.C. All authors have read and agreed to the
+published version of the manuscript.
+Funding: K.D.P. is a Luna Nova Fellow funded by Invest in ME Research (UK Charity num-
+ber 1153730). S.R.C. is supported by the BBSRC Institute Strategic Programme Grant BB/X011054/1,
+and by a project grant awarded by ME Research UK (SCO Charity number SC036942) with financial
+support of the Fred and Joan Davies bequest. E.O. is supported by the Spanish Ministry of Science,
+Innovation and Universities (MICIU) and the State Research Agency (AEI) /10.13039/501100011033
+(research project PID2023-153299OB-I00).
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.
+Data Availability Statement: No new data were created or analysed in this study. Data sharing is
+not applicable to this article.
+Conflicts of Interest: The authors declare no conflicts of interest.
+References
+1.
+Arron, H.E.; Marsh, B.D.; Kell, D.B.; Khan, M.A.; Jaeger, B.R.; Pretorius, E. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome:
+The biology of a neglected disease. Front. Immunol. 2024, 15, 1386607. [CrossRef]
+2.
+Cortes Rivera, M.; Mastronardi, C.; Silva-Aldana, C.T.; Arcos-Burgos, M.; Lidbury, B.A. Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome: A Comprehensive Review. Diagnostics 2019, 9, 91. [CrossRef]
+3.
+Angelsen, A.; Schei, T. EMEA Survey of ME/CFS Patients in Europe: Same Disease, Different Approaches and Experiences; European
+ME Alliance (EMEA): Stockholm, Sweden, 2024.
+4.
+Lim, E.-J.; Ahn, Y.-C.; Jang, E.-S.; Lee, S.-W.; Lee, S.-H.; Son, C.-G. Systematic review and meta-analysis of the prevalence of
+chronic fatigue syndrome/myalgic encephalomyelitis (CFS/ME). J. Transl. Med. 2020, 18, 100. [CrossRef]
+5.
+Lim, E.-J.; Son, C.-G. Prevalence of Chronic Fatigue Syndrome (CFS) in Korea and Japan: A Meta-Analysis. J. Clin. Med. 2021,
+10, 3204. [CrossRef]
+6.
+Samms, G.L.; Ponting, C.P. Unequal access to diagnosis of myalgic encephalomyelitis in England. BMC Public Health 2025,
+25, 1417. [CrossRef]
+7.
+Vahratian, A.; Lin, J.-M.S.; Bertolli, J.; Unger, E.R. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome in Adults: United States,
+2021–2022; NCHS Data Brief; National Center for Health Statistics: Hyattsville, MD, USA, 2023.
+8.
+Valdez, A.R.; Hancock, E.E.; Adebayo, S.; Kiernicki, D.J.; Proskauer, D.; Attewell, J.R.; Bateman, L.; DeMaria, A.; Lapp, C.W.;
+Rowe, P.C.; et al. Estimating Prevalence, Demographics, and Costs of ME/CFS Using Large Scale Medical Claims Data and
+Machine Learning. Front. Pediatr. 2019, 6, 412. [CrossRef] [PubMed]
+9.
+Hanson, M.R.; Germain, A. Letter to the Editor of Metabolites. Metabolites 2020, 10, 216. [CrossRef] [PubMed]
+10.
+Hanson, M.R. The viral origin of myalgic encephalomyelitis/chronic fatigue syndrome. PLoS Pathog. 2023, 19, e1011523.
+[CrossRef] [PubMed]
+11.
+O’Neal, A.J.; Hanson, M.R. The Enterovirus Theory of Disease Etiology in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome:
+A Critical Review. Front. Med. 2021, 8, 688486. [CrossRef]
+12.
+Rasa, S.; Nora-Krukle, Z.; Henning, N.; Eliassen, E.; Shikova, E.; Harrer, T.; Scheibenbogen, C.; Murovska, M.; Prusty, B.K.; the
+European Network on ME/CFS (EUROMENE). Chronic viral infections in myalgic encephalomyelitis/chronic fatigue syndrome
+(ME/CFS). J. Transl. Med. 2018, 16, 268. [CrossRef]
+13.
+Giménez-Orenga, K.; Martín-Martínez, E.; Nathanson, L.; Oltra, E. HERV activation segregates ME/CFS from fibromyalgia while
+defining a novel nosologic entity. eLife 2025, 14, RP104441. [CrossRef]
+14.
+Stein, R.A.; DePaola, R.V. Human endogenous retroviruses: Our genomic fossils and companions. Physiol. Genom. 2023, 55,
+249–258. [CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+21 of 31
+15.
+Lander, E.S.; Linton, L.M.; Birren, B.; Nusbaum, C.; Zody, M.C.; Baldwin, J.; Devon, K.; Dewar, K.; Doyle, M.; FitzHugh, W.; et al.
+Initial sequencing and analysis of the human genome. Nature 2001, 409, 860–921. Erratum in Nature 2001, 412, 565. Erratum in
+Nature 2001, 411, 720. [CrossRef]
+16.
+Mager, D.L.; Stoye, J.P. Mammalian Endogenous Retroviruses. Microbiol. Spectr. 2015, 3, 1079. [CrossRef] [PubMed]
+17.
+de Parseval, N.; Lazar, V.; Casella, J.-F.; Benit, L.; Heidmann, T. Survey of human genes of retroviral origin: Identification and
+transcriptome of the genes with coding capacity for complete envelope proteins. J. Virol. 2003, 77, 10414–10422. [CrossRef]
+18.
+Villesen, P.; Aagaard, L.; Wiuf, C.; Pedersen, F.S. Identification of endogenous retroviral reading frames in the human genome.
+Retrovirology 2004, 1, 32. [CrossRef]
+19.
+Belshaw, R.; Watson, J.; Katzourakis, A.; Howe, A.; Woolven-Allen, J.; Burt, A.; Tristem, M. Rate of Recombinational Deletion
+among Human Endogenous Retroviruses. J. Virol. 2007, 81, 9437–9442. [CrossRef]
+20.
+Benachenhou, F.; Jern, P.; Oja, M.; Sperber, G.; Blikstad, V.; Somervuo, P.; Kaski, S.; Blomberg. Evolutionary conservation of
+orthoretroviral long terminal repeats (LTRs) and ab initio detection of single LTRs in genomic data. PLoS ONE 2009, 4, e5179.
+[CrossRef]
+21.
+Chen, M.; Huang, X.; Wang, C.; Wang, S.; Jia, L.; Li, L. Endogenous retroviral solo-LTRs in human genome. Front. Genet. 2024,
+15, 1358078. [CrossRef] [PubMed]
+22.
+Vargiu, L.; Rodriguez-Tomé, P.; Sperber, G.O.; Cadeddu, M.; Grandi, N.; Blikstad, V.; Tramontano, E.; Blomberg, J. Classification
+and characterization of human endogenous retroviruses; mosaic forms are common. Retrovirology 2016, 13, 7. [CrossRef]
+[PubMed]
+23.
+Gifford, R.J.; Blomberg, J.; Coffin, J.M.; Fan, H.; Heidmann, T.; Mayer, J.; Stoye, J.; Tristem, M.; Johnson, W.E. Nomenclature for
+endogenous retrovirus (ERV) loci. Retrovirology 2018, 15, 59. [CrossRef] [PubMed]
+24.
+Gifford, R.; Tristem, M. The Evolution, Distribution and Diversity of Endogenous Retroviruses. Virus Genes 2003, 26, 291–315.
+[CrossRef]
+25.
+Coffin, J.; Blomberg, J.; Fan, H.; Gifford, R.; Hatziioannou, T.; Lindemann, D.; Mayer, J.; Stoye, J.; Tristem, M.; Johnson, W.; et al.
+ICTV Virus Taxonomy Profile: Retroviridae 2021. J. Gen. Virol. 2021, 102, 001712. [CrossRef]
+26.
+Grandi, N.; Cadeddu, M.; Blomberg, J.; Tramontano, E. Contribution of type W human endogenous retroviruses to the human
+genome: Characterization of HERV-W proviral insertions and processed pseudogenes. Retrovirology 2016, 13, 67. [CrossRef]
+27.
+Subramanian, R.P.; Wildschutte, J.H.; Russo, C.; Coffin, J.M. Identification, characterization, and comparative genomic distribution
+of the HERV-K (HML-2) group of human endogenous retroviruses. Retrovirology 2011, 8, 90. [CrossRef]
+28.
+Garcia-Montojo, M.; Doucet-O’Hare, T.; Henderson, L.; Nath, A. Human endogenous retrovirus-K (HML-2): A comprehensive
+review. Crit. Rev. Microbiol. 2018, 44, 715–738. [CrossRef]
+29.
+Mayer, J.; Ehlhardt, S.; Seifert, M.; Sauter, M.; Müller-Lantzsch, N.; Mehraein, Y.; Zang, K.D.; Meese, E. Human endogenous
+retrovirus HERV-K(HML-2) proviruses with Rec protein coding capacity and transcriptional activity. Virology 2004, 322, 190–198.
+[CrossRef]
+30.
+Balestrieri, E.; Pica, F.; Matteucci, C.; Zenobi, R.; Sorrentino, R.; Argaw-Denboba, A.; Cipriani, C.; Bucci, I.; Sinibaldi-Vallebona, P.
+Transcriptional Activity of Human Endogenous Retroviruses in Human Peripheral Blood Mononuclear Cells. Biomed. Res. Int.
+2015, 2015, 164529. [CrossRef] [PubMed]
+31.
+Flockerzi, A.; Ruggieri, A.; Frank, O.; Sauter, M.; Maldener, E.; Kopper, B.; Wullich, B.; Seifarth, W.; Müller-Lantzsch, N.;
+Leib-Mösch, C.; et al. Expression patterns of transcribed human endogenous retrovirus HERV-K(HML-2) loci in human tissues
+and the need for a HERV Transcriptome Project. BMC Genom. 2008, 9, 354. [CrossRef] [PubMed]
+32.
+Forsman, A.; Yun, Z.; Hu, L.; Uzhameckis, D.; Jern, P.; Blomberg, J. Development of broadly targeted human endogenous
+gammaretroviral pol-based real time PCRs Quantitation of RNA expression in human tissues. J. Virol. Methods 2005, 129, 16–30.
+[CrossRef]
+33.
+Seifarth, W.; Frank, O.; Zeilfelder, U.; Spiess, B.; Greenwood, A.D.; Hehlmann, R.; Leib-Mösch, C. Comprehensive Analysis of
+Human Endogenous Retrovirus Transcriptional Activity in Human Tissues with a Retrovirus-Specific Microarray. J. Virol. 2005,
+79, 341–352. [CrossRef]
+34.
+Nevalainen, T.; Autio, A.; Mishra, B.H.; Marttila, S.; Jylhä, M.; Hurme, M. Aging-associated patterns in the expression of human
+endogenous retroviruses. PLoS ONE 2018, 13, e0207407. [CrossRef]
+35.
+Liu, X.; Liu, Z.; Wu, Z.; Ren, J.; Fan, Y.; Sun, L.; Cao, G.; Niu, Y.; Zhang, B.; Ji, Q.; et al. Resurrection of endogenous retroviruses
+during aging reinforces senescence. Cell 2023, 186, 287–304.e26. [CrossRef]
+36.
+Hurst, T.P.; Magiorkinis, G. Epigenetic Control of Human Endogenous Retrovirus Expression: Focus on Regulation of Long-
+Terminal Repeats (LTRs). Viruses 2017, 9, 130. [CrossRef] [PubMed]
+37.
+Thompson, P.J.; Macfarlan, T.S.; Lorincz, M.C. Long terminal repeats: From parasitic elements to building blocks of the
+transcriptional regulatory repertoire. Mol. Cell 2016, 62, 766–776. [CrossRef]
+38.
+Giménez-Orenga, K.; Oltra, E. Human Endogenous Retrovirus as Therapeutic Targets in Neurologic Disease. Pharmaceuticals
+2021, 14, 495. [CrossRef] [PubMed]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+22 of 31
+39.
+Lavie, L.; Kitova, M.; Maldener, E.; Meese, E.; Mayer, J. CpG Methylation Directly Regulates Transcriptional Activity of the
+Human Endogenous Retrovirus Family HERV-K(HML-2). J. Virol. 2005, 79, 876–883. [CrossRef]
+40.
+Trejbalová, K.; Blažková, J.; Matoušková, M.; Kuˇcerová, D.; Pecnová, L.; Vernerová, Z.; Heráˇcek, J.; Hirsch, I.; Hejnar, J. Epigenetic
+regulation of transcription and splicing of syncytins, fusogenic glycoproteins of retroviral origin. Nucleic Acids Res. 2011, 39,
+8728–8739. [CrossRef] [PubMed]
+41.
+Xie, M.; Hong, C.; Zhang, B.; Lowdon, R.F.; Xing, X.; Li, D.; Zhou, X.; Lee, H.J.; Maire, C.L.; Ligon, K.L.; et al. DNA hypomethy-
+lation within specific transposable element families associates with tissue-specific enhancer landscape. Nat. Genet. 2013, 45,
+836–841. [CrossRef] [PubMed]
+42.
+Szpakowski, S.; Sun, X.; Lage, J.M.; Dyer, A.; Rubinstein, J.; Kowalski, D.; Sasaki, C.; Costa, J.; Lizardi, P.M. Loss of epigenetic
+silencing in tumors preferentially affects primate-specific retroelements. Gene 2009, 448, 151–167. [CrossRef]
+43.
+Kovalskaya, E.; Buzdin, A.; Gogvadze, E.; Vinogradova, T.; Sverdlov, E. Functional human endogenous retroviral LTR transcrip-
+tion start sites are located between the R and U5 regions. Virology 2006, 346, 373–378. [CrossRef]
+44.
+Laska, M.J.; Nissen, K.K.; Nexø, B.A. (Some) cellular mechanisms influencing the transcription of human endogenous retrovirus,
+HERV-Fc1. PLoS ONE 2013, 8, e53895. [CrossRef]
+45.
+Burn, A.; Roy, F.; Freeman, M.; Coffin, J.M. Widespread expression of the ancient HERV-K (HML-2) provirus group in normal
+human tissues. PLoS Biol. 2022, 20, e3001826. [CrossRef]
+46.
+Leupin, O.; Attanasio, C.; Marguerat, S.; Tapernoux, M.; Antonarakis, S.E.; Conrad, B. Transcriptional activation by bidirectional
+RNA polymerase II elongation over a silent promoter. EMBO Rep. 2005, 6, 956–960. [CrossRef]
+47.
+Beyer, U.; Moll-Rocek, J.; Moll, U.M.; Dobbelstein, M. Endogenous retrovirus drives hitherto unknown proapoptotic p63 isoforms
+in the male germ line of humans and great apes. Proc. Natl. Acad. Sci. USA 2011, 108, 3624–3629. [CrossRef] [PubMed]
+48.
+Cohen, C.J.; Lock, W.M.; Mager, D.L. Endogenous retroviral LTRs as promoters for human genes: A critical assessment. Gene
+2009, 448, 105–114. [CrossRef] [PubMed]
+49.
+Conley, A.B.; Piriyapongsa, J.; Jordan, I.K. Retroviral promoters in the human genome. Bioinformatics 2008, 24, 1563–1567.
+[CrossRef] [PubMed]
+50.
+da Silva, A.L.; Guedes, B.L.M.; Santos, S.N.; Correa, G.F.; Nardy, A.; Nali, L.H.; da, S.; Bachi, A.L.L.; Romano, C.M. Beyond
+pathogens: The intriguing genetic legacy of endogenous retroviruses in host physiology. Front. Cell Infect. Microbiol. 2024, 14,
+1379962. [CrossRef]
+51.
+Ito, J.; Sugimoto, R.; Nakaoka, H.; Yamada, S.; Kimura, T.; Hayano, T.; Inoue, I. Systematic identification and characterization of
+regulatory elements derived from human endogenous retroviruses. PLoS Genet. 2017, 13, e1006883. [CrossRef]
+52.
+Kim, H.-S. Genomic Impact, Chromosomal Distribution and Transcriptional Regulation of HERV Elements. Mol. Cells 2012, 33,
+539–544. [CrossRef]
+53.
+Landry, J.-R.; Rouhi, A.; Medstrand, P.; Mager, D.L. The Opitz Syndrome Gene Mid1 Is Transcribed from a Human Endogenous
+Retroviral Promoter. Mol. Biol. Evol. 2002, 19, 1934–1942. [CrossRef]
+54.
+Mager, D.L.; Hunter, D.G.; Schertzer, M.; Freeman, J.D. Endogenous Retroviruses Provide the Primary Polyadenylation Signal for
+Two New Human Genes (HHLA2 and HHLA3). Genomics 1999, 59, 255–263. [CrossRef]
+55.
+Pi, W.; Zhu, X.; Wu, M.; Wang, Y.; Fulzele, S.; Eroglu, A.; Ling, J.; Tuan, D. Long-range function of an intergenic retrotransposon.
+Proc. Natl. Acad. Sci. USA 2010, 107, 12992–12997. [CrossRef] [PubMed]
+56.
+Rebollo, R.; Farivar, S.; Mager, D.L. C-GATE—Catalogue of genes affected by transposable elements. Mob. DNA 2012, 3, 9.
+[CrossRef]
+57.
+Blaise, S.; de Parseval, N.; Bénit, L.; Heidmann, T. Genomewide screening for fusogenic human endogenous retrovirus envelopes
+identifies syncytin 2, a gene conserved on primate evolution. Proc. Natl. Acad. Sci. USA 2003, 100, 13013–13018. [CrossRef]
+58.
+Blond, J.L.; Lavillette, D.; Cheynet, V.; Bouton, O.; Oriol, G.; Chapel-Fernandes, S.; Mandrand, B.; Mallet, F.; Cosset, F.L. An
+Envelope Glycoprotein of the Human Endogenous Retrovirus HERV-W Is Expressed in the Human Placenta and Fuses Cells
+Expressing the Type D Mammalian Retrovirus Receptor. J. Virol. 2000, 74, 3321–3329. [CrossRef] [PubMed]
+59.
+Mi, S.; Lee, X.; Li X ping; Veldman, G.M.; Finnerty, H.; Racie, L.; LaVallie, E.; Tang, X.Y.; Edouard, P.; Howes, S.; et al. Syncytin is a
+captive retroviral envelope protein involved in human placental morphogenesis. Nature 2000, 403, 785–789. [CrossRef]
+60.
+Medstrand, P.; Landry, J.-R.; Mager, D.L. Long Terminal Repeats Are Used as Alternative Promoters for the Endothelin B Receptor
+and Apolipoprotein C-I Genes in Humans*. J. Biol. Chem. 2001, 276, 1896–1903. [CrossRef]
+61.
+Sin, H.S.; Huh, J.W.; Kim, D.S.; Kang, D.W.; Min, D.S.; Kim, T.H.; Ha, H.S.; Kim, H.H.; Lee, S.Y.; Kim, H.S. Transcriptional control
+of the HERV-H LTR element of the GSDML gene in human tissues and cancer cells. Arch. Virol. 2006, 151, 1985–1994. [CrossRef]
+62.
+Kassiotis, G. The Immunological Conundrum of Endogenous Retroelements. Annu. Rev. Immunol. 2023, 41, 99–125. [CrossRef]
+[PubMed]
+63.
+Akopov, S.B.; Nikolaev, L.G.; Khil, P.P.; Lebedev, Y.B.; Sverdlov, E.D. Long terminal repeats of human endogenous retrovirus K
+family (HERV-K) specifically bind host cell nuclear proteins. FEBS Lett. 1998, 421, 229–233. [CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+23 of 31
+64.
+Manghera, M.; Douville, R.N. Endogenous retrovirus-K promoter: A landing strip for inflammatory transcription factors?
+Retrovirology 2013, 10, 16. [CrossRef]
+65.
+Chuong, E.B.; Elde, N.C.; Feschotte, C. Regulatory evolution of innate immunity through co-option of endogenous retroviruses.
+Science 2016, 351, 1083–1087. [CrossRef] [PubMed]
+66.
+Zhou, B.; Qi, F.; Wu, F.; Nie, H.; Song, Y.; Shao, L.; Han, J.; Wu, Z.; Saiyin, H.; Wei, G.; et al. Endogenous Retrovirus-Derived Long
+Noncoding RNA Enhances Innate Immune Responses via Derepressing RELA Expression. mBio 2019, 10, e00937-19. [CrossRef]
+67.
+Sutkowski, N.; Conrad, B.; Thorley-Lawson, D.A.; Huber, B.T. Epstein-Barr Virus Transactivates the Human Endogenous
+Retrovirus HERV-K18 that Encodes a Superantigen. Immunity 2001, 15, 579–589. [CrossRef] [PubMed]
+68.
+Young, G.R.; Ploquin, M.J.-Y.; Eksmond, U.; Wadwa, M.; Stoye, J.P.; Kassiotis, G. Negative selection by an endogenous retrovirus
+promotes a higher-avidity CD4+ T cell response to retroviral infection. PLoS Pathog. 2012, 8, e1002709. [CrossRef] [PubMed]
+69.
+Agoni, L.; Guha, C.; Lenz, J. Detection of Human Endogenous Retrovirus K (HERV-K) Transcripts in Human Prostate Cancer Cell
+Lines. Front. Oncol. 2013, 3, 180. [CrossRef]
+70.
+Ahn, K.; Kim, H.-S. Structural and Quantitative Expression Analyses of HERV Gene Family in Human Tissues. Mol. Cells 2009,
+28, 99–104. [CrossRef]
+71.
+Stricker, E.; Peckham-Gregory, E.C.; Scheurer, M.E. CancerHERVdb: Human Endogenous Retrovirus (HERV) Expression Database
+for Human Cancer Accelerates Studies of the Retrovirome and Predictions for HERV-Based Therapies. J. Virol. 2023, 97, e0005923.
+[CrossRef]
+72.
+Ejtehadi, H.D.; Freimanis, G.L.; Ali, H.A.; Bowman, S.; Alavi, A.; Axford, J.; Callaghan, R.; Nelson, P.N. The potential role of
+human endogenous retrovirus K10 in the pathogenesis of rheumatoid arthritis: A preliminary study. Ann. Rheum. Dis. 2006, 65,
+612–616. [CrossRef]
+73.
+Levet, S.; Charvet, B.; Bertin, A.; Deschaumes, A.; Perron, H.; Hober, D. Human Endogenous Retroviruses and Type 1 Diabetes.
+Curr. Diab. Rep. 2019, 19, 141. [CrossRef]
+74.
+Lezhnyova, V.R.; Martynova, E.V.; Khaiboullin, T.I.; Urbanowicz, R.A.; Khaiboullina, S.F.; Rizvanov, A.A. The Relationship of
+the Mechanisms of the Pathogenesis of Multiple Sclerosis and the Expression of Endogenous Retroviruses. Biology 2020, 9, 464.
+[CrossRef]
+75.
+Talotta, R.; Atzeni, F.; Laska, M.J. The contribution of HERV-E clone 4-1 and other HERV-E members to the pathogenesis of
+rheumatic autoimmune diseases. Apmis 2020, 128, 367–377. [CrossRef] [PubMed]
+76.
+Talotta, R.; Atzeni, F.; Laska, M.J. Retroviruses in the pathogenesis of systemic lupus erythematosus: Are they potential therapeutic
+targets? Autoimmunity 2020, 53, 177–191. [CrossRef] [PubMed]
+77.
+DeFreitas, E.; Hilliard, B.; Cheney, P.R.; Bell, D.S.; Kiggundu, E.; Sankey, D.; Wroblewska, Z.; Palladino, M.; Woodward, J.P.;
+Koprowski, H. Retroviral sequences related to human T-lymphotropic virus type II in patients with chronic fatigue immune
+dysfunction syndrome. Proc. Natl. Acad. Sci. USA 1991, 88, 2922–2926. [CrossRef]
+78.
+Alter, H.J.; Mikovits, J.A.; Switzer, W.M.; Ruscetti, F.W.; Lo, S.C.; Klimas, N.; Komaroff, A.L.; Montoya, J.G.; Bateman, L.; Levine, S.;
+et al. A Multicenter Blinded Analysis Indicates No Association between Chronic Fatigue Syndrome/Myalgic Encephalomyelitis
+and either Xenotropic Murine Leukemia Virus-Related Virus or Polytropic Murine Leukemia Virus. mBio 2012, 3, e00266-12.
+[CrossRef]
+79.
+Heneine, W.; Woods, T.C.; Sinha, S.D.; Khan, A.S.; Chapman, L.E.; Schonberger, L.B.; Folks, T.M. Lack of Evidence for Infection
+with Known Human and Animal Retroviruses in Patients with Chronic Fatigue Syndrome. Clin. Infect. Dis. 1994, 18, S121–S125.
+[CrossRef]
+80.
+Henrich, T.J.; Li, J.Z.; Felsenstein, D.; Kotton, C.N.; Plenge, R.; Pereyra, F.; Marty, F.M.; Lin, N.H.; Grazioso, P.; Crochiere, D.M.;
+et al. Xenotropic Murine Leukemia Virus-Related Virus Prevalence in Patients with Chronic Fatigue Syndrome or Chronic
+Immunomodulatory Conditions. J. Infect. Dis. 2010, 202, 1478–1481. [CrossRef]
+81.
+Honda, M.; Kitamura, K.; Nakasone, T.; Fukushima, Y.; Matsuda, S.; Nishioka, K.; Matsuda, J.; Hashimoto, N.; Yamazaki, S.
+Japanese Patients with Chronic Fatigue Syndrome Are Negative for Known Retrovirus Infections. Microbiol. Immunol. 1993, 37,
+779–784. [CrossRef]
+82.
+Hong, P.; Li, J.; Li, Y. Failure to detect Xenotropic murine leukaemia virus-related virus in Chinese patients with chronic fatigue
+syndrome. Virol. J. 2010, 7, 224. [CrossRef] [PubMed]
+83.
+Irlbeck, D.M.; Vernon, S.D.; McCleary, K.K.; Bateman, L.; Klimas, N.G.; Lapp, C.W.; Peterson, D.L.; Brown, J.R.; Remlinger, K.S.;
+Wilfret, D.A.; et al. No association found between the detection of either xenotropic murine leukemia virus-related virus or
+polytropic murine leukemia virus and chronic fatigue syndrome in a blinded, multi-site, prospective study by the establishment
+and use of the SolveCFS BioBank. BMC Res. Notes 2014, 7, 461. [CrossRef]
+84.
+Knox, K.; Carrigan, D.; Simmons, G.; Teque, F.; Zhou, Y.; Hackett, J.; Qiu, X.; Luk, K.C.; Schochetman, G.; Knox, A.; et al. No
+Evidence of Murine-Like Gammaretroviruses in CFS Patients Previously Identified as XMRV-Infected. Science 2011, 333, 94–97.
+[CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+24 of 31
+85.
+Oakes, B.; Hoagland-Henefield, M.; Komaroff, A.L.; Erickson, J.L.; Huber, B.T. Human Endogenous Retrovirus-K18 Superantigen
+Expression and Human Herpesvirus-6 and Human Herpesvirus-7 Viral Loads in Chronic Fatigue Patients. Clin. Infect. Dis. 2013,
+56, 1394–1400. [CrossRef]
+86.
+De Meirleir, K.L.; Khaiboullina, S.F.; Frémont, M.; Hulstaert, J.; Rizvanov, A.A.; Palotás, A.; Lombardi, V.C. Plasmacytoid Dendritic
+Cells in the Duodenum of Individuals Diagnosed with Myalgic Encephalomyelitis Are Uniquely Immunoreactive to Antibodies
+to Human Endogenous Retroviral Proteins. In Vivo 2013, 27, 177–187.
+87.
+Rodrigues, L.S.; da Silva Nali, L.H.; Leal, C.O.D.; Sabino, E.C.; Lacerda, E.M.; Kingdon, C.C.; Nacul, L.; Romano, C.M. HERV-K
+and HERV-W transcriptional activity in myalgic encephalomyelitis/chronic fatigue syndrome. Auto. Immun. Highlights 2019,
+10, 12. [CrossRef]
+88.
+Ovejero, T.; Sadones, O.; Sánchez-Fito, T.; Almenar-Pérez, E.; Espejo, J.A.; Martín-Martínez, E.; Nathanson, L.; Oltra, E. Activation
+of Transposable Elements in Immune Cells of Fibromyalgia Patients. Int. J. Mol. Sci. 2020, 21, 1366. [CrossRef] [PubMed]
+89.
+Apostolou, E.; Rizwan, M.; Moustardas, P.; Sjögren, P.; Bertilson, B.C.; Bragée, B.; Polo, O.; Rosén, A. Saliva antibody-fingerprint
+of reactivated latent viruses after mild/asymptomatic COVID-19 is unique in patients with myalgic-encephalomyelitis/chronic
+fatigue syndrome. Front. Immunol. 2022, 13, 949787. [CrossRef] [PubMed]
+90.
+Sukocheva, O.A.; Maksoud, R.; Beeraka, N.M.; Madhunapantula, S.V.; Sinelnikov, M.; Nikolenko, V.N.; Neganova, M.E.;
+Klochkov, S.G.; Amjad Kamal, M.; Staines, D.R.; et al. Analysis of post COVID-19 condition and its overlap with myalgic
+encephalomyelitis/chronic fatigue syndrome. J. Adv. Res. 2022, 40, 179–196. [CrossRef] [PubMed]
+91.
+Unger, E.R.; Lin, J.M.S.; Wisk, L.E.; Yu, H.; L’Hommedieu, M.; Lavretsky, H.; Montoy, J.C.C.; Gottlieb, M.A.; Rising, K.L.;
+Gentile, N.L.; et al. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome After SARS-CoV-2 Infection. JAMA Netw. Open 2024,
+7, e2423555. [CrossRef]
+92.
+Giménez-Orenga, K.; Pierquin, J.; Brunel, J.; Charvet, B.; Martín-Martínez, E.; Lemarinier, M.; Fried, S.; Lucas, A.; Perron, H.;
+Oltra, E. Blood parameters differentiate post COVID-19 condition from Myalgic Encephalomyelitis/Chronic Fatigue Syndrome
+and Fibromyalgia. Brain Behav. Immun. Health 2025, 48, 101058. [CrossRef]
+93.
+Perera, K.D.; Cameron, P.; Sarwar, T.; Carding, S.R. Mucosal Viruses in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A
+Missing Piece of the Puzzle? Int. J. Mol. Sci. 2025, 26, 11161. [CrossRef]
+94.
+Cossu, I.; Ruberto, S.; Filippi, E.; Simula, E.R.; Noli, M.; Mottula, A.; Fozza, C.; Sechi, L.A. HERV-K Envelope Induce a Humoral
+Response in Non-Hodgkin Lymphoma Patients. Curr. Microbiol. 2025, 82, 574. [CrossRef]
+95.
+Hahn, S.; Ugurel, S.; Hanschmann, K.M.; Strobel, H.; Tondera, C.; Schadendorf, D.; Löwer, J.; Löwer, R. Serological response to
+human endogenous retrovirus K in melanoma patients correlates with survival probability. AIDS Res. Hum. Retroviruses 2008, 24,
+717–723. [CrossRef] [PubMed]
+96.
+Hosseiniporgham, S.; Sechi, L.A. Anti-HERV-K Drugs and Vaccines, Possible Therapies against Tumors. Vaccines 2023, 11, 751.
+[CrossRef] [PubMed]
+97.
+Kim, M.H.; Ko, E.J.; An, H.; Choi, S.; Kim, H.S.; Leem, S.H.; Cha, H.J. HERV-R (ERV3-1) Env gene knockout reduces invasion,
+migration, and tumor growth in DLD1 colon cancer cells. BMB Rep. 2025, 9, 201. [CrossRef] [PubMed]
+98.
+Ko, E.J.; Suh, D.S.; Kim, H.; Lee, J.Y.; Eo, W.K.; Kim, H.; Kim, K.H.; Cha, H.J. Transcriptome analysis of the effect of HERV-K env
+gene knockout in ovarian cancer cell lines. Genes Genom. 2024, 46, 1293–1301. [CrossRef]
+99.
+Schmitt, K.; Reichrath, J.; Roesch, A.; Meese, E.; Mayer, J. Transcriptional Profiling of Human Endogenous Retrovirus Group
+HERV-K(HML-2) Loci in Melanoma. Genome Biol. Evol. 2013, 5, 307–328. [CrossRef]
+100. Stengel, S.; Fiebig, U.; Kurth, R.; Denner, J. Regulation of human endogenous retrovirus-K expression in melanomas by CpG
+methylation. Genes Chromosomes Cancer 2010, 49, 401–411. [CrossRef]
+101. Wang, J.; Ren, M.; Yu, J.; Hu, M.; Wang, X.; Ma, W.; Jiang, X.; Cui, J. Single-cell RNA sequencing highlights the functional role of
+human endogenous retroviruses in gallbladder cancer. EBioMedicine 2022, 85, 104319. [CrossRef]
+102. Tovo, P.A.; Rabbone, I.; Tinti, D.; Galliano, I.; Trada, M.; Daprà, V.; Cerutti, F.; Bergallo, M. Enhanced expression of human
+endogenous retroviruses in new-onset type 1 diabetes: Potential pathogenetic and therapeutic implications. Autoimmunity 2020,
+53, 283–288. [CrossRef]
+103. Bhetariya, P.; Kriesel, J.; Fischer, K. Analysis of Human Endogenous Retrovirus Expression in Multiple Sclerosis Plaques. J. Emerg.
+Dis. Virol. 2017, 3. [CrossRef]
+104. Garcia-Montojo, M.; Dominguez-Mozo, M.; Arias-Leal, A.; Garcia-Martinez, Á.; De las Heras, V.; Casanova, I.; Faucard, R.; Gehin,
+N.; Madeira, A.; Arroyo, R.; et al. The DNA Copy Number of Human Endogenous Retrovirus-W (MSRV-Type) Is Increased in
+Multiple Sclerosis Patients and Is Influenced by Gender and Disease Severity. PLoS ONE 2013, 8, e53623. [CrossRef]
+105. Tai, A.; O’Reilly, E.; Alroy, K.; Simon, K.; Munger, K.; Huber, B.; Ascherio, A. Human endogenous retrovirus-K18 Env as a risk
+factor in multiple sclerosis. Mult. Scler. 2008, 14, 1175–1180. [CrossRef]
+106. Chen, Q.; McNinch, C.; May, E.; LaPoint, P.; Koroleva, G.; Sutton, A.; Prasad, R.; Jo, D.; O’Laughlin, B.; Patel, A.; et al. Distinct
+Retrotransposon Transcriptome in Pediatric Crohn’s Disease. Inflamm. Bowel Dis. 2025, 31, 2921–2926. [CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+25 of 31
+107. Klag, T.; Courth, L.; Ostaff, M.J.; Ott, G.; Stange, E.F.; Malek, N.P.; Seifarth, W.; Wehkamp, J. Human Endogenous Retroviruses:
+Residues of Ancient Times Are Differentially Expressed in Crohn’s Disease. Inflamm. Intest. Dis. 2019, 3, 125–137. [CrossRef]
+108. Tovo, P.A.; Ribaldone, D.G.; Galliano, I.; Caviglia, G.P.; Dini, M.; Veglio, V.; Calvi, C.; Montanari, P.; Pitoni, D.; Frara, S.; et al.
+Enhanced Transcription of Human Endogenous Retroviruses and TRIM28 Downregulation in Patients with Inflammatory Bowel
+Disease. Viruses 2024, 16, 1570. [CrossRef]
+109. Tovo, P.A.; Armandi, A.; Bruno, M.; Caviglia, G.P.; Montanari, P.; Pitoni, D.; Calvi, C.; Frara, S.; Dileo, E.; Gambarino, S.; et al.
+Adults with celiac disease exhibit overexpression of endogenous retroviruses, TRIM28, and SETDB1 despite gluten-free diet.
+Virus Res. 2025, 359, 199613. [CrossRef] [PubMed]
+110. Bao, C.; Gao, Q.; Xiang, H.; Shen, Y.; Chen, Q.; Gao, Q.; Cao, Y.; Zhang, M.; He, W.; Mao, L. Human endogenous retroviruses and
+exogenous viral infections. Front. Cell. Infect. Microbiol. 2024, 14, 1439292. [CrossRef] [PubMed]
+111. Chen, J.; Foroozesh, M.; Qin, Z. Transactivation of human endogenous retroviruses by tumor viruses and their functions in
+virus-associated malignancies. Oncogenesis 2019, 8, 6. [CrossRef] [PubMed]
+112. Evans, E.F.; Saraph, A.; Tokuyama, M. Transactivation of Human Endogenous Retroviruses by Viruses. Viruses 2024, 16, 1649.
+[CrossRef]
+113. Hsiao, F.C.; Lin, M.; Tai, A.; Chen, G.; Huber, B.T. Cutting edge: Epstein-Barr virus transactivates the HERV-K18 superantigen by
+docking to the human complement receptor 2 (CD21) on primary B cells. J. Immunol. 2006, 177, 2056–2060. [CrossRef] [PubMed]
+114. Tai, A.K.; Luka, J.; Ablashi, D.; Huber, B.T. HHV-6A infection induces expression of HERV-K18-encoded superantigen. J. Clin.
+Virol. 2009, 46, 47–48. [CrossRef]
+115. Turcanova, V.L.; Bundgaard, B.; Höllsberg, P. Human herpesvirus-6B induces expression of the human endogenous retrovirus
+K18-encoded superantigen. J. Clin. Virol. 2009, 46, 15–19. [CrossRef]
+116. Charvet, B.; Brunel, J.; Pierquin, J.; Iampietro, M.; Decimo, D.; Queruel, N.; Lucas, A.; Encabo-Berzosa M del, M.; Arenaz, I.;
+Marmolejo, T.P.; et al. SARS-CoV-2 awakens ancient retroviral genes and the expression of proinflammatory HERV-W envelope
+protein in COVID-19 patients. iScience 2023, 26, 106604. [CrossRef] [PubMed]
+117. Giménez-Orenga, K.; Pierquin, J.; Brunel, J.; Charvet, B.; Martín-Martínez, E.; Perron, H.; Oltra, E. HERV-W ENV antigenemia
+and correlation of increased anti-SARS-CoV-2 immunoglobulin levels with post-COVID-19 symptoms. Front. Immunol. 2022, 13,
+1020064. [CrossRef]
+118. Petrone, V.; Fanelli, M.; Giudice, M.; Toschi, N.; Conti, A.; Maracchioni, C.; Iannetta, M.; Resta, C.; Cipriani, C.; Miele, M.T.; et al.
+Expression profile of HERVs and inflammatory mediators detected in nasal mucosa as a predictive biomarker of COVID-19
+severity. Front. Microbiol. 2023, 14, 1155624. [CrossRef]
+119. Bhardwaj, N.; Maldarelli, F.; Mellors, J.; Coffin, J.M. HIV-1 Infection Leads to Increased Transcription of Human Endogenous
+Retrovirus HERV-K (HML-2) Proviruses In Vivo but Not to Increased Virion Production. J. Virol. 2014, 88, 11108–11120. [CrossRef]
+120. Contreras-Galindo, R.; Kaplan, M.H.; Contreras-Galindo, A.C.; Gonzalez-Hernandez, M.J.; Ferlenghi, I.; Giusti, F.; Lorenzo, E.;
+Gitlin, S.D.; Dosik, M.H.; Yamamura, Y.; et al. Characterization of Human Endogenous Retroviral Elements in the Blood of
+HIV-1-Infected Individuals. J. Virol. 2012, 86, 262–276. [CrossRef]
+121. Vincendeau, M.; Göttesdorfer, I.; Schreml, J.M.H.; Wetie, A.G.N.; Mayer, J.; Greenwood, A.D.; Helfer, M.; Kramer, S.; Seifarth,
+W.; Hadian, K.; et al. Modulation of human endogenous retrovirus (HERV) transcription during persistent and de novo HIV-1
+infection. Retrovirology 2015, 12, 27. [CrossRef]
+122. Liang, W.; Stubbe, M.; Pleninger, L.; Hofferek, A.; Stubbe, H.; Mai, J.; Özer, S.; Frishman, D.; Schreiner, S.; Vincendeau, M. HERV
+reactivation by adenovirus infection is associated with viral immune regulation. Microbes Infect. 2025, 27, 105466. [CrossRef]
+[PubMed]
+123. Assinger, A.; Yaiw, K.-C.; Göttesdorfer, I.; Leib-Mösch, C.; Söderberg-Nauclér, C. Human Cytomegalovirus (HCMV) induces
+Human Endogenous Retrovirus (HERV) transcription. Retrovirology 2013, 10, 132. [CrossRef]
+124. Bergallo, M.; Galliano, I.; Montanari, P.; Gambarino, S.; Mareschi, K.; Ferro, F.; Fagioli, F.; Tovo, P.A.; Ravanini, P. CMV induces
+HERV-K and HERV-W expression in kidney transplant recipients. J. Clin. Virol. 2015, 68, 28–31. [CrossRef] [PubMed]
+125. Liu, C.; Liu, L.; Wang, X.; Liu, Y.; Wang, M.; Zhu, F. HBV X Protein induces overexpression of HERV-W env through NF-κB in
+HepG2 cells. Virus Genes 2017, 53, 797–806. [CrossRef] [PubMed]
+126. Weber, M.; Padmanabhan Nair, V.; Bauer, T.; Sprinzl, M.F.; Protzer, U.; Vincendeau, M. Increased HERV-K(HML-2) Transcript
+Levels Correlate with Clinical Parameters of Liver Damage in Hepatitis C Patients. Cells 2021, 10, 774. [CrossRef] [PubMed]
+127. Wang, M.; Qiu, Y.; Liu, H.; Liang, B.; Fan, B.; Zhou, X.; Liu, D. Transcription profile of human endogenous retroviruses in response
+to dengue virus serotype 2 infection. Virology 2020, 544, 21–30. [CrossRef]
+128. Li, F.; Nellåker, C.; Sabunciyan, S.; Yolken, R.H.; Jones-Brando, L.; Johansson, A.S.; Owe-Larsson, B.; Karlsson, H. Transcriptional
+Derepression of the ERVWE1 Locus following Influenza A Virus Infection. J. Virol. 2014, 88, 4328–4337. [CrossRef]
+129. Liu, H.; Bergant, V.; Frishman, G.; Ruepp, A.; Pichlmair, A.; Vincendeau, M.; Frishman, D. Influenza A Virus Infection Reactivates
+Human Endogenous Retroviruses Associated with Modulation of Antiviral Immunity. Viruses 2022, 14, 1591. [CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+26 of 31
+130. Nellåker, C.; Yao, Y.; Jones-Brando, L.; Mallet, F.; Yolken, R.H.; Karlsson, H. Transactivation of elements in the human endogenous
+retrovirus W family by viral infection. Retrovirology 2006, 3, 44. [CrossRef]
+131. Kwun, H.J.; Han, H.J.; Lee, W.J.; Kim, H.S.; Jang, K.L. Transactivation of the human endogenous retrovirus K long terminal repeat
+by herpes simplex virus type 1 immediate early protein 0. Virus Res. 2002, 86, 93–100. [CrossRef]
+132. Lee, W.J.; Kwun, H.J.; Kim, H.S.; Jang, K.L. Activation of the Human Endogenous Retrovirus W Long Terminal Repeat by Herpes
+Simplex Virus Type 1 Immediate Early Protein 1. Mol. Cells 2003, 15, 75–80. [CrossRef]
+133. Vojdani, A.; Almulla, A.F.; Zhou, B.; Al-Hakeim, H.K. Reactivation of herpesvirus type-6 and IgA/IgM-mediated responses to
+activin-A underpin Long COVID, including affective symptoms and chronic fatigue syndrome. Acta Neuropsychiatr. 2024, 36,
+172–184. [CrossRef] [PubMed]
+134. Dehlia, A.; Guthridge, M.A. The persistence of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) after SARS-CoV-2
+infection: A systematic review and meta-analysis. J. Infect. 2024, 89, 106297. [CrossRef] [PubMed]
+135. Jason, L.A.; Dorri, J.A. ME/CFS and Post-Exertional Malaise among Patients with Long COVID. Neurol. Int. 2023, 15, 1–11.
+[CrossRef] [PubMed]
+136. Kedor, C.; Freitag, H.; Meyer-Arndt, L.; Wittke, K.; Hanitsch, L.G.; Zoller, T.; Steinbeis, F.; Haffke, M.; Rudolf, G.; Heidecker,
+B.; et al. A prospective observational study of post-COVID-19 chronic fatigue syndrome following the first pandemic wave
+in Germany and biomarkers associated with symptom severity. Nat. Commun. 2022, 13, 5104. Erratum in Nat Commun. 2022,
+13, 6009. [CrossRef]
+137. Bonilla, H.; Quach, T.C.; Tiwari, A.; Bonilla, A.E.; Miglis, M.; Yang, P.C.; Eggert, L.E.; Sharifi, H.; Horomanski, A.; Subramanian,
+A.; et al. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome is common in post-acute sequelae of SARS-CoV-2 infection
+(PASC): Results from a post-COVID-19 multidisciplinary clinic. Front. Neurol. 2023, 14, 1090747. [CrossRef]
+138. Stauffer, Y.; Marguerat, S.; Meylan, F.; Ucla, C.; Sutkowski, N.; Huber, B.; Pelet, T.; Conrad, B. Interferon-α-Induced Endogenous
+Superantigen: A Model Linking Environment and Autoimmunity. Immunity 2001, 15, 591–601. [CrossRef]
+139. Hsiao, F.C.; Tai, A.K.; Deglon, A.; Sutkowski, N.; Longnecker, R.; Huber, B.T. EBV LMP-2A employs a novel mechanism to
+transactivate the HERV-K18 superantigen through its ITAM. Virology 2009, 385, 261–266. [CrossRef]
+140. Pérez-Pérez, S.; Domínguez-Mozo, M.I.; García-Martínez, M.Á.; García-Frontini, M.C.; Villarrubia, N.; Costa-Frossard, L.; Villar,
+L.M.; Arroyo, R.; Álvarez-Lafuente, R. Anti-Human Herpesvirus 6 A/B Antibodies Titers Correlate With Multiple Sclerosis-
+Associated Retrovirus Envelope Expression. Front. Immunol. 2021, 12, 798003. [CrossRef]
+141. Pérez-Pérez, S.; Domínguez-Mozo, M.I.; García-Martínez, M.Á.; Ballester-González, R.; Nieto-Gañán, I.; Arroyo, R.; Alvarez-
+Lafuente, R. Epstein-Barr Virus Load Correlates with Multiple Sclerosis-Associated Retrovirus Envelope Expression. Biomedicines
+2022, 10, 387. [CrossRef]
+142. Brunel, J.; Paganini, J.; Galloux, M.; Charvet, B.; Perron, H. HERV-W ENV transcription in B cells predicting symptomatic
+COVID-19 and risk for long COVID can express a full-length protein despite stop codon in mRNA from chromosome X via a
+ribosome readthrough. Microbes Infect. 2024, 27, 105431. [CrossRef]
+143. Brinzevich, D.; Young, G.R.; Sebra, R.; Ayllon, J.; Maio, S.M.; Deikus, G.; Chen, B.K.; Fernandez-Sesma, A.; Simon, V.; Mulder,
+L.C.F. HIV-1 interacts with human endogenous retrovirus K (HML-2) envelopes derived from human primary lymphocytes. J.
+Virol. 2014, 88, 6213–6223. [CrossRef]
+144. Contreras-Galindo, R.; Almodóvar-Camacho, S.; González-Ramírez, S.; Lorenzo, E.; Yamamura, Y. Short Communication:
+Comparative Longitudinal Studies of HERV-K and HIV-1 RNA Titers in HIV-1-Infected Patients Receiving Successful versus
+Unsuccessful Highly Active Antiretroviral Therapy. AIDS Res. Hum. Retroviruses 2007, 23, 1083–1086. [CrossRef] [PubMed]
+145. Kitsou, K.; Kotanidou, A.; Paraskevis, D.; Karamitros, T.; Katzourakis, A.; Tedder, R.; Hurst, T.; Sapounas, S.; Kotsinas, A.;
+Gorgoulis, V.; et al. Upregulation of Human Endogenous Retroviruses in Bronchoalveolar Lavage Fluid of COVID-19 Patients.
+Microbiol. Spectr. 2021, 9, e0126021. [CrossRef] [PubMed]
+146. Wang, X.; Zhao, C.; Zhang, C.; Mei, X.; Song, J.; Sun, Y.; Wu, Z.; Shi, W. Increased HERV-E clone 4-1 expression contributes to
+DNA hypomethylation and IL-17 release from CD4+ T cells via miR-302d/MBD2 in systemic lupus erythematosus. Cell Commun.
+Signal 2019, 17, 94. [CrossRef]
+147. Fali, T.; Le Dantec, C.; Thabet, Y.; Jousse, S.; Hanrotel, C.; Youinou, P.; Brooks, W.H.; Perl, A.; Renaudineau, Y. DNA methylation
+modulates HRES1/p28 expression in B cells from patients with Lupus. Autoimmunity 2014, 47, 265–271. [CrossRef]
+148. Godavarthy, A.; Kelly, R.; Jimah, J.; Beckford, M.; Caza, T.; Fernandez, D.; Huang, N.; Duarte, M.; Lewis, J.; Fadel, H.J.; et al.
+Lupus-associated endogenous retroviral LTR polymorphism and epigenetic imprinting promote HRES-1/RAB4 expression and
+mTOR activation. JCI Insight 2020, 5, e134010. [CrossRef]
+149. Tovo, P.A.; Ribaldone, D.G.; Caviglia, G.P.; Calvi, C.; Montanari, P.; Tizzani, M.; Pitoni, D.; Frara, S.; Tribocco, E.; Gambarino, S.;
+et al. Patients with Irritable Bowel Syndrome Exhibit Aberrant Expression of Endogenous Retroviruses and SETDB1. Cells 2025,
+14, 196. [CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+27 of 31
+150. Halpin, P.; Williams, M.V.; Klimas, N.G.; Fletcher, M.A.; Barnes, Z.; Ariza, M.E. Myalgic encephalomyelitis/chronic fatigue
+syndrome and gulf war illness patients exhibit increased humoral responses to the herpesviruses-encoded dUTPase: Implications
+in disease pathophysiology. J. Med. Virol. 2017, 89, 1636–1645. [CrossRef]
+151. Hannestad, U.; Allard, A.; Nilsson, K.; Rosén, A. Prevalence of EBV, HHV6, HCMV, HAdV, SARS-CoV-2, and Autoantibodies
+to Type I Interferon in Sputum from Myalgic Encephalomyelitis/Chronic Fatigue Syndrome Patients. Viruses 2025, 17, 422.
+[CrossRef]
+152. Ikuta, K.; Yamada, T.; Shimomura, T.; Kuratsune, H.; Kawahara, R.; Ikawa, S.; Ohnishi, E.; Sokawa, Y.; Fukushi, H.; Hirai, K.;
+et al. Diagnostic evaluation of 2’, 5’-oligoadenylate synthetase activities and antibodies against Epstein-Barr virus and Coxiella
+burnetii in patients with chronic fatigue syndrome in Japan. Microbes Infect. 2003, 5, 1096–1102. [CrossRef] [PubMed]
+153. Kawai, K.; Kawai, A. Studies on the relationship between chronic fatigue syndrome and Epstein-Barr virus in Japan. Intern. Med.
+1992, 31, 313–318. [CrossRef]
+154. Lerner, A.M.; Beqaj, S.H.; Deeter, R.G.; Fitzgerald, J.T. IgM serum antibodies to Epstein-Barr virus are uniquely present in a subset
+of patients with the chronic fatigue syndrome. In Vivo 2004, 18, 101–106.
+155. Loebel, M.; Eckey, M.; Sotzny, F.; Hahn, E.; Bauer, S.; Grabowski, P.; Zerweck, J.; Holenya, P.; Hanitsch, L.G.; Wittke, K.; et al.
+Serological profiling of the EBV immune response in Chronic Fatigue Syndrome using a peptide microarray. PLoS ONE 2017,
+12, e0179124. [CrossRef] [PubMed]
+156. Williams, M.V.; Cox, B.; Lafuse, W.P.; Ariza, M.E. Epstein-Barr Virus dUTPase Induces Neuroinflammatory Mediators: Implica-
+tions for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Clin. Ther. 2019, 41, 848–863. [CrossRef] [PubMed]
+157. Ablashi, D.V.; Eastman, H.B.; Owen, C.B.; Roman, M.M.; Friedman, J.; Zabriskie, J.B.; Peterson, D.L.; Pearson, G.R.; Whitman,
+J.E. Frequent HHV-6 reactivation in multiple sclerosis (MS) and chronic fatigue syndrome (CFS) patients. J. Clin. Virol. 2000, 16,
+179–191. [CrossRef] [PubMed]
+158. Chapenko, S.; Krumina, A.; Kozireva, S.; Nora, Z.; Sultanova, A.; Viksna, L.; Murovska, M. Activation of human herpesviruses 6
+and 7 in patients with chronic fatigue syndrome. J. Clin. Virol. 2006, 37, S47–S51. [CrossRef]
+159. Chapenko, S.; Krumina, A.; Logina, I.; Rasa, S.; Chistjakovs, M.; Sultanova, A.; Viksna, L.; Murovska, M. Association of Active Hu-
+man Herpesvirus-6, -7 and Parvovirus B19 Infection with Clinical Outcomes in Patients with Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome. Adv. Virol. 2012, 2012, 205085. [CrossRef]
+160. Kasimir, F.; Toomey, D.; Liu, Z.; Kaiping, A.C.; Ariza, M.E.; Prusty, B.K. Tissue specific signature of HHV-6 infection in ME/CFS.
+Front. Mol. Biosci. 2022, 9, 1044964. [CrossRef]
+161. Lee, J.S.; Lacerda, E.M.; Nacul, L.; Kingdon, C.C.; Norris, J.; O’Boyle, S.; Roberts, C.H.; Palla, L.; Riley, E.M.; Cliff, J.M. Salivary
+DNA Loads for Human Herpesviruses 6 and 7 Are Correlated With Disease Phenotype in Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome. Front. Med. 2021, 8, 656692. [CrossRef]
+162. Orlova, S.; Rudjko, G.; Orlova, O.; Dakukina, T. Detection of herpes viruses in patients with myalgic encephalomyelitis /chronic
+fatigue syndrome in Belarus. Pol. J. Appl. Sci. 2021, 6, 50–53. [CrossRef]
+163. Gold, J.E.; Okyay, R.A.; Licht, W.E.; Hurley, D.J. Investigation of Long COVID Prevalence and Its Relationship to Epstein-Barr
+Virus Reactivation. Pathogens 2021, 10, 763. [CrossRef] [PubMed]
+164. Hannestad, U.; Apostolou, E.; Sjögren, P.; Bragée, B.; Polo, O.; Bertilson, B.C.; Rosén, A. Post-COVID sequelae effect in chronic
+fatigue syndrome: SARS-CoV-2 triggers latent adenovirus in the oral mucosa. Front. Med. 2023, 10, 1208181. [CrossRef]
+165. Chia, J.; Chia, A.; Voeller, M.; Lee, T.; Chang, R. Acute enterovirus infection followed by myalgic encephalomyelitis/chronic
+fatigue syndrome (ME/CFS) and viral persistence. J. Clin. Pathol. 2010, 63, 165–168. [CrossRef] [PubMed]
+166. Chia, J.K.S.; Chia, A.Y. Chronic fatigue syndrome is associated with chronic enterovirus infection of the stomach. J. Clin. Pathol.
+2008, 61, 43–48. [CrossRef]
+167. Cunningham, L.; Bowles, N.E.; Lane, R.J.; Dubowitz, V.; Archard, L.C. Persistence of enteroviral RNA in chronic fatigue syndrome
+is associated with the abnormal production of equal amounts of positive and negative strands of enteroviral RNA. J. Gen. Virol.
+1990, 71, 1399–1402. [CrossRef]
+168. Frémont, M.; Metzger, K.; Rady, H.; Hulstaert, J.; De Meirleir, K. Detection of herpesviruses and parvovirus B19 in gastric and
+intestinal mucosa of chronic fatigue syndrome patients. In Vivo 2009, 23, 209–213.
+169. Kerr, J.R.; Bracewell, J.; Laing, I.; Mattey, D.L.; Bernstein, R.M.; Bruce, I.N.; Tyrrell, D.A.J. Chronic fatigue syndrome and arthralgia
+following parvovirus B19 infection. J. Rheumatol. 2002, 29, 595–602.
+170. Lane, R.J.M.; Soteriou, B.A.; Zhang, H.; Archard, L.C. Enterovirus related metabolic myopathy: A postviral fatigue syndrome. J.
+Neurol. Neurosurg. Psychiatry 2003, 74, 1382–1386. [CrossRef]
+171. Apostolou, E.; Rosén, A. Epigenetic reprograming in myalgic encephalomyelitis/chronic fatigue syndrome: A narrative of latent
+viruses. J. Intern. Med. 2024, 296, 93–115. [CrossRef]
+172. Almenar-Pérez, E.; Ovejero, T.; Sánchez-Fito, T.; Espejo, J.A.; Nathanson, L.; Oltra, E. Epigenetic Components of Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome Uncover Potential Transposable Element Activation. Clin. Ther. 2019, 41, 675–698.
+[CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+28 of 31
+173. Trivedi, M.S.; Oltra, E.; Sarria, L.; Rose, N.; Beljanski, V.; Fletcher, M.A.; Klimas, N.G.; Nathanson, L. Identification of Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome-associated DNA methylation patterns. PLoS ONE 2018, 13, e0201066. [CrossRef]
+174. Jason, L.; Sorenson, M.; Sebally, K.; Alkazemi, D.; Lerch, A.; Porter, N.; Kubow, S. Increased HDAC in association with decreased
+plasma cortisol in older adults with chronic fatigue syndrome. Brain Behav. Immun. 2011, 25, 1544–1547. [CrossRef] [PubMed]
+175. de Vega, W.C.; Herrera, S.; Vernon, S.D.; McGowan, P.O. Epigenetic modifications and glucocorticoid sensitivity in Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS). BMC Med. Genom. 2017, 10, 11. [CrossRef]
+176. Helliwell, A.M.; Stockwell, P.A.; Edgar, C.D.; Chatterjee, A.; Tate, W.P. Dynamic Epigenetic Changes during a Relapse and
+Recovery Cycle in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Int. J. Mol. Sci. 2022, 23, 11852. [CrossRef] [PubMed]
+177. Rolland, A.; Jouvin-Marche, E.; Viret, C.; Faure, M.; Perron, H.; Marche, P.N. The envelope protein of a human endogenous
+retrovirus-W family activates innate immunity through CD14/TLR4 and promotes Th1-like responses. J. Immunol. 2006, 176,
+7636–7644. [CrossRef]
+178. Levet, S.; Medina, J.; Joanou, J.; Demolder, A.; Queruel, N.; Réant, K.; Normand, M.; Seffals, M.; Dimier, J.; Germi, R.; et al. An
+ancestral retroviral protein identified as a therapeutic target in type-1 diabetes. JCI Insight 2017, 2, e94387. [CrossRef]
+179. Wang, X.; Wu, X.; Huang, J.; Li, H.; Yan, Q.; Zhu, F. Human endogenous retrovirus W family envelope protein (HERV-W env)
+facilitates the production of TNF-α and IL-10 by inhibiting MyD88s in glial cells. Arch. Virol. 2021, 166, 1035–1045. [CrossRef]
+180. Reiche, L.; Plaack, B.; Lehmkuhl, M.; Weyers, V.; Gruchot, J.; Picard, D.; Perron, H.; Remke, M.; Knobbe-Thomsen, C.; Reifenberger,
+G.; et al. HERV-W envelope protein is present in microglial cells of the human glioma tumor microenvironment and differentially
+modulates neoplastic cell behavior. Microbes Infect. 2024, 27, 105460. [CrossRef]
+181. Conrad, B.; Weissmahr, R.N.; Böni, J.; Arcari, R.; Schüpbach, J.; Mach, B. A Human Endogenous Retroviral Superantigen as
+Candidate Autoimmune Gene in Type I Diabetes. Cell 1997, 90, 303–313. [CrossRef]
+182. Mameli, G.; Erre, G.L.; Caggiu, E.; Mura, S.; Cossu, D.; Bo, M.; Cadoni, M.L.; Piras, A.; Mundula, N.; Colombo, E.; et al.
+Identification of a HERV-K env surface peptide highly recognized in Rheumatoid Arthritis (RA) patients: A cross-sectional
+case-control study. Clin. Exp. Immunol. 2017, 189, 127–131. [CrossRef] [PubMed]
+183. Sicat, J.; Sutkowski, N.; Huber, B.T. Expression of human endogenous retrovirus HERV-K18 superantigen is elevated in juvenile
+rheumatoid arthritis. J. Rheumatol. 2005, 32, 1821–1831.
+184. Tai, A.K.; Lin, M.; Chang, F.; Chen, G.; Hsiao, F.; Sutkowski, N.; Huber, B.T. Murine Vβ3+ and Vβ7+ T Cell Subsets Are Specific
+Targets for the HERV-K18 Env Superantigen1. J. Immunol. 2006, 177, 3178–3184. [CrossRef]
+185. de la Hera, B.; Varadé, J.; García-Montojo, M.; Lamas, J.R.; de la Encarnación, A.; Arroyo, R.; Fernández-Gutiérrez, B.; Álvarez-
+Lafuente, R.; Urcelay, E. Role of the Human Endogenous Retrovirus HERV-K18 in Autoimmune Disease Susceptibility: Study in
+the Spanish Population and Meta-Analysis. PLoS ONE 2013, 8, e62090. [CrossRef]
+186. Azar, G.A.; Thibodeau, J. Human endogenous retrovirus IDDMK1,222 and mouse mammary tumor virus superantigens differ in
+their ability to stimulate murine T cell hybridomas. Immunol. Lett. 2002, 81, 87–91. [CrossRef] [PubMed]
+187. Lapatschek, M.; Dürr, S.; Löwer, R.; Magin, C.; Wagner, H.; Miethke, T. Functional analysis of the env open reading frame in
+human endogenous retrovirus IDDMK(1,2)22 encoding superantigen activity. J. Virol. 2000, 74, 6386–6393. [CrossRef]
+188. Ilse, V.; Scholz, R.; Wermann, M.; Naumann, M.; Staege, M.S.; Roßner, S.; Cynis, H. Immunogenicity of the Envelope Surface Unit
+of Human Endogenous Retrovirus K18 in Mice. Int. J. Mol. Sci. 2022, 23, 8330. [CrossRef] [PubMed]
+189. Morozov, V.A.; Thi, V.L.D.; Denner, J. The Transmembrane Protein of the Human Endogenous Retrovirus-K (HERV-K) Modulates
+Cytokine Release and Gene Expression. PLoS ONE 2013, 8, e70399. [CrossRef] [PubMed]
+190. Lemaître, C.; Harper, F.; Pierron, G.; Heidmann, T.; Dewannieux, M. The HERV-K Human Endogenous Retrovirus Envelope
+Protein Antagonizes Tetherin Antiviral Activity. J. Virol. 2014, 88, 13626–13637. [CrossRef]
+191. Lemaître, C.; Tsang, J.; Bireau, C.; Heidmann, T.; Dewannieux, M. A human endogenous retrovirus-derived gene that can
+contribute to oncogenesis by activating the ERK pathway and inducing migration and invasion. PLoS Pathog. 2017, 13, e1006451.
+[CrossRef]
+192. Arru, G.; Galleri, G.; Deiana, G.A.; Zarbo, I.R.; Sechi, E.; Bo, M.; Cadoni, M.P.L.; Corda, D.G.; Frau, C.; Simula, E.R.; et al. HERV-K
+Modulates the Immune Response in ALS Patients. Microorganisms 2021, 9, 1784. [CrossRef]
+193. Eaton-Fitch, N.; du Preez, S.; Cabanas, H.; Staines, D.; Marshall-Gradisnik, S. A systematic review of natural killer cells profile
+and cytotoxic function in myalgic encephalomyelitis/chronic fatigue syndrome. Syst. Rev. 2019, 8, 279. [CrossRef]
+194. Eaton-Fitch, N.; Rudd, P.; Er, T.; Hool, L.; Herrero, L.; Marshall-Gradisnik, S. Immune exhaustion in ME/CFS and long COVID.
+JCI Insight 2024, 9, e183810. [CrossRef]
+195. Maya, J. Surveying the Metabolic and Dysfunctional Profiles of T Cells and NK Cells in Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome. Int. J. Mol. Sci. 2023, 24, 11937. [CrossRef]
+196. Morris, G.; Maes, M. Myalgic encephalomyelitis/chronic fatigue syndrome and encephalomyelitis disseminata/multiple sclerosis
+show remarkable levels of similarity in phenomenology and neuroimmune characteristics. BMC Med. 2013, 11, 205. [CrossRef]
+[PubMed]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+29 of 31
+197. Van Campenhout, J.; Buntinx, Y.; Xiong, H.Y.; Wyns, A.; Polli, A.; Nijs, J.; Aerts, J.L.; Laeremans, T.; Hendrix, J. Unravelling the Con-
+nection Between Energy Metabolism and Immune Senescence/Exhaustion in Patients with Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome. Biomolecules 2025, 15, 357. [CrossRef]
+198. Brenu, E.W.; Van Driel, M.L.; Staines, D.R.; Ashton, K.J.; Ramos, S.B.; Keane, J.; Klimas, N.G.; Marshall-Gradisnik, S.M.
+Immunological abnormalities as potential biomarkers in Chronic Fatigue Syndrome/Myalgic Encephalomyelitis. J. Transl. Med.
+2011, 9, 81. [CrossRef] [PubMed]
+199. Brenu, E.W.; Van Driel, M.L.; Staines, D.R.; Ashton, K.J.; Hardcastle, S.L.; Keane, J.; Tajouri, L.; Peterson, D.; Ramos, S.B.;
+Marshall-Gradisnik, S.M. Longitudinal investigation of natural killer cells and cytokines in chronic fatigue syndrome/myalgic
+encephalomyelitis. J. Transl. Med. 2012, 10, 88. [CrossRef]
+200. Brenu, E.W.; Huth, T.K.; Hardcastle, S.L.; Fuller, K.; Kaur, M.; Johnston, S.; Ramos, S.B.; Staines, D.R.; Marshall-Gradisnik, S.M.
+Role of adaptive and innate immune cells in chronic fatigue syndrome/myalgic encephalomyelitis. Int. Immunol. 2014, 26,
+233–242. [CrossRef] [PubMed]
+201. Caligiuri, M.; Murray, C.; Buchwald, D.; Levine, H.; Cheney, P.; Peterson, D.; Komaroff, A.L.; Ritz, J. Phenotypic and functional
+deficiency of natural killer cells in patients with chronic fatigue syndrome. J. Immunol. 1987, 139, 3306–3313. [CrossRef]
+202. Victoria Scott, D.S. Low NK Cell Activity in Chronic Fatigue Syndrome (CFS) and Relationship to Symptom Severity. J. Clin. Cell
+Immunol. 2015, 6, 2. [CrossRef]
+203. Brenu, E.W.; Broadley, S.; Nguyen, T.; Johnston, S.; Ramos, S.; Staines, D.; Marshall-Gradisnik, S. A Preliminary Comparative
+Assessment of the Role of CD8+ T Cells in Chronic Fatigue Syndrome/Myalgic Encephalomyelitis and Multiple Sclerosis. J.
+Immunol. Res. 2016, 2016, 1–8. [CrossRef] [PubMed]
+204. Cliff, J.M.; King, E.C.; Lee, J.S.; Sepúlveda, N.; Wolf, A.S.; Kingdon, C.; Bowman, E.; Dockrell, H.M.; Nacul, L.; Lacerda, E.; et al.
+Cellular Immune Function in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS). Front. Immunol. 2019, 10, 796.
+[CrossRef] [PubMed]
+205. Mandarano, A.H.; Maya, J.; Giloteaux, L.; Peterson, D.L.; Maynard, M.; Gottschalk, C.G.; Hanson, M.R. Myalgic encephalomyeli-
+tis/chronic fatigue syndrome patients exhibit altered T cell metabolism and cytokine associations. J. Clin. Investig. 2020, 130,
+1491–1505. [CrossRef] [PubMed]
+206. Curriu, M.; Carrillo, J.; Massanella, M.; Rigau, J.; Alegre, J.; Puig, J.; Garcia-Quintana, A.M.; Castro-Marrero, J.; Negredo, E.; Clotet,
+B.; et al. Screening NK-, B- and T-cell phenotype and function in patients suffering from Chronic Fatigue Syndrome. J. Transl.
+Med. 2013, 11, 68. [CrossRef]
+207. Karhan, E.; Gunter, C.L.; Ravanmehr, V.; Horne, M.; Kozhaya, L.; Renzullo, S.; Placek, L.; George, J.; Robinson, P.N.; Vernon, S.D.;
+et al. Perturbation of effector and regulatory T cell subsets in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS).
+BioRxiv 2019, preprint. [CrossRef]
+208. Lee, J.S.; Lacerda, E.; Kingdon, C.; Susannini, G.; Dockrell, H.M.; Nacul, L.; Cliff, J.M. Abnormal T-Cell Activation And Cytotoxic
+T-Cell Frequency Discriminates Symptom Severity In Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. J. Transl. Med.
+2025, 24, 68. [CrossRef]
+209. Rivas, J.L.; Palencia, T.; Fernández, G.; García, M. Association of T and NK Cell Phenotype With the Diagnosis of Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS). Front. Immunol. 2018, 9, 1028. [CrossRef]
+210. Vu, L.T.; Ahmed, F.; Zhu, H.; Iu, D.S.H.; Fogarty, E.A.; Kwak, Y.; Chen, W.; Franconi, C.J.; Munn, P.R.; Tate, A.E.; et al. Single-cell
+transcriptomics of the immune system in ME/CFS at baseline and following symptom provocation. Cell Rep. Med. 2024, 5, 101373.
+[CrossRef]
+211. Fletcher, M.A.; Zeng, X.R.; Barnes, Z.; Levis, S.; Klimas, N.G. Plasma cytokines in women with chronic fatigue syndrome. J. Transl.
+Med. 2009, 7, 96. [CrossRef]
+212. Hornig, M.; Montoya, J.G.; Klimas, N.G.; Levine, S.; Felsenstein, D.; Bateman, L.; Peterson, D.L.; Gottschalk, C.G.; Schultz, A.F.;
+Che, X.; et al. Distinct plasma immune signatures in ME/CFS are present early in the course of illness. Sci. Adv. 2015, 1, e1400121.
+[CrossRef]
+213. Montoya, J.G.; Holmes, T.H.; Anderson, J.N.; Maecker, H.T.; Rosenberg-Hasson, Y.; Valencia, I.J.; Chu, L.; Younger, J.W.; Tato,
+C.M.; Davis, M.M. Cytokine signature associated with disease severity in chronic fatigue syndrome patients. Proc. Natl. Acad. Sci.
+USA 2017, 114, E7150–E7158. [CrossRef]
+214. Sweetman, E.; Ryan, M.; Edgar, C.; MacKay, A.; Vallings, R.; Tate, W. Changes in the transcriptome of circulating immune cells
+of a New Zealand cohort with myalgic encephalomyelitis/chronic fatigue syndrome. Int. J. Immunopathol. Pharmacol. 2019,
+33, 205873841882040. [CrossRef]
+215. Sweetman, E.; Kleffmann, T.; Edgar, C.; De Lange, M.; Vallings, R.; Tate, W. A SWATH-MS analysis of Myalgic Encephalomyeli-
+tis/Chronic Fatigue Syndrome peripheral blood mononuclear cell proteomes reveals mitochondrial dysfunction. J. Transl. Med.
+2020, 18, 365. [CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+30 of 31
+216. Fernandez-Guerra, P.; Gonzalez-Ebsen, A.C.; Boonen, S.E.; Courraud, J.; Gregersen, N.; Mehlsen, J.; Palmfeldt, J.; Olsen, R.K.J.;
+Brinth, L.S. Bioenergetic and Proteomic Profiling of Immune Cells in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome
+Patients: An Exploratory Study. Biomolecules 2021, 11, 961. [CrossRef]
+217. Missailidis, D.; Annesley, S.J.; Allan, C.Y.; Sanislav, O.; Lidbury, B.A.; Lewis, D.P.; Fisher, P.R. An Isolated Complex V Inefficiency
+and Dysregulated Mitochondrial Function in Immortalized Lymphocytes from ME/CFS Patients. Int. J. Mol. Sci. 2020, 21, 1074.
+[CrossRef]
+218. Missailidis, D.; Sanislav, O.; Allan, C.Y.; Annesley, S.J.; Fisher, P.R. Cell-Based Blood Biomarkers for Myalgic Encephalomyeli-
+tis/Chronic Fatigue Syndrome. Int. J. Mol. Sci. 2020, 21, 1142. [CrossRef]
+219. Tomas, C.; Brown, A.; Strassheim, V.; Elson, J.; Newton, J.; Manning, P. Cellular bioenergetics is impaired in patients with chronic
+fatigue syndrome. PLoS ONE 2017, 12, e0186802. Erratum in PLoS ONE 2018, 13, e0192817. [CrossRef]
+220. Tomas, C.; Brown, A.E.; Newton, J.L.; Elson, J.L. Mitochondrial complex activity in permeabilised cells of chronic fatigue
+syndrome patients using two cell types. PeerJ 2019, 7, e6500. [CrossRef] [PubMed]
+221. Maya, J.; Hanson, M.R. Investigating T cell populations for immune cell exhaustion in myalgic encephalomyelitis/chronic fatigue
+syndrome. J. Immunol. 2023, 210, 229.01. [CrossRef]
+222. Duarte, R.R.R.; Pain, O.; Bendall, M.L.; de Mulder Rougvie, M.; Marston, J.L.; Selvackadunco, S.; Troakes, C.; Leung, S.K.;
+Bamford, R.A.; Mill, J.; et al. Integrating human endogenous retroviruses into transcriptome-wide association studies highlights
+novel risk factors for major psychiatric conditions. Nat. Commun. 2024, 15, 3803. [CrossRef] [PubMed]
+223. Douville, R.; Liu, J.; Rothstein, J.; Nath, A. Identification of active loci of a human endogenous retrovirus in neurons of patients
+with amyotrophic lateral sclerosis. Ann. Neurol. 2011, 69, 141–151. [CrossRef]
+224. Li, W.; Lee, M.H.; Henderson, L.; Tyagi, R.; Bachani, M.; Steiner, J.; Campanac, E.; Hoffman, D.A.; von Geldern, G.; Johnson, K.;
+et al. Human endogenous retrovirus-K contributes to motor neuron disease. Sci. Transl. Med. 2015, 7, 307ra153. [CrossRef]
+225. García-Montojo, M.; de la Hera, B.; Varadé, J.; de la Encarnación, A.; Camacho, I.; Domínguez-Mozo, M.; Árias-Leal, A.; García-
+Martínez, A.; Casanova, I.; Izquierdo, G.; et al. HERV-W polymorphism in chromosome X is associated with multiple sclerosis
+risk and with differential expression of MSRV. Retrovirology 2014, 11, 2. [CrossRef]
+226. Gröger, V.; Cynis, H. Human Endogenous Retroviruses and Their Putative Role in the Development of Autoimmune Disorders
+Such as Multiple Sclerosis. Front. Microbiol. 2018, 9, 265. [CrossRef]
+227. Morandi, E.; Tanasescu, R.; Tarlinton, R.E.; Constantinescu, C.S.; Zhang, W.; Tench, C.; Gran, B. The association between human
+endogenous retroviruses and multiple sclerosis: A systematic review and meta-analysis. PLoS ONE 2017, 12, e0172415. [CrossRef]
+[PubMed]
+228. Schmitt, K.; Richter, C.; Backes, C.; Meese, E.; Ruprecht, K.; Mayer, J. Comprehensive analysis of human endogenous retrovirus
+group HERV-W locus transcription in multiple sclerosis brain lesions by high-throughput amplicon sequencing. J. Virol. 2013, 87,
+13837–13852. [CrossRef] [PubMed]
+229. Kremer, D.; Schichel, T.; Förster, M.; Tzekova, N.; Bernard, C.; van der Valk, P.; van Horssen, J.; Hartung, H.P.; Perron, H.; Küry, P.
+Human endogenous retrovirus type W envelope protein inhibits oligodendroglial precursor cell differentiation. Ann. Neurol.
+2013, 74, 721–732. [CrossRef]
+230. Kremer, D.; Gruchot, J.; Weyers, V.; Oldemeier, L.; Göttle, P.; Healy, L.; Ho Jang, J.; Kang, T.; Xu, Y.; Volsko, C.; et al. pHERV-W
+envelope protein fuels microglial cell-dependent damage of myelinated axons in multiple sclerosis. Proc. Natl. Acad. Sci. USA
+2019, 116, 15216–15225. [CrossRef] [PubMed]
+231. Hartung, H.P.; Derfuss, T.; Cree, B.A.; Sormani, M.P.; Selmaj, K.; Stutters, J.; Prados, F.; MacManus, D.; Schneble, H.M.; Lambert,
+E.; et al. Efficacy and safety of temelimab in multiple sclerosis: Results of a randomized phase 2b and extension study. Mult. Scler.
+2022, 28, 429–440. [CrossRef]
+232. Mackay, A.; Tate, W.P. A compromised paraventricular nucleus within a dysfunctional hypothalamus: A novel neuroinflammatory
+paradigm for ME/CFS. Int. J. Immunopathol. Pharmacol. 2018, 32, 2058738418812342. [CrossRef]
+233. Tate, W.; Walker, M.; Sweetman, E.; Helliwell, A.; Peppercorn, K.; Edgar, C.; Blair, A.; Chatterjee, A. Molecular Mechanisms of
+Neuroinflammation in ME/CFS and Long COVID to Sustain Disease and Promote Relapses. Front. Neurol. 2022, 13, 877772.
+[CrossRef]
+234. Wirth, K.J.; Scheibenbogen, C.; Paul, F. An attempt to explain the neurological symptoms of Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome. J. Transl. Med. 2021, 19, 471. Erratum in J. Transl. Med. 2022, 20, 25. [CrossRef]
+235. Newman, A.G.; Sharif, J.; Bessa, P.; Zaqout, S.; Brown, J.P.; Richter, D.; Dannenberg, R.; Nakayama, M.; Mueller, S.; Schaub, T.; et al.
+Glial reactivity and cognitive decline follow chronic heterochromatin loss in neurons. Nat. Commun. 2025, 16, 7325. [CrossRef]
+236. Morris, G.; Anderson, G.; Maes, M. Hypothalamic-Pituitary-Adrenal Hypofunction in Myalgic Encephalomyelitis (ME)/Chronic
+Fatigue Syndrome (CFS) as a Consequence of Activated Immune-Inflammatory and Oxidative and Nitrosative Pathways. Mol.
+Neurobiol. 2017, 54, 6806–6819. [CrossRef]
+https://doi.org/10.3390/ijms27104309
+
+Int. J. Mol. Sci. 2026, 27, 4309
+31 of 31
+237. Arru, G.; Leoni, S.; Pugliatti, M.; Mei, A.; Serra, C.; Delogu, L.G.; Manetti, R.; Dolei, A.; Sotgiu, S.; Mameli, G. Natalizumab
+inhibits the expression of human endogenous retroviruses of the W family in multiple sclerosis patients: A longitudinal cohort
+study. Mult. Scler. 2014, 20, 174–182. [CrossRef]
+238. Garcia-Montojo, M.; Fathi, S.; Norato, G.; Smith, B.R.; Rowe, D.B.; Kiernan, M.C.; Vucic, S.; Mathers, S.; van Eijk, R.P.A.;
+Santamaria, U.; et al. Inhibition of HERV-K (HML-2) in amyotrophic lateral sclerosis patients on antiretroviral therapy. J. Neurol.
+Sci. 2021, 423, 117358. [CrossRef]
+239. Martín-Martínez, E.; Gil-Perotin, S.; Giménez-Orenga, K.; Barea-Moya, L.; Oltra, E. HERV Dysregulation in a Case of Myalgic
+Encephalomyelitis and Multiple Sclerosis Responsive to Rituximab. Int. J. Mol. Sci. 2025, 26, 4885. [CrossRef] [PubMed]
+240. Durnaoglu, S.; Lee, S.-K.; Ahnn, J. Human Endogenous Retroviruses as Gene Expression Regulators: Insights from Animal
+Models into Human Diseases. Mol. Cells 2021, 44, 861–878. [CrossRef] [PubMed]
+241. Yang, J.; Cook, L.; Chen, Z. Systematic evaluation of retroviral LTRs as cis-regulatory elements in mouse embryos. Cell Rep. 2024,
+43, 113775. [CrossRef] [PubMed]
+242. Schön, U.; Diem, O.; Leitner, L.; Günzburg, W.H.; Mager, D.L.; Salmons, B.; Leib-Mösch, C. Human Endogenous Retroviral Long
+Terminal Repeat Sequences as Cell Type-Specific Promoters in Retroviral Vectors. J. Virol. 2009, 83, 12643–12650. [CrossRef]
+243. Herrero, F.; Heeb, C.; Meier, M.; Lin, H.Y.; Mueller, F.S.; Schalbetter, S.M.; Gruchot, J.; Weber-Stadlbauer, U.; Notter, T.; Perron, H.;
+et al. Recapitulation and reversal of neuropsychiatric phenotypes in a mouse model of human endogenous retrovirus type W
+expression. Mol. Psychiatry 2025, 30, 3325–3337. [CrossRef]
+244. Feng, C.; Wu, Y.; Sun, W.; Qu, Y.; Zhang, M.; Yang, T. Research progress on the development and evaluation of animal models for
+chronic fatigue syndrome. Am. J. Transl. Res. 2025, 17, 5848–5861. [CrossRef]
+245. Couch, Y.; Xie, Q.; Lundberg, L.; Sharp, T.; Anthony, D.C. A Model of Post-Infection Fatigue Is Associated with Increased TNF
+and 5-HT2A Receptor Expression in Mice. PLoS ONE 2015, 10, e0130643. [CrossRef] [PubMed]
+246. Drosen, M.E.; Bulbule, S.; Gottschalk, G.; Peterson, D.; Allen, L.A.; Arnold, L.A.; Roy, A. Inactivation of ATG13 stimulates chronic
+demyelinating pathologies in muscle-serving nerves and spinal cord. Immunol. Res. 2025, 73, 27. [CrossRef]
+247. Chiappinelli, K.B.; Strissel, P.L.; Desrichard, A.; Li, H.; Henke, C.; Akman, B.; Hein, A.; Rote, N.S.; Cope, L.M.; Snyder, A.; et al.
+Inhibiting DNA Methylation Causes an Interferon Response in Cancer via dsRNA Including Endogenous Retroviruses. Cell 2015,
+162, 974–986. Erratum in Cell 2016, 164, 1073. Erratum in Cell 2017, 169, 361. [CrossRef] [PubMed]
+248. Roulois, D.; Loo Yau, H.; Singhania, R.; Wang, Y.; Danesh, A.; Shen, S.Y.; Han, H.; Liang, G.; Jones, P.A.; Pugh, T.J.; et al.
+DNA-Demethylating Agents Target Colorectal Cancer Cells by Inducing Viral Mimicry by Endogenous Transcripts. Cell 2015,
+162, 961–973. [CrossRef] [PubMed]
+249. Baldwin, E.T.; Götte, M.; Tchesnokov, E.P.; Arnold, E.; Hagel, M.; Nichols, C.; Dossang, P.; Lamers, M.; Wan, P.; Steinbacher,
+S.; et al. Human endogenous retrovirus-K (HERV-K) reverse transcriptase (RT) structure and biochemistry reveals remarkable
+similarities to HIV-1 RT and opportunities for HERV-K–specific inhibition. Proc. Natl. Acad. Sci. USA 2022, 119, e2200260119.
+[CrossRef]
+250. Simula, E.R.; Jasemi, S.; Cossu, D.; Fais, M.; Cossu, I.; Chessa, V.; Canu, M.; Sechi, L.A. Human Endogenous Retroviruses as Novel
+Therapeutic Targets in Neurodegenerative Disorders. Vaccines 2025, 13, 415. [CrossRef]
+251. Seton, K.A.; Espejo-Oltra, J.A.; Giménez-Orenga, K.; Haagmans, R.; Ramadan, D.J.; Mehlsen, J. European ME Research Group
+for Early Career Researchers (Young EMERG). Advancing Research and Treatment: An Overview of Clinical Trials in Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) and Future Perspectives. J. Clin. Med. 2024, 13, 325. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+https://doi.org/10.3390/ijms27104309

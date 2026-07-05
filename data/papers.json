@@ -1,8 +1,53 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-04",
+  "last_check": "2026-07-05",
   "papers": [
+    {
+      "id": "cambras-2026-light-exposure-mecfs",
+      "title": "Association between light exposure patterns and multidimensional health outcomes in individuals with myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Cambras T, Domingo JC, Sanmartín-Sentañes R, Alegre-Martín J, Castro-Marrero J",
+      "journal": "Journal of Translational Medicine",
+      "date": "Jul 2026",
+      "summary": "Using a week of wrist-worn light and activity sensors in 100 ME/CFS patients and 56 healthy people, researchers found four patterns of daily light exposure; patients with a 'healthy' pattern (stable light during the day) had less fatigue and better sleep than patients with poor daytime light exposure.",
+      "why": "Suggests that how much natural light a patient gets during the day is linked to how bad their symptoms are, pointing to light exposure as a simple, low-cost target that could be tested as part of future ME/CFS treatment plans.",
+      "link": "https://doi.org/10.1186/s12967-026-08556-6",
+      "first_seen": "2026-07-05",
+      "last_checked": "2026-07-05",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "PMID 42399727. Published Jul 3, 2026. Spanish group (Vall d'Hebron / Universitat de Barcelona). Not Wirth/Scheibenbogen-affiliated. Confirmed via publisher page (Springer/J Transl Med)."
+    },
+    {
+      "id": "perera-2026-herv-review",
+      "title": "Human Endogenous Retroviruses in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Emerging Roles in Pathogenesis, Immunity, Biomarkers and Therapeutics",
+      "authors": "Perera KD, Oltra E, Carding SR",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "May 2026",
+      "summary": "A review paper explains how ancient virus fragments built into our own DNA long ago (human endogenous retroviruses, or HERVs) normally stay silent, but common infections like Epstein-Barr virus, HHV-6 or COVID-19 may switch some of them back on, and this reactivation could help drive the immune problems and brain inflammation seen in ME/CFS.",
+      "why": "Proposes a concrete biological trigger — reactivated 'fossil viruses' inside our own genome — that could explain why an infection can lead to long-term illness, and suggests measuring which of these HERVs are switched on could become a diagnostic test or way to track treatment response.",
+      "link": "https://doi.org/10.3390/ijms27104309",
+      "first_seen": "2026-07-05",
+      "last_checked": "2026-07-05",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Int J Mol Sci 27(10):4309. Published May 12, 2026. Review article; Oltra's group (CEU Cardenal Herrera Univ., Spain) and Carding (Quadram Institute, UK). Not Wirth/Scheibenbogen-affiliated. Confirmed via MDPI publisher page."
+    },
+    {
+      "id": "petrov-2026-monocyte-dc-immunophenotyping",
+      "title": "Comprehensive Immunophenotyping of Monocytes and Dendritic Cells Suggests Distinct Pathophysiology in Chronic Fatigue Syndrome and Long COVID",
+      "authors": "Petrov S, Bozhkova M, Ivanovska M, Kalfova T, Dudova D, Todorova Y, Dimitrova R, Murdjeva M, Taskov H, Nikolova M, Maes M",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "May 2026",
+      "summary": "Detailed immune-cell testing on blood from 103 ME/CFS patients, 63 long COVID patients and 41 healthy people found the two illnesses look different at the immune-cell level: long COVID showed signs of an immune system still fighting but wearing out, while ME/CFS showed a more suppressed, poorly-coordinated immune response.",
+      "why": "Even though ME/CFS and long COVID often look similar to patients, this suggests their underlying immune problems differ — meaning treatments effective for one may not automatically work for the other, an important consideration when designing future drug trials.",
+      "link": "https://doi.org/10.3390/ijms27104488",
+      "first_seen": "2026-07-05",
+      "last_checked": "2026-07-05",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Int J Mol Sci 27(10):4488. Published May 17, 2026. Bulgarian/international group (Plovdiv Medical University) incl. Michael Maes. Originally posted as medRxiv preprint 2026.04.10.26350613. Not Wirth/Scheibenbogen-affiliated."
+    },
     {
       "id": "kumar-2026-erp-sensory-processing",
       "title": "Higher-order brain processes, rather than early processing, underlie sensory problems in ME/CFS: evidence from ERPs",
@@ -13,9 +58,9 @@
       "why": "Suggests sensory overload in ME/CFS comes from how the brain manages attention and higher-level processing rather than from broken basic senses — pointing future treatments toward this higher-level brain function rather than the sense organs themselves.",
       "link": "https://doi.org/10.3389/fmed.2026.1842841",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-04",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-05",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42396162. Published June 18, 2026. Confirmed via the Frontiers in Media article page. Not Wirth/Scheibenbogen-affiliated."
     },
     {
@@ -28,9 +73,9 @@
       "why": "Lab evidence that ME/CFS muscle cells are genuinely different at a molecular level, not just 'deconditioned' — and the authors computationally flag 22 existing drugs (including leflunomide, melatonin and midodrine) as candidates that could be tested faster than developing a new drug, though this is an early, not-yet-peer-reviewed preprint using a lab stem-cell model.",
       "link": "https://doi.org/10.21203/rs.3.rs-10015511/v1",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-04",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-05",
+      "flags": [],
+      "isNew": false,
       "notes": "Posted Research Square Jun 16, 2026. Single-author preprint, not yet peer-reviewed. Confirmed via Europe PMC REST API (title/author/date match). Not Wirth/Scheibenbogen-affiliated."
     },
     {
@@ -43,9 +88,9 @@
       "why": "A patient-informed, purpose-built way to measure PEM could improve diagnosis and become a standard outcome measure in future ME/CFS drug trials, though full scientific validation is still pending.",
       "link": "https://doi.org/10.21203/rs.3.rs-10040145/v1",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-04",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-05",
+      "flags": [],
+      "isNew": false,
       "notes": "Posted Research Square Jun 16, 2026. Not yet peer-reviewed. Confirmed via Europe PMC REST API (title/author/date match). Not Wirth/Scheibenbogen-affiliated."
     },
     {
@@ -58,9 +103,9 @@
       "why": "Argues that past large trials of these therapies underperformed because they enrolled patients without using biomarkers to pick who was likely to benefit — a lesson for how future ME/CFS drug trials should select patients.",
       "link": "https://doi.org/10.1016/j.transci.2026.104482",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-04",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-05",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42391726. Published online Jun 26, 2026 (print issue Aug 2026). Narrative review/opinion synthesis, not new primary data — single-author piece, lower-confidence than a primary study. Confirmed via Crossref + Elsevier. Not Wirth/Scheibenbogen-affiliated."
     },
     {
