@@ -1,8 +1,68 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-05",
+  "last_check": "2026-07-06",
   "papers": [
+    {
+      "id": "stortz-2026-immunoadsorption-sham-postcovid",
+      "title": "Immunoadsorption Versus Sham Treatment for Post-COVID Syndrome: A Randomised Sham-Controlled Crossover Trial",
+      "authors": "Stortz M, Kommer A, Meineck M, Boedecker-Lips SC, Claßen P, Tomalla V, Rausch F, Lang LS, Wild PS, Schmidtmann I, Weinmann A, Kraus D, Weinmann-Menke J",
+      "journal": "The Lancet Regional Health – Europe",
+      "date": "Jun 2026",
+      "summary": "In this German trial (Mainz), 40 people with long-term post-COVID symptoms and high levels of self-attacking antibodies had those antibodies filtered out of their blood (immunoadsorption), compared with a fake (sham) version of the same procedure. The real treatment did remove the antibodies as intended, but patients did not feel any better than those who got the sham treatment, and side effects were more common with the real treatment.",
+      "why": "This is a rigorous, placebo-controlled negative result for a treatment approach (removing 'self-attacking' antibodies) that other German trials — including Scheibenbogen's — are also testing in post-COVID/ME-CFS, so it's an important caution: filtering out these antibodies doesn't automatically translate into symptom relief, at least in this dosing/design.",
+      "link": "https://doi.org/10.1016/j.lanepe.2026.101744",
+      "first_seen": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Lancet Reg Health Eur, Vol 67 (Aug 2026 print; e-pub Jun 11, 2026). University Medical Center Mainz (IAMPOCO trial). Not Wirth/Scheibenbogen-affiliated. Confirmed via Elsevier publisher page and Europe PMC record."
+    },
+    {
+      "id": "wielscher-2026-decodeme-mendelian-randomization",
+      "title": "Insights into Pathophysiological Pathways in ME/CFS Through Genetic Correlation and Mendelian Randomization",
+      "authors": "Wielscher M, Vincenzi L, Weninger WP, Schernhammer ES",
+      "journal": "Research Square (preprint)",
+      "date": "Apr 2026",
+      "summary": "Using genetic data from the large DecodeME study (over 15,000 people with ME/CFS), researchers looked for genes shared between ME/CFS and other conditions, and tested whether some blood markers might actually cause ME/CFS risk rather than just being correlated with it. They found that having naturally more mitochondrial DNA (the energy-factory part of cells) seemed protective, while two markers of inflammation and blood-clotting activity seemed to raise risk.",
+      "why": "This is genetic evidence — not just an association in sick patients — pointing to cellular energy production and low-grade inflammation/clotting as likely causes rather than side effects of ME/CFS, which supports the biological rationale behind drugs targeting mitochondria or clotting/inflammation.",
+      "link": "https://doi.org/10.21203/rs.3.rs-9363637/v2",
+      "first_seen": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed. v1 posted Apr 10, 2026; v2 Apr 21, 2026. Medical University of Vienna group. Not Wirth/Scheibenbogen-affiliated. Direct Research Square fetch blocked (403); confirmed via Europe PMC record (title/authors/DOI/date/key finding) plus preprint-report secondary summary."
+    },
+    {
+      "id": "lee-2026-genetic-overlap-mecfs-ibs-psychiatric",
+      "title": "Global and local genetic overlap among ME/CFS, irritable bowel syndrome and psychiatric traits: a hypothesis-generating analysis",
+      "authors": "Lee JH",
+      "journal": "medRxiv (preprint)",
+      "date": "Jun 2026",
+      "summary": "This genetic study compared ME/CFS with irritable bowel syndrome (IBS), depression, and loneliness using large genetic databases. Overall, ME/CFS shared a lot of genetic background with IBS and depression, but when the analysis zoomed in on specific spots in the genome, very little of that overlap held up — and the genes linked to ME/CFS risk were concentrated in nerve cells (including gut nerve cells), not in depression-related brain circuits.",
+      "why": "Even though ME/CFS, IBS and depression often occur together and can look similar, this suggests ME/CFS has its own distinct genetic roots in the nervous system rather than simply being a form of depression — relevant to arguments that ME/CFS deserves biomedical treatment research, not just psychiatric care.",
+      "link": "https://doi.org/10.64898/2026.06.08.26355171",
+      "first_seen": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted Jun 10, 2026. Single-author analysis built on DecodeME summary statistics. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
+    },
+    {
+      "id": "steinkirchner-2026-perioperative-anesthesia",
+      "title": "Perioperative outcomes in patients with myalgic encephalomyelitis/chronic fatigue syndrome undergoing general anesthesia: a retrospective matched-pair study",
+      "authors": "Steinkirchner FM, Kaufmann CK, Kraus RF, Käss M, Schieffer E, Graf BM, Lassen C, Kimmerling V, Dejaco A",
+      "journal": "medRxiv (preprint)",
+      "date": "Apr 2026",
+      "summary": "Looking back at hospital records for 15 people with ME/CFS who had surgery under general anaesthesia, matched against 15 similar patients without ME/CFS, the study found blood pressure and heart rate during surgery were similarly well controlled in both groups — but people with ME/CFS had noticeably more pain afterward and needed stronger pain medication more often.",
+      "why": "This is practical safety information for patients and doctors: general anaesthesia itself appears manageable in ME/CFS, but post-surgery pain management may need extra attention — useful for anyone with ME/CFS facing an operation, even though it doesn't point to a new drug or trial.",
+      "link": "https://doi.org/10.64898/2026.04.06.26348924",
+      "first_seen": "2026-07-06",
+      "last_checked": "2026-07-06",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted Apr 7, 2026. German group (University Hospital Regensburg). Small sample (n=15 pairs); post-exertional malaise not tracked, noted by the authors as a limitation. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
+    },
     {
       "id": "cambras-2026-light-exposure-mecfs",
       "title": "Association between light exposure patterns and multidimensional health outcomes in individuals with myalgic encephalomyelitis/chronic fatigue syndrome",
@@ -13,9 +73,9 @@
       "why": "Suggests that how much natural light a patient gets during the day is linked to how bad their symptoms are, pointing to light exposure as a simple, low-cost target that could be tested as part of future ME/CFS treatment plans.",
       "link": "https://doi.org/10.1186/s12967-026-08556-6",
       "first_seen": "2026-07-05",
-      "last_checked": "2026-07-05",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-06",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42399727. Published Jul 3, 2026. Spanish group (Vall d'Hebron / Universitat de Barcelona). Not Wirth/Scheibenbogen-affiliated. Confirmed via publisher page (Springer/J Transl Med)."
     },
     {
@@ -28,9 +88,9 @@
       "why": "Proposes a concrete biological trigger — reactivated 'fossil viruses' inside our own genome — that could explain why an infection can lead to long-term illness, and suggests measuring which of these HERVs are switched on could become a diagnostic test or way to track treatment response.",
       "link": "https://doi.org/10.3390/ijms27104309",
       "first_seen": "2026-07-05",
-      "last_checked": "2026-07-05",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-06",
+      "flags": [],
+      "isNew": false,
       "notes": "Int J Mol Sci 27(10):4309. Published May 12, 2026. Review article; Oltra's group (CEU Cardenal Herrera Univ., Spain) and Carding (Quadram Institute, UK). Not Wirth/Scheibenbogen-affiliated. Confirmed via MDPI publisher page."
     },
     {
@@ -43,9 +103,9 @@
       "why": "Even though ME/CFS and long COVID often look similar to patients, this suggests their underlying immune problems differ — meaning treatments effective for one may not automatically work for the other, an important consideration when designing future drug trials.",
       "link": "https://doi.org/10.3390/ijms27104488",
       "first_seen": "2026-07-05",
-      "last_checked": "2026-07-05",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-06",
+      "flags": [],
+      "isNew": false,
       "notes": "Int J Mol Sci 27(10):4488. Published May 17, 2026. Bulgarian/international group (Plovdiv Medical University) incl. Michael Maes. Originally posted as medRxiv preprint 2026.04.10.26350613. Not Wirth/Scheibenbogen-affiliated."
     },
     {
