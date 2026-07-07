@@ -1,0 +1,932 @@
+Frontiers in Neuroscience
+01
+frontiersin.org
+TYPE  Original Research
+PUBLISHED  19 June 2026
+DOI  10.3389/fnins.2026.1875420
+OPEN ACCESS
+EDITED BY
+Jiaqiang Wang, 
+Shenzhen University General Hospital, 
+China
+REVIEWED BY
+Kang Wu, 
+Capital Medical University, China
+Ali Türker Çiftçi, 
+Niğde Ömer Halisdemir University, 
+Türkiye
+*CORRESPONDENCE
+Kiran Thapaliya 
+ k.thapaliya@griffith.edu.au
+RECEIVED 07 May 2026
+REVISED 01 June 2026
+ACCEPTED 08 June 2026
+PUBLISHED 19 June 2026
+CITATION
+Thapaliya K, ​Marshall-Gradisnik S, 
+Inderyas M and Barnden L (2026) 
+Disrupted glymphatic function and its 
+relationship with sleep and cognitive 
+impairment in ME/CFS assessed via 
+DTI-ALPS.
+Front. Neurosci. 20:1875420.
+doi: 10.3389/fnins.2026.1875420
+COPYRIGHT
+© 2026 Thapaliya, Marshall-Gradisnik, 
+Inderyas and Barnden. This is an 
+open-access article distributed under 
+the terms of the Creative Commons 
+Attribution License (CC BY). The use, 
+distribution or reproduction in other 
+forums is permitted, provided the 
+original author(s) and the copyright 
+owner(s) are credited and that the 
+original publication in this journal is 
+cited, in accordance with accepted 
+academic practice. No use, distribution 
+or reproduction is permitted which does 
+not comply with these terms.
+Disrupted glymphatic function 
+and its relationship with sleep and 
+cognitive impairment in ME/CFS 
+assessed via DTI-ALPS
+Kiran Thapaliya *, Sonya Marshall-Gradisnik , Maira Inderyas  and 
+Leighton Barnden 
+National Centre for Neuroimmunology and Emerging Diseases, Griffith University, Gold Coast, QLD, 
+Australia
+The glymphatic system is a recently discovered brain waste clearance system 
+that is mostly active during sleep and disengaged during wakefulness. Impaired 
+glymphatic function leads to the deposition of metabolic waste products in the 
+brain potentially causing inflammation leading to various symptoms in ME/CFS. 
+While the glymphatic function has been assessed in other neurodegenerative 
+diseases using ‘diffusion tensor imaging along the perivascular space’ (DTI-
+ALPS), it has not been studied in Myalgic Encephalomyelitis/Chronic Fatigue 
+Syndrome (ME/CFS). This preliminary study investigates glymphatic function in 
+58 participants (ME/CFS = 31 and healthy controls = 27) using the DTI-ALPS index 
+derived from DTI data acquired with 3 T MRI. The bilateral hemispheric DTI-ALPS 
+index was estimated to assess glymphatic function, and an asymmetry index 
+was calculated to determine interhemispheric asymmetry in glymphatic func­
+tion. We found that the global DTI-ALPS index was significantly lower in ME/
+CFS patients compared to healthy controls (ME/CFS: 1.44 ± 0.086; healthy con­
+trols: 1.51 ± 0.11, p = 0.014), indicating reduced glymphatic function in ME/CFS. 
+Examining the hemispheres separately, showed the right hemisphere DTI-ALPS 
+index was lower in ME/CFS than healthy controls (ME/CFS = 1.41 ± 0.097; healthy 
+controls = 1.49 ± 0.12; p = 0.009) but not different on the left. Additionally, we 
+did not find any significant difference in asymmetry index between ME/CFS and 
+healthy controls. We observed an association between the global DTI-ALPS index 
+and severity of ‘sleep disturbance’ (p = 0.013, r = −0.47) and “impaired concentra­
+tion” (p = 0.026, r = −0.43). This study demonstrated impaired glymphatic func­
+tion in ME/CFS which may lead to symptoms such as cognitive dysfunction and 
+sleep disturbance experienced by ME/CFS.
+KEYWORDS
+diffusion weighted imaging, DTI-ALPS, glymphatic function, MRI, ME/CFS, sleep 
+disturbance, cognitive dysfunction
+Introduction
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) is a condition which 
+affects multiple body systems (Carruthers et al., 2003). The most common symptoms are cogni­
+tive impairment, fatigue, and sleep disturbance (Carruthers et al., 2011). These symptoms 
+adversely affect the quality of life and social activities of individuals with ME/CFS. Emerging 
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+02
+frontiersin.org
+evidence suggests that an impaired waste clearance system in the brain 
+may be a key contributor to neurological symptoms.
+The glymphatic system is a recently discovered waste clearance 
+system in the brain facilitated by the exchange of cerebrospinal fluid 
+(CSF) and interstitial fluid (ISF), primarily through aquaporin-4 
+(AQP4) channels on astrocytic end feet (Wu et al., 2024; Huang et al., 
+2024). As CSF enters the brain interstitial space, it washes away meta­
+bolic waste like amyloid-β and distributes essential nutrients such as 
+glucose, lipids, amino acids, and neuromodulators (Jessen et al., 2015; 
+Iliff et al., 2012). Importantly, glymphatic function is strongly modu­
+lated by sleep (Gędek et al., 2023). Recent studies demonstrate that the 
+glymphatic system becomes more active during sleep to enhance the 
+clearance of metabolic waste (Gędek et al., 2023; Xie et al., 2013). Sleep 
+disturbance/inadequate sleep impairs glymphatic function, leading to 
+the deposition of metabolic waste products in the brain, causing cog­
+nitive dysfunction (Kamagata et al., 2022) and neuroinflammation 
+(Jucker and Walker, 2013). Waste deposition, including amyloid-β and 
+hyperphosphorylated tau, has been found in various neurodegenera­
+tive diseases, including Alzheimer’s disease (Rasmussen et al., 2022).
+Glymphatic function has been evaluated using magnetic reso­
+nance imaging (MRI) techniques that visualise central nervous system 
+fluid flow with gadolinium-based contrast agents (Lee et al., 2022). 
+However, this method requires an invasive contrast injection, limiting 
+its feasibility for routine clinical use. To address this limitation, a 
+novel, non-invasive MRI-based method called “diffusion tensor imag­
+ing along the perivascular space” (DTI-ALPS) has been introduced 
+(Taoka et al., 2017). The DTI-ALPS index quantifies glymphatic func­
+tion by calculating the ratio of water diffusion parallel to the perivas­
+cular space versus diffusion perpendicular to it (Taoka et al., 2017). A 
+higher DTI-ALPS index is interpreted as reflecting more efficient 
+glymphatic clearance or function (Taoka et al., 2017). This technique 
+offers several key advantages: it is non-invasive and requires no con­
+trast agents, and can be acquired using standard clinical MRI scanners 
+(Wood et al., 2024). DTI-ALPS demonstrates good test–retest stability, 
+shows high intra-observer consistency (Siow et al., 2022) and is well-
+suited for broader adoption in both research and clinical practice 
+(Taoka et al., 2022).
+The DTI-ALPS index method has been used to assess the glym­
+phatic function in neurodegenerative diseases like Alzheimer’s and 
+multiple sclerosis, and other diseases such as cancer, Parkinson’s, type 
+2 diabetes mellitus, haemorrhagic stroke, and pain (Taoka et al., 2017; 
+Yang et al., 2020; Bayoumi et al., 2024; Zhang et al., 2022; Wang et al., 
+2022). Importantly, the DTI-ALPS index is also associated with the 
+Mini-Mental State exam, Montreal cognitive assessment, and motor 
+control in Alzheimer’s, Parkinson’s disease, and older adults (Park et 
+al., 2023; Bae et al., 2023). Moreover, the DTI-ALPS index was nega­
+tively correlated with Pittsburgh Sleep Quality Index (PSQI) scores, 
+indicating that poorer sleep quality is associated with worse function­
+ing of the glymphatic system (Ma et al., 2025). Disrupted sleep, such 
+as difficulty in initiating sleep and insufficient sleep duration, directly 
+impacts the glymphatic function (Ma et al., 2025; Sangalli and 
+Boggero, 2023).
+Although the glymphatic function has been studied in other neu­
+rodegenerative diseases, it has not yet been investigated in ME/CFS, 
+despite the fact that over 90% of ME/CFS experiences poor sleep qual­
+ity and cognitive dysfunction (Jackson and Bruck, 2012; Aoun Sebaiti 
+et al., 2022). A recent prospective article proposed that dysregulation 
+of the glymphatic system may contribute to the complex 
+symptomatology observed in ME/CFS (Nemat-Gorgani et al., 2025). 
+Impaired immune cells and elevated inflammatory mediators have 
+been reported in ME/CFS (Komaroff and Lipkin, 2023). These effects 
+within the perivascular space, potentially impair glymphatic clearance 
+and thereby reduce the removal of inflammatory mediators, which 
+may exacerbate neuroinflammation (Chen et al., 2025; Zou et al., 
+2024). Poor sleep and core cognitive impairment symptoms of ME/
+CFS are closely associated with glymphatic function in other condi­
+tions, yet this relationship has never been explored in ME/CFS, rep­
+resenting a critical gap in understanding its pathophysiology. 
+Furthermore, although structural interhemispheric differences have 
+been reported in ME/CFS (Zeineh et al., 2014; Thapaliya et al., 2022; 
+Thapaliya et al., 2025) that could affect glymphatic dynamics, no study 
+has investigated hemispheric asymmetry in glymphatic dysfunction 
+in ME/CFS.
+This preliminary study aims to investigate glymphatic function 
+between individuals with ME/CFS compared to healthy controls using 
+the DTI-ALPS index. In addition, we will examine asymmetry in 
+glymphatic function in ME/CFS. Finally, this study will explore the 
+association between glymphatic function and symptom severity in 
+ME/CFS, 
+providing 
+novel 
+insights 
+into 
+its 
+underlying 
+pathophysiology.
+Methods and materials
+Participant recruitment
+The study was approved by the Griffith University Human 
+Research Ethics Committee (Ref: 2022/666) and conducted in accor­
+dance with the principles outlined in the Declaration of Helsinki. 
+Written informed consent was obtained from all participants prior to 
+inclusion in the study.
+This cross-sectional study was conducted at the National Centre 
+for Neuroimmunology and Emerging Diseases (NCNED) on the Gold 
+Coast, Queensland, Australia. Participants were recruited as previ­
+ously described in Thapaliya et al. (2025). Individuals with ME/CFS 
+were recruited if they met either the Canadian Consensus Criteria 
+(CCC) or the International Consensus Criteria (ICC) for diagnosis 
+(Carruthers et al., 2003; Carruthers et al., 2011), had received a formal 
+ME/CFS diagnosis from a physician, and reported no prior history of 
+COVID-19 infection. Healthy controls were individuals with no his­
+tory of chronic illness or current medical conditions. All participants 
+were aged between 18 and 65 years of age. A detailed medical history 
+was obtained to exclude individuals with comorbidities, including 
+mental illness, malignancies, autoimmune disorders, neurological dis­
+eases, or cardiovascular conditions. Female participants who were 
+pregnant or breastfeeding were excluded. A total of 32 individuals 
+with ME/CFS and 29 healthy controls were enrolled.
+Symptom severity was assessed using a validated instrument. 
+“Illness Duration”, “Pain”, and “Physical function” were extracted from 
+SF36v2 (Alonso et al., 1995). The severity of ‘Pain’ and ‘Physical func­
+tion’ was assessed on a 0 to 100-point scale, 0 being very severe and 
+100 being no symptom. We also extracted a ‘cognitive impairment’ 
+score from the WHODAS [WHO Disability Assessment Schedule] 
+version 2.0 (Üstün, 2012) scored on a 0–100-point scale, with higher 
+scores indicating greater impairment (0 = no symptom, 100 = very 
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+03
+frontiersin.org
+severe). Additional measures included “Dr Bell’s Chronic Fatigue and 
+Immune Dysfunction Syndrome (CFIDS) Disability Scale” (Bell, 
+1995), and “Modified Fatigue Impact Scale” (Guidelines MSCP, 1998) 
+which provided an assessment of functional disability and fatigue 
+impact. The severity ratings for “fatigue”, “impaired concentration”, 
+and ‘sleep disturbance’ were obtained from the NCNED Research 
+Registry questionnaire using a 0–5 ordinal scale (0 = none, 5 very 
+severe) (Jessen et al., 2015). Detailed participant characteristics and 
+corresponding clinical and symptom severity scores are provided in 
+Tables 1, 2.
+DTI data acquisition
+Diffusion data was acquired using a 3 T Prisma MRI scanner 
+(Siemens Healthcare, Erlangen, Germany) with a 64-channel head–
+neck coil (Nova Medical, Wilmington, USA). DTI data were obtained 
+using 2-shell acquisition protocols: 30 directions at b = 1,000 s/mm2 
+and 66 directions at b = 2,500 s/mm2, along with 9 b = 0 scans. Other 
+additional acquisition parameters included repetition time/echo 
+time = 4100/75 ms, 
+field 
+of 
+view 
+(FOV) = 244 × 244, 
+matrix = 122 × 122, voxel dimension 2.0 mm3, and 66 slices. For the 
+estimation of DTI parameters, only the data acquired at b = 1,000 s/
+mm2 were used because this shell is optimal for standard DTI 
+modelling.
+DTI data processing
+DTI data was denoised using the “dwidenoise” command from 
+MRtrix3,1 which estimates spatially varying noise levels using an 
+algorithm based on random matrix theory (Cordero-Grande et al., 
+2019). Eddy current induced distortions and subject motion 
+between and within DTI volumes were corrected using the 
+“dwipreproc” command in MRtrix3, which performs affine registra­
+tion of each DTI volume to a reference b = 0 image. Following the 
+preprocessing, diffusion tensor modelling was performed using the 
+‘dtifit’ tool to compute the diffusion tensor and fractional anisotropy 
+(FA) for each participant using the FMRIB Diffusion Toolbox 
+(FDT), part of the FMRIB Software Library (FSL) (Smith et 
+al., 2004).
+DTI-ALPS index estimation
+The procedure of DTI-ALPS index estimation is shown in 
+Figure 1. Color-coded FA maps were used to precisely locate the DTI-
+ALPS regions of interest (ROIs). For each participant, ROIs were 
+manually defined as a 3 mm diameter sphere using FSLeyes (see 
+Figure 1). ROI delineation reliability was assessed via intraclass cor­
+relation coefficient (ICC) between two independent manual delinea­
+tions; all ICC values exceeded 0.90, indicating excellent reproducibility. 
+Within these ROIs, diffusivity along the x-axis was estimated as the 
+mean tensor values in areas where perivascular spaces overlap with 
+projection fibers (Dxxproj) or association fibers (Dxxassoc). These values 
+can be extracted from the pre-processed DTI data. To standardise the 
+index, the tensor value of projection fibers along the y-axis (Dyyproj) 
+1  https://www.mrtrix.org/
+(anterior to posterior) and the association fibers along the z-axis 
+(Dzzassoc) (craniocaudal) was also extracted from each ROI. The DTI-
+ALPS index was estimated for each hemisphere and was computed 
+using the formula (Taoka et al., 2017)
+	
+(
+)
+(
+)
+−
+=
+mean D
+,
+ 
+mean
+,
+xxproj
+xxasso
+yyproj
+zzasso
+D
+DTI
+ALPS index
+D
+D
+Asymmetry index was estimated using the formula (Li et al., 2025)
+	
+(
+)
+−
+=
++
+left DTI_ ALPS
+right DTI_ ALPS
+ 
+left DTI_ ALPS
+right DTI_ ALPS /2
+Assytmetry Index
+Finally, the bilateral (left and right hemisphere) DTI-ALPS indices 
+were averaged to obtain a single, whole-brain DTI-ALPS index per 
+participant. We estimated the DTI-ALPS index from 31 ME/CFS and 
+27 healthy controls. One ME/CFS and two healthy controls were 
+excluded from the study due to motion artefact.
+Statistical analysis
+Clinical scores for individuals with ME/CFS and healthy con­
+trols are presented as mean ± standard deviation. Group compari­
+sons of the DTI-ALPS index between ME/CFS and healthy controls, 
+as well as between left and right hemispheres within each group, 
+were assessed using the general linear model. The Shapiro–Wilk test 
+was used to evaluate data normality, which indicated that the DTI-
+ALPS index was normally distributed (p > 0.05). In contrast, clini­
+cal and severity measures (Table 1) were non-normally distributed; 
+therefore, group analyses of clinical measures were performed using 
+Quade’s non-parametric ANCOVA. To evaluate the association 
+between glymphatic function (DTI-ALPS index) and symptom 
+severity, we computed Spearman’s rank correlation coefficients 
+between the DTI-ALPS index and severity scores for fatigue, sleep 
+disturbance, and concentration, given the non-normal distribution 
+TABLE 1  Demographic and clinical characteristics of individuals with ME/CFS and healthy 
+controls.
+Demographic 
+and clinical 
+characteristics
+ME/CFS 
+(n = 31)
+Healthy 
+controls 
+(n = 27)
+p-value
+Age
+42.95 ± 13.51
+37.92 ± 10.9
+0.12
+Sex (F/M)
+21/10
+19/8
+N/A
+BMI
+24.43 ± 4.35
+24.26 ± 2.56
+0.96
+Duration (years)
+14.32 ± 11.29
+N/A
+N/A
+Pain
+51.07 ± 25.09
+88.07 ± 18.05
+<0.001
+Cognitive
+49.9 ± 16.93
+5.53 ± 12.42
+<0.001
+Physical function
+38.57 ± 27.51
+93.65.0 ± 20.02
+<0.001
+Bell disability score
+39.13 ± 14.43
+97.91 ± 6.58
+<0.001
+MFIS
+64.37 ± 10.76
+7.48 ± 12.24
+<0.001
+F, Female; M, male; MFIS, Modified Fatigue Impact Scale.
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+04
+frontiersin.org
+of the severity measures. Age and sex were included as covariates in 
+all group comparisons and correlation analyses to control for their 
+potential confounding effects. All statistical analyses were con­
+ducted using SPSS Statistics (version 29). Multiple comparison cor­
+rection was applied using the False Discovery Rate (FDR) method 
+(Benjamini and Hochberg, 1995) across three distinct families of 
+tests: (1) DTI-ALPS values, (2) clinical measures, and (3) correla­
+tions with severity scores. Statistical significance was defined as 
+defined as p-FDR <0.05.
+Results
+Clinical and symptom characteristics
+Detailed clinical symptom severity scores of ME/CFS are provided 
+in Tables 1, 2. The majority of participants in this study were female 
+ME/CFS (21 out of 31), healthy controls (19 out of 27). The age and 
+body mass index (BMI) were comparable between ME/CFS and 
+healthy controls (see Table 1). Most of the participants completed an 
+online questionnaire before visiting the MRI scanning sites. ME/CFS 
+experienced significantly higher ‘pain’ (p = <0.001), and impaired 
+‘cognitive function’, ‘physical function’, ‘Bell disability’ score, and 
+‘Modified Fatigue Impact Scale’ (all p = <0.001) compared to healthy 
+controls (see Table 1).
+The most commonly reported symptoms among ME/CFS were 
+‘fatigue’ (28 out of 29, 96.6%); ‘impaired concentration’ (26 out of 29, 
+89.6%), and ‘sleep disturbance’ (23 out of 29, 79.3%). These symptoms 
+were rated from moderate to very severe (see Table 2). Only 3 out of 
+29 (10.3%) ME/CFS reported impaired concentration of very mild or 
+mild severity (see Table 2).
+DTI-ALPS index ME/CFS vs. healthy controls
+We found significantly lower global DTI-ALPS index in ME/CFS 
+(1.44 ± 0.086) compared to healthy controls (1.51 ± 0.11, p = 0.014, 
+p-FDR = 0.028) (see Figure 2A). When comparing unilateral DTI-
+ALPS index between ME/CFS and healthy controls, we found signifi­
+cant difference in the right DTI-ALPS index ME/CFS (1.41 ± 0.097) 
+compared to healthy controls (1.49 ± 0.12; p = 0.009, p-FDR = 0.028) 
+(see Figure 2B; Table 3). However, no significant difference was found 
+TABLE 2  Prevalence of ME/CFS symptom severity scores obtained from a self-reported questionnaire.
+Severity
+None
+Very mild
+Mild
+Moderate
+Severe
+Very severe
+Missing data
+Fatigue
+3.4% (1/29)
+41.4% (12/29)
+34.4% (10/19)
+20.7% (6/29)
+2
+Concentration
+3.4% (1/29)
+6.9% (2/29)
+44.8% (13/29)
+27.6% (8/29)
+17.2% (5/29)
+2
+Sleep disturbance
+20.7% (6/29)
+41.4% 12/29
+31% 9/29
+6.9% (2/29)
+2
+Data of two ME/CFS were missing for each symptom severity measure.
+FIGURE 1
+Position of regions of interest for DTI-ALPS index calculations on a color-coded fractional anisotropy map. Spherical ROIs (3 mm diameter) were 
+positioned in the projection and association tracts. Dxx: left to right direction, Dyy: anterior to posterior direction, and Dzz: craniocaudal direction. PVS 
+-perivascular space, L = left and R = right.
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+05
+frontiersin.org
+in the left hemisphere DTI-ALPS index between the two groups (see 
+Table 3).
+Asymmetric DTI-ALPS index in ME/CFS and 
+health controls
+We found a significantly asymmetric DTI-ALPS index among 
+ME/CFS (see Figure 3A). The right hemisphere DTI-ALPS index 
+was significantly lower compared to the left hemisphere (left: 
+1.47 ± 0.11, right: 1.40 ± 0.097, p = 0.012, p-FDR = 0.028). In con­
+trast, no significant difference in the DTI-ALPS index were 
+observed between left and right hemisphere (left: 1.53 ± 0.13, 
+right: 1.49 ± 0.12, p = 0.261) in healthy controls (see Figure 3B; 
+Table 3). Additionally, we observed a trend toward rightward 
+asymmetry, however, the asymmetry index was not significant 
+between ME/CFS and healthy controls (ME/CFS = 0.047 ± 0.08; 
+healthy controls = 0.026 ± 0.088; p = 0.357).
+Correlations with severity measures
+In ME/CFS we found a significant negative association between 
+“sleep disturbance” severity and global DTI-ALPS index (p = 0.013, 
+FIGURE 2
+DTI-ALPS index estimated in ME/CFS and healthy controls. (A) Demonstrate significantly lower DTI-ALPS index in ME/CFS compared to healthy 
+controls. (B) Shows significantly lower DTI-ALPS index in the right hemisphere of ME/CFS compared to healthy controls.
+TABLE 3  Statistical comparison of DTI-ALPS indices between ME/CFS and healthy controls.
+Metrics
+ME/CFS
+Healthy 
+controls
+p-value
+Confidence interval
+Cohen’s d 
+effect size
+Lower bound
+Upper bound
+Group comparison
+Global DTI-ALPS
+1.44 ± 0.86
+1.51 ± 0.11
+0.014*
+−0.122
+−0.014
+0.107
+Right DTI-ALPS
+1.41 ± 0.97
+1.49 ± 0.12
+0.009*
+−0.144
+−0.022
+0.119
+Left DTI-ALPS
+1.47 ± 0.11
+1.53 ± 0.13
+0.116
+−0.119
+0.013
+0.045
+Left vs. Right within ME/CFS
+Left DTI-ALPS
+1.47 ± 0.11
+0.012*
+0.015
+0.0121
+0.66
+Right DTI-ALPS
+1.40 ± 0.097
+Left vs. Right within Healthy Controls
+Left DTI-ALPS
+1.53 ± 0.13
+0.261
+−0.030
+0.111
+0.309
+Right DTI-ALPS
+1.49 ± 0.12
+Asymmetry index
+ME/CFS
+Healthy controls
+Asymmetry Index DTI-ALPS
+0.047 ± 0.08
+0.026 ± 0.088
+0.357
+−0.025
+0.068
+0.016
+*represents the statistically significance after adjusting for multiple comparisons using the false discovery rate.
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+06
+frontiersin.org
+r = −0.47; see Figure 4A). Global DTI-ALPS index was also inversely 
+correlated with ‘impaired concentration’ (p = 0.026, r = −0.43; see 
+Figure 4B). However, there were no associations between the unilat­
+eral DTI-ALPS index or the global DTI-ALPS index and other symp­
+tom severity measures including, “fatigue”, “severity”, “illness 
+duration”, “pain”, “cognitive”, and “physical function” in ME/CFS.
+Discussion
+Our study is among the first to evaluate the DTI-ALPS index 
+in ME/CFS, revealing a potential reduction in glymphatic function. 
+We found that the DTI-ALPS index was significantly lower in ME/
+CFS compared to healthy controls, indicating impaired glymphatic 
+clearance. Furthermore, a lower DTI-ALPS index was significantly 
+associated with sleep disturbance and impaired concentration. 
+These findings suggest that glymphatic dysfunction could poten­
+tially contribute to the neurological symptoms experienced 
+by ME/CFS.
+Reduced glymphatic function measured by using the DTI-ALPS 
+method has been reported in brain-related diseases such as 
+Parkinson’s disease, cerebral small vessel disease, Alzheimer’s, 
+dementia, and multiple sclerosis (Taoka et al., 2017; Yang et al., 
+2020; Bayoumi et al., 2024; Zhang et al., 2022; Wang et al., 2022). 
+However, due to the current lack of prior studies on glymphatic 
+function in ME/CFS, direct comparison with our findings is not yet 
+possible. The observed reduced glymphatic function in ME/CFS 
+could be due to multiple factors, including sleep deprivation, 
+reduced physical activity, elevated stress, Omega-3, or hypertension 
+(Gędek et al., 2023). It is well established that glymphatic function 
+is more active during sleep and plays a critical role in clearing meta­
+bolic waste from the brain (Jessen et al., 2015). Disrupted or insuf­
+ficient sleep experienced by ME/CFS (Jackson and Bruck, 2012) 
+FIGURE 3
+The DTI-ALPS index values in the left and right hemispheres. (A) Shows significantly lower DTI-ALPS index in the right hemisphere of ME/CFS compared 
+to the left hemisphere. (B) Shows no significant differences in the DTI-ALPS index in healthy controls between the left and right hemispheres.
+FIGURE 4
+Demonstrate the correlation between DTI-ALPS index and severity measures. (A) Shows global DTI-ALPS index was significantly associated with sleep 
+disturbance scores. (B) Demonstrate global DTI-ALPS index was significantly associated severity of concentration.
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+07
+frontiersin.org
+may directly impair glymphatic clearance. Additionally, other 
+common ME/CFS symptoms may further suppress glymphatic 
+function. Kimura et al. (2023) reported that free water corrected 
+DTI metrics were observed over a wider extent in ME/CFS. Since, 
+free water is present in the deep brain parenchyma, this could also 
+affect the glymphatic system in ME/CFS. Physical activity (Hayes et 
+al., 2025), stress (Balinas et al., 2021), hypertension (Denu et al., 
+2025) that are common symptoms in ME/CFS have all been associ­
+ated with reduced glymphatic function (Gędek et al., 2023). Animal 
+studies in mice demonstrated that voluntary exercise enhances 
+glymphatic clearance (von Holstein-Rathlou et al., 2018) while 
+higher stress impairs glymphatic flow (Wei et al., 2019). Similarly, 
+in humans, hypertension patients showed reduced perivascular 
+space compared to healthy controls (Kikuta et al., 2022) resulting 
+in glymphatic dysfunction. Furthermore, in ME/CFS, a lack of 
+Omega-3 (Maes et al., 2005) may further disrupt glymphatic func­
+tion. Omega-3 acids are known to improve glymphatic function by 
+promoting waste removal and facilitating chemical exchange in the 
+brain (Zhang et al., 2020).
+Additionally, we found that only the right hemisphere 
+DTI-ALPS index was significantly lower in ME/CFS com­
+pared to healthy controls, with no differences observed in the 
+left hemisphere. This kind of hemispheric asymmetry in the 
+DTI-ALPS index has been previously reported in patients 
+with temporal lobe epilepsy, Parkinson’s disease, and in amyo­
+trophic lateral sclerosis compared to healthy controls (Zhang 
+et al., 2022; Li et al., 2025; Baek et al., 2025). ME/CFS is a 
+progressive multisystem illness, and factors such as severe 
+physical deconditioning and chronic sleep disturbances may 
+contribute to this asymmetry. Furthermore, within ME/CFS, 
+we found that right hemisphere DTI-ALPS was significantly 
+lower compared to the left indicating lateralised impairment 
+of glymphatic function. Similarly, in Parkinson’s disease, the 
+right hemisphere DTI-ALPS index was lower than the left (Li 
+et al., 2025). Supporting the plausibility of asymmetry in ME/
+CFS, prior neuroimaging studies have found an asymmetric 
+cortical thickness and cortical volume (Thapaliya et al., 2022; 
+Thapaliya et al., 2025).
+This study further confirms the lateralised dysfunction of 
+glymphatic function in ME/CFS. However, the underlying mecha­
+nism driving this right-hemisphere predominant glymphatic dys­
+function in ME/CFS remains unknown and further research 
+is needed.
+Correlations with severity measures
+Our study found a significant negative correlation between 
+‘sleep disturbance’ scores and the DTI-ALPS index in ME/CFS, 
+indicating that greater severity of sleep disruption is associated 
+with reduced glymphatic function in ME/CFS. Prior research in 
+Alzheimer’s, traumatic brain injury, stroke, migraine, and epilepsy 
+has consistently shown that sleep problems and disorders disrupt 
+glymphatic function (Christensen et al., 2021). Importantly, a 
+recent study has demonstrated that glymphatic clearance is 90% 
+more active during sleep than during wakefulness (Xie et al., 
+2013). Therefore, one of the core functions of sleep is to clear the 
+brain’s metabolic waste via the glymphatic system that 
+accumulates during wakefulness (Jessen et al., 2015). This strongly 
+supports our findings in ME/CFS because sleep disturbance is one 
+of the major symptoms of this illness. This could accumulate 
+metabolic waste products in the brain, potentially triggering neu­
+roinflammation and contributing to the diverse neurological 
+symptoms experienced by ME/CFS. Furthermore, we found a 
+significant negative correlation between ‘impaired concentration’ 
+and DTI-ALPS index in ME/CFS, indicating that reduced glym­
+phatic function is associated with greater cognitive impairment. 
+This relationship has been observed in Alzheimer’s (Kamagata et 
+al., 2022), Schizophrenia (Wu et al., 2025), and cerebral small 
+vessel disease (Tang et al., 2022). In ME/CFS, one of the possible 
+underlying mechanisms of cognitive impairment could be the 
+accumulation of metabolic waste products in the brain due to 
+glymphatic dysfunction. Studies have shown that the glymphatic 
+system not only clears pathological proteins but also iron (Iliff et 
+al., 2012; Ishida et al., 2022). Due to glymphatic dysfunction, 
+deposition of these substances and inflammatory mediators may 
+trigger and further increase neuroinflammation (Jucker and 
+Walker, 2013). Therefore, glymphatic dysfunction contributes to 
+the deposition of metabolic waste products and sustained neuro­
+inflammation, potentially causing neurological symptoms 
+in ME/CFS.
+Despite these valuable findings, our study has some limitations. 
+First, this is a cross-sectional study with a relatively small sample 
+size. Second, a longitudinal study is needed to investigate whether 
+glymphatic dysfunction is progressive or stable. Third, glymphatic 
+function is influenced by handedness (Perlaki et al., 2025) and 
+sleeping position (Lee et al., 2015), which were not controlled for 
+or measured in this study. Furthermore, the estimation of DTI-
+ALPS index could also be affected by manual ROI placement and 
+algorithm-dependent calculation, for example FA based versus fiber 
+tractography, and by sex (Clark et al., 2024). However, due to the 
+uneven sex distribution and small sample size of our cohort, we 
+were unable to explore these dimensions. Therefore, future studies 
+should prioritise a larger sample size with balanced cohorts to vali­
+date our findings.
+Conclusion
+We provide the first evidence of glymphatic dysfunction in 
+ME/CFS compared to healthy controls and its association with 
+symptom severity measures, including sleep disturbance and 
+impaired concentration. These findings suggest that glymphatic 
+dysfunction may contribute to the accumulation of metabolic 
+waste products in the brain that may trigger or sustain neuroin­
+flammation, ultimately leading to the neurological symptoms 
+experienced by ME/CFS.
+Data availability statement
+The raw data supporting the conclusions of this article will be 
+made available by the authors, without undue reservation.
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+08
+frontiersin.org
+Ethics statement
+The studies involving humans were approved by Griffith 
+University Human Research Ethics Committee (Ref: 2022/666). The 
+studies were conducted in accordance with the local legislation and 
+institutional requirements. The participants provided their written 
+informed consent to participate in this study.
+Author contributions
+KT: Data curation, Methodology, Validation, Formal analysis, 
+Investigation, Writing  – review & editing, Conceptualization, 
+Writing – original draft, Funding acquisition. SM-G: Supervision, 
+Funding acquisition, Writing – review & editing. MI: Writing – review 
+& editing, Data curation. LB: Supervision, Writing – review & editing, 
+Funding acquisition.
+Funding
+The author(s) declared that financial support was received for this 
+work and/or its publication. This research was funded by ME Research 
+UK (SCIO Charity Number SC036942) with the financial support of 
+The Fred and Joan Davies Bequest and The Stafford Fox Medical 
+Research Foundation (489798).
+Acknowledgments
+We are thankful to Tania Manning and Kay Schwarz for recruiting 
+participants for this study, to the radiographers at the University of 
+Queensland, and to all the participants who donated their time and 
+effort to participate in this study.
+Conflict of interest
+The author(s) declared that this work was conducted in the 
+absence of any commercial or financial relationships that could be 
+construed as a potential conflict of interest.
+Generative AI statement
+The author(s) declared that Generative AI was not used in the 
+creation of this manuscript.
+Any alternative text (alt text) provided alongside figures in this 
+article has been generated by Frontiers with the support of artificial 
+intelligence and reasonable efforts have been made to ensure accuracy, 
+including review by the authors wherever possible. If you identify any 
+issues, please contact us.
+Publisher’s note
+All claims expressed in this article are solely those of the authors 
+and do not necessarily represent those of their affiliated organizations, 
+or those of the publisher, the editors and the reviewers. Any product 
+that may be evaluated in this article, or claim that may be made by its 
+manufacturer, is not guaranteed or endorsed by the publisher.
+References
+Alonso, J., Prieto, L., and Anto, J. M. (1995). The Spanish version of the SF-36 health 
+survey (the SF-36 health questionnaire): an instrument for measuring clinical results. 
+Med. Clin. 104, 771–776.
+Aoun Sebaiti, M., Hainselin, M., Gounden, Y., Sirbu, C. A., Sekulic, S., Lorusso, L., et al. 
+(2022). Systematic review and meta-analysis of cognitive impairment in myalgic encepha­
+lomyelitis/chronic fatigue syndrome (ME/CFS). Sci. Rep. 12:2157. doi: 10.1038/
+s41598-021-04764-w
+Bae, Y. J., Kim, J. M., Choi, B. S., Choi, J. H., Ryoo, N., Song, Y. S., et al. (2023). Glymphatic 
+function assessment in Parkinson’s disease using diffusion tensor image analysis along 
+the perivascular space. Parkinsonism Relat. Disord. 114:105767. doi: 10.1016/j.
+parkreldis.2023.105767
+Baek, S. H., Tae, W. S., Park, J. W., and Kim, B. J. (2025). Assessment of the glymphatic 
+dysfunction in amyotrophic lateral sclerosis using the diffusion tensor imaging along the 
+perivascular spaces index: a pilot study. Front. Aging Neurosci. 17:1570327. doi: 10.3389/
+fnagi.2025.1570327/full
+Balinas, C., Eaton-Fitch, N., Maksoud, R., Staines, D., and Marshall-Gradisnik, S. (2021). 
+Impact of life stressors on Myalgic encephalomyelitis/chronic fatigue syndrome symp­
+toms: an Australian longitudinal study. Int. J. Environ. Res. Public Health 18:10614. doi: 
+10.3390/ijerph182010614
+Bayoumi, A., Hasan, K. M., Thomas, J. A., Yazdani, A., and Lincoln, J. A. (2024). 
+Glymphatic dysfunction in multiple sclerosis and its association with disease pathology 
+and disability. Mult. Scler. 30, 1609–1619. doi: 10.1177/13524585241280842
+Bell, DS. The Doctor’s Guide to Chronic Fatigue Syndrome: Understanding, Treating, and 
+Living with CFIDS. Tokyo: Addison-Wesley Pub. Co. (1995)
+Benjamini, Y., and Hochberg, Y. (1995). Controlling the false discovery rate: a practical 
+and powerful approach to multiple testing. J. R. Stat. Soc. Ser. B Stat. Methodol. 57, 
+289–300. doi: 10.1111/j.2517-6161.1995.tb02031.x
+Carruthers, B. M., Jain, A. K., De Meirleir, K. L., Peterson, D. L., Klimas, N. G., 
+Lerner, A. M., et al. (2003). Myalgic encephalomyelitis/chronic fatigue syndrome: clinical 
+working case definition, diagnostic and treatment protocols. J. Chronic Fatigue Syndr. 11, 
+7–115. doi: 10.1300/J092v11n01_02
+Carruthers, B. M., Meirleir, K. L. D., Klimas, N. G., Broderick, G., Mitchell, T., and 
+Staines, D. (2011). Myalgic encephalomyelitis: international consensus criteria. J. Intern. 
+Med. 270, 327–338. doi: 10.1111/j.1365-2796.2011.02428.x
+Chen, S., Wang, H., Zhang, L., Xi, Y., Lu, Y., Yu, K., et al. (2025). Glymphatic system: a 
+self-purification circulation in brain. Front. Cell. Neurosci. 19:1528995. doi: 10.3389/
+fncel.2025.1528995/full
+Christensen, J., Yamakawa, G. R., Shultz, S. R., and Mychasiuk, R. (2021). Is the glym­
+phatic system the missing link between sleep impairments and neurological disorders? 
+Examining the implications and uncertainties. Prog. Neurobiol. 198:101917. doi: 10.1016/j.
+pneurobio.2020.101917
+Clark, O., Delgado-Sanchez, A., Cullell, N., Correa, S. A. L., Krupinski, J., and Ray, N. 
+(2024). Diffusion tensor imaging analysis along the perivascular space in the UK biobank. 
+Sleep Med. 119, 399–405. doi: 10.1016/j.sleep.2024.05.007
+Cordero-Grande, L., Christiaens, D., Hutter, J., Price, A. N., and Hajnal, J. V. (2019). 
+Complex diffusion-weighted image estimation via matrix recovery under general noise 
+models. NeuroImage 200, 391–404. doi: 10.1016/j.neuroimage.2019.06.039
+Denu, M. K. I., Revoori, R., Eghan, C., Kwapong, F. L., Hillman, A., Normeshie, C. A., 
+et al. (2025). Association between chronic fatigue syndrome/myalgic encephalomyelitis 
+and cardiovascular disease. Sci. Rep. 15:2294. doi: 10.1038/s41598-025-86609-4
+Gędek, A., Koziorowski, D., and Szlufik, S. (2023). Assessment of factors influencing 
+glymphatic activity and implications for clinical medicine. Front. Neurol. 14:1232304. doi: 
+10.3389/fneur.2023.1232304
+Guidelines MSCP (1998). Fatigue and multiple Sclerosis: Evidence-based Management 
+Strategies for Fatigue in multiple Sclerosis. Washington: Paralyzed Veterans of America.
+Hayes, L. D., Sanal-Hayes, N. E. M., Mclaughlin, M., Berry, E. C. J., and Sculthorpe, N. F. 
+(2025). People with long Covid and ME/CFS exhibit similarly impaired balance and 
+
+Thapaliya et al.
+10.3389/fnins.2026.1875420
+Frontiers in Neuroscience
+09
+frontiersin.org
+physical capacity: a case-case-control study. Am. J. Med. 138, 140–147. doi: 10.1016/j.
+amjmed.2023.06.028
+Huang, S. Y., Zhang, Y. R., Guo, Y., Du, J., Ren, P., Wu, B. S., et al. (2024). Glymphatic 
+system dysfunction predicts amyloid deposition, neurodegeneration, and clinical progres­
+sion in Alzheimer’s disease. Alzheimers Dement. 20, 3251–3269. doi: 10.1002/alz.13789
+Iliff, J. J., Wang, M., Liao, Y., Plogg, B. A., Peng, W., Gundersen, G. A., et al. (2012). A 
+Paravascular pathway facilitates CSF flow through the brain parenchyma and the clear­
+ance of interstitial solutes, including amyloid β. Sci. Transl. Med. 4:147ra111. doi: 10.1126/
+scitranslmed.3003748
+Ishida, K., Yamada, K., Nishiyama, R., Hashimoto, T., Nishida, I., Abe, Y., et al. (2022). 
+Glymphatic system clears extracellular tau and protects from tau aggregation and neuro­
+degeneration. J. Exp. Med. 219:e20211275. doi: 10.1084/jem.20211275
+Jackson, M. L., and Bruck, D. (2012). Sleep abnormalities in chronic fatigue syndrome/
+Myalgic encephalomyelitis: a review. J. Clin. Sleep Med. 8, 719–728. doi: 10.5664/
+jcsm.2276
+Jessen, N. A., Munk, A. S. F., Lundgaard, I., and Nedergaard, M. (2015). The Glymphatic 
+system: a beginner’s guide. Neurochem. Res. 40, 2583–2599. doi: 10.1007/
+s11064-015-1581-6
+Jucker, M., and Walker, L. C. (2013). Self-propagation of pathogenic protein aggregates 
+in neurodegenerative diseases. Nature 501, 45–51. doi: 10.1038/nature12481
+Kamagata, K., Andica, C., Takabayashi, K., Saito, Y., Taoka, T., Nozaki, H., et al. (2022). 
+Association of MRI indices of glymphatic system with amyloid deposition and cognition 
+in mild cognitive impairment and Alzheimer disease. Neurology 99, e2648–e2660. doi: 
+10.1212/wnl.0000000000201300
+Kikuta, J., Kamagata, K., Takabayashi, K., Taoka, T., Yokota, H., Andica, C., et al. (2022). 
+An investigation of water diffusivity Changes along the perivascular space in elderly sub­
+jects with hypertension. AJNR Am. J. Neuroradiol. 43, 48–55. doi: 10.3174/ajnr.A7334
+Kimura, Y., Sato, W., Maikusa, N., Ota, M., Shigemoto, Y., Chiba, E., et al. (2023). Free-
+water-corrected diffusion and adrenergic/muscarinic antibodies in myalgic encephalo­
+myelitis/chronic fatigue syndrome. J. Neuroimaging. 3, 845–51. doi: 10.1111/jon.13128
+Komaroff, A. L., and Lipkin, W. I. M. E./. (2023). ME/CFS and long COVID share similar 
+symptoms and biological abnormalities: road map to the literature. Front. Med. 
+10:1187163. doi: 10.3389/fmed.2023.1187163
+Lee, M. K., Cho, S. J., Bae, Y. J., and Kim, J. M. (2022). MRI-based demonstration of the 
+Normal Glymphatic system in a human population: a systematic review. Front. Neurol. 
+13:827398. doi: 10.3389/fneur.2022.827398/full
+Lee, H., Xie, L., Yu, M., Kang, H., Feng, T., Deane, R., et al. (2015). The effect of body 
+posture on brain Glymphatic transport. J. Neurosci. 35, 11034–11044. doi: 10.1523/
+JNEUROSCI.1625-15.2015
+Li, Z., Miao, X., Zhang, Q., Shen, J., Jia, Y., Ge, S., et al. (2025). Diffusion–tensor MRI 
+study of the relationship between glymphatic system asymmetry and onset lateralization 
+in Parkinson’s disease. NPJ Parkinsons Dis. 11:218. doi: 10.1038/s41531-025-01074-0
+Ma, J., Chen, M., Liu, G. H., Gao, M., Chen, N. H., Toh, C. H., et al. (2025). Effects of sleep 
+on the glymphatic functioning and multimodal human brain network affecting memory 
+in older adults. Mol. Psychiatry 30, 1717–1729. doi: 10.1038/s41380-024-02778-0
+Maes, M., Mihaylova, I., and Leunis, J. C. (2005). In chronic fatigue syndrome, the 
+decreased levels of omega-3 poly-unsaturated fatty acids are related to lowered serum zinc 
+and defects in T cell activation. Neuro Endocrinol. Lett. 26, 745–751
+Nemat-Gorgani, M., Jensen, M. A., and Davis, R. W. (2025). Glymphatic system dysregu­
+lation as a key contributor to Myalgic encephalomyelitis/chronic fatigue syndrome. Int. 
+J. Mol. Sci. 26:11524. doi: 10.3390/ijms262311524
+Park, C. J., Kim, S. Y., Kim, J. H., Son, N. H., Park, J. Y., Jeong, Y. H., et al. (2023). 
+Evaluation of glymphatic system activity using diffusion tensor image analysis along 
+the perivascular space and amyloid PET in older adults with objectively normal cogni­
+tion: a preliminary study. Front. Aging Neurosci. 15:1221667. doi: 10.3389/
+fnagi.2023.1221667
+Perlaki, G., Dudás, B., Horváth, R., Orsi, G., Darnai, G., Arató, Á., et al. (2025). Diffusion 
+along the perivascular space influenced by handedness and language lateralisation. Brain 
+Commun. 7:fcaf252. doi: 10.1093/braincomms/fcaf252
+Rasmussen, M. K., Mestre, H., and Nedergaard, M. (2022). Fluid transport in the brain. 
+Physiol. Rev. 102, 1025–1151. doi: 10.1152/physrev.00031.2020
+Sangalli, L., and Boggero, I. A. (2023). The impact of sleep components, quality and pat­
+terns on glymphatic system functioning in healthy adults: a systematic review. Sleep Med. 
+101, 322–349. doi: 10.1016/j.sleep.2022.11.012
+Siow, T. Y., Toh, C. H., Hsu, J. L., Liu, G. H., Lee, S. H., Chen, N. H., et al. (2022). 
+Association of Sleep, neuropsychological performance, and gray matter volume with 
+Glymphatic function in community-dwelling older adults. Neurology 98, e829–e838. doi: 
+10.1212/WNL.0000000000013215
+Smith, S. M., Jenkinson, M., Woolrich, M. W., Beckmann, C. F., Behrens, T. E. J., 
+Johansen-Berg, H., et al. (2004). Advances in functional and structural MR image analysis 
+and implementation as FSL. NeuroImage 23, S208–S219. doi: 10.1016/j.
+neuroimage.2004.07.051
+Tang, J., Zhang, M., Liu, N., Xue, Y., Ren, X., Huang, Q., et al. (2022). The association 
+between Glymphatic system dysfunction and cognitive impairment in cerebral small 
+vessel disease. Front. Aging Neurosci. 14:916633. doi: 10.3389/fnagi.2022.916633
+Taoka, T., Ito, R., Nakamichi, R., Kamagata, K., Sakai, M., Kawai, H., et al. (2022). 
+Reproducibility of diffusion tensor image analysis along the perivascular space (DTI-
+ALPS) for evaluating interstitial fluid diffusivity and glymphatic function: CHanges in 
+Alps index on multiple conditiON acquIsition eXperiment (CHAMONIX) study. Jpn. J. 
+Radiol. 40, 147–158. doi: 10.1007/s11604-021-01187-5
+Taoka, T., Masutani, Y., Kawai, H., Nakane, T., Matsuoka, K., Yasuno, F., et al. (2017). 
+Evaluation of glymphatic system activity with the diffusion MR technique: diffusion 
+tensor image analysis along the perivascular space (DTI-ALPS) in Alzheimer’s disease 
+cases. Jpn. J. Radiol. 35, 172–178. doi: 10.1007/s11604-017-0617-z
+Thapaliya, K., Marshall-Gradisnik, S., Eaton-Fitch, N., Barth, M., Inderyas, M., and 
+Barnden, L. (2025). Hippocampal subfield volume alterations and associations with sever­
+ity measures in long COVID and ME/CFS: a 7T MRI study. PLoS One 20:e0316625. doi: 
+10.1371/journal.pone.0316625
+Thapaliya, K., Marshall-Gradisnik, S., Staines, D., Su, J., and Barnden, L. (2022). Alteration 
+of cortical volume and thickness in Myalgic encephalomyelitis/chronic fatigue syndrome. 
+Front. Neurosci. 16:848730. doi: 10.3389/fnins.2022.848730
+Üstün, T. B. (2012). Measuring Health and Disability: Manual for WHO Disability 
+Assessment Schedule WHO DAS 2.0. Geneva: World Health Organization.
+von Holstein-Rathlou, S., Petersen, N. C., and Nedergaard, M. (2018). Voluntary running 
+enhances glymphatic influx in awake behaving, young mice. Neurosci. Lett. 662, 253–258. 
+doi: 10.1016/j.neulet.2017.10.035
+Wang, A., Chen, L., Tian, C., Yin, X., Wang, X., Zhao, Y., et al. (2022). Evaluation of the 
+Glymphatic system with diffusion tensor imaging-along the perivascular space in Cancer 
+pain. Front. Neurosci. 16:823701. doi: 10.3389/fnins.2022.823701
+Wei, F., Song, J., Zhang, C., Lin, J., Xue, R., Shan, L. D., et al. (2019). Chronic stress impairs 
+the aquaporin-4-mediated glymphatic transport through glucocorticoid signaling. 
+Psychopharmacology 236, 1367–1384. doi: 10.1007/s00213-018-5147-6
+Wood, K. H., Nenert, R., Miften, A. M., Kent, G. W., Sleyster, M., Memon, R. A., et al. 
+(2024). Diffusion tensor imaging-along the perivascular-space index is associated with 
+disease progression in Parkinson’s disease. Mov. Disord. 39, 1504–1513. doi: 10.1002/
+mds.29908
+Wu, C. H., Chang, F. C., Wang, Y. F., Lirng, J. F., Wu, H. M., Pan, L. L. H., et al. (2024). 
+Impaired Glymphatic and meningeal lymphatic functions in patients with chronic 
+migraine. Ann. Neurol. 95, 583–595. doi: 10.1002/ana.26842
+Wu, H., Liu, B., Liu, W. V., Wen, Z., Yang, W., Yang, H., et al. (2025). Glymphatic system 
+dysfunction correlated with gut dysbiosis and cognitive impairment in schizophrenia. 
+Schizophr. 11:113. doi: 10.1038/s41537-025-00661-7
+Xie, L., Kang, H., Xu, Q., Chen, M. J., Liao, Y., Thiyagarajan, M., et al. (2013). Sleep drives 
+metabolite clearance from the adult brain. Science 342, 373–377. doi: 10.1126/
+science.1241224
+Yang, G., Deng, N., Liu, Y., Gu, Y., and Yao, X. (2020). Evaluation of Glymphatic system 
+using diffusion MR technique in T2DM cases. Front. Hum. Neurosci. 14:300. doi: 10.3389/
+fnhum.2020.00300
+Zeineh, M. M., Kang, J., Atlas, S. W., Raman, M. M., Reiss, A. L., Norris, J. L., et al. (2014). 
+Right arcuate fasciculus abnormality in chronic fatigue syndrome. Radiology 274, 
+517–526. doi: 10.1148/radiol.14141079
+Zhang, C., Sha, J., Cai, L., Xia, Y., Li, D., Zhao, H., et al. (2022). Evaluation of the 
+Glymphatic system using the DTI-ALPS index in patients with spontaneous intracerebral 
+Haemorrhage. Oxidative Med. Cell. Longev. 2022:2694316. doi: 10.1155/2022/2694316
+Zhang, E., Wan, X., Yang, L., Wang, D., Chen, Z., Chen, Y., et al. (2020). Omega-3 poly­
+unsaturated fatty acids alleviate traumatic brain injury by regulating the Glymphatic 
+pathway in mice. Front. Neurol. 11:707. doi: 10.3389/fneur.2020.00707
+Zou, K., Deng, Q., Zhang, H., and Huang, C. (2024). Glymphatic system: a gateway for 
+neuroinflammation. Neural Regen. Res. 19, 2661–2672. doi: 10.4103/1673-5374.391312
