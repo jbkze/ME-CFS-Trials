@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-09",
+  "last_check": "2026-07-11",
   "papers": [
+    {
+      "id": "dehlia-2026-gene-expression-drug-repurposing",
+      "title": "Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) gene expression signatures for the identification of compounds targeting metabolism",
+      "authors": "Dehlia A, Alizada Z, Guthridge MA",
+      "journal": "Research Square (preprint, not yet peer-reviewed)",
+      "date": "Jul 2026",
+      "summary": "Researchers combined two separate sets of ME/CFS patients' gene-activity data to find a shared pattern of 46 genes that behave differently in ME/CFS, then used a computer search to find existing drugs that might reverse that pattern. Three of the four candidate drugs — including pioglitazone, an already-approved diabetes medicine — gave a modest boost to energy production when tested on muscle cells grown in the lab.",
+      "why": "Flags specific already-approved drugs that target how cells produce energy, which could be tested in ME/CFS patients faster than developing a brand-new drug, and adds independent computational support to the energy-production theory of ME/CFS.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10076074/v1",
+      "first_seen": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "flags": [],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted Research Square Jul 5, 2026. Datasets GSE14577 and GSE227375; CMap L1000 drug-repurposing analysis; candidate compounds pioglitazone, rosiglitazone, tideglusib, MHY1485 tested on mouse myoblasts for mitochondrial membrane potential — all but rosiglitazone showed a modest significant increase. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
+    },
+    {
+      "id": "maes-2026-physio-affective-phenome-longcovid",
+      "title": "The physio-affective symptoms of Long COVID are strongly predicted by the severity of the acute infectious phase, and lowered antioxidants, nitric oxide, and alanine transaminase levels",
+      "authors": "Maes M, Tunvirachaisakul C, Semeão LdO, Michelin AP, Matsumoto AK, Brinholi FF, Barbosa DS, Zhang Y, Sodsai P, Hirankarn N, Almulla AF",
+      "journal": "Research Square (preprint, not yet peer-reviewed)",
+      "date": "Jun 2026",
+      "summary": "Followed 71 long-COVID patients for six months and found that mood symptoms, CFS/ME-type fatigue symptoms, breathing problems, and nervous-system symptoms all rise and fall together as one combined package rather than being separate problems. How severe a person's original COVID infection was — including low levels of antioxidants and nitric oxide, molecules that help protect cells and blood vessels — strongly predicted how bad this combined symptom package became.",
+      "why": "Suggests it may be possible to predict, from measurements taken during the original COVID infection, which patients are heading toward the more severe, ME/CFS-like form of long COVID — useful for identifying who to watch closely or treat early.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10070418/v1",
+      "first_seen": "2026-07-11",
+      "last_checked": "2026-07-11",
+      "flags": [],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted Research Square Jun 28, 2026 (indexed Jul 2). Same Maes-led international group as donchev-2026-gut-microbiome-mecfs-longcovid and petrov-2026-monocyte-dc-immunophenotyping already in this database. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
+    },
     {
       "id": "donath-2026-pediatric-postcovid-risk-factors",
       "title": "Risk factors for severe post-COVID condition in children, adolescents, and young adults",

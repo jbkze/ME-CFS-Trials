@@ -1,0 +1,1318 @@
+Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome (ME/CFS) gene expression signatures
+for the identification of compounds targeting
+metabolism
+Ankush Dehlia 
+Deakin University School of Life and Environmental Sciences
+Zahra Alizada 
+Deakin University School of Life and Environmental Sciences
+Mark Andrew Guthridge 
+Deakin University School of Life and Environmental Sciences https://orcid.org/0000-0002-0536-3471
+Research Article
+Keywords: Myalgic Encephalomyelitis, Chronic Fatigue Syndrome, mitochondria, connectivity mapping,
+gene signature, PPAR agonist
+Posted Date: July 5th, 2026
+DOI: https://doi.org/10.21203/rs.3.rs-10076074/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.  
+Read Full License
+Page 1/34
+
+Abstract
+Background
+Pathological fatigue is a debilitating symptom in a range of chronic illnesses, including myalgic
+encephalomyelitis/chronic fatigue syndrome (ME/CFS). However, drug therapies that are effective at
+treating pathological fatigue have proved difficult to identify through conventional drug discovery
+pipelines. We sought to identify an ME/CFS gene expression signature in order to map disease pathways
+and identify potentially novel therapeutic approaches.
+Methods
+We analysed ME/CFS patient gene expression profiles obtained from two independent studies
+(GSE14577 and GSE227375). The identified differentially expressed genes (DEGs) were subjected to
+CMap L1000 analysis for the identification of functional gene networks as well as compounds with the
+potential to restore the disrupted gene expression in ME/CFS patients.
+Results
+We identified 21 up-regulated and 25 down-regulated DEGs common to both gene expression datasets.
+Subjecting the 46-gene signature to CMap L1000 analysis identified networks involved in
+cytokine/growth factor signalling, infection and immunity, metabolism and cell growth, lipid metabolism,
+ubiquitination, nucleotide metabolism, and redox regulation. Four compounds, pioglitazone, rosiglitazone
+(PPAR agonists), tideglusib (GSK3 inhibitor), and MHY1485 (mTORC1 agonist), were identified and
+tested for their ability to regulate the metabolism and growth of C2C12 muscle cells. Pioglitazone,
+tideglusib, and MHY1485, but not rosiglitazone, induced a modest but significant increase in
+mitochondrial membrane potential in differentiated C2C12 myoblasts over 24–48 hours. These changes
+occurred in the absence of increased mitochondrial mass and ROS production, suggesting enhanced
+mitochondrial metabolism rather than mitochondrial biogenesis. While pioglitazone and rosiglitazone
+increased the growth of C2C12 myoblasts, no significant effects were observed for tideglusib and
+MHY1485.
+Conclusions
+Our findings, based on reciprocal disease:drug signature-matching, provide a framework for exploring
+the therapeutic potential of drugs to target impaired metabolic pathways in conditions involving
+pathological fatigue, such as ME/CFS.
+Background
+Page 2/34
+
+Approximately 25% of primary care patients report fatigue, indicating that it is an extremely common
+symptom that is associated with a wide range of pathologies (1, 2). Physiological fatigue after physical
+exertion is transient and can be relieved by rest and lifestyle management. In contrast, pathological
+fatigue, which is commonly associated with long-term chronic inflammatory conditions, persists despite
+adequate rest and lifestyle interventions (3). In prevalent illnesses such as myalgic
+encephalomyelitis/chronic fatigue syndrome (ME/CFS), multiple sclerosis (MS), cancer-related fatigue
+(CRF), post-stroke fatigue (PSF), and more recently long-COVID-19, pathological and persistent fatigue is
+associated with exercise intolerance, a decline in physical function and poor health-related quality-of-life
+(4, 5). In part because pathological fatigue associated with illness can be clinically mistaken for
+physiological tiredness or sleepiness, clinical recognition of its major impacts on daily functioning and
+longer-term quality of life is often overlooked (6). These limitations may also extend to research where
+the pathophysiology of fatigue and potential therapeutic targets remain largely unclear for many chronic
+illnesses (7).
+There are a few pharmacological treatments for pathological fatigue, particularly in relation to muscle
+dysfunction and exercise intolerance. To date, most clinical trials have investigated immunological or
+psychotropic drugs. For example, in ME/CFS, where fatigue is a primary symptom, two systematic
+analyses of over 45 trials did not identify any effective drug treatments apart from the possible
+exceptions of the immunomodulatory drug rintatolimod and the psychostimulant methylphenidate,
+where modest improvements in a subset of patients were observed (8, 9). In at least some MS patients,
+the psychostimulant, modafinil, and the dopaminergic agent, amantadine, appear to be the only drugs
+that provide significant, albeit modest, improvements in fatigue (10, 11). In a systematic analysis of 32
+CRF trials, none of the drugs examined, including dexamphetamine, modafinil, methylphenidate or
+paroxetine, were effective for fatigue (12). Similarly, systematic analysis of 22 PSF trials examining a
+range of drugs, including modafinil, fluoxetine, and the monoamine stabilizer, OSU6162, reported that
+none provided significant improvements in fatigue (13). Additionally, a meta-analysis of 45 studies
+examining palliative care in patients with multiple sclerosis, post-polio syndrome, Parkinson's disease,
+cancer, HIV/AIDS, end-stage renal disease, multi-type advanced disease in hospice patients, amyotrophic
+lateral sclerosis, and end-stage chronic lung disease indicated there was insufficient evidence that any of
+the 18 drugs evaluated provided significant benefits in fatigue (14).
+Drug repurposing, in which existing compounds with known pharmacokinetic, pharmacodynamic, and
+safety profiles are identified with previously unsuspected novel activities, may provide an accelerated
+route to clinical translation. Given the high attrition rates in clinical trials for novel therapeutics identified
+and developed via traditional discovery pipelines, drug repurposing can provide significant advantages in
+terms of cost savings through the foreshortening of drug evaluation processes (15). Importantly, for
+pathologies such as ME/CFS, where the molecular basis has not been clearly established, repurposed
+drugs may provide insights into the underlying pathways and targets responsible.
+While most repurposed drugs to date are the result of serendipitous discoveries, recent developments in
+computational methods allow disease transcriptomic signatures to be screened against extensive
+Page 3/34
+
+databases of drug transcriptomic signatures for the identification of either positively or negatively
+correlated profiles (16). For example, positively correlated disease-drug transcriptomic profiles would
+suggest that the drug may induce a gene expression profile similar to that observed in the disease and
+so might enable insights into the mechanistic basis for pathogenesis. In contrast, negatively correlated
+disease-drug transcriptomic profiles would suggest that the drug may reverse the disease expression
+profile and so might have therapeutic potential in reversing the pathological phenotype. The large-scale
+transcriptomic profile database, Library of Integrated Cellular Signatures (LINCS) Connectivity Map
+(CMap L1000), contains over one million gene expression profiles regulated by over 40,000 genetic and
+small-molecule perturbagens, allowing disease expression signatures to be matched with negatively
+correlated drug-induced expression profiles for the identification of compounds with the potential to
+revert the pathological phenotype (17). Thus, LINCS CMap L1000 allows rational data-driven studies on
+drug repositioning based on signature reversion, for which there is proof-of-concept in a range of
+pathologies, including cancer and kidney disease (18, 19).
+Given that pathological fatigue is an obligate symptom of ME/CFS for which there is currently no
+approved drug treatment, we have examined the gene expression profiles of ME/CFS patients from two
+independently published studies (20, 21). Our analysis identified dysregulated gene networks involved in
+immunity and metabolism that were common to both studies. Using CMap L1000, we identified
+compounds with known immune and metabolic targets with the potential to induce reciprocal profiles to
+those identified in ME/CFS patients. Focussing on compounds having known metabolic targets, we
+show that a peroxisome proliferator-activated receptor (PPAR) agonist (pioglitazone), a glycogen
+synthase kinase 3 (GSK3) inhibitor (tideglusib), and an agonist of mechanistic target of rapamycin
+complex 1 (mTORC1) were able to increase mitochondrial membrane potential and growth in C2C12
+mouse muscle cells. These findings may provide new avenues for the development of therapies
+targeting cellular metabolism in long-term fatiguing conditions such as ME/CFS.
+Methods
+ME/CFS gene expression analysis
+ME/CFS gene expression profiles were obtained from the publicly available GEO datasets GSE14577 and
+GSE227375 (20, 21). The GSE14577 dataset was obtained from the PBMCs of eight post-viral male
+ME/CFS patients and seven healthy male controls and was generated using Affymetrix Human Genome
+U133A and U133B Arrays (20). The GSE227375 dataset was obtained from the PBMCs of eight post-viral
+male ME/CFS patients and nine healthy male controls and was generated using Illumina NextSeq 500
+RNA-seq technology (21). The GSE14577 dataset was parsed in GEOquery and then analysed using
+RStudio (v4.3.2) using the limma package. The GSE227375 dataset was analysed in RStudio using the
+DESeq2 package. The Benjamini and Hochberg method was applied for controlling the false discovery
+rate (FDR). Differentially expressed genes (DEGs) were analysed using the EnhancedVolcano package
+(v1.24.0). DEGs with an FDR ≤ 0.05 and fold change (FC) ≥ 1.25 were considered significant.
+Page 4/34
+
+Connectivity map (CMap) L1000 analysis
+At the time of publication, the LINCS CMap L1000 database (https://portals.broadinstitute.org/cmap/)
+contained over one million gene expression profiles regulated by over 40,000 genetic and small-molecule
+perturbagens (17). We performed CMap L1000 analysis to identify novel i) disease-pathway
+relationships and ii) disease-drug relationships. The L1000 database was queried using the ME/CFS
+disease signature identified from GSE14577 and GSE227375 to identify perturbagens that induce i)
+similar gene expression profiles to ME/CFS (i.e., those with positive CMap scores) and ii) inverse gene
+expression profiles to ME/CFS (i.e., those with negative CMap scores). The identification of inverse
+disease-drug relationships in LINCS CMap L1000 allows the discovery of drugs with the potential to
+reverse a disease expression signature, which has been used to identify new therapeutics where a priori
+knowledge of disease mechanism, drug targets, and deregulated pathways may not be available (17, 22).
+Compounds with connectivity scores ≤ -0.64, and -log10(FDR) ≥ 15 were selected for further analysis.
+Pathway and network analysis
+The pathway enrichment analysis using KEGG and Reactome databases was performed in the ShinyGO
+(v0.81) tool, whereas for network analysis, we utilized STRING (v12.0). Gene networks were developed
+using STRING MCL clustering analysis.
+Drug treatment of mouse C2C12 myoblasts and myotubes
+The mouse C2C12 myoblast cell line (kind gift of Prof. Aaron Russell, Institute for Physical Activity and
+Nutrition, Deakin University) were maintained in medium (Dulbecco’s Modified Eagle Medium [DMEM],
+2mM L-glutamine, 100 units/ml penicillin and 0.1 mg/ml streptomycin) containing 10% heat-inactivated
+foetal bovine serum (HI-FBS)(all supplied by ThermoFisher Scientific) at 37°C in the presence of 5% CO2
+and passaged when < 80% confluent. For differentiation into myotubes, cells at > 80% confluency were
+washed in PBS and placed in medium (DMEM, 2mM L-glutamine, 100 units/ml penicillin and 0.1 mg/ml
+streptomycin) containing 1% horse serum (Sigma-Aldrich). The differentiation of C2C12 myoblasts was
+determined to be > 90% at 48 hours (h) by Hoechst 33342 (ThermoFisher Scientific) staining of
+multinucleated myotubes and confirmation of growth arrest using the MTT assay. Myotube cultures
+were replenished with fresh medium and 1% horse serum every 48h. Drugs utilized included pioglitazone
+(Jomar Life Research), rosiglitazone (Jomar Life Research), tideglusib (Jomar Life Research), and
+MHY1485 (Sigma-Aldrich). All drug compounds were dissolved in DMSO (Sigma‒Aldrich) and
+subsequently serially diluted using sterile PBS (ThermoFisher Scientific) to the desired concentrations
+for treatments. For drug treatments, C2C12 myoblasts or myotubes were washed with PBS and then
+placed in either growth medium or differentiation medium, respectively, with drug titrations and time
+courses being performed.
+Page 5/34
+
+Mitochondrial analysis
+The mitochondrial membrane potential and mitochondrial mass were quantified using
+Tetramethylrhodamine Ethyl Ester (TMRE) (Jomar Life Research) and MitoTracker Green (MTG) (Sigma-
+Aldrich), respectively, according to the manufacturer’s instructions. Triplicate wells containing either
+C2C12 myoblasts or myotubes were treated with either vehicle or the indicated concentrations of drugs
+(pioglitazone, rosiglitazone, tideglusib, and MHY1485) for up to 48h, after which 100mM TMRE or MTG
+was added for 30 minutes (min) at 37°C. TMRE fluorescence was analysed at 544nm (excitation) and
+590nm (emission), and MTG fluorescence was analysed at 485nm (excitation) and 520nm (emission)
+using a microplate reader (BMG Labtech POLARstar Omega). For the analysis of intracellular ATP
+production, triplicate wells containing either C2C12 myoblasts or myotubes were treated with drugs for
+up to 48h, after which they were washed twice with PBS, and ATP was quantified by measuring
+bioluminescence using an ATP determination kit (ThermoFisher Scientific) following the manufacturer’s
+instructions.
+Reactive oxygen species (ROS) analysis
+The intracellular ROS production in C2C12 myoblasts and myotubes was assessed using the MitoSOX
+Red (MSR) (ThermoFisher Scientific). Triplicate wells containing either C2C12 myoblasts or myotubes
+were treated with either vehicle or the indicated concentrations of drugs (pioglitazone, rosiglitazone,
+tideglusib, and MHY1485) for up to 60 minutes. Hydrogen peroxide (1mM) was included as a control for
+inducing mitochondrial ROS production. Cells were then incubated in 1µM MSR for up to 30 min before
+fluorescence was examined using a microplate reader (BMG Labtech POLARstar Omega) at 355nm
+(excitation) and 620nm (emission).
+Cell growth analysis
+The MTT (3-[4,5-dimethylthiazol-2-yl]-2,5 diphenyl tetrazolium bromide) assay (ThermoFisher Scientific)
+was carried out to measure C2C12 growth. C2C12 myoblasts or myotubes subjected to drug titrations
+were grown for up to 72h, following which MTT reagent was added for 3 h at 37°C. The medium was
+then removed, and solubilization buffer (1% w/v SDS, 0.01M HCL) was added. Absorbance signals at
+550nm were analysed.
+Results
+Differential gene expression in ME/CFS
+To identify dysregulated gene expression in ME/CFS, we analysed two independently published datasets
+in which gene expression in ME/CFS patients and healthy controls has been published (Fig. 1). In the
+first study, Gow et. al. (GEO Accession GSE14577) examined mRNA expression profiles using a
+microarray platform and reported DEGs involved in oxidative stress, apoptosis, and immune modulation
+Page 6/34
+
+(20). In the second study, Gamer et. al. (GEO Accession GSE227375) examined gene expression using
+RNA-seq and reported DEGs involved in immune cell signalling, positive regulation of response to an
+external stimulus, and natural killer (NK) cell function (21).
+We first examined both GSE14577 and GSE227375 to identify DEGs common to both datasets. The
+identified DEGs were then subjected to CMap L1000 analysis to identify i) functional gene networks and
+pathways involved in ME/CFS and ii) compounds with the potential to reverse ME/CFS disease
+signatures and so restore gene expression profiles to those observed in healthy control individuals.
+Using these CMap L1000 outputs, compounds were mapped to functional gene networks and prioritized
+for further examination for their in vitro activity in C2C12 muscle cells.
+Volcano plots depicting DEGs are presented in Fig. 2A (GSE14577) and Fig. 2B (GSE227375). As
+expected, RNA-seq analysis resulted in larger fold changes (FC) in gene expression (Fig. 2B) compared
+to microarray analysis (Fig. 2A). A total of 312 significantly up-regulated and 286 significantly down-
+regulated DEGs were identified in the GSE14577 dataset, while 1243 significantly up-regulated and 1625
+down-regulated DEGs were identified in the GSE227375 dataset (Fig. 2C, 2D; FDR ≤ 0.05, -0.3 < Log2FC > 
+0.3).
+Page 7/34
+
+Table 1
+Common differentially up-regulated genes between GSE14577 and GSE227375.
+Gene
+Symbol
+NCBI gene
+ID
+Gene name
+GSE14577
+GSE227375
+log2FC
+Adjusted
+p-value
+log2FC
+Adjusted
+p-value
+CALM3
+808
+Calmodulin 3
+0.60
+0.05
+0.34
+0.05
+PGD
+5226
+Phosphogluconate
+dehydrogenase
+0.55
+0.05
+0.55
+0.001
+RRAGD
+58528
+Ras related GTP binding
+D
+0.55
+0.04
+0.67
+0.01
+NAAA
+27163
+N-acylethanolamine acid
+amidase
+0.53
+0.04
+0.55
+0.02
+NAGA
+4668
+Alpha-N-
+acetylgalactosaminidase
+0.52
+0.04
+0.32
+0.02
+PANX1
+24145
+Pannexin 1
+0.51
+0.03
+0.57
+0.05
+XPNPEP1
+7511
+X-prolyl aminopeptidase
+1
+0.47
+0.04
+0.41
+0.01
+PTGS1
+5742
+Prostaglandin-
+endoperoxide synthase 1
+0.43
+0.04
+0.93
+0.005
+SENP3-
+EIF4A1
+100533955
+SENP3-EIF4A1
+readthrough
+0.43
+0.04
+0.67
+0.003
+CANX
+821
+Calnexin
+0.42
+0.04
+0.68
+0.02
+CDKN2D
+1032
+Cyclin dependent kinase
+inhibitor 2D
+0.42
+0.04
+0.70
+0.003
+ZFAS1
+441951
+ZNFX1 antisense RNA 1
+0.40
+0.05
+0.86
+0.04
+FKBP15
+23307
+FKBP prolyl isomerase
+family member 15
+0.38
+0.03
+0.42
+0.01
+ARPC4-
+TTLL3
+100526693
+ARPC4-TTLL3
+readthrough
+0.38
+0.04
+0.48
+0.003
+SUMO1
+7341
+Small ubiquitin like
+modifier 1
+0.37
+0.03
+0.81
+0.02
+MIR1304
+100302240
+MicroRNA 1304
+0.36
+0.04
+0.61
+0.01
+TGFBI
+7045
+Transforming growth
+factor beta induced
+0.36
+0.03
+0.66
+0.0003
+BECN1
+8678
+Beclin 1
+0.35
+0.04
+0.34
+0.03
+GNB4
+59345
+G protein subunit beta 4
+0.35
+0.04
+0.89
+0.002
+Page 8/34
+
+Gene
+Symbol
+NCBI gene
+ID
+Gene name
+GSE14577
+GSE227375
+log2FC
+Adjusted
+p-value
+log2FC
+Adjusted
+p-value
+MKRN1
+23608
+Makorin ring finger
+protein 1
+0.34
+0.04
+0.57
+0.01
+RAP2C
+57826
+RAP2C, member of RAS
+oncogene family
+0.33
+0.05
+0.82
+0.04
+Page 9/34
+
+Table 2
+Common differentially downregulated genes between GSE14577 and GSE227375.
+Gene Symbol
+NCBI gene
+ID
+Gene name
+GSE14577
+GSE227375
+log2FC
+Adjusted
+p-value
+log2FC
+Adjusted
+p-value
+CBX5
+23468
+Chromobox 5
+-0.53
+0.03
+-0.58
+0.0003
+ODF3B
+440836
+Outer dense fiber of
+sperm tails 3B
+-0.52
+0.02
+-1.17
+0.005
+LOC102724965
+102724965
+Uncharacterized
+LOC102724965
+-0.51
+0.03
+-1.25
+0.0001
+UQCC3
+790955
+Ubiquinol-
+cytochrome c
+reductase complex
+assembly factor 3
+-0.49
+0.01
+-0.57
+0.01
+REXO1
+57455
+RNA exonuclease 1
+homolog
+-0.43
+0.02
+-1.55
+0.0002
+NATD1
+256302
+N-acetyltransferase
+domain containing
+1
+-0.42
+0.03
+-0.55
+0.04
+TRAPPC5
+126003
+Trafficking protein
+particle complex
+subunit 5
+-0.42
+0.03
+-0.84
+0.04
+PWWP2B
+170394
+PWWP domain
+containing 2B
+-0.41
+0.04
+-0.91
+0.04
+DPP7
+29952
+Dipeptidyl
+peptidase 7
+-0.39
+0.04
+-0.98
+0.0003
+CAPS
+828
+Calcyphosine
+-0.38
+0.02
+-1.13
+0.0001
+CACTIN
+58509
+Cactin,
+spliceosome C
+complex subunit
+-0.37
+0.02
+-1.00
+0.0005
+ARRDC1-AS1
+85026
+ARRDC1 antisense
+RNA 1
+-0.36
+0.03
+-0.60
+0.004
+KIF5A
+3798
+Kinesin family
+member 5A
+-0.35
+0.04
+-1.07
+0.03
+ISYNA1
+51477
+Inositol-3-
+phosphate
+synthase 1
+-0.34
+0.04
+-0.83
+0.0002
+BAIAP2L2
+80115
+BAR/IMD domain
+containing adaptor
+protein 2 like 2
+-0.34
+0.02
+-1.14
+0.01
+Page 10/34
+
+Gene Symbol
+NCBI gene
+ID
+Gene name
+GSE14577
+GSE227375
+log2FC
+Adjusted
+p-value
+log2FC
+Adjusted
+p-value
+WDR90
+197335
+WD repeat domain
+90
+-0.34
+0.04
+-1.15
+0.002
+C21orf58
+54058
+Chromosome 21
+open reading frame
+58
+-0.33
+0.02
+-0.66
+0.002
+DDX54
+79039
+DEAD-box helicase
+54
+-0.33
+0.04
+-0.57
+0.001
+KCNC3
+3748
+Potassium voltage-
+gated channel
+subfamily C
+member 3
+-0.33
+0.05
+-1.28
+0.003
+FRMD8
+83786
+FERM domain
+containing 8
+-0.33
+0.03
+-0.43
+0.02
+LZTS2
+84445
+Leucine zipper
+tumor suppressor 2
+-0.33
+0.02
+-0.87
+0.01
+SLC7A8
+23428
+Solute carrier family
+7 member 8
+-0.33
+0.05
+-1.65
+0.01
+LRP10
+26020
+LDL receptor
+related protein 10
+-0.32
+0.05
+-0.67
+0.001
+ZFPM1
+161882
+Zinc finger protein,
+FOG family member
+1
+-0.32
+0.05
+-1.33
+0.002
+SETD5
+55209
+SET domain
+containing 5
+-0.32
+0.05
+-0.48
+0.02
+Despite the heterogeneity between the studies of Gow et. al. (20) and Gamer et. al.(21) in terms of their
+methodologies, gene expression platforms, and patient cohorts, our analysis identified 21 up-regulated
+(Fig. 2C) and 25 down-regulated (Fig. 2D) DEGs that were common to both studies (Fig. 2C and 2D,
+Tables 1 and 2). This ME/CFS 46-gene signature included up-regulated DEGs known to encode proteins
+serving a broad range of cellular functions including calcium signalling, metabolism, G-protein signalling,
+ubiquitination and cell cycle regulation (Table 1). Additionally, down-regulated DEGs encode proteins
+involved in inositol lipid signalling, cell cycle regulation, RNA processing, and epigenetic regulation
+(Table 2).
+ME/CFS pathway and network analysis
+While KEGG and Reactome analyses of the 46 ME/CFS DEGs in Tables 1 and 2 identified a small number
+of generalized pathways that included homeostasis, dopaminergic neurons, and infection, insights into
+potential therapeutic targets and pathways from this analysis were limited (data not shown). The ability
+Page 11/34
+
+of such tools to identify functional networks in disease is known to be limited when small panels of
+DEGs are analysed (e.g., our 46-gene signature), in part, because the results depend on the quality of the
+gene annotations and the completeness of the functional groups represented.
+We therefore subjected the ME/CFS 46-gene signature to the CMap L1000 database that allows the
+identification of transcriptomic response similarities. The CMap L1000 database contains over one
+million mRNA signatures from genetic perturbagens (e.g., expression of shRNAs, cDNAs) in 244 cell
+lines (17). shRNA and cDNA perturbagens in the L1000 database that induce either similar or reciprocal
+gene expression profiles to those identified in a specific disease may provide insights into disease
+pathways and therapeutic targets. For example, the ability of specific shRNA and cDNA perturbagens in
+the L1000 platform to induce gene signatures similar (i.e., having positive Connectivity Scores) to those
+identified in Tables 1 and 2 would suggest that the targeted genes may, at least in part, control pathways
+that promote the ME/CFS clinical phenotype. Conversely, shRNA and cDNA perturbagens that induce
+reciprocal gene signatures (i.e., having negative Connectivity Scores) to those identified in Tables 1 and
+2 would suggest that the targeted genes may have the potential to reverse the ME/CFS clinical
+phenotype (17).
+Analysis of the ME/CFS 46-gene signature using CMap L1000 identified perturbagens targeting 83 genes
+(Supplementary Fig. 1, Supplementary Table 1). It is notable that, of the 83 genes having a -log10FDR > 
+15, all had negative connectivity scores less than − 0.64 (Supplementary Fig. 1, inset). While it is not
+clear why the CMap L1000 analysis did not identify genes with -log10FDR > 15 with positive connectivity
+scores (Supplementary Fig. 1), it could be related to the proposal that ME/CFS patients demonstrate a
+hypometabolic state characterized by an overall decreased flux through multiple pathways (23).
+We next performed STRING analysis on the 83 genes identified by CMap L1000 to gain insight into
+possible functional disease pathways. This analysis identified multiple networks involving i)
+cytokine/growth factor signalling, ii) infection and immunity, iii) metabolism and cell growth, iv) lipid
+metabolism, v) cytoskeletal regulation, vi) ubiquitination, vii) nucleotide metabolism, and viii) redox
+regulation (Fig. 3A). Pathway enrichment analysis using KEGG identified, i) metabolic pathways, ii)
+infection (Kaposi sarcoma associated herpes virus infection, Epstein-Barr virus infection, Yersinia
+infection), iii) cytokine signalling (TNF signalling), iv) growth factor signalling (ErbB, FoxO signalling), v)
+endocrine resistance, vi) reactive oxygen species (ROS) signalling and vii) autophagy pathways being
+represented within the gene network (Fig. 3B). Reactome analysis identified pathways involved in, i)
+metabolism, ii) immune response, iii) infection, iv) cytokine signalling, v) post-translational modifications
+and vi) cellular response to stress (Fig. 3C).
+The identification of gene networks controlling cytokine signalling and infection in Fig. 3 is in line with
+reports that ME/CFS patients exhibit a range of immunological disruptions (24). In addition, multiple
+infectious pathogens identified in Fig. 3, including the SARS-CoV-2 virus responsible for COVID-19, have
+been linked with the ability to trigger ME/CFS (24, 25). Also prominent in our analysis was the
+identification of metabolic and cell growth pathways (Fig. 3).
+Page 12/34
+
+CMap analysis of ME/CFS gene expression signatures for the identification of compounds.
+The ME/CFS gene signature was then used to query the CMap L1000 database to identify compounds
+with the potential to induce reciprocal gene expression profiles (17). This approach allows the
+calculation of connectivity (similarity) scores between the ME/CFS DEGs and the gene signatures
+induced by 32,979 compounds across 244 cell lines. Compounds with negative connectivity scores are
+predicted to induce a gene expression profile that is negatively correlated with disease (17). Thus,
+compounds with negative connectivity scores may have the potential to reverse, at least in part, the gene
+expression profiles associated with ME/CFS and so may have therapeutic potential.
+CMap L1000 analysis of the ME/CFS genes shown in Table 1 and Table 2 resulted in an output of
+compounds with connectivity scores ranging from − 0.73 to 0.72 (Fig. 4). From this analysis, a total of 14
+compounds (0.01% of the total CMap L1000 database) with negative Connectivity Scores of ≤-0.65 and -
+log10(FDR) > 15.0 were identified (Fig. 4B, inset). Consistent with our pathway analysis identifying gene
+networks controlling cytokine signalling, infection, and immunity in ME/CFS (Fig. 3), a total of 7 of the 14
+(50%) compounds (7/14, 50%) were identified with known anti-inflammatory or analgesic activity (SB-
+705498, Mefenamic acid, Skimmianine, Ginkgolide-a, PF-750, PRE-084, and VX-702)(Supplementary
+Table 2). Also consistent with our pathway analysis (Fig. 3) identifying metabolic deregulation, 2/14
+(14%) compounds (Supplementary Table 2) were identified with the ability to regulate mitochondrial
+metabolism or nutrient sensing (Timofibrate and Indoximod). In addition, 2/14 (14%) neurotransmitter
+regulators (Supplementary Table 2) used in the treatment of psychiatric illness were identified
+(Idalopirdine and Buspirone). Other compounds included a second mitochondrial-derived activator of
+caspases (SMAC) mimetic (GDC-0152), a histone deacetylase inhibitor (Pracinostat) used in the
+treatment of cancer, and a multi-targeted kinase inhibitor (Arcyriaflavin-a).
+Although our analysis identified multiple compounds with anti-inflammatory and analgesic activity
+(Supplementary Table 2), clinical trials to date examining drugs targeting immune pathways in ME/CFS
+patients have not reported significant and sustained improvements for the majority of patients (8, 26–
+28). On the other hand, the identification of compounds using CMap L1000 with the ability to target
+energy metabolism was intriguing. ME/CFS patients have been reported to have significant reductions in
+aerobic metabolic capacity as measured in cardio-pulmonary exercise tests (CPET) (29, 30). Such
+impaired aerobic metabolism has been associated with altered blood metabolite profiles in patients that
+suggest impaired mitochondrial metabolism (23, 31). However, there are currently no effective
+pharmacological treatments targeting such defects associated with pathological fatigue in ME/CFS. We
+therefore focused our investigations on compound classes with the potential to regulate mitochondrial
+metabolism and nutrient sensing.
+Indoximod decreases the conversion of tryptophan to N-formyl-kynurenine by the indoleamine 2,3-
+dioxygenase 1 (IDO1) enzyme. While the precise mechanism of action remains unclear, indoximod
+appears to i) reduce tryptophan levels, resulting in the induction of nutrient-sensing signals and the
+activation of mechanistic target of rapamycin complex 1 (mTORC1), and ii) induce the ligand-activated
+Page 13/34
+
+transcription factor, aryl hydrocarbon receptor (AhR) involved in the expression of genes mediating
+immune responses (32). Thus, in addition to its ability to regulate mTORC1 metabolic pathways,
+indoximod can also regulate immune responses. In order to investigate the metabolic consequences of
+mTOR activation in the absence of immune transcription, we employed the mTORC1 agonist, MHY1485.
+In addition, because one of the consequences of GSK3 inhibition is the activation of mTORC1, we also
+included a GSK3 inhibitor, tideglusib, to further investigate perturbation of the mTOR pathway (33).
+While timofibrate remains uncharacterized, the chemically-related fibrates, clofibrate and fenofibrate, are
+prodrugs that are converted to clofibric acid and fenofibric acid, respectively, in the liver and function as
+activators of PPARα and PPARg (34). While fibrates such as fenofibrate are used clinically in the
+treatment of dyslipidemia associated with type 2 diabetes mellitus (T2DM) and metabolic syndrome,
+interpreting results from in vitro investigations, including C2C12 cells, can be difficult owing to cell-
+specific differences in the expression of the esterases necessary for prodrug conversion to active
+fenofibric acid (35). We therefore examined the more bioavailable PPAR agonists, pioglitazone and
+rosiglitazone (36).
+Analysis of mitochondrial membrane potential, ATP
+production, and mitochondrial mass
+We firstly investigated the impact of pioglitazone, rosiglitazone, tideglusib, and MHY1485 on
+mitochondrial metabolism in undifferentiated C2C12 myoblasts. While pioglitazone, rosiglitazone, and
+MHY1485 had no significant impact on mitochondrial membrane potential, ATP production, and
+mitochondrial mass, there was a modest but significant increase in both mitochondrial membrane
+potential (Fig. 5C) and ATP production (Fig. 5G) following treatment with tideglusib.
+We further examined the effects of each compound on C2C12 differentiated myotubes. While neither
+pioglitazone nor rosiglitazone affected mitochondrial membrane potential or ATP production at 24h, 1nM
+pioglitazone significantly increased both mitochondrial membrane potential and ATP production at 48h
+(Fig. 6). Furthermore, 1nM of both Tideglusib and MHY1485 significantly increased mitochondrial
+membrane potential or ATP production at 24h, however, this increase was lost at 48h (Fig. 6). The
+increases in mitochondrial membrane potential (TMRE) or ATP production (luciferase) observed for
+pioglitazone, tideglusib, and MHY1485 were independent of mitochondrial mass suggesting that the
+response did not involve significant changes in mitochondrial biogenesis.
+Analysis of ROS
+In some cases, increased mitochondrial membrane potential and ATP production (as observed in Fig. 5,
+6) can be associated with increased ROS production (37). We therefore examined ROS production in
+response to each compound. None of the four compounds significantly increased ROS production in
+C2C12 myoblasts (Supplementary Fig. 2A). However, there was a significant, albeit modest, transient
+increase in ROS production following 30 min of rosiglitazone and tideglusib in C2C12 myotubes
+(Supplementary Fig. 2B).
+Page 14/34
+
+Analysis of C2C12 myoblast growth
+We further examined the effects of the selected compounds on cell growth. While both 10nM
+pioglitazone and 10nM rosiglitazone increased cell growth of C2C12 myoblasts at 48h and 72h (Fig. 7A,
+7B), no significant increases were observed for tideglusib or MHY1485 (Fig. 7C, 7D). Furthermore, none
+of the selected compounds had a significant effect on the growth of post-mitotic C2C12 myotubes
+(Supplementary Fig. 3).
+Discussion
+Using two independent transcriptomic studies reported by Gow et. al. and Gamer et. al., we have
+identified a set of overlapping DEGs in ME/CFS patients from which we have investigated potential
+disease pathways and therapeutic avenues to treatment (20, 21). The overlapping gene expression
+signature identified genes involved multiple pathways broadly related to immune dysfunction, oxidative
+stress, apoptosis, and oxidative phosphorylation. Consistent with the post-infectious aetiology observed
+in some patients, immune dysfunction has been widely reported in ME/CFS (24, 25). However, despite
+such immune disruptions, the identification of reproducible cytokine or immune cell biomarkers in
+ME/CFS patients has so far remained elusive (38).
+Interestingly, our analysis identified a number of common overlapping DEGs with proposed roles in
+metabolism including amino acid oxidation via the TCA cycle (SLC7a8, CAPS), oxidative stress (ARRDC1-
+AS1), mitochondrial ATP production (Panx1), mitochondrial biogenesis (RAP2C), metabolic
+reprogramming involving oxidative phosphorylation (UQCC3, CBX5), autophagy (BECN1) and the pentose
+phosphate pathway (PGD) suggesting disruptions in cellular metabolism (Tables 1 and 2). Further
+examination of the DEGs common to both datasets using the CMap L1000 database for gene-
+enrichment signatures (i.e., genetic perturbagens) allowed the identification of an 83-gene ME/CFS
+network (Supplementary Table 1). Given the post-infectious aetiology described for ME/CFS, it is
+perhaps not surprising that this network included multiple modules related to infection, cytokine
+signalling and immunity (Fig. 3). However, the identification of modules involving cellular metabolism
+and redox regulation in the 83-gene network suggests that such pathways may also be disrupted in
+ME/CFS (Fig. 3).
+The molecular analysis of disease pathways has been widely employed to identify potential therapeutic
+targets from which lead compounds can be identified and optimized using preclinical models. However,
+for a range of chronic conditions such as ME/CFS, the lack of validated therapeutic targets, the unclear
+disease aetiology, together with the lack of proven preclinical models pose profound obstacles to drug
+discovery and validation. Within such a knowledge gap, therapeutic development of drugs for ME/CFS
+has been largely based on empirical clinical trials in which existing drugs have been repurposed based
+on clinical rationales rather than preclinical mechanistic evidence. We therefore examined an alternative
+approach that does not require a priori knowledge of preclinical mechanism or disease aetiology in
+which compounds are identified with the potential to induce gene signatures that are reciprocal (or
+Page 15/34
+
+inverse) to those observed in ME/CFS patients using the CMap L1000 platform (17). Such an approach
+has been widely employed for the identification of compounds that have the potential to reverse disease
+gene expression profiles and so could provide a novel therapeutic route for drug development (17–19,
+22).
+Consistent with our pathway mapping (Fig. 3), the majority of compounds identified using the CMap
+L1000 database have known indications related to immunity, inflammation, and pain (Supplementary
+Table 2, SB-705498, Mefenamic acid, Skimmianine, Indoximod, Ginkgolide-a, PRE-084, and VX-702).
+However, despite the consistent association between immune dysfunction and ME/CFS, clinical trials
+investigating immunotherapies such as intravenous immunoglobulin G, anti-histamines, hydrocortisone
+and fludrocortisone, IL-1 antagonism, and B-cell ablation using rituximab have not, so far, demonstrated
+sustained responses in the majority of patients (8, 26–28). One possible exception may be
+cyclophosphamide, an alkylating agent widely used in cancer treatment, which was found to result in
+significant symptom improvement and remissions in some patients (39). In addition, the significant
+association of viral infections preceding the onset of ME/CFS has led to a number of clinical trials
+investigating antiviral therapies, including rintatolimod and valganciclovir, with some significant
+improvements (40, 41). However, the safety profiles and variable therapeutic windows of such drugs
+remain an issue in terms of clinical translation.
+While ME/CFS is associated with a range of autonomic impairments, our pathway analysis did not
+identify neurological networks (Fig. 3). However, our CMap L1000 analysis identified drugs known to
+modify neurotransmission in psychiatric conditions. For example, buspirone (Supplementary Table 2)
+modifies serotonin and dopamine neurotransmission and is used clinically in the treatment of anxiety
+and depression. Idalopirdine (Supplementary Table 2) modifies serotonin, glutamate, and cholinergic
+neurotransmission and is used in the treatment of dementia and schizophrenia. While antidepressants,
+including buspirone, have been used in the treatment of ME/CFS, their efficacy remains unclear (42). For
+example, despite the reported involvement of the dopamine and serotonin pathways in ME/CFS, trials
+examining ondansetron, duloxetine, phenelzine, and fluoxetine have not identified significant
+improvements in patients (8, 28).
+Our analysis identifying disruption of metabolic pathways in ME/CFS together the CMap L1000
+identification of compounds known to be metabolic regulators, suggested that the targeting of cellular
+metabolism may provide one therapeutic avenue for the treatment of ME/CFS. In examining the
+metabolic PPAR agonists, pioglitazone and rosiglitazone, only pioglitazone significantly increased
+mitochondrial membrane potential and ATP production in C2C12 myotubes (Fig. 6). This increase did not
+appear to be associated with the induction of mitochondrial biogenesis as we did not observe any
+change in mitochondrial mass (Fig. 6). Furthermore, despite the increased mitochondrial membrane
+potential and ATP production in response to pioglitazone, we did not observe increased ROS production
+(Supplementary Fig. 2). While pioglitazone and rosiglitazone are PPARg agonists, they are also able to
+activate PPARα at higher concentrations (36). It is noteworthy that pioglitazone is nearly 10-times less
+potent as an activator for PPARg than rosiglitazone (36). Thus, it is possible that the ability of
+Page 16/34
+
+pioglitazone but not rosiglitazone to increase mitochondrial membrane potential in C2C12 myotubes
+may be due to the activation of PPARα rather than PPARg. While such a proposal would be consistent
+with the reported increase in PPARα mRNA expression following C2C12 myotube differentiation, further
+work will be required to determine the mechanistic basis for the difference between pioglitazone and
+rosiglitazone observed in our studies (43).
+Pioglitazone and rosiglitazone are approved clinically in the treatment of T2DM. While their ability to
+activate PPAR-mediated transcriptional regulation of metabolic genes such as Glucose Transporter Type
+4, adiponectin and Acyl-CoA Synthetase Long Chain Family Member 1 are thought to underpin
+improvements in insulin sensitivity, there is evidence that they can also improve mitochondrial
+metabolism (44). For example, pioglitazone has been shown to enhance oxygen consumption and ATP
+production in insulin-resistant C2C12 muscle cells (45). In part, the ability of PPAR agonists to increase
+mitochondrial metabolism may be responsible for the increased growth capacity of C2C12 myoblasts
+observed in Fig. 7. Others have shown the decrease in exercise capacity, ADP-dependent mitochondrial
+respiration, complex I and III activities, and citrate synthase activity observed in high-fat diet diabetic
+mice were all ameliorated following pioglitazone treatment (46). While it remains unclear whether
+pioglitazone and rosiglitazone improve mitochondrial metabolism solely via PPAR-dependent pathways,
+the discovery that pioglitazone can directly bind the MitoNEET protein to regulate oxidative capacity
+suggests that multiple pathways may be involved (47).
+The underlying molecular basis for the pathological fatigue experienced by ME/CFS patients remains
+unclear. However, several lines of evidence suggest that impaired mitochondrial function may be a
+contributing factor. Primary peripheral blood monocytic cells, primary skeletal muscle cells and
+immortalized lymphocytes from ME/CFS patients exhibit a reduced mitochondrial coupling efficiency,
+ATP synthesis and oxygen consumption rate compared to cells isolated from healthy controls (48, 49).
+Furthermore, Mandarano et al. found a significant reduction in mitochondrial membrane potential in
+primary CD8+ T cells isolated from ME/CFS patients (50). The reduced mitochondrial metabolism in
+ME/CFS is proposed to result in altered metabolic profiles whereby compensatory anaplerosis in which
+specific amino acids and metabolites are used to replenish TCA intermediates thereby bridging the
+aerobic deficit (31). Additionally, Naviaux et. al. have shown that ME/CFS patients have abnormal
+metabolite profiles in their peripheral blood that are consistent with an overall reduction in metabolic
+capacity (23). Thus, given our findings that pioglitazone is able to increase mitochondrial membrane
+potential in C2C12 myoblasts, future work will be important for determining whether it can restore
+mitochondrial metabolism, including oxygen consumption and ATP production, in primary cells isolated
+from ME/CFS patients.
+To our knowledge, the ability of pioglitazone to improve pathological fatigue in patients has not been
+reported. However, there is evidence that pioglitazone can improve skeletal muscle metabolism in vivo.
+For example, pioglitazone significantly improved oxygen consumption, anaerobic threshold and skeletal
+muscle fatty acid oxidation in a small cohort of metabolic syndrome patients subjected to bicycle
+ergometer exercise testing (51). Furthermore, while oxygen consumption in skeletal muscle explants
+Page 17/34
+
+taken from T2DM patients was reduced compared to age- and BMI-matched control subjects, explants
+taken from T2DM patients that had been treated with pioglitazone (but not rosiglitazone) demonstrated
+partial restoration (52). In line with the observed impairment in mitochondrial metabolism in cells
+isolated from ME/CFS patients, several studies have reported reduced oxygen consumption and
+anaerobic thresholds in patients when measured by cardio-pulmonary exercise tests (29, 30). Thus,
+future work examining the ability of pioglitazone to increase mitochondrial metabolism including
+oxidative phosphorylation in primary cells obtained from ME/CFS patients may pave the way for future
+clinical trials in which the re-purposing of pioglitazone for the treatment of ME/CFS could be considered.
+Our results further showed that tideglusib induced a transient increase of mitochondrial membrane
+potential and ATP production in both C2C12 myoblasts and myotubes (Fig. 5, 6). The increased
+mitochondrial membrane potential in response to tideglusib did not appear to be due to mitochondrial
+biogenesis, as mitochondrial mass remained unchanged (Fig. 5, 6). Tideglusib is a GSK-3β inhibitor that
+is currently in clinical development for degenerative pathologies, including Alzheimer’s disease and
+myotonic dystrophy (53, 54). While such conditions are known to be associated with protein aggregation
+and proteasomal dysfunction, they are also characterized by impaired mitochondrial metabolism. For
+example, in a study by Martin et. al., GSK3β inhibition both in cell lines and in mice increased
+mitochondrial membrane potential and respiration (55). Importantly, these studies found that GSK3β
+inhibition increased the stability of PPAR coactivator 1-alpha (PGC-1α) that is a key regulator of the
+PPARs (55). In part, such a pathway may facilitate the ability of PGC1α to increase aspartate and
+glutamate levels, leading to improved energy utilization and mitochondrial respiration (56). Also
+consistent with our findings, Theeuwes et. al. found that siRNA inhibition of GSK3β in C2C12 cells
+increased mitochondrial respiration (57). Tideglusib has been shown to improve oxidative metabolism
+and reduce muscle fatigue in a C57BL/10-mdx mouse model of muscular dystrophy (58). Similarly,
+tideglusib demonstrated improvements in neuromuscular symptoms, including fatigue, in a Phase II
+study of myotonic dystrophy type 1, although whether the improvement was mediated via mitochondrial
+metabolism was not assessed (54). Given its favourable pharmacokinetic and toxicity profiles, further
+investigation into the potential repurposing of tideglusib for the treatment of ME/CFS is warranted (54).
+Crosstalk has been reported for GSK3 and mTORC1 in a number of cell types whereby GSK3 inhibition
+can lead to mTORC1 activation and, reciprocally, mTORC1 activation can lead to GSK3 inactivation (59).
+Given our findings with the GSK3 inhibitor, tideglusib, we also analysed the mTORC1 activator, MHY1485.
+Similar to tideglusib, MHY1485 was also shown to transiently increase mitochondrial membrane
+potential and ATP production in C2C12 myotubes in a manner that was independent of both
+mitochondrial mass and ROS production (Fig. 6, Supplementary Fig. 2). Although both mTORC1 and
+GSK3 are known to control cell growth and metabolism, neither MHY1485 nor tideglusib significantly
+affected the growth of C2C12 myoblasts (Fig. 7). While our studies did not investigate the mechanisms
+by which MHY1485 may influence mitochondrial membrane potential, Bantug et. al. reported that
+mTORC signalling via GSK3 at mitochondria-ER contact sites promotes the TCA cycle flux that is
+important for the effector functions of memory CD8+ T cells suggesting functional roles in mitochondrial
+respiration (60). In addition, while the over-expression of the IRX5 homeobox transcription factor
+Page 18/34
+
+disrupted mitochondrial structure and impeded mitochondrial oxygen consumption in human bone
+marrow-derived mesenchymal stem cells, these effects could be partly overcome by MHY1485,
+implicating a role for mTORC1 activation in mitochondrial function (61). It could be that the impaired
+mitochondrial metabolism in ME/CFS is due to the accumulation of dysfunctional mitochondria as a
+consequence of aberrant autophagy. BECN1 (Beclin-1), a key regulator of autophagy that integrates
+signals from mTORC1, was identified as part of our ME/CFS disease signature (Table 1). Others have
+reported that the autophagy-related protein, ATG13, is upregulated in the serum of ME/CFS patients,
+suggesting impaired or abortive autophagy (62). While approaches that promote mTORC1 activity could
+conceivably restore defective autophagic pathways, it is noteworthy that a single-arm clinical trial in
+which ME/CFS patients were treated with a low dose of the mTORC1 inhibitor, rapamycin, reported
+improvements in multiple symptoms, including fatigue and PEM, although the improvements did not
+always correlate with autophagic markers such as BECN1 (63). Further work will be important in
+determining whether the targeting of mTORC1 may be therapeutically beneficial in ME/CFS.
+Our study has several limitations. Most notably, our study was performed in a single C2C12 muscle cell
+line, and so there will be important differences in terms of the in vivo physiology in ME/CFS patients. In
+addition, while the application of CMap has had some success in identifying candidate drugs for
+repurposing in a number of pathologies, the drug-induced gene expression profiles within CMap were not
+generated from cells derived from ME-CFS patients. Thus, the ability of a drug to revert an ME/CFS
+disease signature in CMap cell lines may not translate to reversion in ME/CFS patients. Furthermore,
+while we have examined short-term drug effects on mitochondrial metabolism and growth, we have not
+examined the effects of each compound on the expression of ME/CFS disease signature genes. Future
+work will be important in examining primary cells derived from ME/CFS patients and the ability of each
+compound to revert the disease signature. Lastly, determinants of therapeutic efficacy are complex and
+involve a range of factors beyond matching inverse compound-disease expression profiles. For example,
+therapeutic responses can be determined by the bioavailability of the drug to target tissues and its
+therapeutic window. Thus, further preclinical investigations will be important before randomized
+prospective ME/CFS clinical trials could be considered.
+Despite over four decades of research, ME/CFS remains a disease for which there is no clearly
+understood mechanistic basis, no reproducible biomarkers, no clear therapeutic targets and no validated
+pre-clinical models. Developing new drug discovery pipelines within such a ‘knowledge vacuum’ presents
+substantial barriers to clinical translation. These issues are compounded by the escalating costs and
+length of time required to deliver new therapies following conventional drug development pipelines that
+involve target identification, lead development, in vitro evaluation, pre-clinical testing and clinical trials.
+Even if such conventional pipelines identify a new drug with therapeutic potential, the current risk-
+adverse economic climate and high failure rates can hinder development. For ME/CFS, an off-the-shelf
+approach has predominated in which the majority of controlled drug trials have examined existing
+immunotherapies that were selected on the basis that ME/CFS is an immune disease (64). Although
+such quasi ad hoc approaches are important for orphan diseases such as ME/CFS, alternative
+approaches in which drug repurposing based on the unbiased matching of reciprocal disease:drug gene
+Page 19/34
+
+expression signatures may offer important alternative routes to clinical trials. To date, reciprocal
+matching of disease:drug expression signatures has been applied to a number of diseases with some
+success (16, 18, 19). Thus, with a detailed understanding of ME/CFS aetiology, biomarkers, therapeutic
+targets, and pre-clinical models still lacking, rational approaches to drug repurposing, such as described
+herein, may be an attractive alternative to conventional drug development pathways.
+To our knowledge, there are no approved drug therapies targeting pathological fatigue associated with
+mitochondrial dysfunction. In the case of ME/CFS, while some dietary and nutritional supplements
+aimed at improving mitochondrial function have been investigated, objective improvements have not
+been observed (65). With pathological fatigue being a prevalent symptom associated with diverse
+diseases, ‘metabolic’ drugs may have wide application provided that both efficacy and safety can be
+demonstrated. In particular, with the finding that long-COVID demonstrates many of the clinical
+hallmarks of ME/CFS including pathological fatigue, the approaches outlined herein may have wider
+application, particularly for diseases for which traditional drug development pathways may not be
+available and for which there is urgent unmet need (25).
+Abbreviations
+ME/CFS
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome
+DEG
+Differentially expressed gene
+MS
+Multiple sclerosis
+CRF
+Cancer-related fatigue
+PSF
+Post-stroke fatigue
+LINCS
+Library of Integrated Cellular Signatures
+CMap
+Connectivity Map
+PPAR
+Peroxisome proliferator-activated receptor
+GSK3
+Glycogen synthase kinase 3
+mTORC1
+Mechanistic target of rapamycin complex 1
+GEO
+Gene expression omnibus
+FDR
+Page 20/34
+
+False discovery rate
+FC
+Fold change
+DMEM
+Dulbecco’s Modified Eagle Medium
+HI-FBS
+Heat-inactivated foetal bovine serum
+TMRE
+Tetramethylrhodamine Ethyl Ester
+MTG
+MitoTracker Green
+MSR
+MitoSOX Red
+ROS
+Reactive oxygen species
+SMAC
+Second mitochondrial-derived activator of caspases
+CPET
+Cardio-pulmonary exercise tests
+T2DM
+Type 2 diabetes mellitus
+PGC-1α
+PPAR coactivator 1-alpha
+Declarations
+Ethical approval and consent to participate
+Not applicable
+Consent for Publication
+Not applicable
+Availability of data and materials 
+All data generated or analysed during this study are included in this published article and its
+supplementary information files.
+Competing interests
+The authors declare no conflict of interest.
+Page 21/34
+
+Funding
+The authors received no financial support for the research.
+Author’s contributions
+AD: Conceptualization, Data curation, formal analysis, investigation, methodology, project administration,
+software, validation, visualization, Writing – Original Draft Preparation, Writing – Review & Editing
+MAG: Conceptualization, Data curation, funding acquisition, investigation, methodology, project
+administration, resources, supervision, validation, Writing – Original Draft Preparation, Writing – Review &
+Editing
+ZA: Data curation, formal analysis, investigation, methodology, validation, visualization, Writing – Review
+& Editing
+Acknowledgements
+We thank all researchers who have publicly shared gene expression data, enabling open, reproducible,
+and impactful scientific research.
+References
+1. Nijrolder I, van der Windt DA, van der Horst HE. Prognosis of fatigue and functioning in primary care:
+a 1-year follow-up study. Ann Fam Med. 2008;6(6):519–27.
+2. Cullen W, Kearney Y, Bury G. Prevalence of fatigue in general practice. Ir J Med Sci. 2002;171(1):10–
+2.
+3. Louati K, Berenbaum F. Fatigue in chronic inflammation - a link to pain pathways. Arthritis Res Ther.
+2015;17:254.
+4. Falk Hvidberg M, Brinth LS, Olesen AV, Petersen KD, Ehlers L. The Health-Related Quality of Life for
+Patients with Myalgic Encephalomyelitis / Chronic Fatigue Syndrome (ME/CFS). PLoS ONE.
+2015;10(7):e0132421.
+5. Sprangers MA, de Regt EB, Andries F, van Agt HM, Bijl RV, de Boer JB, et al. Which chronic conditions
+are associated with better or poorer quality of life? J Clin Epidemiol. 2000;53(9):895–907.
+6. Stadje R, Dornieden K, Baum E, Becker A, Biroga T, Bosner S, et al. The differential diagnosis of
+tiredness: a systematic review. BMC Fam Pract. 2016;17(1):147.
+7. Matura LA, Malone S, Jaime-Lara R, Riegel B. A Systematic Review of Biological Mechanisms of
+Fatigue in Chronic Illness. Biol Res Nurs. 2018;20(4):410–21.
+8. Kim DY, Lee JS, Park SY, Kim SJ, Son CG. Systematic review of randomized controlled trials for
+chronic fatigue syndrome/myalgic encephalomyelitis (CFS/ME). J translational Med. 2020;18(1):7.
+Page 22/34
+
+9. Smith ME, Haney E, McDonagh M, Pappas M, Daeges M, Wasson N, et al. Treatment of Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome: A Systematic Review for a National Institutes of
+Health Pathways to Prevention Workshop. Ann Intern Med. 2015;162(12):841–50.
+10. Perez DQ, Espiritu AI, Jamora RDG. Efficacy and safety of amantadine for the treatment of fatigue in
+multiple sclerosis: a systematic review and meta-analysis. Neurodegener Dis Manag.
+2020;10(6):383–95.
+11. Shangyan H, Kuiqing L, Yumin X, Jie C, Weixiong L. Meta-analysis of the efficacy of modafinil versus
+placebo in the treatment of multiple sclerosis fatigue. Mult Scler Relat Disord. 2018;19:85–9.
+12. Yennurajalingam S, Lu Z, Rozman De Moraes A, Tull NN, Kubiak MJ, Geng Y et al. Meta-Analysis of
+Pharmacological, Nutraceutical and Phytopharmaceutical Interventions for the Treatment of Cancer
+Related Fatigue. Cancers (Basel). 2022;15(1).
+13. Chu SH, Zhao X, Komber A, Cheyne J, Wu S, Cowey E, et al. Systematic review: Pharmacological
+interventions for the treatment of post-stroke fatigue. Int J Stroke. 2023;18(9):1071–83.
+14. Mucke M, Mochamat, Cuhls H, Peuckmann-Post V, Minton O, Stone P et al. Pharmacological
+treatments for fatigue associated with palliative care. Cochrane Database Syst Rev.
+2015(5):CD006788.
+15. Sun D, Gao W, Hu H, Zhou S. Why 90% of clinical drug development fails and how to improve it? Acta
+Pharm Sinica B. 2022.
+16. Pushpakom S, Iorio F, Eyers PA, Escott KJ, Hopper S, Wells A, et al. Drug repurposing: progress,
+challenges and recommendations. Nat Rev Drug Discov. 2019;18(1):41–58.
+17. Subramanian A, Narayan R, Corsello SM, Peck DD, Natoli TE, Lu X, et al. A Next Generation
+Connectivity Map: L1000 Platform and the First 1,000,000 Profiles. Cell. 2017;171(6):1437–e5217.
+18. Ramsey JM, Kettyle LM, Sharpe DJ, Mulgrew NM, Dickson GJ, Bijl JJ, et al. Entinostat prevents
+leukemia maintenance in a collaborating oncogene-dependent model of cytogenetically normal
+acute myeloid leukemia. Stem Cells. 2013;31(7):1434–45.
+19. Klein J, Caubet C, Camus M, Makridakis M, Denis C, Gilet M, et al. Connectivity mapping of
+glomerular proteins identifies dimethylaminoparthenolide as a new inhibitor of diabetic kidney
+disease. Sci Rep. 2020;10(1):14898.
+20. Gow JW, Hagan S, Herzyk P, Cannon C, Behan PO, Chaudhuri A. A gene signature for post-infectious
+chronic fatigue syndrome. BMC Med Genomics. 2009;2:38.
+21. Gamer J, Van Booven DJ, Zarnowski O, Arango S, Elias M, Kurian A et al. Sex-Dependent
+Transcriptional Changes in Response to Stress in Patients with Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome: A Pilot Project. Int J Mol Sci. 2023;24(12).
+22. Lamb J, Crawford ED, Peck D, Modell JW, Blat IC, Wrobel MJ, et al. The Connectivity Map: using
+gene-expression signatures to connect small molecules, genes, and disease. Science.
+2006;313(5795):1929–35.
+23. Naviaux RK, Naviaux JC, Li K, Bright AT, Alaynick WA, Wang L, et al. Metabolic features of chronic
+fatigue syndrome. Proc Natl Acad Sci USA. 2016;113(37):E5472–80.
+Page 23/34
+
+24. Bansal AS, Bradley AS, Bishop KN, Kiani-Alikhan S, Ford B. Chronic fatigue syndrome, the immune
+system and viral infection. Brain Behav Immun. 2012;26(1):24–31.
+25. Dehlia A, Guthridge MA. The persistence of myalgic encephalomyelitis/chronic fatigue syndrome
+(ME/CFS) after SARS-CoV-2 infection: A systematic review and meta-analysis. J Infect.
+2024;89(6):106297.
+26. Fluge O, Rekeland IG, Lien K, Thurmer H, Borchgrevink PC, Schafer C, et al. B-Lymphocyte Depletion
+in Patients With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Randomized, Double-Blind,
+Placebo-Controlled Trial. Ann Intern Med. 2019;170(9):585–93.
+27. Roerink ME, Bredie SJH, Heijnen M, Dinarello CA, Knoop H, Van der Meer JWM. Cytokine Inhibition in
+Patients With Chronic Fatigue Syndrome: A Randomized Trial. Ann Intern Med. 2017;166(8):557–64.
+28. Seton KA, Espejo-Oltra JA, Gimenez-Orenga K, Haagmans R, Ramadan DJ, Mehlsen J et al.
+Advancing Research and Treatment: An Overview of Clinical Trials in Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) and Future Perspectives. J Clin Med.
+2024;13(2).
+29. Stevens S, Snell C, Stevens J, Keller B, VanNess JM. Cardiopulmonary Exercise Test Methodology
+for Assessing Exertion Intolerance in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. Front
+Pead. 2018;6:242.
+30. Keller BA, Pryor JL, Giloteaux L. Inability of myalgic encephalomyelitis/chronic fatigue syndrome
+patients to reproduce VO(2)peak indicates functional impairment. J translational Med. 2014;12:104.
+31. Fluge O, Mella O, Bruland O, Risa K, Dyrstad SE, Alme K, et al. Metabolic profiling indicates impaired
+pyruvate dehydrogenase function in myalgic encephalopathy/chronic fatigue syndrome. JCI insight.
+2016;1(21):e89376.
+32. Brincks EL, Adams J, Wang L, Turner B, Marcinowicz A, Ke J, et al. Indoximod opposes the
+immunosuppressive effects mediated by IDO and TDO via modulation of AhR function and
+activation of mTORC1. Oncotarget. 2020;11(25):2438–61.
+33. Souder DC, Anderson RM. An expanding GSK3 network: implications for aging research.
+Geroscience. 2019;41(4):369–82.
+34. Li HX, Sun MR, Zhang Y, Song LL, Zhang F, Song YQ, et al. Human Carboxylesterase 1A Plays a
+Predominant Role in Hydrolysis of the Anti-Dyslipidemia Agent Fenofibrate in Humans. Drug Metab
+Dispos. 2023;51(11):1490–8.
+35. Murakami R, Murakami H, Kataoka H, Cheng XW, Takahashi R, Numaguchi Y, et al. Unmetabolized
+fenofibrate, but not fenofibric acid, activates AMPK and inhibits the expression of
+phosphoenolpyruvate carboxykinase in hepatocytes. Life Sci. 2010;87(15–16):495–500.
+36. Sakamoto J, Kimura H, Moriyama S, Odaka H, Momose Y, Sugiyama Y, et al. Activation of human
+peroxisome proliferator-activated receptor (PPAR) subtypes by pioglitazone. Biochem Biophys Res
+Commun. 2000;278(3):704–11.
+37. Lebiedzinska-Arciszewska M, Suski J, Bonora M, Pakula B, Pinton P, Duszynski J, et al. The Relation
+Between Mitochondrial Membrane Potential and Reactive Oxygen Species Formation. Methods Mol
+Page 24/34
+
+Biol. 2025;2878:133–62.
+38. Corbitt M, Eaton-Fitch N, Staines D, Cabanas H, Marshall-Gradisnik S. A systematic review of
+cytokines in chronic fatigue syndrome/myalgic encephalomyelitis/systemic exertion intolerance
+disease (CFS/ME/SEID). BMC Neurol. 2019;19(1):207.
+39. Rekeland IG, Fosså A, Lande A, Ktoridou-Valen I, Sørland K, Holsen M et al. Intravenous
+Cyclophosphamide in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. An Open-Label Phase
+II Study. Front Med. 2020;7.
+40. Watt T, Oberfoell S, Balise R, Lunn MR, Kar AK, Merrihew L, et al. Response to valganciclovir in
+chronic fatigue syndrome patients with human herpesvirus 6 and Epstein-Barr virus IgG antibody
+titers. J Med Virol. 2012;84(12):1967–74.
+41. Strayer DR, Young D, Mitchell WM. Effect of disease duration in a randomized Phase III trial of
+rintatolimod, an immune modulator for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome. PLoS
+ONE. 2020;15(10):e0240403.
+42. Leong KH, Yip HT, Kuo CF, Tsai SY. Treatments of chronic fatigue syndrome and its debilitating
+comorbidities: a 12-year population-based study. J translational Med. 2022;20(1):268.
+43. Shimizu Y, Hamada K, Guo T, Hasegawa C, Kuga Y, Takeda K, et al. Role of PPARalpha in
+inflammatory response of C2C12 myotubes. Biochem Biophys Res Commun. 2024;694:149413.
+44. Fang L, Zhang M, Li Y, Liu Y, Cui Q, Wang N. PPARgene: A Database of Experimentally Verified and
+Computationally Predicted PPAR Target Genes. PPAR Res. 2016;2016:6042162.
+45. Pagel-Langenickel I, Bao J, Joseph JJ, Schwartz DR, Mantell BS, Xu X, et al. PGC-1alpha integrates
+insulin signaling, mitochondrial regulation, and bioenergetic function in skeletal muscle. J Biol
+Chem. 2008;283(33):22464–72.
+46. Takada S, Hirabayashi K, Kinugawa S, Yokota T, Matsushima S, Suga T, et al. Pioglitazone
+ameliorates the lowered exercise capacity and impaired mitochondrial function of the skeletal
+muscle in type 2 diabetic mice. Eur J Pharmacol. 2014;740:690–6.
+47. Wiley SE, Murphy AN, Ross SA, van der Geer P, Dixon JE. MitoNEET is an iron-containing outer
+mitochondrial membrane protein that regulates oxidative capacity. Proc Natl Acad Sci USA.
+2007;104(13):5318–23.
+48. Tomas C, Brown AE, Newton JL, Elson JL. Mitochondrial complex activity in permeabilised cells of
+chronic fatigue syndrome patients using two cell types. PeerJ. 2019;7:e6500.
+49. Missailidis D, Annesley SJ, Allan CY, Sanislav O, Lidbury BA, Lewis DP et al. An Isolated Complex V
+Inefficiency and Dysregulated Mitochondrial Function in Immortalized Lymphocytes from ME/CFS
+Patients. Int J Mol Sci. 2020;21(3).
+50. Mandarano AH, Maya J, Giloteaux L, Peterson DL, Maynard M, Gottschalk CG et al. Myalgic
+encephalomyelitis/chronic fatigue syndrome patients exhibit altered T cell metabolism and cytokine
+associations. J Clin Invest. 2020.
+51. Yokota T, Kinugawa S, Hirabayashi K, Suga T, Takada S, Omokawa M, et al. Pioglitazone improves
+whole-body aerobic capacity and skeletal muscle energy metabolism in patients with metabolic
+Page 25/34
+
+syndrome. J Diabetes Investig. 2017;8(4):535–41.
+52. Rabol R, Boushel R, Almdal T, Hansen CN, Ploug T, Haugaard SB, et al. Opposite effects of
+pioglitazone and rosiglitazone on mitochondrial respiration in skeletal muscle of patients with type 2
+diabetes. Diabetes Obes Metab. 2010;12(9):806–14.
+53. Lovestone S, Boada M, Dubois B, Hull M, Rinne JO, Huppertz HJ, et al. A phase II trial of tideglusib in
+Alzheimer's disease. J Alzheimers Dis. 2015;45(1):75–88.
+54. Horrigan J, Gomes TB, Snape M, Nikolenko N, McMorn A, Evans S, et al. A Phase 2 Study of AMO-02
+(Tideglusib) in Congenital and Childhood-Onset Myotonic Dystrophy Type 1 (DM1). Pediatr Neurol.
+2020;112:84–93.
+55. Martin SA, Souder DC, Miller KN, Clark JP, Sagar AK, Eliceiri KW, et al. GSK3beta Regulates Brain
+Energy Metabolism. Cell Rep. 2018;23(7):1922–31. e4.
+56. Agudelo LZ, Ferreira DMS, Dadvar S, Cervenka I, Ketscher L, Izadi M, et al. Skeletal muscle PGC-
+1alpha1 reroutes kynurenine metabolism to increase energy efficiency and fatigue-resistance. Nat
+Commun. 2019;10(1):2767.
+57. Theeuwes WF, Gosker HR, Langen RCJ, Pansters NAM, Schols A, Remels AHV. Inactivation of
+glycogen synthase kinase 3beta (GSK-3beta) enhances mitochondrial biogenesis during
+myogenesis. Biochim Biophys Acta Mol Basis Dis. 2018;1864(9 Pt B):2913–26.
+58. Marcella BM, Hockey BL, Braun JL, Whitley KC, Geromella MS, Baranowski RW, et al. GSK3 inhibition
+improves skeletal muscle function and whole-body metabolism in male mouse models of Duchenne
+muscular dystrophy. Nat Commun. 2024;15(1):10210.
+59. Evangelisti C, Chiarini F, Paganelli F, Marmiroli S, Martelli AM. Crosstalks of GSK3 signaling with the
+mTOR network and effects on targeted therapy of cancer. Biochim Biophys Acta Mol Cell Res.
+2020;1867(4):118635.
+60. Bantug GR, Fischer M, Grahlert J, Balmer ML, Unterstab G, Develioglu L, et al. Mitochondria-
+Endoplasmic Reticulum Contact Sites Function as Immunometabolic Hubs that Orchestrate the
+Rapid Recall Response of Memory CD8(+) T Cells. Immunity. 2018;48(3):542–55. e6.
+61. Jiang B, Zheng J, Yao H, Wang Y, Song F, Huang C. IRX5 suppresses osteogenic differentiation of
+hBMSCs by inhibiting protein synthesis. J Cell Physiol. 2024;239(6):e31286.
+62. Gottschalk G, Peterson D, Knox K, Maynard M, Whelan RJ, Roy A. Elevated ATG13 in serum of
+patients with ME/CFS stimulates oxidative stress response in microglial cells via activation of
+receptor for advanced glycation end products (RAGE). Mol Cell Neurosci. 2022;120:103731.
+63. Ruan BT, Bulbule S, Gile B, Reyes A, Chheda B, Bateman L, et al. Low-dose rapamycin alleviates
+clinical symptoms of fatigue and PEM in ME/CFS patients via improvement of autophagy: a pilot
+study. J translational Med. 2025;23(1):1148.
+64. Whiting P, Bagnall AM, Sowden AJ, Cornell JE, Mulrow CD, Ramirez G. Interventions for the treatment
+and management of chronic fatigue syndrome: a systematic review. JAMA. 2001;286(11):1360–8.
+65. Campagnolo N, Johnston S, Collatz A, Staines D, Marshall-Gradisnik S. Dietary and nutrition
+interventions for the therapeutic treatment of chronic fatigue syndrome/myalgic encephalomyelitis:
+Page 26/34
+
+a systematic review. J Hum Nutr dietetics: official J Br Diet Association. 2017;30(3):247–59.
+Figures
+Figure 1
+Workflow. Drug repurposing scheme for diseases with unclear aetiology and no approved therapies. The
+differentially expressed genes (DEGs) were identified using two independent datasets (GSE14577 and
+GSE227375). DEGs common to both datasets were subjected to Connectivity Map (CMAP) L1000 for the
+identification of functional gene networks and potential therapeutic compounds for ME/CFS. The
+compounds were further prioritized based on their targets and tested in vitro for their ability to improve
+mitochondrial bioenergetics.
+Page 27/34
+
+Figure 2
+in-silico identification of DEGs in ME/CFS. The microarray GSE14577 and RNAseq GSE227375 datasets
+were analysed to identify DEGs. A) Volcano plot of the microarray GSE14577 dataset, and B) Volcano
+plot of the RNAseq GSE227375 dataset. The data were log transformed, and significantly DEGs were
+determined using FDR ≤ 0.05 and |log2(FC) ≥0.32|. The blue dots represent significantly expressed genes,
+whereas the grey dots represent non-significant genes. C) Venn diagram showing common up-regulated
+genes between microarray and RNAseq datasets. D) Venn diagram showing common down-regulated
+genes between microarray and RNAseq datasets. The details of these common genes are provided in
+Table 1 and Table 2.
+Page 28/34
+
+Figure 3
+Gene networks and pathway enrichment in ME/CFS. A) The 83 genes with negative connectivity scores
+were subjected to identify gene networks using STRING (v12.0) with an interaction score of 0.4. The MCL
+clustering with inflation of 3 was applied to the full gene network. The major gene networks identified
+were cytokine/growth factor signalling, metabolism and cell growth, lipid metabolism, infection and
+immunity, redox regulation, cytoskeleton, ubiquitination, and nucleotide metabolism. B) The KEGG
+Page 29/34
+
+pathways and C)Reactome pathways were analysed using 83 genes with negative connectivity score in
+ShinyGO (v0.82), and graphs were plotted using the ggplot2 package in R.
+Figure 4
+Drugs identified by CMap. The common DEGs were queried in CMap, and drugs were identified. Each
+point in the graph represents a drug plotted against the individual connectivity score and -log10FDR. The
+drugs with the highest negative connectivity score have the potential to be repurposed for ME/CFS. The
+boxed inset region of (A) is expanded to show top-ranked compounds with connectivity scores < -0.65
+and -log10(FDR) >15.35 (B).
+Page 30/34
+
+Figure 5
+The effect of Pioglitazone, Rosiglitazone, Tideglusib, and MHY1485 on mitochondrial membrane
+potential, ATP production, and mitochondrial biogenesis in C2C12 myoblasts. The C2C12 myoblasts
+were treated with either vehicle (0 nM), 1 nM, or 10 nM of the indicated compounds. The mitochondrial
+membrane potential (A-D), ATP production (E-H) and mitochondrial biogenesis (I-L) were estimated
+using TMRE, ATP luciferase, and MTG assay, respectively, at 24 hours. Values shown as mean ± standard
+Page 31/34
+
+deviation. p-values were calculated using an unpaired t-test. Significant differences are denoted with
+asterisks * p-value <0.05 and ** p-value <0.01.
+Figure 6
+The effect of Pioglitazone, Rosiglitazone, Tideglusib, and MHY1485 on mitochondrial membrane
+potential, ATP production, and mitochondrial biogenesis in C2C12 myotubes. The C2C12 myotubes
+Page 32/34
+
+were treated with either vehicle (0 nM), 1 nM, or 10 nM of the indicated compounds. The mitochondrial
+membrane potential, ATP production, and mitochondrial biogenesis were estimated using TMRE, ATP
+luciferase, and MTG assay, respectively, over 48 hours. Values shown as mean ± standard deviation. P-
+values were calculated using an unpaired t-test. Significant differences are denoted with asterisks * p-
+value <0.05 and ** p-value <0.01.
+Figure 7
+The effect of A) Pioglitazone, B) Rosiglitazone, C) Tideglusib, and D) MHY1485 on cell growth. The
+C2C12 myoblasts were treated with either vehicle (0 nM), 1 nM, or 10 nM of the indicated compounds,
+and cell growth was measured using the MTT assay over 72 hours. Values shown as mean ± standard
+deviation. P-values were calculated using an unpaired t-test. Significant differences are denoted with
+asterisks * p-value <0.05 and ** p-value <0.01.
+Supplementary Files
+This is a list of supplementary files associated with this preprint. Click to download.
+Page 33/34
+
+Supplementarydata.pdf
+Page 34/34
