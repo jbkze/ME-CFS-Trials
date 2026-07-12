@@ -1,8 +1,53 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-11",
+  "last_check": "2026-07-12",
   "papers": [
+    {
+      "id": "zhao-2026-exercise-meta-analysis",
+      "title": "The efficacy of exercise in patients with myalgic encephalomyelitis/chronic fatigue syndrome: A systematic review and meta-analysis",
+      "authors": "Zhao L, Gou B, Zhang M",
+      "journal": "Journal of Psychosomatic Research",
+      "date": "Aug 2026 (online Apr 2026)",
+      "summary": "Combining results from 17 controlled trials with almost 2,000 ME/CFS patients, exercise programmes improved fatigue, sleep, and quality of life, but did not meaningfully improve heart/lung fitness or physical capacity.",
+      "why": "Exercise therapy is a historically controversial topic in ME/CFS because overexertion can trigger post-exertional malaise (a crash after activity). This large pooled analysis suggests exercise may ease some symptoms but is not a fix for the underlying physical limitation, supporting a cautious, symptom-management role rather than a cure.",
+      "link": "https://doi.org/10.1016/j.jpsychores.2026.112677",
+      "first_seen": "2026-07-12",
+      "last_checked": "2026-07-12",
+      "flags": [],
+      "isNew": true,
+      "notes": "Online Apr 15, 2026; print Aug 2026 (Vol 207). Meta-analysis of 17 RCTs, n=1,944. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
+    },
+    {
+      "id": "wang-2026-cbt-component-network-meta-analysis",
+      "title": "Components and Delivery Formats of Cognitive Behavioral Therapy for Chronic Fatigue Syndrome/Myalgic Encephalomyelitis: A Systematic Review and Component Network Meta-Analysis",
+      "authors": "Wang S, Ren J, Fang S, Hao Q, Zhang YQ, Kong L, Fang M",
+      "journal": "Brain and Behavior",
+      "date": "Jun 2026",
+      "summary": "Analysing 16 trials of cognitive behavioural therapy (CBT, a talk therapy) for ME/CFS, guided self-help and one-on-one CBT reduced fatigue right after treatment. The specific ingredients that helped were goal-setting and acceptance-based techniques, while just teaching patients facts about the illness (psychoeducation) alone was possibly unhelpful.",
+      "why": "CBT is another historically contentious ME/CFS treatment. Rather than a blanket 'CBT works' or 'CBT doesn't work' claim, this pinpoints which specific ingredients may help versus backfire — useful for designing better-targeted psychological support alongside biomedical treatment.",
+      "link": "https://doi.org/10.1002/brb3.71513",
+      "first_seen": "2026-07-12",
+      "last_checked": "2026-07-12",
+      "flags": [],
+      "isNew": true,
+      "notes": "Brain Behav 16(6), Jun 2026 (online May 31, 2026). Component network meta-analysis of 16 trials. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
+    },
+    {
+      "id": "li-2026-acupuncture-meta-analysis",
+      "title": "Efficacy of acupuncture-based traditional Chinese medicine therapies for chronic fatigue syndrome: systematic review and meta-analysis",
+      "authors": "Li Y, Liang G, Xiao T, Xu L",
+      "journal": "Frontiers in Neurology",
+      "date": "Jun 2026",
+      "summary": "Combining 8 trials with 715 patients, acupuncture reduced overall, physical, and mental fatigue more than control treatments, with no difference in side effects — though the authors themselves caution the trials were small and of uneven quality.",
+      "why": "Adds acupuncture to the list of non-drug approaches with some trial evidence for ME/CFS fatigue, though the low-confidence evidence base (small, uneven-quality trials, flagged by the authors themselves) means it should not be over-weighted against biomedical treatment approaches.",
+      "link": "https://doi.org/10.3389/fneur.2026.1860788",
+      "first_seen": "2026-07-12",
+      "last_checked": "2026-07-12",
+      "flags": [],
+      "isNew": true,
+      "notes": "Front Neurol 17, Jun 24, 2026. Meta-analysis of 8 trials, n=715. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
+    },
     {
       "id": "dehlia-2026-gene-expression-drug-repurposing",
       "title": "Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) gene expression signatures for the identification of compounds targeting metabolism",
@@ -13,9 +58,9 @@
       "why": "Flags specific already-approved drugs that target how cells produce energy, which could be tested in ME/CFS patients faster than developing a brand-new drug, and adds independent computational support to the energy-production theory of ME/CFS.",
       "link": "https://doi.org/10.21203/rs.3.rs-10076074/v1",
       "first_seen": "2026-07-11",
-      "last_checked": "2026-07-11",
+      "last_checked": "2026-07-12",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Preprint, not yet peer-reviewed, posted Research Square Jul 5, 2026. Datasets GSE14577 and GSE227375; CMap L1000 drug-repurposing analysis; candidate compounds pioglitazone, rosiglitazone, tideglusib, MHY1485 tested on mouse myoblasts for mitochondrial membrane potential — all but rosiglitazone showed a modest significant increase. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
     },
     {
@@ -28,9 +73,9 @@
       "why": "Suggests it may be possible to predict, from measurements taken during the original COVID infection, which patients are heading toward the more severe, ME/CFS-like form of long COVID — useful for identifying who to watch closely or treat early.",
       "link": "https://doi.org/10.21203/rs.3.rs-10070418/v1",
       "first_seen": "2026-07-11",
-      "last_checked": "2026-07-11",
+      "last_checked": "2026-07-12",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Preprint, not yet peer-reviewed, posted Research Square Jun 28, 2026 (indexed Jul 2). Same Maes-led international group as donchev-2026-gut-microbiome-mecfs-longcovid and petrov-2026-monocyte-dc-immunophenotyping already in this database. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
     },
     {

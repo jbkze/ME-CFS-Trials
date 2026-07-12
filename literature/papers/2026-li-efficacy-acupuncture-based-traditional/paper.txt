@@ -1,0 +1,946 @@
+Frontiers in Neurology
+01
+frontiersin.org
+TYPE  Systematic Review
+PUBLISHED  24 June 2026
+DOI  10.3389/fneur.2026.1860788
+OPEN ACCESS
+EDITED BY
+Paulo Sargento, 
+Lusofona University, Portugal
+REVIEWED BY
+Muyu Chen, 
+Army Medical University, China
+Miguel Faria, 
+Escola Superior de Saúde Ribeiro 
+Sanches, Portugal
+*CORRESPONDENCE
+Lei Xu 
+ 13450225407@163.com
+RECEIVED 21 April 2026
+REVISED 26 May 2026
+ACCEPTED 08 June 2026
+PUBLISHED 24 June 2026
+CITATION
+Li Y, Liang G, Xiao T and Xu L (2026) 
+Efficacy of acupuncture-based 
+traditional Chinese medicine therapies 
+for chronic fatigue syndrome: a 
+systematic review and meta-analysis.
+Front. Neurol. 17:1860788.
+doi: 10.3389/fneur.2026.1860788
+COPYRIGHT
+© 2026 Li, Liang, Xiao and Xu. This is an 
+open-access article distributed under 
+the terms of the Creative Commons 
+Attribution License (CC BY). The use, 
+distribution or reproduction in other 
+forums is permitted, provided the 
+original author(s) and the copyright 
+owner(s) are credited and that the 
+original publication in this journal is 
+cited, in accordance with accepted 
+academic practice. No use, distribution 
+or reproduction is permitted which does 
+not comply with these terms.
+Efficacy of acupuncture-based 
+traditional Chinese medicine 
+therapies for chronic fatigue 
+syndrome: a systematic review 
+and meta-analysis
+Yanbing Li , Gaozhe Liang , Tingting Xiao  and Lei Xu *
+The Second Affiliated Hospital of Guangdong Medical University, Zhanjiang, China
+Objective: To systematically review the available evidence on acupuncture-
+related therapies for chronic fatigue syndrome (CFS), with cautious interpretation 
+due to the limited number and heterogeneity of studies.
+Methods: PubMed, Embase, Web of Science, and Cochrane Library were system­
+atically searched for randomized controlled trials (RCTs) on acupuncture-related 
+therapies for CFS from database inception to April 1, 2026. Two researchers inde­
+pendently performed literature screening, data extraction, and risk of bias assess­
+ment. The methodological quality of the included studies was evaluated using the 
+Cochrane RoB 2 tool for RCTs. Meta-analysis was conducted using R software. 
+Continuous outcomes were expressed as standardized mean difference (SMD) 
+with 95% confidence interval (CI), and binary outcomes as risk ratio (RR) with 95% 
+CI. Primary outcomes included overall fatigue, physical fatigue, mental fatigue, 
+total response rate, and incidence of adverse events.
+Results: A total of 8 RCTs involving 715 patients were included. Risk of bias 
+assessment showed that one study had a high overall risk of bias, and seven 
+studies raised “some concerns.” Meta-analysis results indicated that acupunc­
+ture-related therapies were superior to control interventions in improving overall 
+fatigue, with a statistically significant difference (SMD = −1.31, 95% CI: −2.16 to 
+−0.47, p = 0.002), although heterogeneity was high (I2 = 91.7%). They were also 
+superior to controls in improving physical fatigue (SMD = −0.52, 95% CI: −0.88 
+to −0.16, p = 0.0048; I2 = 63.8%) and mental fatigue (SMD = −0.59, 95% CI: −0.93 
+to −0.26, p = 0.0006; I2 = 56.5%). The total response rate was higher in the inter­
+vention group than in the control group, with a statistically significant difference 
+(RR = 1.22, 95% CI: 1.07 to 1.40, p = 0.004; I2 = 0.0%). Safety analysis showed no 
+statistically significant difference in the risk of adverse events between the inter­
+vention and control groups (RR = 2.26, 95% CI: 0.76 to 6.76, p = 0.144; I2 = 0.0%).
+Conclusion: Current limited evidence indicates that acupuncture-related thera­
+pies may have some beneficial effects on overall, physical, and mental fatigue 
+in patients with CFS, and may increase response rates; however, these findings 
+should be interpreted cautiously due to small sample sizes, moderate risk of bias, 
+and heterogeneity among studies. No explicit safety hazards have been con­
+firmed. And further validation by more high-quality RCTs is needed.
+Systematic review registration: This systematic review protocol was preregis­
+tered on the Open Science Framework (OSF) (https://osf.io. Registration DOI: 
+10.17605/OSF.IO/KJ67M).
+KEYWORDS
+acupuncture, chronic fatigue syndrome, Meta- analysis, systematic review, traditional 
+Chinese medicine therapies
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+02
+frontiersin.org
+1 Introduction
+Chronic fatigue syndrome (CFS), often co-designated with myal­
+gic encephalomyelitis (ME) as ME/CFS, is a chronic disease of unclear 
+etiology that involves multiple systems and leads to substantial func­
+tional impairment (1–3). Its main clinical features are persistent or 
+recurrent pathological fatigue, usually lasting more than 6 months and 
+not fully relieved by rest; in addition, patients frequently experience 
+post-exertional malaise, non-restorative sleep, cognitive decline, pain, 
+and autonomic dysfunction (4, 5). Given the current lack of univer­
+sally accepted specific biomarkers or objective diagnostic indicators, 
+the clinical diagnosis of CFS/ME still relies mainly on symptom-based 
+criteria and exclusionary assessment (6, 7). This situation not only 
+increases the complexity of clinical recognition and classification but 
+also contributes, to some extent, to inconsistencies in case definitions, 
+study populations, and outcome evaluation methods across different 
+studies (8).
+Current epidemiological data indicate that CFS/ME carries a con­
+siderable disease burden. A systematic review showed that the preva­
+lence varies according to case definitions, survey methods, and study 
+settings; when the CDC-1994 criteria are used, the reported preva­
+lence is relatively higher, and the risk of illness is generally higher in 
+women than in men (9, 10). Moreover, CFS/ME persistently affects 
+patients’ learning, work, and social functioning, and some patients 
+remain significantly limited in their activities over the long term, with 
+important impacts on individual quality of life and healthcare resource 
+utilization (11). Therefore, CFS/ME is no longer regarded as a mere 
+subjective fatigue state, but rather as a complex chronic disease with 
+clear clinical burden and public health significance (8, 11).
+Although research on CFS/ME has increased in recent years, its 
+pathophysiological mechanisms remain incompletely understood. It 
+is now generally believed that multiple factors—including immune 
+and inflammatory abnormalities, neuroinflammation, autonomic ner­
+vous system imbalance, energy metabolism disorders, and mitochon­
+drial dysfunction—may jointly participate in the onset and 
+development of the disease (12, 13). In particular, core manifestations 
+such as post-exertional worsening of symptoms, cognitive decline, and 
+orthostatic symptoms may be closely related to dysregulation of the 
+neuro-immune-endocrine network (14, 15). However, because of the 
+strong heterogeneity of the disease itself, the key mechanisms sug­
+gested by different studies are not entirely consistent, which makes it 
+difficult to establish a unified pathological model and standardized 
+intervention pathway (16).
+In terms of treatment, there is currently no universally accepted 
+specific therapy for CFS/ME, and clinical management mainly focuses 
+on symptom relief, maintenance of function, and individualized sup­
+portive care. For this reason, the search for safe, acceptable adjunctive 
+treatments that may help improve core symptoms has become an 
+important research direction in this field. Acupuncture-related thera­
+pies, as commonly used non-pharmacological interventions, have 
+attracted increasing attention for their application in fatigue-related 
+and chronic functional diseases. Nevertheless, the efficacy of acupunc­
+ture for CFS still needs to be further clarified through more rigorous 
+evidence-based research. Based on this, the present study included 
+RCTs of acupuncture-related therapies for CFS, and through a system­
+atic review and meta-analysis comprehensively evaluated their effects 
+on overall fatigue, physical fatigue, mental fatigue, clinical effective­
+ness, and safety, with the aim of providing a basis for clinical practice 
+and future research.
+2 Methods
+2.1 Study design
+The present study was conducted as a systematic review and 
+meta-analysis to investigate the clinical effectiveness and safety of 
+acupuncture-related treatments for CFS. The study was prospectively 
+registered on INPLASY (Registration number: INSPLASY202650138; 
+https://www.inplasy.com) and was designed, implemented, and 
+reported in accordance with the PRISMA 2020 statement. The study 
+population was restricted to patients with a definite diagnosis of CFS, 
+and the study type was restricted to RCTs to improve the internal 
+validity of the evidence and the comparability of results. For studies 
+that also included other types of chronic fatigue, only data from the 
+subgroup meeting CFS diagnostic criteria were extracted; among 
+them, the study by Kim et al. (17) contributed only the CFS sub­
+group data.
+2.2 Inclusion and exclusion criteria
+The inclusion and exclusion criteria were developed according to 
+the PICOS principle. Included studies had to meet the following cri­
+teria: participants were patients with CFS, with no restrictions on age, 
+sex, ethnicity, or geographic region; the study design was an RCT; the 
+experimental group received acupuncture-related therapies, including 
+acupuncture, electroacupuncture, time-specific acupuncture, special 
+needling techniques, moxibustion, ginger-separated moxibustion, and 
+acupuncture combined with Chinese herbal medicine or conventional 
+treatment; the control group received conventional treatment, phar­
+macotherapy, lifestyle intervention, non-time-specific acupuncture, 
+non-acupoint acupuncture, Chinese herbal medicine alone, or other 
+non-acupuncture treatments; and at least one fatigue-related outcome 
+was reported, such as the Fatigue Severity Scale (FSS), Fatigue Scale-
+14 (FS-14), Chalder Fatigue Scale, Bell CFS score, or clinical response 
+rate. Exclusion criteria were: non-RCTs, case reports, case series, 
+reviews, systematic reviews, meta-analyses, conference abstracts, basic 
+research, and animal studies; duplicate publications; studies in which 
+participants were not CFS patients or CFS patient data could not be 
+extracted; interventions or control measures that did not meet the 
+predefined criteria; and studies that did not report extractable out­
+come data or whose data could not be converted or pooled.
+2.3 Information sources and search strategy
+We conducted a systematic literature search to identify relevant 
+RCTs on acupuncture-related interventions for CFS. Four elec­
+tronic databases were searched: PubMed, Embase, Web of Science, 
+and the Cochrane Library. The search timeframe spanned from the 
+launch date of each database up to April 1, 2026. To minimize the 
+chance of missing eligible studies, we also examined the reference 
+lists of the included articles and those of relevant reviews. The 
+search strategy was structured around three main elements: study 
+population, intervention type, and study design. Both controlled 
+vocabulary (subject headings) and free-text terms were used. The 
+main search terms included “chronic fatigue syndrome”, “myalgic 
+encephalomyelitis”, “fatigue syndrome, chronic”, “acupuncture”, 
+“electroacupuncture”, and “moxibustion.” All database-specific 
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+03
+frontiersin.org
+strategies were adapted to fit syntax and indexing rules. This com­
+prehensive documentation ensures reproducibility across 
+databases.
+Search strategies were developed for all four databases (PubMed, 
+Embase, Web of Science, and Cochrane Library) and are provided in 
+Supplementary Table S1. The PubMed search strategy is exemplified 
+as follows: (“Chronic Fatigue Syndrome” [Mesh] OR “chronic fatigue 
+syndrome” OR “myalgic encephalomyelitis” OR “fatigue syndrome, 
+chronic”) AND (“Acupuncture Therapy” [Mesh] OR acupuncture OR 
+electroacupuncture OR moxibustion) AND (randomized controlled 
+trial OR randomized OR randomly OR trial). If the present study 
+restricted its search to English databases or imposed language limits, 
+this should be specified during finalization to maintain consistency 
+between methods and results.
+2.4 Study selection and data acquisition
+To manage the identified literature and eliminate redundancies, 
+all records were imported into EndNote. The screening process 
+involved two independent investigators who initially assessed titles 
+and abstracts against established eligibility benchmarks. For citations 
+deemed potentially relevant, the full texts were retrieved and scruti­
+nized based on rigorous inclusion and exclusion criteria. Any dis­
+agreements between the primary reviewers were resolved through 
+internal deliberation; if a consensus could not be reached, a third 
+senior researcher provided an arbitration decision. The entire selec­
+tion workflow was mapped in accordance with the PRISMA 2020 
+framework.
+Regarding data extraction, two reviewers utilized a standardized 
+template to independently gather information from the final pool of 
+studies. The consistency of the extracted datasets was ensured through 
+meticulous cross-verification. Inter-rater reliability for data extraction 
+and risk-of-bias assessment was quantified using Cohen’s kappa 
+(κ = 0.87 for selection, κ = 0.81 for quality assessment), indicating sub­
+stantial agreement between reviewers. Captured variables included: 
+bibliographic data (first author, publication year, and geographic loca­
+tion), methodological details (study design, sample size, and diagnos­
+tic criteria), participant characteristics, intervention specifics (dosage, 
+duration, and follow-up), and outcomes (dropout rates, adverse 
+effects, and risk of bias metrics). For trials with multiple arms, we 
+focused on the intervention and control groups most aligned with our 
+research objectives to prevent redundant participant counting. In 
+cases where outcomes were reported across various intervals, data 
+from the treatment’s conclusion were prioritized for primary analysis, 
+while subsequent follow-up data served as supplementary descriptive 
+evidence.
+2.5 Quality assessment of included studies
+The methodological rigor of the randomized trials was scruti­
+nized using the Cochrane Risk of Bias 2 (RoB 2) instrument. This 
+assessment encompassed five distinct domains of potential bias: the 
+randomization process, deviations from intended interventions, 
+missing outcome data, measurement of outcomes, and selection of 
+the reported results. Following the RoB 2 algorithm, each domain 
+was categorized into three levels: low risk, some concerns, or high 
+risk, culminating in an overall bias determination for each study. To 
+ensure the reliability of the findings, two authors performed the 
+assessments independently. Discrepancies between the primary 
+evaluators were settled through consensus-building discussions; 
+where necessary, a third author was consulted to reach a definitive 
+consensus.
+2.6 Data synthesis and statistical methods
+All computational tasks were performed using R software. We 
+expressed results for binary outcomes (e.g., incidence of adverse 
+events) as RRs, while continuous outcomes from different scales (FSS, 
+FS-14, etc.) were aggregated using SMDs; both measures were 
+reported with 95% CIs.
+To address statistical heterogeneity, we employed the I2 statistic 
+and the χ2 test (using a 0.10 significance threshold). Given the clinical 
+diversity of acupuncture interventions across the literature, we con­
+ducted random-effects meta-analysis using the R package ‘meta’ (ver­
+sion 6.2–0). Pooled effects were estimated with the restricted 
+maximum likelihood (REML) method; sensitivity analyses using the 
+DerSimonian-Laird method were also performed to confirm robust­
+ness of results. In instances of substantial heterogeneity (I2 exceeding 
+50%), exploratory subgroup analyses based on intervention categories 
+were conducted. For trials with more than two arms, we ensured that 
+control subjects were only included once in the analysis. Significance 
+for all two-sided tests was established at p < 0.05.
+3 Results
+3.1 Identification of eligible studies
+From an initial pool of 126 retrieved records (124 from database 
+searches and 2 from other origins), 94 remained following deduplica­
+tion. A primary screening of titles and abstracts resulted in the 
+removal of 68 ineligible citations. We then retrieved and scrutinized 
+the full texts of the 26 remaining candidate articles. During this final 
+appraisal, 18 studies were rejected based on specific grounds: inap­
+propriate methodology (n = 6), participant non-eligibility (n = 4), 
+protocol deviations (n = 3), lack of extractable data (n = 3), and dupli­
+cate reporting (n = 2). Consequently, 8 trials were deemed eligible for 
+final inclusion in the qualitative and meta-analytic synthesis 
+(Figure 1).
+3.2 Basic characteristics of included studies
+Eight RCTs published between 2010 and 2021 were included. 
+Seven were conducted in China, and one in Korea, involving a total of 
+715 patients. All participants had CFS, and some studies further 
+restricted inclusion by TCM pattern differentiation. Interventions 
+mainly included acupuncture, moxibustion, and acupuncture com­
+bined with herbal medicine. Control interventions included conven­
+tional 
+treatment, 
+pharmacotherapy, 
+lifestyle 
+intervention, 
+non-time-specific acupuncture, non-acupoint acupuncture, and 
+herbal medicine alone. Treatment duration ranged from 14 days to 
+4 weeks. Most studies did not report post-treatment follow-up; only 
+one study reported follow-up at 5 and 13 weeks. Primary outcome 
+measures included FSS, FS-14, Chalder Fatigue Scale, Bell score, and 
+total response rate (Table 1).
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+04
+frontiersin.org
+3.3 Risk of bias assessment
+We applied the RoB 2 tool to evaluate the methodological quality 
+of the eight RCTs included in this review. Among the 8 included stud­
+ies, only one was at low overall risk of bias, seven had ‘some concerns’, 
+and one was at high risk. Major methodological issues included insuf­
+ficient description of random sequence generation and allocation 
+concealment in six studies, lack of blinding in seven studies (only one 
+study implemented blinding, none blinded outcome assessors), and 
+absence of pre-registration in six studies, raising concerns of selective 
+reporting. When examining the randomization process specifically, 
+two studies received a rating of low risk. For the other six studies, the 
+judgment was “some concerns,” primarily because the descriptions 
+provided for random sequence generation or allocation concealment 
+were insufficient. For deviations from intended interventions, only 1 
+study was at low risk, and the others were judged as “some concerns” 
+mainly because blinding was not implemented. For missing outcome 
+data, 7 studies were at low risk and 1 study raised “some concerns.” For 
+outcome measurement, 1 study was at high risk, and the remaining 
+studies raised “some concerns,” mainly related to the subjective nature 
+of the outcome measures and inadequate blinding. For selective 
+reporting, 2 studies were at low risk, and the others raised “some con­
+cerns” because of the lack of pre-registration or study protocol infor­
+mation. Overall, these methodological flaws may have led to an 
+overestimation of effect sizes, and the overall risk of bias can be con­
+sidered moderate. The risk of bias assessments across domains are 
+shown in Figure 2.
+3.4 Meta-analysis findings
+3.4.1 Analysis of overall fatigue
+A total of 551 subjects (intervention: 312; control: 239) across nine 
+comparisons were included in the overall fatigue analysis. Due to sig­
+nificant inter-study heterogeneity (I2  = 91.7%), a random-effects 
+framework was employed. The synthetic results indicated a superior 
+fatigue-reducing effect of acupuncture interventions compared to con­
+trol treatments (SMD = −1.31, 95% CI: −2.16 to −0.47, p = 0.002); 
+FIGURE 1
+Flow diagram of the literature screening process.
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+05
+frontiersin.org
+however, this pooled estimate should be interpreted cautiously due to 
+the extremely high heterogeneity.
+Further subgroup analysis identified intervention type as a poten­
+tial source of variation (p = 0.0024). Warm-needling/moxibustion 
+yielded the greatest clinical benefit (SMD = −2.07, 95% CI: −3.01 to 
+−1.12), while simple acupuncture (SMD = −1.39, 95% CI: −2.79 to 
+−0.00) and combined acupuncture (SMD = −0.29, 95% CI: −0.74 to 
+0.15) did not reach statistical significance. Control types varied widely, 
+including usual care (SMD  –0.85), oryzanol + vitamin B1 
+(SMD –1.10), prednisone (SMD –1.50), non-acupoint acupuncture 
+(SMD –0.65), sham acupuncture (SMD –0.92), Chinese herbal medi­
+cine alone (SMD –0.78), and lifestyle intervention (SMD –0.80). As 
+effect sizes differ substantially across control types, pooling all controls 
+together may obscure specific vs. non-specific effects and limits the 
+clinical interpretability of the overall pooled estimate. Despite this, 
+high heterogeneity persisted within subgroups (simple acupuncture 
+I2 = 93.5%, warm-needling/moxibustion I2 = 76.1%), and other poten­
+tial sources of heterogeneity—such as diagnostic criteria, intervention 
+duration, control type, and baseline severity—were not formally 
+explored, limiting the stability and interpretability of the results. Forest 
+plots for these outcomes are illustrated in Figure 3.
+Notably, formal statistical testing for publication bias was omitted 
+because the limited number of studies (n < 10) restricts the reliability 
+of such assessments. Instead, the stability of the evidence was visually 
+appraised using a funnel plot (Figure 4).
+3.4.2 Physical fatigue outcome
+A total of five comparisons (n = 363 patients; 206 intervention vs. 
+157 control) provided evidence for the physical fatigue outcome. 
+Given the moderate inconsistency identified among studies 
+(I2 = 63.8%, p = 0.026), a random-effects framework was pre-specified. 
+Acupuncture interventions demonstrated a superior effect in reducing 
+physical fatigue levels compared to controls (pooled SMD = −0.52, 
+95% CI: −0.88 to −0.16, p = 0.0048).
+TABLE 1  Basic characteristics of the included studies.
+Study
+Country
+Study 
+design
+Study 
+population
+Sample 
+size (n)
+Intervention
+Control
+Course
+Follow-
+up
+Primary 
+outcome
+Kim 
+2015 
+(17)
+Korea
+Multicenter, 
+open-label, 
+three-arm 
+parallel RCT
+Patients with 
+CFS and ICF; 
+only CFS 
+subgroup 
+extracted for this 
+meta-analysis
+Total 150; 
+CFS 
+subgroup 
+63
+Body acupuncture/
+Four-constitution 
+acupuncture 
+combined with 
+conventional 
+treatment
+Conventional 
+treatment
+4 weeks
+5 weeks, 
+13 weeks
+FSS
+Xu 2019 
+(18)
+China
+Single-
+center, 
+parallel RCT
+CFS patients, 
+aged 18–55 years
+68
+Acupuncture
+Oryzanol + 
+Vitamin 
+B1 + rest and 
+exercise
+4 weeks
+None
+FS-14
+Ling 
+2013 
+(19)
+China
+Parallel RCT
+CFS patients 
+with Qi 
+deficiency 
+pattern
+80
+Time-specific 
+acupuncture
+Non-time-
+specific 
+acupuncture
+20 days
+None
+Fatigue scale, 
+total response 
+rate
+Chen 
+XH 2010 
+(20)
+China
+RCT
+CFS patients 
+with Qi-Yin 
+deficiency 
+pattern
+90
+Acupuncture
+Shenmai 
+injection
+14 days
+Immediate 
+assessment
+FS scale
+Qi 2017 
+(30)
+China
+Parallel RCT
+CFS patients 
+with liver-
+depression and 
+spleen-deficiency 
+pattern
+60
+Chinese herbal 
+medicine + 
+acupuncture
+Chinese 
+herbal 
+medicine 
+alone
+30 days
+None
+FS-14
+Xu 2012 
+(31)
+China
+Parallel RCT
+CFS patients
+72
+Coiling dragon 
+needling + moving 
+cupping
+Prednisone
+14 days
+None
+Bell score, 
+total response 
+rate
+Lu 2014 
+(32)
+China
+Three-arm 
+parallel RCT
+CFS patients, 
+aged 18–55 years
+133
+Acupuncture / 
+Acupuncture plus 
+moxibustion
+Non-acupoint 
+acupuncture
+20 days
+None
+Chalder 
+Fatigue Scale
+Lin 2021 
+(33)
+China
+Parallel RCT
+CFS patients, 
+aged 18–60 years
+57
+Ginger-separated 
+moxibustion + 
+lifestyle 
+intervention
+Lifestyle 
+intervention 
+alone
+4 weeks
+None
+FS-14
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+06
+frontiersin.org
+FIGURE 2
+Risk of bias assessments across domains.
+FIGURE 3
+Forest plot of the meta-analysis for overall fatigue score.
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+07
+frontiersin.org
+Stratification by intervention modality revealed no significant het­
+erogeneity between subgroups (p = 0.1242). In the categorical analysis, 
+both simple acupuncture (SMD = −0.58, 95% CI: −1.07 to −0.10) and 
+warm-needling/moxibustion (SMD = −0.79, 95% CI: −1.33 to −0.25) 
+favored the intervention arm. However, the combination therapy sub­
+group failed to reach statistical significance (SMD = −0.05, 95% CI: 
+−0.56 to 0.45). These findings are visualized in the Figure 5 forest plot.
+Again, because the number of comparisons was small (<10), no 
+formal publication bias tests were performed; the funnel plot 
+(Figure 6) was used only for descriptive assessment.
+3.4.3 Mental fatigue outcome
+Mental fatigue outcomes were assessed using data from five com­
+parisons (363 subjects; 206 in the intervention arm and 157 in the 
+control arm). Based on a moderate heterogeneity level (I2 = 56.5%), 
+the effect sizes were aggregated using a random-effects model. The 
+results indicated that acupuncture treatments were superior to control 
+interventions in reducing mental fatigue scores (pooled SMD = −0.59, 
+95% CI: −0.93 to −0.26, p = 0.0006).
+Differential effects were observed across intervention types during 
+subgroup analysis (p = 0.0125). While simple acupuncture 
+(SMD = −0.53) and warm-needling/moxibustion (SMD = −1.27) 
+both significantly favored the intervention, the benefit was not sus­
+tained in the combined acupuncture subgroup (SMD = −0.14, 95% 
+CI: −0.65 to 0.37). Figure 7 presents the forest plot for this outcome. 
+As the number of comparisons was insufficient (n < 10) for robust 
+publication bias detection, the funnel plot in Figure 8 was used for 
+descriptive purposes only.
+3.4.4 Effectiveness and safety outcomes
+Efficacy data, measured by total response rates, were aggregated 
+from only two studies involving 152 participants, and adverse event 
+data came from three studies. The intervention was associated with a 
+higher clinical response rate (RR = 1.22, 95% CI: 1.07–1.40, p = 0.004); 
+however, due to the small number of studies, small sample sizes, and 
+wide confidence intervals, these results are highly unstable and should 
+be considered exploratory. Notably, none of the included studies 
+reported post-exertional malaise (PEM)-related data, which is the core 
+diagnostic symptom and a key efficacy endpoint for CFS. Furthermore, 
+most studies did not include follow-up assessments, precluding evalu­
+ation of the long-term efficacy of acupuncture. Safety assessments 
+involving 338 patients did not identify explicit hazards, but the limited 
+data and imprecise estimates warrant cautious interpretation.
+Due to the small number of included trials and the relatively 
+imprecise safety estimates (indicated by the broad confidence inter­
+val), the current results should be viewed as preliminary and inter­
+preted with caution. Detailed forest plots illustrating these effectiveness 
+and safety comparisons are available in Figure 9 (panels A and B).
+As the number of included studies was less than 10, formal pub­
+lication bias tests were not performed; the funnel plots (Figure 10A, 
+panel A for response rate, panel B for adverse event rate) are provided 
+for descriptive purposes only.
+4 Discussion
+In the present study, 8 RCTs with 715 participants were included 
+to review available evidence on acupuncture-based treatments for 
+fatigue symptoms and safety; given the limited and heterogeneous 
+data, the findings are provisional. The findings indicated that, com­
+pared with control measures, acupuncture-related interventions pro­
+duced statistically significant improvements in overall, physical, and 
+mental fatigue. Furthermore, although based on a small number of 
+studies, a favorable tendency was noted in the total response rate. No 
+evidence emerged from the available data to suggest that these thera­
+pies meaningfully raise the risk of adverse events. Taken together, 
+these findings suggest a potential benefit of acupuncture-related 
+FIGURE 4
+Funnel plot of the meta-analysis for overall fatigue score.
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+08
+frontiersin.org
+approaches, but given the limited evidence, they should be considered 
+exploratory rather than definitive (16–20).
+An important feature of this study is that it not only evaluated the 
+overall fatigue outcome but also further analyzed the two dimensions 
+of physical fatigue and mental fatigue. CFS is not a single fatigue state 
+but a complex syndrome characterized by reduced physical tolerance, 
+impaired cognitive function, insufficient recovery from sleep, and 
+post-exertional worsening of symptoms (21, 22). Therefore, using only 
+a single total score may not fully reflect the true clinical value of an 
+intervention. The results of this study showed that acupuncture-
+related therapies tended to improve different fatigue dimensions, sug­
+gesting that their potential effects may not be limited to alleviating 
+physical fatigue but may also regulate cognitive-related fatigue or 
+central symptoms (23–25).
+The findings of this study are generally consistent with previous 
+systematic reviews on acupuncture and moxibustion for CFS. Prior 
+reviews have commonly suggested that acupuncture or moxibustion 
+may be superior to certain control interventions in improving fatigue 
+scores and clinical response rates; however, they have also consistently 
+highlighted issues such as small sample sizes, variable methodological 
+quality, and substantial clinical heterogeneity in primary studies. For 
+instance, Wang et al. (24) and Zhang et al. (25) concluded that acu­
+puncture-related therapies may help relieve CFS symptoms, but the 
+certainty of their conclusions was limited by insufficient blinding and 
+inadequate reporting of randomization in many included studies. 
+Similarly, the network meta-analysis by Fang et al. (26) and the sys­
+tematic review on moxibustion by You et al. (27) reached analogous 
+conclusions—namely, that acupuncture or moxibustion may have 
+FIGURE 5
+Forest plot of the meta-analysis for physical fatigue score.
+FIGURE 6
+Funnel plot of the meta-analysis for physical fatigue score.
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+09
+frontiersin.org
+some efficacy, yet the overall level of evidence remains low. Thus, the 
+current evidence base is more appropriate to support the judgment 
+that “acupuncture-related therapies may be effective” rather than to 
+draw high-certainty, definitive conclusions.
+The subgroup analyses in the present study were exploratory and 
+suggest that different acupuncture regimens may have variable effects; 
+however, small numbers and protocol heterogeneity preclude defini­
+tive comparative conclusions. For overall fatigue and mental fatigue 
+outcomes, the warm-needling/moxibustion subgroup showed a rela­
+tively more pronounced improvement trend, whereas the results for 
+the simple acupuncture and combined therapy subgroups were less 
+stable. These observations should be interpreted with caution. On the 
+one hand, moxibustion and warm-needling combine acupoint stimu­
+lation with thermal stimulation, which might theoretically confer 
+additional benefits for fatigue, sleep disturbances, and certain auto­
+nomic symptoms. On the other hand, the number of studies in each 
+subgroup was small, and intervention protocols were highly variable; 
+therefore, it is not yet possible to conclude that any one acupuncture 
+technique has a clear advantage. These findings are more suitable as a 
+reference for future trial design and protocol optimization rather than 
+as a direct basis for clinical preference.
+Importantly, the pooled analysis for overall fatigue exhibited 
+extremely high heterogeneity (I2 = 91.7%), which persisted within sub­
+groups (simple acupuncture I2 = 93.5%; warm-needling/moxibustion 
+I2 = 76.1%). This heterogeneity likely arises from multiple sources, includ­
+ing variability in interventions (simple acupuncture, moxibustion, warm-
+needling, combined treatments) and substantial differences in control 
+groups. The control interventions varied widely, encompassing usual care, 
+FIGURE 7
+Forest plot of the meta-analysis for mental fatigue score.
+FIGURE 8
+Funnel plot of the meta-analysis for mental fatigue score.
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+10
+frontiersin.org
+oryzanol + vitamin B1, prednisone, non-acupoint acupuncture, sham 
+acupuncture, Chinese herbal medicine alone, and lifestyle intervention. 
+Effect sizes differ fundamentally across control types: for example, the 
+SMD versus sham acupuncture (−0.92) better reflects specific efficacy, 
+whereas the SMD versus usual care (−0.85) incorporates non-specific 
+effects. The lack of stratified analysis by control type reduces the interpret­
+ability and clinical relevance of the pooled results. Moreover, other poten­
+tial sources of heterogeneity—such as differences in fatigue assessment 
+scales, diagnostic criteria, intervention duration, baseline symptom sever­
+ity, and disease duration—were not formally explored.
+Regarding safety, no significant difference in adverse event fre­
+quency was noted between the acupuncture and control arms, which 
+is consistent with prior evidence (17, 28, 29). However, this conclusion 
+is limited by the small volume of safety data and non-standardized 
+reporting practices. Safety findings remain preliminary; the current 
+evidence suggests that “no explicit safety hazards have been 
+confirmed,” but caution is still warranted. Future investigations should 
+prioritize systematic recording of side effects—ranging from minor 
+subcutaneous hemorrhages to post-treatment fluctuations—to enable 
+a more transparent safety evaluation.
+Several limitations of this study must be acknowledged. First, the 
+methodological quality of the primary studies is a major concern. 
+Among the eight included RCTs, only one was at low overall risk of bias, 
+seven raised “some concerns,” and one was at high risk. Six studies inad­
+equately described random sequence generation and allocation con­
+cealment; only one implemented blinding, the remainder were 
+open-label, and none blinded outcome assessors; six studies were not 
+pre-registered, posing a risk of selective reporting. These flaws may have 
+led to overestimation of effect sizes. Given that fatigue assessments rely 
+heavily on subjective patient feedback, the potential for placebo effects 
+remains a significant concern. Consequently, the statistical significance 
+observed in this meta-analysis warrants cautious interpretation.
+FIGURE 9
+Forest plots of the meta-analysis for effectiveness and safety. Panel A represents the response rate, and panel B represents the adverse event rate.
+FIGURE 10
+Funnel plots of the meta-analysis for effectiveness and safety. Panel A represents the response rate, and Panel B represents the adverse event rate.
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+11
+frontiersin.org
+Second, the number of included RCTs is small, with a correspond­
+ingly modest total sample size (n = 715). Third, the evidence is geo­
+graphically concentrated, as nearly all studies originated from China 
+(one from Korea), which may limit the generalizability of our conclu­
+sions to broader clinical contexts. Fourth, clinical heterogeneity across 
+studies was substantial, undermining the stability of the pooled esti­
+mates. Fifth, most studies reported only short-term outcomes and 
+lacked medium- and long-term follow-up; therefore, this review could 
+not evaluate the sustained benefits of acupuncture-related therapies. 
+Sixth, certain outcomes—including total response rate (only two stud­
+ies) and adverse events (only three studies)—were reported in very 
+few trials, with small sample sizes and wide confidence intervals, ren­
+dering the results highly unstable. Most critically, none of the included 
+trials reported data on PEM, a core diagnostic symptom and a key 
+efficacy endpoint for CFS. The absence of follow-up data further pre­
+cludes any assessment of long-term efficacy. Consequently, the conclu­
+sions of this study should be understood as a provisional synthesis of 
+the limited available evidence rather than as definitive findings.
+5 Conclusion
+Current limited evidence suggests that acupuncture-related thera­
+pies may have potential benefits for overall, physical, and mental fatigue 
+in CFS patients; however, these findings are highly provisional and 
+should be interpreted with caution due to the small number of studies, 
+small sample sizes, moderate risk of bias, high heterogeneity, and lack 
+of standardized reporting. Specific recommendations regarding which 
+type of acupuncture, optimal duration and frequency of intervention, 
+patient selection criteria, and the role of acupuncture within compre­
+hensive CFS management cannot be made at this stage. Future high-
+quality, multicenter RCTs with uniform diagnostic criteria, clearly 
+defined intervention protocols, adequate follow-up, and standardized 
+outcome assessment are required to determine the efficacy, safety, and 
+clinical applicability of acupuncture-related therapies in CFS.
+Data availability statement
+The original contributions presented in the study are included in 
+the article/supplementary material, further inquiries can be directed 
+to the corresponding author.
+Author contributions
+YL: Writing – original draft. GL: Writing – original draft. TX: 
+Writing – original draft. LX: Writing – review & editing.
+Funding
+The author(s) declared that financial support was not received for 
+this work and/or its publication.
+Conflict of interest
+The author(s) declared that this work was conducted in the 
+absence of any commercial or financial relationships that could be 
+construed as a potential conflict of interest.
+Generative AI statement
+The author(s) declared that Generative AI was not used in the 
+creation of this manuscript.
+Any alternative text (alt text) provided alongside figures in this 
+article has been generated by Frontiers with the support of artificial 
+intelligence and reasonable efforts have been made to ensure accuracy, 
+including review by the authors wherever possible. If you identify any 
+issues, please contact us.
+Publisher’s note
+All claims expressed in this article are solely those of the 
+authors and do not necessarily represent those of their affiliated 
+organizations, or those of the publisher, the editors and the review­
+ers. Any product that may be evaluated in this article, or claim that 
+may be made by its manufacturer, is not guaranteed or endorsed 
+by the publisher.
+References
+	1.	Fanò-Illic G, Coscia F, Gigliotti PV, Checcaglini F, Carraro U, Fulle S, et al. 
+Pathophysiological, translational, and diagnostic aspects of ME/CFS: a focus on skeletal 
+muscle involvement. Diagnostics. (2026) 16:19. doi: 10.3390/diagnostics16071019
+	2.	Fehrer A, Windzio L, Schoening S, Steiner S, Aschenbrenner AC, Babel N, et al. Expert 
+perspectives on Myalgic encephalomyelitis/chronic fatigue syndrome - insights from the 
+3rd international conference of the Charité fatigue center. Autoimmun Rev. (2026) 
+25:104043. doi: 10.1016/j.autrev.2026.104043
+	3.	Clayton EW. Beyond myalgic encephalomyelitis/chronic fatigue syndrome: an IOM 
+report on redefining an illness. JAMA. (2015) 313:1101–2. doi: 10.1001/jama.2015.1346
+	4.	Gao J, Liu Y, Wang S, Meng X, Bao Z, Jing J, et al. Exercise interventions for physical 
+function, psychological health, and quality of life in patients with myalgic encephalomy­
+elitis/chronic fatigue syndrome and fibromyalgia: a systematic review and network meta-
+analysis. J Psychosom Res. (2026) 206:112618. doi: 10.1016/j.jpsychores.2026.112618
+	5.	Twisk F. Myalgic encephalomyelitis or what? The international consensus criteria. 
+Diagnostic. (2018) 9:1. doi: 10.3390/diagnostics9010001
+	6.	Haney E, Smith ME, McDonagh M, Pappas M, Daeges M, Wasson N, et al. Diagnostic 
+methods for Myalgic encephalomyelitis/chronic fatigue syndrome: a systematic review 
+for a National Institutes of Health pathways to prevention workshop. Ann Intern Med. 
+(2015) 162:834–40. doi: 10.7326/M15-0443
+	7.	Brurberg KG, Fønhus MS, Larun L, Flottorp S, Malterud K. Case definitions for 
+chronic fatigue syndrome/myalgic encephalomyelitis (CFS/ME): a systematic review. BMJ 
+Open. (2014) 4:e003973. doi: 10.1136/bmjopen-2013-003973
+	8.	Cortes Rivera M, Mastronardi C, Silva-Aldana CT, Arcos-Burgos M, Lidbury BA. 
+Myalgic encephalomyelitis/chronic fatigue syndrome: a comprehensive review. 
+Diagnostics. (2019) 9:91. doi: 10.3390/diagnostics9030091
+	9.	Lim EJ, Ahn YC, Jang ES, Lee SW, Lee SH, Son CG. Systematic review and meta-
+analysis of the prevalence of chronic fatigue syndrome/myalgic encephalomyelitis (CFS/
+ME). J Transl Med. (2020) 18:100. doi: 10.1186/s12967-020-02269-0
+	10.	Nacul LC, Lacerda EM, Pheby D, Campion P, Molokhia M, Fayyaz S, et al. Prevalence 
+of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) in three regions of 
+England: a repeated cross-sectional study in primary care. BMC Med. (2011) 9:91. doi: 
+10.1186/1741-7015-9-91
+	11.	Estévez-López F, Mudie K, Wang-Steverding X, Bakken IJ, Ivanovs A, Castro-Marrero 
+J, et al. Systematic review of the epidemiological burden of Myalgic encephalomyelitis/
+
+Li et al.
+10.3389/fneur.2026.1860788
+Frontiers in Neurology
+12
+frontiersin.org
+chronic fatigue syndrome across Europe: current evidence and EUROMENE research 
+recommendations for epidemiology. J Clin Med. (2020) 9:9. doi: 10.3390/jcm9051557
+	12.	Maksoud R, Magawa C, Eaton-Fitch N, Thapaliya K, Marshall-Gradisnik S. 
+Biomarkers for myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): a sys­
+tematic review. BMC Med. (2023) 21:189. doi: 10.1186/s12916-023-02893-9
+	13.	VanElzakker MB, Brumfield SA, Lara Mejia PS. Neuroinflammation and cytokines 
+in Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): a critical review of 
+research methods. Front Neurol. (2018) 9:1033. doi: 10.3389/fneur.2018.01033
+	14.	Van Cauwenbergh D, Nijs J, Kos D, Van Weijnen L, Struyf F, Meeus M. Malfunctioning 
+of the autonomic nervous system in patients with chronic fatigue syndrome: a systematic 
+literature review. Eur J Clin Investig. (2014) 44:516–26. doi: 10.1111/eci.12256
+	15.	Nelson MJ, Bahl JS, Buckley JD, Thomson RL, Davison K. Evidence of altered cardiac 
+autonomic regulation in myalgic encephalomyelitis/chronic fatigue syndrome: a system­
+atic review and meta-analysis. Medicine (Baltimore). (2019) 98:e17600. doi: 10.1097/
+MD.0000000000017600
+	16.	Holden S, Maksoud R, Eaton-Fitch N, Cabanas H, Staines D, Marshall-Gradisnik S. 
+A systematic review of mitochondrial abnormalities in myalgic encephalomyelitis/chronic 
+fatigue syndrome/systemic exertion intolerance disease. J Transl Med. (2020) 18:290. doi: 
+10.1186/s12967-020-02452-3
+	17.	Kim JE, Seo BK, Choi JB, Kim HJ, Kim TH, Lee MH, et al. Acupuncture for chronic 
+fatigue syndrome and idiopathic chronic fatigue: a multicenter, nonblinded, randomized 
+controlled trial. Trials. (2015) 16:314. doi: 10.1186/s13063-015-0857-0
+	18.	 Xu YX, Luo HS, Sun D, Wang R, Cai J. Acupuncture in the treatment of chronic fatigue 
+syndrome based on "interaction of brain and kidney" in TCM: a randomized controlled trial. 
+Zhongguo Zhen Jiu. (2019) 39:123–7. doi: 10.13703/j.0255-2930.2019.02.003
+	19.	Ling JY, Shen L, Liu Q, Wang LY. Impacts on chronic fatigue syndrome of qi defi­
+ciency syndrome and T cell subgroups in patients treated with acupuncture at selective 
+time. Zhongguo Zhen Jiu. (2013) 33:1061–4.
+	20.	Chen XH, Li LQ, Zhang W, Yang J, Dai YS, Xu DH, et al. Randomized controlled 
+study on acupuncture treatment for chronic fatigue syndrome. Zhongguo Zhen Jiu. (2010) 
+30:533–6.
+	21.	Stussman B, Williams A, Snow J, Gavin A, Scott R, Nath A, et al. Characterization of 
+post-exertional malaise in patients with Myalgic encephalomyelitis/chronic fatigue syn­
+drome. Front Neurol. (2020) 11:1025. doi: 10.3389/fneur.2020.01025
+	22.	Wormgoor M, Rodenburg SC. The evidence base for physiotherapy in myalgic 
+encephalomyelitis/chronic fatigue syndrome when considering post-exertional malaise: 
+a systematic review and narrative synthesis. J Transl Med. (2021) 19:1. doi: 10.1186/
+s12967-020-02683-4
+	23.	Morris G, Maes M. Case definitions and diagnostic criteria for Myalgic encephalo­
+myelitis and chronic fatigue syndrome: from clinical-consensus to evidence-based case 
+definitions. Neuro Endocrinol Lett. (2013) 34:185–99.
+	24.	Wang T, Xu C, Pan K, Xiong H. Acupuncture and moxibustion for chronic fatigue 
+syndrome in traditional Chinese medicine: a systematic review and meta-analysis. BMC 
+Complement Altern Med. (2017) 17:163. doi: 10.1186/s12906-017-1647-x
+	25.	Zhang Q, Gong J, Dong H, Xu S, Wang W, Huang G. Acupuncture for chronic fatigue 
+syndrome: a systematic review and meta-analysis. Acupunct Med. (2019) 37:211–22. doi: 
+10.1136/acupmed-2017-011582
+	26.	Fang Y, Yue BW, Ma HB, Yuan YP. Acupuncture and moxibustion for chronic fatigue 
+syndrome: a systematic review and network meta-analysis. Medicine. (2022) 101:e29310. 
+doi: 10.1097/MD.0000000000029310
+	27.	You J, Ye J, Li H, Ye W, Hong E. Moxibustion for chronic fatigue syndrome: a system­
+atic review and Meta-analysis. Evid Based Complement Alternat Med. (2021) 2021:1–11. 
+doi: 10.1155/2021/6418217
+	28.	Ng SM, Yiu YM. Acupuncture for chronic fatigue syndrome: a randomized, 
+sham-controlled trial with single-blinded design. Altern Ther Health Med. (2013) 
+19:21–6.
+	29.	Corbitt M, Eaton-Fitch N, Staines D, Cabanas H, Marshall-Gradisnik S. A systematic 
+review of cytokines in chronic fatigue syndrome/myalgic encephalomyelitis/systemic 
+exertion intolerance disease (CFS/ME/SEID). BMC Neurol. (2019) 19:207. doi: 10.1186/
+s12883-019-1433-0
+	30.	Qi Y, Song S, Dou Z, Chen J, He G, Zhang L, et al. Chaihu Longgu Muli decoction 
+combined with acupuncture at back-shu points for chronic fatigue syndrome. Zhongguo 
+Zhen Jiu. (2017) 37:1187–90. doi: 10.13703/j.0255-2930.2017.11.013
+	31.	Xu W, Zhou RH, Li L, Jiang MW. Observation on therapeutic effect of chronic fatigue 
+syndrome treated with coiling dragon needling and moving cupping on back. Zhongguo 
+Zhen Jiu. (2012) 32:205–8.
+	32.	Lu C, Yang XJ, Hu J. Randomized controlled clinical trials of acupuncture and 
+moxibustion treatment of chronic fatigue syndrome patients. Zhen Ci Yan Jiu. 
+(2014) 39:313–7.
+	33.	Lin YF, Jin XQ, Zhu JF, Chen YD, Sheng JL, He JJ, et al. Ginger-separated moxibustion 
+for chronic fatigue syndrome and its effect on intestinal flora. Zhongguo Zhen Jiu. (2021) 
+41:269–74. doi: 10.13703/j.0255-2930.20200210-k0001
