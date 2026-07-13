@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-12",
+  "last_check": "2026-07-13",
   "papers": [
+    {
+      "id": "gile-2026-rapamycin-purine-microglia-pilot",
+      "title": "Association of rapamycin treatment with the modulation of purine metabolism, reduced microglial inflammatory responses, improved mitochondrial energy metabolism, and alleviation of fatigue symptoms in ME/CFS subjects: pilot findings from phase-II observational study",
+      "authors": "Gile B, Bulbule S, Toriola MA, Ruan BT, Marium S, Benko A, Grach S, Mueller M, Bateman L, Bell J, Yellman B, Berner J, Chheda B, Kaufman D, Gottschalk G, Roy A",
+      "journal": "Journal of Translational Medicine",
+      "date": "Jul 2026",
+      "summary": "In a small ongoing trial without a placebo group, ME/CFS patients took low-dose rapamycin (a drug that calms an overactive cell-growth signal) for three months. Blood and immune tests showed shifts in energy-related chemicals, calmer brain immune cells, better-working cellular batteries (mitochondria), and patients reported less fatigue.",
+      "why": "One of the few ME/CFS drug studies to show a treatment changing measurable body chemistry alongside symptom improvement, giving a testable biological reason — not just patient reports — to pursue rapamycin as a treatment lead.",
+      "link": "https://doi.org/10.1186/s12967-026-08575-3",
+      "first_seen": "2026-07-13",
+      "last_checked": "2026-07-13",
+      "flags": [],
+      "isNew": true,
+      "notes": "PMID 42432754; registered as NCT06257420 (phase II observational pilot, Bateman Horne Center / Simmaron Research, USA). Published online Jul 10, 2026. Not Wirth/Scheibenbogen-affiliated. Confirmed via journal DOI record."
+    },
+    {
+      "id": "wirth-2026-hypovolemia-review",
+      "title": "In Search of Lost Volume: The Potential Causes of Hypovolemia in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome",
+      "authors": "Wirth KJ",
+      "journal": "Preprints.org (preprint, not yet peer-reviewed)",
+      "date": "Feb 2026",
+      "summary": "Klaus Wirth argues that people with ME/CFS often have too little fluid in their blood vessels (hypovolemia), caused by broken salt-and-water retention signals in the body, leaky small blood vessels, and starved muscle cells pulling fluid out of the blood during activity.",
+      "why": "From Wirth (Mitodicure): ties together low blood volume, dizziness on standing, and the post-exertional crash (a crash after activity) into one physical explanation, reinforcing the case for his group's muscle/circulation-focused treatment approach — but it's an early, not-yet-peer-reviewed hypothesis paper, so treat it as a working idea pending review.",
+      "link": "https://doi.org/10.20944/preprints202602.1993.v1",
+      "first_seen": "2026-07-13",
+      "last_checked": "2026-07-13",
+      "flags": [],
+      "isNew": true,
+      "notes": "Solo-author hypothesis/review paper posted Feb 2026 (v1) on Preprints.org — newly found this run (missed by prior searches). Included as an exception per ROUTINE.md's Wirth HIGH-priority provision, same lower-tier preprint-venue caveat as the already-tracked wirth-2026-connective-tissue-laxity. Not yet peer-reviewed."
+    },
     {
       "id": "zhao-2026-exercise-meta-analysis",
       "title": "The efficacy of exercise in patients with myalgic encephalomyelitis/chronic fatigue syndrome: A systematic review and meta-analysis",
@@ -13,9 +43,9 @@
       "why": "Exercise therapy is a historically controversial topic in ME/CFS because overexertion can trigger post-exertional malaise (a crash after activity). This large pooled analysis suggests exercise may ease some symptoms but is not a fix for the underlying physical limitation, supporting a cautious, symptom-management role rather than a cure.",
       "link": "https://doi.org/10.1016/j.jpsychores.2026.112677",
       "first_seen": "2026-07-12",
-      "last_checked": "2026-07-12",
+      "last_checked": "2026-07-13",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Online Apr 15, 2026; print Aug 2026 (Vol 207). Meta-analysis of 17 RCTs, n=1,944. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
     },
     {
@@ -28,9 +58,9 @@
       "why": "CBT is another historically contentious ME/CFS treatment. Rather than a blanket 'CBT works' or 'CBT doesn't work' claim, this pinpoints which specific ingredients may help versus backfire — useful for designing better-targeted psychological support alongside biomedical treatment.",
       "link": "https://doi.org/10.1002/brb3.71513",
       "first_seen": "2026-07-12",
-      "last_checked": "2026-07-12",
+      "last_checked": "2026-07-13",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Brain Behav 16(6), Jun 2026 (online May 31, 2026). Component network meta-analysis of 16 trials. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
     },
     {
@@ -43,9 +73,9 @@
       "why": "Adds acupuncture to the list of non-drug approaches with some trial evidence for ME/CFS fatigue, though the low-confidence evidence base (small, uneven-quality trials, flagged by the authors themselves) means it should not be over-weighted against biomedical treatment approaches.",
       "link": "https://doi.org/10.3389/fneur.2026.1860788",
       "first_seen": "2026-07-12",
-      "last_checked": "2026-07-12",
+      "last_checked": "2026-07-13",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Front Neurol 17, Jun 24, 2026. Meta-analysis of 8 trials, n=715. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
     },
     {

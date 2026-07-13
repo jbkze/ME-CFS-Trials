@@ -1,6 +1,6 @@
 ---
 type: paper
-id: wirth2026
+id: wirth2026a
 title: "Laxity Comes with Consequences: Connective Tissue Disorders and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)"
 authors: ["Wirth KJ"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [immunology, skeletal-muscle, treatment, review]
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: wirth2026
+bibtex_key: wirth2026a
 ---
 
 # Laxity Comes with Consequences: Connective Tissue Disorders and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)
