@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-13",
+  "last_check": "2026-07-14",
   "papers": [
     {
       "id": "gile-2026-rapamycin-purine-microglia-pilot",
@@ -13,9 +13,9 @@
       "why": "One of the few ME/CFS drug studies to show a treatment changing measurable body chemistry alongside symptom improvement, giving a testable biological reason — not just patient reports — to pursue rapamycin as a treatment lead.",
       "link": "https://doi.org/10.1186/s12967-026-08575-3",
       "first_seen": "2026-07-13",
-      "last_checked": "2026-07-13",
+      "last_checked": "2026-07-14",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "PMID 42432754; registered as NCT06257420 (phase II observational pilot, Bateman Horne Center / Simmaron Research, USA). Published online Jul 10, 2026. Not Wirth/Scheibenbogen-affiliated. Confirmed via journal DOI record."
     },
     {
@@ -28,9 +28,9 @@
       "why": "From Wirth (Mitodicure): ties together low blood volume, dizziness on standing, and the post-exertional crash (a crash after activity) into one physical explanation, reinforcing the case for his group's muscle/circulation-focused treatment approach — but it's an early, not-yet-peer-reviewed hypothesis paper, so treat it as a working idea pending review.",
       "link": "https://doi.org/10.20944/preprints202602.1993.v1",
       "first_seen": "2026-07-13",
-      "last_checked": "2026-07-13",
+      "last_checked": "2026-07-14",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Solo-author hypothesis/review paper posted Feb 2026 (v1) on Preprints.org — newly found this run (missed by prior searches). Included as an exception per ROUTINE.md's Wirth HIGH-priority provision, same lower-tier preprint-venue caveat as the already-tracked wirth-2026-connective-tissue-laxity. Not yet peer-reviewed."
     },
     {
@@ -1307,6 +1307,51 @@
       "flags": [],
       "isNew": false,
       "notes": "Borderline inclusion: studies a Long COVID survey cohort (not formally ME/CFS-diagnosed), but the outcome measured — high post-exertional symptom exacerbation — is the ME/CFS-defining PEM phenotype, and the finding directly corroborates the connective-tissue-laxity mechanism proposed in Wirth KJ's already-tracked preprint (wirth-2026-connective-tissue-laxity). Posted medRxiv 2026-06-24 (Europe PMC first-indexed 2026-07-01). Confirmed via Europe PMC REST API (title/authors/date match). Authors not Wirth/Scheibenbogen-affiliated."
+    },
+    {
+      "id": "yagin-2026-metabolomic-classification-ensemble-learning",
+      "title": "Metabolomic Classification of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome via Explainable Ensemble Learning and Pareto-Guided Feature Selection",
+      "authors": "Yagin FH, Korkmaz Y, Colak C, Alzakari SA, Alkhalifa AK, Al-Hashem F, Aghaei M",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "Jun 2026",
+      "summary": "Using blood chemistry (metabolite) profiles from 197 people (106 with ME/CFS, 91 healthy), a machine-learning model could tell patients from healthy people apart with high accuracy — the strongest clues were an altered tryptophan pathway (the body's route for making mood-related brain chemicals) and signs of poor energy production in mitochondria (the cell's energy factories).",
+      "why": "Adds evidence toward a future blood test for ME/CFS and reinforces two recurring mechanistic themes in this database — mitochondrial energy failure and tryptophan-pathway disruption.",
+      "link": "https://doi.org/10.3390/ijms27135920",
+      "first_seen": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Published Jun 30, 2026. 197 participants (106 ME/CFS, 91 controls); ensemble ML classifiers on 888 plasma metabolomic/lipidomic features reached 0.909 accuracy / 0.940 AUC; top discriminating interaction was proline & indole-3-lactate. Not Wirth/Scheibenbogen-affiliated. Confirmed via publisher (MDPI) page."
+    },
+    {
+      "id": "wall-2026-stimulate-icp-repurposed-drugs-longcovid-fatigue",
+      "title": "Efficacy and safety of rivaroxaban, colchicine, and famotidine-loratadine with specialist supportive clinical care for fatigue in patients with post-COVID-19 condition in the UK: a multisite, open-label, randomised controlled trial",
+      "authors": "Wall EC, Prescott G, Dehbi HM, Scott J, Evans RA, et al. (STIMULATE-ICP consortium)",
+      "journal": "Lancet Infectious Diseases",
+      "date": "Jul 2026",
+      "summary": "In 778 UK long-COVID patients with fatigue, adding one of three repurposed drugs (an anti-inflammatory, a blood thinner, or an antihistamine combo) to standard care was compared with standard care alone for 12 weeks. Two of the three drugs gave a small extra fatigue improvement over standard care alone, but that edge disappeared by 24 weeks, after the drugs were stopped.",
+      "why": "Borderline for this tracker (participants had general long-COVID fatigue, not a formal ME/CFS/PEM diagnosis), but this is one of the largest repurposed-drug trials run in long-COVID fatigue to date, and its main lesson — that symptom-level drug repurposing gave only a small, temporary benefit — is a caution relevant to similar approaches being tried in ME/CFS, reinforcing the case for treatments that target a specific underlying mechanism instead.",
+      "link": "https://doi.org/10.1016/S1473-3099(26)00242-2",
+      "first_seen": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Published online Jul 8, 2026 (PMID 42419335). Open-label RCT, 778 participants (colchicine n=192, famotidine+loratadine n=193, rivaroxaban n=197, control n=196), 12 German sites not involved (UK NHS only). Primary outcome (12-wk FAS): colchicine -1.49 (p=0.041), famotidine-loratadine -1.48 (p=0.038), rivaroxaban -1.06 (p=0.139, ns); 24-week scores not significantly different between arms. No ME/CFS diagnostic criteria (PEM/Bell score) used for eligibility — general long-COVID fatigue population. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
+    },
+    {
+      "id": "nehme-2026-temelimab-herv-w-postcovid-rct",
+      "title": "Temelimab versus placebo in patients with post-COVID condition",
+      "authors": "Nehme M, et al.",
+      "journal": "Brain, Behavior, and Immunity",
+      "date": "2026",
+      "summary": "203 people with long-lasting neurological post-COVID symptoms were given temelimab (an antibody that blocks a protein made by ancient \"fossil virus\" DNA sequences built into our own genome) or a placebo for 24 weeks. Fatigue improved about the same amount in both groups — the drug gave no extra benefit over placebo on fatigue, thinking, mood, or quality of life.",
+      "why": "A negative but rigorous large trial (NCT05497089) that specifically tested the \"reactivated fossil virus protein\" (HERV-W envelope protein) theory of post-COVID/ME-CFS-type illness — the same theory raised in this database's already-tracked Perera et al. 2026 endogenous-retrovirus review — and did not support it as a treatable driver of fatigue, redirecting attention to other mechanisms (mitochondrial, vascular, autoantibody).",
+      "link": "https://doi.org/10.1016/j.bbi.2026.106892",
+      "first_seen": "2026-07-14",
+      "last_checked": "2026-07-14",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "203 participants, 14 sites in Switzerland/Spain/Italy (no German site). Primary outcome (24-wk fatigue, PROMIS): temelimab -3.2 vs placebo -3.8, RR 0.9 (95% CI 0.6-1.2), not significant; no significant difference in secondary outcomes (cognition, anxiety, depression, quality of life). Borderline for this tracker: post-COVID neuropsychiatric-symptom population, not a formal ME/CFS/PEM diagnosis. Not Wirth/Scheibenbogen-affiliated. Confirmed via S4ME trial-report thread citing the Brain Behav Immun DOI and CenterWatch/ClinicalTrials.gov (NCT05497089) listing; publisher page itself only resolved to a redirect shell during this check."
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "generated": "2026-07-13",
-  "lastRunAt": "2026-07-13T04:07:17Z",
-  "lastRun": "13 Jul 2026",
-  "nextRun": "Next run ~14 Jul 2026",
+  "generated": "2026-07-14",
+  "lastRunAt": "2026-07-14T04:17:58Z",
+  "lastRun": "14 Jul 2026",
+  "nextRun": "Next run ~15 Jul 2026",
   "studies": [
     {
       "title": "IMPACT — Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
@@ -31,6 +31,36 @@
   ],
   "papers": [
     {
+      "title": "Metabolomic Classification of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome via Explainable Ensemble Learning and Pareto-Guided Feature Selection",
+      "authors": "Yagin FH, Korkmaz Y, Colak C, Alzakari SA, Alkhalifa AK, Al-Hashem F, Aghaei M",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "Jun 2026",
+      "summary": "Using blood chemistry (metabolite) profiles from 197 people (106 with ME/CFS, 91 healthy), a machine-learning model could tell patients from healthy people apart with high accuracy — the strongest clues were an altered tryptophan pathway (the body's route for making mood-related brain chemicals) and signs of poor energy production in mitochondria (the cell's energy factories).",
+      "why": "Adds evidence toward a future blood test for ME/CFS and reinforces two recurring mechanistic themes in this database — mitochondrial energy failure and tryptophan-pathway disruption.",
+      "link": "https://doi.org/10.3390/ijms27135920",
+      "isNew": true
+    },
+    {
+      "title": "Efficacy and safety of rivaroxaban, colchicine, and famotidine-loratadine with specialist supportive clinical care for fatigue in patients with post-COVID-19 condition in the UK: a multisite, open-label, randomised controlled trial",
+      "authors": "Wall EC, Prescott G, Dehbi HM, Scott J, Evans RA, et al. (STIMULATE-ICP consortium)",
+      "journal": "Lancet Infectious Diseases",
+      "date": "Jul 2026",
+      "summary": "In 778 UK long-COVID patients with fatigue, adding one of three repurposed drugs (an anti-inflammatory, a blood thinner, or an antihistamine combo) to standard care was compared with standard care alone for 12 weeks. Two of the three drugs gave a small extra fatigue improvement over standard care alone, but that edge disappeared by 24 weeks, after the drugs were stopped.",
+      "why": "Borderline for this tracker (participants had general long-COVID fatigue, not a formal ME/CFS/PEM diagnosis), but this is one of the largest repurposed-drug trials run in long-COVID fatigue to date, and its main lesson — that symptom-level drug repurposing gave only a small, temporary benefit — is a caution relevant to similar approaches being tried in ME/CFS, reinforcing the case for treatments that target a specific underlying mechanism instead.",
+      "link": "https://doi.org/10.1016/S1473-3099(26)00242-2",
+      "isNew": true
+    },
+    {
+      "title": "Temelimab versus placebo in patients with post-COVID condition",
+      "authors": "Nehme M, et al.",
+      "journal": "Brain, Behavior, and Immunity",
+      "date": "2026",
+      "summary": "203 people with long-lasting neurological post-COVID symptoms were given temelimab (an antibody that blocks a protein made by ancient \"fossil virus\" DNA sequences built into our own genome) or a placebo for 24 weeks. Fatigue improved about the same amount in both groups — the drug gave no extra benefit over placebo on fatigue, thinking, mood, or quality of life.",
+      "why": "A negative but rigorous large trial (NCT05497089) that specifically tested the \"reactivated fossil virus protein\" (HERV-W envelope protein) theory of post-COVID/ME-CFS-type illness — the same theory raised in this database's already-tracked Perera et al. 2026 endogenous-retrovirus review — and did not support it as a treatable driver of fatigue, redirecting attention to other mechanisms (mitochondrial, vascular, autoantibody).",
+      "link": "https://doi.org/10.1016/j.bbi.2026.106892",
+      "isNew": true
+    },
+    {
       "title": "Association of rapamycin treatment with the modulation of purine metabolism, reduced microglial inflammatory responses, improved mitochondrial energy metabolism, and alleviation of fatigue symptoms in ME/CFS subjects: pilot findings from phase-II observational study",
       "authors": "Gile B, Bulbule S, Toriola MA, Ruan BT, Marium S, Benko A, Grach S, Mueller M, Bateman L, Bell J, Yellman B, Berner J, Chheda B, Kaufman D, Gottschalk G, Roy A",
       "journal": "Journal of Translational Medicine",
@@ -38,7 +68,7 @@
       "summary": "In a small ongoing trial without a placebo group, ME/CFS patients took low-dose rapamycin (a drug that calms an overactive cell-growth signal) for three months. Blood and immune tests showed shifts in energy-related chemicals, calmer brain immune cells, better-working cellular batteries (mitochondria), and patients reported less fatigue.",
       "why": "One of the few ME/CFS drug studies to show a treatment changing measurable body chemistry alongside symptom improvement, giving a testable biological reason — not just patient reports — to pursue rapamycin as a treatment lead.",
       "link": "https://doi.org/10.1186/s12967-026-08575-3",
-      "isNew": true
+      "isNew": false
     },
     {
       "title": "In Search of Lost Volume: The Potential Causes of Hypovolemia in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome",
@@ -48,7 +78,7 @@
       "summary": "Klaus Wirth argues that people with ME/CFS often have too little fluid in their blood vessels (hypovolemia), caused by broken salt-and-water retention signals in the body, leaky small blood vessels, and starved muscle cells pulling fluid out of the blood during activity.",
       "why": "From Wirth (Mitodicure): ties together low blood volume, dizziness on standing, and the post-exertional crash (a crash after activity) into one physical explanation, reinforcing the case for his group's muscle/circulation-focused treatment approach — but it's an early, not-yet-peer-reviewed hypothesis paper, so treat it as a working idea pending review.",
       "link": "https://doi.org/10.20944/preprints202602.1993.v1",
-      "isNew": true
+      "isNew": false
     },
     {
       "title": "The efficacy of exercise in patients with myalgic encephalomyelitis/chronic fatigue syndrome: A systematic review and meta-analysis",
