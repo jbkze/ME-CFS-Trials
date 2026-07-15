@@ -15,6 +15,23 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-15 (scheduled autonomous, 04:13 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, VERI-LONG NCT05697640), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00 and ResetME 2024-520094-13-00), Charité CFC clinical-research/NKSG listing, clinicaltrialsregister.eu search for inebilizumab/PIONEER, solvecfs.org (semaglutide), APTA Therapeutics news page (BC007/rovunaptabin "unCOVer Erlangen"), PAIS-AriLis, BMFTR "Nationale Dekade" funding call, plus fresh open-ended web search for new German ME/CFS/Post-COVID drug trials.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged: NCT07529197 (IMPACT, recruiting), DRKS00033897 (IA-Surv, recruiting), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry), RAPID_REVIVE (still terminated, ctStatus "Ended" via CTIS API).
+- Leads re-checked, still fail confirmation standard: PIONEER (NKSG-2/inebilizumab — clinicaltrialsregister.eu search for "inebilizumab ME/CFS" returned zero matches; no CFC subpage or registry entry), semaglutide (Scheibenbogen/Solve M.E. award, reinforced by an April 2026 Solve M.E. webinar), BC007/APTA "unCOVer Erlangen" (APTA's news page shows only a June 30, 2026 US patent grant and an April 29, 2026 Fraunhofer SCAI collaboration announcement — no mention of unCOVer Erlangen or a registry ID), daratumumab "ResetME" (Norway — CTIS API confirms sites still Oslo University Hospital and Helse Bergen HF only, no German site), PAIS-AriLis, BMFTR "Nationale Dekade" funding call (due 2026-09-02, no recipients announced).
+- Also re-confirmed/excluded this run: VERI-LONG (NCT05697640) remains active_not_recruiting (last update 2026-01-28) — a stale third-party mirror describing it as "enrolling" was disregarded as non-authoritative; MALT! II (Klinikum Nürnberg, art therapy for post-COVID fatigue — not pharmacological); Freiburg Post-COVID/ME-CFS/MCS study (still purely observational, no drug intervention).
+- Sources checked — papers: full re-read of `data/papers.json` baseline (90 entries) before searching; Europe PMC date-filtered sweep (Jun–Jul 2026), targeted Wirth/Scheibenbogen author searches, DecodeME/autoantibody/microclot/mitochondria searches, medRxiv/bioRxiv, general web search; ~25 candidates cross-checked against the baseline, all but one already tracked or out of scope (e.g. a mouse-only hyperbaric-oxygen/PLA2G4A paper excluded per the animal-only rule).
+- **Papers — 1 new confirmed**:
+  - Eaton-Fitch N, Marshall-Gradisnik S, Journal of Translational Medicine, Jul 2026 — Australian ME/CFS patient-registry study (2,873 patients vs. 797 healthy controls) finding significantly worse quality of life and four distinct symptom clusters, with severity depending on which diagnostic case definition was used. DOI 10.1186/s12967-026-08618-9.
+- isNew set true: `eaton-fitch-2026-australian-registry-wellbeing` (new this run, will clear next run)
+- isNew cleared: `yagin-2026-metabolomic-classification-ensemble-learning`, `wall-2026-stimulate-icp-repurposed-drugs-longcovid-fatigue`, `nehme-2026-temelimab-herv-w-postcovid-rct` (no longer new since last check)
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; terminated: 1 — RAPID_REVIVE)
+- Notes: No Wirth/Scheibenbogen paper this week; their most recent tracked work remains the April 2026 IJMS neurotransmitter-imbalance review and the June 2026 hyperbaric-oxygen/thalamic-connectivity paper. No new DecodeME publication since the already-tracked St-Jean symptom-cluster follow-up. Literature archive updated via `scripts/literature_intake.py` for the 1 new paper (Eaton-Fitch: no headless-downloadable open-access PDF, DOI kept, noted).
+
 ## 2026-07-14 (scheduled autonomous, 04:17 UTC)
 - Sources checked — trials: ClinicalTrials.gov (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00 and ResetME 2024-520094-13-00), Charité CFC clinical-research/NKSG listing, targeted DRKS/ClinicalTrials.gov/CTIS searches for inebilizumab/PIONEER, semaglutide (Solve M.E.), BC007/rovunaptabin (APTA Therapeutics), daratumumab (ResetME, Norway), PAIS-AriLis, BMFTR "Nationale Dekade" funding call, plus fresh open-ended web search for new German ME/CFS/Post-COVID drug trials.
 - New trials: none

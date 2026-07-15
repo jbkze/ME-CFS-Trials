@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-14",
+  "last_check": "2026-07-15",
   "papers": [
     {
       "id": "gile-2026-rapamycin-purine-microglia-pilot",
@@ -1319,8 +1319,8 @@
       "link": "https://doi.org/10.3390/ijms27135920",
       "first_seen": "2026-07-14",
       "last_checked": "2026-07-14",
-      "flags": ["new"],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Published Jun 30, 2026. 197 participants (106 ME/CFS, 91 controls); ensemble ML classifiers on 888 plasma metabolomic/lipidomic features reached 0.909 accuracy / 0.940 AUC; top discriminating interaction was proline & indole-3-lactate. Not Wirth/Scheibenbogen-affiliated. Confirmed via publisher (MDPI) page."
     },
     {
@@ -1334,8 +1334,8 @@
       "link": "https://doi.org/10.1016/S1473-3099(26)00242-2",
       "first_seen": "2026-07-14",
       "last_checked": "2026-07-14",
-      "flags": ["new"],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Published online Jul 8, 2026 (PMID 42419335). Open-label RCT, 778 participants (colchicine n=192, famotidine+loratadine n=193, rivaroxaban n=197, control n=196), 12 German sites not involved (UK NHS only). Primary outcome (12-wk FAS): colchicine -1.49 (p=0.041), famotidine-loratadine -1.48 (p=0.038), rivaroxaban -1.06 (p=0.139, ns); 24-week scores not significantly different between arms. No ME/CFS diagnostic criteria (PEM/Bell score) used for eligibility — general long-COVID fatigue population. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
     },
     {
@@ -1349,9 +1349,26 @@
       "link": "https://doi.org/10.1016/j.bbi.2026.106892",
       "first_seen": "2026-07-14",
       "last_checked": "2026-07-14",
-      "flags": ["new"],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "203 participants, 14 sites in Switzerland/Spain/Italy (no German site). Primary outcome (24-wk fatigue, PROMIS): temelimab -3.2 vs placebo -3.8, RR 0.9 (95% CI 0.6-1.2), not significant; no significant difference in secondary outcomes (cognition, anxiety, depression, quality of life). Borderline for this tracker: post-COVID neuropsychiatric-symptom population, not a formal ME/CFS/PEM diagnosis. Not Wirth/Scheibenbogen-affiliated. Confirmed via S4ME trial-report thread citing the Brain Behav Immun DOI and CenterWatch/ClinicalTrials.gov (NCT05497089) listing; publisher page itself only resolved to a redirect shell during this check."
+    },
+    {
+      "id": "eaton-fitch-2026-australian-registry-wellbeing",
+      "title": "Australian registry reports poor health and wellbeing in people living with ME/CFS",
+      "authors": "Eaton-Fitch N, Marshall-Gradisnik S",
+      "journal": "Journal of Translational Medicine",
+      "date": "Jul 2026",
+      "summary": "Using Australia's ME/CFS patient registry (2,873 patients compared with 797 healthy people), researchers found that quality of life is significantly worse in people with ME/CFS than in healthy people, and that patients' symptoms cluster into four distinct patterns rather than one uniform illness.",
+      "why": "One of the largest patient-registry studies of ME/CFS health burden to date; it reinforces the idea that ME/CFS is not one single illness but splits into distinguishable subgroups, which matters for designing better-targeted future clinical trials and for choosing which diagnostic checklist research should standardize on.",
+      "link": "https://doi.org/10.1186/s12967-026-08618-9",
+      "first_seen": "2026-07-15",
+      "last_checked": "2026-07-15",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Published online 2026-07-13 (PMID 42443918). Griffith University / National Centre for Neuroimmunology group (Marshall-Gradisnik), not Wirth/Scheibenbogen-affiliated. How severe a patient's illness looked depended on which official case definition was used to classify them. Confirmed via Europe PMC record."
     }
   ]
 }
