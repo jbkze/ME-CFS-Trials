@@ -1,0 +1,1622 @@
+RESEARCH
+Open Access
+Journal of Translational 
+Medicine
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+https://doi.org/10.1186/s12967-026-08579-z
+Persistent impairments in muscle function 
+and symptom burden in post-COVID 
+syndrome: a prospective longitudinal study
+Michael Wunderle1*
+, Andrea Ribeiro1, Isabelle Lethen1, Christoph Schmaderer1,2,3 and Timon Wallraven1
+​*​C​o​r​r​e​s​p​o​n​d​e​n​c​e​:​
+Michael Wunderle
+Michael.Wunderle@mri.tum.de
+1Department of Nephrology, TUM School of Medicine and Health, TUM 
+University Hospital, Technical University of Munich, Munich, Germany
+2German Centre for Infection Research (DZIF), Munich Partner Site, 
+Munich, Germany
+3VADYS-ME Research Program, Site Lead, TUM University Hospital, 
+Munich, Germany
+© The Author(s) 2026. Open Access  This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, 
+sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and 
+the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this 
+article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included 
+in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will 
+need to obtain permission directly from the copyright holder. To view a copy of this licence, visit ​h​t​t​p​:​/​/​c​r​e​a​t​i​v​e​c​o​m​m​o​n​s​.​o​r​g​/​l​i​c​e​n​s​e​s​/​b​y​/​4​.​0​/​.​
+Abstract
+Background  Post-COVID syndrome (PCS) is characterized by persistent heterogeneous symptoms after SARS-CoV-2 
+infection, yet objective biomarkers for symptom severity and longitudinal disease trajectories remain limited. We 
+aimed to characterize muscle function over time in PCS and examine its relationship with symptom burden and 
+neuroaxonal injury markers.
+Methods  In this prospective observational study, patients fulfilling WHO criteria for PCS underwent standardized 
+assessments at baseline (BL) and six-month follow-up (FU). Muscle function was assessed using a multidimensional 
+handgrip strength (HGS) protocol capturing mean force (Fmean), fatigability (fatigue ratio), and recovery capacity 
+alongside clinical symptom measures. Analyses included longitudinal assessment within the PCS cohort, comparisons 
+with COVID-19 recovered controls, analysis of symptom persistence, and matched cohort analyses including HGS 
+measures and circulating neurofilament light chain (NfL) and glial fibrillary acidic protein (GFAP).
+Results  Among 204 participants (102 PCS, 102 recovered controls) PCS patients showed lower Fmean and higher 
+fatigability at BL and FU (both p < 0.01). Muscle function parameters remained largely stable over six months, with 
+only modest improvement in recovery (p = 0.015). HGS parameters correlated with symptom burden (ρ ≈ -0.28 to 
+-0.33), and BL impairments were associated with worse fatigue and depressive symptoms at FU (e.g., Fmean–PHQ-9: 
+β = -0.11, p = 0.022; fatigue ratio–FSS: β = 1.66, p = 0.008). Exploratory analyses suggested slightly higher NfL and GFAP 
+levels in PCS in some models, without consistent associations with muscle function or symptoms.
+Conclusions  HGS is persistently reduced in PCS over at least six months and aligns with symptom burden. 
+Multidimensional HGS assessment may provide a practical objective marker of functional impairment and symptom 
+persistence in PCS. Neuroaxonal injury markers showed modest elevations in PCS in some analyses but appeared 
+unrelated to muscle performance, suggesting partially distinct mechanisms.
+Trial registration  ClinicalTrials.gov, NCT05635552. Registered 1 December 2022 - Retrospectively registered, ​h​t​t​p​s​:​/​/​c​
+l​i​n​i​c​a​l​t​r​i​a​l​s​.​g​o​v​/​s​t​u​d​y​/​N​C​T​0​5​6​3​5​5​5​2​?​t​e​r​m​=​N​C​T​0​5​6​3​5​5​5​2​&​r​a​n​k​=​1​&​t​a​b​=​s​t​u​d​y​.​
+Keywords  Post-COVID syndrome, Long COVID, Handgrip strength, Muscle impairment, Fatigability, Neurofilament 
+light chain, GFAP, Longitudinal study
+
+Page 2 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+​Introduction
+The COVID-19 pandemic has left an enduring legacy 
+beyond its acute phase, with millions of individuals 
+worldwide experiencing persistent symptoms months 
+after initial infection, a condition recognized as post-
+COVID syndrome (PCS) or long COVID [1, 2]. The 
+World Health Organization defines PCS as symptoms 
+persisting for at least three months after SARS-CoV-2 
+infection, lasting at least two months, and not explained 
+by alternative diagnoses [3]. PCS represents a major 
+public health challenge affecting millions of COVID-
+19 survivors [4, 5]. Given its multisystem nature [6, 7], 
+understanding the natural history and persistence of 
+objective physical impairments has become a critical 
+research priority.
+Among the most debilitating manifestations of PCS 
+are physical impairments, particularly muscle weakness, 
+reduced exercise capacity, and persistent fatigue [8–10]. 
+Handgrip strength (HGS) is a validated and widely used 
+objective marker of overall muscle function and physi­
+cal performance and has been shown to be reduced in 
+PCS compared with recovered controls [11–13]. Beyond 
+maximal force, repeated HGS assessments allow quan­
+tification of fatigability and recovery, providing a mul­
+tidimensional characterization of muscle performance 
+relevant to PCS-related fatigue and exercise intolerance 
+[12, 14]. Lower HGS has been associated with worse 
+functional outcomes and quality of life in post-COVID 
+populations [11, 15, 16].
+Despite growing recognition of reduced handgrip 
+strength in PCS, critical gaps remain in the literature, 
+particularly regarding the distinction between post-
+acute COVID-19 patients and well-defined chronic PCS 
+cohorts. Many existing studies have focused on the early 
+recovery phase (within the first three months post-infec­
+tion), often including heterogeneous populations with­
+out rigorous application of diagnostic criteria [16–21]. 
+Systematic reviews have highlighted that muscle func­
+tion impairments can persist up to 12 months in PCS 
+patients, yet longitudinal studies with objective measure­
+ments in well-characterized cohorts remain scarce [6, 
+22]. Cross-sectional investigations, while informative, 
+cannot address fundamental questions about the tempo­
+ral stability of muscle impairments or identify predictive 
+factors for symptom persistence [18, 23].
+Understanding the biological mechanisms underlying 
+reduced muscle performance in PCS requires integra­
+tion of multiple assessment modalities. Impairments in 
+muscle function may reflect broader neuromuscular or 
+neurovascular involvement, including small-fiber-neu­
+ropathy [24, 25], endothelial dysfunction and dysfunc­
+tional neurovascular coupling [26]. Emerging evidence 
+suggests that PCS may be associated with elevated neu­
+roaxonal injury biomarkers, including neurofilament 
+light chain (NfL, marker of axonal damage) and glial 
+fibrillary acidic protein (GFAP, marker if astroglial acti­
+vation and inflammation), while evidence for overt neu­
+rodegeneration remains inconsistent [27–29]. Given the 
+overlap between neurological and musculoskeletal mani­
+festations in PCS, particularly the co-occurrence of cog­
+nitive impairment, fatigue, and muscle weakness, there is 
+a compelling rationale to explore potential associations 
+between objective muscle function measures and neu­
+roaxonal injury markers.
+Moreover, few studies have employed comprehen­
+sive HGS protocols that capture multiple dimensions 
+of muscle function impairments (strength, fatigability, 
+and recovery) or have integrated such objective physi­
+cal measurements with patient-reported outcome mea­
+sures (PROMs) and biomarkers of neuroaxonal injury 
+[27, 30, 31]. The lack of prospective longitudinal data in 
+rigorously defined PCS cohorts represents a significant 
+knowledge gap that limits our understanding of disease 
+trajectory and prognosis.
+To address this gap, the present study provides a pro­
+spective, longitudinal assessment of muscle function in a 
+well-defined PCS cohort followed over six months. Using 
+a multidimensional HGS protocol, objective muscle 
+function was assessed alongside validated PROMs and 
+neuroaxonal injury biomarkers. Comparisons with age- 
+and sex-matched COVID-19 recovered controls enabled 
+isolation of PCS-specific impairments beyond general 
+post-infectious effects.
+The primary aims were to characterize HGS parame­
+ters at baseline (BL) and six months follow-up (FU), com­
+pare muscle function between PCS patients and matched 
+controls, assess longitudinal changes in objective and 
+PROMs, and examine associations with neuroaxonal 
+injury biomarkers and symptom severity. Together, these 
+analyses aim to clarify the persistence of objective mus­
+cle impairments in chronic PCS and identify prognostic 
+markers of long-term symptom burden.
+Methods
+Study design and cohort
+This study was conducted as part of the “All Eyes on PCS” 
+project, a prospective, observational, single-center study 
+at the Technical University of Munich (Departments 
+of Nephrology, Neurology, and Ophthalmology). The 
+overarching aim of the project was to investigate retinal 
+microvascular alterations and to provide detailed clinical 
+characterization of patients with post-COVID syndrome 
+(PCS). Recruitment procedures and BL assessments have 
+been described previously [32].
+Eligible participants were adults with confirmed prior 
+SARS-CoV-2 infection (polymerase chain reaction or 
+serological evidence ≥ 3 months before inclusion) and 
+persistent PCS-related symptoms for at least two months 
+
+Page 3 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+without an alternative medical explanation. Exclusion 
+criteria comprised lack of informed consent, age < 18 
+years, pregnancy, active malignancy, conditions markedly 
+limiting life expectancy, rheumatologic autoimmune dis­
+eases, and relevant ocular or neurological disorders (e.g., 
+cataract, glaucoma, epilepsy), reflecting the requirements 
+of the overarching retinal vascular imaging study proto­
+col [32].
+Between October 2022 and September 2023, 105 indi­
+viduals with suspected PCS were enrolled, including 
+76 recruited via social media outreach and 29 from the 
+PCS outpatient clinic. Three participants were excluded 
+from the final analysis: one due to missing confirmation 
+of SARS-CoV-2 infection, one because no temporal rela­
+tionship between infection and symptom onset could be 
+established, and one whose PCS-typical symptoms had 
+resolved prior to inclusion. We recruited a control group 
+of individuals who had fully recovered from a previous 
+SARS-CoV-2 infection without persistent symptoms 
+between December 2022 and January 2025.
+We invited PCS participants for a standardized follow-
+up visit six months after BL assessment. During this FU 
+visit, patient-reported outcome measures (PROMs), lab­
+oratory parameters, and HGS testing were repeated using 
+the same protocols as at BL. FU assessments were used 
+to evaluate longitudinal changes within the PCS cohort 
+and to compare FU values with BL measurements from 
+recovered controls in selected analyses.
+All examinations were performed by trained investiga­
+tors familiar with the study procedures but not involved 
+in hypothesis formulation or statistical analysis. The 
+study protocol was approved by the Ethics Committee of 
+the Technical University of Munich, School of Medicine 
+(Klinikum rechts der Isar; approval number 2022-317-
+S-SR) and prospectively registered in November 2022 at 
+ClinicalTrials.gov (identifier: NCT05635552). Registra­
+tion occurred after study initiation because of delays in 
+the registration process. The study protocol remained 
+unchanged after registration. The study was conducted 
+in accordance with the Declaration of Helsinki and insti­
+tutional ethical standards, and all participants provided 
+written informed consent prior to inclusion.
+Sample size
+Sample size calculations were originally performed for 
+retinal vessel analyses, a primary endpoint of the “All 
+Eyes on PCS” study. Based on published normative data 
+and expected group differences, we defined a target of 
+approximately 100 participants per group to ensure ade­
+quate statistical power while accounting for potential 
+dropouts. The analyses presented here represent a pre­
+defined substudy within this larger framework.
+Assessment of outcome measures
+Neuroaxonal injury markers (NfL and GFAP)
+Venous blood samples were obtained by trained study 
+personnel during morning hours and processed accord­
+ing to standardized operating procedures. Serum was 
+aliquoted immediately after centrifugation and stored 
+at -80 °C until analysis. All samples underwent a single 
+freeze-thaw cycle.
+Serum concentrations of neurofilament light chain 
+(NfL) and glial fibrillary acidic protein (GFAP) were 
+quantified using Single Molecule Array (Simoa®) tech­
+nology on the HD-X Analyzer (Quanterix, Billerica, MA, 
+USA) with the commercially available Neurology 2-Plex 
+B Advantage Kit, following the manufacturer’s instruc­
+tions. Lower limits of quantification were 0.8 pg/mL for 
+NfL and 16.6 pg/mL for GFAP. Samples below the lower 
+limit of quantification or with technical assay artifacts 
+were excluded. Laboratory personnel were blinded to all 
+clinical and outcome data.
+Handgrip strength assessment
+We measured HGS of the dominant hand using a cali­
+brated digital dynamometer (Jamar®, Patterson Medical) 
+under standardized conditions according to established 
+HGS testing recommendations [33]: Participants were 
+seated upright with the elbow flexed at 90° and the wrist 
+in a neutral position. After familiarization, we assessed 
+HGS in two standardized sessions separated by a 60-min­
+ute rest period. Each session consisted of ten maximal 
+voluntary contractions with brief rest intervals of approx­
+imately 3 s.
+The following parameters were derived as previously 
+described [14] for each session: mean grip force (Fmean; 
+inline-eq-IEq1 10 measurements/10), Fatigue Ratio (maximum force/
+Fmean), and muscle Recovery (Fmean of session 2/ 
+Fmean of session 1). This multidimensional protocol has 
+previously been applied to characterize fatigability and 
+recovery deficits in ME/CFS and PCS-related conditions 
+[14].
+Normative percentiles were taken from a large, pub­
+lished reference dataset in which handgrip strength val­
+ues were harmonized to three trials using multivariable 
+modelling [34]. In our cohort, handgrip strength was cal­
+culated as the mean of 10 repeated measurements; there­
+fore, comparisons with normative percentiles should be 
+interpreted as an approximation.
+Patient-reported outcome measures (PROMs)
+We assessed symptom burden and functional impair­
+ment using validated PROMs. PCS-related symptom 
+severity was quantified using the COVID-19 Yorkshire 
+Rehabilitation Scale (C19-YRS) [35] and the PCS Sever­
+ity Score [36]. Fatigue was evaluated with the Fatigue 
+Severity Scale (FSS) [37]. Symptoms of depression and 
+
+Page 4 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+assessed using standardized mean differences (SMDs). 
+Matched analyses incorporated ATT weighting and used 
+weighted linear models with HC3 robust standard errors 
+[41]. NfL and GFAP were analyzed on the log scale and 
+additionally adjusted for eGFR as an established con­
+founder. All tests were two-sided with α = 0.05.
+Results
+Baseline characteristics of the study cohort
+A total of 204 participants were included: 102 PCS 
+patients and 102 COVID-19 recovered controls (Table 1). 
+PCS patients were significantly older than recovered 
+individuals (median 41.5 [32.0–52.0] vs. 30.0 [25.0–37.8] 
+years, p < 0.001) but showed comparable sex distribu­
+tion (75.5% vs. 71.6% female, p = 0.63). No differences 
+were observed in BMI, obesity, or smoking status, 
+whereas hypertension (p = 0.019) and hypercholester­
+olemia (p < 0.001) were more frequent in PCS patients. 
+PCS participants reported more severe acute COVID-
+19 courses (p < 0.001). Time since infection was slightly 
+shorter in PCS patients (462 ± 268 days vs. 555 ± 359 days, 
+p = 0.041). Vaccination status differed between groups, 
+with PCS patients being less frequently vaccinated and 
+more often infected before vaccination (both p < 0.001). 
+ME/CFS was present in 61.4% of PCS patients. At BL, 
+PCS patients showed markedly higher fatigue severity 
+(FSS median 6.1 [5.1–6.7] vs. 2.2 [1.5–3.1], p < 0.001) and 
+significantly lower muscle strength (Fmean 20.1 [14.6–
+27.0] vs. 28.8 [23.6–34.6] kg, p < 0.001). Fatigue ratio was 
+slightly higher (p = 0.028), and recovery was significantly 
+lower (p < 0.001) in the PCS group.
+Of 102 PCS participants, 87 (85%) completed the FU. 
+A Little’s MCAR test indicated that missingness was not 
+completely at random. Baseline comparisons between 
+participants with and without FU showed no statisti­
+cally significant differences in Biomarkers or PROMs (all 
+p > 0.05; Supplementary Table 1), although a non-signif­
+icant trend toward lower baseline symptom burden was 
+observed in those lost to FU.
+Matched cohort analysis (Primary analysis)
+Given the substantial baseline differences, particularly 
+in age, between PCS patients and recovered controls, 
+a propensity score-matched analysis was considered 
+the primary approach for between-group comparisons. 
+Matched analyses including neuroaxonal injury markers 
+were conducted to explore potential biological correlates 
+of impaired muscle function.
+Matching procedure and balance
+A total of 102 patients with PCS were matched to 102 
+COVID-19 recovered controls using 2:1 nearest-neigh­
+bor propensity score matching with replacement, target­
+ing the average treatment effect on the treated. The PCS 
+anxiety were assessed using the 9-item Patient Health 
+Questionnaire (PHQ-9) [38] and the Generalized Anxiety 
+Disorder Scale (GAD-7) [39], respectively. Higher scores 
+indicate greater symptom severity for all instruments. All 
+PROMs were assessed at BL and repeated at the FU visit 
+in the PCS cohort.
+Statistical analysis
+All analyses were performed in R (version 2026.01.0 + 392 
+[2026.01.0 + 392]). Continuous variables are reported as 
+mean ± standard deviation (SD) or median (interquartile 
+range [IQR]), and categorical variables as n (%). Group 
+comparisons used ANOVA or Kruskal–Wallis tests for 
+continuous variables and χ² or Fisher’s exact tests for 
+categorical variables, as appropriate. Analyses were con­
+ducted as complete-case for the variables included in 
+each model. Implausible recovery values (> 1.25) were set 
+to missing.
+Within the PCS cohort, longitudinal BL-FU changes 
+were analyzed using paired t-tests or Wilcoxon signed-
+rank tests depending on data distribution. Longitudinal 
+time effects on muscle function parameters were addi­
+tionally assessed using linear mixed-effects models with 
+fixed effects for time, age, and sex and a random intercept 
+for participant ID. Missing FU data were evaluated using 
+Little’s MCAR test; because missingness was not com­
+pletely at random, mixed-effects models were used under 
+a missing-at-random assumption.
+Spearman correlations were used to assess associa­
+tions between muscle function parameters and PROMs 
+at BL and FU, as well as associations between longitu­
+dinal changes (Δ = FU − BL). Associations between BL 
+function and FU outcomes were assessed using univari­
+able and multivariable linear regression models exam­
+ining whether BL muscle function was associated with 
+FU muscle function and PROMs. Multivariable models 
+adjusted for age, sex, and the corresponding BL PROM. 
+For cross-sectional group comparisons between PCS 
+patients and healthy controls, multivariable linear regres­
+sion models were applied, including group (PCS vs. 
+control), age, and sex as covariates. Interaction analyses 
+included ME/CFS status as an effect modifier. Hetero­
+skedasticity-consistent HC3 robust standard errors were 
+used where appropriate. Multiple testing was controlled 
+using the Benjamini-Hochberg false discovery rate (FDR) 
+method.
+Propensity score matching was performed using the 
+MatchIt package in R according to established recom­
+mendations for observational studies [40]. Propensity 
+scores were estimated using logistic regression includ­
+ing age and sex as covariates. Nearest-neighbor matching 
+with replacement was performed targeting the average 
+treatment effect on the treated (ATT) using a 2:1 control-
+to-PCS ratio and a caliper of 0.5. Covariate balance was 
+
+Page 5 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+cohort remained unchanged in the matched analyses. 
+Although 63 unique recovered individuals contributed 
+to the matched sample, weighting resulted in an effec­
+tive control group representing 102 recovered controls 
+(effective sample size 34.7). Matching was performed on 
+age and sex to account for BL differences between groups 
+(Table 1). Covariate balance substantially improved after 
+matching, with standardized mean differences (SMDs) 
+for all matching variables below 0.1, indicating ade­
+quate balance (Supplementary Fig. 1). Table 2 shows the 
+weighted BL demographics of matched cohort.
+Muscle function in the matched cohort
+In the matched analyses, PCS patients exhibited per­
+sistent impairments in muscle function parameters at 
+FU compared with recovered controls assessed at BL 
+(Fig. 1a). Fmean was significantly lower in PCS at both 
+BL and FU than in recovered controls (p < 0.001 and 
+p = 0.001), with no significant difference between PCS 
+BL and PCS FU, indicating stable impairment of muscle 
+strength over time. Fatigue Ratio was modestly but signif­
+icantly higher in PCS compared with recovered controls 
+at BL and FU (both p < 0.001), while no significant change 
+was observed within PCS over time (p = 0.71). Similarly, 
+recovery was significantly lower in PCS compared with 
+recovered controls at both BL and FU (p < 0.001 and 
+p = 0.001), with no significant difference between PCS 
+BL and FU (p = 0.087). Details of the weighted regression 
+analysis for HGS measures are summarized in Supple­
+mentary Table 2.
+Neuroaxonal injury markers in the matched cohort
+For neuroaxonal injury markers (Fig. 1b), NfL levels did 
+not differ between recovered controls and PCS patients 
+at BL (p = 0.490), whereas significantly lower levels were 
+observed in recovered controls compared with PCS 
+patients at FU (ratio = 0.80, p = 0.004). Within the PCS 
+cohort, NfL levels decreased over time (ratio = 0.84, 
+p = 0.020). In contrast, GFAP levels did not differ sig­
+nificantly between groups at BL or FU (p = 0.363 and 
+p = 0.129), and no significant change was observed within 
+the PCS cohort over time (p = 0.545). Details of the 
+weighted regression analyses for NfL and GFAP are sum­
+marized in Supplementary Table 3.
+In multivariable regression models adjusting for 
+eGFR and BMI, NfL levels were significantly higher in 
+PCS patients at FU compared with recovered controls 
+(β = 0.23, p = 0.007; Supplementary Table 4). In contrast, 
+GFAP levels were not significantly associated with PCS 
+status after adjustment (β = 0.10, p = 0.197). Lower eGFR 
+was associated with higher GFAP levels (β = -0.009, 
+p < 0.001), whereas its association with NfL did not reach 
+statistical significance (β = -0.005, p = 0.083), support­
+ing the role of renal function as a relevant confounder 
+Table 1  BL characteristics of patients with PCS and COVID-19 
+recovered controls. Values are expressed as mean ± standard 
+deviation (SD), median (interquartile range, IQR), number 
+(percentage), or as the most frequent category (n %) for multi-
+category variables, as appropriate. P-values are derived from 
+one-way ANOVA for normally distributed continuous variables, 
+Kruskal-Wallis tests for non-parametric continuous variables, and 
+χ² or Fisher’s exact tests for categorical variables
+Variable
+COVID-19 
+recovered 
+(n = 102)
+PCS patients
+(n = 102)
+p-
+value
+Age, years
+30.0 (25.0–37.8) 41.5 (32.0–52.0) < 0.001
+Female sex, n (%)
+73 (71.6%)
+77 (75.5%)
+0.63
+Body mass index, kg/m²
+22.8 (21.1–24.7) 23.7 (21.0–27.0) 0.15
+Obesity, n (%)
+8 (7.8%)
+16 (15.7%)
+0.13
+Nicotine abuse, n (%)
+14 (13.7%)
+10 (9.8%)
+0.52
+Hypertension, n (%)
+5 (4.9%)
+16 (15.7%)
+0.019
+Diabetes mellitus type II, 
+n (%)
+0 (0.0%)
+1 (1.0%)
+1.0
+Hypercholesterolemia, n (%) 21 (22.1%)
+46 (46.5%)
+< 0.001
+Severity of acute infection, 
+n (%)
+< 0.001
+  Low (0–2)
+91 (89.2%)
+62 (60.8%)
+  Moderate (3–5)
+10 (9.8%)
+39 (38.2%)
+  High (> 5)
+1 (1.0%)
+1 (1.0%)
+SARS-CoV-2 variant, n (%)
+0.002
+  unknown
+80 (79.2%)
+63 (61.8%)
+  alpha
+1 (1.0%)
+7 (6.9%)
+  delta
+2 (2.0%)
+13 (12.7%)
+  omikron
+18 (17.8%)
+19 (18.6%)
+Number of SARS-CoV-2 
+infections, n (%)
+0.11
+  1
+62 (60.8%)
+71 (69.6%)
+  2
+31 (30.4%)
+29 (28.4%)
+  ≥3
+9 (8.8%)
+2 (2.0%)
+Time since infection, days
+555.0 ± 358.9
+462.2 ± 267.6
+0.041
+Number of vaccinations, 
+n (%)
+< 0.001
+  0
+0 (0.0%)
+5 (4.9%)
+  1
+1 (1.0%)
+4 (3.9%)
+  2
+8 (7.9%)
+27 (26.5%)
+  ≥3
+92 (90.2%)
+66 (64.7%)
+Vaccinated before infection, 
+n (%)
+6 (6.0%)
+27 (27.6%)
+< 0.001
+ME/CFS diagnosis, n (%)
+0 (0.0%)
+62 (61.4%)
+< 0.001
+C19-YRS
+–
+32.7 ± 14.1
+–
+GAD-7 score
+–
+5.0 (2.0–9.0)
+–
+PHQ-9 score
+–
+10.4 ± 4.3
+–
+Fatigue Severity Scale
+2.2 (1.5–3.1)
+6.1 (5.1–6.7)
+< 0.001
+PCS Severity Score
+–
+36.9 ± 10.6
+–
+Fmean (kg)
+28.6 (22.9–34.2) 20.1 (14.6–27.0) < 0.001
+Fatigue ratio
+1.2 (1.1–1.2)
+1.2 (1.1–1.3)
+0.035
+Recovery
+1.0 (0.9–1.1)
+1.0 (0.8–1.0)
+< 0.001
+
+Page 6 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+in biomarker analyses. In sensitivity analyses using mul­
+tivariable adjustment in the full (unmatched) cohort, 
+the association for NfL remained consistent with the 
+matched analyses (β = 0.17, p = 0.006), and again no sig­
+nificant association was observed for GFAP after adjust­
+ment (Supplementary Table 5).
+Exploratory correlation analyses within PCS patients 
+revealed no significant associations between NfL or 
+GFAP and HGS at BL or FU (Supplementary Fig. 2). Sim­
+ilarly, no significant associations were found between NfL 
+or GFAP and either PROM at BL or FU (data not shown).
+Sensitivity analyses using an alternative 1:1 nearest-
+neighbor matching approach without replacement 
+yielded similar patterns for muscle function, whereas 
+neuroaxonal injury marker findings showed variability 
+across matching strategies, particularly for GFAP, while 
+NfL differences were comparable (Supplementary Tables 
+6 and Supplementary Fig. 3).
+Contextualization using normative reference values (full 
+cohort)
+To contextualize the clinical relevance of impaired mus­
+cle function, height-adjusted HGS values were addition­
+ally compared with published international age- and 
+sex-specific normative reference data derived from 
+approximately 2.4 million adults across 69 countries and 
+regions [34], as presented in Supplementary Table 7. In 
+the PCS cohort, 69.6% of patients were below the 10th 
+percentile and 93.1% were below the 50th percentile. In 
+the recovered cohort, the corresponding proportions 
+were 38.3% and 86.8%, respectively (34.8% and 89.1% in 
+full cohort). Values at or above the 80th percentile were 
+uncommon in both groups (PCS: 1.0%; recovered: 2.2%).
+Muscle function in PCS (within PCS cohort analysis)
+Longitudinal changes in muscle function and PROMs in PCS
+To assess whether objective muscle impairments per­
+sist over time, longitudinal analyses were performed. As 
+no FU HGS data were available for recovered controls, 
+longitudinal analyses were restricted to the PCS cohort. 
+Table 3 summarizes the longitudinal trajectory of HGS 
+parameters and PROMs among PCS patients. Fmean 
+and Fatigue Ratio remained essentially unchanged over 
+six months, indicating stable physical performance. 
+In contrast, several PROMs showed modest improve­
+ments. Muscle recovery increased significantly from 
+0.90 ± 0.18 to 0.96 ± 0.14 (p = 0.015), while Fatigue sever­
+ity (FSS) and anxiety symptoms (GAD-7) decreased 
+slightly but significantly (p = 0.024 and p = 0.007, respec­
+tively). Changes in PCS Score, PHQ-9, and C19-YRS did 
+not reach statistical significance.
+Individual longitudinal trajectories and group means of 
+HGS measures and PROMs in the PCS cohort are shown 
+in Fig.  2. Considerable interindividual variability was 
+observed across all measures, with no consistent direc­
+tional change over time. On a group level, mean values 
+remained largely stable between baseline and follow-up, 
+with only minor differences in selected parameters.
+The distribution of individual change scores (Δ = FU 
+- BL) was centered around zero across outcomes, with 
+Table 2  BL characteristics of patients with PCS and COVID-19 
+recovered controls in the age- and sex-matched cohort. Values 
+are mean ± SD or median (IQR), as appropriate
+Variable
+COVID recovered
+(n = 63 unique; 
+weighted n ≈ 102; 
+ESS = 34.7)
+PCS
+n = 102
+SMD
+Demographics and comorbidities
+Age, years
+41.9 ± 12.1
+41.9 ± 11.6
+0.001
+Female sex, n (%)
+48 (76.0%)
+77 (75.5%)
+0.011
+BMI, kg/m²
+24.1 ± 4.1
+24.5 ± 4.8
+0.096
+Obesity, n (%)
+9 (13.7%)
+16 (15.7%)
+0.055
+Nicotine abuse, n (%)
+7 (11.8%)
+10 (9.8%)
+0.063
+Hypertension, n (%)
+10 (15.7%)
+16 (15.7%)
+0.000
+Diabetes mellitus type II, 
+n (%)
+0 (0.0%)
+1 (1.0%)
+0.141
+Hypercholesterolemia, 
+n (%)
+25 (41.2%)
+46 (46.5%)
+0.106
+COVID-19-related characteristics
+Severity of acute infection
+  low (0–2), n (%)
+56 (90.3%)
+62 (60.8%)
+0.713
+  moderate (3–5), n (%)
+6 (9.7%)
+40 (39.2%)
+0.713
+  high (> 5), n (%)
+0 (0.0%)
+2 (2.0%)
+SARS-CoV-2 variant
+  unknown, n (%)
+49 (78.4%)
+63 (61.8%)
+0.432
+  Alpha, n (%)
+2 (2.5%)
+7 (6.9%)
+0.384
+  Delta, n (%)
+2 (2.9%)
+13 (12.7%)
+0.371
+  Omicron, n (%)
+10 (16.2%)
+19 (18.6%)
+0.065
+Number of infections
+  1, n (%)
+46 (73.0%)
+71 (69.6%)
+0.000
+  ≥2, n (%)
+17 (27.0%)
+31 (30.4%)
+–
+Number of vaccinations
+0–1, n (%)
+0 (0.0%)
+9 (8.8%)
+0.816
+2, n (%)
+5 (7.9%)
+27 (26.5%)
+0.816
+≥3, n (%)
+57 (92.1%)
+66 (64.7%)
+–
+Clinical characteristics
+ME/CFS, n (%)
+0 (0.0%)
+62 (61.4%)
+1.783
+GAD-7 score
+–
+5.9 ± 4.3
+1.945
+PHQ-9 score
+–
+10.4 ± 4.3
+3.408
+Fatigue Severity Scale
+2.3 ± 1.1
+5.7 ± 1.3
+2.728
+PCS Severity Score
+0.0 ± 0.0
+36.9 ± 10.6
+4.931
+Laboratory parameters
+eGFR, ml/min/1.73 m²
+95.9 ± 16.3
+96.4 ± 16.3
+0.032
+NfL, pg/ml
+5.4 ± 2.2
+5.9 ± 2.6
+0.175
+GFAP, pg/ml
+59.5 ± 21.2
+64.8 ± 25.4
+0.224
+HGS parameters
+Fmean, kg
+29.0 ± 8.8
+22.6 ± 12.5
+0.591
+Fatigue ratio
+1.2 ± 0.1
+1.3 ± 0.2
+0.584
+Recovery
+1.0 ± 0.1
+0.9 ± 0.2
+0.871
+
+Page 7 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+differing degrees of variability between parameters (Sup­
+plementary Fig. 4).
+Linear mixed models confirmed these findings, dem­
+onstrating stable Fmean and fatigability over time, with 
+a small but significant improvement in recovery (β = 0.04, 
+95% CI [0.00–0.08], p = 0.028) (Table 4; Fig. 3).
+Stability and associations of muscle function measures in PCS
+Changes in HGS parameters and changes in PROMs are 
+shown in Supplementary Table 8. No significant correla­
+tions were found for either combination.
+BL muscle function measures were associated with 
+their respective FU outcomes (Supplementary Table 9). 
+Higher BL Fmean was strongly associated with higher 
+FU Fmean (β = 0.55, p < 0.001, R² = 0.29), while greater 
+BL fatigability was associated with lower FU Fmean (β 
+= -11.3, p = 0.042, R² = 0.05). Conversely, a better BL 
+recovery was associated with higher Fmean after six 
+months (β = 26.9, p < 0.001, R² = 0.16). Similar patterns 
+were observed for the association of FU fatigability: 
+lower BL Fmean and recovery, and higher initial fati­
+gability, each were associated with worse FU Fatigue 
+Ratios. FU recovery was most strongly associated with 
+BL recovery (β = 0.29, p = 0.002, R² = 0.13), suggesting 
+temporal stability of this measure.
+Table 3  Longitudinal comparison of BL and FU measures in 
+patients with PCS. Values represent mean ± SD. Paired t-tests or 
+Wilcoxon signed-rank tests were used depending on distribution 
+(two-tailed)
+Variable
+n
+BL 
+(mean ± SD)
+FU 
+(mean ± SD)
+Δ 
+(mean ± SD)
+p
+Fmean
+83
+22.10 ± 12.35
+22.75 ± 12.52
+0.65 ± 11.91
+0.986
+Fatigue Ratio
+83
+1.27 ± 0.25
+1.27 ± 0.20
+0.00 ± 0.26
+0.270
+Recovery
+74
+0.90 ± 0.18
+0.96 ± 0.14
+0.05 ± 0.18
+0.015
+PCS Score
+86
+37.25 ± 10.69
+35.33 ± 11.85
+-1.92 ± 10.13
+0.149
+C19-YRS
+61
+32.35 ± 13.46
+30.64 ± 13.86
+-1.71 ± 9.96
+0.185
+PHQ-9
+83
+10.45 ± 4.43
+9.75 ± 4.44
+-0.70 ± 3.67
+0.087
+GAD-7
+83
+5.98 ± 4.20
+5.00 ± 4.09
+-0.98 ± 3.31
+0.007
+FSS
+84
+5.66 ± 1.33
+5.37 ± 1.42
+-0.29 ± 1.15
+0.024
+Fig. 1  Comparison of muscle function parameters and neuroaxonal injury markers between PCS patients at baseline (BL) and follow-up (FU) and age- 
+and sex-matched COVID-19 recovered controls assessed at BL. a Fmean, fatigue ratio, and recovery. b NfL and GFAP. Boxplots display medians and 
+interquartile ranges; points represent individual participants. P-values are derived from weighted linear regression models using ATT propensity score 
+weights to account for age- and sex-matching with replacement (robust HC3 standard errors). Asterisks indicate unadjusted significance levels (*p < 0.05, 
+**p < 0.01, ***p < 0.001). Abbreviations: PCS = post-COVID syndrome; BL = baseline; FU = follow-up; NfL = neurofilament light chain; GFAP = glial fibrillary 
+acidic protein
+ 
+
+Page 8 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+Comparison of muscle function between PCS patients and 
+recovered controls
+After adjustment for age and sex, patients with PCS at 
+FU exhibited significantly lower HGS compared with 
+recovered controls at BL (β = -6.63, 95% CI -9.64 to 
+-3.61, p < 0.001, Table  5). In addition, the fatigue ratio 
+was significantly elevated in PCS patients (β = 0.10, 95% 
+CI 0.05 to 0.15, p < 0.001). Muscle recovery was also sig­
+nificantly reduced in PCS patients compared with con­
+trols at BL after adjustment (β = -0.05, 95% CI -0.09 to 
+-0.01, p = 0.008).
+Symptom correlations and clinical associations
+To evaluate the clinical relevance of these objective 
+muscle impairments, associations with PROMs were 
+examined.
+Cross-sectional correlations between muscle function and 
+PROMs in PCS
+Changes over time were assessed only within the PCS 
+cohort, as no longitudinal data was available for the 
+recovered cohort. At BL, Fmean was inversely corre­
+lated with fatigue severity (FSS), depressive symptoms 
+(PHQ-9), overall PCS symptom burden, and C19-YRS 
+scores (Spearman ρ = -0.28 to -0.31), with all associa­
+tions remaining statistically significant after false dis­
+covery rate correction (Fig. 4; Supplementary Table 10). 
+Higher muscular fatigability, quantified by the Fatigue 
+Ratio, was positively associated with fatigue severity 
+and C19-YRS scores (ρ = 0.31 to 0.35; q ≤ 0.011). Associ­
+ations between recovery and PROMS were weaker and 
+reached statistical significance after multiple-testing 
+correction only for C19-YRS at BL.
+At FU, correlations showed a similar direction and 
+magnitude. Lower Fmean remained associated with 
+Table 4  Linear mixed model results for longitudinal changes in 
+muscle function parameters in the PCS cohort. Models included 
+time (BL vs. FU), age, and sex as fixed effects and participant ID 
+as a random intercept. Shown are unstandardized fixed-effect 
+estimates (β) for the time effect with 95% confidence intervals 
+(CIs)
+Outcome
+β [95% CI]
+p
+Fmean
+0.24 [-2.25, 2.73]
+0.847
+Fatigue Ratio
+0.01 [-0.04, 0.06]
+0.740
+Recovery
+0.04 [0.00, 0.08]
+0.028
+Fig. 2  Individual longitudinal trajectories (blue lines) and group means (red lines) for HGS parameters and PROMs in PCS patients between baseline and 
+follow-up. Each thin blue line represents an individual participant trajectory; red points and connecting lines indicate mean values with 95% confidence 
+intervals at each timepoint. Abbreviations: PCS = post-COVID syndrome, C19-YRS = COVID-19 Yorkshire Rehabilitation Scale; PHQ-9 = Patient Health Ques­
+tionnaire-9; GAD-7 = Generalized Anxiety Disorder-7; FSS = Fatigue Severity Scale
+ 
+
+Page 9 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+greater fatigue severity (FSS; ρ = -0.30; q = 0.047) and 
+higher overall PCS symptom burden (PCS Score; ρ 
+= -0.33; q = 0.039). By contrast, associations between 
+Fatigue Ratio and PROMs were attenuated and did not 
+remain statistically significant after false discovery rate 
+adjustment. Nominal correlations between recovery 
+and depressive or anxiety symptoms were observed but 
+did not remain significant after correction for multiple 
+testing.
+Associations between muscle function and symptom 
+persistence in PCS
+In univariable analyses, lower BL Fmean and higher fati­
+gability were associated with greater symptom severity 
+at FU across multiple PROMs (Supplementary Table 11). 
+BL recovery showed inverse associations with depressive 
+symptoms and overall symptom burden. These analyses 
+were intended to describe unadjusted associations and 
+informed subsequent multivariable models.
+In multivariable models adjusted for age, sex, and BL 
+symptom levels, lower BL Fmean showed a trend toward 
+Table 5  Cross-sectional comparison of muscle function in 
+patients with PCS at FU and recovered controls at BL. Values are 
+mean ± SD. Group differences were assessed using multivariable 
+linear regression models including group (PCS vs. control), 
+age, and sex as covariates. Adjusted effect estimates (β), 95% 
+confidence intervals (CI), and p-values are reported
+Outcome
+PCS (FU) 
+mean ± SD
+Controls 
+(BL) 
+mean ± SD
+Adjusted β 
+(95% CI)
+Adjust­
+ed p
+Fmean (kg)
+22.75 ± 12.52
+29.86 ± 10.43
+-6.63 (-9.64 to 
+-3.61)
+< 0.001
+Fatigue 
+ratio
+1.27 ± 0.20
+1.19 ± 0.11
+0.10 (0.05 to 
+0.15)
+< 0.001
+Recovery
+0.96 ± 0.14
+1.00 ± 0.11
+-0.05 (-0.09 to 
+-0.01)
+0.008
+Fig. 4  Cross-sectional correlations between muscle function parameters and patient-reported outcome measures (PROMs) in patients with PCS. Heat­
+maps display Spearman correlation coefficients (ρ) between objective muscle function measures (Fmean, Fatigue Ratio, Recovery) and PROMs at Base­
+line (left) and Follow-up (right). Numbers indicate ρ values. Dots (•) denote nominal significance (p < 0.05, two-sided Spearman test), and asterisks (*) 
+denote FDR-corrected significance (q < 0.05, Benjamini-Hochberg). Color intensity reflects the direction and magnitude of correlations. Abbreviations: 
+C19-YRS = COVID-19 Yorkshire Rehabilitation Scale; PHQ-9 = Patient Health Questionnaire-9; GAD-7 = Generalized Anxiety Disorder-7; FSS = Fatigue Sever­
+ity Scale
+ 
+Fig. 3  Estimated marginal means (± 95% CI) from linear mixed models adjusted for age and sex. Thick lines connect mean estimates between Baseline 
+and Follow-up
+ 
+
+Page 10 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+higher Fatigue Severity (FSS; β = -0.03, 95% CI [-0.06 to 
+0.00], p = 0.052) and was significantly associated with 
+higher depressive symptom scores (PHQ-9; β = -0.11, 
+95% CI [-0.20 to -0.02], p = 0.022) at FU (Supplementary 
+Tables 12 and Fig. 5). A higher Fatigue Ratio was asso­
+ciated with greater FSS (β = 1.66 [0.44 to 2.88], p = 0.008) 
+and showed a trend for higher overall PCS symptom 
+burden (p = 0.054). Higher recovery was associated with 
+fewer depressive symptoms ((PHQ-9; β = -6.21, 95% CI 
+[-11.7 to -0.68], p = 0.028) and showed trends for lower 
+fatigue, PCS, and C19-YRS scores (all p < 0.08). No sig­
+nificant associations were observed for anxiety (GAD-7; 
+all p > 0.49).
+Interaction analyses showed no significant modera­
+tion by CFS status for any association between BL muscle 
+function and FU PROMs (Supplementary Table 13).
+Discussion
+Principal findings
+This prospective longitudinal study shows persistent 
+impairments in muscle performance in a well-defined 
+PCS cohort followed over six months. These findings are 
+primarily based on propensity score-matched analyses, 
+which were applied to reduce confounding by age and 
+sex between groups. Our key findings demonstrate that: 
+(1) PCS patients exhibited significantly lower Fmean, ele­
+vated muscular fatigability (Fatigue Ratio), and reduced 
+muscle recovery compared with matched COVID-19 
+recovered controls at both BL and FU. Importantly, 
+reduced HGS was evident not only relative to recovered 
+controls but also compared with large international nor­
+mative datasets; (2) these objective muscle impairments 
+remained largely stable over the six-month observa­
+tion period, with only modest improvement in recovery 
+capacity; (3) BL muscle function parameters, particularly 
+lower Fmean and higher Fatigue Ratio, were associated 
+with greater symptom burden at FU, particularly depres­
+sive symptoms and fatigue, while several associations for 
+overall PCS severity showed similar trends; and (4) cir­
+culating neuroaxonal injury markers showed inconsistent 
+and weak associations with muscle performance, which 
+were sensitive to adjustment for known confounders. 
+Together, these findings support persistent reductions in 
+HGS as a feature of chronic PCS. Baseline muscle func­
+tion was associated with FU symptom burden.
+Comparison with literature
+Persistent impairment of muscle performance in PCS
+Our observation of markedly reduced HGS in PCS 
+patients compared with recovered controls aligns with 
+emerging evidence documenting muscle weakness as 
+a cardinal feature of PCS [11–13]. The magnitude of 
+impairment observed in our cohort aligns with findings 
+by Amaral et al. [11], who reported associations between 
+low HGS and adverse functional outcomes in affected 
+individuals. Extending these largely cross-sectional 
+observations, our longitudinal data demonstrate that 
+objective muscle impairments persist over a six-month 
+period, suggesting limited spontaneous recovery in a 
+well-defined PCS population. However, this interpreta­
+tion should be made with caution, as participants lost 
+to FU were less severely affected at baseline, which may 
+have led to an overrepresentation of more symptomatic 
+individuals at FU.
+By applying a multidimensional HGS protocol assess­
+ing strength (Fmean), fatigability (Fatigue Ratio), and 
+muscle recovery, our study provides a more nuanced 
+characterization of muscle function than maximal force 
+Fig. 5  Forest plot of adjusted regression coefficients (β) with 95% confidence intervals from multivariable linear models. Points represent point estimates 
+and horizontal lines indicate 95% confidence intervals. Colors denote baseline muscle function parameters (fatigue ratio, Fmean, recovery). Models were 
+adjusted for age, sex, and the corresponding baseline PROM. Asterisks indicate significance levels (*p < 0.05, **p < 0.01). Abbreviations: C19-YRS = COVID-
+19 Yorkshire Rehabilitation Scale; PHQ-9 = Patient Health Questionnaire-9; GAD-7 = Generalized Anxiety Disorder-7; FSS = Fatigue Severity Scale
+ 
+
+Page 11 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+measurements alone. Elevated fatigability in PCS patients 
+indicates an accelerated decline in force generation dur­
+ing repeated contractions, a pattern previously described 
+in ME/CFS using comparable protocols [14]. Prior stud­
+ies have linked such fatigability metrics to post-exertional 
+biochemical changes and mitochondrial abnormalities 
+in post-COVID and related conditions [14, 42], support­
+ing their biological relevance. Notably, recovery capacity 
+showed modest improvement over time despite stable 
+strength and fatigability, suggesting that distinct compo­
+nents of impaired muscle performance may follow dif­
+ferent temporal trajectories. Importantly, longitudinal 
+conclusions are limited to the PCS cohort, as repeated 
+HGS assessments were not available for recovered con­
+trols, which served only as a cross-sectional reference 
+group. As a result, it cannot be fully determined whether 
+the observed differences reflect PCS-specific trajectories 
+or broader post-infectious changes over time.
+Distinction between chronic PCS and post-acute recovery
+A key strength of this study is its focus on a rigorously 
+defined chronic PCS cohort, in contrast to much of the 
+existing literature that examined patients during early 
+post-acute recovery. Many prior investigations assessed 
+patients within the first three months after infection, 
+often without standardized diagnostic criteria, compli­
+cating differentiation between delayed recovery and per­
+sistent PCS-related impairment [19–21, 43]. In contrast, 
+participants in our cohort fulfilled WHO case definitions 
+for PCS, with symptoms persisting beyond three months 
+post-infection.
+The use of propensity score-matched COVID-19 recov­
+ered controls further enabled isolation of PCS-specific 
+impairments from general post-infectious effects. Persis­
+tent differences in muscle function between PCS patients 
+and recovered controls at both BL and FU suggest that 
+the observed deficits are unlikely to reflect normal con­
+valescence and instead characterize a chronic PCS 
+phenotype. This distinction is clinically relevant when 
+interpreting persistent functional limitations in affected 
+patients.
+Mechanisms
+Potential mechanisms underlying persistent impairment in 
+muscle performance
+The mechanisms underlying persistent reductions of 
+muscle performance in PCS remain incompletely under­
+stood and are likely multifactorial. Recent mechanistic 
+studies demonstrated altered skeletal muscle metabo­
+lism, mitochondrial abnormalities, impaired oxidative 
+phosphorylation, and a shift toward more fatigable gly­
+colytic muscle fibers in PCS patients, particularly follow­
+ing exertion-induced symptom exacerbation [10]. These 
+alterations may limit energy availability during repeated 
+contractions and thereby contribute to increased muscu­
+lar fatigability and impaired recovery in PCS. In parallel, 
+endothelial dysfunction and impaired microvascular reg­
+ulation may further reduce oxygen extraction and skel­
+etal muscle perfusion during exertion [26]. Consistent 
+with this concept, cardiopulmonary exercise testing stud­
+ies in PCS have demonstrated impaired exercise capacity, 
+abnormal oxygen extraction, and post-exertional symp­
+tom exacerbation, supporting the presence of persistent 
+exertional intolerance beyond simple deconditioning [44, 
+45]. Neuroimmune dysregulation and autonomic dys­
+function may further contribute to altered neuromuscu­
+lar activation, impaired recovery kinetics, and exercise 
+intolerance [46]. The relative stability of HGS impair­
+ments over time in our cohort may therefore reflect per­
+sistent dysregulation across interconnected metabolic, 
+vascular, and neuroimmune pathways rather than iso­
+lated structural muscle injury. In this context, persistently 
+impaired HGS in PCS may represent one manifesta­
+tion of a broader multisystem disorder characterized by 
+immune, vascular, and autonomic dysregulation [4, 26].
+Prognostic relevance of baseline muscle function
+A key finding of this study is that BL muscle function 
+parameters were associated with symptom burden and 
+functional outcomes at FU. Lower BL Fmean and higher 
+Fatigue Ratio were associated with greater fatigue sever­
+ity and depressive symptoms, while associations with 
+overall PCS severity showed similar trends, independent 
+of age and sex. These findings indicate that objective 
+muscle function at initial assessment may have prognos­
+tic relevance in chronic PCS.
+These associations are consistent with prior reports 
+showing that reduced HGS early after COVID-19 is 
+related to worse functional outcomes over time [15]. 
+Our study extends these observations by applying a mul­
+tidimensional HGS protocol capturing fatigability and 
+recovery, and by demonstrating such associations in a 
+rigorously defined chronic PCS cohort. The absence of 
+significant associations between changes in HGS param­
+eters and changes in PROMs may reflect the relative sta­
+bility of both objective muscle function and symptom 
+burden over the FU period, rather than a lack of relation­
+ship between these domains.
+No significant interaction was observed between BL 
+muscle function and comorbid ME/CFS status in relation 
+to FU outcomes. While this finding should be interpreted 
+cautiously given limited statistical power for interaction 
+analyses, it suggests that the observed associations may 
+not be restricted to specific PCS subgroups.
+Although universally accepted PCS-specific thresh­
+olds for clinically meaningful HGS impairment are cur­
+rently lacking, the observed between-group differences in 
+Fmean were substantial and remained stable over time. 
+
+Page 12 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+Moreover, lower baseline Fmean and higher fatigabil­
+ity were consistently associated with greater symptom 
+burden at FU, suggesting a potential clinical relevance. 
+However, effect sizes were small and the magnitude of 
+observed changes in PROMs and recovery was clustered 
+around zero at the individual level, limiting their clinical 
+interpretability. In addition, minimal clinically important 
+differences (MCIDs) are not well established for repeated 
+HGS-derived parameters in post-viral syndromes or for 
+several of the PROMs used in this context, further lim­
+iting the ability to interpret the clinical significance of 
+observed changes.
+Neuroaxonal injury markers and impaired muscle 
+performance
+Interpretation of neuroaxonal injury biomarkers in this 
+study requires substantial caution because circulating 
+NfL and GFAP are influenced by several non-neurologi­
+cal factors, including age, renal function, BMI, and ana­
+lytical strategy. In our analyses, the observed associations 
+were modest and not fully consistent across biomarkers 
+or modelling approaches. While NfL showed differences 
+in some comparisons, these findings were sensitive to 
+cohort definition, matching strategy, and adjustment 
+approach. Additional exploratory analyses using alterna­
+tive matching strategies yielded less consistent results, 
+further limiting the robustness and interpretability of 
+these findings. Taken together, these results do not allow 
+firm conclusions regarding the presence, extent, or tem­
+poral dynamics of neuroaxonal injury in PCS and should 
+be regarded as exploratory.
+For GFAP, no robust association with PCS status was 
+observed after adjustment, further limiting the strength 
+of any pathophysiological interpretation. The fact that 
+both eGFR and BMI showed associations with bio­
+marker concentrations in some models underscores that 
+peripheral biomarker levels may reflect a mixture of dis­
+ease-related and non-disease-related influences. Taken 
+together, these results should be regarded as exploratory 
+and hypothesis-generating, particularly given the poten­
+tial for residual confounding. At present, they do not 
+provide a sufficient basis for specific conclusions about 
+ongoing neuroaxonal or astroglial injury in PCS.
+Importantly, circulating NfL and GFAP are established 
+but non-specific markers of neuroaxonal and astroglial 
+injury that are elevated across a broad spectrum of neuro­
+logical disorders, including multiple sclerosis, traumatic 
+brain injury, and neurodegenerative diseases [47]. Com­
+pared with these conditions, the magnitude of biomarker 
+elevation observed in PCS appears relatively modest, 
+arguing against severe ongoing neurodegeneration. Lon­
+gitudinal studies of COVID-19-associated neuroaxonal 
+injury markers have reported heterogeneous trajectories 
+over time. Elevated NfL concentrations have primarily 
+been observed in severe acute COVID-19 and critical ill­
+ness, often declining during recovery phases [48, 49]. By 
+contrast, evidence for persistently elevated biomarkers in 
+chronic PCS remains inconsistent and appears strongly 
+dependent on cohort characteristics, neurological symp­
+tom burden, and analytical methodology. In line with this 
+heterogeneity, we observed no consistent associations 
+between circulating neuroaxonal injury markers and 
+objective muscle function measures in our cohort. The 
+absence of consistent associations between NfL/GFAP 
+levels and HGS parameters (Supplementary Fig. 2) may 
+indicate that persistently impaired muscle performance 
+in PCS is not primarily driven by ongoing large-fiber 
+neuroaxonal injury or astroglial damage detectable in 
+peripheral blood. Instead, HGS abnormalities may reflect 
+functional disturbances at the metabolic, mitochondrial, 
+vascular, autonomic, or neuromuscular junction level 
+that are insufficient to induce measurable increases in 
+circulating neuroaxonal injury markers. In this context, 
+retinal microvascular alterations, as investigated in the 
+overarching “All Eyes on PCS” project, may serve as a 
+proxy of systemic microvascular dysfunction. Given that 
+the retinal microvasculature is widely regarded as a non-
+invasive window into systemic vascular health [50], the 
+observed HGS impairments are therefore unlikely to rep­
+resent isolated skeletal muscle deficits but may instead 
+reflect a broader systemic pathophysiology. Importantly, 
+circulating NfL and GFAP primarily reflect structural 
+neuroaxonal or astroglial injury and may therefore not 
+capture predominantly functional or metabolic altera­
+tions. As a result, the absence of strong biomarker asso­
+ciations should not be interpreted as evidence against 
+neurobiological contributions to impaired muscle func­
+tion in PCS.
+Clinical implications
+A key implication of this study is that objective HGS 
+parameters provide a robust functional correlate of 
+PROMs in PCS, both at BL and at FU. The limited 
+improvement in PROMs over six months suggests that 
+symptom burden may remain relatively stable in a sub­
+stantial proportion of patients with PCS. The consis­
+tent associations between measures of muscle strength, 
+fatigability, and recovery and validated PROMs across 
+multiple symptom domains support the potential use of 
+HGS as an objective complement to subjective symptom 
+assessment. The observed pattern of exertional intoler­
+ance and persistent fatigability also resembles findings 
+reported in other post-viral syndromes, particularly ME/
+CFS [14, 51].
+Importantly, the persistence of these associations over 
+time indicates that HGS parameters continue to reflect 
+symptom burden beyond the initial presentation, rein­
+forcing their relevance for longitudinal characterization 
+
+Page 13 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+of PCS cohorts. In this context, objective muscle func­
+tion measures may help to contextualize and substanti­
+ate patient-reported fatigue, weakness, and functional 
+impairment.
+From a methodological perspective, the integration of 
+standardized HGS assessment alongside PROMs may 
+improve the phenotypic characterization and compa­
+rability of PCS cohorts in both clinical and research 
+settings. While the present findings do not support 
+therapeutic recommendations, they suggest that objec­
+tive functional measures such as HGS may represent a 
+valuable component of comprehensive PCS assessment. 
+Because HGS assessment is inexpensive, rapid, and 
+widely implementable, it may represent a practical objec­
+tive adjunct to PROM-based PCS assessment in both 
+outpatient and research settings.
+Limitations
+Several limitations of this study should be acknowledged. 
+First, the observational design precludes causal inference 
+regarding the relationship between impaired muscle per­
+formance and symptom persistence in PCS. Although 
+BL muscle function parameters were associated with FU 
+symptom burden, reverse causation cannot be excluded.
+Second, comparisons with published normative HGS 
+values should be interpreted with caution, as our hand­
+grip metric was based on the mean of 10 repeated 
+contractions, whereas the reference percentiles were har­
+monized to three trials. These analyses therefore provide 
+an external benchmark, but not a protocol-identical com­
+parison. Furthermore, HGS was not normalized to mea­
+sures of body composition such as lean mass or fat-free 
+mass. As a result, reduced HGS may reflect a combina­
+tion of decreased muscle mass, physical inactivity, and 
+deconditioning rather than intrinsic muscle dysfunction 
+per se.
+Third, the FU period captures medium-term trajecto­
+ries but may be insufficient to characterize longer-term 
+disease courses. It remains unclear whether objective 
+muscle impairments and patient-reported symptoms 
+eventually resolve, remain stable, or progress over longer 
+time horizons.
+Fourth, the moderate sample size, particularly after 
+accounting for loss to FU, limits statistical power to 
+detect small effect sizes and to perform detailed sub­
+group analyses. Loss to FU represents a potential source 
+of selection bias. Although not statistically signifi­
+cant, non-completers showed a tendency toward lower 
+baseline symptom burden and slightly more favorable 
+muscle function measures. This pattern suggests a pos­
+sible, albeit non-significant, enrichment of more severely 
+affected individuals at FU. This may result in an over­
+representation of more severely affected individuals at 
+FU, potentially leading to an overestimation of symptom 
+persistence and an underestimation of improvement 
+over time. Moreover, the recruitment strategy resulted 
+in a cohort with relatively high symptom burden, which 
+may limit generalizability. In addition, residual confound­
+ing cannot be excluded. Factors such as physical activ­
+ity, deconditioning, pain, sleep disturbance, depressive 
+symptoms, overlap with ME/CFS, severity of the acute 
+infection, vaccination status, and time since infection 
+may have influenced HGS, circulating biomarker levels, 
+and symptom burden. Although most of these variables 
+were partially captured, the study was not designed to 
+comprehensively adjust for all potential confounders. 
+Therefore, the observed associations should be inter­
+preted with caution.
+Fifth, biomarker findings should be interpreted as 
+exploratory, as effect sizes were moderate and sensitive 
+to analytical strategy. The study was not specifically pow­
+ered for biomarker analyses, and statistical power was 
+further reduced in the primary matched analyses due to 
+propensity score weighting. Although 63 unique control 
+individuals contributed to the matched sample, weight­
+ing resulted in a reduced effective sample size, which 
+may have contributed to the instability of some findings. 
+In additional sensitivity analyses using an alternative 1:1 
+nearest-neighbor matching approach without replace­
+ment, similar effect patterns were observed for muscle 
+function. NfL and GFAP findings were generally consis­
+tent, although some variability, particularly for GFAP, 
+remained across matching strategies. Circulating NfL and 
+GFAP are influenced by non-neurological factors such as 
+age, renal function, and BMI, which may attenuate dis­
+ease-specific signals despite adjustment. Moreover, these 
+markers may be insensitive to subtle or non-cytodestruc­
+tive neurological alterations in PCS. Differences across 
+studies may reflect heterogeneity in PCS definitions, 
+disease duration, symptom severity, and methodological 
+approaches.
+Finally, despite the application of rigorous diagnostic 
+criteria, PCS remains a heterogeneous condition. The 
+present findings may therefore not be uniformly appli­
+cable across all PCS phenotypes, underscoring the need 
+for larger longitudinal studies with finer phenotypic 
+stratification.
+Conclusion
+In conclusion, persistent impairment in objective muscle 
+function represents a stable and clinically relevant feature 
+of chronic PCS. Extending prior predominantly cross-
+sectional observations, our longitudinal study demon­
+strates that multidimensional HGS-derived parameters 
+are associated with symptom burden and longitudinal 
+outcomes, supporting their potential value as objective 
+markers of functional impairment. In contrast, circulat­
+ing neuroaxonal injury markers did not show a consistent 
+
+Page 14 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+and robust relationship with muscle performance, 
+suggesting that the underlying mechanisms may be 
+only partially overlapping or difficult to disentangle. 
+Together, these findings support the integration of objec­
+tive muscle function assessment into longitudinal PCS 
+characterization.
+Summary table
+What is known about this subject:
+Post-COVID syndrome is defined by persistent symptoms after SARS-
+CoV-2 infection and is diagnosed clinically.
+Objective measures to complement symptom-based assessment in 
+PCS are limited.
+Handgrip strength is an established, non-invasive measure of global 
+muscle function.
+What this paper adds:
+Handgrip strength parameters capture persistent physical impairment 
+in a well-defined PCS cohort.
+Objective muscle function is associated with patient-reported out­
+comes at baseline and follow-up.
+Neuroaxonal injury markers showed no consistent elevation in PCS and 
+no consistent association with muscle function.
+Supplementary Information
+The online version contains supplementary material available at ​h​t​t​p​s​:​/​/​d​o​i​.​o​r​
+g​/​1​0​.​1​1​8​6​/​s​1​2​9​6​7​-​0​2​6​-​0​8​5​7​9​-​z​.​
+Supplementary Material 1
+Acknowledgements
+We want to thank all the study participants for their active participation, which 
+made this study possible.
+Author contributions
+This study was conceptualized and designed by T. W. and C. S. The statistical 
+analysis was conducted by T.W., M.W. NfL measurements were prepared by 
+A.R. and I.L. The manuscript was drafted by M.W. All authors reviewed the 
+manuscript.
+Funding
+Open Access funding enabled and organized by Projekt DEAL. This study is 
+sponsored by the Bavarian State Ministry of Science and Art, as part of its 
+Special Funding Program for the Scientific Coronavirus Research Projects 
+of the Technical University of Munich School of Medicine at the University 
+Medical Center “Rechts der Isar” (Funding Identification Number H.4001.1.7–
+53/7). Furthermore, this study received Funding from the VADYS-ME Research 
+Program.
+Data availability
+The data underlying this manuscript will be shared upon reasonable request 
+to the corresponding author. All shared data will be fully anonymized/
+de-identified to ensure participant privacy in accordance with institutional 
+and GDPR regulations.
+Declarations
+Ethics approval and consent to participate
+The study protocol was approved by the Ethics Committee of the Technical 
+University of Munich, School of Medicine (Klinikum rechts der Isar; approval 
+number 2022-317-S-SR). The study was conducted in accordance with the 
+Declaration of Helsinki and all participants provided written informed consent 
+prior to inclusion.
+Consent for publication
+Not applicable.
+Competing interests
+The authors declare that the research was conducted in the absence of any 
+commercial or financial relationships that could be construed as a potential 
+conflict of interest.
+Received: 29 May 2026 / Accepted: 30 June 2026
+References
+1.	
+Nalbandian A, et al. Post-acute COVID-19 syndrome. Nat Med. 
+2021;27(4):601–15.
+2.	
+Thompson EJ, et al. Long COVID burden and risk factors in 10 UK longitudinal 
+studies and electronic health records. Nat Commun. 2022;13(1):3528.
+3.	
+Soriano JB, et al. A clinical case definition of post-COVID-19 condition by a 
+Delphi consensus. Lancet Infect Dis. 2022;22(4):e102–7.
+4.	
+Davis HE, et al. Long COVID: major findings, mechanisms and recommenda­
+tions. Nat Rev Microbiol. 2023;21(3):133–46.
+5.	
+Sudre CH, et al. Author Correction: Attributes and predictors of long COVID. 
+Nat Med. 2021;27(6):1116.
+6.	
+Zuñiga-Jimenez CT, Rojas-Esguerra DF, Muñoz-Martinez AP, Mendoza-
+Guzman DC, Daza-Arana JE. Musculoskeletal sequelae of post-COVID-19 
+syndrome: a systematic review. Diseases. 2025;13(12).
+7.	
+Grove K, et al. Informing the management of the post-COVID condition: 
+insights from the Western Australian experience comparing those who 
+tested positive and negative to early COVID-19 strains. Aust Health Rev. 
+2024;48(5):601–11.
+8.	
+Almeida IDS, et al. Fatigue and neuromuscular function in long COVID: A one-
+year follow-up study. PLoS ONE. 2025;20(9):e0332242.
+9.	
+Ferreira LGJ, et al. Long COVID-19 alters muscle architecture and muscle-
+tendon force transmission: a one-year longitudinal study. Front Physiol. 
+2025;16:1641046.
+10.	 Appelman B, et al. Muscle abnormalities worsen after post-exertional malaise 
+in long COVID. Nat Commun. 2024;15(1):17.
+11.	 do Amaral CMSS, et al. Low handgrip strength is associated with worse 
+functional outcomes in long COVID. Sci Rep. 2024;14(1):p2049.
+12.	 Paffrath A, Kim L, Kedor C, Stein E, Rust R, Freitag H, et al. Impaired hand grip 
+strength correlates with greater disability and symptom severity in post-
+COVID myalgic encephalomyelitis/chronic fatigue syndrome. J Clin Med. 
+2024;13(7).
+13.	 Stoffels AAF, van Voorthuizen EL, van Hees HWH, Peters JB, van Helvoort HAC, 
+Voermans NC, et al. Longitudinal analysis of quadriceps muscle strength in 
+patients with previous COVID-19 hospitalization and in patients with post-
+acute sequelae following mild COVID-19. Nutrients. 2022;14(20).
+14.	 Jäkel B, et al. Hand grip strength and fatigability: correlation with clinical 
+parameters and diagnostic suitability in ME/CFS. J Transl Med. 2021;19(1):159.
+15.	 De Lorenzo R, Di Filippo L, Scelfo S, Merolla A, Giustina A, Conte C, et al. Lon­
+gitudinal changes in physical function and their impact on health outcomes 
+in COVID-19 patients. Nutrients. 2023;15(20).
+16.	 van Gassel RJJ, et al. Functional Outcomes and Their Association With Physical 
+Performance in Mechanically Ventilated Coronavirus Disease 2019 Survivors 
+at 3 Months Following Hospital Discharge: A Cohort Study. Crit Care Med. 
+2021;49(10):1726–38.
+17.	 Amput P, Udomkichpagon P, Wongphon S. Impact of Duration of Recovery 
+from COVID-19 Infection on Physical Performance in Post-COVID-19 Patients. 
+COVID. 2025;5(8):140.
+18.	 Ribeiro Neto F, Machado Marques J, Brasiliano da Paz M, Boiteux Uchôa 
+Cavalcanti E, Gomes Costa RR. Sit-to-stand test and handgrip strength in men 
+and women with post-COVID-19 syndrome without invasive ventilator sup­
+port: insights from a Brazilian observational study. Monaldi Arch Chest Dis. 
+2024;94(3).
+19.	 Sonnweber T, Sahanic S, Pizzini A, Luger A, Schwabl C, Sonnweber B, et al. 
+Cardiopulmonary recovery after COVID-19: an observational prospective 
+multicentre trial. Eur Respir J. 2021;57(4).
+20.	 Holmes E, et al. Incomplete Systemic Recovery and Metabolic Phenorever­
+sion in Post-Acute-Phase Nonhospitalized COVID-19 Patients: Implica­
+tions for Assessment of Post-Acute COVID-19 Syndrome. J Proteome Res. 
+2021;20(6):3315–29.
+
+Page 15 of 15
+Wunderle et al. Journal of Translational Medicine          (2026) 24:871 
+21.	 Ngamsutham T, et al. Pulmonary Function, Functional Capacity, Respiratory, 
+and Locomotor Muscle Strength after Severe to Critically Ill COVID-19: A 
+Long-Term Study. Tuberc Respir Dis (Seoul). 2024;87(4):532–42.
+22.	 Middleton S, Chalitsios CV, Mungale T, Hassanein ZM, Jenkins AR, Bolton CE, 
+et al. Functional recovery of adults following acute COVID-19: a systematic 
+review and meta-analysis. Phys Ther. 2025;105(1).
+23.	 Rebouças ERN, et al. Long COVID: a cross-sectional study of respiratory 
+muscle strength, lung function, and persistent symptoms at one year after 
+hospital discharge. J Bras Pneumol. 2024;50(5):e20240246.
+24.	 Falco P, et al. Small fibre neuropathy frequently underlies the painful long-
+COVID syndrome. Pain. 2024;165(9):2002–10.
+25.	 Azcue N, et al. Small fiber neuropathy in the post-COVID condition and 
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Clinical significance 
+and diagnostic challenges. Eur J Neurol. 2025;32(2):e70016.
+26.	 Nunes M, et al. Virus-induced endothelial senescence as a cause and driving 
+factor for ME/CFS and long COVID: mediated by a dysfunctional immune 
+system. Cell Death Dis. 2026;17(1):16.
+27.	 Zingaropoli MA, Perri V, Pasculli P, Cogliati Dezza F, Nijhawan P, Savelloni G, 
+et al. Biomarkers of neurological damage: from acute stage to post-acute 
+sequelae of COVID-19. Cells. 2023;12(18).
+28.	 Domingues KZA, et al. Systematic review and evidence gap mapping of 
+biomarkers associated with neurological manifestations in patients with 
+COVID-19. J Neurol. 2024;271(1):1–23.
+29.	 Wunderle M, et al. Serum NfL and GFAP in post-COVID syndrome: minimal 
+evidence of CNS injury after adjusting for confounders. Front Cell Neurosci. 
+2026;20:1750121.
+30.	 Legler F, et al. Long-term symptom severity and clinical biomarkers in post-
+COVID-19/chronic fatigue syndrome: results from a prospective observa­
+tional cohort. EClinicalMedicine. 2023;63:102146.
+31.	 Retornaz F, et al. Long-term neuromuscular consequences of SARS-Cov-2 and 
+their similarities with myalgic encephalomyelitis/chronic fatigue syndrome: 
+results of the retrospective CoLGEM study. J Transl Med. 2022;20(1):429.
+32.	 Kuchler T, Hohberger B, Strunz S, Schieffer KM, Neuhann T, Schlötzer-
+Schrehardt U, et al. All eyes on PCS: analysis of the retinal microvasculature in 
+patients with post-COVID syndrome—study protocol of a 1-year prospective 
+case-control study. Eur Arch Psychiatry Clin Neurosci. 2023.
+33.	 Roberts HC, et al. A review of the measurement of grip strength in clinical 
+and epidemiological studies: towards a standardised approach. Age Ageing. 
+2011;40(4):423–9.
+34.	 Tomkinson GR, et al. International norms for adult handgrip strength: A 
+systematic review of data on 2.4 million adults aged 20 to 100 + years from 69 
+countries and regions. J Sport Health Sci. 2025;14:101014.
+35.	 O’Connor RJ, et al. The COVID-19 Yorkshire Rehabilitation Scale (C19-YRS): 
+Application and psychometric analysis in a post-COVID-19 syndrome cohort. 
+J Med Virol. 2022;94(3):1027–34.
+36.	 Bahmer T, et al. Severity, predictors and clinical correlates of Post-COVID 
+syndrome (PCS) in Germany: A prospective, multi-centre, population-based 
+cohort study. EClinicalMedicine. 2022;51:101549.
+37.	 Krupp LB, et al. Fatigue in multiple sclerosis. Arch Neurol. 1988;45(4):435–7.
+38.	 Costantini L, et al. Screening for depression in primary care with Patient 
+Health Questionnaire-9 (PHQ-9): A systematic review. J Affect Disord. 
+2021;279:473–83.
+39.	 Löwe B, et al. Validation and standardization of the Generalized Anxi­
+ety Disorder Screener (GAD-7) in the general population. Med Care. 
+2008;46(3):266–74.
+40.	 Austin PC. An Introduction to Propensity Score Methods for Reducing 
+the Effects of Confounding in Observational Studies. Multivar Behav Res. 
+2011;46(3):399–424.
+41.	 Austin PC, Stuart EA. Moving towards best practice when using inverse 
+probability of treatment weighting (IPTW) using the propensity score 
+to estimate causal treatment effects in observational studies. Stat Med. 
+2015;34(28):3661–79.
+42.	 Mayer KP, et al. Persistent Fatigue, Weakness, and Aberrant Muscle Mitochon­
+dria in Survivors of Critical COVID-19. Crit Care Explor. 2024;6(10):e1164.
+43.	 de Azevedo Vieira JE, et al. Assessment of short- and long-term functionality 
+and quality of life in patients with post-acute COVID-19 syndrome. J Back 
+Musculoskelet Rehabil. 2023;36(3):541–50.
+44.	 Singh I, et al. Persistent Exertional Intolerance After COVID-19: Insights From 
+Invasive Cardiopulmonary Exercise Testing. Chest. 2022;161(1):54–63.
+45.	 Cornwell WK, et al. Exercise Intolerance and Response to Training in Patients 
+With Postacute Sequelae of SARS-CoV2 (Long COVID): A Scientific Statement 
+From the American Heart Association. Circulation. 2025;152(5):e50–62.
+46.	 Ono BE, et al. Sympathetic neural overdrive, vascular dysfunction, and 
+diminished exercise capacity in patients with long COVID-19: a long-term 
+study of cardiovascular sequelae. Am J Physiol Regul Integr Comp Physiol. 
+2025;329(1):R154–69.
+47.	 Mak G, Menon S, Lu JQ. Neurofilaments in neurologic disorders and beyond. J 
+Neurol Sci. 2022;441:120380.
+48.	 Kanberg N, et al. Neurochemical signs of astrocytic and neuronal injury 
+in acute COVID-19 normalizes during long-term follow-up. EBioMedicine. 
+2021;70:103512.
+49.	 Smeele PJ, et al. Neurofilament light increases over time in severe COVID-19 
+and is associated with delirium. Brain Commun. 2022;4(4):fcac195.
+50.	 Wallraven T, et al. Retinal vessel imaging in inflammatory disease: From 
+endothelial dysfunction to clinical evidence and translation. Prog Retin Eye 
+Res. 2026;112:101472.
+51.	 Nacul LC, et al. Hand Grip Strength as a Clinical Biomarker for ME/CFS and 
+Disease Severity. Front Neurol. 2018;9:992.
+Publisher’s note
+Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.

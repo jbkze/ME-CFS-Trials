@@ -15,6 +15,25 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-16 (scheduled autonomous, 04:06 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00 and ResetME 2024-520094-13-00), Charité CFC clinical-research/NKSG listing, PIONEER/inebilizumab, semaglutide (Solve M.E.), BC007/APTA "unCOVer Erlangen", PAIS-AriLis, BMFTR "Nationale Dekade" funding call, plus fresh open-ended German/English web search for new German ME/CFS/Post-COVID drug trials.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged: NCT07529197 (IMPACT, recruiting), DRKS00033897 (IA-Surv, recruiting), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry), RAPID_REVIVE (still terminated, ctStatus "Ended" via CTIS API).
+- Leads re-checked, still fail confirmation standard: PIONEER (NKSG-2/inebilizumab — no CFC subpage or registry entry), semaglutide (Scheibenbogen/Solve M.E. award), BC007/APTA "unCOVer Erlangen" (APTA news page unchanged, no registry ID), daratumumab "ResetME" (Norway — CTIS API confirms sites still Oslo/Bergen only, no German site), PAIS-AriLis, BMFTR "Nationale Dekade" funding call (due 2026-09-02, no recipients announced).
+- Sources checked — papers: PubMed/Europe PMC date-filtered sweep for papers published/preprinted since 2026-07-15, targeted Wirth/Scheibenbogen author searches, medRxiv/bioRxiv, general web search; 5 candidates found, 1 excluded (mouse-only HBOT/PLA2G4A study, animal-only exclusion — already screened out on 2026-07-15), 4 confirmed and added after independent DOI/PubMed/publisher-page verification.
+- **Papers — 4 new confirmed**:
+  - Wendt K, Schieck M, Gille C, et al., Frontiers in Immunology, Jun 2026 — systematic review of 142 studies on post-acute infection syndrome biomarkers (ME/CFS + long-COVID), finding NF-κB as a shared inflammatory hub. DOI 10.3389/fimmu.2026.1741761. (German group, Hannover Medical School — not Charité.)
+  - Acanfora D, Nolano M, Acanfora C, et al., International Journal of Infectious Diseases, Jul 2026 — small biopsy study (n=12 vs 8) showing physical loss of vagus-nerve fibres in long-COVID gastric mucosa, direct structural evidence of autonomic dysfunction. DOI 10.1016/j.ijid.2026.108973.
+  - Vidal D, de Araújo Castro Í, López CB, Nature Immunology, Jul 2026 — high-profile review on RNA virus persistence as a driver of chronic post-infection inflammatory syndromes. DOI 10.1038/s41590-026-02577-5.
+  - Wunderle M, Ribeiro A, Lethen I, Schmaderer C, Wallraven T, Journal of Translational Medicine, Jul 2026 — 6-month longitudinal study (n=204) showing persistent hand-grip muscle-function impairment in post-COVID syndrome tracking with symptom burden. DOI 10.1186/s12967-026-08579-z.
+- isNew set true: `wendt-2026-pais-biomarkers-systematic-review`, `acanfora-2026-vagal-denervation-longcovid`, `vidal-2026-rna-virus-persistence-review`, `wunderle-2026-muscle-function-postcovid-longitudinal` (new this run, will clear next run)
+- isNew cleared: `eaton-fitch-2026-australian-registry-wellbeing` (no longer new since last check)
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; terminated: 1 — RAPID_REVIVE)
+- Notes: No Wirth/Scheibenbogen paper this run. Literature archive updated via `scripts/literature_intake.py` for the 4 new papers — all 4 fetched full-text PDFs successfully (95 papers total, 77 with PDF, 18 no-PDF noted).
+
 ## 2026-07-15 (scheduled autonomous, 04:13 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, VERI-LONG NCT05697640), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00 and ResetME 2024-520094-13-00), Charité CFC clinical-research/NKSG listing, clinicaltrialsregister.eu search for inebilizumab/PIONEER, solvecfs.org (semaglutide), APTA Therapeutics news page (BC007/rovunaptabin "unCOVer Erlangen"), PAIS-AriLis, BMFTR "Nationale Dekade" funding call, plus fresh open-ended web search for new German ME/CFS/Post-COVID drug trials.
 - New trials: none

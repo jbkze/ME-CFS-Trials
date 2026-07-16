@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-15",
+  "last_check": "2026-07-16",
   "papers": [
     {
       "id": "gile-2026-rapamycin-purine-microglia-pilot",
@@ -1363,12 +1363,78 @@
       "why": "One of the largest patient-registry studies of ME/CFS health burden to date; it reinforces the idea that ME/CFS is not one single illness but splits into distinguishable subgroups, which matters for designing better-targeted future clinical trials and for choosing which diagnostic checklist research should standardize on.",
       "link": "https://doi.org/10.1186/s12967-026-08618-9",
       "first_seen": "2026-07-15",
-      "last_checked": "2026-07-15",
+      "last_checked": "2026-07-16",
+      "flags": [],
+      "isNew": false,
+      "notes": "Published online 2026-07-13 (PMID 42443918). Griffith University / National Centre for Neuroimmunology group (Marshall-Gradisnik), not Wirth/Scheibenbogen-affiliated. How severe a patient's illness looked depended on which official case definition was used to classify them. Confirmed via Europe PMC record."
+    },
+    {
+      "id": "wendt-2026-pais-biomarkers-systematic-review",
+      "title": "Biomarkers of post-acute infection syndrome: a systematic literature review",
+      "authors": "Wendt K, Schieck M, Gille C, Marschollek M, Illig T, Wolff D, Nee S",
+      "journal": "Frontiers in Immunology",
+      "date": "Jun 2026",
+      "summary": "Reviewing 142 studies on ME/CFS and long-COVID together, the authors found a signalling pathway called NF-κB (a switch that turns on inflammation) keeps showing up as a common thread linking many different lab findings, alongside shared disruptions in amino-acid, energy, fat, and gut-bacteria processing.",
+      "why": "A large attempt to organise the scattered ME/CFS/long-COVID biomarker literature into one framework, useful for future diagnostic-test and drug-target research — from a German group (Hannover Medical School), though not Charité-affiliated.",
+      "link": "https://doi.org/10.3389/fimmu.2026.1741761",
+      "first_seen": "2026-07-16",
+      "last_checked": "2026-07-16",
       "flags": [
         "new"
       ],
       "isNew": true,
-      "notes": "Published online 2026-07-13 (PMID 42443918). Griffith University / National Centre for Neuroimmunology group (Marshall-Gradisnik), not Wirth/Scheibenbogen-affiliated. How severe a patient's illness looked depended on which official case definition was used to classify them. Confirmed via Europe PMC record."
+      "notes": "Frontiers in Immunology 17:1741761, Viral Immunology section. Published Jun 30, 2026. Hannover Medical School (Germany) group; not Charité/Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers article page."
+    },
+    {
+      "id": "acanfora-2026-vagal-denervation-longcovid",
+      "title": "Vagal cholinergic denervation of the gastric mucosa in Long-COVID-19: in vivo evidence of structural autonomic dysfunction",
+      "authors": "Acanfora D, Nolano M, Acanfora C, Colella C, Provitera V, Caporaso G, Rengo G, Antonelli Incalzi R, Casucci G",
+      "journal": "International Journal of Infectious Diseases",
+      "date": "Jul 2026",
+      "summary": "Using tiny stomach-lining biopsies from 12 long-COVID patients and 8 healthy people, researchers found physically fewer nerve fibres of the vagus nerve — a nerve that helps control digestion, heart rate, and blood pressure — in the patients.",
+      "why": "One of the first direct physical (not just functional) proofs of vagus-nerve damage in a post-viral illness, relevant to the dysautonomia (nervous-system control problems like dizziness on standing) seen in ME/CFS and post-COVID ME/CFS — though this is a very small study (12 patients) and needs replication.",
+      "link": "https://doi.org/10.1016/j.ijid.2026.108973",
+      "first_seen": "2026-07-16",
+      "last_checked": "2026-07-16",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "PMID 42425362. Published online Jul 9, 2026 (ahead of print). Italian group. Small sample (n=12 vs 8 controls) — preliminary. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
+    },
+    {
+      "id": "vidal-2026-rna-virus-persistence-review",
+      "title": "Implications of RNA virus persistence for post-acute sequelae and chronic inflammatory syndromes",
+      "authors": "Vidal D, de Araújo Castro Í, López CB",
+      "journal": "Nature Immunology",
+      "date": "Jul 2026",
+      "summary": "A high-profile review argues that RNA viruses like SARS-CoV-2 can leave lingering traces in the body — leftover viral genetic material or proteins — long after the active infection is gone, and that this leftover material may keep driving inflammation in long-lasting post-infection illnesses.",
+      "why": "A top-journal endorsement of the 'lingering virus' theory behind ME/CFS and long COVID, relevant to the pathomechanism track even though it presents a synthesis of existing evidence rather than new experiments.",
+      "link": "https://doi.org/10.1038/s41590-026-02577-5",
+      "first_seen": "2026-07-16",
+      "last_checked": "2026-07-16",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "PMID 42414623. Published Jul 7, 2026. Review article (Washington University in St. Louis group), no new primary data. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
+    },
+    {
+      "id": "wunderle-2026-muscle-function-postcovid-longitudinal",
+      "title": "Persistent impairments in muscle function and symptom burden in post-COVID syndrome: a prospective longitudinal study",
+      "authors": "Wunderle M, Ribeiro A, Lethen I, Schmaderer C, Wallraven T",
+      "journal": "Journal of Translational Medicine",
+      "date": "Jul 2026",
+      "summary": "Tracking 102 post-COVID patients and 102 recovered people for six months, a simple hand-grip-strength test (measuring muscle force and how quickly it tires) stayed abnormal the whole time in patients, and a weaker grip at the start predicted worse fatigue and low mood six months later.",
+      "why": "Proposes a simple, objective, repeatable test — hand-grip strength — as a stand-in marker for muscle-related symptom severity in post-COVID illness, echoing the muscle-focused mechanism Wirth and Scheibenbogen propose for ME/CFS, though it is not from their group.",
+      "link": "https://doi.org/10.1186/s12967-026-08579-z",
+      "first_seen": "2026-07-16",
+      "last_checked": "2026-07-16",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "PMID 42415070. J Transl Med 24(1):871. Published Jul 7, 2026. 204 participants (102 post-COVID, 102 recovered controls), 6-month follow-up; also measured neuroaxonal injury markers (NfL, GFAP) which did not track with muscle function. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
     }
   ]
 }

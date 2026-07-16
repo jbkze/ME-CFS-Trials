@@ -1,0 +1,2835 @@
+Biomarkers of post-acute
+infection syndrome: a
+systematic literature review
+Katharina Wendt 1*, Maximilian Schieck 2,3, Christian Gille 4,
+Michael Marschollek 1, Thomas Illig 2,3, Dominik Wolff 1†
+and Sarah Nee 1†
+1Peter L. Reichertz Institute for Medical Informatics of Technical University (TU) Braunschweig and
+Hannover Medical School, Hannover Medical School, Hannover, Germany, 2Hannover Uniﬁed Biobank,
+Hannover Medical School, Hannover, Germany, 3CAIMed - Lower Saxony Center for Artiﬁcial
+Intelligence and Causal Methods in Medicine, Hannover, Germany, 4Department of Neonatology,
+Heidelberg University Children’s Hospital, Heidelberg, Germany
+Background: Post-acute infection syndrome (PAIS) remained underrecognized
+before the COVID-19 pandemic, which further increased exposure by introducing
+a novel global cause. The global burden of post-acute COVID syndrome (PACS)
+and myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) alone is
+estimated at several tens of millions affected worldwide. Biomarker discovery is
+central to improving PAIS diagnosis and may provide therapeutic targets. This
+review summarizes current knowledge on biomarkers for PAIS, including PACS
+and ME/CFS.
+Methods: A systematic literature search was conducted in PubMed and Web of
+Science. Inclusion criteria were: (1) studies including PAIS patients; (2) reporting
+laboratory or omics biomarkers; and (3) investigating biomarkers or
+pathomechanisms of PAIS. Although Guillain-Barré syndrome (GBS) is not PAIS,
+we have included it as a separate mechanistic comparator due to its prevalence in
+search results and its clinical and immunological similarities to PAIS.
+Results: A total of 142 studies analyzing PAIS biomarkers were included. GBS was
+analyzed separately and later compared with the other results. Overall, the
+reviewed studies employed heterogeneous approaches. While similar types of
+data were frequently investigated, analytical methods varied and often focused
+only on a subset of molecules. The results indicate that amino acid, energy, and
+lipid metabolism, microbiome, mitochondrial stress, and miRNA networks are
+affected. All pathways are connected via NF-kB.
+Discussion: PAIS is a multisystem disorder rooted in persistent immune activation,
+metabolic reprogramming, and systemic inﬂammation, driven not by active viral
+infection, but by dysregulated host responses. The NF-kB pathway serves as a
+unifying hub, connecting molecular, cellular, and clinical phenotypes. Our
+framework enables a shift from symptom-based to mechanism-based
+classiﬁcation, paving the way for biologically grounded interventions.
+Conclusion: This review synthesizes a broad spectrum of biomarkers in PAIS,
+integrating ﬁndings across pathogens and molecular levels rather than restricting
+to individual conditions or symptom clusters. This study highlights the differences
+and commonalities among pathogens and diseases that lead to post-acute
+Frontiers in Immunology
+frontiersin.org
+01
+OPEN ACCESS
+EDITED BY
+Shokrollah Elahi,
+University of Alberta, Canada
+REVIEWED BY
+Carlos Manuel Zapata-Martı´n del
+Campo,
+National Institute of Cardiology Ignacio
+Chavez, Mexico
+Karen Bohmwald,
+Autonomous University of Chile, Chile
+*CORRESPONDENCE
+Katharina Wendt
+Katharina.wendt@plri.de
+†These authors share senior authorship
+RECEIVED 07 November 2025
+REVISED 05 June 2026
+ACCEPTED 08 June 2026
+PUBLISHED 30 June 2026
+CITATION
+Wendt K, Schieck M, Gille C,
+Marschollek M, Illig T, Wolff D and
+Nee S (2026) Biomarkers of
+post-acute infection syndrome:
+a systematic literature review.
+Front. Immunol. 17:1741761.
+doi: 10.3389/fimmu.2026.1741761
+COPYRIGHT
+© 2026 Wendt, Schieck, Gille,
+Marschollek, Illig, Wolff and Nee. This is an
+open-access article distributed under the
+terms of the Creative Commons
+Attribution License (CC BY). The use,
+distribution or reproduction in other
+forums is permitted, provided the
+original author(s) and the copyright
+owner(s) are credited and that the
+original publication in this journal is
+cited, in accordance with accepted
+academic practice. No use, distribution
+or reproduction is permitted which does
+not comply with these terms.
+TYPE Systematic Review
+PUBLISHED 30 June 2026
+DOI 10.3389/fimmu.2026.1741761
+
+sequelae, ﬁlls a critical knowledge gap, and provides a foundation for future
+research and clinical practice. Future studies incorporating multi-omics
+approaches, longitudinal designs, and larger patient cohorts are needed to
+validate speciﬁc biomarkers and advance the understanding of PAIS.
+KEYWORDS
+biomarker, long-COVID-19, ME/CFS, omics, PAIS, post-COVID
+1 Introduction
+Post-acute infection syndrome (PAIS) refers to a complex of
+persistent symptoms that continue after an acute infection, without
+an otherwise identiﬁable cause (1). They can be triggered by a wide
+range of pathogens, including viruses, bacteria, fungi, and protozoa,
+with inﬂuenza viruses, SARS-CoV-2, and Epstein-Barr virus (EBV)
+among the most common. Additional infectious agents, such as
+herpesviruses, malaria, or Coxiella burnetii (Q fever), have also been
+described. Still, noninfectious cofactors, such as surgery or severe
+psychological stress, may function as modulators if preceded by
+infection (2). Despite their heterogeneity, all PAIS share the
+hallmarks of long-term health consequences and represent a grow-
+ing medical and societal challenge.
+Several clinical entities are considered part of the PAIS
+spectrum. Multiple terms, including long COVID syndrome, post-
+acute COVID-19 syndrome (PACS), and post-acute sequelae of
+COVID-19 (PASC), refer to conditions resulting from SARS-CoV-
+2 infection. Although PACS and PASC typically emphasize later time
+points than long-COVID, they are frequently used interchangeably
+(3). In this review, we use PACS as an umbrella term encompassing
+the various deﬁnitions. In contrast to PACS, resulting explicitly from
+SARS-CoV-2 infection, myalgic encephalomyelitis/chronic fatigue
+syndrome (ME/CFS) is associated with a variety of infectious triggers.
+While the global burden of all PAIS is difﬁcult to determine, PACS
+alone affects an estimated 65 million, and ME/CFS approximately 20
+million individuals worldwide (4, 5). Diagnostic accuracy is ham-
+pered by overlapping symptoms within and across syndromes, with
+misdiagnosis rates of ME/CFS estimated at 80-90% (6). A deﬁning
+symptom of ME/CFS is post-exertional malaise (PEM), also known
+as post-exertional symptom exacerbation. Even minor physical or
+mental exercise can worsen other symptoms, including fatigue,
+difﬁculties with sleep and cognitive function, and pain. This exacer-
+bation of symptoms can occur up to 3 days after activity and can last
+several months, signiﬁcantly impacting the ability to participate in
+day-to-day life (7). While PEM can be objectively assessed via hand-
+grip strength testing, diagnosis of PAIS still relies on exclusion (8, 9).
+Although several diagnostic frameworks, such as the UK’s National
+Health Service (NHS) diagnostic and treatment guidelines for myal-
+gic encephalomyelitis/chronic fatigue syndrome (ME/CFS) (NICE)
+(10), the Canadian Consensus Criteria (CCC) (11), the Institute of
+Medicine (IOM, United States) guidelines (12), and the D-A-CH
+(Germany, Austria, Switzerland) consensus statement (6) have been
+developed to provide valuable support for clinical evaluation, diag-
+nosis of PAIS still lacks reliable diagnostic tests and biomarkers, and
+the pathogenesis of PAIS remains incompletely understood. Current
+hypotheses focus on the key mechanisms: (a) viral persistence and
+reactivation of latent viruses, including ancestral retroviruses (1), (b)
+subacute inﬂammation and autoimmune processes (1), (c) mito-
+chondrial dysfunction (13), (d) increased intestinal permeability,
+microbial translocation, and dysregulation of the gut-brain axis (1),
+(e) endothelial senescence, including apoptosis, ferroptosis, and
+telomere shortening (14). These processes may run individually or
+in combination and can impair cellular metabolism, mitochondrial
+function, and neurotransmitter synthesis, leading to systemic
+dysregulation (13).
+While Guillain-Barré syndrome (GBS) is not classiﬁed as a post-
+acute syndrome, it represents a related post-infectious condition
+with similar immunological and clinical features and was frequently
+investigated in the studies retrieved by our literature search. GBS is
+an acute, monophasic autoimmune disease of the peripheral ner-
+vous system with well-deﬁned diagnostic criteria (1), distinguishing
+it from PAIS. Nevertheless, owing to its post-infectious onset,
+immune-mediated pathogenesis, and its frequency in our search
+results, we included GBS in this review to enable a mechanistic
+comparison to support biological interpretations. GBS will be
+brieﬂy investigated in a dedicated section of this review to enable
+a focused comparison with PAIS entities (15).
+Here, we present the results of a comprehensive systematic
+literature review on biomarkers associated with PAIS. Particular
+attention has been given to PACS and ME/CFS, which represent the
+most extensively studied PAIS entities to date. The high misdiag-
+nosis rates, combined with the limited understanding of the
+pathogenesis of PAIS and the lack of targeted therapeutics and
+diagnostic tests, highlight the strong need to identify reliable
+biomarkers and potential pathomechanisms. This review provides
+a novel and comprehensive perspective on PAIS. Previous reviews
+have typically focused on a single condition, such as PACS or ME/
+CFS, and have often relied on a single omics approach, or, at most,
+limited multi-omics analyses. Clarke et al. summarized blood-based
+biomarkers in ME/CFS (13), whereas Moreno-Corona et al. ana-
+lyzed microbiota dynamics in the context of PACS (16). In contrast,
+our work systematically covers the full spectrum of PAIS and
+integrates multiple omics layers, offering a holistic view of these
+syndromes across diverse molecular domains.
+By systematically reviewing and synthesizing the available
+evidence, this work aims to highlight both the differences and the
+commonalities between the infectious agents and disease entities
+that lead to post-acute sequelae. Identifying shared biomarker
+patterns may provide insight into overarching mechanisms,
+whereas disease-speciﬁc signatures could inform tailored diagnostic
+strategies and therapeutic approaches. We ﬁrst summarize and
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+02
+
+categorize the results, then integrate our ﬁndings in the discussion,
+proposing a disease framework that connects biomarkers and
+pathways to potential mechanisms of disease. In doing so, this
+review seeks to contribute to a deeper understanding of the
+biological basis of PAIS and related syndromes, and to outline
+future directions for biomarker-driven research.
+2 Methods
+This systematic review followed the 2020 Preferred Reporting
+Items for Systematic Reviews and Meta-Analyses (PRISMA) guide-
+lines (17). A systematic search was conducted in PubMed and Web
+of Science, with the ﬁnal search completed on April 16th, 2026. All
+available studies published up to this date were included in this
+review. The full search string is provided in Table 1, and the
+completed PRISMA checklist is available in the supplementary
+material [see Additional File 1].
+2.1 Research question
+The research question was formulated using the PICOS frame-
+work (18). In humans with post-acute infection syndrome (PAIS)
+(P), how do biological and clinical parameters (I) (e.g., inﬂamma-
+tory markers, metabolic proﬁles, immune cell proﬁles) differ
+between individuals with PAIS and control groups, including
+healthy individuals, those in the acute phase of infection, fully
+recovered individuals, or patients with other chronic conditions (C)
+as assessed in controlled human studies (S). Outcomes of interest
+included immunological, metabolic, and clinical biomarkers (O).
+2.2 Search strategy
+The search included keywords related to different conditions of
+interest, analyzed biological molecules, and biological endpoints.
+The search strategy employed text and index terms, as well as
+synonyms and related terms for each keyword. The search also used
+Boolean operators ‘AND’ and ‘OR’ to combine the search terms, as
+well as truncation to include word variations [*]. The Boolean
+operator ‘AND’ is used to connect the three overarching topics:
+the condition of interest, the biological molecules analyzed, and the
+biological endpoints. The ‘OR’ operator is used to enumerate the
+more speciﬁc terms within a given topic. An overview of the full
+search strategy is shown in Table 1. The full PubMed search term is
+provided in Table 1. The search term was adapted for Web of
+Science by removing the search ﬁeld tags. The inclusion and
+exclusion criteria were established before commencing
+any searches.
+2.3 Inclusion and exclusion criteria
+Full-text peer-reviewed original studies were eligible if they met
+the following inclusion criteria: (1) investigation of patients with
+PACS, ME/CFS, or other PAIS; (2) reporting of laboratory or omics
+biomarkers of PAIS; (3) aiming to identify potential diagnostic
+markers, therapeutic targets, or potential pathomechanisms of the
+syndromes. We excluded article types such as reviews, editorials,
+comments, opinions, letters, and study protocols, as well as articles
+that were not peer-reviewed or not available in English. Studies were
+further excluded if they focused on animal models, other aims
+(technological, methodological, bioinformatics, or epidemiological),
+or conditions outside PAIS. In addition, we excluded case reports
+and studies that did not include a comparison between PAIS and a
+control group (other PAIS, healthy, or recovered), or lacked data
+speciﬁcally on PAIS (i.e., including PAIS patients but focusing on
+comorbidities or predictive biomarkers before onset of disease), or
+did not report any biomarkers. An overview of the inclusion and
+exclusion criteria is given in Table 2.
+GBS studies were separately included to enable mechanistic
+comparison with other post-infectious syndromes and to explore
+overlapping biomarker signatures.
+TABLE 1 Search strategy for PubMed and Web of Science by topics corresponding to the inclusion criteria.
+Conditions of interest AND
+Analyzed biological molecules AND
+Biological end points
+(“Post-infectious Disorders”[Mesh] OR
+((“post-acut*” OR “post-infect*”) AND (“sequelae*” OR “syndrom*” OR
+“disorder*”)) OR
+“long-covid” OR
+“post-covid” OR
+“Post-Acute COVID-19 Syndrome”[Mesh] OR
+“post-ebola*” OR “post-lym*” OR
+“Post-Lyme Disease Syndrome”[Mesh] OR
+“myalgic encephalomyelit*” OR
+“chronic fatigue syndrom*”)
+(“epigenom*” OR
+“exom*” OR
+“genom*” OR
+“glycom*” OR
+“metabolom*” OR
+“microbiom*” OR
+“lipidom*” OR
+“multi-omic*” OR
+“multiomic*” OR
+“Multiomics”[Mesh] OR
+“omic*” OR
+“proteom*” OR
+“transcriptom*”)
+(“biomarker*” OR
+“Biomarkers”[Mesh] OR
+“pathomechani*”)
+Complete search term
+“Post-infectious Disorders”[Mesh] OR ((“post-acut*” OR “post-infect*”) AND (“sequelae*” OR “syndrom*” OR “disorder*”)) OR “long-covid” OR “post-covid” OR “Post-
+Acute COVID-19 Syndrome”[Mesh] OR “post-ebola*” OR “post-lym*” OR “Post-Lyme Disease Syndrome”[Mesh] OR “myalgic encephalomyelit*” OR “chronic fatigue
+syndrom*”) AND (“epigenom*” OR “exom*” OR “genom*” OR “glycom*” OR “metabolom*” OR “microbiom*” OR “lipidom*” OR “multi-omic*” OR “multiomic*” OR
+“Multiomics”[Mesh] OR “omic*” OR “proteom*” OR “transcriptom*”) AND (“biomarker*” OR “Biomarkers”[Mesh] OR “pathomechani*”)
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+03
+
+2.4 Operational deﬁnition of PAIS
+For the purposes of this review, PAIS was operationally deﬁned
+as the presence of persistent, recurrent, or newly emerging symp-
+toms, clinical abnormalities, or biological alterations occurring after
+the acute phase of an infectious disease and temporally separated
+from the initial infection episode. Inclusion was based on a
+temporal criterion, rather than on speciﬁc symptom patterns or
+etiological mechanisms. Conditions were classiﬁed as PAIS if long-
+term effects were reported beyond the acute illness period, regard-
+less of the terminology used in the original study (e.g., post-COVID,
+long COVID, or PACS).
+Post-COVID, long COVID, and PACS are all used to describe
+persistent symptoms and long-term complications following acute
+SARS-CoV-2 infection. Although these terms are often treated as
+distinct entities, their deﬁnitions vary substantially across published
+studies and authoritative sources. Different time thresholds, symp-
+tom constellations, and diagnostic criteria are applied, resulting in
+considerable heterogeneity in case deﬁnitions. Consequently, a
+strict conceptual separation of post-COVID, PACS, and long
+COVID is not feasible within the scope of this review, as doing so
+would conﬂict with the variable deﬁnitions employed in the
+included studies. For this reason, no single operational deﬁnition
+was imposed for any of these terms, and the term PACS was used
+throughout the manuscript to refer to all of them.
+Accordingly, study inclusion under the umbrella of post-acute
+infection syndromes was primarily based on temporal classiﬁcation,
+requiring the presence of long-term or persistent effects occurring
+after the acute phase of infection. All conditions characterized by
+symptoms or biological alterations emerging or persisting at a time
+point clearly separated from the initial illness episode were consid-
+ered eligible.
+2.5 Data extraction and synthesis
+Two independent reviewers (KW and MS), both with biomed-
+ical expertise, screened all studies eligible for inclusion.
+Disagreements were resolved through discussion and consensus.
+From each included publication, key information was extracted,
+including author, publication year, patient demographics (age, sex,
+number of participants), case deﬁnitions of ME/CFS, PACS, or
+PAIS, type of case and control groups (e.g., healthy, recovered, other
+diseases), analytical methods, reported conclusions, sample type,
+country of the cohort, and study limitations. For the studies
+included, we ﬁrst extracted all explicitly named analytes irrespective
+of their signiﬁcance. We then identiﬁed the most important
+biomarker results (e.g., up- or downregulation, changes, un-
+changed), irrespective of the measurement time point or analytical
+method.
+2.6 Statistical analysis, presentation and
+visualization
+A descriptive analysis was conducted to compare subgroups
+(patients, healthy controls, PACS patients, and ME/CFS patients).
+Subgroup analyses by disease type and analytical method were
+performed to explore heterogeneity, with the results presented in a
+separate summary table (Supplementary Table 3). The results are
+presented in overview tables complemented by graphical displays.
+For the analysis of patient demographics, only cohorts reporting
+the mean age of participants were included. From these cohorts, the
+overall mean age and median age were calculated. In studies
+reporting more than one cohort, each cohort was analyzed sepa-
+rately. The same procedure was applied speciﬁcally for cohorts of
+patients with ME/CFS and, separately, for those with PACS.
+The sex distribution was analyzed analogously. For each cohort
+in which the sex distribution was reported, the proportion of male
+participants was extracted or calculated. Based on these values, the
+overall mean, standard deviation, and median were calculated
+across all patient and control cohorts. Separate analyses were also
+performed for the ME/CFS and PACS cohorts.
+Violin plots were used to illustrate the distributions of age, sex,
+and symptoms, whilst bar charts were used to visualize the
+participant numbers, cohort countries, publication years, and the
+distribution of omics methods across disease groups. Pie charts
+were used to show the proportions of PAIS subtypes (e.g., PACS,
+ME/CFS). The main ﬁndings, particularly frequently reported
+molecules and patterns, were integrated into the results section,
+whereas individual molecules or single-study ﬁndings were not
+described in detail in the main text.
+Given the heterogeneity among the included cohorts and the
+nonnormality of the demographic data, nonparametric tests were
+used. Group comparisons were performed via the Mann-Whitney
+U test. Analyses were conducted both between the patient and
+control cohorts and between the ME/CFS cohorts and PACS
+cohorts. Comparisons included both age and sex distributions.
+For each test, p-values, z-scores, and effect sizes (r) were calculated
+to evaluate the magnitude and statistical signiﬁcance of
+group differences.
+TABLE 2 Inclusion and exclusion criteria.
+Description
+Included
+Excluded
+Type of article
+Original peer-reviewed
+research studies written
+in English
+Preprint
+Review
+Single-case
+Protocol
+Editorial
+Commentary
+Opinion
+Letter
+Type of participants
+Human
+Animal model
+Plant model
+Focus of study
+Disease research
+Technical
+Methodological
+Bioinformatical
+Epidemiological
+Type of disease
+Post-acute infection
+syndromes
+Other conditions
+Guillain-Barré Syndrome
+COVID-19 without long-
+term effects
+Outcome measures
+Biomarker
+Omics
+Pathomechanisms
+Only symptoms
+No biomarkers
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+04
+
+2.7 Sensitivity analyses, certainty of
+evidence, and reporting bias
+The robustness of the ﬁndings was examined through sensitivity
+analyses that accounted for sample sizes in each study. Study design,
+sample characteristics, and level of evidence were systematically
+assessed using modiﬁed Grading of Recommendations Assessment,
+Development, and Evaluation (GRADE) (19) and summarized in
+tabular form to enable a structured evaluation of heterogeneity
+and to support the interpretation of conﬂicting ﬁndings in the
+discussion. For this purpose, an initial score for uncertainty of
+evidence was assigned based on study design, with randomized
+controlled trials receiving the best starting score of 1, followed by
+prospective case-control/cohort studies, retrospective case-control/
+cohort studies, cross-sectional studies, and pilot studies. The initial
+score was subsequently adjusted by applying penalties for impreci-
+sion (based on sample size), indirectness, and risk of bias.
+Inconsistencies across studies were systematically documented but
+were not incorporated into the numerical penalty system. The ﬁnal
+score ranged from 1 to 11 points, with 1 being the best possible
+score, and was categorized as low (1–4), moderate (5–7), or high
+(8–11) uncertainty of evidence. In addition, study limitations were
+extracted and documented to inform the assessment of the certainty
+of evidence. To further address inconsistent and contradictory
+ﬁndings across studies, a systematic analysis of potential sources
+of heterogeneity was conducted. Reporting bias was minimized by
+including the main ﬁndings of each study in the summary tables.
+Given that the majority of included studies were case-control and
+cohort studies, the quality of non-randomized studies was addi-
+tionally assessed using the Newcastle-Ottawa Scale (NOS) to allow a
+more detailed methodological evaluation (20). To facilitate inter-
+pretation and transparency, the quality assessment results were
+additionally visualized as a heatmap and bar plots. The quality
+assessment is performed using a star-based scoring system, in which
+studies are awarded stars for predeﬁned criteria across the three
+domains, enabling evaluation of methodological quality and
+potential risk of bias, with higher scores indicating higher study
+quality. The NOS evaluates eight items categorized into three
+groups: the selection of exposure and nonexposure groups; the
+comparability of these groups; and the comparability based on
+the study design (which provides an additional star). Therefore, the
+outcome evaluation may reach a maximum of nine stars. A total of
+seven or more stars implies a low risk of bias, while ﬁve to six stars
+are considered moderate risk, and zero to four stars are considered
+high risk.
+3 Results
+3.1 Study selection
+The literature search yielded 430 results after removing dupli-
+cates. After screening the titles and abstracts, 234 full texts were
+assessed for eligibility, with 142 studies meeting the inclusion
+criteria (21–162) (Figure 1).
+3.2 Study characteristics
+The included publications describe analyses of patients with
+PACS (including post-COVID-19 syndrome and long-COVID),
+ME/CFS, acute neuroborreliosis, and posttreatment Lyme disease
+syndrome (PTLDS). 87 publications addressed PACS (61.3%), and
+another 48 publications ME/CFS (33.8%). Five publications (3.5%)
+analyzed the combination of ME/CFS and PACS, and only one
+paper investigated PTLDS and acute neuroborreliosis (0.7%).
+Various omics-based or biomarker-based methods have been
+used to analyze datasets. Proteomics was the most frequently used
+approach (43.4%), followed by metabolomics (18.2%), genomics
+(11.9%), and transcriptomics (9.8%). The microbiome (9.1%), non-
+omics biomarkers (4.2%), and multi-omics (3.5%) were
+less common.
+The most frequently used methods for the analysis of PAIS have
+been mass spectrometry (25 studies) and ELISA (15 studies). Olink
+proteomics panels, ﬂow cytometry gene proﬁling, and NMR-based
+metabolomics had been utilized in eight studies. In addition,
+machine learning tools (5 studies), such as large language models
+and classiﬁcation algorithms, and Western blotting, which had been
+reported in 4 studies, were applied.
+There has been a marked increase in publications since 2022 for
+both ME/CFS and PACS. While only 32 studies were published
+between 2008 and 2021 (~2.5 studies/year), 10 appeared in 2022
+alone, followed by an additional 100 publications from 2023 onward
+(28/year) (Figure 2D).
+3.3 Patient characteristics
+The total number of patients analyzed was 8854. On average,
+the number of patients per study was 66.6 ± 131.9 (range 3-1,194),
+with a median of 39. The average age in the control group for ME/
+CFS was 43.1 ± 9.1 years, and that in the control group for PACS
+was 44.4 ± 11.7 years, with a median of 44.7 years in ME/CFS
+control group and 45.0 years in PACS controls. The age ranges of
+the different cohorts differed greatly (Figure 2H). Some studies
+focused on older age groups, e.g., 53–73 years (21), whereas others
+included patients of various ages, e.g., 3–84 years (22). The average
+age of PACS patients was (47.1 ± 12.3 years), and for ME/CFS
+patients (44.0 ± 8.1 years). A statistically signiﬁcant age difference
+was observed between the PACS and ME/CFS groups (p = 0.036),
+with ME/CFS patients being younger than PACS patients (Z =
+−2.11). The effect size was moderate and therefore clinically relevant
+(r = 0.230). In contrast, no signiﬁcant age differences were found
+between the PACS and control groups, or between the ME/CFS and
+control groups (p > 0.05 for both comparisons).
+The sex distribution was inhomogeneous. Some publications
+analyzed only male or female patients, whereas others used various
+sex distributions. The average sex distribution among the control
+group for ME/CFS was at 35.4% ± 34.9 male (median 27.5% male)
+and 44.7% ± 20.3 male (median 46.7% male) among the control
+group for PACS (Figure 2G), with 37.5% ± 22.7 male in the PACS
+group vs 28.9% ± 33.9% male in the ME/CFS group. A statistically
+signiﬁcant difference was observed between the ME/CFS and PACS
+groups (p = 0.031), with ME/CFS patients showing a lower
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+05
+
+proportion of male participants compared to PACS patients (Z =
+−2.16). The effect size was small to moderate (r = −0.267),
+indicating a limited but statistically relevant difference between
+groups. In contrast, no signiﬁcant sex differences were found
+between the PACS and control groups, or between the ME/CFS
+and control groups (p > 0.05 for both comparisons).
+The geographical distribution was unbalanced. The majority of
+participants in the reviewed cohorts were from North America
+(35.3%) or Europe (45.6%). The Asian cohort accounted for 13.2%,
+the Australian cohort for 5.2%, the African cohort for 2.2%, and
+South America for 1.5%. Participants from Antarctica were not
+included in any cohort (Figure 2E). The included studies revealed
+differences in the distribution of ethnicities investigated between the
+ME/CFS and PACS cohorts. While ME/CFS studies covered fewer
+countries and were concentrated more in speciﬁc regions, PACS
+publications spanned a broader range of countries. Notably, North
+America, particularly the United States, was represented in the ME/
+CFS cohorts (n = 16) just as frequently as in the PACS cohorts (n =
+14). In contrast, European countries were more commonly included
+in PACS studies. Countries such as Switzerland, Hungary,
+Australia, and Estonia appeared exclusively in PACS publications,
+but not in ME/CFS studies. The ethnic and geographical composi-
+tions of the study cohorts differed between the two disease groups.
+With respect to the study setting, 18 different test-control group
+combinations were observed. Forty-nine studies (34.5%) compared
+ME/CFS to healthy controls, 25 studies (17.6%) compared PACS to
+healthy controls, and 24 studies (16.9%) compared PACS to acute
+or recovered COVID-19 patients (Supplementary Table 3). In the
+comparison of PACS versus healthy groups, the analyses focused on
+genomics, proteomics, transcriptomics, microbiome, and
+metabolomics data. A variety of analytical methods, including
+ﬂow cytometry, ELISA, mass spectrometry, and Western blotting,
+have been applied to these data. Similarly, in the PACS versus
+COVID-19 comparison and the ME/CFS versus healthy
+FIGURE 1
+The PRISMA ﬂow diagram illustrates the study selection process. The diagram shows the identiﬁcation, screening, eligibility assessment, and
+inclusion of studies in the systematic review. The numbers indicate the records at each stage, including the reasons for exclusions.
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+06
+
+comparison, these same molecular layers were investigated. Even
+when the same type of omics was analyzed, different methods were
+applied within each group, increasing heterogeneity. At the molec-
+ular level, direct comparisons between studies are not feasible. For
+example, protein analyses often rely on panels that measure only a
+predeﬁned set of molecules. Similarly, ELISA, Western blotting, and
+both ﬂow cytometry and custom assays target speciﬁc molecules,
+allowing conclusions only about the presence or absence of changes
+in those selected targets, rather than providing a comprehensive
+overview of all proteins or molecules in a sample. As a result,
+comparisons were performed at the pathway level, enabling the
+integration of ﬁndings across studies despite methodological differ-
+ences and targeted focus.
+Among the included cohorts, blood samples were the most
+frequently analyzed, used in 113 cohorts (79.6%). Fecal samples
+were examined in sixteen cohorts, urine in ﬁve cohorts, and
+cerebrospinal ﬂuid (CSF) in three cohorts. Lung tissue,
+bronchoalveolar lavage ﬂuid (BALF), exhaled breath condensate
+(EBC), and circulating cell-free mitochondrial DNA (ccf-mtDNA)
+were each assessed in a single cohort.
+3.4 Risk of bias
+As shown in the evidence table (Supplementary Table 1), the
+majority of the included studies were prospective cohort studies (n
+= 103), followed by retrospective cohort studies (n = 25), and cross-
+sectional studies (n = 7). In addition, seven studies were classiﬁed as
+pilot studies, while one study was categorized as a randomized
+controlled trial. Accordingly, the initial uncertainty of evidence
+score (I.S.) was assigned based on study design, with randomized
+controlled trials receiving the best score of 1, prospective
+cohort studies a score of 2, retrospective cohort studies a score of
+3, cross-sectional studies a score of 4, and pilot studies the worst
+score of 5.
+FIGURE 2
+Overview of the studies included. (A) Pie chart showing the proportional distributions of different PAIS. (B) Bar chart of omics approaches stratiﬁed
+by PAIS (PACS, ME/CFS, PTLDS, Lyme disease). (C) Bar plot showing the distribution of cohorts across patient number bins, from 0–20 to over 500
+participants. (D) Bar plot showing the number of publications per year, presented as absolute and relative values. (E) Bar plot depicting the
+proportional distribution of study cohorts by country/ethnicity. (F) Bar plot showing the distribution of the most frequently used methods. (G) Violin
+plot comparing the sex distribution between patients and controls. (H) Violin plot comparing the age of ME/CFS and PACS cohorts with their
+respective controls.
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+07
+
+The ﬁnal evidence score was determined by applying penalties
+for imprecision, indirectness, and risk of bias. Inconsistencies across
+studies were documented separately to support the interpretation of
+conﬂicting ﬁndings, but were not incorporated into the numerical
+scoring system. Based on the ﬁnal score, 34 studies (23.9%) were
+classiﬁed as having low uncertainty in the evidence, 93 studies
+(65.5%) as having moderate uncertainty, and 15 studies (10.6%) as
+having high uncertainty (Figure 3).
+Among the individual penalty domains, indirectness was gen-
+erally low, with only nine studies receiving a high-risk rating. In
+contrast, imprecision, assessed primarily based on sample size,
+represented a more substantial limitation, with 48 studies being
+classiﬁed as having a high risk of imprecision. These ﬁndings
+indicate that limitations in sample size rather than indirectness
+were the predominant factor reducing overall evidence certainty
+across the included studies.
+To enable a more detailed assessment of the methodological
+quality of the studies and their potential risk of bias, the Newcastle-
+Ottawa Scale (NOS) was applied to the case-control and cohort
+studies. The NOS assessment revealed that most studies were
+classiﬁed as having a high risk of bias (n = 102), followed by a
+moderate risk (n = 29). Only a limited number of studies were
+considered to have a low risk of bias (n = 11). The detailed results
+are shown in Supplementary Table 1; Figure 4 and 5.
+A domain-speciﬁc evaluation revealed signiﬁcant variations in the
+quality of methodological reporting. Within the participant selection
+domain, more methodological information was available on average,
+enabling higher NOS ratings. However, 11.3% of studies still received
+no stars due to missing or inadequate reporting, or the absence of a
+common/standardized procedure. By contrast, substantially larger
+proportions of studies received no stars in the comparability of
+participants (67.6%), due to a lack of age- and sex-matched controls.
+And exposure/outcome assessment domains (62.7%), due to a lack of
+outcome validation, the same control and test procedure, and report-
+ing dealing with missing values, indicating important methodological
+limitations and inadequate reporting (Supplementary Table 1).
+Overall, 10.6% of studies received no NOS stars, further highlighting
+the heterogeneity in study quality (Figure 4).
+As illustrated in Figure 5, the color-coded heatmap indicates
+that the risk of bias was generally lower in the selection domain
+compared with the comparability and exposure/outcome domains.
+While many studies achieved comparatively favorable ratings for
+selection, substantially higher risks of bias were observed for
+comparability and exposure/outcome assessment. Overall, the
+total risk of bias was frequently classiﬁed as high, whereas only a
+limited number of studies demonstrated a low or moderate overall
+risk of bias (Figure 5).
+3.5 ME/CFS
+This review includes ﬁfty-three studies investigating ME/CFS
+via a range of omics approaches, including metabolomics,
+proteomics, transcriptomics, and microbiome analyses
+(Supplementary Table 2). In these studies, consistent patterns of
+metabolic dysregulation, immune dysfunction, and impaired energy
+homeostasis were reported.
+FIGURE 3
+Heatmap visualization of the modiﬁed GRADE assessment. The heatmap summarizes the modiﬁed GRADE-based evidence assessment for the
+included studies. Ref. indicates the study reference. Im refers to imprecision, which was restricted to sample size; In indicates inconsistencies across
+studies; I.S. represents the initial score assigned according to study design; P indicates applied penalties; and F.S. represents the ﬁnal score. Color
+coding was applied to Im and F.S., with red indicating high concern, yellow/orange indicating moderate concern, and green indicating low concern.
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+08
+
+FIGURE 4
+Distribution of Newcastle-Ottawa Scale (NOS) scores among included studies. Bar charts showing the distribution of awarded stars across included
+studies according to the Newcastle-Ottawa Scale (NOS) domains: (A) Selection, (B) Comparability, (C) Exposure/Outcome, and (D) total NOS score.
+The x-axis represents the number of stars awarded, while the y-axis indicates the number of studies.
+FIGURE 5
+Newcastle-Ottawa Scale (NOS)-based risk of bias assessment across included studies. The table summarizes the methodological quality assessment of
+included studies using the Newcastle-Ottawa Scale (NOS). Columns include study reference (Ref), PubMed ID (PMID), Selection (S), Comparability (C),
+Exposure/Outcome (E/O), and the overall NOS score. Risk of bias was visually represented using a color-coded scheme. For the Selection domain,
+scores of 0–1 were classiﬁed as high risk of bias (red), 2 as moderate risk (yellow), and 3–4 as low risk (green). For Comparability, scores of 0 indicated
+high risk, 1 indicated moderate risk, and 2 indicated low risk. For Exposure/Outcome, scores of 0–1 were classiﬁed as high risk, 2 as moderate risk, and 3
+as low risk. The overall NOS score was categorized as high risk (0-4, red), moderate risk (5-6, yellow), and low risk of bias (7-9, green).
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+09
+
+3.5.1 Amino-acid metabolism
+A recurrent ﬁnding was the dysregulation of multiple metabolic
+pathways, particularly those affecting amino acid, lipid (Figure 6),
+and energy metabolism. Alterations in the tryptophan-kynurenine
+pathway (TKP), characterized by a disrupted tryptophan-
+kynurenine ratio (TKR), reduced NAD+ levels, or reduced
+quinolinic acid (QUIN) concentrations, have been reported in
+several studies. A reduction in 3-hydroxykynurenine (3-HK),
+quinolinic acid, 3-hydroxyanthranilic acid (23, 24), and serotonin
+(24) was observed. Taenzer et al. demonstrated dysregulation of the
+TKR (25), in which reductions in the levels of 3-hydroxykynuene,
+3-hydroxyanthranilic acid, indole-3-acetic acid, serotonin, and
+anthranilic acidshift the TKP towards KYNA, as the other three
+pathways are reduced (Figure 6).
+In addition to alterations in the TKP, several other amino acid
+metabolism pathways were also affected in ME/CFS, including those
+involving phenylalanine, tyrosine, glutamine, glutamate, branched-
+chain amino acids, histidine, and methionine. Two studies reported
+alterations in the phenylalanine-tyrosine pathway (24, 25).
+Furthermore, phenylalanine was reduced in ME/CFS (24, 25). In
+addition to the reported decrease in phenylalanine, Zhang et al.
+reported altered tyrosine levels (26). Five studies reported ﬁndings
+related to glutamate and/or glutamine (26–30), where the gluta-
+mine-glutamate metabolism was affected. Armstrong et al. reported
+reduced glutamine levels (30), whereas Baraniuk et al. reported
+elevated glutamate levels (29), while glutamate levels were reduced
+(27) in Germain et al. Differences in study design and sample type
+may explain the observed discrepancy. Baraniuk et al., being a
+prospective study comparing patients and controls (29), provides
+more robust evidence and a higher NOS Score (NOS: 6 stars,
+GRADE: 7) than Germain et al. (NOS: 0 stars, GRADE: 9), which
+is limited by its pilot study design (27). Additionally, the use of
+different biological samples (blood (27) vs. CSF in (29)) may further
+contribute to the divergent ﬁndings (Supplementary Table 4).
+Zhang et al. identiﬁed alterations in both glutamine and glutamate
+(26), whereas Yamano et al. reported no signiﬁcant changes in ME/
+CFS (28). The ﬁndings differed between studies, with Yamano et al.
+(28) employing a prospective design and comparing ME/CFS
+patients with healthy controls. In contrast, Zhang et al. (26) used
+a cross-sectional approach and compared CFS patients with
+individuals with depression. However, both studies have moderate
+certainty of evidence and show a high risk of bias, with a NOS score
+of 3 and a GRADE rating of 5 in Yamano et al., and a NOS score of 0
+and a GRADE rating of 7 in Zhang et al. Additionally, different
+biological samples were analyzed (blood only vs. blood and urine),
+which may contribute to the observed variation in results
+(Supplementary Table 4). Three studies reported alterations in
+urea cycle metabolites. On the one hand, ornithine levels were
+reduced (30), whereas on the other hand, they were increased and
+accompanied by decreased urea and citrulline levels (28). Again, the
+ﬁndings of Yamano et al. indicating increased leucine levels can be
+considered more robust, as they are based on a prospective study
+design. In contrast, the results reported by Armstrong et al. are
+limited by the exploratory nature of a pilot study (30). Regarding
+the risk of bias, both studies indicate a high risk, with a rating of
+FIGURE 6
+Alterations in the amino acid pathway in PAIS patients. The diagram illustrates key molecules and their interconversions within the amino acid
+metabolic pathway. Many of these metabolites are altered in PAIS patients, indicating a disruption of normal amino acid metabolism. Created in
+BioRender. Wendt, K. (2025) https://BioRender.com/hlcp87y.
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+10
+
+three stars (28, 30) and moderate to high uncertainty (GRADE: 5
+and 9). The third study showed changes in alanine aminotransfer-
+ase, alkaline phosphatase, bilirubin, uric acid, and urea (31).
+Similarly, contradictory ﬁndings have been reported for
+branched-chain amino acids (BCAAs). Zhang et al. reported a
+change in leucine (26), but Yamano et al. reported no alterations
+in valine, leucine, or isoleucine (28), whereas reduced levels of
+valine and isoleucine were detected in Germain et al. (27). Altered
+levels of histidine were reported by both Zhang et al. and Germain
+et al. (26, 27). Changes in methionine metabolism were also
+observed, with decreased levels of adenosylhomocysteine (24) and
+methionine (27).
+Overall, reduced phenylalanine levels reduce the substrates avail-
+able for tyrosine synthesis, resulting in deﬁciencies of key
+neurotransmitters. Reduced ornithine levels disrupt the urea cycle,
+leading to decreased urea production and secondary decreases in
+citrulline and homocysteine. Reduced levels of valine and isoleucine
+(both branched-chain amino acids) decrease energy production via
+the TCA cycle, as these amino acids are necessary for the formation of
+acetyl-CoA and succinyl-CoA. Conversely, an increase in these
+amino acids enhances TCA cycle activation and increases energy
+production. Glutamate and glutamine are in a delicate metabolic
+balance: a reduction in glutamate leads to reduced glutamine syn-
+thesis, impairing ammonia detoxiﬁcation and further destabilizing
+the TCA cycle via the glutamine degradation pathways (Figure 5).
+Overall, changes in amino acid, metabolite, and enzyme concentra-
+tions disrupt metabolic homeostasis, which can manifest clinically as
+organ dysfunction, particularly in the liver and kidneys.
+3.5.2 Energy metabolism
+Energy metabolism impairments have been reported, including
+decreased ATP production and altered glycolysis (27, 32). An
+increase in pyruvate levels, indicating altered glycolysis (28), may
+suggest a possible redirection of energy towards glycolysis, similar
+to observations in cancer and chronic neuropsychiatric or cardio-
+vascular diseases. Alterations in creatine (32) and creatine kinase
+levels (32) further indicate disruptions of the creatine-phosphate
+energy system.
+3.5.3 Lipid metabolism
+Lipid metabolism alterations, along with signiﬁcant changes in
+immune-modulatory lipids, were observed with notable sex-speciﬁc
+patterns. Altered sphingolipid levels were observed in two studies:
+both reported increased ceramide levels (33, 34), but one reported
+decreased sphingomyelin levels (33) and the other, in contrast,
+increased sphingomyelin levels (33). Nagy-Szakal et al. have a low
+risk of bias and good certainty of evidence (NOS: 8 stars, GRADE: 3)
+(33), whereas Nkiliza et al. have a moderate risk of bias and certainty
+of evidence (NOS: 4 stars, GRADE: 5) (34). Hexosylceramides
+showed sex-speciﬁc differences, being reduced in women but elevated
+in men, and phosphatidylinositol was also elevated in males (34).
+Changes in phospholipids and phosphatidylethanolamine (PE) were
+also sex speciﬁc, with lower levels in women and higher levels in men
+(34), whereas lysophosphatidylcholine (LPC) and phosphatidylcho-
+line (PC) were decreased in men and increased in women (35).
+Triglycerides were generally elevated across cohorts (34, 35), with a
+pronounced increase in men (34). Elevated in men as well were
+omega-6 fatty acids, further supporting sex-speciﬁc lipid metabolic
+changes in ME/CFS (34). In addition, there were changes in apoli-
+poproteins, which play an essential role in lipid metabolism, includ-
+ing increases in APO A-I and decreases in APOE (36).
+Overall, an increase in triglycerides leads to an increase in
+ceramides, which reduces sphingomyelin levels. As
+hexosylceramides are derived from sphingolipids (including
+sphingomyelin), a reduction in sphingomyelin results in fewer
+hexosylceramides being produced. Omega-3 fatty acids exert neg-
+ative feedback on LPC, which is why an increase in omega-3 leads to
+a reduction in LPC. PC and LPC are positively feedback-coupled,
+while LPC and apolipoproteins are negatively feedback-coupled.
+Therefore, a change in any of these molecules disrupts metabolic
+balance and leads to a disturbance in homeostasis.
+3.5.4 Inﬂammation pathways
+Immune-related ﬁndings included dysregulation of the nuclear
+factor kappa-light-chain-enhancer of activated B cells (NF-kB
+pathway). With respect to inﬂammatory markers, Lidbury et al.
+observed no signiﬁcant differences in IL-6, TNF-a, and IFN-g (37).
+In contrast, other studies reported decreased levels of IL-6 (36) and
+TNF-a (36, 38), as well as general alterations (39, 40). The
+alterations are supported by evidence from prospective case-control
+studies, while Lidbury et al. used a cross-sectional design (37).
+Additionally, discrepancies may arise from differences in biological
+samples, as Lidbury et al. analyzed both blood and urine, whereas
+the other studies were limited to blood samples (Supplementary
+Table 4). With a NOS score of 7 and GRADE rating of 5 and 2
+respectively, Bhattacharjee et al. and Nguyen et al. have a low risk of
+bias and moderate to good certainty of evidence (39, 40) compared
+to good certainty of evidence (GRADE: 4) but moderate risk of bias
+with a score of 6 by Soffritti et al. and moderate certainty (GRADE: 5
+and 7) and high risks in the other studies with NOS scores of 3 (38)
+and 4 (37). Elevated levels of the inﬂammatory markers IL-5 and IL-
+8 have also been reported, indicating the activation of proinﬂam-
+matory pathways (23). While one study reported a decrease in naïve
+CD4 cells (41), another study reported an increase in total T cells
+and CD4+ naïve cells, and decreases in NKs, monocytes, CD4+
+TEM cells, and CD8+ naïve cells (42). Sun et al., with a rating of 6
+stars (41), have a moderate, and therefore lower, risk of bias than
+Seifert et al., with a rating of 2 stars (42) and therefore a high risk.
+The certainty of evidence is comparable for both, with moderate
+ratings of 5 (41) and 6 (42).
+3.5.5 Epigenetic
+Additionally, epigenetic modiﬁcations, including differential
+DNA methylation patterns, suggest potential epigenetic
+dysregulation in ME/CFS. MicroRNA proﬁling revealed increases
+in miR-127-3p, miR-142-5p, miR-143-3p, miR-150-5p, and miR-
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+11
+
+448 and decreases in miR-140-5p, reﬂecting the modulation of
+immune, inﬂammatory, and metabolic pathways (36). Further
+reductions were detected in the miRNAs hsalet-7b-5p and has-
+miR-374a-5p (43).
+3.5.6 Microbiome
+Microbiome analyses revealed gut dysbiosis, including reduced
+b-diversity and decreased a-diversity, with reduced abundance of
+Firmicutes, which may contribute to microbial translocation and
+systemic inﬂammation (44–47). In Cheng et al., altered b-diversity
+and reduced a-diversity were observed (47), with reduced levels of
+Firmicutes (44, 47), Verrucomicrobiae, Clostridiales, Rikenellaceae,
+and Ruminococcaceae (47). In contrast, elderly patients showed an
+increase in alpha diversity (48). With a NOS score of 5, Cheng et al.
+have the lowest, but generally moderate risk of bias and good
+certainty of evidence (GRADE: 4), compared to a high risk with a
+NOS score of 3 and moderate certainty of evidence with GRADE
+ratings of 6 and 5, respectively (44, 48).
+3.6 PACS
+This review includes ninety-two studies investigating PACS via
+diverse omics approaches (Supplementary Table 2). Immune
+dysregulation, mitochondrial dysfunction, metabolic imbalance,
+and metabolic shift have emerged as central and recurrent ﬁndings
+across these studies.
+3.6.1 Amino acid metabolism
+Amino acid metabolism exhibited extensive alterations in
+relation to PACS and showed sex-speciﬁc differences. TKR (25,
+49) and kynurenine levels were increased (50), and, correspond-
+ingly, changes in TKR were associated with decreased tryptophan
+(51, 52). Additionally, a reduction in quinolinic acid was reported in
+blood (51), whereas Taenzer et al. reported increased levels of both
+quinolinic acid and kynurenine 3-monooxygenase (KMO) in urine
+(25). With a NOS score of 1 and a GRADE rating of 9, Taenzer et al.
+have a signiﬁcantly higher risk of bias and greater uncertainty of
+evidence than Khoramjoo et al. with a NOS score of 5 and a GRADE
+rating of 3.
+Tryptophan is converted into kynurenine, which is then broken
+down into QUIN in several steps via KMO (kynurenine
+3-monooxygenase) (Figure 6). Considering all ﬁndings, an increase
+in QUIN shifts the kynurenine pathway towards a more neurotoxic
+state. Conversely, a smaller increase in quinolinic acid favors
+diversion into the kynurenic acid pathway, resulting in the forma-
+tion of kynurenic acid, a neuroprotective metabolite. The balance
+between these two degradation pathways is crucial for neurologi-
+cal homeostasis.
+Alterations in the glutamine-glutamate pathway were also
+observed. Berezhnoy et al. reported altered glutamate levels (53),
+Holmes et al. reported a reduced glutamate/glutamine ratio (49),
+and Wang et al. reported decreased glutamine levels (54).
+Furthermore, phenylalanine and tyrosine levels were both reduced,
+indicating broader disruptions in aromatic amino acid metabolism
+(53). Changes in the urea cycle included an increase in ornithine
+(54) and a decrease in arginine (51, 53).
+As previously described in relation to ME/CFS, a reduction in
+glutamine leads to a reduction in glutamate, and a reduction
+in phenylalanine leads to a reduction in tyrosine. An increase in
+ornithine causes an increase in citrulline, which in turn leads to an
+increase in arginine and fumarate (Figure 6). An increase in
+ornithine combined with a decrease in arginine suggests a disrup-
+tion of the urea cycle.
+Branched-chain amino acids (BCAAs) and related amino acids
+exhibited notable alterations. Histidine showed inconsistent pat-
+terns across studies: one study reported decreased levels (50), while
+another reported increased histidine alongside reduced valine levels
+(53). The observed difference appears to be sex-related, as both the
+PACS and control groups consisted of comparable COVID-19
+recovered or acute COVID-19 cohorts and similar blood-derived
+samples. However, Saito et al. included exclusively female partici-
+pants (100% female) (50). In contrast, Berezhnoy et al. also included
+male participants in their samples (53) and had a slightly better
+NOS score (NOS: 2 stars, although both studies were classiﬁed as
+high risk and moderate certainty of evidence (both GRADE: 6). In
+males, however, leucine, isoleucine, and valine were increased,
+further highlighting sex-speciﬁc metabolic changes (55). General
+alterations in cysteine levels were observed (50), with changes in the
+cysteine pathway driven by elevated glycine occurring only in
+females (55). Methionine levels were also altered (50, 52), but
+were also reported to be increased in females (55).
+In summary, during glycolysis, glucose is converted into histi-
+dine via ribose. Histidine and arginine can be converted into and
+from glutamate. Isoleucine, leucine, and valine are produced from
+succinyl-CoA (Figure 6). An increase in these BCAAs, therefore,
+indicates an increase in the TCA cycle.
+3.6.2 Energy metabolism
+Energy metabolism was also affected, showing alterations in
+glycolysis, particularly in pyruvate and lactate levels. Santana De
+Anda et al. reported increased pyruvate levels (PACS vs. recovered
+group) (56). Paris et al. (PACS vs. healthy controls) reported an
+increase in lactate (57). In contrast, Berezhnoy et al. reported a
+decrease in both pyruvate and lactate levels (PACS vs. acute and
+recovered COVID-19 patients) (53), highlighting inconsistencies
+across studies. Different methods have been applied across these
+studies. Berezhnoy et al. and Santana De Anda et al. used ﬂow
+cytometry with different panels (53, 56), whereas Paris et al.
+employed NMR-based metabolomic analysis (57), adding to the
+methodological diversity. The risk of bias and uncertainty was
+lowest for Paris et al. (57), with an NOS score of 7 and a good
+GRADE rating of 3, compared with NOS scores of 2 and GRADE
+ratings of 6 and 5 for the other two studies (53, 56). In addition,
+changes in choline, succinic acid, acetone, and glucose were
+observed (58).
+The citrate acid cycle was also altered, with an increase in citrate
+(53) and malate (54). Changes in the creatine phosphate system
+were observed, as indicated by a decrease in ATP (50) and
+reductions in creatinine in males and females (53, 59) and urinary
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+12
+
+creatine in females. In contrast, serum creatine levels were increased
+in females (55). Glucose reacts to form pyruvate, releasing ATP.
+Pyruvate then reacts to form lactate, acetyl-CoA, and branched-
+chain amino acids (BCAAs). Acetyl-CoA enters the TCA cycle and
+reacts to form citrate, which is subsequently converted to
+malate (Figure 6).
+Generally, an increase in lactate leads to a shift in pyruvate
+utilization towards lactate production, which reduces the availabil-
+ity of pyruvate for the formation of acetyl-CoA and branched-chain
+amino acids (BCAAs). This affects energy production in the TCA
+cycle and can lead to a reduction in citrate, malate, and ATP.
+3.6.3 Lipid metabolism
+Lipid metabolism exhibited alterations, with one contradictory
+ﬁnding. Wei et al. reported reduced fatty acid levels in blood (60),
+whereas Paris et al. reported increased fatty acid levels in exhaled
+breath condensate (57). The risk of bias and uncertainty for Paris
+et al. (57) is low, with a NOS score of 7 and a GRADE rating of 3,
+whereas the other study (60) has a high risk of bias (NOS score of 3)
+and moderate certainty (GRADE: 6). In addition to fatty acids,
+alterations in phospholipids have also been observed, with elevated
+levels of PE, a major determinant of the membrane integrity and
+mitochondrial ﬁtness (60). Changes in APO (61–64), or more
+speciﬁcally in APO 2 (61), were reported. Further studies found
+increases in APOA2 and APOA4 (62), as well as in APOD (63) and
+APOE (64).
+Altogether, changes in fatty acid levels alter the TCA cycle, as
+fatty acids form acetyl-CoA through b-oxidation, thereby affecting
+energy metabolism.
+3.6.4 Inﬂammation pathways
+In the context of NF-kB-related inﬂammatory signaling
+(Figure 7), ﬁndings suggest persistent immune activation, as
+reﬂected by elevated proinﬂammatory cytokines and complement
+components across several studies (49, 52, 53, 64–81). This pattern
+indicates that chronic immune engagement may, at least in part, be
+mediated through NF-kB-dependent pathways. Overall, the ﬁnd-
+ings were consistent, showing widespread activation of chemokines
+and cytokines. Notably, increases in IL-18 (53, 65) and IL-6 (50, 54,
+66–71) were observed, with IL-6 levels being reduced in response to
+probiotic treatment (72). Other studies have reported a decrease in
+IL-6 (73, 74), IFN-g (74), and TNF-a (69, 74). Furthermore,
+elevated levels of TNF-a (65, 67, 75–77), IFN (67, 76, 78), and
+IL-8 (56, 71) have been reported, whereas IL-8 and TNF-a levels
+were reduced following beetroot supplementation (79). In contrast,
+Chen et al. reported a decrease in IL-8 (80). The contradictory
+ﬁndings cannot be explained solely by differences in risk of bias and
+certainty of evidence, since the majority of studies reporting
+FIGURE 7
+NF-kB signaling pathway and its potential immunological effects in post-acute inﬂammatory conditions. Schematic overview of NF-kB activation
+through IL-18-, IL-1b-, and cytokine receptor-mediated signaling pathways involving MyD88, IRAK1/4, TRAF6, IKK complex activation, and
+downstream NF-kB (p65/p50) nuclear translocation. The ﬁgure further illustrates the associated expression of inﬂammatory cytokines, chemokines,
+and growth factors, including IL-6, IL-8, IL-10, TNF-a, TGF-b, IFN-g, CXCL10, CXCL11, and VEGF, as well as the potential inﬂuence of NF-kB
+signaling on immune cell subsets, including CD4 memory cells, neutrophils, memory CD8 cells, regulatory T cells (Treg), and total CD8 populations.
+Created with assistance from ChatGPT image generation (OpenAI, San Francisco, CA, USA).
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+13
+
+opposing results showed a high risk of bias (NOS scores of 3-4) and
+moderate certainty (GRADE ratings of 5-6) (50, 54, 66, 71). The
+exception was one study (68), which achieved an NOS score of 6,
+indicating a moderate risk of bias and good certainty, with a rating
+of 4. Similarly, two studies with moderate certainty ratings of 5 and
+7, differing in their methodological quality (74, 75), demonstrated
+inconsistent ﬁndings: one study showed a high risk of bias (74), and
+the other a moderate risk (75). Therefore, factors beyond method-
+ological quality are likely contributing to the observed discrepan-
+cies. Additionally, CXCL10 levels were elevated (65, 81), whereas
+CXCL11 levels were decreased (81, 82).
+In general, NF-kB is activated by factors such as infections and
+Toll-like receptor (TLR) signaling, leading to increased levels of
+cytokines (IL-6, IL-8, IL-18, TNF-a, IFN) and chemokines
+(CXCL10, CXCL11). The increase in IL-18 and TNF-a activates
+NF-kB (positive feedback loop), as well as IL-6 and IL-8. The
+activation of NF-kB thus leads to further activation of IFN-g. IFN-g
+activates CXCL10 and CXCL11 but simultaneously inhibits NF-kB,
+leading to decreased levels of NF-kB and of cytokines and chemo-
+kines. Furthermore, IFN-g activates T cells, thereby linking the
+signal transduction level with the cellular level (Figure 8).
+Further immune-related ﬁndings were observed at the cellular
+level, including increases in overall T cells, regulatory T cells (TREG)
+(84), and cytotoxic and activated memory CD4+ and CD8+ T cells
+(38, 78), suggesting ongoing immune activation. For naïve T cells,
+conﬂicting results have been observed, where decreases (76, 83),
+increases (84), and no differences between groups for T cells in
+general were reported (85, 86). In contrast, memory T cells (both
+CD4+ and CD8+) showed consistent ﬁndings, with increases reported
+across multiple studies (38, 76, 84) and potential sex-speciﬁc differ-
+ences including elevations in females (76), although decreases in
+cytotoxic CD8+ T cells have also been reported in females (77).
+Additionally, neutrophil counts were elevated (38), further support-
+ing sustained immune activation. Natural killer (NK) cells were
+generally decreased (38, 74, 87), but increases in males (77), and in
+comparison to convalescent individuals (89) were also reported.
+Signiﬁcant differences were found between PACS and acute or
+healthy cohorts (85) but not recovered COVID-19 cohorts (85, 88).
+Only two studies (76, 86) have a moderate risk of bias (NOS score: 6
+and 5) and good certainty of evidence (GRADE: both 4), while one
+study has high uncertainty with a GRADE rating of 8 (85).
+Overall, the increase in memory T cells suggests prior antigen
+exposure and the formation of immunological memory, whereas
+the elevation of cytotoxic and activated T cell subsets indicates
+persistent immune activation. The observed reductions in total T
+cells and CD8+ T cells, together with alterations in NK cell levels,
+further point to immune dysregulation with potential sex-speciﬁc
+effects. The observed discrepancies cannot be attributed to differ-
+ences in evidence level alone but are likely explained by the analysis
+of different T cell subpopulations, cohort selection, as well as by sex-
+speciﬁc differences (Supplementary Table 4).
+3.6.5 Mitochondrial dysfunction
+Mitochondrial dysfunction emerged as another recurring fea-
+ture of PACS. Multiple studies reported alterations in
+FIGURE 8
+Comparative distribution of altered biomarkers across PACS and ME/CFS studies. Stacked bar charts illustrating the number of studies reporting
+decreased, increased, altered, or unchanged levels of selected metabolites, cytokines, and inﬂammatory markers in post-acute COVID syndrome
+(PACS), myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), and the combined total dataset. Biomarkers include metabolites associated
+with the kynurenine pathway and energy metabolism (QUIN, kynurenine, tryptophan, glutamate, glutamine, phenylalanine, ornithine, lactate,
+pyruvate, and fatty acids), as well as inﬂammatory mediators (IL-6, IFN-g, TNF-a, and IL-8). The ﬁgure highlights substantial heterogeneity among
+studies but shows a predominance of elevated pro-inﬂammatory cytokines, particularly IL-6 and TNF-a, in both PACS and ME/CFS cohorts.
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+14
+
+mitochondrial DNA (mtDNA) genes encoding components of the
+electron transport chain, including Complex I (MT-ND1, MT-
+ND2, MT-ND5, MT-ND6), Complex III (MTCYTB), Complex
+IV (MT-CO1), and Complex V (MTATP6) (90, 91). Collectively,
+these genes are central to oxidative phosphorylation and ATP
+production, suggesting that PACS is associated with disturbances
+in mitochondrial energy metabolism. The predominance of altera-
+tions affecting Complex I further points to dysregulation of NADH-
+dependent electron transport, potentially contributing to impaired
+cellular energy generation and altered redox homeostasis.
+3.6.6 Endothelial and vascular dysfunction
+Endothelial and vascular dysfunction is also implicated, as
+evidenced by reduced levels of VEGF-A and ICAM-1 (92) and
+altered levels of VEGF-B (38), suggesting a shift from acute
+inﬂammation- and injury-related angiogenesis toward
+vascular protection and adaptive responses. In support of these
+ﬁndings, a change in VEGF-A levels was observed (75). In
+contrast, increased levels of ICAM-1 (76, 87), CRP (76, 87), SAA
+(76), VCAM-1 (87), and VWF (87), VEGF-A (89), and reduced
+levels of VEGF-C (76) were observed, indicative of impaired
+tissue repair.
+Of the studies reporting contradictory results, Shahbaz et al.
+(76) achieved good evidence (GRADE: 4) and the highest NOS
+score (6), indicating a moderate risk of bias. This is similar to the
+classiﬁcation of Ober et al. (92) (NOS score: 4, GRADE: 4), which
+was also classiﬁed as having good evidence and a moderate risk of
+bias. In contrast, the studies by Sykes et al. (NOS score: 4, GRADE:
+6) (87), Farré et al. (NOS score: 4, GRADE: 5) (89), Iosef (NOS
+score: 4, GRADE: 7) (75) and Shahbaz et al. (38) (NOS score: 3,
+GRADE: 5) were classiﬁed as having a high risk of bias and
+moderate certainty of evidence. An increase in platelet activation
+(83, 93) was detected (94), pointing toward inﬂammation-driven
+vascular injury and dysregulated angiogenesis. A change in PF4 was
+observed in Chakraborty et al. (93).
+In general, inﬂammatory cases are characterized by elevated
+levels of CRP, SAA, ICAM-1, VCAM-1, and VWF. This increase is
+a response to endothelial damage, which in turn releases VWF,
+ICAM-1, and VCAM-1. This results in reduced VEGF-A and
+VEGF-C levels, thereby stimulating angiogenesis and
+lymphangiogenesis, indicating impaired endothelial and vascu-
+lar function.
+Consistent with these ﬁndings, activation of the complement
+system was observed. Direct inﬂuence was reﬂected in increased
+CD55 levels, which protect healthy cells from the immune system
+(95), as well as alterations in the levels of the C1 inhibitors C3,
+which activates the adaptive immune system, and C5, which
+prevents autoimmune reactions (94). Indirect effects on the com-
+plement cascade are associated with changes in COMP, COL1A1,
+and FLNA, affecting structural integrity, cell shape and migration,
+and activation and migration of leukocytes, and PLG, SERPINE1,
+and SRGN, affecting tissue remodeling, blood clotting and cell
+migration and adhesion, and secretion of inﬂammatory media-
+tors (64).
+3.6.7 Gene expression levels
+Genomic, epigenetic, and transcriptomic alterations have also
+been reported. These include decreased expression of LILRB1/2 (95)
+and differing levels of inﬂammation-associated microRNAs,
+including changes in miR-9-5p and miR-486-5p (96). Speciﬁcally,
+an increase in hsa-miR-146a-5p was detected, whereas the levels of
+hsa-miR-126-3p and hsa-miR-223-3p were reduced (57). An
+increase in hsa-miR-1307-3p, as well as changes in hsa-miR-26a-
+5p and miR-186-5p, were observed (97). These results suggest
+complex immune regulation. On the one hand, an increase in
+hsa-miR-146a-5p indicates a potential downregulation of immune
+responses, while, on the other hand, a decrease in LILRB1/2, hsa-
+miR-126-3p, and hsa-miR-223-3p points toward elevated inﬂam-
+mation or excessive immune activation.
+Within the miRNA network, these miRNAs interact, among
+other things, with SAA via TLR2/4; and with the olfactory receptor
+genes (OR), Gal-9, RELN, ARTN, COL1A1, and SERPINE. The
+TLR2 level was elevated (75) and could be reduced by parabiotic
+treatment (98). This elevation, in turn, leads to an increase in SAA
+in general (63) and particularly in men and women (76). Changes in
+OR were also described by Ray et al. and Shahbaz et al. (74, 76). A
+decrease in OR1L8, OR52H1, OMP, and OR2L5 was observed (74),
+whereas an increase in ORAF17, OR2L2, OR10K1, OR1A1,
+OR2T12, OR14J1, and OR5A1 was reported (76). Furthermore,
+sex-dependent differences were identiﬁed (76). In connection with
+PACS, an increase in galectin-9 was observed (76, 99), which is
+generally inhibited by OR genes, as well as increases in reelin (38,
+76, 83) and ARTN (76, 99). Consistent with this, an increase in
+COL1A1 (64) and SERPINE (64, 100) was observed.
+In summary, the increases in SAA, RELN, ARTN, COL1A1,
+SERPINE, GAL-9, and OR indicate systemic inﬂammation.
+3.6.8 Microbiome
+Analysis of the microbiome revealed notable differences
+between ME/CFS and PACS, indicating disease-speciﬁc alterations
+in the gut microbial composition. Bacterial diversity (especially the
+Firmicutes phylum) (43) and eukaryotic diversity (45), as well as b-
+diversity, were reduced in ME/CFS, whereas a-diversity showed no
+change in PACS cohorts; neither a nor b diversity differed signif-
+icantly, suggesting that overall microbial richness and community
+composition remain unchanged (101–103). b -diversity showed
+differences with respect to sex, particularly among Bacillota and
+Bacteroidota species (101).
+In summary, a shift in the balance between the Bacillota and
+Bacteroidota can lead to an increase in systemic inﬂammation and
+modulate the NF-kB pathway (Figure 9).
+3.6.9 Sex-speciﬁc difference
+Sex-based comparisons were conducted in seven studies.
+Signiﬁcantly fewer differences were observed in the microbiome
+of men than in that of women. A change in the beneﬁcial
+Bacteroidota and Eubacterium, as well as a decrease in
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+15
+
+Bacteroidota and an increase in Bacillota, was observed (101). By
+contrast, the microbial taxa observed in women showed both
+increases and decreases, including beneﬁcial and opportunistic
+characteristics (101). Increased abundances were observed for the
+butyrate-producing genera Agathobacter and Fusicatenibacter
+(101), which are associated with immune system regulation and
+anti-inﬂammatory effects. Furthermore, the increased presence of
+Blautia, Ruminococcus, and Ruminococcaceae (103) indicates an
+enhanced ability to produce short-chain fatty acids and ferment
+ﬁber. Conversely, reductions were observed in beneﬁcial taxa,
+including Lachnospiraceae and Bacteroides (101), which are
+involved in butyrate production, complex carbohydrate degrada-
+tion, and generation of immunomodulatory metabolites. There
+were also reductions in the ambivalent taxon Lachnoclostridium
+(101). At the same time, several opportunistic or potentially pro-
+inﬂammatory taxa, including Enterobacteriaceae, Escherichia/
+Shigella, Streptococcus, Veillonella, and Peptostreptococcus, de-
+creased in abundance (101).
+In Shahbaz et al., sex-dependent differences were analyzed at
+the single-cell and bulk RNA levels. In women, this included
+increases in INF-g, VCAM-1, CXCL-8, GZMA, and ORs, and
+decreases in IL-16, eotaxin-3, TGF-b1, and testosterone. In men,
+however, there was an increase in ARTN and a decrease in CXCR3
+and estradiol (76). Feliz et al. observed a decrease in CD8+ cytotoxic
+T cells in women, whereas in men, increases in TNF-a, NK cell
+function, B cells, and humoral immunity were observed (77).
+The imbalance in the microbiome also increases systemic
+inﬂammation in both sexes. In women, the inﬂammatory process
+is activated. The increase in IFN-g leads to an inﬂammatory loop,
+increasing VCAM-1, CXCL8, and GZMA, and is a sign of acute
+inﬂammation. The reduction in TGF-b1 and testosterone reduces
+the inhibition of IFN-g and CD8 cells, which is why there should be
+an increase in IFN-g and CD8 T cells. NF-kB is activated in men.
+An increase in TNF-a leads to NF-kB activation, increased levels of
+the immunomodulatory ARTN, and enhanced NK cell and B cell
+function. It also inhibits estradiol, which in turn inhibits CXCR3,
+thereby suppressing the immune response.
+A summary of the results at the molecular level, showing the
+predominant molecules, is presented in Figure 8.
+3.7 GBS results
+The ﬁndings from GBS were used as a mechanistic comparator
+to contextualize and compare the results observed in PACS and
+ME/CFS. GBS is an acute autoimmune disease characterized by
+rapid-onset peripheral neuropathy, immune-mediated nerve
+damage, and clinical features such as ascending paralysis, areﬂexia,
+and autonomic dysfunction. Due to the signiﬁcant symptom
+FIGURE 9
+Integrated model of NF-kB-associated immunometabolic dysregulation involving the microbiome, kynurenine metabolism, mitochondrial stress, and
+miRNA signaling. Schematic overview illustrating the proposed central role of NF-kB in coordinating inﬂammatory, metabolic, and mitochondrial
+pathways potentially associated with post-acute infection syndromes. The ﬁgure shows the kynurenine pathway, mitochondrial stress responses
+mediated via the cGAS-STING-IRF3-IKKe axis, reactive oxygen species (ROS) production, and NF-kB-dependent cytokine expression. Furthermore,
+the diagram summarizes potential downstream interactions with metabolic systems, miRNA-associated regulatory networks (including miR-146a,
+miR-155, and miR-21), extracellular matrix remodeling, neuroimmune signaling, and immune cell alterations involving CD4 T cells, CD8 T cells,
+monocytes, NK cells, B cells, and neutrophils. Green and red arrows indicate activating and inhibitory interactions, respectively. Created using
+FigureLabsAI (FigureLabsAI platform, 2026). License ID: FL-PUB-20260506-S1M8A0.
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+16
+
+overlap, particularly in fatigue, neurological deﬁcits, and immune
+dysregulation, GBS serves as a relevant model for investigating
+shared pathophysiological mechanisms, including autoantibody-
+mediated damage, neuroinﬂammation, and post-infectious
+immune activation. This makes it a valuable mechanistic compa-
+rator for supporting biological interpretations.
+A total of sixteen studies were identiﬁed in our search strategy
+(Supplementary Table 5), of which eleven were included in the
+analysis, and ﬁve studies were excluded (four reviews and one without
+a GBS focus). The average sample size across these studies was 38 ±
+12 participants. Three studies compared GBS with multiple sclerosis
+(MS), three with chronic inﬂammatory demyelinating polyneuropa-
+thy (CIDP), one with non-neurodegenerative neurological diseases
+(NND), and one with spinal cord injuries (SCI).
+3.7.1 Study characteristics
+In terms of the sample materials used, seven studies analyzed
+blood samples (163–171), including serum, plasma, or peripheral
+venous blood, three studies examined CSF samples (169–171),
+and two studies combined both sample types (163, 165). A
+total of eight proteomics, three metabolomics, and two trans-
+criptomics analyses were performed in the included studies,
+with two of these metabolomics studies speciﬁcally including
+lipidomics components.
+The analytical methods varied across the studies, reﬂecting
+methodological heterogeneity. In the ﬁeld of proteomics, MALDI-
+TOF analyses and two-dimensional gel electrophoresis (2DE) have
+been used in two studies, and tandem mass spectrometry (MS/MS)
+in one. Highly sensitive analytical approaches such as shotgun mass
+spectrometry and stable isotope dilution multiple reaction moni-
+toring (SID-MRM) had been applied in one study to quantify
+proteins. Proximity extension assays (PEA) using Olink® multiplex
+panels had been employed in another study, whereas ELISA-based
+methods had been used in one study for targeted protein detection.
+Electrophoretic techniques applied in a single study had been used
+to separate proteins. In addition, computer-assisted approaches,
+including Bayesian networks and other machine learning methods,
+had been utilized in one study to identify and classify complex
+protein or metabolite signatures.
+3.7.2 Key molecule results
+When GBS was compared with PAIS, alterations were observed
+across multiple functional systems, including amino acid, energy,
+and lipid metabolism, as well as immune-related pathways
+(Table 3). Changes in amino acid metabolism, particularly
+within the branched-chain amino acid (BCAA) pathway, were
+characterized by alterations in leucine and decreased methionine
+levels (171). In addition, reduced creatine levels may further reﬂect
+disturbances in the creatine-phosphate system and energy metab-
+olism (171).
+Alterations in lipid-related metabolites were observed,
+including increased levels of cholesterol esters, phosphatidylcholine
+(PC), sphingomyelin (SM), lysophosphatidylethanolamine, and
+lysophosphatidylcholine (LPC). Increased levels of the sphingolipid
+ceramide (Cer) were also reported In one study, LPC and
+acylcarnitine showed potential discriminatory value for distinguish-
+ing GBS from comparison groups (166). At the protein level,
+decreased apolipoprotein E (163, 170) and increased apolipopro-
+teins A-IV (170), H (163), and C3 (169) were observed.
+Several studies reported differences in immune- and inﬂamma-
+tion-related markers, including elevated levels of IL-8, IL-2RA, IL-6,
+SELE, ITGAM, and NRP1 (163), while ICAM-1 and IL-17
+were additionally reported as altered (164). The complement
+component C3 isoform was increased (163), together with elevated
+haptoglobin levels (170). Furthermore, albumin (Pro2044) was
+increased, whereas ﬁbrinogen was decreased (170). The adhesion
+molecule NCAM-1 was reduced (169), and the presynaptic protein
+piccolo showed altered expression (164). Transthyretin levels were
+decreased (163, 170), and reductions in albumin (163) and
+TGOLN2 (169) were also observed.
+Additional metabolic alterations were reported, including
+increased acetoacetate, monoacylglycerols (1-monopalmitin and
+1-monostearin), 3-hydroxyisobutyrate, and glycolic acid, while
+threose, methanol, and acetate were decreased. Additional altera-
+tions were reported for glucose, fructose, acetone, isobutyrate, and
+choline (171). In addition, Zhang et al. observed changes in CXCL1,
+NR3C1, and STAT3, among others (167), while Lima et al. dem-
+onstrated an increase in AIM2, NLR family genes, LRR protein
+genes, and IL-10 (168).
+TABLE 3 Shared and distinct biomarkers in PACS, ME/CFS, and GBS-stratiﬁed by functional systems.
+Functional system
+Shared biomarkers (GBS & PACS/ME/CFS)
+Biomarkers reported only in GBS
+Immune system/Inﬂammation/Endothelium
+Complement system, ITGA, NRP, Haptoglobin, Fibrinogen,
+ICAM, IL-17, IL-6
+IL-2RA, SELE, Piccolo
+Lipid metabolism/Membrane structure
+Ceramide, Apolipoproteins, Cholesteryl esters, PC
+(phosphatidylcholine), Ethanolamine
+LysoPC, Transthyretin, Albumin
+Energy metabolism & mitochondrial
+reprogramming
+Leucine, Methionine, Acetate, Methanol, Creatine, Glucose
+Acetoacetate, 3-Hydroxybutyrate, Monoacetylglycerate,
+Glycolytic acetyl, Isobutyrate, Fructose, Threose
+Neuro-immune signaling/Cell adhesion
+ICAM, ITGA, NRP
+NCAM1
+Erythropoiesis/Oxygen transport
+/
+Albumin, Transthyretin
+Carbohydrate & one-carbon metabolism
+Choline
+Fructose, Threose
+Phospholipid and membrane metabolism
+PC, CCM
+LysoPC
+Acute-phase and inﬂammatory proteins
+Haptoglobin, Fibrinogen
+Transthyretin, Albumin
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+17
+
+The adjusted GRADE analysis revealed that, of the 11 studies
+included, seven were rated with an initial score of 2, three with an
+initial score of 3, and one was a pilot study (score 5) (Supplementary
+Table 5). Due to the inclusion of penalties, all studies are subject to a
+moderate degree of uncertainty. Using the Newcastle-Ottawa Scale
+(NOS) (Supplementary Table 5), nine studies were classiﬁed as
+having a high risk of bias (163–172), one study (173) was rated as
+having a moderate risk of bias, and one (165) as having a low risk of
+bias. After accounting for penalties, all 11 studies ultimately showed
+moderate certainty. In general, the studies had a small sample size
+but good directness of evidence.
+Comparative analysis of GBS and PAIS, including PACS and
+ME/CFS, revealed both shared and distinct biomarker proﬁles
+across these functional systems (Table 3). Shared alterations were
+observed in amino acid metabolism, lipid metabolism, and
+immune-related markers, whereas condition-speciﬁc differences
+were mainly evident in phospholipid species and cytokine patterns.
+4 Discussion
+This discussion is structured in several sections to contextualize
+the ﬁndings of this systematic review. First, we address the major
+limitations of the included studies and the resulting constraints on
+the interpretation of the evidence, particularly regarding sample
+size, methodological heterogeneity, and variability in analytical
+approaches. Second, we present a proposed pathophysiological
+framework that integrates the identiﬁed biomarkers and biological
+pathways from the current literature. This framework aims to
+connect the observed multi-omics alterations and inﬂammatory
+processes into a broader mechanistic model of post-acute infection
+syndromes (PAIS). We further discuss potential feedback loops and
+interacting processes that may contribute to persistent disease
+states. In addition, we brieﬂy compare PAIS with Guillain-Barré
+syndrome (GBS), particularly regarding potentially shared post-
+infectious mechanisms and the ongoing question of whether GBS
+may represent a speciﬁc manifestation within the broader PAIS
+spectrum. Finally, we position our review within previous reviews in
+the ﬁeld and highlight the distinguishing aspects of our approach,
+including the integration of multi-omics ﬁndings, biomarker het-
+erogeneity, and mechanistic pathway interpretation across diverse
+PAIS-related conditions.
+4.1 Review limitations
+This systematic review synthesized biomarker-related ﬁndings
+across PAIS. The majority of papers analyzed PACS and ME/CFS,
+whereas biomarker research in other PAIS is still emerging. Other
+PAIS entities remain underrepresented or unstudied at the molec-
+ular level, underscoring a substantial research gap. This imbalance
+may partly reﬂect the search strategy, which explicitly targeted
+PACS, ME/CFS, and post-Lyme disease through speciﬁc MeSH
+terms. In contrast, other PAIS were captured only by broader,
+nonspeciﬁc terms, potentially leading to their underrepresentation.
+The varying deﬁnitions of PACS (Post-COVID, long COVID, and
+related terms), along with differences in terminology and diagnostic
+criteria, may also signiﬁcantly inﬂuence study selection and search
+results. The absence of protocol registration constitutes a method-
+ological limitation, as it reduces transparency and hampers the
+assessment of potential reporting bias.
+Studies explicitly focusing on EBV and CMV were not found in
+our search. In the retrieved ME/CFS studies, multiple samples
+tested positive for prior infection, suggesting that EBV and CMV
+may be implicitly represented within ME/CFS cohorts.
+The inclusion of GBS may be subject to debate, as its classiﬁ-
+cation within a PAIS framework remains unresolved. However, it
+was incorporated to facilitate mechanistic comparison across post-
+infectious conditions.
+4.2 Data/studies’ limitations
+A key limitation identiﬁed in this review is the pronounced
+geographic imbalance in the study populations. While cohorts from
+North America and Europe were frequently analyzed, regions such
+as Australia and Africa were markedly underrepresented. This
+skewed regional representation reduces the generalizability of
+ﬁndings and introduces potential for systematic bias. Given the
+inﬂuence of environmental, genetic, and socioeconomic factors on
+disease development and progression, the lack of global data
+coverage might limit the external validity of biomarker ﬁndings in
+PAIS. Proactive consideration of demographic diversity, including
+balanced representation of sexes, age ranges, and geographic
+regions, is essential for establishing robust, broadly applicable
+biomarker panels for post-acute infection syndromes.
+The methodological landscape of the included studies was
+considerably heterogeneous. Proteomic analyses were the most
+prominent omics approach (45.1%), but techniques varied widely
+across studies. While cross-study comparisons are theoretically
+possible, the selective focus on predeﬁned molecular targets in
+many investigations hinders comparability. Because different sets
+of molecules were analyzed in each study, overlapping ﬁndings may
+be coincidental rather than indicative of consistent biological
+signatures. On the other hand, the results are more likely to be
+reliable when they are conﬁrmed via different methods. The
+observed variability in reported biomarker levels across studies
+may be attributed to several interrelated methodological and clinical
+factors. First, the analytical platforms used differ in sensitivity,
+speciﬁcity, and dynamic range (Table 4). As a result, some assays
+may fail to detect subtle alterations in biomarker concentrations,
+leading to apparent inconsistencies between studies. For instance,
+low-abundance proteins may remain undetected in ELISA- or
+NMR-based metabolomics assays. In contrast, mass spectrometry
+or multiplexed proteomic panels can capture a broader spectrum of
+molecules, thereby directly affecting the reported biomarker pro-
+ﬁles. Second, tissue speciﬁcity plays an important role. While the
+majority of studies analyzed blood samples, other matrices were
+used in a subset of studies, including fecal samples, urine, cerebro-
+spinal ﬂuid, and single studies analyzing lung tissue,
+bronchoalveolar lavage ﬂuid (BALF), EBC, or ccf-mtDNA.
+Different tissues may reﬂect distinct pathophysiological aspects,
+limiting the comparability of biomarker levels across studies.
+Finally, variability in patient selection further contributes to het-
+erogeneity. As shown in Supplementary Table 3, studies differed in
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+18
+
+how the control and test groups were deﬁned, resulting in a wide
+range of inclusion criteria and comparator populations. Combined,
+these factors, mainly assay characteristics, symptom severity, tissue
+source, and patient selection, may explain why biomarker results
+often differ between studies. They also highlight the urgent need for
+standardized deﬁnitions and protocols for sample collection, patient
+selection, and biomarker measurement, to enable meaningful cross-
+study comparisons and analyses.
+The evidence table (Supplementary Table 1) demonstrates that
+the majority of included studies were prospective cohort studies.
+This distribution is consistent with the overall study aim, as the
+included literature predominantly compares patient groups (e.g.,
+PACS, ME/CFS, or related post-infectious syndromes) with control
+groups (e.g., healthy or recovered individuals), rather than
+evaluating interventional effects. Consequently, the highest level
+of evidence in the traditional hierarchy (i.e., intervention-based
+randomized controlled trials) is not the primary study design in this
+ﬁeld. The predominance of cohort-based designs is therefore
+expected and reﬂects the observational nature of post-acute infec-
+tion research. In particular, retrospective cohort studies may con-
+tribute valuable insights due to their often-larger sample sizes,
+which increase statistical power and enable the detection of subtle
+biological effects. This is especially relevant in post-acute infection
+syndromes, where biomarker proﬁles remain largely exploratory
+and not yet fully validated. Accordingly, retrospective analyses with
+broad patient cohorts provide an important exploratory foundation,
+especially for machine learning approaches. A key advantage of
+machine learning approaches is that they can operate without a
+predeﬁned selection of molecules, in contrast to mass spectrometry,
+ELISA panels, ﬂow cytometry, or Western blotting, which rely on
+targeted molecule selection.
+A modiﬁed GRADE assessment revealed that the majority of
+the included studies (65.5%) were categorized as having moderate
+certainty of evidence. The most frequent factor contributing to
+downgrading was imprecision, primarily due to limited sample
+sizes. Therefore, larger, adequately powered studies are needed to
+substantially reduce uncertainty and strengthen the reliability of the
+reported ﬁndings. The Newcastle-Ottawa Scale (NOS) assessment
+revealed that most of the included studies were categorized as
+having moderate to poor methodological quality, indicating a
+moderate to high risk of bias. Only a small number of studies
+exhibited a low overall risk of bias. These ﬁndings have important
+implications for interpreting the reported results, as an elevated risk
+of bias may reduce the reliability and validity of observed biomarker
+associations. Furthermore, inconsistent study quality and method-
+ological weaknesses limit comparability across studies, complicating
+the interpretation of conﬂicting ﬁndings and reducing conﬁdence in
+the overall evidence base. Of particular concern was the poor
+performance in the comparability domain, given that adequate
+matching or statistical adjustment for potential confounders is
+essential in biomarker-based studies, making it difﬁcult to compare
+different studies and ensure reproducibility. This issue is especially
+relevant given that several of the included studies indicated sex-
+dependent differences that could affect biomarker proﬁles and study
+outcomes. Consequently, inadequate matching of key variables such
+as sex, age, comorbidities, or disease severity may have led to
+inconsistent ﬁndings across studies.
+Another frequently observed issue was limited methodological
+transparency, with many studies providing only brief descriptions
+of recruitment strategies, matching procedures, or exposure/out-
+come ascertainment. Consequently, some quality criteria may have
+been met but not explicitly reported, resulting in conservative NOS
+ratings and introducing an unavoidable degree of subjective inter-
+pretation. To reduce the risk of bias, it is advisable to follow
+guidelines designed to mitigate this risk and to register studies in
+advance, because studies can only be validated, compared, and
+reproduced if they are based on a transparent and easy-to-follow
+methodological framework. While most of the included prospective
+studies were registered, the issue remains, highlighting the necessity
+of risk-of-bias analysis by the study authors themselves when
+planning the study.
+In addition to sex distribution and the magnitude of immune
+and metabolic alterations, sample size represents a critical factor
+inﬂuencing study outcomes. The statistical power of a study is
+largely determined by the number of participants, and smaller
+cohorts are less likely to detect subtle, but potentially meaningful,
+effects as signiﬁcant. Many of the studies included in our analysis
+relied on relatively small sample sizes (Figure 2C), which likely
+TABLE 4 Comparative summary of methods included a comparison of sensitivity, speciﬁcity, range, and impact on biomarkers.
+Platform
+Sensitivity
+Speciﬁcity
+Dynamic range
+Impact on reported biomarkers
+Mass spectrometry
+High (fM-nM)
+High
+Very wide
+(~106-108-fold)
+Enables quantiﬁcation of many metabolites/proteins
+simultaneously; analytical variability possible
+ELISA
+Medium-high (pg/mL-ng/mL)
+High
+Narrow
+(~10²-10³-fold)
+Targets individual proteins: results can vary by kit;
+potential cross-reactivity
+Olink Proteomics Panel
+High (pg/mL)
+High
+Moderate
+(~10²-10³-fold)
+Multiplexed protein detection; relative quantiﬁcation;
+limited absolute concentration values
+Flow cytometry
+Medium-high (marker-
+dependent)
+High
+Moderate
+(~10²-10³-fold)
+Cell-speciﬁc expression; depends on antibody quality;
+rarely provides absolute concentrations
+NMR-based metabolomics
+Medium (μM-mM)
+High
+Narrow
+(~10¹-10²-fold)
+Detects mainly high-concentration metabolites; low
+sensitivity for trace metabolites
+Machine learning in LMM
+Variable (model-dependent)
+Variable
+Model-dependent
+Detect patterns or combinations; sensitivity and
+signiﬁcance depend on the dataset and preprocessing
+Western blot
+Medium (ng)
+High
+Narrow
+(~10²-fold)
+Semiquantitative; depends on antibody and sample
+quality; single protein measurement
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+19
+
+contributes to the variability and occasional contradictions
+observed in biomarker levels and immune signatures across
+cohorts. This emphasizes the need for adequately powered studies
+to characterize sex-speciﬁc differences in post-acute infection syn-
+dromes reliably. The comparability of biomarker data across studies
+must be considered when interpreting the results, including small
+cohort sizes, the absence of age- and sex-matched controls, and the
+high diversity of assay platforms used. Therefore, ﬁndings remain
+preliminary and require validation in larger, longitudinal studies
+employing standardized methodologies and well-matched con-
+trol groups.
+4.3 Hypotheses
+Despite this variability, consistent evidence points toward
+fundamental dysregulation of metabolic and inﬂammatory path-
+ways in both PACS patients and ME/CFS patients. Shared obser-
+vations include altered energy metabolism, amino acid imbalances
+(e.g., glutamine, kynurenine, glutamate), and immune system
+dysfunction. In accordance with our ﬁndings and their involvement
+in potential neurotoxicity, we propose central roles of QUIN, TKP,
+and KYNA in impairing energy metabolism. The observed
+reduction of QUIN in ME/CFS, a precursor to NAD+, could lead
+to NAD+ deﬁciency and, consequently, to cytoskeletal dysfunction
+(178). An increase in QUIN would promote the development of
+neurodegenerative diseases (174), but a reduction would also lead to
+an imbalance in the TKP and thus not result in reduced
+neurotoxicity. Furthermore, reduced TKR may not only lead to
+lower levels of QUIN but also to lower levels of serotonin, which in
+turn could lead to lower levels of melatonin, thereby impairing sleep
+regulation (174). TRP thus could have a direct inﬂuence on
+recovery, in addition to its effect on the balance between
+neuroprotection and toxicity. The results show a shift in TKP
+towards KYNA, whilst the neurotoxic pathway via QUIN is
+reduced. This shift is likely catalyzed by indoleamine-2,3-
+dioxygenase (IDO), which can be activated by IFN-g (174) or LPS
+and potentially lead to a reduction in TKR, which is considered a
+hallmark of inﬂammation. QUIN, as a precursor of NAD+, has been
+shown to possess potent neurotoxic properties. It can act as a
+selective agonist of the N-methyl-D-aspartate (NMDA) receptor,
+and this binding could induce neuronal damage through a massive
+inﬂux of calcium ions (175). Although KYNA is neuroprotective,
+elevated levels could also lead to pathological conditions (175). This
+could be explained by the dual function of TKP molecules: Under
+physiological conditions, KYNA is neuroprotective, but when its
+levels rise, it can act as a pro-oxidant and potentially lead to
+oxidative damage (174). Since NAD metabolism and TKP are
+closely linked and NAD metabolism and mitochondrial dysfunction
+are considered to go hand in hand with telomere shortening and
+cellular senescence as a prototypical mechanism of chronic diseases
+(174), TKP can also be directly linked to chronic disease.
+Furthermore, immunometabolic reprogramming, characterized by
+a metabolic shift toward glycolysis (176), is also considered a
+hallmark of activated immune cells and is frequently observed in
+infections (176). This is reﬂected in our ﬁndings in the elevated
+lactate (52, 57) and pyruvate levels (28, 54, 56), alongside reduced
+glutamine concentrations (30, 50, 54). Notably, these metabolic
+signatures appear to contrast sharply with those observed during
+acute SARS-CoV-2 infection, in which decreases in lactate and
+pyruvate, and elevations in glutamine are frequently reported (53).
+This divergence may reﬂect a fundamental difference between acute
+inﬂammatory responses and the chronic metabolic adaptation
+observed in post-acute sequelae. The persistent glycolytic pheno-
+type could indicate sustained immune activation rather than
+a transient inﬂammatory burst and may contribute to cellular
+exhaustion and tissue dysfunction.
+Furthermore, the potential role of a triggered innate immune
+activation and dysregulation is already well established in PAIS (1).
+Based on our ﬁndings, we propose several key mediators of the
+NF-kB pathway as central to this process: IL-6, TNF-a, CXCL10,
+and IFN-g, which drive prolonged activation of neutrophils,
+macrophages, and natural killer (NK) cells (50). In this context,
+galectin-9 could emerge as a pivotal molecule, secreted predomi-
+nantly by activated neutrophils. Its serum levels are positively
+associated with established inﬂammatory markers, such as CRP
+and IL-6 (179) and could potentially correlate with disease severity
+(180). Thus, we propose that galectin-9 functions could be a critical
+nexus, bridging classical inﬂammatory pathways with broader
+immunoregulatory mechanisms, including T-cell exhaustion via
+Tim-3 engagement (86), and amplifying systemic immune
+activation. This process could further corroborate the systemic
+impact of sustained inﬂammation on hematopoiesis. Evidence of
+erythropoietic dysfunction in our ﬁndings includes altered
+transferrin receptor expression (21, 38), altered hemoglobin levels
+(38, 42), and paradoxical increases in ferritin and lactoferrin,
+despite decreased serum transferrin. Erythropoiesis dysregulation
+is a well-established concept during acute SARS-CoV-2 infection
+(180) and PACS patients (50, 181), especially in females (76). These
+ﬁndings are consistent with anemia of chronic disease (ACD),
+where inﬂammation-driven iron sequestration impairs
+erythropoiesis. This iron redistribution could also be mediated via
+NF-kB-dependent pathways, linking hematological disturbances
+directly to the proposed overarching inﬂammatory network.
+Notably, sex-dependent differences could be observed in post-
+acute infection syndromes, particularly in metabolomics studies.
+Mostly women, but not men, show alterations, for example, in IL-6,
+IL-12, IL-23, TNF-a, IFN-I, and chemokines, coupled with
+dysregulation of estrogen and testosterone, which inﬂuence inﬂam-
+matory signaling, metabolism, and neuronal and cardiovascular
+function (76). We hypothesize that these ﬁndings may be clinically
+linked to greater neuroinﬂammation and cognitive dysfunction in
+women, whereas men might exhibit greater innate immune
+activation and mitochondrial stress (76). Importantly, variable
+female representation across studies likely contributes to conﬂicting
+results. For example, differences in lactate, fatty acid, and TNF-a
+levels correspond to cohorts with different proportions of
+female participants.
+In addition to immune dysfunction, evidence of viral persis-
+tence has been found in COVID-19 (1). This process may involve
+the persistence of antigenic triggers, including viral reservoirs and
+dysregulated immune memory responses. Contrary to the initial
+hypothesis posited in the introduction, active viral replication
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+20
+
+appears to play a subordinate role in PACS pathogenesis. To date,
+no reproducible evidence of replicating SARS-CoV-2 has been
+reported in PACS cohorts (182), and the majority of studies
+included in this systematic review did not report any indication
+of active viral replication. Instead, the data suggests that chronic
+immune activation may not be driven by ongoing viral replication,
+but rather by persistent antigenic stimulation, potentially from viral
+protein fragments, immune complexes, or aberrant immune
+memory, supporting a shift from infectious persistence to immu-
+nological dysregulation.
+Besides immune activation and viral persistence, indications of
+autoimmune activation and dysregulation of microbiome were
+observed in connection with an inability to repair damage (1).
+We propose that this condition may be linked to clinical symptom
+clusters via galactin-9, artemin (ARTN), and neutrophil extracel-
+lular traps (NETs). Elevated galectin-9 levels may be associated with
+fatigue, cognitive impairment, and neuroinﬂammatory processes
+(76, 99, 178). In contrast, ARTN, may indicate a possible association
+with pain syndromes, autonomic dysfunction (e.g., POTS-like
+symptoms), and sleep disturbances. Furthermore, NETs can be
+mechanistically linked to microthrombosis, endothelial damage,
+and organ-level complications. These correlations further support
+that the identiﬁed signaling pathways are not merely biochemical
+footprints but likely contribute directly to the pathogenesis of
+distinct symptom clusters, reinforcing the biological plausibility of
+a multisystem disease.
+In line with these processes, Trautmann proposes four self-
+sustaining inﬂammatory loops, which, like our hypotheses, also
+center on IL-6 and TNF-a (183). The ﬁrst loop involves T cells, B
+cells, and monocytes, i.e., the immune system. The second loop
+involves the production of inﬂammatory cytokines such as IL-6,
+TNF-a, and IL-1b by microglial cells. The third loop is based on
+unbuffered reactive oxygen species (ROS) damaging the mitochondria
+and leading to reduced ATP production (corresponding to mitochon-
+drial reprogramming). The fourth loop involves bacterial translocation,
+leading to damage to the gut mucosa, which in turn can inﬂuence the
+microglial-gut-brain axis, thus affecting the neuroendocrine system
+(183). Thus, with regard to PAIS, there are various approaches to
+explain the disease that repeatedly return to the same core statements
+and key markers yet are based on complex and wide-ranging changes.
+Consequently, even reactions that appear contradictory when consid-
+ered individually can, taken as a whole, lead to the same outcome: a
+dysregulated immune system with persistent symptoms.
+Across all investigated domains, including metabolomic
+pathways (tryptophan-kynurenine metabolism, lipid metabolism,
+energy metabolism, and amino acid metabolism), the microbiome,
+mitochondrial stress (mtDNA fragments), and miRNA-target net-
+works (including miRNAs, OR-Genes, GAL-9, ARTN, etc.), as well
+as cellular alterations in T and B cell compartments, a consistent
+link to the NF-kB signaling pathway seems to emerge. Therefore, we
+suggest that NF-kB may represent a central regulatory hub
+integrating multiple biological layers in post-acute infection
+syndromes. Within our proposed framework, diverse molecular
+mediators, including cytokines such as IL-6, IL-8, and TNF-a, as
+well as chemokines such as CXCL11 and CXCL11, appear to
+function as connecting nodes between otherwise distinct
+pathological domains. This interconnected signaling network
+could point toward the concept of a coherent, multi-system disease
+model (Figure 9), rather than isolated pathway disturbances.
+Overall, these ﬁndings appear to converge towards a uniﬁed
+pathophysiological framework, in which we propose that NF-kB-
+driven immune activation links metabolic dysregulation, immune
+cell alterations, and molecular stress responses across different
+biological systems. Taken together, the available evidence is
+consistent with a multi-system model involving interconnected
+biological pathways. However, the predominantly observational
+nature of the included studies and the moderate certainty of
+evidence preclude deﬁnitive conclusions regarding causality or the
+precise mechanistic role of NF-kB. Therefore, the proposed frame-
+work should be considered hypothesis-generating and requires
+further validation in mechanistic and longitudinal studies.
+4.4 Comparison to GBS
+In this review, GBS should primarily be interpreted as a
+mechanistic comparator rather than a core component of the
+PAIS spectrum. Its inclusion was intended to contextualize
+immune, inﬂammatory, and neurological alterations within a
+well-characterized post-infectious disorder, to identify potential
+converging mechanisms across post-infectious conditions, and to
+support biological interpretations of post-infectious diseases as well
+as PAIS-speciﬁc ﬁndings. The presented comparison of Guillain-
+Barré syndrome (GBS) and post-viral syndromes (ME-CFS and
+PACS) reveals both shared and disease-speciﬁc biomarker patterns,
+indicating overlapping yet distinct pathophysiological mechanisms.
+Across conditions, alterations were observed in amino acid metab-
+olism, energy metabolism, lipid metabolism, and immune-related
+pathways, with both shared and distinct biomarkers identiﬁed
+within these functional systems. Taken together, these ﬁndings
+may support the concept of a shared immune-metabolic axis
+across post-infectious syndromes, characterized by ceramide
+accumulation, endothelial alterations, and cytokine imbalance.
+However, the opposing regulation of phospholipids (SM, LPC,
+PC) and divergent cytokine patterns (IL-6, IL-8) could underscore
+fundamental differences between acute immune-mediated
+neuropathy (GBS) and chronic post-acute infection syndromes
+(ME/CFS and PACS). Importantly, some of the observed differences
+may also be attributable to methodological heterogeneity between
+studies, as distinct analytical platforms and targeted biomarker
+panels were applied, potentially resulting in incomplete overlap of
+the measured biomarkers (Table 3). Given the similarities between
+GBS and PAIS, one might reconsider whether to classify GBS within
+the spectrum of PAIS or as a distinct clinical entity.
+4.5 Comparison to other PAIS reviews
+Among the speciﬁed search terms, 100 reviews were identiﬁed.
+However, none of these reviews addressed the full spectrum of PAIS
+in relation to omics. Instead, most studies have focused on a single
+PAIS and have typically analyzed only one type of omics data. This
+highlights the novelty and value of the present review, which
+integrates multiple PAIS conditions and combines multi-omics
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+21
+
+data, allowing for a more comprehensive understanding of shared
+and distinct mechanisms across syndromes. While some biomark-
+ers have been reported in previous reviews, this systematic review
+integrates multiple omics and several PAIS, allowing the identiﬁ-
+cation of similarities and differences across conditions and facili-
+tating the detection of bias. Most existing publications focus on a
+single PAIS and a single omics type, whereas only ﬁve reviews
+address post-acute infection syndromes in general (1, 183–186),
+none of which include multi-omics analyses. This review, therefore,
+provides a comprehensive overview of PAIS representatives and
+integrates ﬁndings at the multi-omics level.
+5 Conclusion
+In this integrative review of state-of-the-art biomarkers in PAIS,
+we identiﬁed alterations in amino acid, energy, and lipid metabo-
+lism as well as changes in the microbiome, mitochondrial stress, and
+the miRNA target network. All of these changes are directly and
+indirectly linked to the NF-kB pathway. The main altered molecules
+included IL-6, TNF, and IFN.
+Our analysis revealed widespread disruptions across amino
+acid-related metabolic pathways, energy metabolism, lipid metab-
+olism, and immune signaling in post-acute infection syndromes,
+including ME/CFS and PACS. Alterations in the kynurenine
+pathway (kynurenine, tryptophan, kynurenic acid) and glutamate/
+glutamine metabolism suggest contributions to neurotoxicity,
+immune dysregulation, and inﬂammation, while perturbations in
+the phenylalanine-tyrosine and urea cycle pathways (ornithine,
+arginine, urea) may affect neurotransmitter balance and cognitive
+function. Changes in branched-chain amino acids (leucine, valine,
+isoleucine) and histidine likely impact muscle metabolism and
+further exacerbate immune dysregulation, whereas modiﬁcations
+in cysteine and methionine reﬂect increased oxidative stress.
+Disruptions in energy metabolism (glucose, pyruvate, lactate, ATP)
+and lipid metabolism, particularly phospholipids and phosphatidyleth-
+anolamine, indicate impaired mitochondrial function, membrane
+instability, and altered signaling, which collectively may drive fatigue,
+reduced exercise tolerance, and systemic inﬂammation. Central medi-
+ators, including IL-6, TNF-a, NF-kB, and galectin-9, integrate these
+alterations across erythropoietic, mitochondrial, immune, and neuro-
+endocrine pathways, forming a coherent network that underlies the
+multisystemic phenotype of PAIS.
+Together, these ﬁndings support a conceptual disease model in
+which metabolic, immune, and neuroendocrine dysregulation
+converge, providing a mechanistic framework that links molecular
+alterations to clinical symptoms. This integrative perspective may
+guide future biomarker validation, targeted diagnostics, and thera-
+peutic strategies for patients with ME/CFS and PACS. The mech-
+anistic comparison with GBS also revealed changes across multiple
+functional systems, including amino acid metabolism, energy
+metabolism, and immune-related pathways.
+PACS and ME/CFS appear to share similar pathomechanisms, as
+evidenced by comparable symptoms and biological aberrations. To
+elucidate the precise mechanisms underlying these syndromes, tar-
+geted analyses of multi-omics datasets are essential. While most
+existing studies have focused on limited panels of selected molecules,
+some have applied omics approaches, which offer a more compre-
+hensive view of molecular alterations across layers (e.g., genomics,
+proteomics, and metabolomics) and enable broader comparability
+and validation. Therefore, leveraging comprehensive multi-omics
+datasets is crucial for advancing biomarker discovery and under-
+standing the pathomechanisms involved in these conditions.
+Data availability statement
+The original contributions presented in the study are included
+in the article/Supplementary Material. Further inquiries can be
+directed to the corresponding author.
+Author contributions
+KW: Writing – original draft, Investigation, Resources,
+Visualization, Formal analysis, Conceptualization, Writing – review
+& editing, Methodology, Data curation. MS: Writing – review &
+editing, Investigation, Conceptualization, Funding acquisition,
+Validation. CG: Writing – review & editing, Validation. MM:
+Writing – review & editing, Funding acquisition, Conceptualization.
+TI: Funding acquisition, Writing – review & editing,
+Conceptualization. DW: Conceptualization, Writing – review & edit-
+ing, Funding acquisition, Supervision. SN: Supervision,
+Conceptualization, Writing – review & editing, Funding acquisition.
+Funding
+The author(s) declared that ﬁnancial support was received for
+this work and/or its publication. This work is part of the AID-PAIS
+project, funded by the German Federal Ministry for Research,
+Technology, and Space (BMFTR) (No 031L0318A).
+Conﬂict of interest
+The author(s) declared that this work was conducted in the
+absence of any commercial or ﬁnancial relationships that could be
+construed as a potential conﬂict of interest.
+Generative AI statement
+The author(s) declared that generative AI was not used in the
+creation of this manuscript.
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+22
+
+Any alternative text (alt text) provided alongside ﬁgures in this
+article has been generated by Frontiers with the support of artiﬁcial
+intelligence and reasonable efforts have been made to ensure
+accuracy, including review by the authors wherever possible. If
+you identify any issues, please contact us.
+Publisher’s note
+All claims expressed in this article are solely those of the
+authors and do not necessarily represent those of their afﬁliated
+organizations, or those of the publisher, the editors and the
+reviewers. Any product that may be evaluated in this article, or
+claim that may be made by its manufacturer, is not guaranteed or
+endorsed by the publisher.
+Supplementary material
+The Supplementary Material for this article can be found online
+at: https://www.frontiersin.org/articles/10.3389/ﬁmmu.2026.1741761/
+full#supplementary-material
+References
+1. Choutka J, Jansari V, Hornig M, Iwasaki A. Unexplained post-acute infection
+syndromes. Nat Med. (2022) 28:911–23. doi: 10.1038/s41591-022-01810-6
+2. Renz-Polster H, Scheibenbogen C. Post-COVID-Syndrom mit Fatigue und
+Belastungsintoleranz: Myalgische Enzephalomyelitis bzw. Chronisches Fatigue-
+Syndrom. Inn Med. (2022) 63:830–9. doi: 10.1007/s00108-022-01369-x
+3. Proal AD, VanElzakker MB. Long COVID or Post-acute Sequelae of COVID-19
+(PASC): An overview of biological factors that may contribute to persistent symptoms.
+Front Microbiol. (2021) 12:698169. doi: 10.3389/fmicb.2021.698169
+4. Lim EJ, Ahn YC, Jang ES, Lee SW, Lee SH, Son CG. Systematic review and meta-
+analysis of the prevalence of chronic fatigue syndrome/myalgic encephalomyelitis
+(CFS/ME). J Transl Med. (2020) 18:100. doi: 10.1186/s12967-020-02269-0
+5. Halas RG, Berceanu Vaduva DM, Radulescu M, Bredicean AC, Mateescu DM, Toma
+AO, et al. Long COVID prevalence and risk factors: A systematic review and meta-
+analysis of prospective cohort studies. Biomedicines. (2025) 13:2859. doi: 10.3390/
+biomedicines13122859
+6. Hoffmann K, Hainzl A, Stingl M, Kurz K, Biesenbach B, Bammer C, et al.
+Interdisciplinary, collaborative D-A-CH (Germany, Austria and Switzerland) consen-
+sus statement concerning the diagnostic and treatment of myalgic encephalomyelitis/
+chronic fatigue syndrome. Wien Klin Wochenschr. (2024) 136:103–23. doi: 10.1007/
+s00508-024-02372-y
+7. Mantle D, Domingo JC, Golomb BA, Castro-Marrero J. Gulf War Illness,
+Fibromyalgia, Myalgic Encephalomyelitis/Chronic Fatigue Syndrome and Long
+COVID overlap in common symptoms and underlying biological mechanisms:
+Implications for future therapeutic strategies. Int J Mol Sci. (2025) 26:9044.
+doi: 10.3390/ijms26189044
+8. Nacul LC, Mudie K, Kingdon CC, Clark TG, Lacerda EM. Hand grip strength as a
+clinical biomarker for ME/CFS and disease severity. Front Neurol. (2018) 9:992.
+doi: 10.3389/fneur.2018.00992
+9. Paffrath A, Kim L, Kedor C, Stein E, Rust R, Freitag H, et al. Impaired hand grip
+strength correlates with greater disability and symptom severity in post-COVID
+myalgic encephalomyelitis/chronic fatigue syndrome. J Clin Med. (2024) 13:2153.
+doi: 10.3390/jcm13072153
+10. National Institute for Health and Care Excellence. Myalgic encephalomyelitis (or
+encephalopathy)/chronic fatigue syndrome: diagnosis and management. London:
+NICE. (2021) Available online at:: https://www.nice.org.uk/guidance/ng206.
+11. Carruthers BM, van de Sande MI, De Meirleir KL, Klimas NG, Broderick G,
+Mitchell T, et al. Myalgic encephalomyelitis: International consensus criteria. J Intern
+Med. (2011) 270:327–38. doi: 10.1111/j.1365-2796.2011.02428.x
+12. Steiner S, Fehrer A, Hoheisel F, Schoening S, Aschenbrenner A, Babel N,
+et al. Understanding, diagnosing, and treating Myalgic encephalomyelitis/chronic
+fatigue syndrome - State of the art: Report of the 2nd international meeting at the
+Charité Fatigue Center. Autoimmun Rev. (2023) 22:103452. doi: 10.1016/
+j.autrev.2023.103452
+13. Clarke KSP, Kingdon CC, Hughes MP, Lacerda EM, Lewis R, Kruchek EJ, et al. The
+search for a blood-based biomarker for Myalgic Encephalomyelitis/ Chronic Fatigue
+Syndrome (ME/CFS): From biochemistry to electrophysiology. J Transl Med. (2025)
+23:149. doi: 10.1186/s12967-025-06146-6
+14. Sfera A, Osorio C, Zapata Martı́n Del Campo CM, Pereida S, Maurer S, Maldonado
+JC, et al. Endothelial senescence and chronic fatigue syndrome, a COVID-19 based
+hypothesis. Front Cell Neurosci. (2021) 15:673217. doi: 10.3389/fncel.2021.673217
+15. Rabady S, Hoffmann K, Aigner M, Altenberger J, Brose M, Costa U, et al. S1
+guidelines for the management of postviral conditions using the example of post-
+COVID-19. Wien Klin Wochenschr. (2023) 135:525–98. doi: 10.1007/s00508-023-
+02242-z
+16. Moreno-Corona NC, López-Ortega O, Pérez-Martı́nez CA, Martı́nez-Castillo M,
+De Jesús-González LA, León-Reyes G, et al. Dynamics of the microbiota and its
+relationship with post-COVID-19 syndrome. Int J Mol Sci. (2023) 24. doi: 10.3390/
+ijms241914822
+17. Page MJ, McKenzie JE, Bossuyt PM, Boutron I, Hoffmann TC, Mulrow CD, et al.
+The PRISMA 2020 statement: An updated guideline for reporting systematic reviews.
+PloS Med. (2021) 18:e1003583. doi: 10.1371/journal.pmed.1003583
+18. Hosseini MS, Jahanshahlou F, Akbarzadeh MA, Zarei M, Vaez-Gharamaleki Y.
+Formulating research questions for evidence-based studies. J Med Surg Public Health.
+(2024) 2:100046. doi: 10.1016/j.glmedi.2023.100046
+19. Prasad M. Introduction to the GRADE tool for rating certainty in evidence and
+recommendations. Clin Epidemiol Glob Health. (2024) 25. doi: 10.1016/
+j.cegh.2023.101484
+20. Wells G, Wells G, Shea B, Shea B, O’Connell D, Peterson J, et al. The newcastle-
+ottawa scale (NOS) for assessing the quality of nonrandomised studies in meta-
+analyses. In: In (2014). Available online at: https://www.semanticscholar.org/paper/
+The-Newcastle-Ottawa-Scale-(NOS)-for-Assessing-the-Wells-Wells/
+c293fb316b6176154c3fdbb8340a107d9c8c82bf (Accessed May 05, 2026).
+21. Nunes M, Vlok M, Proal A, Kell DB, Pretorius E. Data-independent LC-MS/MS
+analysis of ME/CFS plasma reveals a dysregulated coagulation system, endothelial
+dysfunction, downregulation of complement machinery. Cardiovasc Diabetol. (2024)
+23:254. doi: 10.1186/s12933-024-02315-x
+22. Kruger A, Vlok M, Turner S, Venter C, Laubscher GJ, Kell DB, et al. Proteomics of
+ﬁbrin amyloid microclots in long COVID/post-acute sequelae of COVID-19 (PASC)
+shows many entrapped pro-inﬂammatory molecules that may also contribute to a failed
+ﬁbrinolytic system. Cardiovasc Diabetol. (2022) 21:190. doi: 10.1186/s12933-022-01623-4
+23. Kavyani B, Ahn SB, Missailidis D, Annesley SJ, Fisher PR, Schloeffel R, et al.
+Dysregulation of the Kynurenine pathway, cytokine expression pattern, and proteomics
+proﬁle link to symptomology in myalgic encephalomyelitis/chronic fatigue syndrome
+(ME/CFS). Mol Neurobiol. (2024) 61:3771–87. doi: 10.1007/s12035-023-03784-z
+24. Abujrais S, Vallianatou T, Bergquist J. Untargeted metabolomics and quantitative
+analysis of tryptophan metabolites in myalgic encephalomyelitis patients and healthy
+volunteers: A comparative study using high-resolution mass spectrometry. ACS Chem
+Neurosci. (2024) 15:3525–34. doi: 10.1021/acschemneuro.4c00444
+25. Taenzer M, Löfﬂer-Ragg J, Schroll A, Monfort-Lanzas P, Engl S, Weiss G, et al.
+Urine metabolite analysis to identify pathomechanisms of long COVID: A pilot study.
+Int J Tryptophan Res IJTR. (2023) 16:11786469231220781. doi: 10.1177/
+11786469231220781
+26. Zhang F, Wu C, Jia C, Gao K, Wang J, Zhao H, et al. Artiﬁcial intelligence based
+discovery of the association between depression and chronic fatigue syndrome. J Affect
+Disord. (2019) 250:380–90. doi: 10.1016/j.jad.2019.03.011
+27. Germain A, Ruppert D, Levine SM, Hanson MR. Metabolic proﬁling of a myalgic
+encephalomyelitis/chronic fatigue syndrome discovery cohort reveals disturbances in
+fatty acid and lipid metabolism. Mol Biosyst. (2017) 13:371–9. doi: 10.1039/
+c6mb00600k
+28. Yamano E, Sugimoto M, Hirayama A, Kume S, Yamato M, Jin G, et al. Index
+markers of chronic fatigue syndrome with dysfunction of TCA and urea cycles. Sci Rep.
+(2016) 6:34990. doi: 10.1038/srep34990
+29. Baraniuk JN, Kern G, Narayan V, Cheema A. Exercise modiﬁes glutamate and
+other metabolic biomarkers in cerebrospinal ﬂuid from Gulf War Illness and Myalgic
+encephalomyelitis / Chronic Fatigue Syndrome. PloS One. (2021) 16:e0244116.
+doi: 10.1371/journal.pone.0244116
+30. Armstrong CW, McGregor NR, Sheedy JR, Buttﬁeld I, Butt HL, Gooley PR. NMR
+metabolic proﬁling of serum identiﬁes amino acid disturbances in chronic fatigue
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+23
+
+syndrome. Clin Chim Acta Int J Clin Chem. (2012) 413:1525–31. doi: 10.1016/
+j.cca.2012.06.022
+31. Huang K, Muneeb M, Thomas N, Schneider-Futschik EK, Gooley PR, Ascher DB,
+et al. Exploring a genetic basis for the metabolic perturbations in ME/CFS using UK
+biobank. iScience. (2025) 29:114316. doi: 10.1016/j.isci.2025.114316
+32. Kitami T, Fukuda S, Kato T, Yamaguti K, Nakatomi Y, Yamano E, et al. Deep
+phenotyping of myalgic encephalomyelitis/chronic fatigue syndrome in Japanese
+population. Sci Rep. (2020) 10:19933. doi: 10.1038/s41598-020-77105-y
+33. Nagy-Szakal D, Barupal DK, Lee B, Che X, Williams BL, Kahn EJR, et al. Insights
+into myalgic encephalomyelitis/chronic fatigue syndrome phenotypes through com-
+prehensive metabolomics. Sci Rep. (2018) 8:10056. doi: 10.1038/s41598-018-28477-9
+34. Nkiliza A, Parks M, Cseresznye A, Oberlin S, Evans JE, Darcey T, et al. Sex-speciﬁc
+plasma lipid proﬁles of ME/CFS patients and their association with pain, fatigue, and
+cognitive symptoms. J Transl Med. (2021) 19:370. doi: 10.1186/s12967-021-03035-6
+35. Moezzi A, Ushenkina A, Widgren A, Bergquist J, Li P, Xiao W, et al. Haptoglobin
+phenotypes and structural variants associate with post-exertional malaise and cognitive
+dysfunction in myalgic encephalomyelitis. J Transl Med. (2025) 23:970. doi: 10.1186/
+s12967-025-07006-z
+36. Soffritti I, Gravelsina S, D’Accolti M, Bini F, Mazziga E, Vilmane A, et al.
+Circulating miRNAs expression in myalgic encephalomyelitis/chronic fatigue syn-
+drome. Int J Mol Sci. (2023) 24. doi: 10.3390/ijms241310582
+37. Lidbury BA, Kita B, Lewis DP, Hayward S, Ludlow H, Hedger MP, et al. Activin B is
+a novel biomarker for chronic fatigue syndrome/myalgic encephalomyelitis (CFS/ME)
+diagnosis: A cross sectional study. J Transl Med. (2017) 15:60. doi: 10.1186/s12967-017-
+1161-4
+38. Shahbaz S, Rezaeifar M, Syed H, Redmond D, Terveart JWC, Osman M, et al.
+Upregulation of olfactory receptors and neuronal-associated genes highlights complex
+immune and neuronal dysregulation in long COVID patients. Brain Behav Immun.
+(2025) 124:97–114. doi: 10.1016/j.bbi.2024.11.032
+39. Bhattacharjee M, Rajeevan MS, Sillanpää MJ. Prediction of complex human
+diseases from pathway-focused candidate markers by joint estimation of marker effects:
+Case of chronic fatigue syndrome. Hum Genomics. (2015) 9:8. doi: 10.1186/s40246-
+015-0030-6
+40. Nguyen CB, Kumar S, Zucknick M, Kristensen VN, Gjerstad J, Nilsen H, et al.
+Associations between clinical symptoms, plasma norepinephrine and deregulated
+immune gene networks in subgroups of adolescent with chronic fatigue syndrome.
+Brain Behav Immun. (2019) 76:82–96. doi: 10.1016/j.bbi.2018.11.008
+41. Sun Y, Zhang Z, Qiao Q, Zou Y, Wang L, Wang T, et al. Immunometabolic changes
+and potential biomarkers in CFS peripheral immune cells revealed by single-cell RNA
+sequencing. J Transl Med. (2024) 22:925. doi: 10.1186/s12967-024-05710-w
+42. Seifert M, Schäfers J, Douglas FF, Schwarzburg C, Boristowski D, Birke A, et al.
+Extracellular vesicle protein and miRNA signatures as biomarkers for post-infectious
+ME/CFS patients. Int J Mol Sci. (2026) 27:2314. doi: 10.3390/ijms27052314
+43. Giloteaux L, Goodrich JK, Walters WA, Levine SM, Ley RE, Hanson MR. Reduced
+diversity and altered composition of the gut microbiome in individuals with myalgic
+encephalomyelitis/chronic fatigue syndrome. Microbiome. (2016) 4:30. doi: 10.1186/
+s40168-016-0171-4
+44. Xiong R, Gunter C, Fleming E, Vernon SD, Bateman L, Unutmaz D, et al. Multi-
+‘omics of gut microbiome-host interactions in short- and long-term Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) patients. Cell Host Microbe.
+(2023) 31:273–287.e5. doi: 10.1016/j.chom.2023.01.001
+45. Mandarano AH, Giloteaux L, Keller BA, Levine SM, Hanson MR. Eukaryotes in the
+gut microbiota in myalgic encephalomyelitis/chronic fatigue syndrome. PeerJ. (2018) 6:
+e4282. doi: 10.7717/peerj.4282
+46. Shukla SK, Cook D, Meyer J, Vernon SD, Le T, Clevidence D, et al. Changes in gut
+and plasma microbiome following exercise challenge in myalgic encephalomyelitis/
+chronic fatigue syndrome (ME/CFS). PloS One. (2015) 10:e0145453. doi: 10.1371/
+journal.pone.0145453
+47. Cheng X, Wang W, Xu T, Wang Y, Zhen X, Man W, et al. Alterations in gut
+microbiota and associated metabolites in patients with chronic fatigue syndrome. Sci
+Rep. (2025) 15:43681. doi: 10.1038/s41598-025-27564-y
+48. Gan Y, Ning R, Zhang W, Xu Y, Zhang S, Zhang Z, et al. Age-speciﬁc alterations of
+the gut mycobiome in patients with myalgic encephalomyelitis/chronic fatigue syn-
+drome and identiﬁcation of potential diagnostic biomarkers. BMC Microbiol. (2025)
+26:78. doi: 10.1186/s12866-025-04650-9
+49. Holmes E, Wist J, Masuda R, Lodge S, Nitschke P, Kimhofer T, et al. Incomplete
+systemic recovery and metabolic phenoreversion in post-acute-phase nonhospitalized
+COVID-19 patients: Implications for assessment of post-acute COVID-19 syndrome. J
+Proteome Res. (2021) 20:3315–29. doi: 10.1021/acs.jproteome.1c00224
+50. Saito S, Shahbaz S, Osman M, Redmond D, Bozorgmehr N, Rosychuk RJ, et al.
+Diverse immunological dysregulation, chronic inﬂammation, and impaired erythro-
+poiesis in long COVID patients with chronic fatigue syndrome. J Autoimmun. (2024)
+147:103267. doi: 10.1016/j.jaut.2024.103267
+51. Khoramjoo M, Wang K, Srinivasan K, Gheblawi M, Mandal R, Rousseau S, et al.
+Plasma taurine level is linked to symptom burden and clinical outcomes in post-
+COVID condition. PloS One. (2024) 19:e0304522. doi: 10.1371/journal.pone.0304522
+52. Leitner BP, Joseph P, Quast AF, Ramirez MA, Heerdt PM, Villalobos JG, et al. The
+metabolic and physiologic impairments underlying long COVID associated exercise
+intolerance. Pulm Circ. (2024) 14:e70009. doi: 10.1002/pul2.70009
+53. Berezhnoy G, Bissinger R, Liu A, Cannet C, Schäfer H, Kienzle K, et al. Maintained
+imbalance of triglycerides, apolipoproteins, energy metabolites and cytokines in long-
+term COVID-19 syndrome patients. Front Immunol. (2023) 14:1144224. doi: 10.3389/
+ﬁmmu.2023.1144224
+54. Wang K, Khoramjoo M, Srinivasan K, Gordon PMK, Mandal R, Jackson D, et al.
+Sequential multi-omics analysis identiﬁes clinical phenotypes and predictive biomark-
+ers for long COVID. Cell Rep Med. (2023) 4:101254. doi: 10.1016/j.xcrm.2023.101254
+55. Mikuteit M, Baskal S, Klawitter S, Dopfer-Jablonka A, Behrens GMN, Müller F,
+et al. Amino acids, post-translational modiﬁcations, nitric oxide, and oxidative stress in
+serum and urine of long COVID and ex COVID human subjects. Amino Acids. (2023)
+55:9. doi: 10.1007/s00726-023-03305-1
+56. Santana-de Anda K, Torres-Ruiz J, Mejı́a-Domı́nguez NR, Alcalá-Carmona B,
+Maravillas-Montero JL, Páez-Franco JC, et al. Novel clinical, immunological, and
+metabolic features associated with persistent post-acute COVID-19 syndrome. Int J
+Mol Sci. (2024) 25:9661. doi: 10.3390/ijms25179661
+57. Paris D, Palomba L, Albertini MC, Tramice A, Motta L, Giammattei E, et al. The
+biomarkers’ landscape of post-COVID-19 patients can suggest selective clinical
+interventions. Sci Rep. (2023) 13:22496. doi: 10.1038/s41598-023-49601-4
+58. Ansone L, Rovite V, Brı̄vı̄ba M, Jagare L, Pelcmane L, Borisova D, et al.
+Longitudinal NMR-based metabolomics study reveals how hospitalized COVID-19
+patients recover: Evidence of dyslipidemia and energy metabolism dysregulation. Int J
+Mol Sci. (2024) 25:1523. doi: 10.3390/ijms25031523
+59. Garcı́a-Hidalgo MC, Mota-Martorell N, González J, Benı́tez ID, Company-Marı́n I,
+Jové M, et al. Multilayer metabolomic integration reveals bioenergetic disruption in
+long COVID. J Transl Med. (2026) 24:237. doi: 10.1186/s12967-026-07684-3
+60. Wei Y, Gu H, Ma J, Mao X, Wang B, Wu W, et al. Proteomic and metabolomic
+proﬁling of plasma uncovers immune responses in patients with long COVID-19. Front
+Microbiol. (2024) 15:1470193. doi: 10.3389/fmicb.2024.1470193
+61. Baik M, Yeom J, Lee SM, Jeong H, Lee AR, Seo S, et al. Discovery of molecular
+signature of long-term psychiatric sequelae in COVID-19 through proteome proﬁling of
+dried blood spots. Transl Psychiatry. (2025) 15:389. doi: 10.1038/s41398-025-03590-2
+62. Gülmez D, Siwy J, Kurz K, Wendt R, Banasik M, Peters B, et al. Urinary peptidomic
+proﬁling in post-acute sequelae of SARS-CoV-2 infection: A case-control study.
+Proteomics. (2026) 26:32–43. doi: 10.1002/pmic.70074
+63. Seco-González A, Antelo-Riveiro P, Bravo SB, Garrido PF, Domı́nguez-Santalla
+MJ, Rodrı́guez-Ruiz E, et al. Proteomic analysis of post-COVID condition: Insights
+from plasma and pellet blood fractions. J Infect Public Health. (2024) 17:102571.
+doi: 10.1016/j.jiph.2024.102571
+64. Gu X, Wang S, Zhang W, Li C, Guo L, Wang Z, et al. Probing long COVID through
+a proteomic lens: A comprehensive two-year longitudinal cohort study of hospitalised
+survivors. EBioMedicine. (2023) 98:104851. doi: 10.1016/j.ebiom.2023.104851
+65. Wolday D, Gebrehiwot AG, Rameto MA, Abdella S, Gebreegziabxier A, Amogne
+W, et al. Distinct proteomic signatures in Ethiopians predict acute and long-term
+sequelae of COVID-19. Front Immunol. (2025) 16:1575135. doi: 10.3389/
+ﬁmmu.2025.1575135
+66. Visvabharathy L, Hanson BA, Orban ZS, Lim PH, Palacio NM, Jimenez M, et al.
+Neuro-PASC is characterized by enhanced CD4+ and diminished CD8+ T cell
+responses to SARS-CoV-2 nucleocapsid protein. Front Immunol. (2023) 14:1155770.
+doi: 10.3389/ﬁmmu.2023.1155770
+67. Aid M, Boero-Teyssier V, McMahan K, Dang R, Doyle M, Belabbaci N, et al. Long
+COVID involves activation of proinﬂammatory and immune exhaustion pathways. Nat
+Immunol. (2026) 27:61–71. doi: 10.1038/s41590-025-02353-x
+68. Fineschi S, Klar J, Schuster J, Bergquist J, Dahl N. Plasma proteomic proﬁle reveals
+persistent immune activation in post-acute sequelae of SARS-CoV-2 infection. Front
+Immunol. (2026) 17:1775044. doi: 10.3389/ﬁmmu.2026.1775044
+69. Rohrhofer J, Wolﬂehner V, Schweighardt J, Koidl L, Stingl M, Zehetmayer S, et al.
+Gastrointestinal barrier disruption in post‐COVID syndrome fatigue patients. Allergy.
+(2025) 80:2610–21. doi: 10.1111/all.16593
+70. Sbierski-Kind J, Schlickeiser S, Feldmann S, Ober V, Grüner E, Pleimelding C, et al.
+Persistent immune abnormalities discriminate post-COVID syndrome from convales-
+cence. Infection. (2024) 52:1087–97. doi: 10.1007/s15010-023-02164-y
+71. Woodruff MC, Bonham KS, Anam FA, Walker TA, Faliti CE, Ishii Y, et al. Chronic
+inﬂammation, neutrophil activity, and autoreactivity splits long COVID. Nat Commun.
+(2023) 14:4201. doi: 10.1038/s41467-023-40012-7
+72. Crucianelli S, Mariano A, Valeriani F, Cocomello N, GianFranceschi G, Baseggio
+Conrado A, et al. Effects of sulphur thermal water inhalations in long-COVID
+syndrome: Spa-centred, double-blinded, randomised case-control pilot study. Clin
+Med Lond Engl. (2024) 24:100251. doi: 10.1016/j.clinme.2024.100251
+73. Meyer F, Traidl S, Ameri M, Dreher A, Abu-Rashed-Kufs N, Vontobel J, et al.
+Distinguishing post-COVID from long-COVID in adults: Development and validation
+of a biomarker signature using targeted proteomics and machine learning in a cross-
+sectional observational study. PloS One. (2026) 21:e0338451. doi: 10.1371/
+journal.pone.0338451
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+24
+
+74. Ray U, Schulze Selting A, Perera RP, Yang Z, Lysenkov V, Göpel S, et al.
+Dysregulated NK-cell gene expression deﬁnes the enduring symptoms of long
+COVID-19. Front Immunol. (2026) 17:1720551. doi: 10.3389/ﬁmmu.2026.1720551
+75. Iosef C, Knauer MJ, Nicholson M, Van Nynatten LR, Cepinskas G, Draghici S, et al.
+Plasma proteome of long-COVID patients indicates HIF-mediated vasculo-prolifera-
+tive disease with impact on brain and heart function. J Transl Med. (2023) 21:377.
+doi: 10.1186/s12967-023-04149-9
+76. Shahbaz S, Osman M, Syed H, Mason A, Rosychuk RJ, Cohen Tervaert JW, et al.
+Integrated immune, hormonal, and transcriptomic proﬁling reveals sex-speciﬁc
+dysregulation in long COVID patients with ME/CFS. Cell Rep Med. (2025) 6:102449.
+doi: 10.1016/j.xcrm.2025.102449
+77. Feliz J, Gonçalves J, Cabedo C, Brito J, Gamas M, Neves MI, et al. Long-term sex
+differences in symptoms and immune proﬁle in long COVID. Biol Sex Differ. (2026)
+17:32. doi: 10.1186/s13293-026-00825-9
+78. Su Y, Yuan D, Chen DG, Ng RH, Wang K, Choi J, et al. Multiple early factors
+anticipate post-acute COVID-19 sequelae. Cell. (2022) 185:881–895.e20. doi: 10.1016/
+j.cell.2022.01.014
+79. Marzetti E, Coelho-Júnior HJ, Calvani R, Girolimetti G, Di Corato R, Ciciarello F,
+et al. Mitochondria-derived vesicles and inﬂammatory proﬁles of adults with long
+COVID supplemented with red beetroot juice: Secondary analysis of a randomized
+controlled trial. Int J Mol Sci. (2025) 26:1224. doi: 10.3390/ijms26031224
+80. Chen S, Liang J, Chen D, Huang Q, Sun K, Zhong Y, et al. Cerebrospinal ﬂuid
+metabolomic and proteomic characterization of neurologic post-acute sequelae of
+SARS-CoV-2 infection. Brain Behav Immun. (2024) 115:209–22. doi: 10.1016/
+j.bbi.2023.10.016
+81. Zhao J, Schank M, Wang L, Dang X, Cao D, Khanal S, et al. Plasma biomarkers for
+systemic inﬂammation in COVID-19 survivors. Proteomics Clin Appl. (2022) 16:
+e2200031. doi: 10.1002/prca.202200031
+82. Buonsenso D, Cotugno N, Amodio D, Pascucci GR, Di Sante G, Pighi C, et al. Distinct
+pro-inﬂammatory/pro-angiogenetic signatures distinguish children with long COVID
+from controls. Pediatr Res. (2025) 98:928–35. doi: 10.1038/s41390-025-03837-0
+83. Shahbaz S, Bozorgmehr N, Rahmati A, Abouda A, Syed H, Osman M, et al. Single-
+cell analysis reveals immune remodeling of monocytes, NK cells, T cell exhaustion, and
+Galectin-9-associated depletion of gamma delta and mucosal-associated invariant T
+cells in long COVID with ME/CFS. Front Immunol. (2026) 17:1745933. doi: 10.3389/
+ﬁmmu.2026.1745933
+84. Tourki B, Jia M, Karampitsakos T, Vera IM, Arsenault A, Fatima Z, et al.
+Convergent and divergent immune aberrations in COVID-19, post-COVID-19-inter-
+stitial lung disease, and idiopathic pulmonary ﬁbrosis. Am J Physiol Cell Physiol. (2025)
+328:C199–211. doi: 10.1152/ajpcell.00528.2024
+85. Xu D, Qin X. Type I interferonopathy among non-elderly female patients with
+post-acute sequelae of COVID-19. Viruses. (2024) 16:1369. doi: 10.3390/v16091369
+86. Gao Y, Cai C, Adamo S, Biteus E, Kamal H, Dager L, et al. Identiﬁcation of soluble
+biomarkers that associate with distinct manifestations of long COVID. Nat Immunol.
+(2025) 26:692–705. doi: 10.1038/s41590-025-02135-5
+87. Sykes RA, Neves KB, Alves-Lopes R, Caputo I, Fallon K, Jamieson NB, et al.
+Vascular mechanisms of post-COVID-19 conditions: Rho-kinase is a novel target for
+therapy. Eur Heart J — Cardiovasc Pharmacother. (2023) 9:371–86. doi: 10.1093/
+ehjcvp/pvad025
+88. Perez Mazzali M, Pérez-Cózar F, Cal-Sabater P, Rybakowska P, Tellerı́a P, Gamazo J,
+et al. Persistent T cell phenotypic alterations and early innate immune dysregulation as
+potential biomarkers of long COVID. J Infect. (2026) 92:106731. doi: 10.1016/
+j.jinf.2026.106731
+89. Farré X, Blay N, Iraola-Guzmán S, Fernández-Jiménez F, Alzate-Piñol S, Llucià-
+Carol L, et al. VEGFA sex-speciﬁc signature is associated to long COVID symptom
+persistence. BMC Med. (2025) 23:552. doi: 10.1186/s12916-025-04402-6
+90. Dhariwal R, Dave K, Jain M. Omics-based analysis of mitochondrial dysfunction
+and BBB integrity in post-COVID-19 sequelae. Sci Rep. (2024) 14:31016. doi: 10.1038/
+s41598-024-82180-6
+91. Szögi T, Borsos BN, Masic D, Radics B, Bella Z, BánﬁA, et al. Novel biomarkers of
+mitochondrial dysfunction in long COVID patients. GeroScience. (2024). doi: 10.1007/
+s11357-024-01398-4
+92. Ober V, Völk F, Sbierski-Kind J, Grüner E, Stirner R, Reiling G, et al. Systemic and
+SARS-CoV-2 speciﬁc Immune Disturbances in Individuals With Post-COVID
+Syndrome. J. Infect. Dis. (2025) 232(1):50–59. doi: 10.1093/infdis/jiaf211
+93. Whitcomb LA, Berry K, LaVergne SM, Natter N, Baxter BA, Rao S, et al. Blood
+pro-thrombotic analytes and platelet activation are associated with post-acute sequelae
+of COVID-19. BMC Infect Dis. (2025) 26:61. doi: 10.1186/s12879-025-11824-3
+94. Chakraborty C, Bhattacharya M, Alshammari A, Albekairi NA, Lee SS. Mapping
+the potential genes and associated pathways involved in long COVID-associated brain
+fog using integrative bioinformatics and systems biology strategy. Mol Biotechnol.
+(2024). doi: 10.1007/s12033-024-01324-1
+95. Cervia-Hasler C, Brüningk SC, Hoch T, Fan B, Muzio G, Thompson RC, et al.
+Persistent complement dysregulation with signs of thromboinﬂammation in active long
+Covid. Science. (2024) 383:eadg7942. doi: 10.1126/science.adg7942
+96. Dobra G, Gyukity-Sebestyen E, Bukva M, Boroczky T, Nyiraty S, Bordacs B, et al.
+Proteomic proﬁling of serum small extracellular vesicles predicts post-COVID syn-
+drome development. Clin Immunol. (2025) 278:110532. doi: 10.1016/
+j.clim.2025.110532
+97. Missailidis D, Ebrahimie E, Dehcheshmeh MM, Allan C, Sanislav O, Fisher P, et al.
+A blood-based mRNA signature distinguishes people with long COVID from recovered
+individuals. Front Immunol. (2024) 15:1450853. doi: 10.3389/ﬁmmu.2024.1450853
+98. Garcı́a-Hidalgo MC, Benı́tez ID, Perez-Pons M, Molinero M, Belmonte T,
+Rodrı́guez-Muñoz C, et al. MicroRNA-guided drug discovery for mitigating persistent
+pulmonary complications in critical COVID-19 survivors: A longitudinal pilot study.
+Br J Pharmacol. (2025) 182:380–95. doi: 10.1111/bph.16330
+99. Reis GGD, Moreira DA, Parente TE, Müller BLA, Moreira AS, Alves G, et al.
+MicroRNA sequencing of peripheral blood mononuclear cells reveals signiﬁcant
+expression changes in women with long COVID. Acad Bras Ciênc. (2026) 98:
+e20250515. doi: 10.1590/0001-3765202620250515
+100. Docampo MJ, Batruch M, Oldrati P, Berenjeno-Correa E, Hilty M, Leventhal G,
+et al. Clinical and immunologic effects of paraprobiotics in long-COVID patients: A
+pilot study. Neurol Neuroimmunol Neuroinﬂamm. (2024) 11:e200296. doi: 10.1212/
+NXI.0000000000200296
+101. Elahi S, Rezaeifar M, Osman M, Shahbaz S. Exploring the role of galectin-9 and
+artemin as biomarkers in long COVID with chronic fatigue syndrome: links to
+inﬂammation and cognitive function. Front Immunol. (2024) 15:1443363.
+doi: 10.3389/ﬁmmu.2024.1443363
+102. Bai W, Li F. Regulation of m7G methylation in long COVID: expression proﬁles
+and early predictive value of key genes. Med (Baltimore). (2025) 104:e44209.
+doi: 10.1097/MD.0000000000044209
+103. Tobi M, Chaudhari D, Ryan EP, Rossi NF, Koka O, Baxter B, et al. Immune
+signatures in post-acute sequelae of COVID-19 (PASC) and myalgia/chronic fatigue
+syndrome (ME/CFS): insights from the fecal microbiome and serum cytokine proﬁles.
+Biomolecules. (2025) 15:928. doi: 10.3390/biom15070928
+104. Bačić A, Gmizić T, Takić T, Zdravković M, Branković M, Rajilić-Stojanović M.
+Gut microbiota as a key player in health and disease with a focus on long-term
+alterations in post-COVID. Dig Dis. (2025) 43:731–46. doi: 10.1159/000548507
+105. Österdahl MF, Whiston R, Sudre CH, Asnicar F, Cheetham NJ, Blanco Miguez A,
+et al. Metabolomic and gut microbiome proﬁles across the spectrum of community-
+based COVID and non-COVID disease. Sci Rep. (2023) 13:10407. doi: 10.1038/s41598-
+023-34598-7
+106. Ackermann M, Kamp JC, Werlein C, Walsh CL, Stark H, Prade V, et al. The fatal
+trajectory of pulmonary COVID-19 is driven by lobular ischemia and ﬁbrotic
+remodelling. EBioMedicine. (2022) 85:104296. doi: 10.1016/j.ebiom.2022.104296
+107. Ai J, Guo J, Lin K, Cai J, Zhang H, Zhu F, et al. Integrated multi-omics
+characterization across clinically relevant subgroups of long COVID. Natl Sci Rev.
+(2024) 12:nwae410. doi: 10.1093/nsr/nwae410
+108. Ali MS, Hadda V, Verma S, Chopra A, Mittal S, Madan K, et al. Unravelling the
+transcriptomic characteristics of bronchoalveolar lavage in post-covid pulmonary
+ﬁbrosis. BMC Med Genomics. (2025) 18:54. doi: 10.1186/s12920-025-02110-x
+109. Balnis J, Madrid A, Drake LA, Vancavage R, Tiwari A, Patel VJ, et al. Blood DNA
+methylation in post-acute sequelae of COVID-19 (PASC): a prospective cohort study.
+EBioMedicine. (2024) 106:105251. doi: 10.1016/j.ebiom.2024.105251
+110. Bhattacharjee M, Botting CH, Sillanpää MJ. Bayesian biomarker identiﬁcation
+based on marker-expression proteomics data. Genomics. (2008) 92:384–92.
+doi: 10.1016/j.ygeno.2008.06.006
+111. Billing-Ross P, Germain A, Ye K, Keinan A, Gu Z, Hanson MR. Mitochondrial
+DNA variants correlate with symptoms in myalgic encephalomyelitis/chronic fatigue
+syndrome. J Transl Med. (2016) 14:19. doi: 10.1186/s12967-016-0771-6
+112. Bourgonje AR, Hörstke NV, Fehringer M, Innocenti G, Vogl T. Systemic antibody
+responses against gut microbiota ﬂagellins implicate shared and divergent immune
+reactivity in Crohn’s disease and chronic fatigue syndrome. Microbiome. (2024) 12:141.
+doi: 10.1186/s40168-024-01858-1
+113. Byrnes A, Jacks A, Dahlman-Wright K, Evengard B, Wright FA, Pedersen NL,
+et al. Gene expression in peripheral blood leukocytes in monozygotic twins discordant
+for chronic fatigue: no evidence of a biomarker. PloS One. (2009) 4:e5805. doi: 10.1371/
+journal.pone.0005805
+114. Che X, Brydges CR, Yu Y, Price A, Joshi S, Roy A, et al. Metabolomic evidence for
+peroxisomal dysfunction in myalgic encephalomyelitis/chronic fatigue syndrome. Int J
+Mol Sci. (2022) 23. doi: 10.3390/ijms23147906
+115. Chen PC, Hsu YL, Lin CY, Liu XL, Hsieh MH, Tsai HJ, et al. Anti-nucleocapsid
+antibody levels reﬂect post-acute sequelae of COVID-19 symptom burden in children. J
+Infect Public Health. (2026) 19:103020. doi: 10.1016/j.jiph.2025.103020
+116. Cheng Y, Xu SM, Takenaka K, Lindner G, Curry-Hyde A, Janitz M. A unique
+circular RNA expression pattern in the peripheral blood of myalgic encephalomyelitis/
+chronic fatigue syndrome patients. Gene. (2023) 877:147568. doi: 10.1016/
+j.gene.2023.147568
+117. Ciregia F, Kollipara L, Giusti L, Zahedi RP, Giacomelli C, Mazzoni MR, et al.
+Bottom-up proteomics suggests an association between differential expression of
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+25
+
+mitochondrial proteins and chronic fatigue syndrome. Transl Psychiatry. (2016) 6:e904.
+doi: 10.1038/tp.2016.184
+118. de Vega WC, Herrera S, Vernon SD, McGowan PO. Epigenetic modiﬁcations and
+glucocorticoid sensitivity in myalgic encephalomyelitis/chronic fatigue syndrome (ME/
+CFS). BMC Med Genomics. (2017) 10:11. doi: 10.1186/s12920-017-0248-3
+119. Dufrusine B, Valentinuzzi S, Bibbò S, Damiani V, Lanuti P, Pieragostino D, et al.
+Iron dyshomeostasis in COVID-19: biomarkers reveal a functional link to 5-
+lipoxygenase activation. Int J Mol Sci. (2022) 24. doi: 10.3390/ijms24010015
+120. Eguchi A, Fukuda S, Kuratsune H, Nojima J, Nakatomi Y, Watanabe Y, et al.
+Identiﬁcation of actin network proteins, talin-1 and ﬁlamin-A, in circulating extracel-
+lular vesicles as blood biomarkers for human myalgic encephalomyelitis/chronic
+fatigue syndrome. Brain Behav Immun. (2020) 84:106–14. doi: 10.1016/
+j.bbi.2019.11.015
+121. Esfandyarpour R, Kashi A, Nemat-Gorgani M, Wilhelmy J, Davis RW. A
+nanoelectronics-blood-based diagnostic biomarker for myalgic encephalomyelitis/
+chronic fatigue syndrome (ME/CFS). Proc Natl Acad Sci USA. (2019) 116:10250–7.
+doi: 10.1073/pnas.1901274116
+122. Fitzgerald BL, Graham B, Delorey MJ, Pegalajar-Jurado A, Islam MN, Wormser
+GP, et al. Metabolic response in patients with post-treatment Lyme disease symptoms/
+syndrome. Clin Infect Dis Off Publ Infect Dis Soc Am. (2021) 73:e2342–9. doi: 10.1093/
+cid/ciaa1455
+123. Fukuda S, Hashimoto R, Ohi K, Yamaguti K, Nakatomi Y, Yasuda Y, et al. A
+functional polymorphism in the disrupted-in schizophrenia 1 gene is associated with
+chronic fatigue syndrome. Life Sci. (2010) 86:722–5. doi: 10.1016/j.lfs.2010.03.007
+124. Fuite J, Vernon SD, Broderick G. Neuroendocrine and immune network re-
+modeling in chronic fatigue syndrome: an exploratory analysis. Genomics. (2008)
+92:393–9. doi: 10.1016/j.ygeno.2008.08.008
+125. Garrido PF, Castillo-Peinado LS, Priego-Capote F, Barrio I, Piñeiro Á,
+Domı́nguez-Santalla MJ, et al. Lipidomics signature in post-COVID patient sera and
+its inﬂuence on the prolonged inﬂammatory response. J Infect Public Health. (2024)
+17:588–600. doi: 10.1016/j.jiph.2024.01.017
+126. Germain A, Ruppert D, Levine SM, Hanson MR. Prospective biomarkers from
+plasma metabolomics of myalgic encephalomyelitis/chronic fatigue syndrome impli-
+cate redox imbalance in disease symptomatology. Metabolites. (2018) 8:90.
+doi: 10.3390/metabo8040090
+127. Giménez-Orenga K, Pierquin J, Brunel J, Charvet B, Martı́n-Martı́nez E, Perron
+H, et al. HERV-W ENV antigenemia and correlation of increased anti-SARS-CoV-2
+immunoglobulin levels with post-COVID-19 symptoms. Front Immunol. (2022)
+13:1020064. doi: 10.3389/ﬁmmu.2022.1020064
+128. Giménez-Orenga K, Martı́n-Martı́nez E, Nathanson L, Oltra E. HERV activation
+segregates ME/CFS from ﬁbromyalgia while deﬁning a novel nosologic entity. eLife.
+(2025) 14:RP104441. doi: 10.7554/eLife.104441
+129. Guo C, Che X, Briese T, Ranjan A, Allicock O, Yates RA, et al. Deﬁcient butyrate-
+producing capacity in the gut microbiome is associated with bacterial network
+disturbances and fatigue symptoms in ME/CFS. Cell Host Microbe. (2023) 31:288–
+304.e8. doi: 10.1016/j.chom.2023.01.004
+130. Gow JW, Hagan S, Herzyk P, Cannon C, Behan PO, Chaudhuri A. A gene
+signature for post-infectious chronic fatigue syndrome. BMC Med Genomics. (2009)
+2:38. doi: 10.1186/1755-8794-2-38
+131. Gravelsina S, Vilmane A, Svirskis S, Rasa-Dzelzkaleja S, Nora-Krukle Z,
+Vecvagare K, et al. Biomarkers in the diagnostic algorithm of myalgic encephalomy-
+elitis/chronic fatigue syndrome. Front Immunol. (2022) 13:928945. doi: 10.3389/
+ﬁmmu.2022.928945
+132. Grote K, Schaefer AC, SouﬁM, Ruppert V, Linne U, Mukund Bhagwat A, et al.
+Targeting the high-density lipoprotein proteome for the treatment of post-acute
+sequelae of SARS-coV-2. Int J Mol Sci. (2024) 25:4522. doi: 10.3390/ijms25084522
+133. Hanson BA, Visvabharathy L, Orban ZS, Jimenez M, Batra A, Liotta EM, et al.
+Plasma proteomics show altered inﬂammatory and mitochondrial proteins in patients
+with neurologic symptoms of post-acute sequelae of SARS-CoV-2 infection. Brain
+Behav Immun. (2023) 114:462–74. doi: 10.1016/j.bbi.2023.08.022
+134. Hoel A, Hoel F, Dyrstad SE, Chapola H, Rekeland IG, Risa K, et al. Charting the
+circulating proteome in ME/CFS using cross-system proﬁling to uncover mechanistic
+insights. Cell Rep Med. (2026) 7:102647. doi: 10.1016/j.xcrm.2026.102647
+135. Hou Z, Ming Y, Liu J, Wang Z. Potential biomarkers for predicting the risk of
+developing into long COVID after COVID-19 infection. Immun Inﬂammation Dis.
+(2025) 13:e70137. doi: 10.1002/iid3.70137
+136. Huang K, G C de Sá A, Thomas N, Phair RD, Gooley PR, Ascher DB, et al.
+Discriminating Myalgic Encephalomyelitis/Chronic Fatigue Syndrome and comorbid
+conditions using metabolomics in UK Biobank. Commun Med. (2024) 4:248.
+doi: 10.1038/s43856-024-00669-7
+137. Hunter E, Alshaker H, Bundock O, Weston C, Bautista S, Gebregzabhar A, et al.
+Development and validation of blood-based diagnostic biomarkers for Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS) using EpiSwitch® 3-dimen-
+sional genomic regulatory immuno-genetic proﬁling. J Transl Med. (2025) 23:1048.
+doi: 10.1186/s12967-025-07203-w
+138. Kalaivani M, Dinakar S. Association between D-dimer levels and post-acute
+sequelae of sars-cov-2 in patients from A tertiary care center. biomark Med. (2022)
+16:833–8. doi: 10.2217/bmm-2022-0050
+139. Kallaste A, Kisand K, Aart A, Salumets A, Kisand K, Peterson P, et al. Long
+COVID and biomarker dysregulation—A shift toward immune exhaustion? Med
+(Mex). (2025) 61:996. doi: 10.3390/medicina61060996
+140. Lee E, Cho S, Kim K, Park T. An integrated approach to infer causal associations
+among gene expression, genotype variation, and disease. Genomics. (2009) 94:269–77.
+doi: 10.1016/j.ygeno.2009.06.002
+141. Liu Z, Hollmann C, Kalanidhi S, Lamer S, Schlosser A, Basens EE, et al.
+Immunoglobulin G complexes from post-infectious ME/CFS, including post-COVID
+ME/CFS disrupt cellular energetics and alter inﬂammatory marker secretion. Brain
+Behav Immun Health. (2026) 52:101187. doi: 10.1016/j.bbih.2026.101187
+142. Makled AF, Ali SAM, Eldahdouh SS, Sleem AS, Eldahshan MM, Elsaadawy Y,
+et al. Angiotensin-converting enzyme-2 (ACE-2) with interferon-induced transmem-
+brane protein-3 (IFITM-3) genetic variants and interleukin-6 as severity and risk
+predictors among COVID-19 Egyptian population. Int J Microbiol. (2023)
+2023:6384208. doi: 10.1155/2023/6384208
+143. Maqsood K, Ahmad S, Saeed A, Roohi N. Plasma protein biomarkers for long
+COVID-19: Predictors of symptom severity and mortality risk. Clin Chim Acta. (2025)
+575:120350. doi: 10.1016/j.cca.2025.120350
+144. Martı́n F, Blanco-Suárez M, Zambrano P, Cáceres O, Almirall M, Alegre-Martı́n J,
+et al. Increased gut permeability and bacterial translocation are associated with
+ﬁbromyalgia and myalgic encephalomyelitis/chronic fatigue syndrome: implications
+for disease-related biomarker discovery. Front Immunol. (2023) 14:1253121.
+doi: 10.3389/ﬁmmu.2023.1253121
+145. Medori MC, Dhuli K, Tezzele S, Micheletti C, Maltese PE, Cecchin S, et al. Serum
+proteomic proﬁling reveals potential inﬂammatory biomarkers in long-COVID pa-
+tients: a comparative analysis with healthy controls. Eur Rev Med Pharmacol Sci. (2023)
+27:1–12. doi: 10.26355/eurrev_202312_34684
+146. Metselaar PI, Mendoza-Maldonado L, Li Yim AYF, Abarkan I, Henneman P, Te
+Velde AA, et al. Recursive ensemble feature selection provides a robust mRNA
+expression signature for myalgic encephalomyelitis/chronic fatigue syndrome. Sci
+Rep. (2021) 11:4541. doi: 10.1038/s41598-021-83660-9
+147. Milivojevic M, Che X, Bateman L, Cheng A, Garcia BA, Hornig M, et al. Plasma
+proteomic proﬁling suggests an association between antigen driven clonal B cell expansion
+and ME/CFS. PloS One. (2020) 15:e0236148. doi: 10.1371/journal.pone.0236148
+148. Nilsson K, Skoog E, Edvinsson M, Mårtensson A, Olsen B. Protein biomarker
+proﬁles in serum and CSF in 158 patients with PTLDS or persistent symptoms after
+presumed tick-bite exposure compared to those in patients with conﬁrmed acute
+neuroborreliosis. PloS One. (2022) 17:e0276407. doi: 10.1371/journal.pone.0276407
+149. Oh S, An S, Park K, Lee S, Han YM, Koh SJ, et al. Gut microbial signatures in long
+COVID: potential biomarkers and therapeutic targets. Infect Dis Ther. (2025).
+doi: 10.1007/s40121-025-01167-6
+150. Padhye AS, Koralnik IJ, Hanson BA, Visvabharathy L, DeLisle RK, Tachas G.
+Blood diagnostic biomarkers for neurologic manifestations of long COVID. Brain
+Behav Immun Health. (2025) 49:101110. doi: 10.1016/j.bbih.2025.101110
+151. Patel MA, Knauer MJ, Nicholson M, Daley M, Van Nynatten LR, Cepinskas G,
+et al. Organ and cell-speciﬁc biomarkers of Long-COVID identiﬁed with targeted
+proteomics and machine learning. Mol Med Camb Mass. (2023) 29:26. doi: 10.1186/
+s10020-023-00610-z
+152. Redondo-Calvo FJ, Rabanal-Ruiz Y, Verdugo-Moreno G, Bejarano-Ramı́rez N,
+Bodoque-Villar R, Durán-Prado M, et al. Longitudinal assessment of nasopharyngeal
+biomarkers post-COVID-19: unveiling persistent markers and severity correlations. J
+Proteome Res. (2024) 23:5064–84. doi: 10.1021/acs.jproteome.4c00536
+153. Roerink ME, Knoop H, Bronkhorst EM, Mouthaan HA, Hawinkels LJAC, Joosten
+LAB, et al. Cytokine signatures in chronic fatigue syndrome patients: a Case Control
+Study and the effect of anakinra treatment. J Transl Med. (2017) 15:267. doi: 10.1186/
+s12967-017-1371-9
+154. Ryu T, Adler BL, Jeong SJ, Lee DC, Hoke A, Na CH, et al. Quantitative serum
+proteomic analysis for biomarker discovery in post-COVID-19 postural orthostatic
+tachycardia syndrome (PC-POTS) patients. Auton Neurosci Basic Clin. (2025)
+258:103247. doi: 10.1016/j.autneu.2025.103247
+155. Seco-Gonzalez A, Antelo-Riveiro P, Bravo SB, Domı́nguez-Santalla MJ,
+Rodrı́guez-Ruiz E, Piñeiro Á, et al. Comprehensive molecular characterization of
+post-COVID condition: Immunoglobulin suppression and persistent SARS-CoV-2
+antigens as key pathophysiological drivers. J Infect Public Health. (2025) 18:102870.
+doi: 10.1016/j.jiph.2025.102870
+156. Semo D, Shomanova Z, Sindermann J, Mohr M, Evers G, Motloch LJ, et al.
+Persistent monocytic bioenergetic impairment and mitochondrial DNA damage in
+PASC patients with cardiovascular complications. Int J Mol Sci. (2025) 26:4562.
+doi: 10.3390/ijms26104562
+157. Seton KA, Defernez M, Telatin A, Tiwari SK, Savva GM, Hayhoe A, et al.
+Investigating antibody reactivity to the intestinal microbiome in severe myalgic
+encephalomyelitis/chronic fatigue syndrome (ME/CFS): A feasibility study. Int J Mol
+Sci. (2023) 24:15316. doi: 10.3390/ijms242015316
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+26
+
+158. Soares Pereira LM, de Souza e Souza I, dos Santos Brito WR, dos Santos EF, da
+Costa FP, Lima de Sarges KM, et al. Gene expression proﬁle of immune response
+markers associated with long COVID and its clinical aspects in a cohort from northern
+Brazil. Hum Immunol. (2025) 86:111341. doi: 10.1016/j.humimm.2025.111341
+159. Sweetman E, Kleffmann T, Edgar C, de Lange M, Vallings R, Tate W. A SWATH-
+MS analysis of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome peripheral blood
+mononuclear cell proteomes reveals mitochondrial dysfunction. J Transl Med. (2020)
+18:365. doi: 10.1186/s12967-020-02533-3
+160. Vashisht K, Goyal B, Pasupureddy R, Na BK, Shin HJ, Sahu D, et al. Exploring the
+immunodominant epitopes of SARS-coV-2 nucleocapsid protein as exposure bio-
+marker. Cureus. (2023) 15:e34827. doi: 10.7759/cureus.34827
+161. Yagin FH, Alkhateeb A, Raza A, Samee NA, Mahmoud NF, Colak C, et al. An
+explainable artiﬁcial intelligence model proposed for the prediction of myalgic
+encephalomyelitis/chronic fatigue syndrome and the identiﬁcation of distinctive
+metabolites. Diagn Basel Switz. (2023) 13:3495. doi: 10.3390/diagnostics13233495
+162. Zhou Y, Yang C, Zhou J, Zhang Q, Sui X, Dong H, et al. Identifying key
+biomarkers and therapeutic candidates for post-COVID-19 depression through inte-
+grated omics and bioinformatics approaches. Transl Neurosci. (2024) 15:20220360.
+doi: 10.1515/tnsci-2022-0360
+163. D’Aguanno S, Franciotta D, Lupisella S, Barassi A, Pieragostino D, Lugaresi A,
+et al. Protein proﬁling of Guillain-Barrè syndrome cerebrospinal ﬂuid by two-
+dimensional electrophoresis and mass spectrometry. Neurosci Lett. (2010) 485:49–54.
+doi: 10.1016/j.neulet.2010.08.060
+164. Jaramillo-Valverde L, Levano KS, Villanueva I, Hidalgo M, Cornejo M, Mazzetti P,
+et al. Guillain-Barre syndrome outbreak in Peru: association with polymorphisms in IL-
+17, ICAM1, and CD1. Mol Genet Genom Med. (2019) 7:e00960. doi: 10.1002/mgg3.960
+165. Kmezic I, Gustafsson R, Fink K, Svenningsson A, Samuelsson K, Ingre C, et al.
+Validation of elevated levels of interleukin-8 in the cerebrospinal ﬂuid, and discovery of
+new biomarkers in patients with GBS and CIDP using a proximity extension assay.
+Front Immunol. (2023) 14:1241199. doi: 10.3389/ﬁmmu.2023.1241199
+166. Mateos-Hernández L, Villar M, Doncel-Pérez E, Trevisan-Herraz M, Garcı́a-
+Forcada Á, Ganuza FR, et al. Quantitative proteomics reveals Piccolo as a candidate
+serological correlate of recovery from Guillain-Barré syndrome. Oncotarget. (2016)
+7:74582–91. doi: 10.18632/oncotarget.12789
+167. Péter M, Török W, Petrovics-Balog A, Vı́gh L, Vécsei L, Balogh G. Cerebrospinal
+ﬂuid lipidomic biomarker signatures of demyelination for multiple sclerosis and
+Guillain-Barré syndrome. Sci Rep. (2020) 10:18380. doi: 10.1038/s41598-020-75502-x
+168. Tang HY, Chiu DTY, Lin JF, Huang CY, Chang KH, Lyu RK, et al. Disturbance of
+plasma lipid metabolic proﬁle in Guillain-Barre syndrome. Sci Rep. (2017) 7:8140.
+doi: 10.1038/s41598-017-08338-7
+169. Zhang X, Zhang H, Liu Z, Guan R, Wang J, Kong X, et al. Inferring immune‐
+associated signatures based on a co‐expression network in Guillain‐Barré syndrome.
+Cell Prolif. (2019) 52:e12634. doi: 10.1111/cpr.12634
+170. Lima MO, Nogueira VB, Maury W, Wilson ME, Júnior METD, Teixeira DG, et al.
+Altered cellular pathways in the blood of patients with Guillain-Barre syndrome.
+J Peripher Nerv Syst. (2025) 30:e70012. doi: 10.1111/jns.70012
+171. Ding Y, Shi Y, Wang L, Li G, Osman RA, Sun J, et al. Potential biomarkers
+identiﬁed by tandem mass tags based quantitative proteomics for diagnosis and
+classiﬁcation of Guillain-Barré syndrome. Eur J Neurol. (2022) 29:1155–64.
+doi: 10.1111/ene.15213
+172. Jin T, Hu LS, Chang M, Wu J, Winblad B, Zhu J. Proteomic identiﬁcation of
+potential protein markers in cerebrospinal ﬂuid of GBS patients. Eur J Neurol. (2007)
+14:563–8. doi: 10.1111/j.1468-1331.2007.01761.x
+173. Park SJ, Kim JK, Kim HH, Yoon BA, Ji DY, Lee CW, et al. Integrative
+metabolomics reveals unique metabolic traits in Guillain-Barré syndrome and its
+variants. Sci Rep. (2019) 9:1077. doi: 10.1038/s41598-018-37572-w
+174. Tanaka M, Szabó Á, Vécsei L. Redeﬁning roles: a paradigm shift in tryptophan-
+kynurenine metabolism for innovative clinical applications. Int J Mol Sci. (2024)
+25:12767. doi: 10.3390/ijms252312767
+175. Guo C, Yi B, Wu J, Lu J. The microbiome in post-acute infection syndrome
+(PAIS). Comput Struct Biotechnol J. (2023) 21:3904–11. doi: 10.1016/j.csbj.2023.08.002
+176. Deng CH, Wang CT, Zhou X, Chen X, Wang Y. Innate immunity reimagined:
+metabolic reprogramming as a gateway to novel therapeutics. Int J Biol Sci. (2025)
+21:5056–78. doi: 10.7150/ijbs.114010
+177. Bar-Tana J. mTORC1 syndrome (TorS): unifying paradigm for PASC, ME/CFS
+and PAIS. J Transl Med. (2025) 23:297. doi: 10.1186/s12967-025-06220-z
+178. Bozorgmehr N, Mashhouri S, Perez Rosero E, Xu L, Shahbaz S, Sligl W,
+et al. Galectin-9, a player in cytokine release syndrome and a surrogate diagnostic
+biomarker in SARS-CoV-2 infection. mBio. (2021) 12:e00384-21. doi: 10.1128/
+mBio.00384-21
+179. Zhang CY, Hu HC, Chai XS, Pan L, Xiao XM. Determination of maximal amount
+of minor gases adsorbed in a shale sample by headspace gas chromatography. J
+Chromatogr A. (2014) 1328:80–4. doi: 10.1016/j.chroma.2013.12.075
+180. Shahbaz S, Xu L, Osman M, Sligl W, Shields J, Joyce M, et al. Erythroid precursors
+and progenitors suppress adaptive immunity and get invaded by SARS-CoV-2. Stem
+Cell Rep. (2021) 16:1165–81. doi: 10.1016/j.stemcr.2021.04.001
+181. Gabernet G, Maciuch J, Gygi JP, Moore JF, Hoch A, Syphurs C, et al. A
+multiomics recovery factor predicts long COVID in the IMPACC study. J Clin
+Invest. (2025) 135:e193698. doi: 10.1172/JCI193698
+182. Rahmati A, Shahbaz S, Osman M, Tervaert JWC, Elahi S. Blood transcriptomic
+analyses do not support SARS-CoV-2 persistence in patients with post-COVID-19
+condition with chronic fatigue syndrome. Lancet Microbe. (2025) 6. doi: 10.1016/
+j.lanmic.2024.101012
+183. Trautmann A. Core features and inherent diversity of post-acute infection
+syndromes. Front Immunol. (2025) 16:1509131. doi: 10.3389/ﬁmmu.2025.1509131
+184. Vojdani A, Vojdani E, Saidara E, Maes M. Persistent SARS-CoV-2 infection, EBV,
+HHV-6 and other factors may contribute to inﬂammation and autoimmunity in long
+COVID. Viruses. (2023) 15:400. doi: 10.3390/v15020400
+185. Kavyani B, Lidbury BA, Schloeffel R, Fisher PR, Missailidis D, Annesley SJ, et al.
+Could the kynurenine pathway be the key missing piece of myalgic encephalomyelitis/
+chronic fatigue syndrome (ME/CFS) complex puzzle? Cell Mol Life Sci CMLS. (2022)
+79:412. doi: 10.1007/s00018-022-04380-5
+186. König RS, Albrich WC, Kahlert CR, Bahr LS, Löber U, Vernazza P, et al. The gut
+microbiome in myalgic encephalomyelitis (ME)/chronic fatigue syndrome (CFS). Front
+Immunol. (2021) 12:628741. doi: 10.3389/ﬁmmu.2021.628741
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+27
+
+Glossary
+2DE
+Two-dimensional gel electrophoresis
+3-HK
+3-hydroxykynurenine
+ACD
+Anemia of chronic disease
+APO
+Apolipoprotein
+ARTN
+Artemin
+ATP
+Adenosine triphosphate
+BCAAs
+Branched-chain amino acids
+CCC
+Canadian Consensus Criteria
+ccf-mtDNA
+Circulating cell-free mitochondrial DNA
+CD
+Complement Decay-Accelerating Factor
+CD4+ TEM
+CD4+ Effector
+CIDP
+Chronic inﬂammatory demyelinating polyneuropathy
+CRP
+C-reactive protein
+CSF
+Cerebrospinal ﬂuid
+CXCL
+C-X-C motif chemokine ligand
+DNA
+Deoxyribonucleic acid
+EBC
+Exhaled breath condensate
+EBV
+Epstein-Barr virus
+ELISA
+enzyme-linked immunosorbent assay
+GAL-9
+Galectin-9
+GBS
+Guillain-Barré syndrome
+GRADE
+Grading of Recommendations Assessment, Development
+and Evaluation
+IDO
+Indoleamine-2,3-dioxygenase
+IFN
+Interferon
+Ig
+Immunoglobulin
+IL
+Interleukin
+IOM
+Institute of Medicine
+KMO
+Kynurenine 3-monooxygenase
+KYNA
+Kynurenic acid
+LPC
+Lysophosphatidylcholine
+MALDI-TOF
+Matrix-Assisted Laser Desorption/Ionization - Time of Flight
+ME/CFS
+Myalgic encephalomyelitis/chronic fatigue syndrome
+miR; miRNA
+MicroRNA
+MS
+Multiple Sclerosis
+MS/MS
+Tandem Mass Spectrometry
+mtDNA/MT
+mitochondrial DNA
+NAD+
+Nicotinamide adenine dinucleotide
+NADH
+Nicotinamide Adenine Dinucleotide Hydrogen
+NETs
+Neutrophil extracellular traps
+NF-kB
+Nuclear Factor kappa-light-chain-enhancer of activated
+B cells
+NHS
+National Health Service
+NICE
+National Institute for Health and Care Excellence
+NK
+Natural killer cells
+NMDA
+N-methyl-D-aspartate receptor
+NMR
+Nuclear magnetic resonance
+NND
+Non-neurodegenerative neurological disease
+OR
+Olfactory receptor
+PACS
+Post-Acute COVID Syndrome
+PAIS
+Post-acute infection syndromes
+PASC
+Post-acute sequelae of COVID-19
+PARK7
+Parkinson disease protein 7
+PC
+Phosphatidylcholine
+PE
+Phosphatidylethanolamine
+PEA
+Proximity extension assay
+PEM
+Post-exertional malaise
+PICOS
+Patient, Intervention, Comparison, Outcome, Study type
+POTS
+Postural Orthostatic Tachycardia Syndrome
+PRISMA
+Preferred Reporting Items for Systematic reviews and
+Meta-Analyses
+PTLDS
+Post-Treatment Lyme Disease Syndrome
+QUIN
+Quinolinic acid
+RELN
+Reelin
+RNA
+Ribonucleic acid
+ROS
+Reactive oxygen species
+SAA
+Serum Amyloid A
+SCI
+Spinal cord injury
+SID-MRM
+Stable Isotope Dilution-Multiple Reaction Monitoring
+SM
+Sphingomyelin
+TCR
+T-cell receptor
+TFN
+Tumor necrosis factor
+TKP
+Tryptophan-kynurenine pathway
+TKR
+Tryptophan-kynurenine ratio
+TREG
+Regulatory T cells
+VCAM
+Vascular cell adhesion protein
+VEGF
+Vascular Endothelial Growth Factor
+VWF
+Von-Willebrand-Faktor-Receptor
+Wendt et al.
+10.3389/fimmu.2026.1741761
+Frontiers in Immunology
+frontiersin.org
+28
