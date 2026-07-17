@@ -1,8 +1,23 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-16",
+  "last_check": "2026-07-17",
   "papers": [
+    {
+      "id": "mihatsch-2026-pediatric-handgrip-strength",
+      "title": "Handgrip strength in children, adolescents, and young adults with suspected myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "Mihatsch L, Schartner L, de Luna JL, Höhler C, Bucka L, Lovrenovic L, Eidenschink S, Schmuck B, Bienemann V, Christa C, Mittelstraß K, Hausruckinger A, Warlitz C, Michel K, Gerrer K, Freitag H, Scheibenbogen C, Pricoco R, Behrends U",
+      "journal": "Journal of Translational Medicine",
+      "date": "Jul 2026",
+      "summary": "Researchers measured hand-grip strength twice, an hour apart, in 147 young people (aged 10-25) being evaluated for ME/CFS and compared them with 83 healthy peers. The patients' grip strength and how it changed between the two tests differed from the healthy group, showing a real, measurable drop in muscle function — but the test alone could not reliably tell ME/CFS apart from other conditions that also cause tiredness.",
+      "why": "From Carmen Scheibenbogen's group: offers a simple, cheap, repeatable physical test that could serve as an objective way to track post-exertional muscle decline in children and teenagers for future drug trials, even though it can't yet stand alone as a diagnostic test.",
+      "link": "https://doi.org/10.1186/s12967-026-08654-5",
+      "first_seen": "2026-07-17",
+      "last_checked": "2026-07-17",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Published online Jul 15, 2026. Pediatric/young-adult ME/CFS evaluation cohort (Charité/TU München group, incl. Behrends and Pricoco), 147 patients aged 10-25 vs 83 controls; two grip-strength sessions 60 minutes apart. Scheibenbogen is a co-author — HIGH PRIORITY. Confirmed via Europe PMC REST API (title/authors/journal/date match)."
+    },
     {
       "id": "gile-2026-rapamycin-purine-microglia-pilot",
       "title": "Association of rapamycin treatment with the modulation of purine metabolism, reduced microglial inflammatory responses, improved mitochondrial energy metabolism, and alleviation of fatigue symptoms in ME/CFS subjects: pilot findings from phase-II observational study",
@@ -1378,11 +1393,9 @@
       "why": "A large attempt to organise the scattered ME/CFS/long-COVID biomarker literature into one framework, useful for future diagnostic-test and drug-target research — from a German group (Hannover Medical School), though not Charité-affiliated.",
       "link": "https://doi.org/10.3389/fimmu.2026.1741761",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-16",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-07-17",
+      "flags": [],
+      "isNew": false,
       "notes": "Frontiers in Immunology 17:1741761, Viral Immunology section. Published Jun 30, 2026. Hannover Medical School (Germany) group; not Charité/Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers article page."
     },
     {
@@ -1395,11 +1408,9 @@
       "why": "One of the first direct physical (not just functional) proofs of vagus-nerve damage in a post-viral illness, relevant to the dysautonomia (nervous-system control problems like dizziness on standing) seen in ME/CFS and post-COVID ME/CFS — though this is a very small study (12 patients) and needs replication.",
       "link": "https://doi.org/10.1016/j.ijid.2026.108973",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-16",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-07-17",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42425362. Published online Jul 9, 2026 (ahead of print). Italian group. Small sample (n=12 vs 8 controls) — preliminary. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
     },
     {
@@ -1412,11 +1423,9 @@
       "why": "A top-journal endorsement of the 'lingering virus' theory behind ME/CFS and long COVID, relevant to the pathomechanism track even though it presents a synthesis of existing evidence rather than new experiments.",
       "link": "https://doi.org/10.1038/s41590-026-02577-5",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-16",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-07-17",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42414623. Published Jul 7, 2026. Review article (Washington University in St. Louis group), no new primary data. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
     },
     {
@@ -1429,11 +1438,9 @@
       "why": "Proposes a simple, objective, repeatable test — hand-grip strength — as a stand-in marker for muscle-related symptom severity in post-COVID illness, echoing the muscle-focused mechanism Wirth and Scheibenbogen propose for ME/CFS, though it is not from their group.",
       "link": "https://doi.org/10.1186/s12967-026-08579-z",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-16",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-07-17",
+      "flags": [],
+      "isNew": false,
       "notes": "PMID 42415070. J Transl Med 24(1):871. Published Jul 7, 2026. 204 participants (102 post-COVID, 102 recovered controls), 6-month follow-up; also measured neuroaxonal injury markers (NfL, GFAP) which did not track with muscle function. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
     }
   ]

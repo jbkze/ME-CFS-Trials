@@ -7,25 +7,28 @@ year: 2026
 venue: "Journal of Translational Medicine"
 doi: 10.1186/s12967-026-08575-3
 url: https://doi.org/10.1186/s12967-026-08575-3
-pdf: https://doi.org/10.1186/s12967-026-08575-3
-text: null
+pdf: literature/papers/2026-gile-association-rapamycin-treatment-modulation/paper.pdf
+text: literature/papers/2026-gile-association-rapamycin-treatment-modulation/paper.txt
 tags: [immunology, metabolism, neuroinflammation, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: gile2026
+cover: "[[literature/papers/2026-gile-association-rapamycin-treatment-modulation/cover.png]]"
 ---
 
 # Association of rapamycin treatment with the modulation of purine metabolism, reduced microglial inflammatory responses, improved mitochondrial energy metabolism, and alleviation of fatigue symptoms in ME/CFS subjects: pilot findings from phase-II observational study
 
 ## Related files
+![[literature/papers/2026-gile-association-rapamycin-treatment-modulation/paper.pdf]]
 - [[literature/papers/2026-gile-association-rapamycin-treatment-modulation/citation.bib]]
+- [[literature/papers/2026-gile-association-rapamycin-treatment-modulation/paper.txt]]
 
 ## Summary
 
 In a small ongoing trial without a placebo group, ME/CFS patients took low-dose rapamycin (a drug that calms an overactive cell-growth signal) for three months. Blood and immune tests showed shifts in energy-related chemicals, calmer brain immune cells, better-working cellular batteries (mitochondria), and patients reported less fatigue.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
