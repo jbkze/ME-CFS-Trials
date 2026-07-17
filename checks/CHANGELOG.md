@@ -15,6 +15,22 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-17 (scheduled autonomous, 04:11 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00 and ResetME 2024-520094-13-00), Charité CFC clinical-research/NKSG listing, PIONEER/inebilizumab, semaglutide (Solve M.E.), BC007/APTA "unCOVer Erlangen", PAIS-AriLis, BMFTR "Nationale Dekade" funding call, plus fresh open-ended German/English web search for new German ME/CFS/Post-COVID drug trials.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged: NCT07529197 (IMPACT, recruiting), DRKS00033897 (IA-Surv, recruiting), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry), RAPID_REVIVE (still terminated, ctStatus "Ended" via CTIS API).
+- Leads re-checked, still fail confirmation standard: PIONEER (NKSG-2/inebilizumab — signal strengthened slightly via a German ME/CFS society Q&A citing BMFTR on a 2026-start Uplizna/inebilizumab Phase II with NKSG phase-2 funding "scheduled for Q1 2026," but still no CFC subpage or registry entry), semaglutide (Scheibenbogen/Solve M.E. award), BC007/APTA "unCOVer Erlangen" (Fraunhofer SCAI partnership is on recruitment methodology generally, not a registered trial; separate CIBIT investigator-initiated-trial agreement is in Coimbra, Portugal, not Germany), daratumumab "ResetME" (Norway — still Oslo/Bergen only, no German site), PAIS-AriLis, BMFTR "Nationale Dekade" funding call (due 2026-09-02, no recipients announced, no Mitodicure/MDC002 mention).
+- Sources checked — papers: PubMed/Europe PMC date-filtered sweep for papers published/preprinted since 2026-07-14, targeted Wirth/Scheibenbogen author searches, medRxiv/bioRxiv/Research Square/Preprints.org, Health Rising/The Sick Times as leads, general web search; several candidates found were already tracked (St-Jean DecodeME clusters, Yagin metabolomics, Wendt PAIS biomarkers, Eaton-Fitch Australian registry — all pre-existing entries); 1 genuinely new paper confirmed via Europe PMC.
+- **Papers — 1 new confirmed**:
+  - Mihatsch L, Schartner L, de Luna JL, et al. (Scheibenbogen C), Journal of Translational Medicine, Jul 2026 — pediatric/young-adult ME/CFS cohort (147 patients aged 10–25 vs. 83 controls) showing hand-grip strength testing detects a real, measurable drop in muscle function but cannot alone discriminate ME/CFS from other fatiguing conditions. DOI 10.1186/s12967-026-08654-5. **Scheibenbogen co-author — HIGH PRIORITY.**
+- isNew set true: `mihatsch-2026-pediatric-handgrip-strength` (new this run, will clear next run)
+- isNew cleared: `wendt-2026-pais-biomarkers-systematic-review`, `acanfora-2026-vagal-denervation-longcovid`, `vidal-2026-rna-virus-persistence-review`, `wunderle-2026-muscle-function-postcovid-longitudinal` (no longer new since last check)
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; terminated: 1 — RAPID_REVIVE)
+- Notes: Literature archive updated via `scripts/literature_intake.py` for the 1 new paper (Mihatsch: PDF fetched successfully) plus a retry-success backfill — `gile-2026-rapamycin-purine-microglia-pilot` (previously no-PDF) now has a full-text PDF fetched (96 papers total, 78 with PDF, 18 no-PDF noted).
+
 ## 2026-07-16 (scheduled autonomous, 04:06 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00 and ResetME 2024-520094-13-00), Charité CFC clinical-research/NKSG listing, PIONEER/inebilizumab, semaglutide (Solve M.E.), BC007/APTA "unCOVer Erlangen", PAIS-AriLis, BMFTR "Nationale Dekade" funding call, plus fresh open-ended German/English web search for new German ME/CFS/Post-COVID drug trials.
 - New trials: none
