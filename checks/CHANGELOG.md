@@ -15,6 +15,20 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-18 (manual, 04:11 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00), Charité CFC clinical-research/NKSG listing, PIONEER/inebilizumab (DRKS/clinicaltrialsregister.eu/ClinicalTrials.gov searches + conference-abstract check), semaglutide (Solve M.E.), BC007/APTA "unCOVer Erlangen" (aptatherapeutics.com/news-update), PAIS-AriLis, BMFTR "Nationale Dekade" funding call (incl. Feb 2026 steering-committee update and Jun 2026 Förderrichtlinie text), ResetME (Norway, out-of-scope check), plus fresh open-ended German/English web search for new German ME/CFS/Post-COVID drug trials and new papers.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING, last update posted 2026-04-14), DRKS00033897 (IA-Surv, "Recruiting ongoing", last DRKS update 2026-01-30), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry, mitodicure.com unchanged), RAPID_REVIVE (still terminated, ctStatus "Ended" via CTIS API).
+- Leads re-checked, still fail confirmation standard: PIONEER (NKSG-2/inebilizumab — CFC's NKSG listing still shows only IA-PACS-CFS/HBOT/RIA/PoCoVIT/VERI-LONG, no PIONEER subpage; targeted registry searches for "inebilizumab" turned up no ME/CFS/Germany hits), semaglutide (Scheibenbogen/Solve M.E. award, still announcement-stage), BC007/APTA "unCOVer Erlangen" (APTA's news page unchanged since Jun 30 2026 patent grant; company says it "anticipates enrolment of first patients towards the end of 2026" for new European sites but names no city or registry ID), daratumumab "ResetME" (Norway — still Oslo/Bergen only, no German site), PAIS-AriLis (no DRKS entry or dedicated Charité subpage found), BMFTR "Nationale Dekade" funding call (applications due 2026-09-02, no recipients announced; Feb 2026 steering-committee update names only a NAKO/NUM sequencing initiative, no ME/CFS-specific awardees).
+- Also ruled out this run: a new DRKS entry (DRKS00035372, "EPSILON", Leipzig/Charité/MPI heart-rate-variability post-COVID study) — explicitly excludes prior ME/CFS history and has no drug intervention, out of scope on both counts.
+- Sources checked — papers: Wirth/Scheibenbogen author searches, general ME/CFS web search for July 2026 publications; two candidates surfaced and checked against the existing database — St-Jean et al. DecodeME symptom-cluster preprint (already tracked, `st-jean-2026-decodeme-symptom-clusters`) and a Maccallini (2026) DecodeME/Million-Veteran-Program GWAS meta-analysis preprint (posted to Zenodo, a lower-tier general-purpose repository, not medRxiv/bioRxiv or a peer-reviewed journal, and not Wirth/Scheibenbogen-affiliated — fails the papers-track credibility bar per ROUTINE.md, not added). No genuinely new in-scope paper found today.
+- isNew cleared: `mihatsch-2026-pediatric-handgrip-strength` (no longer new since last check)
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; terminated: 1 — RAPID_REVIVE)
+- Notes: No changes to trials or papers today; all baseline entries re-confirmed current. No literature-archive changes needed (no new papers added).
+
 ## 2026-07-17 (scheduled autonomous, 04:11 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00 and ResetME 2024-520094-13-00), Charité CFC clinical-research/NKSG listing, PIONEER/inebilizumab, semaglutide (Solve M.E.), BC007/APTA "unCOVer Erlangen", PAIS-AriLis, BMFTR "Nationale Dekade" funding call, plus fresh open-ended German/English web search for new German ME/CFS/Post-COVID drug trials.
 - New trials: none

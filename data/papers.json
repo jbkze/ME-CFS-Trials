@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-17",
+  "last_check": "2026-07-18",
   "papers": [
     {
       "id": "mihatsch-2026-pediatric-handgrip-strength",
@@ -13,9 +13,9 @@
       "why": "From Carmen Scheibenbogen's group: offers a simple, cheap, repeatable physical test that could serve as an objective way to track post-exertional muscle decline in children and teenagers for future drug trials, even though it can't yet stand alone as a diagnostic test.",
       "link": "https://doi.org/10.1186/s12967-026-08654-5",
       "first_seen": "2026-07-17",
-      "last_checked": "2026-07-17",
-      "flags": ["new"],
-      "isNew": true,
+      "last_checked": "2026-07-18",
+      "flags": [],
+      "isNew": false,
       "notes": "Published online Jul 15, 2026. Pediatric/young-adult ME/CFS evaluation cohort (Charité/TU München group, incl. Behrends and Pricoco), 147 patients aged 10-25 vs 83 controls; two grip-strength sessions 60 minutes apart. Scheibenbogen is a co-author — HIGH PRIORITY. Confirmed via Europe PMC REST API (title/authors/journal/date match)."
     },
     {
