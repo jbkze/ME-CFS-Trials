@@ -4,9 +4,9 @@ id: steinkirchner2026
 title: "Perioperative outcomes in patients with myalgic encephalomyelitis/chronic fatigue syndrome undergoing general anesthesia: a retrospective matched-pair study"
 authors: ["Steinkirchner FM", "Kaufmann CK", "Kraus RF", "Käss M", "Schieffer E", "Graf BM", "Lassen C", "Kimmerling V", "Dejaco A"]
 year: 2026
-venue: "medRxiv (preprint)"
-doi: 10.64898/2026.04.06.26348924
-url: https://doi.org/10.64898/2026.04.06.26348924
+venue: "BMC Anesthesiology"
+doi: 10.1186/s12871-026-04102-5
+url: https://doi.org/10.1186/s12871-026-04102-5
 pdf: literature/papers/2026-steinkirchner-perioperative-outcomes-undergoing-general/paper.pdf
 text: literature/papers/2026-steinkirchner-perioperative-outcomes-undergoing-general/paper.txt
 tags: [treatment]
@@ -36,4 +36,4 @@ This is practical safety information for patients and doctors: general anaesthes
 
 ## Notes
 
-Preprint, not yet peer-reviewed, posted Apr 7, 2026. German group (University Hospital Regensburg). Small sample (n=15 pairs); post-exertional malaise not tracked, noted by the authors as a limitation. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record.
+Originally a medRxiv preprint (posted Apr 7, 2026, doi 10.64898/2026.04.06.26348924), now formally published in peer-reviewed BMC Anesthesiology (Jul 16, 2026, PMID 42464211, doi 10.1186/s12871-026-04102-5) — journal/date/link updated 2026-07-19 to the peer-reviewed version. German group (University Hospital Regensburg). Small sample (n=15 pairs); post-exertional malaise not tracked, noted by the authors as a limitation. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record.

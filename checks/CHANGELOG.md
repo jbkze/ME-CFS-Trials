@@ -15,6 +15,20 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-19 (scheduled autonomous, 04:09 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), CTIS public API (rapid-revive 2024-511628-16-00), mitodicure.com (pipeline/about-us), Charité CFC clinical-research listing, a BMFTR NKSG Phase 2/inebilizumab funding-project page (gesundheitsforschung-bmftr.de, award 01EP2601), plus fresh open-ended German/English web search for new German ME/CFS/Post-COVID drug trials and new papers.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING, last update posted 2026-04-14), DRKS00033897 (IA-Surv, "Rekrutierung läuft", last DRKS update 2026-01-30), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry, mitodicure.com unchanged), RAPID_REVIVE (still terminated, ctStatus "Ended" via CTIS API).
+- Leads re-checked, still fail confirmation standard: PIONEER (NKSG-2/inebilizumab — found and read the BMFTR project-funding page directly this run: funding ID 01EP2601, PI Prof. Carmen Scheibenbogen, €7,999,049 for 2026–2029, confirms the Phase 2 NKSG award but is itself only a grant/funding-announcement page per ROUTINE.md's exclusion list — no registry ID, no trial-specific subpage, and cfc.charite.de/en/clinical_research/ still lists only NKSG/Registry & Biobank/LCovB/PAIS Berlin/PAIS CARE/CFS_CARE, no PIONEER subpage); BMFTR "Nationale Dekade" funding call (unchanged, applications due 2026-09-02).
+- Sources checked — papers: PubMed date-sorted sweep for ME/CFS/chronic-fatigue-syndrome entries, targeted Wirth/Scheibenbogen author searches, general web search for July 2026 publications. No genuinely new in-scope paper found today; all recent PubMed hits (Mihatsch, Eaton-Fitch) were already tracked.
+- **Papers — details update (not a new paper):** `steinkirchner-2026-perioperative-anesthesia` — the previously-tracked medRxiv preprint (posted Apr 7, 2026) has now been formally published in the peer-reviewed journal **BMC Anesthesiology** (Jul 16, 2026, PMID 42464211, DOI 10.1186/s12871-026-04102-5). Updated `journal`, `date`, `link` and `notes` to the peer-reviewed version; re-fetched the literature archive PDF/text/cover for this entry (`literature/papers/2026-steinkirchner-perioperative-outcomes-undergoing-general/`) so it reflects the published version rather than the preprint.
+- isNew: no changes (nothing newly added or newly stale this run).
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; terminated: 1 — RAPID_REVIVE)
+- Notes: No new or changed trials, no new papers. One existing paper (Steinkirchner et al.) upgraded from preprint to peer-reviewed publication — details_changed-style update, tracked in this entry per ROUTINE.md's "material change with same status" logic (adapted here for a papers-track record).
+
 ## 2026-07-18 (manual, 04:11 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), CTIS public API (rapid-revive 2024-511628-16-00), Charité CFC clinical-research/NKSG listing, PIONEER/inebilizumab (DRKS/clinicaltrialsregister.eu/ClinicalTrials.gov searches + conference-abstract check), semaglutide (Solve M.E.), BC007/APTA "unCOVer Erlangen" (aptatherapeutics.com/news-update), PAIS-AriLis, BMFTR "Nationale Dekade" funding call (incl. Feb 2026 steering-committee update and Jun 2026 Förderrichtlinie text), ResetME (Norway, out-of-scope check), plus fresh open-ended German/English web search for new German ME/CFS/Post-COVID drug trials and new papers.
 - New trials: none
