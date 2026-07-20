@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/trials.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last check: **2026-07-19**
+- Last check: **2026-07-20**
 - Trials tracked: **4** (open for enrollment: **2**, watchlist: **1**, archived: **1**)
 - ⭐ = linked to Klaus Wirth or Carmen Scheibenbogen.
 
@@ -10,8 +10,8 @@
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-07-19 | — |
-| [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) | 🟢 Recruiting | Immunoadsorption (IA apheresis) | — | Berlin (Gemeinschaftskrankenhaus Havelhöhe), Potsdam (Arztpraxis (medical practice)) | DRKS DRKS00033897 | 2026-07-19 | — |
+| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-07-20 | — |
+| [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) | 🟢 Recruiting | Immunoadsorption (IA apheresis) | — | Berlin (Gemeinschaftskrankenhaus Havelhöhe), Potsdam (Arztpraxis (medical practice)) | DRKS DRKS00033897 | 2026-07-20 | — |
 
 ## Planned / not yet recruiting (also relevant)
 
@@ -23,4 +23,4 @@
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| [RAPID_REVIVE](https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00) | 🔴 Terminated | Vidofludimus calcium (IMU-838) | — | Frankfurt am Main (University Hospital Frankfurt (sponsor / coordinating)), Berlin (Charité – Universitätsmedizin Berlin (Prof. Martin Witzenrath)) | CTIS 2024-511628-16-00 | 2026-07-19 | — |
+| [RAPID_REVIVE](https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00) | 🔴 Terminated | Vidofludimus calcium (IMU-838) | — | Frankfurt am Main (University Hospital Frankfurt (sponsor / coordinating)), Berlin (Charité – Universitätsmedizin Berlin (Prof. Martin Witzenrath)) | CTIS 2024-511628-16-00 | 2026-07-20 | — |
