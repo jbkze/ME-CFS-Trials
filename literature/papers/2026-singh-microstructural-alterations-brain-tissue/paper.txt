@@ -1,0 +1,1551 @@
+TYPE Original Research
+PUBLISHED 17 July 2026
+DOI 10.3389/fmed.2026.1824498
+OPEN ACCESS
+EDITED BY
+Jiandi Wan,
+University of California, Davis, CA,
+United States
+REVIEWED BY
+Nicola Manocchio,
+University of Rome Tor Vergata, Italy
+Marine Tanashyan,
+Research Center of Neurology, Russia
+*CORRESPONDENCE
+Tanoj Bahadur Singh
+tanoj.singh@griﬃthuni.edu.au
+RECEIVED 06 March 2026
+REVISED 10 June 2026
+ACCEPTED 29 June 2026
+PUBLISHED 17 July 2026
+CITATION
+Singh TB, Marshall-Gradisnik S,
+Barnden L, Eaton-Fitch N, Huynh TH,
+Inderyas M and Thapaliya K (2026)
+Microstructural alterations in brain tissue
+of ME/CFS and long COVID using
+diﬀusion tensor imaging and diﬀusion
+kurtosis imaging.
+Front. Med. 13:1824498.
+doi: 10.3389/fmed.2026.1824498
+COPYRIGHT
+© 2026 Singh, Marshall-Gradisnik,
+Barnden, Eaton-Fitch, Huynh, Inderyas
+and Thapaliya. This is an open-access
+article distributed under the terms of the
+Creative Commons Attribution License
+(CC BY). The use, distribution or
+reproduction in other forums is
+permitted, provided the original author(s)
+and the copyright owner(s) are credited
+and that the original publication in this
+journal is cited, in accordance with
+accepted academic practice. No use,
+distribution or reproduction is permitted
+which does not comply with these terms.
+Microstructural alterations in
+brain tissue of ME/CFS and long
+COVID using diﬀusion tensor
+imaging and diﬀusion kurtosis
+imaging
+Tanoj Bahadur Singh*, Sonya Marshall-Gradisnik,
+Leighton Barnden, Natalie Eaton-Fitch, Tuong Hieu Huynh,
+Maira Inderyas and Kiran Thapaliya
+National Center for Neuroimmunology and Emerging Diseases, Griﬃth University, Gold Coast, QLD,
+Australia
+Introduction: Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS)
+and long COVID have overlapping symptoms, such as profound fatigue, cognitive
+impairment, post-exertional malaise, pain and sleep disturbances that are
+debilitating and reduce quality of life. While Magnetic Resonance Imaging (MRI)
+techniques, speciﬁcally Diﬀusion Tensor Imaging (DTI) and Diﬀusion Kurtosis
+Imaging (DKI), have been used to investigate brain tissue microstructure in
+ME/CFS or long COVID, no study has yet combined these modalities to directly
+compare tissue microstructural diﬀerences between people living with ME/CFS
+and long COVID.
+Methods:
+We recruited 37 ME/CFS participants (Age: 43.56 ± 12.5), 19 long
+COVID participants (Age: 47.92 ± 13.3), and 27 healthy controls (Age: 37.9 ±
+10.4). Data were acquired using a 3 Tesla (3T) Prisma MRI scanner. DTI and
+DKI metrics were determined using MRtrix v3.0.7 and Designer V2.0 software,
+respectively. Voxel-based statistical analysis of cohort diﬀerences was performed
+using the Statistical Parametric Mapping (SPM12) toolbox in MATLAB. Correlation
+analysis was performed between DTI, DKI metrics and clinical measures such as
+duration of illness, fatigue severity, SF36 domains and WHODAS domains.
+Results:
+Compared with healthy controls, individuals with ME/CFS showed
+microstructural alterations in the cingulum, supplementary motor areas, and
+parts of the corpus callosum (all p < 0.05). Long COVID participants
+demonstrated microstructural alterations in regions including the fusiform
+and precentral gyrus and in major white matter tracks (all p < 0.05). Direct
+comparisons between ME/CFS and long COVID revealed diﬀerence in the left
+corona radiata (p = 0.001).
+Conclusion:
+This study identiﬁes distinct tissue microstructural alterations in
+ME/CFS and long COVID and oﬀers a vital insight into the neuropathological basis
+of shared symptoms in both conditions.
+KEYWORDS
+Myalgic
+Encephalomyelitis/Chronic
+Fatigue
+Syndrome,
+ME/CFS,
+diﬀusion
+tensor
+imaging, DTI, diﬀusion kurtosis imaging, DKI, long COVID, MRI
+Frontiers in Medicine
+01
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+1 Introduction
+People
+with
+Myalgic
+Encephalomyelitis/Chronic
+Fatigue
+Syndrome (ME/CFS) and long COVID experience a range of
+shared symptoms, including severe fatigue, cognitive diﬃculties,
+post-exertional malaise, pain, and disrupted sleep, that are highly
+disabling and cause a signiﬁcant decrease in quality of life (1, 2).
+Currently, there is no universal diagnostic test for ME/CFS or long
+COVID (3). The diagnosis of ME/CFS is based on standardized
+case deﬁnitions such as the Canadian Consensus Criteria (CCC)
+(4) and International Consensus Criteria (ICC) (5). Similarly, the
+diagnosis of long COVID uses the World Health Organization
+(WHO) case deﬁnition (6), a detailed medical history, and the
+patient’s physical examination to rule out other conditions (7, 8).
+Under the WHO International Classiﬁcation of Diseases,
+ME/CFS is classiﬁed as a disease of the nervous system (9).
+Long COVID also presents with various neurological symptoms
+(10). Cognitive impairment is a prominent central nervous system
+(CNS) related symptom in both conditions, often presenting as
+diﬃculties with memory, concentration, or “brain fog” (11, 12).
+Other CNS-related symptoms such as fatigue, sleep disturbances,
+headache and pain are also present in these conditions (11).
+Therefore, neuroimaging techniques such as MRI have been used
+to study brain dysfunction in ME/CFS and long COVID (13, 38).
+Diﬀusion weighted MRI (DWI), which measures the diﬀusion
+of water molecules, is a non-invasive technique to study brain
+microstructure, such as axons, glial cells and myelin (14).
+Diﬀusion Tensor Imaging (DTI) is a speciﬁc type of
+modeling of the DWI datasets, which quantiﬁes tissue water
+diﬀusion and enables the indirect measurement of the degree
+of diﬀusion anisotropy and its structural orientation (15). DTI
+is based on the Brownian motion of water molecule diﬀusion
+and is anisotropic along the axonal pathway, as perpendicular
+diﬀusion to the ﬁber is hindered by myelin sheaths, axonal
+cellular membranes and the neuroﬁbrils (16, 17). This helps
+to estimate the axonal organization in the brain and provides
+image contrast based on structural orientation thereby indirectly
+assessing neuroanatomy structure at a microscopic level (17).
+The diﬀusion tensor has three perpendicular eigenvectors and
+three positive eigenvalues (18). Fractional Anisotropy (FA), the
+most widely used scalar, is basically a normalized variance of the
+eigenvalues (18). Mean Diﬀusion (MD) is the mean diﬀusion of
+each direction, which is the average of three eigenvalues (19).
+Axial Diﬀusion (AD) describes the diﬀusion rate along the primary
+axis, which is the largest eigenvalue of diﬀusion, while Radial
+Diﬀusion (RD) reﬂects the average diﬀusivity along the two minor
+axes (19).
+Diﬀusion Kurtosis Imaging (DKI), an extension of DTI,
+enables the estimation of the diﬀusion kurtosis tensor to
+characterize additional non-Gaussian diﬀusion properties within
+complex biological tissues by estimating the excess kurtosis
+of the displacement distribution (20, 21). DKI has the ability
+to capture non-Gaussian diﬀusion and is more sensitive to
+microstructural complexity, although it requires a multishell
+acquisition protocol and has comparatively lower spatial resolution
+(22, 23). Similar to DTI, DKI possesses corresponding scalars
+for measuring diﬀusion kurtosis, including kurtosis fractional
+anisotropy (KFA), mean kurtosis (MK), axial kurtosis (AK)
+and radial kurtosis (RK) (24). KFA summarizes the directional
+variation in the degree of non-Gaussian diﬀusion (25). Similarly,
+MK quantiﬁes the magnitude of diﬀusion kurtosis along the
+three spatial axes (26). Likewise, AK quantiﬁes the magnitude
+of diﬀusion kurtosis along the main axis, and RK quantiﬁes
+the magnitude of diﬀusion kurtosis perpendicular to the main
+axis (26).
+DTI and DKI parameters have been widely used to investigate
+microstructural changes in the brain across various neurological
+conditions (27). People living with ME/CFS and long COVID
+also experience overlapping neurological symptoms, including
+brain fog, fatigue, cognitive impairment, and sleep disturbances
+(11, 12). Given these shared clinical features, examining both
+the similarities and diﬀerences in brain tissue microstructural
+alterations is important to improve our understanding whether
+these two conditions are similar or distinct. Thapaliya et al. (28)
+has demonstrated the microstructural changes in the brainstem
+region using DTI where AD and MD were signiﬁcantly decreased
+whereas RD was increased in people with ME/CFS compared
+to healthy controls (28). Yu et al. reported ME/CFS individuals
+with post-infectious onset showed increased AD, whereas those
+with gradual onset exhibited reduced AD (29). Zeineh et al. (30)
+reported increased FA in the right anterior arcuate, while Kimura
+et al. (31) observed signiﬁcantly lower FA in the genu of the
+corpus callosum and in the anterior limb of the internal capsule
+of ME/CFS compared to healthy controls. Furthermore, in people
+living with long COVID, Liang et al. (32) reported increases in FA
+in several white matter regions and in MD in the left amygdala.
+Studies have also reported signiﬁcantly decreased FA, MD, RD
+and AD in long COVID compared to healthy controls (33, 34).
+Additionally, Thapaliya et al. demonstrated signiﬁcantly higher FA
+value in the right superior longitudinal fasciculus in long COVID
+compared to COVID-recovered healthy controls and signiﬁcantly
+lower AD and MD in the left caudate in COVID-recovered
+healthy control compared to non-COVID-healthy controls (6).
+Using the DKI method, Kimura et al. (31) found a signiﬁcant
+decreases in the DKI metric MK in the right frontal area, anterior
+cingulate cortex, superior longitudinal fasciculus and left parietal
+areas. Yuan et al. (35) also found reduced MK and RK in the
+right inferior fronto-occipital fasciculus in recovered COVID-19
+patients. Overall, inconsistencies in ME/CFS DTI ﬁndings were
+driven by varying diagnostic criteria, heterogeneous symptoms,
+sample size, data processing pipelines and the scarcity of DKI
+studies in ME/CFS and long COVID, limits the robustness of the
+current conclusions.
+Given the equivocal nature of current ﬁndings, further
+investigation of tissue microstructural alterations in ME/CFS
+and
+long
+COVID
+is
+critical.
+Furthermore,
+no
+study
+has
+yet
+assessed
+DTI
+and
+DKI
+methods
+to
+directly
+compare
+tissue
+microstructural
+alterations
+between
+ME/CFS
+and
+long COVID. Therefore, this study aims to compare tissue
+microstructural alterations between ME/CFS, long COVID, and
+healthy controls using DTI and DKI metrics. Additionally,
+this
+study
+will
+explore
+the
+correlation
+between
+DTI
+and
+DKI metrics and cognitive measures in both ME/CFS and
+long COVID.
+Frontiers in Medicine
+02
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+2 Materials and methods
+2.1 Participant recruitment
+The study was approved by the Griﬃth University Human
+Research Ethics Committee (Ref: 2022/666) and conducted in
+accordance with the principles outlined in the Declaration
+of Helsinki. Written informed consent was obtained from all
+participants prior to inclusion in the study.
+This cross-sectional study was carried out in the National
+Center for Neuroimmunology and Emerging Diseases (NCNED),
+Gold Coast, Australia. Participants were recruited via the NCNED
+research registry database, as previously described in Thapaliya
+et al. (34). 37 ME/CFS participants were recruited after meeting
+the Canadian Consensus Criteria (CCC) (4) or International
+Consensus Criteria (ICC) (5) and had received a formal diagnosis
+of ME/CFS by a physician. 19 long COVID participants were
+recruited after meeting the WHO working case deﬁnition (6).
+27 healthy controls were recruited if they reported no chronic
+health conditions, underlying illness and had no prior COVID-19
+infection. Medical histories for diseased and control participants
+were reviewed to identify comorbid symptoms or exclusionary
+diagnoses, including mental illness, malignancies, autoimmune,
+neurological, or cardiovascular diseases. Female participants were
+excluded if they were pregnant and/or breastfeeding. For ME/CFS
+and long COVID, exclusionary mental illness applies only if
+they were present before the illness was diagnosed. Furthermore,
+pregnancy and breastfeeding were excluded due to safety issue of
+fetus during MRI scans. Additionally, pregnancy and breastfeeding
+are associated with substantial hormonal and metabolic changes
+that can inﬂuence brain microstructure, introducing potential
+confounding eﬀects in diﬀusion-based measurements (36, 37).
+2.2 Clinical measures
+The National Center for Neuroimmunology and Emerging
+Diseases (NCNED) in conjunction with the Centers for Disease
+Control and Prevention (CDC), has developed the research registry
+questionnaire and distributed it online through Lime Survey and
+Redcap, as reported in a previous publication (38). The CDC
+2005 Symptom Inventory is a self-report questionnaire designed
+by the CDC regarding physical symptoms that a ME/CFS patient
+may have experienced during the past month (39). One of the
+questionnaires captured fatigue severity from the ICC (5) and
+CCC (4) criteria. The inventory also asks the participant to
+rate his/her experience in the past month regarding unusual
+fatigue (39). Fatigue severity was self-reported using the CDC’s
+Symptom Inventory, which scores symptoms on a ﬁve-level Likert
+scale: 1 = very mild, 2 = mild, 3 = moderate, 4 = severe,
+and 5 = very severe (39). Fatigue was considered present if
+it was reported as being at least very mild within the month
+prior to completing the questionnaire (40). Quality of life was
+measured using the 36-item Short-Form Health Survey, version
+2 (SF-36v2) (98). Domains of SF-36v2 includes general health,
+physical functioning, role physical, role emotional, pain, mental
+health, vitality and social functioning. Scores for each domain
+fall between 0 and 100%, reﬂecting the individual’s overall level
+of quality of life, with higher percentages indicating better
+perceived wellbeing (40). Functional capacity was evaluated using
+the World Health Organization Disability Assessment Schedule
+2.0 (WHODAS 2.0), a standardized tool for assessing everyday
+functioning (97). Domains of WHODAS 2.0 includes cognitive,
+mobility, self-care, interpersonal-relation, life activity and society.
+Each domain produces a score from 0 to 100%, reﬂecting the
+extent of functional diﬃculty or disability in that area. Higher
+percentages indicate greater impairment, with 0% representing
+no limitation and 100% indicating very severe diﬃculty (40).
+Duration of illness for ME/CFS and long COVID following
+symptom onset was determined based on participant self-reports
+and formal diagnoses made by medical professionals. Table 1 shows
+demographic and clinical characteristics of ME/CFS, long COVID,
+and healthy controls.
+2.3 Imaging parameters
+The diﬀusion data were acquired using a 3Tesla Prisma
+(Siemens Scanner) MRI scanner with a 64-channel head-neck coil.
+DTI data were acquired using 2-shell acquisition protocols: 30
+directions at b = 1,000 s/mm2 and 66 directions at b = 2,500
+s/mm2, along with nine b = 0 scans. Other settings were repetition
+time/echo time = 4,100/75 ms, ﬁeld of view (FOV) = 244 × 244,
+ﬂip angle = 90◦, matrix = 122 × 122, voxel dimension of 2.0 mm3
+and 66 slices, phase encoding direction: anterior to posterior (AP).
+2.4 Data processing
+In this study, for DTI processing, we used the b-value of 1,000
+s/mm2 because the increased b-value leads to a decrease in signal-
+to-noise ratio (SNR) (41) that might aﬀect the estimation of DTI
+metrics. For DKI processing, we used both the shells (b = 1,000
+s/mm2 and b = 2,500 s/mm2 in addition to b = 0). As with all
+higher-order diﬀusion models, DKI requires multishell acquisition
+in order to increase the biological speciﬁcity of diﬀusion imaging
+(42, 43). The b-value optimisation for the DTI study is based on
+Soares et al. (15) and for the DKI study on Yan et al. (44).
+Preprocessing of diﬀusion data was carried out using “topup”
+(45) and “eddy” (46) commands in FSL (FMRIB’s Diﬀusion
+Toolbox). Susceptibility-induced distortions were ﬁrst estimated
+using topup, based on pairs of reverse phase-encoded b = 0
+images. The resulting susceptibility ﬁeld was then incorporated
+into eddy, which performed simultaneous correction for eddy
+current–induced distortions and subject motion, while applying
+the previously estimated ﬁeld to correct for susceptibility eﬀects
+(47). Following these corrections, a brain mask was generated from
+the distortion-corrected diﬀusion data using the bet2 command
+in FSL, with a fractional intensity threshold of 0.25 (48, 49). DTI
+metrics, FA, MD, AD and RD were obtained using dwi2tensor and
+tensor2metric commands in Mrtrix3 version 3.0.7 software (50).
+DKI metrics KFA, MK, AK and RK were obtained using the “tmi”
+command in Designer-v2 software (51). Each participant’s FA map
+was then non-linearly registered to Montreal Neurological Institute
+Frontiers in Medicine
+03
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+TABLE 1 Demographic and clinical characteristics.
+Variables
+ME/CFS
+(n = 37)
+Long COVID
+(n = 19)
+Healthy controls
+(n = 27)
+P-Value
+Missing data
+ME/CFS
+Long COVID
+Age (years)
+43.56 ± 12.5
+47.92 ± 13.3
+37.9 ± 10.4
+0.20a 0.021b 0.618c
+N/A
+N/A
+Sex (F/M)
+30/7
+14/5
+19/8
+N/A
+N/A
+N/A
+Duration of illness
+(years)
+14.53 ± 12.3
+0.78 ± 0.69
+N/A
+<0.001
+6
+1
+Fatigue severity
+3.73 ± 0.82
+3.39 ± 0.5
+N/A
+0.176
+7
+1
+SF36 general health
+31.6 ± 13.7
+55.9 ± 22.5
+80.9 ± 10.2
+<0.001a < 0.001b 0.002c
+10
+6
+SF36 physical
+functioning
+37.2 ± 27.8
+75.7 ± 7.3
+90.9 ± 24.9
+<0.001a 0.028b 0.017c
+11
+1
+SF36 role physical
+13.9 ± 17.8
+43.7 ± 20.4
+97.6 ± 6.4
+<0.001a < 0.001b 0.008c
+11
+5
+SF36 role emotional
+57.1 ± 38.5
+71.4 ± 24.9
+95.8 ± 7.4
+<0.001a 0.002b 0.143c
+11
+3
+SF36 pain
+44.0 ± 24.9
+61.0 ± 29.2
+88.1 ± 15.8
+<0.001a < 0.001b 0.259c
+9
+4
+SF36 mental health
+58.4 ± 20.3
+68.5 ± 17.9
+85 ± 11.6
+<0.001a 0.002b 0.09c
+10
+3
+SF36 vitality
+11.6 ± 10.9
+34.8 ± 23.6
+76.5 ± 12.8
+<0.001a < 0.001b 0.005c
+13
+6
+SF36 social functioning
+22.1 ± 19.2
+55.3 ± 20.2
+94.5 ± 9.0
+<0.001a < 0.001b 0.007c
+11
+6
+WHODAS cognitive
+impairment
+49.6 ± 14.0
+36.2 ± 22.7
+3.0 ± 5.5
+<0.001a < 0.001b 0.004c
+9
+3
+WHODAS mobility
+48.5 ± 21.0
+31.1 ± 20.5
+0.33 ± 1.2
+<0.001a < 0.001b 0.158c
+9
+6
+WHODAS selfcare
+28.1 ± 25.5
+13.2 ± 19.3
+0.00 ± 0.00
+<0.001a 0.01b 0.482c
+8
+2
+WHODAS
+interpersonal
+40.8 ± 26.7
+35.3 ± 32.6
+1.6 ± 3.7
+<0.001a 0.005b 0.079c
+9
+7
+WHODAS life activity
+69.5 ± 21.0
+42.3 ± 27.9
+1.6 ± 4.3
+<0.001a < 0.001b 0.007c
+9
+4
+WHODAS society
+63.8 ± 15.8
+42.5 ± 18.6
+1.6 ± 3.5
+<0.001a < 0.001b <
+0.001c
+9
+3
+Values are given as mean ± standard deviation for ME/CFS, long COVID and Healthy controls. Multiple comparison correction was performed using the Bonferroni method. For the three
+P-values superscript ‘a’ represents ME/CFS vs healthy controls, ‘b’ represents long COVID vs healthy controls and ‘c’ represents ME/CFS vs. long COVID. M: Male, F: Female, n number of
+subjects, ME/CFS: Myalgic Encephalomyelitis/Chronic Fatigue Syndrome.
+(MNI) standard space using the tract-based spatial statistics (TBSS)
+toolkit of FSL (52). The FSL_HCP1065Fa 1 × 1 × 1 mm3 standard
+space image was used as a target. The rest of the DTI metrics (MD,
+AD, and RD) and DKI metrics (KFA, MK, AK, and RK) were
+normalized and warped by applying the deformations obtained
+from the FA co-registration.
+2.5 Statistics
+Voxel-based statistical analysis of FA, MD, AD, RD, KFA,
+MK, AK, and RK comparing ME/CFS, long COVID, and healthy
+controls was performed using the Statistical Parametric Mapping
+(SPM12) toolbox (53). Statistical inference was measured with
+the false discovery rate corrected cluster p-value (cluster p-FDR
+< 0.05). Signiﬁcant regions were overlaid on the T1-weighted
+image (mni_icbm152_t1_tal_nlin_sym_09a).
+Cluster locations
+were identiﬁed with the xjview toolbox (xjView | A viewing
+program for SPM) (54) and FSL software (55).
+All data were assessed for normality using Shapiro-Wilk
+test. Only age was found to be normally distributed while all
+other clinical measures showed non-normal distribution (all
+p < 0.05). Age diﬀerences between ME/CFS, long COVID
+and healthy controls were analyzed using one-way ANOVA.
+Diﬀerences
+in
+clinical
+measures
+across
+three
+groups
+were
+examined using a generalized linear model. Multiple comparisons
+correction
+was
+adjusted
+using
+the
+Bonferroni
+correction
+method (56).
+Correlation analysis between signiﬁcant DTI and DKI metrics
+and clinical measures were performed using partial Spearman’s
+rank correlation. All the statistical analyses were conducted
+using SPSS Statistics version 29.0, and p-values were adjusted
+for multiple comparisons using false discovery rate (57), with
+statistical signiﬁcance deﬁned as pFDR < 0.05. Age and gender
+were included as covariates to control for their potential eﬀects
+in all the analysis. Illness duration was included as an additional
+covariate when examining group diﬀerences between ME/CFS and
+long COVID.
+DTI comparisons between long COVID participants and
+healthy controls were excluded to avoid redundancy and reduce the
+risk of type I error, as these data were already reported in a previous
+publication (34).
+Frontiers in Medicine
+04
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+FIGURE 1
+Findings of DTI in ME/CFS compared to healthy controls (HC). (A) signiﬁcantly increased fractional anisotropy (FA) in the left cingulum (ME/CFS > HC)
+and (B) signiﬁcantly decreased mean diﬀusivity, axial diﬀusivity and radial diﬀusivity in the left medial supplementary motor area/ medial frontal gyrus
+(ME/CFS < HC).
+3 Results
+3.1 Demographic and clinical
+characteristics
+Group comparisons revealed signiﬁcant diﬀerences across
+demographic and clinical measures (Table 1). Long COVID
+participants were older than controls (47.9 ± 13.3 vs. 37.9 ± 10.4
+years, p = 0.021), and illness duration was signiﬁcantly longer in
+ME/CFS than long COVID (14.5 ± 12.3 vs. 0.8 ± 0.7 years, p
+< 0.001).
+Across SF-36 domains, ME/CFS and long COVID patients
+scored signiﬁcantly lower than controls on all subscales (general
+health,
+physical
+functioning,
+role
+physical,
+role
+emotional,
+pain,
+mental
+health,
+vitality
+and
+social
+functioning)
+(all
+p
+≤
+0.05)
+and
+ME/CFS
+showed
+signiﬁcant
+impairment
+compared
+to
+long
+COVID
+on
+general
+health,
+physical
+functioning,
+role
+physical,
+vitality
+and
+social
+functioning
+(all p ≤0.05).
+Across WHODAS domains, ME/CFS and long COVID
+patients scored signiﬁcantly lower than controls on all subscales
+(cognitive
+impairment,
+mobility,
+selfcare,
+interpersonal,
+life
+activity and society) (all p ≤0.01), and ME/CFS showed
+signiﬁcant
+impairment
+compared
+to
+long
+COVID
+on
+cognitive impairment, life activity and societal participation
+(all p ≤0.025).
+3.2 DTI group comparison
+3.2.1 ME/CFS vs. long COVID
+No signiﬁcant diﬀerences in the DTI metrics were observed
+between ME/CFS and long COVID.
+3.2.2 ME/CFS vs. healthy controls
+Voxel-based analysis of DTI metrics revealed (A) signiﬁcantly
+increased FA (p-FDR = 0.024, Peak T = 4.42, Cluster size = 99, X =
+−6, Y = 16, and Z = 28; see Figure 1A, Table 2) in the left cingulum
+of ME/CFS compared to healthy controls, and (B) signiﬁcantly
+decreased MD (p-FDR = 0.019, Cluster size = 109, Peak T = 4.26),
+AD (p-FDR = 0.034, Cluster size = 67, Peak T = 4.08) and RD
+(p-FDR = 0.032, Cluster size = 105, Peak T = 3.94) at the same
+location (X = −1, Y = 2, and Z = 50, see Figure 1B, Table 2) in the
+left supplementary motor area (SMA-L) of the medial frontal gyrus
+in ME/CFS compared to healthy controls.
+3.3 DKI group comparison
+3.3.1 ME/CFS vs. long COVID
+AK was signiﬁcantly increased in the left corona radiata of
+ME/CFS (p-FDR = 0.001, Cluster size = 107, Peak T = 4.65, X =
+−22, Y = 27 and Z = 26; see Figure 2) compared to long COVID.
+3.3.2 ME/CFS vs. healthy controls
+Voxel-based analysis of DKI metrics revealed signiﬁcantly
+increased KFA (p-FDR = 0.021, Peak T = 4.71, Cluster size = 98,
+X = −7, Y = 16, and Z = 29; see Figure 3A, Table 3) in the left
+cingulum of ME/CFS compared to healthy controls. Also, AK was
+signiﬁcantly decreased in the body (p-FDR < 0.001, Peak T = 5.42,
+Cluster size = 247, X = 1, Y = −3, and Z = 24; see Figure 3B,
+Table 3) and genu (p-FDR < 0.001, Peak T = 5.02, Cluster size =
+113, X = 2, Y = 12 and Z = 21; see Figure 3C, Table 3) of corpus
+callosum in ME/CFS compared to healthy controls. There were no
+signiﬁcant diﬀerences in the MK and RK metrics.
+Frontiers in Medicine
+05
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+TABLE 2 Signiﬁcant DTI metrics cluster: ME/CFS vs. Healthy controls.
+DTI
+Metric
+Increased (↑)/
+Decreased (↓)
+Area
+MNI coordinates x y
+z (mm)
+Cluster size
+(voxels)
+Peak
+T-value
+Cluster p-FDR
+FA
+↑
+Left cingulum
+−6 16 28
+99
+4.42
+0.024
+MD
+↓
+SMA-L
+−1 2 50
+109
+4.26
+0.019
+AD
+↓
+SMA-L
+−1 2 50
+67
+4.08
+0.034
+RD
+↓
+SMA-L
+−1 2 50
+105
+3.94
+0.032
+FA, represent Fractional Anisotropy; MD, Mean Diﬀusivity; AD, Axial Diﬀusivity; RD, Radial Diﬀusivity; Cingulum-L, Cingulum-Left; SMA-L, Supplementary motor area of left side, ↑:
+increased, ↓: decreased, FDR: False discovery rate.
+FIGURE 2
+Comparison of ME/CFS and long COVID (ME/CFS < long COVID)
+showing signiﬁcant increase in axial kurtosis (AK) in the left corona
+radiata.
+3.3.3 Long COVID vs. healthy controls
+In DKI of long COVID compared to the healthy controls, we
+observed signiﬁcantly increased MK (p-FDR = 0.024, Peak T =
+4.93, Cluster size = 85, X = 27, Y = −78 and Z = −5; see Figure 4A,
+Table 4) and RK (p-FDR = 0.006, Peak T = 4.66 Cluster size =
+87, X = 26, Y = −78 and Z = −5; see Figure 4A, Table 4) in the
+right fusiform gyrus. RK was increased in the genu of the corpus
+callosum (p-FDR = 0.001, Peak T = 4.76, Cluster size = 125, X
+= 10, Y = 32 and Z = 10; see Figure 4B, Table 4), right superior
+corona radiata (p-FDR = 0.006, Peak T = 4.61, Cluster size = 79,
+X = 28, Y = −1 and Z = 25; see Figure 4C, Table 4), left superior
+corona radiata (p-FDR = 0.012, Peak T = 4.53, Cluster size = 69,
+X = −15, Y = 25 and Z = 43; see Figure 4D, Table 4) and in right
+precentral gyrus (p-FDR = 0.006, Peak T = 4.28, Cluster size = 87,
+X = 48, Y = 2 and Z = 37; see Figure 4E, Table 4) in long COVID
+compared to healthy controls.
+3.4 Correlation analysis with clinical
+measures
+We found signiﬁcant uncorrected correlations between DTI,
+DKI metrics and clinical measures in ME/CFS and long COVID.
+However, we did not ﬁnd any signiﬁcant diﬀerences between
+these metrics after adjusting for multiple comparisons. All the
+correlations analysis between DTI, DKI and clinical measures are
+provided as a Supplementary Table 1–10.
+4 Discussion
+This
+is
+the
+ﬁrst
+study
+to
+characterize
+brain
+tissue
+microstructural alterations in people living with ME/CFS and
+long COVID using both DTI and DKI methods. We identiﬁed
+distinct
+microstructural
+alterations
+between
+ME/CFS,
+long
+COVID and healthy controls. DKI oﬀered valuable insights that
+complemented DTI ﬁndings.
+4.1 Group Comparison: ME/CFS vs. Long
+COVID
+We found signiﬁcant diﬀerences in the DKI metric between
+ME/CFS and long COVID. There was a signiﬁcant increase in
+AK in the left corona radiata, which is the major projection ﬁber
+and includes corticospinal, corticopontine and thalamocortical
+ﬁbers (58). Yu et al. (59) in their DTI based study also reported
+higher AD in the major association ﬁber in ME/CFS. Elevated AK
+typically reﬂects greater diﬀusion complexity or restriction along
+the axonal axis, which is consistent with increased cellular packing,
+a more constrained microenvironment, or heightened structural
+complexity within axons (60). The microstructural alterations
+observed in the left corona radiata may therefore represent
+compensatory increases in cellular density or neuroinﬂammatory
+processes (61, 62). In addition, the corticospinal, corticobulbar,
+and thalamocortical pathways, which traverse the corona radiata
+are essential for voluntary motor control, ﬁne and gross
+motor coordination, and sensory gating (63–65). Consequently,
+disruptions in the microstructure of the corona radiata could
+plausibly contribute to the motor diﬃculties, altered sensory
+processing, and cognitive impairment observed in these conditions.
+Notably, our DTI analysis revealed no signiﬁcant diﬀerences
+between ME/CFS and long COVID. This underscores the ability of
+DKI to overcome critical DTI limitations such as the inability to
+resolve crossing ﬁbers (66) and, higher test-retest variability (67).
+4.2 Group comparison: ME/CFS vs. healthy
+controls
+Our DTI study found signiﬁcantly decreased MD, AD and RD
+in the left SMA and increased FA in the left cingulum of ME/CFS
+compared to healthy controls. Our ﬁndings align with previous
+ﬁndings where decreased AD and MD and also increased FA
+were reported in people living with ME/CFS compared to healthy
+Frontiers in Medicine
+06
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+FIGURE 3
+Findings of DKI in ME/CFS compared to healthy controls (HC) showing (A) signiﬁcantly increased kurtosis fractional anisotropy in the left cingulum
+(ME/CFS > healthy controls) (B) signiﬁcantly decreased axial kurtosis in the body of the corpus callosum (ME/CFS > healthy controls) and (C)
+signiﬁcantly decreased axial kurtosis in the genu of the corpus callosum (ME/CFS < healthy controls).
+TABLE 3 Signiﬁcant DKI metrics cluster: ME/CFS vs. Healthy Controls.
+DKI
+metric
+Increased (↑)/
+Decreased (↓)
+Area
+MNI coordinates x y
+z (mm)
+Cluster size
+(voxels)
+Peak
+T-value
+Cluster p-FDR
+KFA
+↑
+Left Cingulum
+−7 16 29
+98
+4.71
+0.021
+MK
+N/A
+N/A
+N/A
+N/A
+N/A
+N/A
+AK
+↓
+Genu of CC
+2 12 21
+113
+5.02
+0.000
+↓
+Body of CC
+1 −3 24
+247
+5.42
+0.000
+RK
+N/A
+N/A
+N/A
+N/A
+N/A
+N/A
+KFA, Kurtosis Fractional Anisotropy; MK, Mean Kurtosis; AK, Axial Kurtosis; RK, Radial Kurtosis; CC, Corpus Callosum; ↑: increased, ↓: decreased, FDR: False discovery rate.
+controls (28). Similarly, Wu et al. demonstrated microstructural
+changes in the left cingulum in ME/CFS (68). The SMA is located in
+the medial aspect of the superior frontal gyrus, involved in higher-
+order cognition, including planning, initiation and execution of
+complex voluntary actions and higher-order processes such as
+speech and motor sequencing (69). Similarly, the cingulum is a
+large association ﬁber pathway and also a part of the limbic system,
+which connects cingulate gyrus to the frontal, parietal, temporal
+and occipital cortices, allowing for integration of memory, emotion
+and executive function (70, 71). The decrease of MD, AD, and RD
+in the SMA could indicate an alteration in myelination and cellular
+density of the membrane, probably indicating cellular swelling or
+cellular proliferation (28, 72, 73). Furthermore, increased in FA
+in the cingulum could reﬂect increased myelination or cellular
+edema (74). Therefore, alterations in these metrics in the SMA and
+cingulum could cause cognitive deﬁcits in ME/CFS.
+The KFA parameter was also increased in the left cingulum of
+ME/CFS compared to healthy controls. This could be because KFA
+is a natural extension of the FA concept in the kurtosis tensor, which
+is mathematically analogous (75).
+The AK parameter was signiﬁcantly decreased in the genu
+and body of the corpus callosum in ME/CFS compared to healthy
+controls. The corpus callosum is the largest commissural white
+matter tract, connecting the two cerebral hemispheres (76–78).
+The genu of the corpus callosum primarily links the left and
+right prefrontal cortices involved in higher cognitive functions and
+decision making, while the body connects the frontal and parietal
+lobes, coordinating motor and sensory function (76–78). The
+decreased AK in the genu and body of the corpus callosum probably
+means there is axonal injury or loss of integrity causing alteration
+in axonal pathways (79). Therefore, ME/CFS presentation with
+cognitive dysfunction, motor slowing and hypersensitivity to
+noise and light (80, 81), is consistent with involvement of the
+corpus callosum.
+4.3 Group comparison: long COVID vs.
+healthy controls
+We found a signiﬁcant increase in the RK values in the
+forceps minor and right and left superior corona radiata in
+long COVID compared to healthy controls. Forceps minor is an
+interhemispheric ﬁber tract that forms the genu of the corpus
+callosum and links both orbitofrontal cortices (82) while the
+right and left superior corona radiata are projection ﬁbers that
+connect cortex to brainstem and thalamus with both aﬀerent and
+eﬀerent ﬁbers (83). Involvement of commissural and projection
+ﬁbers has been described in the previous post COVID-19 study
+(84). Two studies have implicated forceps minor in relation to
+cognitive dysfunction in the post COVID condition (85, 86).
+Additionally, a study also showed a relationship between the corona
+Frontiers in Medicine
+07
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+FIGURE 4
+Long COVID compared to healthy controls (long COVID > healthy controls) showing (A) signiﬁcant increase in mean kurtosis and radial kurtosis in
+right fusiform gyrus. (B–E) Signiﬁcant increment in radial kurtosis in (B) Genu of corpus callosum/ Forceps minor, (C) Right superior corona radiata.
+(D) left superior corona radiata and (E) right precentral gyrus.
+TABLE 4 Signiﬁcant DKI metrics cluster: long COVID vs. Healthy controls.
+DKI
+metric
+Increased (↑)/
+Decreased (↓)
+Area
+MNI coordinates x y
+z (mm)
+Cluster size
+(voxels)
+Peak
+T-value
+Cluster p-FDR
+KFA
+N/A
+N/A
+N/A
+N/A
+N/A
+N/A
+MK
+↑
+Right fusiform gyrus
+27 −78 −5
+85
+4.93
+0.024
+AK
+N/A
+N/A
+N/A
+N/A
+N/A
+N/A
+RK
+↑
+Genu of CC/ forceps minor
+10 32 10
+125
+4.76
+0.001
+↑
+Right superior corona radiata
+28 −1 25
+79
+4.61
+0.006
+↑
+Left superior corona radiata
+−15 25 43
+69
+4.54
+0.012
+↑
+Right precentral gyrus
+48 2 37
+66
+4.28
+0.013
+↑
+Right fusiform gyrus
+26 −78 −5
+87
+4.66
+0.006
+KFA, Kurtosis Fractional Anisotropy; MK, Mean Kurtosis; AK, Axial Kurtosis; RK, Radial Kurtosis; CC, Corpus Callosum; ↑: increased, ↓: decreased, FDR: False discovery rate, N/A:
+Not applicable.
+radiata, fatigue and cognitive complaints (87). Increased RK in
+commissural and projection ﬁbers indicates enhanced restriction
+of water diﬀusion perpendicular to the principal ﬁber orientation,
+suggesting increased microstructural complexity in the radial
+direction. This pattern may arise from myelin compaction, reduced
+extracellular space, or glial-related alterations rather than axonal
+loss (88–90). As forceps minor and corona radiata are tracts central
+to cognition, attention, fatigue and emotional regulation (63–65,
+86), impairment in these regions may contribute to the cognitive
+decline and fatigue in long COVID.
+We also found increased RK in the right precentral gyrus and
+in the right fusiform gyrus. The precentral gyrus is the anatomical
+location of the primary motor cortex, which is responsible for
+controlling voluntary motor movement of the contralateral side
+of the body (91). Diez-Cirarda et al. (87) showed a relationship
+between reduction in the gray matter volume in the precentral
+Frontiers in Medicine
+08
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+gyrus and cognitive decline which is one of the hallmark symptoms
+of long COVID. Troll et al. (92) using fMRI found increased
+functional connectivity between the right caudate nucleus and
+both left and right precentral gyrus in long COVID compared
+to healthy controls. Additionally, increased T1/T2 signal intensity
+was reported in the precentral gyrus in long COVID compared to
+healthy controls, which is related to the higher myelin signal (34)
+consistent with our RK ﬁndings (88–90).
+We observed signiﬁcantly increased MK in the right fusiform
+gyrus, a region critical for visual processing and face recognition.
+Prior studies showed atrophy in the left fusiform gyrus (93),
+and right-sided involvement was associated with higher levels of
+COVID-related post-traumatic stress and social anxiety (94) and a
+prosopagnosia in long COVID (95). The elevated MK likely reﬂects
+greater tissue complexity, increased cellularity, or more restricted
+water diﬀusion, potentially due to neuroinﬂammation or reactive
+gliosis (62, 96). As no prior long COVID studies have utilized DKI,
+these ﬁndings represent a novel discovery of tissue microstructural
+alterations in people living with ME/CFS and long COVID.
+5 Limitations
+Despite novel ﬁndings in ME/CFS and long COVID, this study
+has some limitations. We did not stratify ME/CFS and healthy
+controls based on prior COVID infection. Additionally, as this is a
+cross-sectional study, future longitudinal research will be important
+to clarify whether the observed changes in DTI and DKI measures
+evolve or remain stable. Additionally, the long COVID group
+was relatively small (n = 19), which limits statistical power and
+the conﬁdence of group comparisons. Therefore, these ﬁndings
+should be viewed as preliminary and will require conﬁrmation
+in larger, well-powered samples. Furthermore, although age and
+sex were included as covariates, the signiﬁcant age diﬀerence
+between groups may introduce residual confounding, particularly
+given the known sensitivity of diﬀusion metrics to age-related
+microstructural changes. Also, we were unable to formally compare
+the sensitivity of DTI and DKI, so diﬀerences between the methods
+may reﬂect acquisition or processing factors rather than true
+biological eﬀects. DKI should therefore be viewed as providing
+complementary information, and dedicated studies are needed to
+assess comparative sensitivity. Additionally, we also excluded DTI
+comparisons between the long COVID and control groups due
+to prior publication (34), which may limit the direct comparisons
+across all groups.
+6 Conclusions
+This study identiﬁes distinct tissue microstructural alterations
+in people living with ME/CFS and long COVID using DTI and
+DKI. These ﬁndings oﬀer vital insights into the neuropathological
+basis of shared symptoms in both conditions. Additionally, our
+results suggest that DKI enables a more nuanced characterization
+of the complex neuropathological processes underlying these
+conditions. Complementary DTI and DKI insights contribute
+to
+a
+more
+comprehensive
+assessment
+of
+the
+associated
+microstructural changes.
+Data availability statement
+The raw data supporting the conclusions of this article will be
+made available by the authors, without undue reservation.
+Ethics statement
+The studies involving humans were approved by the Griﬃth
+University Human Research Ethics Committee (Ref: 2022/666)
+and conducted in accordance with the principles outlined in the
+Declaration of Helsinki. Written informed consent was obtained
+from all participants prior to inclusion in the study.. The studies
+were conducted in accordance with the local legislation and
+institutional requirements. The participants provided their written
+informed consent to participate in this study.
+Author contributions
+TS:
+Conceptualization,
+Software,
+Data
+curation,
+Formal
+analysis,
+Writing
+–
+original
+draft,
+Methodology.
+SM-G:
+Supervision, Funding acquisition, Writing – review & editing. LB:
+Supervision, Writing – review & editing, Funding acquisition.
+NE-F: Writing – review & editing. TH: Data curation, Writing –
+review & editing. MI: Writing – review & editing, Data curation.
+KT: Data curation, Methodology, Writing – review & editing,
+Conceptualization, Supervision, Funding acquisition.
+Funding
+The author(s) declared that ﬁnancial support was received
+for this work and/or its publication. This research was funded
+by ME Research UK (SCIO Charity Number SC036942) with the
+ﬁnancial support of The Fred and Joan Davies Bequest and The
+Staﬀord Fox Medical Research Foundation (489798). The authors
+declare that the funders had no role in the study design, data
+collection, data analysis, decision to publish or preparation of the
+present manuscript.
+Acknowledgments
+We are thankful to Ms. Tania Manning and Kay Schwarz
+for recruiting participants for this study, radiographers at the
+University of Queensland, and the patients and healthy controls
+who donated their time and eﬀort to participate in this study.
+Frontiers in Medicine
+09
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+Conﬂict of interest
+The author(s) declared that this work was conducted in the
+absence of any commercial or ﬁnancial relationships that could be
+construed as a potential conﬂict of interest.
+Generative AI statement
+The author(s) declared that Generative AI was not used in the
+creation of this manuscript.
+Any alternative text (alt text) provided alongside ﬁgures in
+this article has been generated by Frontiers with the support of
+artiﬁcial intelligence and reasonable eﬀorts have been made to
+ensure accuracy, including review by the authors wherever possible.
+If you identify any issues, please contact us.
+Publisher’s note
+All claims expressed in this article are solely those of the
+authors and do not necessarily represent those of their aﬃliated
+organizations, or those of the publisher, the editors and the
+reviewers. Any product that may be evaluated in this article, or
+claim that may be made by its manufacturer, is not guaranteed or
+endorsed by the publisher.
+Supplementary material
+The Supplementary Material for this article can be found
+online at: https://www.frontiersin.org/articles/10.3389/fmed.2026.
+1824498/full#supplementary-material
+References
+1. Dehlia A, Guthridge MA. The persistence of myalgic encephalomyelitis/chronic
+fatigue syndrome (ME/CFS) after SARS-CoV-2 infection: a systematic review and
+meta-analysis. J Infect. (2024) 89:106297. doi: 10.1016/j.jinf.2024.106297
+2. KomaroﬀAL, Dantzer R. Causes of symptoms and symptom persistence in long
+COVID and myalgic encephalomyelitis/chronic fatigue syndrome. Cell Rep Med.
+(2025) 6:102259. doi: 10.1016/j.xcrm.2025.102259
+3. Thapaliya K, Marshall-Gradisnik S, Eaton-Fitch N, Eftekhari Z, Inderyas
+M,
+Barnden
+L.
+Imbalanced
+brain
+neurochemicals
+in
+long
+COVID
+and
+ME/CFS: a preliminary study using MRI. Am J Med. (2025) 138:567–74.e1.
+doi: 10.1016/j.amjmed.2024.04.007
+4. Carruthers BM, Jain AK, De Meirleir KL, Daniel LP, Nancy GK, Martin LA,
+et al. Myalgic encephalomyelitis/chronic fatigue syndrome: clinical working case
+deﬁnition, diagnostic and treatment protocols. J Chronic Fatigue Syndr. (2003) 11:7–
+115. doi: 10.1300/J092v11n01_02
+5. Carruthers BM, van de Sande MI, De Meirleir KL, Klimas NG, Broderick G, Mitchell
+T, et al. Myalgic encephalomyelitis: international consensus criteria. J Intern Med.
+(2011) 270:327–38. doi: 10.1111/j.1365-2796.2011.02428.x
+6. Soriano JB, Murthy S, Marshall JC, Relan P, Diaz JV. A clinical case deﬁnition of
+post-COVID-19 condition by a Delphi consensus. Lancet Infect Dis. (2022) 22:e102–7.
+doi: 10.1016/S1473-3099(21)00703-9
+7. Erlandson KM, Geng LN, Selvaggi CA, Thaweethai T, Chen P, Erdmann NB, et al.
+Diﬀerentiation of prior SARS-CoV-2 infection and postacute sequelae by standard
+clinical laboratory measurements in the RECOVER cohort. Ann Intern Med. (2024)
+177:1209–21. doi: 10.7326/M24-0737
+8. Greenhalgh T, Sivan M, Perlowski A, Nikolich JŽ. Long COVID: a clinical update.
+Lancet. (2024) 404:707–24. doi: 10.1016/S0140-6736(24)01136-X
+9. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: the biology of a neglected
+disease-PMC
+n.d.
+Available
+online
+at:
+https://pmc.ncbi.nlm.nih.gov/articles/
+PMC11180809/ (accessed February 19, 2026).
+10. Leonel JW, Ciurleo GCV, Formiga AM, Vasconcelos de TMF, Andrade
+de
+MH,
+Feitosa
+WLQ,
+et
+al.
+Long
+COVID:
+neurological
+manifestations-
+an
+updated
+narrative
+review.
+Dement
+Neuropsychol.
+(2024)
+18:e20230076.
+doi: 10.1590/1980-5764-dn-2023-0076
+11. KomaroﬀAL, Lipkin WI. ME/CFS and Long COVID share similar symptoms and
+biological abnormalities: road map to the literature. Front Med. (2023) 10:1187163.
+doi: 10.3389/fmed.2023.1187163
+12. Maksoud R, Magawa C, Eaton-Fitch N, Thapaliya K, Marshall-Gradisnik S.
+Biomarkers for myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): a
+systematic review. BMC Med. (2023) 21:189. doi: 10.1186/s12916-023-02893-9
+13. 13. RudroﬀT, Klén R, Rainio O, Tuulari J. The untapped potential of dimension
+reduction in neuroimaging: artiﬁcial intelligence-driven multimodal analysis of long
+COVID fatigue. Brain Sci. (2024) 14:1209. doi: 10.3390/brainsci14121209
+14. 14. Afzali M, Pieciak T, Newman S, Garyfallidis E, Özarslan E, Cheng H, et al. The
+sensitivity of diﬀusion MRI to microstructural properties and experimental factors. J
+Neurosci Methods. (2021) 347:108951. doi: 10.1016/j.jneumeth.2020.108951
+15. 15. Soares JM, Marques P, Alves V, Sousa N. A hitchhiker’s guide to diﬀusion tensor
+imaging. Front Neurosci. (2013) 7:31. doi: 10.3389/fnins.2013.00031
+16. 16. Mädler B, Drabycz SA, Kolind SH, Whittall KP, MacKay AL. Is diﬀusion
+anisotropy an accurate monitor of myelination? Correlation of multicomponent T2
+relaxation and diﬀusion tensor anisotropy in human brain. Magn Reson Imaging.
+(2008) 26:874–88. doi: 10.1016/j.mri.2008.01.047
+17. Mori S, Zhang J. Principles of diﬀusion tensor imaging and its applications to basic
+neuroscience research. Neuron. (2006) 51:527–39.
+18. O’Donnell LJ, Westin C-F. An introduction to diﬀusion tensor image analysis.
+Neurosurg Clin N Am. (2011) 22:185–8. doi: 10.1016/j.nec.2010.12.004
+19. Winklewski PJ, Sabisz A, Naumczyk P, Jodzio K, Szurowska E, Szarmach A.
+Understanding the physiopathology behind axial and radial diﬀusivity changes—what
+do we know? Front Neurol. (2018) 9:92. doi: 10.3389/fneur.2018.00092
+20. Bopp MHA, Emde J, Carl B, Nimsky C, Saß B. Diﬀusion kurtosis imaging ﬁber
+tractography of major white matter tracts in neurosurgery. Brain Sci. (2021) 11:381.
+doi: 10.3390/brainsci11030381
+21. Zhu J, Zhuo C, Qin W, Wang D, Ma X, Zhou Y, et al. Performances of diﬀusion
+kurtosis imaging and diﬀusion tensor imaging in detecting white matter abnormality
+in schizophrenia. NeuroImage Clin. (2015) 7:170–6. doi: 10.1016/j.nicl.2014.12.008
+22. Lanzafame S, Giannelli M, Garaci F, Floris R, Duggento A, Guerrisi M, et al.
+Diﬀerences in Gaussian diﬀusion tensor imaging and non-Gaussian diﬀusion kurtosis
+imaging model-based estimates of diﬀusion tensor invariants in the human brain. Med
+Phys. (2016) 43:2464–75. doi: 10.1118/1.4946819
+23. Kornaropoulos EN, Winzeck S, Rumetshofer T, Wikstrom A, Knutsson L, Correia
+MM, et al. Sensitivity of diﬀusion MRI to white matter pathology: inﬂuence of
+diﬀusion protocol, magnetic ﬁeld strength, and processing pipeline in systemic lupus
+erythematosus. Front Neurol. (2022) 13:837385. doi: 10.3389/fneur.2022.837385
+24. Guo YL, Li SJ, Zhang ZP, Shen ZW, Zhang GS, Yan G, et al. Parameters of
+diﬀusional kurtosis imaging for the diagnosis of acute cerebral infarction in diﬀerent
+brain regions. Exp Ther Med. (2016) 12:933–8. doi: 10.3892/etm.2016.3390
+25. Hansen B. An introduction to kurtosis fractional anisotropy. AJNR Am J
+Neuroradiol. (2019) 40:1638–41. doi: 10.3174/ajnr.A6235
+26. Koerte IK, Wiegand TLT, Bonke EM, Kochsiek J, Shenton ME. Diﬀusion imaging
+of sport-related repetitive head impacts—a systematic review. Neuropsychol Rev. (2023)
+33:122–43. doi: 10.1007/s11065-022-09566-z
+27. Ghaderi S, Mohammadi S, Fatehi F, A. systematic review of diﬀusion
+microstructure imaging (DMI): current and future applications in neurology research.
+Brain Disord. (2025) 19:100238. doi: 10.1016/j.dscb.2025.100238
+28. Thapaliya K, Marshall-Gradisnik S, Staines D, Barnden L. Diﬀusion tensor imaging
+reveals neuronal microstructural changes in myalgic encephalomyelitis/chronic fatigue
+syndrome. Eur J Neurosci. (2021) 54:6214–28. doi: 10.1111/ejn.15413
+29. Distinct white matter alteration patterns in post-infectious and gradual onset
+chronic fatigue syndrome revealed by diﬀusion MRI | Scientiﬁc Reports n.d. Available
+online at: https://www.nature.com/articles/s41598-025-09379-z (accessed October 31,
+2025).
+Frontiers in Medicine
+10
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+30. Zeineh MM, Kang J, Atlas SW, Raman MM, Reiss AL, Norris JL, et al. Right arcuate
+fasciculus abnormality in chronic fatigue syndrome. Radiology. (2015) 274:517–26.
+doi: 10.1148/radiol.14141079
+31. Kimura Y, Sato N, Ota M, Shigemoto Y, Morimoto E, Enokizono M, et al. Brain
+abnormalities in myalgic encephalomyelitis/chronic fatigue syndrome: evaluation by
+diﬀusional kurtosis imaging and neurite orientation dispersion and density imaging. J
+Magn Reson Imaging. (2019) 49:818–24. doi: 10.1002/jmri.26247
+32. Kimura Y, Sato N, Ota M, Shigemoto Y, Morimoto E, Enokizono M,
+et al. Abnormal brain diﬀusivity in participants with persistent neuropsychiatric
+symptoms
+after
+COVID-19. NeuroImmune
+Pharmacol
+Ther.
+(2023)
+2:37–48.
+doi: 10.1515/nipt-2022-0016
+33. Díez-Cirarda M, Yus M, Gómez-Ruiz N, Polidura C, Gil-Martínez L, Delgado-
+Alonso C, et al. Multimodal neuroimaging in post-COVID syndrome and correlation
+with cognition. Brain. (2023) 146:2142–52. doi: 10.1093/brain/awac384
+34. Thapaliya K, Marshall-Gradisnik S, Inderyas M, Barnden L. Altered brain tissue
+microstructure and neurochemical proﬁles in long COVID and recovered COVID-19
+individuals: a multimodal MRI study. Brain Behav Immun Health. (2025) 50:101142.
+doi: 10.1016/j.bbih.2025.101142
+35. Yuan M, Lu R, Liu Y, Zhu H, Wang H, Wang J, et al. White matter changes in
+recovered COVID-19 patients: insights from DTI, DKI, and NODDI metrics. Front
+Neurol. (2025) 16: 1580262. doi: 10.3389/fneur.2025.1580262
+36. Pritschet L, Taylor CM, Cossio D, Faskowitz J, Santander T, Handwerker DA,
+et al. Neuroanatomical changes observed over the course of a human pregnancy. Nat
+Neurosci. (2024) 27:2253–60. doi: 10.1038/s41593-024-01741-0
+37. Bridges RS. Long-term alterations in neural and endocrine processes induced
+by
+motherhood.
+Horm
+Behav.
+(2016)
+77:193–203.
+doi:
+10.1016/j.yhbeh.2015.
+09.001
+38. Thapaliya K, Marshall-Gradisnik S, Eaton-Fitch N, Barth M, Inderyas M, Barnden
+L. Hippocampal subﬁeld volume alterations and associations with severity measures
+in long COVID and ME/CFS: a 7T MRI study. PLoS ONE. (2025) 20:e0316625.
+doi: 10.1371/journal.pone.0316625
+39. Wagner D, Nisenbaum R, Heim C, Jones JF, Unger ER, Reeves WC. Psychometric
+properties of the CDC symptom inventory for assessment of chronic fatigue syndrome.
+Popul Health Metr. (2005) 3:8. doi: 10.1186/1478-7954-3-8
+40. Weigel B, Eaton-Fitch N, Thapaliya K, Marshall-Gradisnik S. Sustained illness
+burden over time among Australians with myalgic encephalomyelitis/chronic fatigue
+syndrome. PLoS ONE. (2025) 20:e0338433. doi: 10.1371/journal.pone.0338433
+41. Bao SS, Zhao C, Bao XX, Rao JS. Eﬀect of b value on imaging quality for diﬀusion
+tensor imaging of the spinal cord at ultrahigh ﬁeld strength. BioMed Res Int. (2021)
+2021:4836804. doi: 10.1155/2021/4836804
+42. Martinez-Heras E, Grussu F, Prados F, Solana E, Llufriu S. Diﬀusion-weighted
+imaging: recent advances and applications. Semin Ultrasound CT MRI. (2021) 42:490–
+506. doi: 10.1053/j.sult.2021.07.006
+43. Trò R, Roascio M, Tortora D, Severino M, Rossi A, Cohen-Adad J, et al. Diﬀusion
+kurtosis imaging of neonatal spinal cord in clinical routine. Front Radiol. (2022)
+2:794981. doi: 10.3389/fradi.2022.794981
+44. Yan X, Zhou M, Ying L, Yin D, Fan M, Yang G, et al. Evaluation of optimized b-value
+sampling schemas for diﬀusion kurtosis imaging with an application to stroke patient
+data. Comput Med Imaging Graph OﬀJ Comput Med Imaging Soc. (2013) 37:272–80.
+doi: 10.1016/j.compmedimag.2013.04.007
+45. Andersson JLR, Skare S, Ashburner J. How to correct susceptibility distortions in
+spin-echo echo-planar images: application to diﬀusion tensor imaging. Neuroimage.
+(2003) 20:870–88. doi: 10.1016/S1053-8119(03)00336-7
+46. Andersson JLR, Sotiropoulos SN. An integrated approach to correction for oﬀ-
+resonance eﬀects and subject movement in diﬀusion MR imaging. Neuroimage. (2016)
+125:1063–78. doi: 10.1016/j.neuroimage.2015.10.019
+47. Yamada H, Abe O, Shizukuishi T, Kikuta J, Shinozaki T, Dezawa K, et al.
+Eﬃcacy of distortion correction on diﬀusion imaging: comparison of FSL eddy and
+eddy_correct using 30 and 60 directions diﬀusion encoding. PLoS ONE. (2014)
+9:e112411. doi: 10.1371/journal.pone.0112411
+48. Smith SM. Fast robust automated brain extraction. Hum Brain Mapp. (2002)
+17:143–55. doi: 10.1002/hbm.10062
+49. Smith SM, Jenkinson M, Woolrich MW, Beckmann CF, Behrens TE, Johansen-Berg
+H, et al. Advances in functional and structural MR image analysis and implementation
+as FSL. Neuroimage. (2004) 23:S208–19. doi: 10.1016/j.neuroimage.2004.07.051
+50. Tournier JD, Smith R, Raﬀelt D, Tabbara R, Dhollander T, Pietsch M, et al.
+MRtrix3: a fast, ﬂexible and open software framework for medical image processing and
+visualisation. Neuroimage. (2019) 202:116137. doi: 10.1016/j.neuroimage.2019.116137
+51. Ades-Aron B, Veraart J, Kochunov P, McGuire S, Sherman P, Kellner E,
+et al. Evaluation of the accuracy and precision of the diﬀusion parameter
+EStImation with Gibbs and NoisE removal pipeline. Neuroimage. (2018) 183:532–43.
+doi: 10.1016/j.neuroimage.2018.07.066
+52. Smith SM, Jenkinson M, Johansen-Berg H, Rueckert D, Nichols TE, Mackay CE,
+et al. Tract-based spatial statistics: voxelwise analysis of multi-subject diﬀusion data.
+Neuroimage. (2006) 31:1487–505. doi: 10.1016/j.neuroimage.2006.02.024
+53. Statistical Parametric Mapping. ScienceDirect n.d. Available online at:https://
+www.sciencedirect.com/book/edited-volume/9780123725608/statistical-parametric-
+mapping (accessed January 6, 2026).
+54. xjView | A viewing program for SPM n.d. Available online at: https://www.
+alivelearn.net/xjview/ (accessed January 6, 2026).
+55. Jenkinson M, Beckmann CF, Behrens TE, Woolrich MW, Smith SM. FSL.
+Neuroimage. (2012) 62:782–90. doi: 10.1016/j.neuroimage.2011.09.015
+56. Bonferroni CE. Teoria statistica delle classi e calcolo delle probabilità. Pubblicazioni
+R Ist Super Sci Econ E Commericiali Firenze. (1936) 8:3–62.
+57. Benjamini Y, Hochberg Y. Controlling the false discovery rate: a practical and
+powerful approach to multiple testing. J R Stat Soc Ser B Methodol. (1995) 57:289–300.
+doi: 10.1111/j.2517-6161.1995.tb02031.x
+58. Jellison BJ, Field AS, Medow J, Lazar M, Salamat MS, Alexander AL. Diﬀusion
+tensor imaging of cerebral white matter: a pictorial review of physics, ﬁber tract
+anatomy, and tumor imaging patterns. Am J Neuroradiol. (2004) 25:356–69.
+59. Yu Q, Kwiatek RA, Del Fante P, Bonner A, Calhoun VD, Bateman GA,
+et al. Distinct white matter alteration patterns in post-infectious and gradual onset
+chronic fatigue syndrome revealed by diﬀusion MRI. Sci Rep. (2025) 15:24256.
+doi: 10.1038/s41598-025-09379-z
+60. Lin L, Bhawana R, Xue Y, Duan Q, Jiang R, Chen H„ et al. Comparative analysis of
+diﬀusional kurtosis imaging, diﬀusion tensor imaging, and diﬀusion-weighted imaging
+in grading and assessing cellular proliferation of meningiomas. AJNR Am J Neuroradiol.
+(2018) 39:1032–8. doi: 10.3174/ajnr.A5662
+61. Karlsen RH, Einarsen C, Moe HK, Håberg AK, Vik A, Skandsen T, et al. Diﬀusion
+kurtosis imaging in mild traumatic brain injury and postconcussional syndrome. J
+Neurosci Res. (2019) 97:568–81. doi: 10.1002/jnr.24383
+62. Plank JR, Morgan CA, Dell’Acqua F, Sundram F, Hoeh NR, Muthukumaraswamy
+S, et al. Mapping neuroinﬂammation with diﬀusion-weighted magnetic resonance
+imaging: a randomized crossover study. Biol Psychiatry Cogn Neurosci Neuroimaging.
+(2025) 10:944–53. doi: 10.1016/j.bpsc.2025.05.002
+63. Natali AL, Reddy V, Bordoni B. “Neuroanatomy, corticospinal cord tract,” in
+StatPearls (Treasure Island: StatPearls Publishing) (2026).
+64. Bhardwaj N, Yadala S. “Neuroanatomy, corticobulbar tract,” StatPearls (Treasure
+Island: StatPearls Publishing) (2026).
+65. George K, Das JM. “Neuroanatomy, thalamocortical radiations,” StatPearls
+(Treasure Island: StatPearls Publishing) (2026).
+66. Loução R, Nunes RG, Neto-Henriques R, Correia M, Ferreira H. Human brain
+tractography: a DTI vs. DKI comparison analysis. 2015 IEEE 4th Portuguese Meeting on
+Bioengineering (ENBENG) New York, NY: IEEE. (2015). p. 1–2.
+67. Shahim P, Holleran L, Kim JH, Brody DL. Test-retest reliability of high spatial
+resolution diﬀusion tensor and diﬀusion kurtosis imaging. Sci Rep. (2017) 7:11141.
+doi: 10.1038/s41598-017-11747-3
+68. Wu K, Wu Z, Feng S, Zhou T, Ning Y, Li K, et al. Microstructural
+white
+matter
+impairments
+in
+chronic
+fatigue
+syndrome:
+evidence
+of
+segmental injury in the cingulum bundle. Brain Res Bull. (2026) 234:111671.
+doi: 10.1016/j.brainresbull.2025.111671
+69. Nachev P, Kennard C, Husain M. Functional role of the supplementary and pre-
+supplementary motor areas. Nat Rev Neurosci. (2008) 9:856–69. doi: 10.1038/nrn2478
+70. Rolls ET. The cingulate cortex and limbic systems for emotion, action, and
+memory. Brain Struct Funct. (2019) 224:3001–18. doi: 10.1007/s00429-019-01945-2
+71. Bubb
+EJ,
+Metzler-Baddeley
+C,
+Aggleton
+JP.
+The
+cingulum
+bundle:
+anatomy, function, and dysfunction. Neurosci Biobehav Rev. (2018) 92:104–27.
+doi: 10.1016/j.neubiorev.2018.05.008
+72. Kumar R, Nguyen HD, Macey PM, Woo MA, Harper RM. Regional brain axial
+and radial diﬀusivity changes during development. J Neurosci Res. (2012) 90:346–55.
+doi: 10.1002/jnr.22757
+73. Horsﬁeld MA, Jones DK. Applications of diﬀusion-weighted and diﬀusion
+tensor MRI to white matter diseases-a review. NMR Biomed. (2002) 15:570–7.
+doi: 10.1002/nbm.787
+74. Ranzenberger LR, Das JM, Snyder T. “Diﬀusion tensor imaging,” in StatPearls
+(Treasure Island: StatPearls Publishing) (2025).
+75. Glenn GR, Helpern JA, Tabesh A, Jensen JH. Quantitative assessment of diﬀusional
+kurtosis anisotropy. NMR Biomed. (2015) 28:448–59. doi: 10.1002/nbm.3271
+76. Goldstein A, Covington BP, Mahabadi N, Mesﬁn FB. Neuroanatomy, corpus
+callosum. StatPearls (Treasure Island: StatPearls Publishing) (2025).
+77. Fitsiori A, Nguyen D, Karentzos A, Delavelle J, Vargas MI. The corpus callosum:
+white matter or terra incognita. Br J Radiol. (2011) 84:5–18. doi: 10.1259/bjr/21946513
+78. Bhatt RR, Gadewar SP, Shetty A, Gari, IB, Haddad E, Javid S, et al. The genetic
+architecture of the human corpus callosum and its subregions. bioRxiv[Preprint].
+bioRxiv: 2024.07.22.603147 (2024).
+79. Kumar S, De Luca A, Leemans A, Saﬀari SE, Hartono S, Zailan FZ, et al. Topology
+of diﬀusion changes in corpus callosum in Alzheimer’s disease: an exploratory case-
+control study. Front Neurol. (2022) 13:1005406. doi: 10.3389/fneur.2022.1005406
+Frontiers in Medicine
+11
+frontiersin.org
+
+Singh et al.
+10.3389/fmed.2026.1824498
+80. Wirth KJ, Scheibenbogen C, Paul F. An attempt to explain the neurological
+symptoms of myalgic encephalomyelitis/chronic fatigue syndrome. J Transl Med.
+(2021) 19:471. doi: 10.1186/s12967-021-03143-3
+81. Committee
+on
+the
+Diagnostic
+Criteria
+for
+Myalgic
+Encephalomyelitis/ChronicFatigue
+Syndrome,
+Board
+on
+the
+Health
+of
+Select
+Populations, Institute of Medicine. Beyond Myalgic Encephalomyelitis/Chronic
+Fatigue Syndrome: Redeﬁning an Illness. Washington, DC: National Academies Press
+(US) (2015).
+82. Stoller
+F,
+Hinds
+E,
+Ionescu
+T,
+Khatamsaz
+E,
+Marston
+HM,
+Hengerer
+B.
+Forceps
+minor
+control
+of
+social
+behaviour.
+Sci
+Rep.
+(2024)
+14:30492.
+doi: 10.1038/s41598-024-81930-w
+83. Huang S, Zhou Z, Yang D, Zhao W, Zeng M, Xie X, et al. Persistent white
+matter changes in recovered COVID-19 patients at the 1-year follow-up. Brain. (2021)
+145:1830–8. doi: 10.1093/brain/awab435
+84. Bispo DDC, Brandão PRP, Pereira DA, Maluf FB, Dias BA, Paranhos HR,
+et al. Brain microstructural changes and fatigue after COVID-19. Front Neurol.
+(2022) 13:1029302.
+85. Arrigoni A, Previtali M, Bosticardo S, Pezzetti G, Poloni S, Capelli S, et al. Brain
+microstructure and connectivity in COVID-19 patients with olfactory or cognitive
+impairment. NeuroImage Clin. (2024) 43:103631. doi: 10.1016/j.nicl.2024.103631
+86. Mamiya PC, Richards TL, Kuhl PK. Right forceps minor and anterior thalamic
+radiation predict executive function skills in young bilingual adults. Front Psychol.
+(2018) 9:118. doi: 10.3389/fpsyg.2018.00118
+87. Diez-Cirarda M, Yus-Fuertes M, Polidura C, Gil-Martinez L, Delgado-Alonso
+C, Delgado-Álvarez A, et al. Neural basis of fatigue in post-COVID syndrome
+and relationships with cognitive complaints and cognition. Psychiatry Res. (2024)
+340:116113. doi: 10.1016/j.psychres.2024.116113
+88. Tummala S, Roy B, Vig R, Park B, Kang DW, Woo MA, et al. Non-gaussian
+diﬀusion imaging shows brain myelin and axonal changes in obstructive sleep apnea. J
+Comput Assist Tomogr. (2017) 41:181–9. doi: 10.1097/RCT.0000000000000537
+89. Wang S, Peterson DJ, Wang Y, Wang Q, Grabowski TJ, Li W, et al. Empirical
+comparison of diﬀusion kurtosis imaging and diﬀusion basis spectrum imaging
+using the same acquisition in healthy young adults. Front Neurol. (2017) 8:118.
+doi: 10.3389/fneur.2017.00118
+90. Maiter A, Riemer F, Allinson K, Zaccagna F, Crispin-Ortuzar M, Gehrung
+M, et al. Investigating the relationship between diﬀusion kurtosis tensor imaging
+(DKTI) and histology within the normal human brain. Sci Rep. (2021) 11:8857.
+doi: 10.1038/s41598-021-87857-w
+91. Banker L, Tadi P. “Neuroanatomy, precentral gyrus,” in StatPearls (Treasure Island:
+StatPearls Publishing) (2025).
+92. Troll M, Li M, Chand T, Machnik M, Rocktäschel T, Toepﬀer A, et al. Altered
+corticostriatal connectivity in long-COVID patients is associated with cognitive
+impairment. Psychol Med. (2025) 55:e49. doi: 10.1017/S0033291725000054
+93. Samanci B, Ay U, Gezegen H, Yörük SS, Medetalibeyo?lu A, Kurt E, et al.
+Persistent neurocognitive deﬁcits in long COVID: evidence of structural changes
+and network abnormalities following mild infection. Cortex. (2025) 187:98–110.
+doi: 10.1016/j.cortex.2025.04.004
+94. Guo Y, Pan N, Zou Y, Long Y, Zhang X, Li Q, et al. Neuroimaging insights
+into the psychosocial impact of the COVID-19 pandemic: a systematic review. Transl
+Psychiatry. (2025) 15:236. doi: 10.1038/s41398-025-03423-2
+95. Kieseler M-L, Duchaine B. Persistent prosopagnosia following COVID-19. Cortex
+J Devoted Study Nerv Syst Behav. (2023) 162:56–64. doi: 10.1016/j.cortex.2023.01.012
+96. Zhuo J, Xu S, Proctor JL, Mullins RJ, Simon JZ, Fiskum G, et al. Diﬀusion kurtosis
+as an in vivo imaging marker for reactive astrogliosis in traumatic brain injury.
+Neuroimage. (2012) 59:467–77. doi: 10.1016/j.neuroimage.2011.07.050
+97. Ustün TB, Chatterji S, Kostanjsek N, Rehm J, Kennedy C, Epping-Jordan J, et al.
+Developing the World Health Organization Disability Assessment Schedule 2.0. Bull
+World Health Organ. (2010) 88:815–23. doi: 10.2471/BLT.09.067231
+98. Ware
+JE.
+SF-36
+health
+survey
+update.
+Spine.
+(2000)
+25:3130–9.
+doi: 10.1097/00007632-200012150-00008
+Frontiers in Medicine
+12
+frontiersin.org
