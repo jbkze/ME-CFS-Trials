@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-21",
+  "last_check": "2026-07-22",
   "papers": [
     {
       "id": "dooms-2026-multimodal-subgroups-protocol",
@@ -13,9 +13,9 @@
       "why": "Aims to sort ME/CFS patients into biological subgroups so future treatment (including rehabilitation) can be matched to what's actually driving each patient's illness, rather than one-size-fits-all — worth watching for when results are published.",
       "link": "https://doi.org/10.1016/j.bbih.2026.101299",
       "first_seen": "2026-07-21",
-      "last_checked": "2026-07-21",
+      "last_checked": "2026-07-22",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Published online Jul 6, 2026 (eCollection Oct 2026). Study protocol only (n=115 ME/CFS, 55 controls planned), KU Leuven/Belgian group. Not Wirth/Scheibenbogen-affiliated. Confirmed via Elsevier/ScienceDirect publisher page."
     },
     {
@@ -28,9 +28,9 @@
       "why": "Finding an easier, less exhausting way to objectively measure PEM would make it much simpler to run future ME/CFS and post-COVID drug trials — this study is a needed reality-check showing the simpler option still needs refinement before it can be trusted.",
       "link": "https://doi.org/10.1371/journal.pone.0353132",
       "first_seen": "2026-07-21",
-      "last_checked": "2026-07-21",
+      "last_checked": "2026-07-22",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Published Jul 14, 2026. Crossover design, n=25, one-month washout, Belgian group (UZ Brussel). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS ONE publisher page."
     },
     {
@@ -43,9 +43,9 @@
       "why": "One of the first studies to directly compare brain wiring in ME/CFS versus long COVID rather than each against healthy people alone, adding evidence the two conditions may need to be studied and treated as biologically distinct rather than interchangeable.",
       "link": "https://doi.org/10.3389/fmed.2026.1824498",
       "first_seen": "2026-07-21",
-      "last_checked": "2026-07-21",
+      "last_checked": "2026-07-22",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Published Jul 17, 2026. Griffith University (Australia) neuroimaging group (Marshall-Gradisnik/Barnden/Thapaliya) — a recurring credible ME/CFS research team already in this database (thapaliya-2026-glymphatic-dti-alps, sasso-2026-trpm3-nkcell). Not Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers journal article page."
     },
     {
@@ -321,17 +321,17 @@
     {
       "id": "nguyen-2026-ipsc-myogenic-drug-repurposing",
       "title": "iPSC-Derived Myogenic Progenitor Cells from People with ME/CFS Reveal Altered Genes and Pathways with Drug Repurposing Potential",
-      "authors": "Nguyen D",
+      "authors": "Nguyen D, Truong TTT, Panizzutti B, Ellis M, Spolding B, Swinton C, Bortolasci CC, Bryce J, Smith J, Field C, Liu ZS, Kim JH, Berk M, Walder K",
       "journal": "Research Square (preprint, not yet peer-reviewed)",
-      "date": "Jun 2026",
+      "date": "Jul 2026",
       "summary": "Muscle precursor cells grown in the lab from stem cells taken from ME/CFS patients showed altered activity in genes involved in cell division, DNA repair, immune response and muscle structure, and used certain nutrients for energy differently than cells from healthy people.",
       "why": "Lab evidence that ME/CFS muscle cells are genuinely different at a molecular level, not just 'deconditioned' — and the authors computationally flag 22 existing drugs (including leflunomide, melatonin and midodrine) as candidates that could be tested faster than developing a new drug, though this is an early, not-yet-peer-reviewed preprint using a lab stem-cell model.",
-      "link": "https://doi.org/10.21203/rs.3.rs-10015511/v1",
+      "link": "https://doi.org/10.21203/rs.3.rs-10015511/v2",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-05",
+      "last_checked": "2026-07-22",
       "flags": [],
       "isNew": false,
-      "notes": "Posted Research Square Jun 16, 2026. Single-author preprint, not yet peer-reviewed. Confirmed via Europe PMC REST API (title/author/date match). Not Wirth/Scheibenbogen-affiliated."
+      "notes": "Posted Research Square Jun 16, 2026 (v1, single author Nguyen D); revised to v2 Jul 21, 2026 adding a full multi-author byline (Deakin University/Barwon Health, Australia group incl. senior authors Michael Berk and Ken Walder) — same study/DOI family, no material change to findings (still 22 drug-repurposing candidates incl. leflunomide, melatonin, midodrine). Authors/date/link updated 2026-07-22 to reflect v2. Still not yet peer-reviewed. Confirmed via Europe PMC REST API. Not Wirth/Scheibenbogen-affiliated."
     },
     {
       "id": "pimminger-2026-vienna-pem-questionnaire",

@@ -2,11 +2,11 @@
 type: paper
 id: nguyen2026
 title: "iPSC-Derived Myogenic Progenitor Cells from People with ME/CFS Reveal Altered Genes and Pathways with Drug Repurposing Potential"
-authors: ["Nguyen D"]
+authors: ["Nguyen D", "Truong TTT", "Panizzutti B", "Ellis M", "Spolding B", "Swinton C", "Bortolasci CC", "Bryce J", "Smith J", "Field C", "Liu ZS", "Kim JH", "Berk M", "Walder K"]
 year: 2026
 venue: "Research Square (preprint, not yet peer-reviewed)"
-doi: 10.21203/rs.3.rs-10015511/v1
-url: https://doi.org/10.21203/rs.3.rs-10015511/v1
+doi: 10.21203/rs.3.rs-10015511/v2
+url: https://doi.org/10.21203/rs.3.rs-10015511/v2
 pdf: literature/papers/2026-nguyen-ipsc-derived-myogenic-progenitor/paper.pdf
 text: literature/papers/2026-nguyen-ipsc-derived-myogenic-progenitor/paper.txt
 tags: [immunology, metabolism, skeletal-muscle, review]
@@ -36,4 +36,4 @@ Lab evidence that ME/CFS muscle cells are genuinely different at a molecular lev
 
 ## Notes
 
-Posted Research Square Jun 16, 2026. Single-author preprint, not yet peer-reviewed. Confirmed via Europe PMC REST API (title/author/date match). Not Wirth/Scheibenbogen-affiliated.
+Posted Research Square Jun 16, 2026 (v1, single author Nguyen D); revised to v2 Jul 21, 2026 adding a full multi-author byline (Deakin University/Barwon Health, Australia group incl. senior authors Michael Berk and Ken Walder) — same study/DOI family, no material change to findings (still 22 drug-repurposing candidates incl. leflunomide, melatonin, midodrine). Authors/date/link updated 2026-07-22 to reflect v2. Still not yet peer-reviewed. Confirmed via Europe PMC REST API. Not Wirth/Scheibenbogen-affiliated.

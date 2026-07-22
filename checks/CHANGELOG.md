@@ -15,6 +15,21 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-22 (scheduled autonomous, 04:07 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), CTIS public API (rapid-revive 2024-511628-16-00), mitodicure.com/pipeline/, Charité CFC clinical-research/NKSG listing (PIONEER/inebilizumab check), Mitodicure funding/GLP-toxicology web sweep, BC007/APTA "unCOVer Erlangen" news page, plus fresh DRKS/ClinicalTrials.gov open-ended web search for new German ME/CFS/post-COVID drug trials.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING, last update posted 2026-04-14), DRKS00033897 (IA-Surv, "Recruiting ongoing", last DRKS update 2026-01-30), MDC002 (still pre-clinical/not_yet_recruiting, mitodicure.com pipeline unchanged, no registry entry), RAPID_REVIVE (still terminated, ctStatus "Ended" via CTIS public API).
+- Leads re-checked, still fail confirmation standard: PIONEER (NKSG-2/inebilizumab — still no subpage on cfc.charite.de/en/clinical_research/nksg/, no DRKS/NCT/CTIS entry), BC007/APTA "unCOVer Erlangen" (still anticipates first patients "towards the end of 2026" per its own news page, no registry ID or city named).
+- Also screened and ruled out (fail the status/intervention filter, not added): DRKS00032963 — a pediatric ME/CFS immunoadsorption observational study (Diako Flensburg) with recruitment stopped in 2024 ("Order of the new management"); DRKS00035953 "MIRACLE" (Marburg/Regensburg) — purely observational (lab panels, hand-strength, capillary microscopy), no drug/apheresis intervention.
+- Sources checked — papers: Europe PMC date-filtered sweep (2026-07-18 to 2026-07-22), PubMed date-sorted sweep, targeted Wirth/Scheibenbogen searches, general web search for July 2026 ME/CFS publications. No genuinely new in-scope paper found today.
+- **Papers — details update (not a new paper):** `nguyen-2026-ipsc-myogenic-drug-repurposing` — the preprint was revised from v1 (single author) to v2 (posted Jul 21, 2026), adding a full multi-author byline (Deakin University/Barwon Health, Australia group incl. senior authors Michael Berk and Ken Walder). Updated `authors`, `date`, `link` and `notes` to v2; same findings, no new isNew flag. Literature archive re-run also fetched a PDF for `wang-2026-cbt-component-network-meta-analysis` (previously no-PDF-available), now retrievable.
+- isNew: reset to false for the 3 papers added 2026-07-21 (dooms-2026-multimodal-subgroups-protocol, bomans-2026-reveal-steptest-cpet, singh-2026-dti-dki-neuroimaging).
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; terminated: 1 — RAPID_REVIVE)
+- Notes: No new or changed trials, no new papers. One existing paper (Nguyen et al.) updated preprint version (v1→v2, author list expanded). Literature archive re-run — 99 papers total, 81 with PDF (one newly fetched), 18 no-PDF noted.
+
 ## 2026-07-21 (scheduled autonomous, 04:14 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), mitodicure.com (pipeline/about-us/news), NAPKON-TIP institutional page (uni-wuerzburg.de, rapid-revive), DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP broad sweeps (ME/CFS + post-COVID terms, Germany), Charité CFC clinical-research/NKSG listing (PIONEER/inebilizumab check), a Feb 2026 Charité/NKSG conference slide deck (tmf-ev.de), semaglutide (Solve M.E.), BC007/APTA "unCOVer Erlangen" news page + a Jul 2026 riffreporter.de piece, PAIS-AriLis, BMFTR "Nationale Dekade" funding call, ResetME (Norway, out-of-scope check), plus fresh open-ended German/English web search for new trials.
 - New trials: none

@@ -7,25 +7,28 @@ year: 2026
 venue: "Brain and Behavior"
 doi: 10.1002/brb3.71513
 url: https://doi.org/10.1002/brb3.71513
-pdf: https://doi.org/10.1002/brb3.71513
-text: null
+pdf: literature/papers/2026-wang-components-delivery-formats-cognitive/paper.pdf
+text: literature/papers/2026-wang-components-delivery-formats-cognitive/paper.txt
 tags: [treatment, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: wang2026
+cover: "[[literature/papers/2026-wang-components-delivery-formats-cognitive/cover.png]]"
 ---
 
 # Components and Delivery Formats of Cognitive Behavioral Therapy for Chronic Fatigue Syndrome/Myalgic Encephalomyelitis: A Systematic Review and Component Network Meta-Analysis
 
 ## Related files
+![[literature/papers/2026-wang-components-delivery-formats-cognitive/paper.pdf]]
 - [[literature/papers/2026-wang-components-delivery-formats-cognitive/citation.bib]]
+- [[literature/papers/2026-wang-components-delivery-formats-cognitive/paper.txt]]
 
 ## Summary
 
 Analysing 16 trials of cognitive behavioural therapy (CBT, a talk therapy) for ME/CFS, guided self-help and one-on-one CBT reduced fatigue right after treatment. The specific ingredients that helped were goal-setting and acceptance-based techniques, while just teaching patients facts about the illness (psychoeducation) alone was possibly unhelpful.
 
-> _No PDF available_ — Wiley — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
