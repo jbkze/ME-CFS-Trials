@@ -1,8 +1,23 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-22",
+  "last_check": "2026-07-23",
   "papers": [
+    {
+      "id": "friedberg-2026-molecular-hydrogen-minireview",
+      "title": "Molecular hydrogen as a treatment for ME/CFS: a mini-review of clinical evidence and mechanistic rationale",
+      "authors": "Friedberg F, LeBaron TW",
+      "journal": "Frontiers in Medicine",
+      "date": "Mar 2026",
+      "summary": "This mini-review looks at hydrogen-rich water — ordinary water with extra dissolved hydrogen gas — as a possible ME/CFS treatment. It calms harmful cell damage (antioxidant effect), reduces inflammation, and may help the cell's energy factories (mitochondria) work better. Three small early studies found it feasible and modestly helpful for fatigue, with mild side effects.",
+      "why": "A low-cost, low-risk supplement with early but weak evidence for reducing fatigue — worth watching, though the studies so far are small, not blinded, and rely on patients' own symptom reports rather than objective measurements.",
+      "link": "https://doi.org/10.3389/fmed.2026.1760210",
+      "first_seen": "2026-07-23",
+      "last_checked": "2026-07-23",
+      "flags": [],
+      "isNew": true,
+      "notes": "Published Mar 18, 2026 (Frontiers in Medicine, vol. 13, Translational Medicine section) — newly found this run (missed by prior searches, similar to the earlier-missed wirth-2026-hypovolemia-review). Narrative mini-review of 3 small pilot studies (same research team) of hydrogen-rich water in ME/CFS; authors call for larger, blinded trials with objective biomarkers. Not Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers journal article page. Also screened and excluded this run (fails papers scope — healthcare-delivery/care-pathway studies, not pathomechanism/biomarker/drug-target/treatment-trial/genetics): Aung/Scuffell et al., 'General Practice Perspectives on Post-Infection Conditions' (medRxiv, Jul 17 2026, UK GP scoping review + survey) and Burchardi/Scheibenbogen et al., 'LCovB' study protocol (PLoS One, Jul 9 2026, Charité post-COVID care-pathway mixed-methods study) — both are care-delivery protocols/surveys, not biomedical mechanism or treatment-trial-results papers. Also excluded: Ben Amar et al. 'epigenetic signatures in chronic pain' (Epigenomics, Jul 22 2026) — general chronic-pain topic, not ME/CFS-specific. Also excluded: Kuns et al. 'The State of Chronic Fatigue' PEM systematic review (Arch Phys Med Rehabil 107(5):e191, doi 10.1016/j.apmr.2026.02.468) — appears to be a conference-abstract-supplement entry (page 'e191'), not a full peer-reviewed article, so held to a lower-confidence bar than the mini-review above; not entered pending the full paper."
+    },
     {
       "id": "dooms-2026-multimodal-subgroups-protocol",
       "title": "Multimodal approach to identify neuropsychophysiological subgroups in myalgic encephalomyelitis/chronic fatigue syndrome and their relevance for rehabilitation",

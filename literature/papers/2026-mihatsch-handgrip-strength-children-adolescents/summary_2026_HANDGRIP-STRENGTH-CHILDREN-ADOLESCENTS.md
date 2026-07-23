@@ -7,25 +7,28 @@ year: 2026
 venue: "Journal of Translational Medicine"
 doi: 10.1186/s12967-026-08654-5
 url: https://doi.org/10.1186/s12967-026-08654-5
-pdf: https://doi.org/10.1186/s12967-026-08654-5
-text: null
+pdf: literature/papers/2026-mihatsch-handgrip-strength-children-adolescents/paper.pdf
+text: literature/papers/2026-mihatsch-handgrip-strength-children-adolescents/paper.txt
 tags: [exercise-physiology, post-exertional-malaise, skeletal-muscle, biomarker, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: mihatsch2026
+cover: "[[literature/papers/2026-mihatsch-handgrip-strength-children-adolescents/cover.png]]"
 ---
 
 # Handgrip strength in children, adolescents, and young adults with suspected myalgic encephalomyelitis/chronic fatigue syndrome
 
 ## Related files
+![[literature/papers/2026-mihatsch-handgrip-strength-children-adolescents/paper.pdf]]
 - [[literature/papers/2026-mihatsch-handgrip-strength-children-adolescents/citation.bib]]
+- [[literature/papers/2026-mihatsch-handgrip-strength-children-adolescents/paper.txt]]
 
 ## Summary
 
 Researchers measured hand-grip strength twice, an hour apart, in 147 young people (aged 10-25) being evaluated for ME/CFS and compared them with 83 healthy peers. The patients' grip strength and how it changed between the two tests differed from the healthy group, showing a real, measurable drop in muscle function — but the test alone could not reliably tell ME/CFS apart from other conditions that also cause tiredness.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

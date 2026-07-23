@@ -15,6 +15,22 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-23 (scheduled autonomous, 04:06 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), CTIS public API (rapid-revive 2024-511628-16-00), mitodicure.com/pipeline/, Charité CFC clinical-research/NKSG listing (PIONEER/AIM-ME/inebilizumab/daratumumab check), fresh DRKS/ClinicalTrials.gov/CTIS open-ended web search (German + English) for new ME/CFS and post-COVID drug trials, BC007/APTA "unCOVer Erlangen" news page.
+- New trials: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 4 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING, last update posted 2026-04-14), DRKS00033897 (IA-Surv, "Recruiting ongoing", last DRKS update 2026-01-30), MDC002 (still pre-clinical/not_yet_recruiting, mitodicure.com pipeline unchanged, no registry entry), RAPID_REVIVE (still terminated, ctStatus "Ended" via CTIS public API).
+- Leads re-checked, still fail confirmation standard: PIONEER (NKSG-2/inebilizumab — still no subpage on cfc.charite.de/en/clinical_research/nksg/, no DRKS/NCT/CTIS entry; a Solve M.E. article corroborates a planned 2026 Charité anti-CD38/daratumumab-class trial alongside PIONEER, consistent with the already-tracked AIM-ME lead), BC007/APTA "unCOVer Erlangen" (still anticipates first patients "towards the end of 2026", no registry ID or city named).
+- Also screened and ruled out this run (fail the intervention/status/scope filter, not added): DRKS00035231 (Freiburg severe-ME/CFS home-visit feasibility study, recruiting since 2025-09-09 — purely observational, no drug/apheresis intervention).
+- Sources checked — papers: Europe PMC date-filtered sweep (2026-07-15 to 2026-07-23), targeted author search for Wirth KJ / Scheibenbogen C (2026-07-01 to 2026-07-23), general web search for recent ME/CFS mechanism/biomarker/treatment papers.
+- New papers (1): "Molecular hydrogen as a treatment for ME/CFS: a mini-review of clinical evidence and mechanistic rationale" (Friedberg F, LeBaron TW, Frontiers in Medicine, published Mar 18 2026, doi 10.3389/fmed.2026.1760210) — found this run, missed by prior searches (similar to the earlier-missed Wirth hypovolemia preprint); reviews 3 small pilot studies of hydrogen-rich water for ME/CFS fatigue.
+- Screened and excluded (fail papers-track scope — care-delivery/health-services protocols, not pathomechanism/biomarker/drug-target/treatment-trial/genetics): "General Practice Perspectives on Post-Infection Conditions" (Aung/Scuffell et al., medRxiv, Jul 17 2026, UK GP scoping review + survey); "LCovB" study protocol (Burchardi/Scheibenbogen et al., PLoS One, Jul 9 2026, Charité post-COVID care-pathway study — re-excluded, same ruling as 2026-07-20/07-21). Also excluded: epigenetic-signatures-in-chronic-pain paper (Ben Amar et al., Epigenomics, Jul 22 2026) — general chronic-pain topic, not ME/CFS-specific; and Kuns et al. "The State of Chronic Fatigue" PEM review (Arch Phys Med Rehabil 107(5):e191) — appears to be a conference-abstract-supplement entry, not a full peer-reviewed article, held back pending the full paper.
+- isNew: 1 paper newly flagged (friedberg-2026-molecular-hydrogen-minireview); all prior isNew already false.
+- Trials tracked: 4 (open: 2 — IMPACT, IA-Surv; planned: 1 — MDC002; terminated: 1 — RAPID_REVIVE)
+- Notes: No new or changed trials. 1 new paper added (a missed 2026-03-18 mini-review, not Wirth/Scheibenbogen-authored). Literature archive re-run — 100 papers total, 83 with PDF, 17 no-PDF noted.
+
 ## 2026-07-22 (scheduled autonomous, 04:07 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197), DRKS (DRKS00033897), CTIS public API (rapid-revive 2024-511628-16-00), mitodicure.com/pipeline/, Charité CFC clinical-research/NKSG listing (PIONEER/inebilizumab check), Mitodicure funding/GLP-toxicology web sweep, BC007/APTA "unCOVer Erlangen" news page, plus fresh DRKS/ClinicalTrials.gov open-ended web search for new German ME/CFS/post-COVID drug trials.
 - New trials: none
