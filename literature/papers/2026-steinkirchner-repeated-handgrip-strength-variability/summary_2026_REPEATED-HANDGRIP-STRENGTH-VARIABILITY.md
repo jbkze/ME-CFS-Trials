@@ -7,25 +7,28 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.07.22.26358672
 url: https://doi.org/10.64898/2026.07.22.26358672
-pdf: https://doi.org/10.64898/2026.07.22.26358672
-text: null
+pdf: literature/papers/2026-steinkirchner-repeated-handgrip-strength-variability/paper.pdf
+text: literature/papers/2026-steinkirchner-repeated-handgrip-strength-variability/paper.txt
 tags: [skeletal-muscle]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: steinkirchner2026a
+cover: "[[literature/papers/2026-steinkirchner-repeated-handgrip-strength-variability/cover.png]]"
 ---
 
 # Repeated Handgrip Strength Variability in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Separating Disease-Related Fatigability from Force Gradation
 
 ## Related files
+![[literature/papers/2026-steinkirchner-repeated-handgrip-strength-variability/paper.pdf]]
 - [[literature/papers/2026-steinkirchner-repeated-handgrip-strength-variability/citation.bib]]
+- [[literature/papers/2026-steinkirchner-repeated-handgrip-strength-variability/paper.txt]]
 
 ## Summary
 
 Researchers tested grip strength repeatedly in 211 ME/CFS patients and 170 healthy people (some of whom were deliberately asked to hold back effort, to see if the test could tell the difference). A commonly used cutoff for spotting 'insufficient effort' wrongly labelled 42-48% of genuine ME/CFS patients as not trying hard enough, while still missing more than a third of people who really were holding back.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
