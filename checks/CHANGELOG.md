@@ -15,6 +15,21 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-07-28 (scheduled autonomous, 04:15 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834), DRKS (DRKS00033897), mitodicure.com/pipeline/ + /about-us/ + /news/ (plus a Patsnap/Synapse drug-status cross-check), CTIS public API (rapid-revive 2024-511628-16-00), Charité CFC clinical-research/NKSG listing, aptatherapeutics.com news page (BC007/unCOVer Erlangen), fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP and German-language web search for new German ME/CFS/post-COVID drug trials.
+- New: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- Trials tracked: 5 (open: 2, watchlist: 2, archived: 1) — all 5 re-verified unchanged since 2026-07-27.
+- Leads re-checked, still fail confirmation standard: AIM-ME (anti-CD38/daratumumab NKSG arm), TAME (tafasitamab follow-up), BC007/APTA "unCOVer Erlangen", Semaglutide (Scheibenbogen/Solve M.E.), PAIS-AriLis, BMFTR "Nationale Dekade" funding call (applications due 2026-09-02, no recipients announced).
+- Also screened and excluded this run (fail scope): SON4PEM/sonlicromanol (Khondrion, CTIS 2025-521866-92-01 — Amsterdam UMC only, no German site), EXTINCT post-COVID immunoadsorption trial (MHH Hannover — already completed), DRKS00036060 "Brain Fog and Chronic Fatigue" (Essen — purely observational), MECFS-R (NCT05778006 — a patient registry, not an interventional trial).
+- Sources checked — papers: PubMed + Europe PMC date-filtered sweep (FIRST_PDATE 2026-07-20 to 2026-07-28), targeted Wirth K[Author]/Scheibenbogen C[Author] searches, medRxiv/bioRxiv/Research Square/Preprints.org/SSRN sweep, general web search for recent ME/CFS mechanism/biomarker/treatment/genetics papers.
+- New papers (1): "Pacing and energy management with digital tools for conditions with chronic fatigue: What we know so far in ME/CFS and Long COVID" (Sanal-Hayes NEM, Hayes LD, Mclaughlin M, Sculthorpe NF; PLOS Digital Health, 2026-07-27; doi 10.1371/journal.pdig.0001586) — perspective piece on wearable/app-based pacing tools for PEM, non-drug, not Wirth/Scheibenbogen-affiliated.
+- Screened and excluded this run: Bustos/Rodríguez-Hernández IL-6 cytokine review (general acute-COVID/Long-COVID immunology, not ME/CFS-specific); BioMapAI multi-omics tool (Xiong et al., Nature Medicine) — actually published 2025, not new; Martins/Beckman neuroinflammation review (general post-COVID, not ME/CFS-specific); Cao/Soriano long-COVID guideline (published March 2026, outside window). No new Wirth/Scheibenbogen output this week.
+- isNew: 1 paper newly flagged (sanal-hayes-2026-digital-pacing-perspective); the 2 papers from the 2026-07-27 run (habermann-horstmeier-2026-muscle-cluster-sex-menopause, praet-2026-nutraceutical-pem-hypothesis) had isNew cleared to false.
+- Literature archive: refreshed via `scripts/literature_intake.py` — 107 papers processed, 86 with PDF, 21 no-PDF (noted; new paper's publisher does not serve a headless-downloadable PDF).
+
 ## 2026-07-27 (scheduled autonomous, 04:16 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, plus fresh cond=ME/CFS + cond=Post-COVID Syndrome, locn=Germany sweep, plus targeted searches for daratumumab/tafasitamab/AIM-ME), DRKS (DRKS00033897, plus German-language sweep), mitodicure.com/pipeline/ + /about-us/ + /news/, CTIS public API (rapid-revive 2024-511628-16-00), Charité CFC clinical-research/NKSG listing, aptatherapeutics.com news page (BC007/unCOVer Erlangen).
 - **New: PIONEER — NCT07724834** ("CD19-B Cell Depletion in PAIS-ME/CFS Patients", Phase 2b inebilizumab vs placebo, Charité Berlin, PI Judith Bellmann-Strobl, funded under Scheibenbogen's BMFTR NKSG award). First posted on ClinicalTrials.gov 2026-07-24 — the previously-tracked "PIONEER" lead (watched since ~2026-07-08) now meets the confirmation standard. Status `not_yet_recruiting`, priority high (Scheibenbogen/Bellmann-Strobl). ⭐

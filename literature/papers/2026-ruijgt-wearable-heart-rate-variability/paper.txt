@@ -1,0 +1,1095 @@
+Vol.:(0123456789)
+Sports Medicine 
+https://doi.org/10.1007/s40279-026-02487-4
+ORIGINAL RESEARCH ARTICLE
+Wearable Heart Rate Variability Monitoring, Autonomic Dysfunction 
+and Post‑exertional Malaise in Long COVID: An Observational Study
+Twan M. Ruijgt1 · Anouk Slaghekke1 · Anneke Ellens2 · Kasper W. Janssen2 · Rob C. I. Wüst1 
+Accepted: 18 June 2026 
+© The Author(s) 2026
+Abstract
+Objectives  Patients with long coronavirus disease (COVID) experience disabling fatigue, autonomic dysfunction, reduced 
+exercise capacity and post-exertional malaise (PEM). Heart rate variability (HRV) can evaluate autonomic function and 
+monitor overexertion, potentially helping to mitigate PEM. This study aimed to use continuous multi-day HRV recordings 
+to monitor overexertion and study autonomic function in long COVID.
+Method  Heart rate and HRV were continuously measured in 121 patients with long COVID (43 ± 11 years, 32% male) 
+and 21 healthy controls (42 ± 13 years, 48% male), with daily life activities tracked in a logbook. Participants underwent a 
+(sub)maximal cardiopulmonary exercise test to determine heart rate at the first ventilatory threshold (VT1) to study HRV 
+responses to exercise at different intensities.
+Results and Discussion  HRV was lower in patients with long COVID compared with healthy controls during various daily 
+activities and sleep (p = 0.027). Across all exercise intensities surrounding the VT1, HRV remained lower for 24 h in patients 
+compared with controls (p = 0.010). Nighttime HRV decreased with intense exercise and longer durations in patients with long 
+COVID (p = 0.018), indicative of exercise-induced diurnal disturbances of the autonomic nervous system in long COVID.
+Conclusion  Heart rate variability, assessed by wearables, suggests autonomic dysfunction in patients with long COVID. 
+The delayed recovery of the sympathovagal balance after exercise close to and above VT1, suggests that the risk of PEM 
+rises above VT1.
+Application  These results confirm the applicability of wearables to assess autonomic function and manage overexertion in 
+patients with long COVID.
+1  Introduction
+Long coronavirus disease (COVID) is associated with sev-
+eral symptoms, including severe fatigue, a lower exercise 
+capacity and unrefreshing sleep. Other commonly reported 
+manifestations include autonomic dysfunction, such as pos-
+tural orthostatic tachycardia syndrome (POTS) and post-
+exertional malaise (PEM), which is the worsening of symp-
+toms after physical or mental exertion above an unknown 
+patient-dependent threshold [1–4]. Many patients experience 
+PEM following physical or mental exertion during daily life 
+activities, leading to temporary worsening of symptoms and 
+reduced functional capacity [1, 5]. Autonomic dysfunction is 
+implicated in the pathophysiology, although the exact cause 
+remains unknown [6–8]. Suggested interventions for patients 
+with long COVID involve heart rate pacing and keeping 
+exercise intensity below the risk zone for PEM, which is 
+not precisely known. Also, triggers for PEM induction dif-
+fer between patients [6, 9]. Since PEM is patient-dependent, 
+a personalised approach in prescribing exercise and moni-
+toring overexertion and recovery during daily activities is 
+needed to improve patient well-being [5].
+Heart rate variability (HRV) reflects the variation in time 
+between consecutive heartbeats and provides a non-invasive 
+ *	 Kasper W. Janssen 
+	
+kasperjanssen@desportarts.nl
+ *	 Rob C. I. Wüst 
+	
+r.wust@vu.nl
+1	
+Department of Human Movement Sciences, Faculty 
+of Behavioural and Movement Sciences, Amsterdam 
+Movement Sciences, Vrije Universiteit, Van der 
+Boechorststraat 7, 1081 BT Amsterdam, The Netherlands
+2	
+Sports and Exercise Medicine Clinic, DeSportarts, 
+Dublinstraat 2, 3541 CD Utrecht, The Netherlands
+
+	
+T. M. Ruijgt et al.
+Key Points 
+What is already known on this topic
+Patients with long COVID often experience fatigue, 
+autonomic dysfunction and post-exertional malaise 
+(PEM). HRV can be used as a non-invasive tool to meas-
+ure autonomic function and recovery. Some evidence 
+suggests lower HRV in patients with long COVID, but 
+multi-day measurements are scarce.
+What this study adds
+This study demonstrates that continuous HRV monitor-
+ing through wearables can effectively identify overexer-
+tion and autonomic dysfunction during daily activities in 
+patients with long COVID. Patients with long COVID 
+have lower heart rate variability during sleep, and HRV 
+remained significantly lower for a longer period after 
+moderate-to-heavy exercise, that is generally associated 
+with the induction of post-exertional malaise.
+How this study might affect research, practice or policy
+This study supports the use of wearables for assessing 
+autonomic function and overexertion in daily life, help-
+ing patients with long COVID in pacing daily activities 
+to mitigate symptoms of post-exertional malaise. HRV 
+tracking after exercise suggests that exercise near or 
+above VT1 provides an elevated risk for PEM. Sports 
+physicians and physiotherapists can incorporate HRV 
+biofeedback measures into pacing advice to patients. 
+Additional research is needed to further investigate the 
+effect of such an intervention.
+measure of autonomic function [8, 10–12]. It represents the 
+dynamic modulation of heart rate by the sympathetic and 
+parasympathetic branches of the autonomic nervous sys-
+tem. A commonly used time-domain measure is the root 
+mean square of successive differences between RR-inter-
+vals (RMSSD), which primarily reflects short-term, vagally 
+mediated fluctuations in heart rate [13, 14]. While rMSSD 
+is sometimes discussed in the context of sympathovagal bal-
+ance, it most directly reflects parasympathetic modulation 
+[12, 13]. Higher HRV is generally associated with greater 
+autonomic flexibility and better recovery, although substan-
+tial inter-individual variability exists, partly related to age 
+and sex [15–17]. Lower HRV is linked to reduced parasym-
+pathetic activity and increased physiological stress, making 
+it a useful marker for autonomic function and recovery [18].
+Patients with long COVID show mixed findings regard-
+ing heart rate variability (HRV). Some studies report lower 
+HRV at rest or during sleep [8, 19], while others report higher 
+HRV [20, 21], highlighting inconsistent findings across the 
+literature. A recent systematic review confirmed that lower 
+HRV is often reported in long COVID, but highlighted poor 
+methodological quality, including some studies using very 
+short measurement durations of only 1 min and lack of 
+assessment in relation to specific daily life activities or sleep 
+[22]. While these findings suggest autonomic dysfunction, 
+characterised by diminished parasympathetic activity [8, 19], 
+more studies are needed to study HRV in patients with long 
+COVID.
+Post-exertional malaise is a prominent feature in long 
+COVID and is also commonly observed in patients with 
+myalgic encephalomyelitis/chronic fatigue syndrome (ME/
+CFS) [23]. After exercise, HRV in patients with ME/CFS 
+remained lower, while HRV increased in healthy controls 
+[23], illustrating how autonomic dysfunction may relate 
+to PEM. While these findings may provide relevant physi-
+ological context, the mechanisms underlying PEM in long 
+COVID are unknown. Accordingly, the exact role of HRV 
+in the pathophysiology of PEM in long COVID remains 
+unclear.
+Exercise intensity and duration significantly modulate the 
+responses of the (para)sympathetic autonomic nervous sys-
+tem during exercise [24]. The parasympathetic nervous sys-
+tem is typically more active at rest and during low-intensity 
+exercise, while sympathetic activity increases during high-
+intensity or prolonged exercise near or above VT1 [25]. How 
+heart rate variability responds to acute exercise, and what the 
+recovery responses after exercise are in patients with long 
+COVID is, however, currently unknown.
+Gaining a better insight into HRV responses during sleep, 
+daily life activities and the recovery after moderate-to-heavy 
+exercise will not only provide more fundamental insights 
+into the pathophysiology of PEM and long COVID but 
+also help patients with structuring daily activities and pre-
+vent overexertion and PEM. Therefore, this study aimed to 
+investigate HRV over multiple days, during sleep, daily life 
+activities and recovery after exercise near or above VT1 in 
+patients with long COVID.
+2  Methods
+2.1  Participants
+This retrospective study included patients with long COVID 
+and healthy controls referred to a sports and exercise medi-
+cine clinic (DeSportarts, Utrecht, the Netherlands) between 
+1 January and 11 September 2024, who met the inclusion 
+and exclusion criteria. Inclusion criteria for patients were 
+(1) minimal one SaRS-CoV-2 infection, as diagnosed by 
+a general practitioner and (2) being treated by a general 
+practitioner for long COVID-related symptoms, including 
+severe fatigue, brain fog, sleep disturbances and particularly 
+
+Wearable Heart Rate Variability in Long COVID
+post-exertional malaise. Control participants could have had 
+a SaRS-CoV-2 infection but did not have long COVID symp-
+toms. Exclusion criteria for the control group were chronic 
+illnesses and related medication use or being an elite athlete.
+Patients included in this retrospective study were receiv-
+ing routine, medically specialised movement care at the 
+sports and exercise medicine clinic (DeSportarts, Utrecht, 
+the Netherlands). Current optimal treatment to avoid PEM 
+in patients with long COVID includes avoiding overexertion 
+and, as such, patients with long COVID were instructed, as 
+part of routine clinical care, to avoid exercise above the heart 
+rate at the first ventilatory threshold (VT1), using commer-
+cially available devices such as Garmin or Fitbit monitors 
+to track heart rate. It is important to emphasize that pacing 
+is a broader concept that encompasses more than heart rate 
+limits; it also includes activity planning, scheduled rest and 
+prioritization. In this study, we focused specifically on heart 
+rate-based pacing as one component of these broader pacing 
+strategies, with the aim of strictly controlling exercise inten-
+sity. Heart rate pacing was not advised in the control group.
+The medical ethical committee of the Amsterdam UMC 
+waived ethical oversight (2025.0092) in accordance with 
+local legislation, as the heart rate variability (HRV) moni-
+toring was part of standard care in a sports medical practice 
+with extensive experience using HRV in patients and top 
+athletes. The study design, involving the use of HRV devices 
+for 3–7 days, was considered part of routine clinical practice. 
+The study was deemed not to fall under the scope of the 
+Dutch Research Involving Human Subjects Act by the Medi-
+cal  Ethics Committee of Amsterdam UMC. Local approval 
+was obtained from DeSportarts Utrecht. All data presented 
+here were derived from individuals who consented to pro-
+vide their data for research purposes on the Firstbeat appli-
+cation. Before data analysis, participants were asked again 
+for explicit consent to anonymous data analysis for the pur-
+poses of this research. No identifiable personal information 
+was used during the analysis phase, ensuring participants’ 
+privacy in accordance with ethical and regulatory standards 
+for minimal-risk research.
+2.2  Patient and Public Involvement
+Patients were not directly involved in the recruitment or con-
+duct of the study, but their input was included during the 
+development phase to refine the study design and ensure rel-
+evance to patient experiences and priorities. We held informal 
+meetings with patients and their representatives and consulted 
+them on the usability and practical challenges of heart rate-
+guided pacing, as well as the use of smartwatches for heart 
+rate variability measurements and pacing strategies. We inte-
+grated their experiences into the interpretation of our data, and 
+practical applicability of our results for real patients.
+2.3  Determination of Exercise Intensity Domains 
+and Patient Severity
+There is currently no scientific consensus about PEM induc-
+tion, but anecdotal, clinical evidence suggests that the first 
+ventilatory threshold (VT1) might provide some indications 
+of such a risk zone [26]. VT1 reflects the point where the 
+body begins to accumulate low levels of lactate in the blood, 
+and marks the limit between aerobic and anaerobic exercise.
+The first ventilatory threshold (VT1) was determined in 
+a submaximal exercise test on a bike, 3–6 weeks prior to 
+the HRV assessment. Owing to the retrospective design, the 
+timing of the CPET relative to HRV assessment was not 
+standardized. Termination criteria were pre-determined in 
+consultation with the participant. If serious PEM symptoms 
+were anticipated, the test was terminated after reaching the 
+first ventilatory threshold (VT1), which was the case for 
+most patients with long COVID. Otherwise, the test contin-
+ued until the second ventilatory threshold (VT2) or maximal 
+exhaustion.
+The exercise test began with 2 min of rest on the ergome-
+ter followed by a 3-min baseline cycling period, followed by 
+a ramped, linear increase in power output at a rate of 10–20 
+W/min in patients, 30W/min for healthy women and 40W/
+min for healthy men. Participants were instructed to main-
+tain their cadence above 60 revolutions/min. Throughout the 
+test, electrocardiogram (ECG), heart rate, blood pressure, ­O2 
+saturation levels and Borg exertion levels were monitored. 
+Pulmonary gas exchange and ventilation were measured on 
+a breath-by-breath basis (Cosmed Quark CPET; Cosmed, 
+Rome, Italy), and displayed during the test. VT1 was deter-
+mined using the validated V-slope and ventilatory equivalent 
+methods ( ̇VE/̇VO2) and was assessed by two experts [27]. 
+Heart rate at the first ventilatory threshold was defined as 
+the start of the patient-specific PEM high risk zone for pac-
+ing strategies.
+Exploratory post hoc analyses allowed us to classify 
+patients with long COVID based on daily life impairments 
+into mild and moderately impaired patients. We reasoned 
+that approximately 15 ml ­O2/kg/min is needed for daily 
+life activities [28], and that patients with a VT1 below this 
+threshold may struggle more with daily tasks, as these would 
+already bring them into the PEM risk zone. Patients with 
+VT1 values ≥ 15 ml ­O2/kg/min were classified as mildly 
+impaired, and patients with VT1 values < 15 ml ­O2/kg/min 
+were classified as moderately impaired.
+2.4  Heart Rate Variability Assessments and Data 
+Analysis
+All participants were instructed to wear a Bodyguard 3 
+device (Firstbeat, Finland), a clinical grade ECG-based 
+HRV wearable, to measure heart rate variability (HRV). The 
+
+	
+T. M. Ruijgt et al.
+device was attached using electrodes and placed beneath the 
+right collarbone and below the left chest (CardinalHealth, 
+Kendall, 57 × 34 mm; Fig. 1A). The Bodyguard uses a 1 
+channel ECG and measures RR-intervals with 1-ms inter-
+vals. Participants were instructed to wear the device for 5–7 
+consecutive days, excluding water contact (shower, bath 
+etc.). Collected data were uploaded anonymously into the 
+Firstbeat cloud. However, some participants removed the 
+device earlier owing to personal reasons, such as vacations 
+or skin irritation from the electrodes, resulting in an actual 
+wear time of 3–7 days. Participants documented their daily 
+activities in a logbook using the Firstbeat Life app. Retro-
+spectively, these activities were further analysed and clas-
+sified into strict domains: sleep, eating, travel, relaxation, 
+work, walking, exercise, household chores, reading, relaxing 
+exercises, getting ready and watching TV. Many of these 
+categories were already available as standard options in the 
+Firstbeat Life app, but additional refinement allowed for a 
+more precise characterization of participants’ daily behav-
+iours. HRV RMSSD, averaged over a 5-min periods by the 
+Firstbeat software, was used for the analysis of daily life 
+activities. HRV data for each category was averaged per 
+participant across all measurement days to provide a per-
+sonal, averaged HRV per daily life activity. This approach 
+was chosen to allow a direct link between logbook recorded 
+activities and HRV values calculated by Firstbeat, making 
+it readily applicable in real-world settings. We calculated 
+the daily variability in HRV as the standard deviation per 
+participant for the different measurement days, using data 
+collected between waking time and 20:00 in the evening.
+For the HRV during recovery after exercise analysis, data 
+analysis was conducted using Matlab R2023b. RR-intervals 
+were filtered with a slightly adjusted version of HRVTool 
+(v.1.07, https://​marcu​svoll​mer.​github.​io/​HRV/). In short, a 
+threshold-based beat correction algorithm was applied, using 
+a 0.20 s threshold corresponding to the ‘medium-strong’ 
+filter of the Kubios software. RR-intervals deviating by more 
+than 0.20 s from the local average (median of 30 surrounding 
+RR-intervals) were corrected using cubic spline interpola-
+tion. This threshold was adjusted on the basis of mean heart 
+rate over a 20-s period; i.e. a heart rate of 120 bpm resulted 
+in a filter threshold of 0.1 s. HRV was calculated using the 
+root mean square of successive differences (RMSSD) from 
+300 RR-intervals. Heart rate was averaged over 20-s periods. 
+A typical figure of HRV and HR throughout the day in both 
+groups is shown in Fig. 1B.
+2.4.1  Heart Rate Variability During Recovery After Exercise
+Exercise intensities were categorised into three levels: mild 
+(80% ≥ HR < 90% of VT1), moderate (90% ≥ HR < 100% 
+of VT1) and intense (HR ≥ VT1). For every hour after 
+exercise completion (up to 24 h), a 15-min average HRV 
+was computed. Exercise was defined as maintaining HR 
+above the predefined intensity for ≥ 20 min, and this was 
+often accompanied by a comment in the diary. While it is 
+unlikely that psychological factors such as stress, pain or 
+fear would sustain for such periods, we do not exclude that 
+cognitive exertion could have contributed in some instances 
+[29]. Relative short segments of 15 min were used to capture 
+transient post-exercise autonomic changes, which may have 
+been masked by averaging over a full hour. The total time 
+spent in each exercise level during the day was classified as 
+short (< 20 min), medium (20–60 min) and long (> 60 min). 
+Because not all healthy controls underwent a submaximal 
+exercise test, VT1 was estimated using 75% of age-predicted 
+maximal heart rate in 12 out of 21 participants (57%). In the 
+subset of participants who completed the CPET (N = 9), VT1 
+occurred at a median of 0.80 of predicted maximal heart rate 
+(interquartile range (IQR) 0.14), which falls within the limits 
+of agreement and is consistent with the reference threshold 
+of 0.75 [30].
+Additionally, for each participant, the highest nighttime 
+HRV across all measurement nights was used as a refer-
+ence value. Similar to the concept of resting heart rate, we 
+reasoned that the highest HRV value is the best value that 
+participants could reach during the measurement period. We 
+do not know exactly what activities were performed during 
+the day and how this would impact HRV during the follow-
+ing night in patients with long COVID and, as such, average 
+of baseline HRV was not used. The percentile difference for 
+each night relative to this reference value was then calcu-
+lated to evaluate the impact of exercise-induced stress on 
+nighttime HRV.
+2.5  Statistical Analysis
+Statistical analysis was performed using R (version 4.4.1). 
+Descriptive data were reported as mean ± standard devia-
+tion, unless noted otherwise. Normality was checked using 
+Shapiro–Wilk tests and visually inspected with Q–Q plots. 
+Significance was accepted at p < 0.05.
+Differences in daily-life HRV (RMSSD) were analysed 
+using a non-parametric rank-based regression model (R-fit), 
+with group (control versus long COVID) as the main fac-
+tor, and age and sex included as covariates owing to their 
+established associations with HRV (Supplementary Fig. 1). 
+The normally distributed heart rate data were analysed using 
+a linear model with the same covariates. Effect sizes were 
+expressed as the raw mean differences (unstandardized coef-
+ficients) between both groups, derived from the respective 
+models.
+Differences in post-exercise HRV recovery were analysed 
+using a rank-transformed mixed linear model to account for 
+repeated measures, with severity group (control, mildly 
+impaired, moderately impaired), time (recovery hours) and 
+
+Wearable Heart Rate Variability in Long COVID
+exercise intensity (80–90%, 90–100%, > 100% of heart rate 
+at VT1) as fixed effects, and age and sex as covariates.
+Exercise-induced alterations in nighttime HRV were 
+analysed using a linear mixed-effects model on the mean 
+relative change in nighttime HRV compared with each 
+participant’s best night. Group, time spent per exercise inten-
+sity during the day and exercise intensity were included as 
+fixed effects. Only absolute HRV measures were corrected 
+for age and sex, while relative HRV changes were adjusted 
+solely for repeated measures. When exercise was performed 
+Fig. 1   A Schematic overview of the measurement. The Firstbeat Bod-
+yguard 3 device is attached beneath the right collarbone and left chest 
+area. RR-intervals are recorded and stored in a digital database, and 
+results can be viewed in an app. Data can be extracted for research 
+purposes. B Typical example of heart rate and heart rate variability 
+(HRV) recordings during one day for one healthy control and one 
+patient with long COVID, with identical age, sex and BMI. HRV was 
+calculated as the root mean square of successive differences between 
+RR-intervals (RMSSD). When heart rate increased, HRV typically 
+decreased. Healthy controls typically had more daytime fluctuations 
+in HRV RMSSD compared with patients with long COVID. C The 
+daily variability in HRV RMSSD, calculated as the average standard 
+deviation over the day, was lower in patients than in healthy controls
+
+	
+T. M. Ruijgt et al.
+on multiple days, the participants' mean HRV across those 
+days was used in the analysis. Post hoc testing of linear mod-
+els was conducted using the emmeans package with Bonfer-
+roni adjustment for multiple comparisons.
+3  Results
+This study included 121 patients with long COVID and 21 
+control individuals (patient characteristics in Table 1). Long 
+COVID participants had, on average, a higher BMI compared 
+with the age- and sex-matched healthy controls. Patients 
+with long COVID had a lower power output and oxygen 
+uptake consumption ( ̇VO2) at VT1 compared with controls 
+(p < 0.001). Patients with long COVID were classified as 
+moderately impaired, with VT1 < 15 ml/kg/min (which is the 
+oxygen consumption needed for daily life activities; N = 34, 
+24% male, 43 ± 11 years, ̇VO2: 13.1 ± 1.2 15 ml/kg/min) or 
+mildly impaired (VT1 ≥ 15 15 ml/kg/min; N = 87, 36% male, 
+41 ± 10 years, ̇VO2: 21.6 ± 5.1 15 ml/kg/min).
+3.1  Adverse Effects from the CPET
+Three patients from this cohort experienced self-reported 
+PEM for more than 5 days after the submaximal CPET. 
+More than 5 days was considered an adverse event, because 
+of the prolonged negative impact on daily life. These patients 
+were not excluded from the study owing to the significant 
+time between the exercise test and the HRV measurement.
+3.2  HRV During Daily Life Activities
+The daily variability in HRV RMSSD, calculated as the aver-
+age standard deviation over the day, was lower in patients than 
+in healthy controls. This indicates smaller fluctuations in HRV 
+over the day in patients with long COVID. HRV RMSSD 
+was lower in the long COVID group during sleep, eating, 
+travelling and the uncategorised (and combined) activities 
+(p = 0.005–0.027; Fig. 2, Supplementary Table 1 and 2). 
+Effect sizes and confidence intervals of the various daily life 
+activities are mentioned in Table 2. Notably, 45% of reported 
+activities were classified under this non-specific category, as 
+these activities consisted of those that did not fall directly into 
+one of the 12 predefined categories (e.g. shopping) or were a 
+combination of two activities (e.g. eating in front of TV). A 
+negative correlation between HR and HRV is shown in Sup-
+plementary Fig. 2. Heart rate was significantly higher during 
+sleep and the uncategorized activities in patients with long 
+COVID, but no such difference was observed during eating 
+or traveling. The daily life activities with higher absolute heart 
+rates and subsequently lower HRV values, such as exercise, 
+showed no significant group differences in HRV. 
+3.3  Recovery of HRV After Exercise Cessation
+As heart rate pacing advice is the current optimal treatment 
+for patients to avoid PEM, we first studied how many patients 
+recorded heart rates above the VT1. In 43% of patients with 
+long COVID, we recorded heart rates above the anaerobic 
+threshold during daily life activities. Thus, the adherence to 
+the heart rate pacing advice given after the CPET was 57%. 
+We stratified exercise into three exercise categories: mild 
+(80% ≥ HR < 90% of VT1), moderate (90% ≥ HR < 100% of 
+VT1) or intense (HR ≥ value at VT1) exercise, and we stud-
+ied the recovery of the heart rate variability after exercise 
+cessation. For this analysis, we made a subdivision between 
+mildly and moderately impaired patients on the basis of oxy-
+gen consumption at VT1. Figure 3 illustrates the time course 
+of HRV during the recovery period after mild, moderate 
+and intense exercise. During the hours following exercise, 
+patients with long COVID showed significantly lower HRV 
+values compared with healthy controls (p = 0.010), irre-
+spective of exercise intensity, with no differences observed 
+between mildly and moderately impaired patients. Com-
+pared with controls, HRV reduced the most after intense 
+exercise in the mildly affected patients (p < 0.001), but not 
+in the moderately impaired patients where HRV was consist-
+ently low. HRV increased relatively rapidly after exercise 
+cessation in healthy controls (3–6 h post-exercise; Fig. 3 
+blue markers). This recovery-associated increase in HRV 
+(which is independent of heart rate) was significantly faster 
+in healthy controls compared with mildly and moderately 
+impaired patients with long COVID (p = 0.002), indicating 
+delayed autonomic recovery in patients with long COVID. 
+Table 1   Participant characteristics
+Data is shown as mean ± SD
+Healthy control Long COVID p value
+Number of participants
+21
+121
+Daily life
+Age (years)
+42 ± 13
+42 ± 11
+0.87
+Sex (male %)
+10 (47.6%)
+35 (31.0%)
+0.17
+Height (cm)
+178 ± 9
+174 ± 10
+0.14
+Weight (kg)
+73.4 ± 13.0
+77.6 ± 14.5
+0.22
+BMI (kg/m)
+23.1 ± 3
+25.7 ± 4.7
+0.02
+Submaximal exercise test
+Number of participants
+9
+121
+Age (years)
+41 ± 15
+42 ± 11
+0.74
+Sex (male)
+4 (44.4%)
+35 (31.0%)
+0.46
+BMI (kg/m)
+23.9 ± 2.6
+25.7 ± 4.7
+0.31
+Power output at VT1 (W) 183 ± 59
+100 ± 44
+ < 0.001̇
+VO2 at VT1 (ml/kg/min)
+28.6 ± 6.1
+19.2 ± 5.8
+ < 0.001
+RER at VT1
+0.95 ± 0.04
+0.95 ± 0.04
+0.74
+
+Wearable Heart Rate Variability in Long COVID
+While HRV increased relatively rapidly after mild inten-
+sity exercise in mildly affected patients (5–6 h), the HRV 
+recovery was further delayed after exercise above VT1 (until 
+9 h). HRV did not increase, relative to the exercise itself, 
+until 10–13 h in the moderately impaired patients at various 
+exercise intensities above 80% of VT1. Similar results were 
+obtained when sample size of both groups were the same 
+(Supplementary Fig. 3 and Supplementary Table 3).
+3.4  Nighttime HRV Following Exercise
+We reasoned that the delayed recovery time course in HRV 
+in patients would eventually affect nighttime HRV. Indeed, 
+nighttime HRV was consistently reduced following exer-
+cise, with differences across exercise durations and intensi-
+ties (Fig. 4A). The nighttime HRV of healthy controls and 
+patients reacted differently to the day-time exercise bout. In 
+Fig. 2   Heart rate variability and heart rate during daily life activi-
+ties. HRV (A–E, measured as RMSSD) and heart rate (F–J, in bpm) 
+are shown during different daily life activities: sleeping (A, F), eat-
+ing (B, G), traveling (C, H), uncategorized activities (D, I) and 
+exercise (E, J). HRV was significantly lower in patients with long 
+COVID compared with healthy controls during sleep (p = 0.027), 
+eating (p = 0.005), traveling (p = 0.007) and uncategorized activi-
+ties (p = 0.016). No difference in HRV was observed during exercise 
+(p = 0.25) (E), despite significantly higher heart rates in controls 
+(p < 0.001, J). In patient with long COVID, heart rate was signifi-
+cantly higher during sleep (p = 0.006, F) and a tendency in uncat-
+egorized activities (p = 0.06, I), while no significant differences 
+were observed during eating (G) or traveling (H). For the HRV data 
+median values (horizontal bars) and individual data points are dis-
+played
+Table 2   Unstandardized effect sizes, 95% confidence intervals and 
+corresponding p values compared with healthy controls for the heart 
+rate variability and the heart rate for the various daily life activities 
+that were recorded by participants
+See also Fig. 2
+Activity
+Effect size (Β)
+95% confidence interval
+p value
+Heart rate variability (HRV)
+Sleeping
+ − 8.82
+[− 16.58, − 1.06]
+0.027
+Eating
+ − 6.19
+[− 10.45, − 1.92]
+0.005
+Traveling
+ − 6.63
+[− 11.38, − 1.88]
+0.007
+Other
+ − 5.82
+[− 10.50, − 1.14]
+0.016
+Exercise
+1.52
+[− 1.07, 4.11]
+0.25
+Heart Rate (HR)
+Sleeping
+5.21
+[1.49, 8.92]
+0.006
+Eating
+3.25
+[− 1.51, 8.01]
+0.18
+Traveling
+1.90
+[− 3.28, 7.09]
+0.47
+Other
+6.72
+[− 0.23, 13.68]
+0.06
+Exercise
+ − 13.33
+[− 19.13, − 7.53]
+ < 0.0001
+
+	
+T. M. Ruijgt et al.
+controls, nighttime HRV tended to be higher (p = 0.059), 
+and was not significantly influenced by exercise duration or 
+intensity. In patients however, increasing exercise duration 
+and intensity both resulted in significantly lower absolute 
+HRV values during the subsequent night. The interaction 
+between exercise duration and intensity (p = 0.010) suggests 
+that nighttime HRV depends on the combined effect of these 
+two factors.
+To further illustrate these effects, we analysed the relative 
+reduction in nighttime HRV (%) compared with the refer-
+ence value, defined as the highest nighttime HRV by each 
+participant (Fig. 4B). In the long COVID group, both exer-
+cise intensity and duration significantly influenced the mag-
+nitude of nighttime HRV reduction. Specifically, engaging in 
+more than 60 min of exercise, regardless of intensity, led to a 
+greater reduction in nighttime HRV compared with perform-
+ing < 20 min of exercise at the same intensity (p = 0.033). 
+Additionally, a significant difference was observed between 
+mild and intense exercise when performed for < 60 min, with 
+intense exercise causing a greater reduction in nighttime 
+HRV (p = 0.038). The significant interaction effect between 
+time and intensity (p = 0.018) underscores the combined 
+impact of both factors on nighttime HRV recovery, particu-
+larly in patients with long COVID. These results illustrate 
+that exercise with increasing intensity and/or duration causes 
+a delayed adjustment of HRV in patients with long COVID.
+4  Discussion
+The aim of this real-life study was to use HRV during daily 
+life activities to study autonomic function and the recovery 
+responses to exercise in patients with long COVID. The 
+adherence to the heart rate pacing advice was substantial, 
+57% of patients did not exceed their VT1 threshold dur-
+ing the HRV measurement. We observed that HRV was 
+lower in patients with long COVID in multiple daily life 
+activities compared with healthy controls and did not fluc-
+tuate as much during the day. HRV in patients with long 
+COVID remained low during the recovery period after 
+mild, moderate or intense exercise when compared with 
+healthy controls. Lastly, long-lasting exercise around or 
+above the VT1 resulted in a lower HRV during the subse-
+quent night in patients with long COVID.
+4.1  Autonomic Dysfunction in Long COVID
+Our findings of a lower HRV in patients with long COVID 
+are consistent with earlier research [16–18]. The lower HRV 
+during sleep and many daily life activities, and fluctuations 
+during the day in patients compared with healthy controls, 
+suggest that patients with long COVID may experience 
+Fig. 3   Recovery of heart rate variability (HRV) after exercise ces-
+sation. The time course of heart rate variability (HRV, as measured 
+as RMSSD) for 24 h after cessation of exercise at mild (A: 80–90% 
+VT1), moderate (B: 90–100% VT1) and intense (C: > 100% VT1) 
+intensity. Healthy controls (white) had higher HRV compared with 
+patients with mild (pink) and moderate (dark red) long COVID. Blue-
+shaded circles indicate the time points at which HRV values became 
+significantly higher (p < 0.05) compared with the 1-h post-exercise 
+baseline within each group. Data points represent the median HRV 
+values for each group at each time point, with error bars indicating 
+the interquartile range because data was not normally distributed
+
+Wearable Heart Rate Variability in Long COVID
+significant autonomic dysfunction, characterised by reduced 
+parasympathetic activity and/or an increased sympathetic 
+activity throughout a large proportion of their daily life, and 
+during the night. The lower HRV observed during sleep 
+likely limits the ability of the body to recover from daily 
+stressors. This could partially relate to the unrefreshing 
+sleep commonly reported in long COVID, although we did 
+not specifically ask for sleep quality in the present study. 
+The stronger age–HRV association in controls indeed likely 
+reflects normal age-related autonomic decline, whereas the 
+tighter HRV–HR coupling in long COVID suggests dis-
+ease-related autonomic dysregulation, potentially linked to 
+impaired flexibility and recovery underlying post-exertional 
+malaise (PEM).
+The pathophysiology of autonomic nervous system 
+dysfunction in long COVID is unclear, but some recent 
+studies provide some insights. The autonomic modulation 
+of the (para)sympathetic activity during exercise is partly 
+mediated by the release of catecholamines. Autoantibod-
+ies against various catecholamine receptors involved in the 
+autonomic nervous system have been observed in patients 
+with long COVID and these correlate with symptom sever-
+ity [31]. Whether autonomic nervous system dysfunction is 
+a response to a viral infection for brain stem function [32], 
+viral persistence, other neuropathophysiological alterations 
+[33] or autoimmunity [34] is currently not clear. Also, how 
+acute exercise modulates the response of the immune system 
+to the viral persistence or autoantigen presentation, and how 
+this links to the onset of post-exertional malaise in patients 
+with long COVID is currently unknown.
+Fig. 4   Heart rate variability during post-exercise night. A Heart rate 
+variability (HRV) during the night following mild (80–90% of VT1), 
+moderate (90–100% of VT1) and intense (> 100% of VT1) daytime 
+exercise. HRV was lower, only in patients, following exercise with 
+increasing duration (around the VT1) and exercise intensity. B The 
+relative change (%) in nighttime HRV (measured as RMSSD) is 
+shown following mild (80–90% of VT1), moderate (90–100% of 
+VT1) and intense (> 100% of VT1) daytime exercise. Also the rela-
+tive reduction was lower in patients, following exercise with increas-
+ing duration and exercise intensity. Exercise durations were divided 
+into three categories: < 20, 20–60 and > 60 min. Bars represent group 
+medians, and individual data points are shown
+
+	
+T. M. Ruijgt et al.
+4.2  Recovery After Moderate to Heavy Exercise
+As the parasympathetic nervous system is more active dur-
+ing lower-intensity exercise, the first ventilatory threshold 
+has been described as a point where sympathetic activa-
+tion begins to increase, as reflected in HRV dynamics 
+[35]. Recovery of parasympathetic activity is typically 
+delayed (up to 60–120 min) after exercise above VT1, even 
+in highly-trained athletes [35]. In our real-life study, we 
+observed that in healthy individuals, HRV values recover 
+within a few hours after the completion of exercise, as 
+the ratio of sympathetic and parasympathetic activities 
+shift back towards mainly parasympathetic activities, 
+which aids in recovery. However, this increase in HRV 
+during the recovery of exercise was delayed for a signifi-
+cantly longer period in patients with long COVID and 
+did not return to the same values as in healthy controls, 
+especially after exercise performed above VT1 and most 
+notably in the moderately impaired group. This blunted 
+HRV recovery after exercise suggests an insufficient or 
+delayed response in the reduction in sympathetic nervous 
+system activity, and/or an increase in the parasympathetic 
+activity after exercise. These inabilities to return heart rate 
+variability back to baseline values indicate that exercise 
+recovery is impaired in patients with long COVID, par-
+ticularly in those with moderate impairment, characterized 
+by a VT1 below 15 ml ­O2/min/kg. This could contribute 
+to prolonged physiological stress and a delayed recovery 
+period. Above the VT1, the sympathetic activity and stress 
+hormone concentrations (i.e. cortisol and catecholamine) 
+typically increase [36], but we did not measure stress hor-
+mone concentrations and time courses during and after 
+high-intensity exercise in patients with long COVID.
+Additionally, we observed lower night-time HRV in 
+patients with long COVID following day-time exercise 
+of long duration and/or moderate to high intensity. This 
+suggests that moderate-to-intense physical activity may 
+continue to suppress parasympathetic activity during sub-
+sequent sleep, potentially resulting in reduced recovery.
+Our findings, using real-life data from patients, provide 
+further insights into the pathophysiology of post-exer-
+tional malaise (PEM), in which exertion leads to worsen-
+ing of symptoms and longer recovery times [1]. We do 
+not know which processes underlie the induction of PEM 
+after physical exercise. Since PEM symptoms are not lim-
+ited to skeletal muscle-associated abnormalities [1], we 
+provide evidence that acute exercise leaves an autonomic 
+nervous system signature that could, at least in theory, 
+initiate multi-organ symptomology including unrefreshing 
+sleep and worsening of other symptoms. The underlying 
+pathophysiology of PEM and the link with abnormal auto-
+nomic nervous system activities is unknown, as we do not 
+have recordings of PEM episodes in this real-life study. 
+As such, more controlled studies need to be performed to 
+provide a deepened mechanistic understanding of the role 
+of the autonomic nervous system in PEM and the pathol-
+ogy of long COVID.
+Currently, no curative treatment for PEM is available, 
+and patients are advised to limit exercise in the risk zone 
+for PEM induction. This risk zone for PEM induction is 
+currently unknown, but as HRV recovery responses were 
+particularly disrupted with exercise of a longer duration 
+(> 60 min) and at intensities near VT1, we hypothesize 
+that a process occurring around VT1 is the initiator of 
+PEM, and that as such, a heart rate above VT1 can be 
+used as a surrogate measure for an elevated risk for PEM 
+induction. Anecdotal evidence from patients with long 
+COVID suggests that this risk for PEM induction is time- 
+and patient-dependent, and is not only caused by muscular 
+activities, but also by cognitive and mental exertion. As 
+VT1 is mechanistically related to altered peripheral lactate 
+production, this should be interpreted as a practical, sur-
+rogate marker for the risk zone for PEM induction. VT1 
+is also associated with increased sympathetic activity and 
+release of cortisol and catecholamines (cortisol and (nor)
+adrenaline) into the blood stream [36], but it is unknown 
+whether the increase in sympathetic activity or the cir-
+culating catecholamines, or other hormonal alterations 
+provide a more mechanistic underpinning of PEM induc-
+tion. Whether an abnormal physiological stress response 
+or disturbed relaxation response underlies the acute onset 
+of PEM deserves further study.
+4.3  Clinical Implications
+4.3.1  Biomedical Basis for Long COVID
+Our findings provide further evidence of physiological 
+alterations during and after physical exercise in patients 
+with long COVID that are distinct from healthy controls. 
+Autonomic dysfunction and impaired recovery in HRV in 
+patients with long COVID contribute to our understanding 
+of abnormal exercise responses in long COVID, and likely 
+also patients with post-acute infectious syndrome (PAIS) or 
+myalgic encephalomyelitis/chronic fatigue syndrome (ME/
+CFS) who also suffer from PEM.
+4.3.2  Application of Wearables
+Wearable devices can be used for monitoring HRV over mul-
+tiple days in both patients and controls during sleep, daily 
+life activities and post-exercise recovery. These devices 
+can be used both in clinical practice and by patients them-
+selves (preferably guided by experts) to identify stressful 
+
+Wearable Heart Rate Variability in Long COVID
+moments, overexertion and recognize personalized patterns 
+that impact recovery. By utilizing this data, clinicians can 
+offer more tailored advice on pacing and exercise, ensuring 
+that patients avoid overexertion and exacerbation of symp-
+toms. This approach also empowers patients by providing 
+real-time insights into their physical and recovery states, 
+helping them make informed decisions about their activities 
+and avoid actions that could lead to worsening symptoms.
+4.3.3  Guidelines for Exercise Intensities
+The impaired HRV recovery seen in patients with long 
+COVID emphasises the importance of managing exercise 
+intensities and duration carefully, as overexertion not only 
+impacts immediate recovery, but can also disrupt sleep 
+and subsequent recovery. Our results indicate that physical 
+exercise with increasing intensity and duration significantly 
+reduces subsequent HRV during the night, impairing heart 
+rate variability recovery during sleep. Sports physicians 
+can conduct a submaximal exercise test to determine the 
+heart rate at VT1, which helps patients in providing a usable 
+marker for the risk zone for PEM induction during physical 
+exercise. We consider VT1 to represent a surrogate marker 
+for the post-exertional malaise (PEM) risk zone, which is 
+likely associated with a physiological process undergoing 
+change around VT1, such as sympathetic nervous system 
+activation, hormonal fluctuations or the release of stress-
+related mediators. Cognitive or mental exertion may trigger 
+a similar physiological alteration as during physical exertion 
+above VT1. Thus, VT1 should be interpreted as a practical 
+and measurable surrogate for the underlying biological risk 
+zone for PEM induction. Continuous heart rate and HRV 
+monitoring throughout the day can be done using weara-
+bles, which help improve recovery and mitigate symptoms 
+of post-exertional malaise.
+4.4  Limitations
+This real-life study using HRV monitors in patients has 
+several limitations. Firstly, the real-life setting of this 
+study meant that a strict experimental protocol could not 
+be applied. A wide range of (combined) daily life activities 
+were recorded in the logbook, which increased subject-to-
+subject variability. Some activities were reported by only a 
+small number of participants, limiting the statistical power. 
+Current best treatment for patients with long COVID include 
+the avoidance of PEM-inducing exercise, and as such, we 
+have not induced PEM in a controlled manner in this study. 
+The goal of heart rate pacing below VT1 was to prevent 
+PEM. Without heart rate pacing, the exertion in the long 
+COVID group might have been higher, leading to even more 
+pronounced differences compared with healthy controls. 
+In this retrospective field study, we could not control the 
+timing of the exercise during the day, and the nature of the 
+post-exercise period. Nonetheless, regardless of the inherent 
+variability in the post-exercise time period, we observed lon-
+gitudinal and cross-sectional differences in the HRV recov-
+ery profiles. Future prospective and laboratory-controlled 
+studies are required to validate these findings. We acknowl-
+edge that orthostatic tachycardia is a common issue in long 
+COVID and could influence heart rate measurements, par-
+ticularly during upright activities. Lastly, we lacked infor-
+mation on participants’ pre-disease exercise capacity and 
+their COVID-related burden on quality of life, making it 
+difficult to disentangle true disease-related impairment from 
+pre-existing fitness levels, particularly in patients with mild 
+and moderate impairment. Symptom questionnaires would 
+have allowed us to correlate abnormal HRV recovery after 
+exercise with PEM symptomology. The severity and time 
+since the initial COVID-19 infection in long COVID par-
+ticipants was unknown, which may have influenced HRV 
+values. We acknowledge the relatively small control group 
+with a completed exercise test. These potential limitations 
+should be accounted for when interpreting heart rate vari-
+ability in future research.
+5  Conclusions
+In this study, we provide evidence that heart rate variabil-
+ity is lower during daily life activities in patients with long 
+COVID and remains lower for longer after exercise. The 
+continuous measurement of HRV provides an easy-to-use 
+non-invasive method that may help limit physical overexer-
+tion and prevent induction of PEM in patients with long 
+COVID. HRV can be easily measured using wearables dur-
+ing daily life activities in patients, and can also be used for 
+future clinical intervention therapies on treating or reducing 
+PEM in patients.
+Supplementary Information  The online version contains supplemen-
+tary material available at https://​doi.​org/​10.​1007/​s40279-​026-​02487-4.
+Acknowledgements  The authors thank patient representatives for 
+insightful discussions.
+Author contributions  T.M.R., K.W.J., R.C.I.W. designed the study; 
+T.M.R., A.S., A.E., K.W.J. and R.C.I.W. were involved in the data 
+collection, analysis and interpretation; T.M.R. drafted the manuscript; 
+T.M.R., A.S., A.E., K.W.J. and R.C.I.W. revised and approved the final 
+version.
+Funding  This study was funded internally by DeSportarts and 
+Vrije Universiteit Amsterdam with support from the ZonMw 
+“Consortia voor biomedisch cohortonderzoek naar ME/CVS 
+2022” (10091012110025) and “Biomedische kennishiaten post-COVID 
+2024” (11080022410019).
+Data availability  The pseudonymised data is available upon reasonable 
+request from the corresponding author.
+
+	
+T. M. Ruijgt et al.
+Declarations 
+Conflict of interest  The authors do not have any competing interests 
+to declare.
+Ethical approval  The study was deemed not to fall under the scope of 
+the Dutch Medical Research Involving Human Subjects Act by METC 
+Amsterdam (2025.0092). Local approval was obtained from DeSpor-
+tarts Utrecht. The study was performed in accordance with the stand-
+ards of ethics outlined in the Declaration of Helsinki, and informed 
+consent was obtained from participants.
+Equity, diversity and inclusion  This study included both men and 
+women of diverse age and cultural, educational and socioeconomic 
+backgrounds. Diversity was not specifically targeted in recruitment.
+Open Access  This article is licensed under a Creative Commons Attri-
+bution 4.0 International License, which permits use, sharing, adapta-
+tion, distribution and reproduction in any medium or format, as long 
+as you give appropriate credit to the original author(s) and the source, 
+provide a link to the Creative Commons licence, and indicate if changes 
+were made. The images or other third party material in this article are 
+included in the article’s Creative Commons licence, unless indicated 
+otherwise in a credit line to the material. If material is not included in 
+the article’s Creative Commons licence and your intended use is not 
+permitted by statutory regulation or exceeds the permitted use, you will 
+need to obtain permission directly from the copyright holder. To view a 
+copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+References
+	 1.	 Appelman B, Charlton BT, Goulding RP, et  al. Muscle 
+abnormalities worsen after post-exertional malaise in long 
+COVID. Nat Commun. 2024;15:17. https://​doi.​org/​10.​1038/​
+s41467-​023-​44432-3.
+	 2.	 Twomey R, DeMars J, Franklin K, et al. Chronic fatigue and pos-
+texertional malaise in people living with long COVID: an obser-
+vational study. Phys Ther. 2022;102:pzac005. https://​doi.​org/​10.​
+1093/​ptj/​pzac0​05.
+	 3.	 Davis HE, McCorkell L, Vogel JM, et al. Long COVID: major 
+findings, mechanisms and recommendations. Nat Rev Microbiol. 
+2023;21:133–46. https://​doi.​org/​10.​1038/​s41579-​022-​00846-2.
+	 4.	 Charlton BT, Goulding RP, Jaspers RT, et al. Skeletal muscle 
+adaptations and post-exertional malaise in long COVID. Trends 
+Endocrinol Metab. 2024. https://​doi.​org/​10.​1016/j.​tem.​2024.​11.​
+008.
+	 5.	 Wright J, Astill SL, Sivan M. The relationship between physical 
+activity and long COVID: a cross-sectional study. Int J Environ 
+Res Public Health. 2022;19:5093. https://​doi.​org/​10.​3390/​ijerp​
+h1909​5093.
+	 6.	 Haloot J, Bhavaraju-Sanka R, Pillarisetti J, et al. Autonomic 
+dysfunction related to postacute SARS-CoV-2 syndrome. Phys 
+Med Rehabil Clin N Am. 2023;34:563–72. https://​doi.​org/​10.​
+1016/j.​pmr.​2023.​04.​003.
+	 7.	 Marques KC, Quaresma JAS, Falcão LFM. Cardiovascular auto-
+nomic dysfunction in “long COVID”: pathophysiology, heart 
+rate variability, and inflammatory markers. Front Cardiovasc 
+Med. 2023;10:1256512. https://​doi.​org/​10.​3389/​fcvm.​2023.​
+12565​12.
+	 8.	 Mooren FC, Böckelmann I, Waranski M, et al. Autonomic dys-
+regulation in long-term patients suffering from Post-COVID-19 
+syndrome assessed by heart rate variability. Sci Rep. 
+2023;13:15814. https://​doi.​org/​10.​1038/​s41598-​023-​42615-y.
+	 9.	 Colas C, Le Berre Y, Fanget M, et al. Physical activity in long 
+COVID: a comparative study of exercise rehabilitation benefits 
+in patients with long COVID, coronary artery disease and fibro-
+myalgia. Int J Environ Res Public Health. 2023;20:6513. https://​
+doi.​org/​10.​3390/​ijerp​h2015​6513.
+	10.	 Föhr T, Tolvanen A, Myllymäki T, et al. Subjective stress, 
+objective heart rate variability-based stress, and recovery on 
+workdays among overweight and psychologically distressed 
+individuals: a cross-sectional study. J Occup Med Toxicol. 
+2015;10:39. https://​doi.​org/​10.​1186/​s12995-​015-​0081-6.
+	11.	 Hillebrand S, Gast KB, de Mutsert R, et al. Heart rate variabil-
+ity and first cardiovascular event in populations without known 
+cardiovascular disease: meta-analysis and dose–response meta-
+regression. EP Europace. 2013;15:742–9. https://​doi.​org/​10.​
+1093/​europ​ace/​eus341.
+	12.	 Escorihuela RM, Capdevila L, Castro JR, et al. Reduced heart 
+rate variability predicts fatigue severity in individuals with 
+chronic fatigue syndrome/myalgic encephalomyelitis. J Transl 
+Med. 2020;18:4. https://​doi.​org/​10.​1186/​s12967-​019-​02184-z.
+	13.	 Shaffer F, Ginsberg JP. An overview of heart rate variability 
+metrics and norms. Front Public Health. 2017;5:258. https://​
+doi.​org/​10.​3389/​fpubh.​2017.​00258.
+	14.	 Gullett N, Zajkowska Z, Walsh A, et al. Heart rate variability 
+(HRV) as a way to understand associations between the auto-
+nomic nervous system (ANS) and affective states: a critical 
+review of the literature. Int J Psychophysiol. 2023;192:35–42. 
+https://​doi.​org/​10.​1016/j.​ijpsy​cho.​2023.​08.​001.
+	15.	 Golosheykin S, Grant JD, Novak OV, et al. Genetic influences 
+on heart rate variability. Int J Psychophysiol. 2017;115:65–73. 
+https://​doi.​org/​10.​1016/j.​ijpsy​cho.​2016.​04.​008.
+	16.	 Ken U, Rollin M, et al. Twenty-four hour time domain heart rate 
+variability and heart rate: relations to age and gender over nine 
+decades. J Am Coll Cardiol. 1998;31:593–601. https://​doi.​org/​
+10.​1016/​S0735-​1097(97)​00554-8.
+	17.	 Altini M, Plews D. What is behind changes in resting heart rate 
+and heart rate variability? A large-scale analysis of longitu-
+dinal measurements acquired in free-living. Sensors (Basel). 
+2021;21:7932. https://​doi.​org/​10.​3390/​s2123​7932.
+	18.	 Teisala T, Mutikainen S, Tolvanen A, et al. Associations of 
+physical activity, fitness, and body composition with heart rate 
+variability–based indicators of stress and recovery on work-
+days: a cross-sectional study. J Occup Med Toxicol. 2014;9:16. 
+https://​doi.​org/​10.​1186/​1745-​6673-9-​16.
+	19.	 da Silva ALG, Vieira LdosP, Dias LS, et al. Impact of long 
+COVID on the heart rate variability at rest and during deep 
+breathing maneuver. Sci Rep. 2023;13:22695. https://​doi.​org/​
+10.​1038/​s41598-​023-​50276-0.
+	20.	 Asarcikli LD, Hayiroglu Mİ, Osken A, et al. Heart rate vari-
+ability and cardiac autonomic functions in post-COVID period. 
+J Interv Card Electrophysiol. 2022;63:715–21. https://​doi.​org/​
+10.​1007/​s10840-​022-​01138-8.
+	21.	 Marques KC, Silva CC, Trindade SdaS, et al. Reduction of car-
+diac autonomic modulation and increased sympathetic activity 
+by heart rate variability in patients with long COVID. Front 
+Cardiovasc Med. 2022;9:862001. https://​doi.​org/​10.​3389/​fcvm.​
+2022.​862001.
+	22.	 Suh HW, Kwon CY, Lee B. Long-term impact of COVID-19 on 
+heart rate variability: a systematic review of observational studies. 
+Healthcare (Basel). 2023;11:1095. https://​doi.​org/​10.​3390/​healt​
+hcare​11081​095.
+	23.	 Van OJ, Marusic U, De Wandele I, et al. Clinical medicine 
+reduced parasympathetic reactivation during recovery from exer-
+cise in myalgic encephalomyelitis/chronic fatigue syndrome. J 
+Clin Med. 2021;10:4527. https://​doi.​org/​10.​3390/​jcm10​19.
+
+Wearable Heart Rate Variability in Long COVID
+	24.	 Fu Q, Levine BD. Chapter 13 - Exercise and the autonomic nerv-
+ous system. In: Buijs RM, Swaab DF, editors. Handbook of clini-
+cal neurology. Elsevier; 2013. p. 147–60.
+	25.	 Michael S, Graham KS, Davis GM. Cardiac autonomic responses 
+during exercise and post-exercise recovery using heart rate vari-
+ability and systolic time intervals—a review. Front Physiol. 
+2017;8:301. https://​doi.​org/​10.​3389/​fphys.​2017.​00301.
+	26.	 Lien K, Johansen B, Veierød MB, et al. Abnormal blood lactate 
+accumulation during repeated exercise testing in myalgic encepha-
+lomyelitis/chronic fatigue syndrome. Physiol Rep. 2019;7:e14138. 
+https://​doi.​org/​10.​14814/​phy2.​14138.
+	27.	 Binder RK, Wonisch M, Corra U, Cohen-Solal A, Vanhees L, 
+Saner H, et al. Methodological approach to the first and second 
+lactate threshold in incremental cardiopulmonary exercise testing. 
+Eur J Cardiovasc Prev Rehabil. 2008;15:726–34. https://​doi.​org/​
+10.​1097/​HJR.​0b013​e3283​04fed4.
+	28.	 Shephard RJ. Maximal oxygen intake and independence in old 
+age. Br J Sports Med. 2009;43:342. https://​doi.​org/​10.​1136/​bjsm.​
+2007.​044800.
+	29.	 Costin A, Costin N, Cohen P, Eisenach C, Marchlinski F. Effect of 
+exercise on heart-rate response to mental stress in teenagers. Eur 
+J Prev Cardiol. 2013;20(4):593–6. https://​doi.​org/​10.​1177/​20474​
+87312​444369.
+	30.	 Iannetta D, Inglis EC, Mattu AT, Fontana FY, Pogliaghi S, Keir 
+DA, et al. A critical evaluation of current methods for exer-
+cise prescription in women and men. Med Sci Sports Exerc. 
+2020;52(2):466–73. https://​doi.​org/​10.​1249/​MSS.​00000​00000​
+002147.
+	31.	 Sotzny F, Filgueiras IS, Kedor C, et al. Dysregulated autoan-
+tibodies targeting vaso- and immunoregulatory receptors in 
+post COVID syndrome correlate with symptom severity. Front 
+Immunol. 2022;13:981532. https://​doi.​org/​10.​3389/​fimmu.​2022.​
+981532.
+	32.	 Joyce JD, Moore GA, Goswami P, et al. SARS-CoV-2 rapidly 
+infects peripheral sensory and autonomic neurons, contributing 
+to central nervous system neuroinvasion before viremia. Int J Mol 
+Sci. 2024;25:8245. https://​doi.​org/​10.​3390/​ijms2​51582​45.
+	33.	 Goldstein DS, Mina Y, Walitt B, et al. Persistent autonomic and 
+immunologic abnormalities in neurologic post-acute sequelae of 
+SARS-CoV2 infection. Neurology. 2024;103:e209742. https://​doi.​
+org/​10.​1212/​WNL.​00000​00000​209742.
+	34.	 Seibert FS, Stervbo U, Wiemers L, et al. Severity of neurological 
+long-COVID symptoms correlates with increased level of autoan-
+tibodies targeting vasoregulatory and autonomic nervous system 
+receptors. Autoimmun Rev. 2023;22:103445. https://​doi.​org/​10.​
+1016/j.​autrev.​2023.​103445.
+	35.	 Seiler S, Haugen O, Kuffel E. Autonomic recovery after exercise 
+in trained athletes: intensity and duration effects. Med Sci Sports 
+Exerc. 2007;39:1366-1373. https://​doi.​org/​10.​1249/​mss.​0b013​
+e3180​60f17d.
+	36.	 Athanasiou N, Bogdanis GC, Mastorakos G. Endocrine responses 
+of the stress system to different types of exercise. Rev Endocr 
+Metab Disord. 2023;24:251–66.
