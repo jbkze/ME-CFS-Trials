@@ -7,30 +7,33 @@ year: 2026
 venue: "PLOS Digital Health"
 doi: 10.1371/journal.pdig.0001586
 url: https://doi.org/10.1371/journal.pdig.0001586
-pdf: https://doi.org/10.1371/journal.pdig.0001586
-text: null
-tags: [metabolism, exercise-physiology, post-exertional-malaise, treatment, infection-trigger]
+pdf: literature/papers/2026-sanal-pacing-energy-management-digital/paper.pdf
+text: literature/papers/2026-sanal-pacing-energy-management-digital/paper.txt
+tags: [metabolism, exercise-physiology, post-exertional-malaise, treatment, infection-trigger, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: sanal2026
+cover: "[[literature/papers/2026-sanal-pacing-energy-management-digital/cover.png]]"
 ---
 
 # Pacing and energy management with digital tools for conditions with chronic fatigue: What we know so far in ME/CFS and Long COVID
 
 ## Related files
+![[literature/papers/2026-sanal-pacing-energy-management-digital/paper.pdf]]
 - [[literature/papers/2026-sanal-pacing-energy-management-digital/citation.bib]]
+- [[literature/papers/2026-sanal-pacing-energy-management-digital/paper.txt]]
 
 ## Summary
 
-This opinion piece looks at 'pacing' — managing daily activity to avoid post-exertional malaise (PEM, the crash after activity) — using phone apps and wearable activity trackers. The same authors' earlier 6-month trial of a wearable pacing app in Long COVID found it was safe and helped people understand their limits, but didn't clearly cut crashes more than usual care, possibly because many Long COVID patients recover naturally over time regardless of treatment.
+This article reviews wearable devices and smartphone apps meant to help ME/CFS and Long COVID patients 'pace' themselves — that is, stay within their safe activity limit to avoid triggering a crash (post-exertional malaise). The authors' own 6-month trial of an activity-tracker-plus-alerts tool (PaceMe) found it was safe and helped patients feel more in control, but did not actually reduce crashes more than standard care.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
-Digital pacing tools are one of the few practical, non-drug supports patients can use today. The authors argue the same approach should now be tested in ME/CFS specifically, where — unlike Long COVID — symptoms typically don't fade on their own, to see whether the tools perform better there.
+A realistic look at a popular non-drug approach (digital pacing tools): helpful for patient insight and safety, but the authors' own trial shows it is not yet a proven way to reduce the disabling crashes that are the hallmark of ME/CFS, so expectations for these tools should stay modest pending better evidence.
 
 ## Notes
 
-Published 2026-07-27 in PLOS Digital Health (peer-reviewed). Perspective/opinion article (PubMed lists no abstract), not new primary data — mainly reflects on the authors' already-published Feb 2026 'PaceMe' wearable-pacing RCT in Long COVID and calls for the same approach to be tested in ME/CFS specifically. Non-drug intervention (permitted under the papers track, which unlike the trials track is not drug-restricted) — included in the same spirit as other previously-tracked non-drug treatment papers (exercise meta-analysis, CBT component network meta-analysis, acupuncture meta-analysis). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS Digital Health publisher page and DOI.
+Published Jul 27, 2026. UK group (University of the West of Scotland). Discusses/cites the authors' own PaceMe randomized controlled trial (6-month, activity tracker + personalized notifications vs usual care) — no superiority for reducing PEM, but safe/feasible with positive user-reported insight and control. Non-drug/digital-health intervention, included per this database's existing precedent of covering non-pharmacological treatment approaches (e.g. exercise and CBT meta-analyses). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS Digital Health publisher page.

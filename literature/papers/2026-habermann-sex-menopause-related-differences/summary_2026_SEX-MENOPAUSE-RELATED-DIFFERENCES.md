@@ -4,9 +4,9 @@ id: habermann2026a
 title: "Sex- and Menopause-Related Differences in Immune and Gastrointestinal Symptom Architecture in ME/CFS: Evidence from Factor Analysis and Structural Equation Modeling"
 authors: ["Habermann-Horstmeier L", "Horstmeier LM"]
 year: 2026
-venue: "Research Square (preprint)"
-doi: 10.21203/rs.3.rs-9825975/v1
-url: https://doi.org/10.21203/rs.3.rs-9825975/v1
+venue: "Journal of Translational Medicine"
+doi: 10.1186/s12967-026-08699-6
+url: https://doi.org/10.1186/s12967-026-08699-6
 pdf: literature/papers/2026-habermann-sex-menopause-related-differences/paper.pdf
 text: literature/papers/2026-habermann-sex-menopause-related-differences/paper.txt
 tags: [immunology, microbiome, treatment]
@@ -36,4 +36,4 @@ A direct follow-up on the same German patient cohort already tracked here, addin
 
 ## Notes
 
-Posted Research Square 2026-06-30. Follow-up on the same APAV-ME/CFS German cohort (n=748) behind the authors' already-tracked April 2026 J Transl Med symptom-clusters paper (habermann-horstmeier-2026-symptom-clusters). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match).
+Posted Research Square 2026-06-30 (preprint, doi 10.21203/rs.3.rs-9825975/v1); now formally published in peer-reviewed Journal of Translational Medicine (2026-07-27, doi 10.1186/s12967-026-08699-6) — journal/date/link updated 2026-07-30 to the peer-reviewed version, same findings. Follow-up on the same APAV-ME/CFS German cohort (n=748) behind the authors' already-tracked April 2026 J Transl Med symptom-clusters paper (habermann-horstmeier-2026-symptom-clusters), and their new companion muscle-symptom-cluster preprint (habermann-horstmeier-2026-muscle-cluster) added this run. Not Wirth/Scheibenbogen-affiliated. Confirmed via journal publisher redirect (Springer) and Europe PMC REST API (title/authors/date/DOI match).

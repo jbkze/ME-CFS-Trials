@@ -1,23 +1,8 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-29",
+  "last_check": "2026-07-30",
   "papers": [
-    {
-      "id": "kedor-2026-multidisciplinary-care-model-rct",
-      "title": "Evaluation of an Integrated Multidisciplinary Care Model for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Prospective, Open-label, Non-randomized Controlled Intervention Study",
-      "authors": "Kedor C, Mödl L, Rust R, Stein E, Kim L, Tietz P, Bellmann-Strobl J, Eltity M, Paul F, Veauthier C, Doehner W, Jauert N, Wolfarth B, Thouet T, Mastmeier-Porst J, Reißhauer A, Hoffmann I, Liebl M, Adamaszek M, Erdmann B, et al., Scheibenbogen C",
-      "journal": "SSRN (preprint, not yet peer-reviewed)",
-      "date": "Jun 2026",
-      "summary": "Charité researchers compared two ways of caring for ME/CFS patients over a year: one group got an intensive multi-part program (specialist assessment plus inpatient rehab), the other just a single outpatient visit. Physical-functioning scores ended up statistically the same in both groups, and on a disability scale nearly half of the intensively-treated group (42 of 94) actually got worse, versus only 14% who improved.",
-      "why": "This rigorous, real-world test from Scheibenbogen's own center found that today's rehabilitation-based care does not change the course of ME/CFS, reinforcing her group's broader argument that patients need disease-modifying drug treatments, not more rehab programs.",
-      "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6989698",
-      "first_seen": "2026-07-24",
-      "last_checked": "2026-07-28",
-      "flags": [],
-      "isNew": false,
-      "notes": "SSRN preprint (posted ~28 Jun 2026), not yet peer-reviewed and not on medRxiv/bioRxiv — flagged per credibility bar but included given Scheibenbogen co-authorship and high relevance (a negative rehab-vs-drug-treatment result from her own center); recommend re-checking for a journal DOI on a future run. Independently corroborated via a Science for ME forum thread and David Tuller's 'Trial By Error' (Virology Blog, 23 Jul 2026), which confirms Scheibenbogen as a co-author and gives sample sizes of 97 assigned/89 completing (intervention) vs 100 assigned/93 completing (comparison). Priority: high (Scheibenbogen co-author)."
-    },
     {
       "id": "friedberg-2026-molecular-hydrogen-minireview",
       "title": "Molecular hydrogen as a treatment for ME/CFS: a mini-review of clinical evidence and mechanistic rationale",
@@ -28,7 +13,7 @@
       "why": "A low-cost, low-risk supplement with early but weak evidence for reducing fatigue — worth watching, though the studies so far are small, not blinded, and rely on patients' own symptom reports rather than objective measurements.",
       "link": "https://doi.org/10.3389/fmed.2026.1760210",
       "first_seen": "2026-07-23",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-30",
       "flags": [],
       "isNew": false,
       "notes": "Published Mar 18, 2026 (Frontiers in Medicine, vol. 13, Translational Medicine section) — newly found this run (missed by prior searches, similar to the earlier-missed wirth-2026-hypovolemia-review). Narrative mini-review of 3 small pilot studies (same research team) of hydrogen-rich water in ME/CFS; authors call for larger, blinded trials with objective biomarkers. Not Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers journal article page. Also screened and excluded this run (fails papers scope — healthcare-delivery/care-pathway studies, not pathomechanism/biomarker/drug-target/treatment-trial/genetics): Aung/Scuffell et al., 'General Practice Perspectives on Post-Infection Conditions' (medRxiv, Jul 17 2026, UK GP scoping review + survey) and Burchardi/Scheibenbogen et al., 'LCovB' study protocol (PLoS One, Jul 9 2026, Charité post-COVID care-pathway mixed-methods study) — both are care-delivery protocols/surveys, not biomedical mechanism or treatment-trial-results papers. Also excluded: Ben Amar et al. 'epigenetic signatures in chronic pain' (Epigenomics, Jul 22 2026) — general chronic-pain topic, not ME/CFS-specific. Also excluded: Kuns et al. 'The State of Chronic Fatigue' PEM systematic review (Arch Phys Med Rehabil 107(5):e191, doi 10.1016/j.apmr.2026.02.468) — appears to be a conference-abstract-supplement entry (page 'e191'), not a full peer-reviewed article, so held to a lower-confidence bar than the mini-review above; not entered pending the full paper."
@@ -43,7 +28,7 @@
       "why": "Aims to sort ME/CFS patients into biological subgroups so future treatment (including rehabilitation) can be matched to what's actually driving each patient's illness, rather than one-size-fits-all — worth watching for when results are published.",
       "link": "https://doi.org/10.1016/j.bbih.2026.101299",
       "first_seen": "2026-07-21",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-22",
       "flags": [],
       "isNew": false,
       "notes": "Published online Jul 6, 2026 (eCollection Oct 2026). Study protocol only (n=115 ME/CFS, 55 controls planned), KU Leuven/Belgian group. Not Wirth/Scheibenbogen-affiliated. Confirmed via Elsevier/ScienceDirect publisher page."
@@ -58,7 +43,7 @@
       "why": "Finding an easier, less exhausting way to objectively measure PEM would make it much simpler to run future ME/CFS and post-COVID drug trials — this study is a needed reality-check showing the simpler option still needs refinement before it can be trusted.",
       "link": "https://doi.org/10.1371/journal.pone.0353132",
       "first_seen": "2026-07-21",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-22",
       "flags": [],
       "isNew": false,
       "notes": "Published Jul 14, 2026. Crossover design, n=25, one-month washout, Belgian group (UZ Brussel). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS ONE publisher page."
@@ -73,7 +58,7 @@
       "why": "One of the first studies to directly compare brain wiring in ME/CFS versus long COVID rather than each against healthy people alone, adding evidence the two conditions may need to be studied and treated as biologically distinct rather than interchangeable.",
       "link": "https://doi.org/10.3389/fmed.2026.1824498",
       "first_seen": "2026-07-21",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-22",
       "flags": [],
       "isNew": false,
       "notes": "Published Jul 17, 2026. Griffith University (Australia) neuroimaging group (Marshall-Gradisnik/Barnden/Thapaliya) — a recurring credible ME/CFS research team already in this database (thapaliya-2026-glymphatic-dti-alps, sasso-2026-trpm3-nkcell). Not Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers journal article page."
@@ -88,7 +73,7 @@
       "why": "From Carmen Scheibenbogen's group: offers a simple, cheap, repeatable physical test that could serve as an objective way to track post-exertional muscle decline in children and teenagers for future drug trials, even though it can't yet stand alone as a diagnostic test.",
       "link": "https://doi.org/10.1186/s12967-026-08654-5",
       "first_seen": "2026-07-17",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-18",
       "flags": [],
       "isNew": false,
       "notes": "Published online Jul 15, 2026. Pediatric/young-adult ME/CFS evaluation cohort (Charité/TU München group, incl. Behrends and Pricoco), 147 patients aged 10-25 vs 83 controls; two grip-strength sessions 60 minutes apart. Scheibenbogen is a co-author — HIGH PRIORITY. Confirmed via Europe PMC REST API (title/authors/journal/date match)."
@@ -103,7 +88,7 @@
       "why": "One of the few ME/CFS drug studies to show a treatment changing measurable body chemistry alongside symptom improvement, giving a testable biological reason — not just patient reports — to pursue rapamycin as a treatment lead.",
       "link": "https://doi.org/10.1186/s12967-026-08575-3",
       "first_seen": "2026-07-13",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-14",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42432754; registered as NCT06257420 (phase II observational pilot, Bateman Horne Center / Simmaron Research, USA). Published online Jul 10, 2026. Not Wirth/Scheibenbogen-affiliated. Confirmed via journal DOI record."
@@ -118,7 +103,7 @@
       "why": "From Wirth (Mitodicure): ties together low blood volume, dizziness on standing, and the post-exertional crash (a crash after activity) into one physical explanation, reinforcing the case for his group's muscle/circulation-focused treatment approach — but it's an early, not-yet-peer-reviewed hypothesis paper, so treat it as a working idea pending review.",
       "link": "https://doi.org/10.20944/preprints202602.1993.v1",
       "first_seen": "2026-07-13",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-14",
       "flags": [],
       "isNew": false,
       "notes": "Solo-author hypothesis/review paper posted Feb 2026 (v1) on Preprints.org — newly found this run (missed by prior searches). Included as an exception per ROUTINE.md's Wirth HIGH-priority provision, same lower-tier preprint-venue caveat as the already-tracked wirth-2026-connective-tissue-laxity. Not yet peer-reviewed."
@@ -133,7 +118,7 @@
       "why": "Exercise therapy is a historically controversial topic in ME/CFS because overexertion can trigger post-exertional malaise (a crash after activity). This large pooled analysis suggests exercise may ease some symptoms but is not a fix for the underlying physical limitation, supporting a cautious, symptom-management role rather than a cure.",
       "link": "https://doi.org/10.1016/j.jpsychores.2026.112677",
       "first_seen": "2026-07-12",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-13",
       "flags": [],
       "isNew": false,
       "notes": "Online Apr 15, 2026; print Aug 2026 (Vol 207). Meta-analysis of 17 RCTs, n=1,944. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
@@ -148,7 +133,7 @@
       "why": "CBT is another historically contentious ME/CFS treatment. Rather than a blanket 'CBT works' or 'CBT doesn't work' claim, this pinpoints which specific ingredients may help versus backfire — useful for designing better-targeted psychological support alongside biomedical treatment.",
       "link": "https://doi.org/10.1002/brb3.71513",
       "first_seen": "2026-07-12",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-13",
       "flags": [],
       "isNew": false,
       "notes": "Brain Behav 16(6), Jun 2026 (online May 31, 2026). Component network meta-analysis of 16 trials. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
@@ -163,7 +148,7 @@
       "why": "Adds acupuncture to the list of non-drug approaches with some trial evidence for ME/CFS fatigue, though the low-confidence evidence base (small, uneven-quality trials, flagged by the authors themselves) means it should not be over-weighted against biomedical treatment approaches.",
       "link": "https://doi.org/10.3389/fneur.2026.1860788",
       "first_seen": "2026-07-12",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-13",
       "flags": [],
       "isNew": false,
       "notes": "Front Neurol 17, Jun 24, 2026. Meta-analysis of 8 trials, n=715. Not Wirth/Scheibenbogen-affiliated. Confirmed via Crossref/publisher record."
@@ -178,7 +163,7 @@
       "why": "Flags specific already-approved drugs that target how cells produce energy, which could be tested in ME/CFS patients faster than developing a brand-new drug, and adds independent computational support to the energy-production theory of ME/CFS.",
       "link": "https://doi.org/10.21203/rs.3.rs-10076074/v1",
       "first_seen": "2026-07-11",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-12",
       "flags": [],
       "isNew": false,
       "notes": "Preprint, not yet peer-reviewed, posted Research Square Jul 5, 2026. Datasets GSE14577 and GSE227375; CMap L1000 drug-repurposing analysis; candidate compounds pioglitazone, rosiglitazone, tideglusib, MHY1485 tested on mouse myoblasts for mitochondrial membrane potential — all but rosiglitazone showed a modest significant increase. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
@@ -193,7 +178,7 @@
       "why": "Suggests it may be possible to predict, from measurements taken during the original COVID infection, which patients are heading toward the more severe, ME/CFS-like form of long COVID — useful for identifying who to watch closely or treat early.",
       "link": "https://doi.org/10.21203/rs.3.rs-10070418/v1",
       "first_seen": "2026-07-11",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-12",
       "flags": [],
       "isNew": false,
       "notes": "Preprint, not yet peer-reviewed, posted Research Square Jun 28, 2026 (indexed Jul 2). Same Maes-led international group as donchev-2026-gut-microbiome-mecfs-longcovid and petrov-2026-monocyte-dc-immunophenotyping already in this database. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
@@ -208,7 +193,7 @@
       "why": "Gives doctors an early-warning checklist for spotting which children are at risk of the most severe, ME/CFS-associated outcome after COVID, potentially enabling earlier intervention. Scheibenbogen is a co-author — HIGH PRIORITY.",
       "link": "https://doi.org/10.1007/s00431-026-06995-3",
       "first_seen": "2026-07-07",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-08",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42082813. Eur J Pediatr 185(5):344. Published May 4, 2026. German multi-centre paediatric long-COVID cohort (n=120, ages 7-25). Scheibenbogen (Charité) co-author — HIGH PRIORITY. Confirmed via PubMed record (full author list, abstract, DOI)."
@@ -223,7 +208,7 @@
       "why": "Points to a concrete physical mechanism — sluggish brain waste removal during sleep — that could help explain the brain fog and sleep disruption common in ME/CFS, and gives researchers a new measurable target for future biomarker or treatment studies.",
       "link": "https://doi.org/10.3389/fnins.2026.1875420",
       "first_seen": "2026-07-07",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-08",
       "flags": [],
       "isNew": false,
       "notes": "Frontiers in Neuroscience, published Jun 19, 2026. Griffith University (Australia) neuroimaging group (Marshall-Gradisnik/Barnden), a recurring credible ME/CFS research team. Not Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers journal article page (title/authors/date/DOI/abstract)."
@@ -238,7 +223,7 @@
       "why": "This is a rigorous, placebo-controlled negative result for a treatment approach (removing 'self-attacking' antibodies) that other German trials — including Scheibenbogen's — are also testing in post-COVID/ME-CFS, so it's an important caution: filtering out these antibodies doesn't automatically translate into symptom relief, at least in this dosing/design.",
       "link": "https://doi.org/10.1016/j.lanepe.2026.101744",
       "first_seen": "2026-07-06",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-07",
       "flags": [],
       "isNew": false,
       "notes": "Lancet Reg Health Eur, Vol 67 (Aug 2026 print; e-pub Jun 11, 2026). University Medical Center Mainz (IAMPOCO trial). Not Wirth/Scheibenbogen-affiliated. Confirmed via Elsevier publisher page and Europe PMC record."
@@ -253,7 +238,7 @@
       "why": "This is genetic evidence — not just an association in sick patients — pointing to cellular energy production and low-grade inflammation/clotting as likely causes rather than side effects of ME/CFS, which supports the biological rationale behind drugs targeting mitochondria or clotting/inflammation.",
       "link": "https://doi.org/10.21203/rs.3.rs-9363637/v2",
       "first_seen": "2026-07-06",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-07",
       "flags": [],
       "isNew": false,
       "notes": "Preprint, not yet peer-reviewed. v1 posted Apr 10, 2026; v2 Apr 21, 2026. Medical University of Vienna group. Not Wirth/Scheibenbogen-affiliated. Direct Research Square fetch blocked (403); confirmed via Europe PMC record (title/authors/DOI/date/key finding) plus preprint-report secondary summary."
@@ -268,7 +253,7 @@
       "why": "Even though ME/CFS, IBS and depression often occur together and can look similar, this suggests ME/CFS has its own distinct genetic roots in the nervous system rather than simply being a form of depression — relevant to arguments that ME/CFS deserves biomedical treatment research, not just psychiatric care.",
       "link": "https://doi.org/10.64898/2026.06.08.26355171",
       "first_seen": "2026-07-06",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-07",
       "flags": [],
       "isNew": false,
       "notes": "Preprint, not yet peer-reviewed, posted Jun 10, 2026. Single-author analysis built on DecodeME summary statistics. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC record."
@@ -283,7 +268,7 @@
       "why": "This is practical safety information for patients and doctors: general anaesthesia itself appears manageable in ME/CFS, but post-surgery pain management may need extra attention — useful for anyone with ME/CFS facing an operation, even though it doesn't point to a new drug or trial.",
       "link": "https://doi.org/10.1186/s12871-026-04102-5",
       "first_seen": "2026-07-06",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-19",
       "flags": [],
       "isNew": false,
       "notes": "Originally a medRxiv preprint (posted Apr 7, 2026, doi 10.64898/2026.04.06.26348924), now formally published in peer-reviewed BMC Anesthesiology (Jul 16, 2026, PMID 42464211, doi 10.1186/s12871-026-04102-5) — journal/date/link updated 2026-07-19 to the peer-reviewed version. German group (University Hospital Regensburg). Small sample (n=15 pairs); post-exertional malaise not tracked, noted by the authors as a limitation. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
@@ -298,7 +283,7 @@
       "why": "Suggests that how much natural light a patient gets during the day is linked to how bad their symptoms are, pointing to light exposure as a simple, low-cost target that could be tested as part of future ME/CFS treatment plans.",
       "link": "https://doi.org/10.1186/s12967-026-08556-6",
       "first_seen": "2026-07-05",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-06",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42399727. Published Jul 3, 2026. Spanish group (Vall d'Hebron / Universitat de Barcelona). Not Wirth/Scheibenbogen-affiliated. Confirmed via publisher page (Springer/J Transl Med)."
@@ -313,7 +298,7 @@
       "why": "Proposes a concrete biological trigger — reactivated 'fossil viruses' inside our own genome — that could explain why an infection can lead to long-term illness, and suggests measuring which of these HERVs are switched on could become a diagnostic test or way to track treatment response.",
       "link": "https://doi.org/10.3390/ijms27104309",
       "first_seen": "2026-07-05",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-06",
       "flags": [],
       "isNew": false,
       "notes": "Int J Mol Sci 27(10):4309. Published May 12, 2026. Review article; Oltra's group (CEU Cardenal Herrera Univ., Spain) and Carding (Quadram Institute, UK). Not Wirth/Scheibenbogen-affiliated. Confirmed via MDPI publisher page."
@@ -328,7 +313,7 @@
       "why": "Even though ME/CFS and long COVID often look similar to patients, this suggests their underlying immune problems differ — meaning treatments effective for one may not automatically work for the other, an important consideration when designing future drug trials.",
       "link": "https://doi.org/10.3390/ijms27104488",
       "first_seen": "2026-07-05",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-06",
       "flags": [],
       "isNew": false,
       "notes": "Int J Mol Sci 27(10):4488. Published May 17, 2026. Bulgarian/international group (Plovdiv Medical University) incl. Michael Maes. Originally posted as medRxiv preprint 2026.04.10.26350613. Not Wirth/Scheibenbogen-affiliated."
@@ -343,7 +328,7 @@
       "why": "Suggests sensory overload in ME/CFS comes from how the brain manages attention and higher-level processing rather than from broken basic senses — pointing future treatments toward this higher-level brain function rather than the sense organs themselves.",
       "link": "https://doi.org/10.3389/fmed.2026.1842841",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-05",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42396162. Published June 18, 2026. Confirmed via the Frontiers in Media article page. Not Wirth/Scheibenbogen-affiliated."
@@ -358,7 +343,7 @@
       "why": "Lab evidence that ME/CFS muscle cells are genuinely different at a molecular level, not just 'deconditioned' — and the authors computationally flag 22 existing drugs (including leflunomide, melatonin and midodrine) as candidates that could be tested faster than developing a new drug, though this is an early, not-yet-peer-reviewed preprint using a lab stem-cell model.",
       "link": "https://doi.org/10.21203/rs.3.rs-10015511/v2",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-22",
       "flags": [],
       "isNew": false,
       "notes": "Posted Research Square Jun 16, 2026 (v1, single author Nguyen D); revised to v2 Jul 21, 2026 adding a full multi-author byline (Deakin University/Barwon Health, Australia group incl. senior authors Michael Berk and Ken Walder) — same study/DOI family, no material change to findings (still 22 drug-repurposing candidates incl. leflunomide, melatonin, midodrine). Authors/date/link updated 2026-07-22 to reflect v2. Still not yet peer-reviewed. Confirmed via Europe PMC REST API. Not Wirth/Scheibenbogen-affiliated."
@@ -373,7 +358,7 @@
       "why": "A patient-informed, purpose-built way to measure PEM could improve diagnosis and become a standard outcome measure in future ME/CFS drug trials, though full scientific validation is still pending.",
       "link": "https://doi.org/10.21203/rs.3.rs-10040145/v1",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-05",
       "flags": [],
       "isNew": false,
       "notes": "Posted Research Square Jun 16, 2026. Not yet peer-reviewed. Confirmed via Europe PMC REST API (title/author/date match). Not Wirth/Scheibenbogen-affiliated."
@@ -388,7 +373,7 @@
       "why": "Argues that past large trials of these therapies underperformed because they enrolled patients without using biomarkers to pick who was likely to benefit — a lesson for how future ME/CFS drug trials should select patients.",
       "link": "https://doi.org/10.1016/j.transci.2026.104482",
       "first_seen": "2026-07-04",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-05",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42391726. Published online Jun 26, 2026 (print issue Aug 2026). Narrative review/opinion synthesis, not new primary data — single-author piece, lower-confidence than a primary study. Confirmed via Crossref + Elsevier. Not Wirth/Scheibenbogen-affiliated."
@@ -403,7 +388,7 @@
       "why": "From Wirth (Mitodicure): extends his muscle/blood-flow theory of ME/CFS to connective tissue and joint hypermobility, a link some patients report — but this is an early, not-yet-peer-reviewed hypothesis paper (posted to a preprint server, not medRxiv/bioRxiv), and other researchers have publicly questioned some of its claims, so treat it as a working idea rather than established science.",
       "link": "https://doi.org/10.20944/preprints202605.0876.v1",
       "first_seen": "2026-07-02",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-02",
       "flags": [],
       "isNew": false,
       "notes": "Solo-author concept/hypothesis paper. Posted May 13, 2026 on Preprints.org (MDPI's preprint platform), version 1, not yet peer-reviewed — a lower-tier venue than medRxiv/bioRxiv, included as an exception because it is Wirth-authored (HIGH priority) per ROUTINE.md. A Science for ME forum commenter raised skepticism about the factual accuracy of some claims — flagged for caution pending peer review."
@@ -418,7 +403,7 @@
       "why": "A deeper follow-up analysis of the DecodeME genetics study already in this database — it turns raw genetic data into specific biological pathways and proposes two existing drugs (ampligen and apremilast) as candidates worth testing.",
       "link": "https://doi.org/10.1186/s12967-026-08167-1",
       "first_seen": "2026-07-02",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-02",
       "flags": [],
       "isNew": false,
       "notes": "Originally posted as medRxiv preprint 2025.12.01.25341362 (Dec 1, 2025); published in J Transl Med Apr 21, 2026. PrecisionLife combinatorial-analytics platform, DecodeME cohort vs UK Biobank controls, replicated across three disjoint DecodeME sub-cohorts. Not Wirth/Scheibenbogen-affiliated. Companion to decodeme-2025-gwas already in this database."
@@ -433,7 +418,7 @@
       "why": "A German patient-cohort study (the APAV-ME/CFS study) supporting the idea that ME/CFS should be split into biological subgroups rather than treated as one uniform illness — relevant to designing more targeted future drug trials.",
       "link": "https://doi.org/10.1186/s12967-026-08159-1",
       "first_seen": "2026-07-02",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-02",
       "flags": [],
       "isNew": false,
       "notes": "J Transl Med 24, article 606 (2026). Published online Apr 28, 2026 (Research Square preprint posted ~Feb 7, 2026). German APAV-ME/CFS cohort, n=748 (608 female, 137 male, 3 non-binary). Not Wirth/Scheibenbogen-affiliated as far as could be confirmed."
@@ -448,7 +433,7 @@
       "why": "One of the largest patient-reported symptom-burden surveys in ME/CFS to date; mainly descriptive rather than mechanistic, but useful for quantifying how disabling the illness is across body systems and for designing outcome measures for future drug trials.",
       "link": "https://doi.org/10.64898/2026.06.17.26355870",
       "first_seen": "2026-07-02",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-02",
       "flags": [],
       "isNew": false,
       "notes": "medRxiv preprint posted Jun 17, 2026. n=1,028 adults with ME/CFS via the TIMES (The Index of ME Symptoms) questionnaire. Not yet peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Borderline scope (patient-reported survey, similar to eckey-2025-treatment-outcomes already in this database) — included for completeness, normal priority."
@@ -463,7 +448,7 @@
       "why": "A rigorous negative replication from Chris Ponting's group (who also leads the DecodeME genetics study already in this database) — it challenges a widely-cited piece of evidence for a 'blood-borne factor' in ME/CFS and shows the field is actively re-testing its own key claims.",
       "link": "https://doi.org/10.1371/journal.pone.0341334",
       "first_seen": "2026-07-01",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-02",
       "flags": [],
       "isNew": false,
       "notes": "PMID 41632778. PLOS ONE, published Feb 3 2026. Pre-registered attempted replication of a 2016 finding (Tomas et al./Newcastle) re serum effects on myoblast mitochondrial function; found no significant difference vs healthy control serum. Ponting is also senior author of DecodeME (decodeme-2025-gwas, already in this file)."
@@ -478,7 +463,7 @@
       "why": "The largest such extracellular-vesicle study in ME/CFS so far; a mostly exploratory result, but it adds a new (Norwegian) patient group to this growing biomarker approach, alongside similar work already in this database from the Scheibenbogen group.",
       "link": "https://doi.org/10.1016/j.bbrep.2026.102679",
       "first_seen": "2026-07-01",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-02",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42375682. Biochem Biophys Rep, published online Jun 20 2026 (eCollection Sep 2026). Oslo University Hospital / University of Oslo group. Distinct cohort from the Charité/Scheibenbogen extracellular-vesicle paper (seifert-2026-extracellular-vesicle-biomarker) already in this database."
@@ -493,7 +478,7 @@
       "why": "Lays out a roadmap for 'precision medicine' in ME/CFS — where each patient subgroup receives treatment matched to their specific biology — and identifies overactive innate immunity, exhausted immune T cells, and cellular energy failure as the likeliest targets for the first such treatments. From leading US ME/CFS researcher Nancy Klimas's group.",
       "link": "https://doi.org/10.3390/ijms27104436",
       "first_seen": "2026-06-29",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-30",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42196410. Int J Mol Sci 27(10):4436. Published May 15, 2026. Frank (Nova Southeastern University, Klimas group) et al. Comprehensive review covering multi-omics (transcriptomics, proteomics, metabolomics), machine learning diagnostics (monocyte subsets, cell-free RNA), and precision medicine approaches; identifies innate immune activation, CD8+ T cell exhaustion with TOX/EOMES upregulation, and mitochondrial dysfunction as key molecular signatures."
@@ -508,7 +493,7 @@
       "why": "The first head-to-head comparison of gut microbiome changes in ME/CFS and long COVID; the overlap supports the idea that both conditions share underlying gut-related biology, pointing toward shared treatment strategies such as gut microbiome repair.",
       "link": "https://doi.org/10.3390/biomedicines14061183",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Biomedicines 2026, 14(6), 1183. Published May 22, 2026. PMID: 42351611. Bulgarian/international group."
@@ -523,7 +508,7 @@
       "why": "One of the highest-accuracy diagnostic blood tests ever reported for ME/CFS — a disease that currently has no objective diagnostic test — and reveals specific immune and brain-inflammation pathways as potential drug targets.",
       "link": "https://doi.org/10.1186/s12967-025-07203-w",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID: 41057909. Published October 8, 2025. J Transl Med 23:1186 (2025). University of East Anglia / Oxford Biodynamics. A 200-marker EpiSwitch CFS test; sensitivity 92%, specificity 98%, overall accuracy 96%. PMC12506310."
@@ -538,7 +523,7 @@
       "why": "A large multi-institutional study (led by Ian Lipkin at Columbia) that pins down overactive 'first-response' immunity as a key driver of ME/CFS symptoms, and identifies several existing drugs — including metformin and rapamycin — as possible treatments to test.",
       "link": "https://doi.org/10.1038/s44324-025-00079-w",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "npj Metab Health Dis 3(1):34. Published September 3, 2025. Multi-centre: Columbia University (Lipkin/Hornig), Stanford (Montoya), Nova Southeastern (Klimas), UC Davis (Bateman), etc. Also preprinted medRxiv 2025.07.23.25332049."
@@ -553,7 +538,7 @@
       "why": "The largest real-world treatment survey in ME/CFS/long COVID, showing the two conditions behave similarly and pointing to which symptom subtypes (e.g. autonomic, cognitive) respond best to which drug classes — directly useful for designing future trials.",
       "link": "https://doi.org/10.1073/pnas.2426874122",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PNAS 122(28):e2426874122. PMID: 40627388. Published July 8–15, 2025. MGH / Harvard / Uppsala. Ronald Davis (Stanford OMF) is senior co-author. PMC12280984."
@@ -568,7 +553,7 @@
       "why": "Integrates molecular, cellular, and clinical evidence into a single picture of why ME/CFS muscles don't work normally, and proposes markers that could be used for diagnosis — supporting the muscle-focused treatment approach being pursued by researchers including Wirth and Scheibenbogen.",
       "link": "https://doi.org/10.3390/diagnostics16071019",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Diagnostics 2026, 16(7), 1019. Published March 28, 2026. Narrative review covering literature 1990–2025. Authors: Fanò-Illic (Univ. G. d'Annunzio, Chieti, Italy) et al. Not by Wirth/Scheibenbogen but closely related to their muscle-energy hypothesis."
@@ -583,7 +568,7 @@
       "why": "Involves Carmen Scheibenbogen's team and is one of the first studies to link symptom improvement with measurable brain changes after oxygen treatment — potentially pointing to both a therapy and a biological marker of response.",
       "link": "https://doi.org/10.1186/s12967-026-08324-6",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42249466. Published June 5, 2026. J Transl Med 24(1):744. Scheibenbogen is senior co-author — HIGH PRIORITY. Linked to completed trial NCT06118138 at Charité Berlin."
@@ -598,7 +583,7 @@
       "why": "Low vasopressin could help explain symptoms like dizziness, excessive thirst, and fatigue, and may become a diagnostic marker or a target for treatment.",
       "link": "https://doi.org/10.1016/j.eprac.2025.12.020",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 41475665. Epub Dec 29 2025; print Jun 2026. Endocr Pract 32(6):902-908."
@@ -613,7 +598,7 @@
       "why": "Adds to the growing evidence that abnormal clotting and poor circulation contribute to ME/CFS; the profiling method it describes could help identify which patients might benefit from anti-clotting therapies.",
       "link": "https://doi.org/10.1097/MBC.0000000000001439",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42274123. Published online June 11, 2026. Blood Coagul Fibrinolysis (ahead of print)."
@@ -628,7 +613,7 @@
       "why": "From the two leading German ME/CFS researchers: it links the disease's effects in the muscles to its effects in the brain, reinforcing the case for the treatments they are developing.",
       "link": "https://doi.org/10.3390/ijms27094041",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42123618. Published April 30, 2026. Int J Mol Sci 27(9):4041."
@@ -643,7 +628,7 @@
       "why": "The largest blood-protein study in ME/CFS so far; it maps what is going wrong in the body and could lead to a blood test and new treatment targets.",
       "link": "https://doi.org/10.1016/j.xcrm.2026.102647",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Published March 4, 2026. From the Fluge/Mella group (Bergen, Norway)."
@@ -658,7 +643,7 @@
       "why": "One of the first studies of this fluid in ME/CFS; the patterns it found could become markers for sorting patients into the right treatment groups.",
       "link": "https://doi.org/10.1038/s41598-026-46965-1",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Sci Rep 16:15848 (2026)."
@@ -673,7 +658,7 @@
       "why": "Offers a clear, testable explanation for ME/CFS's defining symptom — crashing after exertion — and points toward energy- and inflammation-based treatments.",
       "link": "https://doi.org/10.3389/fimmu.2026.1774310",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Published April 13, 2026. Frontiers in Immunology vol. 17."
@@ -688,7 +673,7 @@
       "why": "These substances could serve as a blood marker, and the link to a common virus hints at new treatment ideas.",
       "link": "https://doi.org/10.3389/fimmu.2026.1827700",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Published June 5, 2026. PMID 42327760."
@@ -703,7 +688,7 @@
       "why": "Because independent labs got the same result, this faulty cell 'gate' is one of the most reliable biological signs of ME/CFS and a possible drug target.",
       "link": "https://doi.org/10.3389/fmed.2025.1703924",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Published January 8, 2026. Frontiers in Medicine vol. 12."
@@ -718,7 +703,7 @@
       "why": "The first trial of this approach in ME/CFS; the strong, lasting improvement supports the idea that misguided antibodies drive the illness, and a larger trial is planned.",
       "link": "https://doi.org/10.3389/fmed.2025.1607353",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Published July 9, 2025. Fluge/Mella group, Haukeland University Hospital, Bergen, Norway."
@@ -733,7 +718,7 @@
       "why": "The first properly controlled trial showing benefit from removing these antibodies — strong support for antibody-targeting treatments that are also being explored in ME/CFS.",
       "link": "https://doi.org/10.1016/j.eclinm.2025.103358",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Published July 22, 2025. University Hospital Erlangen, Germany. This is the reCOVer trial result."
@@ -748,7 +733,7 @@
       "why": "A cornerstone of the Wirth/Scheibenbogen theory and the direct rationale for their drug MDC002, which aims to fix exactly this muscle problem.",
       "link": "https://doi.org/10.1002/jcsm.13669",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Published February 2025. PMID 39727052. J Cachexia Sarcopenia Muscle 16(1). Wirth + Scheibenbogen joint review."
@@ -763,7 +748,7 @@
       "why": "Lays out the Scheibenbogen group's current priorities and the thinking behind their trials (immunoadsorption and the planned inebilizumab study).",
       "link": "https://doi.org/10.1016/j.autrev.2026.104043",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 41895458. Lead author Annick Fehrer, Charité Berlin. Epub March 25 2026. Confirmed via Elsevier."
@@ -778,7 +763,7 @@
       "why": "Points to the gut as a possible lever on the immune system, supporting microbiome- and immune-based treatment ideas.",
       "link": "https://doi.org/10.1002/mbo3.70333",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42325052. Microbiologyopen 15(3):e70333. Confirmed via PubMed."
@@ -793,7 +778,7 @@
       "why": "Better-designed hormone studies could uncover treatment targets; gives practical guidance for trials, especially those with mostly female participants.",
       "link": "https://doi.org/10.1016/j.yfrne.2026.101268",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42320559. Front Neuroendocrinol. Confirmed via PubMed."
@@ -808,7 +793,7 @@
       "why": "Supports treating gut problems as central to ME/CFS, which could shape who is enrolled in drug trials and how improvement is measured.",
       "link": "https://doi.org/10.1186/s12967-026-08442-1",
       "first_seen": "2026-06-25",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42321833. J Transl Med. Confirmed via PubMed."
@@ -823,7 +808,7 @@
       "why": "The central Wirth/Scheibenbogen theory — it underpins their drug MDC002 and the autoantibody-removal treatments now being tested.",
       "link": "https://doi.org/10.1016/j.autrev.2020.102527",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Autoimmun Rev 19(4):102527. Landmark Wirth + Scheibenbogen hypothesis paper."
@@ -838,7 +823,7 @@
       "why": "Builds the muscle-level mechanism behind the Wirth/Scheibenbogen theory and the rationale for their drug MDC002.",
       "link": "https://doi.org/10.1186/s12967-021-02833-2",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "J Transl Med 19(1):162. PMID 33882940. Wirth + Scheibenbogen."
@@ -853,7 +838,7 @@
       "why": "A foundational finding for the autoimmune theory of ME/CFS and the basis for treatments that remove these antibodies (immunoadsorption, BC007). From the Scheibenbogen group.",
       "link": "https://doi.org/10.1016/j.bbi.2015.09.013",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Brain Behav Immun 52:32-39. PMID 26399744. Scheibenbogen group."
@@ -868,7 +853,7 @@
       "why": "Framed the autoimmune model that drives much of today's treatment research. From the Scheibenbogen group / European EUROMENE network.",
       "link": "https://doi.org/10.1016/j.autrev.2018.01.009",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Autoimmun Rev 17(6):601-609. Scheibenbogen group."
@@ -883,7 +868,7 @@
       "why": "Supports the idea that poor blood-vessel function drives ME/CFS symptoms, and points to treatments that target the vessels. From the Scheibenbogen group.",
       "link": "https://doi.org/10.1186/s12967-022-03346-2",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "J Transl Med 20(1):138. PMID 35317812. Scheibenbogen group."
@@ -898,7 +883,7 @@
       "why": "Connects a viral trigger to the energy failure seen in ME/CFS — a possible mechanism linking an old infection to lasting illness. Co-authored by Scheibenbogen, Naviaux and Prusty.",
       "link": "https://doi.org/10.4049/immunohorizons.2000006",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "ImmunoHorizons 4(4):201-215. PMID 32327453. Scheibenbogen co-author."
@@ -913,7 +898,7 @@
       "why": "First strong genetic evidence that ME/CFS has a biological basis involving the immune and nervous systems — and a source of new drug targets.",
       "link": "https://doi.org/10.1101/2025.08.06.25333109",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "medRxiv 2025.08.06.25333109. Led by Chris Ponting, Univ. of Edinburgh. Preprint (peer review pending)."
@@ -928,7 +913,7 @@
       "why": "A high-profile government study confirming the illness has real biological abnormalities (though its 'effort preference' wording was controversial among patients).",
       "link": "https://doi.org/10.1038/s41467-024-45107-3",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Nat Commun 15:907. PMID 38383456. NIH intramural deep-phenotyping cohort."
@@ -943,7 +928,7 @@
       "why": "A cutting-edge, data-driven map of the disease that could improve diagnosis and reveal new mechanisms.",
       "link": "https://doi.org/10.1038/s41591-025-03788-3",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Nat Med 2025. 'BioMapAI' deep neural network. Jackson Laboratory (Oh/Unutmaz) + Bateman Horne Center."
@@ -958,7 +943,7 @@
       "why": "A promising step toward an objective blood test for a disease that currently has none, plus fresh clues about immune involvement. Cornell (Hanson) group.",
       "link": "https://doi.org/10.1073/pnas.2507345122",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PNAS 122 (2025). PMID 40789036. Cornell (Hanson) / De Vlaminck."
@@ -973,7 +958,7 @@
       "why": "A widely-cited study arguing ME/CFS is a measurable disorder of how the body makes and uses energy, not a psychological problem.",
       "link": "https://doi.org/10.1073/pnas.1607571113",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PNAS 113(37):E5472-E5480. PMID 27573827."
@@ -988,7 +973,7 @@
       "why": "A concrete, testable defect in energy production that could explain the exhaustion and serve as a drug target. Bergen (Fluge/Mella) group.",
       "link": "https://doi.org/10.1172/jci.insight.89376",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "JCI Insight 1(21):e89376. PMID 28018972."
@@ -1003,7 +988,7 @@
       "why": "Links the immune system directly to symptom severity and points to inflammation-based markers and treatments. Stanford group.",
       "link": "https://doi.org/10.1073/pnas.1710519114",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PNAS 114(34):E7150-E7158. PMID 28760971."
@@ -1018,7 +1003,7 @@
       "why": "Early hard evidence that ME/CFS is biological and changes over time, and a hint that treating early might matter. Columbia (Lipkin) group.",
       "link": "https://doi.org/10.1126/sciadv.1400121",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Sci Adv 1(1):e1400121. PMC4465185."
@@ -1033,7 +1018,7 @@
       "why": "Among the first direct evidence of brain inflammation in ME/CFS, supporting the 'encephalomyelitis' (brain inflammation) part of the disease's name.",
       "link": "https://doi.org/10.2967/jnumed.113.131045",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "J Nucl Med 55(6):945-950. RIKEN, Japan."
@@ -1048,7 +1033,7 @@
       "why": "Gives a physical, measurable explanation for exercise intolerance and points to circulation- and nerve-targeted treatments. Harvard (Systrom) group.",
       "link": "https://doi.org/10.1016/j.chest.2021.01.082",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Chest 160(2):642-651."
@@ -1063,7 +1048,7 @@
       "why": "Provides an objective, measurable test of post-exertional malaise — important for diagnosis and disability assessment.",
       "link": "https://doi.org/10.1186/1479-5876-12-104",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "J Transl Med 12:104. PMID 24755065. Two-day CPET."
@@ -1078,7 +1063,7 @@
       "why": "Early evidence linking the gut microbiome to ME/CFS, opening microbiome-based diagnosis and treatment ideas. Cornell (Hanson) group.",
       "link": "https://doi.org/10.1186/s40168-016-0171-4",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Microbiome 4:30. PMID 27338587."
@@ -1093,7 +1078,7 @@
       "why": "One of the most rigorous microbiome studies in ME/CFS, strengthening the gut-disease link and possible treatments.",
       "link": "https://doi.org/10.1016/j.chom.2023.01.001",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Cell Host Microbe 31(2):273-287. Companion paper to Guo et al. 2023."
@@ -1108,7 +1093,7 @@
       "why": "A candidate objective diagnostic test for a disease that currently has none. Stanford / Open Medicine Foundation (Davis) group.",
       "link": "https://doi.org/10.1073/pnas.1901274116",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "PNAS 116(21):10250-10257. PMID 31036648."
@@ -1123,7 +1108,7 @@
       "why": "A pivotal negative result that ended hopes for rituximab and redirected the field; a landmark in ME/CFS research history. Bergen (Fluge/Mella) group.",
       "link": "https://doi.org/10.7326/M18-1451",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Ann Intern Med 170(9):585-593. The definitive phase-3 RituxME trial (negative)."
@@ -1138,7 +1123,7 @@
       "why": "An early signal that calming the immune system may help some patients — needs placebo-controlled confirmation, but supports the autoimmune treatment line.",
       "link": "https://doi.org/10.3389/fmed.2020.00162",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Front Med 7:162. PMID 32411717. Bergen (Fluge/Mella) group."
@@ -1153,7 +1138,7 @@
       "why": "Helped place ME/CFS at the centre of Long COVID research, bringing the field new attention and funding.",
       "link": "https://doi.org/10.1016/j.molmed.2021.06.002",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "Trends Mol Med 27(9):895-906."
@@ -1168,7 +1153,7 @@
       "why": "Widely-used research and clinical criteria that put the disease's hallmark feature — post-exertional worsening — at the centre of diagnosis.",
       "link": "https://doi.org/10.1111/j.1365-2796.2011.02428.x",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "J Intern Med 270(4):327-338. The 'ICC' criteria."
@@ -1183,7 +1168,7 @@
       "why": "A landmark report that medically legitimised the illness and reshaped how it is diagnosed.",
       "link": "https://www.ncbi.nlm.nih.gov/books/NBK274235/",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "IOM/National Academy of Medicine report, Feb 2015. NCBI Bookshelf NBK274235. Proposed the SEID criteria."
@@ -1198,7 +1183,7 @@
       "why": "Establishes the scale of the disease — many millions affected — strengthening the case for research funding and services.",
       "link": "https://doi.org/10.1186/s12967-020-02269-0",
       "first_seen": "2026-06-26",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-26",
       "flags": [],
       "isNew": false,
       "notes": "J Transl Med 18:100."
@@ -1213,7 +1198,7 @@
       "why": "From Scheibenbogen and Prusty: directly demonstrates that ME/CFS antibodies damage cellular energy machinery — supporting antibody-removing treatments such as immunoadsorption and highlighting why patients' blood vessels may not function normally.",
       "link": "https://doi.org/10.1016/j.bbih.2026.101187",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 41704659. Brain Behav Immun Health. Published Feb 4 2026 (print Mar 2026). Scheibenbogen (Charité) + Prusty (Würzburg) as senior authors. 106-participant study."
@@ -1228,7 +1213,7 @@
       "why": "From the Scheibenbogen group: these vesicle-based markers could become a blood test for ME/CFS and help separate patients into subgroups for more targeted treatment.",
       "link": "https://doi.org/10.3390/ijms27052314",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 41828537. Int J Mol Sci 27(5):2314. Published Feb 28 2026. Scheibenbogen (Charité) senior co-author."
@@ -1243,7 +1228,7 @@
       "why": "High-impact proof (in Cell, one of science's top journals) that autoantibodies physically cause post-viral illness — directly supports the antibody-removing treatments being developed for ME/CFS.",
       "link": "https://doi.org/10.1016/j.cell.2026.04.042",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42208499. Cell 189(11):3214-3235.e37. Published May 28 2026. Iwasaki lab (Yale). Directly supports GPCR autoantibody hypothesis underlying Scheibenbogen's immunoadsorption trials."
@@ -1258,7 +1243,7 @@
       "why": "From Wirth (Mitodicure): the mechanism described is exactly what his drug MDC002 aims to fix, making this a direct scientific rationale for the planned MDC002 Phase 1 trial.",
       "link": "https://doi.org/10.3389/fphys.2025.1693589",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 41705124. Front Physiol (2025 article collection, published Feb 2 2026). Wirth (Mitodicure) + Steinacker. HIGH PRIORITY — Wirth authored."
@@ -1273,7 +1258,7 @@
       "why": "Identifies a previously unknown pathway behind post-exertional malaise and suggests thrombospondin-1 and its signalling partners as possible targets for drugs that reduce the crash after activity.",
       "link": "https://doi.org/10.3390/ijms27114770",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42278300. Int J Mol Sci 27(11):4770. Published May 26 2026. Moreau group (Université de Montréal). 92 ME patients + 44 controls."
@@ -1288,7 +1273,7 @@
       "why": "Demonstrates a rapid, potentially low-cost screening tool for a disease that currently has no objective diagnostic test, and shows the test still works after exertion — relevant for detecting patients whose symptoms worsen with activity.",
       "link": "https://doi.org/10.3390/ijms27114937",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42278463. Int J Mol Sci 27(11):4937. Published May 29 2026. 115 ME patients + 45 controls. Moreau/Dehaes group (Université de Montréal)."
@@ -1303,7 +1288,7 @@
       "why": "Among the longest follow-up studies in ME/CFS; the high rate of additional illness underscores the urgency of effective treatment, and the pattern of which conditions develop may point to shared biological mechanisms.",
       "link": "https://doi.org/10.3390/medicina62061114",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42356126. Medicina (Kaunas) 62(6):1114. Published Jun 8 2026. Serbian group (Novi Sad)."
@@ -1318,7 +1303,7 @@
       "why": "Provides direct longitudinal evidence that post-COVID and ME/CFS share the same underlying disease process, strengthening the case for treatments that would work for both conditions.",
       "link": "https://doi.org/10.1186/s12967-026-08321-9",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42286686. J Transl Med. Published Jun 12 2026. 38 participants (21 post-COVID, 17 ME/CFS), two assessments ~31 months apart. Basque Country group (Spain)."
@@ -1333,7 +1318,7 @@
       "why": "A genome-wide analysis of ME/CFS metabolism in one of the world's largest health datasets — the genetic connections it finds could point to drug targets and help explain why patients' cells behave differently from healthy people.",
       "link": "https://doi.org/10.1016/j.isci.2025.114316",
       "first_seen": "2026-06-27",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-28",
       "flags": [],
       "isNew": false,
       "notes": "iScience 2025, published Dec 3 2025. PMC12796752. UK Biobank: 875 ME/CFS patients vs 36,033 controls. Found 112 significant SNP-metabolite associations specific to ME/CFS, mapping to HSD11B1 and SCGN genes (lipid metabolism, neurotransmitter transport, inflammation pathways)."
@@ -1348,7 +1333,7 @@
       "why": "From Prusty (whose lab showed that ME/CFS patients' antibodies can shatter cell energy machinery): this unified framework pulls together all major biological findings and argues that stress-revealed pathology should drive how trials are designed and which patients are selected — potentially making future treatments much more targeted.",
       "link": "https://doi.org/10.1186/s12967-026-08319-3",
       "first_seen": "2026-06-28",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-06-29",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42174604. J Transl Med 24(1):802. Published May 22, 2026. Watton (University of Bath) + Prusty (Julius-Maximilians-Universität Würzburg). Prusty is co-senior author of Liu et al. 2026 (IgG-energetics paper, already in database). Comprehensive narrative review covering post-infectious immune-metabolic dysregulation, endothelial dysfunction, coagulation abnormalities, lipid signalling, extracellular vesicle communication, and viral protein-associated immune activation."
@@ -1363,7 +1348,7 @@
       "why": "This helps confirm that ME/CFS is not one single illness but at least two distinguishable patterns tied to how someone got sick — information that could help future drug trials pick more consistent patient groups. No specific gene explained the split, so the cause of the two patterns is still unclear.",
       "link": "https://doi.org/10.64898/2026.06.29.26356818",
       "first_seen": "2026-07-03",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-04",
       "flags": [],
       "isNew": false,
       "notes": "Posted medRxiv 2026-06-29 (Europe PMC first-indexed 2026-07-01). Follow-up symptom-architecture analysis of the DecodeME cohort (Ponting group), which already contributes the original GWAS and the PrecisionLife combinatorial-genetics paper to this tracker. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
@@ -1372,16 +1357,16 @@
       "id": "habermann-horstmeier-2026-sex-menopause-symptoms",
       "title": "Sex- and Menopause-Related Differences in Immune and Gastrointestinal Symptom Architecture in ME/CFS: Evidence from Factor Analysis and Structural Equation Modeling",
       "authors": "Habermann-Horstmeier L, Horstmeier LM",
-      "journal": "Research Square (preprint)",
-      "date": "Jun 2026",
+      "journal": "Journal of Translational Medicine",
+      "date": "Jul 2026",
       "summary": "In survey data from 748 German ME/CFS patients, the authors found that immune-type symptoms (like sore throat or swollen glands) and gut symptoms group together differently in women than in men — more separate in women, more tangled together in men. Going through menopause changed women's immune symptoms but not their gut symptoms.",
       "why": "A direct follow-up on the same German patient cohort already tracked here, adding evidence that ME/CFS may need to be split into sex- and menopause-specific subgroups — relevant to designing better-targeted future drug trials.",
-      "link": "https://doi.org/10.21203/rs.3.rs-9825975/v1",
+      "link": "https://doi.org/10.1186/s12967-026-08699-6",
       "first_seen": "2026-07-03",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-30",
       "flags": [],
       "isNew": false,
-      "notes": "Posted Research Square 2026-06-30. Follow-up on the same APAV-ME/CFS German cohort (n=748) behind the authors' already-tracked April 2026 J Transl Med symptom-clusters paper (habermann-horstmeier-2026-symptom-clusters). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
+      "notes": "Posted Research Square 2026-06-30 (preprint, doi 10.21203/rs.3.rs-9825975/v1); now formally published in peer-reviewed Journal of Translational Medicine (2026-07-27, doi 10.1186/s12967-026-08699-6) — journal/date/link updated 2026-07-30 to the peer-reviewed version, same findings. Follow-up on the same APAV-ME/CFS German cohort (n=748) behind the authors' already-tracked April 2026 J Transl Med symptom-clusters paper (habermann-horstmeier-2026-symptom-clusters), and their new companion muscle-symptom-cluster preprint (habermann-horstmeier-2026-muscle-cluster) added this run. Not Wirth/Scheibenbogen-affiliated. Confirmed via journal publisher redirect (Springer) and Europe PMC REST API (title/authors/date/DOI match)."
     },
     {
       "id": "lubell-2026-hypermobility-longcovid-pem",
@@ -1393,7 +1378,7 @@
       "why": "Independent survey evidence for a hypermobility/connective-tissue link to post-exertional crashes, the same mechanism Klaus Wirth proposed in his already-tracked May 2026 hypothesis paper on connective tissue and ME/CFS — worth watching as corroborating support even though the authors are unrelated to Wirth.",
       "link": "https://doi.org/10.64898/2026.06.24.26356475",
       "first_seen": "2026-07-03",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-04",
       "flags": [],
       "isNew": false,
       "notes": "Borderline inclusion: studies a Long COVID survey cohort (not formally ME/CFS-diagnosed), but the outcome measured — high post-exertional symptom exacerbation — is the ME/CFS-defining PEM phenotype, and the finding directly corroborates the connective-tissue-laxity mechanism proposed in Wirth KJ's already-tracked preprint (wirth-2026-connective-tissue-laxity). Posted medRxiv 2026-06-24 (Europe PMC first-indexed 2026-07-01). Confirmed via Europe PMC REST API (title/authors/date match). Authors not Wirth/Scheibenbogen-affiliated."
@@ -1408,7 +1393,7 @@
       "why": "Adds evidence toward a future blood test for ME/CFS and reinforces two recurring mechanistic themes in this database — mitochondrial energy failure and tryptophan-pathway disruption.",
       "link": "https://doi.org/10.3390/ijms27135920",
       "first_seen": "2026-07-14",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-14",
       "flags": [],
       "isNew": false,
       "notes": "Published Jun 30, 2026. 197 participants (106 ME/CFS, 91 controls); ensemble ML classifiers on 888 plasma metabolomic/lipidomic features reached 0.909 accuracy / 0.940 AUC; top discriminating interaction was proline & indole-3-lactate. Not Wirth/Scheibenbogen-affiliated. Confirmed via publisher (MDPI) page."
@@ -1423,7 +1408,7 @@
       "why": "Borderline for this tracker (participants had general long-COVID fatigue, not a formal ME/CFS/PEM diagnosis), but this is one of the largest repurposed-drug trials run in long-COVID fatigue to date, and its main lesson — that symptom-level drug repurposing gave only a small, temporary benefit — is a caution relevant to similar approaches being tried in ME/CFS, reinforcing the case for treatments that target a specific underlying mechanism instead.",
       "link": "https://doi.org/10.1016/S1473-3099(26)00242-2",
       "first_seen": "2026-07-14",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-14",
       "flags": [],
       "isNew": false,
       "notes": "Published online Jul 8, 2026 (PMID 42419335). Open-label RCT, 778 participants (colchicine n=192, famotidine+loratadine n=193, rivaroxaban n=197, control n=196), 12 German sites not involved (UK NHS only). Primary outcome (12-wk FAS): colchicine -1.49 (p=0.041), famotidine-loratadine -1.48 (p=0.038), rivaroxaban -1.06 (p=0.139, ns); 24-week scores not significantly different between arms. No ME/CFS diagnostic criteria (PEM/Bell score) used for eligibility — general long-COVID fatigue population. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
@@ -1438,7 +1423,7 @@
       "why": "A negative but rigorous large trial (NCT05497089) that specifically tested the \"reactivated fossil virus protein\" (HERV-W envelope protein) theory of post-COVID/ME-CFS-type illness — the same theory raised in this database's already-tracked Perera et al. 2026 endogenous-retrovirus review — and did not support it as a treatable driver of fatigue, redirecting attention to other mechanisms (mitochondrial, vascular, autoantibody).",
       "link": "https://doi.org/10.1016/j.bbi.2026.106892",
       "first_seen": "2026-07-14",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-14",
       "flags": [],
       "isNew": false,
       "notes": "203 participants, 14 sites in Switzerland/Spain/Italy (no German site). Primary outcome (24-wk fatigue, PROMIS): temelimab -3.2 vs placebo -3.8, RR 0.9 (95% CI 0.6-1.2), not significant; no significant difference in secondary outcomes (cognition, anxiety, depression, quality of life). Borderline for this tracker: post-COVID neuropsychiatric-symptom population, not a formal ME/CFS/PEM diagnosis. Not Wirth/Scheibenbogen-affiliated. Confirmed via S4ME trial-report thread citing the Brain Behav Immun DOI and CenterWatch/ClinicalTrials.gov (NCT05497089) listing; publisher page itself only resolved to a redirect shell during this check."
@@ -1453,7 +1438,7 @@
       "why": "One of the largest patient-registry studies of ME/CFS health burden to date; it reinforces the idea that ME/CFS is not one single illness but splits into distinguishable subgroups, which matters for designing better-targeted future clinical trials and for choosing which diagnostic checklist research should standardize on.",
       "link": "https://doi.org/10.1186/s12967-026-08618-9",
       "first_seen": "2026-07-15",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-16",
       "flags": [],
       "isNew": false,
       "notes": "Published online 2026-07-13 (PMID 42443918). Griffith University / National Centre for Neuroimmunology group (Marshall-Gradisnik), not Wirth/Scheibenbogen-affiliated. How severe a patient's illness looked depended on which official case definition was used to classify them. Confirmed via Europe PMC record."
@@ -1468,7 +1453,7 @@
       "why": "A large attempt to organise the scattered ME/CFS/long-COVID biomarker literature into one framework, useful for future diagnostic-test and drug-target research — from a German group (Hannover Medical School), though not Charité-affiliated.",
       "link": "https://doi.org/10.3389/fimmu.2026.1741761",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-17",
       "flags": [],
       "isNew": false,
       "notes": "Frontiers in Immunology 17:1741761, Viral Immunology section. Published Jun 30, 2026. Hannover Medical School (Germany) group; not Charité/Wirth/Scheibenbogen-affiliated. Confirmed via Frontiers article page."
@@ -1483,7 +1468,7 @@
       "why": "One of the first direct physical (not just functional) proofs of vagus-nerve damage in a post-viral illness, relevant to the dysautonomia (nervous-system control problems like dizziness on standing) seen in ME/CFS and post-COVID ME/CFS — though this is a very small study (12 patients) and needs replication.",
       "link": "https://doi.org/10.1016/j.ijid.2026.108973",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-17",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42425362. Published online Jul 9, 2026 (ahead of print). Italian group. Small sample (n=12 vs 8 controls) — preliminary. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
@@ -1498,7 +1483,7 @@
       "why": "A top-journal endorsement of the 'lingering virus' theory behind ME/CFS and long COVID, relevant to the pathomechanism track even though it presents a synthesis of existing evidence rather than new experiments.",
       "link": "https://doi.org/10.1038/s41590-026-02577-5",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-17",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42414623. Published Jul 7, 2026. Review article (Washington University in St. Louis group), no new primary data. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
@@ -1513,100 +1498,85 @@
       "why": "Proposes a simple, objective, repeatable test — hand-grip strength — as a stand-in marker for muscle-related symptom severity in post-COVID illness, echoing the muscle-focused mechanism Wirth and Scheibenbogen propose for ME/CFS, though it is not from their group.",
       "link": "https://doi.org/10.1186/s12967-026-08579-z",
       "first_seen": "2026-07-16",
-      "last_checked": "2026-07-28",
+      "last_checked": "2026-07-17",
       "flags": [],
       "isNew": false,
       "notes": "PMID 42415070. J Transl Med 24(1):871. Published Jul 7, 2026. 204 participants (102 post-COVID, 102 recovered controls), 6-month follow-up; also measured neuroaxonal injury markers (NfL, GFAP) which did not track with muscle function. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed abstract."
     },
     {
-      "id": "ruijgt-2026-wearable-hrv-pem-longcovid",
-      "title": "Wearable Heart Rate Variability Monitoring, Autonomic Dysfunction and Post-exertional Malaise in Long COVID: An Observational Study",
-      "authors": "Ruijgt TM, Slaghekke A, Ellens A, Janssen KW, Wüst RCI",
-      "journal": "Sports Medicine",
+      "id": "habermann-horstmeier-2026-muscle-cluster",
+      "title": "Muscle Symptoms Define a Stable Physiological Dysregulation Cluster in ME/CFS",
+      "authors": "Habermann-Horstmeier L, Horstmeier LM",
+      "journal": "Research Square (preprint, not yet peer-reviewed)",
       "date": "Jul 2026",
-      "summary": "Long-COVID patients wore heart-rate monitors around the clock. Compared with healthy people, they had lower heart-rate variability (HRV, a measure of how well the nervous system recovers) during everyday activities and sleep, and this recovery signal stayed disrupted for a full day after they exercised above a certain personal intensity level — with the risk of a post-exertional malaise (PEM, a crash after activity) flare-up rising once they crossed that line.",
-      "why": "Suggests cheap wearable devices could help patients spot the 'invisible' overexertion that triggers a PEM crash and find a personal safe exercise intensity to pace under — a practical, drug-free tool that likely applies to ME/CFS more broadly since the PEM mechanism overlaps with long COVID.",
-      "link": "https://doi.org/10.1007/s40279-026-02487-4",
-      "first_seen": "2026-07-26",
-      "last_checked": "2026-07-28",
+      "summary": "Using the same large German patient survey as their earlier papers (745 people with ME/CFS), these researchers found that muscle problems (like weakness and pain) tend to show up together with breathing problems, heart/blood-pressure symptoms, temperature-control problems, vision problems and gut problems — as one connected package rather than separate issues. This package looked the same regardless of how long someone had been sick, but showed up somewhat differently in women versus men and before versus after menopause.",
+      "why": "Adds to growing evidence that ME/CFS symptoms cluster into a recognisable whole-body pattern rather than a random grab-bag, and that sex and menopausal status should be considered when grouping patients — useful for designing future drug trials that match treatments to the right patient subgroup.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10268339/v1",
+      "first_seen": "2026-07-30",
+      "last_checked": "2026-07-30",
       "flags": [],
-      "isNew": false,
-      "notes": "Confirmed via PubMed (PMID 42501245) and DOI resolution to Springer (Sports Medicine), published online 2026-07-25. 121 long-COVID patients vs. 21 healthy controls; ventilatory threshold (VT1) used as the intensity cutoff. Not Wirth/Scheibenbogen-authored; priority normal. Not Germany-restricted (papers track)."
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted Research Square Jul 24, 2026. Same APAV-ME/CFS German registry (n=745, closely related to n=748 in the authors' companion sex/menopause paper habermann-horstmeier-2026-sex-menopause-symptoms and their earlier J Transl Med symptom-clusters paper). Not Wirth/Scheibenbogen-affiliated. Confirmed via Research Square article page (title/authors/abstract match)."
     },
     {
-      "id": "steinkirchner-2026-handgrip-strength-variability",
+      "id": "steinkirchner-2026-handgrip-variability",
       "title": "Repeated Handgrip Strength Variability in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Separating Disease-Related Fatigability from Force Gradation",
       "authors": "Steinkirchner FM, Irrgang F, Kimmerling V, Kaess M, Popkirov S, Schieffer E, Gruber M, Dejaco A",
       "journal": "medRxiv (preprint)",
       "date": "Jul 2026",
-      "summary": "Researchers tested grip strength repeatedly in 211 ME/CFS patients and 170 healthy people (some of whom were deliberately asked to hold back effort, to see if the test could tell the difference). A commonly used cutoff for spotting 'insufficient effort' wrongly labelled 42-48% of genuine ME/CFS patients as not trying hard enough, while still missing more than a third of people who really were holding back.",
-      "why": "This challenges a metric sometimes used — including in disability assessments — to dismiss ME/CFS patients' real muscle weakness as malingering (faking), showing today's effort tests aren't reliable enough for that purpose.",
+      "summary": "Researchers had ME/CFS patients squeeze a hand-grip strength device repeatedly and analysed how their grip strength varied from squeeze to squeeze, trying to tell apart two things that can look similar: normal muscles simply tiring out with effort, versus the disease-specific loss of energy (fatigability) seen in ME/CFS.",
+      "why": "A more precise way to measure muscle fatigability could give future ME/CFS drug trials a cheap, objective test for whether a treatment is genuinely improving the body's energy problems, rather than relying only on patients' own reports.",
       "link": "https://doi.org/10.64898/2026.07.22.26358672",
-      "first_seen": "2026-07-26",
-      "last_checked": "2026-07-28",
+      "first_seen": "2026-07-30",
+      "last_checked": "2026-07-30",
       "flags": [],
-      "isNew": false,
-      "notes": "Confirmed via Europe PMC (medRxiv preprint, posted 2026-07-24, DOI 10.64898/2026.07.22.26358672). Distinct from the already-tracked steinkirchner-2026-perioperative-anesthesia paper (same surname/likely same German group, different topic — anesthesia outcomes vs. grip-strength fatigability). Not Wirth/Scheibenbogen-authored; priority normal."
+      "isNew": true,
+      "notes": "Posted medRxiv Jul 24, 2026. Same University Hospital Regensburg group (Steinkirchner, Kaess, Dejaco) already tracked in this database for the perioperative-anesthesia paper (steinkirchner-2026-perioperative-anesthesia) and a distinct patient population from Mihatsch et al.'s pediatric handgrip-strength paper (mihatsch-2026-pediatric-handgrip-strength). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date/DOI match)."
     },
     {
-      "id": "magawa-2026-trpm3-nkcells-postcovid",
-      "title": "Altered TRPM3-Dependent Cytosolic and Mitochondrial Calcium Influx in Natural Killer Cells of Post-COVID-19 Condition Patients",
-      "authors": "Magawa CT, Eaton-Fitch N, Muraki K, Marshall-Gradisnik S",
-      "journal": "European Journal of Immunology",
+      "id": "rusin-2026-low-dose-radiation-review",
+      "title": "Low-Dose Ionizing Radiation and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): A Review",
+      "authors": "Rusin A, Cocchetto A, Mothersill C",
+      "journal": "International Journal of Molecular Sciences",
       "date": "Jul 2026",
-      "summary": "In a small study (8 long-COVID patients, 8 healthy people), a faulty calcium channel called TRPM3 — a gateway that lets calcium into cells — let less calcium into the main body of immune cells called natural killer cells, but let too much build up inside the cells' energy-making mitochondria, compared with healthy cells.",
-      "why": "The same TRPM3 channel fault has already been linked to ME/CFS in larger studies from this research group, so finding it in long COVID too strengthens the case for a shared underlying cause and a possible drug target — though this study is very small (8 vs. 8) and needs replication.",
-      "link": "https://doi.org/10.1002/eji.70240",
-      "first_seen": "2026-07-26",
-      "last_checked": "2026-07-28",
+      "summary": "This review proposes a speculative idea: that low-dose radiation exposure (much lower than what causes radiation sickness) might trigger some of the same cell-damage-signal pathways seen in ME/CFS, including tired-out cellular batteries (mitochondria), a stress-response protein pattern, and immune over-activation. The authors are upfront that this is a hypothesis, not proven — the proposed pathways are shared with ME/CFS, but no study has yet directly shown radiation actually causing ME/CFS in people.",
+      "why": "Offers a new, untested angle on what might trigger ME/CFS in some cases and proposes shared biological measurements (markers) worth checking in future studies — but the authors themselves flag it as a hypothesis awaiting experimental confirmation, so treat it as speculative rather than established.",
+      "link": "https://doi.org/10.3390/ijms27146535",
+      "first_seen": "2026-07-30",
+      "last_checked": "2026-07-30",
       "flags": [],
-      "isNew": false,
-      "notes": "Confirmed via PubMed (PMID 42484498) and DOI 10.1002/eji.70240, European Journal of Immunology 2026;56(7):e70240. From the Griffith University/NCNED group (Marshall-Gradisnik) behind the already-tracked sasso-2026-trpm3-nkcell ME/CFS TRPM3 finding — this extends the same channelopathy hypothesis to post-COVID-19 condition specifically. Not Wirth/Scheibenbogen-authored; priority normal."
+      "isNew": true,
+      "notes": "Int J Mol Sci 27(14):6535. Published Jul 22, 2026. Narrative/hypothesis review (McMaster University and National CFIDS Foundation); authors explicitly state proposed mechanisms (SLC25A15/ORNT1, CD38 upregulation, cyclin D1 stabilization, alpha-synuclein aggregation) are 'yet to be confirmed experimentally'. Not Wirth/Scheibenbogen-affiliated. Confirmed via MDPI publisher page."
     },
     {
-      "id": "habermann-horstmeier-2026-muscle-cluster-sex-menopause",
-      "title": "Muscle Symptoms Define a Stable Physiological Dysregulation Cluster in ME/CFS: Sex- and Menopause-Related Differences in Symptom Expression",
-      "authors": "Habermann-Horstmeier L, Horstmeier LM",
-      "journal": "Research Square (preprint, not yet peer-reviewed)",
+      "id": "burkard-2026-postcovid-autoimmune-cohort",
+      "title": "Risks of autoimmune and inflammatory post-acute COVID-19 conditions: a network cohort study",
+      "authors": "Burkard TM, et al.",
+      "journal": "BMJ Public Health",
       "date": "Jul 2026",
-      "summary": "In survey data from the same 748 German ME/CFS patients studied before, the authors found that muscle-related symptoms (like muscle pain, weakness, and soreness after activity) form their own distinct, stable symptom group, separate from other symptom types — and that this muscle pattern differs somewhat between men and women, and around menopause.",
-      "why": "A third piece of evidence from this recurring German patient cohort that ME/CFS's muscle-related symptoms behave as their own biological cluster, and that sex and menopause status matter for how the illness shows up — relevant to designing sex-aware, muscle-focused future drug trials.",
-      "link": "https://doi.org/10.21203/rs.3.rs-10268339/v1",
-      "first_seen": "2026-07-27",
-      "last_checked": "2026-07-28",
+      "summary": "This large study compared people who tested positive for COVID-19 with similar people who tested negative, tracking whether the COVID-positive group went on to develop more autoimmune and inflammatory conditions afterward — including ME/CFS. In the first nine months after infection, the study did not find a higher rate of ME/CFS diagnoses in the COVID-positive group compared to the COVID-negative group.",
+      "why": "A notable negative/null finding that pushes back against the idea that COVID-19 infection itself directly raises the short-term population-level risk of an ME/CFS diagnosis — worth weighing against other studies that do find a post-COVID ME/CFS signal, since it may reflect diagnostic-coding delays (ME/CFS is often only diagnosed well after 9 months) rather than a true absence of risk.",
+      "link": "https://doi.org/10.1136/bmjph-2024-001686",
+      "first_seen": "2026-07-30",
+      "last_checked": "2026-07-30",
       "flags": [],
-      "isNew": false,
-      "notes": "Posted Research Square 2026-07-24 (confirmed via Europe PMC REST API, PPR1285089, and via DOI redirect resolution to researchsquare.com/article/rs-10268339/v1). Third installment from the same German APAV-ME/CFS cohort (n=748) behind the authors' already-tracked April 2026 J Transl Med symptom-clusters paper (habermann-horstmeier-2026-symptom-clusters) and June 2026 Research Square sex/menopause immune-GI paper (habermann-horstmeier-2026-sex-menopause-symptoms) — same factor-analysis/structural-equation-modeling approach, this time isolating a muscle-symptom cluster. Full abstract not directly retrievable (Research Square article page returned HTTP 403 to fetch tooling); title/authors/date independently confirmed via Europe PMC and the DOI redirect target. Not Wirth/Scheibenbogen-affiliated."
+      "isNew": true,
+      "notes": "Published Jul 24, 2026. Large network/registry cohort study comparing COVID-test-positive vs test-negative individuals across multiple autoimmune/inflammatory outcomes, ME/CFS among them; first 9 months post-acute phase only. Not Wirth/Scheibenbogen-affiliated. Confirmed via BMJ publisher page."
     },
     {
-      "id": "praet-2026-nutraceutical-pem-hypothesis",
-      "title": "Targeting Bioenergetic, Redox and Prostaglandin Pathways in Long COVID-Associated Post-Exertional Malaise and Brain Fog: A Nutraceutical Translational Hypothesis",
-      "authors": "Praet SFE",
-      "journal": "Preprints.org (preprint, not yet peer-reviewed)",
-      "date": "Jul 2026",
-      "summary": "This hypothesis paper proposes that the post-exertional crash (PEM) and brain fog in long COVID come from three overlapping problems: poorly working cellular energy factories (mitochondria), an imbalance in the body's antioxidant defenses, and ongoing inflammation involving a molecule called prostaglandin E2. The author suggests combining eight existing supplements (including CoQ10, selenium, and fish oil) that each target one of these three problems, though the combination itself has not yet been tested in patients.",
-      "why": "Offers a mechanism-based rationale for a low-risk supplement combination targeting post-exertional malaise (a crash after activity) and brain fog — in the same spirit as other mitochondrial/redox theories already in this database — but it is an untested, single-author hypothesis; the author himself says direct evidence is 'limited to very limited,' so treat it as an idea awaiting a real trial, not a proven treatment.",
-      "link": "https://doi.org/10.20944/preprints202607.0899.v1",
-      "first_seen": "2026-07-27",
-      "last_checked": "2026-07-28",
-      "flags": [],
-      "isNew": false,
-      "notes": "Posted Preprints.org 2026-07-14 (v1), not yet peer-reviewed. Single-author narrative hypothesis/translational-rationale paper (no new experimental data); proposes a future stratified RCT to test a 3-module nutraceutical combination (bioenergetic: CoQ10 + alpha-lipoic acid; redox: selenium + sulforaphane + resveratrol; prostaglandin: Boswellia serrata + luteolin + EPA). Focuses on Long COVID PEM/brain fog broadly (ME/CFS-overlapping population), not ME/CFS-exclusively. Confirmed via DOI redirect resolution to the preprints.org manuscript page (title/author/date/abstract match). Not Wirth/Scheibenbogen-affiliated. Also screened and excluded this run: Abanades et al., 'Micronutrition as a Therapeutic Strategy to Restore Mitochondrial Function in ME/CFS and Fibromyalgia' (Preprints.org, 2026-07-20, doi 10.20944/preprints202607.1446.v1) — a narrative review sponsored by a commercial lab (Laboratorio LCN, Barcelona) whose actual proposed RCT targets fibromyalgia patients with severe fatigue, not an ME/CFS-specific trial; held back as too tangential and industry-promotional for this entry."
-    },
-    {
-      "id": "sanal-hayes-2026-digital-pacing-perspective",
+      "id": "sanal-hayes-2026-pacing-digital-tools",
       "title": "Pacing and energy management with digital tools for conditions with chronic fatigue: What we know so far in ME/CFS and Long COVID",
       "authors": "Sanal-Hayes NEM, Hayes LD, Mclaughlin M, Sculthorpe NF",
       "journal": "PLOS Digital Health",
       "date": "Jul 2026",
-      "summary": "This opinion piece looks at 'pacing' — managing daily activity to avoid post-exertional malaise (PEM, the crash after activity) — using phone apps and wearable activity trackers. The same authors' earlier 6-month trial of a wearable pacing app in Long COVID found it was safe and helped people understand their limits, but didn't clearly cut crashes more than usual care, possibly because many Long COVID patients recover naturally over time regardless of treatment.",
-      "why": "Digital pacing tools are one of the few practical, non-drug supports patients can use today. The authors argue the same approach should now be tested in ME/CFS specifically, where — unlike Long COVID — symptoms typically don't fade on their own, to see whether the tools perform better there.",
+      "summary": "This article reviews wearable devices and smartphone apps meant to help ME/CFS and Long COVID patients 'pace' themselves — that is, stay within their safe activity limit to avoid triggering a crash (post-exertional malaise). The authors' own 6-month trial of an activity-tracker-plus-alerts tool (PaceMe) found it was safe and helped patients feel more in control, but did not actually reduce crashes more than standard care.",
+      "why": "A realistic look at a popular non-drug approach (digital pacing tools): helpful for patient insight and safety, but the authors' own trial shows it is not yet a proven way to reduce the disabling crashes that are the hallmark of ME/CFS, so expectations for these tools should stay modest pending better evidence.",
       "link": "https://doi.org/10.1371/journal.pdig.0001586",
-      "first_seen": "2026-07-28",
-      "last_checked": "2026-07-29",
+      "first_seen": "2026-07-30",
+      "last_checked": "2026-07-30",
       "flags": [],
-      "isNew": false,
-      "notes": "Published 2026-07-27 in PLOS Digital Health (peer-reviewed). Perspective/opinion article (PubMed lists no abstract), not new primary data — mainly reflects on the authors' already-published Feb 2026 'PaceMe' wearable-pacing RCT in Long COVID and calls for the same approach to be tested in ME/CFS specifically. Non-drug intervention (permitted under the papers track, which unlike the trials track is not drug-restricted) — included in the same spirit as other previously-tracked non-drug treatment papers (exercise meta-analysis, CBT component network meta-analysis, acupuncture meta-analysis). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS Digital Health publisher page and DOI."
+      "isNew": true,
+      "notes": "Published Jul 27, 2026. UK group (University of the West of Scotland). Discusses/cites the authors' own PaceMe randomized controlled trial (6-month, activity tracker + personalized notifications vs usual care) — no superiority for reducing PEM, but safe/feasible with positive user-reported insight and control. Non-drug/digital-health intervention, included per this database's existing precedent of covering non-pharmacological treatment approaches (e.g. exercise and CBT meta-analyses). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS Digital Health publisher page."
     }
   ]
 }
