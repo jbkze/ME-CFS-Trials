@@ -9,7 +9,7 @@ doi: 10.1007/s40279-026-02487-4
 url: https://doi.org/10.1007/s40279-026-02487-4
 pdf: literature/papers/2026-ruijgt-wearable-heart-rate-variability/paper.pdf
 text: literature/papers/2026-ruijgt-wearable-heart-rate-variability/paper.txt
-tags: [exercise-physiology, post-exertional-malaise, autonomic, infection-trigger]
+tags: [exercise-physiology, post-exertional-malaise, autonomic, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
@@ -26,14 +26,14 @@ cover: "[[literature/papers/2026-ruijgt-wearable-heart-rate-variability/cover.pn
 
 ## Summary
 
-Long-COVID patients wore heart-rate monitors around the clock. Compared with healthy people, they had lower heart-rate variability (HRV, a measure of how well the nervous system recovers) during everyday activities and sleep, and this recovery signal stayed disrupted for a full day after they exercised above a certain personal intensity level — with the risk of a post-exertional malaise (PEM, a crash after activity) flare-up rising once they crossed that line.
+Using wearable heart-rate monitors over several days on 121 people with long COVID and 21 healthy people, researchers found that patients' heart-rate variability (a measure of how well the body's automatic 'rest and recover' nervous system is working) was lower around exercise and during sleep. This recovery signal stayed abnormal for a full 24 hours after exertion, especially once activity crossed a specific intensity level.
 
 _(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
-Suggests cheap wearable devices could help patients spot the 'invisible' overexertion that triggers a PEM crash and find a personal safe exercise intensity to pace under — a practical, drug-free tool that likely applies to ME/CFS more broadly since the PEM mechanism overlaps with long COVID.
+Gives a concrete, wearable-measurable warning line for how much exertion triggers a crash (post-exertional malaise), which could help patients pace themselves and give future drug trials an objective way to measure improvement.
 
 ## Notes
 
-Confirmed via PubMed (PMID 42501245) and DOI resolution to Springer (Sports Medicine), published online 2026-07-25. 121 long-COVID patients vs. 21 healthy controls; ventilatory threshold (VT1) used as the intensity cutoff. Not Wirth/Scheibenbogen-authored; priority normal. Not Germany-restricted (papers track).
+Published online Jul 25, 2026 (Sports Medicine, ahead of print). Dutch group (Vrije Universiteit Amsterdam), n=121 long-COVID vs 21 healthy controls, multi-day wearable HRV monitoring around exercise and overnight. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/journal/date match).

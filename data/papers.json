@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-07-30",
+  "last_check": "2026-07-31",
   "papers": [
     {
       "id": "friedberg-2026-molecular-hydrogen-minireview",
@@ -1513,9 +1513,9 @@
       "why": "Adds to growing evidence that ME/CFS symptoms cluster into a recognisable whole-body pattern rather than a random grab-bag, and that sex and menopausal status should be considered when grouping patients — useful for designing future drug trials that match treatments to the right patient subgroup.",
       "link": "https://doi.org/10.21203/rs.3.rs-10268339/v1",
       "first_seen": "2026-07-30",
-      "last_checked": "2026-07-30",
+      "last_checked": "2026-07-31",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Preprint, not yet peer-reviewed, posted Research Square Jul 24, 2026. Same APAV-ME/CFS German registry (n=745, closely related to n=748 in the authors' companion sex/menopause paper habermann-horstmeier-2026-sex-menopause-symptoms and their earlier J Transl Med symptom-clusters paper). Not Wirth/Scheibenbogen-affiliated. Confirmed via Research Square article page (title/authors/abstract match)."
     },
     {
@@ -1528,9 +1528,9 @@
       "why": "A more precise way to measure muscle fatigability could give future ME/CFS drug trials a cheap, objective test for whether a treatment is genuinely improving the body's energy problems, rather than relying only on patients' own reports.",
       "link": "https://doi.org/10.64898/2026.07.22.26358672",
       "first_seen": "2026-07-30",
-      "last_checked": "2026-07-30",
+      "last_checked": "2026-07-31",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Posted medRxiv Jul 24, 2026. Same University Hospital Regensburg group (Steinkirchner, Kaess, Dejaco) already tracked in this database for the perioperative-anesthesia paper (steinkirchner-2026-perioperative-anesthesia) and a distinct patient population from Mihatsch et al.'s pediatric handgrip-strength paper (mihatsch-2026-pediatric-handgrip-strength). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date/DOI match)."
     },
     {
@@ -1543,9 +1543,9 @@
       "why": "Offers a new, untested angle on what might trigger ME/CFS in some cases and proposes shared biological measurements (markers) worth checking in future studies — but the authors themselves flag it as a hypothesis awaiting experimental confirmation, so treat it as speculative rather than established.",
       "link": "https://doi.org/10.3390/ijms27146535",
       "first_seen": "2026-07-30",
-      "last_checked": "2026-07-30",
+      "last_checked": "2026-07-31",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Int J Mol Sci 27(14):6535. Published Jul 22, 2026. Narrative/hypothesis review (McMaster University and National CFIDS Foundation); authors explicitly state proposed mechanisms (SLC25A15/ORNT1, CD38 upregulation, cyclin D1 stabilization, alpha-synuclein aggregation) are 'yet to be confirmed experimentally'. Not Wirth/Scheibenbogen-affiliated. Confirmed via MDPI publisher page."
     },
     {
@@ -1558,9 +1558,9 @@
       "why": "A notable negative/null finding that pushes back against the idea that COVID-19 infection itself directly raises the short-term population-level risk of an ME/CFS diagnosis — worth weighing against other studies that do find a post-COVID ME/CFS signal, since it may reflect diagnostic-coding delays (ME/CFS is often only diagnosed well after 9 months) rather than a true absence of risk.",
       "link": "https://doi.org/10.1136/bmjph-2024-001686",
       "first_seen": "2026-07-30",
-      "last_checked": "2026-07-30",
+      "last_checked": "2026-07-31",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Published Jul 24, 2026. Large network/registry cohort study comparing COVID-test-positive vs test-negative individuals across multiple autoimmune/inflammatory outcomes, ME/CFS among them; first 9 months post-acute phase only. Not Wirth/Scheibenbogen-affiliated. Confirmed via BMJ publisher page."
     },
     {
@@ -1573,10 +1573,85 @@
       "why": "A realistic look at a popular non-drug approach (digital pacing tools): helpful for patient insight and safety, but the authors' own trial shows it is not yet a proven way to reduce the disabling crashes that are the hallmark of ME/CFS, so expectations for these tools should stay modest pending better evidence.",
       "link": "https://doi.org/10.1371/journal.pdig.0001586",
       "first_seen": "2026-07-30",
-      "last_checked": "2026-07-30",
+      "last_checked": "2026-07-31",
+      "flags": [],
+      "isNew": false,
+      "notes": "Published Jul 27, 2026. UK group (University of the West of Scotland). Discusses/cites the authors' own PaceMe randomized controlled trial (6-month, activity tracker + personalized notifications vs usual care) — no superiority for reducing PEM, but safe/feasible with positive user-reported insight and control. Non-drug/digital-health intervention, included per this database's existing precedent of covering non-pharmacological treatment approaches (e.g. exercise and CBT meta-analyses). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS Digital Health publisher page."
+    },
+    {
+      "id": "ruijgt-2026-hrv-pem-longcovid",
+      "title": "Wearable Heart Rate Variability Monitoring, Autonomic Dysfunction and Post-exertional Malaise in Long COVID: An Observational Study",
+      "authors": "Ruijgt TM, Slaghekke A, Ellens A, Janssen KW, Wüst RCI",
+      "journal": "Sports Medicine",
+      "date": "Jul 2026",
+      "summary": "Using wearable heart-rate monitors over several days on 121 people with long COVID and 21 healthy people, researchers found that patients' heart-rate variability (a measure of how well the body's automatic 'rest and recover' nervous system is working) was lower around exercise and during sleep. This recovery signal stayed abnormal for a full 24 hours after exertion, especially once activity crossed a specific intensity level.",
+      "why": "Gives a concrete, wearable-measurable warning line for how much exertion triggers a crash (post-exertional malaise), which could help patients pace themselves and give future drug trials an objective way to measure improvement.",
+      "link": "https://doi.org/10.1007/s40279-026-02487-4",
+      "first_seen": "2026-07-31",
+      "last_checked": "2026-07-31",
       "flags": [],
       "isNew": true,
-      "notes": "Published Jul 27, 2026. UK group (University of the West of Scotland). Discusses/cites the authors' own PaceMe randomized controlled trial (6-month, activity tracker + personalized notifications vs usual care) — no superiority for reducing PEM, but safe/feasible with positive user-reported insight and control. Non-drug/digital-health intervention, included per this database's existing precedent of covering non-pharmacological treatment approaches (e.g. exercise and CBT meta-analyses). Not Wirth/Scheibenbogen-affiliated. Confirmed via PLOS Digital Health publisher page."
+      "notes": "Published online Jul 25, 2026 (Sports Medicine, ahead of print). Dutch group (Vrije Universiteit Amsterdam), n=121 long-COVID vs 21 healthy controls, multi-day wearable HRV monitoring around exercise and overnight. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/journal/date match)."
+    },
+    {
+      "id": "torres-2026-inflammation-biomarkers-longcovid",
+      "title": "High Quality Analysis of Circulating Biomarkers Reveals No Evidence of Elevated Inflammatory Markers in a Long COVID Cohort Recruited at a Primary Care Center",
+      "authors": "Torres ML, Lerma-Irureta D, Ibañez-Ruiz J, Lucas A, Magallón-Botaya R, Schoorlemmer J",
+      "journal": "medRxiv (preprint)",
+      "date": "Jul 2026",
+      "summary": "Using a more precise blood test than earlier studies, researchers re-measured common inflammation markers (CRP, TNF-alpha, IL-1beta, IL-6) in long-COVID patients recruited from a Spanish primary-care clinic, and found no evidence these markers were raised compared with recovered or healthy people.",
+      "why": "A negative finding that argues against simple blood-inflammation markers as a reliable way to diagnose or explain long COVID, pushing the search for a cause toward other biology (such as microclots or immune-cell dysfunction) instead.",
+      "link": "https://doi.org/10.64898/2026.07.28.26359102",
+      "first_seen": "2026-07-31",
+      "last_checked": "2026-07-31",
+      "flags": [],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted medRxiv Jul 28, 2026 (indexed Jul 30). Spanish group (Zaragoza primary care). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
+    },
+    {
+      "id": "faghy-2026-erase-lc-remdesivir",
+      "title": "An Open-Label Feasibility Study of Remdesivir in Long COVID: Results from the ERASE LC Trial",
+      "authors": "Faghy MA, Chynoweth J, Barnett A, Skipper L, Allgar V, Neilens H, Sands K, Lord A, Hambly H, Aspinall P, Rollinson C, Strain W, Owen R, Thomas C, Grigg M, Kranen S, Mokbel K, Razak H, Ashton R, Maidment I, Bewick T",
+      "journal": "medRxiv (preprint)",
+      "date": "Jul 2026",
+      "summary": "73 people with long COVID in the UK received a 5-day course of the antiviral drug remdesivir (given through an IV drip) to test whether this was feasible and safe — not yet a full test of whether it works. Almost everyone completed treatment safely, and patients reported some improvement in fatigue and walking ability, but the authors say a proper randomised trial with a comparison group is still needed to know if the drug itself caused the improvement.",
+      "why": "The first test of an antiviral drug (rather than an immune-calming one) for long COVID, suggesting a lingering virus may still be worth targeting even long after the original infection — a live question in ME/CFS-type illness as well.",
+      "link": "https://doi.org/10.64898/2026.07.26.26358852",
+      "first_seen": "2026-07-31",
+      "last_checked": "2026-07-31",
+      "flags": [],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted medRxiv ~Jul 26-28, 2026. UK group, Gilead Sciences-funded (Gilead manufactures remdesivir). Open-label feasibility trial (n=73), no control arm — not yet an efficacy result. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
+    },
+    {
+      "id": "hauguel-2026-dbs-metabolomics-pem",
+      "title": "Exploratory Dried Blood Spot Metabolomics Identifies Pathway-Level Convergence with ME/CFS Biology in a Self-Reported PEM-like Fatigue Phenotype",
+      "authors": "Hauguel P, Anctil N, Noel L",
+      "journal": "medRxiv (preprint)",
+      "date": "Jun 2026",
+      "summary": "Finger-prick blood-spot samples from 1,784 people in a large community health study were tested for metabolic chemicals. People who reported a post-exertional-malaise-like 'crash after activity' pattern showed the same kinds of energy-production, fat, and stress-hormone chemical differences previously found in diagnosed ME/CFS patients — using a much larger, cheaper sample method than earlier studies.",
+      "why": "Suggests ME/CFS-type metabolic disturbance may be detectable even from self-reported crash-after-exertion symptoms in the general population, using an inexpensive finger-prick test — a possible low-cost screening or biomarker approach at a much larger scale than prior blood studies.",
+      "link": "https://doi.org/10.64898/2026.06.08.26355197",
+      "first_seen": "2026-07-31",
+      "last_checked": "2026-07-31",
+      "flags": [],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted medRxiv Jun 10, 2026 (missed by prior runs, found via a 3-month sweep this run). n=1,784 community cohort, dried-blood-spot metabolomics, self-reported PEM-like phenotype (not a clinical ME/CFS diagnosis). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
+    },
+    {
+      "id": "friedly-2026-recover-energize-design",
+      "title": "Rationale and Design of RECOVER-ENERGIZE: A Platform Clinical Trial of Interventions for Exercise Intolerance With and Without Post-exertional Malaise in Long COVID",
+      "authors": "Friedly J, Bateman L, Berdan LG, Casaburi R, Erdmann N, Felker GM, Itchon-Ramos N, Keteyian SJ, MacIntyre N, O'Brien L, Reist C, Rossiter HB, Silverstein A, Taylor E, Pike Welch H, Yanez ND, Zimmerman KO, Make B",
+      "journal": "medRxiv (preprint)",
+      "date": "Jun 2026",
+      "summary": "This is a trial-design paper, not results yet: it lays out a large US 'platform trial' — a flexible design that can test several treatments over time within one shared structure — for exercise intolerance and post-exertional malaise in long COVID, run through the NIH's RECOVER initiative.",
+      "why": "A major, NIH-funded piece of trial infrastructure signalling a coming wave of rigorously tested treatments specifically for post-exertional malaise and exercise intolerance, an area with very few good trials so far; includes well-known ME/CFS exercise-physiology researchers (Lucinda Bateman, Harry Rossiter). Worth tracking for when the first results post.",
+      "link": "https://doi.org/10.64898/2026.06.02.26354455",
+      "first_seen": "2026-07-31",
+      "last_checked": "2026-07-31",
+      "flags": [],
+      "isNew": true,
+      "notes": "Preprint, not yet peer-reviewed, posted medRxiv Jun 3, 2026 (missed by prior runs, found via a 3-month sweep this run). Trial-design/protocol paper for a platform RCT under NIH's RECOVER initiative; no efficacy results yet. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API (title/authors/date match)."
     }
   ]
 }

@@ -1,25 +1,9 @@
 {
-  "generated": "2026-07-30",
-  "lastRunAt": "2026-07-30T04:13:09Z",
-  "lastRun": "30 Jul 2026",
-  "nextRun": "Next run ~31 Jul 2026",
+  "generated": "2026-07-31",
+  "lastRunAt": "2026-07-31T04:13:12Z",
+  "lastRun": "31 Jul 2026",
+  "nextRun": "Next run ~01 Aug 2026",
   "studies": [
-    {
-      "title": "PIONEER_PAIS — Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial Evaluating the Efficacy and Safety of the Anti-CD19 Monoclonal Antibody Inebilizumab Compared With Placebo in Patients With Post-acute Infection Syndromes Fulfilling ME/CFS Criteria",
-      "status": "soon",
-      "statusLabel": "Planned",
-      "location": "Charité - Universitätsmedizin Berlin, Berlin",
-      "link": "https://clinicaltrials.gov/study/NCT07724834",
-      "isNew": true
-    },
-    {
-      "title": "PAISE-AriSE — Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial of Low-dose Aripiprazole in Patients With Neuropsychiatric Impairment in Post-acute Infectious Syndrome (PAIS)",
-      "status": "soon",
-      "statusLabel": "Planned",
-      "location": "Charité - Universitätsmedizin Berlin, Berlin",
-      "link": "https://clinicaltrials.gov/study/NCT07714213",
-      "isNew": true
-    },
     {
       "title": "IMPACT — Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
       "status": "recruiting",
@@ -43,57 +27,73 @@
       "location": "—",
       "link": "https://mitodicure.com/",
       "isNew": false
+    },
+    {
+      "title": "PIONEER_PAIS — Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial Evaluating the Efficacy and Safety of the Anti-CD19 Monoclonal Antibody Inebilizumab Compared With Placebo in Patients With Post-acute Infection Syndromes Fulfilling ME/CFS Criteria",
+      "status": "soon",
+      "statusLabel": "Planned",
+      "location": "Charité - Universitätsmedizin Berlin, Berlin",
+      "link": "https://clinicaltrials.gov/study/NCT07724834",
+      "isNew": false
+    },
+    {
+      "title": "PAISE-AriSE — Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial of Low-dose Aripiprazole in Patients With Neuropsychiatric Impairment in Post-acute Infectious Syndrome (PAIS)",
+      "status": "soon",
+      "statusLabel": "Planned",
+      "location": "Charité - Universitätsmedizin Berlin, Berlin",
+      "link": "https://clinicaltrials.gov/study/NCT07714213",
+      "isNew": false
     }
   ],
   "papers": [
     {
-      "title": "Muscle Symptoms Define a Stable Physiological Dysregulation Cluster in ME/CFS",
-      "authors": "Habermann-Horstmeier L, Horstmeier LM",
-      "journal": "Research Square (preprint, not yet peer-reviewed)",
+      "title": "Wearable Heart Rate Variability Monitoring, Autonomic Dysfunction and Post-exertional Malaise in Long COVID: An Observational Study",
+      "authors": "Ruijgt TM, Slaghekke A, Ellens A, Janssen KW, Wüst RCI",
+      "journal": "Sports Medicine",
       "date": "Jul 2026",
-      "summary": "Using the same large German patient survey as their earlier papers (745 people with ME/CFS), these researchers found that muscle problems (like weakness and pain) tend to show up together with breathing problems, heart/blood-pressure symptoms, temperature-control problems, vision problems and gut problems — as one connected package rather than separate issues. This package looked the same regardless of how long someone had been sick, but showed up somewhat differently in women versus men and before versus after menopause.",
-      "why": "Adds to growing evidence that ME/CFS symptoms cluster into a recognisable whole-body pattern rather than a random grab-bag, and that sex and menopausal status should be considered when grouping patients — useful for designing future drug trials that match treatments to the right patient subgroup.",
-      "link": "https://doi.org/10.21203/rs.3.rs-10268339/v1",
+      "summary": "Using wearable heart-rate monitors over several days on 121 people with long COVID and 21 healthy people, researchers found that patients' heart-rate variability (a measure of how well the body's automatic 'rest and recover' nervous system is working) was lower around exercise and during sleep. This recovery signal stayed abnormal for a full 24 hours after exertion, especially once activity crossed a specific intensity level.",
+      "why": "Gives a concrete, wearable-measurable warning line for how much exertion triggers a crash (post-exertional malaise), which could help patients pace themselves and give future drug trials an objective way to measure improvement.",
+      "link": "https://doi.org/10.1007/s40279-026-02487-4",
       "isNew": true
     },
     {
-      "title": "Repeated Handgrip Strength Variability in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Separating Disease-Related Fatigability from Force Gradation",
-      "authors": "Steinkirchner FM, Irrgang F, Kimmerling V, Kaess M, Popkirov S, Schieffer E, Gruber M, Dejaco A",
+      "title": "High Quality Analysis of Circulating Biomarkers Reveals No Evidence of Elevated Inflammatory Markers in a Long COVID Cohort Recruited at a Primary Care Center",
+      "authors": "Torres ML, Lerma-Irureta D, Ibañez-Ruiz J, Lucas A, Magallón-Botaya R, Schoorlemmer J",
       "journal": "medRxiv (preprint)",
       "date": "Jul 2026",
-      "summary": "Researchers had ME/CFS patients squeeze a hand-grip strength device repeatedly and analysed how their grip strength varied from squeeze to squeeze, trying to tell apart two things that can look similar: normal muscles simply tiring out with effort, versus the disease-specific loss of energy (fatigability) seen in ME/CFS.",
-      "why": "A more precise way to measure muscle fatigability could give future ME/CFS drug trials a cheap, objective test for whether a treatment is genuinely improving the body's energy problems, rather than relying only on patients' own reports.",
-      "link": "https://doi.org/10.64898/2026.07.22.26358672",
+      "summary": "Using a more precise blood test than earlier studies, researchers re-measured common inflammation markers (CRP, TNF-alpha, IL-1beta, IL-6) in long-COVID patients recruited from a Spanish primary-care clinic, and found no evidence these markers were raised compared with recovered or healthy people.",
+      "why": "A negative finding that argues against simple blood-inflammation markers as a reliable way to diagnose or explain long COVID, pushing the search for a cause toward other biology (such as microclots or immune-cell dysfunction) instead.",
+      "link": "https://doi.org/10.64898/2026.07.28.26359102",
       "isNew": true
     },
     {
-      "title": "Low-Dose Ionizing Radiation and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): A Review",
-      "authors": "Rusin A, Cocchetto A, Mothersill C",
-      "journal": "International Journal of Molecular Sciences",
+      "title": "An Open-Label Feasibility Study of Remdesivir in Long COVID: Results from the ERASE LC Trial",
+      "authors": "Faghy MA, Chynoweth J, Barnett A, Skipper L, Allgar V, Neilens H, Sands K, Lord A, Hambly H, Aspinall P, Rollinson C, Strain W, Owen R, Thomas C, Grigg M, Kranen S, Mokbel K, Razak H, Ashton R, Maidment I, Bewick T",
+      "journal": "medRxiv (preprint)",
       "date": "Jul 2026",
-      "summary": "This review proposes a speculative idea: that low-dose radiation exposure (much lower than what causes radiation sickness) might trigger some of the same cell-damage-signal pathways seen in ME/CFS, including tired-out cellular batteries (mitochondria), a stress-response protein pattern, and immune over-activation. The authors are upfront that this is a hypothesis, not proven — the proposed pathways are shared with ME/CFS, but no study has yet directly shown radiation actually causing ME/CFS in people.",
-      "why": "Offers a new, untested angle on what might trigger ME/CFS in some cases and proposes shared biological measurements (markers) worth checking in future studies — but the authors themselves flag it as a hypothesis awaiting experimental confirmation, so treat it as speculative rather than established.",
-      "link": "https://doi.org/10.3390/ijms27146535",
+      "summary": "73 people with long COVID in the UK received a 5-day course of the antiviral drug remdesivir (given through an IV drip) to test whether this was feasible and safe — not yet a full test of whether it works. Almost everyone completed treatment safely, and patients reported some improvement in fatigue and walking ability, but the authors say a proper randomised trial with a comparison group is still needed to know if the drug itself caused the improvement.",
+      "why": "The first test of an antiviral drug (rather than an immune-calming one) for long COVID, suggesting a lingering virus may still be worth targeting even long after the original infection — a live question in ME/CFS-type illness as well.",
+      "link": "https://doi.org/10.64898/2026.07.26.26358852",
       "isNew": true
     },
     {
-      "title": "Risks of autoimmune and inflammatory post-acute COVID-19 conditions: a network cohort study",
-      "authors": "Burkard TM, et al.",
-      "journal": "BMJ Public Health",
-      "date": "Jul 2026",
-      "summary": "This large study compared people who tested positive for COVID-19 with similar people who tested negative, tracking whether the COVID-positive group went on to develop more autoimmune and inflammatory conditions afterward — including ME/CFS. In the first nine months after infection, the study did not find a higher rate of ME/CFS diagnoses in the COVID-positive group compared to the COVID-negative group.",
-      "why": "A notable negative/null finding that pushes back against the idea that COVID-19 infection itself directly raises the short-term population-level risk of an ME/CFS diagnosis — worth weighing against other studies that do find a post-COVID ME/CFS signal, since it may reflect diagnostic-coding delays (ME/CFS is often only diagnosed well after 9 months) rather than a true absence of risk.",
-      "link": "https://doi.org/10.1136/bmjph-2024-001686",
+      "title": "Exploratory Dried Blood Spot Metabolomics Identifies Pathway-Level Convergence with ME/CFS Biology in a Self-Reported PEM-like Fatigue Phenotype",
+      "authors": "Hauguel P, Anctil N, Noel L",
+      "journal": "medRxiv (preprint)",
+      "date": "Jun 2026",
+      "summary": "Finger-prick blood-spot samples from 1,784 people in a large community health study were tested for metabolic chemicals. People who reported a post-exertional-malaise-like 'crash after activity' pattern showed the same kinds of energy-production, fat, and stress-hormone chemical differences previously found in diagnosed ME/CFS patients — using a much larger, cheaper sample method than earlier studies.",
+      "why": "Suggests ME/CFS-type metabolic disturbance may be detectable even from self-reported crash-after-exertion symptoms in the general population, using an inexpensive finger-prick test — a possible low-cost screening or biomarker approach at a much larger scale than prior blood studies.",
+      "link": "https://doi.org/10.64898/2026.06.08.26355197",
       "isNew": true
     },
     {
-      "title": "Pacing and energy management with digital tools for conditions with chronic fatigue: What we know so far in ME/CFS and Long COVID",
-      "authors": "Sanal-Hayes NEM, Hayes LD, Mclaughlin M, Sculthorpe NF",
-      "journal": "PLOS Digital Health",
-      "date": "Jul 2026",
-      "summary": "This article reviews wearable devices and smartphone apps meant to help ME/CFS and Long COVID patients 'pace' themselves — that is, stay within their safe activity limit to avoid triggering a crash (post-exertional malaise). The authors' own 6-month trial of an activity-tracker-plus-alerts tool (PaceMe) found it was safe and helped patients feel more in control, but did not actually reduce crashes more than standard care.",
-      "why": "A realistic look at a popular non-drug approach (digital pacing tools): helpful for patient insight and safety, but the authors' own trial shows it is not yet a proven way to reduce the disabling crashes that are the hallmark of ME/CFS, so expectations for these tools should stay modest pending better evidence.",
-      "link": "https://doi.org/10.1371/journal.pdig.0001586",
+      "title": "Rationale and Design of RECOVER-ENERGIZE: A Platform Clinical Trial of Interventions for Exercise Intolerance With and Without Post-exertional Malaise in Long COVID",
+      "authors": "Friedly J, Bateman L, Berdan LG, Casaburi R, Erdmann N, Felker GM, Itchon-Ramos N, Keteyian SJ, MacIntyre N, O'Brien L, Reist C, Rossiter HB, Silverstein A, Taylor E, Pike Welch H, Yanez ND, Zimmerman KO, Make B",
+      "journal": "medRxiv (preprint)",
+      "date": "Jun 2026",
+      "summary": "This is a trial-design paper, not results yet: it lays out a large US 'platform trial' — a flexible design that can test several treatments over time within one shared structure — for exercise intolerance and post-exertional malaise in long COVID, run through the NIH's RECOVER initiative.",
+      "why": "A major, NIH-funded piece of trial infrastructure signalling a coming wave of rigorously tested treatments specifically for post-exertional malaise and exercise intolerance, an area with very few good trials so far; includes well-known ME/CFS exercise-physiology researchers (Lucinda Bateman, Harry Rossiter). Worth tracking for when the first results post.",
+      "link": "https://doi.org/10.64898/2026.06.02.26354455",
       "isNew": true
     },
     {
@@ -1094,6 +1094,56 @@
       "summary": "Tracking 102 post-COVID patients and 102 recovered people for six months, a simple hand-grip-strength test (measuring muscle force and how quickly it tires) stayed abnormal the whole time in patients, and a weaker grip at the start predicted worse fatigue and low mood six months later.",
       "why": "Proposes a simple, objective, repeatable test — hand-grip strength — as a stand-in marker for muscle-related symptom severity in post-COVID illness, echoing the muscle-focused mechanism Wirth and Scheibenbogen propose for ME/CFS, though it is not from their group.",
       "link": "https://doi.org/10.1186/s12967-026-08579-z",
+      "isNew": false
+    },
+    {
+      "title": "Muscle Symptoms Define a Stable Physiological Dysregulation Cluster in ME/CFS",
+      "authors": "Habermann-Horstmeier L, Horstmeier LM",
+      "journal": "Research Square (preprint, not yet peer-reviewed)",
+      "date": "Jul 2026",
+      "summary": "Using the same large German patient survey as their earlier papers (745 people with ME/CFS), these researchers found that muscle problems (like weakness and pain) tend to show up together with breathing problems, heart/blood-pressure symptoms, temperature-control problems, vision problems and gut problems — as one connected package rather than separate issues. This package looked the same regardless of how long someone had been sick, but showed up somewhat differently in women versus men and before versus after menopause.",
+      "why": "Adds to growing evidence that ME/CFS symptoms cluster into a recognisable whole-body pattern rather than a random grab-bag, and that sex and menopausal status should be considered when grouping patients — useful for designing future drug trials that match treatments to the right patient subgroup.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10268339/v1",
+      "isNew": false
+    },
+    {
+      "title": "Repeated Handgrip Strength Variability in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Separating Disease-Related Fatigability from Force Gradation",
+      "authors": "Steinkirchner FM, Irrgang F, Kimmerling V, Kaess M, Popkirov S, Schieffer E, Gruber M, Dejaco A",
+      "journal": "medRxiv (preprint)",
+      "date": "Jul 2026",
+      "summary": "Researchers had ME/CFS patients squeeze a hand-grip strength device repeatedly and analysed how their grip strength varied from squeeze to squeeze, trying to tell apart two things that can look similar: normal muscles simply tiring out with effort, versus the disease-specific loss of energy (fatigability) seen in ME/CFS.",
+      "why": "A more precise way to measure muscle fatigability could give future ME/CFS drug trials a cheap, objective test for whether a treatment is genuinely improving the body's energy problems, rather than relying only on patients' own reports.",
+      "link": "https://doi.org/10.64898/2026.07.22.26358672",
+      "isNew": false
+    },
+    {
+      "title": "Low-Dose Ionizing Radiation and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): A Review",
+      "authors": "Rusin A, Cocchetto A, Mothersill C",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "Jul 2026",
+      "summary": "This review proposes a speculative idea: that low-dose radiation exposure (much lower than what causes radiation sickness) might trigger some of the same cell-damage-signal pathways seen in ME/CFS, including tired-out cellular batteries (mitochondria), a stress-response protein pattern, and immune over-activation. The authors are upfront that this is a hypothesis, not proven — the proposed pathways are shared with ME/CFS, but no study has yet directly shown radiation actually causing ME/CFS in people.",
+      "why": "Offers a new, untested angle on what might trigger ME/CFS in some cases and proposes shared biological measurements (markers) worth checking in future studies — but the authors themselves flag it as a hypothesis awaiting experimental confirmation, so treat it as speculative rather than established.",
+      "link": "https://doi.org/10.3390/ijms27146535",
+      "isNew": false
+    },
+    {
+      "title": "Risks of autoimmune and inflammatory post-acute COVID-19 conditions: a network cohort study",
+      "authors": "Burkard TM, et al.",
+      "journal": "BMJ Public Health",
+      "date": "Jul 2026",
+      "summary": "This large study compared people who tested positive for COVID-19 with similar people who tested negative, tracking whether the COVID-positive group went on to develop more autoimmune and inflammatory conditions afterward — including ME/CFS. In the first nine months after infection, the study did not find a higher rate of ME/CFS diagnoses in the COVID-positive group compared to the COVID-negative group.",
+      "why": "A notable negative/null finding that pushes back against the idea that COVID-19 infection itself directly raises the short-term population-level risk of an ME/CFS diagnosis — worth weighing against other studies that do find a post-COVID ME/CFS signal, since it may reflect diagnostic-coding delays (ME/CFS is often only diagnosed well after 9 months) rather than a true absence of risk.",
+      "link": "https://doi.org/10.1136/bmjph-2024-001686",
+      "isNew": false
+    },
+    {
+      "title": "Pacing and energy management with digital tools for conditions with chronic fatigue: What we know so far in ME/CFS and Long COVID",
+      "authors": "Sanal-Hayes NEM, Hayes LD, Mclaughlin M, Sculthorpe NF",
+      "journal": "PLOS Digital Health",
+      "date": "Jul 2026",
+      "summary": "This article reviews wearable devices and smartphone apps meant to help ME/CFS and Long COVID patients 'pace' themselves — that is, stay within their safe activity limit to avoid triggering a crash (post-exertional malaise). The authors' own 6-month trial of an activity-tracker-plus-alerts tool (PaceMe) found it was safe and helped patients feel more in control, but did not actually reduce crashes more than standard care.",
+      "why": "A realistic look at a popular non-drug approach (digital pacing tools): helpful for patient insight and safety, but the authors' own trial shows it is not yet a proven way to reduce the disabling crashes that are the hallmark of ME/CFS, so expectations for these tools should stay modest pending better evidence.",
+      "link": "https://doi.org/10.1371/journal.pdig.0001586",
       "isNew": false
     }
   ]
