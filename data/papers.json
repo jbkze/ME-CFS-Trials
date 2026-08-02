@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-01",
+  "last_check": "2026-08-02",
   "papers": [
     {
       "id": "eguchi-2026-ev-microrna-biomarker",
@@ -13,11 +13,9 @@
       "why": "Adds to a growing set of blood-based candidate markers that could eventually help doctors tell ME/CFS apart from look-alike conditions like depression or general tiredness, something there is currently no reliable test for — though this is a small, early exploratory study that needs replication in larger groups.",
       "link": "https://doi.org/10.1186/s12967-026-08695-w",
       "first_seen": "2026-08-01",
-      "last_checked": "2026-08-01",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-08-02",
+      "flags": [],
+      "isNew": false,
       "notes": "J Transl Med 24(1):979, published Jul 27, 2026. PMID 42533331. Osaka group (Eguchi/Kuratsune/Nakatomi/Watanabe/Fukuda), small exploratory cohort comparing ME/CFS vs. idiopathic chronic fatigue vs. depression by EV-microRNA profiling; ~62 differentially expressed microRNAs (incl. miR-21-5p, let-7f-5p, miR-26b-5p, miR-20a-5p) implicated in neuronal/cytoskeletal pathways. Not Wirth/Scheibenbogen-affiliated. Confirmed independently via PubMed record (PMID 42533331) and Springer/J Transl Med publisher page redirect from the DOI."
     },
     {
