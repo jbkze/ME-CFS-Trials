@@ -1,6 +1,6 @@
 ---
 type: paper
-id: azcue2026
+id: azcue2026a
 title: "Two-timepoint multidomain follow-up of post-COVID condition and ME/CFS: overlapping autonomic, small-fiber, and cognitive changes"
 authors: ["Azcue N", "Barranco C", "Tijero-Merino B", "Acera M", "Fernández-Valle T", "Lafuente JV", "Gabilondo I", "Ruiz-Lopez M", "Del Pino R", "Gómez-Esteban JC"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [autonomic, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: azcue2026
+bibtex_key: azcue2026a
 cover: "[[literature/papers/2026-azcue-two-timepoint-multidomain-follow/cover.png]]"
 ---
 
