@@ -15,6 +15,20 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-08-04 (scheduled autonomous, 04:14 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), mitodicure.com/pipeline/ and /news/, cfc.charite.de/en/clinical_research/nksg/ (AIM-ME check), mecfs-research.org (TAME), solvecfs.org (semaglutide), aptatherapeutics.com/news-update/ (BC007/unCOVer Erlangen), gesundheitsforschung-bmftr.de ("Nationale Dekade" funding call), fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended German/English web search for new German ME/CFS and post-COVID drug trials.
+- New: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 6 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING), DRKS00033897 (IA-Surv, "Recruitment ongoing"), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry), RAPID_REVIVE (still terminated), NCT07724834 (PIONEER_PAIS, NOT_YET_RECRUITING), NCT07714213 (PAISE-AriSE, NOT_YET_RECRUITING).
+- Leads re-checked, still fail confirmation standard: AIM-ME (still no registry/subpage; re-confirmed the published daratumumab pilot, PMC12283730, belongs to the distinct non-German Norwegian ResetME/Fluge-Mella programme), TAME (tafasitamab follow-up, still lead-only), semaglutide (Scheibenbogen/Solve M.E. award, still no registry entry), BC007/APTA "unCOVer Erlangen" (still anticipates enrolment "towards the end of 2026", no registry entry), BMFTR "Nationale Dekade" funding call (applications due 2026-09-02, deadline not yet passed, no recipients announced).
+- Sources checked — papers: Europe PMC API (date-filtered FIRST_PDATE sweep for the Jul 30–Aug 4 window), PubMed author searches (Scheibenbogen C, Wirth KJ), medRxiv/bioRxiv/Research Square sweep, general web search, Health Rising/Solve M.E./ME Association/S4ME community aggregators, cross-checked against all 112 existing IDs.
+- New papers: none. One borderline candidate considered and excluded: a medRxiv preprint (posted 2026-08-03, doi 10.64898/2026.07.31.26359395) on mammillary-body/fornix MRI changes in "Long COVID" tremor-like symptoms — abstract scopes the cohort as general Long COVID with no ME/CFS diagnosis or PEM criterion mentioned, so not added; flagged for a future revisit if fuller text surfaces a PEM/ME-CFS-gated eligibility.
+- isNew: cleared for azcue-2026-gpcr-autoantibodies-postcovid (flagged new on 2026-08-03, no longer new). No new isNew flags set this run.
+- Trials tracked: 6 (open: 2 — IMPACT, IA-Surv; planned: 3 — MDC002, PIONEER_PAIS, PAISE-AriSE; terminated: 1 — RAPID_REVIVE)
+- Notes: Quiet day on both tracks — all 6 trials and all watchlist leads re-verified unchanged, no new papers. Literature archive re-run — 112 papers total, 91 with PDF, 21 no-PDF noted, no changes (idempotent).
+
 ## 2026-08-03 (scheduled autonomous, 04:08 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213, NCT05697640/VERI-LONG and NCT05926505/PRECISION and NCT07317401/REenergizeME and NCT05986422/PoCoVIT sanity checks), DRKS (DRKS00033897), mitodicure.com/pipeline/ and /news/, aptatherapeutics.com/news-update/, solvecfs.org, gesundheitsforschung-bmftr.de, CTIS/euclinicaltrials.eu (blocked/403 again — recurring tooling limitation), fresh DRKS/ClinicalTrials.gov/WHO ICTRP sweep and open-ended German/English web search for new German ME/CFS and post-COVID drug trials.
 - New: none
