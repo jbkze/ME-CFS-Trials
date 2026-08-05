@@ -15,6 +15,23 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-08-05 (scheduled autonomous, 04:30 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), CTIS (rapid-revive — blocked 403 this run, treated as unchanged per web-search corroboration), mitodicure.com/pipeline/, /about-us/, /news/, cfc.charite.de/en/clinical_research/nksg/ (AIM-ME check), mecfs-research.org (TAME, BMFTR "Nationale Dekade"), solvecfs.org (semaglutide), aptatherapeutics.com/news-update/ + riffreporter.de (BC007/unCOVer Erlangen), fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended web search for new German ME/CFS and post-COVID drug trials.
+- New: none
+- Newly open: none
+- Status changed: none
+- Closed since last: none
+- All 6 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING), DRKS00033897 (IA-Surv, "Recruitment ongoing"), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry), RAPID_REVIVE (still terminated), NCT07724834 (PIONEER_PAIS, NOT_YET_RECRUITING), NCT07714213 (PAISE-AriSE, NOT_YET_RECRUITING).
+- Watch-list unchanged: AIM-ME, TAME (now more firmly funding-confirmed for "summer 2026", still unregistered), semaglutide, BC007/APTA "unCOVer Erlangen" (now has a public name via a March 2026 RiffReporter piece, still unregistered), BMFTR "Nationale Dekade" funding call (applications due 2026-09-02, no recipients yet). Ruled out for lack of German site: "ReMEdi" (Lindus Health/Tiefenbacher Group, US-based).
+- Sources checked — papers: PubMed, Europe PMC (incl. preprints), medRxiv/bioRxiv, Wirth/Scheibenbogen author searches, open web sweep for recent ME/CFS mechanism/biomarker/treatment/genetics papers.
+- Papers — 3 new confirmed papers added (115 total)
+  - Li J et al., Comput Biol Chem, Aug 2026 (online Mar 2026): UK Biobank machine-learning CFS diagnostic model from blood biomarkers + Mendelian-randomization causal evidence (6 markers) — DOI 10.1016/j.compbiolchem.2026.108995
+  - Ziaja CP et al., medRxiv preprint, Aug 2026: exploratory structural/diffusion MRI study proposing a "mammillary body-fornix gate" mechanism for long-COVID tremor/vibration/fatigue symptoms — DOI 10.64898/2026.07.31.26359395
+  - Shao X et al., Front Psychiatry, Jul 2026: risk-prediction model for comorbid circadian rhythm sleep-wake disorder in CFS (single-center China, n=610) — DOI 10.3389/fpsyt.2026.1826328
+  - isNew cleared for all previously-new entries (none were still flagged new)
+- Trials tracked: 6 (open: 2 [NCT07529197, DRKS00033897], planned/not-yet-recruiting: 3 [MDC002, NCT07724834, NCT07714213], terminated/archived: 1 [rapid-revive]) | Papers tracked: 115
+- Notes: Quiet day — no trial or watch-list status changes; 3 new papers found via fresh sweep, none Wirth/Scheibenbogen-authored. Several leads excluded (TCM RCT in a non-Western-indexed pharmacopeia journal, care-pathway/guideline documents, protocol-only trials with no results yet, an MCAS paper with only tangential PEM relevance) — see papers-research notes for detail if revisited.
+
 ## 2026-08-04 (scheduled autonomous, 04:14 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), mitodicure.com/pipeline/ and /news/, cfc.charite.de/en/clinical_research/nksg/ (AIM-ME check), mecfs-research.org (TAME), solvecfs.org (semaglutide), aptatherapeutics.com/news-update/ (BC007/unCOVer Erlangen), gesundheitsforschung-bmftr.de ("Nationale Dekade" funding call), fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended German/English web search for new German ME/CFS and post-COVID drug trials.
 - New: none

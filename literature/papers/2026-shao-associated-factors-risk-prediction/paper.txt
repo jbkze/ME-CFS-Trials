@@ -1,0 +1,1268 @@
+Associated factors and a risk
+prediction model for comorbid
+circadian rhythm sleep-wake
+disorders in patients with chronic
+fatigue syndrome: implications
+for early screening and sleep
+health management
+Xiao Shao 1†, Fan Yang 1†, Le-le Qin 1†, Jia-ning Shi 1†, Min Chen 1,
+Wen-jin Ge 1, Tian-jun Jiang 1, Jing-wen Yue 2, Wen Feng 3,
+Jing-han Wang 1 and Zhen-xian Zhang 1*
+1Yueyang Hospital of Integrated Traditional Chinese and Western Medicine, Shanghai University of
+Traditional Chinese Medicine, Shanghai, China, 2Tongren Hospital, Shanghai Jiao Tong University
+School of Medicine, Shanghai, China, 3Shanghai Seventh People’s Hospital of Shanghai University of
+Traditional Chinese Medicine, Shanghai, China
+Objective: To characterize comorbid circadian rhythm sleep-wake disorders
+(CRSWDs) in patients with chronic fatigue syndrome (CFS), identify factors
+independently associated with CRSWDs, and develop a risk prediction model
+for early screening and sleep health management.
+Methods: This retrospective study included 610 patients with CFS, who were
+randomly divided into a training cohort (n = 427) and a validation cohort (n = 183)
+in a 7:3 ratio. Demographic characteristics, lifestyle factors, and sleep-related
+variables were analyzed using univariable and multivariable logistic regression. A
+nomogram was developed on the basis of the ﬁnal model. Its discriminative ability,
+calibration, and public health usefulness were evaluated using receiver operating
+characteristic (ROC) analysis, the Hosmer-Lemeshow goodness-of-ﬁt test, and
+decision curve analysis (DCA), respectively.
+Results: Among the 427 patients with CFS in the training cohort, 208 (48.7%) had
+comorbid CRSWDs. Univariable analysis showed that gender, BMI, fatigue severity
+(Fatigue Scale-14, FS-14), slow-wave sleep (SWS, N3%), duration of screen use
+before bedtime and shift-work schedule type were signiﬁcantly associated with
+CRSWDs (P ≤0.05). Multivariable logistic regression analysis identiﬁed 12-hour
+rotating shifts (OR = 6.981, 95% CI: 2.603-18.720), 24-hour shifts (OR = 5.316,
+95% CI: 2.197-12.863), 8-hour rotating shifts (OR = 3.982, 95% CI: 1.698-9.339),
+FS-14 (OR = 1.984, 95% CI: 1.442-2.728) and female sex (OR = 1.892, 95% CI:
+1.178-3.037) as independently associated with an increased incidence of
+CRSWDs. By contrast, an increase in SWS (N3%) was independently associated
+with decreased odds of CRSWDs (OR = 0.982, 95% CI: 0.971-0.992). The AUCs in
+the training and validation cohorts demonstrated good model performance (AUC:
+0.808, 0.767, respectively), and the Hosmer-Lemeshow test revealed a
+satisfactory ﬁt.
+Frontiers in Psychiatry
+frontiersin.org
+01
+OPEN ACCESS
+EDITED BY
+Nicolette Ognjanovski,
+University of Michigan, United States
+REVIEWED BY
+Chih-Wei Chen,
+National Yang Ming Chiao Tung
+University, Taiwan
+Sara Pintwala,
+University of California, Davis,
+United States
+*CORRESPONDENCE
+Zhen-xian Zhang
+Zhenxianzhang2025@163.com
+†These authors have contributed
+equally to this work and share
+ﬁrst authorship
+RECEIVED 14 March 2026
+REVISED 25 June 2026
+ACCEPTED 03 July 2026
+PUBLISHED 20 July 2026
+CITATION
+Shao X, Yang F, Qin L-l, Shi J-n, Chen M,
+Ge W-j, Jiang T-j, Yue J-w, Feng W,
+Wang J-h and Zhang Z-x (2026)
+Associated factors and a risk prediction
+model for comorbid circadian rhythm
+sleep-wake disorders in patients with
+chronic fatigue syndrome: implications
+for early screening and sleep health
+management.
+Front. Psychiatry 17:1826328.
+doi: 10.3389/fpsyt.2026.1826328
+COPYRIGHT
+© 2026 Shao, Yang, Qin, Shi, Chen, Ge,
+Jiang, Yue, Feng, Wang and Zhang. This is
+an open-access article distributed under
+the terms of the Creative Commons
+Attribution License (CC BY). The use,
+distribution or reproduction in other
+forums is permitted, provided the
+original author(s) and the copyright
+owner(s) are credited and that the
+original publication in this journal is
+cited, in accordance with accepted
+academic practice. No use, distribution
+or reproduction is permitted which does
+not comply with these terms.
+TYPE Original Research
+PUBLISHED 20 July 2026
+DOI 10.3389/fpsyt.2026.1826328
+
+Conclusion: Female sex, greater fatigue severity, reduced N3 sleep, and rotating
+shift schedules were independently associated with comorbid CRSWDs in
+patients with CFS. The model may be useful for early screening and risk
+stratiﬁcation and may help inform sleep hygiene education and schedule-
+related health management in individuals at elevated risk.
+KEYWORDS
+chronic fatigue syndrome, circadian rhythm sleep-wake disorders, nomogram, shift
+work, sleep health
+1 Introduction
+CFS is a complex disorder primarily characterized by persistent,
+debilitating fatigue lasting for more than six months. It is frequently
+accompanied by multisystem symptoms, including sleep distur-
+bances, cognitive impairment, and autonomic dysfunction, all of
+which markedly impair patients’ quality of life and social function-
+ing (1). Clinical studies suggest that the onset and progression of
+CFS are closely associated with CRSWDs (2, 3). Individuals with
+CFS commonly report difﬁculty initiating sleep, impaired sleep
+maintenance, and non-restorative sleep, reﬂecting underlying cir-
+cadian dysregulation (4). In CFS, the severity of insomnia has been
+shown to correlate with the attenuation of circadian rhythm
+amplitude (5).
+Studies have demonstrated that patients with CFS exhibit
+abnormalities in endogenous circadian markers, such as delayed
+core body temperature peaks and disrupted phases of melatonin
+secretion (6). Among the exogenous factors inﬂuencing circadian
+rhythms in patients with CFS, contemporary lifestyles appear
+particularly important. Shift work is a major contributor (7, 8), as
+irregular work schedules repeatedly disrupt the synchronizing
+effects of environmental zeitgebers, thereby altering clock gene
+expression and desynchronizing the sleep-wake cycle. Such circa-
+dian misalignment has been linked to increased risks of multiple
+chronic conditions (9, 10). In addition, insufﬁcient exposure to
+natural daylight during the daytime and excessive exposure to
+artiﬁcial light at night may further aggravate circadian disruption
+(11). Daytime light deprivation attenuates the primary entrainment
+signals for the circadian system, leading to reduced rhythm ampli-
+tude and unstable phase alignment; conversely, blue light emitted
+from electronic screens markedly suppresses melatonin secretion,
+delays endogenous circadian phase, and interferes with sleep
+initiation and maintenance. Prolonged exposure can ultimately
+lead to persistent circadian rhythm disturbances (12, 13).
+However, evidence remains limited regarding the speciﬁc roles
+of shift-work patterns, daytime light exposure, and pre-sleep
+electronic screen use in the occurrence of CRSWDs among patients
+with CFS. Clarifying the contribution of these potentially modiﬁable
+factors may improve early identiﬁcation of high-risk individuals
+and provide a basis for sleep hygiene education and targeted health
+management. Accordingly, this study aimed to characterize comor-
+bid CRSWDs in patients with CFS, examine the associations of
+shift-work characteristics, light exposure, and pre-sleep screen use
+with CRSWDs, and develop a risk prediction model to support early
+screening, risk stratiﬁcation and sleep health promotion in
+this population.
+2 Materials and methods
+2.1 Sample size calculation
+The minimum sample size required for binary logistic regres-
+sion was estimated using the formula N = 10×k/p, following the
+recommendation of Peduzzi et al. (14). Here, N denotes the
+minimum sample size, k the number of predictor parameters, and
+p the proportion of the outcome of interest. For the model in this
+study (k = 17), based on retrospective data from our department,
+the estimated outcome incidence was 48.7% (p = 0.487). The
+calculated minimum sample size was 411 participants, conﬁrming
+that the 427 participants enrolled in this study were sufﬁcient for the
+planned regression analysis. The participants were randomly di-
+vided into a training cohort and a validation cohort using a 7:3 ratio.
+This split is a widely accepted heuristic in predictive modeling,
+ensuring sufﬁcient data to train the model effectively while preserv-
+ing a robust, independent sample for internal validation.
+2.2 Participants and general data
+We included 610 patients with CFS who attended Yueyang
+Hospital of Integrated Traditional Chinese and Western Medicine,
+Shanghai University of Traditional Chinese Medicine, between
+January 2023 and June 2025. This study was reviewed and approved
+by the Ethics Committee of Yueyang Hospital of Integrated
+Traditional Chinese and Western Medicine, Shanghai University
+of Traditional Chinese Medicine (approval number: 2025-167). All
+study procedures were carried out in accordance with the ethical
+principles of the Declaration of Helsinki and its subsequent revi-
+sions. The study ﬂowchart is shown in Figure 1.
+2.2.1 Inclusion criteria
+Patients met the 1994 U.S. Centers for Disease Control and
+Prevention (CDC) diagnostic criteria for CFS (15).
+Patients were aged 18–70 years.
+Complete clinical data were available.
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+02
+
+2.2.2 Exclusion criteria
+Missing key data in demographic information, physical exam-
+ination, sleep monitoring, or questionnaire results.
+Presence of other identiﬁable organic diseases (e.g., autoim-
+mune disorders, thyroid dysfunction, malignancies) or psychiatric
+disorders (e.g., major depressive disorder, schizophrenia, diagnosed
+via DSM-5 criteria by a psychiatrist).
+Presence of primary sleep disorders (e.g., obstructive sleep
+apnea, narcolepsy).
+Routine use of medications known to heavily inﬂuence sleep
+architecture or circadian rhythms (e.g., strong sedatives, hypnotics,
+melatonin agonists) prior to assessment.
+2.3 Data collection
+This retrospective study included patients diagnosed with CFS.
+Drawing on preliminary work conducted by our research group and
+relevant literature (16–18), as well as sleep-monitoring data, we
+identiﬁed the following covariates for analysis: gender, age, over-
+weight/obesity (BMI ≥24 kg/m²), FS-14, total sleep time (TST),
+sleep latency, sleep efﬁciency (SE), number of awakenings, SWS
+(N3%), average daily light exposure duration, duration of pre-sleep
+electronic screen use, history of shift work, total years of shift work,
+shift rotation frequency (19, 20) (with rapid shift deﬁned as
+schedule changes within 1 week, medium shift as changes every
+1–2 weeks, and slow shift as changes every 3–4 weeks or longer,
+FIGURE 1
+Study ﬂowchart. Study ﬂowchart showing patient screening, inclusion and exclusion, random allocation to the training and validation cohorts, and
+subsequent model development and validation.
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+03
+
+based on occupational health guidance and relevant studies), type of
+shift schedule (20) (Regular day shift, Retirement, 8-hour rotating
+shifts, 12-hour rotating shifts, 24-hour shifts), smoking and alcohol
+history, and coffee/tea consumption history. These variables were
+included as covariates to explore factors associated with comorbid
+CRSWDs among individuals with CFS.
+2.4 Diagnostic assessment
+2.4.1 Case data and clinical measures
+We retrospectively reviewed the electronic medical records of
+patients with CFS who attended the Department of Traditional
+Chinese Medicine, Yueyang Hospital of Integrated Traditional
+Chinese and Western Medicine, Shanghai University of Traditional
+Chinese Medicine. Demographic information, medical history, phys-
+ical examination ﬁndings, previous diagnoses, medication history
+over the 3 months prior to assessment, and relevant laboratory or
+imaging ﬁndings were extracted from electronic medical records.
+Medication history was independently reviewed by two experienced
+clinicians and categorized into: (1) strong sedatives/hypnotics; (2)
+antidepressants; (3) melatonin agonists; (4) antihistamines with
+sedative effects; and (5) other medications known to inﬂuence sleep
+architecture or circadian rhythms. Patients with routine use (deﬁned
+as ≥3 times per week for ≥2 consecutive weeks) of medications in
+categories (1–3) were excluded from the study, as speciﬁed in the
+exclusion criteria. Key data collected included scores from the FS-14,
+Pittsburgh Sleep Quality Index (PSQI), Morningness-Eveningness
+Questionnaire (MEQ-SA), patient sleep diaries, a shift-work history
+questionnaire, and questionnaires assessing daily light exposure and
+pre-sleep electronic screen time. Sleep diary information included
+habitual bedtime and wake-up time, sleep onset latency, nocturnal
+awakenings, TST, daytime sleepiness or dysfunction, and irregular
+sleep-wake schedules. Shift-work information included shift-work
+history, total years of shift work, shift rotation frequency, and shift
+schedule type.
+For patients with available sleep-monitoring records, overnight
+polysomnography or portable sleep monitoring was performed
+using an Embletta MPR PG system (Embla Systems, Kanata,
+Ontario, Canada). Sleep-related parameters used in the present
+analysis were extracted from existing clinical sleep-monitoring
+reports, including TST, SE, sleep latency, rapid eye movement
+(REM) sleep latency, wake after sleep onset (WASO), number of
+awakenings, and SWS (N3%). All extracted data were indepen-
+dently reviewed and veriﬁed by two experienced clinicians to
+ensure accuracy.
+2.4.2 CFS diagnostic criteria
+CFS was diagnosed in accordance with the 1994 CDC deﬁnition
+(Fukuda criteria) (15). The 1994 Fukuda criteria were utilized due to
+their high speciﬁcity and extensive validation in identifying CFS in
+retrospective epidemiological cohorts, ensuring consistency with
+historical legacy data. Diagnosis required persistent or recurrent
+fatigue of new or deﬁnite onset that was unexplained, not attribut-
+able to ongoing exertion, not substantially relieved by rest, and
+accompanied by a substantial reduction in prior levels of activity.
+Patients were also required to have at least four concomitant
+symptoms persisting for 6 months or longer, with these symptoms
+occurring after the onset of fatigue:
+1. Signiﬁcant impairment in short-term memory or concen-
+tration (causing substantial reduction in occupational, edu-
+cational, social, or personal activities compared to pre-
+illness level).
+2. Sore throat.
+3. Tender cervical or axillary lymph nodes.
+4. Muscle pain.
+5. Multi-joint pain without joint swelling or redness.
+6. Headaches of a new type, pattern, or severity.
+7. Unrefreshing sleep.
+8. Post-exertional malaise lasting more than 24 hours.
+2.4.3 CRSWDs diagnostic criteria
+Diagnosis of CRSWDs was independently made by board-
+certiﬁed sleep medicine specialists in strict accordance with the
+International Classiﬁcation of Sleep Disorders, Third Edition, Text
+Revision (ICSD-3-TR) (21), and related expert consensus guidelines
+(22, 23), and all diagnostic records were cross-veriﬁed by a second
+senior sleep clinician to ensure consistency. Speciﬁc CRSWD
+subtypes, such as shift work disorder (SWD) and delayed sleep-
+wake phase disorder (DSWPD), were identiﬁed when applicable.
+According to the ICSD-3-TR, CRSWDs are characterized by
+persistent or recurrent sleep-wake disturbances caused by altera-
+tions in the endogenous circadian timing system or misalignment
+between the endogenous circadian rhythm and the required sleep-
+wake schedule.
+Patients were considered to have a CRSWD if they had a
+chronic pattern of a signiﬁcantly delayed or advanced sleep onset
+time (≥3 months), or a sleep-wake schedule misaligned with
+normal societal times, and met any one of the following criteria
+(indicative of a circadian rhythm abnormality):
+Circadian rhythm disturbance on sleep monitoring:
+Polysomnography or at least 7 days of sleep diary demonstrates a
+weakened circadian activity rhythm, characterized by reduced
+amplitude, a phase delay or advance of ≥2 hours relative to
+normal, or frequent nocturnal awakenings (≥2 times per night,
+as deﬁned in ICSD-3-TR).
+Chronic maladaptive sleep schedule: A history of night-shift
+work (between 00:00–06:00, ≥3 nights per week for ≥1 year) or a
+long-term habit of late bedtime (sleep onset later than 24:00, ≥3
+nights per week for ≥1 year), or the need to engage in travel across
+time zones for work (with resultant insomnia or daytime sleepiness,
+reduced TST, daytime dysfunction, malaise or other physical
+symptoms, occurring at least once per year), leading to insomnia
+symptoms or excessive daytime sleepiness with impairment in
+daytime function.
+Extreme chronotype on questionnaire: Score on the MEQ-SA
+(24) ≤41 (indicative of an extreme “evening type”) or ≥59 (extreme
+“morning type”).
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+04
+
+To avoid circularity during our predictive modeling, the diag-
+nosis of CRSWDs utilized as the outcome variable in the logistic
+regression was established strictly using objective circadian rhythm
+disturbances on polysomnography/sleep diaries and extreme
+chronotypes on the MEQ-SA. The criterion of “chronic maladap-
+tive sleep schedule” (shift-work history) was intentionally excluded
+from the outcome deﬁnition in the regression analysis to ensure that
+shift work as a predictor was not artiﬁcially correlated with the
+diagnostic outcome.
+2.5 Statistical analysis
+Data were analyzed using SPSS 25.0. According to the
+Kolmogorov-Smirnov (K-S) test, continuous variables were not
+normally distributed and are therefore presented as the median,
+M (P25, P75). Categorical variables are expressed as frequencies and
+percentages. Participants were grouped according to the presence of
+circadian rhythm disruption, and differences in demographic char-
+acteristics, clinical scale scores, and sleep architecture parameters
+were compared between groups. The Mann-Whitney U test was
+used for comparisons between two groups, the H test was used for
+comparisons among multiple groups, and the c² test was used for
+comparisons of categorical variables. Based on the univariable
+analyses, a binary logistic regression model was constructed; results
+are reported as odds ratios (ORs) with 95% conﬁdence intervals
+(CIs). Multicollinearity among independent variables was assessed
+using the Variance Inﬂation Factor (VIF). A two-sided signiﬁcance
+level of a = 0.05 was applied.
+A nomogram was generated in RStudio using the rms and caret
+packages. Discrimination and calibration were assessed in both the
+training and validation cohorts by ROC analysis and the Hosmer-
+Lemeshow test, respectively. Predictive accuracy was also estimated.
+The potential clinical value of the model was then examined
+using DCA.
+3 Results
+3.1 Descriptive characteristics
+A total of 610 patients with CFS were included in this retro-
+spective study. In the training cohort (n = 427), 208 individuals
+(48.7%) were diagnosed with CRSWDs. Comparative analyses
+showed that, relative to the non-CRSWDs group, the CRSWDs
+group differed signiﬁcantly (P < 0.05) across multiple variables,
+including gender, overweight and obesity, FS-14, average daily light
+exposure, pre-sleep screen duration, frequency of awakenings, SWS
+(N3%), total shift work duration, shift-work schedule types and
+shift-work rotation frequency. By contrast, no signiﬁcant inter-
+group differences (P > 0.05) were observed in age, smoking/alcohol
+habits, coffee/tea consumption, total sleep duration, SE, sleep
+latency or REM sleep latency. Detailed results are presented
+in Table 1.
+3.2 Univariable and multivariable logistic
+regression analysis
+Using the presence of CRSWDs as the dependent variable
+(CRSWDs: 1 = yes, 0 = no), we performed univariable logistic
+regression for each candidate factor. The univariable analysis
+indicated that several factors were signiﬁcantly associated with the
+occurrence of CRSWDs in patients with CFS (P < 0.05). These
+included shift-work rotation frequency (OR = 2.649), FS-14
+(OR = 2.471), female sex (OR = 1.657), overweight/obesity
+(OR = 1.576), pre-sleep screen time (OR = 1.007 per minute of
+use), SWS (N3%) (OR = 0.981 per 1% increase), and shift-work
+schedule type. Relative to regular day shift, 8-hour rotating shifts,
+12-hour rotating shifts, and 24-hour shifts were associated with
+higher odds of CRSWDs (OR = 6.884, 10.560, and 7.744, respec-
+tively; all P < 0.001). In contrast, age, smoking/alcohol history,
+coffee/tea consumption history, daily light exposure duration, TST,
+sleep efﬁciency, sleep latency, REM latency, WASO, and total years
+of shift work were not signiﬁcantly associated with CRSWDs in the
+univariable analysis (P > 0.05). Detailed univariable regression
+results are presented in Table 2.
+To avoid circular reasoning caused by shift work serving as both
+a predictor variable and a diagnostic criterion for CRSWDs, we
+made a fundamental correction to the outcome deﬁnition speciﬁ-
+cally for all regression analyses. For statistical modeling purposes
+only, the diagnosis of CRSWDs was based exclusively on two
+objective, shift-work-independent criteria: (1) documented circa-
+dian rhythm disturbances on polysomnography or 7-day sleep
+diaries (reduced rhythm amplitude, phase shift ≥2 hours, or
+frequent nocturnal awakenings); and (2) extreme chronotype on
+the MEQ-SA questionnaire (score ≤41 or ≥59). The criterion of
+“chronic maladaptive sleep schedule” (including shift work history)
+was completely excluded from the outcome deﬁnition to ensure that
+shift work was evaluated purely as an independent risk factor and
+did not contribute artiﬁcially to the classiﬁcation of the outcome.
+This methodological adjustment was clearly distinguished from the
+standard clinical diagnostic criteria for CRSWDs used for patient
+enrollment, as detailed in Section 2.4.3.
+Next, all variables that were signiﬁcant in the univariable
+analysis were entered into a multivariable logistic regression
+model (using backward stepwise selection) to identify factors
+independently associated with CRSWDs. Multicollinearity among
+independent variables was assessed, and all VIF values were < 2.0,
+well below the conventional threshold of 5, indicating no
+severe multicollinearity.
+The multivariable analysis showed that shift-work schedule type
+was the factor most strongly associated with CRSWDs in patients
+with CFS. Speciﬁcally, a 12-hour rotating shift schedule was
+associated with the highest odds of CRSWDs, followed by 24-
+hour shifts and 8-hour rotating shifts. In addition, higher fatigue
+severity and female sex were independently associated with higher
+odds of comorbid CRSWDs in patients with CFS. In contrast, an
+increase in SWS (N3%) was independently associated with lower
+odds of CRSWDs, with each percentage increase in N3% correlating
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+05
+
+with a reduced incidence of CRSWDs. These results are summa-
+rized in Table 3. Figure 2 illustrates the multivariable results as a
+forest plot.
+3.3 Predictive model development
+3.3.1 Nomogram risk prediction model
+Based on the above multivariable logistic regression results, a
+nomogram model was constructed to predict the risk of CRSWDs
+comorbidity in individual CFS patients (Figure 3). The nomogram
+assigns a point value to each predictor (e.g., gender, fatigue severity,
+N3%, and type of shift schedule) according to its contribution to risk,
+and the total score corresponds to a predicted risk of having a
+CRSWD. The total nomogram score ranges from 0 to 280, with
+higher scores indicating a greater risk. For instance, a total score ≤29
+points corresponds to an estimated risk of ≤10% for a CFS patient to
+have a comorbid CRSWD. In contrast, a total score of about 208
+points predicts approximately a 90% probability of CRSWDs.
+3.3.2 Evaluation of the predictive nomogram
+The model’s discrimination and calibration were assessed using
+the ROC curve and the Hosmer-Lemeshow test. ROC analysis
+(Figures 4A, B) showed that the AUCs in the training and validation
+cohorts were 0.808 (95% CI: 0.766-0.850) and 0.767 (95% CI: 0.698-
+TABLE 1 General characteristics of CFS patients (model training cohort) with and without comorbid CRSWDs.
+Variables
+Total (n = 427)
+Non-CRSWDs
+(n = 219)
+CRSWDs
+(n = 208)
+Z/c²
+P
+Age, M (Q1, Q3)
+55 (46, 63)
+53 (46, 62)
+55 (46, 63)
+–0.49
+0.627
+Gender, n (%)
+6.42
+0.011
+Male sex
+170 (39.81)
+100 (45.66)
+70 (33.65)
+Female sex
+257 (60.19)
+119 (54.34)
+138 (66.35)
+Overweight/Obesity, n (%)
+275 (64.40)
+130 (59.36)
+145 (69.71)
+4.99
+0.026
+FS-14, n (%)
+43.58
+<0.001
+Mild
+192 (44.96)
+127 (57.99)
+65 (31.25)
+Moderate
+156 (36.53)
+74 (33.79)
+82 (39.42)
+Severe
+79 (18.50)
+18 (8.22)
+61 (29.33)
+Smoking/Alcohol history, n (%)
+137 (32.08)
+64 (29.22)
+73 (35.10)
+1.69
+0.194
+Coffee/Tea history, n (%)
+247 (57.85)
+119 (54.34)
+128 (61.54)
+2.27
+0.132
+TST, M (Q1, Q3)
+367.00 (314.00, 443.25)
+367.00 (313.00, 449.35)
+367.00 (314.38, 433.50)
+–0.67
+0.501
+SE, M (Q1, Q3)
+0.80 (0.67, 0.93)
+0.82 (0.68, 0.94)
+0.78 (0.67, 0.91)
+–1.94
+0.052
+Sleep latency, M (Q1, Q3)
+23.10 (13.00, 55.00)
+22.00 (12.00, 49.00)
+24.20 (13.00, 60.25)
+–0.98
+0.328
+REM latency, M (Q1, Q3)
+80.00 (28.50, 217.00)
+76.00 (30.50, 170.50)
+82.00 (26.75, 239.12)
+–0.87
+0.386
+Frequency of awakenings, M (Q1, Q3)
+5.00 (2.00, 15.00)
+5.00 (3.00, 13.00)
+4.00 (1.00, 18.25)
+–2.58
+0.01
+N3%, M (Q1, Q3)
+30.39 (15.12, 51.19)
+35.43 (16.63, 61.22)
+25.30 (14.57, 42.75)
+–3.48
+<0.001
+Daily light exposure, M (Q1, Q3)
+60.00 (30.00, 90.00)
+60.00 (40.00, 90.00)
+50.00 (30.00, 82.50)
+–2.62
+0.009
+Screen time before bedtime, M (Q1, Q3)
+100.00 (60.00, 120.00)
+80.00 (60.00, 120.00)
+100.00 (60.00, 120.00)
+–3.07
+0.002
+Total shift work duration, M (Q1, Q3)
+2.00 (0.00, 5.00)
+1.00 (0.00, 5.00)
+2.00 (0.00, 5.00)
+–2.38
+0.017
+Work schedules, n (%)
+90.98
+<0.001
+Regular day shift
+154 (36.07)
+111 (50.68)
+43 (20.67)
+Retirement
+95 (22.25)
+65 (29.68)
+30 (14.42)
+8-hour rotating shifts
+66 (15.46)
+18 (8.22)
+48 (23.08)
+12-hour rotating shifts
+56 (13.11)
+11 (5.02)
+45 (21.63)
+24-hour shifts
+56 (13.11)
+14 (6.39)
+42 (20.19)
+Shift work rotation frequency, n (%)
+90.24
+<0.001
+None
+249 (58.31)
+176 (80.37)
+73 (35.10)
+Slow
+80 (18.74)
+21 (9.59)
+59 (28.37)
+Medium
+60 (14.05)
+14 (6.39)
+46 (22.12)
+Fast
+38 (8.90)
+8 (3.65)
+30 (14.42)
+This table compares baseline characteristics and candidate predictors between patients with CFS with and without comorbid CRSWDs in the training cohort. Continuous variables are presented
+as median (Q1, Q3), and categorical variables as n (%).
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+06
+
+TABLE 2 Univariable logistic regression analysis for factors associated with CRSWDs in CFS (model cohort, n = 427).
+Variables
+b
+SE
+Z
+P
+OR (95% CI)
+Age
+0.004
+0.008
+0.503
+0.615
+1.004 (0.988–1.021)
+Gender
+Male sex
+Ref
+Female sex
+0.505
+0.200
+2.526
+0.012
+1.657 (1.120–2.451)
+Overweight/obesity
+0.455
+0.204
+2.227
+0.026
+1.576 (1.056–2.351)
+FS-14
+0.904
+0.142
+6.350
+<0.001
+2.471 (1.869–3.266)
+Alcohol consumption and smoking status
+0.270
+0.208
+1.298
+0.194
+1.310 (0.871–1.968)
+Coffee and tea consumption
+0.296
+0.197
+1.505
+0.132
+1.345 (0.914–1.977)
+Daily light exposure
+-0.005
+0.003
+–1.863
+0.062
+0.995 (0.990–1.000)
+Screen time before bedtime
+0.007
+0.002
+3.192
+0.001
+1.007 (1.003–1.011)
+TST
+0.000
+0.001
+0.159
+0.873
+1.000 (0.998–1.002)
+SE
+-0.750
+0.530
+–1.414
+0.157
+0.472 (0.167–1.336)
+Sleep latency
+0.002
+0.003
+0.825
+0.409
+1.002 (0.997–1.007)
+REM sleep latency
+0.001
+0.001
+1.278
+0.201
+1.001 (0.999–1.003)
+WASO
+0.009
+0.008
+1.063
+0.288
+1.009 (0.992–1.026)
+N3%
+-0.019
+0.005
+–4.115
+<0.001
+0.981 (0.973–0.990)
+Total shift-work duration
+0.000
+0.013
+0.006
+0.995
+1.000 (0.974–1.027)
+Work schedules
+Regular day shift
+Ref
+Retirement
+0.175
+0.285
+0.615
+0.538
+1.191 (0.682–2.081)
+8-hour rotating shifts
+1.929
+0.330
+5.853
+<0.001
+6.884 (3.608–13.134)
+12-hour rotating shifts
+2.357
+0.381
+6.182
+<0.001
+10.560 (5.002–22.297)
+24-hour shifts
+2.047
+0.357
+5.733
+<0.001
+7.744 (3.846–15.593)
+Shift-work rotation frequency
+0.974
+0.126
+7.724
+<0.001
+2.649 (2.069–3.393)
+This table presents the results of univariable logistic regression analysis for candidate factors associated with comorbid CRSWDs in patients with CFS. Variables identiﬁed in this analysis were
+considered for inclusion in the subsequent multivariable logistic regression model.
+TABLE 3 Multivariable logistic regression analysis of factors associated with CRSWDs in CFS patients.
+Variables
+B
+SE
+Wald
+P
+OR
+95% CI
+lower
+95% CI
+upper
+Gender
+Male sex
+Ref
+Female sex
+0.638
+0.242
+6.968
+0.008
+1.892
+1.178
+3.037
+FS-14
+0.685
+0.163
+17.750
+<0.001
+1.984
+1.442
+2.728
+N3%
+-0.018
+0.005
+11.340
+<0.001
+0.982
+0.971
+0.992
+Work schedules**
+22.583
+<0.001
+Regular day shift
+Ref
+Retirement
+0.123
+0.309
+0.158
+0.691
+1.131
+0.617
+2.072
+8-hour rotating shifts
+1.382
+0.435
+10.099
+<0.001
+3.982
+1.698
+9.339
+12-hour rotating
+shifts
+1.943
+0.503
+14.907
+<0.001
+6.981
+2.603
+18.720
+24-hour shifts
+1.671
+0.451
+13.737
+<0.001
+5.316
+2.197
+12.863
+Constant
+-2.817
+0.637
+19.541
+<0.001
+0.060
+This table presents the results of the multivariable logistic regression analysis for factors independently associated with comorbid CRSWDs in patients with CFS.
+**Shift schedule type was a categorical variable and was entered into the logistic regression model using indicator (dummy) variables, with “Regular day shift” as the reference category (0, Ref.).
+“Retirement” (1; Retired individuals were included as a separate category to account for potential differences in sleep-wake schedules compared to regular day shift workers.), “8-hour rotating
+shifts”(2), “12-hour rotating shifts” (3), and “24-hour shifts” (4) were each compared with the reference group, and odds ratios (OR) with 95% conﬁdence intervals (CIs) were reported.
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+07
+
+0.836), respectively, both exceeding 0.7, indicating good discrimi-
+natory performance of the model for identifying CFS patients at risk
+of comorbid CRSWDs. The Hosmer-Lemeshow test results
+(Figures 5A, B) suggested good model ﬁt.
+DCA was performed to evaluate the clinical utility of the model.
+The DCA curves indicated that, within the range of risk threshold
+probabilities in the training cohort (Figure 6A) and the validation
+cohort (Figure 6B), using this model to identify CFS patients with
+comorbid CRSWDs and implement interventions would yield a
+positive net beneﬁt.
+4 Discussion
+This study developed a multivariable logistic regression model
+and a corresponding prediction tool to characterize factors associ-
+ated with comorbid CRSWDs in patients with CFS. The ﬁndings
+suggest that CRSWDs in patients with CFS are associated with a
+complex, interacting pathological network involving work-schedule
+characteristics, fatigue severity, sleep architecture and demographic
+characteristics. These ﬁndings highlight the clinical relevance of
+circadian rhythm disruption on the quality of life and disease
+FIGURE 3
+Nomogram for predicting comorbid CRSWDs in patients with CFS. This image presents a nomogram constructed from the ﬁnal multivariable logistic
+regression model for predicting the risk of comorbid circadian rhythm sleep-wake disorders (CRSWDs) in patients with chronic fatigue syndrome (CFS).
+Simple illustrative icons are aligned on the left side of each predictor row to facilitate visual identiﬁcation of variables and improve the interpretability of
+the nomogram. The nomogram includes work schedules, fatigue severity (Fatigue Scale-14, FS-14), slow-wave sleep (SWS, N3%), and gender. Each
+predictor is assigned a point value based on its proportional regression coefﬁcient. The variable with the largest absolute coefﬁcient (Work schedules)
+sets the scale maximum (100 points), and the point values for the remaining variables (e.g., N3%) are scaled relative to this maximum. The total points
+are then summed to estimate the individual probability of the outcome. Dashed index lines demonstrate how each predictor is mapped to the Points
+axis, summed as Total Points, and converted into the predicted probability of comorbid CRSWDs.
+FIGURE 2
+Forest plot of factors independently associated with comorbid CRSWDs in patients with CFS. This image presents the independent factors retained in
+the ﬁnal multivariable logistic regression model for CRSWDs in patients with CFS.
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+08
+
+management of patients with CFS, and provide a foundation for
+further investigation of the underlying mechanisms.
+Speciﬁcally, our ﬁndings highlight that irregular shift-work
+schedules and fatigue severity were the factors most strongly
+associated with comorbid CRSWDs in patients with CFS. Among
+the different shift work types, the 12-hour rotating shifts showed the
+strongest association with higher odds of CRSWDs (OR = 6.981),
+followed by the 24-hour shifts (OR = 5.316) and the 8-hour rotating
+shifts (OR = 3.982), indicating that unconventional rotating shift
+schedules were markedly associated with higher odds of CRSWDs.
+By contrast, neither the cumulative duration of shift work nor the
+frequency of shift rotation showed a statistically signiﬁcant associ-
+ation with CRSWDs in this study. This may be because shift
+schedule type (e.g., 12-hour rotating shifts) has a more pronounced
+acute effect on circadian alignment than cumulative exposure, and
+the strong collinearity between shift schedule type and rotation
+frequency may have masked the independent effect of the latter. On
+the individual patient level, fatigue severity was also independently
+associated with higher odds of CRSWDs, second only to shift-work
+schedule type in the model (OR = 1.984 for each higher category of
+FIGURE 5
+(A, B) Calibration curves for the prediction model of comorbid CRSWDs in patients with CFS. The curves depict the agreement between predicted
+and observed risk in the training and validation cohorts. The dashed diagonal line denotes ideal calibration, while the apparent and bias-corrected
+lines represent the original and bootstrap-corrected model performance, respectively. Panel (A) corresponds to the training cohort and Panel (B) to
+the validation cohort.
+FIGURE 4
+(A, B) ROC curves for the prediction of comorbid CRSWDs in patients with CFS. The ROC curves were used to assess model discrimination in the
+training and validation cohorts. The x-axis shows speciﬁcity and the y-axis shows sensitivity. The model yielded an AUC of 0.808 in the training
+cohort and 0.767 in the validation cohort. Panel (A) presents the ROC curve for the training cohort, with a sensitivity of 0.846, a speciﬁcity of 0.667,
+and an optimal cut-off value of 0.399. Panel (B) presents the ROC curve for the validation cohort, with a sensitivity of 0.700, a speciﬁcity of 0.777,
+and an optimal cut-off value of 0.520.
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+09
+
+fatigue), suggesting a tight link between severe fatigue symptoms
+and circadian rhythm disturbances in CFS. Conversely, we found
+that a higher proportion of SWS (N3%) was independently associ-
+ated with lower odds of CRSWDs (OR = 0.982). This emphasizes
+the importance of maintaining sufﬁcient deep sleep for stabilizing
+the body’s circadian rhythms.
+Notably, gender remained a signiﬁcant predictor in the multi-
+variable model, after adjustment for other covariates, female pa-
+tients had higher odds of comorbid CRSWDs than male patients
+(OR = 1.892, 95% CI: 1.178-3.037; P = 0.008), whereas variables
+commonly considered relevant, such as age and TST, were not
+retained. This pattern suggests that, within this speciﬁc CFS
+population, vulnerability to circadian rhythm disruption may be
+more strongly related to fatigue burden and shift-work-related
+environmental stressors rather than age-related changes or overall
+sleep duration. Although insufﬁcient daytime light exposure and
+pre-sleep electronic screen use were also not retained in the ﬁnal
+model, their potential biological relevance should not be dis-
+counted. Both exposures can suppress physiological normal noc-
+turnal melatonin secretion and diminish endogenous sleep drive.
+Their exclusion is likely attributable to collinearity with major
+predictors (e.g., shift-work schedule and fatigue severity), which
+may have attenuated their apparent independent effects after
+adjustment. Additionally, relative homogeneity of light-exposure
+patterns across the study population may have further reduced the
+ability to detect statistically signiﬁcant effects.
+Our ﬁndings align with prior evidence that night work and
+rotating schedules perturb endogenous circadian timing, support-
+ing the view that misalignment between imposed work schedules
+and intrinsic circadian regulation is the principal external driver of
+rhythm disturbance. This highlights the need for clinicians and
+employers to pay close attention to work schedule arrangements.
+Adjusting and optimizing shift work systems may be an important
+public health strategy associated with lower prevalence of circadian
+rhythm disorders in high-risk populations (8, 25, 26). Similarly, the
+fact that fatigue severity emerged as a major risk factor in our study
+reinforces the intertwined relationship between fatigue and circa-
+dian dysregulation in CFS. It is plausible that severe fatigue in CFS
+may both result from circadian rhythm disturbance and further
+exacerbate it. For example, prolonged severe fatigue might disturb
+the hypothalamic-pituitary-adrenal (HPA) axis and alter energy
+metabolism, which in turn may be associated with destabilized
+endogenous circadian rhythms (27, 28). This suggests a potential
+bidirectional feedback loop where circadian disruption worsens
+fatigue, and heightened fatigue feeds back to further disrupt
+circadian homeostasis. These results lend support to this bidirec-
+tional mechanism, which has been hinted at in other studies
+examining fatigue and biological rhythm imbalances.
+Recent research has provided additional evidence that abnormal
+sleep-wake rhythms are strongly associated with the pathogenesis of
+CFS, a phenomenon further underscored by large-scale epidemio-
+logical observations, such as the increased risk of CFS following
+viral infections like COVID-19 (29). A large nationwide survey of
+SARS-CoV-2 convalescents in China demonstrated that persistent
+symptoms such as fatigue were prevalent approximately ﬁve
+months post-infection (30). Concurrently, accumulating clinical
+evidence on long COVID has underscored the frequent co-occur-
+rence of fatigue, cognitive impairment, and autonomic dysfunction
+following viral infections (31). Although long COVID and CFS are
+clinically distinct conditions, their overlapping manifestations sug-
+gest that post-infectious fatigue syndromes may share features of
+multisystem dysregulation. Neurological imaging and metabolomic
+studies have shown that CFS patients can exhibit HPA axis
+hypoactivity, delayed melatonin rhythm phase, and abnormal
+neural connectivity between the hippocampus and prefrontal
+cortex, among other changes. These physiological alterations
+FIGURE 6
+(A, B) Decision curve analyses for the prediction model of comorbid CRSWDs in patients with CFS. The plots present model net beneﬁt across
+threshold probabilities in the training and validation cohorts. The red curve represents the nomogram, the grey line the treat-all strategy, and the
+black horizontal line the treat-none strategy. Panel (A) corresponds to the training cohort and Panel (B) to the validation cohort.
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+10
+
+suggest that circadian imbalance may be associated with accelerated
+worsening of fatigue and cognitive dysfunction in CFS through
+pathways involving energy metabolism disruption,
+neuroinﬂammatory responses, and impaired mood regulation
+(4, 32).
+Patients with CFS frequently exhibit disturbances in thermo-
+regulation and autonomic function, often manifested as increased
+sympathetic activity during the daytime and inadequate nocturnal
+withdrawal. These alterations may be associated with further
+destabilization of sleep homeostasis and disruption of endogenous
+circadian alignment (33, 34). Evidence also indicates that sustained
+insufﬁcient daytime light suppresses melatonin production and
+delays its nocturnal peak, thereby potentially weakening sleep
+drive and contributing to persistent fatigue and cognitive decline
+(35–37). Although daytime light exposure and pre-sleep screen use
+were not independently associated with CRSWDs in our multivar-
+iable model, their well-documented biological effects on circadian
+rhythms suggest they remain important targets for intervention.
+Their exclusion from the ﬁnal model is likely attributable to
+collinearity with major predictors (e.g., shift-work schedule type)
+and relative homogeneity of light-exposure patterns in our study
+population, as noted earlier. Accordingly, modiﬁable environmental
+zeitgebers, such as optimizing light-exposure patterns, adjustments
+to work schedules, and limiting evening screen use, may represent
+promising targets for future interventions aimed at mitigating
+CRSWDs in individuals with CFS.
+Moreover, the risk prediction model derived from the multi-
+variable analysis showed strong overall performance, with AUC
+values exceeding 0.7 in both the training and validation cohorts,
+indicating good discriminative ability. The Hosmer-Lemeshow test
+further supported satisfactory calibration, and decision curve anal-
+ysis demonstrated a meaningful net clinical beneﬁt across a range of
+clinically relevant threshold probabilities. Collectively, these results
+underscore the model’s potential utility as a quantitative tool for
+identifying patients with CFS who have a higher estimated proba-
+bility of comorbid CRSWDs.
+Beyond risk prediction alone, this model possesses practical
+utility for early screening and targeted sleep health management in
+clinical and occupational health settings. For instance, this nomo-
+gram could be integrated into routine occupational health screen-
+ings for workers on irregular schedules. Occupational health
+physicians could use the scoring system to proactively identify
+CFS patients at high risk for CRSWDs and preemptively implement
+targeted interventions, such as sleep hygiene counseling, timed light
+therapy, or optimized shift-rotation schedules. From a public health
+perspective, these ﬁndings support the incorporation of sleep-
+related risk assessments into health promotion strategies for vul-
+nerable populations.
+This study has several limitations. First, because of the retro-
+spective design, causal relationships could not be established. It
+remains unclear whether circadian disruption preceded and aggra-
+vated fatigue, or whether more severe fatigue contributed to
+circadian disturbance; our ﬁndings represent associations rather
+than causations. Second, participants were recruited from a single
+clinical center, limiting the generalizability of the ﬁndings. Third,
+residual confounding may arise from unmeasured variables, includ-
+ing psychiatric symptom severity, physical activity levels, socioeco-
+nomic status, occupational category, and unrecorded occasional
+medication use. Although we strictly excluded all patients with
+routine use of strong sedatives, hypnotics, and melatonin agonists,
+occasional use of over-the-counter sedatives, ﬁrst-generation anti-
+histamines, or low-dose anxiolytics was not systematically recorded
+in the electronic medical records. Such medications have only mild
+and transient effects on sleep architecture and circadian function,
+and their impact on our core ﬁndings is expected to be minimal.
+However, they represent a potential source of residual confounding
+that could slightly attenuate the observed associations. Finally, the
+model was mainly based on questionnaire data and
+polysomnographic measures and did not include objective markers
+of endogenous circadian status, such as melatonin secretion proﬁles
+or core body temperature rhythms. Additionally, we excluded the
+“chronic maladaptive sleep schedule” criterion from the outcome
+deﬁnition in our regression analyses to avoid circular reasoning.
+While this approach eliminates bias in the association between shift
+work and CRSWDs, it may slightly underestimate the overall
+prevalence of CRSWDs in this population.
+Data availability statement
+The original contributions presented in the study are included
+in the article/supplementary material. Further inquiries can be
+directed to the corresponding author.
+Ethics statement
+The studies involving humans were approved by the Ethics
+Committee of Yueyang Hospital of Integrated Traditional Chinese
+and Western Medicine, Shanghai University of Traditional Chinese
+Medicine. The studies were conducted in accordance with the local
+legislation and institutional requirements. The participants pro-
+vided their written informed consent to participate in this study.
+Author contributions
+XS: Validation, Formal analysis, Data curation, Methodology,
+Conceptualization, Investigation, Writing – original draft,
+Visualization, Writing – review & editing. FY: Writing – original
+draft, Visualization, Formal analysis, Validation, Methodology,
+Investigation, Data curation, Writing – review & editing,
+Conceptualization. L-lQ: Data curation, Visualization, Methodology,
+Validation, Investigation, Writing – review & editing. J-nS: Writing –
+review & editing, Investigation, Visualization, Data curation,
+Methodology, Validation. MC: Investigation, Writing – review &
+editing, Resources, Methodology. W-jG: Investigation, Writing –
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+11
+
+review & editing, Data curation. T-jJ: Visualization, Formal analysis,
+Writing – review & editing, Software. J-wY: Writing – review &
+editing, Resources. WF: Investigation, Writing – review & editing,
+Methodology. J-hW: Software, Methodology, Writing – review &
+editing, Formal analysis, Validation. Z-xZ: Project administration,
+Supervision, Writing – review & editing, Funding acquisition,
+Conceptualization, Resources.
+Funding
+The author(s) declared that ﬁnancial support was received for
+this work and/or its publication. This research was supported by the
+National Natural Science Foundation of China, General Program,
+Grant/Award Number: 8227430, and the Shanghai Research
+Institute of Traditional Chinese Medicine for Mental Diseases,
+Key Project, Grant/Award Number: SZB2024102.
+Acknowledgments
+We extend our heartfelt gratitude to Professor Zhenxian Zhang
+and the principal authors of this study for their invaluable guidance,
+expertise, and contributions throughout the research process. Their
+support and academic insights were instrumental in the successful
+completion of this work.
+Conﬂict of interest
+The author(s) declared that this work was conducted in the
+absence of any commercial or ﬁnancial relationships that could be
+construed as a potential conﬂict of interest.
+Generative AI statement
+The author(s) declared that generative AI was not used in the
+creation of this manuscript.
+Any alternative text (alt text) provided alongside ﬁgures in this
+article has been generated by Frontiers with the support of artiﬁcial
+intelligence and reasonable efforts have been made to ensure
+accuracy, including review by the authors wherever possible. If
+you identify any issues, please contact us.
+Publisher’s note
+All claims expressed in this article are solely those of the authors
+and do not necessarily represent those of their afﬁliated organiza-
+tions, or those of the publisher, the editors and the reviewers. Any
+product that may be evaluated in this article, or claim that may be
+made by its manufacturer, is not guaranteed or endorsed by
+the publisher.
+References
+1. Graves BS, Patel M, Newgent H, Parvathy G, Nasri A, Moxam J, et al. Chronic
+fatigue syndrome: diagnosis, treatment, and future direction. Cureus. (2024) 16:e70616.
+doi: 10.7759/cureus.70616
+2. Morriss RK, Wearden AJ, Battersby L. The relation of sleep difﬁculties to fatigue,
+mood and disability in chronic fatigue syndrome. J Psychosom Res. (1997) 42:597–605.
+doi: 10.1016/S0022-3999(97)89895-9
+3. Pedersen M, Ekstedt M, Småstuen MC, Wyller VB, Sulheim D, Fagermoen E, et al.
+Sleep-wake rhythm disturbances and perceived sleep in adolescent chronic fatigue
+syndrome. J Sleep Res. (2017) 26:595–601. doi: 10.1111/jsr.12547
+4. Cambras T, Castro-Marrero J, Zaragoza MC, Dı́ez-Noguera A, Alegre J. Circadian
+rhythm abnormalities and autonomic dysfunction in patients with chronic fatigue
+syndrome/myalgic encephalomyelitis. PloS One. (2018) 13:e0198106. doi: 10.1371/
+journal.pone.0198106
+5. Wei H, Adelsheim Z, Fischer R, McCarthy MJ. Serum from myalgic encephalomy-
+elitis/chronic fatigue syndrome patients causes loss of coherence in cellular circadian
+rhythms. J Neuroimmunol. (2023) 381:578142. doi: 10.1016/j.jneuroim.2023.578142
+6. Williams G, Pirmohamed J, Minors D, Waterhouse J, Buchan I, Arendt J, et al.
+Dissociation of body-temperature and melatonin secretion circadian rhythms in
+patients with chronic fatigue syndrome. Clin Physiol. (1996) 16:327–37. doi: 10.1111/
+j.1475-097X.1996.tb00722.x
+7. Matheson A, O’Brien L, Reid JA. The impact of shiftwork on health: a literature
+review. J Clin Nurs. (2014) 23:3309–20. doi: 10.1111/jocn.12524
+8. Boivin DB, Boudreau P. Impacts of shift work on sleep and circadian rhythms.
+Pathol Biol (Paris). (2014) 62:292–301. doi: 10.1016/j.patbio.2014.08.001
+9. Akbar Z, Shi Z. Unfavorable mealtime, meal skipping, and shiftwork are associated
+with circadian syndrome in adults participating in NHANES 2005–2016. Nutrients.
+(2024) 16:1581. doi: 10.3390/nu16111581
+10. Yong LC, Li J, Calvert GM. Sleep-related problems in the US working population:
+prevalence and association with shiftwork status. Occup Environ Med. (2017) 74:93–
+104. doi: 10.1136/oemed-2016-103638
+11. Boivin DB, James FO. Circadian adaptation to night-shift work by judicious light
+and darkness exposure. J Biol Rhythms. (2002) 17:556–67. doi: 10.1177/
+0748730402238238
+12. Dautovich ND, Schreiber DR, Imel JL, Tighe CA, Shoji KD, Cyrus J, et al. A
+systematic review of the amount and timing of light in association with objective and
+subjective sleep outcomes in community-dwelling adults. Sleep Health. (2019) 5:31–48.
+doi: 10.1016/j.sleh.2018.09.006
+13. Alam M, Abbas K, Sharf Y, Khan S. Impacts of blue light exposure from electronic
+devices on circadian rhythm and sleep disruption in adolescent and young adult
+students. Chronobiol Med. (2024) 6:10–4. doi: 10.33069/cim.2024.0004
+14. Peduzzi P, Concato J, Kemper E, Holford TR, Feinstein AR. A simulation study of
+the number of events per variable in logistic regression analysis. J Clin Epidemiol.
+(1996) 49:1373–9. doi: 10.1016/S0895-4356(96)00236-3
+15. Fukuda K, Straus SE, Hickie I, Sharpe MC, Dobbins JG, Komaroff A. The chronic
+fatigue syndrome: a comprehensive approach to its deﬁnition and study. Ann Intern
+Med. (1994) 121:953–9. doi: 10.7326/0003-4819-121-12-199412150-00009
+16. Jang TW, Jeong KS, Ahn YS, Choi KS. The relationship between the pattern of shift
+work and sleep disturbances in Korean ﬁreﬁghters. Int Arch Occup Environ Health.
+(2020) 93:391–8. doi: 10.1007/s00420-019-01496-3
+17. Gao N, Zheng Y, Yang Y, Huang Y, Wang S, Gong Y, et al. Association between
+shift work and health outcomes in the general population in China: a cross-sectional
+study. Brain Sci. (2024) 14:145. doi: 10.3390/brainsci14020145
+18. AlShareef SM. The impact of bedtime technology use on sleep quality and excessive
+daytime sleepiness in adults. Sleep Sci. (2022) 15:318–27. doi: 10.5935/1984-
+0063.20200128
+19. Rosa RR, Colligan MJ. Plain language about shiftwork. Cincinnati, OH: NIOSH
+Numbered Publications (1997).
+20. Health Safety Executive. Managing shift work: health and safety guidance. HSG256
+2006 Health Safety Executive. Managing shift work: health and safety guidance. HSG256.
+Sudbury, Suffolk: HSE Books. (2006).
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+12
+
+21. American Academy of Sleep Medicine. International Classiﬁcation of Sleep
+Disorders, Third Edition, Text Revision (ICSD-3-TR). Darien (IL): American
+Academy of Sleep Medicine. (2023).
+22. Morgenthaler TI, Lee-Chiong T, Alessi C, Friedman L, Aurora RN, Boehlecke B,
+et al. Practice parameters for the clinical evaluation and treatment of circadian rhythm
+sleep disorders. Sleep. (2007) 30:1445–59. doi: 10.1093/sleep/30.11.1445
+23. Auger RR, Burgess HJ, Emens JS, Deriy LV, Thomas SM, Sharkey KM. Clinical practice
+guideline for the treatment of intrinsic circadian rhythm sleep-wake disorders: advanced sleep-
+wake phase disorder (ASWPD), delayed sleep-wake phase disorder (DSWPD), non-24-hour
+sleep-wake rhythm disorder (N24SWD), and irregular sleep-wake rhythm disorder (ISWRD).
+J Clin Sleep Med. (2015) 11:1199–236. doi: 10.5664/jcsm.5100
+24. Horne JA, Ostberg O. A self-assessment questionnaire to determine morningness-
+eveningness in human circadian rhythms. Int J Chronobiol. (1976) 4:97–110.
+doi: 10.1037/t02254-000
+25. James SM, Honn KA, Gaddameedhi S, Van Dongen HPA. Shift work: disrupted
+circadian rhythms and sleep-implications for health and well-being. Curr Sleep Med
+Rep. (2017) 3:104–12. doi: 10.1007/s40675-017-0071-6
+26. Smith MR, Eastman CI. Shift work: health, performance and safety problems,
+traditional countermeasures, and innovative management strategies to reduce circadian
+misalignment. Nat Sci Sleep. (2012) 4:111–32. doi: 10.2147/NSS.S10372
+27. Tomas C, Newton J, Watson S. A review of hypothalamic-pituitary-adrenal axis function
+in chronic fatigue syndrome. ISRN Neurosci. (2013) 2013:784520. doi: 10.1155/2013/784520
+28. Heng B, Gunasegaran B, Krishnamurthy S, Bustamante S, Pires AS, Chow S, et al.
+Mapping the complexity of ME/CFS: evidence for abnormal energy metabolism, altered
+immune proﬁle, and vascular dysfunction. Cell Rep Med. (2025) 6:102514. doi: 10.1016/
+j.xcrm.2025.102514
+29. Chen CW, Lee HH, Chang SH, Chen YL, Wang YH, Leong PY, et al. Risk of
+chronic fatigue syndrome after COVID-19: a retrospective cohort study of 3227281
+patients. J Infect Public Health. (2024) 17:102559. doi: 10.1016/j.jiph.2024.102559
+30. Wang Y, Liu M, Guo Y, Li M, Guo P, He W, et al. An online survey among
+convalescents 5 months post SARS-CoV-2 infection in China. Biosaf Health. (2024)
+6:206–15. doi: 10.1016/j.bsheal.2024.06.001
+31. Khan MWZ, Ahmad M, Qudrat S, Afridi F, Khan NA, Afridi Z, et al. Vagal nerve
+stimulation for the management of long COVID symptoms. Infect Med. (2024)
+3:100149. doi: 10.1016/j.imj.2024.100149
+32. Nakatomi Y, Mizuno K, Ishii A, Wada Y, Tanaka M, Tazawa S, et al.
+Neuroinﬂammation in patients with chronic fatigue syndrome/myalgic encephalomy-
+elitis: an 11C-(R)-PK11195 PET study. J Nucl Med. (2014) 55:945–50. doi: 10.2967/
+jnumed.113.131045
+33. Boneva RS, Decker MJ, Maloney EM, Lin JM, Jones JF, Helgason HG, et al. Higher
+heart rate and reduced heart rate variability persist during sleep in chronic fatigue
+syndrome: a population-based study. Auton Neurosci. (2007) 137:94–102. doi: 10.1016/
+j.autneu.2007.08.002
+34. Orjatsalo M, Alakuijala A, Partinen M. Autonomic nervous system functioning
+related to nocturnal sleep in patients with chronic fatigue syndrome compared to tired
+controls. J Clin Sleep Med. (2018) 14:163–71. doi: 10.5664/jcsm.6924
+35. Burns AC, Saxena R, Vetter C, Phillips AJK, Lane JM, Cain SW. Time spent in
+outdoor light is associated with mood, sleep, and circadian rhythm-related outcomes: a
+cross-sectional and longitudinal study in over 400,000 UK Biobank participants. J Affect
+Disord. (2021) 295:347–52. doi: 10.1016/j.jad.2021.08.056
+36. Böhmer MN, Hamers PCM, Bindels PJE, Oppewal A, van Someren EJW, Festen
+DAM. Are we still in the dark? A systematic review on personal daily light exposure,
+sleep-wake rhythm, and mood in healthy adults from the general population. Sleep
+Health. (2021) 7:610–30. doi: 10.1016/j.sleh.2021.06.001
+37. Heo JY, Kim K, Fava M, Mischoulon D, Papakostas GI, Kim MJ, et al. Effects of
+smartphone use with and without blue light at night in healthy adults: a randomized,
+double-blind, cross-over, placebo-controlled comparison. J Psychiatr Res. (2017) 87:61–
+70. doi: 10.1016/j.jpsychires.2016.12.010
+Shao et al.
+10.3389/fpsyt.2026.1826328
+Frontiers in Psychiatry
+frontiersin.org
+13

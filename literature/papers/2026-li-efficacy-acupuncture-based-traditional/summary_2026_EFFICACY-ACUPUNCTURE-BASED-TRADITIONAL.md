@@ -1,6 +1,6 @@
 ---
 type: paper
-id: li2026
+id: li2026a
 title: "Efficacy of acupuncture-based traditional Chinese medicine therapies for chronic fatigue syndrome: systematic review and meta-analysis"
 authors: ["Li Y", "Liang G", "Xiao T", "Xu L"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [treatment, review]
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: li2026
+bibtex_key: li2026a
 cover: "[[literature/papers/2026-li-efficacy-acupuncture-based-traditional/cover.png]]"
 ---
 
