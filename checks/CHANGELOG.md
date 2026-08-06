@@ -15,6 +15,21 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-08-06 (scheduled autonomous, 04:16 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), mitodicure.com/pipeline/, /about-us/, /news/, cfc.charite.de/en/clinical_research/nksg/ (AIM-ME/TAME/semaglutide subpage check), mecfs-research.org (TAME, BMFTR "Nationale Dekade" funding call), solvecfs.org (semaglutide), aptatherapeutics.com/news-update/ + riffreporter.de (BC007/unCOVer Erlangen), fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended web search for new German ME/CFS and post-COVID drug trials. Papers: PubMed/Europe PMC (recent ME/CFS records + Scheibenbogen/Wirth author searches), medRxiv/bioRxiv, general web sweep.
+- **Trials** — no new trials; nothing changed
+  - New: none | Newly open: none | Status changed: none | Closed since last: none
+  - All 6 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING), DRKS00033897 (IA-Surv, "Recruiting ongoing"), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry, single highest-priority watch item), RAPID_REVIVE (still terminated), NCT07724834 (PIONEER_PAIS, NOT_YET_RECRUITING), NCT07714213 (PAISE-AriSE, NOT_YET_RECRUITING)
+  - Watch-list re-checked, all unchanged/lead-only: AIM-ME, TAME, semaglutide (Scheibenbogen/Solve M.E.), BC007/APTA "unCOVer Erlangen", BMFTR "Nationale Dekade" funding call (applications due 2026-09-02, no awardees yet)
+- **Papers** — 3 new confirmed papers added (118 total)
+  - Bedard P et al., NeuroImage: Clinical, Jul 2026: multimodal neuroimaging finds a central (brain-driven), not peripheral-muscle, origin of fatigability in ME/CFS — DOI 10.1016/j.nicl.2026.104041 (NIH/Walitt group)
+  - Mao S, Wu L, Frontiers in Public Health, Jul 2026: disease-history score mediates ~44-47% of the depression-history/ME-CFS association in US NHIS data — DOI 10.3389/fpubh.2026.1862602
+  - Bihariesingh-Sanchit R et al., F1000Research, Aug 2026: small placebo-controlled pilot RCT of plasma exchange (TPE) for long COVID fatigue in Suriname — within-group improvement, not statistically significant vs sham — DOI 10.12688/f1000research.186744.1
+  - isNew cleared for all previously-new papers; excluded as out-of-scope (care-delivery/methodology, not mechanism/biomarker/treatment-trial): Hermisson et al. home-based-care guidance statement, Abken et al. CureME participatory-model paper
+  - literature/ archive updated via literature_intake.py for the 3 new papers (all 3 PDFs fetched)
+- Trials tracked: 6 (open: 2 [NCT07529197, DRKS00033897], watchlist: 4 [MDC002, RAPID_REVIVE (terminated), PIONEER_PAIS, PAISE-AriSE]) | Papers tracked: 118
+- Notes: Quiet day on the trials side — MDC002 remains funding-constrained pre-clinical; PIONEER_PAIS/PAISE-AriSE both still tracking toward their estimated Dec/Oct 2026 starts. BMFTR funding-call deadline (2026-09-02) is now under a month away — watch closely for awardee announcements next cycle, especially any Mitodicure/Wirth link.
+
 ## 2026-08-05 (scheduled autonomous, 04:30 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), CTIS (rapid-revive — blocked 403 this run, treated as unchanged per web-search corroboration), mitodicure.com/pipeline/, /about-us/, /news/, cfc.charite.de/en/clinical_research/nksg/ (AIM-ME check), mecfs-research.org (TAME, BMFTR "Nationale Dekade"), solvecfs.org (semaglutide), aptatherapeutics.com/news-update/ + riffreporter.de (BC007/unCOVer Erlangen), fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended web search for new German ME/CFS and post-COVID drug trials.
 - New: none
