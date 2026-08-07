@@ -15,6 +15,21 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-08-07 (scheduled autonomous, 04:16 UTC)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), mitodicure.com/pipeline/, /about-us/, /news/, cfc.charite.de/en/clinical_research/nksg/, aptatherapeutics.com/news-update/, mecfs-research.org, solvecfs.org, fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended web search for new German ME/CFS and post-COVID drug trials. Papers: Europe PMC (structured queries + Wirth/Scheibenbogen/Bellmann-Strobl author searches), general web sweep, DOI/publisher confirmation for all candidates.
+- **Trials** — no new trials; nothing changed
+  - New: none | Newly open: none | Status changed: none | Closed since last: none
+  - All 6 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING), DRKS00033897 (IA-Surv, "Recruiting ongoing"), MDC002 (still pre-clinical/not_yet_recruiting, no registry entry, single highest-priority watch item), RAPID_REVIVE (still terminated), NCT07724834 (PIONEER_PAIS, NOT_YET_RECRUITING), NCT07714213 (PAISE-AriSE, NOT_YET_RECRUITING)
+  - Watch-list re-checked, all unchanged/lead-only: AIM-ME, TAME, semaglutide (Scheibenbogen/Solve M.E.), BC007/APTA "unCOVer Erlangen", BMFTR "Nationale Dekade" funding call (applications due 2026-09-02, ~5 weeks away, no awardees yet)
+- **Papers** — 2 new confirmed papers added (120 total)
+  - Maguire C, Chen J, Rouphael N et al. (IMPACC Network), Nature, Aug 2026: large longitudinal cohort (n=1,154 hospitalized COVID-19 patients) finds frequent herpesvirus (EBV, CMV) reactivation during acute severe COVID-19, plus anellovirus reactivation that persists into convalescence and is specifically linked to long COVID — DOI 10.1038/s41586-026-10740-z
+  - Markham P et al., BMJ Open, Jul 2026: study protocol (no results yet) for a phase 2 RCT of bezisterim (NE3107, anti-inflammatory) vs placebo in 208 US adults with long-COVID fatigue/brain fog ("ADDRESS-LC") — DOI 10.1136/bmjopen-2026-118726
+  - isNew cleared for all previously-new papers (bedard-2026, mao-2026, bihariesingh-sanchit-2026)
+  - Neither new paper is Wirth/Scheibenbogen-authored this run; two papers bearing Scheibenbogen/Bellmann-Strobl names were found and screened out as out-of-scope (pure care-delivery/non-drug rehabilitation, not mechanism/biomarker/treatment-trial): Burchardi et al. "LCovB" (PLoS One) and Kedor et al. "Integrated Multidisciplinary Care Model" (SSRN preprint, non-accepted venue)
+  - literature/ archive updated via literature_intake.py for the 2 new papers (both PDFs fetched)
+- Trials tracked: 6 (open: 2 [NCT07529197, DRKS00033897], watchlist: 4 [MDC002, RAPID_REVIVE (terminated), PIONEER_PAIS, PAISE-AriSE]) | Papers tracked: 120
+- Notes: Quiet day on the trials side again — MDC002 remains funding-constrained pre-clinical; BMFTR funding-call deadline (2026-09-02) now under 5 weeks away, watch closely for awardee announcements, especially any Mitodicure/Wirth link. Papers side found a notable non-German mechanistic paper (IMPACC virus-reactivation, Nature) relevant to the antiviral/immune-persistence rationale behind several ME/CFS treatment approaches.
+
 ## 2026-08-06 (scheduled autonomous, 04:16 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), mitodicure.com/pipeline/, /about-us/, /news/, cfc.charite.de/en/clinical_research/nksg/ (AIM-ME/TAME/semaglutide subpage check), mecfs-research.org (TAME, BMFTR "Nationale Dekade" funding call), solvecfs.org (semaglutide), aptatherapeutics.com/news-update/ + riffreporter.de (BC007/unCOVer Erlangen), fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended web search for new German ME/CFS and post-COVID drug trials. Papers: PubMed/Europe PMC (recent ME/CFS records + Scheibenbogen/Wirth author searches), medRxiv/bioRxiv, general web sweep.
 - **Trials** — no new trials; nothing changed
