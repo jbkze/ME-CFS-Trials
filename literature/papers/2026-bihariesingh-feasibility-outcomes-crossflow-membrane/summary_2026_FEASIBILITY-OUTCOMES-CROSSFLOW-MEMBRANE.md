@@ -7,25 +7,28 @@ year: 2026
 venue: "F1000Research"
 doi: 10.12688/f1000research.186744.1
 url: https://doi.org/10.12688/f1000research.186744.1
-pdf: https://doi.org/10.12688/f1000research.186744.1
-text: null
+pdf: literature/papers/2026-bihariesingh-feasibility-outcomes-crossflow-membrane/paper.pdf
+text: literature/papers/2026-bihariesingh-feasibility-outcomes-crossflow-membrane/paper.txt
 tags: [autoimmunity, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: bihariesingh2026
+cover: "[[literature/papers/2026-bihariesingh-feasibility-outcomes-crossflow-membrane/cover.png]]"
 ---
 
 # Feasibility and outcomes of crossflow membrane plasmapheresis for long COVID in Suriname: a randomized double-blind placebo-controlled pilot trial
 
 ## Related files
+![[literature/papers/2026-bihariesingh-feasibility-outcomes-crossflow-membrane/paper.pdf]]
 - [[literature/papers/2026-bihariesingh-feasibility-outcomes-crossflow-membrane/citation.bib]]
+- [[literature/papers/2026-bihariesingh-feasibility-outcomes-crossflow-membrane/paper.txt]]
 
 ## Summary
 
 In a small pilot study in Suriname, 18 people with long COVID were randomly given either real plasma-exchange treatment (filtering and replacing part of the blood's plasma, over 5 sessions) or a fake/sham version. People who got the real treatment reported meaningfully less fatigue three months later, while the sham group did not improve — but the study was too small to prove the real treatment was definitely better than the sham, and no serious side effects occurred.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
