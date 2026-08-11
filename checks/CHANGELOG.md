@@ -15,6 +15,17 @@ is `last_check` + `flags` in `data/trials.json`).
 - Notes: <anything notable, dead ends, things to revisit>
 -->
 
+## 2026-08-11 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), mitodicure.com/pipeline/, /about-us/, /news/, cfc.charite.de/en/clinical_research/nksg/, aptatherapeutics.com/news-update/, mecfs-research.org, bmftr.bund.de, fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended web search for new German ME/CFS and post-COVID drug trials. Papers track not re-run this pass (trials-only sweep).
+- **Trials** — no new trials; nothing changed
+  - New: none | Newly open: none | Status changed: none | Closed since last: none
+  - All 6 tracked trials re-verified unchanged: NCT07529197 (IMPACT, RECRUITING, last update posted 2026-04-14), DRKS00033897 (IA-Surv, "Recruiting ongoing", last DRKS update 2026-01-30), MDC002 (still pre-clinical/not_yet_recruiting, pipeline page unchanged, no registry entry — single highest-priority watch item), RAPID_REVIVE (still terminated, ctStatus "Ended"), NCT07724834 (PIONEER_PAIS, NOT_YET_RECRUITING, last update posted 2026-07-24), NCT07714213 (PAISE-AriSE, NOT_YET_RECRUITING, last update posted 2026-07-20)
+  - Watch-list re-checked, all unchanged/lead-only: AIM-ME (still no DRKS/NCT/CTIS entry or Charité NKSG subpage), TAME (mecfs-research.org, still "start summer 2026", no registry entry), semaglutide (Scheibenbogen/Solve M.E. award, still award-stage, not re-fetched this run), BC007/APTA "unCOVer Erlangen" (news page unchanged since Jun 30 2026 patent grant, no registry ID), BMFTR "Nationale Dekade" funding call (two funding guidelines published 2026-06-01, applications due 2026-09-02 — ~3 weeks away, no awardees announced, no ME/CFS/Mitodicure mention in the latest bmftr.bund.de short-news item)
+  - Fresh sweep screened and excluded one new candidate: PreVitaCOV (DRKS00029617, prednisolone + vitamin B1/B6/B12, phase IIIb, Würzburg/Tübingen/Kiel primary care) — broad Post-COVID-Syndrome eligibility via PROMIS score, no Bell Disability Scale/Canadian Consensus Criteria/PEM gate, protocol predates this tracker (2022) — does not meet the ME/CFS-condition bar, not added. No other new qualifying trial found.
+- **Papers** — not checked this run (trials-only pass)
+- Trials tracked: 6 (open: 2 [NCT07529197, DRKS00033897], watchlist: 3 [MDC002, PIONEER_PAIS, PAISE-AriSE], archived: 1 [rapid-revive, terminated])
+- Notes: Fully stable day — no trial or watch-list status changes. BMFTR funding-call deadline (2026-09-02) now ~3 weeks away — remains the most likely place a change could appear next; watch closely for awardee announcements, especially any Mitodicure/Wirth or NKSG-2/AIM-ME/TAME link.
+
 ## 2026-08-10 (scheduled autonomous, 04:24 UTC)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213), DRKS (DRKS00033897), mitodicure.com/pipeline/, /about-us/, /news/, cfc.charite.de/en/clinical_research/nksg/, aptatherapeutics.com/news-update/, mecfs-research.org, fresh DRKS/ClinicalTrials.gov/CTIS/WHO ICTRP sweep and open-ended web search for new German ME/CFS and post-COVID drug trials. Papers: PubMed/Europe PMC (title/abstract + Scheibenbogen/Wirth/Bellmann-Strobl author searches), medRxiv/bioRxiv, Preprints.org, Research Square, general web sweep, Crossref DOI confirmation for all candidates.
 - **Trials** — no new trials; nothing changed
