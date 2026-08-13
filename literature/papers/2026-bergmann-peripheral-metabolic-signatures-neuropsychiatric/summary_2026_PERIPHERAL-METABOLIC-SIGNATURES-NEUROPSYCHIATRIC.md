@@ -7,25 +7,28 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.08.07.26359942
 url: https://doi.org/10.64898/2026.08.07.26359942
-pdf: https://doi.org/10.64898/2026.08.07.26359942
-text: null
+pdf: literature/papers/2026-bergmann-peripheral-metabolic-signatures-neuropsychiatric/paper.pdf
+text: literature/papers/2026-bergmann-peripheral-metabolic-signatures-neuropsychiatric/paper.txt
 tags: [metabolism, neuroinflammation, biomarker, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: bergmann2026
+cover: "[[literature/papers/2026-bergmann-peripheral-metabolic-signatures-neuropsychiatric/cover.png]]"
 ---
 
 # Peripheral metabolic signatures in patients with neuropsychiatric long COVID syndrome
 
 ## Related files
+![[literature/papers/2026-bergmann-peripheral-metabolic-signatures-neuropsychiatric/paper.pdf]]
 - [[literature/papers/2026-bergmann-peripheral-metabolic-signatures-neuropsychiatric/citation.bib]]
+- [[literature/papers/2026-bergmann-peripheral-metabolic-signatures-neuropsychiatric/paper.txt]]
 
 ## Summary
 
 Blood tests on long-COVID patients with mental and emotional symptoms — like brain fog and low mood — showed unusual levels of fats used for energy storage and transport (triglycerides and acylcarnitines). These changes tracked with how severe a person's fatigue and depression were, alongside differences seen on brain scans.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
