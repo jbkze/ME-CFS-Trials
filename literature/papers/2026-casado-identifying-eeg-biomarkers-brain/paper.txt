@@ -1,0 +1,1254 @@
+Original Research
+Identifying EEG biomarkers of fatigue and brain fog in long COVID: insights 
+from rest and movement-related brain activity
+M. Casado S´anchez a,b,c, K. Morales Fajardo b,c,d, S. Long a,b,c, T. Janaudis-Ferreira d,e,  
+C. Duclos f,g,h, M.H. Boudrias b,c,d,*
+a Integrated Program in Neuroscience, McGill University, Montr´eal, QC, Canada
+b Center for Interdisciplinary Research in Rehabilitation of Greater Montreal (CRIR), Montr´eal, QC, Canada
+c BRAIN lab, Jewish Rehabilitation Hospital, CISSS-Laval, Laval, Canada
+d School of Physical and Occupational Therapy, McGill University, Montr´eal, Canada
+e Respiratory Epidemiology and Clinical Research Unit, Centre for Outcomes Research and Evaluation, Research Institute of the McGill University Health Centre, 
+Montr´eal, Canada
+f Department of Anesthesiology and Pain Medicine, Universit´e de Montr´eal, Canada
+g Centre for Advanced Research in Sleep Medicine, Hˆopital du Sacr´e-Coeur de Montr´eal, CIUSSS du Nord-de-l’ˆIle-de-Montr´eal, Montr´eal, Canada
+h Department of Neuroscience, Universit´e de Montr´eal, Montr´eal, Canada
+A R T I C L E I N F O
+Keywords:
+Long COVID
+Electroencephalography
+Fatigue
+Brain fog
+Sensorimotor cortex
+Beta oscillations
+A B S T R A C T
+Background: Fatigue and brain fog are among the most reported symptoms in Long COVID (LC), yet their un­
+derlying neural mechanisms remain unclear. In this context, we aimed to identify neural correlates associated 
+with LC symptoms.
+Methods: Electroencephalography (EEG) was used to quantify brain oscillatory activity during sustained hand­
+grips and rest in the left central region overlying the primary hand motor (C3) and somatosensory areas (C5). A 
+sample of twenty LC participants reporting fatigue, brain fog, and post-exertional malaise (PEM) was analyzed, 
+along with 20 age- and sex-matched controls. All participants were right-handed, and EEG activity was recorded 
+on the dominant left hemisphere over motor and somatosensory areas. The main LC symptoms were assessed 
+using the Fatigue Severity Scale (FSS), the Cognitive Failures Questionnaire (CFQ), and the DePaul Symptom 
+Questionnaire for PEM (DSQ-PEM).
+Results: LC participants showed a smaller post-movement beta rebound (PMBR) during handgrips in the left 
+central region (electrode C3, p = 0.02) compared to controls, which negatively correlated with cognitive 
+symptoms (r = −0.35, p = 0.02). They also showed a slower alpha central frequency (CF) at rest (electrode C5, p 
+= 0.003), which correlated with fatigue (r = −0.264, p = 0.019).
+Conclusions: Both the lower PMBR and slower alpha CF suggest impaired inhibitory control and reduced excit­
+ability in the sensorimotor cortex of LC individuals. Together, these features, which were associated with fatigue 
+and brain fog, highlight altered dynamics in the sensorimotor cortex of LC individuals. These findings offer 
+preliminary mechanistic insight into LC symptoms and suggest that PMBR and alpha CF warrant further 
+investigation as candidate EEG markers of this condition.
+1. Introduction
+Long COVID (LC) affects 10–20% of individuals following SARS-CoV- 
+2 infection, characterized by symptoms that persist beyond 12 weeks 
+[1,3,105], including fatigue, cognitive dysfunction (“brain fog”), and 
+post-exertional malaise (PEM) [24,64,67,103]. PEM, a hallmark of LC, 
+involves symptom exacerbation after minor exertion [39]. Fatigue, 
+another core symptom, is characterized by persistent exhaustion that 
+remains unrelieved by rest [83]. Cognitive dysfunction, reported by 
+~85% of LC individuals, impacts memory, attention, working memory, 
+decision-making, and executive functioning [27]. Despite its high 
+prevalence and disabling nature, LC lacks objective diagnostic tools and 
+biomarkers [105].
+Neurological involvement is increasingly recognized in COVID-19. 
+* Corresponding author.
+E-mail address: mh.boudrias@mcgill.ca (M.H. Boudrias). 
+Contents lists available at ScienceDirect
+Journal of Clinical Neuroscience
+journal homepage: www.journals.elsevier.com/journal-of-clinical-neuroscience
+https://doi.org/10.1016/j.jocn.2026.112230
+Received 9 June 2026; Accepted 30 July 2026  
+Journal of Clinical Neuroscience 153 (2026) 112230 
+Available online 11 August 2026 
+0967-5868/© 2026 The Author(s). Published by Elsevier Ltd. This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ). 
+
+SARS-CoV-2 presumably affects the central nervous system (CNS) 
+through direct invasion across the blood–brain barrier (BBB) or via 
+infected immune cells, with associated cytokine storms contributing to 
+neuroinflammation and altered synaptic function [45,53,70,71,109]. 
+Using magnetic resonance imaging (MRI), a cortical grey matter loss of 
+~2% was found post-SARS-CoV-2 infection, comparable to a decade of 
+aging [32]. Reduced grey matter volume and white matter lesions 
+observed post-infection were found to be associated with cognitive 
+dysfunction, notably visuospatial impairment and global deficits across 
+memory, language, and perceptual motor tasks [44,104]. For those with 
+lingering symptoms evolving in the LC condition, thalamic volume loss 
+and weakened thalamocortical connectivity with motor areas were re­
+ported, features that were associated with the level of fatigue [42,62]. In 
+the brains of LC individuals, increased alpha power, slower alpha fre­
+quency, and elevated beta activity were also reported in region-specific 
+areas using electroencephalography (EEG) at rest [21,60,74]. More 
+specifically, reduced transcranial magnetic stimulation (TMS)-evoked 
+beta activity was observed in motor-related regions, including the sup­
+plementary motor area (SMA), which was associated with fatigue 
+severity [20]. Increased motor thresholds and reduced motor-evoked 
+potentials were also observed in LC using TMS, indicating impaired 
+corticospinal excitability, a feature associated with fatigue [79]. These 
+findings confirm the presence of structural and functional brain changes 
+post-SARS-CoV-2 infection and in the presence of LC, including reduced 
+brain volume, impaired excitability, and altered alpha and beta oscil­
+latory patterns [20,21,60,79,104].
+In this study, we investigated the sensorimotor cortex (SMC), given 
+its central role in movement-related beta dynamics and its modulation 
+by attentional and sensorimotor demands. Specifically, alpha and beta 
+oscillations in SMC were shown to vary during the orienting of attention 
+to upcoming tactile stimuli, with spatially specific suppression of these 
+rhythms linked to improved behavioral performance [98]. Additionally, 
+beta-band activity in sensorimotor regions was shown to be modulated 
+by attention and reflects higher-order processing of task-relevant sen­
+sory input, rather than motor execution alone [7]. In the SMC, beta 
+power decreases during movement, a phenomenon known as motor- 
+related beta desynchronization (MRBD) and rebounds afterward, 
+referred to as post-movement beta rebound (PMBR) [19,82]. In older 
+adults, MRBDs are enhanced, with greater values associated with 
+degraded motor performance [107]. On the other hand, PMBR is 
+reduced in elderly individuals, a phenomenon thought to reflect altered 
+motor cortical inhibition and excitability [6,107]. As the brain seems to 
+undergo accelerated age-related decline following SARS-CoV-2 infection 
+[32,42], LC individuals may exhibit functional changes similar to those 
+observed in older individuals.
+We also examined alpha activity at rest, given its central role in 
+regulating cortical excitability and supporting cognitive functions 
+[12,57,58], as well as its reported changes in individuals with LC [21]. 
+To capture these dynamics more precisely, resting EEG signals were 
+decomposed into their periodic (oscillatory) and aperiodic (1/f back­
+ground) components [31,96]. This approach was motivated by evidence 
+suggesting that the aperiodic component is altered across neurodegen­
+erative and psychiatric conditions [11,81,85,86], with some of these 
+main features being linked to disease presence, stage and severity [81].
+Reduced excitability in the SMC is a known characteristic of limbic- 
+cortical dysfunction [20,79]. Central fatigue is believed to stem from 
+diminished voluntary motor drive, which is associated with decreased 
+excitability in motor-related cortical regions and impaired corticospinal 
+transmission [23,34,54]. This implies that increasing cognitive–motor 
+demands could further disrupt the brain’s oscillatory activity in those 
+affected by LC. To investigate this, participants learned a novel motor 
+task, allowing the examination of whether post-task EEG dynamics 
+would show greater deviations from those observed in healthy controls 
+(HC).
+Finally, whether these EEG features were associated with reported 
+fatigue and cognitive impairment was examined, two primary symptoms 
+among LC individuals [46]. By linking resting and movement-related 
+EEG features to fatigue and brain fog, this study sought to advance 
+objective biomarkers for LC and estimate how altered cortical dynamics 
+relate to its disabling symptoms.
+Methods
+1.1. Participants
+This study, conducted at McGill University (May 2023–Sept. 2024), 
+included LC participants who met the following inclusion criteria: (a) 
+presence of fatigue, PEM, and brain fog, assessed using the Fatigue 
+Severity Scale (FSS, score ≥36) [89]), the DePaul Symptom Question­
+naire for PEM (DSQ-PEM, frequency and severity score of 2 on items 
+1–5) [25], and Cognitive Failures Questionnaire (CFQ) [16]; (b) symp­
+toms persisting for at least three months following a confirmed COVID- 
+19 infection, verified by polymerase chain reaction (PCR) or antigen 
+testing; (c) age between 18 and 59 years to reduce the influence of age- 
+related brain changes; and (d) right-handedness, confirmed by the 
+Edinburgh inventory of handedness [78]. Exclusion criteria included: 
+(a) a history of neurological or psychiatric conditions, head injury, or 
+epilepsy; (b) use of medications that potentially influence EEG activity, 
+including CNS stimulants as well as anticonvulsants; and (c) a diagnosis 
+of other conditions involving fatigue symptomatology. To ensure a clear 
+comparison, HC were required to have no history of COVID-19 infection 
+within the previous six months and no symptoms consistent with the 
+WHO definition of LC [105].
+The sample size was determined using an a priori power analysis 
+conducted before recruitment to estimate the number of participants 
+needed to detect baseline between-group differences in MRBDs (inde­
+pendent-samples t-test). Based on prior work [107], the expected effect 
+size was large (d ≈1.12; SDs 8.4 and 10.4). With a one-tailed α of 0.05 
+and 80% power, this corresponded to approximately 10–12 participants 
+per group. A conservative minimum of 14 participants per group was 
+therefore set.
+Twenty-one participants were recruited from the Facebook page 
+Covid Longue Qu´ebec Long-Haulers Support Group (n = 2.9k) and 
+emailed through the Quebec Action for Post-COVID Project. Twenty-one 
+HC were matched to the LC participants by age ( ± 3 years) and sex. 
+Two participants (one from each group) were excluded due to excessive 
+EEG noise, yielding a final analyzed sample of 20 LC and 20 control 
+participants. The study was approved by the Research Ethics Office 
+(IRB) of McGill University on March 27, 2023 (A02-M82-22B). All 
+participants read and electronically signed the consent form via 
+REDCap. Compensation was provided for transportation and 
+participation.
+1.2. Experimental paradigm
+This was an exploratory cross-sectional study with matched pairs 
+that included a repeated-measures component. The study consisted of 
+two phases (Fig. 1). The first one involved an online assessment where 
+participants completed eligibility and self-reported symptom question­
+naires via REDCap platform. All materials were available in English and 
+French. The second one involved an in-person laboratory session. At 
+least a week after completing the online phase, EEG data were collected 
+during rest and a handgrip task, both pre- and post-motor learning task 
+(ML task). The ML task was used to increase the cognitive load. This task 
+has been previously used in neurorehabilitation and skill learning 
+studies, where brief, visually guided force tracking reliably engages 
+neural systems without high exertion demands [26,75]. The second 
+session lasted ~3 hours.
+1.3. Data acquisition and pre-processing
+1.3.1. Symptom questionnaires and behavioral assessment
+In addition to the ones used for eligibility, questionnaires were used 
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+2 
+
+to explore quality of life [41], daytime sleepiness [52], sleep quality 
+[18], symptoms of anxiety [93] and depression [61], and comorbidities 
+[87] (Fig.1). The Purdue Pegboard Test was used to assess hand and 
+finger coordination and dexterity [65]. Separate scores were calculated 
+for Left + Right + Both (L + R + B), as well as for the assembly task. 
+Handgrip strength was used to determine the maximal voluntary 
+contraction [14].
+1.3.2. EEG data acquisition and pre-processing
+EEG signals were recorded using a 64-channel high-density EEG (HD- 
+EEG) system (Brain Products, Gilching, Germany), following the 10–20 
+electrode layout [56]. Signals were amplified and sampled at 2500 Hz. 
+All electrodes were referenced to FCz, with AFz as ground. Electrode 
+impedances were kept below 20 kΩ. Data were collected at rest for five 
+minutes with eyes open, fixating on a cross in the center of the screen, 
+followed by five minutes with eyes closed. Only eyes-open recordings 
+were used in this study, as this state minimizes fluctuations in arousal 
+and maintains stable visual engagement, providing a suitable baseline 
+for analysis [9,10]. For the motor task, participants completed 50 right- 
+hand contractions (4 seconds at 15% maximal voluntary contraction) 
+using a dynamometer (BIOPAC, Goleta, CA, USA) with real-time visual 
+feedback, following procedures routinely applied in our laboratory [72]
+(details provided in the suppl. materials). All participants were right- 
+handed, confirmed via the Edinburgh Handedness Inventory [78], and 
+the handgrips and ML task were performed with the right hand; C3 and 
+C5 (contralateral, left-hemisphere electrodes) were therefore selected to 
+capture task-relevant sensorimotor activity. Reaction time and rise time 
+were extracted from the force signals. The ML task consisted of 100 trials 
+of a force-matching task with real-time visual feedback and were per­
+formed as described in [26] (see Supplementary Materials).
+EEG signals were filtered (0.1–120 Hz bandpass, 60 Hz notch), 
+resampled at 250 Hz, and re-referenced to electrode FCz. Noisy epochs 
+and channels (e.g., muscle, head, and jaw movement artifacts) were 
+removed by visual inspection. Independent component analysis cor­
+rected eye movement artifacts (Brainstorm MATLAB toolbox) [95]. 
+Frequency bands were set as: alpha (8–12 Hz) and beta (13–29 Hz).
+Time-frequency representations were computed using Welch’s 
+method [102] with 10-second no-overlap windows. Power spectral 
+density (PSD) estimates were obtained for each epoch and averaged 
+within the predefined frequency bands (alpha, beta). Band power was 
+extracted as the mean PSD within each frequency range for each time 
+window of interest.
+Although EEG was recorded using a 64-channel montage to ensure 
+full scalp coverage and data quality, analyses were restricted a priori to 
+electrodes C3 and C5 to test region-specific hypotheses related to SMC 
+function. The same electrodes were used for resting alpha analyses to 
+maintain anatomical consistency across resting-state and movement- 
+related measures within the contralateral sensorimotor region. This 
+choice was also supported by evidence that sensorimotor alpha and beta 
+rhythms are modulated by somatosensory attention and behavioral 
+performance [36,98].
+Relative power (RP%), which represents the power changes relative 
+to the baseline, was computed from electrodes C3 and C5, located over 
+the left SMC, opposite to the right hand performing the task [29,84,90]. 
+Brain imaging studies of EEG electrode localization show that C3/C4 
+consistently project onto the central sulcus region, spanning both pre­
+central (M1) and postcentral (S1) gyri, despite individual variability in 
+the precise gyrus [59,77,90]. We therefore use the SMC consistent with 
+prior studies targeting this same region under the same terminology 
+[72,108]. Time windows were defined as: Baseline (pre-movement): 1.0 
+- 0.1 seconds preceding movement onset (see Figs. 2 & 3). MRBD (active 
+contraction): 0.5 - 3.5 seconds post-movement onset. PMBR (rebound 
+phase) 5 - 8 seconds post-movement onset. These windows were selected 
+based on established temporal profiles reported in prior work [82,107], 
+with visual inspection used as a confirmatory step to verify alignment 
+with the observed signal patterns. RP% was calculated using the 
+following formula, where P(t) is the absolute power at time t, and B is 
+the baseline power: 
+RP% = P(t) −B
+B
+x 100% 
+Periodic and aperiodic decomposition using the specparam algorithm 
+Fig. 1. Experimental paradigm flow chart. The study consists of two stages: an online stage and an in-person stage. During the online stage, participants complete a 
+series of questionnaires assessing fatigue, cognitive failures, quality of life, comorbidities, sleep quality, and symptoms of anxiety and depression. The in-person stage 
+includes a motor assessment with the Purdue Pegboard Test and Handgrip Strength Test, followed by EEG recordings during pre-ML (baseline), ML (motor learning), 
+and post-ML task. EEG data collection includes resting-state recordings with eyes open and closed, as well as motor tasks involving handgrip repetitions.
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+3 
+
+(formerly Fitting Oscillations and One-Over-F (FOOOF)) [31,38,80]) 
+was conducted on the resting-state recordings from electrodes C3 and 
+C5. Resting-state recordings were segmented into 10-second windows, 
+which were averaged to reduce the impact of transient artifacts and 
+improve spectral estimation reliability [102]. The aperiodic exponent 
+and offset were extracted from the aperiodic and the alpha central fre­
+quency (CF; equivalent to peak alpha frequency), peak power (PW), and 
+bandwidth (BW) of the periodic alpha component. The algorithm was 
+constrained to identify a single peak, ensuring that extracted parameters 
+reflected the dominant alpha component and allowing consistent com­
+parisons across participants.
+1.4. Data analysis
+1.4.1. Symptoms, cognitive and behavioral data analysis
+Group comparisons were conducted using independent-sample t- 
+tests or the Mann-Whitney U Test for non-normal data. ML task per­
+formance across blocks was analyzed using a linear mixed model (LMM) 
+to assess group differences and changes over time.
+1.4.2. EEG data analysis
+Normality was assessed using the Shapiro-Wilk test. Group com­
+parisons of MRBD, PMBR, periodic and aperiodic components were 
+conducted using independent-sample t-tests or Mann-Whitney U tests 
+for non-normally distributed data. LMM assessed changes from pre- to 
+post-task.
+Correlations between EEG features and clinical symptoms were 
+calculated using Pearson or Kendall’s tau-b correlation. Bonferroni 
+correction was applied to hypothesis-driven tests, and FDR correction 
+was applied to exploratory analyses (reported in the Supplementary 
+Material). Group and LC-only correlations were both reported to cap­
+ture full and within-group associations.
+2. Results
+2.1. Self-reported clinical symptoms and behavioral results
+Out of the 42 participants recruited, two (one from each group) were 
+excluded due to excessive noise in their EEG recordings, leaving 20 
+participants per group. For the LC group, the average time between the 
+confirmed COVID-19 infection and the recruitment date was 24.0 ±
+10.7 months. Pre-task EEG recordings were successfully obtained from 
+all 20 participants in both groups. In the LC group, three participants 
+had incomplete post-task recordings due to discomfort with the EEG cap 
+and system malfunctions.
+The groups did not differ in age and sex (Table 1). The scores from all 
+* p=0.04
+Fig. 2. Temporal evolution of the beta power relative to the baseline (MRBD & PMBR) in electrodes C3 and C5 during the gripping task. Handgrips were held from 
+0 to 4  s. The Long COVID (LC) group is shown in blue and the control group in orange. The gray dotted lines delimit the time intervals used to quantify beta power 
+changes. MRBD was derived from the movement-related window (0.5–3.5  s), and PMBR from the post-movement rebound window (5–8  s). *p < 0.05 indicates 
+significant differences in the power at a specific time.
+A)
+B)
+*p=0.005
+Fig. 3. Alpha-band power spectra during eyes-open resting-state at electrodes C3 and C5. A) Power spectral density at electrode C3; B) Power spectral density at 
+electrode C5. The lines indicate the group averages and the shadow represents the standard deviation (SD). The control group is shown in orange, and the long COVID 
+(LC) group in blue. A significant group difference in alpha central frequency (CF) is observed at electrode C5 (p = 0.005).
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+4 
+
+the questionnaires are summarized in Table 1. All LC individuals met our 
+inclusion criteria. They experienced higher levels of fatigue and brain 
+fog compared to HC (FSS & CFQ: p < 0.001). The scores from all other 
+questionnaires, used to quantify sleep quality, daytime sleepiness, 
+quality of life, comorbidities, and symptoms of anxiety and depression, 
+differed between groups (p < 0.05). The Purdue Pegboard Test scores 
+were lower in the LC group for the L + R + B (p < 0.01), but not for the 
+assembly scores (Table 2). No differences were observed in the hand grip 
+strength scores between groups for both hands.
+For parametric tests, the t-statistic is reported with degrees of 
+freedom in parentheses (t(df)).
+The LC group had slower reaction times than the HC (p = 0.02), 
+while baseline rise time did not differ between groups. The pre- to post- 
+task scores did not differ between groups in terms of reaction (p = 0.52) 
+and rise times (p = 0.07) during the handgrip task.
+For the ML task, there was a significant effect of time on motor 
+learning scores (F(4, 150.92) = 54.22, p < 0.001), indicating an in­
+crease in the scores across trials. However, there was no significant main 
+effect of group (F(1, 42.709) = 1.90, p = 0.17), nor a significant group ×
+time interaction (F(4, 150.92) = 1.057, p = 0.38) (see Suppl. Material).
+2.2. EEG features during movement
+Grand averages of the temporal evolution of the beta band power 
+relative to the baseline during the gripping task are shown in Fig. 2. No 
+differences were found between groups in MRBD values in electrode C3 
+(U = 193.00, p = 0.86; HC: M = −33.64, SD = 13.13; LC: M = −35.04, 
+SD = 17.29) or electrode C5 (U = 161.00, p = 0.29; HC: M = −18.97, SD 
+= 13.64; LC: M = −12.61, SD = 25.50).
+For the PMBR values, a significant difference was observed at elec­
+trode C3 (t(38) = 2.36, p = 0.02), where the mean for the HC group (M 
+= 17.47, SD = 21.01) was higher than that of the LC group (M = 2.95, S 
+= 17.63). No differences were observed at electrode C5 (t(38) = −1.38, 
+p = 0.17; HC: M = 8.04, SD = 11.63; LC: M = 2.92, SD = 11.75).
+There were no differences in the effect of group x time (pre-task vs. 
+post-task) for either MRBDs or PMBRs. This is shown in the 
+Supplementary Material.
+2.3. EEG power spectral during resting state
+Differences between groups were found in the alpha CF at electrode 
+C3 (p = 0.03), where the control group had a higher value (10.5 ± 0.83) 
+than the LC group (9.8 ± 1.16), t(35) = −2.27. A similar trend was 
+observed at electrode C5 (p = 0.005), with the HC group having a higher 
+power (10.6 ± 0.6) than the LC group (9.6 ± 1.0), t(34) = −3.06 
+(Fig. 3). However, after adjusting for multiple comparisons, only the 
+results from electrode C5 remained significant.
+No differences were found in the alpha PW on electrode C3 (t(35) =
+0.21, p = 0.83) or C5 (t(34) = −0.43, p = 0.66) nor in the alpha BW on 
+electrode C3 (U = 196.00, p = 0.45) or C5 (U = 145.00, p = 0.64).
+No differences were found in the aperiodic components such as the 
+exponent in electrode C5 (t(38) = −0.74, p = 0.46) or C3 (t(38) = 0.01, 
+p = 0.98), nor in the offset in electrode C5 (U = 140.50, p = 0.11) or C3 (t 
+(38) = -0.60, p = 0.54).
+No differences were found in the effect of group x time (pre-task vs. 
+post-task) for any of the periodic and aperiodic components at electrode 
+C3 or C5. This is shown in the Supplementary Material.
+2.4. Association between EEG components, questionnaires, and motor 
+scores
+A negative correlation was observed between CFQ scores and PMBR 
+at electrode C3 (r = −0.35, p = 0.02) (Fig. 4A). No correlation was found 
+between the PMBR at electrode C3 and the FSS questionnaire scores (r =
+−0.13, p = 0.22) (Fig. 4B).
+The alpha CF at electrode C5 was negatively correlated with both the 
+CFQ (r = −.23, p = 0.04) (Fig. 4C) and the FSS scores (r = −.26, p =
+0.01) (Fig. 4D), although only the correlation with FSS remained sig­
+nificant after correction for multiple comparisons. Neither PMBR at C3 
+nor alpha CF at C5 correlated significantly with time since infection (r =
+−0.12, p = 0.62; r = −0.33, p = 0.17, respectively), suggesting that the 
+observed group differences were not simply a function of variability in 
+illness duration within the sample.
+No other significant correlations were found in the additional 
+exploratory analyses between motor performance and EEG components, 
+whether analyzing the full sample or only the LC group (see Suppl. 
+Materials).
+Table 1 
+Demographic group variables and results from the scores of the questionnaires.
+LC
+control
+​
+mean (SD) 
+(N = 20)
+mean (SD) 
+(N = 20)
+p
+Test 
+Statistic
+Age
+42.7 (9.7)
+42.5 (10.2)
+0.66
+t(37.9) =
+0.06
+Sex (female)
+15
+15
+​
+−
+COVID-19 hospitalizations
+1
+0
+​
+−
+Time since COVID 
+infection (months)
+24 (10.7)
+N/A
+​
+−
+Fatigue Severity Scale 
+(FSS) 1
+56 (5.6)
+23.5 (12.2)
+<.0011*
+U = 9.50
+Cognitive Failures 
+Questionnaire (CFQ)
+58.5 
+(14.1)
+27 (11.6)
+0<.001*
+t(38) =
+7.68
+DePaul Symptom 
+Questionnaire-PEM 
+(DSQ-PEM)
+100%
+0%
+​
+−
+Epworth Sleepiness Scale 
+(ESS)
+10.8 (5.0)
+4.6 (2.3)
+0<.001*
+t(38) =
+7.68
+General Anxiety Disorder 
+(GAD7)1
+5.9 (4.3)
+3.5 (5.1)
+0.021*
+U =
+114.00
+Patient Health 
+Questionnaire (PHQ-9)1
+10.2 (4.8)
+2.5 (3.0)
+<.0011*
+U = 29.00
+Self-Administered 
+Comorbidities 
+Questionnaire1
+4.6 (4.3)
+0.5 (1.1)
+<.0011*
+U = 75.00
+Pittsburgh Sleep Quality 
+Index (PSQI)
+10.9 (3.0)
+5.1 (2.7)
+0<.001*
+t(38) =
+6.70
+EuroQol EQ-5D-5 L1
+41.5 
+(18.0)
+86.6 (6.4)
+0.0011*
+U = 0.00
+1For non-parametric tests, the Mann-Whitney U test was used, and the U value is 
+reported instead of t(df). *p < 0.05 indicates statistically significant differences.
+Table 2 
+Results from the scores of the Purdue Pegboard Test (PPT), Handgrip Strength 
+Test, and Reaction and Rise Times extracted from the dynamometer.
+LC
+Control
+​
+Mean (SD)
+Mean (SD)
+p
+Test Statistic
+PPT
+​
+​
+​
+​
+L + R + B1
+38.9 (7.4)
+43.1 (3.9)
+0.03*1
+U = 279.5
+Assembly
+32.4 (8.6)
+35.5 (6.7)
+0.20
+t(38) = 1.2
+Handgrip Strength Test
+​
+​
+​
+​
+Right
+30.9 (8.4)
+30.5 (7.9)
+0.88
+t(38) = −0.1
+Left
+28.4 (7.8)
+28.6 (7.9)
+0.94
+t(38) = 0.07
+Reaction time
+​
+​
+​
+​
+Pre-task
+0.75 (0.1)
+0.61 (0.1)
+0.02*
+t(37) = −2.3
+Post-task
+0.75 (0.08)
+0.67 (0.3)
+​
+​
+Rise time
+​
+​
+​
+​
+Pre-task
+0.29 (0.08)
+0.34 (0.07)
+0.12
+t(37) = 1.5
+Post-task
+0.32 (0.08)
+0.33 (0.05)
+​
+​
+For parametric tests, the t-statistic is reported with degrees of freedom in pa­
+rentheses (t(df)).
+1For non-parametric tests, the Mann-Whitney U test was used, and the U value is 
+reported instead of t(df). *p < 0.05 indicates statistically significant differences.
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+5 
+
+3. Conclusions
+To our knowledge, this is the first study to assess how EEG oscillatory 
+patterns are modulated in the SMC of LC individuals during movement, 
+as well as their periodic and aperiodic characteristics. LC participants 
+showed reduced beta activity post-movement, which was associated 
+with the severity of self-reported cognitive symptoms. During rest, they 
+showed a lower alpha CF, which was linked to fatigue severity. These 
+findings show that cortical oscillations are disrupted in LC symptoms, 
+and they might contribute to the symptomatology observed in this 
+population
+3.1. Self-reported clinical symptoms and behavioral results
+LC participants exhibited severe fatigue, brain fog, and PEM, 
+consistent with previous studies [16,27,28,49,89,97,110]. They also 
+reported increased symptoms of anxiety, symptoms of depression, poor 
+sleep quality, daytime sleepiness, comorbidities, and reduced quality of 
+life, 
+features 
+observed 
+consistently 
+in 
+this 
+population 
+[27,30,68,76,91,94].
+Motor performance was affected in the LC group, where poorer 
+bimanual coordination and fine motor control were present [65]. No 
+differences were found in the assembly task or grip strength, suggesting 
+coordination may be more affected than strength or precision. Slower 
+reaction times were observed during the handgrip task in LC partici­
+pants, while rise time did not differ between groups. Reaction time is 
+broadly recognized as a sensitive marker of neurobiological integrity 
+and processing efficiency [40]. This pattern of delayed initiation with 
+preserved motor output is consistent with prior reports of slower reac­
+tion times in LC, observed across visual detection tasks and neuropsy­
+chological assessments [22,69].
+3.2. EEG-based MRBD & PMBR
+PMBRs in the SMC were reduced in LC individuals. This feature is 
+believed to reflect motor cortical inhibition following movement [55]
+and to be mediated by GABAergic neurotransmission [33,37]. Reduced 
+PMBR has been reported in Parkinson’s disease and multiple sclerosis, 
+linked to impaired inhibitory control, diminished motor accuracy, and 
+fatigue in these conditions [6,63,66]. Reduced beta activity post- 
+movement in LC this suggest disrupted GABAergic function. This 
+aligns with observations of reduced TMS-evoked beta responses in in­
+dividuals with LC who experience high levels of fatigue, where higher 
+fatigue correlated with reduced beta activity in the SMC [20].
+Beta activity in the SMC is thought to arise from corticothalamic and 
+cortico-basal ganglia loops [8,15]). In aging, reduced PMBR has been 
+linked to impaired thalamocortical connectivity [47]. Comparable 
+findings in LC, including structural disruptions in the thalamus and basal 
+ganglia [19], and weakened thalamocortical coupling with M1 and SMA 
+in fatigued individuals [20], suggest that altered thalamocortical cir­
+cuits may underlie impaired regulation of motor cortical excitability.
+3.3. EEG power spectral analysis
+LC participants showed lower alpha band CF at rest over the SMC. 
+Reduced alpha peak frequency has been reported in aging and several 
+neurological conditions associated with cognitive impairment, although 
+these findings have generally been derived from global, posterior, or 
+non-sensorimotor electrode sets rather than specifically from C3/C5 
+[21,35,111]. We prioritized anatomical consistency between our 
+resting-state and movement-related measures, both drawn from C3/C5, 
+since our primary aim was to link rest and movement-related activity 
+within the same sensorimotor region. This choice limits direct compa­
+rability with prior alpha CF findings. Alpha CF is thought to reflect the 
+temporal organization of cortical processing, with slower frequencies 
+associated with less efficient information integration and reduced 
+A)
+B)
+D)
+C)
+Fig. 4. Relationship between the localized EEG features and self-reported clinical symptom scores. A) Post-movement beta rebound (PMBR) at electrode C3 and 
+cognitive failures questionnaire (CFQ) scores. B) PMBR at electrode C3 and fatigue severity scale (FSS) scores. C) Alpha central frequency (CF) at electrode C5 and 
+CFQ scores. D) Relationship between alpha CF at electrode C5 and FSS score. For each graph, correlation coefficients and p-values are displayed. Significant cor­
+relations (p < 0.05) are marked with an asterisk (*).
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+6 
+
+cognitive speed. Accordingly, a lower alpha CF may indicate a shift in 
+the balance of excitation and inhibition, potentially disrupting neural 
+communication and cognitive processing [50,88]. Cognitive efficiency 
+can be affected by chronic systemic inflammation, which has been 
+shown to alter synaptic function and large scale network dynamics, 
+leading to disruptions in alpha oscillatory activity and reduced cortical 
+network stability, a process also implicated in LC [50,101].
+Alpha oscillations are thought to depend on thalamocortical circuits 
+that regulate cortical activity [48]. In LC, both slower alpha CF and 
+reduced PMBR findings point to disruptions in the thalamocortical and 
+basal ganglia circuits. Evidence of structural abnormalities and weak­
+ened thalamocortical coupling in fatigued LC individuals further sup­
+ports this interpretation [42,62].
+There were no differences in the periodic and aperiodic measures 
+extracted from the alpha band (PW, BW, exponent, offset). Previous EEG 
+studies in LC reported increased alpha power but did not separate pe­
+riodic and aperiodic components, leaving it unclear whether the 
+observed effects reflected genuine oscillatory changes or broadband 
+power shifts [21,60,74]. By applying this method, our approach pro­
+vides a more specific characterization, indicating that the alterations in 
+LC are more likely related to synchronized oscillatory dynamics rather 
+than global cortical excitability [31].
+No differences in spectral components were observed post-task, 
+suggesting that these features may be relatively resistant to short-term 
+modulation by cognitive load. Alternatively, the small sample size and 
+inter-individual variability may have reduced sensitivity to detect subtle 
+changes.
+3.4. Associations between EEG variables, self-reported symptoms and 
+behavioral scores
+A negative correlation was found between brain fog, measured 
+through cognitive failures, and beta activity in the SMC after movement. 
+This indicates that greater cognitive difficulties were associated with 
+reduced PMBR. PMBR is thought to index inhibitory control and the 
+resetting of motor networks [17,55], processes that depend on 
+GABAergic tone [33,73]. In LC, a reduced PMBR may therefore reflect 
+GABAergic dysfunction contributing to both brain fog and fatigue 
+[20,79]. Given the SMC’s involvement in motor and cognitive functions, 
+reduced PMBR could therefore reflect abnormalities in a shared neural 
+substrate underlying these symptoms [51,100].
+A lower alpha CF was associated with greater fatigue in our sample. 
+This finding is consistent with prior post-COVID EEG work showing 
+alpha frequency slowing, although the electrode locations and symptom 
+domains differed from those examined here [21]. Therefore, these re­
+sults are not directly comparable to the present C3/C5 EEG-based 
+measure. Alpha band slowing is observed in mild cognitive impair­
+ment, multiple sclerosis, burnout, and Alzheimer's disease, where it is 
+associated with deficits in executive function, working memory, atten­
+tion, and mental fatigue [5,50,99]. Reduced PMBR has also been re­
+ported in Parkinson's disease [43], multiple sclerosis [2], amyotrophic 
+lateral sclerosis [13], and major depressive disorder [106]. This suggests 
+a transdiagnostic marker of impaired sensorimotor inhibition rather 
+than an LC-specific one. A recent systematic review similarly found 
+overlapping alpha- and beta-band abnormalities across fibromyalgia, 
+chronic fatigue syndrome (ME/CFS), and LC [92], further indicating 
+that these features likely reflect a shared response to chronic fatigue- 
+related states. These findings suggest reduced alpha CF could serve as 
+a neurophysiological marker for LC-related cognitive and fatigue 
+symptoms. This interpretation is further in line with prior work linking 
+disruptions in alpha rhythms to brain fog in LC [4,60].
+Within the LC group alone, neither PMBR nor alpha CF correlated 
+significantly with fatigue or cognitive symptoms (see Suppl. Table 1), 
+suggesting that associations observed in the combined sample partly 
+reflect between-group differences in symptom severity rather than a 
+continuous symptom-EEG relationship within LC.
+A trend-level association was observed between cognitive failures 
+and alpha CF, suggesting that lower alpha frequencies may be associated 
+with cognitive symptoms. Although not statistically significant, this 
+aligns with previous reports [5,99] and warrants further investigation.
+Exploratory correlations (see suppl. materials) revealed several 
+emerging trends. In the full sample, MRBDs were associated with higher 
+depression symptoms and cognitive failures, while smaller PMBRs were 
+linked to worse sleep quality, increased cognitive failures, symptoms of 
+depression, and increased comorbidities. In the LC group, MRBDs 
+correlated positively with daytime sleepiness and negatively with the 
+number of comorbidities, whereas PMBR was positively linked with 
+sleep quality and comorbidities. Depression symptoms were negatively 
+associated with alpha CF and positively associated with alpha PW, while 
+alpha BW was positively correlated with anxiety symptoms. These 
+findings provide direction for future hypothesis-driven studies with 
+larger LC samples.
+As an exploratory study, a primary limitation is the small sample 
+size. This reduces sensitivity to detect subtle group differences or asso­
+ciations between EEG markers and clinical symptoms. Given the sample 
+size, the study was underpowered to detect small-to-moderate effects in 
+secondary and exploratory analyses, and the absence of significant 
+findings in these analyses should not be interpreted as evidence of no 
+effect. For instance, LC participants performed below controls across 
+learning blocks during the ML task. Although this difference was not 
+statistically significant, the pattern may reflect subtle impairments in 
+adaptive motor processes potentially influenced by fatigue and cognitive 
+symptoms. Task-related effects should also be considered when inter­
+preting PMBR, as even low-effort tasks may induce mental or physical 
+fatigue in LC participants, making it difficult to disentangle task-induced 
+strain from underlying condition-related fatigue. These consistent 
+trends, together with the sample size limitation, suggest that subtle 
+group effects may have been masked by variability and could become 
+more evident in larger or longitudinal cohorts. Correlation analyses 
+between EEG features and clinical symptoms should be interpreted with 
+caution. Associations were examined across the full sample and may be 
+driven by group differences in symptom severity between LC and con­
+trols. Within-group analyses did not consistently reach statistical sig­
+nificance, limiting conclusions about symptom–EEG relationships 
+within LC. As this was a cross-sectional study, it cannot determine 
+whether the observed EEG alterations change over the course of illness. 
+Because analyses were a priori restricted to electrodes over the left SMC, 
+our findings cannot be generalized to broader cortical dysfunction or 
+other brain regions. Additionally, as all participants were right-handed, 
+our findings are specific to the dominant left SMC and may not gener­
+alize to left-handed or ambidextrous individuals. We also did not control 
+for potential confounders that may impact both symptom presentation 
+and brain activity, such as hormonal variation, age, and depressive 
+symptoms. Furthermore, LC participants differed from controls in sleep 
+quality, daytime sleepiness, anxiety, depression, quality of life, and co­
+morbidity burden, none of which were statistically controlled for in the 
+present analyses. In addition, participants varied considerably in time 
+since infection and longitudinal studies are needed to determine 
+whether cortical oscillatory changes evolve over the course of LC. As 
+several of these variables are known to influence alpha and beta oscil­
+latory activity, the present findings should be interpreted as reflecting 
+the LC phenotype broadly. PEM was monitored given its relevance as a 
+hallmark symptom of LC; however, it was assessed using a binary clas­
+sification (DSQ-PEM), limiting the ability to examine associations with 
+EEG features. In addition, the study was not designed to provoke PEM, 
+making it difficult to capture its relationship with neural activity or to 
+distinguish it from general fatigue. Future work should extend this 
+paradigm to test whether these EEG markers generalize across different 
+patterns of hemispheric dominance.
+In conclusion, this study provides evidence of altered neural oscil­
+latory dynamics in LC, with a slower alpha frequency at rest and reduced 
+beta rebound following movement. These findings highlight disrupted 
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+7 
+
+inhibitory processes and an imbalance between excitation and inhibi­
+tion, likely involving thalamocortical and basal ganglia circuits. 
+Importantly, both markers were associated with the severity of fatigue 
+and cognitive dysfunction, linking altered brain activity to the core 
+symptoms of LC. By identifying candidate EEG features associated with 
+persistent symptoms, this exploratory work represents a step toward the 
+future development of objective biomarkers for LC.
+Ethics statement
+The study was conducted in accordance with the Declaration of 
+Helsinki and approved by the McGill University Ethical Advisory Com­
+mittee #A02-M82-22B on March 27, 2023.
+Informed consent statement
+Informed consent was obtained from all participants involved in the 
+study.
+CRediT authorship contribution statement
+M. Casado S´anchez: Writing – review & editing, Writing – original 
+draft, Visualization, Validation, Resources, Project administration, 
+Methodology, Investigation, Funding acquisition, Formal analysis, Data 
+curation, Conceptualization. K.Morales Fajardo: . S. Long: Visualiza­
+tion, Conceptualization. T. Janaudis-Ferreira: Writing – review & 
+editing, Supervision. C. Duclos: Writing – review & editing, Supervi­
+sion. M.H. Boudrias: Writing – review & editing, Validation, Supervi­
+sion, Resources, Methodology, Investigation, Funding acquisition, 
+Formal analysis, Data curation, Conceptualization.
+Ethics declaration
+Studies in human
+This study was performed in compliance with relevant laws, regu­
+latory frameworks and guidelines where the research took place.
+Written informed consent to take part in the study and to publish the 
+article has been obtained from all participants or their legal represen­
+tatives. The privacy rights of participants have been observed.
+Funding
+We wish to acknowledge the Long COVID Web for the funding pro­
+vided to complete this research project. The Long COVID Web is funded 
+by the Canadian Institutes of Health Research (CIHR) - Grant #185352. 
+We also acknowledge support from the Quebec Bio-Imaging Network, 
+the Natural Sciences and Engineering Research Council of Canada 
+(NSERC) Discovery Grant (No. RGPIN-2017-05270), a scholarship from 
+the Mexican National Council of Humanities, Science and Technology 
+(CONAHCYT) granted to M.C.S. (No. 891367), the Fonds de recherche 
+du Qu´ebec–Sant´e (FRQ-S) Research Scholar Award held by M.H.B. at the 
+time of the study (https://doi.org/10.69777/299199), and the Canadian 
+Foundation for Innovation grant (No. 34277) [M.H.B.].
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+The authors thank the participants for their cooperation and 
+commitment to data collection. We would also like to thank Charles 
+Gervais, Miriam Hotter, Ang`ele Jenkins, and Yavuz Shahzad for their 
+assistance with recruitment and data collection.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.jocn.2026.112230.
+References
+[1] Al-Aly Z, Bowe B, Xie Y. Long COVID after breakthrough SARS-CoV-2 infection. 
+Nat Med 2022;28(7):1461–7. https://doi.org/10.1038/s41591-022-01840-0.
+[2] Arpin DJ, Heinrichs-Graham E, Gehringer JE, Zabad R, Wilson TW, Kurz MJ. 
+Altered sensorimotor cortical oscillations in individuals with multiple sclerosis 
+suggests a faulty internal model. Hum Brain Mapp 2017;38(8):4009–18. https:// 
+doi.org/10.1002/hbm.23644.
+[3] Ayoubkhani D, Bosworth ML, King S, Pouwels KB, Glickman M, Nafilyan V, et al. 
+Risk of long COVID in people infected with severe acute respiratory syndrome 
+coronavirus 2 After 2 doses of a coronavirus disease 2019 vaccine: community- 
+based, matched cohort study. Open Forum Infect Dis 2022;9(9):ofac464. https:// 
+doi.org/10.1093/ofid/ofac464.
+[4] Babiloni C, Gentilini Cacciola E, Tucci F, Vassalini P, Chilovi A, Jakhar D, et al. 
+Resting-state EEG rhythms are abnormal in post COVID-19 patients with brain 
+fog without cognitive and affective disorders. Clin Neurophysiol 2024;161: 
+159–72. https://doi.org/10.1016/j.clinph.2024.02.034.
+[5] Babiloni C, Jakhar D, Tucci F, Del Percio C, Lopez S, Soricelli A, et al. Resting 
+state electroencephalographic alpha rhythms are sensitive to Alzheimer’s disease 
+mild cognitive impairment progression at a 6-month follow-up. Neurobiol Aging 
+2024;137:19–37. https://doi.org/10.1016/j.neurobiolaging.2024.01.013.
+[6] Bardouille T, Bailey L. Evidence for age-related changes in sensorimotor 
+neuromagnetic responses during cued button pressing in a large open-access 
+dataset. Neuroimage 2019;193:25–34. https://doi.org/10.1016/j.neuroimage.20 
+19.02.065.
+[7] Bardouille T, Picton TW, Ross B. Attention modulates beta oscillations during 
+prolonged tactile stimulation. Eur J Neurosci 2010;31(4):761–9. https://doi.org/ 
+10.1111/j.1460-9568.2010.07094.x.
+[8] Barone J, Rossiter HE. Understanding the role of sensorimotor beta oscillations. 
+Front Syst Neurosci 2021;15:655886. https://doi.org/10.3389/ 
+fnsys.2021.655886.
+[9] Barry RJ, Clarke AR, Johnstone SJ, Magee CA, Rushby JA. EEG differences 
+between eyes-closed and eyes-open resting conditions. Clin Neurophysiol 2007; 
+118(12):2765–73. https://doi.org/10.1016/j.clinph.2007.07.028.
+[10] Barry RJ, De Blasio FM. EEG differences between eyes-closed and eyes-open 
+resting remain in healthy ageing. Biol Psychol 2017;129:293–304. https://doi. 
+org/10.1016/j.biopsycho.2017.09.010.
+[11] Belova EM, Semenova U, Gamaleya AA, Tomskiy AA, Sedov A. Voluntary 
+movements cause beta oscillations increase and broadband slope decrease in the 
+subthalamic nucleus of parkinsonian patients. Eur J Neurosci 2021;53(7): 
+2205–13.
+[12] Berger, H. (1929). Über das elektroenkephalogramm des menschen. Archiv für 
+psychiatrie und nervenkrankheiten, 87(1), 527-570.
+[13] Bizoviˇcar N, Dreo J, Koritnik B, Zidar J. Decreased movement-related beta 
+desynchronization and impaired post-movement beta rebound in amyotrophic 
+lateral sclerosis. Clin Neurophysiol 2014;125(8):1689–99. https://doi.org/ 
+10.1016/j.clinph.2013.12.108.
+[14] Bohannon RW, Peolsson A, Massy-Westropp N, Desrosiers J, Bear-Lehman J. 
+Reference values for adult grip strength measured with a Jamar dynamometer: a 
+descriptive meta-analysis. Physiotherapy 2006;92(1):11–5. https://doi.org/ 
+10.1016/j.physio.2005.05.003.
+[15] Brittain JS, Brown P. Oscillations and the basal ganglia: motor control and 
+beyond. Neuroimage 2014;85(Pt 2):637–47. https://doi.org/10.1016/j. 
+neuroimage.2013.05.084.
+[16] Broadbent DE, Cooper PF, FitzGerald P, Parkes KR. The cognitive failures 
+questionnaire (CFQ) and its correlates. Br J Clin Psychol 1982;21(1):1–16. 
+https://doi.org/10.1111/j.2044-8260.1982.tb01421.x.
+[17] Brown P. Abnormal oscillatory synchronisation in the motor system leads to 
+impaired movement. Curr Opin Neurobiol 2007;17(6):656–64. https://doi.org/ 
+10.1016/j.conb.2007.12.001.
+[18] Buysse DJ, Reynolds 3rd CF, Monk TH, Berman SR, Kupfer DJ. The pittsburgh 
+sleep quality index: a new instrument for psychiatric practice and research. 
+Psychiatry Res 1989;28(2):193–213. https://doi.org/10.1016/0165-1781(89) 
+90047-4.
+[19] Cassim F, Szurhaj W, Sediri H, Devos D, Bourriez J-L, Poirot I, et al. Brief and 
+sustained movements: differences in event-related (de)synchronization (ERD/ 
+ERS) patterns. Clin Neurophysiol 2000;111(11):2032–9. https://doi. 
+org/10.1016/S1388-2457(00)00455-7.
+[20] Casula EP, Esposito R, Dezi S, Ortelli P, Sebastianelli L, Ferrazzoli D, et al. 
+Reduced TMS-evoked EEG oscillatory activity in cortical motor regions in patients 
+with post-COVID fatigue. Clin Neurophysiol 2024;165:26–35. https://doi.org/10 
+.1016/j.clinph.2024.06.008.
+[21] Cecchetti G, Agosta F, Canu E, Basaia S, Barbieri A, Cardamone R, et al. Cognitive, 
+EEG, and MRI features of COVID-19 survivors: a 10-month study. J Neurol 2022; 
+269(7):3400–12. https://doi.org/10.1007/s00415-022-11047-5.
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+8 
+
+[22] Charles James J, Schulze H, Siems N, Prehn C, Quast DR, Trampe N, et al. 
+Neurological post-COVID syndrome is associated with substantial impairment of 
+verbal short-term and working memory. Sci Rep 2025;15(1):1695. https://doi. 
+org/10.1038/s41598-025-85919-x.
+[23] Chaudhuri A, Behan PO. Fatigue and basal ganglia. J Neurol Sci 2000;179(S 1–2): 
+34–42. https://doi.org/10.1016/s0022-510x(00)00411-1.
+[24] Chen AK, Wang X, McCluskey LP, Morgan JC, Switzer JA, Mehta R, et al. 
+Neuropsychiatric sequelae of long COVID-19: Pilot results from the COVID-19 
+neurological and molecular prospective cohort study in Georgia, USA. Brain 
+Behav Immun Health 2022;24:100491. https://doi.org/10.1016/j. 
+bbih.2022.100491.
+[25] Cotler J, Holtzman C, Dudun C, Jason LA. A brief questionnaire to assess post- 
+exertional malaise. Diagnostics (Basel) 2018;8(3). https://doi.org/10.3390/ 
+diagnostics8030066.
+[26] Dal Maso F, Desormeau B, Boudrias M-H, Roig M. Acute cardiovascular exercise 
+promotes functional changes in cortico-motor networks during the early stages of 
+motor memory consolidation. Neuroimage 2018;174:380–92. https://doi.org/10. 
+1016/j.neuroimage.2018.03.029.
+[27] Davis HE, Assaf GS, McCorkell L, Wei H, Low RJ, Re'em Y, et al. Characterizing 
+long COVID in an international cohort: 7 months of symptoms and their impact. 
+eClinicalMedicine 2021:38. https://doi.org/10.1016/j.eclinm.2021.101019.
+[28] Davis HE, McCorkell L, Vogel JM, Topol EJ. Long COVID: major findings, 
+mechanisms and recommendations. Nat Rev Microbiol 2023;21(3):133–46. 
+https://doi.org/10.1038/s41579-022-00846-2.
+[29] de Klerk CCJM, Johnson MH, Southgate V. An EEG study on the somatotopic 
+organisation of sensorimotor cortex activation during action execution and 
+observation in infancy. Dev Cogn Neurosci 2015;15:1–10. https://doi.org/10.101 
+6/j.dcn.2015.08.004.
+[30] Diem L, Schwarzwald A, Friedli C, Hammer H, Gomes-Fregolente L, Warncke J, 
+et al. Multidimensional phenotyping of the post-COVID-19 syndrome: a Swiss 
+survey study. CNS Neurosci Ther 2022;28(12):1953–63. https://doi.org/ 
+10.1111/cns.13938.
+[31] Donoghue T, Haller M, Peterson EJ, Varma P, Sebastian P, Gao R, et al. 
+Parameterizing neural power spectra into periodic and aperiodic components. 
+Nat Neurosci 2020;23(12):1655–65. https://doi.org/10.1038/s41593-020- 
+00744-x.
+[32] Douaud G, Lee S, Alfaro-Almagro F, Arthofer C, Wang C, McCarthy P, et al. SARS- 
+CoV-2 is associated with changes in brain structure in UK Biobank. Nature 2022; 
+604(7907):697–707. https://doi.org/10.1038/s41586-022-04569-5.
+[33] Gaetz W, Edgar JC, Wang DJ, Roberts TP. Relating MEG measured motor cortical 
+oscillations to resting γ-aminobutyric acid (GABA) concentration. Neuroimage 
+2011;55(2):616–21. https://doi.org/10.1016/j.neuroimage.2010.12.077.
+[34] Gandevia SC, Allen GM, McKenzie DK. Central fatigue. Critical issues, 
+quantification and practical implications. Adv Exp Med Biol 1995;384:281–94.
+[35] Grandy TH, Werkle-Bergner M, Chicherio C, Schmiedek F, L¨ovd´en M, 
+Lindenberger U. Peak individual alpha frequency qualifies as a stable 
+neurophysiological trait marker in healthy younger and older adults. 
+Psychophysiology 2013;50(6):570–82. https://doi.org/10.1111/psyp.12043.
+[36] Haegens S, H¨andel BF, Jensen O. Top-down controlled alpha band activity in 
+somatosensory areas determines behavioral performance in a discrimination task. 
+J Neurosci 2011;31(14):5197–204. https://doi.org/10.1523/jneurosci.5199- 
+10.2011.
+[37] Hall SD, Stanford IM, Yamawaki N, McAllister CJ, R¨onnqvist KC, Woodhall GL, 
+et al. The role of GABAergic modulation in motor function related neuronal 
+network activity. Neuroimage 2011;56(3):1506–10. https://doi.org/10.1016/j. 
+neuroimage.2011.02.025.
+[38] Haller, M., Donoghue, T., Peterson, E., Varma, P., Sebastian, P., Gao, R., Noto, T., 
+Knight, R. T., Shestyuk, A., & Voytek, B. (2018). Parameterizing neural power 
+spectra. bioRxiv, 299859. https://doi.org/10.1101/299859.
+[39] Hartle M, Bateman L, Vernon SD. Dissecting the nature of post-exertional malaise. 
+Fatigue: Biomed, Health Behav 2021;9(1):33–44. https://doi.org/10.1080/ 
+21641846.2021.1905415.
+[40] Haynes BI, Bauermeister S, Bunce D. A systematic review of longitudinal 
+associations between reaction time intraindividual variability and age-related 
+cognitive decline or impairment, dementia, and mortality. J Int Neuropsychol Soc 
+2017;23(5):431–45. https://doi.org/10.1017/s1355617717000236.
+[41] Hegde S, Sreeram S, Bhat KR, Satish V, Shekar S, Babu M. Evaluation of post- 
+COVID health status using the EuroQol-5D-5 L scale. Pathog Global Health 2022; 
+1–11. https://doi.org/10.1080/20477724.2022.2035623.
+[42] Heine, J., Schwichtenberg, K., Hartung, T. J., Rekers, S., Chien, C., Boesl, F., Rust, 
+R., Hohenfeld, C., Bungenberg, J., Costa, A. S., Scheibenbogen, C., Bellmann- 
+Strobl, J., Paul, F., Franke, C., Reetz, K., & Finke, C. (2023). Structural brain 
+changes in patients with post-COVID fatigue: a prospective observational study. 
+eClinicalMedicine, 58, 101874. https://doi.org/https://doi.org/10.1016/j. 
+eclinm.2023.101874.
+[43] Heinrichs-Graham E, Wilson TW, Santamaria PM, Heithoff SK, Torres-Russotto D, 
+Hutter-Saunders JAL, et al. Neuromagnetic evidence of abnormal movement- 
+related beta desynchronization in Parkinson's disease. Cereb Cortex 2014;24(10): 
+2669–78. https://doi.org/10.1093/cercor/bht121.
+[44] Hellgren L, Thornberg UB, Samuelsson K, Levi R, Divanoglou A, Blystad I. Brain 
+MRI and neuropsychological findings at long-term follow-up after COVID-19 
+hospitalisation: an observational cohort study. BMJ Open 2021;11(10):e055164.
+[45] Heneka MT, Golenbock D, Latz E, Morgan D, Brown R. Immediate and long-term 
+consequences of COVID-19 infections for the development of neurological 
+disease. Alzheimers Res Ther 2020;12(1):69. https://doi.org/10.1186/s13195- 
+020-00640-3.
+[46] Hou, Y., Gu, T., Ni, Z., Shi, X., Ranney, M. L., & Mukherjee, B. (2025). Global 
+Prevalence of Long COVID, its Subtypes and Risk factors: An Updated Systematic 
+Review and Meta-Analysis. medRxiv. https://doi.org/10.1101/ 
+2025.01.01.24319384.
+[47] Hübner L, Godde B, Voelcker-Rehage C. Older adults reveal enhanced task-related 
+beta power decreases during a force modulation task. Behavioural Brain Research 
+2018;345:104–13. https://doi.org/10.1016/j.bbr.2018.02.028.
+[48] Hughes SW, Crunelli V. Thalamic mechanisms of EEG alpha rhythms and their 
+pathological implications. Neuroscientist 2005;11(4):357–72. https://doi.org/ 
+10.1177/1073858405277450.
+[49] Jason LA, Dorri JA. ME/CFS and post-exertional malaise among patients with 
+long COVID. Neurol Int 2022;15(1):1–11. https://doi.org/10.3390/ 
+neurolint15010001.
+[50] Jensen O, Mazaheri A. Shaping functional architecture by oscillatory alpha 
+activity: gating by inhibition [Hypothesis and Theory]. Front Hum Neurosci 
+2010;4. https://doi.org/10.3389/fnhum.2010.00186.
+[51] Jenson D, Thornton D, Harkrider AW, Saltuklaroglu T. Influences of cognitive 
+load on sensorimotor contributions to working memory: an EEG investigation of 
+mu rhythm activity during speech discrimination. Neurobiol Learn Mem 2019; 
+166:107098. https://doi.org/10.1016/j.nlm.2019.107098.
+[52] Johns MW. A new method for measuring daytime sleepiness: the Epworth 
+sleepiness scale. Sleep 1991;14(6):540–5. https://doi.org/10.1093/sleep/ 
+14.6.540.
+[53] Katal S, Gholamrezanezhad A. Neuroimaging findings in COVID-19: A narrative 
+review. Neurosci Lett 2021;742:135529. https://doi.org/10.1016/j. 
+neulet.2020.135529.
+[54] Kent-Braun JA, Le Blanc R. Quantitation of central activation failure during 
+maximal voluntary contractions in humans. Muscle Nerve 1996;19(7):861–9. 
+https://doi.org/10.1002/(sici)1097-4598(199607)19:7<861::Aid-mus8>3.0.Co; 
+2-7.
+[55] Kilavik BE, Zaepffel M, Brovelli A, MacKay WA, Riehle A. The ups and downs of β 
+oscillations in sensorimotor cortex. Exp Neurol 2013;245:15–26. https://doi.org/ 
+10.1016/j.expneurol.2012.09.014.
+[56] Klem GH, Lüders HO, Jasper HH, Elger C. The ten-twenty electrode system of the 
+International Federation. The International Federation of Clinical 
+Neurophysiology. Electroencephalogr Clin Neurophysiol Suppl 1999;52:3–6.
+[57] Klimesch W. EEG alpha and theta oscillations reflect cognitive and memory 
+performance: a review and analysis. Brain Res Brain Res Rev 1999;29(2–3): 
+169–95. https://doi.org/10.1016/s0165-0173(98)00056-3.
+[58] Klimesch W. α-band oscillations, attention, and controlled access to stored 
+information. Trends Cogn Sci 2012;16(12):606–17. https://doi.org/10.1016/j. 
+tics.2012.10.007.
+[59] Koessler L, Maillard L, Benhadid A, Vignal JP, Felblinger J, Vespignani H, et al. 
+Automated cortical projection of EEG sensors: anatomical correlation via the 
+international 10–10 system. Neuroimage 2009;46(1):64–72. https://doi.org/10. 
+1016/j.neuroimage.2009.02.006.
+[60] Kopa´nska M, Ochojska D, Muchacka R, Dejnowicz-Velitchkov A, Bana´s- 
+Ząbczyk A, Szczygielski J. Comparison of QEEG findings before and after onset of 
+post-COVID-19 brain fog symptoms. Sensors 2022;22(17).
+[61] Kroenke, K., Spitzer, R. L., & Williams, J. B. W. (2001). The PHQ-9 [https://doi. 
+org/10.1046/j.1525-1497.2001.016009606.x]. Journal of General Internal 
+Medicine, 16(9), 606-613. https://doi.org/10.1046/j.1525- 
+1497.2001.016009606.x.
+[62] Leitner M, Opriessnig P, Ropele S, Schmidt R, Leal-Garcia M, Fellner M, et al. 
+Changes in thalamic functional connectivity in post-Covid patients with and 
+without fatigue. Neuroimage 2024;301:120888. https://doi.org/10.1016/j.neu 
+roimage.2024.120888.
+[63] Leocani L, Colombo B, Magnani G, Martinelli-Boneschi F, Cursi M, Rossi P, et al. 
+Fatigue in multiple sclerosis is associated with abnormal cortical activation to 
+voluntary movement–EEG evidence. Neuroimage 2001;13(6 Pt 1):1186–92. 
+https://doi.org/10.1006/nimg.2001.0759.
+[64] Li Z, Zhang Z, Zhang Z, Wang Z, Li H. Cognitive impairment after long COVID-19: 
+current evidence and perspectives. Front Neurol 2023;14:1239182. https://doi. 
+org/10.3389/fneur.2023.1239182.
+[65] Lindstrom D, Veenstra N. Examining the purdue pegboard test for occupational 
+therapy practice. Open J Occupat Ther 2015;3. https://doi.org/10.15453/2168- 
+6408.1178.
+[66] Liu L, Rosjat N, Popovych S, Wang BA, Yeldesbay A, Toth TI, et al. Age-related 
+changes in oscillatory power affect motor action. PLoS One 2017;12(11): 
+e0187911. https://doi.org/10.1371/journal.pone.0187911.
+[67] Lopez-Leon S, Wegman-Ostrosky T, Ayuzo del Valle NC, Perelman C, 
+Sepulveda R, Rebolledo PA, et al. Long-COVID in children and adolescents: a 
+systematic review and meta-analyses. Sci Rep 2022;12(1):9950. https://doi.org/ 
+10.1038/s41598-022-13495-5.
+[68] Luo D, Mei B, Wang P, Li X, Chen X, Wei G, et al. Prevalence and risk factors for 
+persistent symptoms after COVID-19: a systematic review and meta-analysis. Clin 
+Microbiol Infect 2024;30(3):328–35. https://doi.org/10.1016/j. 
+cmi.2023.10.016.
+[69] Maiorana NV, Aiello EN, Poletti B, Carusi F, De Sandi A, Guidetti M, et al. 
+Relationship between reaction times and post-COVID-19 symptoms assessed by a 
+web-based visual detection task. Healthcare (Basel) 2023;11(3). https://doi.org/ 
+10.3390/healthcare11030284.
+[70] Matschke J, Lütgehetmann M, Hagel C, Sperhake JP, Schr¨oder AS, Edler C, et al. 
+Neuropathology of patients with COVID-19 in Germany: a post-mortem case 
+series. LancetNeurol 2020;19(11):919–29. https://doi.org/10.1016/s1474-4422 
+(20)30308-2.
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+9 
+
+[71] Meinhardt J, Radke J, Dittmayer C, Franz J, Thomas C, Mothes R, et al. Olfactory 
+transmucosal SARS-CoV-2 invasion as a port of central nervous system entry in 
+individuals with COVID-19. Nat Neurosci 2021;24(2):168–75. https://doi.org/ 
+10.1038/s41593-020-00758-5.
+[72] Morales Fajardo K, Yan X, Lungoci G, Casado S´anchez M, Mitsis GD, 
+Boudrias MH. The Modulatory Effects of Transcranial Alternating Current 
+Stimulation on Brain Oscillatory Patterns in the Beta Band in Healthy Older 
+Adults. BrainSci 2024;14(12). https://doi.org/10.3390/brainsci14121284.
+[73] Muthukumaraswamy SD, Myers JF, Wilson SJ, Nutt DJ, Lingford-Hughes A, 
+Singh KD, et al. The effects of elevated endogenous GABA levels on movement- 
+related network oscillations. Neuroimage 2013;66:36–41. https://doi.org/ 
+10.1016/j.neuroimage.2012.10.054.
+[74] Nagy B, Protzner AB, Czigler B, Ga´al ZA. Resting-state neural dynamics changes 
+in older adults with post-COVID syndrome and the modulatory effect of cognitive 
+training and sex. GeroScience 2025;47(1):1277–301. https://doi.org/10.1007/ 
+s11357-024-01324-8.
+[75] Nepveu JF, Thiel A, Tang A, Fung J, Lundbye-Jensen J, Boyd LA, et al. A Single 
+Bout of High-Intensity Interval Training Improves Motor Skill Retention in 
+Individuals With Stroke. Neurorehabil Neural Repair 2017;31(8):726–35. 
+https://doi.org/10.1177/1545968317718269.
+[76] O' Mahony, L., Buwalda, T., Blair, M., Forde, B., Lunjani, N., Ambikan, A., Neogi, 
+U., Barrett, P., Geary, E., O'Connor, N., Dineen, J., Clarke, G., Kelleher, E., 
+Horgan, M., Jackson, A., & Sadlier, C. (2022). Impact of Long COVID on health 
+and quality of life. HRB Open Res, 5, 31. https://doi.org/10.12688/ 
+hrbopenres.13516.1.
+[77] Okamoto M, Dan H, Sakamoto K, Takeo K, Shimizu K, Kohno S, et al. Three- 
+dimensional probabilistic anatomical cranio-cerebral correlation via the 
+international 10–20 system oriented for transcranial functional brain mapping. 
+Neuroimage 2004;21(1):99–111. https://doi.org/10.1016/j.neuroimage.2003.0 
+8.026.
+[78] Oldfield RC. The assessment and analysis of handedness: the Edinburgh 
+inventory. Neuropsychologia 1971;9(1):97–113. https://doi.org/10.1016/0028- 
+3932(71)90067-4.
+[79] Ortelli P, Ferrazzoli D, Sebastianelli L, Maestri R, Dezi S, Spampinato D, et al. 
+Altered motor cortex physiology and dysexecutive syndrome in patients with 
+fatigue and cognitive difficulties after mild COVID-19. Eur J Neurol 2022;29(6): 
+1652–62. https://doi.org/10.1111/ene.15278.
+[80] Ostlund B, Donoghue T, Anaya B, Gunther KE, Karalunas SL, Voytek B, et al. 
+Spectral parameterization for studying neurodevelopment: how and why. Dev 
+Cogn Neurosci 2022;54:101073. https://doi.org/10.1016/j.dcn.2022.101073.
+[81] Pani SM, Saba L, Fraschini M. Clinical applications of EEG power spectra 
+aperiodic component analysis: a mini-review. Clin Neurophysiol 2022;143:1–13. 
+https://doi.org/10.1016/j.clinph.2022.08.010.
+[82] Pfurtscheller G, Aranibar A. Evaluation of event-related desynchronization (ERD) 
+preceding and following voluntary self-paced movement. Electroencephalogr Clin 
+Neurophysiol 1979;46(2):138–46. https://doi.org/10.1016/0013-4694(79) 
+90063-4.
+[83] Phillips RO. A review of definitions of fatigue – and a step towards a whole 
+definition. Transport Res Part F: Traffic Psychol Behav 2015;29:48–56. htt 
+ps://doi.org/10.1016/j.trf.2015.01.003.
+[84] Rich TL, Gillick BT. Electrode placement in transcranial direct current 
+stimulation-how reliable is the determination of C3/C4? BrainSci 2019;9(3). 
+https://doi.org/10.3390/brainsci9030069.
+[85] Robertson MM, Furlong S, Voytek B, Donoghue T, Boettiger CA, Sheridan MA. 
+EEG power spectral slope differs by ADHD status and stimulant medication 
+exposure in early childhood. J Neurophysiol 2019;122(6):2427–37.
+[86] Roche KJ, LeBlanc JJ, Levin AR, O’Leary HM, Baczewski LM, Nelson CA. 
+Electroencephalographic spectral power as a marker of cortical function and 
+disease severity in girls with Rett syndrome. J Neurodev Disord 2019;11(1):15. 
+https://doi.org/10.1186/s11689-019-9275-z.
+[87] Sangha O, Stucki G, Liang MH, Fossel AH, Katz JN. The self-administered 
+comorbidity questionnaire: a new method to assess comorbidity for clinical and 
+health services research. Arthritis Rheum 2003;49(2):156–63. https://doi.org/ 
+10.1002/art.10993.
+[88] Scally B, Burke MR, Bunce D, Delvenne J-F. Resting-state EEG power and 
+connectivity are associated with alpha peak frequency slowing in healthy aging. 
+Neurobiol Aging 2018;71:149–55. https://doi.org/10.1016/j.neurobiolaging.20 
+18.07.004.
+[89] Schwartz JE, Jandorf L, Krupp LB. The measurement of fatigue: a new instrument. 
+J Psychosom Res 1993;37(7):753–62. https://doi.org/10.1016/0022-3999(93) 
+90104-N.
+[90] Scrivener CL, Reader AT. Variability of EEG electrode positions and their 
+underlying brain regions: visualizing gel artifacts from a simultaneous EEG-fMRI 
+dataset. BrainBehav 2022;12(2):e2476.
+[91] Shah AD, Subramanian A, Lewis J, Dhalla S, Ford E, Haroon S, et al. Long Covid 
+symptoms and diagnosis in primary care: a cohort study using structured and 
+unstructured data in The Health Improvement Network primary care database. 
+PLoS One 2023;18(9):e0290583. https://doi.org/10.1371/journal. 
+pone.0290583.
+[92] Silva-Passadouro B, Tamasauskas A, Khoja O, Casson AJ, Delis I, Brown C, et al. 
+A systematic review of quantitative EEG findings in fibromyalgia, chronic fatigue 
+syndrome and long COVID. Clin Neurophysiol 2024;163:209–22. https://doi.org 
+/10.1016/j.clinph.2024.04.019.
+[93] Spitzer RL, Kroenke K, Williams JB, L¨owe B. A brief measure for assessing 
+generalized anxiety disorder: the GAD-7. Arch Intern Med 2006;166(10):1092–7. 
+https://doi.org/10.1001/archinte.166.10.1092.
+[94] Sunada N, Nakano Y, Otsuka Y, Tokumasu K, Honda H, Sakurada Y, et al. 
+Characteristics of Sleep disturbance in patients with long COVID: a retrospective 
+observational study in Japan. J Clin Med 2022;11(24):7332. https://www.mdpi. 
+com/2077-0383/11/24/7332.
+[95] Tadel F, Baillet S, Mosher JC, Pantazis D, Leahy RM. Brainstorm: a user-friendly 
+application for MEG/EEG analysis. Comput Intell Neurosci 2011;2011(1): 
+879716. https://doi.org/10.1155/2011/879716.
+[96] Tr¨ondle M, Popov T, Pedroni A, Pfeiffer C, Bara´nczuk-Turska Z, Langer N. 
+Decomposing age effects in EEG alpha power. Cortex 2023;161:116–44. https 
+://doi.org/10.1016/j.cortex.2023.02.002.
+[97] Twomey R, DeMars J, Franklin K, Culos-Reed SN, Weatherald J, Wrightson JG. 
+Chronic fatigue and postexertional malaise in people living with long COVID: an 
+observational study. Phys Ther 2022;102(4). https://doi.org/10.1093/ptj/ 
+pzac005.
+[98] van Ede F, de Lange F, Jensen O, Maris E. Orienting attention to an upcoming 
+tactile event involves a spatially and temporally specific modulation of 
+sensorimotor alpha- and beta-band oscillations. J Neurosci 2011;31(6):2016–24. 
+https://doi.org/10.1523/jneurosci.5630-10.2011.
+[99] van Luijtelaar G, Verbraak M, van den Bunt M, Keijsers G, Arns M. EEG findings in 
+burnout patients. J NeuropsychiatryClin Neurosci 2010;22(2):208–17. https:// 
+doi.org/10.1176/jnp.2010.22.2.208.
+[100] van Wieringen A, Van Wilderode M, Van Humbeeck N, Krampe R. Coupling of 
+sensorimotor and cognitive functions in middle- and late adulthood [Original 
+Research]. Front Neurosci 2022;16. https://doi.org/10.3389/ 
+fnins.2022.1049639.
+[101] Vezzani A, Viviani B. Neuromodulatory properties of inflammatory cytokines and 
+their impact on neuronal excitability. Neuropharmacology 2015;96:70–82. 
+https://doi.org/10.1016/j.neuropharm.2014.10.027.
+[102] Welch P. The use of fast Fourier transform for the estimation of power spectra: a 
+method based on time averaging over short, modified periodograms. IEEE Trans 
+Audio Electroacoustics 1967;15(2):70–3. https://doi.org/10.1109/ 
+TAU.1967.1161901.
+[103] Whitaker M, Elliott J, Chadeau-Hyam M, Riley S, Darzi A, Cooke G, et al. 
+Persistent COVID-19 symptoms in a community study of 606,434 people in 
+England. Nat Commun 2022;13(1):1957. https://doi.org/10.1038/s41467-022- 
+29521-z.
+[104] Wood, G. K., Sargent, B. F., Ahmad, Z.-U.-A., Tharmaratnam, K., Dunai, C., Egbe, 
+F. N., Martin, N. H., Facer, B., Pendered, S. L., Rogers, H. C., Hübel, C., van 
+Wamelen, D. J., Bethlehem, R. A. I., Giunchiglia, V., Hellyer, P. J., Trender, W., 
+Kalsi, G., Needham, E., Easton, A.,…Consortium, C.-C. (2025). Posthospitalization 
+COVID-19 cognitive deficits at 1 year are global and associated with elevated 
+brain injury markers and gray matter volume reduction. Nature medicine, 31(1), 
+245-257. https://doi.org/10.1038/s41591-024-03309-8.
+[105] World Health Organization. (2025). Post COVID-19 condition (long COVID) 
+https://www.who.int/news-room/fact-sheets/detail/post-covid-19-condition- 
+(long-covid).
+[106] Xia Y, Hua L, Dai Z, Han Y, Du Y, Zhao S, et al. Attenuated post-movement beta 
+rebound reflects psychomotor alterations in major depressive disorder during a 
+simple visuomotor task: a MEG study. BMC Psychiatry 2023;23(1):395. https:// 
+doi.org/10.1186/s12888-023-04844-3.
+[107] Xifra-Porxas A, Niso G, Larivi`ere S, Kassinopoulos M, Baillet S, Mitsis GD, et al. 
+Older adults exhibit a more pronounced modulation of beta oscillations when 
+performing sustained and dynamic handgrips. Neuroimage 2019;201:116037. 
+https://doi.org/10.1016/j.neuroimage.2019.116037.
+[108] Yan X, Mitsis GD, Boudrias MH. Identification of beta oscillatory patterns during a 
+hand grip motor task: a comparative analysis pre- and post-exercise. Annu Int 
+Conf IEEE Eng Med Biol Soc 2021;2021:993–6. https://doi.org/10.1109/ 
+embc46164.2021.9629631.
+[109] Yin K, Peluso MJ, Luo X, Thomas R, Shin MG, Neidleman J, et al. Long COVID 
+manifests with T cell dysregulation, inflammation and an uncoordinated adaptive 
+immune response to SARS-CoV-2. Nat Immunol 2024;25(2):218–25. https://doi. 
+org/10.1038/s41590-023-01724-6.
+[110] Yong SJ. Long COVID or post-COVID-19 syndrome: putative pathophysiology, 
+risk factors, and treatments. Infect Dis (Lond) 2021;53(10):737–54. https://doi. 
+org/10.1080/23744235.2021.1924397.
+[111] Zhao Y, Shi H, Kong W, Wang X, Wei W, Zhan Z, et al. Peak alpha frequency as an 
+objective biomarker for cognitive assessment in post-stroke cognitive impairment. 
+Front AgingNeurosci 2025;17:1639970. https://doi.org/10.3389/ 
+fnagi.2025.1639970.
+M. Casado S´anchez et al.                                                                                                                                                                                                                     
+Journal of Clinical Neuroscience 153 (2026) 112230 
+10 
