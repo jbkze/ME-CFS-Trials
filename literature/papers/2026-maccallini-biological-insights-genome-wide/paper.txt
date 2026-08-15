@@ -1,0 +1,2218 @@
+Biological Insights from Genome-Wide Association
+Studies and Whole Genome Sequencing of Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome
+Paolo Maccallini 
+Independent Researcher https://orcid.org/0009-0003-7166-9377
+Research Article
+Keywords: ME/CFS, myalgic encephalomyelitis, genome-wide association study, meta-analysis, METAL,
+MAGMA, synapse, post-GWAS
+Posted Date: May 15th, 2026
+DOI: https://doi.org/10.21203/rs.3.rs-9702020/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.  
+Read Full License
+Additional Declarations: The authors declare no competing interests.
+
+Article
+Biological Insights from Genome-Wide Association
+Studies and Whole Genome Sequencing of Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome
+Paolo Maccallini 1
+1
+Independent Researcher, Rome, Italy; maccallini.paolo@gmail.com
+Abstract
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a debilitating disorder of poorly
+understood etiology. We performed a meta-analysis of two European-ancestry ME/CFS genome-wide
+association studies (GWAS) with no overlap in subjects, DecodeME and Million Veteran Program, com-
+prising a total of 19,470 cases and 699,111 controls. Post-GWAS analyses investigated the association
+between ME/CFS and speciﬁc tissues, cell types, cellular components, and canonical pathways. Find-
+ings were independently evaluated for replication against a module of ME/CFS risk genes previously
+prioritized by machine learning applied to rare coding variants from whole-genome sequencing (WGS)
+of ME/CFS cases and controls of European ancestry. Tissue enrichment analysis implicated multiple
+brain regions and the pituitary, with no peripheral tissue reaching signiﬁcance, and three survived
+Bonferroni-corrected replication. Gene-set analysis identiﬁed multiple neuronal and synaptic gene
+sets, several of which were independently replicated, with glutamatergic synapses as the most speciﬁc
+replicated signal. Cell-type analysis identiﬁed independent replicated signals in distinct neuronal
+populations of subcortical and cerebellar regions. These results suggest a role for synaptic function in
+speciﬁc brain regions in the pathogenesis of ME/CFS, with convergent support from both common
+and rare variant data. Larger studies are needed to conﬁrm these ﬁndings and to identify speciﬁc
+targets for therapeutic intervention.
+Keywords: ME/CFS; myalgic encephalomyelitis; genome-wide association study; meta-analysis;
+METAL; MAGMA; synapse; post-GWAS
+1. Introduction
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a debilitating disorder of
+unknown etiology, currently without FDA-approved treatments [1]. It is deﬁned by persistent fatigue,
+post-exertional malaise, cognitive impairment, and orthostatic intolerance lasting at least six months [2,
+3]. A meta-analysis on 44 datasets reported a pooled prevalence of 0.65% (95% CI 0.43–0.99) in the
+adult population, with a female-to-male ratio of approximately 1.5 to 2 [4]. Incidence shows two peaks,
+one in adolescence and one in the fourth decade of life [5], with early-onset disease associated with
+greater disease severity, higher rates of affected ﬁrst-degree relatives, and more frequent infectious
+triggers [6]. Remission is uncommon and the majority of patients experience persistent functional
+impairment, with most not returning to their pre-illness occupational status [7]. Cognitive impairment
+is one of the most commonly reported symptoms, with deﬁcits in attention, memory, and processing
+speed [8]. Neuroimaging studies consistently document additional brain area recruitment during
+cognitive tasks [9], suggesting compensatory neural mechanisms underlying these deﬁcits. In the
+DecodeME cohort, cognitive symptoms were more prevalent than disabling fatigue, with 94.5% of
+cases reporting confusion or “brain fog” [10].
+An interplay between genetic predisposition and environmental triggers is suggested by an
+increased prevalence of the disease among both relatives and spouses/partners of affected individ-
+
+2 of 25
+uals [11–13]. Post-infectious onset has been documented after a heterogeneous range of pathogens,
+including Epstein-Barr virus, Coxiella burnetii, Ross River virus, and SARS-CoV-2 [14–16].
+The ﬁrst large-scale GWAS of ME/CFS, conducted by the DecodeME consortium on 15,579
+clinician-conﬁrmed cases, identiﬁed eight risk loci mapped to genes involved in innate immunity and
+brain function [10]. At present, summary statistics from three other cohorts are publicly available, as
+shown in Table 1, where a Long COVID GWAS was also included, given an ME/CFS prevalence of
+approximately 51% among patients with Long COVID [16]. The Million Veteran Program (MVP), with
+3,891 cases derived from electronic health records (EHR), is the largest after DecodeME, while the
+UK Biobank (UKB) and FinnGen cohorts have smaller case counts. Besides DecodeME, only the UKB
+Neale Lab female subset reached genome-wide signiﬁcance.
+Additional insights on the genetic basis of ME/CFS may emerge from rare variants and monogenic
+presentations, as already documented in other common diseases [17,18]. Whole-genome sequencing
+(WGS) in 20 severely ill ME/CFS patients identiﬁed an increased burden of likely pathogenic and
+pathogenic variants in nine genes, most of which have been implicated in cognitive symptoms and
+neurological function [19]. Another WGS study of 283 ME/CFS patients and 213 controls of European
+ancestry identiﬁed 115 genes associated with ME/CFS based on prioritization of rare coding variants
+by machine learning, with enrichment for immune and neurological pathways [20]. Rare monogenic
+presentations have also been documented, with one case implicating a structural variant at the AKR1C
+locus leading to increased synthesis of inhibitory GABAergic neurosteroids [21].
+While meta-analysis of summary statistics is as effective as pooling individual-level data [22], this
+avenue is constrained here by substantial overlap in controls between DecodeME and the UK Biobank,
+and between Long COVID and both FinnGen and UK Biobank [23]. The largest meta-analysis with no
+overlap in controls is therefore the one combining DecodeME and MVP, which we present here. The
+resulting summary statistics were used as input for three downstream analyses: gene-tissue expression,
+cell-type expression at single-cell resolution, and gene-set enrichment; all implemented within the
+FUMA pipeline [24–26]. As an independent replication resource, we use the 115 ME/CFS risk genes
+prioritized by HEAL2, a new machine learning algorithm trained on rare coding variants [20].
+Table 1. Publicly available ME/CFS GWAS summary statistics.
+Cohort
+Cases
+Controls
+Neff
+GWS
+Trait
+Ref.
+DME-1
+15,579
+259,909
+58,792
+250
+ME/CFS (CCC/IOM)
+[10]
+DME-2
+15,579
+155,790
+56,651
+198
+ME/CFS (CCC/IOM)
+[10]
+DME-1 F
+12,833
+218,949
+48,490
+211
+ME/CFS (CCC/IOM)
+[10]
+DME-1 M
+2,746
+40,960
+10,294
+0
+ME/CFS (CCC/IOM)
+[10]
+DME-1 PI
+9,738
+259,909
+37,545
+3
+PI ME/CFS (CCC/IOM)
+[10]
+MVP
+3,891
+439,202
+15,427
+0
+PheCode 798.1 CFS
+[27]
+UKB-EIB
+2,092
+482,506
+8,332
+0
+Self-reported CFS
+[28]
+UKB-NL
+1,659
+359,482
+6,606
+0
+Self-reported CFS
+[29]
+UKB-NL F
+1,208
+192,945
+4,802
+11
+Self-reported CFS
+[29]
+UKB-NL M
+451
+166,537
+1,799
+0
+Self-reported CFS
+[29]
+FinnGen
+283
+463,029
+1,131
+0
+Post-viral fatigue
+[30]
+Long COVID
+6,450
+1,093,995
+25,649
+0
+Long COVID
+[23]
+Assembly is GRCh38 for DecodeME (DME), Million Veteran Program (MVP), FinnGen, and Long COVID; GRCh37 for UK
+Biobank cohorts. All cohorts are of European ancestry except FinnGen (Finnish), but for MVP and Long COVID multiancestry
+summary statistics are also available. Regressions are logistic, except the summary statistics generated by Neale Lab (NL) and
+the European Institute of Bioinformatics (EIB). Neff: effective sample size (4/(1/Ncas + 1/Ncon)). Only DME and NL provide
+sex-speciﬁc summary statistics. GWS: number of genome-wide signiﬁcant variants (P < 5 × 10−8) after quality control (INFO
+> 0.9, MAF > 0.01), lift-over to GRCh37 (if applicable), and harmonization with MungeSumstats [31]. The present study uses
+DME-1 and MVP. CCC: Canadian Consensus Criteria; IOM: Institute of Medicine criteria. F: female; M: male; PI: self reported
+post-infectious onset.
+
+3 of 25
+2. Materials and Methods
+Summary statistics from two publicly available ME/CFS GWAS (DME-1 and MVP, Table 1) were
+quality-controlled, harmonized, and combined by meta-analysis. The resulting meta-analytic summary
+statistics were then used as input for gene-set, tissue expression, and cell-type expression analyses
+using MAGMA within the FUMA SNP2GENE and Cell Type modules [24–26], each evaluated for
+replication using an independent ME/CFS rare-variant gene module [20]. An overview of the pipeline
+is provided in Figure 1.
+Figure 1. Analysis pipeline. Summary statistics from two ME/CFS genome-wide association studies (DecodeME,
+DME-1, n = 15,579 cases of European ancestry; and the Million Veteran Program, MVP, n = 3,891 cases of
+European ancestry) were quality-controlled and harmonized using MungeSumstats, then combined by sample-
+size-weighted Z-score meta-analysis in METAL. Gene-level association statistics were computed with MAGMA
+and used as input for three parallel downstream analyses: gene-set analysis against MSigDB 2023.1.Hs, gene-tissue
+expression analysis against GTEx v8, and cell-type expression analysis against the DropViz mouse brain atlas and
+the Siletti/Seeker human brain atlases using the FUMA Cell Type module. Results signiﬁcant after correction for
+multiple comparisons in each analysis were evaluated for replication by over-representation analysis (ORA) of
+the HEAL2 module (n = 115 ME/CFS risk genes prioritized by a graph neural network trained on rare coding
+variants from whole-genome sequencing of 283 cases and 213 controls of European ancestry) against the same
+gene-set, tissue, and cell-type annotations used in the primary analysis.
+2.1. Input Genome-Wide Association Studies
+We integrated summary statistics from two publicly available genome-wide association studies
+(GWAS) of ME/CFS, hereafter referred to as the DecodeME GWAS-1 (DME-1) and Million Veteran
+Program (MVP) cohorts (Table 2). They were selected among the available summary statistics (Table 1)
+based on the absence of overlap in controls and the restriction to European ancestry, the latter criterion
+to ensure the use of a speciﬁc reference panel (1000 Genomes Phase 3 European) for linkage disequilib-
+rium (LD) estimation in post-GWAS analyses. Neither DME-1 nor MVP summary statistics include sex
+chromosomes, so the present study is limited to autosomal variants.
+DME-1 comprised 15,579 ME/CFS cases of European ancestry (82% female) and 259,909 sex and
+ancestry matched controls selected from the UK Biobank (UKB) participants [10]. Summary statistics
+
+4 of 25
+were downloaded from the Open Science Framework repository and were originally reported on
+GRCh38. The repository also provides a variant-level quality-control ﬁle (gwas_qced.var.gz) listing
+all variants that passed the study-internal ﬁlters; this ﬁle was used as a pre-ﬁlter before applying the
+standardized thresholds described below. In DecodeME case ascertainment, participants self-reported
+a clinician-conﬁrmed ME/CFS diagnosis and completed a symptom questionnaire consistent with the
+Canadian Consensus Criteria [3] and/or the US Institute of Medicine criteria [2].
+The MVP cohort comprised 3,891 cases (18.5% female) and 439,202 controls (7.1% female) of
+European ancestry [27]. Summary statistics were obtained from the NHGRI-EBI GWAS Catalog
+(accession GCST90479178) and were originally reported on GRCh38. MVP ME/CFS cases were deﬁned
+using phecode 798.1 (chronic fatigue syndrome) from the PheWAS phecode system [32], which maps
+to ICD-9 code 780.71(chronic fatigue syndrome), ICD-10-CM code G93.3 (postviral fatigue syndrome),
+and ICD-10-CM code R53.82 (equivalent to ICD-9 code 780.71). Participants with at least two phecode-
+mapped ICD code records on distinct dates were classiﬁed as cases; those with no such record were
+classiﬁed as controls [27]. Since the speciﬁc code G93.32 (myalgic encephalomyelitis/chronic fatigue
+syndrome) was introduced on October 1, 2022, after the MVP data collection period ended (September
+2020) [33], all MVP ME/CFS cases in the present study were necessarily coded under these three
+pre-2023 codes.
+The male prevalence of ME/CFS in the MVP cohort (0.77%) is consistent with the meta-analytic
+estimate of 0.89% (95% CI 0.60–1.32) across 23 studies on adults [4], while the female prevalence (2.26%)
+exceeds the corresponding estimate of 1.36% (95% CI 0.91–2.04) [4].
+2.2. Quality Control and Harmonization of Summary Statistics
+For DME-1, variants were ﬁrst restricted to those passing the study-internal QC ﬁlter (gwas_qced.var.gz),
+which excludes variants with imputation INFO score < 0.9. For both cohorts, variants with minor
+allele frequency (MAF) < 0.01 were excluded. Summary statistics were then harmonized using the
+MungeSumstats Bioconductor package [31], which performs allele harmonization against dbSNP 155
+(GRCh38), strand alignment, duplicate and indel removal, and Z-score computation from β coefﬁcients
+and standard errors (compute_z = "BETA"). Non-biallelic variants were retained (bi_allelic_filter
+= FALSE), with frequency ﬂipping handled as for biallelic sites (flip_frq_as_biallelic = TRUE),
+which means that the computed frequency for ﬂipped non-biallelic sites is overestimated. This affects
+the estimated β and SE of the meta-analysis but not the p-values, and therefore does not affect any
+downstream MAGMA analyses (as discussed below). The harmonized GRCh38 ﬁles were then lifted
+over to GRCh37 by a second run of MungeSumstats to support downstream FUMA analysis. Correct-
+ness of the harmonization was validated by randomly sampling 10,000 variants and verifying that
+the effect-allele direction and magnitude were preserved (tolerance |∆β| < 10−6, with sign reversal
+accepted when alleles were complementarily ﬂipped). Because the MVP summary statistics report
+odds ratios and 95% conﬁdence intervals rather than β coefﬁcients and standard errors, effect-size
+estimates were derived before harmonization as β = ln(OR), and the standard error was approximated
+from the 95% conﬁdence interval on the log-odds scale.
+2.3. Meta-Analysis
+A sample-size-weighted Z-score meta-analysis of DME-1 and MVP (∑Neff = 74,219) was con-
+ducted using METAL [34] with the SCHEME SAMPLESIZE directive, which combines per-variant Z-scores
+weighted by effective sample size. The per-variant effective sample size was computed for each cohort
+as Neff = 4 (N−1
+cas + N−1
+con)−1 and appended as a dedicated column designated via the WEIGHTLABEL
+directive. Weighted average allele frequencies across cohorts were tracked with the AVERAGEFREQ ON
+directive, and all available variants were included via REMOVEFILTERS. Only autosomes were included.
+METAL recomputes its own per-study Z-scores from p-values and effect direction under the SCHEME
+
+5 of 25
+Table 2. Summary of GWAS cohorts included in the meta-analysis.
+Cohort
+Ncas
+Ncon
+Neff
+Variants
+% Female
+Case deﬁnition
+DME-1
+15,579
+259,909
+58,792
+8,006,900
+82.4 (cas), 84.2 (con)
+Self-reported clinician-conﬁrmed
+MVP
+3,891
+439,202
+15,427
+9,147,026
+18.5 (cas), 7.1 (con)
+EHR-derived (phecode 798.1)
+Both cohorts are of European ancestry. Variant counts are after quality control, harmonization, and lift-over to GRCh37 by
+MungeSumstats [31]. Original assembly: GRCh38 for both cohorts. DME-1: DecodeME main cohort; MVP: Million Veteran
+Program. Neff = 4 (N−1
+cas + N−1
+con)−1 denotes the effective sample size. % Female: percentage of female participants among cases
+(cas) and controls (con); DME-1 values from [10]; MVP values from S.M. Damrauer (personal communication). Case deﬁnition:
+DME-1 cases self-reported a clinician-conﬁrmed ME/CFS diagnosis and met symptom criteria consistent with the Canadian
+Consensus Criteria and/or US Institute of Medicine criteria. MVP cases were deﬁned by at least two EHR records with ICD
+codes mapped to phecode 798.1 (chronic fatigue syndrome) [27,32].
+SAMPLESIZE directive, so the input Z-scores are not directly used in the meta-analysis. Meta-analytic
+Z-scores are calculated as
+Z = ZDME-1 wDME-1 + ZMVP wMVP
+q
+w2
+DME-1 + w2
+MVP
+,
+(1)
+where wDME-1 =
+q
+N(DME-1)
+eff
+and wMVP =
+q
+N(MVP)
+eff
+are the square roots of the effective sample sizes
+of DME-1 and MVP, respectively. Meta-analytic p-values are then calculated as P = 2 Φ(−|Z|) [34].
+For completeness, the meta-analytic summary statistics were post-processed to recover effect-
+size estimates. Following Equation A.3 of [35], the standard error was approximated as SE =
+(0.5 Neff f (1 −f ))−1/2, where f is the weighted average effect-allele frequency and Neff is the meta-
+analytic effective sample size, and effect sizes were recovered as ˆβ = Z × SE. These quantities are not
+used in any downstream analysis; all post-GWAS analyses are based on SNP-level p-values. Note
+that allele frequencies are affected by overestimation due to the handling of non-biallelic sites during
+harmonization of the input summary statistics, as described above, which propagates to SE and ˆβ but
+not to p-values.
+The meta-analytic summary statistics were generated from the harmonized GRCh38 summary
+statistics of both cohorts and then lifted over to GRCh37 with MungeSumstats for downstream analysis
+with FUMA.
+2.4. Genomic Locus Deﬁnition
+SNPs were considered genome-wide signiﬁcant if P < 5 × 10−8. Among genome-wide signiﬁcant
+SNPs, independent signiﬁcant SNPs were deﬁned as those with pairwise LD r2 < 0.6. Risk loci are
+built around independent signiﬁcant SNPs, collecting variants in LD with them at r2 ≥0.6 and with
+P < 0.05. Adjacent loci separated by less than 250 kb were merged. Within each risk locus, lead SNPs
+were deﬁned as the most signiﬁcant SNP among independent signiﬁcant SNPs that were also mutually
+independent at r2 < 0.1. Note that this construction allows for more than one independent signiﬁcant
+SNP and more than one lead SNP within a single risk locus. LD and MAF were estimated using the
+1000 Genomes Project Phase 3 European reference panel. The major histocompatibility complex (MHC)
+was excluded from locus deﬁnition.
+2.5. Post-GWAS Analyses with MAGMA
+Downstream analyses on the GRCh37 meta-analytic summary statistics were performed using
+the FUMA platform (v1.8.3) [25] in combination with MAGMA (Multi-marker Analysis of GenoMic
+Annotation) (v1.10). First, we ran MAGMA gene analysis: variants were mapped to genes using the
+gene body only (window = 0 kb), and gene-level p-values were computed using the 1000 Genomes
+Phase 3 European LD reference [24]. For each gene g, a Z-score zg = Φ−1(1 −pg) was then calculated,
+where Φ−1 is the probit function, providing a measure of the association of gene g with ME/CFS. The
+vector z of gene-level Z-scores was then used as the outcome variable in three linear regression models
+
+6 of 25
+to detect signiﬁcant associations between the phenotype and tissues, gene sets, and cell types. The
+general expression of the regression model is
+Z ∼β0 + Eβ1 + C1β2 + C2β3 + . . . + ϵ,
+(2)
+with E representing gene attributes, from binary values reﬂecting membership in gene sets to expres-
+sion levels in tissues and cell types, and C1, C2, ...reﬂecting confounders such as gene length and
+average gene expression within a dataset [24–26]. Signiﬁcance is assessed by testing the null hypothesis
+β1 = 0 against the one-sided alternative β1 > 0. Bonferroni and Benjamini-Hochberg corrections were
+applied as described below.
+2.5.1. Gene-Set Analysis
+In gene-set analysis, the regression in Equation (2) is performed for each of 17,023 gene sets
+(curated gene sets: 6,494; GO terms: 10,529) from MSigDB (release 2023.1.Hs), with E a binary variable
+whose value for gene g and set s is 1 if g ∈s and 0 otherwise [24]. Gene sets surviving Benjamini-
+Hochberg (BH) correction over the number of gene sets actually tested by MAGMA (α = 0.05)
+were carried forward to replication. Bonferroni correction results are also reported for comparison.
+BH-corrected p-values were computed using the p.adjust function in R [36] with method = "BH".
+2.5.2. Gene-Tissue Expression Analysis
+Tissue expression enrichment was assessed using the MAGMA gene-tissue expression module
+within FUMA SNP2GENE, applied to GTEx v8 expression proﬁles for 54 tissues. The regression in
+Equation (2) is performed for each tissue, with E a continuous variable calculated as
+Eg,t = 1
+nt
+nt
+∑
+i=1
+log2(eg,ti + 1),
+(3)
+where eg,ti is the expression of gene g in sample ti of tissue t, and nt is the total number of samples
+for that tissue. The average of Eg,t across tissues is used as covariate. Tissues surviving Bonferroni
+correction (P < 0.05/54 = 9.26 × 10−4) were considered signiﬁcant.
+2.5.3. Cell-Type Expression Analysis
+Cell-type expression analysis was performed using the FUMA Cell Type module [26] (v1.8.3),
+taking the MAGMA gene-level association Z-scores from the SNP2GENE job as outcome variable for
+the regression in Equation (2), performed for each cell type, with the value of E for gene g and cell
+type c given by
+Eg,c = 1
+nc
+nc
+∑
+i=1
+log2(eg,ci + 1),
+(4)
+where eg,ci denotes the raw expression of gene g in cell ci of cell type c, and nc is the number of cells in
+that cell type. The regression includes as covariate the average expression ¯Ag of each gene g across all
+cell types within the same dataset,
+¯Ag =
+1
+NC
+NC
+∑
+c=1
+Eg,c,
+(5)
+where NC is the total number of cell types in the dataset under investigation [26]. Two independent
+FUMA jobs were run, one for human brain references and one for mouse brain.
+For the human brain, 107 dissection-level datasets were analyzed: 104 from the Siletti et al.
+(2023) single-nucleus RNA-seq atlas [37] from 4 adult donors (29–60 years), covering cerebral cortex,
+hippocampus, cerebral nuclei, cerebellum, hypothalamus, midbrain, myelencephalon, pons, thalamus,
+and spinal cord; and three from the Seeker et al. (2023) white matter panel comprising samples from
+primary motor cortex (BA4), cerebellum, and cervical spinal cord [38], included to complement the
+Siletti atlas with white matter cell types not covered by that atlas. Since disease onset in ME/CFS
+
+7 of 25
+typically occurs within the fourth decade of life [6], we restricted the Seeker datasets to young donors
+(30–45 years). The total number of cell types across datasets was 2,082.
+For the mouse brain, nine region-level datasets from the DropViz atlas [39] were analyzed:
+Cerebellum (CB), Entopeduncular nucleus and subthalamic nucleus (EP/STN), Frontal cortex (FC),
+Globus pallidus externus and nucleus basalis (GB/NB), Hippocampus (HP), Posterior cortex (PC),
+Striatum (STR), Substantia nigra and ventral tegmental area (SN/VTA), and Thalamus (TH). Cell-
+type annotations were taken from the accompanying DropViz annotation ﬁle, downloaded from
+http://dropviz.org/ [39]. The total number of cell types across datasets was 565.
+All datasets were analyzed at level-2 (L2) cell-type resolution. For both mouse and human
+brain, two parallel analyses were performed: one using Bonferroni correction (PBon < 0.05, k = 565
+for mouse; k = 2,082 for human) and one using Benjamini-Hochberg correction (PBH < 0.05, same
+k). In both analyses, cell types surviving the signiﬁcance threshold were carried forward to step 2
+of the FUMA cell-type pipeline, in which a forward-selection procedure identiﬁes within-dataset
+independent signals. Only cell types identiﬁed as independent signals in step 2 were considered
+signiﬁcant. Subsequently, step 3 conditional analysis was applied to assess independence of signals
+across datasets. For details on FUMA conditional analyses, see [26].
+2.6. Replication of Post-GWAS Analyses
+Gene sets, tissues, and cell types surviving correction for multiple testing in the discovery analyses
+were evaluated for replication using 115 genes previously prioritized by HEAL2, a graph neural
+network (GNN) that predicts ME/CFS risk from whole-genome sequencing (WGS) data from 283
+cases and 213 controls of European ancestry, focusing on loss-of-function and missense variants [20].
+Hereafter, this gene set is referred to as the HEAL2 module. The full set of 17,759 genes tested by
+Zhang et al. (2025) constituted the background for all over-representation analyses (ORA) [20]. Gene
+symbols were mapped to Ensembl identiﬁers using the AnnotationDbi::select function from the
+AnnotationDbi Bioconductor package [40], with org.Hs.eg.db as the annotation database [41]; when a
+symbol mapped to multiple Ensembl identiﬁers, all were retained, consistent with the convention used
+by FUMA to build the MSigDB gene-set annotation ﬁle [25]. ORA was performed using the enricher
+function from the clusterProfiler Bioconductor package [42], with a one-sided hypergeometric test,
+pvalueCutoff = 1, qvalueCutoff = 1, minGSSize = 0, and maxGSSize = Inf to return results for
+all tested gene sets regardless of signiﬁcance. Replication p-values were Bonferroni-corrected for the
+number of gene sets, tissues, or cell types signiﬁcant in the discovery analysis, and a gene set, tissue, or
+cell type was considered replicated at PBon < 0.05. Foreground gene sets for each analysis type were
+constructed as described in the following subsections.
+2.6.1. Gene-Set Enrichment
+ORA was performed via a one-sided hypergeometric test against the same MSigDB GMT collection
+used in the primary MAGMA analysis (MSigDB_20231Hs_MAGMA.txt, available at https://fuma.ctglab.
+nl/downloadPage), with gene sets and query genes both restricted to the HEAL2 background prior to
+testing. Bonferroni correction was applied over the number of gene sets with non-empty overlap with
+the HEAL2 background and therefore testable by ORA.
+2.6.2. Tissue Expression Enrichment
+The foreground for each tissue comprised the genes signiﬁcantly upregulated in that tissue
+relative to all others, as provided in the FUMA tissue expression ﬁle gtex_v8_ts_DEG.txt. This
+ﬁle was generated by FUMA from GTEx v8 RNA-seq data by two-sided t-tests comparing the log2
+expression of each gene in a given tissue against all other tissues. Genes surviving Bonferroni correction
+(α = 0.05) and absolute log2 fold-change > 0.58 (equivalent to a fold-change > 1.5) were considered
+differentially expressed genes (DEGs). The sign of the t-score was used to distinguish between
+upregulated and downregulated genes [25].
+
+8 of 25
+2.6.3. Cell-Type Expression Enrichment
+Foreground gene sets were constructed from the FUMA pre-processed single-nucleus RNA-seq
+expression matrices, downloaded from the FUMA website (https://fuma.ctglab.nl/downloadPage).
+These matrices are standardized by FUMA from the original atlas data, using log2 transformation
+with pseudocount, as in Equation (4). The matrices also include the average expression ¯Ag of each
+gene g across all cell types within the same dataset (see Equation (5)) [26]. To identify the speciﬁcally
+expressed genes (SEGs) for each cell type in each dataset, we implemented the top decile expression
+proportion (TDEP) method, as described in [43]. We converted Eg,c to linear scale as LEg,c = 2Eg,c −1,
+and we then computed the expression proportion of gene g in cell type c as
+PEg,c =
+LEg,c
+∑NC
+c=1 LEg,c
+.
+(6)
+where NC is the number of cell types in the dataset under investigation. Then, we identiﬁed as SEGs the
+genes with PEg,c in the top 10% of all genes in that cell type. We applied as further ﬁlter a fold-change
+threshold of 2, which means that the expression of gene g in cell type c should be at least twice the
+average expression of gene g across all cell types. We leveraged the log2-transformed expression values
+Eg,c and ¯Ag provided by FUMA to apply the fold-change threshold, which is equivalent to applying
+the following rule: Eg,c −¯Ag > 1. Gene sets were constructed separately for each cell type in each
+dataset.
+2.7. Software and Reproducibility
+All pre-processing and post-processing analyses were conducted in R [36] (v4.4.1). Key pack-
+ages include data.table [44] for large-ﬁle I/O, MungeSumstats for summary-statistic harmonization
+and lift-over [31], clusterProfiler for over-representation analysis [42], AnnotationDbi [40] and
+org.Hs.eg.db [41] for gene-symbol-to-Ensembl identiﬁer mapping. The meta-analysis was performed
+with METAL (v1.10) [34]. FUMA (v1.8.3) [25,26] and MAGMA (v1.10) [24] were used for locus def-
+inition, gene-based, gene-set, tissue expression, and cell-type analyses. The pipeline is controlled
+by three scripts: MetaME_main.R, which downloads and harmonizes the input summary statistics,
+performs the meta-analysis, and calculates genomic inﬂation factors; MetaME_func.R, which contains
+all functions called by MetaME_main.R; and MetaME_POST.R, which reads and processes FUMA output
+ﬁles to perform all post-processing analyses, generates the foreground gene sets for replication, per-
+forms all replication analyses, and generates the result tables included in the present manuscript. A
+conﬁguration ﬁle (MetaME_config.yml) and two CSV ﬁles (cohorts.csv and meta_analyses.csv) are
+used to specify the input summary statistics, the desired meta-analysis, and the analysis parameters.
+This framework can be easily extended to the additional cohorts listed in Table 1 by simply adding
+rows to meta_analyses.csv. It will automatically add METAL correction for overlapping samples,
+when needed. As soon as new cohorts become available, this framework will provide a basis for
+future research. Analysis scripts, conﬁguration ﬁles, FUMA output, and instructions for reproducing
+all results are available at https://github.com/paolomaccallini-hub/MetaME_POST under an MIT
+licence.
+3. Results
+3.1. Meta-Analysis Identiﬁes Five Genome-Wide Signiﬁcant Loci
+The sample-size-weighted meta-analysis of DME-1 and MVP (∑Neff = 74,219; 8,859,361 variants
+after post-processing QC and lift-over to GRCh37) identiﬁed 158 genome-wide signiﬁcant variants
+clustering into ﬁve independent genomic risk loci (P < 5 × 10−8; Figure 2a, Table 3). The most
+signiﬁcant locus was located on chromosome 20, with three pairwise independent signals (rs4810894,
+rs8119308, rs3091574), with rs4810894 as the lead (P = 3.81 × 10−11) (Figure 2c). The remaining four
+loci were located on chromosomes 6 (rs2503773; P = 3.28 × 10−8), 12 (rs12579722; P = 2.02 × 10−8), 15
+(rs7165327; P = 3.11 × 10−8), and 19 (rs1982935; P = 3.85 × 10−8), each containing a single independent
+
+9 of 25
+signal. All but the chromosome 19 locus overlap with loci reported in the original DecodeME preprint,
+with the chromosome 12 locus detected only in the DME-2 cohort (see Table 1) and below signiﬁcance
+in DME-1 [10]. GRCh38 coordinates for lead SNPs are reported in S1 File, sheet S1. Risk loci for DME-1,
+detected by FUMA SNP2GENE module according to the same criteria, are available in S1 File, sheet S2.
+No genome-wide signiﬁcant loci were identiﬁed in the MVP cohort.
+The meta-analysis showed little evidence of genomic inﬂation (λ = 1.069), comparable to that
+of DME-1 alone (λ = 1.066) and higher than that of MVP alone (λ = 1.011). The addition of MVP to
+DME-1 reduces the association signal for the most signiﬁcant P values of DME-1, while it improves
+the signal for less signiﬁcant P values, as shown by the QQ plot in Figure 2b.
+Table 3. Genomic risk loci of the sample-size weighted meta-GWAS.
+Lead SNP
+Meta (DME-1 + MVP)
+DME-1
+MVP
+RSID
+Variant
+Z
+FRQ
+−log10 P
+Z
+FRQ
+−log10 P
+Z
+FRQ
+−log10 P
+rs2503773
+6:98,537,145:A:G
+−5.53
+0.449
+7.48
+−5.29
+0.450
+6.91
+−1.79
+0.446
+1.14
+rs12579722
+12:118,563,202:T:C
++5.61
+0.061
+7.69
++4.70
+0.061
+5.59
++3.14
+0.060
+2.76
+rs7165327
+15:55,158,922:A:G
++5.54
+0.314
+7.51
++5.78
+0.312
+8.12
++0.87
+0.321
+0.41
+rs1982935
+19:31,857,790:C:T
++5.50
+0.181
+7.41
++4.72
+0.180
+5.64
++2.84
+0.182
+2.34
+rs4810894†
+20:47,532,999:A:G
++6.61
+0.633
+10.42
++6.79
+0.634
+10.96
++1.24
+0.628
+0.67
+FUMA SNP2GENE identiﬁed ﬁve genomic risk loci for the meta-analysis generated by METAL with the sample-size weighted
+method, using as input the summary statistics of the main DecodeME cohort and the Million Veteran Program ME/CFS
+cohort of European ancestry (DME-1 and MVP in Table 1, respectively). Reference build is GRCh37 (GRCh38 coordinates are
+provided in S1 File, sheet S1). Statistics for the meta-analysis and for the input summary statistics are reported as Z-score
+(sign reﬂects effect-allele direction) and −log10 P; values exceeding the genome-wide signiﬁcance threshold −log10 P > 7.30
+(i.e. P < 5 × 10−8) are in bold. The effect allele is the alternative one. FRQ: effect-allele frequency (weighted average for
+meta-analysis). †The chromosome 20 locus contains three pairwise independent signiﬁcant SNPs (r2 < 0.6): rs4810894 (lead),
+rs8119308, and rs3091574; statistics are shown for the lead SNP only. Risk loci for DME-1 are available in S1 File, sheet S2.
+3.2. Gene-Set Enrichment Analysis Reveals Convergent Synaptic Signal
+Gene-set analysis using MAGMA tested 17,009 of the 17,023 gene sets in the input ﬁle
+(MSigDB_20231Hs_MAGMA.txt). Twelve gene sets were signiﬁcantly enriched for association signal
+in the DME-1 + MVP meta-analysis after Benjamini-Hochberg correction (PBH < 0.05, k = 17,009;
+Table 4). All 12 span neuronal and synaptic categories from Gene Ontology cellular components,
+Gene Ontology molecular functions, and Reactome. Three of the 12 also survived the more stringent
+Bonferroni correction (P < 0.05/17,009 = 2.94 × 10−6): postsynaptic specialization, neuron-to-neuron
+synapse, and somatodendritic compartment, all Gene Ontology cellular component terms implicat-
+ing the synapse in general and post-synapses in particular. Neither DME-1 nor MVP alone reached
+signiﬁcant enrichment after BH correction (S1 File, sheet S3).
+Replication was evaluated using the HEAL2 module of ME/CFS risk genes [20]. Only 6,063 of the
+17,023 input gene sets had non-empty overlap with the HEAL2 background (17,759 genes) and were
+testable. Seven of the 12 BH-signiﬁcant gene sets were replicated at Bonferroni-corrected signiﬁcance
+(P < 0.05/12 = 4.17 × 10−3; shaded rows in Table 4), of which six also survived Bonferroni correction
+in the HEAL2 module (P < 0.05/6,063 = 8.25 × 10−6; bold replication p-values in Table 4). All
+three gene sets surviving Bonferroni correction in discovery were replicated at Bonferroni-corrected
+signiﬁcance (P < 0.05/3 = 0.017; P† in Table 4).
+While the three Bonferroni-signiﬁcant replicated sets point to neuronal soma, dendrites, and post-
+synapse, BH-signiﬁcant replicated gene sets extend the signal to the entire synapse, with glutamatergic
+synapses emerging as the most speciﬁc replicated term.
+3.3. Tissue Expression Enrichment Implicates Multiple Brain Regions
+MAGMA gene-tissue expression analysis using GTEx v8 tissue-speciﬁc proﬁles (54 tissues)
+identiﬁed eleven brain regions and the pituitary reaching Bonferroni-corrected signiﬁcance (P <
+
+10 of 25
+(a)
+(b)
+(c)
+Figure 2. Genome-wide association results for the DME-1 + MVP meta-analysis. (a) Manhattan plot of −log10 P
+values for 8,859,361 SNPs across the autosomes for the DME-1 + MVP meta-analysis (GRCh37). The horizon-
+tal dashed line indicates the genome-wide signiﬁcance threshold (P < 5 × 10−8). The plot was generated by
+FUMA [25]. (b) Quantile-quantile (QQ) plot of observed versus expected −log10 P values for the DME-1 + MVP
+meta-analysis (red), DME-1 alone (blue), and MVP alone (green). The dashed line indicates the expected distribu-
+tion under the null hypothesis of no association. Genomic inﬂation factors: λMETA = 1.069 for the meta-analysis;
+λDME−1 = 1.066 for DME-1; λMVP = 1.011 for MVP. (c) Z-scores for the four most signiﬁcant variants of the meta-
+analysis (all on chromosome 20), shown separately for DME-1 + MVP, DME-1, and MVP. Each panel corresponds
+to one variant, identiﬁed by its GRCh37 coordinates and rs identiﬁer; the meta-analysis p-value is also reported in
+the panel title. Effect-allele frequencies are annotated in blue above each bar; effective sample sizes are annotated
+in red below each bar.
+
+11 of 25
+Table 4. MAGMA gene-set enrichment results and replication.
+DME-1 + MVP
+DME-1
+MVP
+Replication
+Gene set
+N
+β
+SE
+P
+PBH
+β
+SE
+P
+β
+SE
+P
+FE
+P
+Postsynaptic specializationa
+342
+0.246
+0.047
+9.78 × 10−8
+0.002
+0.171
+0.048
+1.99 × 10−4
+0.107
+0.046
+1.01 × 10−2
+7.34
+5.21 × 10−10†
+Neuron to neuron synapsea
+360
+0.213
+0.046
+1.68 × 10−6
+0.010
+0.160
+0.047
+3.37 × 10−4
+0.072
+0.045
+5.32 × 10−2
+7.00
+1.05 × 10−9†
+Somatodendritic compartmenta
+790
+0.145
+0.031
+1.79 × 10−6
+0.010
+0.121
+0.032
+7.64 × 10−5
+0.055
+0.031
+3.56 × 10−2
+3.49
+3.44 × 10−6†
+Neuronal systemb
+383
+0.199
+0.046
+6.32 × 10−6
+0.027
+0.116
+0.047
+7.11 × 10−3
+0.034
+0.045
+2.24 × 10−1
+5.68
+1.70 × 10−7
+Glutamatergic synapsea
+387
+0.184
+0.043
+9.81 × 10−6
+0.033
+0.122
+0.045
+3.42 × 10−3
+0.064
+0.043
+6.62 × 10−2
+4.91
+6.15 × 10−6
+Postsynaptic density membranea
+97
+0.357
+0.087
+1.88 × 10−5
+0.046
+0.215
+0.090
+8.38 × 10−3
+0.145
+0.086
+4.61 × 10−2
+3.15
+1.33 × 10−1
+AMPA receptor complexa
+23
+0.711
+0.176
+2.59 × 10−5
+0.046
+0.512
+0.178
+2.03 × 10−3
+0.473
+0.179
+4.03 × 10−3
+—
+—
+Postsynapsea
+622
+0.143
+0.035
+2.64 × 10−5
+0.046
+0.100
+0.037
+3.10 × 10−3
+0.050
+0.035
+7.75 × 10−2
+4.79
+1.34 × 10−8
+Neuron projectiona
+1258
+0.100
+0.025
+3.19 × 10−5
+0.046
+0.085
+0.026
+4.82 × 10−4
+0.060
+0.025
+7.80 × 10−3
+2.43
+1.78 × 10−4
+Inorg. mol. entity transm. transporterc
+622
+0.144
+0.036
+3.21 × 10−5
+0.046
+0.072
+0.036
+2.34 × 10−2
+0.048
+0.035
+8.72 × 10−2
+0.49
+9.22 × 10−1
+Transmission across synapsesb
+250
+0.223
+0.056
+3.22 × 10−5
+0.046
+0.156
+0.057
+3.42 × 10−3
+−0.002
+0.055
+5.13 × 10−1
+3.17
+2.11 × 10−2
+Synaptic membranea
+363
+0.185
+0.046
+3.22 × 10−5
+0.046
+0.159
+0.048
+4.69 × 10−4
+0.033
+0.046
+2.39 × 10−1
+2.93
+1.03 × 10−2
+Regression between gene-level Z-scores for the DME-1 + MVP meta-analysis and gene sets from MSigDB_20231Hs_MAGMA.txt identiﬁes 12 regression coefﬁcients (β, corresponding to β1 of Equation (2)) signiﬁcantly greater
+than zero after Benjamini-Hochberg correction (PBH < 0.05). Gene sets span terms from Gene Ontology (GO) cellular components (a), GO molecular functions (c), and Reactome (b). Bonferroni thresholds based on the
+number of gene sets actually tested by MAGMA in each cohort: P < 0.05/17,009 = 2.94 × 10−6 for DME-1 + MVP (k = 17,009) and MVP (k = 17,009); P < 0.05/17,008 = 2.94 × 10−6 for DME-1 (k = 17,008). Three
+gene sets survive Bonferroni correction in DME-1 + MVP (P < 2.94 × 10−6, shown in bold); none survives BH correction in DME-1 or MVP alone (S1 File, sheet S3). Replication was performed as over-representation
+analysis (ORA) of the HEAL2 module (n = 115 ME/CFS risk genes) [20] against the same MSigDB gene set collection, restricting foreground and background to the 17,759 genes used in the original HEAL2 study [20],
+implemented via enricher in clusterProfiler [42]. Of the 17,023 input gene sets, k = 6,063 had non-empty overlap with the HEAL2 background and were testable; Bonferroni correction for genome-wide HEAL2
+replication was applied over these k = 6,063 tests (P < 0.05/6,063 = 8.25 × 10−6). The AMPA receptor complex (—) had no HEAL2 genes in the background and could not be tested. Shaded rows indicate positive replication
+(P < 0.05/12 = 4.17 × 10−3) of gene sets surviving BH correction in discovery. P† indicates gene sets surviving Bonferroni correction in discovery (P < 2.94 × 10−6) that were replicated at Bonferroni-corrected signiﬁcance in
+the HEAL2 module (P < 0.05/3 = 0.017). N: number of genes in the gene set. SE: standard error of β. FE: fold enrichment. P: raw p-value.
+
+12 of 25
+0.05/54 = 9.26 × 10−4; Table 5; Figure 3). The strongest signals were observed in cerebellar hemisphere
+(P = 2.87 × 10−7; PBon = 1.55 × 10−5; β = 0.031) and cerebellum (P = 3.50 × 10−7; PBon = 1.89 × 10−5;
+β = 0.031), followed by frontal cortex BA9 (P = 3.81 × 10−7), cortex (P = 4.64 × 10−7), nucleus
+accumbens basal ganglia (P = 2.58 × 10−6), anterior cingulate cortex BA24 (P = 5.34 × 10−6), caudate
+basal ganglia (P = 1.51 × 10−5), hypothalamus (P = 1.78 × 10−5), hippocampus (P = 6.09 × 10−5),
+amygdala (P = 6.53 × 10−5), putamen basal ganglia (P = 1.03 × 10−4), and pituitary (P = 2.37 × 10−4).
+No peripheral tissue approached signiﬁcance. All signiﬁcant tissues were signiﬁcant in DME-1 alone,
+with comparable effect sizes (β) and generally smaller P-values, while MVP showed no signiﬁcant
+tissue enrichment (Table 5 and S1 File, sheet S4).
+Replication was performed by over-representation analysis (ORA) of the HEAL2 module (n = 115
+genes) against genes upregulated in each signiﬁcant tissue (GTEx v8 gtex_v8_ts_DEG.txt), using as
+background the 17,759 genes investigated in the original HEAL2 study, implemented via the enricher
+function in clusterProfiler [42]. Three tissues survived Bonferroni correction for replication (P <
+0.05/12 = 4.17 × 10−3): frontal cortex BA9 (P = 1.57 × 10−3), nucleus accumbens basal ganglia (P =
+1.77 × 10−3), and hippocampus (P = 2.05 × 10−3). In the original HEAL2 study, enrichment against 50
+human tissues using a two-sided t-test on expression levels reported 24 Bonferroni-signiﬁcant signals,
+with cerebral cortex, basal ganglia, hippocampus, hypothalamus, cerebellum, amygdala, and pituitary
+among the top-ten results [20]; a proﬁle closely resembling our discovery results.
+3.4. Human Brain Cell-Type Analysis Implicates Eccentric Medium Spiny Neurons and Glutamatergic
+Neurons in White Matter
+Cell-type expression analysis using the FUMA Cell Type module applied to the Siletti et al. (2023)
+human brain single-nucleus RNA-seq atlas [37] and the Seeker et al. (2023) white-matter panel [38] (107
+datasets; level-2 resolution; 2,082 cell-type tests in total) identiﬁed one cell type surviving Bonferroni
+correction (P < 0.05/2,082 = 2.40 × 10−5): the eccentric medium spiny neuron (eMSN) in the
+claustrum (S-47; P = 7.93 × 10−6; PBon = 0.017; β = 0.045, SE = 0.011; Table 6). No cell type in the
+Seeker white-matter datasets reached Bonferroni signiﬁcance.
+To characterise the broader association signal, the analysis was extended using Benjamini-
+Hochberg (BH) correction (k = 2,082), which identiﬁed 19 independent signals passing PBH < 0.05
+and FUMA step 2 conditional analysis (Table 6). Fourteen corresponded to eMSNs distributed across
+multiple cerebral nuclei regions in the Siletti atlas, including the claustrum, globus pallidus exter-
+nus, septum, substantia innominata, central nucleus, putamen, basolateral and corticomedial nuclear
+groups of the amygdala, and the insular cortex, as well as two thalamic subregions (VA, VLN) and two
+
+13 of 25
+Table 5. MAGMA gene-tissue expression analysis and replication.
+DME-1 + MVP
+DME-1
+MVP
+Replication
+Tissue
+β
+SE
+P
+PBon
+β
+SE
+P
+β
+SE
+P
+FE
+P
+Cerebellar hemisphere
+0.031
+0.006
+2.87 × 10−7
+1.55 × 10−5
+0.026
+0.006
+1.97 × 10−5
+−0.006
+0.006
+8.38 × 10−1
+1.36
+3.74 × 10−2
+Cerebellum
+0.031
+0.006
+3.50 × 10−7
+1.89 × 10−5
+0.027
+0.007
+2.37 × 10−5
+−0.006
+0.006
+8.21 × 10−1
+1.43
+2.18 × 10−2
+Frontal cortex BA9
+0.034
+0.007
+3.81 × 10−7
+2.06 × 10−5
+0.039
+0.007
+3.37 × 10−8
+0.002
+0.007
+3.60 × 10−1
+1.90
+1.57 × 10−3†
+Cortex
+0.035
+0.007
+4.64 × 10−7
+2.51 × 10−5
+0.039
+0.007
+5.71 × 10−8
+0.005
+0.007
+2.56 × 10−1
+1.64
+2.45 × 10−2
+Nucleus accumbens (BG)
+0.035
+0.008
+2.58 × 10−6
+1.39 × 10−4
+0.039
+0.008
+4.40 × 10−7
+0.010
+0.008
+9.38 × 10−2
+2.08
+1.77 × 10−3†
+Anterior cingulate cortex BA24
+0.032
+0.007
+5.34 × 10−6
+2.88 × 10−4
+0.040
+0.008
+6.91 × 10−8
+0.001
+0.007
+4.46 × 10−1
+1.58
+5.55 × 10−2
+Caudate basal ganglia
+0.033
+0.008
+1.51 × 10−5
+8.14 × 10−4
+0.038
+0.008
+1.29 × 10−6
+0.008
+0.008
+1.46 × 10−1
+1.85
+1.32 × 10−2
+Hypothalamus
+0.034
+0.008
+1.78 × 10−5
+9.63 × 10−4
+0.038
+0.008
+2.67 × 10−6
+0.001
+0.008
+4.58 × 10−1
+1.62
+3.93 × 10−2
+Hippocampus
+0.031
+0.008
+6.09 × 10−5
+3.29 × 10−3
+0.037
+0.008
+3.75 × 10−6
+0.002
+0.008
+3.93 × 10−1
+2.18
+2.05 × 10−3†
+Amygdala
+0.030
+0.008
+6.53 × 10−5
+3.53 × 10−3
+0.037
+0.008
+2.25 × 10−6
+0.000
+0.008
+4.99 × 10−1
+1.61
+7.66 × 10−2
+Putamen basal ganglia
+0.030
+0.008
+1.03 × 10−4
+5.56 × 10−3
+0.036
+0.008
+7.41 × 10−6
+0.006
+0.008
+2.31 × 10−1
+1.39
+1.95 × 10−1
+Pituitary
+0.032
+0.009
+2.37 × 10−4
+1.28 × 10−2
+0.030
+0.009
+5.76 × 10−4
+−0.003
+0.009
+6.11 × 10−1
+1.23
+1.86 × 10−1
+Tissues surviving family-wise error correction (FWER), using Bonferroni correction (P < 0.05/54 = 9.26 × 10−4), in the DME-1 + MVP meta-analysis are ordered by signiﬁcance. Per-cohort results are also shown for
+comparison, along with replication results. Regression coefﬁcients and corresponding standard errors of MAGMA tissue-type analysis are indicated by β and SE, respectively. See Equation (2) for reference. All tissues
+reaching Bonferroni-corrected signiﬁcance in the meta-analysis also reached Bonferroni-corrected signiﬁcance in DME-1 alone (bold P values), while none reached nominal signiﬁcance in MVP. The complete results across all
+54 regressions for DME-1 + MVP, DME-1, and MVP are collected in S1 File, sheet S4. Replication was performed by over-representation analysis of the HEAL2 module (n = 115 genes) against genes upregulated in each
+signiﬁcant tissue (GTEx v8 gtex_v8_ts_DEG.txt), using the 17,759 background genes employed in the original HEAL2 study, implemented via the enricher function in clusterProfiler [42]. P† indicates gene sets
+surviving Bonferroni correction in discovery that were replicated at Bonferroni-corrected signiﬁcance in the HEAL2 module (k = 12; threshold P < 0.05/12 = 4.17 × 10−3). FE: fold enrichment.
+
+14 of 25
+Figure 3. MAGMA gene property analysis for tissue speciﬁcity. Bar plot of −log10 P values for the association be-
+tween tissue-speciﬁc gene expression proﬁles and DME-1 + MVP gene-level association statistics across 54 GTEx v8
+tissues, computed using MAGMA v1.10 gene-property analysis within the FUMA SNP2GENE pipeline [25].
+The dashed line indicates the Bonferroni signiﬁcance threshold (P < 0.05/54 = 9.26 × 10−4, corresponding to
+−log10 P > 3.03). Of the twelve tissues reaching Bonferroni-corrected signiﬁcance, eleven are brain regions; the
+pituitary also reached signiﬁcance. No peripheral tissue reached signiﬁcance. All twelve signiﬁcant tissues were
+also individually signiﬁcant in DME-1 alone (Bonferroni correction, k = 54), while none was associated with
+MVP alone. Downward arrows indicate tissues that survived Bonferroni-corrected replication against the HEAL2
+module (P < 0.05/12 = 4.17 × 10−3; see Table 5).
+hippocampal subﬁelds (HiH.CA1, HiT.CA4). One additional signal corresponded to a medium spiny
+neuron (MSN, distinct from eMSN) in the hippocampus head CA1 ﬁeld (S-61). The remaining four
+signals comprised three glutamatergic neurons in the Seeker white-matter panel (SK-332 BA4, SK-334
+CB, SK-336 CSC) and one thalamic excitatory neuron (S-106 LP.VPL). The extensive collinearity among
+eMSN entries (Figure 4) indicates a single distributed genetic signal rather than independent cell-type
+associations.
+Replication was evaluated using the HEAL2 module of ME/CFS risk genes [20], implemented via
+the enricher function in clusterProfiler [42]. Of the 19 BH-signiﬁcant signals, two were replicated
+at Bonferroni-corrected signiﬁcance (P < 0.05/19 = 2.63 × 10−3; shaded rows in Table 6): the eMSN
+in the basolateral nuclear group lateral nucleus (S-57 BLN.La; P = 2.48 × 10−3; FE = 2.31) and
+the glutamatergic neuron in cerebellar white matter (SK-334 CB; P = 1.85 × 10−3; FE = 3.47). The
+glutamatergic cerebellar signal is independent from the eMSN signal, representing a distinct biological
+ﬁnding, according to FUMA step 3 conditional analysis (Figure 4). Genes from the HEAL2 modules
+that overlap with cell SEGs are collected in the supplementary ﬁle, for each one of the cell types tested
+(S1 File, sheet S5). Neither DME-1 nor MVP alone reached BH signiﬁcance for any cell type in the
+human atlas (S1 File, sheet S5).
+3.5. Mouse Cell-Type Expression Analysis Was Not Replicated
+Cell-type expression analysis using the FUMA Cell Type module with the DropViz mouse brain
+atlas (nine regions; level-2 resolution) identiﬁed six neuronal cell types surviving Bonferroni correction
+
+15 of 25
+Table 6. Independent cell types from step 2 of the FUMA cell-type pipeline (Siletti/Seeker human brain atlases; level-2 resolution; BH correction), with per-cohort statistics and HEAL2 module
+replication.
+DME-1 + MVP
+DME-1
+MVP
+Replication
+Atlas
+Gross region
+Dissection
+Cell type
+β
+SE
+P
+PBH
+β
+SE
+P
+β
+SE
+P
+FE
+P
+S-47
+Cerebral nuclei
+Cla
+eMSN
+0.045
+0.011
+7.93 × 10−6
+0.017
+0.027
+0.011
+7.09 × 10−3
+0.023
+0.010
+1.48 × 10−2
+1.44
+1.35 × 10−1
+S-44
+Cerebral nuclei
+GP.Gpe
+eMSN
+0.033
+0.008
+3.20 × 10−5
+0.030
+0.021
+0.009
+6.85 × 10−3
+0.015
+0.008
+3.53 × 10−2
+1.16
+3.49 × 10−1
+SK-332
+White matter
+BA4
+Glut.
+0.034
+0.009
+6.23 × 10−5
+0.030
+0.035
+0.009
+4.62 × 10−5
+0.012
+0.009
+7.51 × 10−2
+1.64
+9.28 × 10−2
+S-46
+Basal forebrain
+SEP
+eMSN
+0.035
+0.009
+1.09 × 10−4
+0.030
+0.018
+0.010
+3.41 × 10−2
+0.018
+0.009
+2.23 × 10−2
+1.33
+2.72 × 10−1
+S-49
+Basal forebrain
+SI
+eMSN
+0.038
+0.010
+1.13 × 10−4
+0.030
+0.017
+0.011
+5.99 × 10−2
+0.024
+0.010
+9.80 × 10−3
+2.05
+3.97 × 10−3
+S-45
+Amygdala
+CEN
+eMSN
+0.040
+0.011
+1.24 × 10−4
+0.030
+0.025
+0.011
+1.46 × 10−2
+0.025
+0.011
+9.33 × 10−3
+1.79
+2.20 × 10−2
+S-52
+Basal nuclei
+Pu
+eMSN
+0.033
+0.009
+1.28 × 10−4
+0.030
+0.022
+0.009
+8.56 × 10−3
+0.010
+0.009
+1.18 × 10−1
+1.75
+1.75 × 10−2
+S-57
+Amygdala
+BLN.La
+eMSN
+0.042
+0.012
+1.36 × 10−4
+0.030
+0.028
+0.012
+1.03 × 10−2
+0.026
+0.011
+1.07 × 10−2
+2.31
+2.48 × 10−3
+S-54
+Basal nuclei
+CaB
+eMSN
+0.028
+0.008
+1.47 × 10−4
+0.030
+0.018
+0.008
+1.12 × 10−2
+0.010
+0.008
+9.25 × 10−2
+1.89
+1.17 × 10−2
+S-48
+Amygdala
+CMN
+eMSN
+0.046
+0.013
+1.60 × 10−4
+0.030
+0.029
+0.013
+1.46 × 10−2
+0.029
+0.013
+9.70 × 10−3
+1.30
+2.74 × 10−1
+S-110
+Thalamus
+VA
+eMSN
+0.032
+0.009
+1.80 × 10−4
+0.030
+0.017
+0.009
+3.45 × 10−2
+0.015
+0.009
+4.76 × 10−2
+1.71
+2.68 × 10−2
+SK-334
+White matter
+CB
+Glut.
+0.043
+0.012
+1.87 × 10−4
+0.030
+0.043
+0.013
+3.44 × 10−4
+0.020
+0.012
+4.95 × 10−2
+3.47
+1.85 × 10−3
+S-106
+Thalamus
+LP.VPL
+Thal.exc.
+0.025
+0.007
+2.19 × 10−4
+0.033
+0.018
+0.007
+5.71 × 10−3
+0.004
+0.007
+2.60 × 10−1
+0.99
+5.66 × 10−1
+S-61
+Hippocampus
+HiH.CA1
+MSN
+0.033
+0.010
+3.34 × 10−4
+0.044
+0.024
+0.010
+7.51 × 10−3
+0.014
+0.009
+6.90 × 10−2
+1.06
+4.64 × 10−1
+S-15
+Cerebral cortex
+Ig
+eMSN
+0.014
+0.004
+3.45 × 10−4
+0.044
+0.005
+0.004
+9.26 × 10−2
+0.001
+0.004
+3.76 × 10−1
+0.89
+7.45 × 10−1
+S-59
+Hippocampus
+HiT.CA4
+eMSN
+0.026
+0.008
+3.73 × 10−4
+0.044
+0.019
+0.008
+8.48 × 10−3
+0.007
+0.008
+1.88 × 10−1
+1.35
+1.71 × 10−1
+S-50
+Amygdala
+BLN.BL
+eMSN
+0.038
+0.011
+3.84 × 10−4
+0.044
+0.022
+0.012
+2.72 × 10−2
+0.025
+0.011
+1.08 × 10−2
+1.94
+8.82 × 10−3
+SK-336
+White matter
+CSC
+Glut.
+0.038
+0.012
+4.24 × 10−4
+0.046
+0.042
+0.012
+2.32 × 10−4
+0.016
+0.011
+8.09 × 10−2
+2.41
+2.49 × 10−2
+S-100
+Thalamus
+VLN
+eMSN
+0.028
+0.008
+4.38 × 10−4
+0.046
+0.020
+0.009
+1.06 × 10−2
+0.008
+0.008
+1.67 × 10−1
+2.00
+2.09 × 10−2
+Nineteen cell types passed Benjamini-Hochberg correction (PBH < 0.05, k = 2,082) and FUMA step 2 conditional analysis in the DME-1 + MVP meta-analysis. One also passed the more stringent Bonferroni correction
+(bold P value): the claustrum eccentric medium spiny neuron (S-47 Cla eMSN). Bonferroni thresholds based on the number of cell types actually tested by MAGMA in each cohort: P < 0.05/2,082 = 2.40 × 10−5 for
+DME-1 + MVP, DME-1, and MVP (k = 2,082 for all three cohorts). Neither DME-1 nor MVP alone reached BH signiﬁcance for any cell type. The complete results for all cohorts and replication are provided in S1 File, sheet S5.
+Replication was performed as over-representation analysis of the HEAL2 module (n = 115 genes) [20] against cell-type foreground gene sets (background: 17,759 genes from the HEAL2 study), implemented via the
+enricher function in clusterProfiler [42]. Of the 2,082 cell types tested in discovery, k = 2,052 had non-empty overlap with the HEAL2 background and were testable in replication (P < 0.05/2,052 = 2.44 × 10−5 for
+genome-wide HEAL2 replication). Shaded rows indicate positive replication (P < 0.05/19 = 2.63 × 10−3) of cell types surviving BH correction in discovery. S-n: Siletti et al. (2023) [37], dataset number n; SK-n: Seeker et al.
+(2023) [38] (young donors, 30–45 years), dataset number n. Dissection abbreviations (Siletti atlas): Cla: claustrum; GP.Gpe: external segment of globus pallidus; SEP: septal nuclei; SI: substantia innominata and nearby nuclei;
+CEN: central nuclear group of the amygdala; Pu: putamen; BLN.La: lateral nucleus of the amygdaloid complex (basolateral nuclear group); CaB: body of the caudate nucleus; CMN: corticomedial nuclear group of the
+amygdala; VA: ventral anterior nucleus of thalamus (lateral nuclear complex); LP.VPL: lateral posterior + ventral posterior lateral nucleus of thalamus (lateral nuclear complex); VLN: ventral group of lateral nuclear complex
+of thalamus; HiH.CA1: head of hippocampus, uncal CA1; Ig: granular insular cortex; HiT.CA4: tail of hippocampus, caudal CA4-DGC; BLN.BL: basal nucleus of the amygdaloid complex (basolateral nuclear group).
+Seeker atlas dissections: BA4: primary motor cortex; CB: cerebellum; CSC: cervical spinal cord. Cell-type abbreviations: eMSN: eccentric medium spiny neuron; MSN: medium spiny neuron; Glut.: glutamatergic neuron;
+Thal.exc.: thalamic excitatory neuron. Statistical abbreviations: β: MAGMA regression coefﬁcient; SE: standard error; P: raw p-value; PBH: Benjamini-Hochberg corrected p-value (k = 2,082); FE: fold enrichment. Anatomical
+nomenclature follows Siletti et al. (2023) [37].
+
+16 of 25
+(P < 0.05/565 = 8.85 × 10−5) and FUMA step 2 conditional analysis in the DME-1 + MVP meta-
+analysis (Table A1). The strongest signal arose in the striatum (STR), where a GABAergic Drd1+ direct-
+pathway spiny projection neuron (dSPN) reached P = 3.96 × 10−8 (PBon = 2.24 × 10−5; β = 0.038). A
+second independent signal was identiﬁed in the globus pallidus (GP), where a GABAergic tyrosine
+hydroxylase-positive (Th+) spiny projection neuron expressing Adora2a reached P = 1.76 × 10−7
+(PBon = 9.95 × 10−5; β = 0.037). Four further independent signals were identiﬁed in the substantia
+nigra (SN; a glutamatergic Slc17a6+ neuron), cerebellum (CB; a glutamatergic Gabra6+ granule cell),
+posterior cortex (PC; a glutamatergic Syt6+ layer 6a neuron), and hippocampus (HC; a glutamatergic
+dentate principal cell expressing C1ql2). Step 3 conditional analysis identiﬁed three collinear pairs
+among the six Bonferroni-signiﬁcant signals: the Th+ SPN (GP) and the glutamatergic neuron (SN); the
+granule cell (CB) and the layer 6a neuron (PC); and the layer 6a neuron (PC) and the dentate principal
+cell (HC) (Figure A1).
+Under the less stringent Benjamini-Hochberg correction, 21 within-dataset independent cell types
+reached statistical signiﬁcance, spanning all nine DropViz regions and including both GABAergic
+and glutamatergic subtypes (Table A1). DME-1 alone reached Bonferroni signiﬁcance for ﬁve of the
+BH-signiﬁcant cell types, including the Th+ SPN in GP and the dentate principal cell (C1ql2+) in HC;
+MVP alone showed no signiﬁcant signals (S1 File, sheet S6). None of the 21 BH-signiﬁcant cell types
+was replicated.
+The DropViz atlas uses the term spiny projection neuron (SPN) for the principal GABAergic
+neurons of the striatum, equivalent to the medium spiny neuron (MSN) terminology used in the
+human atlas. Eccentric SPNs (eSPNs) are the mouse homologues of human eMSNs: the eccentric
+supercluster of SPNs was ﬁrst identiﬁed in mice by Saunders et al. [39] and subsequently recognized
+in humans by Siletti et al. [37]. The dSPN and Th+ SPN signals identiﬁed here are striatal subtypes
+distinct from eSPNs and therefore do not correspond to the eMSN signal identiﬁed in the human
+brain analysis (Table 6). We note, however, that the Th+ SPN (GP dataset, subcluster 3-9) shares the
+Adora2a-Th type marker with the eccentric SPN subtype 13-5 of the striatum dataset [39], which the
+DropViz curators explicitly label as eccentric in the annotation; the relationship between these two
+populations warrants further investigation. An eSPN subtype in the striatum dataset (subcluster 13-2,
+dSPN-like markers; P = 8.72 × 10−6; PBon = 0.005) also reached Bonferroni-corrected signiﬁcance
+in step 1 (S1 File, sheet S6) but was removed by the FUMA step 2 conditional analysis, indicating
+collinearity with the dSPN signal, consistent with the transcriptional overlap between eSPNs and
+canonical SPNs documented by Saunders et al. [39].
+4. Discussion
+In this analysis of a meta-GWAS of 19,470 ME/CFS cases and 699,111 controls, we revealed
+heritability enriched in brain tissues, in neuronal cell types, and in gene sets pointing to synapses
+and post-synapses. We provided independent replication of these results on 115 ME/CFS risk genes
+previously associated with the disease by WGS prioritization of rare variants. The meta-analysis was
+necessary to detect the signal in gene-set and cell-type analysis for the human brain: neither MVP nor
+DME-1 alone reached Benjamini-Hochberg (BH) signiﬁcance for either of the two analyses. Replication
+of the post-GWAS ﬁndings through over-representation analysis of the HEAL2 ME/CFS risk gene
+module extends to ME/CFS the previously documented interplay between genes harbouring common
+variants and those harbouring rare variants in complex traits [17,18].
+The replicated brain tissues implicated the frontal cortex (BA9), basal ganglia, and hippocampus
+while gene-set analysis pointed to post-synapses, with glutamatergic synapses as the most speciﬁc
+signal. These results prompted the focus on cell-type analysis in human brain, which revealed
+two independent cell types: eccentric medium spiny neurons (eMSNs) in the lateral nucleus of the
+amygdala (BLN.La) and a population of glutamatergic neurons in cerebellar white matter.
+The function of eMSNs is not well understood and they have only recently been discovered in
+mouse and human brain [37,39]. They are a transcriptionally distinct class of medium spiny neurons
+
+17 of 25
+Figure 4. Step 3 conditional analysis from the FUMA cell-type pipeline (Siletti/Seeker human brain atlases; level-2
+resolution; BH correction; DME-1 + MVP meta-analysis). Cell types that survive BH correction in discovery and FUMA
+step 2 conditional analysis (Table 6) were subjected to cross-dataset conditional analysis for the detection of collinearity
+(FUMA step 3). The bar plot (top) shows the marginal −log10 P for each of the 19 independent cell types on the x-axis.
+The heatmap shows pairwise cross-dataset proportional signiﬁcance (PS): the value in row i, column j is the −log10 P
+of cell type j after conditioning on cell type i. Values close to 1 (red) indicate that the signal of cell type j is retained
+after conditioning on i (independent signals); values close to 0 (blue) indicate attenuation. Starred cells (∗) denote
+collinear pairs [26]. Cells are displayed in decreasing order of signiﬁcance, as in Table 6. We see extensive collinearity
+among eccentric medium spiny neuron (eMSN) entries across cerebral nuclei. Two signals survived Bonferroni-corrected
+replication in the HEAL2 module: the eMSN in the basolateral amygdala lateral nucleus (BLN.La) and the glutamatergic
+neuron in cerebellar white matter (WM.CB). The WM.CB signal (vertical blue arrow) is retained after conditioning on the
+eMSN signal (horizontal blue arrow), and vice versa (red arrows). Since PS > 0.5 in both comparisons, the two signals
+are considered independent according to the FUMA step 3 criteria.
+
+18 of 25
+(MSNs), which are the principal cell type of the striatum. Like MSNs in general, eMSNs are GABAergic
+neurons with dopaminergic and glutamatergic input [45], but unlike canonical MSNs, eMSNs are
+more broadly and evenly distributed across the cerebral nuclei [37,39]. Recent cell-type analyses
+in the context of post-GWAS interpretation have implicated eMSNs in educational attainment and
+intelligence, and in neuropsychiatric disorders [43]. Our results may provide a genetic basis for the
+consistent ﬁnding of additional brain area recruitment during cognitive tasks [9] and for the almost
+ubiquitous observation of cognitive dysfunction in this patient population [10], characterized by
+deﬁcits in attention, memory, and processing speed [8].
+The other cell type implicated by the present analysis is a population of interstitial white matter
+neurons (IWMNs) in the cerebellum. Abnormalities in IWMNs have been documented in several brain
+diseases, and a possible role in brain wiring, microcirculation, and myelination has been suggested [46].
+In ME/CFS, white matter microstructural abnormalities have been reported across multiple ﬁbre
+tracts, including cerebellar peduncles, and correlate with mental health and disability outcomes [47].
+Whether IWMNs contribute to these abnormalities is unknown, since the investigations on the role of
+IWMNs in human diseases has required speciﬁc postmortem studies [46], never attempted in ME/CFS,
+to our knowledge.
+The replicated gene-set signals suggest a role for postsynaptic compartments and glutamatergic
+synapses in ME/CFS pathogenesis. Combined with the cell-type ﬁndings in the human brain, these as-
+sociations may reﬂect in particular the glutamatergic input onto eMSNs and the glutamatergic identity
+of IWMNs in the cerebellum. Convergent neurochemical evidence comes from magnetic resonance
+spectroscopy (MRS) studies documenting elevated glutamate levels in the posterior cingulate cortex in
+both ME/CFS and Long COVID [48], and from a report of widespread AMPA receptor upregulation
+in Long COVID patients with objective cognitive impairment [49], a condition showing substantial
+overlap with ME/CFS [16]. Glutamatergic dysregulation may also explain the unusual prevalence of
+alcohol intolerance in ME/CFS [7], since alcohol inhibits NMDA receptor-mediated transmission [50].
+At the monogenic level, the best-documented case involves a structural variant spanning AKR1C1
+and AKR1C2 that disrupts expression of both genes and increases synthesis of inhibitory GABAergic
+neurosteroids [21], pointing to the GABAergic side of the same excitatory–inhibitory balance. Together,
+GWAS, neuroimaging, and monogenic evidence converge on an imbalance between excitatory and
+inhibitory neurotransmission as a candidate mechanism in ME/CFS pathogenesis.
+The cell-type analysis of the DropViz mouse brain atlas identiﬁed signiﬁcant signals in the discov-
+ery phase with only partial overlap with the human brain signals: in both analyses, the signiﬁcant cell
+types were exclusively neuronal, and MSNs were implicated in both species, but the speciﬁc cell types
+and their regional distribution differed. This discrepancy may reﬂect the documented transcriptional
+divergence between homologous mouse and human brain cell types [51]. This transcriptional diver-
+gence may also explain why the cell-type enrichment results from the DropViz mouse brain atlas were
+not replicated by the HEAL2 module.
+Several limitations should be noted. The MVP cases were ascertained using PheCode 798.1 from
+electronic health records, which may capture a more heterogeneous phenotype than the clinician-
+conﬁrmed CCC/IOM diagnosis used in DecodeME. The HEAL2 gene module used for replication
+is derived from a preprint that has not yet undergone peer review. An overlap between DecodeME
+cases and CureME biobank patients included in the HEAL2 rare-variant study cannot be excluded,
+although not documented. The cell-type expression thresholds used to deﬁne foreground gene sets
+for ORA replication, while documented in the literature, remain arbitrary. Cell-type analysis was
+performed only on brain cells. Finally, this study focused on European subjects, and whether these
+results generalise to other ancestries is unknown.
+5. Conclusions
+In conclusion, our meta-GWAS and post-GWAS analyses of 19,470 ME/CFS cases provide evi-
+dence for the involvement of brain tissues, synapses, and speciﬁc neuronal cell types in the genetic
+
+19 of 25
+architecture of ME/CFS. The independent replication of these ﬁndings using a gene module derived
+from rare variant analysis strengthens the validity of our results. Larger GWAS with greater ancestry
+diversity, combined with rare variant studies in clinically well-characterised cohorts, are needed to
+conﬁrm and expand these ﬁndings and to further elucidate the pathophysiology of this debilitating
+disease.
+Supplementary Materials: S1 File: Supplementary tables. The workbook contains a README sheet with full
+column descriptions and six data sheets: S1 (genomic risk loci, DME-1 + MVP meta-analysis), S2 (genomic risk
+loci, DME-1 alone), S3 (MAGMA gene-set enrichment analysis, MSigDB 2023.1.Hs), S4 (MAGMA gene-tissue
+expression analysis, GTEx v8), S5 (FUMA cell-type analysis, Siletti/Seeker human brain atlases), S6 (FUMA
+cell-type analysis, DropViz mouse brain atlas). All sheets include per-cohort statistics (DME-1 and MVP) and
+Zhang et al. replication results.
+Author Contributions: Conceptualization, P.M.; methodology, P.M.; software, P.M.; formal analysis, P.M.; investi-
+gation, P.M.; data curation, P.M.; writing—original draft preparation, P.M.; writing—review and editing, P.M.;
+visualization, P.M. The author has read and agreed to the published version of the manuscript.
+Funding: This research received no external funding.
+Institutional Review Board Statement: Not applicable.
+Informed Consent Statement: Not applicable.
+Data Availability Statement: Summary statistics from the DecodeME study (DME-1) are publicly available
+from the Open Science Framework repository (osf.io/rgqs3). MVP summary statistics are available from the
+NHGRI-EBI GWAS Catalog (accession GCST90479178). Analysis scripts, conﬁguration ﬁles, and instructions for
+reproducing all results are available at https://github.com/paolomaccallini-hub/MetaME_POST under an MIT
+licence.
+Acknowledgments: The author is grateful to Andrea Catenacci for his invaluable support throughout the project,
+and to all the patients who contributed their samples to the DME-1, HEAL2, and MVP cohorts, without whom
+this research would not have been possible.
+Conﬂicts of Interest: The author declares no conﬂicts of interest.
+Abbreviations
+The following abbreviations are used in this manuscript:
+
+20 of 25
+ME/CFS
+Myalgic encephalomyelitis/chronic fatigue syndrome
+GWAS
+Genome-wide association study
+WGS
+Whole-genome sequencing
+MVP
+Million Veteran Program
+DME-1
+DecodeME cohort 1
+MAGMA
+Multi-marker Analysis of GenoMic Annotation
+FUMA
+Functional Mapping and Annotation of GWAS
+GTEx
+Genotype-Tissue Expression project
+ORA
+Over-representation analysis
+BH
+Benjamini-Hochberg
+eMSN
+Eccentric medium spiny neuron
+MSN
+Medium spiny neuron
+SEG
+Speciﬁcally expressed gene
+TDEP
+Top decile expression proportion
+LD
+Linkage disequilibrium
+MAF
+Minor allele frequency
+QC
+Quality control
+GWS
+Genome-wide signiﬁcant
+SNP
+Single nucleotide polymorphism
+EHR
+Electronic health record
+IWMN
+Interstitial white matter neuron
+Appendix A. Mouse Brain Cell-Type Analysis
+
+21 of 25
+Table A1. Independent cell types from step 2 of the FUMA cell-type pipeline (DropViz mouse brain atlases; level-2 resolution; BH correction), with per-cohort statistics and HEAL2 module replication.
+DME-1 + MVP
+DME-1
+MVP
+Replication
+Region
+Cell typea
+Class marker
+Type marker
+β
+SE
+P
+PBH
+β
+SE
+P
+β
+SE
+P
+FE
+P
+STR
+dSPN
+Gad1Gad2
+Drd1-Cxcl14
+0.038
+0.007
+3.96 × 10−8
+2.24 × 10−5
+0.027
+0.007
+9.12 × 10−5
+0.007
+0.007
+1.68 × 10−1
+1.34
+1.69 × 10−1
+GP
+Th+ SPN
+Gad1Gad2-Th
+Adora2a-Th
+0.037
+0.007
+1.76 × 10−7
+5.00 × 10−5
+0.031
+0.007
+1.34 × 10−5
+−0.001
+0.007
+5.37 × 10−1
+1.24
+2.61 × 10−1
+SN
+Glut.
+Slc17a6
+Slc17a6.2
+0.026
+0.006
+1.54 × 10−5
+7.90 × 10−4
+0.020
+0.006
+1.04 × 10−3
+0.005
+0.006
+2.07 × 10−1
+1.09
+4.26 × 10−1
+CB
+Granule
+Slc17a7
+Gabra6
+0.024
+0.006
+3.66 × 10−5
+1.29 × 10−3
+0.022
+0.006
+3.14 × 10−4
+−0.003
+0.006
+6.71 × 10−1
+1.43
+1.59 × 10−1
+PC
+Layer6a
+Slc17a7
+Syt6-Sla
+0.042
+0.011
+3.89 × 10−5
+1.29 × 10−3
+0.040
+0.011
+1.40 × 10−4
+−0.009
+0.011
+8.01 × 10−1
+0.86
+7.05 × 10−1
+HC
+DP
+Slc17a7
+C1ql2-Penk
+0.034
+0.009
+5.96 × 10−5
+1.87 × 10−3
+0.034
+0.009
+8.41 × 10−5
+−0.007
+0.009
+7.79 × 10−1
+0.91
+6.54 × 10−1
+SN
+GABA.
+Gad1Gad2
+Gad2.3
+0.030
+0.008
+1.00 × 10−4
+2.70 × 10−3
+0.030
+0.008
+2.04 × 10−4
+−0.000
+0.008
+5.15 × 10−1
+0.84
+7.37 × 10−1
+HC
+–
+Slc17a7
+Pvrl3-Grm5
+0.025
+0.007
+1.36 × 10−4
+2.81 × 10−3
+0.020
+0.007
+2.29 × 10−3
+0.004
+0.007
+2.93 × 10−1
+1.58
+4.90 × 10−2
+PC
+Layer 5a
+Slc17a7-Slc17a6
+Rorb-Pcdh20
+0.039
+0.011
+1.44 × 10−4
+2.81 × 10−3
+0.047
+0.011
+1.14 × 10−5
+−0.002
+0.011
+5.86 × 10−1
+1.55
+9.74 × 10−2
+SN
+VTA
+Th
+Cbln1
+0.018
+0.005
+1.76 × 10−4
+3.11 × 10−3
+0.015
+0.005
+1.63 × 10−3
+0.007
+0.005
+7.80 × 10−2
+1.02
+5.20 × 10−1
+FC
+–
+Gad1Gad2
+Synpr-Pcdh11x
+0.029
+0.008
+2.54 × 10−4
+4.10 × 10−3
+0.027
+0.009
+7.81 × 10−4
+0.000
+0.008
+4.84 × 10−1
+0.70
+8.68 × 10−1
+FC
+pyramidal
+Slc17a7
+Syt6-Kit
+0.033
+0.010
+2.82 × 10−4
+4.30 × 10−3
+0.038
+0.010
+6.40 × 10−5
+−0.011
+0.009
+8.71 × 10−1
+1.29
+2.47 × 10−1
+TH
+NAN
+Slc17a6
+Rora-Cacng4
+0.026
+0.008
+2.98 × 10−4
+4.44 × 10−3
+0.023
+0.008
+1.92 × 10−3
+0.002
+0.008
+3.74 × 10−1
+1.11
+4.28 × 10−1
+CB
+IC
+Slc17a6
+Nrgn
+0.012
+0.004
+3.59 × 10−4
+4.57 × 10−3
+0.008
+0.004
+1.24 × 10−2
+0.001
+0.004
+4.14 × 10−1
+0.84
+7.54 × 10−1
+TH
+PAG
+Gad1Gad2
+Gata3
+0.024
+0.007
+4.19 × 10−4
+4.73 × 10−3
+0.029
+0.007
+4.28 × 10−5
+0.002
+0.007
+3.62 × 10−1
+1.06
+4.66 × 10−1
+HC
+EC
+Slc17a7
+Nxph3-Sema3c
+0.028
+0.009
+1.01 × 10−3
+8.61 × 10−3
+0.032
+0.009
+2.84 × 10−4
+−0.014
+0.009
+9.35 × 10−1
+0.99
+5.62 × 10−1
+ENT
+STN
+Slc17a6
+Pitx2
+0.016
+0.005
+1.32 × 10−3
+1.05 × 10−2
+0.019
+0.006
+4.57 × 10−4
+0.000
+0.005
+4.72 × 10−1
+0.74
+8.65 × 10−1
+PC
+–
+Gad1Gad2
+Pvalb-Nefm
+0.023
+0.008
+1.78 × 10−3
+1.26 × 10−2
+0.025
+0.008
+8.17 × 10−4
+0.008
+0.008
+1.56 × 10−1
+0.98
+5.73 × 10−1
+HC
+–
+Gad1Gad2
+Pvalb-Tac1
+0.022
+0.008
+1.84 × 10−3
+1.29 × 10−2
+0.027
+0.008
+3.48 × 10−4
+0.012
+0.008
+5.30 × 10−2
+0.85
+7.40 × 10−1
+GP
+SI
+Gad1Gad2
+Lamp5-Cplx3
+0.010
+0.004
+4.36 × 10−3
+2.34 × 10−2
+0.011
+0.004
+1.49 × 10−3
+0.000
+0.004
+4.69 × 10−1
+1.09
+4.23 × 10−1
+PC
+–
+Gad1Gad2-Chat
+Synpr-Slc5a7
+0.020
+0.008
+4.87 × 10−3
+2.50 × 10−2
+0.018
+0.008
+1.28 × 10−2
+0.010
+0.008
+9.56 × 10−2
+1.85
+9.03 × 10−3
+Twenty-one cell types passed Benjamini-Hochberg correction (PBH < 0.05, k = 565) and FUMA step 2 conditional analysis in the DME-1 + MVP meta-analysis. Six of them also passed the more stringent Bonferroni correction
+and are indicated by bold P values. Bonferroni thresholds based on the number of cell types actually tested by MAGMA in each cohort: P < 0.05/565 = 8.85 × 10−5 for DME-1 + MVP, DME-1, and MVP (k = 565 for all three
+cohorts); P < 0.05/564 = 8.87 × 10−5 for genome-wide HEAL2 replication (k = 564 cell types with non-empty overlap with the HEAL2 background). Five of the 21 cell types survived Bonferroni correction in DME-1 alone
+(bold P values) and none reached nominal signiﬁcance in MVP alone. Replication was performed as over-representation analysis of the HEAL2 module (n = 115 genes) [20] against the cell-type foreground gene set (17,759
+HEAL2 background genes), implemented via the enricher function in clusterProfiler [42]. Two of the 21 cell types reached nominal signiﬁcance for replication (a glutamatergic neuron in hippocampus and a GABAergic
+neuron in posterior cortex) but none survived Bonferroni correction for replication (P < 0.05/21 = 2.38 × 10−3). The complete results of cell-type analysis against the DropViz mouse brain atlas for all cohorts and replication
+are presented in S1 File, sheet S6. FC: frontal cortex; STR: striatum; GP: globus pallidus; ENT: entopeduncular nucleus; TH: thalamus; SN: substantia nigra; HC: hippocampus; PC: posterior cortex; CB: cerebellum. GABA.:
+GABAergic neuron; Glut.: glutamatergic neuron; dSPN: direct-pathway spiny projection neuron; DP: dentate principal cells; NAN: non-anterior nuclei; IC: inferior colliculus; PAG: periaqueductal gray; STN: subthalamic
+nucleus; SI: substantia innominata; Th+ SPN: tyrosine hydroxylase-positive spiny projection neuron. We followed DropViz nomenclature [39] where Class Marker deﬁnes the broad neurotransmitter identity (e.g. Gad1Gad2:
+GABAergic; Gad1Gad2-Th: GABAergic with tyrosine hydroxylase co-expression; Slc17a6/VGluT2 and Slc17a7/VGluT1: glutamatergic) and Type Marker deﬁnes the speciﬁc subtype within that class. “Cell type” gives the
+curator-assigned label from the DropViz web portal [39]. β: MAGMA regression coefﬁcient; SE: standard error; P: raw p-value; PBH: Benjamini-Hochberg corrected p-value (k = 565); FE: fold enrichment. a All cell types in
+this table are neurons.
+
+22 of 25
+Figure A1. Step 3 conditional analysis from the FUMA cell-type pipeline (DropViz mouse brain atlas; level-2
+resolution; Bonferroni correction; DME-1 + MVP meta-analysis). Cell types surviving Bonferroni correction in
+discovery and FUMA step 2 conditional analysis (Table A1) were subjected to cross-dataset conditional analysis
+for the detection of collinearity (FUMA step 3; see Figure 4 caption for interpretation of the heatmap). Three
+collinear pairs were identiﬁed (starred cells): the Th+ SPN from GP and the glutamatergic neuron from SN; the
+granule cell from CB and the layer 6a neuron from PC; and the layer 6a neuron from PC and the dentate principal
+cell from HC.
+References
+1.
+Komaroff, A.L.; Dantzer, R. Causes of symptoms and symptom persistence in long COVID and myalgic en-
+cephalomyelitis/chronic fatigue syndrome. Cell reports. Medicine 2025, 6, 102259. https://doi.org/10.1016/j.xcrm.
+2025.102259.
+2.
+Institute of Medicine. Beyond Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Redeﬁning an Illness; The National
+Academies Press: Washington, DC, 2015. https://doi.org/10.17226/19012.
+3.
+Carruthers, B.M.; Jain, A.K.; de Meirleir, K.L.; Peterson, D.L.; Klimas, N.G.; Lerner, A.M.; Bested, A.C.; Flor-Henry,
+P.; Joshi, P.; Powles, A.C.P.; et al. Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Clinical Working Case
+Deﬁnition, Diagnostic and Treatment Protocols. Journal of Chronic Fatigue Syndrome 2003, 11, 7–115.
+4.
+Lim, E.J.; Ahn, Y.C.; Jang, E.S.; Lee, S.W.; Lee, S.H.; Son, C.G. Systematic review and meta-analysis of the
+prevalence of chronic fatigue syndrome/myalgic encephalomyelitis (CFS/ME). J Transl Med 2020, 18, 100. https:
+//doi.org/10.1186/s12967-020-02269-0.
+5.
+Bakken, I.J.; Tveito, K.; Gunnes, N.; Ghaderi, S.; Stoltenberg, C.; Trogstad, L.; Håberg, S.E.; Magnus, P. Two age
+peaks in the incidence of chronic fatigue syndrome/myalgic encephalomyelitis: a population-based registry study
+from Norway 2008–2012. BMC Med 2014, 12, 167. https://doi.org/10.1186/s12916-014-0167-5.
+6.
+McGrath, S.J.; Hillier, C.B.; Dibble, J.J.; Schei, T.; Angelsen, A.; Ryback, A.A. Incidence age is bimodal for myalgic
+encephalomyelitis/chronic fatigue syndrome, with higher severity burden for early onset disease. Oxford Open
+Immunology 2026, 7, iqag007, [https://academic.oup.com/ooim/article-pdf/7/1/iqag007/67385802/iqag007.pdf].
+https://doi.org/10.1093/oxﬁmm/iqag007.
+7.
+Chu, L.; Valencia, I.J.; Garvert, D.W.; Montoya, J.G. Onset Patterns and Course of Myalgic Encephalomyeli-
+tis/Chronic Fatigue Syndrome. Front Pediatr 2019, 7, 12. https://doi.org/10.3389/fped.2019.00012.
+
+23 of 25
+8.
+Aoun Sebaiti, M.; Hainselin, M.; Gounden, Y.; Sirbu, C.A.; Sekulic, S.; Lorusso, L.; Nacul, L.; Authier, F.J. System-
+atic review and meta-analysis of cognitive impairment in myalgic encephalomyelitis/chronic fatigue syndrome
+(ME/CFS). Scientiﬁc Reports 2022, 12, 2157. https://doi.org/10.1038/s41598-021-04764-w.
+9.
+Shan, Z.Y.; Barnden, L.R.; Kwiatek, R.A.; Bhuta, S.; Hermens, D.F.; Lagopoulos, J. Neuroimaging characteristics
+of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS): a systematic review. Journal of Translational
+Medicine 2020, 18, 335. https://doi.org/10.1186/s12967-020-02506-6.
+10.
+Team,
+G.D.;
+Boutin,
+T.;
+Bretherick,
+A.D.;
+Dibble,
+J.J.;
+Ewaoluwagbemiga,
+E.;
+Northwood,
+E.;
+Samms, G.L.; Vitart, V.; Project.; Team, C.D.; et al.
+Initial ﬁndings from the DecodeME genome-
+wide
+association
+study
+of
+myalgic
+encephalomyelitis/chronic
+fatigue
+syndrome.
+medRxiv
+2025,
+[https://www.medrxiv.org/content/early/2025/08/08/2025.08.06.25333109.full.pdf].
+https://doi.org/10
+.1101/2025.08.06.25333109.
+11.
+Walsh, C.M.; Zainal, N.Z.; Middleton, S.J.; Paykel, E.S. A family history study of chronic fatigue syndrome. Psychiatr
+Genet 2001, 11, 123–128. https://doi.org/10.1097/00041444-200109000-00003.
+12.
+Underhill, R.A.; O’Gorman, R. Prevalence of Chronic Fatigue Syndrome and Chronic Fatigue Within Families of
+CFS Patients. Journal of Chronic Fatigue Syndrome 2006, 13, 3–13.
+13.
+Albright, F.; Light, K.; Light, A.; Bateman, L.; Cannon-Albright, L.A. Evidence for a heritable predisposition to
+Chronic Fatigue Syndrome. BMC Neurol 2011, 11, 62. https://doi.org/10.1186/1471-2377-11-62.
+14.
+Hickie, I.; Davenport, T.; Wakeﬁeld, D.; Vollmer-Conna, U.; Cameron, B.; Vernon, S.D.; Reeves, W.C.; Lloyd, A.;
+Dubbo Infection Outcomes Study Group. Post-infective and chronic fatigue syndromes precipitated by viral and
+non-viral pathogens: prospective cohort study. BMJ 2006, 333, 575. https://doi.org/10.1136/bmj.38933.585764.AE.
+15.
+Mørch, K.; Hanevik, K.; Rivenes, A.C.; Bødtker, J.E.; Næss, H.; Stubhaug, B.; Wensaas, K.A.; Rortveit, G.; Eide, G.E.;
+Hausken, T.; et al. Chronic fatigue syndrome 5 years after giardiasis: differential diagnoses, characteristics and
+natural course. BMC Gastroenterol 2013, 13, 28. https://doi.org/10.1186/1471-230X-13-28.
+16.
+Dehlia, A.; Guthridge, M.A. The persistence of myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)
+after SARS-CoV-2 infection: A systematic review and meta-analysis. J Infect 2024, 89, 106297. https://doi.org/10.1
+016/j.jinf.2024.106297.
+17.
+Freund, M.K.; Burch, K.S.; Shi, H.; Mancuso, N.; Kichaev, G.; Garske, K.M.; Pan, D.Z.; Miao, Z.; Mohlke, K.L.;
+Laakso, M.; et al. Phenotype-Speciﬁc Enrichment of Mendelian Disorder Genes near GWAS Regions across 62
+Complex Traits. American Journal of Human Genetics 2018, 103, 535–552. https://doi.org/10.1016/j.ajhg.2018.08.017.
+18.
+Girija, M.S.; Kishore, A. Clinical approach to monogenic Parkinson’s disease. Annals of Movement Disorders 2025,
+8, 1–13.
+19.
+Hung, L.Y.; Wu, C.S.; Chang, C.J.; Li, P.; Hicks, K.; Dibble, J.J.; Morrison, B.; Smith, C.L.; Davis, R.W.; Xiao, W. A
+network medicine approach to investigating ME/CFS pathogenesis in severely ill patients: a pilot study. Front Hum
+Neurosci 2025, 19, 1509346. https://doi.org/10.3389/fnhum.2025.1509346.
+20.
+Zhang, S.; Jahanbani, F.; Chander, V.; Kjellberg, M.; Liu, M.; Glass, K.A.; Iu, D.S.; Ahmed, F.; Li, H.; Maynard,
+R.D.; et al. Dissecting the genetic complexity of myalgic encephalomyelitis/chronic fatigue syndrome via deep
+learning-powered genome analysis. medRxiv 2025. Preprint, PMID: 40321247.
+21.
+Oakley, J.; Hill, M.; Giess, A.; Tanguy, M.; Elgar, G. Long read sequencing characterises a novel structural variant,
+revealing underactive AKR1C1 with overactive AKR1C2 as a possible cause of severe chronic fatigue. J Transl Med
+2023, 21, 825. https://doi.org/10.1186/s12967-023-04711-5.
+22.
+Lin, D.Y.; Zeng, D. Meta-analysis of genome-wide association studies: no efﬁciency gain in using individual
+participant data. Genet Epidemiol 2010, 34, 60–66. https://doi.org/10.1002/gepi.20435.
+23.
+Lammi, V.; Nakanishi, T.; Jones, S.E.; Andrews, S.J.; Karjalainen, J.; Cortés, B.; O’Brien, H.E.; Ochoa-Guzman,
+A.; Fulton-Howard, B.E.; Broberg, M.; et al. Genome-wide association study of long COVID. Nat Genet 2025,
+57, 1402–1417. https://doi.org/10.1038/s41588-025-02100-w.
+24.
+de Leeuw, C.A.; Mooij, J.M.; Heskes, T.; Posthuma, D. MAGMA: generalized gene-set analysis of GWAS data. PLoS
+Comput Biol 2015, 11, e1004219. https://doi.org/10.1371/journal.pcbi.1004219.
+25.
+Watanabe, K.; Taskesen, E.; van Bochoven, A.; Posthuma, D. Functional mapping and annotation of genetic
+associations with FUMA. Nat Commun 2017, 8, 1826. https://doi.org/10.1038/s41467-017-01261-5.
+26.
+Watanabe, K.; Mirkov, M.U.; de Leeuw, C.A.; van den Heuvel, M.P.; Posthuma, D. Genetic mapping of cell type
+speciﬁcity for complex traits. Nature Communications 2019, 10, 3222. https://doi.org/10.1038/s41467-019-11181-1.
+27.
+Verma, A.; Huffman, J.E.; Rodriguez, A.; Conery, M.; Liu, M.; Ho, Y.L.; Kim, Y.; Heise, D.A.; Guare, L.; Panickan,
+V.A.; et al. Diversity and scale: Genetic architecture of 2068 traits in the VA Million Veteran Program. Science 2024,
+385, eadj1182. https://doi.org/10.1126/science.adj1182.
+
+24 of 25
+28.
+Dönerta¸s, H.M.; Fabian, D.K.; Valenzuela, M.F.; Partridge, L.; Thornton, J.M. Common genetic associations between
+age-related diseases. Nature Aging 2021, 1, 400–412. https://doi.org/10.1038/s43587-021-00051-5.
+29.
+Neale Lab. UK Biobank GWAS results, round 2. https://www.nealelab.is/uk-biobank, 2018. Phenotype 20002_1482:
+chronic fatigue syndrome (self-reported).
+30.
+Kurki, M.I.; Karjalainen, J.; Palta, P.; Sipilä, T.P.; Kristiansson, K.; Donner, K.M.; Reeve, M.P.; Laivuori, H.; Aavikko,
+M.; Kaunisto, M.A.; et al. FinnGen provides genetic insights from a well-phenotyped isolated population. Nature
+2023, 613, 508–518. https://doi.org/10.1038/s41586-022-05473-8.
+31.
+Murphy, A.E.; Schilder, B.M.; Skene, N.G. MungeSumstats: a Bioconductor package for the standardisation and
+quality control of many GWAS summary statistics. Bioinformatics 2021, 37, 4593–4596. https://doi.org/10.1093/
+bioinformatics/btab665.
+32.
+Bastarache, L. Using Phecodes for Research with the Electronic Health Record: From PheWAS to PheRS. Annu Rev
+Biomed Data Sci 2021, 4, 1–19. https://doi.org/10.1146/annurev-biodatasci-122320-112352.
+33.
+Centers for Disease Control and Prevention. ICD-10-CM Codes for ME/CFS. CDC National Center for Emerging
+and Zoonotic Infectious Diseases, 2022. Last reviewed November 25, 2022. https://archive.cdc.gov/www_cdc_
+gov/me-cfs/healthcare-providers/diagnosis/icd-10.html.
+34.
+Willer, C.J.; Li, Y.; Abecasis, G.R. METAL: fast and efﬁcient meta-analysis of genomewide association scans.
+Bioinformatics 2010, 26, 2190–2191. https://doi.org/10.1093/bioinformatics/btq340.
+35.
+Vukcevic, D.; Hechter, E.; Spencer, C.; Donnelly, P. Disease model distortion in association studies. Genet Epidemiol
+2011, 35, 278–290. https://doi.org/10.1002/gepi.20576.
+36.
+R Core Team. R: A Language and Environment for Statistical Computing. R Foundation for Statistical Computing, 2024.
+37.
+Siletti, K.; Hodge, R.; Mossi Albiach, A.; Lee, K.W.; Ding, S.L.; Hu, L.; Lönnerberg, P.; Bakken, T.; Casper, T.;
+Clark, M.; et al. Transcriptomic diversity of cell types across the adult human brain. Science 2023, 382, eadd7046.
+https://doi.org/10.1126/science.add7046.
+38.
+Seeker, L.A.; Bestard-Cuche, N.; Jäkel, S.; Kazakou, N.L.; Bøstrand, S.M.K.; Wagstaff, L.J.; Cholewa-Waclaw,
+J.; Kilpatrick, A.M.; Van Bruggen, D.; Kabbe, M.; et al.
+Brain matters: unveiling the distinct contributions
+of region, age, and sex to glia diversity and CNS function.
+Acta Neuropathol Commun 2023, 11, 84.
+https:
+//doi.org/10.1186/s40478-023-01568-z.
+39.
+Saunders, A.; Macosko, E.Z.; Wysoker, A.; Goldman, M.; Krienen, F.M.; de Rivera, H.; Bien, E.; Baum, M.; Bortolin,
+L.; Wang, S.; et al. Molecular Diversity and Specializations among the Cells of the Adult Mouse Brain. Cell 2018,
+174, 1015–1030. https://doi.org/10.1016/j.cell.2018.07.028.
+40.
+Pagès, H.; Carlson, M.; Falcon, S.; Li, N. AnnotationDbi: Manipulation of SQLite-based annotations in Bioconductor, 2024.
+R package.
+41.
+Carlson, M. org.Hs.eg.db: Genome wide annotation for Human, 2024. R package.
+42.
+Wu, T.; Hu, E.; Xu, S.; Chen, M.; Guo, P.; Dai, Z.; Feng, T.; Zhou, L.; Tang, W.; Zhan, L.; et al. clusterProﬁler 4.0: A
+universal enrichment tool for interpreting omics data. Innovation 2021, 2, 100141. https://doi.org/10.1016/j.xinn.20
+21.100141.
+43.
+Yao, S.; Harder, A.; Darki, F.; Chang, Y.W.; Li, A.; Nikouei, K.; Volpe, G.; Lundström, J.N.; Zeng, J.; Wray, N.R.; et al.
+Connecting genomic results for psychiatric disorders to human brain cell types and regions reveals convergence
+with functional connectivity. Nature Communications 2025, 16, 395. https://doi.org/10.1038/s41467-024-55611-1.
+44.
+Dowle, M.; Srinivasan, A. data.table: Extension of data.frame. CRAN, 2024.
+45.
+Gerfen, C.R.; Surmeier, D.J. Modulation of striatal projection systems by dopamine. Annu Rev Neurosci 2011,
+34, 441–466. https://doi.org/10.1146/annurev-neuro-061010-113641.
+46.
+Fischer, M.; Kukley, M. Hidden in the white matter: Current views on interstitial white matter neurons. Neuroscientist
+2025, 31, 381–408. Epub 2024 Oct 4, PMID: 39365761, https://doi.org/10.1177/10738584241282969.
+47.
+Yu, Q.; Kothe, K.; Kwiatek, R.A.; Del Fante, P.; Bonner, A.; Calhoun, V.D.; Shan, Z.Y. Evidence of White Matter Neu-
+roinﬂammation in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Diffusion-Based Neuroinﬂammation
+Imaging Study. Human Brain Mapping 2026, 47, e70505. https://doi.org/10.1002/hbm.70505.
+48.
+Thapaliya, K.; Marshall-Gradisnik, S.; Eaton-Fitch, N.; Eftekhari, Z.; Inderyas, M.; Barnden, L. Imbalanced Brain
+Neurochemicals in Long COVID and ME/CFS: A Preliminary Study Using MRI. The American Journal of Medicine
+2025, 138, 567–574.e1. Epub 2024 Apr 6, https://doi.org/10.1016/j.amjmed.2024.04.007.
+49.
+Fujimoto, Y.; Abe, H.; Eiro, T.; Tsugawa, S.; Tanaka, M.; Hatano, M.; Nakajima, W.; Ichijo, S.; Arisawa, T.; Takada, Y.;
+et al. Systemic increase of AMPA receptors associated with cognitive impairment of long COVID. Brain Communica-
+tions 2025, 7, fcaf337, [https://academic.oup.com/braincomms/article-pdf/7/5/fcaf337/64324183/fcaf337.pdf].
+https://doi.org/10.1093/braincomms/fcaf337.
+
+25 of 25
+50.
+Lovinger, D.M.; White, G.; Weight, F.F. Ethanol inhibits NMDA-activated ion current in hippocampal neurons.
+Science 1989, 243, 1721–1724. https://doi.org/10.1126/science.2467382.
+51.
+Hodge, R.D.; Bakken, T.E.; Miller, J.A.; Smith, K.A.; Barkan, E.R.; Graybuck, L.T.; Close, J.L.; Long, B.; Johansen, N.;
+Penn, O.; et al. Conserved cell types with divergent features in human versus mouse cortex. Nature 2019, 573, 61–68.
+https://doi.org/10.1038/s41586-019-1506-7.
+
+Supplementary Files
+This is a list of supplementary files associated with this preprint. Click to download.
+S1File.xlsx
