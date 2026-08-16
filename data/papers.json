@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-15",
+  "last_check": "2026-08-16",
   "papers": [
+    {
+      "id": "charlton-2026-skeletal-muscle-bedrest-comparison",
+      "title": "Skeletal muscle properties in long COVID and ME/CFS differ from those induced by bed rest",
+      "authors": "Charlton BT, Slaghekke A, Appelman B, Eggelbusch M, Huijts JY, Noort W, Hendrickse PW, Bloemers FW, Posthuma JJ, van Amstel P, Goulding RP, Degens H, Jaspers RT, van Vugt M, Wüst RCI",
+      "journal": "Nature Communications",
+      "date": "Jul 2026",
+      "summary": "Researchers compared muscle biopsies and exercise tests from people with long COVID and ME/CFS against healthy volunteers who had done 60 days of strict bed rest (used to mimic pure physical deconditioning). The long-COVID and ME/CFS patients had fewer small blood vessels in their muscles and more 'fast' muscle fibres that tire quickly — a pattern that did not match what bed rest alone produces — and the ME/CFS patients also showed extra loss of their fatigue-resistant ('slow') muscle fibres.",
+      "why": "Pushes back against the idea that ME/CFS and long-COVID muscle problems are just from being sedentary, pointing instead to a real, disease-specific process in the muscle — directly relevant to Klaus Wirth's skeletal-muscle theory of post-exertional malaise (PEM, a crash after activity), even though he wasn't part of this study.",
+      "link": "https://doi.org/10.1038/s41467-026-75725-y",
+      "first_seen": "2026-08-16",
+      "last_checked": "2026-08-16",
+      "flags": [],
+      "isNew": true,
+      "notes": "Nature Communications, published online Jul 28, 2026 (preprint precursor medRxiv 10.1101/2025.05.02.25326885). Amsterdam UMC/VU Amsterdam group (Wüst lab). Compared muscle biopsy + exercise-test findings in long-COVID and ME/CFS patients vs healthy controls who underwent 60 days of supervised bed rest; reduced capillary density and a shift toward glycolytic (fast, fatigable) fibre type in both patient groups not reproduced by bed rest alone, plus selective type-I (slow, fatigue-resistant) fibre atrophy specific to ME/CFS. Not Wirth/Scheibenbogen-affiliated but topically core to Wirth's skeletal-muscle/PEM pathomechanism hypothesis. Confirmed independently via Crossref DOI metadata (title/author list/journal match); Europe PMC does not yet have this DOI indexed (likely pending indexing lag), so Crossref + publisher-page redirect were used as the confirming sources per ROUTINE.md. Found via this run's fresh open-ended sweep, ~3 weeks after publication — flagging despite being slightly outside the normal 1-3 day recency window given it was not on the prior baseline and is high-relevance/high-profile (independently covered by Health Rising, 12 Aug 2026, and DutchNews)."
+    },
+    {
+      "id": "saini-2026-symptom-subtypes-id-fd-lifelines",
+      "title": "Data-driven subtypes of internalizing and functional somatic symptoms: A hybrid mixture modeling approach",
+      "authors": "Saini U, Wanders R, Oldehinkel AJ, Rosmalen JGM, van Loo HM",
+      "journal": "General Hospital Psychiatry",
+      "date": "Sep 2026 (online Aug 2026)",
+      "summary": "Using health-survey data from almost 73,000 adults in the Netherlands, researchers grouped people by their pattern of symptoms rather than by diagnosis label, looking at depression, anxiety, ME/CFS, fibromyalgia, and irritable bowel syndrome (IBS) together. One group, marked mainly by mental fog and fatigue, showed heavy overlap between ME/CFS-type symptoms and depression/anxiety symptoms, while pain-type symptoms formed their own separate group.",
+      "why": "Suggests some of the well-known overlap between ME/CFS and mood disorders may come from shared, non-specific symptoms (like fatigue and poor concentration) rather than the conditions truly being the same illness — relevant to the case for needing objective biomarkers to draw a clear line between them.",
+      "link": "https://doi.org/10.1016/j.genhosppsych.2026.08.006",
+      "first_seen": "2026-08-16",
+      "last_checked": "2026-08-16",
+      "flags": [],
+      "isNew": true,
+      "notes": "General Hospital Psychiatry, vol. 102, published online Aug 11, 2026. University Medical Center Groningen (UMCG) group. Cross-sectional mixture-modeling analysis of 72,919 adults in the Dutch Lifelines Cohort Study; six symptom-based classes identified (Healthy, Pain, Tension/Pain, Anxiety, Cognition/Fatigue, Depression), with ME/CFS, fibromyalgia and IBS criteria symptoms analyzed alongside major depressive disorder and generalized anxiety disorder. Borderline scope call — a broader functional-somatic/internalizing-symptom nosology study rather than an ME/CFS-dedicated paper, but ME/CFS is explicitly named and analyzed (confirmed via full Europe PMC abstract, which lists 'myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)' as one of the three functional disorders studied); included on the same precedent as the already-tracked mao-2026-depression-disease-history-mecfs entry (diagnostic-overlap/nosology papers). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST record (full abstract match) and Crossref DOI metadata (title/authors/journal match)."
+    },
     {
       "id": "bader-2026-hypoxia-mri-mecfs",
       "title": "Experimental hypoxia to probe neuro-metabolic and vascular dysregulation in ME/CFS: a multimodal proof-of-concept MRI study",
@@ -13,9 +43,9 @@
       "why": "Gives direct brain-imaging evidence for the 'virtual hypoxia' idea in ME/CFS — that cells struggle to make energy properly and brain blood flow doesn't adjust normally under stress — and flags specific scan measures that could become an objective test for future trials.",
       "link": "https://doi.org/10.64898/2026.08.10.26359935",
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-15",
+      "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Posted medRxiv 2026-08-10 (indexed 2026-08-12/13; PPR1297442). Medical University of Vienna group. n=26 ME/CFS vs 27 matched controls; single-session 3T multimodal MRI (volumetry, arterial spin labelling, MR spectroscopy) under normoxia + controlled hypoxia. This resolves the 2026-08-14 changelog's unconfirmed 'Bader et al.' forum lead — the previously-circulated DOI was wrong/garbled and resolved to an unrelated paper; this is the correct DOI, confirmed via Europe PMC REST API record (full author list/abstract match). Not Wirth/Scheibenbogen-affiliated (though topically adjacent to Wirth's hypovolemia/vascular hypothesis)."
     },
     {
@@ -28,9 +58,9 @@
       "why": "Suggests a treatable fluid-pressure subgroup within ME/CFS, and that a simple pressure test could help identify who might benefit from pressure-lowering treatment.",
       "link": "https://doi.org/10.3389/fmed.2026.1869714",
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-15",
+      "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Retrospective cross-sectional study, n=34. Swedish group (Bragée Clinic; Bertilson/Bragée are also behind the already-tracked bragee-2026-csf-proteomics entry). Not Wirth/Scheibenbogen-affiliated. Confirmed via publisher DOI page (frontiersin.org)."
     },
     {
@@ -43,9 +73,9 @@
       "why": "A notable negative finding arguing against ongoing brain inflammation or autoimmunity as the main driver of persistent post-COVID neurological symptoms, pointing research toward other explanations (such as the metabolic and vascular changes other new papers this run point to).",
       "link": "https://doi.org/10.64898/2026.08.10.26359944",
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-15",
+      "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Ulm University group (senior author Tumani). n=50 vs 50, WHO post-COVID-condition criteria (substantially overlapping the ME/CFS population but not a strict PEM-gated diagnosis). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API."
     },
     {
@@ -58,9 +88,9 @@
       "why": "Proposes specific, testable physical causes for a core disabling symptom, pointing toward different treatment targets (heart size/output, the balance system) than usual orthostatic-intolerance care.",
       "link": "https://doi.org/10.3389/fmed.2026.1744154",
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-15",
+      "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Solo-author narrative review, no new patient data; echoes Wirth's own hypovolemia/small-heart hypothesis (already tracked as wirth-2026-hypovolemia-review) but is not Wirth-authored. Confirmed via Europe PMC REST API."
     },
     {
@@ -73,9 +103,9 @@
       "why": "Independently combining two of the largest ME/CFS genetic datasets and finding the same brain-nerve-signal genes strengthens the case that ME/CFS involves a real, brain-based biological process, and flags specific pathways future drugs could target.",
       "link": "https://doi.org/10.21203/rs.3.rs-9702020/v1",
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-15",
+      "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Found via the ~3-month backfill sweep (posted 2026-05-15, missed by prior daily runs). Meta-analysis of published GWAS summary statistics (19,470 cases / 699,111 controls) cross-checked against a whole-genome-sequencing rare-variant module. Distinct from a different, Zenodo-hosted Maccallini preprint already excluded in a prior run for venue reasons — this one is on Research Square, an already-accepted venue in this database (multiple existing entries use 10.21203 DOIs). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API."
     },
     {
@@ -88,9 +118,9 @@
       "why": "This strong, consistent overlap supports shared underlying biology (immune, nerve, and gut-signalling problems) and strengthens the case for gut-brain-axis-targeted research and care rather than treating fatigue and gut symptoms separately.",
       "link": "https://doi.org/10.3389/fmed.2026.1881784",
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-15",
+      "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "PROSPERO-registered systematic review + meta-analysis (22 studies reviewed, 18 pooled). Not Wirth/Scheibenbogen-affiliated; complements already-tracked gut-microbiome/tryptophan and genetic-overlap (ME/CFS-IBS) papers. Confirmed via Europe PMC REST API."
     },
     {
@@ -103,9 +133,9 @@
       "why": "Adds a concrete, visible brain-imaging marker to the growing vascular/glymphatic (brain-fluid-drainage) evidence relevant to ME/CFS-type illness.",
       "link": "https://doi.org/10.21203/rs.3.rs-6042521/v2",
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-15",
+      "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Jena group (senior authors Walter/Besteher — same group as the already-tracked bergmann-2026-metabolomic-neuropsychiatric-longcovid entry, likely overlapping cohort). n=116, exploratory cross-sectional. Cohort defined by 'neuropsychiatric post-COVID syndrome', not a strict ME/CFS/PEM diagnosis — included as a borderline call for the vascular-mechanism angle, same precedent as the already-tracked bergmann and mora-zetina entries. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API."
     },
     {

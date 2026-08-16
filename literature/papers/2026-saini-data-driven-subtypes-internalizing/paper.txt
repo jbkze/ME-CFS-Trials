@@ -1,0 +1,1624 @@
+Research paper
+Data-driven subtypes of internalizing and functional somatic symptoms: A 
+hybrid mixture modeling approach
+Urvi Saini a,*, Rob Wanders b, Albertine J. Oldehinkel a, Judith G.M. Rosmalen a,c,  
+Hanna M. van Loo a
+a University of Groningen, University Medical Center Groningen, Department of Psychiatry, Interdisciplinary Center Psychopathology and Emotion Regulation (ICPE), 
+Groningen, the Netherlands
+b Parnas, Groningen, the Netherlands
+c University of Groningen, University Medical Center Groningen, Department of Internal Medicine, Groningen, the Netherlands
+A R T I C L E I N F O
+Keywords:
+Depression
+Anxiety
+Chronic fatigue syndrome
+Fibromyalgia
+Irritable bowel syndrome
+Mixture item response theory
+Functional somatic disorders
+A B S T R A C T
+Background: The mechanisms underlying the high comorbidity between internalizing disorders (IDs) and func­
+tional disorders (FDs) remain unclear. This study aimed to identify data-driven subgroups of major depressive 
+disorder (MDD), generalized anxiety disorder (GAD), myalgic encephalomyelitis/chronic fatigue syndrome (ME/ 
+CFS), fibromyalgia (FM), and irritable bowel syndrome (IBS) symptoms in the general population, capturing 
+shared symptom patterns while accounting for variation in symptom severity.
+Method: We analyzed cross-sectional data from 72,919 adults in the Dutch Lifelines Cohort Study, randomly 
+divided into training and validation subsets. Twenty-seven ID and FD criteria symptoms were examined using 
+mixed-measurement item response theory models in the training set, with the optimal model validated in the 
+validation set. Class characteristics were assessed through associations with risk factors, ID/FD diagnosis and 
+comorbidity patterns.
+Results: Six classes best described the data: Healthy (57.5%), Pain (13.8%), Tension/Pain (9.1%), Anxiety (9.0%), 
+Cognition/Fatigue (6.4%), and Depression (4.3%). All classes showed a combination of ID and FD symptoms, 
+with the Cognition/Fatigue and Depression classes being most mixed, and the Pain and Anxiety classes most 
+domain-specific. Transdiagnostic symptoms were highly endorsed across all classes. ID–FD comorbidity was 
+highest in the Cognition/Fatigue and Depression classes, with the Depression class showing the greatest func­
+tional impairment.
+Conclusions: The identified classes comprised mixed symptoms from multiple disorders, rather than disorder- 
+specific profiles. ID-FD comorbidity may partly result from non-specific defining symptoms lowering the 
+threshold for fulfilling criteria for multiple disorders. Symptom-level evaluation can help identify more ho­
+mogenous and clinically relevant subgroups. Longitudinal research is needed to clarify underlying mechanisms.
+1. Introduction
+Internalizing disorders (IDs) are characterized by emotional and 
+behavioral responses directed inward rather than toward others [1]. The 
+two most common IDs, major depressive disorder (MDD) and general­
+ized anxiety disorder (GAD), frequently co-occur, resulting in greater 
+social and occupational impairment [2,3]. Functional disorders (FDs) 
+involve persistent physical symptoms not attributable to known objec­
+tifiable 
+pathological 
+abnormalities 
+[4], 
+such 
+as 
+myalgic 
+encephalomyelitis/chronic fatigue syndrome (ME/CFS), fibromyalgia 
+(FM), and irritable bowel syndrome (IBS). IDs and FDs are highly co­
+morbid [5], and their co-occurrence is associated with reduced quality 
+of life [6]. The mechanisms underlying this comorbidity remain unclear, 
+although genetic, biological, and symptom overlap explanations have 
+been proposed [7–12].
+The heterogenous nature of these disorders may contribute to the 
+challenges in uncovering mechanisms underlying ID-FD comorbidity 
+[13–15]. Categorical diagnoses may obscure important variation, as 
+* Corresponding author at: University of Groningen, University Medical Center Groningen, Interdisciplinary Center Psychopathology and Emotion regulation, 
+Hanzeplein 1, PO Box 30001, 9700, RB, Groningen, the Netherlands.
+E-mail address: u.saini@umcg.nl (U. Saini). 
+Contents lists available at ScienceDirect
+General Hospital Psychiatry
+journal homepage: www.elsevier.com/locate/genhospsych
+https://doi.org/10.1016/j.genhosppsych.2026.08.006
+Received 15 June 2026; Received in revised form 6 August 2026; Accepted 6 August 2026  
+General Hospital Psychiatry 102 (2026) 170–178 
+Available online 11 August 2026 
+0163-8343/© 2026 The Author(s). Published by Elsevier Inc. This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ). 
+
+individuals with the same diagnosis but different symptom patterns and 
+severity may not share the same underlying mechanisms. Joint inves­
+tigation of ID and FD symptoms to identify more homogenous subgroups 
+might help reveal shared pathways underlying co-occurrence and 
+disorder-specific mechanisms, including genetic or environmental risk 
+factors. Previous studies using latent class models (LCMs) within IDs or 
+FDs have identified cross-diagnostic subgroups with distinct psycho­
+logical and somatic characteristics, risk factors, and treatment responses 
+[16–20], and symptom profiles that were mixed rather than “pure”. 
+Extending this approach across ID and FD symptoms may help uncover 
+cross-disorder symptom patterns that improve understanding of their 
+comorbidity.
+Traditional LCMs impose categorical distinctions that overlook 
+within- and between-class severity variation and the dimensional nature 
+of psychopathology. When the underlying structure is dimensional, 
+increasing the number of classes may approximate severity differences, 
+producing subgroups that do not differ qualitatively and limit inter­
+pretability. Symptoms are also often interconnected, potentially 
+violating the conditional independence assumption [21]. A previous 
+factor analysis study showed that ID and FD symptoms naturally cluster 
+along continuous, overlapping dimensions rather than discrete cate­
+gories [10]. Hybrid mixture models, such as mixed-measurement item 
+response theory (MM-IRT), address these limitations by combining 
+categorical classes with dimensional latent traits, identifying subgroups 
+that differ in both symptom patterns and underlying severity. Several 
+studies show that hybrid mixture models outperform traditional LCMs in 
+identifying more meaningful and clinically informative subgroups, 
+demonstrating improved model fit with fewer classes and avoiding so­
+lutions that merely reflect severity gradients [22–24]. Understanding 
+patterns of co-occurring ID and FD symptoms may support more inte­
+grated care strategies for patients who do not fit single-diagnosis 
+frameworks. Additionally, empirically derived subtypes may identify 
+more homogenous groups with specific prognosis and treatment 
+response than current classifications.
+Existing hybrid model studies have primarily focused on mood and 
+anxiety disorders, with none applying these models to understand ID-FD 
+comorbidity. In this explorative study, we aimed to identify data-driven 
+subgroups based on ID and FD symptom patterns in the general popu­
+lation. As a secondary aim, we characterized these subgroups by 
+examining associations with disability and external variables to describe 
+class differences in clinically relevant characteristics [25–27]. We also 
+examined the distribution of ID and FD cases and their comorbidity 
+patterns across subgroups to assess how established diagnoses relate to 
+empirically derived symptom profiles.
+2. Methods
+2.1. Participants
+Lifelines is a multidisciplinary prospective population-based cohort 
+study examining the health and health-related behaviors of 167,729 
+persons living in the North of the Netherlands in a unique three- 
+generation design [28]. It employs a broad range of investigative pro­
+cedures in assessing the biomedical, socio-demographic, behavioral, 
+physical and psychological factors that contribute to the health and 
+disease of the general population, with a special focus on multi- 
+morbidity and complex genetics. For a detailed description of Life­
+lines' recruitment procedure, we refer to previous studies [28–30]. The 
+Lifelines cohort study has been approved by the Medical Ethical Com­
+mittee of the University Medical Center Groningen.
+All participants provided written informed consent. We used data 
+from 72,919 participants, ≥18 years old, collected during the second 
+assessment wave of Lifelines, between 2014 and 2019. All included 
+participants had available symptom data for both IDs and FDs.
+2.2. Measures
+2.2.1. Internalizing symptoms
+The Mini International Neuropsychiatric Interview (MINI) was used 
+to assess MDD and GAD symptoms as defined by the fourth edition of the 
+Diagnostic and Statistical Manual of Mental Disorders (DSM-IV) 
+(Table Supplement 1(S1)) [31]. MDD symptoms, assessed during the 
+past two weeks, included depressed mood, anhedonia, appetite change, 
+weight gain, weight loss, trouble sleeping, psychomotor retardation, 
+psychomotor agitation, fatigue, worthlessness/guilt, concentration dif­
+ficulty, and suicidal ideation. GAD symptoms, assessed during the past 
+six months, included excessive worry/anxiety, restlessness, muscle 
+tension, fatigue, concentration difficulty, irritability, and trouble 
+sleeping. All items were self-reported as present (1) or absent (0).
+2.2.2. Functional somatic symptoms
+ME/CFS symptoms were assessed using the 1994 Centers for Disease 
+Control and Prevention (CDC) criteria (Table S2) [32]. Symptoms, 
+referring to the past six months, included fatigue, sore throat, tender 
+lymph nodes, muscle pain, joint pain, headaches, unrefreshing sleep, 
+post-exertional malaise (PEM), and impaired memory or concentration. 
+Memory and concentration were combined into a single symptom 
+(‘concentration difficulty’), as only one is required by the CDC criteria.
+FM symptoms were measured using the 2010 American College of 
+Rheumatology (ACR) criteria (Tables S3-S4) [33]. Symptoms included 
+≥3 months of musculoskeletal pain and symptoms measured using the 
+Widespread Pain Index (WPI) [33] and the Checklist Individual Strength 
+(CIS) [34]. The WPI measured 19 body areas with pain during the past 
+week and the CIS measured fatigue, difficulty thinking, concentration 
+difficulty, and unrefreshing sleep in the past two weeks.
+IBS symptoms were examined using the Rome III IBS Diagnostic 
+Questionnaire [35], later adjusted to align with the Rome IV criteria 
+[36]. Symptoms included recurrent abdominal pain/discomfort (≥1 
+day/week for ≥6 months) and three conditional symptoms: related to 
+defecation, change in stool frequency, and change in stool form, only 
+assessed among participants reporting abdominal pain/discomfort. For 
+the analysis, symptoms were combined into a single item, scored 1 if 
+participants reported abdominal pain/discomfort and at least two con­
+ditional symptoms, and 0 otherwise.
+FD symptoms were assessed using self-reported questionnaires and 
+dichotomized to reduce estimation complexity and minimize bias that 
+may arise from unevenly distributed thresholds in low prevalence 
+symptoms [37].
+2.3. External variables
+We examined the distribution of variables across the identified 
+subgroups, selected based on prior evidence demonstrating links with 
+both IDs and FDs [10]: (a) Sociodemographics: sex, age [5,38–41], and 
+work status (currently employed, unemployed and searching for work, 
+unemployed due to disability) [42,43]; (b) Lifestyle: body mass index 
+(BMI) [39,40,44] and heavy drinking [27,45,46]; (c) Environmental 
+adversity: chronic stress in the past year (e.g., work, home, relationship 
+stress) [10,27,47], acute stress in the past year (e.g., severe injury, death 
+of a loved one, divorce) [27,48,49], and childhood sexual abuse 
+[25,50–52]; (d) Self-rated health [53,54]; and (e) Disability: number of 
+days in the past 30 days during which participants were unable to work, 
+bed bound, limited in work/activities, or less focused due to their 
+physical or mental health [55–58]. The external variables are further 
+detailed in the Supplementary Methods.
+In addition, we examined the distribution of ID and FD diagnoses and 
+their comorbidity across subgroups to explore how different symptom 
+profiles may correspond to specific disorders or distinct comorbidity 
+patterns.
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+171 
+
+2.4. Statistical methods
+2.4.1. Symptom aggregation
+Diagnostic criteria for IDs and FDs include overlapping symptoms, 
+which may lead to spurious or difficult to interpret classes due to local 
+dependence and indicator redundancy [59]. These transdiagnostic 
+symptoms and their associated disorders were trouble sleeping (MDD, 
+GAD), unrefreshing sleep (ME/CFS, FM), fatigue (MDD, GAD, ME/CFS, 
+FM), and concentration difficulty (MDD, GAD, ME/CFS, FM). Following 
+previous studies [10,11], these symptoms were combined to improve 
+model stabilization and class separation. If a symptom was reported as 
+present in at least one measure, the combined symptom was coded as 1 
+(present). The 19 WPI pain location items were summed and dichoto­
+mized using the cut-off defined in the FM criteria, as the number, not 
+location, of pain sites is diagnostically relevant [33] (Supplementary 
+Methods).
+2.4.2. Missing data
+Missing data on ID and FD symptoms (<0.3%) (Table S5) and 
+external variables (<37.5%) were handled with the full information 
+maximum likelihood method, using all available item response infor­
+mation for each case to provide stable and unbiased model parameter 
+estimates [60].
+2.4.3. Models
+As a preliminary step, we performed exploratory factor analysis 
+(EFA) and latent class analysis (LCA) to explore the general structure of 
+the 27 ID and FD symptoms and provide a baseline for comparison with 
+the hybrid models. EFA was used to check the tenability of a general 
+severity dimension across symptoms. LCA identifies mutually exclusive 
+subgroups based on response patterns, assuming item responses are 
+conditionally independent given class membership [61].
+Subsequently, we estimated the MM-IRT models, combining features 
+of LCA (i.e., identifying unobserved subpopulations with distinct 
+response patterns) and unidimensional IRT (i.e., modeling a continuous 
+latent factor to estimate individual differences in severity). Each item 
+was parametrized by discrimination (capturing how strongly the item 
+relates to the latent trait, i.e., severity), and difficulty (severity threshold 
+for symptom endorsement) parameters [62,63]. MM-IRT captures both 
+class-specific symptom patterns and individual severity differences and 
+relaxes the conditional independence assumption of LCA by allowing 
+within-class symptom associations [64].
+2.4.4. Estimation procedure
+Data were randomly split into a training set (n = 36,459) for fitting 
+the EFA, LCA, and MM-IRT models and a validation set (n = 36,460) for 
+validating the stability and generalizability of the final MM-IRT model. 
+Models were estimated by running 50 random start values, up to 700 
+iterations per set, 200 Expectation-Maximization iterations, and 80 
+Newton-Raphson iterations to reduce convergence issues and local 
+maxima. Model selection was based on interpretability and goodness-of- 
+fit statistics [65], including the Bayesian information criterion (BIC) 
+[66], sample size adjusted BIC (sBIC) [67], Akaike information criterion 
+(AIC) [68], and consistent AIC (CAIC) [69]. Model classification quality 
+was also assessed. The final MM-IRT model was estimated in the vali­
+dation set without external variables, after which external variables 
+were included as distal outcomes to estimate their class-specific distri­
+butions. As standard approaches may underestimate associations due to 
+classification error, a bias-adjusted three-step method was used [70–72]. 
+EFA was performed in Mplus version 8.2 [73] and LCA and MM-IRT 
+models were fitted in LatentGOLD 6.0 [74].
+3. Results
+3.1. Sample description
+Of the 72,919 participants included, 59.2% were female and the 
+mean age was 49.1 years (SD = 12.4) (Table 1). No significant differ­
+ences were observed between the training and validation set (Table S6). 
+Overall, 15.4% of participants met diagnostic criteria for at least one 
+disorder. Point prevalence was highest for FM and GAD, followed by IBS, 
+and lowest for MDD and ME/CFS.
+3.2. LCA and MM-IRT models
+LCA models improved in fit as the number of classes increased 
+(Table 2), primarily reflecting similar symptom patterns differing in 
+severity (Fig. S1). A one-factor EFA supported a general severity 
+dimension underlying ID and FD symptoms (Fig. S2; Table S7). MM-IRT 
+models showed improved fit compared to LCA, and the six-class MM-IRT 
+model was selected based on the lowest BIC, sBIC, and CAIC values and 
+interpretability. The validation set produced comparable fit indices and 
+class proportions and showed adequate classification quality (Table S8- 
+S9). Item parameters and between-class external variable comparisons 
+are reported in the Supplemental Results.
+3.3. MM-IRT
+In the six-class MM-IRT solution, the largest class was the ‘Healthy’ 
+class, with 57.5% of the participants (Fig. 1; Table 3). Class members 
+showed near zero endorsement probability of criteria-specific symptoms 
+(<0.06), while transdiagnostic symptoms trouble sleeping, fatigue, 
+concentration difficulty, and unrefreshing sleep were endorsed more 
+frequently (0.19–0.28). It had the lowest proportion of women and 
+overall severity profile, including the lowest levels of risk factors, 
+Table 1 
+Baseline characteristics for full sample (n = 72,919).
+Variable
+Mean or %
+SD or SE
+Range
+% Miss
+Demographics
+Age
+49.1
+12.4
+18.0–91.0
+0.0
+Sex (female), %
+59.2
+0.002
+–
+0.0
+Diagnostic status (%)*
+MDD
+2.8
+0.001
+–
+0.0
+GAD
+5.7
+0.001
+–
+0.0
+ME/CFS
+3.0
+0.001
+–
+0.3
+FM
+6.4
+0.001
+–
+8.7
+IBS
+5.5
+0.001
+–
+0.2
+Risk factors
+BMI
+25.9
+4.1
+12.9–43.3
+0.4
+Heavy drinking (%)
+4.8
+0.001
+–
+0.0
+Childhood sexual abuse (%)
+7.2
+0.001
+–
+37.5
+Chronic stress
+1.8
+1.8
+0–12
+7.8
+Stressful life events
+0.8
+1.1
+0–12
+9.3
+General health
+2.7
+0.8
+1–5
+7.9
+Disability**
+Unable to work
+0.9
+3.9
+0–30
+0.0
+Bed bound
+0.3
+1.7
+0–30
+0.0
+Limited work
+2.6
+6.2
+0–30
+0.0
+Less focused/careful
+1.5
+4.7
+0–30
+0.0
+Mean provided for continuous variables and percentages (%) for binary vari­
+ables. SD: standard deviation, for continuous variables. SE: Standard error, for 
+binary variables. % Miss: percentage of missing values for variable. MDD: major 
+depressive disorder; GAD: generalized anxiety disorder; ME/CFS: myalgic 
+encephalomyelitis/chronic fatigue syndrome; FM: fibromyalgia; IBS: irritable 
+bowel syndrome; BMI: body mass index.
+* Point prevalence estimates reflect disorder status at a specific assessment 
+time point rather than across the lifespan and are generally lower than lifetime 
+prevalence, particularly for episodic disorders such as MDD and GAD.
+** Disability measured in how many days in the past 30 days were participants 
+unable to perform or with limitation due to physical and mental health.
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+172 
+
+unemployment, and disability days. Participants in this class did not 
+meet diagnostic criteria for IDs or FDs, except for 2.0% reporting IBS.
+Class 2 (‘Pain’, 13.8%) was mainly defined by ME/CFS and FM pain 
+symptoms, with near zero endorsement of ID symptoms (<0.08). The 
+highest endorsed symptoms were joint pain (0.76), musculoskeletal pain 
+(0.49), and muscle pain (0.48). This class also showed the highest 
+endorsement of the ME/CFS symptom PEM (0.39), relative to the other 
+classes. Participants were comparatively older, had higher BMI, and met 
+criteria only for FDs, most commonly FM (18.5%).
+Class 3 (‘Tension/Pain’, 9.1%) showed a similar pain symptom 
+pattern to the Pain class, but at lower endorsement levels. This class was 
+characterized by high endorsement of GAD symptoms muscle tension, 
+restlessness, and irritability (0.41–0.87), as well as transdiagnostic 
+symptoms (0.41–0.56). This class had the highest proportion of women 
+(70.8%). FD prevalence was similar to the Pain class, with 5.0% also 
+meeting GAD criteria.
+Class 4 (‘Anxiety’, 9.0%) was characterized by high endorsement of 
+all seven GAD criteria symptoms. The most frequently reported were 
+muscle tension (0.90), fatigue (0.82), and restlessness (0.70). Partici­
+pants were comparatively younger (mean 42.4 years), more likely 
+employed (86.9%), and reported high chronic stress. It had the highest 
+prevalence of GAD (39.5%) and greatest proportion of MDD-GAD only 
+comorbidity (7.9%). Compared to the Tension/Pain class, it showed 
+higher MDD specific symptom endorsement and lower FD specific 
+symptom endorsement. Correspondingly, 15.4% met criteria for MDD, 
+whereas none met criteria for ME/CFS or FM.
+Class 5 (‘Cognition/Fatigue’, 6.4%) was defined by high endorse­
+ment of concentration difficulty (1.00), fatigue (0.84), difficulty 
+thinking (0.80), and unrefreshing sleep (0.73). Moderate GAD (<0.58) 
+and pain (<0.31) symptoms and minimal MDD symptoms (<0.15) were 
+endorsed. This class showed the highest prevalence of FDs compared 
+with the other classes.
+Class 6 (‘Depression’, 4.3%) showed the highest endorsement of 
+MDD symptoms across classes, particularly anhedonia (0.51), depressed 
+mood (0.39), and appetite change (0.24). Moderate GAD symptoms 
+(restlessness, muscle tension, and irritability, 0.30–0.44) and moderate- 
+to-high transdiagnostic symptoms (0.45–0.67) were also reported. FD 
+symptoms were modestly endorsed (<0.22). MDD prevalence (29.8%), 
+disability-related unemployment (11.0%), and disability days were 
+highest in this class, with greatest limitations in work/activities or 
+productivity. The Cognition/Fatigue and Depression classes had 
+approximately 16.0% of participants meeting criteria for at least one ID 
+and one FD, the highest across all classes.
+Transdiagnostic symptoms were endorsed across all classes, with the 
+highest prevalence in the Cognition/Fatigue class. IBS symptom 
+endorsement was similar across classes (0.12–0.16), except in the 
+Healthy class, where it was lowest. ME/CFS symptoms sore throat and 
+tender lymph nodes showed near zero endorsement across all classes 
+(<0.03). Item parameters reflected these patterns, with transdiagnostic 
+symptoms showing low difficulty and discrimination, and sore throat, 
+tender lymph nodes, and IBS symptom showing high difficulty and low 
+discrimination (Tables S10-S11).
+4. Discussion
+Hybrid mixture modeling was used to identify six classes of in­
+dividuals based on ID and FD symptoms while capturing individual-level 
+variation in symptom severity in a large general population sample. 
+Resulting classes reflected distinct but partially overlapping symptom 
+profiles, including predominantly FD-related (Pain), ID-related (Anxi­
+ety), and mixed presentations (Tension/Pain, Cognition/Fatigue, 
+Depression), alongside a large low-symptom (Healthy) group. Trans­
+diagnostic symptoms, including fatigue, sleep problems, and concen­
+tration difficulty, were consistently endorsed across all classes. ID-FD 
+comorbidity was highest in the Cognition/Fatigue and Depression 
+classes, with the latter showing greatest functional impairment. Our 
+findings support a hybrid conceptualization requiring both categorical 
+and dimensional features to capture heterogeneity in ID and FD 
+symptoms.
+To our knowledge, no prior study has investigated ID and FD 
+symptoms using a hybrid mixture modeling approach. However, our 
+results align with latent class studies finding classes characterized by a 
+Table 2 
+LCA and MM-IRT model comparisons.
+Model
+N par
+LL
+BIC
+AIC
+CAIC
+sBIC
+Entropy
+Smallest class
+LCA (n = 36,459)
+1-class
+27
+−313,885.0
+628,053.6
+627,824.0
+628,080.6
+627,967.8
+1.000
+1.00
+2-class
+55
+−269,626.1
+539,829.9
+539,362.2
+539,884.9
+539,655.2
+0.861
+0.28
+3-class
+83
+−261,563.6
+523,999.1
+523,293.2
+524,082.1
+523,735.3
+0.787
+0.12
+4-class
+111
+−255,727.2
+512,620.4
+511,676.4
+512,731.4
+512,267.6
+0.808
+0.09
+5-class
+139
+−253,584.8
+508,629.6
+507,447.6
+508,768.6
+508,187.9
+0.774
+0.07
+6-class
+167
+−251,898.1
+505,550.4
+504,130.2
+505,717.4
+505,019.7
+0.771
+0.04
+7-class
+195
+−250,854.2
+503,756.7
+502,098.4
+503,951.7
+503,137.0
+0.762
+0.03
+8-class
+223
+−249,959.3
+502,261.0
+500,364.6
+502,484.0
+501,552.3
+0.755
+0.03
+9-class
+251
+−249,356.4
+501,349.2
+499,214.7
+501,600.2
+500,551.5
+0.752
+0.02
+10-class
+279
+−248,972.1
+500,874.8
+498,502.2
+501,153.8
+499,988.1
+0.749
+0.02
+11-class
+307
+−248,628.2
+500,481.1
+497,870.4
+500,788.1
+499,505.5
+0.733
+0.02
+12-class
+335
+−248,341.1
+500,200.9
+497,352.1
+500,535.9
+499,136.3
+0.731
+0.01
+13-class
+363
+−248,131.7
+500,076.4
+496,989.4
+500,439.4
+498,922.8
+0.707
+0.01
+MM-IRT (n = 36,459)
+1-class
+54
+−261,075.1
+522,717.4
+522,258.2
+522,771.4
+522,545.8
+1.000
+1.00
+2-class
+109
+−251,916.2
+504,977.3
+504,050.4
+505,086.3
+504,630.9
+0.716
+0.19
+3-class
+164
+−249,576.7
+500,876.0
+499,481.3
+501,040.0
+500,354.8
+0.743
+0.17
+4-class
+219
+−248,776.9
+499,854.2
+497,991.9
+500,073.2
+499,158.2
+0.660
+0.14
+5-class
+274
+−248,114.3
+499,106.8
+496,776.7
+499,380.8
+498,236.0
+0.690
+0.06
+6-class
+329
+−247,630.9
+498,717.6
+495,919.8
+499,046.6
+497,672.0
+0.678
+0.04
+7-class
+384
+−247,481.8
+498,997.2
+495,731.7
+499,381.2
+497,776.8
+0.635
+0.05
+8-class
+439
+−247,237.6
+499,086.4
+495,353.2
+499,525.4
+497,691.3
+0.626
+0.03
+9-class
+494
+−247,026.6
+499,242.1
+495,041.1
+499,736.1
+497,672.2
+0.603
+0.03
+MM-IRT validation (n = 36,460)
+6-class
+−247,719.6
+498,895.0
+496,097.2
+499,224.0
+497,849.4
+0.674
+0.05
+The LCA and MM-IRT were estimated in the training set (n = 36,459) and the final MM-IRT model was validated in the test set (n = 36,460). N par: number of 
+parameters; LL: Log Likelihood; BIC: Bayesian information criterion; AIC: Akaike information criterion; CAIC: Consistent AIC; sBIC: sample size adjusted BIC. Entropy is 
+a measure of separation between latent classes, where higher values indicate better class separation.
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+173 
+
+combination of symptoms from multiple disorders rather than “pure” 
+classes [16–18,20,23]. Importantly, the classes showed qualitative dif­
+ferences in their symptom patterns and characteristics. The Pain class 
+was defined by FD symptoms, with no ID comorbidity, whereas the 
+Anxiety class was characterized primarily by GAD symptoms, with no 
+FD comorbidity. Age patterns were consistent with prior findings, with 
+subgroups defined by high FD pain symptoms tending to be older [19]
+and those defined by GAD symptoms tending to be younger [18,23]. In 
+contrast, the Cognition/Fatigue and Depression classes were mixed 
+symptom profiles with high ID-FD comorbidity. The Depression class 
+reporting highest disability is consistent with prior evidence showing 
+greater disability days in individuals with depression compared to those 
+with anxiety [75]. Furthermore, no cases of FD-only comorbidity were 
+observed in this class, suggesting FD comorbidity was always accom­
+panied by MDD. A similar pattern was observed in another study, which 
+reported a higher prevalence of depression and functional impairment in 
+individuals with comorbid FDs compared to those with a single FD [76].
+Although the IBS symptom was not highly endorsed in any class, IBS 
+cases were present across all classes, indicating that IBS was not strongly 
+linked to any specific class. This aligns with prior work showing that IBS 
+formed a separate symptom cluster in a network model [11] and a 
+weakly correlated latent dimension in a factor model [10]. Other studies 
+have also highlighted the relative distinctiveness of IBS through its 
+weaker associations with other IDs and FDs, larger sex differences, and 
+conceptualization as a disorder of gut–brain interaction [5,77]. These 
+findings suggest that IBS shares relatively few symptoms and clinical 
+characteristics with the other disorders examined.
+4.1. Non-specific symptoms and comorbidity
+ID-FD comorbidity may partly reflect transdiagnostic or non-specific 
+symptoms lowering the threshold for fulfilling criteria for multiple dis­
+orders [78,79]. These symptoms occur across multiple diagnostic cate­
+gories rather than being disorder-specific. All classes showed relatively 
+high endorsement of the transdiagnostic symptoms. These symptoms are 
+common in the general population and even their moderate endorse­
+ment can increase the likelihood of crossing diagnostic thresholds. For 
+example, most individuals in the Cognition/Fatigue class reported at 
+least six out of seven GAD items, three out of nine ME/CFS items, and 
+four out of six FM items. Although the Depression class showed higher 
+overall MDD symptom prevalence, MDD and GAD co-occurred more 
+frequently in the Anxiety class, where GAD and transdiagnostic symp­
+toms were more and MDD symptoms less strongly endorsed. A previous 
+study similarly reported significantly higher transdiagnostic symptom 
+endorsement in participants with MDD-GAD comorbidity than in those 
+with MDD alone [80]. The high endorsement of transdiagnostic 
+0
+0.2
+0.4
+0.6
+0.8
+1
+Dep mood
+Anhedonia
+Appchg
+Weight inc
+Weight dec
+Psy retardation
+Psy agitation
+Guilt
+Suicidality
+Worry
+Restless
+Muscle tension
+Irritability
+Sore throat
+T lymph nodes
+Muscle pain
+Joint pain
+Headaches
+PEM
+WPI
+Diff thinking
+Musculo pain
+IBS
+Trob sleeping
+Fatigue
+Diff concen
+Unrefresh sleep
+Symptom probability
+Class 1 - Healthy (57.5%)
+0
+0.2
+0.4
+0.6
+0.8
+1
+Dep mood
+Anhedonia
+Appchg
+Weight inc
+Weight dec
+Psy retardation
+Psy agitation
+Guilt
+Suicidality
+Worry
+Restless
+Muscle tension
+Irritability
+Sore throat
+T lymph nodes
+Muscle pain
+Joint pain
+Headaches
+PEM
+WPI
+Diff thinking
+Musculo pain
+IBS
+Trob sleeping
+Fatigue
+Diff concen
+Unrefresh sleep
+Class 2 - Pain (13.8%)
+0
+0.2
+0.4
+0.6
+0.8
+1
+Dep mood
+Anhedonia
+Appchg
+Weight inc
+Weight dec
+Psy retardation
+Psy agitation
+Guilt
+Suicidality
+Worry
+Restless
+Muscle tension
+Irritability
+Sore throat
+T lymph nodes
+Muscle pain
+Joint pain
+Headaches
+PEM
+WPI
+Diff thinking
+Musculo pain
+IBS
+Trob sleeping
+Fatigue
+Diff concen
+Unrefresh sleep
+Symptom probability
+Class 3 - Tension/Pain (9.1%)
+0
+0.2
+0.4
+0.6
+0.8
+1
+Dep mood
+Anhedonia
+Appchg
+Weight inc
+Weight dec
+Psy retardation
+Psy agitation
+Guilt
+Suicidality
+Worry
+Restless
+Muscle tension
+Irritability
+Sore throat
+T lymph nodes
+Muscle pain
+Joint pain
+Headaches
+PEM
+WPI
+Diff thinking
+Musculo pain
+IBS
+Trob sleeping
+Fatigue
+Diff concen
+Unrefresh sleep
+Class 4 - Anxiety (9.0%)
+0
+0.2
+0.4
+0.6
+0.8
+1
+Dep mood
+Anhedonia
+Appchg
+Weight inc
+Weight dec
+Psy retardation
+Psy agitation
+Guilt
+Suicidality
+Worry
+Restless
+Muscle tension
+Irritability
+Sore throat
+T lymph nodes
+Muscle pain
+Joint pain
+Headaches
+PEM
+WPI
+Diff thinking
+Musculo pain
+IBS
+Trob sleeping
+Fatigue
+Diff concen
+Unrefresh sleep
+Symptom probability
+Class 5 - Cognition/Fatigue (6.4%)
+0
+0.2
+0.4
+0.6
+0.8
+1
+Dep mood
+Anhedonia
+Appchg
+Weight inc
+Weight dec
+Psy retardation
+Psy agitation
+Guilt
+Suicidality
+Worry
+Restless
+Muscle tension
+Irritability
+Sore throat
+T lymph nodes
+Muscle pain
+Joint pain
+Headaches
+PEM
+WPI
+Diff thinking
+Musculo pain
+IBS
+Trob sleeping
+Fatigue
+Diff concen
+Unrefresh sleep
+Class 6 - Depression (4.3%)
+Fig. 1. Symptom profiles in the final 6-class MM-IRT model. Dep mood: depressed mood; Appchg: appetite change; weight inc: weight increase; weight dec: weight 
+decrease; Psy: psychomotor; T lymph nodes: tender lymph nodes; PEM: post-exertional malaise; WPI: widespread pain index; diff thinking: difficulty thinking; IBS: 
+irritable bowel disease symptom; Trob sleeping: trouble sleeping; Unrefresh sleep: unrefreshing sleep.
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+174 
+
+symptoms in the Anxiety class, combined with MDD symptoms, anhe­
+donia and psychomotor agitation, may push individuals over diagnostic 
+thresholds even when overall MDD symptom probability is relatively 
+low. Individuals endorsing these symptoms would still meet the required 
+threshold of five out of nine symptoms for an MDD diagnosis. The 
+inflation of observed comorbidity by transdiagnostic symptoms has been 
+demonstrated previously, where MDD-ME/CFS comorbidity decreased 
+from 10.7% to 2.1% when MDD was defined only by its two core 
+symptoms, depressed mood and anhedonia [78].
+Etiologically, non-specific symptoms may arise from multiple 
+mechanisms rather than a single pathway, resulting in their high 
+endorsement across disorders. Moreover, their endorsement may reflect 
+different underlying processes depending on the clinical context and can 
+complicate diagnosis. For example, somatic MDD symptoms, such as 
+fatigue and sleep disturbances, may reflect pain rather than emotional 
+distress in individuals with FM, allowing them to meet MDD thresholds 
+despite endorsing few core depressive features [81]. Similarly, ME/CFS 
+pain symptoms frequently co-occur in FM, potentially contributing to 
+higher FM prevalence across classes, whereas sore throat and tender 
+lymph nodes are rarely endorsed and are weak indicators of ME/CFS 
+[10,76]. These findings indicate that some disorder-defining symptoms 
+(e.g., fatigue and headaches) capture general malaise rather than 
+disorder-specific pathology [10].
+4.2. Strengths and limitations
+A major strength of this study is the large general population sample 
+size, allowing estimation and validation of the MM-IRT model in inde­
+pendent subsamples. Additionally, ID and FD symptoms were assessed 
+according to diagnostic criteria within the same wave rather than across 
+the lifetime, enabling identification of transdiagnostic subtypes while 
+minimizing recall bias. This study also has limitations. First, symptoms 
+were dichotomized, potentially resulting in some loss of information 
+from the ordinal FD variables. However, the model including a contin­
+uous within-class severity factor likely mitigated this limitation by 
+allowing gradation at the person-level based on overall symptom pat­
+terns. Second, class assignment was based on highest posterior proba­
+bility. This can introduce some uncertainty in class membership, as some 
+participants may show clear distinctions while others may show similar 
+probabilities of belonging to multiple classes. Third, IBS was represented 
+by a single binary item, whereas other disorders were modeled using 
+multiple symptoms. This measurement constraint may have contributed 
+to the non-specificity of the IBS symptom. Fourth, we examined symp­
+toms in the context of selected IDs and FDs. In a general population 
+sample, similar symptom profiles may also arise from unmeasured 
+conditions (e.g., trauma-related disorders or medical conditions). 
+However, a previous general population study found that FD symptom 
+classes remained largely unchanged after excluding individuals with 
+chronic diseases [17], suggesting that such influences are unlikely to 
+substantially alter overall class patterns. Lastly, participants in Lifelines 
+are predominantly native Dutch and live in the north of the Netherlands, 
+potentially limiting generalizability of our findings to populations with 
+different cultural and ethnic backgrounds, where ID and FD symptoms 
+patterns may differ [82,83].
+4.3. Implications and future research
+This study illustrates how small differences in co-occurring symptom 
+Table 3 
+6-class MM-IRT characteristics.
+Class
+Healthy (1)
+Pain (2)
+Tension/Pain (3)
+Anxiety (4)
+Cognition/Fatigue (5)
+Depression (6)
+Size (%)
+57.5
+13.8
+9.1
+9.0
+6.4
+4.3
+Demographics
+Age
+49.1
+55.1
+50.4
+42.4
+47.2
+46.3
+Sex (female), %
+53.8
+67.6
+70.8
+66.7
+70.2
+58.0
+Diagnostic status (%)
+MDD
+0.0
+0.0
+0.0
+15.4
+3.6
+29.8
+GAD
+0.0
+0.0
+5.0
+39.5
+24.6
+9.8
+ME/CFS
+0.0
+7.6
+10.2
+0.0
+11.4
+8.8
+FM
+0.0
+18.5
+20.3
+0.0
+22.4
+15.1
+IBS
+2.0
+10.3
+11.0
+6.4
+13.2
+11.4
+MDD + GAD only
+0.0
+0.0
+0.0
+7.9
+0.0
+1.9
+≥1 ID + ≥1 FD
+0.0
+0.0
+5.9
+2.6
+16.9
+16.3
+MDD + any FD
+0.0
+0.0
+0.0
+0.2
+0.5
+7.7
+GAD + any FD
+0.0
+0.0
+6.3
+0.0
+11.4
+0.0
+≥2 FDs*
+0.0
+7.4
+6.6
+0.0
+2.2
+0.0
+Risk factors
+BMI
+25.6
+27.3
+26.1
+25.2
+26.1
+27.0
+Heavy drinking (%)
+4.5
+4.3
+4.7
+6.0
+5.0
+6.4
+Childhood sexual abuse (%)
+4.0
+9.7
+13.2
+8.5
+15.0
+14.3
+Chronic stress
+1.2
+1.7
+2.5
+3.4
+3.3
+2.9
+Stressful life events
+0.6
+0.9
+1.0
+1.1
+1.1
+1.3
+General health
+2.3
+3.1
+3.0
+2.8
+3.3
+3.3
+Employment status (%)
+Employed
+79.7
+59.9
+70.3
+86.9
+73.7
+64.2
+Unemployed
+2.7
+5.4
+5.0
+6.3
+4.7
+7.5
+Unemployed (disability)
+0.4
+8.8
+6.9
+2.1
+9.1
+11.0
+Disability**
+No daily activities
+0.1
+1.9
+1.4
+1.7
+2.8
+4.2
+Remain in bed
+0.1
+0.5
+0.5
+0.6
+0.9
+1.5
+Limited activities
+0.4
+4.8
+4.3
+5.6
+7.7
+8.8
+Less focused/careful
+0.1
+2.3
+2.3
+4.0
+5.6
+5.5
+MDD: major depressive disorder; GAD: generalized anxiety disorder; ME/CFS: myalgic encephalomyelitis/chronic fatigue syndrome; FM: fibromyalgia; IBS: irritable 
+bowel syndrome; BMI: body mass index.
+MDD + any FD = participants with MDD (and no GAD) with at least one comorbid FD. GAD + any FD = participants with GAD (and no MDD) with at least one 
+comorbid FD.
+* Participants with FD comorbidity without MDD or GAD.
+** Disability measured in how many days in the past 30 days were participants unable to perform or performed with limitation due to physical and mental health.
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+175 
+
+patterns can yield substantial differences in diagnostic prevalence. 
+Although the Tension/Pain and Anxiety classes showed similar GAD 
+symptom endorsement, GAD prevalence was much higher in the Anxiety 
+class (5.0% vs 39.5%). This likely reflects low endorsement of excessive 
+worry in the Tension/Pain class, which is required for diagnosis. It is 
+possible that some individuals in this class may have subthreshold GAD 
+despite high average endorsement. In the Anxiety class, GAD symptoms 
+co-occurred with additional ID and transdiagnostic symptoms, 
+increasing the likelihood of meeting full criteria, whereas in the Ten­
+sion/Pain class they appeared alongside FD symptoms and lower 
+transdiagnostic symptom endorsement, reducing the probability of 
+crossing the diagnostic threshold. This categorical approach overlooks 
+the continuous nature of symptoms and clinically meaningful sub­
+threshold features that may still be associated with substantial disability 
+[81,84,85].
+MM-IRT results showed that symptoms vary in their contribution to 
+subgroup differentiation, with differences in severity thresholds and 
+discrimination. Transdiagnostic symptoms and ME/CFS symptoms sore 
+throat and tender lymph nodes provided limited information for iden­
+tifying meaningful profiles; transdiagnostic symptoms were common 
+across severity levels and sore throat and tender lymph nodes rare and 
+only emerging at higher severity. These findings have implications for 
+diagnostic frameworks, particularly ME/CFS, for which multiple case 
+definitions use different symptom sets. Using different case definitions 
+may influence the proportion of individuals meeting ME/CFS criteria 
+across classes [86]. Therefore, evaluating individual symptom contri­
+butions is important for refining classifications and identifying clinically 
+meaningful subgroups.
+With these six data-driven symptom-based classes, we do not yet 
+propose replacing current diagnostic criteria for IDs and FDs. For ac­
+curate classification of these disorders, it is necessary to consider vali­
+dators alongside symptom-based criteria, such as familial incidence, 
+biological markers, and treatment response [87]. Future studies incor­
+porating additional validators are needed to clarify mechanisms un­
+derlying comorbidity and to evaluate the clinical utility of these classes, 
+including their ability to predict prognosis and functional outcomes.
+Further research is necessary to understand ID-FD comorbidity. 
+Transdiagnostic symptoms were consistently endorsed across classes 
+and may act as bridge symptoms connecting IDs and FDs, potentially 
+triggering or exacerbating other symptoms [11,88]. Longitudinal studies 
+are needed to examine how shared vulnerabilities develop and 
+contribute to comorbidity. Additionally, the Cognition/Fatigue and 
+Depression classes showed high FD comorbidity with GAD and MDD, 
+respectively. This could suggest potential bidirectional relationships 
+between IDs and FDs [89,90], although this cannot be determined due to 
+the cross-sectional design. Future longitudinal studies should assess 
+class stability and identify predictors of ID-FD comorbidity. Methodo­
+logically, we estimated unidimensional MM-IRT models and, based on 
+prior evidence for the multidimensional structure of ID and FD symp­
+toms [10], future work could extend this framework by including mul­
+tiple within-class latent traits to examine whether they capture 
+meaningful constructs.
+5. Conclusion
+Using MM-IRT, we identified six ID and FD symptom classes in a 
+large general population sample: Healthy, Pain, Tension/Pain, Anxiety, 
+Cognition/Fatigue, and Depression classes. Non-specific symptoms may 
+contribute to ID-FD comorbidity by lowering the threshold for meeting 
+criteria of multiple disorders. Empirically derived symptom profiles can 
+inform diagnostic refinement by revealing differences in the clinical 
+utility of individual symptoms, while longitudinal research is needed to 
+clarify the mechanisms underlying transdiagnostic symptoms.
+Ethical standard
+The Lifelines cohort study followed the guidelines of the Declaration 
+of Helsinki, and has been approved by the UMCG Medical ethical 
+committee under number 2007/152. All participants provided written 
+informed consent for participation.
+CRediT authorship contribution statement
+Urvi Saini: Writing – original draft, Visualization, Methodology, 
+Formal analysis, Data curation, Conceptualization. Rob Wanders: 
+Writing – review & editing, Methodology. Albertine J. Oldehinkel: 
+Writing – review & editing, Supervision, Conceptualization. Judith G. 
+M. Rosmalen: Writing – review & editing, Supervision, Conceptuali­
+zation. Hanna M. van Loo: Writing – review & editing, Supervision, 
+Methodology, Funding acquisition, Data curation, Conceptualization.
+Funding statement
+This project was supported by NIMH grant R01MH125902. The 
+Lifelines initiative has been made possible by subsidy from the Dutch 
+Ministry of Health, Welfare and Sport, the Dutch Ministry of Economic 
+Affairs, the University Medical Center Groningen, Groningen University, 
+and the Provinces in the North of the Netherlands (Drenthe, Friesland, 
+Groningen).
+Declaration of competing interest
+The authors declare that they have no competing interests.
+Acknowledgments
+We thank the members of the Pathways of Functional and Internal­
+izing Disorders (PATHFINDER) consortium for their contributions to 
+this project. The authors also wish to acknowledge the services of the 
+Lifelines Cohort Study, the contributing research centers delivering data 
+to Lifelines, and all the study participants. No generative artificial in­
+telligence tools were used in any aspect of the literature review, data 
+collection, data analysis, drafting, or revising of the manuscript.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.genhosppsych.2026.08.006.
+Data availability
+Researchers can apply to use the Lifelines data used in this study. 
+Information about how to request data and the conditions of use can be 
+found on their website (https://www.lifelines-biobank.com).
+References
+[1] Frye SS, Perfect MM, Graham JW. Internalizing Disorders. In: Forman S, 
+Shahidullah J, editors. Handbook of pediatric behavioral healthcare. Cham: 
+Springer; 2018. https://doi.org/10.1007/978-3-030-00791-1_12.
+[2] Belzer K, Schneier FR. Comorbidity of anxiety and depressive disorders: issues in 
+conceptualization, assessment, and treatment. J Psychiatr Pract 2004;10(5): 
+296–306. https://doi.org/10.1097/00131746-200409000-00003.
+[3] Ter Meulen WG, Draisma S, van Hemert AM, Schoevers RA, Kupka RW, 
+Beekman ATF, et al. Depressive and anxiety disorders in concert-A synthesis of 
+findings on comorbidity in the NESDA study. J Affect Disord 2021;284:85–97. 
+https://doi.org/10.1016/j.jad.2021.02.004.
+[4] Buffington CA. Developmental influences on medically unexplained symptoms. 
+Psychother Psychosom 2009;78(3):139–44. https://doi.org/10.1159/000206866.
+[5] Thomas NS, Gillespie NA, Kendler KS, Oldehinkel AJ, Rosmalen JGM, van Loo HM. 
+Comorbidity and sex differences in functional disorders and internalizing disorders. 
+Gen Hosp Psychiatry 2024;90:91–8. https://doi.org/10.1016/j. 
+genhosppsych.2024.07.013.
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+176 
+
+[6] Baumeister H, Balke K, H¨arter M. Psychiatric and somatic comorbidities are 
+negatively associated with quality of life in physically ill patients. J Clin Epidemiol 
+2005;58(11):1090–100. https://doi.org/10.1016/j.jclinepi.2005.03.011.
+[7] Bos M, Monden R, Wray NR, Zhou Y, Kendler KS, Rosmalen JGM, et al. Familial 
+coaggregation and shared familiality of functional and internalizing disorders in 
+the lifelines cohort. Psychol Med 2025;55:e126. https://doi.org/10.1017/ 
+S003329172500100X.
+[8] Chaves-Filho AJM, Macedo DS, de Lucena DF, Maes M. Shared microglial 
+mechanisms underpinning depression and chronic fatigue syndrome and their 
+comorbidities. Behav Brain Res 2019;372:111975. https://doi.org/10.1016/j. 
+bbr.2019.111975.
+[9] Kato K, Sullivan PF, Evengård B, Pedersen NL. A population-based twin study of 
+functional somatic syndromes. Psychol Med 2009;39(3):497–505. https://doi.org/ 
+10.1017/S0033291708003784.
+[10] Saini U, Aggen SH, Oldehinkel AJ, Rosmalen JGM, van Loo HM. Disentangling 
+comorbidity: symptom dimensions of internalizing and functional disorders in a 
+large general population sample. BMC Psychiatry 2026. https://doi.org/10.1186/ 
+s12888-026-07797-5. Advance online publication. doi:10.1186/s12888-026- 
+07797-5.
+[11] Saini U, Rosmalen JGM, Oldehinkel AJ, van Loo HM. Connecting the dots: network 
+structures of internalizing and functional symptoms in a population-based cohort. 
+J Psychosom Res 2024;187:111932. https://doi.org/10.1016/j. 
+jpsychores.2024.111932.
+[12] Vassend O, Røysamb E, Nielsen CS, Czajkowski NO. Fatigue symptoms in relation 
+to neuroticism, anxiety-depression, and musculoskeletal pain. A longitudinal twin 
+study. PLoS One 2018;13(6):e0198594. https://doi.org/10.1371/journal. 
+pone.0198594.
+[13] Martínez MP, S´anchez AI, Prados G, Lami MJ, Villar B, Mir´o E. Fibromyalgia as a 
+heterogeneous condition: subgroups of patients based on physical symptoms and 
+cognitive-affective variables related to pain. Span J Psychol 2021;24:e33. https:// 
+doi.org/10.1017/SJP.2021.30.
+[14] Nandi A, Beard JR, Galea S. Epidemiologic heterogeneity of common mood and 
+anxiety disorders over the lifecourse in the general population: a systematic 
+review. BMC Psychiatry 2009;9:31. https://doi.org/10.1186/1471-244X-9-31.
+[15] Williams TE, Chalder T, Sharpe M, White PD. Heterogeneity in chronic fatigue 
+syndrome - empirically defined subgroups from the PACE trial. Psychol Med 2017; 
+47(8):1454–65. https://doi.org/10.1017/S0033291716003615.
+[16] Beijers L, Wardenaar KJ, Bosker FJ, Lamers F, van Grootheest G, de Boer MK, et al. 
+Biomarker-based subtyping of depression and anxiety disorders using latent class 
+analysis. A NESDA study. Psychol Med 2019;49(4):617–27. https://doi.org/ 
+10.1017/S0033291718001307.
+[17] Eliasen M, Schr¨oder A, Fink P, Kreiner S, Dantoft TM, Poulsen CH, et al. A step 
+towards a new delimitation of functional somatic syndromes: A latent class analysis 
+of symptoms in a population-based cohort study. J Psychosom Res 2018;108: 
+102–17. https://doi.org/10.1016/j.jpsychores.2018.03.002.
+[18] Lei H, Chen C, Hagiwara K, Kusumi I, Tanabe H, Inoue T, et al. Symptom patterns 
+of the occurrence of depression and anxiety in a Japanese general adult population 
+sample: A latent class analysis. Front Psych 2022;13:808918. https://doi.org/ 
+10.3389/fpsyt.2022.808918.
+[19] Schmalbach, B., H¨auser, W., Br¨ahler, E., Henningsen, P., & Wolfe, F. (2021). 
+Fibromyalgia revisited: do latent class analyses of symptom profiles in the general 
+population confirm 2016 fibromyalgia diagnostic criteria?. Clin Exp Rheumatol, 39 
+Suppl 130(3), 128–136. doi:10.55563/clinexprheumatol/bexjsm.
+[20] Sullivan PF, Smith W, Buchwald D. Latent class analysis of symptoms associated 
+with chronic fatigue syndrome and fibromyalgia. Psychol Med 2002;32(5):881–8. 
+https://doi.org/10.1017/s0033291702005834.
+[21] van Loo HM, Wanders RBK, Wardenaar KJ, Fried EI. Problems with latent class 
+analysis to detect data-driven subtypes of depression. Mol Psychiatry 2018;23(3): 
+495–6. https://doi.org/10.1038/mp.2016.202.
+[22] Sunderland M, Carragher N, Wong N, Andrews G. Factor mixture analysis of DSM- 
+IV symptoms of major depression in a treatment seeking clinical population. Compr 
+Psychiatry 2013;54(5):474–83. https://doi.org/10.1016/j. 
+comppsych.2012.12.011.
+[23] Wanders RB, van Loo HM, Vermunt JK, Meijer RR, Hartman CA, Schoevers RA, 
+et al. Casting wider nets for anxiety and depression: disability-driven cross- 
+diagnostic subtypes in a large cohort. Psychol Med 2016;46(16):3371–82. https:// 
+doi.org/10.1017/S0033291716002221.
+[24] Wardenaar KJ, Wanders RBK, Ten Have M, de Graaf R, de Jonge P. Using a hybrid 
+subtyping model to capture patterns and dimensionality of depressive and anxiety 
+symptomatology in the general population. J Affect Disord 2017;215:125–34. 
+https://doi.org/10.1016/j.jad.2017.03.038.
+[25] Blanco C, Rubio J, Wall M, Wang S, Jiu CJ, Kendler KS. Risk factors for anxiety 
+disorders: common and specific effects in a national sample. Depress Anxiety 2014; 
+31(9):756–64. https://doi.org/10.1002/da.22247.
+[26] Dagnino P, Ugarte MJ, Morales F, Gonz´alez S, Saralegui D, Ehrenthal JC. Risk 
+factors for adult depression: adverse childhood experiences and personality 
+functioning. Front Psychol 2020;11:594698. https://doi.org/10.3389/ 
+fpsyg.2020.594698.
+[27] Monden R, Rosmalen JGM, Wardenaar KJ, Creed F. Predictors of new onsets of 
+irritable bowel syndrome, chronic fatigue syndrome and fibromyalgia: the lifelines 
+study. Psychol Med 2022;52(1):112–20. https://doi.org/10.1017/ 
+S0033291720001774.
+[28] Scholtens S, Smidt N, Swertz MA, Bakker SJ, Dotinga A, Vonk JM, et al. Cohort 
+profile: LifeLines, a three-generation cohort study and biobank. Int J Epidemiol 
+2015;44(4):1172–80. https://doi.org/10.1093/ije/dyu229.
+[29] Klijs B, Scholtens S, Mandemakers JJ, Snieder H, Stolk RP, Smidt N. 
+Representativeness of the LifeLines cohort study. PloS One 2015;10(9):e0137203. 
+https://doi.org/10.1371/journal.pone.0137203.
+[30] Sijtsma A, Rienks J, van der Harst P, Navis G, Rosmalen JGM, Dotinga A. Cohort 
+profile update: lifelines, a three-generation cohort study and biobank. Int J 
+Epidemiol 2022;51(5):e295–302. https://doi.org/10.1093/ije/dyab257.
+[31] Sheehan DV, Lecrubier Y, Sheehan KH, Amorim P, Janavs J, Weiller E, et al. The 
+Mini-international neuropsychiatric interview (M.I.N.I.): the development and 
+validation of a structured diagnostic psychiatric interview for DSM-IV and ICD-10. 
+J Clin Psychiatry 1998;59:22–33.
+[32] Fukuda K, Straus SE, Hickie I, Sharpe MC, Dobbins JG, Komaroff A, et al. The 
+chronic fatigue syndrome: a comprehensive approach to its definition and study. 
+Ann Intern Med 1994;121:953–9.
+[33] Wolfe F, Clauw DJ, Fitzcharles MA, Goldenberg DL, Katz RS, Mease P, et al. The 
+American College of Rheumatology preliminary diagnostic criteria for 
+fibromyalgia and measurement of symptom severity. Arthritis Care Res 2010;62 
+(5):600–10. https://doi.org/10.1002/acr.20140.
+[34] Vercoulen JH, Swanink CM, Fennis JF, Galama JM, van der Meer JW, 
+Bleijenberg G. Dimensional assessment of chronic fatigue syndrome. J Psychosom 
+Res 1994;38(5):383–92. https://doi.org/10.1016/0022-3999(94)90099-x.
+[35] Drossman DA. The functional gastrointestinal disorders and the Rome III process. 
+Gastroenterology 2006;130(5):1377–90.
+[36] Drossman DA. Functional gastrointestinal disorders: what’s new for Rome IV? 
+Lancet Gastroenterol Hepatol 2016;1(1):6–8. https://doi.org/10.1016/S2468- 
+1253(16)30022-X.
+[37] Verhulst B, Neale MC. Best practices for binary and ordinal data analyses. Behav 
+Genet 2021;51(3):204–14. https://doi.org/10.1007/s10519-020-10031-x.
+[38] Bakken IJ, Tveito K, Gunnes N, Ghaderi S, Stoltenberg C, Trogstad L, et al. Two age 
+peaks in the incidence of chronic fatigue syndrome/myalgic encephalomyelitis: a 
+population-based registry study from Norway 2008-2012. BMC Med 2014;12:167. 
+https://doi.org/10.1186/s12916-014-0167-5.
+[39] Creed F. Review article: the incidence and risk factors for irritable bowel syndrome 
+in population-based studies. Aliment Pharmacol Ther 2019;50(5):507–16. https:// 
+doi.org/10.1111/apt.15396.
+[40] Creed F. A review of the incidence and risk factors for fibromyalgia and chronic 
+widespread pain in population-based studies. Pain 2020;161(6):1169–76. https:// 
+doi.org/10.1097/j.pain.0000000000001819.
+[41] van Loo HM, Beijers L, Wieling M, de Jong TR, Schoevers RA, Kendler KS. 
+Prevalence of internalizing disorders, symptoms, and traits across age using 
+advanced nonlinear models. Psychol Med 2023;53(1):78–87. https://doi.org/ 
+10.1017/S0033291721001148.
+[42] Olesen SC, Butterworth P, Leach LS, Kelaher M, Pirkis J. Mental health affects 
+future employment as job loss affects mental health: findings from a longitudinal 
+population study. BMC Psychiatry 2013;13:144. https://doi.org/10.1186/1471- 
+244X-13-144.
+[43] Schovsbo SU, Dantoft TM, Thuesen BH, Leth-Møller KB, Eplov LF, Petersen MW, 
+et al. Social position and functional somatic disorders: the DanFunD study. Scand J 
+Public Health 2023;51(2):225–32. https://doi.org/10.1177/14034948211056752.
+[44] Zhao G, Ford ES, Dhingra S, Li C, Strine TW, Mokdad AH. Depression and anxiety 
+among US adults: associations with body mass index. International journal of 
+obesity (2005) 2009;33(2):257–66. https://doi.org/10.1038/ijo.2008.268.
+[45] Hsu TY, He GY, Wang YC, Chen CY, Wang SH, Chen WK, et al. Alcohol use disorder 
+increases the risk of irritable bowel disease: A Nationwide retrospective cohort 
+study. Medicine 2015;94(51):e2334. https://doi.org/10.1097/ 
+MD.0000000000002334.
+[46] Lai HM, Cleary M, Sitharthan T, Hunt GE. Prevalence of comorbid substance use, 
+anxiety and mood disorders in epidemiological surveys, 1990-2014: A systematic 
+review and meta-analysis. Drug Alcohol Depend 2015;154:1–13. https://doi.org/ 
+10.1016/j.drugalcdep.2015.05.031.
+[47] Malykhin N, Serrano J, Pietrasik W, Hegadoren K. Effects of duration and intensity 
+of psychological stressors on mental health outcomes. J Psychiatr Res 2025;187: 
+211–22. https://doi.org/10.1016/j.jpsychires.2025.05.012.
+[48] Bjørndal LD, Ebrahimi OV, Røysamb E, Karstoft KI, Czajkowski NO, Nes RB. 
+Stressful life events exhibit complex patterns of associations with depressive 
+symptoms in two population-based samples using network analysis. J Affect Disord 
+2024;349:569–76. https://doi.org/10.1016/j.jad.2024.01.054.
+[49] Miloyan B, Joseph Bienvenu O, Brilot B, Eaton WW. Adverse life events and the 
+onset of anxiety disorders. Psychiatry Res 2018;259:488–92. https://doi.org/ 
+10.1016/j.psychres.2017.11.027.
+[50] De Venter M, Illegems J, Van Royen R, Moorkens G, Sabbe BGC, Van Den Eede F. 
+Differential effects of childhood trauma subtypes on fatigue and physical 
+functioning in chronic fatigue syndrome. Compr Psychiatry 2017;78:76–82. 
+https://doi.org/10.1016/j.comppsych.2017.07.006.
+[51] Kaleycheva N, Cullen AE, Evans R, Harris T, Nicholson T, Chalder T. The role of 
+lifetime stressors in adult fibromyalgia: systematic review and meta-analysis of 
+case-control studies. Psychol Med 2021;51(2):177–93. https://doi.org/10.1017/ 
+S0033291720004547.
+[52] Lee AH, Mahurkar-Joshi S, Naliboff B, Gupta A, Labus J, Tillisch K, et al. Role of 
+sex, anxiety, and resilience in the association between adverse childhood 
+experiences and irritable bowel syndrome. Clin. Gastroenterol. Hepatol. 2025;23 
+(1):154–162.e2. https://doi.org/10.1016/j.cgh.2024.05.041.
+[53] ¨Ostberg D, Nordin S. Three-year prediction of depression and anxiety with a single 
+self-rated health item. J Ment Health 2022;31(3):402–9. https://doi.org/10.1080/ 
+09638237.2021.2022610.
+[54] Sattel H, H¨auser W, Schmalbach B, Br¨ahler E, Henningsen P, Hausteiner-Wiehle C. 
+Functional somatic disorders, their subtypes, and their association with self-rated 
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+177 
+
+health in the German general population. Psychosom Med 2023;85(4):366–75. 
+https://doi.org/10.1097/PSY.0000000000001187.
+[55] Comer JS, Blanco C, Hasin DS, Liu SM, Grant BF, Turner JB, et al. Health-related 
+quality of life across the anxiety disorders: results from the national epidemiologic 
+survey on alcohol and related conditions (NESARC). J Clin Psychiatry 2011;72(1): 
+43–50. https://doi.org/10.4088/JCP.09m05094blu.
+[56] Joustra ML, Janssens KA, Bültmann U, Rosmalen JG. Functional limitations in 
+functional somatic syndromes and well-defined medical diseases. Results from the 
+general population cohort LifeLines. J Psychosom Res 2015;79(2):94–9. https:// 
+doi.org/10.1016/j.jpsychores.2015.05.004.
+[57] Shumye S, Belayneh Z, Mengistu N. Health related quality of life and its correlates 
+among people with depression attending outpatient department in Ethiopia: a cross 
+sectional study. Health Qual Life Outcomes 2019;17(1):169. https://doi.org/ 
+10.1186/s12955-019-1233-7.
+[58] Weigel B, Inderyas M, Eaton-Fitch N, Thapaliya K, Marshall-Gradisnik S. Health- 
+related quality of life in Myalgic encephalomyelitis/chronic fatigue syndrome and 
+post COVID-19 condition: a systematic review. J Transl Med 2025;23(1):318. 
+https://doi.org/10.1186/s12967-025-06131-z.
+[59] Visser M, Depaoli S. A guide to detecting and modeling local dependence in latent 
+class analysis models. Struct Equ Model Multidiscip J 2022;29(6):971–82. https:// 
+doi.org/10.1080/10705511.2022.2033622.
+[60] Enders CK, Bandalos DL. The relative performance of full information maximum 
+likelihood estimation for missing data in structural equation models. Struct. Eq. 
+Model. 2001;8(3):430–57. https://doi.org/10.1207/S15328007SEM0803_5.
+[61] Weller BE, Bowen NK, Faubert SJ. Latent class analysis: A guide to best practice. 
+J Black Psychol 2020;46(4):287–311. https://doi.org/10.1177/ 
+0095798420930932.
+[62] De Ayala RJ, Santiago SY. An introduction to mixture item response theory models. 
+J Sch Psychol 2017;60:25–40. https://doi.org/10.1016/j.jsp.2016.01.002.
+[63] Sen S, Cohen AS. Applications of mixture IRT models: A literature review. Measur.: 
+Interdisciplin. Res. Perspectiv. 2019;17(4):177–91. https://doi.org/10.1080/ 
+15366367.2019.1583506.
+[64] Muthen B, Asparouhov T. Item response mixture modeling: application to tobacco 
+dependence criteria. Addict Behav 2006;31(6):1050–66. https://doi.org/10.1016/ 
+j.addbeh.2006.03.026.
+[65] Killian MO, Cimino AN, Weller BE, Hyun Seo C. (2019). A systematic review of 
+latent variable mixture modeling research in social work journals. J Evid Based Soc 
+Work 2019;16(2):192–210. https://doi.org/10.1080/23761407.2019.1577783.
+[66] Schwarz G. Estimating the dimension of a model. Annals of Statistics 1978;6(2). 
+https://doi.org/10.1214/aos/1176344136.
+[67] Sclove SL. Application of model-selection criteria to some problems in multivariate 
+analysis. Psychometrika 1987;52(3):333–43. https://doi.org/10.1007/ 
+bf02294360.
+[68] Akaike H. On entropy maximization principle. In: Krishnaiah PR, editor. 
+Applications of statistics. North Holland Publishing; 1977. p. 27–41.
+[69] Bozdogan H. Model selection and Akaike’s information criterion (AIC): the general 
+theory and its analytical extensions. Psychometrika 1987;52(3):345–70. https:// 
+doi.org/10.1007/bf02294361.
+[70] Bakk Z, Tekle FB, Vermunt JK. Estimating the association between latent class 
+membership and external variables using Bias-adjusted three-step approaches. 
+Sociol. Methodol. 2013;43(1):272–311. https://doi.org/10.1177/ 
+0081175012470644.
+[71] Bolck A, Croon M, Hagenaars J. Estimating latent structure models with categorical 
+variables: one-step versus three-step estimators. Political Anal. 2004;12(1):3–27. 
+https://doi.org/10.1093/pan/mph001.
+[72] Vermunt JK. Latent class modeling with covariates: two improved three-step 
+approaches. Political Anal. 2017;18(4):450–69. https://doi.org/10.1093/pan/ 
+mpq025.
+[73] Muth´en LK, Muth´en BO. Mplus User’s Guide. 8th ed. Los Angeles, CA: Muth´en, & 
+Muth´en; 2017.
+[74] Vermunt JK, Magidson J. Upgrade manual for LatentGOLD basic, advanced, 
+syntax, and choice versions 6.0 and 6.1. Tilburg. The Netherlands: Statistical 
+Innovations Europe; 2025.
+[75] L¨owe B, Spitzer RL, Williams JB, Mussell M, Schellberg D, Kroenke K. Depression, 
+anxiety and somatization in primary care: syndrome overlap and functional 
+impairment. Gen Hosp Psychiatry 2008;30(3):191–9. https://doi.org/10.1016/j. 
+genhosppsych.2008.01.001.
+[76] Brown MM, Jason LA. Functioning in individuals with chronic fatigue syndrome: 
+increased impairment with co-occurring multiple chemical sensitivity and 
+fibromyalgia. Dynamic medicine : DM 2007;6:6. https://doi.org/10.1186/1476- 
+5918-6-6.
+[77] Drossman DA, Chang L, Tack J. Disorders of gut-brain interaction and the Rome V 
+process. Gastroenterology 2026;170(6):1083–98. https://doi.org/10.1053/j. 
+gastro.2026.02.014.
+[78] Janssens KA, Zijlema WL, Joustra ML, Rosmalen JG. Mood and anxiety disorders in 
+chronic fatigue syndrome, fibromyalgia, and irritable bowel syndrome: results 
+from the LifeLines cohort study. Psychosom Med 2015;77(4):449–57. https://doi. 
+org/10.1097/PSY.0000000000000161.
+[79] van Loo HM, Romeijn JW. Psychiatric comorbidity: fact or artifact? Theor Med 
+Bioeth 2015;36(1):41–60. https://doi.org/10.1007/s11017-015-9321-0.
+[80] Zbozinek TD, Rose RD, Wolitzky-Taylor KB, Sherbourne C, Sullivan G, Stein MB, 
+et al. Diagnostic overlap of generalized anxiety disorder and major depressive 
+disorder in a primary care sample. Depress Anxiety 2012;29(12):1065–71. https:// 
+doi.org/10.1002/da.22026.
+[81] Veltri A, Scarpellini P, Piccinni A, Conversano C, Giacomelli C, Bombardieri S, 
+et al. Methodological approach to depressive symptoms in fibromyalgia patients. 
+Clin Exp Rheumatol 2012;30(6 Suppl 74):136–42.
+[82] Isaac M, Janca A, Burke KC, Costa e Silva JA, Acuda SW, Altamura AC, et al. 
+Medically unexplained somatic symptoms in different cultures. A preliminary 
+report from phase I of the World Health Organization international study of 
+somatoform disorders. Psychother Psychosom 1995;64(2):88–93. https://doi.org/ 
+10.1159/000288996.
+[83] Watkins DC, Assari S, Johnson-Lawrence V. Race and ethnic group differences in 
+comorbid major depressive disorder, generalized anxiety disorder, and chronic 
+medical conditions. J Racial Ethn Health Disparities 2015;2(3):385–94. https:// 
+doi.org/10.1007/s40615-015-0085-z.
+[84] Rodríguez MR, Nuevo R, Chatterji S, Ayuso-Mateos JL. Definitions and factors 
+associated with subthreshold depressive conditions: a systematic review. BMC 
+Psychiatry 2012;12:181. https://doi.org/10.1186/1471-244X-12-181.
+[85] Zhang R, Peng X, Song X, Long J, Wang C, Zhang C, et al. The prevalence and risk 
+of developing major depression among individuals with subthreshold depression in 
+the general population. Psychol Med 2023;53(8):3611–20. https://doi.org/ 
+10.1017/S0033291722000241.
+[86] Jason LA, Katz BZ, Sunnquist M, Torres C, Cotler J, Bhatia S. The prevalence of 
+pediatric Myalgic encephalomyelitis/chronic fatigue syndrome in a community- 
+based sample. Child & youth care forum 2020;49(4):563–79. https://doi.org/ 
+10.1007/s10566-019-09543-3.
+[87] Kendler KS. A history of the DSM-5 scientific review committee. Psychol Med 2013; 
+43(9):1793–800. https://doi.org/10.1017/S0033291713001578.
+[88] Borsboom D, Cramer AO. Network analysis: an integrative approach to the 
+structure of psychopathology. Annu Rev Clin Psychol 2013;9:91–121. https://doi. 
+org/10.1146/annurev-clinpsy-050212-185608.
+[89] Barlow DH, Allen LB, Choate ML. Toward a unified treatment for emotional 
+disorders. In: The neurotic paradox, Volume 1. Routledge; 2020. p. 141–66.
+[90] Thomas NS, Neale MC, Kendler KS, van Loo HM, Gillespie NA. Prospective 
+associations between major depressive disorder, generalized anxiety disorder, 
+fibromyalgia, and myalgic encephalomyelitis/chronic fatigue syndrome. Psychol 
+Med 2025;55:e232. https://doi.org/10.1017/S0033291725100603.
+U. Saini et al.                                                                                                                                                                                                                                    
+General Hospital Psychiatry 102 (2026) 170–178 
+178 
