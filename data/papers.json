@@ -1,8 +1,38 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-16",
+  "last_check": "2026-08-17",
   "papers": [
+    {
+      "id": "nochi-2026-reenergizeme-hypoxia-hyperoxia-protocol",
+      "title": "REenergizeME: intermittent hypoxia-hyperoxia treatment for myalgic encephalomyelitis/chronic fatigue syndrome — protocol for a randomised, placebo-controlled trial",
+      "authors": "Nochi M, Kristensen SK, Mehrani N, Guerreiro I, Nørholm IMD, Chandra S, Olufsen M, Gudbergsen LR, Brinth LS, Stokholm R, Karlsson P, Tankisi H, Mehlsen J, Foldager CB, Olsen RKJ",
+      "journal": "BMJ Open",
+      "date": "Aug 2026",
+      "summary": "This is a study plan (a protocol, not results yet) for a trial testing 'intermittent hypoxia-hyperoxia treatment' (IHHT) — repeated short cycles of breathing air with less, then more, oxygen than normal — meant to retrain the body's energy-making machinery in 104 adults with ME/CFS in Denmark.",
+      "why": "Tests a non-drug approach aimed at a specific proposed cause of ME/CFS fatigue — cells struggling to handle oxygen and produce energy properly — with quality of life and post-exertional malaise (a crash after activity) as key outcomes; worth watching for when results are published, though this paper reports no outcomes yet.",
+      "link": "https://doi.org/10.1136/bmjopen-2026-117729",
+      "first_seen": "2026-08-17",
+      "last_checked": "2026-08-17",
+      "flags": [],
+      "isNew": true,
+      "notes": "BMJ Open 16(8):e117729, published online 2026-08-14 (PMID 42601095). Aarhus University, Denmark — not a German sponsor/site (tracked on papers side only; papers are not Germany-restricted per ROUTINE.md). Protocol only, n=104 planned, randomised placebo-controlled trial of intermittent hypoxia-hyperoxia treatment (IHHT) in ME/CFS meeting International Consensus Criteria; primary outcome quality of life, secondary outcomes incl. PEM severity. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST record (title/authors/journal/DOI match)."
+    },
+    {
+      "id": "sun-2026-sleep-eeg-microstructures-longcovid-mecfs",
+      "title": "Facility-Measured Sleep Electroencephalographic Microstructures in Long COVID",
+      "authors": "Sun H, Dang R, Li P, Xiao W, Scott-Sutherland J, Sassower KC, Westover MB, Felsenstein D, Thomas RJ, Haack M, Mullington JM",
+      "journal": "Sleep",
+      "date": "Aug 2026 (online Apr 2026)",
+      "summary": "Overnight brain-wave recordings (sleep EEG) compared 28 people with long COVID, 19 with ME/CFS, and 28 healthy people. Both patient groups showed unusual patterns in the fine details of their sleep brain waves, but ME/CFS patients had some extra abnormalities — like disconnected slow 'sleep spindles' — not seen in long COVID, suggesting the two illnesses disturb sleep in overlapping but not identical ways.",
+      "why": "Offers a measurable, objective marker for the poor, unrefreshing sleep that ME/CFS and long-COVID patients commonly report, and hints that ME/CFS may involve extra sleep disruption beyond what's seen in long COVID.",
+      "link": "https://doi.org/10.1093/sleep/zsag090",
+      "first_seen": "2026-08-17",
+      "last_checked": "2026-08-17",
+      "flags": [],
+      "isNew": true,
+      "notes": "Sleep 49(8):zsag090 (PMID 42017829). Originally available online 2026-04-22 (epub-ahead-of-print) but only received final print/PubMed indexing on 2026-08-14 — likely why it was missed by earlier daily sweeps keyed to indexing date. Beth Israel Deaconess Medical Center / Harvard group. n=28 long COVID, 19 ME/CFS, 28 healthy controls; overnight polysomnography with sleep-microstructure analysis (spindle coupling, slow-oscillation metrics). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC core record and NCBI eutils esummary (pubdate history) matched by DOI/PMID."
+    },
     {
       "id": "charlton-2026-skeletal-muscle-bedrest-comparison",
       "title": "Skeletal muscle properties in long COVID and ME/CFS differ from those induced by bed rest",
@@ -15,7 +45,7 @@
       "first_seen": "2026-08-16",
       "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Nature Communications, published online Jul 28, 2026 (preprint precursor medRxiv 10.1101/2025.05.02.25326885). Amsterdam UMC/VU Amsterdam group (Wüst lab). Compared muscle biopsy + exercise-test findings in long-COVID and ME/CFS patients vs healthy controls who underwent 60 days of supervised bed rest; reduced capillary density and a shift toward glycolytic (fast, fatigable) fibre type in both patient groups not reproduced by bed rest alone, plus selective type-I (slow, fatigue-resistant) fibre atrophy specific to ME/CFS. Not Wirth/Scheibenbogen-affiliated but topically core to Wirth's skeletal-muscle/PEM pathomechanism hypothesis. Confirmed independently via Crossref DOI metadata (title/author list/journal match); Europe PMC does not yet have this DOI indexed (likely pending indexing lag), so Crossref + publisher-page redirect were used as the confirming sources per ROUTINE.md. Found via this run's fresh open-ended sweep, ~3 weeks after publication — flagging despite being slightly outside the normal 1-3 day recency window given it was not on the prior baseline and is high-relevance/high-profile (independently covered by Health Rising, 12 Aug 2026, and DutchNews)."
     },
     {
@@ -30,7 +60,7 @@
       "first_seen": "2026-08-16",
       "last_checked": "2026-08-16",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "General Hospital Psychiatry, vol. 102, published online Aug 11, 2026. University Medical Center Groningen (UMCG) group. Cross-sectional mixture-modeling analysis of 72,919 adults in the Dutch Lifelines Cohort Study; six symptom-based classes identified (Healthy, Pain, Tension/Pain, Anxiety, Cognition/Fatigue, Depression), with ME/CFS, fibromyalgia and IBS criteria symptoms analyzed alongside major depressive disorder and generalized anxiety disorder. Borderline scope call — a broader functional-somatic/internalizing-symptom nosology study rather than an ME/CFS-dedicated paper, but ME/CFS is explicitly named and analyzed (confirmed via full Europe PMC abstract, which lists 'myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)' as one of the three functional disorders studied); included on the same precedent as the already-tracked mao-2026-depression-disease-history-mecfs entry (diagnostic-overlap/nosology papers). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST record (full abstract match) and Crossref DOI metadata (title/authors/journal match)."
     },
     {
