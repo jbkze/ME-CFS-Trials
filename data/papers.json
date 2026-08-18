@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-17",
+  "last_check": "2026-08-18",
   "papers": [
     {
       "id": "nochi-2026-reenergizeme-hypoxia-hyperoxia-protocol",
@@ -15,7 +15,7 @@
       "first_seen": "2026-08-17",
       "last_checked": "2026-08-17",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "BMJ Open 16(8):e117729, published online 2026-08-14 (PMID 42601095). Aarhus University, Denmark — not a German sponsor/site (tracked on papers side only; papers are not Germany-restricted per ROUTINE.md). Protocol only, n=104 planned, randomised placebo-controlled trial of intermittent hypoxia-hyperoxia treatment (IHHT) in ME/CFS meeting International Consensus Criteria; primary outcome quality of life, secondary outcomes incl. PEM severity. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST record (title/authors/journal/DOI match)."
     },
     {
@@ -30,7 +30,7 @@
       "first_seen": "2026-08-17",
       "last_checked": "2026-08-17",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Sleep 49(8):zsag090 (PMID 42017829). Originally available online 2026-04-22 (epub-ahead-of-print) but only received final print/PubMed indexing on 2026-08-14 — likely why it was missed by earlier daily sweeps keyed to indexing date. Beth Israel Deaconess Medical Center / Harvard group. n=28 long COVID, 19 ME/CFS, 28 healthy controls; overnight polysomnography with sleep-microstructure analysis (spindle coupling, slow-oscillation metrics). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC core record and NCBI eutils esummary (pubdate history) matched by DOI/PMID."
     },
     {
