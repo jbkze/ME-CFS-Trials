@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "description": "Authoritative state of known ME/CFS drug trials in Germany. Updated by the routine in ROUTINE.md. The first run after setup will (correctly) flag every relevant trial it finds as 'new', because this baseline starts empty. Do not hand-fabricate entries — only add trials confirmed from a registry or institutional source during a check.",
-  "last_check": "2026-08-18",
-  "last_run_at": "2026-08-18T04:14:45Z",
+  "last_check": "2026-08-19",
+  "last_run_at": "2026-08-19T04:15:57Z",
   "trials": [
     {
       "id": "nct07529197",
@@ -59,7 +59,7 @@
         "https://cfc.charite.de/en/clinical_research/nksg/trial_ria/"
       ],
       "first_seen": "2026-06-25",
-      "last_checked": "2026-08-18",
+      "last_checked": "2026-08-19",
       "last_status_change": null,
       "status_history": [
         {
@@ -119,7 +119,7 @@
         "https://thesicktimes.org/2026/05/14/breaking-the-vicious-cycle-how-two-german-scientists-seek-to-solve-me/"
       ],
       "first_seen": "2026-06-25",
-      "last_checked": "2026-08-18",
+      "last_checked": "2026-08-19",
       "last_status_change": null,
       "status_history": [
         {
@@ -197,7 +197,7 @@
         "https://drks.de/search/en/trial/DRKS00033897"
       ],
       "first_seen": "2026-06-27",
-      "last_checked": "2026-08-18",
+      "last_checked": "2026-08-19",
       "last_status_change": null,
       "status_history": [
         {
@@ -270,7 +270,7 @@
         "https://aktuelles.uni-frankfurt.de/en/forschung/post-covid-syndrom-bmbf-gefoerderte-medikamentenstudie-startet/"
       ],
       "first_seen": "2026-06-30",
-      "last_checked": "2026-08-18",
+      "last_checked": "2026-08-19",
       "last_status_change": "2025-09-30",
       "status_history": [
         {
@@ -396,7 +396,7 @@
         "https://www.netzwerk-universitaetsmedizin.de/patientinnen/laufende-studien"
       ],
       "first_seen": "2026-08-15",
-      "last_checked": "2026-08-18",
+      "last_checked": "2026-08-19",
       "last_status_change": null,
       "status_history": [
         {
@@ -414,7 +414,7 @@
         "drug_study": true,
         "wirth_or_scheibenbogen": false
       },
-      "notes": "New trial found 2026-08-15: successor sub-protocol to the terminated rapid-revive (RAPID_REVIVE) arm, under the same RAPID adaptive-platform master protocol (NAPKON/Netzwerk Universitätsmedizin, sponsor Goethe-Universität Frankfurt/Prof. Maria Vehreschild). Confirmed via a dedicated institutional trial-specific page (netzwerk-universitaetsmedizin.de/forschung/rapid-elapse), satisfying ROUTINE.md's confirmation standard (b). Drug (bupropion, 300 mg/day x 56 days vs placebo) and the 11-site list (3 currently active: Charité Berlin Campus Benjamin Franklin/Psychiatry, Universitätsmedizin Göttingen, Universitätsmedizin Frankfurt; 8 listed but not yet active: Jena, Gießen/Marburg, Köln, Heidelberg, Freiburg, München/LMU, Würzburg, Kiel/UKSH) are taken directly from that official page. A secondary aggregator (a clinicaltrials.eu listing) additionally reports a CTIS registry ID 2025-524443-12-00 and specific eligibility cutoffs (FSS ≥45, Bell Scale 20–60) — these could NOT be independently verified on the official CTIS/euclinicaltrials.eu portal (blocked, HTTP 403 both directly and via its API), and a separate AI-generated web-search summary attributed a different drug ('sonlicromanol') to that same CTIS ID, an apparent search-engine hallucination/conflation — so the CTIS ID and those specific cutoff numbers are NOT recorded as confirmed; registry is recorded as 'institutional' pending direct CTIS confirmation. Re-verify the CTIS ID directly next run once CTIS access succeeds. Eligibility above is quoted from the official NUM page; PEM is one of several alternative qualifying symptoms, not mandatory for every participant — same broad-PCS/PEM-adjacent design already accepted for its predecessor RAPID_REVIVE per the post-COVID triage rule in sources/search-sources.md. No Wirth/Scheibenbogen link found on the official page (coordinating center Göttingen, sponsor Frankfurt) — priority set to normal; the Charité Berlin site is in the Psychiatry department (Campus Benjamin Franklin), distinct from Scheibenbogen's Institute of Medical Immunology/Fatigue Centrum. Re-confirmed unchanged (recruiting, 3 of 11 sites active: Charité Berlin Campus Benjamin Franklin, Universitätsmedizin Göttingen, Universitätsmedizin Frankfurt; trial period 2026-02-01 to 2028-06-30) via netzwerk-universitaetsmedizin.de/forschung/rapid-elapse on 2026-08-16. CTIS ID 2025-524443-12-00 still NOT independently verifiable — euclinicaltrials.eu and its API returned HTTP 403 again on both the root search page and a direct trial-view URL, as did a third-party ctis.eu mirror; no contradicting CTIS ID found either. Registry remains recorded as 'institutional' pending direct CTIS confirmation. 'new' flag cleared — no longer new as of this check, having been added 2026-08-15. Re-confirmed unchanged (recruiting at 3 of 11 planned sites incl. Charité Berlin, Göttingen, Frankfurt; 8 sites still 'INAKTIV' per the NUM page) via netzwerk-universitaetsmedizin.de/forschung/rapid-elapse on 2026-08-17. CTIS ID still NOT independently confirmable this run: euclinicaltrials.eu main portal page now returns HTTP 200 (previously 403), but the CTIS public search/API endpoint and a third-party mirror (clinicaltrials.eu) both still return HTTP 403, and a clean search without seeding the candidate ID found no independent corroboration of any CTIS number — the previously-circulated '2025-524443-12-00' figure should be treated as unconfirmed, possibly a query-reflection artifact, not a verified fact. Registry remains recorded as institutional pending direct CTIS confirmation. CTIS registration number 2025-524443-12-00 independently confirmed on 2026-08-18 via a direct hyperlink on the NUM institutional 'laufende Studien' listing page (netzwerk-universitaetsmedizin.de/patientinnen/laufende-studien), which links straight to https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00 — resolving the prior runs' concern that this ID might be an unconfirmed/reflected artifact (euclinicaltrials.eu's own search API still returns HTTP 403 and could not be used for direct cross-check). Site status unchanged: still 3 of 11 sites active (Berlin, Göttingen, Frankfurt), same 8 listed as not-yet-active."
+      "notes": "New trial found 2026-08-15: successor sub-protocol to the terminated rapid-revive (RAPID_REVIVE) arm, under the same RAPID adaptive-platform master protocol (NAPKON/Netzwerk Universitätsmedizin, sponsor Goethe-Universität Frankfurt/Prof. Maria Vehreschild). Confirmed via a dedicated institutional trial-specific page (netzwerk-universitaetsmedizin.de/forschung/rapid-elapse), satisfying ROUTINE.md's confirmation standard (b). Drug (bupropion, 300 mg/day x 56 days vs placebo) and the 11-site list (3 currently active: Charité Berlin Campus Benjamin Franklin/Psychiatry, Universitätsmedizin Göttingen, Universitätsmedizin Frankfurt; 8 listed but not yet active: Jena, Gießen/Marburg, Köln, Heidelberg, Freiburg, München/LMU, Würzburg, Kiel/UKSH) are taken directly from that official page. A secondary aggregator (a clinicaltrials.eu listing) additionally reports a CTIS registry ID 2025-524443-12-00 and specific eligibility cutoffs (FSS ≥45, Bell Scale 20–60) — these could NOT be independently verified on the official CTIS/euclinicaltrials.eu portal (blocked, HTTP 403 both directly and via its API), and a separate AI-generated web-search summary attributed a different drug ('sonlicromanol') to that same CTIS ID, an apparent search-engine hallucination/conflation — so the CTIS ID and those specific cutoff numbers are NOT recorded as confirmed; registry is recorded as 'institutional' pending direct CTIS confirmation. Re-verify the CTIS ID directly next run once CTIS access succeeds. Eligibility above is quoted from the official NUM page; PEM is one of several alternative qualifying symptoms, not mandatory for every participant — same broad-PCS/PEM-adjacent design already accepted for its predecessor RAPID_REVIVE per the post-COVID triage rule in sources/search-sources.md. No Wirth/Scheibenbogen link found on the official page (coordinating center Göttingen, sponsor Frankfurt) — priority set to normal; the Charité Berlin site is in the Psychiatry department (Campus Benjamin Franklin), distinct from Scheibenbogen's Institute of Medical Immunology/Fatigue Centrum. Re-confirmed unchanged (recruiting, 3 of 11 sites active: Charité Berlin Campus Benjamin Franklin, Universitätsmedizin Göttingen, Universitätsmedizin Frankfurt; trial period 2026-02-01 to 2028-06-30) via netzwerk-universitaetsmedizin.de/forschung/rapid-elapse on 2026-08-16. CTIS ID 2025-524443-12-00 still NOT independently verifiable — euclinicaltrials.eu and its API returned HTTP 403 again on both the root search page and a direct trial-view URL, as did a third-party ctis.eu mirror; no contradicting CTIS ID found either. Registry remains recorded as 'institutional' pending direct CTIS confirmation. 'new' flag cleared — no longer new as of this check, having been added 2026-08-15. Re-confirmed unchanged (recruiting at 3 of 11 planned sites incl. Charité Berlin, Göttingen, Frankfurt; 8 sites still 'INAKTIV' per the NUM page) via netzwerk-universitaetsmedizin.de/forschung/rapid-elapse on 2026-08-17. CTIS ID still NOT independently confirmable this run: euclinicaltrials.eu main portal page now returns HTTP 200 (previously 403), but the CTIS public search/API endpoint and a third-party mirror (clinicaltrials.eu) both still return HTTP 403, and a clean search without seeding the candidate ID found no independent corroboration of any CTIS number — the previously-circulated '2025-524443-12-00' figure should be treated as unconfirmed, possibly a query-reflection artifact, not a verified fact. Registry remains recorded as institutional pending direct CTIS confirmation. CTIS registration number 2025-524443-12-00 independently confirmed on 2026-08-18 via a direct hyperlink on the NUM institutional 'laufende Studien' listing page (netzwerk-universitaetsmedizin.de/patientinnen/laufende-studien), which links straight to https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00 — resolving the prior runs' concern that this ID might be an unconfirmed/reflected artifact (euclinicaltrials.eu's own search API still returns HTTP 403 and could not be used for direct cross-check). Site status unchanged: still 3 of 11 sites active (Berlin, Göttingen, Frankfurt), same 8 listed as not-yet-active. Re-confirmed unchanged (RECRUITING) via netzwerk-universitaetsmedizin.de/forschung/rapid-elapse on 2026-08-19 — page now states the first patient was enrolled 2026-08-17 (recruitment active at all 3 currently-active sites: Charité Campus Benjamin Franklin Berlin, Universitätsmedizin Göttingen, Universitätsmedizin Frankfurt); intervention reconfirmed as bupropion 300 mg/day vs placebo (not vidofludimus, which is the separate REVIVE arm). CTIS pages at euclinicaltrials.eu/ctis.eu returned 403 again this run, so the CTIS id itself was not independently re-verified via the EMA portal."
     },
     {
       "id": "nct07724834",
@@ -475,7 +475,7 @@
         "https://cfc.charite.de/en/clinical_research/nksg/"
       ],
       "first_seen": "2026-07-30",
-      "last_checked": "2026-08-18",
+      "last_checked": "2026-08-19",
       "last_status_change": null,
       "status_history": [
         {
@@ -544,7 +544,7 @@
       },
       "links": [],
       "first_seen": "2026-07-30",
-      "last_checked": "2026-08-18",
+      "last_checked": "2026-08-19",
       "last_status_change": null,
       "status_history": [
         {
