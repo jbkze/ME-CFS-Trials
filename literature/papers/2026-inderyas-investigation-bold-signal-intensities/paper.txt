@@ -1,0 +1,1140 @@
+Investigation of BOLD signal intensities in long COVID patients using 7T 
+functional MRI
+Maira Inderyas *
+, Kiran Thapaliya , Sonya Marshall-Gradisnik , Leighton Barnden
+National Centre for Neuroimmunology and Emerging Diseases, Griffith University, Southport, QLD, Australia
+A R T I C L E I N F O
+Keywords:
+Long COVID
+BOLD signal
+Anterior cingulate cortex
+Precuneus
+7 T functional MRI
+Task fMRI
+A B S T R A C T
+Long COVID is increasingly associated with disruption in brain homeostasis, manifesting as severe neurological 
+dysfunction, brain fog and cognitive impairment. This present study investigated localised cognitive deficits in 
+long COVID patients by examining brain blood oxygenation-level-dependent (BOLD) signal activity using ultra- 
+high-field 7 T (7T) task-based functional magnetic resonance imaging (fMRI). Whole-brain BOLD signal differ­
+ences were assessed across 19 long COVID patients, and 27 healthy controls (HC) including 12 COVID-recovered 
+(Cov-RHC) and 15 COVID-19-naïve HC (nHC). 225 fMRI volumes were acquired during the Stroop colour-word 
+task. Functional and anatomical images were processed using SPM12 to extract the BOLD signal intensity time 
+course from whole-brain voxels for inferences between cohorts during task-fMRI. Significantly low BOLD acti­
+vation in long COVID patients was observed compared to Cov-RHC in the anterior cingulate cortex (p = 0.002, 
+cluster size=650, Z-value = 4.67), and the precuneus (p = <0.001, cluster size = 1893, Z-value = 4.67). 
+Furthermore, BOLD intensities in precuneus showed a negative association with self-reported pain scores 
+(p = 0.040) and the duration of illness (p = 0.03) in long COVID patients, suggesting significant correlation 
+between BOLD signal and an increase in duration of illness and pain levels. No statistically significant BOLD 
+differences were observed for inter-group comparisons between nHC vs. long COVID, and nHC vs. Cov-RHC. 
+Response times to incongruent (p = 0.002) and congruent task stimuli (p = 0.001) significantly varied be­
+tween nHC and long COVID cohorts, demonstrating overall faster information processing by nHC. Reduced BOLD 
+signals to ‘core’ brain regions in long COVID imply reduced cognitive control by intrinsic networks that mediate 
+information processing, cognitive and executive functions due to perturbations linked to cerebral blood flow, 
+oxygenation status, and ongoing neuroinflammation.
+1. Introduction
+Post-acute sequelae of SARS-COV-2 infection or long COVID is 
+defined as the development of new symptoms three months or symptom 
+persistence for more than four weeks following SARS-CoV-2 infection 
+(CDC, 2024; Raveendran, 2021; Soriano et al., 2020). Neurocognitive 
+deficits, particularly cognitive dysfunction, memory and attention im­
+pairments are frequently reported symptoms, coupled with physical and 
+mental fatigue in long COVID (Crivelli et al., 2022; Hartung et al., 2022; 
+Z. Li et al., 2023; Lopez-Leon et al., 2021; Mazza et al., 2021; Premraj 
+et al., 2022; Velichkovsky et al., 2023). These cognitive complaints 
+may be attributed to persistent neurobiological changes, including 
+widespread central and peripheral neuroinflammation, vascular 
+disruption and microstructural brain changes (Colombo et al., 2021; Lee 
+et al., 2021; Lindan et al., 2021). The exact neuroinvasive mechanisms 
+in long COVID, however, remain poorly understood (Tai et al., 2023).
+Growing neuroimaging evidence in long COVID indicates alterations 
+across cortical and subcortical regions (Ajˇcevi´c et al., 2023; 
+Dacosta-Aguayo et al., 2024; Dadsena et al., 2025; Du et al., 2023; Qin 
+et al., 2021) with grey matter and white matter heterogeneity (Bendella 
+et al., 2023; Besteher et al., 2022; Douaud et al., 2022; Hafiz et al., 2022; 
+Latini et al., 2022; Paolini et al., 2023; Thapaliya et al., 2023). These 
+changes are consistent with cognitive impairment, suggesting 
+large-scale network dysfunction related to cognitive complaints in long 
+COVID (Dacosta-Aguayo et al., 2024). Functional magnetic resonance 
+imaging (fMRI) uses blood oxygenation level-dependent (BOLD) to 
+This article is part of a special issue entitled: Post-COVID19 condition published in Brain, Behavior, & Immunity - Health.
+* Corresponding author.
+E-mail addresses: maira.inderyas@griffithuni.edu.au (M. Inderyas), k.thapaliya@griffith.edu.au (K. Thapaliya), s.marshall-gradisnik@griffith.edu.au (S. Marshall- 
+Gradisnik), l.barnden@griffith.edu.au (L. Barnden). 
+Contents lists available at ScienceDirect
+Brain, Behavior, & Immunity - Health
+journal homepage: www.editorialmanager.com/bbih/default.aspx
+https://doi.org/10.1016/j.bbih.2026.101266
+Received 22 October 2025; Received in revised form 5 April 2026; Accepted 19 May 2026  
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+Available online 22 May 2026 
+2666-3546/© 2026 The Authors. Published by Elsevier Inc. This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by- 
+nc-nd/4.0/ ). 
+
+detect brain activity patterns (Ogawa et al., 1992) and report functional 
+alterations in hippocampus (Saikarthik et al., 2025), frontal and tem­
+poral regions (Li et al., 2023). Widespread connectivity changes are 
+observed within sensory, motor, attention, salience and default mode 
+networks (Baraniuk et al., 2024; Churchill et al., 2023; Dacosta-Aguayo 
+et al., 2024; Esposito et al., 2022; Mohammadi and Ghaderi, 2024; 
+Muccioli et al., 2023; Voruz et al., 2023).
+More recently, a multimodal study in long COVID cohorts yielded 
+significant differences in functional connectivity while no comparable 
+differences were detected in structural and perfusion analyses when 
+compared to COVID-recovered individuals (Fineschi et al., 2024). These 
+findings suggest that post-COVID-19 cognitive dysfunction may arise 
+from dysregulated attention networks. A critical gap, therefore, exists in 
+understanding executive processes, particularly within brain regions 
+that support task-based cognitive control and executive functions in long 
+COVID, healthy and COVID-recovered individuals.
+While the literature base in long COVID research is rapidly 
+expanding (Baraniuk et al., 2024; Diez-Cirarda et al., 2024; Graf et al., 
+2025; Inderyas et al., 2026; Langan et al., 2022; Liou et al., 2024; 
+Rane Levendovszky et al., 2025; Rua et al., 2024; Talkington et al., 2024; 
+Thapaliya et al., 2023, 2025a, 2025b, 2025c; Trufanov et al., 2025), the 
+application of 7 T (7T) fMRI remains considerably underexplored that 
+offers unprecedented advantage over conventional methods in permit­
+ting detection of subtle neurovascular and functional dynamics (Kreitz 
+et al., 2023). The Stroop colour-word task, being a well-validated 
+paradigm probes for selective attention, response inhibition and cogni­
+tive interference resolution (Russo et al., 2023), which are core execu­
+tive functions frequently reported in long COVID (Baraniuk et al., 2024).
+Therefore, the goal of this study was to localise neural dysfunction by 
+eliciting robust BOLD responses to the Stroop task in regions critically 
+implicated in cognitive control. We reasoned that long COVID patients 
+would exhibit reduced signal intensity during cognitive Stroop task 
+performance, particularly in brain regions governing conflict moni­
+toring, working memory and sustained attention. The present study 
+assessed these functions across three participant groups: long COVID 
+patients (n = 19), COVID-recovered healthy controls (n = 12), and 
+COVID-naïve healthy controls (n = 15) using7T fMRI by detecting subtle 
+haemodynamic changes during cognitively demanding task perfor­
+mance. We hypothesised that: (1) significant task-evoked BOLD differ­
+ences would be observed during cognitively demanding incongruent 
+trials in brain regions corresponding to executive and cognitive func­
+tions; (2) prolonged response times to incongruent trials would reflect 
+slowed cognitive processing speed; and (3) BOLD signal intensity would 
+correlate with patient-reported clinical scores.
+2. Materials and methods
+2.1. Participant recruitment
+This cross-sectional study was approved by the Griffith University 
+Human Research Ethics Committee (2022/666) with written informed 
+consent obtained from all participants. The present study was conducted 
+at the National Centre of Neuroimmunology and Emerging Diseases 
+(NCNED) on the Gold Coast, Queensland, Australia. Nineteen long 
+COVID patients fulfilling the WHO criteria for post-COVID-19 by Delphi 
+consensus (Soriano et al., 2022) were recruited to undergo MRI scans on 
+a 7T scanner. Twenty-seven healthy controls (HC) aged between 18 and 
+65 years with no reported chronic health condition or evidence of un­
+derlying illness were also included in the study. Individuals with chronic 
+psychological illness, malignancies, autoimmune, neurological, cardio­
+vascular diseases, pregnancy and/or breastfeeding were excluded. All 
+participants were requested to complete online research registry ques­
+tionnaires developed by NCNED. These questionnaires incorporate the 
+CDC chronic fatigue syndrome inventory and a series of validated 
+quality of life (QoL) measures that could be accessed via Research 
+Electronic Data Capture (REDCap). The questionnaire specifically 
+sought information on previous history of COVID-19 infection, or mul­
+tiple infections and approximate dates of infection(s) and whether the 
+diagnoses were made through COVID-19 polymerase chain reaction 
+(PCR test) or a Rapid Antigen Test. Out of 27 HCs included in the study, 
+15 individuals self-reported having no history of COVID-19 infection 12 
+participants reported a complete recovery following COVID-19 infection 
+and were healthy with no underlying illness or comorbidities.
+The clinical measures were obtained from all the participants, similar 
+to our previous publications (Inderyas et al., 2026; Thapaliya et al., 
+2025a). Quality of life (QoL) measures were acquired using 36-Item 
+Short Form Survey (SF-36) (Alonso et al., 1995). SF-36 scores ranged 
+between values from 0 to 100, and an average was assigned to calculate 
+for each domain. Duration of illness was estimated from the age of 
+symptom onset for long COVID patients, and severity of ‘pain’ was 
+assessed on a scale of 0 to 100 points, where values closer to 0 indicated 
+extremely severe pain symptoms (higher levels of pain) and values 
+closer to 100 presented no symptoms (higher QoL), (see Table 1). 
+Detailed demographic information and QoL measures for duration of 
+illnesses, pain, general and mental health scores and physical function 
+measures for participants are provided in the Supplementary file.
+2.2. MRI acquisition
+MRI data were acquired using the acquisition protocols described in 
+our previous publication (Inderyas et al., 2026). 19 long COVID patients 
+and 27 HCs were scanned on a 7T whole-body MRI scanner (Siemens 
+Healthcare, Erlangen, Germany) with a 32-channel head coil (Nova MRI 
+Wilmington NC, USA). 225 functional volumes were acquired sagittally 
+using a multiband echo-planar imaging (EPI) pulse sequence developed 
+at the University of Minnesota (Auerbach et al., 2013) while participants 
+responded to the Stroop colour-word task. The acquisition parameters 
+were: repetition time (TR) = 2000 ms, echo time (TE) = 22.4 ms, flip 
+angle = 70o, multi-slice mode = Interleaved, acquisition matrix 
+192x192 and voxel size = 1.25 mm3. 60 Stroop stimuli were presented 
+during the task fMRI that lasted for 7.5 min. Anatomical sagittal 
+T1-weighted data was acquired using a Magnetization Prepared 2 Rapid 
+Acquisition Gradient Echo (MP2RAGE) Sequence with TR = 4300 ms, 
+TE = 2.45 ms, first inversion time (TI1) = 840 ms, second inversion time 
+(TI2) = 2370 ms, first flip angle (FA1) = 5o, second flip angle (FA2) = 6o, 
+and resolution = 0.75 mm3 with matrix size = 256x300 x320.
+2.3. The Stroop colour-word task experiment
+All participants performed a cognitively challenging Stroop colour- 
+word paradigm during fMRI. For the task trial, two coloured words 
+were displayed with the upper word as either ‘Blue’, ‘Red’, ‘Yellow’, 
+Table 1 
+Demographic information for 19 long COVID patients and 27 healthy controls, 
+sub-grouped into Cov-RHC and nHC, number of females and males in each 
+group, age, sex, clinical measures for pain and illness duration with mean and 
+standard deviations (±). (Also see Supplementary Tables for symptom scores).
+Long COVID 
+(n = 19)
+HC (n = 27)
+Cov-RHC (n = 12/ 
+27)
+nHC (n = 15/ 
+27)
+Age
+47.77 ± 12.7
+34.4 ± 6.3
+37.5 ± 11.3
+Two-tailed P-value 
+for age
+0.002a 
+0.0008b 
+0.40c
+Sex (f/m)
+14/5
+8/4
+10/5
+Duration of illness
+0.78 ± 0.67
+n/a
+n/a
+Pain scores
+49.26 ± 21.12
+87.5 ± 17.76
+91.3 ± 15.6
+n/a denotes not applicable for healthy controls. a = p-value (19 long COVID versus 27 
+HC), b = p-value (19 long COVID versus 12 Cov-RHC), c = p-value (12 Cov-RHC 
+versus 15nHC).
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+2 
+
+‘Green’ or ‘XXXX’ and coloured in red, green, blue or yellow on a black 
+background. The lower word ‘Blue’, ‘Red’, ‘Yellow’ or ‘Green’ was in 
+white displayed against black background. Participants responded to 
+whether the colour of the upper word agreed with the meaning of the 
+lower word and decided with ‘yes’ or ‘no’ by pressing one of the two 
+buttons on the handpiece provided during the scan. As shown in Fig. 1, 
+neutral stimulus contains upper word as ‘XXXX’, incongruent with upper 
+word written in a different colour from its meaning, 3) and congruent 
+with upper word written in the colour of its meaning. The idle period, 
+called “rest”, is the pause between a trial response and the next trial 
+onset during which a stationary cross appears on the screen for a 
+randomised period. The task lasted for 7.5 min.
+Conflict (interference) occurs with the upper word because of the 
+automatic response to read the upper word to determine its colour 
+instead of the meaning of the lower word. This dual-choice for the 
+congruent-incongruent was used to test information processing ability, 
+cognitive control and executive function in participants by manipulating 
+the difficulty level. The response selection conflict using selective 
+attention would also force the participant to take time to ponder, gaining 
+enough time for inhibitory cognitive interference from conflicting word- 
+ink presentations to kick in (Peskar et al., 2023). 40% of randomised 
+trials were incongruent, 30% congruent, and 30% neutral, and the 
+average inter-stimulus time was 10.5 s.
+The stimulus-onset and reaction times to the stimulus were recorded 
+for each trial type, and their difference was categorised as response time 
+(RT). Response accuracy was extracted by calculating accuracy from the 
+correct responses over total responses (accuracy = correct/total re­
+sponses) for each trial type for each group. Two-sample t-tests were 
+performed to estimate significance between cohorts. SPSS was used to 
+perform independent sample t-tests and to estimate effect size to 
+quantify group differences in RT during incongruent and congruent 
+tasks.
+2.4. MR image processing
+Structural and functional MRI data were visually inspected for 
+quality control before pre-processing with SPM12 running in MATLAB 
+2019b (The MathWorks, Inc.). SPM works on the principle of using raw 
+images to estimate regionally specific effects through statistical para­
+metric maps (Flandin and Novak, 2020). MRI data were pre-processed 
+using SPM12 for realignment and unwarping, slice time correction, 
+and co-registration to anatomical images (Friston et al., 1994). Resam­
+pling was performed to an isotropic 1 mm, followed by spatial nor­
+malisation into MNI space. Smoothing was performed at 5 mm FWHM. 
+Quality control measures were performed at each preprocessing step. 
+Time-series inspection of signal dropouts was assessed for each partici­
+pant. An a-priori threshold of 1.5 mm was established for framewise 
+displacement (FD) for exclusion criteria. All study participants main­
+tained an FD below 1.5 mm indicating good data quality across the three 
+cohorts. Fig. 2 provides detailed preprocessing steps of MRI data.
+2.5. General Linear Modelling (GLM) and Statistical Modelling
+A GLM design matrix was used for a mass-univariate approach to 
+analyse the BOLD data based on the experimental and confounding ef­
+fects. Residual variability was then used to derive univariate statistics at 
+each voxel to compute statistical parametric maps. 5 initial BOLD vol­
+umes were removed manually, and the remaining 220 volumes were 
+used for ‘first-level’ fMRI models for within-subject analysis. “Incon­
+gruent” and “Congruent” conditions were defined by their onset and 
+duration periods in the experimental design matrix. FD and realignment 
+parameters, along with white matter and CSF time-series were used as 
+regressors to limit confounding effects. GLM applied these statistical 
+parametric models at each voxel and the “Estimates' of the GLM pa­
+rameters were explored by using contrast vectors to produce statistical 
+parametric maps. These estimates were used to generalise the results to 
+the population in ‘second-level analysis’ where it calculates the standard 
+error, isolating the variability in parameter estimates and performing T- 
+tests for the mean for the contrast to be tested for significance. Multiple 
+group comparison analyses were performed across subjects. BOLD dif­
+ferences were measured for: 19 long COVID vs 15 nHC, 19 long COVID vs 
+12 Cov-RHC, and 15 nHC vs 12 Cov-RHC.
+Default settings were used for ‘apply mask’, and ‘p-value adjustment 
+to control’ option ‘none’, for the whole-brain analysis. We used the voxel 
+“threshold T or p-value” of 0.001 to locate clusters that were composed 
+of individual voxels passing that set threshold. Cluster size threshold was 
+set to 10 to require at least 10 adjacent significant voxels. Statistical 
+inference was measured with the false discovery rate corrected cluster p- 
+value (cluster pfdr). BOLD time-series values from the two clusters were 
+extracted using MARSBAR in SPM12 and a Pearson test was performed 
+to estimate the strength of the correlations between BOLD time-series 
+values and clinical measures acquired from long COVID patients. Age 
+and gender were used as control variables to account for confounding 
+effects and adjust for differences in our analysis.
+3. Results
+3.1. Long COVID vs Cov-RHC
+Group comparison between long COVID patients and Cov-RHC 
+showed significant BOLD differences for several voxel clusters. 
+Refining the extent threshold to 600 for limiting active voxels displayed, 
+we obtained two clusters with significant BOLD signals. We found 
+significantly reduced BOLD activation in long COVID patients within the 
+anterior cingulate cortex (ACC, Fig. 3) (pfdr =0.002, cluster size =650; 
+coordinates = -5,47,-6; Z-score = 4.67); and precuneus (pfdr =<0.001, 
+cluster size kE = 1893; coordinates = 4,-59,17; Z-score = 4.67) (see Fig. 3).
+We did not find any significant differences in the BOLD signal be­
+tween 19 long COVID vs. 15 nHC, and 15 nHC vs. 12 Cov-RHC.
+3.2. Correlations with clinical measures in Long-COVID
+A significant negative correlation was observed between BOLD 
+signal in the precuneus and pain levels (p = 0.040, r = -0.553, CI [−0.81, 
+-0.98]); and duration of illness (p = 0.03, r = -0.526, CI [−0.79, -0.09]); 
+see Fig. 4.
+We did not find any significant relationship between ACC BOLD 
+signal intensity and pain (p = 0.258, r = -0.324); or duration of illness 
+(p = 0.171, r = -0.348). No significant correlations existed for the BOLD 
+values from the two cluster regions and general health, mental health, or 
+physical function scores.
+Fig. 1. Illustration of the Stroop colour-word task with four examples displayed 
+on the screen to the participants. Top left: instructions, top right: neutral (N); 
+lower left: incongruent (I); lower right: congruent (C); on the right y indicates 
+answer yes, n indicates answer no to instructions. (For interpretation of the 
+references to colour in this figure legend, the reader is referred to the Web 
+version of this article.)
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+3 
+
+3.3. Accuracy and Response times to the Stroop Tasks
+We tested for differences between RT and accuracies of those re­
+sponses to the incongruent and congruent stimuli of the Stroop para­
+digm. Overall, no statistically significant differences were observed in 
+task accuracies across all cohorts. RT significance across cohorts was 
+tested and Hedges g was then estimated for RTs using independent 
+samples effect sizes as accurate representation of small sample size. 
+• nHC and long COVID patients presented significant differences in 
+their RTs while performing both incongruent (p = <0.05, Hedges g =
+-1.08) and congruent (p = 0.001, Hedges g = -1.16) tasks. Long 
+COVID patients showed delayed responses to the tasks (incongruent 
+RT; mean±SD =2.053 ± 0.44) and (congruent RT; mean±SD 
+1.79 ± 0.46).
+• However, no significant differences were detected for RT between 
+long COVID and Cov-RHC groups while performing incongruent 
+(p = 0.29, Hedges g=-0.42) and congruent (p = 0.1, Hedges g = -0.53) 
+tasks.
+• RT differences between nHC and Cov-RHCs were also not statistically 
+significant for incongruent (p = 0.2, Hedges g=-0.47) and congruent 
+(p =0.1, Hedges g = 0.58).
+• Overall RT differences were significant between long COVID patients 
+and all 27 HC during incongruent (p = 0.01) and congruent 
+(p = 0.006) conditions, (see Table 2).
+4. Discussion
+To the best of our knowledge, this is the first study to document 
+BOLD signal differences in long COVID and COVID-recovered healthy 
+controls (Cov-RHC) using 7 T Stroop task fMRI. We report significantly 
+lower BOLD signal activation in 19 long COVID patients, compared to 12 
+Cov-RHC within brain regions of the anterior cingulate cortex (ACC) and 
+precuneus. Relative to Cov-RHC, long COVID patients showed reduced 
+BOLD activity in response to cognitively challenging incongruent vs. 
+congruent Stroop colour-word task stimuli. The cingulate cortex is 
+widely associated with emotion and limbic pathways, and is considered 
+integral in response selection, motor and self-control, visuospatial pro­
+cessing, memory and problem-solving (Paxinos and Mai, 2004; Vogt and 
+Gabriel, 1993). Its anterior section, the ACC, corresponds to vital 
+Brodmann regions, and is a key contributor in error and conflict 
+detection, task initiation, maintenance and task feedback (Dosenbach 
+et al., 2007; Paxinos and Mai, 2004).
+Likewise, the precuneus is an important node of the default mode 
+network (DMN) and has extensive cortical and subcortical connections 
+to widespread areas, including the ACC and the posterior cingulate 
+Fig. 2. Illustration of the preprocessing steps for analysing BOLD time-series between 19 long-COVID and 27 healthy cohorts. Following spatial and temporal 
+realignment of the 225 fMRI volumes, the realigned and slice time corrected. fMRI volumes were registered to the bias-corrected skull-stripped T1w, co-registered 
+and normalised to standard MNI space. Smoothing was performed using a 5 mm Gaussian kernel. Within-subject 1st-level analysis was performed by omitting the first 
+five volumes for magnetization correction. fMRI model was specified using onset and duration times of the incongruent and congruent conditions; white matter and 
+cerebrospinal fluid time-series, realignment measures from the first step ‘Realign & unwarp’, and framewise displacement (FD) measures as regressors. Between- 
+group 2nd-level analysis used contrasts files from the 1st-level analysis, sorting subjects into two groups. Finally, statistical parametric maps (SPM) of significant 
+BOLD activity differences were obtained using age and gender as nuisance regressors. (See supplementary file for more details).
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+4 
+
+cortex (Fransson and Marrelec, 2008). Collectively with other DMN 
+hubs, the precuneus and posterior cingulate cortex are believed to serve 
+as convergence nodes for information processing (Fransson and 
+Marrelec, 2008; Vincent et al., 2006) and are involved in 
+self-reflection, higher-order neurocognitive processes, motor coordina­
+tion and attention (Cavanna and Trimble, 2006). Subdivisions of the 
+precuneus show activation during higher order complex cognition (Lyu 
+et al., 2021; Margulies et al., 2009). Crucially, the ACC is central to 
+higher-level cognitive control for monitoring informational conflicts 
+(Botvinick et al., 2004). It is postulated that the ACC identifies conflict 
+between competing conditions such as incongruent Stroop stimuli (with 
+different word and colour) and recruits areas including the dorsolateral 
+prefrontal cortex (DLPFC), both belonging to the central executive 
+network. Therefore, greater conflict in information would imply greater 
+ACC signal thereby facilitating higher cognitive control, increased 
+attention and subsequently higher task performance (Carter and van 
+Veen, 2007). Concurrently, the DLPFC is also functionally connected 
+to precuneus subdivisions for executive functions and these functions 
+are found to be impaired in the presence of focal precuneus lesions 
+(Yeager et al., 2022). Widespread regional disturbances in the amplitude 
+of low-frequency fluctuation (ALFF) are being reported (Jin et al., 2024; 
+R. Li et al., 2023) implicating precuneus and other task regions as po­
+tential sites of post-COVID brain dysfunction.
+Based on the evidence, it is plausible that in long COVID, ACC and 
+precuneus fail to amplify the BOLD signal sufficiently (thus the observed 
+low BOLD activation) to recruit the DLPFC for effective conflict reso­
+lution during task performance. Therefore, we can reasonably state that 
+cognitive and executive functioning are compromised in long COVID 
+patients due to low BOLD activity within these regions. These subtle 
+alterations may also be reflected at the level of connectivity, suggesting 
+increased susceptibility to mental overload and impaired cognition 
+(Fineschi et al., 2024; Inderyas et al., 2026).
+Fig. 3. Voxel clusters with reduced BOLD activation in the ACC (top row) and precuneus (PCu) (bottom row) of long COVID patients compared to COVID-recovered healthy 
+controls, sagittal view shows voxel activation in both regions.
+Fig. 4. BOLD signals correlations with Pain and Illness Duration. A) Correlation graph between BOLD time-series from precuneus and pain measures in 19 long 
+COVID patients. The x-axis shows pain scores ranging from 0 to 100, where values closer to 0 indicate high pain levels, and values close to 100 signify low pain levels. 
+The y-axis shows the range of BOLD signal intensity values. B). Correlation graph between BOLD time-series values from precuneus and duration of illness in 19 long 
+COVID patients. The x-axis shows the duration of illness in years; the y-axis shows the range of BOLD signal intensity values.
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+5 
+
+This is consistent with the delayed response times observed during 
+cognitively demanding incongruent Stroop task performance in the long 
+COVID patient group, suggestive of impaired communications between 
+networks. Our recent comparative study likewise documented similar 
+observations of delayed response times in long COVID and chronic fa­
+tigue syndrome patients, linking exertional fatigue and network 
+dysfunction with sluggish performance (Baraniuk et al., 2024). Other 
+studies also report attentional lapses and slower processing speed to 
+cognitive exertions in post-viral fatigue syndromes (Baraniuk et al., 
+2024; Baraniuk et al., 2024; Guo et al., 2021; Ortelli et al., 2022), 
+associating cognitive difficulties with fatigue and symptom severity.
+While we expected to see significant BOLD signal differences be­
+tween COVID-naïve normal HC and long COVID patients (19 long COVID 
+vs 15 nHC), no significant clusters survived the activation cluster 
+threshold. This is an interesting observation that needs to be tested for 
+statistical rigour in larger cohort size. Nonetheless, current results 
+emphasise the complex nature of post-viral fatigue syndromes, including 
+CFS, accounting for brain differences that are so obscure, subtle and 
+heterogeneous in nature to suggest distinct brain compensatory reor­
+ganisation following recovery.
+Alternatively, minimal task-relevant circuit recruitment evident 
+from sluggish RTs in long COVID could reflect similar biological dy­
+namics between long COVID and recovered individuals, unlike those 
+with no history of COVID-19 infection. A more plausible interpretation 
+of the BOLD differences observed in long COVID and Cov-RHC can be 
+deduced from observations that persistent immune activation leads to 
+potential endothelial dysfunction and vascular leakage, with recovered 
+individuals still reporting cognitive deficits in the absence of active 
+COVID-19 symptoms (Hampshire et al., 2021; Petersen et al., 2023). 
+Widespread 
+fMRI 
+ALFF 
+in 
+COVID-19 
+survivors 
+suggests 
+COVID-recovered healthy individuals do not achieve 100% recovery (Du 
+et al., 2022). Such subtle differences observed as subtle connectivity 
+differences in Cov-RHC, demonstrating longer RT (1.825 ± 0.6) than 
+normal HC (1.68 ± 0.5) RT in the present study, are consistent with 
+earlier evidence from the literature.
+It may be warranted to question the effect of age on the observed 
+BOLD differences between long COVID and Cov-RHC. Although normal 
+ageing and neurodegeneration may lead to altered BOLD signals, it is 
+essential to consider that BOLD signals changes in normal ageing can 
+also involve adaptive mechanisms (Lee and Kim, 2022). Moreover, 
+haemodynamic equivalence, a non-tenable concept in BOLD fMRI 
+studies, generally assumes that all components of the neurovascular 
+coupling (NVC) system are age-equivalent when generalised across 
+groups (West et al., 2019). Yet diseased adults often show the presence 
+of glial and vascular changes distinct from healthy older adults. Mean 
+age of our long COVID cohort (~47years) places our sample in the 
+young/middle-age group, outside a geriatric age group. Consequently, 
+neural factors still dominate the BOLD signals differences observed. 
+Furthermore, implication of brain regions in our results is not isolated 
+observation but is supported by emerging evidence of changes within 
+these areas (Kandemirli et al., 2020; Douaud et al., 2022; Braga et al., 
+2023; Li et al., 2023; Petersen et al., 2023; Madden et al., 2025; 
+Nelson et al., 2025). Above all, null findings in 19 long COVID vs 15 nHC 
+strongly suggest that the observed BOLD signal differences against 
+Cov-RHC are neurological consequences of SARS-CoV-2 exposure and 
+not due to haemodynamic aging artifact.
+4.1. Correlation of BOLD signal with Pain and Duration of illness
+BOLD signal intensity in precuneus showed a strong negative cor­
+relation with the clinical measures of pain and duration of illness in long 
+COVID patients. ~20.7% of variation in BOLD signal within the pre­
+cuneus (R2 = 0.207) can be explained by the pain levels whereas an even 
+stronger negative correlation was observed for the illness duration 
+suggesting almost 32% of changes in BOLD intensity (R2 = 0.318) in the 
+precuneus may be derived from disease progression. Overall, as pain 
+levels and illness length increased, a decline in BOLD activity was 
+observed in long COVID patients. Pain and post-exertional malaise are 
+common presentations in long COVID.
+Although no clear mechanisms have been documented, prolonged 
+viral exposure and inflammatory responses have been suggested as the 
+prime mechanism (Khoja et al., 2022) underlying these BOLD signal 
+deficits. Neuroinflammation, either due to direct (Muri et al., 2023; 
+Natoli et al., 2020; Umesh et al., 2022) or indirect viral invasion, con­
+tributes to altered vascular dynamics and neural activity, ultimately 
+leading to a reduction in neuronal conduction (Bispo et al., 2022; Sasso 
+et al., 2022). Viral-driven fusion of neurons and glial cells precipitates 
+neuronal malfunctioning due to imbalances in neurochemical pheno­
+types (Thapaliya et al., 2025b) and demyelination (Khodanovich et al., 
+2022). Altered metabolism in the precuneus and cingulate cortex is 
+frequently observed to have neuropsychological consequences (Boeve, 
+2012; Coutinho et al., 2015; Hugon et al., 2022; Lu et al., 2020). 
+Structural alterations highlight grey matter volume reduction within the 
+frontal and cingulate regions (Lu et al., 2020; Sanabria-Diaz et al., 2022) 
+and reduced cortical thickness in areas including the precuneus (Cataldo 
+et al., 2024) are long-term consequences of COVID-19 infection. Noci­
+plastic pain with prolonged peripheral neuropathy is associated with 
+central nervous system-driven symptoms which correlate with the 
+Table 2 
+Lists the average response accuracy and the response times (RT) in seconds, directed to perform incongruent and congruent Stroop task stimuli. Standard deviations 
+(±) and p-values are provided, with significant p-values observed for 19 long COVID versus 27 HC, and 15 nHC vs 19 long COVID.
+Long COVID (n = 19)
+All HC (n = 27)
+Cov-RHC (n = 12)
+nHC (n = 15)
+p-value
+Incongruent Accuracy
+0.93 ± 0.05
+0.93 ± 0.1
+0.93 ± 0.1
+0.93 ± 0.1
+0.95a 
+0.99b 
+0.95c 
+0.93 d
+Congruent Accuracy
+0.972 ± 0.05
+0.98 ± 0.02
+0.98 ± 0.02
+0.98 ± 0.02
+0.37a 
+0.34b 
+0.6c 
+0.5 d
+Incongruent RT
+2.053 ± 0.44
+1.68 ± 0.5
+1.825 ± 0.6
+1.5 ± 0.3
+0.01 a 
+0.29b 
+0.2c 
+<0.05 (0.002) d
+Congruent RT
+1.79 ± 0.46
+1.41 ± 0.3
+1.53 ± 0.4
+1.31 ± 0.2
+0.006 a 
+0.14b 
+0.15c 
+<0.05 (0.0010) d
+(mean ± SD), a = p-value (19 long COVID versus 27 HC), b = p-value (19 long COVID versus 12 Cov-RHC), c = p-value (12 Cov-RHC versus 15nHC), d = p-value (15nHC 
+versus 19long COVID).
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+6 
+
+length of the disease from the prolonged systemic inflammatory 
+response (Calvache-Mateo et al., 2023; Fern´andez-de-Las-Pe˜nas et al., 
+2021). Continuous and chronic disruptions of neurovascular units 
+leading to an altered neurovascular coupling response (Owens et al., 
+2024) ultimately contribute to the altered BOLD signals, thereby 
+reducing overall cognitive function in patients (Cataldo et al., 2024; 
+Mohammadi and Ghaderi, 2024).
+Nonetheless, our study provides preliminary evidence of the altered 
+BOLD signals in patients suffering from long COVID. Weak haemody­
+namic coupling in regions of the anterior cingulate cortex and precuneus 
+has important long-term cognitive implications in chronically suffering 
+long COVID individuals relative to COVID-recovered HC. Adaptive or 
+maladaptive alterations in the morphology and functionality of neurons 
+involving complex underlying molecular cascades may underlie these 
+changes (Ben Ezzdine et al., 2025). Additionally, adaptive mechanisms 
+can compensate for deficits within the highlighted regions in the 
+COVID-recovered population, which may be similar to normal healthy 
+participants who have never had SARS-COV-2 infection (Jordan, 2021).
+BOLD activation in long COVID also correlated to pain and the 
+duration of illness of the disease while behavioural measures of cogni­
+tive conflict during task performance were inferred from response times, 
+which provided a more objective estimate of the consequent cognitive 
+and executive deficits in long COVID patients. The use of 7T fMRI 
+allowed us to detect more subtle modulations and small activation 
+clusters that contribute to the ongoing manifestations of long COVID 
+symptomatology. Consequently, cognitive processing is altered, which 
+can be flagged through BOLD signal changes. These effects may also 
+extend to the periphery, evolving into peripheral neuropathy and 
+manifesting as the chronic pain and fatigue observed in long COVID. 
+Findings from this study contribute to the growing literature of neuro­
+cognitive deficits linked to ACC and precuneus and offer a potential 
+basis for further research in BOLD signal investigation in long COVID.
+5. Limitations
+This study has some limitations. Although the effects of age and sex 
+were accounted for during the analysis, a larger sample size with age and 
+sex matched participants would enhance rigour in future studies for 
+greater insight into the functional changes reported in this present study 
+between COVID-recovered and people who have never had COVID-19. 
+Age acts as a confounding factor and may possibly influence minor 
+perturbations in the neural-vascular coupling system to induce age- 
+related HRF alterations. Likewise, a small sample size could lead to 
+sampling bias and sample-specific findings that impede reproducibility. 
+Inclusion of longitudinal data is required for a deeper understanding of 
+the evolution and resolution of brain changes over time. Patients self- 
+reported COVID-19 infection following rapid antigen testing and were 
+more than 15 days post infection with no further serology testing 
+undertaken.
+Although long COVID patients received a formal diagnosis based on 
+the WHO criteria, the evolving nature of this case definition served as 
+the basis of cohort selection in this study. Future analyses may aim at 
+modelling response delays to clarify whether slow behavioural re­
+sponses correspond to delayed or absent neural activations. Neverthe­
+less, findings reported in this research provide preliminary groundwork 
+for further investigation to probe functional changes in long COVID 
+patients, COVID-recovered and people who have never had COVID-19.
+6. Conclusions
+Neurocognitive consequences manifested as altered BOLD activation 
+intensities during cognitive task performance in patients diagnosed with 
+long COVID. Findings revealed significant BOLD activity within the 
+anterior cingulate cortex and the precuneus cortex, potentially indi­
+cating underlying tissue damage and impaired regional metabolism. 
+This was further reflected by behavioural evidence of delayed response 
+times to the cognitive task, corroborating the functional relevance of the 
+observed neural alterations. Subsequent clinical correlation analysis 
+identified a negative association between BOLD signal intensity within 
+the precuneus, pain severity and duration of illness, suggesting these 
+may be contributing factors to reduced neurological functioning in the 
+region. However, chronic inflammation and the subtle nature of these 
+neurological alterations warrant further systematic investigation.
+Funding
+This research was supported by the Stafford Fox Medical Research 
+Foundation (489798), the ME Research UK (SCIO Charity Number 
+SC036942), and with the financial support of The Fred and Joan Davies 
+Bequest. The authors declare that the funders had no role in the study 
+design, data collection, data analysis, decision to publish or preparation 
+of the present manuscript.
+CRediT authorship contribution statement
+Maira Inderyas: Conceptualization, Data curation, Formal analysis, 
+Methodology, Writing – original draft. Kiran Thapaliya: Supervision, 
+Validation, Writing – review & editing. Sonya Marshall-Gradisnik: 
+Funding acquisition, Supervision, Visualization, Writing – review & 
+editing. Leighton Barnden: Funding acquisition, Supervision, Valida­
+tion, Writing – review & editing.
+Declaration of competing interest
+The authors declare that they have no competing interests and that 
+the research was conducted in the absence of any commercial or 
+financial relationships that could be construed as a potential conflict of 
+interest. We have nothing to declare.
+Acknowledgments
+We are thankful to Ms Tania Manning and Kay Schwarz for recruiting 
+participants for this study, radiographers at The University of Queens­
+land, and all the patients and healthy controls who donated their time 
+and effort to participate in this study.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.bbih.2026.101266.
+Data availability
+Data will be made available on request.
+References
+Ajˇcevi´c, M., Iscra, K., Furlanis, G., Michelutti, M., Miladinovi´c, A., Buoite Stella, A., 
+Ukmar, M., Cova, M.A., Accardo, A., Manganotti, P., 2023. Cerebral hypoperfusion 
+in post-COVID-19 cognitively impaired subjects revealed by arterial spin labeling 
+MRI. Sci. Rep. 13, 5808. https://doi.org/10.1038/s41598-023-32275-3.
+Alonso, J., Prieto, L., Ant´o, J.M., 1995. [The Spanish version of the SF-36 Health Survey 
+(the SF-36 health questionnaire): an instrument for measuring clinical results]. Med. 
+Clin. 104, 771–776.
+Auerbach, E.J., Xu, J., Yacoub, E., Moeller, S., U˘gurbil, K., 2013. Multiband accelerated 
+spin-echo echo planar imaging with reduced peak RF power using time-shifted RF 
+pulses. Magn. Reson. Med. 69, 1261–1267. https://doi.org/10.1002/mrm.24719.
+Baraniuk, J.N., Thapaliya, K., Inderyas, M., Shan, Z.Y., Barnden, L.R., 2024. Stroop task 
+and practice effects demonstrate cognitive dysfunction in long COVID and myalgic 
+encephalomyelitis/chronic fatigue syndrome. Sci. Rep. 14, 26796. https://doi.org/ 
+10.1038/s41598-024-75651-3.
+Ben Ezzdine, L., Dhahbi, W., Dergaa, I., Ceylan, H.˙I., Guelmami, N., Ben Saad, H., 
+Chamari, K., Stefanica, V., El Omri, A., 2025. Physical activity and neuroplasticity in 
+neurodegenerative disorders: a comprehensive review of exercise interventions, 
+cognitive training, and AI applications. Front. Neurosci. 19, 1502417. https://doi. 
+org/10.3389/fnins.2025.1502417.
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+7 
+
+Bendella, Z., Widmann, C.N., Layer, J.P., Layer, Y.L., Haase, R., Sauer, M., Bieler, L., 
+Lehnen, N.C., Paech, D., Heneka, M.T., Radbruch, A., Schmeel, F.C., 2023. Brain 
+volume changes after COVID-19 compared to healthy controls by artificial 
+intelligence-based MRI volumetry. Diagnostics 13, 1716. https://doi.org/10.3390/ 
+diagnostics13101716.
+Besteher, B., Machnik, M., Troll, M., Toepffer, A., Zerekidze, A., Rockt¨aschel, T., 
+Heller, C., Kikinis, Z., Brodoehl, S., Finke, K., Reuken, P.A., Opel, N., Stallmach, A., 
+Gaser, C., Walter, M., 2022. Larger gray matter volumes in neuropsychiatric long- 
+COVID syndrome. Psychiatry Res. 317, 114836. https://doi.org/10.1016/j. 
+psychres.2022.114836.
+Bispo, D.D. de C., Brand˜ao, P.R., de, P., Pereira, D.A., Maluf, F.B., Dias, B.A., Paranhos, H. 
+R., von Glehn, F., de Oliveira, A.C.P., Regattieri, N.A.T., Silva, L.S., Yasuda, C.L., 
+Soares, A.A. de S.M., Descoteaux, M., 2022. Brain microstructural changes and 
+fatigue after COVID-19. Front. Neurol. 13.
+Boeve, B.F., 2012. Mild cognitive impairment associated with underlying Alzheimer's 
+disease versus Lewy body disease. Parkinsonism Relat. Disord. In: Proceedings of 
+WFN XIX World Congress on Parkinson's Disease and Related Disorders, vol. 18, 
+pp. S41–S44. https://doi.org/10.1016/S1353-8020(11)70015-3.
+Botvinick, M.M., Cohen, J.D., Carter, C.S., 2004. Conflict monitoring and anterior 
+cingulate cortex: an update. Trends Cognit. Sci. 8, 539–546. https://doi.org/ 
+10.1016/j.tics.2004.10.003.
+Braga, J., Lepra, M., Kish, S.J., Rusjan, P.M., Nasser, Z., Verhoeff, N., Vasdev, N., 
+Bagby, M., Boileau, I., Husain, M.I., Kolla, N., Garcia, A., Chao, T., Mizrahi, R., 
+Faiz, K., Vieira, E.L., Meyer, J.H., 2023. Neuroinflammation after COVID-19 with 
+persistent depressive and cognitive symptoms. JAMA Psychiatry 80, 787–795. 
+https://doi.org/10.1001/jamapsychiatry.2023.1321.
+Calvache-Mateo, A., Navas-Otero, A., Heredia-Ciur´o, A., Matín-Nú˜nez, J., Torres- 
+S´anchez, I., L´opez-L´opez, L., Valenza, M.C., 2023. Post-COVID patients with new- 
+onset chronic pain 2 years after infection: Cross-Sectional Study. Pain Manag. Nurs. 
+24, 528–534. https://doi.org/10.1016/j.pmn.2023.04.010.
+Carter, C.S., van Veen, V., 2007. Anterior cingulate cortex and conflict detection: an 
+update of theory and data. Cognit. Affect Behav. Neurosci. 7, 367–379. https://doi. 
+org/10.3758/cabn.7.4.367.
+Cataldo, S.A., Micciulli, A., Margulis, L., Cibeyra, M., Defeo, S., Horovitz, S.G., 
+Martino, A., Melano, R., Mena, M., Parisi, F., Santoro, D., Sarmiento, F., Belzunce, M. 
+A., 2024. Cognitive impact and brain structural changes in long COVID patients: a 
+cross-sectional MRI study two years post infection in a cohort from Argentina. BMC 
+Neurol. 24, 450. https://doi.org/10.1186/s12883-024-03959-8.
+Cavanna, A.E., Trimble, M.R., 2006. The precuneus: a review of its functional anatomy 
+and behavioural correlates. Brain 129, 564–583. https://doi.org/10.1093/brain/ 
+awl004.
+CDC, 2024. Clinical Overview of Long COVID [WWW Document]. COVID-19. http 
+s://www.cdc.gov/covid/hcp/clinical-overview/index.html, 1.13.25. 
+Churchill, N.W., Roudaia, E., Chen, J.J., Gilboa, A., Sekuler, A., Ji, X., Gao, F., Lin, Z., 
+Jegatheesan, A., Masellis, M., Goubran, M., Rabin, J.S., Lam, B., Cheng, I., 
+Fowler, R., Heyn, C., Black, S.E., MacIntosh, B.J., Graham, S.J., Schweizer, T.A., 
+2023. Effects of post-acute COVID-19 syndrome on the functional brain networks of 
+non-hospitalized individuals. Front. Neurol. 14, 1136408. https://doi.org/10.3389/ 
+fneur.2023.1136408.
+Colombo, D., Falasca, L., Marchioni, L., Tammaro, A., Adebanjo, G.A.R., Ippolito, G., 
+Zumla, A., Piacentini, M., Nardacci, R., Del Nonno, F., 2021. Neuropathology and 
+inflammatory cell characterization in 10 autoptic COVID-19 brains. Cells 10, 2262. 
+https://doi.org/10.3390/cells10092262.
+Coutinho, A.M.N., Porto, F.H.G., Zampieri, P.F., Otaduy, M.C., Perroco, T.R., Oliveira, M. 
+O., Nunes, R.F., Pinheiro, T.L., Bottino, C.M.C., Leite, C.C., Buchpiguel, C.A., 2015. 
+Analysis of the posterior cingulate cortex with [ 18 F]FDG-PET and Naa/mI in mild 
+cognitive impairment and Alzheimer's disease: correlations and differences between 
+the two methods. Dement. Neuropsychol. 9, 385–393. https://doi.org/10.1590/ 
+1980-57642015DN94000385.
+Crivelli, L., Palmer, K., Calandri, I., Guekht, A., Beghi, E., Carroll, W., Frontera, J., 
+García-Azorín, D., Westenberg, E., Winkler, A.S., Mangialasche, F., Allegri, R.F., 
+Kivipelto, M., 2022. Changes in cognitive functioning after COVID-19: a systematic 
+review and meta-analysis. Alzheimer's Dement. 18, 1047–1066. https://doi.org/ 
+10.1002/alz.12644.
+Dacosta-Aguayo, R., Tor´an-Monserrat, P., Carmona-Cervell´o, M., Le´on-G´omez, B.B., 
+Matar´o, M., et al., 2024. Multimodal neuroimaging in Long-COVID and its correlates 
+with cognition 1.8 years after SARS-CoV-2 infection: a cross-sectional study of the 
+Aliança ProHEpiC-19 Cognitiu. Front. Neurol. 15. https://doi.org/10.3389/ 
+fneur.2024.1426.
+Dadsena, R., Walders, J., Costa, A.S., Wetz, S., Romanzetti, S., Lischewski, S.A., 
+Krockauer, C., Heine, J., Schlenker, L., Klabunn, P., Schwichtenberg, K., Hartung, T. 
+J., Franke, C., Balloff, C., Binkofski, F., Schulz, J.B., Finke, C., Reetz, K., 2025. Two- 
+year impact of COVID-19: longitudinal MRI brain changes and neuropsychiatric 
+trajectories. Psychiatr. Clin. Neurosci. 79, 176–186. https://doi.org/10.1111/ 
+pcn.13789.
+Diez-Cirarda, M., Yus-Fuertes, M., Polidura, C., Gil-Martinez, L., Delgado-Alonso, C., 
+Delgado-´Alvarez, A., Gomez-Ruiz, N., Gil-Moreno, M.J., Jorquera, M., Oliver-Mas, S., 
+G´omez-Pinedo, U., Matias-Guiu, J., Arrazola, J., Matias-Guiu, J.A., 2024. Neural 
+basis of fatigue in post-COVID syndrome and relationships with cognitive complaints 
+and cognition. Psychiatry Res. 340, 116113. https://doi.org/10.1016/j. 
+psychres.2024.116113.
+Dosenbach, N.U.F., Fair, D.A., Miezin, F.M., Cohen, A.L., Wenger, K.K., Dosenbach, R.A. 
+T., Fox, M.D., Snyder, A.Z., Vincent, J.L., Raichle, M.E., Schlaggar, B.L., Petersen, S. 
+E., 2007. Distinct brain networks for adaptive and stable task control in humans. 
+Proc. Natl. Acad. Sci. U. S. A. 104, 11073–11078. https://doi.org/10.1073/ 
+pnas.0704320104.
+Douaud, G., Lee, S., Alfaro-Almagro, F., Arthofer, C., Wang, C., McCarthy, P., Lange, F., 
+Andersson, J.L.R., Griffanti, L., Duff, E., Jbabdi, S., Taschler, B., Keating, P., 
+Winkler, A.M., Collins, R., Matthews, P.M., Allen, N., Miller, K.L., Nichols, T.E., 
+Smith, S.M., 2022. SARS-CoV-2 is associated with changes in brain structure in UK 
+Biobank. Nature 604, 697–707. https://doi.org/10.1038/s41586-022-04569-5.
+Du, Y., Zhao, W., Huang, S., Huang, Y., Chen, Y., Zhang, H., Guo, H., Liu, J., 2023. Two- 
+year follow-up of brain structural changes in patients who recovered from COVID- 
+19: a prospective study. Psychiatry Res. 319, 114969. https://doi.org/10.1016/j. 
+psychres.2022.114969.
+Du, Y.-Y., Zhao, W., Zhou, X.-L., Zeng, M., Yang, D.-H., Xie, X.-Z., Huang, S.-H., Jiang, Y.- 
+J., Yang, W.-H., Guo, H., Sun, H., Liu, J.-Y., Liu, P., Zhou, Z.-G., Luo, H., Liu, J., 
+2022. Survivors of COVID-19 exhibit altered amplitudes of low frequency fluctuation 
+in the brain: a resting-state functional magnetic resonance imaging study at 1-year 
+follow-up. Neural Regen. Res. 17, 1576–1581. https://doi.org/10.4103/1673- 
+5374.327361.
+Esposito, F., Cirillo, M., De Micco, R., Caiazzo, G., Siciliano, M., Russo, A.G., Monari, C., 
+Coppola, N., Tedeschi, G., Tessitore, A., 2022. Olfactory loss and brain connectivity 
+after COVID-19. Hum. Brain Mapp. 43, 1548–1560. https://doi.org/10.1002/ 
+hbm.25741.
+Fern´andez-de-Las-Pe˜nas, C., G´omez-Mayordomo, V., Cuadrado, M.L., Palacios-Ce˜na, D., 
+Florencio, L.L., Guerrero, A.L., García-Azorín, D., Hern´andez-Barrera, V., Arendt- 
+Nielsen, L., 2021. The presence of headache at onset in SARS-CoV-2 infection is 
+associated with long-term post-COVID headache and fatigue: a case-control study. 
+Cephalalgia Int. J. Headache 41, 1332–1341. https://doi.org/10.1177/ 
+03331024211020404.
+Fineschi, S., Fahlstr¨om, M., F¨allmar, D., Haller, S., Wikstr¨om, J., 2024. Comprehensive 
+MRI assessment reveals subtle brain findings in non-hospitalized post-COVID 
+patients with cognitive impairment. Front. Neurosci. 18, 1435218. https://doi.org/ 
+10.3389/fnins.2024.1435218.
+Flandin, G., Novak, M.J.U., 2020. fMRI data analysis using SPM. In: Ulmer, S., Jansen, O. 
+(Eds.), fMRI: Basics and Clinical Applications. Springer International Publishing, 
+Cham, pp. 89–116. https://doi.org/10.1007/978-3-030-41874-8_8.
+Fransson, P., Marrelec, G., 2008. The precuneus/posterior cingulate cortex plays a 
+pivotal role in the default mode network: evidence from a partial correlation 
+network analysis. Neuroimage 42, 1178–1184. https://doi.org/10.1016/j. 
+neuroimage.2008.05.059.
+Friston, K.J., Holmes, A.P., Worsley, K.J., Poline, J.-P., Frith, C.D., Frackowiak, R.S.J., 
+1994. Statistical parametric maps in functional imaging: a general linear approach. 
+Hum. Brain Mapp. 2, 189–210. https://doi.org/10.1002/hbm.460020402.
+Graf, C., Raman, B., Manktelow, A., Chatfield, D.A., Clarke, W.T., Rua, C., Newcombe, V. 
+F.J., Lupson, V.C., Sawcer, S.J., Outtrim, J.G., Ersche, K.D., Qiu, L., Ezra, M., 
+McDonald, R., Clare, S., Cassar, M.P., Neubauer, S., Bullmore, E.T., Menon, D.K., 
+Rowe, J.B., Pattinson, K., Rodgers, C.T., , the Cambridge NeuroCOVID group, the 
+CITIID-NIHR COVID-19 BioResource Collaboration, Allinson, K., Anwar, F., 
+Bhatti, J., Bullmore, E.T., Chatfield, D.A., Christmas, D., Coles, A.J., Coles, J.P., 
+Correia, M., Das, T., Elmer, A., Fletcher, P.C., Jubb, A.W., Lupson, V.C., 
+Manktelow, A., Menon, D.K., Michell, A., Needham, E., Newcombe, V.F., Outtrim, J. 
+G., Pointon, L., Rodgers, C.T., Rowe, J.B., Rua, C., Sawcer, S.J., Sithole, N., 
+Spindler, L.R., Stamatakis, E.A., Taylor, J., Valerio, F., Widmer, B., Williams, G.B., 
+Allison, J., Alvio, G., Baker, Stephen, Baker, Sharon, Bergamashi, L., Beristain- 
+Covarrubias, N., Bermperi, A., Betancourt, A., Biggs, H., Booth, L., Boston, R., 
+Bower, G., Bradley, J., Brookes, K., Bucke, A., Bullman, B., Butcher, H., Caddy, S.L., 
+Calder, J., Caller, L.G., Canna, L., Caputo, D., Chandler, M., Chaudhry, Y., 
+Chinnery, P., Clapham-Riley, D., Cooper, D., Cossetti, C., Crucusio, C., Cruz, I., 
+Curran, M.D., Jesus, R. de, Sa, A.D., Dempsey, K., Dewhurst, E., Stephano, G.D., 
+Domingo, J., Dougan, G., Dunmore, B.J., Elmer, A., Epping, M., Fawke, S., 
+Feltwell, T., Fernandez, C., Ferreira, A., Fuller, S., Furlong, A., Georgana, I., 
+Goodfellow, I., Gr¨af, S., Graves, B., Gray, J., Grenfell, R., Gupta, R., Gurugama, T., 
+Gurugama, L., Hall, G., Hamilton, W.L., Harris, J., Hein, S., Hewitt, S., Hinch, A., 
+Hodgson, J., Horner, E.C., Hosmillo, M., Hosseini, Z., Houldcroft, C.J., Huang, C., 
+Hughes, R., Huhn, O., Hunter, K., Ivers, T., Izuagbe, R., Jahun, A.S., Jarvis, I., 
+Jones, H., Jones, E., Jose, S., Josipovi´c, M., Kasanicki, M., Kennet, J., Khokhar, F.A., 
+King, Y., King, R., Kingston, N., Kourampa, J., Kovalenko, A.G., Gresley, E.L., 
+Legchenko, E., Lehner, P.J., Lewis, D., Li, E., Linger, R., Lyons, P.A., Marsden, J., 
+Martin, J., Matheson, N.J., McMahon, C., Meadows, A., Meloy, S., Mendoza, V., 
+Meredith, L.W., Mescia, F., Moulton, A., Muldoon, F., Mulroney, T., O'Brien, C., 
+O'Donnell, C., Ocaya, C., Omarjee, O., Ovington, N., Papadia, S., Paraschiv, R., 
+Parmar, S., Pasquale, C., Penkett, C.J., Perales, M., Perera, M., Phelan, I., 
+Pinckert, M.L., Pointon, L., Polgarova, P., Pond, N., Price, J., Ranganath, V., 
+Rastall, R., Ribeiro, C., Richoz, N., Romashova, N., Rowlands, J., Ruffolo, V., 
+Rust, M., Sage, A., Sambrook, J., Saunders, C., Savoinykh, N., Scholtes, I., Schon, K., 
+Selvan, M., Sharma, R., Shih, J., Smith, K.G., Spencer, S., Stark, H., Stirrups, K.E., 
+Strezlecki, M., Summers, C., Sutcliffe, R., Thaventhiran, J., Tilly, T., Tong, Z., 
+Tordesillas, H., Torok, M.E., Toshner, M.R., Townsend, P., Treacy, C., Turner, L., 
+Vargas, P., Vergese, B., Walker, N., Watson, L., Webster, J., Weekes, M.P., 
+Williamson, K., Wood, J., Worsley, J., Wylot, M., Yakovleva, A., Yam-Puc, J.C., 
+Zerrudo, J.-A., 2025. Brainstem neurochemical profiles after hospitalisation for 
+COVID-19: a 7T MR spectroscopy study. Front. Neurosci. 19. https://doi.org/ 
+10.3389/fnins.2025.1617709.
+Guo, P., Ballesteros, A.B., Yeung, S.P., Liu, R., Saha, A., Curtis, L., Kaser, M., Haggard, M. 
+P., Cheke, L.G., 2021. COVCOG 2: cognitive and memory deficits in long COVID: a 
+second publication from the COVID and cognition Study. https://doi.org/10.1101/ 
+2021.10.27.21265563.
+Hafiz, R., Gandhi, T.K., Mishra, S., Prasad, A., Mahajan, V., Di, X., Natelson, B.H., 
+Biswal, B.B., 2022. Higher limbic and basal ganglia volumes in surviving COVID- 
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+8 
+
+negative patients and the relations to fatigue. Neuroimage Rep 2, 100095. https:// 
+doi.org/10.1016/j.ynirp.2022.100095.
+Hampshire, A., Trender, W., Chamberlain, S.R., Jolly, A.E., Grant, J.E., Patrick, F., 
+Mazibuko, N., Williams, S.C., Barnby, J.M., Hellyer, P., Mehta, M.A., 2021. Cognitive 
+deficits in people who have recovered from COVID-19. eClinicalMedicine 39. 
+https://doi.org/10.1016/j.eclinm.2021.101044.
+Hartung, T.J., Neumann, C., Bahmer, T., Chaplinskaya-Sobol, I., Endres, M., Geritz, J., 
+Haeusler, K.G., Heuschmann, P.U., Hildesheim, H., Hinz, A., Hopff, S., Horn, A., 
+Krawczak, M., Krist, L., Kudelka, J., Lieb, W., Maetzler, C., Mehnert-Theuerkauf, A., 
+Montellano, F.A., Morbach, C., Schmidt, S., Schreiber, S., Steigerwald, F., St¨ork, S., 
+Maetzler, W., Finke, C., 2022. Fatigue and cognitive impairment after COVID-19: a 
+prospective multicentre study. EClinicalMedicine 53, 101651. https://doi.org/ 
+10.1016/j.eclinm.2022.101651.
+Hugon, J., Msika, E.-F., Queneau, M., Farid, K., Paquet, C., 2022. Long COVID: cognitive 
+complaints (brain fog) and dysfunction of the cingulate cortex. J. Neurol. 269, 
+44–46. https://doi.org/10.1007/s00415-021-10655-x.
+Inderyas, M., Thapaliya, K., Marshall-Gradisnik, S., Barnden, L., 2026. Distinct functional 
+connectivity patterns in myalgic encephalomyelitis and long COVID patients during 
+cognitive fatigue: a 7 Tesla task-fMRI study. J. Transl. Med. https://doi.org/ 
+10.1186/s12967-026-07708-y.
+Jin, P., Cui, F., Xu, M., Ren, Y., Zhang, L., 2024. Altered brain function and structure pre- 
+and post- COVID-19 infection: a longitudinal study. Neurol. Sci. 45, 1–9. https://doi. 
+org/10.1007/s10072-023-07236-3.
+Jordan, S.C., 2021. Innate and adaptive immune responses to SARS-CoV-2 in humans: 
+relevance to acquired immunity and vaccine responses. Clin. Exp. Immunol. 204, 
+310–320. https://doi.org/10.1111/cei.13582.
+Kandemirli, S.G., Dogan, L., Sarikaya, Z.T., Kara, S., Akinci, C., Kaya, D., Kaya, Y., 
+Yildirim, D., Tuzuner, F., Yildirim, M.S., Ozluk, E., Gucyetmez, B., Karaarslan, E., 
+Koyluoglu, I., Demirel Kaya, H.S., Mammadov, O., Kisa Ozdemir, I., Afsar, N., Citci 
+Yalcinkaya, B., Rasimoglu, S., Guduk, D.E., Kedir Jima, A., Ilksoz, A., Ersoz, V., 
+Yonca Eren, M., Celtik, N., Arslan, S., Korkmazer, B., Dincer, S.S., Gulek, E., 
+Dikmen, I., Yazici, M., Unsal, S., Ljama, T., Demirel, I., Ayyildiz, A., Kesimci, I., 
+Bolsoy Deveci, S., Tutuncu, M., Kizilkilic, O., Telci, L., Zengin, R., Dincer, A., 
+Akinci, I.O., Kocer, N., 2020. Brain MRI findings in patients in the intensive care unit 
+with COVID-19 infection. Radiology 297, E232–E235. https://doi.org/10.1148/ 
+radiol.2020201697.
+Khodanovich, M.Y., Kamaeva, D.A., Naumova, A.V., 2022. Role of demyelination in the 
+persistence of neurological and mental impairments after COVID-19. Int. J. Mol. Sci. 
+23. https://doi.org/10.3390/ijms231911291.
+Khoja, O., Silva Passadouro, B., Mulvey, M., Delis, I., Astill, S., Tan, A.L., Sivan, M., 2022. 
+Clinical characteristics and mechanisms of musculoskeletal pain in long COVID. 
+J. Pain Res. 15, 1729–1748. https://doi.org/10.2147/JPR.S365026.
+Kreitz, S., Mennecke, A., Konerth, L., R¨osch, J., Nagel, A.M., Laun, F.B., Uder, M., 
+D¨orfler, A., Hess, A., 2023. 3T vs. 7T fMRI: capturing early human memory 
+consolidation after motor task utilizing the observed higher functional specificity of 
+7T. Front. Neurosci. 17. https://doi.org/10.3389/fnins.2023.1215400.
+Langan, M.T., Smith, D.A., Verma, G., Khegai, O., Saju, S., Rashid, S., Ranti, D., 
+Markowitz, M., Belani, P., Jette, N., Mathew, B., Goldstein, J., Kirsch, C.F.E., 
+Morris, L.S., Becker, J.H., Delman, B.N., Balchandani, P., 2022. Semi-automated 
+segmentation and quantification of perivascular spaces at 7 tesla in COVID-19. Front. 
+Neurol. 13. https://doi.org/10.3389/fneur.2022.846957.
+Latini, F., Fahlstr¨om, M., F¨allmar, D., Marklund, N., Cunningham, J.L., Feresiadou, A., 
+2022. Can diffusion tensor imaging (DTI) outperform standard magnetic resonance 
+imaging (MRI) investigations in post-COVID-19 autoimmune encephalitis? Ups. 
+J. Med. Sci. 127. https://doi.org/10.48101/ujms.v127.8562.
+Lee, M.-H., Perl, D.P., Nair, G., Li, W., Maric, D., Murray, H., Dodd, S.J., Koretsky, A.P., 
+Watts, J.A., Cheung, V., Masliah, E., Horkayne-Szakaly, I., Jones, R., Stram, M.N., 
+Moncur, J., Hefti, M., Folkerth, R.D., Nath, A., 2021. Microvascular injury in the 
+brains of patients with Covid-19. N. Engl. J. Med. 384, 481–483. https://doi.org/ 
+10.1056/NEJMc2033369.
+Lee, J., Kim, H.-J., 2022. Normal aging induces changes in the brain and 
+neurodegeneration progress: review of the structural, biochemical, metabolic, 
+cellular, and molecular changes. Front. Aging Neurosci. 14, 931536. https://doi.org/ 
+10.3389/fnagi.2022.931536.
+Li, R., Liu, G., Zhang, X., Zhang, M., Lu, J., Li, H., 2023a. Altered intrinsic brain activity 
+and functional connectivity in COVID-19 hospitalized patients at 6-month follow-up. 
+BMC Infect. Dis. 23, 521. https://doi.org/10.1186/s12879-023-08331-8.
+Li, Z., Zhang, Zhen, Zhang, Zhuoya, Wang, Z., Li, H., 2023. Cognitive impairment after 
+long COVID-19: current evidence and perspectives. Front. Neurol. 14, 1239182. 
+https://doi.org/10.3389/fneur.2023.1239182.
+Lindan, C.E., Mankad, K., Ram, D., Kociolek, L.K., Silvera, V.M., Boddaert, N., Stivaros, S. 
+M., Palasis, S., Akhtar, S., Alden, D., Amonkar, S., Aouad, P., Aubart, M., Bacalla, J. 
+A., Barbosa, A.A., Basmaci, R., Berteloot, L., Blauwblomme, T., Brun, G., Carney, O., 
+Chareyre, J., Ch´eron, G., Coimbra, P.P.D.A., Dangouloff-Ros, V., D'Arco, F., 
+Dineen, R., De-Pontual, L., Desguerre, I., Elfallal, W., Evans, D.G., Ferraciolli, S.F., 
+Girard, N., Gonçalves, F.G., Gonzalez, I., Grant, P.E., Gr´event, D., Guimaraes, C.V. de 
+A., Hassell, J., Hirata, F.C.C., Kamaly-Asl, I., Jacob, J., Jackson, K., Jones, B.V., 
+Joseph, R., Jung, A.Y., Kashgari, A., Kilday, J.-P., Kirsch, A., Kossorotoff, M., 
+Krishnan, A., Kulkarni, S., Leruez-Vill, M., Lesage, F., Levy, R., Li, Y., Lima, C.C. de 
+V., Lingappa, L., L¨obel, U., Lopez-Alberola, R., Lucato, L.T., Moreira, D.D., 
+Murnick, J.G., Nahmani, S., Pagariya, S., Pavaine, J., Philbrook, B., Piovesan, A.C., 
+Poisson, K.E., Reddy, N., Riley, P., Romsauerova, A., Roux, C.-J., Rugilo, C., 
+Saigal, G., Salvador, G.L. de O., Seidenwurm, D., Sermet-Gaudelus, I., Sidpra, J., 
+Sudhakar, S.V., Toronchik, M.S., V´ezina, G., 2021. Neuroimaging manifestations in 
+children with SARS-CoV-2 infection: a multinational, multicentre collaborative 
+study. Lancet Child Adolesc. Health 5, 167–177. https://doi.org/10.1016/S2352- 
+4642(20)30362-X.
+Liou, J.-J., Santini, T., Li, J., Gireud-Goss, M., Patel, V., Adeyemi, O.F., de Erausquin, G. 
+A., Garbarino, V.R., Habes, M., Himali, J.J., Karmonik, C., Snitz, B.E., Mettenburg, J. 
+M., Wu, M., Aizenstein, H.J., Marsland, A.L., Gianaros, P.J., Bowtell, R., Mougin, O., 
+Vahidy, F.S., Girard, T.D., Jacobs, H.I.L., Hosseini, A.A., Seshadri, S., Ibrahim, T.S., 
+2024. Examining brain structures and cognitive functions in patients with recovered 
+COVID-19 infection: a multicenter study using 7T MRI. medRxiv 11 (13), 24317121. 
+https://doi.org/10.1101/2024.11.13.24317121, 2024. 
+Lopez-Leon, S., Wegman-Ostrosky, T., Perelman, C., Sepulveda, R., Rebolledo, P.A., 
+Cuapio, A., Villapol, S., 2021. More than 50 long-term effects of COVID-19: a 
+systematic review and meta-analysis. Sci. Rep. 11, 16144. https://doi.org/10.1038/ 
+s41598-021-95565-8.
+Lu, Y., Li, X., Geng, D., Mei, N., Wu, P.-Y., Huang, C.-C., Jia, T., Zhao, Y., Wang, D., 
+Xiao, A., Yin, B., 2020. Cerebral micro-structural changes in COVID-19 patients – an 
+MRI-based 3-month Follow-up Study. EClinicalMedicine 25, 100484. https://doi. 
+org/10.1016/j.eclinm.2020.100484.
+Lyu, D., Pappas, I., Menon, D.K., Stamatakis, E.A., 2021. A precuneal causal loop 
+mediates external and internal information integration in the human brain. 
+J. Neurosci. 41, 9944–9956. https://doi.org/10.1523/JNEUROSCI.0647-21.2021.
+Madden, D., Stephens, T.M., Scott, J., O'Neal Swann, C., Prather, K., Hoffmeister, J., 
+Ding, L., Dunn, I.F., Conner, A.K., Yuan, H., 2025. Functional connectivity of default 
+mode network in non-hospitalized patients with post-COVID cognitive complaints. 
+Front. Neurosci. 19, 1576393. https://doi.org/10.3389/fnins.2025.1576393.
+Margulies, D.S., Vincent, J.L., Kelly, C., Lohmann, G., Uddin, L.Q., Biswal, B.B., 
+Villringer, A., Castellanos, F.X., Milham, M.P., Petrides, M., 2009. Precuneus shares 
+intrinsic functional architecture in humans and monkeys. Proc. Natl. Acad. Sci. U. S. 
+A. 106, 20069–20074. https://doi.org/10.1073/pnas.0905314106.
+Mazza, M.G., Palladini, M., De Lorenzo, R., Magnaghi, C., Poletti, S., Furlan, R., Ciceri, F., 
+Rovere-Querini, P., Benedetti, F., 2021. Persistent psychopathology and 
+neurocognitive impairment in COVID-19 survivors: effect of inflammatory 
+biomarkers at three-month follow-up. Brain Behav. Immun. 94, 138–147. https:// 
+doi.org/10.1016/j.bbi.2021.02.021.
+Mohammadi, S., Ghaderi, S., 2024. Post-COVID-19 conditions: a systematic review on 
+advanced magnetic resonance neuroimaging findings. Neurol. Sci. 45, 1815–1833. 
+https://doi.org/10.1007/s10072-024-07427-6.
+Muccioli, L., Sighinolfi, G., Mitolo, M., Ferri, L., Jane Rochat, M., Pensato, U., Taruffi, L., 
+Testa, C., Masullo, M., Cortelli, P., Lodi, R., Liguori, R., Tonon, C., Bisulli, F., 2023. 
+Cognitive and functional connectivity impairment in post-COVID-19 olfactory 
+dysfunction. Neuroimage, Clin. 38, 103410. https://doi.org/10.1016/j. 
+nicl.2023.103410.
+Muri, J., Cecchinato, V., Cavalli, A., Shanbhag, A.A., Matkovic, M., Biggiogero, M., 
+Maida, P.A., Moritz, J., Toscano, C., Ghovehoud, E., Furlan, R., Barbic, F., Voza, A., 
+De Nadai, G., Cervia, C., Zurbuchen, Y., Taeschler, P., Murray, L.A., Danelon- 
+Sargenti, G., Moro, S., Gong, T., Piffaretti, P., Bianchini, F., Crivelli, V., 
+Podeˇsvov´a, L., Pedotti, M., Jarrossay, D., Sgrignani, J., Thelen, S., Uhr, M., 
+Bernasconi, E., Rauch, A., Manzo, A., Ciurea, A., Rocchi, M.B.L., Varani, L., 
+Moser, B., Bottazzi, B., Thelen, M., Fallon, B.A., Boyman, O., Mantovani, A., 
+Garzoni, C., Franzetti-Pellanda, A., Uguccioni, M., Robbiani, D.F., 2023. 
+Autoantibodies against chemokines post-SARS-CoV-2 infection correlate with 
+disease course. Nat. Immunol. 24, 604–611. https://doi.org/10.1038/s41590-023- 
+01445-w.
+Natoli, S., Oliveira, V., Calabresi, P., Maia, L.F., Pisani, A., 2020. Does SARS-Cov-2 
+invade the brain? Translational lessons from animal models. Eur. J. Neurol. 27, 
+1764–1773. https://doi.org/10.1111/ene.14277.
+Nelson, B.K., Farah, L.N., Saint, S.A., Song, C., Field, T.S., Sossi, V., Stoessl, A.J., 
+Wellington, C., Honer, W.G., Lang, D., Silverberg, N.D., Panenka, W.J., 2025. 
+Diffusion tensor imaging after COVID-19 infection: a systematic review. Neuroimage 
+310, 121150. https://doi.org/10.1016/j.neuroimage.2025.121150.
+Ogawa, S., Tank, D.W., Menon, R., Ellermann, J.M., Kim, S.G., Merkle, H., Ugurbil, K., 
+1992. Intrinsic signal changes accompanying sensory stimulation: functional brain 
+mapping with magnetic resonance imaging. Proc. Natl. Acad. Sci. U. S. A. 89, 
+5951–5955.
+Ortelli, P., Benso, F., Ferrazzoli, D., Scarano, I., Saltuari, L., Sebastianelli, L., Versace, V., 
+Maestri, R., 2022. Global slowness and increased intra-individual variability are key 
+features of attentional deficits and cognitive fluctuations in post COVID-19 patients. 
+Sci. Rep. 12, 13123. https://doi.org/10.1038/s41598-022-17463-x.
+Owens, C.D., Bonin Pinto, C., Detwiler, S., Olay, L., Pinaffi-Langley, A.C. da C., Mukli, P., 
+Peterfi, A., Szarvas, Z., James, J.A., Galvan, V., Tarantini, S., Csiszar, A., Ungvari, Z., 
+Kirkpatrick, A.C., Prodan, C.I., Yabluchanskiy, A., 2024. Neurovascular coupling 
+impairment as a mechanism for cognitive deficits in COVID-19. Brain Commun 6. 
+https://doi.org/10.1093/braincomms/fcae080 fcae080. 
+Paolini, M., Palladini, M., Mazza, M.G., Colombo, F., Vai, B., Rovere-Querini, P., 
+Falini, A., Poletti, S., Benedetti, F., 2023. Brain correlates of subjective cognitive 
+complaints in COVID-19 survivors: a multimodal magnetic resonance imaging study. 
+Eur. Neuropsychopharmacol. J. Eur. Coll. Neuropsychopharmacol. 68, 1–10. 
+https://doi.org/10.1016/j.euroneuro.2022.12.002.
+Paxinos, G., Mai, J.K., 2004. The Human Nervous System.
+Peskar, M., Omejc, N., ˇS¨omen, M.M., Miladinovi´c, A., Gramann, K., Marusic, U., 2023. 
+Stroop in motion: neurodynamic modulation underlying interference control while 
+sitting, standing, and walking. Biol. Psychol. 178, 108543. https://doi.org/10.1016/ 
+j.biopsycho.2023.108543.
+Petersen, M., N¨agele, F.L., Mayer, C., Schell, M., Petersen, E., Kühn, S., Gallinat, J., 
+Fiehler, J., Pasternak, O., Matschke, J., Glatzel, M., Twerenbold, R., Gerloff, C., 
+Thomalla, G., Cheng, B., 2023. Brain imaging and neuropsychological assessment of 
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+9 
+
+individuals recovered from a mild to moderate SARS-CoV-2 infection. Proc. Natl. 
+Acad. Sci. 120, e2217232120. https://doi.org/10.1073/pnas.2217232120.
+Premraj, L., Kannapadi, N.V., Briggs, J., Seal, S.M., Battaglini, D., Fanning, J., Suen, J., 
+Robba, C., Fraser, J., Cho, S.-M., 2022. Mid and long-term neurological and 
+neuropsychiatric manifestations of post-COVID-19 syndrome: a meta-analysis. 
+J. Neurol. Sci. 434, 120162. https://doi.org/10.1016/j.jns.2022.120162.
+Qin, Y., Wu, J., Chen, T., Li, J., Zhang, G., Wu, D., Zhou, Y., Zheng, N., Cai, A., Ning, Q., 
+Manyande, A., Xu, F., Wang, J., Zhu, W., 2021. Long-term microstructure and 
+cerebral blood flow changes in patients recovered from COVID-19 without 
+neurological manifestations. J. Clin. Investig. 131. https://doi.org/10.1172/ 
+JCI147329.
+Rane Levendovszky, S., Patel, P., Zhu, C., Rutman, A.M., Basha, M.M., 2025. 
+Neuroimaging biomarkers of post-acute sequelae of Coronavirus Disease 2019. Br. J. 
+Radiol. 98, 1165–1175. https://doi.org/10.1093/bjr/tqaf090.
+Raveendran, A.V., 2021. Long COVID-19: challenges in the diagnosis and proposed 
+diagnostic criteria. Diabetes Metab. Syndr. Clin. Res. Rev. 15, 145–146. https://doi. 
+org/10.1016/j.dsx.2020.12.025.
+Rua, C., Raman, B., Rodgers, C.T., Newcombe, V.F.J., Manktelow, A., Chatfield, D.A., 
+Sawcer, S.J., Outtrim, J.G., Lupson, V.C., Stamatakis, E.A., Williams, G.B., Clarke, W. 
+T., Qiu, L., Ezra, M., McDonald, R., Clare, S., Cassar, M., Neubauer, S., Ersche, K.D., 
+Bullmore, E.T., Menon, D.K., Pattinson, K., Rowe, J.B., 2024. Quantitative 
+susceptibility mapping at 7 T in COVID-19: brainstem effects and outcome 
+associations. Brain 147, 4121–4130. https://doi.org/10.1093/brain/awae215.
+Russo, F.D., Bianco, V., Russo, F.D., Bianco, V., 2023. Time course of reactive brain 
+activities during a stroop color-word task: evidence of specific facilitation and 
+interference effects. Brain Sci. 13. https://doi.org/10.3390/brainsci13070982.
+Saikarthik, J., Saraswathi, I., Padhi, B.K., Shamim, M.A., Alzerwi, N., Alarifi, A., 
+Gandhi, A.P., 2025. Structural and functional neuroimaging of hippocampus to study 
+adult neurogenesis in long COVID-19 patients with neuropsychiatric symptoms: a 
+scoping review. PeerJ 13, e19575. https://doi.org/10.7717/peerj.19575.
+Sanabria-Diaz, G., Etter, M.M., Melie-Garcia, L., Lieb, J.M., Psychogios, M.-N., Hutter, G., 
+Granziera, C., 2022. Brain cortical alterations in COVID-19 patients with 
+neurological symptoms. Front. Neurosci. 16, 992165. https://doi.org/10.3389/ 
+fnins.2022.992165.
+Sasso, E.M., Muraki, K., Eaton-Fitch, N., Smith, P., Lesslar, O.L., Deed, G., Marshall- 
+Gradisnik, S., 2022. Transient receptor potential melastatin 3 dysfunction in post 
+COVID-19 condition and myalgic encephalomyelitis/chronic fatigue syndrome 
+patients. Mol. Med. 28, 98. https://doi.org/10.1186/s10020-022-00528-y.
+Soriano, J.B., Murthy, S., Marshall, J.C., Relan, P., Diaz, J.V., 2022. A clinical case 
+definition of post-COVID-19 condition by a Delphi consensus. Lancet Infect. Dis. 22, 
+e102–e107. https://doi.org/10.1016/S1473-3099(21)00703-9.
+Soriano, V., Ganado-Pinilla, P., S´anchez-Santos, M., Barreiro, P., 2020. Unveiling long 
+COVID-19 disease. AIDS Rev. 22, 227–228. https://doi.org/10.24875/AIDSRev. 
+M20000039.
+Tai, A.P.-L., Leung, M.-K., Lau, B.W.-M., Ngai, S.P.-C., Lau, W.K.-W., 2023. Olfactory 
+dysfunction: a plausible source of COVID-19-induced neuropsychiatric symptoms. 
+Front. Neurosci. 17. https://doi.org/10.3389/fnins.2023.1156914.
+Talkington, G.M., Kolluru, P., Gressett, T.E., Ismael, S., Meenakshi, U., Acquarone, M., 
+Solch-Ottaiano, R.J., White, A., Ouvrier, B., Par´e, K., Parker, N., Watters, A., 
+Siddeeque, N., Sullivan, B., Ganguli, N., Calero-Hernandez, V., Hall, G., Longo, M., 
+Bix, G.J., 2024. Neurological sequelae of long COVID: a comprehensive review of 
+diagnostic imaging, underlying mechanisms, and potential therapeutics. Front. 
+Neurol. 15, 1465787. https://doi.org/10.3389/fneur.2024.1465787.
+Thapaliya, K., Marshall-Gradisnik, S., Barth, M., Eaton-Fitch, N., Barnden, L., 2023. 
+Brainstem volume changes in myalgic encephalomyelitis/chronic fatigue syndrome 
+and long COVID patients. Front. Neurosci. 17, 1125208. https://doi.org/10.3389/ 
+fnins.2023.1125208.
+Thapaliya, K., Marshall-Gradisnik, S., Eaton-Fitch, N., Barth, M., Inderyas, M., 
+Barnden, L., 2025a. Hippocampal subfield volume alterations and associations with 
+severity measures in long COVID and ME/CFS: a 7T MRI study. PLoS One 20, 
+e0316625. https://doi.org/10.1371/journal.pone.0316625.
+Thapaliya, K., Marshall-Gradisnik, S., Eaton-Fitch, N., Eftekhari, Z., Inderyas, M., 
+Barnden, L., 2025b. Imbalanced brain neurochemicals in long COVID and ME/CFS: a 
+preliminary study using MRI. Am. J. Med. 138, 567–574.e1. https://doi.org/ 
+10.1016/j.amjmed.2024.04.007.
+Thapaliya, K., Marshall-Gradisnik, S., Inderyas, M., Barnden, L., 2025c. Altered brain 
+tissue microstructure and neurochemical profiles in long COVID and recovered 
+COVID-19 individuals: a multimodal MRI study. Brain Behav. Immun. - Health 50, 
+101142. https://doi.org/10.1016/j.bbih.2025.101142.
+Trufanov, A., Voznyuk, I., Kutkova, A., Efimtsev, A., Shusharina, N., Ovdienko, O., 2025. 
+Structural and functional changes in the brain during post-COVID syndrome: 
+neuropsychological and MRI study. Eur. Phys. J. Spec. Top. https://doi.org/ 
+10.1140/epjs/s11734-024-01448-0.
+Umesh, A., Pranay, K., Pandey, R.C., Gupta, M.K., 2022. Evidence mapping and review of 
+long-COVID and its underlying pathophysiological mechanism. Infection 50, 
+1053–1066. https://doi.org/10.1007/s15010-022-01835-6.
+Velichkovsky, B.B., Razvaliaeva, A.Y., Khlebnikova, A.A., Manukyan, P.A., Kasatkin, V. 
+N., 2023. Attention and memory after COVID-19 as measured by neuropsychological 
+tests: systematic review and meta-analysis. Acta Psychol. 233, 103838. https://doi. 
+org/10.1016/j.actpsy.2023.103838.
+Vincent, J.L., Snyder, A.Z., Fox, M.D., Shannon, B.J., Andrews, J.R., Raichle, M.E., 
+Buckner, R.L., 2006. Coherent spontaneous activity identifies a hippocampal-parietal 
+memory network. J. Neurophysiol. 96, 3517–3531. https://doi.org/10.1152/ 
+jn.00048.2006.
+Vogt, B.A., Gabriel, M., 1993. Neurobiology of Cingulate Cortex and Limbic Thalamus: a 
+Comprehensive Handbook.
+Voruz, P., Cionca, A., Jacot de Alcˆantara, I., Nuber-Champier, A., Allali, G., 
+Benzakour, L., Lalive, P.H., L¨ovblad, K.O., Braillard, O., Nehme, M., Coen, M., 
+Serratrice, J., Reny, J.-L., Pugin, J., Guessous, I., Ptak, R., Landis, B.N., Adler, D., 
+Griffa, A., Van De Ville, D., Assal, F., P´eron, J.A., 2023. Brain functional connectivity 
+alterations associated with neuropsychological performance 6-9 months following 
+SARS-CoV-2 infection. Hum. Brain Mapp. 44, 1629–1646. https://doi.org/10.1002/ 
+hbm.26163.
+West, K.L., Zuppichini, M.D., Turner, M.P., Sivakolundu, D.K., Zhao, Y., Abdelkarim, D., 
+Spence, J.S., Rypma, B., 2019. BOLD hemodynamic response function changes 
+significantly with healthy aging. Neuroimage 188, 198–207. https://doi.org/ 
+10.1016/j.neuroimage.2018.12.012.
+Yeager, B.E., Bruss, J., Duffau, H., Herbet, G., Hwang, K., Tranel, D., Boes, A.D., 2022. 
+Central precuneus lesions are associated with impaired executive function. Brain 
+Struct. Funct. 227, 3099–3108. https://doi.org/10.1007/s00429-022-02556-0.
+M. Inderyas et al.                                                                                                                                                                                                                               
+Brain, Behavior, & Immunity - Health 54 (2026) 101266 
+10 

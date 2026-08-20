@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-19",
+  "last_check": "2026-08-20",
   "papers": [
     {
       "id": "nochi-2026-reenergizeme-hypoxia-hyperoxia-protocol",
@@ -2072,6 +2072,57 @@
       "flags": [],
       "isNew": false,
       "notes": "J Transl Med, published online Jul 29, 2026. Solo-author commentary/hypothesis piece building directly on the already-tracked kim-2026-hbot-mecfs study (Charité/Scheibenbogen HBOT + thalamic resting-state connectivity cohort, J Transl Med Jun 5 2026): proposes a predictive-processing/'central gain' framework in which altered thalamocortical gating unifies sensory hypersensitivity, pain, orthostatic intolerance, and cognitive fog in ME/CFS, and flags that causality (vs. correlation with a vascular/oxygen intervention) still needs testing across exertion/PEM. Not itself Wirth/Scheibenbogen-authored but directly engages their group's data. Confirmed via Crossref API record (title/author/journal/date/DOI all match); not yet indexed in Europe PMC as of this check (recent-publication indexing lag)."
+    },
+    {
+      "id": "magawa-2026-trpm3-nk-cells-post-covid",
+      "title": "Altered TRPM3-Dependent Cytosolic and Mitochondrial Calcium Influx in Natural Killer Cells of Post-COVID-19 Condition Patients",
+      "authors": "Magawa CT, Eaton-Fitch N, Muraki K, Marshall-Gradisnik S, et al.",
+      "journal": "European Journal of Immunology",
+      "date": "Jul 2026",
+      "summary": "Researchers looked at natural killer (NK) cells — a type of immune cell — in 8 people with long-lasting post-COVID illness and 8 healthy people. The patients' NK cells had a faulty calcium \"gate\" (a channel called TRPM3): too little calcium got into the main body of the cell, but too much built up inside the cell's energy-making parts (mitochondria), and the cells barely responded when stimulated.",
+      "why": "The same faulty TRPM3 calcium channel was first found in ME/CFS immune cells, so finding it again in post-COVID illness supports the idea that ME/CFS and post-COVID share a common underlying immune and energy problem — a possible shared target for future treatments.",
+      "link": "https://doi.org/10.1002/eji.70240",
+      "first_seen": "2026-08-20",
+      "last_checked": "2026-08-20",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Griffith University NCNED group (Australia), not Wirth/Scheibenbogen-authored. Small study (n=8 vs 8). Confirmed via journal DOI record."
+    },
+    {
+      "id": "inderyas-2026-7t-fmri-long-covid-bold",
+      "title": "Investigation of BOLD signal intensities in long COVID patients using 7T functional MRI",
+      "authors": "Inderyas M, Thapaliya K, Marshall-Gradisnik S, Barnden L",
+      "journal": "Brain, Behavior, & Immunity - Health",
+      "date": "Jul 2026 (online May 2026)",
+      "summary": "Using an extra-powerful (7 Tesla) brain scanner, researchers compared brain activity in 19 people with long COVID and 27 healthy people while they did a thinking task. The long-COVID patients had weaker brain-activity signals in the regions that handle attention and error-checking, and this was linked to slower thinking and more pain.",
+      "why": "Gives high-resolution evidence that long-COVID brain fog and fatigue come with real, measurable changes in brain activity, rather than just being tiredness — from a group that also studies ME/CFS brain imaging, strengthening the case for a shared biological basis.",
+      "link": "https://doi.org/10.1016/j.bbih.2026.101266",
+      "first_seen": "2026-08-20",
+      "last_checked": "2026-08-20",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "NCNED group (Griffith University, Australia), not Wirth/Scheibenbogen-authored. Confirmed via journal DOI record."
+    },
+    {
+      "id": "cahart-2026-brain-dynamics-post-covid",
+      "title": "Brain dynamics of attentional, default-mode and limbic networks are disrupted at rest in post-COVID-19 syndrome",
+      "authors": "Cahart MS, O'Daly O, Cai Z, Mariani N, Borsini A, Mondelli V, Eiff B, Rota S, Nicholson T, Rida L, Hampshire A, Dipasquale O, Fernandes L, Turkheimer F, Williams SCR, Martins D",
+      "journal": "Brain, Behavior, & Immunity - Health",
+      "date": "Jul 2026 (online May 2026)",
+      "summary": "Resting-state brain scans of 20 people with post-COVID syndrome and 20 healthy people found that patients' brains spent less time in an \"alert, paying-attention\" pattern and more time in an \"inward-focused, emotional\" pattern.",
+      "why": "Suggests post-COVID fatigue and brain fog may involve the brain getting \"stuck\" in a less outward-focused mode — a possible objective brain signature that could one day help diagnose the condition or judge whether a treatment is working.",
+      "link": "https://doi.org/10.1016/j.bbih.2026.101274",
+      "first_seen": "2026-08-20",
+      "last_checked": "2026-08-20",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "King's College London group, not Wirth/Scheibenbogen-authored. Confirmed via journal DOI record."
     }
   ]
 }
