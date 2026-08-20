@@ -1,0 +1,1532 @@
+Brain dynamics of attentional, default-mode and limbic networks are 
+disrupted at rest in post-COVID-19 syndrome
+Marie-Stephanie Cahart a, Owen O’ Daly a, Ziyuan Cai a, Nicole Mariani b, Alessandra Borsini b,  
+Valeria Mondelli b, Brandi Eiff a, Silvia Rota a, Timothy Nicholson c, Laila Rida a,  
+Adam Hampshire a, Ottavia Dipasquale a, Lia Fernandes e,f, Federico Turkheimer a,d,  
+Steven C.R. Williams a, Daniel Martins a,e,f,*
+a Department of Neuroimaging, Institute of Psychiatry, Psychology and Neuroscience, King's College London, UK
+b Department of Psychological Medicine, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK
+c Department of Psychosis Studies, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK
+d Institute for Human and Synthetic Minds, King's College London, UK
+e Department of Clinical Neursciences and Mental Health, Faculty of Medicine, University of Porto, Porto, Portugal
+f RISE-HEALTH (Neurosciences thematic line), Department of Clinical Neursciences and Mental Health, Faculty of Medicine, University of Porto, Porto, Portugal
+A R T I C L E I N F O
+Keywords:
+Post-COVID-19 syndrome
+Resting-state fMRI
+Dynamic functional connectivity
+LEiDA
+Brain states
+Attention
+Limbic system
+Default mode network
+Neuroinflammation
+A B S T R A C T
+Background: Post-COVID-19 Syndrome (PCS) is characterised by persistent fatigue, cognitive impairments, and 
+affective symptoms, yet its underlying neural mechanisms remain poorly understood. While static neuroimaging 
+studies have identified resting-state connectivity abnormalities in PCS, such approaches fail to capture the brain's 
+dynamic functional organisation. This represents a missed opportunity to understand how alterations in large- 
+scale network interactions may contribute to the fluctuating symptom profile of PCS. Cognitive and emotional 
+processes rely on the brain's capacity to flexibly reconfigure large-scale networks over time; disruptions in this 
+dynamic repertoire may therefore play a role in PCS pathophysiology.
+Methods: Resting-state fMRI data were acquired from 20 individuals with PCS (mean age = 41.8 years, SD = 9.4) 
+and 20 age- and sex-matched healthy controls (mean age = 40.6 years, SD = 8.1) using a multi-echo sequence. 
+Following denoising with multi-echo independent component analysis, we applied Leading Eigenvector Dy­
+namics Analysis (LEiDA) to identify recurrent patterns of whole-brain phase synchrony. The optimal number of 
+dynamic brain states was determined using the Dunn index. For each state, we quantified probability of 
+occurrence, lifetime, and transition probabilities, and mapped spatial topographies onto canonical functional 
+networks. Group differences were assessed using ANCOVAs controlling for age, sex, and handedness. Exploratory 
+associations with clinical symptoms, cognitive performance, and inflammatory markers were examined using 
+both frequentist and Bayesian approaches.
+Results: Five recurrent dynamic brain states were identified. Compared with controls, PCS participants showed 
+reduced probability of occurrence and shorter lifetime of a visual/dorsal attention state, alongside increased 
+probability of a limbic/default mode network (DMN) state. PCS was also characterised by tentative reduced 
+transitions between visual/dorsal attention and frontoparietal–DMN states, and increased transitions from 
+somatomotor/visual states toward the limbic-DMN configuration. Exploratory analyses (uncorrected for multiple 
+comparisons) suggested that greater expression of the limbic-DMN state was associated with lower global 
+cognitive performance (MoCA) and higher serum IL-1β levels, although these associations did not survive 
+correction for multiple comparisons.
+Conclusions: PCS is associated with a reorganisation of intrinsic brain dynamics, marked by a shift from externally 
+oriented attentional states toward limbic-DMN configurations and reduced transition flexibility. These findings 
+suggest that PCS may involve alterations in the dynamic balance of large-scale brain systems supporting attention 
+and internally oriented processing. While exploratory, the observed patterns are consistent with a potential link 
+* Corresponding author. Department of Neuroimaging, Centre for Neuroimaging Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College 
+London, Denmark Hill, SE5 8AF, London, UK.
+E-mail address: Daniel.martins@kcl.ac.uk (D. Martins). 
+Contents lists available at ScienceDirect
+Brain, Behavior, & Immunity - Health
+journal homepage: www.editorialmanager.com/bbih/default.aspx
+https://doi.org/10.1016/j.bbih.2026.101274
+Received 18 January 2026; Received in revised form 20 May 2026; Accepted 24 May 2026  
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+Available online 25 May 2026 
+2666-3546/© 2026 The Authors. Published by Elsevier Inc. This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ). 
+
+between brain-state dynamics, cognitive function, and inflammatory signalling, and provide a systems-level 
+framework for future studies of post-viral brain dysfunction.
+1. Introduction
+Post-COVID-19 Syndrome (PCS), also referred to as Long COVID, 
+affects a considerable number of individuals after infection with SARS- 
+CoV-2 (Davis et al., 2021; Nalbandian et al., 2021). Even months after 
+the acute phase has resolved, many people continue to experience 
+symptoms such as fatigue, poor concentration, slowed thinking, mood 
+changes, and issues with memory (Davis et al., 2021; Nalbandian et al., 
+2021; Cipolli et al., 2023). These difficulties occur even in individuals 
+who were not hospitalised and may persist despite normal findings on 
+conventional brain imaging. The underlying causes of PCS are still being 
+investigated, but current evidence suggests that the brain may be 
+particularly vulnerable to subtle changes in how it functions and our 
+different brain regions communicate with each other, especially in the 
+context of inflammation (Nalbandian et al., 2021; Proal and 
+VanElzakker, 2021; Peluso and Deeks, 2024).
+Resting-state functional MRI (rs-fMRI) has become a widely used tool 
+for investigating large-scale brain network organisation in both health 
+and disease (Biswal and Uddin, 2025). By measuring spontaneous fluc­
+tuations in the Blood Oxygenation Level Dependent (BOLD) signal while 
+participants are not engaged in any specific task, rs-fMRI reveals pat­
+terns of synchronised activity across different brain regions, thus 
+uncovering the brain's intrinsic functional architecture. These networks 
+- such as the default mode, frontoparietal, limbic, and attention systems - 
+are involved in diverse domains including emotion regulation, memory, 
+self-reflection, and goal-directed cognition (Biswal and Uddin, 2025). 
+Notably, rs-fMRI measures have been shown to predict individual pat­
+terns of brain engagement during cognitive and affective tasks, offering 
+insight into latent network dynamics that shape behaviour even at rest 
+(Biswal and Uddin, 2025; Kocak, 2021). Several studies using rs-fMRI 
+have shown that PCS is associated with changes in connectivity within 
+and between key large-scale brain networks (Churchill et al., 2023; Zhao 
+et al., 2024; Kesler et al., 2024; Troll et al., 2025; Chen et al., 2025; 
+Samanci et al., 2025; Zhang et al., 2025; Wingrove et al., 2023; Muccioli 
+et al., 2023; Dacosta-Aguayo et al., 2024). In particular, altered con­
+nectivity has been observed in the default mode network (DMN), the 
+salience network, and frontoparietal systems, which are responsible for 
+executive control and attention18, 19 20. These abnormalities often 
+correlate with symptoms like fatigue and mental fog (Zhang et al., 
+2025). However, most of these studies have used “static” analyses that 
+summarise brain functional connectivity as if it remained the same 
+across the entire scan (Menon and Krishnamurthy, 2019). In reality, 
+brain connectivity is constantly evolving (Hancock et al., 2025). Even at 
+rest, the brain shifts from one functional state to another over the course 
+of seconds. These states, which represent groups of brain regions whose 
+activity is highly synchronised at a given moment in time, reflect distinct 
+modes of neural processing (Vohryzek et al., 2020). The way these states 
+emerge and take turns activating across time offers insights into the 
+brain's moment-to-moment responsiveness and its ability to flexibly 
+adapt to changing demands (Hancock et al., 2025; Kurtin et al., 2023; 
+Cabral et al., 2017).
+In healthy individuals, the brain naturally moves between states 
+related to attention, sensory awareness, emotion, and self-monitoring 
+(Vohryzek et al., 2020). These states are temporary, and the brain usu­
+ally does not get “stuck” in any one of them (Hancock et al., 2025). In 
+psychiatric and neurological conditions such as depression, schizo­
+phrenia or body dysmorphic disorder, this balance is often disrupted. 
+For example, some individuals spend more time in states related to in­
+ternal thinking or negative emotion and explore fewer states related to 
+attention and engagement with the external world (Alonso Martinez 
+et al., 2020; Alonso et al., 2023; Cahart et al., 2025; Hancock et al., 
+2023; Wong et al., 2021). Because individuals with PCS share many of 
+these symptoms, it is reasonable to suspect that something similar may 
+be happening in their brains. One method that allows us to investigate 
+this in detail is called Leading Eigenvector Dynamics Analysis (LEiDA) 
+(Vohryzek et al., 2020; Cabral et al., 2014). This technique examines 
+moment-to-moment changes in how different brain regions synchronise 
+their activity. LEiDA identifies a set of distinct brain states and shows 
+how frequently each state occurs, how long it lasts, and how often the 
+brain switches between them. Although LEiDA has not yet been widely 
+used in PCS research, early connectivity studies suggest that individuals 
+with PCS may show reduced network efficiency over time (Zhang et al., 
+2025), which in turn provides a potential backbone for less flexible brain 
+dynamics.
+In this context, we set out to use LEiDA to explore how large-scale 
+brain states unfold over time in individuals with PCS during resting- 
+state fMRI. Building on prior research linking PCS to cognitive and af­
+fective dysfunction (Hampshire et al., 2021, 2024) - as well as emerging 
+evidence of altered network connectivity in fatigue-related and inflam­
+matory conditions (Goldsmith et al., 2023) - we formulated three core 
+hypotheses. First, we hypothesised that individuals with PCS would 
+spend more time in brain states dominated by the DMN and limbic re­
+gions. These areas are associated with internally directed cognition, 
+self-referential thought, and affective processing, which may become 
+predominant in the context of fatigue, emotional dysregulation, and 
+withdrawal from external demands (Whitfield-Gabrieli and Ford, 2012). 
+Second, we expected reduced occupancy of brain states engaging fron­
+toparietal and dorsal attention networks, which are critical for sustained 
+attention, goal-directed behaviour, and environmental monitoring 
+(Vossel et al., 2014; Seeley et al., 2007). A diminished ability to access or 
+maintain these externally focused states could help explain the common 
+experiences of mental fog, distractibility, and slowed cognitive pro­
+cessing reported by PCS patients. Third, we hypothesised that individual 
+differences in brain-state dynamics - specifically, reduced engagement of 
+attention-related states and increased expression of DMN-limbic con­
+figurations - would be associated with clinical symptom severity, 
+cognitive performance deficits (particularly in attention), and elevated 
+peripheral markers of inflammation. Together, these hypotheses aimed 
+to link brain dynamics with the neurocognitive and immunological 
+signatures of PCS.
+2. Methods
+2.1. Study design and participants
+As described elsewhere, this study employed a single-site observa­
+tional case-control design. All participants, both PCS cases and recov­
+ered controls, were required to have had biologically confirmed SARS- 
+CoV-2 infection at least three months prior to enrolment, consistent 
+with the WHO clinical case definition of Post-COVID-19 condition 
+(Soriano et al., 2022). Individuals in the PCS group were characterised 
+by persistent symptoms lasting ≥3 months after infection, whereas 
+recovered controls were required to be fully asymptomatic, with com­
+plete resolution of all post-COVID symptoms. We included individuals 
+with mild acute COVID-19 only, to minimize potential confounding ef­
+fects of hospitalisation, hypoxia, or severe systemic inflammation on 
+brain perfusion and metabolism, and to ensure that any observed group 
+differences were not attributable to the neurological sequelae of mod­
+erate–severe disease. All participants were required to have had bio­
+logically confirmed SARS-CoV-2 infection prior to enrolment. 
+Confirmation was based on either a positive reverse-transcription po­
+lymerase chain reaction (RT-PCR) test from a nasopharyngeal swab or 
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+2 
+
+documented serological evidence of prior infection, in accordance with 
+UK national testing guidelines at the time of acute illness. Participants 
+with only clinically suspected but biologically unconfirmed COVID-19 
+were not included. Recovered healthy control participants were 
+required to have a history of biologically confirmed SARS-CoV-2 infec­
+tion, followed by complete resolution of all acute and post-acute 
+symptoms. To minimize the risk of including individuals with subtle 
+or subclinical post-COVID manifestations, control participants were 
+screened using the same standardized clinical instruments applied to the 
+PCS group, including the Fatigue Assessment Inventory. Only in­
+dividuals scoring below established clinical thresholds, and reporting no 
+persistent fatigue, cognitive complaints, affective symptoms, autonomic 
+dysfunction, or post-exertional malaise at the time of assessment, were 
+included as healthy controls. In addition, control participants underwent 
+the same cognitive assessment battery and clinical interview as PCS 
+participants, and individuals demonstrating clinically relevant de­
+viations from normative performance or reporting residual symptoms 
+were excluded. This stringent screening strategy ensured that the control 
+group represented a recovered post-COVID population without ongoing 
+symptomatology, rather than asymptomatic or mildly affected PCS 
+cases.
+We recruited participants through King's College Hospital NHS Trust 
+and surrounding community networks. Eligible individuals were aged 
+16–65 years, fluent in English, and capable of providing informed con­
+sent. We excluded individuals with a history of major neurological or 
+psychiatric disorders, current substance misuse, systemic or central 
+nervous system inflammatory conditions, chronic respiratory or cardiac 
+disease, recent vaccination (within two weeks), pregnancy or breast­
+feeding, BMI >30, or current use of immunomodulatory or psychoactive 
+medications. We used the global severity score of Fatigue Assessment 
+Inventory (FAI) to pre-screen participants for symptom severity 
+(Schwartz et al., 1993). Individuals scoring greater than 4 on the global 
+fatigue severity scale were classified into the PCS group with persistent 
+fatigue, while those scoring 4 or below were included as recovered 
+controls. The threshold of >4 was selected to ensure inclusion of in­
+dividuals with clinically meaningful levels of fatigue, consistent with 
+prior applications of the FAI in post-viral and chronic fatigue contexts 
+(Schwartz et al., 1993). Groups were balanced for age, sex, BMI, and 
+acute COVID-19 severity. To specifically isolate mechanisms associated 
+with symptom persistence following SARS-CoV-2 infection, we selected 
+a control group consisting of individuals with biologically confirmed 
+infection who fully recovered and were rigorously screened to exclude 
+any residual symptoms. This design allows for comparison between 
+divergent clinical trajectories following infection (persistent vs 
+resolved), rather than between infected and infection-naïve individuals. 
+The study received ethical approval from the UK Health Research Au­
+thority (IRAS ID: 308661) and was conducted in accordance with the 
+Declaration of Helsinki and Good Clinical Practice (GCP) guidelines. All 
+participants provided written informed consent prior to study 
+procedures.
+We conducted an a priori power analysis using G*Power (version 
+3.1) to estimate the required sample size for detecting group differences 
+in dynamic functional connectivity metrics using analysis of covariance 
+(ANCOVA). Assuming a medium to large effect size (Cohen's f = 0.30, 
+equivalent to ηp2≈0.08), alpha = 0.05, power (1 −β) = 0.80, and three 
+covariates (age, sex, and handedness), the estimated sample size 
+required per group was 19. Our sample of 20 participants per group 
+therefore provides adequate power to detect effects in this range. Given 
+the modest sample size, the study is likely underpowered to detect small- 
+to-moderate effects. Accordingly, our analytical approach prioritised 
+estimation over dichotomous inference, with emphasis placed on effect 
+sizes, confidence intervals, and cross-modal consistency. Observed ef­
+fects should therefore be interpreted as preliminary and most informa­
+tive for medium-to-large effect sizes.”
+2.2. Procedures
+Each participant completed a single study visit that included clinical 
+assessments, venous blood collection, and a multimodal MRI scan. 
+Clinical assessments included medical and psychiatric history, physical 
+examination, vital signs, and a structured battery of standardized 
+questionnaires. Fatigue was assessed using both the full Fatigue 
+Assessment Inventory (Schwartz et al., 1993) and the Multidimensional 
+Fatigue Inventory (Smets et al., 1995) to differentiate between mental 
+and physical fatigue. Symptoms of autonomic dysfunction were evalu­
+ated using the Composite Autonomic Symptom Score (COMPASS-31) 
+(Sletten et al., 2012), while mood and anxiety were measured using the 
+Hospital Anxiety and Depression Scale (HADS)(Zigmond and Snaith, 
+1983). Sleep quality was assessed with the Pittsburgh Sleep Quality 
+Index (Buysse et al., 1989), and respiratory symptoms were rated using 
+the MRC Dyspnoea Scale (Bestall et al., 1999). Additional measures 
+included the DePaul Symptom Questionnaire (Sunnquist et al., 2019), 
+the American College of Rheumatology (ACR) fibromyalgia criteria 
+(Wolfe et al., 2016), the PAIN Detect questionnaire (Shaygan et al., 
+2013), and Montreal Cognitive Assessment (Nasreddine et al., 2005). 
+Most self-report questionnaires were completed remotely via the Qual­
+trics platform within 72 h of the in-person visit. All participants un­
+derwent a structured diagnostic assessment using the Mini International 
+Neuropsychiatric Interview (MINI) to exclude current or past major 
+psychiatric disorders, including mood, anxiety, psychotic, and substance 
+use disorders.
+2.3. Blood analysis
+Venous blood samples (up to 30 mL) were collected on the day of 
+imaging. Standard hematological and biochemical panels - including 
+erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), thyroid- 
+stimulating hormone (TSH), free thyroxine (T4), and liver function tests 
+- were processed by Synnovis (Viapath) at King's College Hospital NHS 
+Foundation Trust. Serum samples were frozen at −80 ◦C and later 
+assayed for cytokines and glial markers using electrochemiluminescence 
+immunoassays (Meso Scale Discovery, Rockville, MD, USA). The cyto­
+kine panel included interleukin-1 beta (IL-1β), interleukin-2 (IL-2), 
+interleukin-4 
+(IL-4), 
+interleukin-6 
+(IL-6), 
+interleukin-8 
+(IL-8), 
+interleukin-10 (IL-10), interleukin-12p70 (IL-12p70), interleukin-13 (IL- 
+13), tumor necrosis factor-alpha (TNF-α), and interferon-gamma (IFN- 
+γ). Glial markers included glial fibrillary acidic protein (GFAP), 
+measured with the ultrasensitive kit, and S100β. Assays were performed 
+in duplicate. Values below the detection limit were discarded. This led 
+us to discard all quantifications of IL-2, IL-4 and IL-12p70. Outliers 
+greater than three standard deviations from the group mean were win­
+sorized. No analyte had more than 10% missing data, therefore all data 
+were included.
+2.4. Cognitron
+Cognitive performance was assessed online using a battery of 
+computerized tasks from the Cognitron platform, covering delayed 
+verbal memory, working memory, executive function, attention, motor 
+coordination, and spatial manipulation (Hampshire et al., 2024). Tasks 
+included Verbal Analogies (abstract reasoning and semantic integra­
+tion), Immediate and Delayed Prospective Memory (episodic memory 
+and planning), 2D Spatial Manipulation (visuospatial working memory 
+and mental rotation), Motor Control (sensorimotor coordination and 
+reaction consistency), Spotter (vigilance and sustained attention), and 
+Block Reasoning (fluid intelligence and rule-based problem solving). 
+Each task involves trial-level response collection, capturing both accu­
+racy and reaction time. Performance metrics were transformed into 
+standardized deviation-from-expected (DFE) scores using normative 
+models derived from a large independent sample (n > 20,000), adjusted 
+for age, sex, handedness, and harmonized ethnicity. DFE scores 
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+3 
+
+represent standardized residuals (observed minus expected performance 
+divided by normative standard deviation) and were computed sepa­
+rately for accuracy and reaction time.
+3. Neuroimaging data acquisition and processing
+3.1. MRI acquisition
+We acquired MRI data using a 3T GE Healthcare MR750 scanner (GE 
+Medical Systems, Milwaukee, WI), equipped with a 32-channel receive- 
+only head coil. The imaging protocol was part of the larger FALCS 
+neuroimaging study and included high-resolution anatomical scans, 
+quantitative BOLD sequences, and cerebral perfusion imaging. For the 
+purposes of this study, we focused exclusively on resting-state functional 
+MRI (rs-fMRI) data to assess dynamic brain connectivity.
+T1-weighted structural images were acquired using a 3D 
+magnetisation-prepared rapid acquisition gradient echo (MPRAGE) 
+sequence with the following parameters: repetition time (TR) = 2300 
+ms, echo time (TE) = 2.98 ms, inversion time (TI) = 900 ms, and voxel 
+size = 1 mm3 isotropic. These anatomical images served as the reference 
+for spatial registration and normalisation.
+Resting-state fMRI data were acquired using a multi-echo echo- 
+planar imaging (ME-EPI) sequence with full k-space sampling at each 
+echo. Three echoes were collected per volume with echo times (TEs) of 
+13 ms, 28 ms, and 44 ms. The repetition time (TR) was 2000 ms, and a 
+total of 240 vol were acquired over 8 min, following four initial dummy 
+scans to allow for signal stabilization. Imaging covered the whole brain 
+with 32 near-axial slices oriented along the anterior commissur­
+e–posterior commissure (AC–PC) line, each 3 mm thick with a 1 mm 
+inter-slice gap. The field of view (FOV) was 240 mm, and the flip angle 
+was set to 80◦. During scanning, participants were instructed to remain 
+still, keep their eyes open, and fixate on a central crosshair.
+3.2. Preprocessing
+We conducted preprocessing using FSL (version 6.0) and tedana.py 
+(version 0.0.10; https://tedana.readthedocs.io/en/latest). The first step 
+involved registering the anatomical MPRAGE image to Montreal 
+Neurological Institute (MNI) space. Functional volumes from the first 
+echo of each rs-fMRI time series were aligned to the first volume using 
+mcflirt in FSL. The resulting transformation matrices were then applied 
+to the remaining echoes, ensuring consistent alignment across all 
+echoes. We then performed T2*-weighted optimal combination of the 
+echoes to enhance BOLD contrast, and denoised the data using multi- 
+echo independent component analysis (ME-ICA) implemented in 
+tedana.py (Kundu et al., 2012, 2013). This method decomposes the data 
+into independent components and classifies them as BOLD or non-BOLD 
+based on their TE-dependence. Components identified as non-BOLD - 
+typically reflecting motion, physiological noise, or scanner-related ar­
+tefacts - were regressed out of the optimally combined data, yielding a 
+denoised multi-echo BOLD dataset. The denoised time series were then 
+registered to the corresponding MPRAGE structural image using epi_reg 
+and subsequently normalised to MNI space using the previously 
+computed anatomical transformations. All functional images were 
+resampled to 2 mm3 isotropic resolution. To enhance spatial compara­
+bility and reduce high-frequency noise, the data were smoothed using a 
+Gaussian kernel with 6 mm full-width at half-maximum (FWHM). We 
+applied high-pass temporal filtering with a cut-off frequency of 0.01 Hz 
+to remove low-frequency drifts and scanner instabilities. Finally, to ac­
+count for residual non-neuronal sources of variance, we regressed out 
+the average signal from white matter (WM) and cerebrospinal fluid 
+(CSF). WM and CSF masks were defined in MNI space using the MNI152 
+standard template and applied to each participant's preprocessed data. 
+The extracted mean WM and CSF signals were regressed out using 
+fsl_glm to reduce physiological and scanner-related noise, such as car­
+diac pulsatility and respiratory fluctuations. This preprocessing pipeline 
+yielded denoised, anatomically aligned, and temporally filtered func­
+tional data optimised for subsequent dynamic connectivity analyses 
+(Dipasquale et al., 2017).
+3.3. Quality control
+All structural and functional images were visually inspected for ar­
+tefacts, motion, and co-registration accuracy at multiple stages of pre­
+processing. We verified alignment between functional and anatomical 
+images following each registration step, including echo combination, 
+denoising, and MNI normalisation. For the rs-fMRI data, we monitored 
+framewise displacement and excluded any datasets exceeding a mean 
+framewise displacement of 0.5 mm or containing more than 10% of 
+volumes with motion spikes above 0.75 mm. No participants exceeded 
+these thresholds. Independent component classification by ME-ICA was 
+visually examined in a subset of participants to confirm the effective 
+separation of BOLD and non-BOLD components. Additionally, all white 
+matter and CSF masks used for nuisance regression were manually 
+checked for correct anatomical placement in MNI space. These quality 
+control procedures ensured robust and reliable inputs for the dynamic 
+functional connectivity analyses.
+3.4. LEiDA analyses
+We performed Leading Eigenvector Dynamics Analysis (LEiDA) in 
+MATLAB R2020a (MathWorks, Natick, MA, USA) using scripts adapted 
+from Cabral et al. (2017) [https://github.com/juanitacabral/LEiDA]. 
+This method tracks how synchrony between different brain regions 
+evolves over time by analysing the timing of their BOLD signal 
+fluctuations.
+We first extracted BOLD time series from 105 cortical and subcortical 
+regions of interest (ROIs) using the Harvard–Oxford atlas available from 
+the CONN toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012). 
+Cerebellar ROIs were excluded due to their absence in the Yeo 7-network 
+parcellation. Each ROI time series was then Hilbert-transformed to 
+derive the instantaneous phase in the complex plane (Fig. 1A). At each 
+timepoint, we computed a dynamic phase-locking matrix dPL(t), quan­
+tifying pairwise phase synchrony between regions (Fig. 1B). We 
+extracted the leading eigenvector V1(t) from each dPL(t) to capture the 
+dominant pattern of whole-brain synchrony at each timepoint. We then 
+concatenated V1(t) across all participants and applied k-means clus­
+tering to identify recurrent brain states (Fig. 1C). We tested clustering 
+solutions from k = 5 to k = 10 and selected the optimal number of states 
+(k = 5) using the Dunn index, which maximises between-cluster sepa­
+ration and within-cluster homogeneity.
+For each identified state, we computed three dynamic metrics per 
+participant: (1) probability of occurrence (proportion of time spent in 
+the state), (2) average lifetime (number of consecutive timepoints within 
+the state), and (3) pairwise transition probabilities between states.
+To interpret the functional relevance of each state, we calculated 
+Spearman correlations between the spatial topography of each state's 
+centroid (Vk) and the canonical Yeo 7-network maps (Yeo et al., 2011). 
+These Yeo networks include the visual, somatomotor, dorsal attention, 
+ventral attention, limbic, frontoparietal, and default mode networks. 
+Significance was defined using a Bonferroni-corrected threshold of 
+p < 0.05/7 (0.007). Because large-scale brain networks support multiple 
+cognitive and affective functions, the present interpretations should be 
+viewed as approximations of network-level organization rather than 
+direct evidence of specific psychological states.
+3.5. Statistical analysis
+We compared group differences in LEiDA-derived dynamic metrics 
+using analysis of covariance (ANCOVA), controlling for age, sex, and 
+handedness. For each state, we examined between-group differences in 
+probability of occurrence, lifetime, and transition probabilities. For 
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+4 
+
+transition probabilities, all directed pairwise transitions between the 
+five identified states were examined (20 possible transitions excluding 
+self-transitions). Given the exploratory nature of these analyses and the 
+modest sample size, transition probability analyses were not corrected 
+for multiple comparisons and should therefore be interpreted cautiously. 
+For completeness, we supplemented frequentist statistics with their 
+respective Bayesian counterparts to quantify evidence strength. Bayes 
+factors (BF10) above 1, 3 and 10 were interpreted as anecdotal, mod­
+erate, and strong evidence for a given effect, respectively.
+We also performed exploratory correlation analyses between dy­
+namic metrics and behavioural or biological measures, including 
+symptom severity (e.g., fatigue, anxiety), cognitive performance (e.g., 
+sustained attention), and circulating inflammatory markers (e.g., 
+interleukin-6). We used partial Spearman rank correlations, which 
+accounted for age, gender, handedness and group. Correlation analyses 
+between dynamic brain-state metrics and behavioural or biological 
+variables were treated as exploratory and are reported without correc­
+tion for multiple comparisons.
+3.6. Sensitivity analyses
+To examine the robustness of the main findings, we performed two 
+complementary sensitivity analyses. First, given the significant between- 
+group difference in years of education, we repeated the primary analyses 
+using years of education as a further covariate.
+4. Results
+4.1. Sociodemographics and clinical characterisation
+Results have been first reported elsewhere (Martins et al., 2026). 
+Here we describe the main findings that might be relevant to interpret 
+the new neuroimaging findings derived from the use of functional BOLD 
+resting-state imaging. The groups were matched for age, sex, ethnicity, 
+and body mass index (BMI), with no significant differences observed 
+across these variables (all p > 0.05; Table 1). However, groups differed 
+significantly in years of education, with HC participants reporting 
+higher educational attainment. PCS participants also had a significantly 
+Fig. 1. Schematic overview of the LEiDA pipeline for identifying recurrent brain states. (A) For each region n, the BOLD signal is bandpass-filtered and 
+transformed into its complex representation to extract the instantaneous phase θn(t) via the Hilbert transform. (B) At each timepoint t, the phases across 105 regions 
+are used to compute a dynamic phase-locking matrix dPL(t), from which the leading eigenvector V1(t) is extracted. V1(t) captures the dominant pattern of phase 
+synchrony across the brain at that time. (C) All leading eigenvectors V1(t) across participants and timepoints are concatenated and submitted to k-means clustering, 
+identifying a set of recurrent phase-locking (PL) states. Each state reflects a spatially distinct and temporally recurring pattern of functional connectivity.
+Table 1 
+Sociodemographic and clinical characteristics of PCS and healthy control 
+participants. Group comparisons of demographic and COVID-19-related vari­
+ables between individuals with Post-COVID-19 Syndrome (PCS) and matched 
+healthy controls (HC). Data are shown as mean (standard deviation) or counts. 
+Between-group differences were assessed using independent samples t-tests or 
+chi-squared tests as appropriate. Bayes factors (BF10) quantify evidence for 
+group differences; values > 1 indicate increasing support for the alternative 
+hypothesis. Asterisks (*) denote statistically significant results at p < 0.05 or 
+BF10 > 1.
+Variable
+PCS Mean 
+(std)
+HC Mean 
+(std)
+Statistics
+p
+B10
+Age
+40.6 
+(10.9)
+40.0 
+(10.4)
+T(38) = 0.208
+0.837
+0.312
+Gender
+18F/2M
+17F/3M
+χ2(1) = 0.229
+0.663
+N/A
+Ethnicity
+White: 18 
+Mixed: 0 
+Asian: 1 
+Black: 0 
+South 
+Asian: 1 
+Hispanic: 
+0
+White: 15 
+Mixed: 1 
+Asian: 1 
+Black: 2 
+South 
+Asian: 0 
+Hispanic: 
+1 
+χ2(5) = 5.273
+0.384
+N/A
+BMI
+23.8 
+(3.44)
+24.4 
+(3.84)
+T(38) = -0.55
+0.582
+0.346
+SPO2 (%)
+99.105 
+(1.524)
+98.842 
+(1.344)
+T(36) = 0.565
+0.576
+0.357
+Years of 
+education
+17.30 
+(2.94)
+19.35 
+(3.13)
+T(38) = -2.13
+0.039*
+1.845
+MRC Dyspnea 
+scale
+0: 45% 
+1: 45% 
+2: 10% 
+3: 0% 
+4:0%
+0: 95% 
+1: 5% 
+2: 0% 
+3: 0% 
+4: 0%
+χ2(2) = 11.971
+0.003*
+N/A
+Time since 
+first 
+infection 
+(months)
+23.0 
+(9.17)
+15.7 
+(11.5)
+T(38) = 2.21
+0.033*
+0.749
+Vaccination 
+prior 
+infection
+Yes: 4 
+No: 16
+Yes: 14 
+No: 6
+χ2(1) = 10.101
+0.001*
+N/A
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+5 
+
+longer duration since first SARS-CoV-2 infection, and were significantly 
+less likely to have been vaccinated prior to infection. Clinically, in­
+dividuals with PCS reported significantly greater symptom burden 
+across multiple domains. These included fatigue (both visual analogue 
+scale and multidimensional components), sleep disturbance (PSQI), 
+post-exertional malaise, autonomic dysfunction (COMPASS-31), affec­
+tive symptoms (HADS depression/anxiety), PTSD-related symptoms, 
+and musculoskeletal complaints (WPI and SS scores). Notably, 40% of 
+PCS participants met criteria for fibromyalgia, compared to none in the 
+HC group. These differences were supported by both frequentist 
+(p < 0.05) and Bayesian inference, with many outcomes yielding strong 
+to extreme evidence in favour of group separation (BF10 > 10), partic­
+ularly for fatigue, post-exertional malaise, and pain sensitivity 
+(Supplementary Table S1).
+4.2. Clinical routine blood tests
+Group comparisons of routine blood parameters revealed no major 
+differences between PCS and HC participants (Supplementary Table S2). 
+However, PCS participants showed numerically higher creatinine and 
+Gamma-GT levels, with corresponding Bayes factors (BF10 = 1.232 and 
+1.735, respectively) providing anecdotal to moderate evidence for group 
+differences. Platelet count also trended higher in the PCS group 
+(p = 0.08; BF10 = 1.123). Other metabolic, inflammatory, and hema­
+tological markers - including C-reactive protein, white and red cell 
+counts, hemoglobin, and thyroid function - did not differ significantly 
+between groups.
+4.3. Serum cytokines and glial markers
+No statistically significant differences were observed in circulating 
+levels of IFN-γ, IL-1β, IL-6, IL-8, IL-10, IL-13, TNF-α or GFAP 
+(Supplementary Table S3). However, TNF-α (p = 0.116; BF10 = 1.094) 
+and S100β (p = 0.149; BF10 = 1.025) showed suggestive evidence of 
+elevation in the PCS group, consistent with mild glial or immune 
+activation.
+4.4. Cognitive performance
+Cognitive testing using the Cognitron battery revealed subtle but 
+functionally relevant differences between groups (Supplementary 
+Table S4). PCS participants showed significantly poorer performance 
+on the delayed object memory task (RT_DFE; p = 0.02; BF10 = 2.653), as 
+well as trend-level impairments in the Lead Balloon task (abstract 
+reasoning; p = 0.06; BF10 = 1.330) and vigilance (Spotter task RT; 
+p = 0.06; BF10 = 1.303). Other domains - including motor control, 2D 
+spatial manipulation, and verbal analogies - did not show significant 
+differences. Overall, Bayesian analysis provided moderate evidence for 
+reduced memory and attentional function in PCS.
+Fig. 2. Recurrent Large-Scale Brain States Identified with LEiDA. This figure depicts the five dynamic functional brain states extracted using Leading Eigenvector 
+Dynamics Analysis (LEiDA) from resting-state fMRI data. Each row represents one recurrent state, characterized by its dominant spatial organization and network 
+affiliations: (1) Visual and Dorsal Attention, (2) Somatomotor and Ventral Attention, (3) Visual, (4) Frontoparietal and Default Mode Network (DMN), and (5) Limbic 
+and DMN. Column A shows the leading eigenvector phase alignment patterns in axial view, with blue and red arrows indicating opposite phase relationships across 
+regions. Column B highlights the brain areas with the highest contributions to each state, mapped onto inflated cortical surfaces. Column C displays lateral views of 
+the eigenvector vectors to illustrate the directionality and distribution of phase coupling across the cortex. Column D presents an alternative cortical view of the same 
+spatial distribution shown in Column B to aid anatomical interpretation. (For interpretation of the references to colour in this figure legend, the reader is referred to 
+the Web version of this article.)
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+6 
+
+4.5. Identification and characterisation of optimal number of dynamic 
+brain states
+Using the Dunn index, we identified five recurrent brain states 
+maximising within-state homogeneity and between-state separability. 
+Each state exhibited a distinct spatial configuration of phase synchrony, 
+mapped onto canonical Yeo networks. State 1 primarily involved visual 
+and dorsal attention networks; State 2 showed strong expression in 
+somatomotor and ventral attention regions; State 3 involved mainly 
+visual networks; State 4 was characterised by coactivation of fronto­
+parietal and default mode network (DMN) regions; and State 5 was 
+dominated by limbic and DMN components (Fig. 2 and Table 2).
+4.6. Group differences in brain-state dynamics
+We conducted ANCOVAs controlling for age, sex, and handedness to 
+compare dynamic metrics between individuals with PCS and healthy 
+controls. Participants with PCS exhibited a significantly lower proba­
+bility of occurrence and shorter lifetime in State 1. Conversely, they 
+showed a higher probability of occurrence for State 5. No significant 
+group differences were found in States 2–4 after correcting for multiple 
+comparisons. Bayesian counterparts generally supported these obser­
+vations (Table 3 and Fig. 3).
+4.7. Transition probabilities
+Exploratory analyses of transition probabilities suggested reduced 
+transitions from State 4 to State 1 and from State 1 to State 4, alongside 
+increased transitions from States 2 and 3 toward State 5 (uncorrected 
+p < 0.05; Fig. 4 and Table 4).
+4.8. Sensitivity analyses
+Adding years of education as further covariate did not change the 
+main pattern of results with the exception of the significant changes in 
+transitions probability, which should be interpreted with caution.
+4.9. Exploratory correlations between brain dynamics and clinical, blood 
+and cognitive parameters
+We conducted exploratory correlation analyses restricted to dynamic 
+brain-state metrics that showed significant group differences - namely, 
+the probability of occurrence and lifetime of State 1 (visual/dorsal 
+attention) and State 5 (limbic/default mode network). Given the 
+exploratory and hypothesis-generating nature of these analyses, we 
+report uncorrected p-values to facilitate the identification of potential 
+associations for future investigation. The probability of occurrence of 
+State 5 was negatively correlated with global cognitive performance on 
+the MoCA (Spearman's ρ = −0.43, p = 0.015) and with total serum 
+protein levels (ρ = −0.37, p = 0.038), and positively correlated with 
+circulating interleukin-1β (IL-1β; ρ = 0.39, p = 0.027), even though none 
+of these correlations survived FDR correction for the number of pa­
+rameters tested. In addition, the probability of occurrence of State 1 was 
+positively associated with unrefreshing sleep severity (ρ = 0.34, 
+p = 0.047). However, none of these correlations survived false discovery 
+rate (FDR) correction for multiple comparisons, and should therefore be 
+interpreted with caution (Supplementary Table S5).
+5. Discussion
+This study provides novel evidence that PCS might be associated 
+with altered intrinsic brain dynamics at rest, particularly in large-scale 
+networks supporting attention, sensory integration, and emotion regu­
+lation. Using Leading Eigenvector Dynamics Analysis (LEiDA), we 
+identified five recurrent phase-locking states and showed that PCS 
+participants may spend significantly less time in an externally oriented 
+attentional state (State 1: visual/dorsal attention) and more time in an 
+internally affect-focused state (State 5: limbic/default mode network). 
+Exploratory analyses suggested that these alterations were accompanied 
+by reduced transitions between cognitively adaptive states and 
+increased transitions into limbic-dominated configurations. Together, 
+our findings suggest that PCS may involve a shift in baseline brain 
+function away from goal-directed engagement and toward internally 
+driven, potentially affectively charged modes of processing, an imbal­
+ance that may offer a fresh brain systems-level perspective on the 
+mechanisms underlying key cognitive and emotional symptoms in PCS. 
+Rather than providing definitive evidence, the present findings delineate 
+a candidate systems-level phenotype of PCS that warrants replication 
+and formal testing in larger, multi-centre cohorts. Given the sample size 
+and dimensionality of the dynamic metrics, these analyses should be 
+interpreted as exploratory.
+Our findings resonate with previous studies showing that healthy 
+cognition depends not only on the strength of functional connectivity 
+but also on the dynamic reconfiguration of brain networks over time 
+(Kurtin et al., 2023). In this context, brain-state flexibility - the ability to 
+rapidly shift between large-scale functional configurations - has 
+emerged as a key systems-level property supporting attention, working 
+memory, and emotional control (Kurtin et al., 2023; Cabral et al., 2017). 
+Prior work using LEiDA and other dynamic functional connectivity 
+methods has demonstrated that reduced variability or diminished access 
+to specific dynamic states is associated with clinical conditions marked 
+by fatigue, attentional deficits, and mood disturbances, such as major 
+depression (Alonso Martinez et al., 2020; Alonso et al., 2023; Cahart 
+et al., 2025). Our results suggest that PCS may share this broader 
+signature of dynamic dysregulation, positioning it within a trans­
+diagnostic framework of altered brain-state transitions.
+The reduced probability and lifetime in State 1 among PCS partici­
+pants is particularly compelling. This state overlapped with dorsal 
+Table 2 
+Functional network composition of dynamic brain states. Each row shows the Spearman correlation (ρ) between the spatial configuration of a given dynamic brain 
+state (States 1–5) and the canonical Yeo 7-network parcellation: Visual, Somatomotor Network (SMN), Dorsal Attention (DA), Ventral Attention (VA), Limbic, 
+Frontoparietal Network (FPN), and Default Mode Network (DMN). Significant correlations after bonferroni correction are marked with an asterisk (*). Values in 
+parentheses indicate uncorrected p-values. State labels reflect the dominant functional networks positively associated with each state.
+State 
+number
+Labels
+Visual
+SMN
+DA
+VA
+Limbic
+FPN
+DMN
+1
+Visual/DA
+0.600* (<0.001)
+0.067 (0.494)
+0.484* 
+(<0.001)
+0.062 (0.530)
+−0.359* 
+(<0.001)
+0.078 (0.429)
+−0.338* 
+(<0.001)
+2
+SMN/VA
+−0.480* 
+(<0.001)
+0.610* (<0.001)
+0.110 (0.264)
+0.529* (<0.001)
+−0.304* (0.002)
+0.085 (0.388)
+−0.328* 
+(<0.001)
+3
+Visual
+0.704* (<0.001)
+−0.598* 
+(<0.001)
+0.124 (0.208)
+−0.540* 
+(<0.001)
+0.134 (0.171)
+−0.033 (0.735)
+0.162 (0.098)
+4
+FPN/DMN
+−0.299* (0.002)
+−0.382* 
+(<0.001)
+0.315* (0.001)
+0.211 (0.030)
+−0.013 (0.897)
+0.733* 
+(<0.001)
+0.442* (<0.001)
+5
+Limbic/ 
+DMN
+−0.146 (0.137)
+−0.465* 
+(<0.001)
+−0.042 (0.672)
+−0.294* (0.002)
+0.411* (<0.001)
+0.242 (0.013)
+0.594* (<0.001)
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+7 
+
+attention and visual networks - systems essential for externally directed 
+cognitive control (Vossel et al., 2014; Corbetta and Shulman, 2002). A 
+reduced ability to enter or maintain this state suggests that patients may 
+struggle to sustain attention or shift efficiently between perceptual in­
+puts and task demands (Sadaghiani and D'Esposito, 2015). Importantly, 
+the increased probability of occurrence of State 5, which involved the 
+limbic system and DMN, might indicate an imbalance rather than uni­
+form suppression of dynamics. The limbic-DMN configuration is typi­
+cally associated with self-referential thought, emotional salience, and 
+interoceptive monitoring (Seeley et al., 2007; Andrews-Hanna et al., 
+2014). Its overexpression may reflect a pathological bias toward inter­
+nally focused processing, consistent with reports of emotional dysre­
+gulation, rumination, and heightened somatic awareness in PCS 
+(Whitfield-Gabrieli and Ford, 2012; Madden et al., 2025; Scardua-Silva 
+et al., 2024).
+Altered transition probabilities in exploratory analyses further rein­
+force the hypothesis of reduced dynamic repertoire and functional ri­
+gidity (Hansen et al., 2015; Vidaurre et al., 2017). In controls, more 
+frequent reciprocal transitions between State 1 and the frontopar­
+ietal/DMN state (State 4) may reflect flexible toggling between 
+goal-directed and introspective modes, akin to previously described 
+metastable switching in healthy cognition (Deco et al., 2017; Hellyer 
+et al., 2014). In contrast, PCS participants exhibited attenuated transi­
+tions between these states and increased transitions from somatomotor 
+and visual states (States 2 and 3) into the limbic-DMN state (State 5). 
+This asymmetric dynamic trajectory may reflect a form of neural inertia 
+or “gravitational pull” into internally focused, affectively loaded brain 
+modes, echoing prior findings in mood disorders and inflammatory 
+syndromes (Zhang et al., 2016; Cocchi et al., 2013; Menon, 2011; Zhou 
+et al., 2020).However, given the exploratory nature of these findings, 
+confirmation in larger and more representative samples is warranted.
+While our findings reveal differences in the dynamic organisation of 
+intrinsic brain activity between individuals with PCS and healthy con­
+trols, we emphasise the interpretive limitations of resting-state fMRI. 
+The method captures large-scale patterns of synchronised neural activity 
+but does not permit definitive conclusions about causality or mecha­
+nism. Interpreting these patterns functionally risks reverse inference, 
+especially given that most cognitive or emotional processes map onto 
+multiple, overlapping neural configurations rather than one-to-one 
+brain-function relationships. By reframing our results through a trans­
+diagnostic lens - where similar alterations in brain-state flexibility have 
+been observed in conditions such as depression - we align with the 
+descriptive strengths of the LEiDA methodology while avoiding specu­
+lative or reductive claims. At the same time, we wish to avoid over­
+compensating in the opposite direction. Emphasising only peripheral or 
+structural explanations risks overlooking more subtle cognitive and 
+emotional contributions to symptom expression - particularly alter­
+ations in attention, emotional salience attribution, and interoceptive 
+monitoring. These mechanisms are not mutually exclusive with dysau­
+tonomia or inflammation, but may in fact co-express and interact 
+dynamically. Clinically, many individuals with persistent cognitive 
+symptoms following COVID-19 infection present with features closely 
+aligned with functional cognitive disorders - an area still under- 
+recognised by many clinicians and neuroscientists. Contemporary 
+theoretical frameworks, such as those drawing from predictive pro­
+cessing and 'constructed emotion' models, suggest that symptom 
+Table 3 
+Group comparisons of dynamic brain-state metrics between PCS and healthy controls. Mean (standard deviation) values are shown for the probability of 
+occurrence and average lifetime (in seconds) for each of the five LEiDA-derived brain states. Statistical results reflect ANCOVAs controlling for age, sex, and hand­
+edness. *p < 0.05. BF10 refers to the Bayes Factor in favour of the alternative hypothesis (PCS ∕= HC), with values > 3 indicating moderate and >10 strong evidence. 
+Significant differences were observed for States 1 and 5 in probability of occurrence, and for State 1 in lifetime.
+Metric
+State
+PCS 
+Mean (SD)
+HC 
+Mean (SD)
+Statistics
+P-value (FDR corrected)
+B10
+Probability
+1
+0.136 (0.045)
+0.185 (0.053)
+F(1,35) = 9.443
+0.004*
+13.59*
+2
+0.157 (0.069)
+0.175 (0.066)
+F(1,35) = 0.796
+0.378
+0.443
+3
+0.198 (0.111)
+0.205 (0.093)
+F(1,35) = 0.045
+0.842
+0.316
+4
+0.233 (0.095)
+0.228 (0.0941)
+F(1,35) = 0.084
+0.774
+0.319
+5
+0.277 (0.092)
+0.207 (0.081)
+F(1,35) = 5.862
+0.021*
+3.57*
+Lifetime
+1
+1.66 (0.363)
+1.96 (0.466)
+F(1,35) = 5.031
+0.032*
+2.39*
+2
+1.67 (0.306)
+1.73 (0.318)
+F(1,35) = 0.208
+0.652
+0.359
+3
+1.86 (0.553)
+2.06 (0.534)
+F(1,35) = 1.347
+0.254
+0.545
+4
+2.04 (0.510)
+1.96 (0.398)
+F(1,35) = 0.389
+0.537
+0.358
+5
+2.23 (0.409)
+2.08 (0.620)
+F(1,35) = 0.631
+0.433
+0.417
+Fig. 3. Group differences in dynamic brain-state metrics between PCS and healthy controls. Violin plots show (left) the probability of occurrence and (right) 
+the average lifetime (in seconds) for each of the five recurrent phase-locking states identified using LEiDA. Individuals with Post-COVID-19 Syndrome (PCS; red) 
+exhibited a significantly lower probability of occurrence and shorter lifetime in State 1 (visual/dorsal attention) and a significantly higher probability of occurrence 
+in State 5 (limbic/DMN), compared to healthy controls (HC; blue). *p < 0.05, ANCOVA controlling for age, sex, and handedness; error bars represent interquartile 
+range with median. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+8 
+
+persistence may reflect impaired updating of internal models about 
+bodily and cognitive states. This can result in 'symptom construction' 
+that continues beyond the resolution of initial peripheral or immune 
+triggers, as seen in other conditions where inflammation-related 
+delirium or fatigue transitions into persistent brain fog.
+Although our study was exploratory and not designed to explicitly 
+test such mechanistic frameworks, our findings - particularly the 
+increased expression of internally focused limbic–DMN states and 
+reduced transition flexibility - may be interpreted as systems-level sig­
+natures of disrupted adaptive processing. These alterations could reflect 
+a brain that is less responsive to exteroceptive demands and more bound 
+by internally generated expectations or affective salience. Rather than 
+implying that symptoms are “just psychological,” such an interpretation 
+recognises the neurobiological basis of cognitive-emotional processing, 
+the permeability of boundaries between organic and functional symp­
+toms, and the importance of maintaining clinical sensitivity. We believe 
+that adopting a cautious, integrative interpretive stance - grounded in 
+systems neuroscience, informed by clinical experience, and open to 
+multiple explanatory levels - provides the most constructive path for­
+ward for research in this area.
+Exploratory correlation analyses provided tentative support for the 
+clinical relevance of altered brain-state dynamics in PCS. Specifically, 
+the probability of occurrence of State 5 - a configuration dominated by 
+limbic and default mode network (DMN) regions - was negatively 
+associated with global cognitive performance on the MoCA and posi­
+tively associated with serum levels of interleukin-1β (IL-1β), a key pro- 
+inflammatory cytokine (Harrison et al., 2009; Marsland et al., 2015). 
+This state may reflect increased engagement of interoceptive and 
+affectively laden neural circuits at the expense of externally directed 
+cognitive functioning. Consistent with neuroimmune models of fatigue 
+and sickness behaviour, sustained peripheral inflammation may bias 
+intrinsic brain dynamics toward bodily monitoring and self-referential 
+processing, potentially impairing cognitive flexibility and engagement 
+with the external environment (Critchley and Harrison, 2013; Dantzer 
+et al., 2008). However, the broader pattern of results warrants 
+caution. More fine-grained analyses using the Cognitron platform, 
+which assesses specific cognitive domains such as attention, working 
+memory, and executive function, did not reveal significant associations 
+with any LEiDA-derived dynamic metrics. Likewise, we found no robust 
+relationships between dynamic state properties and self-reported 
+symptoms, including fatigue and anxiety. These discrepancies suggest 
+that while global measures such as the MoCA may capture diffuse effects 
+of altered brain dynamics, these may not map neatly onto task-specific 
+performance or subjective symptom ratings. It is possible that intrinsic 
+brain dynamics are more closely linked to overall cognitive tone than to 
+discrete cognitive operations or subjective complaints, or that limita­
+tions in power and measurement sensitivity may have obscured more 
+subtle associations. However, these correlations did not survive 
+correction for multiple comparisons and should therefore be interpreted 
+cautiously. These results should be viewed as hypothesis-generating and 
+require replication in larger samples.
+Our methodology offers both strengths and limitations. The use of 
+multi-echo fMRI with ME-ICA denoising reduces susceptibility to motion 
+and physiological noise, thereby improving signal quality for the anal­
+ysis of dynamic functional connectivity. The LEiDA framework captures 
+recurring whole-brain patterns of phase synchrony without the con­
+straints of arbitrarily defined sliding windows, and allows for intuitive 
+interpretation of transient brain states. Nonetheless, the modest sample 
+size represents an important limitation. Although comparable to several 
+prior studies examining dynamic functional connectivity using LEiDA, 
+the present findings should be interpreted as preliminary and 
+hypothesis-generating. Replication in larger and more diverse PCS co­
+horts will be necessary to confirm the stability and generalisability of the 
+observed alterations in brain-state dynamics. Moreover, PCS is a 
+Fig. 4. Group differences in transition probabilities between dynamic brain states. Heatmap depicts the difference in transition probabilities between PCS and 
+healthy control groups (Δ = PCS −
+HC) for each pair of phase-locking states. Positive values (red) indicate increased transition probability in PCS; negative values 
+(blue) indicate decreased transition probability. PCS participants showed significantly reduced transitions between State 4 (frontoparietal/DMN) and State 1 (visual/ 
+dorsal attention), and significantly increased transitions from State 2 (somatomotor/ventral attention) and State 3 (visual) into State 5 (limbic/DMN). Asterisks 
+denote group differences significant at uncorrected *p < 0.05, ANCOVA controlling for age, sex, and handedness. (For interpretation of the references to colour in this 
+figure legend, the reader is referred to the Web version of this article.)
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+9 
+
+clinically heterogeneous condition, encompassing symptoms such as 
+fatigue, dysautonomia, cognitive impairment, and pain syndromes 
+resembling fibromyalgia. The present study was not powered to examine 
+subgroup differences across these symptom clusters. Future larger 
+studies will be required to determine whether distinct PCS phenotypes 
+are associated with specific alterations in brain-state dynamics. The 
+present study focused on individuals with persistent PCS symptoms 
+following mild acute SARS-CoV-2 infection. This design was chosen to 
+reduce confounding effects related to severe systemic illness or hospi­
+talisation but limits the generalisability of the findings to the broader 
+and clinically heterogeneous PCS population. Future multi-centre 
+studies including patients with varying infection severities, symptom 
+profiles, and disease durations will be necessary to determine whether 
+distinct PCS phenotypes are associated with different alterations in brain 
+network dynamics. The resting-state acquisition duration (~8 min) 
+provides a reasonable estimate of baseline dynamics, although longer 
+scans may increase sensitivity to rarer or transitional states. Group dif­
+ferences in educational attainment must also be acknowledged: 
+although both groups fell within the high range of educational 
+achievement, controls exhibited significantly higher levels on average. 
+Importantly, none of the brain dynamic metrics correlated significantly 
+with years of education, suggesting that observed group differences are 
+unlikely to be driven by this variable. To further address this potential 
+confound, we conducted sensitivity analyses including years of educa­
+tion as a further covariate and main findings hold. The pattern of results 
+remained consistent, with the same dynamic brain-state metrics 
+showing comparable group differences, indicating that the main find­
+ings were robust to differences in educational attainment. Although 
+sensitivity analyses suggested that the principal findings were relatively 
+robust to adjustment for years of education, the groups also differed in 
+time since infection and vaccination status. Because these variables were 
+not jointly modelled in the primary analyses, and because the modest 
+sample size constrained the number of covariates that could be reliably 
+included simultaneously, residual confounding cannot be excluded. 
+Finally, while we anchored our state definitions to the Yeo 7-network 
+atlas to facilitate interpretability, future studies employing finer- 
+grained or individualized parcellations may help further refine the 
+characterization of dynamic brain states. Furthermore, although clus­
+tering stability analyses (e.g., split-half or bootstrap resampling) were 
+not performed because the sample sizes were insufficient to allow for 
+unbiased implementation of such analyses, the consistency of state to­
+pographies with canonical network organisation and the convergence of 
+effects across independent dynamic metrics support the robustness of 
+the identified states. This poses a limitation in interpreting the gen­
+eralisability of the current findings. An additional limitation relates to 
+the choice of control group. By comparing PCS participants to in­
+dividuals who had recovered from SARS-CoV-2 infection, the present 
+design does not allow us to disentangle effects attributable to prior 
+infection per se from those specifically associated with persistent 
+symptomatology. As such, the findings should be interpreted as 
+reflecting differences between persistent and resolved post-infectious tra­
+jectories, rather than definitive effects of SARS-CoV-2 exposure. Future 
+studies including infection-naïve control groups will be necessary to 
+fully characterise the specificity of these alterations.
+In conclusion, our findings provide preliminary evidence that post- 
+COVID-19 syndrome (PCS) may be associated with alterations in the 
+brain's intrinsic dynamic landscape, characterised by reduced engage­
+ment of externally oriented attention networks and increased occupancy 
+of internally focused limbic–default mode configurations. This altered 
+balance, together with a potential reduction in the flexibility of transi­
+tions between brain states, may be relevant to the fatigue, attentional 
+difficulties, and affective symptoms reported in PCS. However, given the 
+exploratory nature of the study and the modest sample size, these 
+findings should be interpreted with caution. Overall, the results are 
+consistent with a systems-level perspective on PCS and suggest that 
+changes in large-scale brain dynamics may contribute to its clinical 
+Table 4 
+Group differences in transition probabilities between dynamic brain states. Mean transition probabilities (± standard deviation) are shown for all possible pairwise transitions between the five dynamic brain states, 
+separately for the PCS and healthy control (HC) groups. Group comparisons were conducted using ANCOVAs controlling for age, sex, and handedness, with corresponding p-values and Bayes Factors (BF10) reported.
+Group
+1 →2
+1 →3
+1 →4
+1 →5
+2 →1
+2 →3
+2 →4
+2 →5
+3 →1
+3 →2
+3 → 4
+3 → 5
+4 → 1
+4 → 2
+4 → 3
+4 → 5
+5 → 1
+5 → 2
+5 → 3
+5 → 4
+Mean
+PCS
+0.193
+0.301
+0.268
+0.277
+0.207
+0.253
+0.257
+0.355
+0.205
+0.218
+0.235
+0.342
+0.177
+0.225
+0.252
+0.356
+0.190
+0.248
+0.239
+0.345
+HC
+0.211
+0.240
+0.379
+0.246
+0.232
+0.319
+0.246
+0.239
+0.243
+0.266
+0.259
+0.244
+0.243
+0.242
+0.213
+0.302
+0.247
+0.233
+0.223
+0.308
+SD
+PCS
+0.105
+0.146
+0.120
+0.128
+0.145
+0.139
+0.168
+0.151
+0.0828
+0.104
+0.102
+0.124
+0.0728
+0.0994
+0.135
+0.164
+0.0786
+0.104
+0.111
+0.124
+HC
+0.124
+0.110
+0.163
+0.129
+0.123
+0.169
+0.101
+0.115
+0.0915
+0.147
+0.102
+0.134
+0.102
+0.121
+0.120
+0.105
+0.147
+0.105
+0.0904
+0.119
+Frequentist
+F(1,32)
+0.452
+1.411
+7.219
+0.553
+0.269
+1.820
+0.122
+6.287
+1.747
+1.499
+0.498
+5.321
+4.969
+0.297
+1.100
+1.359
+2.206
+0.131
+0.362
+0.878
+P-value (FDR- 
+corrected)
+0.506
+0.244
+0.011
+0.462
+0.589
+0.186
+0.729
+0.018
+0.195
+0.229
+0.485
+0.027
+0.032
+0.589
+0.301
+0.252
+0.147
+0.719
+0.551
+0.355
+Bayesian
+B10
+0.380
+0.616
+4.96
+0.402
+0.354
+0.663
+0.331
+4.11
+0.659
+0.583
+0.382
+2.82
+2.40
+0.350
+0.480
+0.566
+0.770
+0.327
+0.347
+0.435
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+10 
+
+presentation. Future studies in larger and independent cohorts will be 
+essential to replicate these findings, clarify their specificity, and deter­
+mine their potential utility for monitoring or intervention.
+CRediT authorship contribution statement
+Marie-Stephanie Cahart: Data curation, Formal analysis, Method­
+ology, Software, Writing – review & editing. Owen O’ Daly: Method­
+ology, Writing – review & editing. Ziyuan Cai: Methodology, Software, 
+Writing – review & editing. Nicole Mariani: Data curation, Investiga­
+tion, Methodology, Writing – review & editing. Alessandra Borsini: 
+Investigation, Methodology, Writing – review & editing. Valeria Mon­
+delli: Investigation, Methodology, Writing – review & editing. Brandi 
+Eiff: Data curation, Investigation, Methodology, Writing – review & 
+editing. Silvia Rota: Project administration, Writing – review & editing. 
+Timothy Nicholson: Project administration, Writing – review & edit­
+ing. Laila Rida: Methodology, Software, Writing – review & editing. 
+Adam Hampshire: Methodology, Software, Writing – review & editing. 
+Ottavia Dipasquale: Methodology, Writing – review & editing. Lia 
+Fernandes: Writing – review & editing. Federico Turkheimer: Re­
+sources, Supervision, Writing – review & editing. Steven C.R. Williams: 
+Resources, Supervision, Writing – review & editing. Daniel Martins: 
+Conceptualization, Data curation, Formal analysis, Funding acquisition, 
+Investigation, Methodology, Project administration, Resources, Super­
+vision, Writing – original draft, Writing – review & editing.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+This study was funded by the National Institute for Health and Care 
+Research (NIHR) Maudsley Biomedical Research Centre (BRC), South 
+London and Maudsley NHS Foundation Trust, under the “Reach Out” 
+funding call (Ref: R0-01). We are grateful to all participants for their 
+time and commitment to the study. We thank the radiographers and 
+technical staff at the Centre for Neuroimaging Sciences (King's College 
+London) for their assistance with MRI acquisition. We also acknowledge 
+Synnovis (Viapath) for processing routine blood analyses, the Clinical 
+Research Facility (CRF) team at King's College Hospital Foundation 
+Trust for their support during participant visits and blood collection, and 
+the Cognitron platform team for assistance with cognitive data man­
+agement and normative modelling.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.bbih.2026.101274.
+Data availability
+Data will be made available on request.
+References
+Alonso, S., Tyborowska, A., Ikani, N., Mocking, R.J.T., Figueroa, C.A., Schene, A.H., 
+et al., 2023. Depression recurrence is accompanied by longer periods in default mode 
+and more frequent attentional and reward processing dynamic brain-states during 
+resting-state activity. Hum. Brain Mapp. 44 (17), 5770–5783.
+Alonso Martinez, S., Deco, G., Ter Horst, G.J., Cabral, J., 2020. The dynamics of 
+functional brain networks associated with depressive symptoms in a nonclinical 
+sample. Front. Neural Circ. 14, 570583.
+Andrews-Hanna, J.R., Smallwood, J., Spreng, R.N., 2014. The default network and self- 
+generated thought: component processes, dynamic control, and clinical relevance. 
+Ann. N. Y. Acad. Sci. 1316 (1), 29–52.
+Bestall, J.C., Paul, E.A., Garrod, R., Garnham, R., Jones, P.W., Wedzicha, J.A., 1999. 
+Usefulness of the medical research council (MRC) dyspnoea scale as a measure of 
+disability in patients with chronic obstructive pulmonary disease. Thorax 54 (7), 
+581–586.
+Biswal, B.B., Uddin, L.Q., 2025. The history and future of resting-state functional 
+magnetic resonance imaging. Nature 641 (8065), 1121–1131.
+Buysse, D.J., Reynolds 3rd, C.F., Monk, T.H., Berman, S.R., Kupfer, D.J., 1989. The 
+Pittsburgh sleep quality index: a new instrument for psychiatric practice and 
+research. Psychiatry Res. 28 (2), 193–213.
+Cabral, J., Kringelbach, M.L., Deco, G., 2014. Exploring the network dynamics 
+underlying brain activity during rest. Prog. Neurobiol. 114, 102–131.
+Cabral, J., Vidaurre, D., Marques, P., Magalhaes, R., Silva Moreira, P., Miguel Soares, J., 
+et al., 2017. Cognitive performance in healthy older adults relates to spontaneous 
+switching between states of functional connectivity during rest. Sci. Rep. 7 (1), 5135.
+Cahart, M.S., Giampietro, V., O'Daly, O., 2025. Atypical attentional network dynamics in 
+adolescent depression during emotional movie viewing. Soc. Cognit. Affect Neurosci. 
+20 (1).
+Chen, H.B., Li, L., Sun, Y.K., Liu, Y., Chen, W., Liu, P., et al., 2025. Functional 
+connectivity alterations associated with COVID-19-Related sleep problems: a 
+longitudinal resting-state fMRI study. Nat. Sci. Sleep 17, 97–113.
+Churchill, N.W., Roudaia, E., Chen, J.J., Gilboa, A., Sekuler, A., Ji, X., et al., 2023. Effects 
+of post-acute COVID-19 syndrome on the functional brain networks of non- 
+hospitalized individuals. Front. Neurol. 14, 1136408.
+Cipolli, G.C., Alonso, V., Yasuda, C.L., Assumpcao, D., Cachioni, M., Melo, R.C., et al., 
+2023. Cognitive impairment in post-acute COVID-19 syndrome: a scoping review. 
+Arq Neuropsiquiatr. 81 (12), 1053–1069.
+Cocchi, L., Zalesky, A., Fornito, A., Mattingley, J.B., 2013. Dynamic cooperation and 
+competition between brain systems during cognitive control. Trends Cognit. Sci. 17 
+(10), 493–501.
+Corbetta, M., Shulman, G.L., 2002. Control of goal-directed and stimulus-driven 
+attention in the brain. Nat. Rev. Neurosci. 3 (3), 201–215.
+Critchley, H.D., Harrison, N.A., 2013. Visceral influences on brain and behavior. Neuron 
+77 (4), 624–638.
+Dacosta-Aguayo, R., Toran-Monserrat, P., Carmona-Cervello, M., Leon-Gomez, B.B., 
+Mataro, M., Puig, J., et al., 2024. Multimodal neuroimaging in Long-COVID and its 
+correlates with cognition 1.8 years after SARS-CoV-2 infection: a cross-sectional 
+study of the alianca ProHEpiC-19 cognitiu. Front. Neurol. 15, 1426881.
+Dantzer, R., O'Connor, J.C., Freund, G.G., Johnson, R.W., Kelley, K.W., 2008. From 
+inflammation to sickness and depression: when the immune system subjugates the 
+brain. Nat. Rev. Neurosci. 9 (1), 46–56.
+Davis, H.E., Assaf, G.S., McCorkell, L., Wei, H., Low, R.J., Re'em, Y., et al., 2021. 
+Characterizing long COVID in an international cohort: 7 months of symptoms and 
+their impact. EClinicalMedicine 38, 101019.
+Deco, G., Kringelbach, M.L., Jirsa, V.K., Ritter, P., 2017. The dynamics of resting 
+fluctuations in the brain: metastability and its dynamical cortical core. Sci. Rep. 7 
+(1), 3095.
+Dipasquale, O., Sethi, A., Lagana, M.M., Baglio, F., Baselli, G., Kundu, P., et al., 2017. 
+Comparing resting state fMRI de-noising approaches using multi- and single-echo 
+acquisitions. PLoS One 12 (3), e0173289.
+Goldsmith, D.R., Bekhbat, M., Mehta, N.D., Felger, J.C., 2023. Inflammation-related 
+functional and structural dysconnectivity as a pathway to psychopathology. Biol. 
+Psychiatry 93 (5), 405–418.
+Hampshire, A., Azor, A., Atchison, C., Trender, W., Hellyer, P.J., Giunchiglia, V., et al., 
+2024. Cognition and memory after Covid-19 in a large community sample. N. Engl. 
+J. Med. 390 (9), 806–818.
+Hampshire, A., Trender, W., Chamberlain, S.R., Jolly, A.E., Grant, J.E., Patrick, F., et al., 
+2021. Cognitive deficits in people who have recovered from COVID-19. 
+EClinicalMedicine 39, 101044.
+Hancock, F., Rosas, F.E., Luppi, A.I., Zhang, M., Mediano, P.A.M., Cabral, J., et al., 2025. 
+Metastability demystified - the foundational past, the pragmatic present and the 
+promising future. Nat. Rev. Neurosci. 26 (2), 82–100.
+Hancock, F., Rosas, F.E., McCutcheon, R.A., Cabral, J., Dipasquale, O., Turkheimer, F.E., 
+2023. Metastability as a candidate neuromechanistic biomarker of schizophrenia 
+pathology. PLoS One 18 (3), e0282707.
+Hansen, E.C., Battaglia, D., Spiegler, A., Deco, G., Jirsa, V.K., 2015. Functional 
+connectivity dynamics: modeling the switching behavior of the resting state. 
+Neuroimage 105, 525–535.
+Harrison, N.A., Brydon, L., Walker, C., Gray, M.A., Steptoe, A., Critchley, H.D., 2009. 
+Inflammation causes mood changes through alterations in subgenual cingulate 
+activity and mesolimbic connectivity. Biol. Psychiatry 66 (5), 407–414.
+Hellyer, P.J., Shanahan, M., Scott, G., Wise, R.J., Sharp, D.J., Leech, R., 2014. The 
+control of global brain dynamics: opposing actions of frontoparietal control and 
+default mode networks on attention. J. Neurosci. 34 (2), 451–461.
+Kesler, S.R., Franco-Rocha, O.Y., De, La Torre Schutz A., Lewis, K.A., Aziz, R.M., 
+Henneghan, A.M., et al., 2024. Altered functional brain connectivity, efficiency, and 
+information flow associated with brain fog after mild to moderate COVID-19 
+infection. Sci. Rep. 14 (1), 22094.
+Kocak, B., 2021. Artificial intelligence to predict task activation from resting state fMRI. 
+Eur. Radiol. 31 (7), 5251–5252.
+Kundu, P., Brenowitz, N.D., Voon, V., Worbe, Y., Vertes, P.E., Inati, S.J., et al., 2013. 
+Integrated strategy for improving functional connectivity mapping using multiecho 
+fMRI. Proc. Natl. Acad. Sci. U. S. A. 110 (40), 16187–16192.
+Kundu, P., Inati, S.J., Evans, J.W., Luh, W.M., Bandettini, P.A., 2012. Differentiating 
+BOLD and non-BOLD signals in fMRI time series using multi-echo EPI. Neuroimage 
+60 (3), 1759–1770.
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+11 
+
+Kurtin, D.L., Scott, G., Hebron, H., Skeldon, A.C., Violante, I.R., 2023. Task-based 
+differences in brain state dynamics and their relation to cognitive ability. 
+Neuroimage 271, 119945.
+Madden, D., Stephens, T.M., Scott, J., O'Neal Swann, C., Prather, K., Hoffmeister, J., 
+et al., 2025. Functional connectivity of default mode network in non-hospitalized 
+patients with post-COVID cognitive complaints. Front. Neurosci. 19, 1576393.
+Marsland, A.L., Gianaros, P.J., Kuan, D.C., Sheu, L.K., Krajina, K., Manuck, S.B., 2015. 
+Brain morphology links systemic inflammation to cognitive function in midlife 
+adults. Brain Behav. Immun. 48, 195–204.
+Martins, D., Burrows, M., Daily, O.O., Cai, Z., Mariani, N., Borsini, A., et al., 2026. 
+Multimodal imaging suggests potential immune-vascular contributions to altered 
+regional brain perfusion and oxygen metabolism in Post-COVID-19 syndrome. Brain 
+Behav. Immun., 106480
+Menon, V., 2011. Large-scale brain networks and psychopathology: a unifying triple 
+network model. Trends Cognit. Sci. 15 (10), 483–506.
+Menon, S.S., Krishnamurthy, K., 2019. A comparison of static and dynamic functional 
+connectivities for identifying subjects and biological sex using intrinsic individual 
+brain connectivity. Sci. Rep. 9 (1), 5729.
+Muccioli, L., Sighinolfi, G., Mitolo, M., Ferri, L., Jane Rochat, M., Pensato, U., et al., 
+2023. Cognitive and functional connectivity impairment in post-COVID-19 olfactory 
+dysfunction. Neuroimage, Clin. 38, 103410.
+Nalbandian, A., Sehgal, K., Gupta, A., Madhavan, M.V., McGroder, C., Stevens, J.S., et al., 
+2021. Post-acute COVID-19 syndrome. Nat. Med. 27 (4), 601–615.
+Nasreddine, Z.S., Phillips, N.A., Bedirian, V., Charbonneau, S., Whitehead, V., Collin, I., 
+et al., 2005. The Montreal cognitive assessment, MoCA: a brief screening tool for 
+mild cognitive impairment. J. Am. Geriatr. Soc. 53 (4), 695–699.
+Peluso, M.J., Deeks, S.G., 2024. Mechanisms of long COVID and the path toward 
+therapeutics. Cell 187 (20), 5500–5529.
+Proal, A.D., VanElzakker, M.B., 2021. Long COVID or Post-acute sequelae of COVID-19 
+(PASC): an overview of biological factors that may contribute to persistent 
+symptoms. Front. Microbiol. 12, 698169.
+Sadaghiani, S., D'Esposito, M., 2015. Functional characterization of the cingulo- 
+opercular network in the maintenance of tonic alertness. Cerebr. Cortex 25 (9), 
+2763–2773.
+Samanci, B., Ay, U., Gezegen, H., Yoruk, S.S., Medetalibeyoglu, A., Kurt, E., et al., 2025. 
+Persistent neurocognitive deficits in long COVID: evidence of structural changes and 
+network abnormalities following mild infection. Cortex 187, 98–110.
+Scardua-Silva, L., Amorim da Costa, B., Karmann Aventurato, I., Batista, Joao R., 
+Machado de Campos, B., Rabelo de Brito, M., et al., 2024. Microstructural brain 
+abnormalities, fatigue, and cognitive dysfunction after mild COVID-19. Sci. Rep. 14 
+(1), 1758.
+Schwartz, J.E., Jandorf, L., Krupp, L.B., 1993. The measurement of fatigue: a new 
+instrument. J. Psychosom. Res. 37 (7), 753–762.
+Seeley, W.W., Menon, V., Schatzberg, A.F., Keller, J., Glover, G.H., Kenna, H., et al., 
+2007. Dissociable intrinsic connectivity networks for salience processing and 
+executive control. J. Neurosci. 27 (9), 2349–2356.
+Shaygan, M., Boger, A., Kroner-Herwig, B., 2013. Clinical features of chronic pain with 
+neuropathic characteristics: a symptom-based assessment using the pain DETECT 
+questionnaire. Eur. J. Pain 17 (10), 1529–1538.
+Sletten, D.M., Suarez, G.A., Low, P.A., Mandrekar, J., Singer, W., 2012. Compass 31: a 
+refined and abbreviated composite autonomic symptom score. Mayo Clin. Proc. 87 
+(12), 1196–1201.
+Smets, E.M., Garssen, B., Bonke, B., De Haes, J.C., 1995. The multidimensional fatigue 
+inventory (MFI) psychometric qualities of an instrument to assess fatigue. 
+J. Psychosom. Res. 39 (3), 315–325.
+Soriano, J.B., Murthy, S., Marshall, J.C., Relan, P., Diaz, J.V., Condition WHOCCDWGoP- 
+C-, 2022. A clinical case definition of post-COVID-19 condition by a Delphi 
+consensus. Lancet Infect. Dis. 22 (4), e102–e107.
+Sunnquist, M., Lazarus, S., Jason, L.A., 2019. The development of a short form of the 
+DePaul symptom questionnaire. Rehabil. Psychol. 64 (4), 453–462.
+Troll, M., Li, M., Chand, T., Machnik, M., Rocktaschel, T., Toepffer, A., et al., 2025. 
+Altered corticostriatal connectivity in long-COVID patients is associated with 
+cognitive impairment. Psychol. Med. 55, e49.
+Vidaurre, D., Smith, S.M., Woolrich, M.W., 2017. Brain network dynamics are 
+hierarchically organized in time. Proc. Natl. Acad. Sci. U. S. A. 114 (48), 
+12827–12832.
+Vohryzek, J., Deco, G., Cessac, B., Kringelbach, M.L., Cabral, J., 2020. Ghost attractors in 
+spontaneous brain activity: recurrent excursions Into functionally-relevant BOLD 
+phase-locking states. Front. Syst. Neurosci. 14, 20.
+Vossel, S., Geng, J.J., Fink, G.R., 2014. Dorsal and ventral attention systems: distinct 
+neural circuits but collaborative roles. Neuroscientist 20 (2), 150–159.
+Whitfield-Gabrieli, S., Ford, J.M., 2012. Default mode network activity and connectivity 
+in psychopathology. Annu. Rev. Clin. Psychol. 8, 49–76.
+Whitfield-Gabrieli, S., Nieto-Castanon, A., 2012. Conn: a functional connectivity toolbox 
+for correlated and anticorrelated brain networks. Brain Connect. 2 (3), 125–141.
+Wingrove, J., Makaronidis, J., Prados, F., Kanber, B., Yiannakas, M.C., Magee, C., et al., 
+2023. Aberrant olfactory network functional connectivity in people with olfactory 
+dysfunction following COVID-19 infection: an exploratory, observational study. 
+EClinicalMedicine 58, 101883.
+Wolfe, F., Clauw, D.J., Fitzcharles, M.A., Goldenberg, D.L., Hauser, W., Katz, R.L., et al., 
+2016. 2016 revisions to the 2010/2011 fibromyalgia diagnostic criteria. Semin. 
+Arthritis Rheum. 46 (3), 319–329.
+Wong, W.W., Cabral, J., Rane, R., Ly, R., Kringelbach, M.L., Feusner, J.D., 2021. Effects 
+of visual attention modulation on dynamic functional connectivity during own-face 
+viewing in body dysmorphic disorder. Neuropsychopharmacology 46 (11), 
+2030–2038.
+Yeo, B.T., Krienen, F.M., Sepulcre, J., Sabuncu, M.R., Lashkari, D., Hollinshead, M., et al., 
+2011. The organization of the human cerebral cortex estimated by intrinsic 
+functional connectivity. J. Neurophysiol. 106 (3), 1125–1165.
+Zhang, J., Cheng, W., Liu, Z., Zhang, K., Lei, X., Yao, Y., et al., 2016. Neural, 
+electrophysiological and anatomical basis of brain-network variability and its 
+characteristic changes in mental disorders. Brain 139 (Pt 8), 2307–2321.
+Zhang, Y., Ye, G., Zeng, W., Zhu, R., Li, C., Zhu, Y., et al., 2025. Segregation and 
+integration of resting-state brain networks in a longitudinal long COVID cohort. 
+iScience 28 (4), 112237.
+Zhao, Y., Liang, Q., Jiang, Z., Mei, H., Zeng, N., Su, S., et al., 2024. Brain abnormalities in 
+survivors of COVID-19 after 2-year recovery: a functional MRI study. Lancet Reg. 
+Health West. Pac. 47, 101086.
+Zhou, H.X., Chen, X., Shen, Y.Q., Li, L., Chen, N.X., Zhu, Z.C., et al., 2020. Rumination 
+and the default mode network: meta-analysis of brain imaging studies and 
+implications for depression. Neuroimage 206, 116287.
+Zigmond, A.S., Snaith, R.P., 1983. The hospital anxiety and depression scale. Acta 
+Psychiatr. Scand. 67 (6), 361–370.
+M.-S. Cahart et al.                                                                                                                                                                                                                              
+Brain, Behavior, & Immunity - Health 54 (2026) 101274 
+12 
