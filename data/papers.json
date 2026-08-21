@@ -1,8 +1,23 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-20",
+  "last_check": "2026-08-21",
   "papers": [
+    {
+      "id": "woo-2026-cortisol-hpa-axis-meta-analysis",
+      "title": "Neuroendocrine signature of ME/CFS: Meta-analytic evidence for bioactive cortisol deficit and exaggerated feedback sensitivity",
+      "authors": "Woo TW, Choi YJ, Kim JY, Lee JS, Son CG",
+      "journal": "Molecular Psychiatry",
+      "date": "Sep 2026 (online Apr 2026)",
+      "summary": "The body's main stress hormone, cortisol, is made and controlled by a chain of glands called the HPA axis (hypothalamic-pituitary-adrenal axis). Pooling 46 earlier studies (about 1,400 ME/CFS patients vs 1,350 healthy people), researchers found ME/CFS patients consistently have lower cortisol in their saliva, urine and hair, respond more weakly when given a hormone that should trigger a cortisol surge, and suppress their cortisol too strongly when given a steroid that should dampen it slightly.",
+      "why": "Points to a genuinely blunted, over-braked stress-hormone system in ME/CFS — not just 'stress' in the everyday sense — that could help explain the poor sleep, brain fog, and low resilience to physical or emotional strain patients report, and gives researchers a measurable target (cortisol testing) to explore for future treatments.",
+      "link": "https://doi.org/10.1038/s41380-026-03608-1",
+      "first_seen": "2026-08-21",
+      "last_checked": "2026-08-21",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Molecular Psychiatry 31(9):5172-5183, published online 2026-04-23. Daejeon University (Research Center for ME/CFS), South Korea group — not Wirth/Scheibenbogen-affiliated, but bears on general ME/CFS pathomechanism/biomarkers (HPA-axis dysfunction). Meta-analysis of 46 case-control studies, n=1,388 ME/CFS vs 1,349 controls; lower salivary/urinary/hair cortisol, blunted ACTH-stimulation response, exaggerated dexamethasone-suppression feedback — interpreted as a hyporeactive HPA axis. Slightly outside the routine's usual ~3-month recency window (published Apr 2026, found via this run's fresh open-ended sweep) but flagged as a substantial, high-impact meta-analysis not previously in the tracker, on the same precedent as other slightly-older high-relevance papers added in prior runs (e.g. the Nature Communications skeletal-muscle paper). Confirmed independently via Europe PMC REST API core record (title/authors/journal/volume/issue/pages/DOI/abstract match); Nature.com publisher page itself is paywalled/login-gated for direct fetch."
+    },
     {
       "id": "nochi-2026-reenergizeme-hypoxia-hyperoxia-protocol",
       "title": "REenergizeME: intermittent hypoxia-hyperoxia treatment for myalgic encephalomyelitis/chronic fatigue syndrome — protocol for a randomised, placebo-controlled trial",
