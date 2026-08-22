@@ -7,25 +7,28 @@ year: 2026
 venue: "BMJ Public Health"
 doi: 10.1136/bmjph-2024-001686
 url: https://doi.org/10.1136/bmjph-2024-001686
-pdf: https://doi.org/10.1136/bmjph-2024-001686
-text: null
+pdf: literature/papers/2026-burkard-risks-autoimmune-inflammatory-post/paper.pdf
+text: literature/papers/2026-burkard-risks-autoimmune-inflammatory-post/paper.txt
 tags: [autoimmunity, immunology, biomarker, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: burkard2026
+cover: "[[literature/papers/2026-burkard-risks-autoimmune-inflammatory-post/cover.png]]"
 ---
 
 # Risks of autoimmune and inflammatory post-acute COVID-19 conditions: a network cohort study
 
 ## Related files
+![[literature/papers/2026-burkard-risks-autoimmune-inflammatory-post/paper.pdf]]
 - [[literature/papers/2026-burkard-risks-autoimmune-inflammatory-post/citation.bib]]
+- [[literature/papers/2026-burkard-risks-autoimmune-inflammatory-post/paper.txt]]
 
 ## Summary
 
 This large study compared people who tested positive for COVID-19 with similar people who tested negative, tracking whether the COVID-positive group went on to develop more autoimmune and inflammatory conditions afterward — including ME/CFS. In the first nine months after infection, the study did not find a higher rate of ME/CFS diagnoses in the COVID-positive group compared to the COVID-negative group.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

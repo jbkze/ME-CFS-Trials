@@ -1,0 +1,1395 @@
+Page 1/39
+Microvascular Remodeling and Endothelial
+Dysfunction Across the Post-COVID-19 Spectrum: A
+Prospective Observational Case-Control Study
+Timon Wallraven 
+Technical University of Munich
+Roman Günthner 
+Technical University of Munich
+Isabelle Lethen 
+Technical University of Munich
+Andrea Ribeiro 
+Technical University of Munich
+Maciej Lech 
+Ludwig-Maximilians-Universität München
+Frederike Cosima Oertel 
+Charité - University Medicine Berlin
+Lukas Reeß 
+Charité - University Medicine Berlin
+Bernhard Haller 
+Technical University of Munich
+Lukas Streese 
+Heinrich Heine University Düsseldorf
+Henner Hanssen 
+University of Basel
+Michel Wunderle 
+Technical University of Munich
+Christoph Schmaderer 
+Technical University of Munich
+Research Article
+Keywords: Post-COVID-19 Syndrome, myalgic encephalomyelitis/chronic fatigue syndrome, endothelial
+dysfunction, retinal microcirculation, retinal vessel analysis, neurovascular coupling
+
+Page 2/39
+Posted Date: February 3rd, 2026
+DOI: https://doi.org/10.21203/rs.3.rs-8702908/v1
+License:   This work is licensed under a Creative Commons Attribution 4.0 International License.  
+Read Full License
+Additional Declarations: Competing interest reported. TW, RG, IL, AR, ML, LR, BH, LS, HH, MW, and CS
+declare that they have no competing interests. FCO reports current research funding from the German
+Research Foundation (DFG; TRR418), the Hertie Foundation, the German ME/CFS Foundation, Novartis,
+and UCB, all unrelated to this project. She reports past fellowship support from the American Academy
+of Neurology and the National Multiple Sclerosis Society (until 2023), and past research funding from the
+German Neurological Society (DGN) and the DFG-TWAS program. FCO reports speaker honoraria from
+UCB and Novartis, and travel support from the Guthy-Jackson Charitable Foundation, the European
+Committee for Treatment and Research in Multiple Sclerosis (ECTRIMS), and the American Academy of
+Neurology. She serves as academic editor at DGNeurologie and Neurological Research & Practice, is a
+board member of the IMSVISUAL consortium, and co-chairs the Committee for Neuro-ophthalmology
+and Neuro-otology of the German Neurology Association.
+
+Page 3/39
+Abstract
+Background
+Post-viral diseases, including post-COVID-19 syndrome (PCS) and myalgic encephalomyelitis/chronic
+fatigue syndrome (ME/CFS), cause substantial long-term morbidity. Persistent cardiovascular risk after
+acute infection highlights the need for accessible tools to quantify microvascular health.
+Methods
+All Eyes on PCS is a prospective, observational study investigating the retinal microcirculation using
+retinal vessel analysis (RVA). We compared RVA parameters in 102 PCS patients with 204 age- and sex-
+matched healthy controls (matched from n = 303). Secondary matched analyses included never infected
+controls (n = 96), recovered individuals (n = 102), PCS patients, and PCS patients fulfilling ME/CFS
+criteria (n = 62). Laboratory variables, circulating markers of endothelial dysfunction and inflammation
+were compared between cohorts and their associations with RVA parameters were examined.
+Results
+Compared with healthy controls, PCS patients showed reduced venular flicker-induced dilation (3.7 ± 
+2.2% vs. 4.5 ± 2.7%, p = 0.005, Cohen´s d: 0.32), narrow retinal arterioles (CRAE, 178.3 ± 15.5 µm vs.
+183.3 ± 15.9 µm, p = 0.009, d: 0.32), and lower arteriolar-to-venular ratio (0.83 ± 0.06 vs. 0.86 ± 0.07, p = 
+0.004, d: 0.35). Findings persisted after adjustment for cardiovascular risk factors and remained evident
+in an extended secondary matched analysis across never infected, recovered, and PCS patients. ME/CFS
+patients showed the most pronounced alterations. PCS severity correlated with lower AVR (r = -0.21, p = 
+0.037) and reduced arteriolar flicker-induced dilation (r = -0.21, p = 0.039), particularly for neurocognitive
+symptoms. IL-6, ICAM-1 and VCAM-1 were elevated in PCS and ME/CFS and lower AVR correlated with
+inflammatory and iron-related markers (all adjusted p < 0.01). A combined model discriminated ME/CFS
+patients with good accuracy (AUC = 0.80).
+Conclusions
+PCS is associated with persistent endothelial dysfunction, most pronounced in ME/CFS patients and
+linked to symptom severity and ongoing inflammation. These findings support the potential use of RVA
+as a non-invasive tool for assessing and monitoring endothelial health in post-viral syndromes, with
+implications for cardiovascular risk stratification.
+Trial Registration
+
+Page 4/39
+The All Eyes on PCS Study has previously been registered at ClinicalTrials.gov (NCT05635552).
+Background
+Post-COVID-19 syndrome (PCS), also referred to as long COVID, remains a major public health challenge,
+frequently resulting in prolonged morbidity, work incapacity, and a substantial socioeconomic burden (1–
+4). Although multiple terms and definitions are used by different authorities, PCS is commonly defined as
+the persistence or development of new symptoms three months after the initial onset of SARS-CoV-2
+infection, lasting for at least two months and not attributable to alternative diagnoses. While many
+individuals recover fully from acute infection, a considerable subset experience persistent, multisystem
+symptoms, including fatigue, cognitive impairment, and exercise intolerance, that may persist for months
+to years (5, 6). A subset of PCS patients fulfills diagnostic criteria for myalgic encephalomyelitis/chronic
+fatigue syndrome (ME/CFS), characterized by profound fatigue and post-exertional malaise (PEM) (7, 8).
+Multiple, potentially interacting mechanisms, include viral persistence, immune dysregulation,
+autoimmunity, metabolic and mitochondrial dysfunction, muscle and neurovascular (NV) alterations, and
+persistent endothelial dysfunction (ED) (6, 9–13). While these processes contribute to marked biological
+heterogeneity of post-viral syndromes such as PCS and ME/CFS, they may converge on shared
+downstream alterations at the level of endothelial function (14–16). Subsequently, elevated blood
+biomarkers of ED, including intercellular adhesion molecule-1 (ICAM-1) and vascular cell adhesion
+molecule-1 (VCAM-1), vascular endothelial growth factor (VEGF), pro-inflammatory chemokines and
+cytokines including C-C motif chemokine ligand-5 (CCL5), interleukin-6 (IL-6), monocyte chemoattractant
+protein-1 (MCP-1), and C-X-C motif chemokine ligand-10 (CXCL10), as well as procoagulant markers
+such as von Willebrand factor (vWF), D-dimers, and thrombocytes, have been reported in acute COVID-
+19, post-COVID-19 syndrome (PCS), and myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)
+(17–20).
+SARS-CoV-2 infection confers a sustained increase in cardiovascular (CV) risk extending beyond the
+acute phase, even after mild infection, supporting the concept of persistent vascular injury and
+accelerated vascular ageing as a central long-term consequence of COVID-19 (21–23). Consequently,
+persistent macrovascular and microvascular dysfunction assessed by flow-mediated dilation (FMD),
+pulse-wave velocity (PWV), post-occlusive reactive hyperemia (POH) and optical coherence tomography
+angiography (OCT-A) have been reported in patients with ongoing symptoms (16, 21, 24–26).
+Notably, neurocognitive symptoms such as fatigue, impaired concentration, and reduced executive
+function have been linked to NV involvement and disturbed cerebral perfusion in post-viral diseases,
+suggesting that ED may contribute to central nervous system manifestations (10, 27). In this context, the
+retina represents an accessible surrogate of cerebral microvascular function. The retinal
+microvasculature shares embryological origin, anatomical features, and autoregulatory mechanisms
+with the cerebral microcirculation, and retinal flicker-induced vasodilation (FID) reflects NV coupling
+mediated by NO-dependent endothelial signaling (28, 29).
+
+Page 5/39
+Retinal vessel analysis (RVA), including static retinal vessel analysis (SVA) and dynamic retinal vessel
+analysis (DVA), provides a window into systemic microvascular health (30). SVA measures retinal vessel
+calibers, including the central retinal arteriolar equivalent (CRAE) and central retinal venular equivalent
+(CRVE), which reflect microvascular structural integrity, as well as the arteriolar-to-venular ratio (AVR),
+calculated as CRAE divided by CRVE, which reflects retinal microvascular autoregulatory function.
+Changes in SVA parameters are indicative of systemic vascular health and have been validated as
+predictors of CV outcomes in large cohort studies (31–33).
+DVA non-invasively quantifies FID of retinal arterioles (aFID) and venules (vFID) as the percentage
+change from baseline diameter in response to flickering light stimulation. In a cohort of patients
+undergoing dialysis, we previously demonstrated that reduced vFID is an independent predictor of all-
+cause mortality (34). Retinal FID has been shown to correlate with dynamic cerebral hemodynamic
+changes assessed by functional MRI, highlighting RVA as a non-invasive approach to probe NV function
+relevant to cognition (35).
+Despite growing evidence for objective biological correlates of persistent post-viral symptoms,
+accessible non-invasive tools to quantify microvascular dysfunction remain limited, creating a gap in
+clinical assessment and monitoring (6, 19). As a result, comprehensive case-control studies comparing
+endothelial function across never infected (NI) controls, SARS-CoV-2–recovered individuals, PCS
+patients, and ME/CFS patients are lacking. Consequently, it remains unclear whether the degree of ED
+correlates with symptom severity or inflammatory status in PCS.
+The primary aim of this study was to compare RVA parameters, as a non-invasive measure of
+microvascular endothelial health, between patients with PCS and matched healthy controls. As
+secondary objectives, we compared RVA parameters across NI, recovered, PCS patients, and PCS
+patients fulfilling criteria for ME/CFS and examined whether retinal ED was associated with patient-
+reported outcome measures (PROMs) and circulating markers of ED and chronic inflammation.
+Methods
+Study design and cohort
+This study is based on the previously published “All Eyes on PCS” protocol, a prospective, observational,
+single-center study designed to examine the retinal microvasculature in PCS patients (36). The study
+protocol was approved by the Ethics Committee of the Technical University of Munich, TUM School of
+Medicine and Health, Klinikum Rechts der Isar (Approval number: 2022-317-S-SR) and is registered at
+ClinicalTrials.gov (NCT05635552). The study was conducted in accordance with the Declaration of
+Helsinki. Sample size was defined a priori in the study protocol based on power calculations conducted
+with the institutional department of statistics and reflects all eligible participants recruited during the
+study period.
+
+Page 6/39
+Between October 2022 and September 2023, 105 PCS patients meeting the WHO definition of post-
+COVID-19 condition (persistent symptoms ≥ 3 months after confirmed SARS-CoV-2 infection, not
+explained by an alternative diagnosis) were included in the study (5). Most participants (72.4%, 76/105)
+were recruited through social media with the help of the patient organization “lost voices”, while the
+remaining (27.6%, 29/105) were referred from the PCS outpatient clinic of the LMU. Three patients were
+excluded from the analysis: one due to insufficient evidence of SARS-CoV-2 infection, another because
+of a missing temporal link between infection and PCS symptom onset, and a third because PCS-related
+symptoms were absent at the time of recruitment. In addition, 105 SARS-CoV-2–recovered individuals
+without persistent symptoms were recruited as controls and examined between October 2022 and
+January 2025. Three individuals were excluded from the final analysis: one due to a diagnosis of
+myocarditis, one due to epilepsy precluding RVA, and one due to incomplete data. NI participants were
+selected from a cohort of 233 individuals with no history of prior SARS-CoV-2 infection. Of these, 227
+were recruited before the COVID-19 pandemic as healthy control participants as part of the Citrate-
+Acetate Study (recruited between 2016 and 2018; ClinicalTrials.gov: NCT02745340) and the COMPLETE
+Study (recruited between January 2018 and July 2019; ClinicalTrials.gov: NCT03986892) (30).Six healthy
+patients were recruited after the COVID-19 pandemic who reported no prior SARS-CoV-2 infection.
+Detailed description of patient recruitment and clinical characterization can be found in the previously
+published study protocol (36).
+Clinical assessment
+A standardized 78-item questionnaire (Munich COVID History Questionnaire; MuCOV) was used to
+collect demographic data, pre-existing conditions, medication history, and PCS-related symptoms. All
+participants underwent a structured clinical assessment conducted by a physician. For participants
+recruited via social media, an initial screening survey assessed acute SARS-CoV-2 infection
+characteristics and persistent PCS-typical symptoms. For both PCS and recovered participants eligibility
+required documented proof of prior SARS-CoV-2 obtained at least three months before study inclusion.
+For PCS patients the presence of PCS-typical symptoms persisting for at least two months after acute
+infection. The temporal relationship between infection and symptom onset was reviewed in all cases,
+and alternative explanations for symptoms were systematically excluded. In cases of diagnostic
+uncertainty, eligibility was reviewed in a bi-weekly multidisciplinary meeting involving the Chief
+Investigator, Principal Investigator, and the study team, with final decisions made by majority vote.
+PROMs were assessed: PCS Severity (PCS Severity Score (37) and COVID-19 Yorkshire Rehabilitation
+Scale (C19-YRS) (38)), fatigue (Fatigue Severity Scale, FSS (39)), depression (Patient Health
+Questionnaire-9, PHQ-9 (40)), anxiety disorders (Generalized Anxiety Disorder-7, GAD-7 (41)), health-
+related quality of life (EuroQol 5-Dimensions 5-Levels questionnaire (EQ5DL (42)) and ME/CFS status
+using the Canadian Consensus Criteria (CCC) (43).
+Laboratory values
+
+Page 7/39
+Blood sampling and standard laboratory measurements were conducted as previously described (44),
+with IL-6, CCL-5, CXCL10, MCP-1, VCAM-1, ICAM-1 and VEGF quantified using the Cytometric Bead Array
+Flex system (BD Biosciences, San Diego, US). The measurements were performed according to the
+manufacturer's instructions.
+Retinal vessel analysis
+RVA was conducted with the Dynamic Vessel Analyzer (DVAlight; Imedos Health GmbH, Jena, Germany),
+while static vessel analysis (SVA) was carried out using the Static Vessel Analyzer (Imedos Health
+GmbH, Jena, Germany) in combination with a TRC-NW8 non-mydriatic retinal camera (Topcon, Tokyo,
+Japan). A detailed description of the procedure can be found in a previous publication (44).
+In short: All measurements were conducted in a quiet, temperature-controlled room. Blood pressure was
+assessed before and after RVA to minimize potential hemodynamic confounding. Pupillary dilation was
+achieved using topical mydriatics. Whenever feasible, the left eye was examined to ensure inter-
+individual comparability. The non-examined eye was occluded during measurements. For SVA, high-
+resolution fundus images centered on the optic disc (field angle 50°) were acquired. At least three high-
+quality images were obtained per participant. Retinal arteriolar and venular calibers were semi-
+automatically quantified using VesselMap software (Imedos Health GmbH, Jena, Germany) and
+summarized as CRAE and CRVE according to the Parr–Hubbard formula; the AVR was calculated as
+CRAE/CRVE. One measuring unit corresponds to 1 µm in Gullstrand’s normal eye model. Images with
+insufficient quality were excluded (1 measurement in PCS 1/103; 0.9%). For DVA, participants were
+instructed to fixate on the internal target and vessel segments (approximately 0.5-1 mm in length) were
+selected roughly two optic-disc diameters from the optic disc margin, preferentially in the superior-
+temporal quadrant (alternatively inferior-temporal if required). Diameters of the selected retinal arteriole
+and venule were continuously recorded for a total of 350 s. Following a baseline period, three flicker-light
+cycles (20 s each) were applied, each followed by a recovery period. FID was calculated as percent
+change relative to baseline (aFID/vFID). RVA measurements were acquired by trained personnel involved
+in the clinical assessment of participants; therefore, blinding to clinical group (PCS, recovered) was not
+feasible during data acquisition. Importantly, all RVA data processing, quality control, and quantitative
+analyses were conducted by investigators blinded to clinical group assignment. To ensure high
+measurement quality, vessel response curves were rated using a cumulative scoring approach (scale 0–
+5). Recordings with a total score < 2.5 were re-evaluated by a second experienced observer and excluded
+if consensus could not be reached. For vFID and aFID, 3 measurements in PCS (3/103; 2.9%) had to be
+excluded.
+Data analysis
+All statistical analyses were performed using R (version 4.2.1; R Foundation for Statistical Computing,
+Vienna, Austria) in RStudio and followed the “Strengthening the Reporting of Observational studies in
+Epidemiology” (STROBE) guidelines. Key packages included Matching, MatchIt, WeightIt, survey,
+
+Page 8/39
+gtsummary, ggplot2, pROC, and corrplot. Analyses were conducted using complete-case data; no
+imputation was performed, as missingness was low and did not show systematic patterns. Normality
+was assessed by visual inspection of histograms and Q-Q plots and formally tested using the Shapiro-
+Wilk test. Normally distributed variables are presented as mean ± standard deviation (SD), and non-
+normally distributed variables as median with interquartile range (Q1, Q3).
+For subgroup secondary matched analyses, participants were categorized into PCS, recovered, and NI
+groups. As recovered participants were substantially younger and showed limited age overlap with PCS,
+age matching was applied only for the NI reference group, whereas comparisons involving recovered
+were addressed using age-adjusted and overlap-weighted sensitivity analyses (ATO). PCS patients were
+age- and sex-matched to NI controls using nearest-neighbor matching, with balance assessed using the
+MatchBalance function. Due to substantial age differences between PCS and recovered cohorts, these
+groups were matched on sex only. Primary analyses adjusted for age and other relevant confounders
+using multivariable regression models. In addition, to address residual age imbalance and limited
+covariate overlap, we performed overlap weighting targeting the average treatment effect in the overlap
+population (ATO estimand) using the WeightIt package. Weighted group comparisons for RVA
+parameters were performed using survey-weighted t-tests via the survey package. One eye per
+participant was included in the analysis, such that each observation represents a single eye from a
+unique individual. Unweighted group comparisons were conducted using Welch’s two-sample t-test or
+the Mann-Whitney U test for two-group comparisons and the Chi-square (χ²) test for categorical
+variables. For comparisons involving more than two groups, we used one-way ANOVA when model
+assumptions were met; otherwise, the Kruskal-Wallis test was applied. For ANOVA, post-hoc pairwise
+comparisons were conducted using Tukey’s honestly significant difference (HSD) test. For Kruskal-
+Wallis, post-hoc pairwise comparisons were performed using Dunn’s test with multiplicity correction.
+Multivariable linear regression models were fitted to adjust for established confounders of RVA
+parameters (45–48). Continuous biomarkers with skewed distributions or outliers were analyzed using
+robust linear regression based on M-estimation. Correlation analyses were performed using Pearson’s
+correlation for normally distributed data and Spearman’s rank correlation for non-normally distributed
+data. For correlation analyses involving multiple biomarkers, p-values were adjusted using the Benjamini-
+Hochberg procedure. For primary, pre-specified group comparisons, no multiplicity correction was
+applied. Receiver operating characteristic (ROC) analyses were used to assess the discriminative ability
+of individual variables, with confidence intervals calculated using DeLong’s method. To evaluate whether
+a combination of inflammatory, metabolic, and microvascular markers improves discrimination of the
+ME/CFS phenotype among SARS-CoV-2-infected individuals, a multivariable logistic regression model
+including transferrin, ICAM-1, neutrophils, creatine kinase, IL-6 and AVR was fitted (Supplementary
+Table 1). ME/CFS status served as the dependent variable. Predicted probabilities were used to
+construct ROC curves and estimate the area under the curve (AUC). Please see the Major Resources
+Table in the Supplemental Materials for detailed information on study resources (Supplementary
+Table 2).
+
+Page 9/39
+Results
+Cohort characteristics 
+Table 1 presents the baseline demographic and clinical characteristics of the study population, showing
+cohort comparison between PCS patients  (n = 102, age: 41.9 ± 11.6 years, 75% female) and age- and
+sex-matched healthy controls (HC; matched out of 303 participants, n = 204, age: 42.9 ± 15.4 years, 75%
+female), which includes both NI individuals (n=117) and recovered individuals (n=87). No differences
+were observed in BMI or systolic blood pressure between groups. CV risk factors such as arterial
+hypertension (16% vs. 2.0%, p < 0.001) and hypercholesterolemia (22% vs. 5.4 %, p =0.002) were more
+prevalent in PCS patients and were therefore used for controlling for confounders when comparing RVA
+parameters. Further cohort characteristics with a detailed three-group comparison are presented in later
+sections. 
+Baseline characteristics
+Healthy controls 
+ N = 204
+Post-COVID-19 Syndrome
+ N = 102
+p-value
+Age (years), mean (±SD)
+42.9 (±15.4)
+41.9 
+(±11.6)
+0.50
+Gender (female), n(%)
+154 (75%)
+77 (75%)
+>0.9
+BMI (kg/m2), mean (±SD)
+23.7 (±3.9)
+24.5 (±4.8)
+0.12
+RRsyst
+1(mmHg), mean (±SD)
+122.2 (±17.1)
+121.8 (±16.9)
+0.80
+Cardiovascular Risk Factors 
+  Arterial Hypertension, n(%)
+4 (2.0%)
+16 (16%)
+<0.001***
+  Hypercholesterolemia,n(%)
+5 (5.4%)
+22 (22%)
+0.002**
+  Smoking history, n(%)
+29 (14%)
+10 (9.8%)
+0.40
+Diabetes mellitus (I and II), n(%)
+0 (0%)
+1 (1.0%)
+0.70
+Functional and Structural Retinal Microvascular Alterations in PCS vs. Healthy Controls
+RVA parameters revealed persistent retinal ED in PCS patients compared to HC. Venular flicker-induced
+dilation (vFID) was reduced in PCS patients (3.7 ± 2.2% vs. 4.5 ± 2.7%, mean difference: 0.8 %, 95%CI: 0.2
+to 1.4 %, p = 0.005, Cohen´s d: 0.32), indicating ongoing endothelial dysfunction. Arteriolar flicker-
+induced dilation (aFID) was numerically lower in PCS patients (2.9 ± 2.3% vs. 3.2 ± 2.0%), though this
+difference was not statistically significant (p = 0.261) (Fig. 1a and b). PCS patients showed narrower
+retinal arterioles (CRAE, 178.3 ± 15.5 µm vs. 183.3 ± 15.9 µm, mean difference: 5.0 µm, 95%CI: 1.3 to 8.8
+µm, p = 0.009, d: 0.32), while retinal venular diameters (CRVE) did not differ between groups (213.85 ±
+16.13 µm vs. 214.02 ± 18.36 µm, p = 0.937). Consequently, PCS patients exhibited a lower AVR (0.83 ±
+
+Page 10/39
+0.06 vs. 0.86 ± 0.07, mean difference: 0.023, 95%CI: 0.007 to 0.038, p = 0.004, d: 0.35) (Fig. 1c–e). To
+assess potential confounding, we adjusted for arterial hypertension and hypercholesterolemia using
+forest plots. After adjustment, lower vFID (Standardized [Std.] β = −0.48, 95% CI −0.77 to −0.18; p =
+0.002) and CRAE (Std. β = −0.39, 95% CI −0.67 to −0.12; p = 0.006) remained associated with PCS status,
+whereas the association with AVR was weaker (Std. β = −0.26, 95% CI −0.55 to 0.02; p = 0.073) (Fig. 1f).
+To assess whether the association between PCS status and microvascular changes differed by sex, we
+included a cohort-by-sex interaction term in the linear model. No significant sex-by-cohort interactions
+were observed for AVR, CRAE, or vFID, suggesting that retinal ED in PCS is independent of sex
+(Supplementary Table 3). 
+Cohort Characteristics for PCS patients, Recovered, and Never Infected individuals
+An extended three-group comparison across age- and sex- matched NI (n = 96), sex- matched recovered
+(n = 102), and PCS patients (n = 102) is presented in Supplementary Table 4. Age differed between
+groups (p < 0.001), with recovered individuals being younger (33.3 ± 11.4 years, 72% female) than both
+NI (43.0 ± 14.5 years, 76% female) and PCS patients (41.9 ± 11.6 years, 75% female). Systolic blood
+pressure before RVA varied between cohorts (p < 0.05), with recovered participants showing the lowest
+values. CV risk such as arterial hypertension was present in 16% of PCS patients compared with 4.9% of
+recovered and 0% of NI individuals (p < 0.001), and hypercholesterolemia was more common in PCS
+than in recovered (22% vs. 5.9%).
+Acute SARS-CoV-2 infection characteristics showed differences: PCS patients experienced more severe
+acute disease (WHO progression scale; p < 0.001) and were more frequently infected with alpha or delta
+variants (p = 0.004). Most recovered and PCS individuals reported a single infection (61% and 70%,
+respectively). PCS burden remained high, with a median symptom duration of 404 days (IQR: 291 to 575),
+median cumulative sick leave of 199.5 days (44.0 to 377.0), and 16% reporting occupational loss (all p <
+0.001 compared with recovered). PCS symptom severity was markedly elevated (36.9 ± 10.6 vs. 1.8 ±
+5.9, p < 0.001), and 61% of PCS patients fulfilled ME/CFS diagnostic criteria.
+Hematologic and biochemical parameters differed between groups: PCS patients showed higher
+neutrophil percentages (p = 0.001), lower lymphocyte percentages (p = 0.041), and higher platelet counts
+(p = 0.040). Iron metabolism markers indicated elevated ferritin (p = 0.008) and reduced transferrin (p <
+0.001) in PCS compared with recovered individuals, while hemoglobin was higher in NI than in both post-
+infection groups (p < 0.001). Lipid profiles differed across cohorts (total cholesterol: p = 0.002; LDL
+cholesterol: p = 0.001). Total cholesterol was lower in recovered individuals, whereas LDL cholesterol
+was highest in PCS patients. Creatine kinase (CK) was significantly lower in PCS (p<0.001).
+Immunoglobulin profiles were broadly similar, except for lower IgG3 levels in PCS patients (p = 0.021).
+Given the younger age of recovered participants, laboratory differences were examined in age-adjusted
+sensitivity analyses. In unweighted linear models including all three cohorts, hemoglobin, CRP, and
+leukocyte counts differed significantly between PCS patients and NI individuals (hemoglobin:
+standardized β = 0.20, p = 0.004; CRP: standardized β = −0.41, p < 0.001; leukocytes: standardized β =
+
+Page 11/39
+−0.14, p = 0.028), with no difference between recovered and PCS. In complementary age-balanced
+sensitivity analyses using overlap weighting (ATO), differences in neutrophil counts (mean difference
++3.97%, CI 1.05 to 6.90; p = 0.008), transferrin (mean difference −16.57 mg/dL, CI −27.90 to −5.24; p =
+0.004), and CK between PCS and recovered remained significant, while differences in lymphocytes,
+platelets, ferritin, lipid parameters, IgG3, and hemoglobin were attenuated (Supplementary Table 5 and
+6).
+Functional and Structural Retinal Microvascular Alterations Across PCS, Recovered, and Never Infected 
+Mean venular FID (vFID) differed between the three groups (p = 0.007). In post-hoc comparisons, PCS
+patients showed lower vFID than recovered individuals (3.7% ± 2.2 vs. 4.8% ± 3.0, p = 0.005). No
+differences were observed between PCS and NI (4.1% ± 2.5, p = 0.541) or between recovered and NI
+participants (p = 0.101). Arteriolar FID showed a trend toward lower values in PCS compared with
+recovered individuals (2.9% ± 2.3 vs. 3.4% ± 2.1), but this did not reach significance (Fig. 2a and b).
+Retinal arteriolar diameters differed across groups (p = 0.001). PCS patients had narrower arterioles
+compared to both recovered (178.3 ± 15.5 µm vs. 186.1 ± 15.7 µm, p = 0.001) and NI (184.1 ± 15.1 µm, p
+= 0.023), whereas recovered and NI did not differ (p = 0.641). Retinal venular diameters also differed
+between groups (p = 0.040). Recovered had slightly larger venular calibers than NI (217.9 ± 15.5 µm vs.
+212.2 ± 16.9 µm, p = 0.037), while differences between recovered and PCS were not significant (p =
+0.176) (Fig. 2c and d). AVR differed between groups (p < 0.001). PCS patients exhibited lower AVR
+compared with both NI (0.83 ± 0.06 vs. 0.87 ± 0.06, p < 0.001) and recovered (0.86 ± 0.07, p = 0.037).
+(Fig. 2 e). Age, arterial hypertension, BMI, and systolic blood pressure before RVA measurement were
+included as confounders, with hypercholesterolemia added in a sensitivity model for PCS vs. recovered.
+After adjustment, higher vFID remained significantly associated with recovered (Std. β = 0.25, p < 0.001).
+Higher CRAE remained significantly associated with NI (Std. β = 0.15, p = 0.021), whereas the
+association with recovered (Std. β = 0.11, p = 0.105) was attenuated. For CRVE associations were no
+longer significant. For AVR, higher values remained significantly associated with NI (Std. β= 0.21, p =
+0.002), whereas the association with recovered was weaker (Std. β= 0.10, p = 0.167)  (Supplementary
+Table 7). 
+In ATO analysis, vFID remained significantly reduced in PCS patients compared with recovered
+individuals (mean difference -1.3%, CI: -2.0 to -0.5%, p = 0.001). Retinal arteriolar narrowing also
+persisted, with lower CRAE in PCS (mean difference -5.6 µm, CI -10.3 to -0.8 µm, p = 0.022). In contrast,
+the difference in AVR was attenuated and narrowly missed statistical significance (mean difference
+-0.02, CI -0.04 to - 0.0003, p = 0.053), indicating a small residual effect after age balancing. CRVE and
+aFID did not differ between groups following age adjustment. (Supplementary Table 8). Sensitivity
+analyses including hypercholesterolemia did not alter the results (not shown).
+Association of Patient-Reported Outcome Measurements with Persistent Changes of Retinal
+Microcirculation 
+
+Page 12/39
+PROMs, including the PCS Severity Score and the COVID-19 Yorkshire Rehabilitation Scale (C19-YRS),
+were associated with persistent alterations in retinal microcirculation. AVR showed a modest correlation
+with both PCS severity score (r = -0.21, p = 0.037) and C19-YRS scores (r = -0.20, p = 0.043) (Fig 3 a and
+b). Likewise, aFID was inversely correlated with the PCS severity score (r = -0.21, p = 0.039; Fig. 3 d),
+however not with C19-YRS score (Fig. 3 e). In regression analyses, models were adjusted for sex and
+BMI, as age and CV risk factors were not associated with PCS severity within this subgroup. In these
+models, lower aFID remained independently associated with PCS severity score, whereas the association
+between lower AVR and symptom severity was attenuated (Fig. 3 c and f). vFID, CRAE, and CRVE showed
+no significant association with PCS severity within the PCS cohort.
+To further investigate the relationship between symptom burden and RVA parameters, all previously
+infected individuals (recovered and PCS) were stratified into tertiles based on PCS severity scores. The
+low symptom severity group predominantly comprised recovered (light grey), while the moderate and
+high severity groups were largely composed of PCS patients (dark grey). For AVR, a significant overall
+difference across severity levels was observed (p = 0.017), with post-hoc comparisons revealing
+significantly lower AVR values in the high vs. low severity group (p = 0.021). For aFID, the overall group
+difference was significant (p = 0.012), with reduced aFID observed in both the moderate vs. high (p =
+0.026) and low vs. high (p = 0.047) severity comparisons (Fig. 3 g and h). 
+To further stratify which individual symptoms are most closely linked to persistent retinal ED, we
+compared AVR values between previously infected individuals reporting versus not reporting each of the
+16 key symptoms included in the PCS severity score. AVR was significantly lower in participants
+reporting symptoms predominantly within the neurocognitive cluster (e.g., fatigue, concentration
+difficulties, headache, balance/fine motor dysfunction) and systemic/malaise-related symptoms (e.g.,
+general malaise, hair/skin changes, gastrointestinal symptoms). In contrast, AVR did not differ
+significantly for symptoms primarily related to respiratory or sensory domains (e.g., chest pain,
+shortness of breath, cough, disturbed smell/taste) (Table 2). 
+
+Page 13/39
+Symptom
+AVR
+(Symptom
+Absent)
+AVR
+(Symptom
+Present)
+Mean
+Difference
+95% CI
+p-value
+Fatigue
+0.856
+0.833
+–0.024
+[0.006,
+0.042]
+0.0089**
+Concentration difficulties
+0.857
+0.831
+–0.026
+[0.008,
+0.043]
+0.0050**
+Headache
+0.856
+0.829
+–0.026
+[0.008,
+0.045]
+0.0050**
+Anxiety and/or sleep
+disturbance
+0.852
+0.833
+–0.020
+[0.001,
+0.038]
+0.036*
+Balance/fine motor
+dysfunction
+0.851
+0.829
+–0.022
+[0.003,
+0.042]
+0.026*
+Chest pain
+0.847
+0.839
+–0.008
+[–0.010,
+0.027]
+0.38
+Palpitations
+0.855
+0.829
+–0.025
+[0.008,
+0.043]
+0.0054**
+Shortness of breath
+0.849
+0.831
+–0.018
+[–0.003,
+0.040]
+0.085
+Cough
+0.848
+0.831
+–0.017
+[–0.012,
+0.047]
+0.23
+Reduced physical capacity
+(e.g., difficulty climbing
+stairs)
+0.855
+0.835
+–0.020
+[0.002,
+0.038]
+0.027*
+Disturbed smell or taste
+0.847
+0.835
+–0.011
+[–0.018,
+0.041]
+0.44
+ENT symptoms (e.g., sore
+throat, runny nose,
+hoarseness)
+0.850
+0.829
+–0.021
+[0.001,
+0.042]
+0.041*
+Hair loss / itching / skin
+rash
+0.850
+0.822
+–0.028
+[0.008,
+0.048]
+0.0080**
+Weight loss
+0.846
+0.836
+–0.010
+[–0.015,
+0.034]
+0.43
+Gastrointestinal
+symptoms (e.g., nausea,
+diarrhea)
+0.848
+0.829
+–0.019
+[0.001,
+0.037]
+0.043
+General malaise / chills /
+flu-like symptoms
+0.853
+0.828
+–0.025
+[0.006,
+0.044]
+0.010*
+Table 2. Mean AVR in participants who did not report (“Symptom absent”) versus did report (“Symptom
+present”) each of the 16 symptoms included in the PCS Symptom Severity Score. For each symptom,
+
+Page 14/39
+mean AVR values are shown for both groups, along with the mean difference calculated as Present
+minus Absent, corresponding 95% confidence intervals, and p-values from group comparisons.
+Symptoms are listed in the order included in the PCS Symptom Severity Score and span neurological,
+cardiopulmonary, sensory, and systemic domains. Group comparisons were performed using Welch’s
+two-sample t-test or the Mann-Whitney U test, as appropriate. Statistical significance is indicated as *p <
+0.05; **p < 0.01; **p < 0.001.
+Retinal Microvascular Alterations in ME/CFS
+Persistent ED has previously been demonstrated in post-viral syndromes and in patients with ME/CFS
+(16). In our cohort, PCS patients fulfilling ME/CFS criteria were slightly younger (p = 0.041) and exhibited
+a higher overall symptom burden, as reflected by elevated C19-YRS scores (p = 0.023), PCS Severity
+Scores (p < 0.001), PHQ-9 scores (p = 0.008), Fatigue Severity Scale scores (p < 0.001), and reduced
+quality of life as measured by the EQ-5D-5L index (p = 0.010). Consistent with this, patients with ME/CFS
+reported more cumulative sick days (p < 0.001). CV risk factors, including hypercholesterolemia,
+hypertension, and diabetes, did not significantly differ between groups, nor did characteristics of the
+acute SARS-CoV-2 infection. Laboratory parameters were largely comparable, although CK levels were
+significantly lower in the ME/CFS subgroup (p = 0.009) (Table 3).
+
+Page 15/39
+Variable
+PCS without ME/CFS
+ N = 39
+PCS with ME/CFS
+ N = 62
+p-value
+Age (years), mean (±SD)
+44.8 (±11.6)
+39.9 (±11.2)
+0.041*
+Gender (female), n(%)
+28 (72%)
+49 (79%)
+0.6
+BMI (kg/m2), mean (±SD)
+24.4 (±4.6)
+24.6 (±4.9)
+0.8
+RRsyst
+1(mmHg), mean (±SD)
+121.9 (±18.8)
+121.7 (±15.6)
+>0.9
+Cardiovascular Risk Factors
+Diabetes mellitus (I and II), n(%)
+1 (2.6%)
+0 (0%)
+>0.9
+Arterial Hypertension, n(%)
+5 (13%)
+11 (18%)
+0.7
+Hypercholesterolemia, n(%)
+7 (18%)
+15 (24%)
+0.6
+Smoking history, n(%) 
+4 (10%)
+6 (9.7%)
+>0.9
+PCS-related characteristics
+C19-YRS, mean (±SD)
+28.3 (15.1)
+35.0 (12.7)
+0.023*
+PCS Severity Score, mean (±SD)
+32.0 (11.7)
+40.0 (8.6)
+<0.001***
+PHQ9, mean (±SD)
+8.9 (4.7)
+11.4 (3.9)
+0.008**
+GAD7, median (IQR)
+4.0 (2.0, 7.0)
+6.0 (3.0, 9.0)
+0.2
+FSS, median (IQR)
+5.4 (3.7, 6.4)
+6.3 (5.8, 6.7)
+<0.001***
+EQ5DL-Index, median (IQR)
+0.8 (0.6, 0.8)
+0.5 (0.3, 0.7)
+0.010*
+Duration of PCS, days, median (IQR)
+345.0 (218.0, 537.0)
+409.5 (316.5, 619.0)
+0.15
+Cumulative sick days, median (IQR)
+129.0 (0.0, 291.0)
+285.5 (106.0, 445.0)
+<0.001***
+Acute SARS-CoV-2 infection
+Work loss during PCS, n(%)
+4 (10%)
+12 (20%)
+0.3
+ Number of infections, n(%)
+0.2
+    1
+30 (77%)
+40 (65%)
+    2
+8 (21%)
+21 (34%)
+    3
+1 (2.6%)
+0 (0%)
+ 
+    4
+0 (0%)
+1 (1.6%)
+Severity of acute infection, n(%) 
+(WHO progression scale)
+0.6
+
+Page 16/39
+    1
+1 (2.6%)
+0 (0%)
+    2
+25 (64%)
+35 (56%)
+    3
+12 (31%)
+22 (35%)
+    4
+1 (2.6%)
+3 (4.8%)
+    5
+0 (0%)
+1 (1.6%)
+    6
+0 (0%)
+1 (1.6%)
+ 
+SARS-CoV-2 variants, n(%)
+ 
+ 
+0.3
+    alpha
+1 (2.6%)
+6 (9.7%)
+ 
+    delta
+7 (18%)
+6 (9.7%)
+ 
+    omicron
+8 (21%)
+10 (16%)
+ 
+    unknown
+23 (59%)
+40 (65%)
+ 
+Lab parameters
+Creatine Kinase (U/L), median IQR)
+91.0 (70.0, 111.0)
+71.0 (54.0, 92.0)
+0.009**
+Comorbidities
+Psychiatric Diagnosis preexisting, n(%)
+2 (5.3%)
+6 (9.7%)
+0.7
+Depressive diagnosis ongoing, n(%)
+9 (23%)
+10 (16%)
+0.5
+Table 3 Baseline characteristics of PCS patients stratified by ME/CFS status according to the Canadian
+Consensus Criteria (CCC). One patient did not complete the CCC questionnaire and was therefore
+excluded from the analysis. Continuous variables are reported as mean ± SD or median (IQR), depending
+on distribution, and categorical variables as n (%). Group comparisons were performed using Welch’s
+two-sample t-test for normally distributed continuous variables, the Mann-Whitney U test for non-
+normally distributed continuous variables, and Pearson’s χ² test for categorical variables, as appropriate.
+Abbreviations: BMI, body mass index; RRsyst, systolic blood pressure before retinal vessel analysis; C19-
+YRS, COVID-19 Yorkshire Rehabilitation Scale; PHQ-9, Patient Health Questionnaire-9; GAD-7, Generalized
+Anxiety Disorder-7; FSS, Fatigue Severity Scale; EQ-5D-5L, EuroQol 5-Dimension 5-Level index; ME/CFS,
+myalgic encephalomyelitis/chronic fatigue syndrome. Statistical significance is indicated as *p < 0.05;
+**p < 0.01; **p < 0.001.
+We next compared RVA parameters across NI, recovered, and PCS patients with or without ME/CFS.
+AVR, CRAE, and vFID differed across groups (Figure 4a - c). In post-hoc analyses, vFID was significantly
+lower in PCS patients fulfilling ME/CFS criteria compared with recovered (p = 0.046), whereas no
+difference was observed relative to NI (p = 0.890). CRAE was likewise reduced in PCS patients with
+ME/CFS compared with recovered (p = 0.020), while the comparison with NI individuals did not reach
+
+Page 17/39
+statistical significance (p = 0.263). AVR was markedly lower in PCS patients with ME/CFS than in both NI
+controls (p < 0.001) and recovered individuals (p = 0.010) (Supplementary Table 9).
+To determine whether an altered retinal microcirculation is specifically associated with ME/CFS, we
+performed multivariable regression analyses adjusting for age, sex, BMI, systolic blood pressure before
+RVA, and arterial hypertension. Using PCS with ME/CFS as the reference group, AVR was significantly
+higher in all other cohorts: NI (Std. β = 0.32, p < 0.001), PCS without ME/CFS (Std. β = 0.14, p = 0.049),
+and recovered individuals (Std. β = 0.17, p = 0.028). CRAE did not differ significantly after adjustment,
+although a trend toward wider arterioles was observed in NI individuals (Std. β = 0.14, p = 0.063) and
+recovered (Std. β = 0.11, p = 0.156). Recovered individuals showed significantly higher vFID compared to
+PCS with ME/CFS (Std. β = 0.23, p = 0.004), whereas differences between the remaining groups did not
+reach significance (Supplementary Table 10).
+Finally, we performed receiver operating characteristic (ROC) analyses to identify biomarkers
+discriminating non-ME/CFS individuals (recovered and PCS without ME/CFS) from patients fulfilling
+ME/CFS criteria. Across inflammatory, iron metabolism, lipid, hematologic, and RVA parameters, 13
+markers showed discriminatory performance (Supplementary Table11). From an initial panel of 13
+candidate variables, six markers (CK, IL-6, ICAM-1, transferrin, AVR, neutrophils) were selected for
+combined ROC analysis based on individual discriminatory performance, biological plausibility, and
+representation of distinct pathophysiological domains (Figure 4 d). This integrative approach resulted in
+improved discrimination between ME/CFS and non-ME/CFS individuals (AUC= 0.80; 95% CI: 0.73-0.87)
+(Figure 4 e). Together, these findings indicate that PCS patients with ME/CFS exhibit the most
+pronounced retinal microvascular alterations, particularly reduced AVR and that these changes persist
+even after adjustment for relevant CV risk factors.
+Biomarkers of ED and Inflammation in Recovered, PCS and ME/CFS Patients and their Association with
+RVA parameters
+Circulating biomarker levels were compared between recovered and PCS patients, to study potential
+ongoing endothelial activation and chronic inflammation. IL-6 levels were higher in PCS patients
+compared with recovered individuals (median 1.32 pg/mL vs. 0.92 pg/mL; p = 0.028). MCP-1 showed a
+non-significant trend toward higher levels in PCS (median 24.2 pg/mL vs. 18.5 pg/mL; p = 0.063). CC-
+Chemokine-Ligand-5 (CCL-5) did not differ between groups (p = 0.492), nor did CXCL-10 (p = 0.985)
+(Figure 5 a - c, f). Among ED markers, ICAM-1 levels were elevated in PCS compared with recovered
+participants (mean 3832 ± 636 pg/mL vs. 3505 ± 683 pg/mL, p <0.001). VCAM-1 was also increased in
+PCS (median 8073 pg/mL vs. 5899 pg/mL; p <0.001) VEGF concentrations did not differ between groups
+(median 6.56 pg/mL [PCS] vs. 7.68 pg/mL [recovered]; p = 0.339) (Figure 5 d, e and g). After adjustment
+for age, the associations of higher ICAM-1 (β = −358.9 pg/mL, p < 0.001) and VCAM-1 (β = −2319.6
+pg/mL, p < 0.001) with PCS remained significant. In contrast, the associations with IL-6 (β = −0.24
+pg/mL, p = 0.14) and MCP-1 (β = −3.52 pg/mL, p = 0.11) were attenuated (Supplementary Table 11). We
+additionally compared laboratory variables and circulating biomarkers between non-ME/CFS (recovered
+
+Page 18/39
+and PCS) with ME/CFS patients after correction for age. As shown in PCS patients, markers of ED
+(VCAM-1, ICAM-1) and inflammation (IL-6) were associated with ME/CFS status (Figure 5 h). 
+We next asked whether circulating biomarkers were linked to retinal microvascular alterations within the
+post-infectious spectrum itself. We therefore examined the associations between circulating biomarkers
+and RVA parameters in all PCS patients (Figure 5 i). AVR showed significant inverse correlations with
+CRP (ρ = −0.27, p = 0.007), IL-6 (ρ = −0.27, p = 0.006), transferrin (ρ = −0.34, p <0.001), and erythrocyte
+count (ρ = −0.21, p = 0.037), while positive correlations were observed with IgG3 (ρ = 0.23, p = 0.020),
+serum iron (ρ = 0.20, p = 0.045), and transferrin saturation (ρ = 0.28, p = 0.0055). Additionally, there was
+a correlation for lower CRAE with higher CRP (ρ = −0.20, p = 0.045) and higher VCAM-1 (ρ = −0.33, p <
+0.001), and an inverse correlation between CRVE and VCAM-1 (ρ = −0.20, p=0.047). After correction for
+multiple testing, the correlations between AVR and IL-6, CRP, transferrin, and transferrin saturation and
+the correlation between CRAE and VCAM-1 remained statistically significant (Supplementary Figure 12).
+Discussion
+This observational case-control study is the first to perform an in-depth assessment of retinal
+microvascular alterations using RVA as a surrogate of persistent ED across a large, well-characterized
+cohort of NI individuals, recovered participants, and patients with PCS. We demonstrate that PCS
+patients exhibit markedly reduced venular FID, narrower retinal arterioles and a lower AVR compared with
+age- and sex-matched healthy controls. Higher symptom burden, particularly neurocognitive symptoms,
+was associated with microvascular remodeling, as indicated by a lower AVR. These findings replicate
+and expand upon our previously published pilot study, in which comparable reductions were observed in
+a smaller PCS cohort compared to NI (44).
+A key unresolved question was whether ED resolves during recovery or persists in association with post-
+viral symptomatology. Our subgroup analysis demonstrated lower vFID in PCS patients compared with
+recovered. These differences were independent of CV risk factors and remained evident after strict age-
+weighted analyses, supporting an association between persistent ED and ongoing post-viral syndromes.
+Reduced vFID provides functional evidence of impaired NV coupling and diminished endothelial-
+dependent vasodilatation. Retinal FID largely depends on NO release and glia cell-regulated NV coupling
+(49). In individuals recovering from an acute infection, especially in those with pre-existing CV risk or
+severe acute illness longitudinal studies demonstrate persistent ED, by means of impaired endothelial
+glycocalyx, reduced NO bioavailability and vascular function (24, 50–53). In contrast, recovered patients
+without relevant comorbidities generally show only minimal or transient ED, with biomarker levels
+returning toward baseline over time (54–58). Our findings suggest that patients with PCS fail to
+adequately restore endothelial integrity, potentially due to unresolved chronic inflammation, as reflected
+by persistently elevated IL-6, acute-phase proteins, and endothelial activation markers such as ICAM-1
+and VCAM-1 in our cohort, which is consistent with previous reports. (7, 59, 60).
+
+Page 19/39
+Studies in PCS report gliosis and blood-brain barrier (BBB) disruption, and sustained neuroinflammation
+has been linked to persistent cognitive and affective symptoms in these patients (61, 62). Additionally,
+the potent vasoconstrictor endothelin-1 (ET-1), which induces neuronal apoptosis and retinal ganglion
+cell loss, has been shown to be elevated in PCS patients and to correlate with ongoing symptom burden.
+Together, these findings support NV unit dysfunction in PCS and provide a plausible explanation for the
+observed reduction in vFID (24, 63, 64).
+Regarding SVA parameters, we observed lower AVR and CRAE in PCS compared with both recovered and
+NI individuals, indicating persistent microvascular remodeling and impaired retinal autoregulation.
+Retinal calibers depend on age, diabetes, BMI, and hypertension (45). Although the association between
+lower AVR and PCS was attenuated after adjustment for confounders and may partly reflect the higher
+CV risk profile of PCS patients compared with recovered, the parallel associations of both AVR and
+arteriolar FID with clinical severity suggest that retinal ED is not solely attributable to baseline risk
+factors but is also linked to symptom burden.
+Individuals with predominantly ongoing neurocognitive symptoms showed a lower AVR than recovered
+individuals or PCS patients without these symptoms. Given the established associations of lower AVR
+and arteriolar narrowing with cerebral small vessel disease, neuroinflammation, and cognitive
+impairment, reduced AVR and CRAE observed in PCS provide evidence of persistent microvascular injury
+affecting NV integrity and offer a plausible mechanistic link to ongoing neurocognitive symptoms (65–
+68). Altered SVA parameters in general have been consistently linked to CV risk in landmark studies.
+Independently, epidemiological data demonstrate increased long-term CV risk after acute COVID-19
+infection (21, 22, 31, 32). In this context, our observation of narrow retinal arterioles and lower AVR in
+PCS indicates sustained microvascular remodeling beyond the acute phase of infection. Given the
+median disease duration of 13 months in our cohort, the persistence of these microvascular alterations
+suggests that RVA may provide a non-invasive window into sustained microvascular injury and
+potentially increased CV risk in patients with PCS.
+Early recognition of the clinical and biological overlap between ME/CFS and PCS has shifted research
+toward a unified post-infectious disease framework (7, 15). Accordingly, 61% of PCS patients in our
+cohort met ME/CFS criteria and showed markedly greater symptom burden and functional impairment.
+Across all previously infected individuals, we observed a continuous gradient of retinal ED, with
+progressively lower vFID, CRAE, and AVR values with increasing clinical severity, and the most
+pronounced impairments in PCS patients fulfilling ME/CFS criteria.
+After age adjustment, IL-6, ICAM-1, and VCAM-1 remained elevated in ME/CFS and showed a similar
+pattern in PCS more broadly, indicating a shared inflammatory–endothelial activation axis across the
+post-infectious spectrum, with ME/CFS representing a clinically more severe or biologically enriched
+phenotype(19, 63, 69). AVR alone provided modest discrimination between ME/CFS and non-ME/CFS
+patients, however its combination with routine laboratory parameters substantially improved accuracy
+reaching an AUC of 0.80 comparable to a previously published diagnostic cell-based blood test for
+
+Page 20/39
+ME/CFS (70, 71). Lower AVR was correlated with higher IL-6 and CRP, linking retinal microvascular
+remodeling to ongoing systemic inflammation. Both markers have been implicated in persistent
+neurocognitive symptoms in PCS, and IL-6-mediated neuroinflammation, including BBB disruption and
+impaired NV coupling, provides a plausible mechanistic link to reduced AVR(72–76). Narrower retinal
+arterioles were additionally associated with higher VCAM-1 levels, further supporting an inflammation-
+driven ED phenotype. Beyond inflammatory signaling, IL-6 is a central mediator of hepcidin induction and
+inflammation-driven alterations in iron homeostasis (77, 78). Consistently, IL-6 correlated inversely with
+iron-related parameters, and AVR was associated with transferrin and transferrin saturation, suggesting
+that retinal microvascular alterations in PCS co-occur with an inflammatory–iron axis rather than
+isolated iron deficiency. Similar patterns of iron dysregulation and inflammatory stress erythropoiesis
+have been reported following COVID-19 and linked to long-term PCS outcomes(14, 77).
+From a clinical and translational perspective, the non-invasive, repeatable, and relatively low-cost nature
+of RVA makes it well suited for longitudinal assessment in patients with persistent post-viral symptoms
+(79, 80). RVA may complement symptom-based evaluation and routine laboratory testing by providing an
+objective, microvascular readout, particularly in patients with prominent neurocognitive impairment or
+ME/CFS features.
+Limitations
+Several limitations warrant consideration. First, this is a cross-sectional, single-center cohort study;
+therefore, the observed associations, while biologically plausible, should not be interpreted as causal.
+The present findings are exploratory and hypothesis-generating and require validation in larger,
+independent cohorts. Second, despite adjustment for potential confounders, the recovered cohort was
+significantly younger than the PCS group, which may have contributed to differences in retinal
+microvascular parameters. However, altered RVA measures were also observed when PCS patients were
+compared with the NI cohort, which was older and had a higher burden of comorbidities, supporting the
+robustness of the findings. Finally, the cross-sectional design precludes conclusions regarding whether
+PCS patients with more severe symptoms and adverse retinal microvascular phenotypes are at
+increased CV risk. Prospective longitudinal studies integrating RVA with adjudicated CV outcomes are
+required to determine whether retinal microvascular measures can identify a high-risk PCS
+subpopulation that may benefit from intensified CV monitoring and preventive strategies.
+Conclusion
+This study demonstrates that patients with PCS exhibit persistent functional and structural alterations of
+the retinal microvasculature, indicating ongoing endothelial and NV dysfunction. Retinal ED is most
+pronounced in patients with higher symptom burden and in those fulfilling ME/CFS criteria, and is
+accompanied by sustained inflammatory and endothelial activation, as reflected by elevated IL-6, ICAM-
+1, and VCAM-1. The observed associations between retinal microvascular parameters, systemic
+inflammation, and iron homeostasis suggest that microvascular remodeling in PCS reflects a broader,
+
+Page 21/39
+inflammation-driven vascular phenotype rather than isolated CV risk. Together, these findings support
+the utility of RVA as a non-invasive window into post-infectious ED and highlight its potential role in
+biological stratification and risk assessment in patients with persistent symptoms. Prospective
+longitudinal studies are warranted to determine the prognostic value of retinal microvascular measures
+and their relevance for long-term CV outcomes in this population.
+Abbreviations
+aFID
+Arteriolar flicker–induced dilation
+ANOVA
+Analysis of variance
+ATO
+Average treatment effect in the overlap population
+AVR
+Arteriolar–to–venular ratio
+BBB
+Blood–brain barrier
+BMI
+Body mass index
+CCL
+5–CC–Chemokine–Ligand–5
+CCC
+Canadian Consensus Criteria
+CI
+Confidence interval
+CK
+Creatine kinase
+CRAE
+Central retinal arteriolar equivalent
+CRP
+C–reactive protein
+CRVE
+Central retinal venular equivalent
+CV
+Cardiovascular
+C19
+YRS–COVID–19 Yorkshire Rehabilitation Scale
+CXCL10 (IP
+10)–C–X–C motif chemokine 10 (Interferon gamma–induced protein–10)
+
+Page 22/39
+DVA
+Dynamic retinal vessel analysis
+ED
+Endothelial dysfunction
+EQ
+5D–5L–EuroQol five–dimension five–level questionnaire
+FID
+Flicker–induced dilation
+FMD
+Flow–mediated dilation
+FSS
+Fatigue Severity Scale
+GAD
+7–Generalized Anxiety Disorder–7
+HC
+Healthy controls
+HIF
+Hypoxia–inducible factor
+ICAM
+1–Intercellular adhesion molecule–1
+ICTRP
+International Clinical Trials Registry Platform
+IgG
+Immunoglobulin G
+IL
+6–Interleukin–6
+IQR
+Interquartile range
+ME/CFS
+Myalgic encephalomyelitis/chronic fatigue syndrome
+MCP
+1–Monocyte chemoattractant protein–1
+NI
+Never infected
+NO
+Nitric oxide
+NV
+Neurovascular
+OCT
+A–Optical coherence tomography angiography
+
+Page 23/39
+PCS
+Post–COVID–19 syndrome
+PEM
+Post–exertional malaise
+PHQ
+9–Patient Health Questionnaire–9
+POH
+Post–occlusive reactive hyperemia
+PROMs
+Patient–reported outcome measures
+PWV
+Pulse–wave velocity
+ROC
+Receiver operating characteristic
+RVA
+Retinal vessel analysis
+SD
+Standard deviation
+Std.β
+Standardized beta coefficient
+SVA
+Static retinal vessel analysis
+VCAM
+1–Vascular cell adhesion molecule–1
+VEGF
+Vascular endothelial growth factor
+vFID
+Venular flicker–induced dilation
+WHO
+World Health Organization
+Declarations
+Ethics approval and consent to participate
+The study protocol was approved by the Ethics Committee of the Technical University of Munich, School
+of Medicine and Health, Klinikum rechts der Isar (Approval number: 2022-317-S-SR) and the Ethics
+Committee of North-western and Central Switzerland (EKNZ 2017 − 01451). All participants provided
+written informed consent prior to participation. The study was registered at ClinicalTrials.gov
+(NCT05635552).
+
+Page 24/39
+Consent for publication
+Not applicable.
+Competing Interests
+TW, RG, IL, AR, ML, LR, BH, LS, HH, MW, and CS declare that they have no competing interests.FCO
+reports current research funding from the German Research Foundation (DFG; TRR418), the Hertie
+Foundation, the German ME/CFS Foundation, Novartis, and UCB, all unrelated to this project. She reports
+past fellowship support from the American Academy of Neurology and the National Multiple Sclerosis
+Society (until 2023), and past research funding from the German Neurological Society (DGN) and the
+DFG-TWAS program. FCO reports speaker honoraria from UCB and Novartis, and travel support from the
+Guthy-Jackson Charitable Foundation, the European Committee for Treatment and Research in Multiple
+Sclerosis (ECTRIMS), and the American Academy of Neurology. She serves as academic editor at
+DGNeurologie and Neurological Research & Practice, is a board member of the IMSVISUAL consortium,
+and co-chairs the Committee for Neuro-ophthalmology and Neuro-otology of the German Neurology
+Association.
+Funding
+This work was supported by the Clinical Scientist Program of the TUM School of Medicine and Health
+(TW). The study is part of the VADYS-ME project (to CS and FCO), which is funded by the German Federal
+Ministry of Education and Research (BMBF). The funders had no role in the study design; data collection,
+analysis, or interpretation; manuscript preparation; or the decision to publish.
+Author Contribution
+CS and TW conceived the study and led the project. MW contributed to data interpretation and drafting
+of the manuscript. ML, IL, and AR contributed to biosample processing, laboratory analyses, and
+interpretation of the data. RG contributed to study development and manuscript preparation. BH
+supported statistical analyses and figure preparation. HH and LS contributed data from the healthy
+controls and provided expertise in retinal vessel analysis. FCO and LR provided neuro-ophthalmological
+and retinal vessel analysis expertise. All authors contributed to manuscript revision, approved the final
+version, and agree to be accountable for all aspects of the work.
+Acknowledgement
+We thank all participants for taking part in this study. We also thank the doctoral students involved in
+study conduct and data collection, in particular A. Woehnle, V. Kessler, and J. Negele.
+
+Page 25/39
+Data Availability
+De-identified participant-level data supporting the findings of this study are not publicly available due to
+ethical and data protection restrictions. Data are available from the corresponding authors upon
+reasonable request and subject to approval of a data access agreement and the relevant ethics
+requirements.
+References
+1. Lopez-Leon S, Wegman-Ostrosky T, Perelman C, Sepulveda R, Rebolledo P, Cuapio A et al. More Than
+50 Long-Term Effects of COVID-19: A Systematic Review and Meta-Analysis. Res Sq. 2021.
+2. Lai CC, Hsu CK, Yen MY, Lee PI, Ko WC, Hsueh PR, Long COVID. An inevitable sequela of SARS-CoV-2
+infection. J Microbiol Immunol Infect. 2023;56(1):1–9.
+3. Fernandez-de-Las-Peñas C, Notarte KI, Macasaet R, Velasco JV, Catahay JA, Ver AT, et al.
+Persistence of post-COVID symptoms in the general population two years after SARS-CoV-2
+infection: A systematic review and meta-analysis. J Infect. 2024;88(2):77–88.
+4. Scott A, Ansari W, Chambers R, Reimbaeva M, Mikolajczyk T, Benigno M, et al. Substantial health and
+economic burden of COVID-19 during the year after acute illness among US adults not at high risk of
+severe COVID-19. BMC Med. 2024;22(1):47.
+5. Soriano JB, Murthy S, Marshall JC, Relan P, Diaz JV. A clinical case definition of post-COVID-19
+condition by a Delphi consensus. Lancet Infect Dis. 2022;22(4):e102–7.
+6. Greenhalgh T, Sivan M, Perlowski A, Nikolich J. Long COVID: a clinical update. Lancet.
+2024;404(10453):707–24.
+7. Kedor C, Freitag H, Meyer-Arndt L, Wittke K, Hanitsch LG, Zoller T, et al. A prospective observational
+study of post-COVID-19 chronic fatigue syndrome following the first pandemic wave in Germany and
+biomarkers associated with symptom severity. Nat Commun. 2022;13(1):5104.
+8. Vernon SD, Zheng T, Do H, Marconi VC, Jason LA, Singer NG, et al. Incidence and Prevalence of Post-
+COVID-19 Myalgic Encephalomyelitis: A Report from the Observational RECOVER-Adult Study. J Gen
+Intern Med. 2025;40(5):1085–94.
+9. Østergaard L. SARS CoV-2 related microvascular damage and symptoms during and after COVID-19:
+Consequences of capillary transit-time changes, tissue hypoxia and inflammation. Physiol Rep.
+2021;9(3):e14726.
+10. Owens CD, Pinto CB, Szarvas Z, Muranyi M, da, Pinaffi-Langley C, Peterfi AC et al. A,. COVID-19
+Exacerbates Neurovascular Uncoupling and Contributes to Endothelial Dysfunction in Patients with
+Mild Cognitive Impairment. Biomolecules. 2024;14(12).
+11. Xu SW, Ilyas I, Weng JP. Endothelial dysfunction in COVID-19: an overview of evidence, biomarkers,
+mechanisms and potential therapies. Acta Pharmacol Sin. 2023;44(4):695–709.
+
+Page 26/39
+12. Wu X, Xiang M, Jing H, Wang C, Novakovic VA, Shi J. Damage to endothelial barriers and its
+contribution to long COVID. Angiogenesis. 2024;27(1):5–22.
+13. Bonaventura A, Vecchié A, Dagna L, Martinod K, Dixon DL, Van Tassell BW, et al. Endothelial
+dysfunction and immunothrombosis as key pathogenic mechanisms in COVID-19. Nat Rev Immunol.
+2021;21(5):319–29.
+14. Gupta G, Buonsenso D, Wood J, Mohandas S, Warburton D. Mechanistic Insights Into Long Covid:
+Viral Persistence, Immune Dysregulation, and Multi-Organ Dysfunction. Compr Physiol.
+2025;15(3):e70019.
+15. Choutka J, Jansari V, Hornig M, Iwasaki A. Unexplained post-acute infection syndromes. Nat Med.
+2022;28(5):911–23.
+16. McLaughlin M, Sanal-Hayes NEM, Hayes LD, Berry EC, Sculthorpe NF. People with Long COVID and
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome Exhibit Similarly Impaired Vascular Function.
+Am J Med. 2025;138(3):560–6.
+17. Fan BE, Wong SW, Sum CLL, Lim GH, Leung BP, Tan CW, et al. Hypercoagulability, endotheliopathy,
+and inflammation approximating 1 year after recovery: Assessing the long-term outcomes in COVID-
+19 patients. Am J Hematol. 2022;97(7):915–23.
+18. Chioh FW, Fong SW, Young BE, Wu KX, Siau A, Krishnan S et al. Convalescent COVID-19 patients are
+susceptible to endothelial dysfunction due to persistent immune activation. Elife. 2021;10.
+19. Maksoud R, Magawa C, Eaton-Fitch N, Thapaliya K, Marshall-Gradisnik S. Biomarkers for myalgic
+encephalomyelitis/chronic fatigue syndrome (ME/CFS): a systematic review. BMC Med.
+2023;21(1):189.
+20. Domingo JC, Battistini F, Cordobilla B, Zaragozá MC, Sanmartin-Sentañes R, Alegre-Martin J, et al.
+Association of circulating biomarkers with illness severity measures differentiates myalgic
+encephalomyelitis/chronic fatigue syndrome and post-COVID-19 condition: a prospective pilot
+cohort study. J Transl Med. 2024;22(1):343.
+21. Bruno RM, Badhwar S, Abid L, Agharazii M, Anastasio F, Bellien J et al. Accelerated vascular ageing
+after COVID-19 infection: the CARTESIAN study. Eur Heart J. 2025.
+22. Battistoni A, Volpe M, Morisco C, Piccinocchi G, Piccinocchi R, Fini M, et al. Persistent increase of
+cardiovascular and cerebrovascular events in COVID-19 patients: a 3-year population-based
+analysis. Cardiovasc Res. 2024;120(6):623–9.
+23. Xie Y, Xu E, Bowe B, Al-Aly Z. Long-term cardiovascular outcomes of COVID-19. Nat Med.
+2022;28(3):583–90.
+24. Haffke M, Freitag H, Rudolf G, Seifert M, Doehner W, Scherbakov N, et al. Endothelial dysfunction and
+altered endothelial biomarkers in patients with post-COVID-19 syndrome and chronic fatigue
+syndrome (ME/CFS). J Translational Med. 2022;20(1):138.
+25. Ståhlberg M, Fischer K, Tahhan M, Zhao A, Fedorowski A, Runold M, et al. Post-Acute COVID-19
+Syndrome: Prevalence of Peripheral Microvascular Endothelial Dysfunction and Associations With
+NT-ProBNP Dynamics. Am J Med. 2025;138(6):1019–28.
+
+Page 27/39
+26. Mavraganis G, Dimopoulou MA, Delialis D, Bampatsias D, Patras R, Sianis A, et al. Clinical
+implications of vascular dysfunction in acute and convalescent COVID-19: A systematic review. Eur
+J Clin Invest. 2022;52(11):e13859.
+27. Hosp JA, Reisert M, Dressing A, Götz V, Kellner E, Mast H, et al. Cerebral microstructural alterations
+in Post-COVID-condition are related to cognitive impairment, olfactory dysfunction and fatigue. Nat
+Commun. 2024;15(1):4256.
+28. Shah W, Gong Y, Qiao X, Lu Y, Ding Y, Zhang Z, et al. Exploring Endothelial Cell Dysfunction's Impact
+on the Brain-Retina Microenvironment Connection: Molecular Mechanisms and Implications. Mol
+Neurobiol. 2025;62(6):7484–505.
+29. Hanssen H, Streese L, Vilser W. Retinal vessel diameters and function in cardiovascular risk and
+disease. Prog Retin Eye Res. 2022;91:101095.
+30. Gunthner R, Lorenz G, Braunisch MC, Angermann S, Matschkal J, Hausinger R, et al. Endothelial
+dysfunction in retinal vessels of hemodialysis patients compared to healthy controls. Sci Rep.
+2024;14(1):13948.
+31. Seidelmann SB, Claggett B, Bravo PE, Gupta A, Farhad H, Klein BE, et al. Retinal Vessel Calibers in
+Predicting Long-Term Cardiovascular Outcomes: The Atherosclerosis Risk in Communities Study.
+Circulation. 2016;134(18):1328–38.
+32. Yatsuya H, Folsom AR, Wong TY, Klein R, Klein BE, Sharrett AR, et al. Retinal microvascular
+abnormalities and risk of lacunar stroke: Atherosclerosis Risk in Communities Study. Stroke.
+2010;41(7):1349–55.
+33. Takayanagi Y, Takai Y, Kaidzu S, Tanito M. Association between Systemic Antioxidant Capacity and
+Retinal Vessel Diameters in Patients with Primary-Open Angle Glaucoma. Life (Basel). 2020;10(12).
+34. Günthner R, Streese L, Angermann S, Lorenz G, Braunisch MC, Matschkal J, et al. Mortality
+prediction of retinal vessel diameters and function in a long-term follow-up of haemodialysis
+patients. Cardiovascular Res. 2022;118(16):3239–49.
+35. van Dinther M, Voorter PHM, Schram MT, Berendschot T, Houben A, Webers CAB, et al. Retinal
+microvascular function is associated with the cerebral microcirculation as determined by intravoxel
+incoherent motion MRI. J Neurol Sci. 2022;440:120359.
+36. Kuchler T, Hausinger R, Braunisch MC, Günthner R, Wicklein R, Knier B et al. All eyes on PCS: analysis
+of the retinal microvasculature in patients with post-COVID syndrome-study protocol of a 1 year
+prospective case-control study. Eur Arch Psychiatry Clin Neurosci. 2023.
+37. Bahmer T, Borzikowsky C, Lieb W, Horn A, Krist L, Fricke J, et al. Severity, predictors and clinical
+correlates of Post-COVID syndrome (PCS) in Germany: A prospective, multi-centre, population-based
+cohort study. EClinicalMedicine. 2022;51:101549.
+38. O'Connor RJ, Preston N, Parkin A, Makower S, Ross D, Gee J, et al. The COVID-19 Yorkshire
+Rehabilitation Scale (C19-YRS): Application and psychometric analysis in a post-COVID-19
+syndrome cohort. J Med Virol. 2022;94(3):1027–34.
+
+Page 28/39
+39. Krupp LB, Alvarez LA, LaRocca NG, Scheinberg LC. Fatigue in multiple sclerosis. Arch Neurol.
+1988;45(4):435–7.
+40. Costantini L, Pasquarella C, Odone A, Colucci ME, Costanza A, Serafini G, et al. Screening for
+depression in primary care with Patient Health Questionnaire-9 (PHQ-9): A systematic review. J
+Affect Disord. 2021;279:473–83.
+41. Spitzer RL, Kroenke K, Williams JB, Löwe B. A brief measure for assessing generalized anxiety
+disorder: the GAD-7. Arch Intern Med. 2006;166(10):1092–7.
+42. Herdman M, Gudex C, Lloyd A, Janssen M, Kind P, Parkin D, et al. Development and preliminary
+testing of the new five-level version of EQ-5D (EQ-5D-5L). Qual Life Res. 2011;20(10):1727–36.
+43. Carruthers BM, Jain AK, De Meirleir KL, Peterson DL, Klimas NG, Lerner AM, et al. Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome. J Chronic Fatigue Syndrome. 2003;11(1):7–115.
+44. Kuchler T, Günthner R, Ribeiro A, Hausinger R, Streese L, Wöhnl A, et al. Correction: Persistent
+endothelial dysfunction in post-COVID-19 syndrome and its associations with symptom severity and
+chronic inflammation. Angiogenesis. 2023;26(4):565.
+45. Nagel E, Vilser W, Lanzl I. Age, blood pressure, and vessel diameter as factors influencing the arterial
+retinal flicker response. Invest Ophthalmol Vis Sci. 2004;45(5):1486–92.
+46. Kotliar KE, Lanzl IM, Schmidt-Trucksäss A, Sitnikova D, Ali M, Blume K, et al. Dynamic retinal vessel
+response to flicker in obesity: A methodological approach. Microvasc Res. 2011;81(1):123–8.
+47. Ponto KA, Werner DJ, Wiedemer L, Laubert-Reh D, Schuster AK, Nickels S, et al. Retinal vessel
+metrics: normative data and their use in systemic hypertension: results from the Gutenberg Health
+Study. J Hypertens. 2017;35(8):1635–45.
+48. Yuen VL, Zhang XJ, Ling X, Zhang Y, Kam KW, Chen LJ, et al. Effects of firsthand tobacco smoking
+on retinal vessel caliber: a systematic review and meta-analysis. Graefes Arch Clin Exp Ophthalmol.
+2024;262(5):1397–407.
+49. Hanssen H, Streese L, Vilser W. Retinal vessel diameters and function in cardiovascular risk and
+disease. Prog Retin Eye Res. 2022;91:101095.
+50. Lambadiari V, Mitrakou A, Kountouri A, Thymis J, Katogiannis K, Korakas E, et al. Association of
+COVID-19 with impaired endothelial glycocalyx, vascular function and myocardial deformation 4
+months after infection. Eur J Heart Fail. 2021;23(11):1916–26.
+51. Dominic P, Ahmad J, Bhandari R, Pardue S, Solorzano J, Jaisingh K, et al. Decreased availability of
+nitric oxide and hydrogen sulfide is a hallmark of COVID-19. Redox Biol. 2021;43:101982.
+52. Lip S, Tran TQB, Hanna R, Nichol S, Guzik TJ, Delles C, et al. Long-term effects of SARS-CoV-2
+infection on blood vessels and blood pressure - LOCHINVAR. J Hypertens. 2025;43(6):1057–65.
+53. Charfeddine S, Ibn Hadj Amor H, Jdidi J, Torjmen S, Kraiem S, Hammami R et al. Long COVID 19
+Syndrome: Is It Related to Microcirculation and Endothelial Dysfunction? Insights From TUN-
+EndCOV Study. Front Cardiovasc Med. 2021;8.
+
+Page 29/39
+54. Kozłowski P, Śmiarowski M, Przyborska W, Zemlik K, Małecka-Giełdowska M, Leszczyńska A, et al.
+Mild-to-Moderate COVID-19 Convalescents May Present Pro-Longed Endothelium Injury. J Clin Med.
+2022;11:21.
+55. Oikonomou E, Souvaliotis N, Lampsas S, Siasos G, Poulakou G, Theofilis P, et al. Endothelial
+dysfunction in acute and long standing COVID-19: A prospective cohort study. Vascul Pharmacol.
+2022;144:106975.
+56. Ambrosino P, Sanduzzi Zamparelli S, Mosella M, Formisano R, Molino A, Spedicato GA, et al. Clinical
+assessment of endothelial function in convalescent COVID-19 patients: a meta-analysis with meta-
+regressions. Ann Med. 2022;54(1):3233–48.
+57. Zanoli L, Gaudio A, Mikhailidis DP, Katsiki N, Castellino N, Lo Cicero L, et al. Vascular Dysfunction of
+COVID-19 Is Partially Reverted in the Long-Term. Circul Res. 2022;130(9):1276–85.
+58. Zhang C, Cheng S, Chen H, Yang J, Chen Y. New findings on retinal microvascular changes in
+patients with primary COVID-19 infection: a longitudinal study. Front Immunol. 2024;15:1404785.
+59. Greene C, Connolly R, Brennan D, Laffan A, O'Keeffe E, Zaporojan L, et al. Author Correction: Blood-
+brain barrier disruption and sustained systemic inflammation in individuals with long COVID-
+associated cognitive impairment. Nat Neurosci. 2024;27(5):1019.
+60. Kedor C, Freitag H, Meyer-Arndt L, Wittke K, Hanitsch LG, Zoller T, et al. A prospective observational
+study of post-COVID-19 chronic fatigue syndrome following the first pandemic wave in Germany and
+biomarkers associated with symptom severity. Nat Commun. 2022;13(1):5104.
+61. Braga J, Lepra M, Kish SJ, Rusjan PM, Nasser Z, Verhoeff N, et al. Neuroinflammation After COVID-
+19 With Persistent Depressive and Cognitive Symptoms. JAMA Psychiatry. 2023;80(8):787–95.
+62. Greene C, Connolly R, Brennan D, Laffan A, O'Keeffe E, Zaporojan L, et al. Blood-brain barrier
+disruption and sustained systemic inflammation in individuals with long COVID-associated cognitive
+impairment. Nat Neurosci. 2024;27(3):421–32.
+63. Jacobs LMC, Wintjens M, Nagy M, Willems L, Ten Cate H, Spronk HMH, et al. Biomarkers of
+sustained systemic inflammation and microvascular dysfunction associated with post-COVID-19
+condition symptoms at 24 months after SARS-CoV-2-infection. Front Immunol. 2023;14:1182182.
+64. Prasanna G, Krishnamoorthy R, Yorio T. Endothelin, astrocytes and glaucoma. Exp Eye Res.
+2011;93(2):170–7.
+65. de Jong FJ, Schrijvers EM, Ikram MK, Koudstaal PJ, de Jong PT, Hofman A, et al. Retinal vascular
+caliber and risk of dementia: the Rotterdam study. Neurology. 2011;76(9):816–21.
+66. Arnould L, Soumaré A, D'Aoust T, Lima Rebouças SC, Bordes C, Crivello F, et al. Retinal Microvascular
+Correlates of Cerebral Small Vessel Disease in Older Age. Neurology. 2025;105(9):e214251.
+67. Jiang K, Power MC, Bandeen-Roche K, Griswold ME, Albert MS, Knopman DS, et al. Midlife Retinal
+Microvascular Signs and Late-Life Neuroimaging Features of Cerebral Small Vessel Disease in the
+ARIC Study. Neurology. 2025;105(4):e213919.
+68. Luyten LJ, Dockx Y, Madhloum N, Sleurs H, Gerrits N, Janssen BG, et al. Association of Retinal
+Microvascular Characteristics With Short-term Memory Performance in Children Aged 4 to 5 Years.
+
+Page 30/39
+JAMA Netw Open. 2020;3(7):e2011537.
+69. Russell L, Broderick G, Taylor R, Fernandes H, Harvey J, Barnes Z, et al. Illness progression in chronic
+fatigue syndrome: a shifting immune baseline. BMC Immunol. 2016;17:3.
+70. Missailidis D, Sanislav O, Allan CY, Annesley SJ, Fisher PR. Cell-Based Blood Biomarkers for Myalgic
+Encephalomyelitis/Chronic Fatigue Syndrome. Int J Mol Sci. 2020;21(3).
+71. Hunter E, Alshaker H, Bundock O, Weston C, Bautista S, Gebregzabhar A, et al. Development and
+validation of blood-based diagnostic biomarkers for Myalgic Encephalomyelitis/Chronic Fatigue
+Syndrome (ME/CFS) using EpiSwitch(®) 3-dimensional genomic regulatory immuno-genetic
+profiling. J Transl Med. 2025;23(1):1048.
+72. Ferrando SJ, Lynch ST, Dornbush R, Groenendaal E, Klepacz L, Shahar S, et al. Associations of
+elevated pro-inflammatory cytokines Interleukin-6, C-reactive protein and tumor necrosis factor
+alpha with neuropsychiatric symptoms of post-acute sequelae of COVID-19 (PASC). J Psychiatr Res.
+2025;190:128–36.
+73. Nuber-Champier A, Breville G, Voruz P, Jacot de Alcântara I, Cionca A, Allali G, et al. Systemic
+cytokines related to memory function 6–9 months and 12–15 months after SARS-CoV-2 infection.
+Sci Rep. 2024;14(1):22660.
+74. Tilikete C, Zamali I, Meddeb Z, Kharroubi G, Marzouki S, Dhaouadi T, et al. Exploring the landscape of
+symptom-specific inflammatory cytokines in post-COVID syndrome patients. BMC Infect Dis.
+2024;24(1):1337.
+75. Ogando NS, Elaish M, Mahabadi HM, Langdon KD, Das SK, Joseph JT et al. Immunometabolism
+perturbations in post-COVID-19 condition: interleukin-6 and monoamine oxidase interactions drive
+neuropsychiatric syndromes. Brain, Behavior, and Immunity. 2025;129:690–708.
+76. García-Juárez M, Camacho-Morales A. Defining the Role of Anti- and Pro-inflammatory Outcomes of
+Interleukin-6 in Mental Health. Neuroscience. 2022;492:32–46.
+77. Hanson AL, Mulè MP, Ruffieux H, Mescia F, Bergamaschi L, Pelly VS, et al. Iron dysregulation and
+inflammatory stress erythropoiesis associates with long-term outcome of COVID-19. Nat Immunol.
+2024;25(3):471–82.
+78. Lefebvre T, Boutten A, Raulet-Bussian C, Raynor A, Manceau H, Puy H, et al. Evaluation of iron
+metabolism in hospitalized COVID-19 patients. Clin Chim Acta. 2023;548:117509.
+79. Evans PC, Rainger GE, Mason JC, Guzik TJ, Osto E, Stamataki Z, et al. Endothelial dysfunction in
+COVID-19: a position paper of the ESC Working Group for Atherosclerosis and Vascular Biology, and
+the ESC Council of Basic Cardiovascular Science. Cardiovasc Res. 2020;116(14):2177–84.
+80. Alexander Y, Osto E, Schmidt-Trucksäss A, Shechter M, Trifunovic D, Duncker DJ, et al. Endothelial
+function in cardiovascular medicine: a consensus paper of the European Society of Cardiology
+Working Groups on Atherosclerosis and Vascular Biology, Aorta and Peripheral Vascular Diseases,
+Coronary Pathophysiology and Microcirculation, and Thrombosis. Cardiovascular Res.
+2020;117(1):29–42.
+
+Page 31/39
+Figures
+Figure 1
+Retinal microvascular parameters in PCS patients and HC. Box plots show dynamic retinal vessel
+analysis (DVA) parameters: venular flicker-induced dilation (vFID; PCS n = 100, HC n = 195; a) and
+arteriolar flicker-induced dilation (aFID; PCS n = 100, HC n = 195; b), and static retinal vessel analysis
+
+Page 32/39
+(SVA) parameters: central retinal venular equivalent (CRVE; c), central retinal arteriolar equivalent (CRAE;
+d), and arteriolar-to-venular ratio (AVR; PCS n = 102, HC n = 199; e) in age- and sex-matched PCS patients
+(red) and healthy controls (blue). Box plots indicate the median (horizontal line) and mean (black dot).
+Each data point represents one eye from one individual (one eye analyzed per participant). Group
+comparisons were performed using the Mann-Whitney U test for non-normally distributed variables and
+Welch’s two-sample t-test for normally distributed variables. Forest plots (f) display standardized β
+coefficients with 95% confidence intervals from multivariable linear regression models assessing the
+independent association of PCS status with vFID, CRAE, and AVR, adjusted for arterial hypertension and
+hypercholesterolemia. Statistical significance is indicated as *p < 0.05.
+
+Page 33/39
+Figure 2
+Retinal microvascular parameters across never infected, recovered, and PCS cohorts. Box plots show
+DVA parameters vFID and aFID (never infected n = 95; recovered n = 92; PCS n = 100; a, b), and SVA
+parameters CRAE (c), CRVE (d), and AVR (never infected n = 94; recovered n = 99; PCS n = 102; e).
+Groups are visualized as never infected (grey), recovered (light blue), and PCS (red). Box plots indicate
+the median (horizontal line) and mean (black dot). Each data point represents one eye from one
+
+Page 34/39
+individual (one eye analyzed per participant). Group comparisons were performed using one-way ANOVA
+for normally distributed variables or the Kruskal-Wallis test for non-normally distributed variables. Post-
+hoc pairwise comparisons were conducted using Tukey’s honestly significant difference (HSD) test for
+ANOVA models and Dunn’s test with multiplicity correction for Kruskal-Wallis models.
+Figure 3
+
+Page 35/39
+Associations between RVA parameters and PCS symptom burden. (a–b, d–e) Pearson correlations
+between RVA parameters and symptom scores in PCS patients. Panels a–b show correlations between
+AVR and the PCS Severity Score (a) and C19-YRS (b). Panels d–e show corresponding correlations for
+aFID with the PCS Severity Score (d) and C19-YRS (e). Points represent individual patients; the solid line
+indicates the linear regression fit and the shaded band the 95% confidence interval. Pearson correlation
+coefficients (r) and p-values are shown in each panel.
+(c, f) Forest plots display standardized β-coefficients with 95% confidence intervals from multivariable
+regression models assessing the association of AVR (c) or aFID (f) with the PCS Severity Score after
+adjustment for BMI and gender. Statistical significance is indicated as *p < 0.05.
+(g–h) Box plots show the distribution of AVR (g) and aFID (h) across three symptom severity groups in
+PCS patients (black) and recovered individuals (grey). The PCS Severity Score was categorized into low
+(green), moderate (blue), and high (red) severity using fixed cutoffs (<10, 10–30, >30; colors as
+indicated). Box plots indicate the median (horizontal line) and individual observations. Group
+comparisons were performed using one-way ANOVA for normally distributed variables. Post-hoc
+comparisons were conducted using Tukey’s HSD for ANOVA models. Each data point represents one eye
+from one individual (one eye analyzed per participant).
+
+Page 36/39
+Figure 4
+Retinal microvascular parameters and biomarker-based discrimination of ME/CFS. (a–c) Box plots of the
+DVA parameter vFID (a) and SVA parameters CRAE (b) and AVR (c) across four cohorts: never infected (n
+= 96, cornsilk), PCS with ME/CFS (n = 62, red), PCS without ME/CFS (n = 39, dark red), and recovered
+individuals (n = 102, light blue). Box plots indicate the median (horizontal line) and mean (black dot).
+Group comparisons were performed using one-way ANOVA for normally distributed variables or the
+
+Page 37/39
+Kruskal-Wallis test for non-normally distributed variables, with post-hoc testing using Tukey’s honestly
+significant difference (HSD) test for ANOVA models or Dunn’s test with multiplicity correction for
+Kruskal-Wallis models. Adjusted p-values are shown above group comparisons. Each data point
+represents one eye from one individual (one eye analyzed per participant).
+(d) Receiver operating characteristic (ROC) curves for individual biomarkers discriminating PCS patients
+fulfilling ME/CFS criteria from recovered individuals and PCS patients without ME/CFS. Variables include
+AVR (dark blue), creatine kinase (CK; red), C-reactive protein (CRP; light blue), interleukin-6 (IL-6; green),
+low-density lipoprotein cholesterol (LDL; orange), and transferrin (purple) (colors as indicated).
+(e) ROC curve showing discrimination between ME/CFS patients and the combined comparator group
+(recovered individuals and PCS patients without ME/CFS) using a multivariable model integrating AVR,
+CK, ICAM-1, IL-6, transferrin, and neutrophils. Area under the curve (AUC) with 95% confidence interval
+(CI) was calculated using DeLong’s method.
+
+Page 38/39
+Figure 5
+Circulating inflammatory and endothelial dysfunction markers in PCS and their associations with retinal
+microvascular parameters. (a–g) Violin plots illustrate circulating levels of inflammatory markers (IL-6,
+MCP-1, CXCL-10, CCL-5) and endothelial dysfunction markers (ICAM-1, VCAM-1, VEGF) in recovered
+individuals (light blue) and patients with PCS (red). Individual data points represent single participants.
+Box plots indicate the median (black line) and interquartile range (IQR). Group comparisons were
+
+Page 39/39
+performed using the Wilcoxon rank-sum test for non-normally distributed variables and Welch’s two-
+sample t-test for normally distributed variables, as appropriate. IL-6, CXCL-10, MCP-1, ICAM-1, VCAM-1,
+CCL-5, and VEGF were measured in n = 90 recovered individuals and n = 100 PCS patients.
+(h) Forest plot illustrating age-adjusted associations between ME/CFS status and seven circulating
+biomarkers. Effect sizes are presented as standardized differences (SD units) with 95% confidence
+intervals derived from regression models adjusted for age. Statistically significant associations are
+highlighted in red (as indicated, p<0.05).
+(i) Correlation heatmap showing significant Spearman correlations (p < 0.05) between selected
+laboratory parameters and retinal vessel analysis (RVA) parameters AVR, CRAE, CRVE, vFID, and aFID in
+PCS patients. Spearman’s ρ is color-coded from +1 (yellow, positive correlation) to −1 (blue, negative
+correlation).
+Supplementary Files
+This is a list of supplementary files associated with this preprint. Click to download.
+SupplementalTablesandFiguresMicrovascularRemodeling.pdf
