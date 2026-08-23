@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-22",
+  "last_check": "2026-08-23",
   "papers": [
     {
       "id": "woo-2026-cortisol-hpa-axis-meta-analysis",
@@ -2143,11 +2143,9 @@
       "why": "Proposes a broader way of studying and eventually treating PEM by tracking the heart and metabolism together over time after exertion, rather than looking at one body system at a time — a framework that could help design better drug trials aimed specifically at PEM.",
       "link": "https://doi.org/10.1186/s12933-026-03316-8",
       "first_seen": "2026-08-22",
-      "last_checked": "2026-08-22",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-08-23",
+      "flags": [],
+      "isNew": false,
       "notes": "Cardiovascular Diabetology 25:250, published online 2026-08-20 (PMID 42625219). Perspective/editorial, no new patient data. Co-authored by Etheresia Pretorius (prominent microclot/coagulation researcher) — topically adjacent to the vascular/microcirculation pathomechanism space Wirth also works in, but not Wirth/Scheibenbogen-authored. Confirmed via PubMed/Europe PMC and publisher DOI record."
     },
     {
@@ -2160,11 +2158,9 @@
       "why": "Offers a simple, non-invasive eye test as a way to spot and measure the blood-vessel problems thought to underlie ME/CFS, which could help diagnose patients earlier and track whether future vascular-targeted treatments are actually working.",
       "link": "https://doi.org/10.1186/s12916-026-05144-9",
       "first_seen": "2026-08-22",
-      "last_checked": "2026-08-22",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-08-23",
+      "flags": [],
+      "isNew": false,
       "notes": "BMC Medicine 24:456, published online 2026-08-19 (PMID 42625188), NCT05635552 ('All Eyes on PCS'). TU Munich (Dept. of Nephrology, lead) with Charité co-authors (Oertel, Reeß — Experimental & Clinical Research Center) but not Wirth/Scheibenbogen-authored. n=96 never-infected controls, 102 SARS-CoV-2-recovered, 102 post-COVID syndrome (62 meeting ME/CFS criteria); retinal vessel analysis (dynamic + static) showed reduced flicker-induced venular dilation, narrower retinal arterioles, and lower arteriolar-to-venular ratio in PCS patients (most pronounced in the ME/CFS subgroup, AUC=0.79), correlating with symptom burden and elevated IL-6/ICAM-1/VCAM-1. Confirmed via PubMed/Europe PMC and publisher DOI record."
     }
   ]
