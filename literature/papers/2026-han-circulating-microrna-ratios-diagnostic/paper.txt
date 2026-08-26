@@ -1,0 +1,1307 @@
+communications medicine
+Article
+A Nature Portfolio journal
+Article in Press
+https://doi.org/10.1038/s43856-026-01854-6
+Circulating MicroRNA ratios as diagnostic
+biomarkers for long COVID with an
+independent validation cohort
+Check for updates
+Emilie Han
+1,2, Dominika Lukovic
+1, Katrin Müller-Zlabinger1, Ena Hasimbegovic1,
+Katharina Schefberger
+1, Nina Kastner
+1, Andreas Spannbauer
+1, Martin Riesenhuber
+1,
+Christian Nitsche1, Thomas A. Zelniker
+1, Mariann Gyöngyösi
+1
+& Kevin Hamzaraj1
+Abstract
+Background Long COVID is a multisystemic condition with heterogeneous clinical
+presentations lacking diagnostic biomarkers with discriminatory capacity. This study
+screened circulating microRNAs as candidate biomarkers for long COVID detection by
+miRNA-sequencing, followed by targeted qPCR quantiﬁcation focusing on miRNA ratios to
+reduce technical variability.
+Methods Overall, 206 long COVID patients ( > 12 weeks after acute infection) and 71
+uninfected, unvaccinated healthy controls were recruited through our prospective
+POSTCOV registry. Candidate microRNAs were screened by microRNA sequencing and
+quantiﬁed by targeted quantitative polymerase chain reaction, focusing on microRNA ratios
+expressed as cycle-threshold differences. In a training cohort, we developed a logistic
+regression model based on two microRNA ratios with age and sex as covariates. Internal
+validation was evaluated using cross validation and bootstrap. We then test the model in an
+independent external validation cohort processed with the same normalization and ratio
+deﬁnition.
+Results Here weshow both microRNA ratios (hsa-miR-484/hsa-miR-126-3p, hsa-miR-345-
+5p/hsa-miR-223-3p) are inversely associated with long COVID. Discrimination in the training
+cohort is moderate (AUC: 0.760), with acceptable calibration (intercept ~0, slope ~1, Brier
+score 0.131). In external validation, discrimination decreases (AUC: 0.676) and calibration
+reveals systematic risk overestimation (intercept −1.88, slope 0.77). Nevertheless, both
+ratios are consistently lower in long COVID compared to controls.
+Conclusion Consistent between-group ratio differences support these microRNAs as
+candidate biomarkers, whereas limited external model performance highlights the
+challenges of transportability in heterogeneous long COVID cohorts. Target enrichment
+indicates inﬂammatory signaling pathways and integration with drug perturbation proﬁles
+suggests compounds for future validation and repurposing studies.
+In May 2023, the World HealthOrganization (WHO)stated that after three
+years of the COVID-19 pandemic, the disease had become an established,
+thoughongoing,publichealthproblem,butdidnotrepresentaglobalhealth
+crisis anymore1. The number of newly diagnosed COVID-19 cases has been
+gradually decreasing worldwide, but in the aftermath, a group of people is
+left,whosufferfromlonglastingsymptomsaffectingmultipleorgansystems
+after a SARS-CoV-2 infection2. This post-acute sequelae SARS-CoV-2
+infection (PASC), also known as “long COVID” (LC), is a new syndrome,
+and although shares some similarities with other known post-viral syn-
+dromes, still requires further investigations to elucidate pathomechanisms,
+1Department of Internal Medicine II, Division of Cardiology, Medical University of Vienna, Vienna, Austria. 2Department of Transfusion Medicine and Cell Therapy,
+Medical University of Vienna, Vienna, Austria.
+e-mail: mariann.gyongyosi@meduniwien.ac.at
+Plain Language Summary
+Long COVID is a serious condition resulting
+from SARS-CoV-2 infection. It is associated
+with persistent symptoms affecting multiple
+organ systems, yet objective blood-based
+markers that could support clinical assess-
+ment remain limited. This study evaluates
+whether small molecules measurable in
+blood, known as microRNAs, differ between
+individuals with long COVID and non-long
+COVID controls. We used a stepwise
+approach: an initial screen to identify candi-
+date microRNAs, conﬁrmation by a method
+called RT-qPCR, and testing of a microRNA
+ratio-based prediction model in an indepen-
+dent validation cohort. Several microRNA
+ratios show consistent differences between
+long COVID and controls, while the model
+performance was decreased in external vali-
+dation,suggestingsensitivitytocohortand/or
+technical differences. These ﬁndings support
+circulating microRNAs as a promising signal
+for future diagnostic support, but further vali-
+dation in larger, well-matched populations is
+required before clinical implementation.
+Communications Medicine
+Article in Press
+1234567890():,;
+1234567890():,;
+
+disease course, therapeutic options, and prognostic outlook3. The general
+consensus regarding the deﬁnition of long COVID is the persistent burden
+of symptoms at 12 weeks after a SARS-CoV-2 infection, irrespective of
+whether individuals failed to recover from their initial symptoms or
+experienced newly emerging symptoms following an apparent convalescent
+period. Diagnosis of long COVID is mainly achieved by the process of
+elimination of other illnesses that may cause similar symptoms4. However,
+due to the heterogenous presentation forms and different clusters of
+symptoms, this approach requires generous time and resources. Therefore,
+the lack of diagnostic biomarkers and therapeutic targets for long COVID is
+an ongoing research gap requiring further studies5. For some LC pre-
+sentationtypes(mainlyneurologicalorpulmonarysymptoms),interleukin-
+6(IL-6),C-reactiveprotein(CRP),andtumornecrosisfactoralpha(TNF-α)
+were proposed as such blood biomarkers6.
+MicroRNAs (miRNAs), short single-stranded non-coding RNA
+molecules usually around 17 to 22 nucleotides long, are stably expressed in
+the blood and could be used as liquid biopsies7. This makes them interesting
+as potential diagnostic biomarkers due to their involvement in many reg-
+ulatory and structural housekeeping pathways8. Moreover, miRNA ratios
+frombothtissueand circulatingmiRNAs have beendeveloped as diagnostic
+tools for discriminating melanoma from nevi or breast cancer screening9,10.
+In chronic heart failure, selected miRNAs have been extensively studied as
+biomarkerstopredictfuturehospitalisation11.InacuteCOVID-19infection,
+some miRNAs have been found to be associated with disease severity and
+mortality in hospitalized COVID-19 patients12. Other studies have also
+implicated potential miRNAs for their role in the pathomechanisms of pain
+symptoms in long COVID13.
+Beyond the potential as a biomarker, miRNAs may also offer
+mechanistic insights into disease processesand epigenetic regulation, which
+can be useful for informing therapeutic strategies by revealing candidate
+compounds that modulate relevant pathways. Lately, advances in tran-
+scriptomics and machine learning have enabled drug repurposing efforts by
+matching disease-related gene expression signatures with known pharma-
+cological proﬁles, thus accelerating the identiﬁcation of therapeutic leads
+from existing compounds14. As of yet, no speciﬁc drug has been approved
+for the treatment of long COVID, due to the lack of knowledge on the exact
+disease mechanisms. Given the hypothesized role of persistent endothelial
+dysfunction, coagulation abnormalities and prolonged inﬂammation in
+long COVID, antiviral, immune modulation, anticoagulation, antiplatelet
+and inhibition of neutrophil extracellular trap (NET) formation have been
+proposed as possible therapies15. Hence, the need for evidence-based ther-
+apeutic options besides supportive care and cardiopulmonary rehabilitation
+remainspertinent,particularlyforworking-ageadultswhosequalityoflifeis
+gravely affected16; in this context, the integration of transcriptomics-
+informed drug repurposing into evolving treatment frameworks offers a
+promising outlook to lessen long COVID symptom burden.
+Thisstudyaims toidentifydifferentiallyexpressed circulatingmiRNAs
+in long COVID patients with predominant cardiovascular, pulmonary, or
+neurological symptoms using a two-step approach consisting of miRNA-
+seq followed by RT-qPCR and additional external validation of the con-
+structed miRNA ratio prediction model with a test cohort. Across cohorts,
+the key miRNA ratios remain directionally consistent betweenlong COVID
+and controls, supporting their potential as reproducible biomarker signals.
+Predicted mRNA targets of the prioritized miRNAs implicate pathways
+related to immune signaling, vascular biology and cellular stress responses,
+which provides mechanistic hypotheses for long COVID pathophysiology.
+Methods
+Study population
+This study was conducted in compliance with the Helsinki Declaration and
+with approval of the local ethics review board of the Medical University of
+Vienna (EC registration number: 1008/2021 approval date: 24 February
+2021, and EC registration number: 1758/2022 approval date: 11 November
+2022, ClinicalTrials.gov Identiﬁer: NCT05398952). Study participants were
+recruited consecutively and gave their written informed consent. Long
+COVID patients were prospectively enrolled in the Vienna PostCOV
+Registry between March 2021 and April 2023 from our specialized long
+COVID outpatient clinic,while the healthy controls were recruited between
+May 2020 and June 2020, who were all COVID-naive and non-vaccinated
+(EC registration number: 1387/2020 approval date: 20 April 2020).
+Adult patients with long COVID symptoms after a deﬁnitive infection
+with SARS-CoV-2(conﬁrmed by PCR test),aftera minimum of 12 weeksof
+acute infection, were included in this study and further characterized into
+three subgroups according to their main symptom burden: cardiovascular
+(Cardio), pulmonary (Pulmo) and neurological/neuropsychiatric (Neuro)
+(Study ﬂowchart: Fig. 1). These symptom groups were formed based on
+reports from existing literature and in accordance with the core outcome set
+for post-COVID-19 condition of the international Delphi consensus
+study17,18. Long COVID patients with chest pain, palpitations, abnormalities
+in left ventricular or right ventricular pump function, chronic pericarditis/
+myocarditis proven by cardiac magnetic resonance imaging, or new heart
+rhythm disorders without respiratory abnormalities (normal chest X-ray,
+lungfunctionandchestcomputertomography)wereclassiﬁedastheCardio
+group. Pulmo group patients were described as having resting or exertional
+dyspnea with pathological lung function or residual opacity in chest CT,
+without cardiac manifestation of long COVID syndrome. Patients with no
+objective organ disease pertaining to heart or lung were characterized into
+the Neuro group, if their main symptoms involved fatigue, headaches,
+concentration difﬁculties, vegetative symptoms and paresthesia. Exclusion
+criteria were non-willingness to participate or withdrawal of informed
+consent, participation in any SARS-CoV-2 pharmacological trial, preg-
+nancy, renal insufﬁciency (glomerular ﬁltration rate <45 ml/min/1.73 m2)
+or systemic inﬂammatory disease.
+Clinical parameters
+As part of the standardized workup of long COVID patients at our out-
+patient clinic specialized for post-COVID conditions at the Department of
+Internal Medicine II, Division of Cardiology, of the Medical University of
+Vienna, type and severity of long COVID symptoms, date of COVID-19
+infection(s), medical history and comorbidities, vital parameters, current
+medication and COVID vaccinations were recorded. Clinical ﬁndings and
+reports of blood and imaging tests performed prior to their baseline visit
+(such as lab work, spirometry, chest X-ray, cardiac MRI) were recorded, as
+well as the results of a venous blood draw and electrocardiogram (ECG) on
+the day of the baseline visit. Quality of life was assessed with the EQ-5D-3L
+questionnaire in German, including a visual analogue scale (VAS) for
+general quality of life (range 0 /worst/–100 /best/)19.
+Sample collection and processing
+Serum and EDTA-plasma samples were obtained through peripheral
+venipuncture at baseline and follow-up visits. EDTA-plasma samples were
+processed immediately by centrifugation and frozen at −80 °C until further
+analysis at the central biobank of the Medical University of Vienna. Serum
+samples were left standing to allow for clotting for 15 min before cen-
+trifugation for 15 min at 1500 g at 4 °C and then frozen at −80 °C until
+further analysis at the central biobank of the Medical University of Vienna.
+Blood count, coagulation, electrolytes, kidney function, liver function, car-
+diac enzymes and inﬂammatory parameters were processed and measured
+by standard routine protocols at the diagnostic laboratory of the Depart-
+ment of Laboratory Medicine, Medical University of Vienna. Standard
+routine diagnostic tests were conducted on a cobas e801 analyzer (Roche) at
+the diagnostic laboratory of the Department of Laboratory Medicine,
+Medical University of Vienna, to measure total protein, albumin, ferritin,
+CRP, high-density lipoproteins (HDL) and low-density lipoproteins (LDL).
+RNA extraction
+Total RNA was extracted from samples using Maxwell RSC miRNA Tissue
+Kit (Promega, Germany, cat. no. AS1460) in combination with the Maxwell
+RSC48 instrument. Samples were centrifuged for 5 minutes at 12000 g at
+4 °C to remove cellular debris. For each sample, 200 µL sample or 100 µL
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+sample with 100 µL water were homogenized with 200 µL homogenization
+mix which consist of homogenization buffer and thioglycerol. Further
+200 µL lysis buffer and 15 µL proteinase K were added. A synthetic RNA
+oligonucleotide mix obtained from the miRCURY Spike-In kit (Qiagen,
+Germany, cat. no. 339390) is added to each sample at equimolar amounts
+prior to RNA extraction. These spike-ins will be subsequently used to
+monitor RNA extraction efﬁciency. Samples were vortexed and incubated
+for 2 h at +37 °C followed by automated RNA extraction on the Maxwell
+RSC instrument. Finally, total RNA was eluted in 50 µL nuclease free water
+and stored at −80 °C until further analysis.
+RNA sequencing and library preparation
+Sequencing was performed in SR100 mode on Illumina’s NovaSeq 6000
+device using the SP ﬂowcell. Overall quality of the next-generation
+sequencing (NGS) data was evaluated automatically and manually with
+fastQC v0.11.9 and multiQC v1.1020,21. Reads from all passing samples were
+adapter trimmed and quality ﬁltered using cutadapt v3.3 and ﬁltered for a
+minimum length of 17nt22. Mapping steps were performed with bowtie
+v1.3.023 and miRDeep2 v2.0.1.224, whereas reads were mapped ﬁrst against
+thegenomicreferenceGRCh38.p12providedbyEnsembl25allowingfortwo
+mismatches, and subsequently26, ﬁltered for miRNAsof hsa (Homo sapiens)
+only, allowing for one mismatch. Statistical analysis of pre-processed NGS
+data was done with R v4.027.
+Analysis of differentially expressed microRNAs
+Atstudydesign,nodatawereavailableregardingmiRNAsassociatedtolong
+COVID disease, so the sample size and power calculation could only be
+estimated based on existing miRNA literature data in other diseases28. The
+discovery sequencing phase was therefore planned as an exploratory screen
+informed by prior small RNA-seq studies and intended to nominate can-
+didates for downstream veriﬁcation. With 20 participants per group, a
+comparison at two-sided α = 0.05 provides approximately 80% power to
+detect a standardized mean difference of Cohen’s d ≈0.91, which corre-
+sponds to an expression difference of about ~1.5-fold change. Differential
+expression in the discovery phase was assessed using false discovery rate
+(FDR) control at 0.2 for a balanceof type I and type II error rates. Candidate
+miRNAs taken forward to RT-qPCR were selected based on a combination
+of (i) FDR-signiﬁcant differential expression and effect size ranking in the
+discovery phase and (ii) a priori biological or clinical relevance supported by
+published evidence,evenifnotmeetingtheFDRthreshold indiscovery.The
+validation phase was therefore considered conﬁrmatory for the selected
+candidates. Differential expression (DE) analysis with edgeR v3.32 used the
+quasi-likelihood negative binomial generalized log-linear model functions
+providedbythepackage29.TheindependentﬁlteringmethodofDESeq2was
+adapted for use with edgeR to remove low abundant miRNAs and thus
+optimize the FDR correction30. A logarithmic fold change (logFC) of ≥| 0.5|
+and a FDR of < 0.05 were considered statistically signiﬁcant for sequenced
+miRNAs for subsequent mRNA target prediction. Heatmaps were gener-
+ated with pheatmap (version 1.0.12).
+Target prediction
+MiRTarBase (Release 9.0)31 and Target Scan (http://www.targetscan.org/
+vert_80)32 were used to predict the mRNA targets of the differentially
+expressed miRNAs. Targets were included for further analysis if they were
+validated by a strong evidence method in miRTarBase or if they had a
+cumulative weighted context + + score of ≤−0.5 in Target Scan.
+For visualization, Cytoscape (version 3.9.1)33 was used to graph the
+network.
+Gene set enrichment analysis
+We used the web server Enrichr (https://maayanlab.cloud/Enrichr/, last
+accessed on 28 March 2025) to perform pathway enrichment analysis by
+inputting the genes from target prediction, consolidating the Reactome,
+MSigDBHallmarkandWikiPathwaysdatabases.Thetoptenpathwayswith
+an adjusted p-value < 0.05 and counts > 2 were visualised34–36. The protein-
+protein interaction (PPI) network analysis was performed using STRING
+(https://string-db.org/, last accessed on 03 Jan 2025)37.
+Reverse transcription (RT) and quantitative polymerase chain
+reaction (qPCR)
+Starting from total RNA samples (as described above in 2.4), cDNA was
+synthesized using the miRCURY RT Kit (Qiagen, Germany, cat. no.
+Fig. 1 | Study ﬂowchart. Overall miRNAs were
+measured and compared between 201 long COVID
+patients and 70 healthy controls.
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+339340). Reaction conditions were set according to recommendations by
+the manufacturer, and 2 µL of total RNA was used as input in a 10 µL
+reaction. Quantitative PCR reactions were set up using miRCURY SYBR®
+green master mix (Qiagen, cat. no. 339345) with a 1:100 diluted cDNA and
+commercial LNA-enhanced primer assay (Qiagen, cat. no. 339306). Reac-
+tions were performed in a 384-well primer spotted plates in a Roche LC480
+II instrument (Roche, Germany) with the following temperature settings:
+95 °C for 2 minutes, 45 cycles of 95 °C for 10 s and 56 °C for 60 seconds,
+followed by melting curve analysis. The second derivative maximum
+method was used to calculate the cycle of quantiﬁcation values (Cq-values)
+and were normalized by the global mean across the samples included in the
+NGS analysis. Additionally, cel-miR-39-3p, Unisp2 and Unisp3 were added
+as cDNA, RNA and PCR spike-ins. Hemolysis was assessed using the ratios
+of miRNA-23a-3p and miRNA-451a, and samples with hemolysis index
+valuesofabove 7wereexcluded fromfurtheranalysisto reducethepotential
+risk of hemolysis-induced variation of miRNA levels38. Due to high
+hemolysisindex,5samplesfromthelongCOVIDcohortand1samplefrom
+the healthy controls were excluded for further analysis.
+MiRNA ratios, random forest analysis and logistic
+regression model
+MiRNA ratios (ΔCt) were formed for small RNA-seq and RT-qPCR
+samples and compared with the Mann-Whitney U test with adjustment
+for multiple testing using Benjamini-Hochberg FDR between long
+COVID and healthy groups. The miRNA ratios dataset was initially
+assessed for missing values, with columns containing more than 10%
+missing data removed. The remaining missing values were imputed using
+median imputation, due to skewed distributions of the miRNA ratios.
+Weighted random forest analyses were performed (R package random-
+Forest, version 4.7-1.2) with standard settings and 1000 trees to identify
+the most important miRNA ratios in the classiﬁcation of patients with
+long COVID compared to those without long COVID39. Feature
+importance was assessed using the mean decrease in Gini impurity. The
+model’s predictive performance was evaluated using the area under the
+receiver operating characteristic (ROC) curve (AUC).
+Logistic regression models were assessed using miRNA ratios as pre-
+dictors. The ﬁnal logistic regression model included the top two important
+miRNA ratios (hsa-miR-484/hsa-miR-126-3p and hsa-miR-345-5p/ hsa-
+miR-223-3p) along with age and sex as covariates. Odds ratios (OR) were
+reported per 1 Ct increase with 95% conﬁdence intervals. The Variance
+Inﬂation Factor (VIF) was <3 for all variables in the regression models,
+indicating minimal multicollinearity. Model ﬁt was summarized using the
+Akaike Information Criterion (AIC), and nested model comparisons were
+performed using likelihood-ratio tests (R package caret, version 6.0-94).
+DiscriminationwasassessedusingROCcurveanalysisandAUC(Rpackage
+pROC, version 1.18.5). For descriptive classiﬁcation, a confusion matrix was
+generated to assess sensitivity, speciﬁcity, likelihood ratios, positive pre-
+dictive value, negative predictive value and accuracy at the threshold of 0.80.
+Internal validation of the ﬁnal model was performed using 5-fold cross-
+validation and nonparametric bootstrap resampling (R = 1000) (R package
+boot, version 1.3-28.1). Calibration was assessed using calibration-in-the-
+large (CITL/intercept), calibration slope, and Brier score. Calibration was
+additionally visualized by grouping predictions into deciles of predicted risk
+and comparing mean predicted probabilities to observed event rates.
+A separate group of 96 long COVID patients and 31 healthy controls
+were included as an independent validation cohort (test group). External
+validation was performed by applying the ﬁnal logistic regression model,
+constructed on the RT-qPCR miRNA values, to the test group without
+reﬁtting. Discrimination was quantiﬁed by AUC with bootstrap 95% con-
+ﬁdenceintervals.CalibrationwasassessedusingCITL,calibrationslope,and
+Brier score, supported by a calibration plot (R package rms, version 6.7-1).
+Logistic recalibration by updating the intercept and slope of the original
+linear predictor was calculated in the validation cohort as a sensitivity
+analysis.
+Identiﬁcation of therapeutic targets by drug signature enrich-
+ment analysis
+To identify candidate compounds capable of reversing the gene expression
+signature regulated by differentially expressed miRNAs, we used the LINCS
+L1000ChemicalPerturbagenConsensusSignatures(ChemPert) datasetvia
+the Enrichr platform (https://maayanlab.cloud/Enrichr/)40,41. The input
+gene set comprised upregulated target genes inferred from differentially
+expressed miRNAs from the validation cohort. Compounds were ranked
+based on their adjusted p-values and combined enrichment scores.
+Statistical analysis
+Statistical analyses were performed with R (version 2022.12.0 + 353). Data
+are presented as mean ± standard deviation (normal distribution) or med-
+ian (interquartile range, IQR). The normal distribution assumption was
+testedwiththeShapiro-Wilkstest.One-wayANOVAofmeanswasusedfor
+post-hoc analysis comparing differences between groups. The Benjamini-
+Hochberg method was applied to correct for multiple testing ( = false dis-
+covery rate, FDR). A two-tailed p-value < 0.05 was considered statistically
+signiﬁcant.
+Results
+Patient characteristics
+Overall, the median age of the 110 long COVID patients (71% female) and
+40 healthy controls (65% female) was 40.5 and 50 years, respectively. The
+patient cohort consisted mainly of non-smokers (91.5%), and most had a
+mild course of COVID-19, not requiring hospitalisation (92.7%). The
+median time after COVID-19 infection was 244 days. Seventy-four patients
+(67.3%) had received a COVID vaccination before the blood draw at our
+specialized long COVID clinic. Long COVID patients reported a moderate
+decrease in general quality of life with a median VAS score of 40 out of 100
+(quality of life scale: 0 = worst, 100 = best), while healthy controls stated a
+median of 85.5 out of 100.
+For the ﬁrst step of biomarker discovery by small RNA-seq, we
+included samples of 20 LC patients and 20 controls, while as a second step
+the other 90 LC samples and 20 controls were used for validation. Supple-
+mentary Table S1 and Supplementary Table S2 provide detailed descriptive
+characteristics of the long COVID patients (n = 20) and healthy controls
+(n = 20) for discovery and a separate independent validation cohort (90 LC
+and 19 healthy controls).The general distribution of clinical parameterswas
+similar between patients of the small RNA-seq and the RT-qPCR cohort.
+Discovery cohort via miRNA-sequencing
+A total of 1859 miRNAs were identiﬁed and mapped from small RNA-
+sequencing, while the mean number of distinct identiﬁed miRNAs was 745
+across all sequenced samples. The heatmap shows the top differentially
+expressed miRNAs with FDR < 0.2 clustered using correlation distance and
+average linkage with applied unit variance scaling (Fig. 2A). The ﬁrst two
+principal components graphed depict the samples grouped by their distinct
+miRNA expression (Fig. 2B). Small RNA-seq revealed ﬁve deregulated
+miRNAs (hsa-miR-484, hsa-miR-21-3p, hsa-miR-345-5p, hsa-miR-1307-
+3p, hsa-miR-203a-3p) in long COVID versus Healthy groups. Detailed data
+on log2FCand FDR of the DE-miRNAscanbe found inSuppl.Table S3.For
+upregulated miRNA in long COVID versus Healthy, 114 mRNA targets
+were detected (Fig. 2C, Suppl. Table S4). The STRING analysis of upregu-
+lated miRNAs in long COVID patients showed IL-10 as the central node in
+protein-protein interaction (PPI) network withTGFB1, SMAD7, ACVR1B,
+STAT3, CDKN1A, CCL3 and further interactions between PRKCZ and
+PTEN, USE1 and RINT1, MAT2B and MAT2A (PPI enrichment p-
+value = 0.0202) (Fig. 2D). Pathway enrichment analysis of these predicted
+mRNA targets revealed “Apoptosis”, “Signaling by ALK fusions and acti-
+vated point mutants”, “spinal cord injury”, “IL-6/JAK/STAT3 Signaling”,
+SARS CoV2 innate immunity evasion and cell immune response”, “AGE
+RAGE pathway”, as enriched pathways for the provided gene sets. The top
+10 enriched pathways are shown in Fig. 2E.
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+Fig. 2 | miRNA-seq results of 40 samples (20 long COVID, 20 healthy controls).
+A Heatmap of miRNA expression assessed by small RNA-seq. B Principal com-
+ponent analysis of miRNA expression assessed by small RNA-seq, Healthy controls
+= blue, long COVID patients = red. C 114 mRNA targets of upregulated miRNAs
+were identiﬁed in Long COVID ( = long COVID patients) compared to Healthy
+( = COVID naive controls). D Protein-protein interaction (PPI) network of mRNA
+of deregulated miRNAs. E Pathway enrichment analysis using multiple databases of
+predicted target genes.
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+Validation cohort via miRNA RT-qPCR
+For a comprehensive study of miRNAs in long COVID patients, an addi-
+tional 90 serum samples from an independent (not previously analyzed)
+long COVID cohort were subjected to measurement of miRNA expression
+with RT-qPCR, along with 20 healthy controls. MiRNAs were selected due
+toeithertheirpresenceinmiRNA-seqasdifferentiallyexpressedorbasedon
+previously reported interesting aspects found in the literature (Suppl.
+Table S5). Due to the hemolysis index of above 7, ﬁve samples from the long
+COVID cohort and one control sample were excluded for further analysis.
+Three miRNAsweresigniﬁcantly(adj.p < 0.05) downregulated inlong
+COVID patients by RT-qPCR measurement: hsa-miR-210-3p, hsa-miR-
+345-5p, and hsa-miR-484 (Fig. 3A), while hsa-miR-9-5p was upregulated in
+the LC group compared to controls (Table 1). In subgroup analyses (Suppl.
+Figs.S1–S3),theoverallpatternoflowermiRNAabundanceinlongCOVID
+was preserved across cardiovascular, neurologic. and pulmonary pheno-
+types. Compared with controls, the Cardio subgroup showed signiﬁcantly
+lower levels of hsa-miR-210-3p (p < 0.01), hsa-miR-345-5p (p = 0.04) and
+hsa-miR-484 (p = 0.03), alongside a modest increase in hsa-miR-122-5p
+(p = 0.02) (Fig. S1). The Neuro subgroup likewise displayed reduced hsa-
+miR-210-3p (p = 0.02) and hsa-miR-484 (p = 0.03) relative to controls
+(Fig. S2). In the pulmonary subgroup, hsa-miR-345-5p (p = 0.01) and hsa-
+miR-484 (p = 0.02) remained lower than in controls, while hsa-miR-9-5p
+was higher (p < 0.01) (Figure S3).
+MiRNA ratios for predicting long COVID and internal model
+validation
+MiRNA ratios were constructed separately for RNA-seq and RT-qPCR
+cohorts. 208 miRNA ratios were signiﬁcantly different between long
+COVID and healthy individuals in the RNA-seq cohort, while only two
+miRNA ratios were for the RT-qPCR group (Fig. 3B). The two miRNA
+ratios were miR-484/miR-126-3p and miR-126-3p/ miR-484. Using a
+random forest classiﬁer the model classiﬁed long COVID cases with very
+low class error with a classiﬁcation error of 1.18%, but performed poorly for
+controls with 78.95% of the healthy controls as false positives (Fig. 3C). The
+random forest prediction model revealed miR-484/miR-126-3p and miR-
+345-5p/miR-233-3p as the top two most important variables (Fig. 3D) and
+had an AUC of 0.714 (95% CI: 0.585-0.842, DeLong)(Fig. 3E). The out-of-
+bag estimate of error rate was 15.38%.
+Logistic regression model development and internal validation were
+conducted in the training cohort (n = 104; LC prevalence 0.817). The AUC
+for predicting long COVID with hsa-miR-484/hsa-miR-126-3p, hsa-miR-
+345-5p/hsa-miR-223-3p and hsa-miR-210-3p/hsa-miR-126-3p by them-
+selves was 0.77, 0.69 and 0.71, respectively (Fig. S4). Model 1 included the
+top twomiRNAratioshsa-miR-484/hsa-miR-126-3pandhsa-miR-345-5p/
+hsa-miR-223-3p from the random forest analysis (AIC: 94.14), while Model
+2used thetop twomiRNAratioswithageandsexascovariates(AIC:94.86).
+Due to the small sample size and to avoid overﬁtting, cross-validation and
+bootstrap analyses were performed. In Model 1, both miRNAratios showed
+inverse directions with LC (Table 2). Higher Ct values of hsa-miR-484/hsa-
+miR-126-3p were directionally inverse to the odds of long COVID
+(OR = 0.516, 95% CI 0.214–1.162), and likewise for hsa-miR-345-5p/hsa-
+miR-223-3p (OR = 0.600, 95% CI; 0.295–1.147). Discrimination was
+moderate with an AUC = 0.752, and sensitivity was 70.6% and speciﬁcity
+68.4% (Fig. 4A).
+In Model 2, after adjustment for demographic covariates, both miRNA
+predictors remained directionally inverse with LC: OR 0.487 (95% CI:
+0.200–1.102) for hsa-miR-484/hsa-miR-126-3p and OR 0.619 (95% CI:
+0.298–1.210) for hsa-miR-345-5p/hsa-miR-223-3p. Age showed OR 0.964
+per year (95% CI 0.913–1.013), and sex showed no association (OR 0.987;
+95% CI: 0.296–3.590). Adding age and sex did not signiﬁcantly improve ﬁt
+compared with the miRNA ratios-only model (nested likelihood-ratio test
+p = 0.332). However, the variables were kept as covariates for this ﬁnal
+model. Discrimination for the ﬁnal model in the training cohort was
+AUC = 0.760 (Fig. 4B). At a probability cutoff of 0.80, sensitivity was 72.9%
+(95% CI: 62.2–82.0) and speciﬁcity 57.9% (95% CI: 33.5–79.8). Table 3
+depicts the confusion matrix including sensitivity, speciﬁcity, positive and
+negative likelihood ratios, positive and negative predictive values (PPV,
+NPV),and accuracyof the modelatdifferentdiseaseprevalence percentages
+within the range of reported long COVID prevalence (10%, 6%, and 3%). At
+10% prevalence, PPV was 16.1% (95% CI: 10.12–24.9) and NPV was 95.1%
+(95% CI: 92.0–97.0). With lower prevalence, PPV decreased to 10.0% (6%)
+and 5.1% (3%), while NPV increased to 97.1% and 98.6%, respectively
+(Table 3).
+In 5-fold cross-validation, mean ROC AUC was 0.772 and mean PR
+AUC was 0.925. Bootstrap internal validation (R = 1000) yielded an
+apparent AUC of 0.760 (95% CI: 0.680–0.901) (Fig. 4C). Calibration in the
+training cohort was acceptable on average: CITL approximately 0 (95%
+CI −0.513
+to
+0.564),
+calibration
+slope
+approximately1
+(95%
+CI
+0.428–1.704), and Brier score 0.131.
+External validation and sensitivity analysis
+External validation was performed in an independent cohort (n = 127; LC
+n = 96, Control n = 31), which had comparable characteristics to the initial
+RT-qPCR cohort. Detailedbaseline characteristics for this additional cohort
+are depicted in Suppl. Table S6. Model coefﬁcients and decision threshold
+were ﬁxed on the training cohort prior to evaluation in the external vali-
+dation cohort. On external validation, discrimination was moderate
+(AUC = 0.676; bootstrap 95% CI: 0.564 to 0.792) (Fig. 4D). Calibration
+assessment showed systematic overprediction (CITL −1.74, 95% CI: −2.16
+to −1.28) and a calibration slope below 1 (0.774; 95% CI: 0.276–1.318). The
+Brier score was 0.212. Predicted probabilities were generally high (decile
+mean predicted risk approximately 0.83–0.99), and at a probability cutoff of
+0.80, sensitivity was 97.9% and speciﬁcity 3.2% (TP 94, FN 2; TN 1, FP 30),
+indicating limited transportability of the absolute probability scale of the
+logistic regression model to separate cohorts. As an exploratory analysis, the
+ROC-derivedbestthresholdinthevalidationcohortwasassessedandwould
+be 0.957 with a sensitivity of 63.5% and speciﬁcity of 74.2%.
+Logistic recalibration of the linear predictor yielded a negative recali-
+bration intercept ( −1.225) and a recalibration slope < 1 (0.774), consistent
+with overconﬁdent predictions. Recalibration improved overall probability
+accuracy as reﬂected by a lower Brierscore of 0.171. Calibration plots can be
+found in Suppl. Fig. S5.
+Nevertheless, both miRNA ratios that deﬁne the model showed a
+consistent directional shift between long COVID and controls across
+cohorts. For hsa-miR-484/hsa-miR-126-3p, values were lower in long
+COVID than in controls in the training cohort (mean −3.231 vs. −2.651)
+and this separation persisted in the test cohort (mean −4.349 vs. −4.009)
+with comparable standard deviations (Fig. 3E). Likewise, for hsa-miR-345-
+5p/hsa-miR-223-3p, long COVID showed lower values than controls in
+training (mean −8.857 vs. −8.148) and in the test cohort (mean −9.811 vs.
+−9.097) (Fig. 3F). Median and interquartile ranges followed the same pat-
+tern for both ratios, indicating that the shift between the cohorts was not
+driven by a small number of extreme values.
+Drug target prediction based on miRNA signature
+A list of target genes for these deregulated miRNAs used for drug target
+prediction can be found in Supplementary Table S7. We identiﬁed com-
+pounds that are predicted to reverse the mRNA signature affected by the
+downregulatedmiRNAs inlongCOVID patients through the LINCS L1000
+Chemical Perturbation Consensus Signatures and grouped them by
+mechanistic class (Table 4). The full list of top 25 compounds from LINCS
+L1000 Chem Pert Consensus Sigs with their combined enrichment scores
+can be found in Suppl. Table S8. Several compounds of interest were found
+by connectivity analysis with potential to inverse the transcriptomic sig-
+nature, which involved pathways relevant to chronic inﬂammatory and
+vascular stress. A miRNA-mRNA-drug network was constructed to
+visualize the interactions between molecules (Fig. 5). The affected pathways
+of mRNA target genes were signiﬁcantly enriched in the p53 pathway and
+TNF-alpha signaling via NF-kB. Compounds acting as signal-transduction
+enzyme inhibitors or modulators contained5-iodotubercidin (an adenosine
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+Fig. 3| Assessment of miRNAs by RT-qPCR in the Training Cohort (104 samples:
+85 long COVID, 19 healthy controls) and miRNA ratios for predicting
+long COVID. A Boxplots of signiﬁcant differentially expressed miRNAs in the RT-
+qPCR training cohort, Ct values were inversed and global mean normalized. Median
+and interquartile range, outliers depicted as dots. Wilcoxon rank test, two-tailed p-
+value. B Venn diagram of miRNA ratios deregulated in miRNA-seq and RT-qPCR:
+484/hsa-miR-126-3p and hsa-miR-126-3p/hsa-miR-484 were signiﬁcantly different
+by both measurement methods. C Confusion matrix of random forest analysis
+classiﬁed long COVID (LC) patients compared to healthy controls (H). D Ten most
+important miRNA ratios from the random forest analysis plotted by decreasing
+MeanDecreaseGini value. E ROC of random forest model, AUC: 0.714.
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+kinase inhibitor), ZG-10 (JNK inhibitor), cilostazol (phosphodiesterase-3
+inhibitor), and L-744832 (farnesyl transferase inhibitor). Secalciferol
+(24 R,25-dihydroxyvitamin D3), a vitamin D metabolite, was also found
+related to the mRNA signature with a high connectivity score of 113.2.
+Further compounds were of the G-protein coupled receptor mechanistic
+class, consisting of clidinium (anticholinergic) and LY-288513 (a selective
+CCK2 receptor antagonist). Torcetrapib, a discontinued cholesteryl ester
+transfer protein inhibitor, was also found to share interactions with this
+miRNA-mRNA signature. Lastly, vidarabine was also represented in this
+network analysis, which is an antiviral nucleoside analog.
+Discussion
+Inourcase-controlstudyfromtheViennaPOSTCOVregistry,weidentiﬁed
+several differentially expressed circulating miRNAs between long COVID
+patients and healthy controls. Target prediction and pathway enrichment
+analyses showed enriched genes involved in cell signaling, inﬂammation,
+angiogenesis, and T-cell regulation. In an independent RT-qPCR cohort,
+three miRNAs (hsa-miR-210-3p, hsa-miR-345-5p, hsa-miR-484) remained
+signiﬁcantly lower in long COVID, while hsa-miR-9-5p was higher. Sub-
+group analyses suggested that the overall pattern of reduced miRNA
+abundance in long COVID was preserved across cardiovascular, neurologic
+and pulmonary phenotypes. Further, the miRNA ratio hsa-miR-484/hsa-
+miR-126-3pwasidentiﬁedasadiscriminatorbetweenlongCOVIDpatients
+and healthy controls in both the RNA-seq and the RT-qPCR cohort with
+consistently lower ratio values in long COVID patients compared to con-
+trols. We constructed a logistic regression model using hsa-miR-484/hsa-
+miR-126-3p and hsa-miR-345-5p/hsa-miR-223-3p for predicting long
+COVID and validated this model on an independent cohort, which showed
+moderate discrimination (AUC: 0.676), but some batch effect despite the
+same normalization procedures as to the training cohort.
+Several of the miRNAs from our analysis, including hsa-miR-484, hsa-
+miR-345-5p, hsa-miR-210-3p, hsa-miR-144-5p, hsa-miR-199a-5p, hsa-
+miR-233-3p, and hsa-miR-126-3p, have been previously reported as reg-
+ulators of immune function, inﬂammation, hypoxia, and vascular
+dysfunction42–46. Notably, miR-484 has been associated with mitochondrial
+stress by targeting FIS1, a key mediator of mitochondrial ﬁssion. This
+interactioncaninﬂuencecellularapoptosisandhasbeenobservedinvarious
+cell types, including cardiomyocytes and adrenocortical cancer cells47. Inthe
+context of COVID-19, mitochondrial dysfunction and endothelial damage
+are prominent features, suggesting that dysregulation of miR-484 may
+contribute to these pathologies. We have previously published our ﬁndings
+of higher levels of autoantibodies against endothelin type A receptor
+(ETAR) in long COVID patients with orthostatic intolerance correlating to
+higher symptom burden, additionally supporting the hypothesis that
+endothelial dysfunction could play a role in the pathophysiology of long
+COVID48.
+Table 1 | Differences of miRNA Ct values between 85 long COVID patients and 19 healthy controls
+miRNA
+Median Ct value difference
+P-value
+adj.p (BH)
+Median Ct value Control
+Median Ct value LC
+Control, N
+LC, N
+hsa-miR-210-3p
+−0.55
+0.01
+0.05
+−2.12
+−2.67
+19
+85
+hsa-miR-345-5p
+−0.46
+0.01
+0.05
+−1.31
+−1.77
+19
+85
+hsa-miR-484
+−0.41
+0.01
+0.05
+0.77
+0.36
+19
+85
+hsa-miR-9-5p
+1.05
+0.02
+0.05
+−1.32
+−0.27
+19
+83
+hsa-miR-23a-3p
+0.13
+0.06
+0.16
+3.82
+3.95
+19
+84
+hsa-miR-122-5p
+1.02
+0.07
+0.17
+−8.02
+−7.00
+19
+84
+hsa-miR-144-5p
+−0.21
+0.08
+0.17
+−1.12
+−1.33
+19
+85
+hsa-miR-22-5p
+−0.36
+0.17
+0.30
+−4.05
+−4.41
+18
+81
+hsa-miR-126-3p
+−0.07
+0.32
+0.46
+3.68
+3.61
+19
+85
+hsa-miR-215-5p
+−0.27
+0.30
+0.46
+−1.13
+−1.39
+19
+85
+hsa-miR-223-3p
+0.17
+0.34
+0.46
+6.93
+7.10
+19
+85
+hsa-miR-199a-5p
+−0.02
+0.46
+0.57
+−2.02
+−2.04
+19
+85
+hsa-miR-451a
+−0.10
+0.57
+0.65
+8.75
+8.66
+19
+84
+hsa-miR-146b-5p
+−0.01
+0.92
+0.92
+−2.49
+−2.50
+19
+85
+hsa-miR-203a-3p
+0.41
+0.92
+0.92
+−5.87
+−5.47
+6
+46
+BH Benjamini-Hochberg procedure, Ct cycle threshold, LC long COVID.
+Ct values were inversed and normalised to the global mean. The miRNAs are ordered ascendingly according to the adjusted p-values.
+Table 2 | Logistic regression models for long COVID vs. Healthy
+Coefﬁcients:
+Odds ratio
+CI lower (2.5%)
+CI upper (97.5%)
+P-value
+Model 1:
+hsa-miR-484/hsa-miR-126-3p
+0.516
+0.214
+1.162
+0.121
+hsa-miR-345-5p/hsa-miR-223-3p
+0.600
+0.295
+1.147
+0.136
+Model 2:
+hsa-miR-484/hsa-miR-126-3p
+0.487
+0.120
+1.102
+0.085
+hsa-miR-345-5p/hsa-miR-223-3p
+0.619
+0.298
+1.210
+0.164
+Age
+0.964
+0.913
+1.013
+0.151
+Male
+0.987
+0.296
+3.590
+0.984
+Model 1: raw mode with only miRNA ratios, AIC: 94.15; Model 2: miRNA ratios + covariates age and sex, AIC: 95.94.
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+Fig. 4 | Logistic regression model with RT-qPCR miRNA ratios performance on
+the training cohort and test cohort for discrimination of long COVID. A Model 1
+(hsa-miR-484/hsa-miR-126-3p, hsa-miR-345-5p/hsa-miR-223-3p): ROC curves of
+miRNA ratios to predict long COVID, AUC: 0.752. B Adjusted model (Model 2):
+Model 1 + covariates (age and sex), AUC: 0.760. C ROC with bootstrap resampling
+(R = 1000) of Model 2, AUC: 0.760 (95%CI: 0.680–0.901). D Model 2 test on external
+validation samples (96 long COVID, 31 controls), AUC: 0.676 (95%CI:
+0.656–0.787). E Median miRNA ratio of hsa-miR-484/hsa-miR-126-3p is sig-
+niﬁcantly lower in long COVID patients compared to healthy controls of the training
+cohort, but not in the test cohort, median and interquartile range, two-tailed p-value.
+F Median miRNA ratio of hsa-miR-345-5p/hsa-miR-233-3p is lower in long
+COVID patients compared to healthy controls in both training and test cohort,
+median and interquartile range, two tailed p-value.
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+The most discriminative variable from our analyses was hsa-miR-484/
+hsa-miR-126-3p, which showed moderate diagnostic accuracy for long
+COVID with an AUC of 0.676 in external validation analysis. This miRNA
+ratio integrates two biologically meaningful signals and may reﬂect an
+imbalance between mitochondrial stress signaling and endothelial repair
+mechanisms: hsa-miR-484 has been reported in the context of mitochon-
+drialand endothelialdysfunction, whilehsa-miR-126-3p playsa centralrole
+in angiogenesis and vascular inﬂammation49. In our dataset, a lower ratio
+was strongly associated with long COVID. This could suggest either
+downregulation of hsa-miR-484 in response to apoptotic stimulation or a
+relative increase in hsa-miR-126-3p expression, potentially a compensatory
+response to endothelial injury or dysfunction in patients with persistent
+symptoms after acute COVID-19 infection. This would be in line with a
+recent pediatric study that reported a distinct protein signature from blood
+plasma in children, which was characterized by ongoing inﬂammatory and
+pro-angiogenic signals50. These discoveries suggest that the miRNA ratio
+may reﬂect underlying pathophysiological mechanisms relevant to
+long COVID.
+At a set classiﬁcation threshold of 0.8, our logistic regression model
+with hsa-miR-484/hsa-miR-126-3p, hsa-miR-345-5p/hsa-miR-223-3p and
+age and sex as covariates did not transfer well to the external validation
+cohort. However, despite reduction of AUC (from 0.760 to 0.676), the
+miRNA ratios showed consistent directionality for long COVID patients
+compared to controls (Fig. 4E, Fig. 4F). Performance metrics of our model
+remain similar to the AUC values reported by Szögi et al., ranging from
+0.715 to 0.758, in their investigation of proposing the use of circulating cell-
+freemitochondrial DNAin cerebral spinal ﬂuid as a new biomarkerfor long
+COVID51. Notably, the distributions for both ratios were shifted toward
+more negative values in the external cohort for both controls and long
+COVID (e.g., miR-484/miR-126-3p control median −4.14 in external vs.
+−2.77 in training, miR-345/miR-223 control median −9.14 vs. −8.32),
+consistent with a cohort effect on the measurement scale. This systematic
+shift provides a plausible explanation for the calibration intercept < 0 and
+the very high predicted probabilities in validation when applying ﬁxed
+coefﬁcients and the training-derived cutoff. However, the preserved direc-
+tionality of lower miRNA ratios in long COVID consistent across cohorts
+suggeststheseratiosmaystillcapturea biologicallyrelevantsignalandcould
+remain useful as relative biomarkers, provided that the model may be
+transferred through better methods of recalibration, batch harmonization,
+or cohort-speciﬁc thresholding before clinical application.
+Past studies have mainly evaluated miRNAs for their prognostic value
+in hospitalized COVID-19 patients during the acute infection phase. In this
+setting, using miRNA ratios brings the advantage of technical variability
+stabilization compared to singular miRNA values, while integrating corre-
+lated biology. Molinero et al. found the miR-199a-5p/miR-9-5p ratio from
+bronchial aspirate samples the most accurate for risk stratiﬁcation for cri-
+tically ill COVID-19 patients after initiation of invasive mechanical venti-
+lation to predict intensive care unit (ICU) mortality52. In another
+exploratory study of hospitalized COVID patients, more severe courses of
+disease, deﬁned as ICU stay, were linked to higher miR-223-3p and miR-
+126-3p levels53. In our long COVID cohorts, both miR-126-3p and miR-
+223-3p likewise emerged as recurring components of the most informative
+ratios (hsa-miR-484/hsa-miR-126-3p and hsa-miR-345-5p/hsa-miR-223-
+3p), supporting their broader relevance across the COVID-19 disease
+spectrum. Although long COVID is clinically distinct from acute severe
+COVID-19, the repeated involvement of endothelial- and myeloid-
+associated miRNAs is consistent with hypotheses implicating persistent
+immune activation and vascular dysregulation in post-acute disease. In this
+context, considering that persistent viral RNA orprotein antigens have been
+hypothesized as pathomechanisms of long COVID, anti-inﬂammatory and
+antiviral propertiesof drug compounds may be of particular interest, for the
+low-grade inﬂammation disease state leading to ongoing symptoms54.
+To contextualize the signature biologically and generate therapeutic
+hypotheses, we integrated miRNA target prediction with LINCS L1000
+perturbational signatures and constructed a miRNA-gene target-drug net-
+work with compounds that were signiﬁcantly perturbing downregulation of
+Table 4 | Summarized list of compound drug classes that are predicted to reverse the mRNA signature targeted by deregulated
+miRNA in long COVID
+Mechanistic Class
+Compounds
+Signal-transduction enzyme inhibitors and modulators
+5-Iodotubercidin, ZG-10 (JNK inhibitor), Cilostazol, L-744832
+Vitamin D metabolite/analog
+Secalciferol (24 R,25-dihydroxyvitamin D3)
+G-protein coupled receptor/cholinergic-neuropeptide receptor modulation
+Clidinium, LY-288513, compounds that downregulate the kisspeptin (KISS1) receptor
+Antiviral nucleoside analog
+Vidarabine
+Lipid metabolism modulator
+Torcetrapib
+Table 3 | Confusion matrix for predicted classes of the logistic regression model (threshold 0.80)
+Healthy (observed)
+Long COVID (observed)
+Total (predicted)
+Healthy (predicted)
+11
+23
+34
+Long COVID (predicted)
+8
+62
+70
+Total (observed)
+19
+85
+104
+Statistics
+Value
+95% CI
+Sensitivity
+72.94%
+62.21–82.01%
+Speciﬁcity
+57.89%
+33.50–79.75%
+Positive Likelihood Ratio
+1.73
+1.01–2.98
+Negative Likelihood Ratio
+0.47
+0.28–0.78
+Disease prevalence
+10%
+6%
+3%
+Value (95%CI)
+Value (95%CI)
+Value (95%CI)
+Positive Predictive Value (PPV)
+16.14% (10.06–24.88)
+9.96%(6.04–15.99)
+5.09% (3.02–8.44)
+Negative Predictive Value (NPV)
+95.06%(91.98–97.00)
+97.1%(95.23–98.25)
+98.58% (97.63–99.15)
+Accuracy
+59.40%(49.33–68.92)
+58.80%(48.72–68.36)
+58.35% (48.27–67.94)
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+thegenesignature(Fig.5).Interestingly,activinreceptortype-1B(ACVR1B,
+also known as ALK4), was the target gene of both hsa-miR-484 and hsa-
+miR-210-3p. An experimental study found that increased ACVR1B levels
+promoted the activation of the TGF-beta signaling pathway by increasing
+levels of the phospho-Smad2/3, which increased the expression of the
+transcription factor C/EBPα and ﬁnally promoted monocyte/macrophage
+differentiation55. Upregulation of TGF-beta signaling and TGF-beta
+receptor signaling found in pathway enrichment possesses pleiotropic
+effects in immunity, apoptosis and angiogenesis56. Given prior reports of
+monocyte activation and tissue-resident macrophage changes in long
+COVID, dysregulation of miRNAs targeting ACVR1B may contribute to
+persistent low-grade inﬂammation or ﬁbrotic signalling57.
+Exploratory drug target analysis showed some compounds were pre-
+dicted to reverse the miRNA-mRNA signature, such as 5-iodotubercidin,
+secalciferol or ZG-10 (c-Jun N-terminal kinase (JNK) inhibitor).
+5-Iodotubercidin is a selective adenosine kinase (ADK) inhibitor that has
+been shown to attenuate endothelial activation in inﬂammatory settings by
+suppressing TNF-α–induced adhesion molecule expression58. In addition,
+5-Iodotubercidin has been reported to inhibit SARS-CoV-2 RNA synthesis
+ina cell-based RNAreplicase reportersystem,withtheantiviraleffectlinked
+to ADK activity rather than direct polymerase binding59. Secalciferol is a
+vitamin D3 metabolite; vitamin D metabolites in general have been attrib-
+uted with immunomodulatory and anti-inﬂammatory effects across
+immune cells, providing a plausible rationale for its appearance among
+connectivity hits60. ZG-10, a c-Jun N-terminal kinase (JNK) inhibitor, can
+target JNK, which has a role in inﬂammatory signaling and was shown to
+support coronavirus replication cycles61. Still, most compounds highlighted
+by connectivity mapping remain preclinical and should only be viewed as
+starting points for mechanistic validation rather than candidates for
+immediate off-label use. In the real-world setting, a large patient-reported
+treatment survey with 1800 long COVID patients reportedon the perceived
+beneﬁt from several off-label symptomatic therapies, such as using IVIG/
+IgG, antihistamines, beta blockers, or pyridostigmine62. Reported responses
+varied across symptom-deﬁned subgroups, underscoring that off-label
+management is best individualized rather than applied uniformly62.
+This study has some limitations. First, the cohort was recruited from a
+single specialized outpatient clinic and included only adults, which may
+limit generalizability to broader populations, including pediatric patients
+with long COVID. The control design did not include time-matched post
+infection controls, so some differences may reﬂect the post infection status
+rather than long COVID-speciﬁc biology. Although subgroup classiﬁcation
+was grounded in objective clinical, imaging, and functional criteria, symp-
+tom overlap, and subclinical manifestations may have inﬂuenced group
+allocation. RNA-seq and qPCR analyses were restricted to blood-derived
+miRNA proﬁles, which may not fully capture tissue-speciﬁc regulatory
+processes, and qPCR experiments had to be performed in batches, which
+could have introduced batch effects. Further, the single time point design
+does not allow for following the longitudinal changes in the identiﬁed
+miRNA ratios. Longitudinal studies will therefore be necessary to char-
+acterize the temporal dynamics of these miRNA measures and clarify how
+the associated miRNA-mRNA-regulated pathways evolve over time. The
+sample size, particularly within subgroups, may constrain statistical power.
+Nonetheless, stringent measures were implemented throughout, such as the
+inclusion of spike-in controls for RNA extraction and hemolysis indices to
+minimize pre-analytical variability, rigorous quality control protocols for
+next-generation sequencing and RT-qPCR analyses, and target prediction
+based on validated databases with conservative thresholds to enhance spe-
+ciﬁcity. While these strategies strengthen the robustness of our ﬁndings,
+functional validation of miRNA-target interactions and drug target pre-
+dictions based on in silico enrichment analyses is still required. Thus, the
+ﬁndings of this study should be interpreted with due caution, while
+acknowledging the comprehensive and systematic approach applied across
+clinical, molecular and statistical domains.
+Conclusion
+We identiﬁed differentially expressed miRNAs in long COVID patients
+following initial mild COVID-19 disease, with hsa-miR-484, hsa-miR-345-
+5p and hsa-miR-126-3p being implicated across multiple detection mod-
+alities. Despite lower discrimination and miscalibration in external valida-
+tion, both miRNA ratios from the model are directionally consistent in
+being lower compared to the controls of their cohort. This suggests a
+reproducible association with long COVID, even if systematic shifts may
+still be present depending on batch. Thus, hsa-miR-484/hsa-miR-126-3p
+and hsa-miR-345-5p/hsa-miR-223-3p may capture biologically relevant
+signal but are sensitive to cohort and pre-analytical differences. Further
+standardized diagnostic investigations and large prospective studies
+Fig. 5 | miRNA-mRNA-pathway-drug target network. Pink nodes show DE-downregulated miRNAs in LC compared to Healthy, blue nodes represent target genes of these
+miRNAs, and green nodes depict the drug compounds that are predicted to downregulate the gene signatures (connected by dashed lines).
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+mitigating sampling bias are required to conﬁrm the diagnostic and bio-
+logical relevance of the identiﬁed miRNAs.
+Data availability
+The miRNAcountsdata from the discoveryphase are provided as raw reads
+in Suppl. Data 1. Numerical source data for the Figs. 2A, 3A, 3C, 4E, 4F of
+this article can be found in the Suppl. Data 2. All other relevant data to this
+study can be requested from the corresponding author upon reasonable
+request, with responses typically provided within two weeks.
+This study was conducted as part of the POSTCOV registry, which is
+registered on ClinicalTrials.gov (NCT05398952). The full study protocol
+hasnotbeenpublished,butinformationcanbefoundontheofﬁcialfunding
+website of the Austrian Science Fund (https://www.fwf.ac.at/en/research-
+radar/10.55776/KLI1064).
+Received: 19 July 2025; Accepted: 30 July 2026;
+References
+1.
+World Health Organization. Statement on the ﬁfteenth meeting of the
+IHR (2005) Emergency Committee on the COVID-19 pandemic.
+https://www.who.int/news/item/05-05-2023-statement-on-the-
+ﬁfteenth-meeting-of-the-international-health-regulations-(2005)-
+emergency-committee-regarding-the-coronavirus-disease-(covid-
+19)-pandemic (2023).
+2.
+Global Burden of Disease Long COVID Collaborators et al. Estimated
+Global Proportions of Individuals With Persistent Fatigue, Cognitive,
+and Respiratory Symptom Clusters Following Symptomatic COVID-
+19 in 2020 and 2021. JAMA 328, 1604 (2022).
+3.
+Gyöngyösi, M. et al. Long COVID and the cardiovascular system-
+elucidating causes and cellular mechanisms in order to develop
+targeted diagnostic and therapeutic strategies: a joint Scientiﬁc
+Statementof the ESC Working Groups on Cellular Biology of the Heart
+and Myocardial and Pericardial Diseases. Cardiovasc Res. 119,
+336–356 (2023).
+4.
+Raman,B., Bluemke,D. A., Lüscher,T. F. & Neubauer,S. Long COVID:
+post-acute sequelae of COVID-19 with a cardiovascular focus. Eur.
+Heart J. 43, 1157–1172 (2022).
+5.
+Espín, E. et al. Cellular and molecular biomarkers of long COVID: a
+scoping review. EBioMedicine 91, 104552 (2023).
+6.
+Lai, Y.-J. et al. Biomarkers in long COVID-19: a systematic review.
+Front. Med. 10, 1085988 (2023).
+7.
+Gebert, L. F. R. & MacRae, I. J. Regulation of microRNA function in
+animals. Nat. Rev. Mol. Cell Biol. 20, 21–37 (2019).
+8.
+Chen, L.-L. & Kim, V. N. Small and long non-coding RNAs: past,
+present, and future. Cell 187, 6451–6485 (2024).
+9.
+Torres, R. et al. MicroRNA ratios distinguish melanomas from Nevi. J.
+Invest Dermatol 140, 164–173.e7 (2020).
+10. Chiorino, G. et al. Plasma microRNA ratios associated with breast
+cancer detection in a nested case–control study from a
+mammography screening cohort. Sci. Rep. 13, 12040 (2023).
+11. Masson, S. et al. Circulating microRNA-132 levels improve risk
+predictionfor heartfailurehospitalization inpatientswith chronic heart
+failure: miR-132 in chronic heart failure. Eur. J. Heart Fail 20, 78–85
+(2018).
+12. Gutmann, C. et al. Association of cardiometabolic microRNAs with
+COVID-19 severity and mortality. Cardiovasc Res. 118, 461–474
+(2022).
+13. Reyes-Long, S. et al. Role of the MicroRNAs in the pathogenic
+mechanism of painful symptoms in long COVID: systematic review.
+IJMS 24, 3574 (2023).
+14. Aliper, A. et al. Deep learning applications for predicting
+pharmacological properties of drugs and drug repurposing using
+transcriptomic data. Mol. Pharmaceutics 13, 2524–2530 (2016).
+15. Jing, H. et al. Pathophysiological mechanisms of thrombosis in acute
+and long COVID-19. Front. Immunol. 13, 992384 (2022).
+16. Li, G., Hilgenfeld, R., Whitley, R. & De Clercq,E. Therapeutic strategies
+for COVID-19: progress and lessons learned. Nat. Rev. Drug Discov.
+22, 449–475 (2023).
+17. Parotto, M. et al. Post-acute sequelae of COVID-19: understanding
+and addressing the burden of multisystem manifestations. Lancet
+Resp. Med. 11, 739–754 (2023).
+18. Munblit, D. et al. A core outcome set for post-COVID-19 condition in
+adults for use in clinical practice and research: an international Delphi
+consensus study. Lancet Respir. Med. 10, 715–724 (2022).
+19. Rabin, R. & de Charro, F. EQ-5D: a measure of health status from the
+EuroQol Group. Ann. Med 33, 337–343 (2001).
+20. Andrews, S. Babraham Bioinformatics - FastQC A Quality Control tool
+for High Throughput Sequence Data. https://www.bioinformatics.
+babraham.ac.uk/projects/fastqc/ (2010).
+21. Ewels, P., Magnusson, M., Lundin,S. & Käller, M. MultiQC: summarize
+analysis results for multiple tools and samples in a single report.
+Bioinformatics 32, 3047–3048 (2016).
+22. Martin, M. Cutadapt removes adapter sequences from high-
+throughput sequencing reads. EMBnet. J. 17, 10–12 (2011).
+23. Langmead, B., Trapnell, C., Pop, M. & Salzberg, S. L. Ultrafast and
+memory-efﬁcient alignment of short DNA sequences to the human
+genome. Genome Biol. 10, R25 (2009).
+24. Friedländer, M. R., Mackowiak, S. D., Li, N., Chen, W. & Rajewsky, N.
+miRDeep2 accurately identiﬁes known and hundreds of novel
+microRNA genes in seven animal clades. Nucleic Acids Res. 40,
+37–52 (2012).
+25. Zerbino, D. R. et al. Ensembl 2018. Nucleic Acids Res. 46, D754–D761
+(2018).
+26. Grifﬁths-Jones, S. The microRNA Registry. Nucleic Acids Res. 32,
+109D–111D (2004).
+27. R Core Team. R: A language and environment for statistical
+computing. R Foundation for Statistical Computing (2021).
+28. Kok, M. G. M. et al. Small sample sizes in high-throughput miRNA
+screens: A common pitfall for the identiﬁcation of miRNA biomarkers.
+Biomol. Detect Quantif. 15, 1–5 (2017).
+29. Robinson, M. D., McCarthy, D. J. & Smyth, G. K. edgeR: a
+Bioconductor package for differential expression analysis of digital
+gene expression data. Bioinformatics 26, 139–140 (2010).
+30. Love, M. I., Huber, W. & Anders, S. Moderated estimation of fold
+change and dispersion for RNA-seq data with DESeq2. Genome Biol.
+15, 550 (2014).
+31. Cui, S. et al. miRTarBase 2025: updates to the collection of
+experimentally validated microRNA-target interactions. Nucleic Acids
+Res. 53, D147–D156 (2025).
+32. McGeary, S. E. et al. The biochemical basis of microRNA targeting
+efﬁcacy. Science 366, eaav1741 (2019).
+33. Shannon, P. et al. Cytoscape: a software environment for integrated
+models of biomolecular interaction networks. Genome Res. 13,
+2498–2504 (2003).
+34. Chen, E. Y. et al. Enrichr:interactive and collaborative HTML5gene list
+enrichment analysis tool. BMC Bioinforma. 14, 128 (2013).
+35. Kuleshov, M. V. et al. Enrichr: a comprehensive gene set enrichment
+analysis web server 2016 update. Nucleic Acids Res 44, W90–W97
+(2016).
+36. Xie, Z. et al. Gene Set Knowledge Discovery with Enrichr. Curr. Protoc.
+1, e90 (2021).
+37. Szklarczyk, D. et al. The STRING database in 2023: protein-protein
+association networks and functional enrichment analyses for any
+sequenced genome of interest. Nucleic Acids Res. 51, D638–D646
+(2023).
+38. Blondal, T. et al. Assessing sample and miRNA proﬁle quality in serum
+and plasma or other bioﬂuids. Methods 59, S1–S6 (2013).
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press
+
+39. Liaw, A. & Wiener, M. Classiﬁcation and regression by randomForest.
+R. N. 2, 18–22 (2002).
+40. Evangelista, J. E. et al. SigCom LINCS: data and metadata search
+engine for a million gene expression signatures. Nucleic Acids Res.
+50, W697–W709 (2022).
+41. Marino, G. B., Evangelista, J. E., Clarke, D. J. B. & Ma’ayan, A. L2S2:
+chemical perturbationandCRISPRKOLINCSL1000signaturesearch
+engine. Nucleic Acids Res. gkaf373 https://doi.org/10.1093/nar/
+gkaf373 (2025).
+42. Jia, Y., Liu, J., Wang, G. & Song, Z. miR-484: a potential biomarker in
+health and disease. Front. Oncol. 12, 830420 (2022).
+43. Garg, A. et al. Circulating cardiovascular microRNAs in critically ill
+COVID-19 patients. Eur. J. Heart Fail 23, 468–475 (2021).
+44. Mitchell, M. I. et al. Extracellular Vesicle Capture by AnTibody of
+CHoice and Enzymatic Release (EV-CATCHER): A customizable
+puriﬁcation assay designed for small-RNA biomarker identiﬁcation
+and evaluation of circulating small-EVs. J. Extracell. Vesicles 10,
+e12110 (2021).
+45. Madè, A. et al. Association of miR-144 levels in the peripheral blood
+with COVID-19 severity and mortality. Sci. Rep. 12, 20048 (2022).
+46. Liao, L. et al. MicroRNA-126 (MiR-126): key roles in related diseases.
+J. Physiol. Biochem 80, 277–286 (2024).
+47. Wang, K. et al. miR-484 regulates mitochondrial network through
+targeting Fis1. Nat. Commun. 3, 781 (2012).
+48. Han, E. et al. Circulating autoantibodies against vasoactive
+biomarkers related to orthostatic intolerance in long COVID patients
+compared to no-long-COVID populations: a case-control study.
+Biomolecules 15, 300 (2025).
+49. Duan, S. et al. Peripheral serum exosomes isolated from patients with
+acute myocardial infarction promote endothelial cell angiogenesis via
+the miR-126-3p/TSC1/mTORC1/HIF-1α Pathway. IJN ume 17,
+1577–1592 (2022).
+50. Buonsenso, D. et al. Distinct pro-inﬂammatory/pro-angiogenetic
+signatures distinguish children with Long COVID from controls.
+Pediatr. Res. 98, 928–935 (2025).
+51. Szögi, T. et al. Novel biomarkers of mitochondrial dysfunction in Long
+COVID patients. GeroScience 47, 2245–2261 (2024).
+52. Molinero, M. et al. Bronchial aspirate-based proﬁling identiﬁes
+microRNA signatures associated with COVID-19 and fatal disease in
+critically ill patients. Front. Med. 8, 756517 (2022).
+53. Zipperle, J. et al. Circulating endothelial extracellular vesicle
+signatures correspond with ICU requirement: an exploratory study in
+COVID-19 patients. ICMx 11, 85 (2023).
+54. Brambilla, M. et al. Low-Grade Inﬂammation in Long COVID
+Syndrome Sustains a Persistent Platelet Activation Associated With
+Lung Impairment. JACC: Basic Transl. Sci. 10, 20–39 (2025).
+55. Lin, H.-S. et al. miR-199a-5p inhibits monocyte/macrophage
+differentiation by targeting the activin A type 1B receptor gene and
+ﬁnally reducing C/EBPα expression. J. Leukoc. Biol. 96, 1023–1035
+(2014).
+56. Chaudhury, A. & Howe, P. H. The tale of transforming growth factor-
+beta (TGFbeta) signaling: a soigné enigma. IUBMB Life 61, 929–939
+(2009).
+57. Cheong, J.-G. et al. Epigenetic memory of coronavirus infection in
+innate immune cells and their progenitors. Cell 186, 3882–3902.e24
+(2023).
+58. Xu, Y. et al. Regulation of endothelial intracellular adenosine via
+adenosine kinase epigenetically modulates vascular inﬂammation.
+Nat. Commun. 8, 943 (2017).
+59. Zhao, J. et al. 5-Iodotubercidin inhibits SARS-CoV-2 RNA synthesis.
+Antivir. Res. 198, 105254 (2022).
+60. Calton, E. K., Keane, K. N., Newsholme, P. & Soares, M. J. The Impact
+of Vitamin D Levels on inﬂammatory status: a systematic review of
+immune cell studies. PLoS ONE 10, e0141770 (2015).
+61. Brüggemann,Y. etal. JNK kinaseregulatesphosphorylation ofHCoV-
+229E nucleocapsid protein. npj Viruses 3, 69 (2025).
+62. Eckey, M. et al. Patient-reported treatment outcomes in ME/CFS and
+long COVID. Proc. Natl. Acad. Sci. USA. 122, e2426874122 (2025).
+Acknowledgements
+This research was funded by the Austrian Science Fund KLI 1064-B and
+Medical Scientiﬁc Fund of the Mayor of the City of Vienna 21176 to Gy.M.,
+and by the Austrian Science Fund KLI 876-B to T.A.Z. We would like to thank
+TAmiRNA GmBH for their support and for providing expertise in small-RNA
+sequencing services.
+Author contributions
+M.G. conceived and supervised the study, provided resources, funding
+acquisition and contributed to data interpretation. EmH developed the
+methodology, performed the experiments, analysed and interpreted the
+data, created the visualizations, and wrote the original draft. D.L. and K.S.
+contributed to sample processing and RT-qPCR experiments and sup-
+ported data curation. En.H., K.M.-Z. and N.K. contributed to participant
+recruitment, sample handling, and laboratory investigations. A.S. provided
+methodological support and resources. M.R. contributed to participant
+recruitment and coordination. C.N. and T.A.Z. provided resources and
+supervision. KH oversaw project administration and coordinated the work.
+All authors contributed to review and editing.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s43856-026-01854-6.
+Correspondence and requests for materials should be addressed to
+Mariann Gyöngyösi.
+Peer review information Communications Medicine thanks Christopher
+Armstrong and the other anonymous, reviewer(s) for their contribution to the
+peer review of this work. A peer review ﬁle is available.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to
+jurisdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long
+as you give appropriate credit to the original author(s) and the source,
+provide a link to the Creative Commons licence, and indicate if changes
+were made. The images or other third party material in this article are
+included in the article's Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the
+article's Creative Commons licence and your intended use is not permitted
+by statutory regulation or exceeds the permitted use, you will need to
+obtain permission directly from the copyright holder. To view a copy of this
+licence, visit http://creativecommons.org/licenses/by/4.0/.
+© The Author(s) 2026
+This Article in Press is shared early to give you faster access to new research.
+It iscitable and carries a permanent DOI. The ﬁnal edited version will replace it
+automatically.
+https://doi.org/10.1038/s43856-026-01854-6
+Article
+Communications Medicine
+Article in Press

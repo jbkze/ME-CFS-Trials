@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-25",
+  "last_check": "2026-08-26",
   "papers": [
     {
       "id": "woo-2026-cortisol-hpa-axis-meta-analysis",
@@ -2162,6 +2162,74 @@
       "flags": [],
       "isNew": false,
       "notes": "BMC Medicine 24:456, published online 2026-08-19 (PMID 42625188), NCT05635552 ('All Eyes on PCS'). TU Munich (Dept. of Nephrology, lead) with Charité co-authors (Oertel, Reeß — Experimental & Clinical Research Center) but not Wirth/Scheibenbogen-authored. n=96 never-infected controls, 102 SARS-CoV-2-recovered, 102 post-COVID syndrome (62 meeting ME/CFS criteria); retinal vessel analysis (dynamic + static) showed reduced flicker-induced venular dilation, narrower retinal arterioles, and lower arteriolar-to-venular ratio in PCS patients (most pronounced in the ME/CFS subgroup, AUC=0.79), correlating with symptom burden and elevated IL-6/ICAM-1/VCAM-1. Confirmed via PubMed/Europe PMC and publisher DOI record."
+    },
+    {
+      "id": "nunes-2026-microclot-hypercoagulability-longcovid",
+      "title": "Persistent Hypercoagulability and Further Characterization of Microclot Complexes in Long COVID",
+      "authors": "Nunes M, Pereira Guerreiro CM, Pretorius JH, Venter C, Thierry AR, Fielding BC, Kell DB, Pretorius E",
+      "journal": "medRxiv (preprint)",
+      "date": "Aug 2026",
+      "summary": "Blood was tested from 20 people with long COVID and 19 healthy people. The long-COVID patients' blood clotted faster and firmer than normal (called hypercoagulability), and contained more 'microclots' — tiny clumps of a misfolded blood protein that special dyes can detect sticking to them.",
+      "why": "Adds more detailed evidence for the microclot theory of long COVID and ME/CFS — the idea that abnormal, hard-to-dissolve clots clog small blood vessels and starve tissues of oxygen, from Etheresia Pretorius's group, the lab most associated with this research direction.",
+      "link": "https://doi.org/10.64898/2026.08.20.26360874",
+      "first_seen": "2026-08-26",
+      "last_checked": "2026-08-26",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Posted medRxiv 2026-08-23. n=20 long COVID vs 19 healthy controls; viscoelastometry (clot strength/speed) plus fluorescence microscopy microclot quantification. Long-COVID-only cohort (no ME/CFS-diagnosed patients specifically), included per papers-track precedent of tracking long-COVID mechanism work relevant to ME/CFS (microclot theory). Co-author Pretorius also on the already-tracked westermeier-2026-cardiometabolic-pem-perspective entry. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/DOI match)."
+    },
+    {
+      "id": "ono-2026-mitochondrial-endothelial-dysfunction-longcovid",
+      "title": "Persistent Mitochondrial and Endothelial Dysfunction in Non-Hospitalized Patients with Long COVID",
+      "authors": "Ono R, Takayama S, Abe M, Arita R, Onodera K, Ishizawa K, Kanno T, Saito N, Kikuchi A, Abe T, Ishii T",
+      "journal": "Frontiers in Medicine",
+      "date": "Aug 2026",
+      "summary": "32 long-COVID patients in Japan were followed for 6 months. Two blood markers — one showing stress in the cell's 'power plants' (mitochondria) and one showing damage to the lining of blood vessels — stayed high in patients who hadn't gotten better, but dropped in those who improved. 91% of participants had fatigue as a main symptom.",
+      "why": "The authors directly link these findings to ME/CFS, arguing the same mitochondrial and blood-vessel problems seen here likely underlie ME/CFS fatigue too, and offer a simple blood test for tracking who stays stuck in prolonged illness.",
+      "link": "https://doi.org/10.3389/fmed.2026.1921822",
+      "first_seen": "2026-08-26",
+      "last_checked": "2026-08-26",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Published online 2026-08-20. Tohoku University group. n=32 non-hospitalized long-COVID patients, 6-month longitudinal follow-up; serum GDF-15 (mitochondrial stress marker) and VCAM-1 (endothelial dysfunction marker) tracked against symptom trajectory. Not Wirth/Scheibenbogen-affiliated. Confirmed directly via Frontiers publisher page (title/authors/journal/date match)."
+    },
+    {
+      "id": "han-2026-mirna-ratios-longcovid-biomarker",
+      "title": "Circulating MicroRNA ratios as diagnostic biomarkers for long COVID with an independent validation cohort",
+      "authors": "Han E, Lukovic D, Müller-Zlabinger K, Hasimbegovic E, Schefberger K, Kastner N, Spannbauer A, Riesenhuber M, Nitsche C, Zelniker TA, Gyöngyösi M, Hamzaraj K",
+      "journal": "Communications Medicine",
+      "date": "Aug 2026",
+      "summary": "Medical University of Vienna researchers tested blood from 206 long-COVID patients and 71 healthy people, looking at ratios of tiny genetic messenger molecules (microRNAs) linked to mitochondrial and blood-vessel health. Two of these ratios were reliably lower in long-COVID patients in two separate patient groups, though the test's accuracy dropped when checked against an outside dataset.",
+      "why": "A step toward an objective blood test for long COVID that could plausibly extend to ME/CFS diagnosis, though the authors are upfront that it isn't accurate enough yet for clinical use.",
+      "link": "https://doi.org/10.1038/s43856-026-01854-6",
+      "first_seen": "2026-08-26",
+      "last_checked": "2026-08-26",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Communications Medicine (Nature portfolio), published online 2026-08-20. Medical University of Vienna group. n=206 long-COVID patients vs 71 healthy controls, discovery + independent validation cohort; two mitochondrial/vascular-linked microRNA ratios found reduced but with reduced external validation accuracy. Not Wirth/Scheibenbogen-affiliated; not yet indexed in Europe PMC (very recent) — confirmed via Crossref DOI metadata (title/authors/journal/date match)."
+    },
+    {
+      "id": "chen-2026-ebv-reprograms-bcells-covid",
+      "title": "EBV Reprograms B Cells in an Autoimmune-Like Fashion in Patients with COVID-19",
+      "authors": "Chen DG, Yuan D, Su Y, Magis A, Chu H, Goldman JD, Heath JR",
+      "journal": "bioRxiv (preprint)",
+      "date": "Aug 2026",
+      "summary": "In COVID-19 patients, the Epstein-Barr virus (EBV, a common 'sleeper' virus most people already carry) can reawaken and reprogram the immune cells it infects (B cells) to act as if they're attacking the body's own tissue. People with more of these reprogrammed cells had worse lingering symptoms 2-3 months later.",
+      "why": "EBV reactivation is a long-standing suspect in both long COVID and ME/CFS; this gives a specific cellular mechanism — autoimmune-like B-cell reprogramming — for how a reawakened 'sleeper' virus could drive lasting illness.",
+      "link": "https://doi.org/10.64898/2026.08.17.745245",
+      "first_seen": "2026-08-26",
+      "last_checked": "2026-08-26",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Posted bioRxiv 2026-08-18 (PPR). Institute for Systems Biology, Seattle (prominent immune-monitoring/systems-immunology lab). Not yet peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/DOI match)."
     }
   ]
 }
