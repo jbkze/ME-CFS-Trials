@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-26",
+  "last_check": "2026-08-27",
   "papers": [
     {
       "id": "woo-2026-cortisol-hpa-axis-meta-analysis",
@@ -2174,10 +2174,8 @@
       "link": "https://doi.org/10.64898/2026.08.20.26360874",
       "first_seen": "2026-08-26",
       "last_checked": "2026-08-26",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Posted medRxiv 2026-08-23. n=20 long COVID vs 19 healthy controls; viscoelastometry (clot strength/speed) plus fluorescence microscopy microclot quantification. Long-COVID-only cohort (no ME/CFS-diagnosed patients specifically), included per papers-track precedent of tracking long-COVID mechanism work relevant to ME/CFS (microclot theory). Co-author Pretorius also on the already-tracked westermeier-2026-cardiometabolic-pem-perspective entry. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/DOI match)."
     },
     {
@@ -2191,10 +2189,8 @@
       "link": "https://doi.org/10.3389/fmed.2026.1921822",
       "first_seen": "2026-08-26",
       "last_checked": "2026-08-26",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Published online 2026-08-20. Tohoku University group. n=32 non-hospitalized long-COVID patients, 6-month longitudinal follow-up; serum GDF-15 (mitochondrial stress marker) and VCAM-1 (endothelial dysfunction marker) tracked against symptom trajectory. Not Wirth/Scheibenbogen-affiliated. Confirmed directly via Frontiers publisher page (title/authors/journal/date match)."
     },
     {
@@ -2208,10 +2204,8 @@
       "link": "https://doi.org/10.1038/s43856-026-01854-6",
       "first_seen": "2026-08-26",
       "last_checked": "2026-08-26",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Communications Medicine (Nature portfolio), published online 2026-08-20. Medical University of Vienna group. n=206 long-COVID patients vs 71 healthy controls, discovery + independent validation cohort; two mitochondrial/vascular-linked microRNA ratios found reduced but with reduced external validation accuracy. Not Wirth/Scheibenbogen-affiliated; not yet indexed in Europe PMC (very recent) — confirmed via Crossref DOI metadata (title/authors/journal/date match)."
     },
     {
@@ -2225,11 +2219,26 @@
       "link": "https://doi.org/10.64898/2026.08.17.745245",
       "first_seen": "2026-08-26",
       "last_checked": "2026-08-26",
+      "flags": [],
+      "isNew": false,
+      "notes": "Posted bioRxiv 2026-08-18 (PPR). Institute for Systems Biology, Seattle (prominent immune-monitoring/systems-immunology lab). Not yet peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/DOI match)."
+    },
+    {
+      "id": "wirth-2026-orthostatic-dysfunction",
+      "title": "Orthostatic Dysfunction and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Close Reciprocal Relationship Beyond Cardiac Preload Failure and Hypoperfusion",
+      "authors": "Wirth KJ",
+      "journal": "Preprints.org (preprint)",
+      "date": "Aug 2026",
+      "summary": "Standing up puts extra strain on the body, and people with ME/CFS often feel worse when upright (orthostatic intolerance). This paper argues that standing doesn't just strain the heart and blood vessels — it may also directly overload muscle cells with calcium, the same overload process Klaus Wirth has proposed causes post-exertional malaise (PEM, a crash after activity).",
+      "why": "Proposes that simply standing — not only physical exertion — could trigger PEM-like crashes in severely ill ME/CFS patients through one shared cellular mechanism, tying together two of the illness's most disabling symptoms; it's Wirth's own hypothesis, so high priority to watch for follow-up evidence.",
+      "link": "https://doi.org/10.20944/preprints202608.1772.v1",
+      "first_seen": "2026-08-27",
+      "last_checked": "2026-08-27",
       "flags": [
         "new"
       ],
       "isNew": true,
-      "notes": "Posted bioRxiv 2026-08-18 (PPR). Institute for Systems Biology, Seattle (prominent immune-monitoring/systems-immunology lab). Not yet peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/DOI match)."
+      "notes": "Posted Preprints.org 2026-08-25 (v1). Solo-authored hypothesis paper by Klaus Wirth (Mitodicure) — HIGH PRIORITY, Wirth-authored, same lower-tier preprint-venue caveat as other already-tracked Preprints.org Wirth entries (wirth-2026-hypovolemia-review, wirth-2026-connective-tissue-laxity). Direct fetch of preprints.org manuscript page returned HTTP 403; confirmed instead via doi.org redirect resolving to the correct preprints.org manuscript URL plus independent corroboration from a Science for ME forum thread quoting the abstract verbatim (title/author/DOI/mechanism match). Not yet peer-reviewed. Extends Wirth's Na+/K+-ATPase / NCX calcium-overload skeletal-muscle hypothesis (already tracked via wirth-2026-myasthenia-electrophysiology and the earlier skeletal-muscle reviews) to argue orthostatic stress alone, via impaired beta2-adrenergic Na+/K+-ATPase activity, can trigger the same PEM-causing calcium overload without physical exertion."
     }
   ]
 }
