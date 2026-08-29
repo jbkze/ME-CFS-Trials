@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-28",
+  "last_check": "2026-08-29",
   "papers": [
     {
       "id": "dietzel-2026-acupressure-qigong-rct",
@@ -15,7 +15,7 @@
       "first_seen": "2026-08-28",
       "last_checked": "2026-08-28",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Frontiers in Medicine, vol. 13, published online Aug 10, 2026. Charité (Institute for Social Medicine, Epidemiology and Health Economics — Brinkhaus/Roll group — with Scheibenbogen and Bellmann-Strobl from the Fatigue Centrum as co-authors). RCT 'ACUQiG', n=235 (118 intervention / 117 control) with post-infectious/post-COVID fatigue and impaired physical function, 85% female, mean age 42; 8 weeks of self-applied acupressure (9 mandatory + up to 2 symptom-specific points) plus twice-weekly online Qigong vs. self-care leaflet only (both arms received written complementary-medicine guidance). Primary outcome (SF-36 Physical Functioning Subscale at 8 weeks): intervention 55.4 vs control 51.2, adjusted mean difference 4.2 (95% CI -0.9 to 9.4, p=0.109) — not statistically significant. Responder analysis (>=10-point improvement) favored intervention (58.9% vs 46.3%, OR 1.69, p=0.058) but also not significant. Chalder Fatigue Scale showed a small but statistically significant improvement (21.4 vs 23.2, p=0.040). Adherence 76.8% (acupressure) / 62.5% (Qigong). HIGH PRIORITY (Scheibenbogen-affiliated). Confirmed via Frontiers publisher page (frontiersin.org, abstract/results) and Europe PMC core record (author list/journal/date match)."
     },
     {
@@ -30,7 +30,7 @@
       "first_seen": "2026-08-28",
       "last_checked": "2026-08-28",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Brain Communications 8(3):fcag173 (PMID 42205163, PMCID PMC13202209), published online May 13, 2026; newly surfaced via a Health Rising discussion piece on Aug 27, 2026, hence flagged in this run despite being a few months old. NIH Intramural group (Walitt is part of the Nath/Hallett ME/CFS deep-phenotyping collaborators already tracked via walitt-2024-nih-deep-phenotyping and bedard-2026-central-fatigability-neuroimaging). Measured CSF catecholamine (norepinephrine/dopamine) pathway activity: ME/CFS n=16, long COVID n=34, Parkinson's disease n=32 (positive control), healthy volunteers n=40. Norepinephrine pathway activity markedly reduced in ME/CFS (p=0.00055) and to a lesser extent in long COVID (p=0.05) and Parkinson's, while dopamine pathway activity was normal in both post-infectious groups; reduced norepinephrine activity correlated with worse handgrip-strength maintenance and lower general health, more pronounced in those with PEM. Authors hypothesize inadequate cellular ATP impairs the energy-intensive resynthesis of norepinephrine via VMAT2. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API core record (full metadata, abstract, PMID/PMCID)."
     },
     {
@@ -2267,7 +2267,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "Posted Preprints.org 2026-08-25 (v1). Solo-authored hypothesis paper by Klaus Wirth (Mitodicure) — HIGH PRIORITY, Wirth-authored, same lower-tier preprint-venue caveat as other already-tracked Preprints.org Wirth entries (wirth-2026-hypovolemia-review, wirth-2026-connective-tissue-laxity). Direct fetch of preprints.org manuscript page returned HTTP 403; confirmed instead via doi.org redirect resolving to the correct preprints.org manuscript URL plus independent corroboration from a Science for ME forum thread quoting the abstract verbatim (title/author/DOI/mechanism match). Not yet peer-reviewed. Extends Wirth's Na+/K+-ATPase / NCX calcium-overload skeletal-muscle hypothesis (already tracked via wirth-2026-myasthenia-electrophysiology and the earlier skeletal-muscle reviews) to argue orthostatic stress alone, via impaired beta2-adrenergic Na+/K+-ATPase activity, can trigger the same PEM-causing calcium overload without physical exertion."
     }
   ]
