@@ -1,8 +1,53 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-08-31",
+  "last_check": "2026-09-01",
   "papers": [
+    {
+      "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
+      "title": "Registered interventional trials fail to cover patient-prioritised treatments in Post-COVID condition (PCC)",
+      "authors": "Gabriel M, Koster S, Puta C, Katzer K, Reuken PA, Stallmach A",
+      "journal": "Research Square (preprint)",
+      "date": "Aug 2026 (posted Aug 31, 2026)",
+      "summary": "Researchers compared 714 registered post-COVID studies (from ClinicalTrials.gov, the German registry DRKS, and the EU registry) against a list of 29 treatments that patients and their doctors say they actually rely on day to day. Only about 1 in 14 of those studies tested any of those patient-favoured treatments. Post-exertional malaise (PEM, the crash after activity that is the hallmark of ME/CFS) was assessed at all in 57 trials, but was the main thing being measured in only 8 of them. Ten common treatment types — for nervous-system regulation problems, allergic-type mast-cell reactions, and certain repurposed nerve drugs — had no registered trial anywhere, and Germany's DRKS registry had zero trials matching any patient-priority treatment.",
+      "why": "Backs up, with hard numbers, a pattern this tracker keeps finding: solid drug trials aimed at the ME/CFS-like PEM symptom are rare, especially in Germany. It makes a data-driven case for steering funding — including Germany's new decade-long \"Nationale Dekade\" research programme — toward the treatments patients and doctors already believe help, rather than only mechanism-focused studies.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10851936/v1",
+      "first_seen": "2026-09-01",
+      "last_checked": "2026-09-01",
+      "flags": [],
+      "isNew": true,
+      "notes": "Jena University Hospital group (Gabriel/Puta/Katzer/Reuken/Stallmach). Meta-research/landscape-analysis preprint, not new patient biology: deduplicated 854 registry records (ClinicalTrials.gov, DRKS, EU-CTR; snapshot 16 Jul 2026) into 714 unique interventional PCC trials, cross-referenced against 29 patient-guide treatments; 51/714 (7.1%) covered any guide treatment, 20 active; PEM captured in 57 trials but co-primary endpoint in only 8; 10 guide treatments (autonomic-dysfunction first-line agents, mast-cell stabilisers, several repurposed neuromodulators) had zero registered trials; DRKS contributed no guide-relevant trial. Directly relevant context for this tracker's own difficulty finding PEM-targeted German drug trials. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/date/DOI match) and Research Square publisher-page DOI resolution."
+    },
+    {
+      "id": "erhart-2026-ev-surface-profile-biomarker-pcs",
+      "title": "A Multivariable Plasma Extracellular Vesicle Surface Profile Associated with Post-COVID-19 Syndrome",
+      "authors": "Erhart DK, Ressin H, Balz LT, Chatterjee S, Lule D, Mueller S, Lewerenz J, Muench J, Tumani H, Gross RM",
+      "journal": "medRxiv (preprint)",
+      "date": "Aug 2026 (posted Aug 31, 2026)",
+      "summary": "Blood and spinal-fluid samples from 61 people with lasting post-COVID symptoms, 80 fully recovered people, and 10 people with fatigue after other infections were tested for extracellular vesicles (EVs) — tiny particles cells release into the blood, a bit like sealed messages — looking at proteins on their surface. No single surface protein reliably told the groups apart on its own, but a computer model combining small differences across many proteins together could distinguish post-COVID patients from recovered people reasonably well, and this combined \"EV score\" dropped back down a year later in patients who improved.",
+      "why": "Adds a new type of candidate blood test for post-COVID syndrome — based on particles cells shed, rather than antibodies or hormones — from the same Ulm University team already tracked here for finding no unusual brain immune activity in these patients. Together, the two findings point research away from classic autoimmune brain inflammation and toward other biology (e.g. how cells communicate) as a driver of lasting symptoms.",
+      "link": "https://doi.org/10.64898/2026.08.27.26361498",
+      "first_seen": "2026-09-01",
+      "last_checked": "2026-09-01",
+      "flags": [],
+      "isNew": true,
+      "notes": "Posted medRxiv Aug 31, 2026. Ulm University group (Erhart, Balz, Lule, Muench, Lewerenz, Tumani — same team as the already-tracked erhart-2026-cns-immune-activation-postcovid paper; likely overlapping cohort/companion analysis). n=61 post-COVID syndrome (COVIDpost) vs 80 recovered (COVIDreco) vs 10 non-SARS-CoV-2 post-viral syndrome; bead-based multiplex flow cytometry of 37 tetraspanin- and phosphatidylserine-directed EV surface markers in plasma and CSF; no single marker survived FDR correction, but an L1-regularised logistic-regression classifier under nested cross-validation achieved AUC 0.788 (plasma tetraspanin panel); EV classification score declined at 1-year follow-up in improving patients. Not Wirth/Scheibenbogen-affiliated. Preprint, not yet peer-reviewed — confirmed via Europe PMC REST API record and medRxiv DOI resolution."
+    },
+    {
+      "id": "brady-2026-mmt-proteomics-longcovid-cognitive",
+      "title": "Plasma Proteomics Identifies a Microtesla Magnetic Therapy Response Signature in Long COVID",
+      "authors": "Brady NR, Canori A, Maltz D, Kirsher DY, Zhou W, Becker J, Putrino DF, Gurfein BT",
+      "journal": "medRxiv (preprint)",
+      "date": "Aug 2026 (posted Aug 27, 2026)",
+      "summary": "In a small trial of a gentle, at-home, whole-brain magnetic-field treatment (\"Microtesla Magnetic Therapy\") for long-COVID brain fog, some treated patients' thinking and symptoms improved. Researchers then measured over 11,000 blood proteins before and after treatment and found a pattern of about 17 proteins that changed specifically in people who got better, including one protein that normally puts the brakes on a cell-signalling pathway (called Hedgehog signalling) tied to inflammation and tissue repair — suggesting the treatment may work partly by calming inflammation.",
+      "why": "Offers early molecular evidence that a non-drug, brain-stimulation approach can produce a measurable biological change in long COVID, and flags specific blood proteins that could help predict who will respond to this or similar treatments — though this is a small feasibility study, not a definitive trial.",
+      "link": "https://doi.org/10.64898/2026.08.25.26361319",
+      "first_seen": "2026-09-01",
+      "last_checked": "2026-09-01",
+      "flags": [],
+      "isNew": true,
+      "notes": "Posted medRxiv Aug 27, 2026 (indexed ~Aug 31). Mount Sinai / Cortene collaboration (senior author David Putrino, a prominent long-COVID researcher; Gurfein lab). Randomised, sham-controlled feasibility trial of at-home Microtesla Magnetic Therapy (MMT, low-amplitude whole-brain RF electromagnetic field) for long-COVID cognitive impairment; SomaScan 11K plasma proteomics on paired baseline/week-4 samples, post-hoc responder classification; 17-protein exploratory response signature, top hit Hedgehog interacting protein (HHIP), pathway analysis consistent with reduced inflammatory/injury signalling. No German site/sponsor (US-based) — tracked on papers side only per ROUTINE.md (papers not Germany-restricted). Not Wirth/Scheibenbogen-affiliated. Preprint, not yet peer-reviewed — confirmed via Europe PMC REST API record and medRxiv DOI resolution."
+    },
     {
       "id": "karipidis-2026-enos-uncoupling-pem-longcovid",
       "title": "eNOS Uncoupling, Shear-Stress Tolerance, and the Two-Threshold Model of Post-Exertional Malaise in Long COVID: A Mechanistic Hypothesis With Implications for Physiotherapy and Recovery Protocols",
@@ -2297,7 +2342,7 @@
       "first_seen": "2026-08-31",
       "last_checked": "2026-08-31",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Br J Biomed Sci 83:16993, published online Jul 27, 2026 (PMID 42577968), indexed by Europe PMC 2026-08-13. University of Milan / Fondazione IRCCS Ca' Granda Ospedale Maggiore Policlinico group (Vecchi/Caprioli gastroenterology lab). RCT, n=48 (24/24) adults with post-COVID fatigue; 4 weeks high-dose VSL#3 vs placebo, with 4-week follow-up off treatment. Surfaced via The Sick Times' Aug 25 2026 research roundup (lead only) but independently confirmed via Europe PMC REST API record (title/authors/journal/DOI match) before being recorded. Not Wirth/Scheibenbogen-affiliated. Registered as an NCT trial per Europe PMC's accession-number tagging (tmAccessionTypeList: nct) — not independently looked up this run."
     },
     {
@@ -2312,7 +2357,7 @@
       "first_seen": "2026-08-31",
       "last_checked": "2026-08-31",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "EBioMedicine 131:106455, published online Aug 27, 2026 (PMID 42660019), indexed by Europe PMC 2026-08-30. Stanford (Utz lab) with RECOVER-cohort collaborators; multicohort observational study of HHV-6 antibody responses during acute SARS-CoV-2 infection as a predictor of subsequent long COVID. Not Wirth/Scheibenbogen-affiliated. A May 2026 SSRN preprint of the same work also exists; this peer-reviewed EBioMedicine version is the citable record. Confirmed independently via Europe PMC REST API record (title/authors/journal/DOI match)."
     }
   ]

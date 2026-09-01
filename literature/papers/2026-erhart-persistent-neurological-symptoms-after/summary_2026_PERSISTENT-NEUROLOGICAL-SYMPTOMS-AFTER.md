@@ -1,6 +1,6 @@
 ---
 type: paper
-id: erhart2026
+id: erhart2026a
 title: "Persistent Neurological Symptoms After COVID-19 Lack Evidence of Adaptive CNS Immune Activation"
 authors: ["Erhart DK", "Balz LT", "Giotaki I", "Matits L", "Gross R", "Bachhuber F", "Muench J", "Kolassa I", "Fitzner D", "Uttner I", "Lule D", "Lewerenz J", "Lange P", "Tumani H"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [autoimmunity, immunology, metabolism, neuroinflammation, autonomic, infec
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: erhart2026
+bibtex_key: erhart2026a
 cover: "[[literature/papers/2026-erhart-persistent-neurological-symptoms-after/cover.png]]"
 ---
 

@@ -7,25 +7,28 @@ year: 2026
 venue: "British Journal of Biomedical Science"
 doi: 10.3389/bjbs.2026.16993
 url: https://doi.org/10.3389/bjbs.2026.16993
-pdf: https://doi.org/10.3389/bjbs.2026.16993
-text: null
+pdf: literature/papers/2026-amoroso-vsl-supplementation-improves-long/paper.pdf
+text: literature/papers/2026-amoroso-vsl-supplementation-improves-long/paper.txt
 tags: [microbiome, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: amoroso2026
+cover: "[[literature/papers/2026-amoroso-vsl-supplementation-improves-long/cover.png]]"
 ---
 
 # VSL#3® supplementation improves fatigue in long COVID: results from the DELong#3 randomized placebo-controlled trial
 
 ## Related files
+![[literature/papers/2026-amoroso-vsl-supplementation-improves-long/paper.pdf]]
 - [[literature/papers/2026-amoroso-vsl-supplementation-improves-long/citation.bib]]
+- [[literature/papers/2026-amoroso-vsl-supplementation-improves-long/paper.txt]]
 
 ## Summary
 
 In this Italian trial ('DELong#3'), 48 adults with lasting fatigue after COVID-19 took either a high-dose multi-strain probiotic (a supplement of live gut bacteria, brand VSL#3®) or a placebo (dummy pill) for four weeks. People on the probiotic reported a much bigger drop in their fatigue than those on placebo, and the improvement was still there a month after they stopped taking it.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
