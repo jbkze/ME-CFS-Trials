@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-01",
+  "last_check": "2026-09-02",
   "papers": [
     {
       "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
@@ -15,7 +15,7 @@
       "first_seen": "2026-09-01",
       "last_checked": "2026-09-01",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Jena University Hospital group (Gabriel/Puta/Katzer/Reuken/Stallmach). Meta-research/landscape-analysis preprint, not new patient biology: deduplicated 854 registry records (ClinicalTrials.gov, DRKS, EU-CTR; snapshot 16 Jul 2026) into 714 unique interventional PCC trials, cross-referenced against 29 patient-guide treatments; 51/714 (7.1%) covered any guide treatment, 20 active; PEM captured in 57 trials but co-primary endpoint in only 8; 10 guide treatments (autonomic-dysfunction first-line agents, mast-cell stabilisers, several repurposed neuromodulators) had zero registered trials; DRKS contributed no guide-relevant trial. Directly relevant context for this tracker's own difficulty finding PEM-targeted German drug trials. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/date/DOI match) and Research Square publisher-page DOI resolution."
     },
     {
@@ -30,7 +30,7 @@
       "first_seen": "2026-09-01",
       "last_checked": "2026-09-01",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Posted medRxiv Aug 31, 2026. Ulm University group (Erhart, Balz, Lule, Muench, Lewerenz, Tumani — same team as the already-tracked erhart-2026-cns-immune-activation-postcovid paper; likely overlapping cohort/companion analysis). n=61 post-COVID syndrome (COVIDpost) vs 80 recovered (COVIDreco) vs 10 non-SARS-CoV-2 post-viral syndrome; bead-based multiplex flow cytometry of 37 tetraspanin- and phosphatidylserine-directed EV surface markers in plasma and CSF; no single marker survived FDR correction, but an L1-regularised logistic-regression classifier under nested cross-validation achieved AUC 0.788 (plasma tetraspanin panel); EV classification score declined at 1-year follow-up in improving patients. Not Wirth/Scheibenbogen-affiliated. Preprint, not yet peer-reviewed — confirmed via Europe PMC REST API record and medRxiv DOI resolution."
     },
     {
@@ -45,7 +45,7 @@
       "first_seen": "2026-09-01",
       "last_checked": "2026-09-01",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Posted medRxiv Aug 27, 2026 (indexed ~Aug 31). Mount Sinai / Cortene collaboration (senior author David Putrino, a prominent long-COVID researcher; Gurfein lab). Randomised, sham-controlled feasibility trial of at-home Microtesla Magnetic Therapy (MMT, low-amplitude whole-brain RF electromagnetic field) for long-COVID cognitive impairment; SomaScan 11K plasma proteomics on paired baseline/week-4 samples, post-hoc responder classification; 17-protein exploratory response signature, top hit Hedgehog interacting protein (HHIP), pathway analysis consistent with reduced inflammatory/injury signalling. No German site/sponsor (US-based) — tracked on papers side only per ROUTINE.md (papers not Germany-restricted). Not Wirth/Scheibenbogen-affiliated. Preprint, not yet peer-reviewed — confirmed via Europe PMC REST API record and medRxiv DOI resolution."
     },
     {
@@ -2359,6 +2359,111 @@
       "flags": [],
       "isNew": false,
       "notes": "EBioMedicine 131:106455, published online Aug 27, 2026 (PMID 42660019), indexed by Europe PMC 2026-08-30. Stanford (Utz lab) with RECOVER-cohort collaborators; multicohort observational study of HHV-6 antibody responses during acute SARS-CoV-2 infection as a predictor of subsequent long COVID. Not Wirth/Scheibenbogen-affiliated. A May 2026 SSRN preprint of the same work also exists; this peer-reviewed EBioMedicine version is the citable record. Confirmed independently via Europe PMC REST API record (title/authors/journal/DOI match)."
+    },
+    {
+      "id": "baden-2026-recover-vital-paxlovid-longcovid-negative-rct",
+      "title": "Nirmatrelvir-ritonavir for the treatment of long COVID (RECOVER-VITAL): a randomised, placebo-controlled, phase 2 trial",
+      "authors": "Baden LR, Shah NS, Liu STH, Cohen J, Moy J, Kumar A, McComsey GA, Chen P, Floris-Moore M, Singer NG, Fernandez I, Slandzicki AJ, Wiley Z, Kadl A, Kaminsky DA, Hsu H, Walker TA, Hope AA, Ostrosky-Zeichner L, Goldman JD, Peluso MJ, Patterson TF, Parthasarathy S, Mullington JM, et al., for the RECOVER-VITAL Clinical Trial Group",
+      "journal": "The Lancet Infectious Diseases",
+      "date": "Aug 2026 (online)",
+      "summary": "In this large US trial, 959 adults with long COVID (symptoms lasting 12+ weeks after COVID-19) were randomly given the antiviral drug Paxlovid (nirmatrelvir-ritonavir) or a dummy pill for 15 or 25 days, to test whether hidden leftover virus is driving their symptoms. Whether people mainly had brain fog, dizziness/fast heart rate, or exercise intolerance (a crash after activity), the drug did not work better than placebo on any measure.",
+      "why": "This is the largest, most rigorous test yet of the idea that long COVID is caused by virus lingering in the body, and it found no benefit — a disappointing but important result that pushes research toward other explanations and treatments, including for the exercise-intolerance/PEM-type long COVID that overlaps with ME/CFS.",
+      "link": "https://doi.org/10.1016/S1473-3099(26)00406-8",
+      "first_seen": "2026-09-02",
+      "last_checked": "2026-09-02",
+      "flags": [],
+      "isNew": true,
+      "notes": "NCT05595369, NIH RECOVER Consortium. n=959 mITT across 3 pre-specified symptom phenotypes (cognitive n=332, autonomic n=334, exercise/PEM n=332), 69 US sites, enrolled Jul 2023-Sep 2024. Primary endpoint = day-90 change on phenotype-specific PROs (incl. a modified DePaul PEM short form for the exercise arm). No statistically significant benefit on any primary or secondary endpoint for either 15-day or 25-day regimen vs placebo; no safety signal (52 SAEs in 42/963, no deaths). Not Wirth/Scheibenbogen-affiliated but directly relevant to the German post-COVID/NAPKON trial landscape tracked on the trials side — a large negative RCT against the viral-persistence hypothesis. Confirmed via Europe PMC REST API record (title/authors/journal/DOI/abstract match), corroborated by EurekAlert press release and a Science for ME forum thread quoting the paper."
+    },
+    {
+      "id": "groysman-2026-fragile-mitophagy-pem-hypothesis",
+      "title": "Fragile mitophagy and post-exertional malaise in long COVID: a hypothesis",
+      "authors": "Groysman R",
+      "journal": "Frontiers in Medicine",
+      "date": "Aug 2026 (online Aug 12, 2026)",
+      "summary": "This paper proposes a new explanation for why people crash one to three days after activity in long COVID (post-exertional malaise, PEM): damaged mitochondria (the cell's energy factories) get flagged for clean-up, but the clean-up process doesn't finish properly, so leftover mitochondrial debris keeps triggering inflammation long after the activity itself is over.",
+      "why": "A plausible new piece for the PEM puzzle — mitochondrial 'clean-up failure' rather than simply low energy — that could in principle be tested with existing lab methods, though it is one author's hypothesis with no new experimental data behind it yet.",
+      "link": "https://doi.org/10.3389/fmed.2026.1905758",
+      "first_seen": "2026-09-02",
+      "last_checked": "2026-09-02",
+      "flags": [],
+      "isNew": true,
+      "notes": "Frontiers in Medicine (Hypothesis and Theory article), published online 2026-08-12. Solo author (Groysman R, 'Covid Institute', Plano TX — independent researcher, non-academic affiliation); lower-confidence tier similar to other tracked independent-researcher hypothesis pieces, but peer-reviewed at a legitimate (if high-volume) Frontiers journal. Hypothesis-only, no primary data. Not Wirth/Scheibenbogen-affiliated; conceptually complements already-tracked PEM mechanism entries (Wirth's Na+/K+-ATPase/calcium-overload hypotheses, the eNOS/two-threshold model, and the vascular/cardiometabolic perspective pieces). Confirmed via Europe PMC REST API record and the Frontiers publisher page (full text fetched)."
+    },
+    {
+      "id": "green-2026-patient-led-symptom-clustering-longcovid",
+      "title": "A comparative analysis of computational clustering methods for symptom-based classification of long COVID",
+      "authors": "Green TD, McWilliams C, de Figueiredo L, Soares L, Pollack B, Cohen AK, Zhi-Xuan T, Falor T, Davis HE",
+      "journal": "Oxford Open Immunology",
+      "date": "Jun 2026 (online Jun 13, 2026)",
+      "summary": "Patient-researchers analysed survey answers from over 6,000 people with long COVID about 162 symptoms, using three different computer clustering methods to sort patients into subtypes. The three methods largely disagreed with each other about what the 'real' subtypes were, suggesting long COVID's symptom pattern is more of a continuous spectrum than a set of clear-cut categories — though people with more overall symptoms consistently also had worse post-exertional malaise (the crash after activity) and were more often women.",
+      "why": "A caution flag for the whole field of long-COVID/ME-CFS 'subtyping' research: which subtype a patient gets assigned may depend more on which statistical method a study happens to use than on a real biological grouping — which matters for how future trials pick and interpret patient subgroups.",
+      "link": "https://doi.org/10.1093/oxfimm/iqag010",
+      "first_seen": "2026-09-02",
+      "last_checked": "2026-09-02",
+      "flags": [],
+      "isNew": true,
+      "notes": "Oxford Open Immunology 7(1):iqag010, received 2025-12-22, accepted 2026-06-05, published online 2026-06-13. Patient-Led Research Collaborative (Davis, Pollack, Cohen are prominent long-COVID patient-researchers). n=6,031, 162 symptoms, three clustering methods (cross-method agreement weak, adjusted mutual information 0.13-0.40). Methodological/epidemiological rather than biomedical mechanism, but bears directly on how phenotype/subtype papers already tracked should be interpreted. ~2.8 months old at time of recording — outside the tightest daily window but within the routine's 'roughly 3 months' allowance, and missed by prior runs (only now surfaced via Europe PMC's FIRST_PDATE indexing). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and the Oxford Academic publisher page (full text fetched)."
+    },
+    {
+      "id": "vogel-2026-recover-adult-wearables-cardiopulmonary-fitness",
+      "title": "Wearable-derived cardiopulmonary fitness and physical activity in adults with long COVID: a RECOVER-Adult digital health substudy",
+      "authors": "Vogel JM, Jenkins T, Cerda M, Chen H, Goldman J, Katz SD, et al., RECOVER Consortium",
+      "journal": "JACC: Advances",
+      "date": "Jul 2026",
+      "summary": "Using wrist-worn fitness trackers on almost 1,500 people an average of about 21 months after COVID-19, researchers found that those with a high long-COVID symptom burden had lower heart-rate variability at rest, a faster resting heart rate, and were far less physically active day-to-day than those with a low symptom burden — showing the fitness drop is real, measurable, and does not simply fade with time.",
+      "why": "Objectively confirms, with wearable data rather than just questionnaires, that long COVID can cause a lasting drop in heart and activity fitness nearly two years out, and raises the question of whether long COVID itself becomes a long-term heart-health risk factor.",
+      "link": "https://doi.org/10.1016/j.jacadv.2026.102923",
+      "first_seen": "2026-09-02",
+      "last_checked": "2026-09-02",
+      "flags": [],
+      "isNew": true,
+      "notes": "JACC: Advances 5(7):102923, Jul 2026. Digital-health substudy of the NIH RECOVER-Adult cohort. n=1,475 (72% female). Associational, not causal (observational design). Overlaps with existing tracked PEM/autonomic-dysfunction and cardiopulmonary-exercise-testing entries but at much larger n via wearable data than typical CPET studies. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (full abstract fetched)."
+    },
+    {
+      "id": "vanova-2026-cognitive-rehabilitation-rct-longcovid",
+      "title": "Cognitive rehabilitation for adults with long COVID: a randomized clinical trial",
+      "authors": "Vanova M, Patel AMR, Scott I, Gilpin G, Manning EN, Ash C, Wittenberg P, Lim J, Hoare Z, Evans R, Bray N, Kipps CM, Devine C, Ahmed S, Dunne R, Koniotes A, Warren C, Chan D, Suarez-Gonzalez A",
+      "journal": "JAMA Network Open",
+      "date": "Jul 2026 (online Jul 1, 2026)",
+      "summary": "In this England-based trial, 78 adults with lasting brain fog after COVID-19 were randomly given either ten weekly one-on-one 'cognitive rehabilitation' sessions (practical coaching on personally chosen everyday goals, like remembering appointments) or usual care. People who got the coaching made significantly more progress on their chosen goals than those on usual care, and much of the benefit was still there six months later.",
+      "why": "A well-designed randomized trial — a rarer and stronger type of evidence — showing a real, non-drug treatment can meaningfully help the brain-fog side of long COVID, a symptom with no approved treatment.",
+      "link": "https://doi.org/10.1001/jamanetworkopen.2026.20687",
+      "first_seen": "2026-09-02",
+      "last_checked": "2026-09-02",
+      "flags": [],
+      "isNew": true,
+      "notes": "JAMA Network Open 9(7):e2620687, published 2026-07-01. NCT05731570. Multicenter (3 England sites), single-blind, n=78 randomized (38 CR / 40 usual care) of a planned 88. Primary outcome (goal-attainment, Bangor Goal-Setting Interview) at 3 months: adjusted mean difference 2.88 (95% CI 2.03-3.73, p<.001, Cohen's d=1.57), sustained but attenuated at 6 months (d=0.91). Non-drug/behavioral intervention — in scope for the papers track (not drug-restricted, unlike trials). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (full abstract with results fetched)."
+    },
+    {
+      "id": "mischke-2026-p50-sensory-gating-cognitive-fatigue-longcovid",
+      "title": "Auditory sensory gating (P50 suppression) as a biomarker of cognitive fatigue in long COVID",
+      "authors": "Mischke M, Zaehle T",
+      "journal": "Neuropsychology",
+      "date": "Aug 2026 (online Aug 31, 2026)",
+      "summary": "Researchers measured a specific brain-wave response called P50 suppression — how well the brain filters out repeated, unimportant sounds — in 71 people with long-COVID fatigue. People whose brains were worse at this filtering task reported more mental (cognitive) fatigue, even after accounting for depression.",
+      "why": "Points to a simple, objective brain-wave measurement that tracks brain-based fatigue independently of mood, which could help build a much-needed objective test for 'brain fog' in long COVID and ME/CFS.",
+      "link": "https://doi.org/10.1037/neu0001120",
+      "first_seen": "2026-09-02",
+      "last_checked": "2026-09-02",
+      "flags": [],
+      "isNew": true,
+      "notes": "Neuropsychology (APA), published online 2026-08-31. German group (T. Zaehle, Otto von Guericke University Magdeburg, neurology/cognitive neuroscience). n=71, cross-sectional, modest effect size (Kendall's tau=-.173, p=.037). Same P50-suppression marker previously studied in MS fatigue; first reported use in long COVID. Not Wirth/Scheibenbogen-affiliated (German group, but a papers-track entry — no German trial connection implied). Confirmed via Europe PMC REST API record (full abstract with results fetched)."
+    },
+    {
+      "id": "praet-2026-nutraceutical-bioenergetic-pem-review",
+      "title": "Nutraceuticals targeting mitochondrial and oxidative-inflammatory pathways for post-exertional malaise and cognitive impairment in long COVID: a narrative review",
+      "authors": "Praet SFE",
+      "journal": "Nutrients",
+      "date": "Aug 2026 (Aug 13, 2026)",
+      "summary": "This review pulls together existing research on cell energy production (mitochondria), harmful oxygen byproducts (oxidative stress), and inflammatory signalling molecules to propose that specific vitamins, minerals, and supplements ('nutraceuticals') acting on these pathways could help long-COVID post-exertional malaise (the crash after activity) and brain fog — though this is a proposed framework, not a tested treatment.",
+      "why": "Offers a structured, testable roadmap for future nutraceutical trials in long COVID/ME-CFS-type PEM, but it is a hypothesis-generating narrative review with no new patient data of its own, so treat it as a research agenda rather than evidence that a treatment works.",
+      "link": "https://doi.org/10.3390/nu18162650",
+      "first_seen": "2026-09-02",
+      "last_checked": "2026-09-02",
+      "flags": [],
+      "isNew": true,
+      "notes": "Nutrients 18(16):2650, published 2026-08-13; journal version of a 2026-07-14 Preprints.org preprint (DOI 10.20944/preprints202607.0899.v1) — distinct from the already-tracked, separately-sourced micronutrition review (DOI 10.3390/nu18162702, journal version of a different Preprints.org preprint 10.20944/preprints202607.1446.v1). Narrative/hypothesis review, no new primary data — borderline against the 'reviews with no new data' exclusion, included because it offers a specific, citable mechanistic framework rather than a general overview, same tier as other tracked hypothesis pieces. University of Canberra Research Institute for Sport and Exercise, Australia. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and Crossref metadata (author affiliation, journal/volume/page)."
     }
   ]
 }

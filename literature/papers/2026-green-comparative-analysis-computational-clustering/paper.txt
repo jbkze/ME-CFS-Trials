@@ -1,0 +1,1459 @@
+Algorithm dependence of patient phenotypes in Long COVID: a 
+patient-led, multi-method clustering of 6031 patients using 
+162 self-reported symptoms
+Tessa D. Green1,2,*, , Chris McWilliams1,3,†, , Leonardo de Figueiredo1,†, Letıcia Soares1, , Beth Pollack1,4, ,  
+Alison K. Cohen1,5, , Tan Zhi-Xuan6,7, , Tess Falor1, , Hannah E. Davis1,
+1Patient-Led Research Collaborative, Calabasas, CA, 91302, United States 
+2Department of Systems Biology, Harvard Medical School, Boston, MA, 02115, United States 
+3Department of Engineering Mathematics, University of Bristol, Bristol, BS8 1QU, United Kingdom 
+4Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, MA, 02139, United States 
+5Department of Epidemiology & Biostatistics and Philip R. Lee Institute for Health Policy Studies, University of CA San Francisco, San Francisco, CA, 94143, 
+United States 
+6Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Cambridge, MA, 02139, United States 
+7Department of Computer Science, National University of Singapore, Singapore, 117417, Singapore
+*Corresponding author. Tessa Green, Patient-Led Research Collaborative, 23564 Calabasas Road, Suite 201, Calabasas, CA 91302, USA. E-mail: tessa.d.green@proton.me
+†Denotes shared first authorship
+............................................................................................................. 
+Abstract 
+Objectives: Long COVID, characterized by symptoms that remain or emerge in the months after acute COVID-19 infection, is a multisys­
+temic condition with highly variable patient presentations. Phenotyping studies have reported divergent symptom clusters, increasingly 
+used to design trials and interpret biomarker data. However, robustness of these clusters across analytic methods remains uncertain.
+Methods: We analyzed data from 6 031 adults with ≥90 days of illness from a patient-led international survey. Participants reported 
+presence/absence of 162 symptoms, post-exertional malaise severity and demographics. We applied three unsupervised machine 
+learning approaches to the same symptom matrix, evaluating the resulting clusterings for concordance, robustness to subsampling, 
+and relationship to symptom burden, post-exertional malaise severity, age and gender.
+Results: Each method produced clinically plausible symptom clusters, but concordance across methods was low. All three approaches identi­
+fied a high-symptom-burden group enriched for post-exertional malaise severity, and lower-symptom-burden groups with older mean age 
+and a lower proportion of women. Symptom count consistently correlated with higher post-exertional malaise severity and a greater propor­
+tion of women. Manifold analysis revealed that the overall symptom space was largely continuous, lacking clear cluster boundaries.
+Conclusions: The strong dependence of patient clusters on algorithm choice suggests that single-method Long COVID phenotyping 
+may produce incomplete or unstable subgroup definitions. Clustering methods may impose artificial boundaries on a smoothly varying 
+symptom landscape, especially in studies capturing fewer symptoms. Phenotyping efforts should assess clustering robustness and 
+avoid overinterpreting single-method results. Our multi-method analysis highlights the importance of considering the full breadth of 
+patient symptoms when evaluating treatments.
+............................................................................................................. 
+Introduction
+Long COVID is a debilitating multisystemic condition with substantial 
+global prevalence and long-term health impact. Recent reviews estimate 
+that millions of people continue to experience persistent multi-systemic 
+symptoms months to years after infection, with profound effects on 
+function, employment, and quality of life [1–3]. Mechanistically, Long 
+COVID appears to reflect multiple, overlapping biological processes, in­
+cluding vascular endothelial dysfunction [4, 5], fibrinaloid microclots 
+[6], persisting reservoirs of SARS-CoV-2 [7–9], autoimmunity [10], T-cell 
+Received: 22 December 2025. Revised: 23 April 2026. Accepted: 5 June 2026 
+© The Author(s) 2026. Published by Oxford University Press.  
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which permits 
+unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited. 
+Oxford Open Immunology, 2026, 7(1), iqag010 
+https://doi.org/10.1093/oxfimm/iqag010 
+Published: 13 June 2026 
+Original Research   
+
+dysregulation and exhaustion [11–13], reactivation of latent viral infec­
+tions [11], organ damage [14], gut dysbiosis [15, 16], and neuroinflam­
+mation [17]. These pathophysiological mechanisms are accompanied 
+by persistent inflammatory and immunologic abnormalities that can 
+remain detectable for months to years after acute infection [18]. 
+Together, this complexity produces a wide range of symptoms; here, 
+we investigate how these symptoms may cluster into clinically mean­
+ingful phenotypes.
+Several large patient-led and clinical cohort studies have docu­
+mented the breadth of symptoms in Long COVID, including a 
+3762-person patient-led survey identifying over 200 symptoms across 
+10 organ systems [19] and a deep phenotyping using the Human 
+Phenotype Ontology [20] identifying 287 phenotypic abnormalities 
+associated with Long COVID. Among these symptoms, post-exertional 
+malaise (PEM), a physiological state characterized by worsened 
+symptoms after disproportionately minor physical or cognitive exer­
+tion, has been identified as common in certain Long COVID cohorts 
+and phenotypes, and has been associated with greater functional im­
+pairment and disability when explicitly assessed [21, 22]. However, 
+the reported prevalence and clinical prominence of PEM varies sub­
+stantially across studies depending on sampling strategies, symptom 
+definitions, and the scope of symptom assessment, and remains in­
+completely characterized in the broader population of individuals fol­
+lowing infection [23]. In the patient-led survey used here, PEM was 
+explicitly assessed as a symptom of interest, including separate self- 
+reported severity ratings, but the survey did not capture key defining 
+features such as delay, duration, or disproportionate response to min­
+imal exertion, and thus may include a broader range of exertion- 
+related symptom exacerbations. As such, while we treat PEM as 
+described in this survey as a key interpretive dimension of the symp­
+tom phenotypes identified, it should not be assumed to be directly 
+comparable to clinically defined PEM or to be uniformly present 
+across all Long COVID populations.
+In parallel, a growing body of work has used clustering and related 
+unsupervised methods to define Long COVID “phenotypes” or symp­
+tom clusters in both clinical and population-based cohorts. Approaches 
+include clustering using self-reported symptom lists in outpatient and 
+post-hospital cohorts [24–27], high-dimensional analyses of electronic 
+health records [28], and longitudinal studies of symptom trajectories 
+[29]. Systematic reviews highlight substantial heterogeneity in both 
+clustering methods and the reported phenotypes, and vary in sampling 
+frame, data source (survey versus EHR), and involvement of patient 
+experts [30, 31]. Many primary clustering studies also rely on relatively 
+short symptom lists, though this is not systematically quantified in 
+existing reviews.
+These phenotypes are increasingly being used to stratify patients in 
+clinical trials, interpret biomarker studies, and communicate with 
+patients and clinicians. Yet Long COVID is characterized by overlap­
+ping symptomology and likely overlapping endotypes, raising ques­
+tions about whether phenotypes derived from a single clustering 
+method on a limited symptom set are robust enough to support clini­
+cal decision making or regulatory use. Moreover, clustering algo­
+rithms differ in their assumptions about data structure, noise, and 
+cluster shape; if cluster assignments are highly sensitive to algorithm 
+choice, then single-method solutions may be unstable or misleading.
+In this context, patient-led research provides a complementary 
+perspective. The Patient-Led Research Collaborative (PLRC) survey 
+was designed and conducted by people with Long COVID, emphasiz­
+ing comprehensive symptom coverage and lived experience [19]. 
+The dataset includes 162 symptoms collected from, as of the time of 
+this updated work, more than 6000 respondents, as well as PEM 
+severity and demographics, offering a uniquely high-dimensional 
+view of symptom burden.
+Here, we use this patient-led dataset to examine the robustness of 
+symptom-based Long COVID phenotypes across three distinct cluster­
+ing approaches: (A) a genetically optimized autoencoder followed 
+by hierarchical clustering (HDBSCAN), (B) an ensemble consensus 
+approach built from multiple UMAP + k-means clusterings, and (C) 
+latent class analysis (LCA). Rather than proposing a single best cluster­
+ing, our goal is to evaluate how strongly cluster assignments depend 
+on algorithm choice and which patient features are reproducibly cap­
+tured as symptom phenotypes across methods. These answers enable 
+us to explore the implications for clinical practice, trial design, and in­
+tegration of symptom data with emerging biomarkers.
+We hypothesized that any robust structure in this high-dimensional 
+symptom dataset should be detectable and reasonably consistent 
+across different clustering methodologies, whereas non-reproducible 
+structures likely reflect artifacts of a particular method. As such, our 
+multi-method approach aimed to address a fundamental challenge 
+inherent to all unsupervised machine learning, namely the lack of 
+ground-truth labels. Our findings indicate that while each method 
+yields clinically interpretable clusters, cross-method reproducibility is 
+low, and the overall symptom space appears continuous rather than 
+cleanly separable into stable phenotypes. This result underscores the 
+challenges in clustering symptom data and highlights the pivotal role 
+of algorithm selection in shaping outcomes.
+Methods
+Survey
+We conducted a cross-sectional analysis of data from an ongoing in­
+ternational survey designed and led by Long COVID patients through 
+the Patient-Led Research Collaborative. Survey design, piloting, and 
+recruitment have been described previously [19, 32]. All but one of 
+the authors are people with Long COVID, and patient researchers 
+were involved in all stages of the project, including survey design, 
+data collection, analysis, and interpretation. The study was approved 
+by the University College London (UCL) Research Ethics Committee 
+[16,159.002] (London, UK), and all participants provided written 
+informed consent with no financial incentives or compensation.
+Recruitment began in September 2020. For this analysis, we in­
+cluded responses collected through August 2023. Inclusion criteria 
+were: (i) age ≥18 years; (ii) probable or confirmed SARS-CoV-2 infec­
+tion based on World Health Organization consensus criteria, recog­
+nizing that access to testing has been unequal and that Long COVID 
+clinical manifestations do not differ substantially between test- 
+confirmed and probable cases [19]; and (iii) ≥90 days of ongoing 
+symptoms to define Long COVID.
+Out of the 14 169 responses we received, the following responses 
+were removed from the dataset: did not start survey (only completed 
+consent form) or did not complete symptom questions (n = 5557); 
+flagged as spam by Qualtrics (n = 8); symptom onset date before 
+December 2019 (n = 71); 0 days of symptoms (n = 7); test entry (n = 1); 
+duplicated participants (n = 247); responses with ongoing symptoms 
+who had not reached 3 months (n = 2091); and those who had 
+recovered (n = 157). Our final analytic sample was 6031 individual 
+survey responses.
+2 | Oxford Open Immunology, 2026, Vol, 7, Issue 1  
+
+Symptom assessment
+The survey assessed 162 symptoms across 10 domains (e.g. respiratory, 
+cardiovascular, neurological, gastrointestinal). Symptoms were queried 
+at 10 recalled time points: weekly for the first four weeks after symptom 
+onset and monthly up to seven months. For the present clustering analy­
+sis, we collapsed across time and coded each symptom as a binary vari­
+able indicating whether the respondent reported experiencing that 
+symptom at any surveyed timepoint. This choice prioritizes breadth of 
+symptom coverage and minimizes bias from missing or irregular time 
+series, at the cost of losing detailed trajectory and severity information. 
+Symptoms were grouped into categories (e.g. sleep, speech/language, au­
+tonomic, sensory) for visualization and interpretation (Supplementary 
+Data 1, available as supplementary material OXFIMM Journal online). 
+The full text of the survey is available on Figshare [33].
+Post-Exertional Malaise (PEM)
+PEM was assessed via direct self-report, reflecting its clinical relevance 
+as a symptom strongly associated with functional impairment and dis­
+ability in Long COVID and related conditions. Participants were asked 
+whether they experienced worsening or relapse of symptoms following 
+physical and cognitive activity and, if so, to rate the average score of 
+physical and cognitive PEM severity separately on 0–10 scales, where 
+higher scores indicated more severe symptom exacerbation. The survey 
+question specifically referenced symptom fluctuation; however, it did 
+not systematically assess features such as delay of onset, duration of ex­
+acerbation, or disproportionality of response. As such, self-reported 
+PEM may encompass heterogeneous experiences of exertion intoler­
+ance, not all of which meets the formal criteria for PEM.
+The binary presence/absence of PEM question was used as input 
+for the clustering algorithms, but the 0–10 scaled scores were not. The 
+severity scores instead served as external variables to aid interpreta­
+tion of symptom-based clusters and to assess whether cluster struc­
+ture aligned with clinically salient dimensions of illness severity. 
+Clustering was performed exclusively on binary symptom indicators 
+to enable the use of unsupervised methods designed for high- 
+dimensional binary data. PEM severity scores were rescaled to the in­
+terval [0,1] for analysis, with 1 corresponding to a rating of 10. Where 
+severity averages are reported, they are calculated only among par­
+ticipants who provided a non-zero severity rating.
+Demographics and external variables
+Participants reported age in categorical ranges (18–29, 30–39, 40–49, 
+50–59, 60–69, 70–79, 80+); we used midpoints to approximate mean 
+ages, treating 80 + as 80 years. Gender was categorized as Female/ 
+Woman, Male/Man, Non-binary/Genderqueer/Gender non-conform­
+ing, Prefer not to say, or Other, and sex was operationalized in the sur­
+vey as a followup question asking if participants gender matched their 
+gender assigned as birth, with yes or no options. As for PEM severity, 
+demographic information was used when analyzing clusters, but was 
+not included as part of the input to the machine learning algorithms.
+Data were cleaned in Python version 3.7.1.
+Analysis
+We applied three unsupervised clustering methods to the same 6031 
+× 162 binary symptom matrix:
+A. 
+Genetically-optimized autoencoder + HDBSCAN 
+B. 
+Ensemble clustering 
+C. 
+Latent class analysis 
+All analyses were performed in Python. Code for data preprocess­
+ing and clustering is publicly available (https://github.com/leothesou 
+thafrican/PLR).
+Method A: autoencoder + HDBSCAN
+Method A learned a non-linear low-dimensional representation of 
+the high-dimensional symptom space and clustered patients in that 
+learned embedding. We first performed feature selection by drop­
+ping symptoms that were extremely rare or ubiquitous (near-zero or 
+near-one prevalence), or highly correlated with other symptoms as 
+quantified using skewness and pairwise correlation thresholds (Supp 
+Note A, available as supplementary material OXFIMM Journal on­
+line). These thresholds were chosen empirically to balance retaining 
+clinically important symptoms with reducing redundancy and noise; 
+sensitivity analyses indicated that more aggressive feature dropping 
+decreased clinical interpretability.
+We then trained an autoencoder to compress the remaining symp­
+tom features into a two-dimensional latent representation optimized 
+for reconstruction error. Clustering was performed on this embed­
+ding using HDBSCAN, a density-based method that labels low-density 
+points as noise [34]. Hyperparameters were optimized using a genetic 
+algorithm with silhouette score in the embedding space as the fitness 
+function [35], described in detail in Supp Note A, available as supple­
+mentary material OXFIMM Journal online. The optimal cluster count 
+was determined by selecting for solutions with the highest silhouette 
+score that had fewer than 13 clusters.
+We quantified symptom prevalence within each cluster and de­
+fined “enrichment” as the difference between cluster-level and 
+cohort-wide prevalence (δ). Symptoms with jδj > 0.1 were considered 
+strongly enriched or dis-enriched.
+Method B: ensemble clustering
+Method B used an ensemble of UMAP+k-means-based clusterings to 
+generate a consensus solution. After initial experimentation, we chose 
+UMAP for dimensionality reduction followed by k-means for clustering, 
+with random draws from broad parameter ranges to generate candi­
+date clusterings (Supp Note B, available as supplementary material
+OXFIMM Journal online). From this library, an ensemble of clusterings 
+was selected using a joint criterion balancing individual clustering qual­
+ity and diversity [36]. A co-association matrix counting how often each 
+pair of patients appeared in the same cluster across the ensemble was 
+normalized and used as input for spectral clustering, yielding the final 
+consensus clustering.
+The full ensemble procedure was repeated 10 times with different 
+random seeds, and cluster number was selected based on eigengap 
+heuristics and stability [37]. Symptom enrichment and external varia­
+bles (PEM, age, gender) were analyzed as for Method A.
+Method C: latent class analysis
+Method C used latent class analysis (LCA) implemented in StepMix 
+v2.1.3 to fit finite mixture models to the binary symptom data [38]. 
+We removed symptoms present in > 95% or < 5% of patients to avoid 
+unstable parameter estimates. Models with 2–25 classes were com­
+pared using Bayesian information criterion (BIC); both single-run 
+Oxford Open Immunology, 2026, Vol, 7, Issue 1 | 3  
+
+and multi-run averages supported a 13-class solution (Supp Note C, 
+available as supplementary material OXFIMM Journal online).
+For each patient, the model produced a probability of membership 
+in each latent class; we assigned patients to the class with the highest 
+probability. Most patients had high certainty assignments, with only 
+1.7% of patients having no class with probability > 0.5. We repeated 
+the procedure across 10 random seeds and used a consensus cluster­
+ing based on co-association plus hierarchical clustering as a sensitiv­
+ity analysis, confirming that most clusters were reasonably stable. 
+We also examined how the optimal number of clusters under LCA 
+changed as we randomly removed symptoms, mimicking studies us­
+ing shorter symptom lists, described in detail in Supp Note C, avail­
+able as supplementary material OXFIMM Journal online.
+In contrast to methods A and B, we summarized clusters using 
+model-derived symptom probabilities, defining enriched symptoms 
+as those whose inferred probability in a given class exceeded the 
+average probability across other classes by a cluster-specific thresh­
+old (Supp Note C, available as supplementary material OXFIMM 
+Journal online).
+Method comparisons
+To compare pairs of clusterings (A versus B, A versus C, B versus C) 
+we computed average mutual information using full patient-level 
+cluster assignments [39], a measure with strong performance when 
+comparing clusterings with different numbers or sizes [40].
+When computing the adjusted mutual information (AMI) where 
+one clustering only has a partial label assignment, it is necessary to 
+produce a complete assignment by either predicting or imputing the 
+missing labels. This situation was handled as follows for two different 
+sources of partial label assignment:
+1. When subsampling of the dataset to evaluate robustness of a given 
+method: patients not included in the sample were not assigned a 
+cluster label. Model-based clustering method C predicted missing 
+labels based on the model. Ensemble-based method B applied k- 
+nearest neighbor imputation to predict the missing labels. 
+2. When HDBSCAN assigned cluster label −1: such patients are part of 
+the noise cluster and were considered part of the same group for 
+the purpose of AMI calculation. In practice, we found that retaining 
+the −1 label made little difference as the noise cluster was small 
+(<4% of the dataset for method A). 
+A detailed note on the creation of t-SNE plots for comparative 
+visualization is provided in Supp Note D, available as supplementary 
+material OXFIMM Journal online.
+Results
+The 6031 participants form a self-selected sample and were predomi­
+nantly middle-aged adults with a median age around the mid-40s 
+and a median illness duration of 198 days (Table 1). Approximately 
+78% identified as women, consistent with several Long COVID studies 
+reporting higher symptom burden among women, though reported 
+sex distributions vary substantially across studies depending on case 
+definitions, sampling strategies and data sources [41–44]. Based on di­
+rect self-report, most participants experienced PEM, with high average 
+levels of physical and cognitive PEM severity, with cohort means of 
+0.78 and 0.64 on the 0–1 scale respectively. Across all three clustering 
+methodologies, the overall structure of the symptom data appeared rel­
+atively continuous. t-SNE embeddings showed gradual gradients in 
+symptom burden and symptom group prevalence rather than distinct 
+clumps corresponding to clearly separable phenotypes (Fig. 1). Similar 
+symptoms tended to co-occur—for example, multiple speech or mem­
+ory symptoms often occurred in the same patients—but these patterns 
+existed along smooth gradients rather than forming sharply bounded 
+groups (Supp Fig. 1, available as supplementary material OXFIMM 
+Journal online).
+Method A: autoencoder + HDBSCAN
+Method A identified six main clusters plus a noise/outlier group (AX), 
+with a silhouette score in the autoencoder representation space of 
+0.6133 (Fig. 2a). Interpretation of the autoencoder dimensions sug­
+gested that Dimension 1 primarily reflects sleep disturbance with ad­
+ditional contributions from motor related symptoms, whereas 
+Dimension 2 captures temperature regulation symptoms and, to a 
+lesser extent, gastrointestinal and musculoskeletal related symptoms 
+(Supp Note A: Tables A3 and A4, available as supplementary material
+OXFIMM Journal online). This indicates that these symptom catego­
+ries are maximally informative for cluster separation.
+The clusters differed meaningfully in overall symptom burden, 
+and, in post hoc analyses, showed differences in self-reported PEM 
+severity and gender composition. Across clusters, we observed a 
+strong positive correlation between the proportion of women and 
+both symptom burden and PEM severity (Supp Fig. 2, available as 
+supplementary material OXFIMM Journal online). Cluster A1, the 
+largest cluster, exhibited the highest overall symptom count and the 
+highest physical and cognitive PEM severity, and had the greatest 
+proportion of women. This group was enriched for sleep disturbance 
+and temperature dysregulation (δ = 0.275 and 0.288 with Z scores of 
+1.391 and 1.282, respectively; Supp Data 2, available as supplementary 
+material OXFIMM Journal online).
+Table 1 Cohort characteristics summary.
+..........................................................................................................................................................
+Categories
+Median (IQR)/Fraction
+..........................................................................................................................................................
+Age
+18–29, 30–39, 40–49, 50–59, 60–69, 70–79, 80+
+44.5 (34.5–54.5)
+Gender
+Woman, Man, Non-binary/Genderqueer/Gender 
+non-conforming
+Woman: 0.78, Man: 0.20, Other: 0.02
+Ancestry
+White; Multiple ancestries including white; Asian, South Asian, 
+South East Asian; Hispanic, Latino or Spanish Origin; Other
+White: 0.83, Multiple: 0.06, Asian+: 0.3,  
+Hispanic+: 0.3, Other 0.2
+Illness Duration
+Numeric
+197 (173.5–254)
+PEM severity
+Physical, Cognitive: numeric. Severity reported only present in 
+88% of patients who listed PEM as a symptom.
+Physical: 8 (7–9); Cognitive 6 (4–8).
+...........................................................................................................................................................
+4 | Oxford Open Immunology, 2026, Vol, 7, Issue 1  
+
+At the opposite end, Cluster A4 represented a low-burden cluster, 
+with reduced overall symptom count and especially low temperature- 
+related symptoms (mean severity 0.052, Z-score −1.0 or −1.2 computed 
+with or without outliers). When comparing Cluster A4 to its nearest- 
+neighbor, cluster A5—which has a symptom burden comparable to 
+the cohort mean—the largest difference (0.313) was in sleep-related 
+symptoms, which were higher in Cluster A4. This suggests that lower 
+sleep disturbance may be a key factor distinguishing patients with 
+lighter overall symptom loads.
+The outlier group (Cluster AX) contained patients with the lowest 
+symptom counts, lowest self-reported PEM severity, and a lower pro­
+portion of women (Table 2). Their most distinctive feature was espe­
+cially low cognitive PEM severity, which likely contributed to their 
+classification as noise by HDBSCAN.
+Overall, Method A highlights meaningful structures within the 
+symptom data, with sleep and temperature regulation emerging as 
+central drivers of cluster separation, and gender composition align­
+ing tightly with symptom severity patterns.
+Method B: ensemble clustering
+This ensemble method yielded an 8 cluster solution with relatively 
+balanced cluster sizes (Table 3, Supp Note B, available as supplemen­
+tary material OXFIMM Journal online). Clusters clearly divide symp­
+tom space when tSNE projected into the embedding used for Fig. 1, 
+with a maximum silhouette score of 0.24, versus −0.03 and 0.01 for 
+clusterings A and C respectively. Clusters were organized along a di­
+agonal axis in the embedding space corresponding to increased 
+symptom burden (Fig. 1, Supp Fig 1, available as supplementary ma­
+terial OXFIMM Journal online). This structure also showed good ro­
+bustness to the 3 subsampling regimes, with mean adjusted mutual 
+information (AMI) of 0.75, 0.82 and 0.74 with the final clustering 
+B (Fig. 2b).
+Of note, Cluster B2 had the highest symptom burden, the highest 
+proportion of women, and the highest physical and cognitive PEM se­
+verity reported. It showed strong enrichment for sensory sensitivity, 
+speech and communication difficulties, and eye/vision symptoms. In 
+contrast, Cluster B4 had the lowest mean symptom burden (21), high­
+est mean age (50.3), lowest mean cognitive PEM severity (0.48), lowest 
+proportion of women (0.69), and lower prevalence of fatigue and 
+PEM compared to other clusters. Olfactory and taste symptoms were 
+mildly enriched in this group (Supp Note B, available as supplemen­
+tary material OXFIMM Journal online).
+The strong continuity of symptom space gave rise to proximal clus­
+ters with significant similarity (Table 3, Supp Note B, Supp Data 3, 
+available as supplementary material OXFIMM Journal online). 
+Clusters B1 and B3 had similar overall symptom burden (30 and 34 
+respectively) but differed in the balance of cognitive versus physical 
+PEM severity; B3 had higher cognitive PEM severity (0.654) and en­
+richment of speech and cognitive symptoms, whereas B1 had rela­
+tively low cognitive PEM (0.478). B7 was similar to B5 as evidenced 
+by their proximity and overlap in the embedding space. Both clusters 
+shared strongly enriched temperature dysregulation (elevated tem­
+perature, chills, flushing, sweats) and respiratory symptoms (short­
+ness of breath, tightness of chest). However, B5 included strongly 
+enriched cognitive and sleep disturbance components which were 
+Figure 1 Left: Method A (genetically optimized autoencoder) with 6 clusters and one noise cluster; Middle: Method B (ensemble) with 8 clusters; right: 
+Method C (LCA) with 13 clusters. Top row: the 3 clusterings shown in the same 2D t-SNE embedding. Each point represents a patient and each color 
+represents a cluster. Patients in a given cluster are not shared across clusterings, and sharing a cluster number does not imply that two clusters from 
+different methods are similar. Bottom row: Average fraction of symptoms reported in each symptom grouping for patients in each cluster. Cluster AX 
+denotes patients who were labeled as noise by HDBSCAN. Symptom groups are defined in Supp Data 1.
+Oxford Open Immunology, 2026, Vol, 7, Issue 1 | 5  
+
+not present in B7. Conversely, three symptoms were strongly 
+enriched in B7 but dis-enriched in B5: loss of smell (0.51 versus 0.31), 
+loss of taste (0.48 versus 0.28) and fever (0.55 versus 0.37).
+Method C: latent class analysis
+LCA identified 13 clusters with varying symptom burden and symp­
+tom profiles (Table 4). Each patient was assigned to the cluster which 
+had the highest probability. The output of an individual LCA run is 
+presented as the main output of this method and referred to as clus­
+tering C throughout; this result was compared to a consensus cluster­
+ing defined by combining clusterings with different random seeds 
+(Supp Note C, available as supplementary material OXFIMM Journal 
+online). Symptom enrichment was determined using the inferred 
+likelihood of observing each symptom in a patient from each cluster 
+(Supp Data 4, available as supplementary material OXFIMM Journal 
+online). Only 1.7% of patients had ambiguous assignments, defined 
+as cases where no single cluster had probability above 0.5. Because 
+these patients are a small fraction of the dataset and not overrepre­
+sented in any particular cluster, they were assigned to their highest 
+probability cluster for further analysis. The observed clusters have 
+a high degree of coherence among both unusual and prevalent 
+symptoms, with the most distinctive symptoms generally coming 
+from a semantically similar group—for example, the top distinguish­
+ing symptoms for cluster C2 were all from the speech symp­
+tom subgroup.
+Figure 2 (a) Representation space learned by the method a autoencoder clustered using HDBSCAN. Each point represents a patient, and colors 
+represent the six clusters. The ‘X’ cluster are points labeled as noise by HDBSCAN. The plot dimensions are the compressed representations generated 
+by the autoencoder and capture essential patterns and relationships within the data in a reduced-dimensional space for clustering (Supp Note a). 
+b) Robustness of clustering B under different sub-sampling regimes, as measured by the AMI calculated against the equivalent run of the ensemble 
+method using the full dataset. Each subsampling is repeated 10 times and the black dashed lines show the location of the mean AMI at n_clusters = 8.
+6 | Oxford Open Immunology, 2026, Vol, 7, Issue 1  
+
+Table 2 Summary of clustering method A.
+...........................................................................................................................................................
+Cluster
+Name
+Size
+Symptom  
+count
+Women
+Age
+Physical PEM  
+Severity
+Cognitive PEM  
+Severity
+...........................................................................................................................................................
+AX
+Outliers
+222
+16
+0.667
+47.6
+0.619
+0.271
+A0
+Temperature dysregulation (chills and flushing  
+sweats). 
+Cardio-respiratory (shortness of breath, heart  
+palpitations and dizziness). 
+Cognition (short term memory and attention/ 
+concentration). 
+1125
+44
+0.795
+47.3
+0.773
+0.549
+A1
+Largest cluster. 
+Highest proportion of women. 
+Highest symptom burden. 
+Severe insomnia and sleep interruption. 
+Severe physical fatigue and PEM. 
+2126
+60
+0.830
+46.7
+0.811
+0.636
+A2
+Elevated temperature. 
+Generally elevated cardio-respiratory symptoms. 
+321
+35
+0.791
+45.9
+0.747
+0.485
+A3
+Very generalized cluster. Symptom severity scat­
+tered over: cardio, cognition, short term mem­
+ory, sleep disturbances, temperature 
+dysregulation and headaches
+498
+46
+0.791
+46.3
+0.773
+0.594
+A4
+Lowest symptom burden of non outlier clusters. 
+Lowest severity of cognitive PEM. 
+Notably low sleep disturbance. 
+850
+28
+0.714
+47.7
+0.719
+0.480
+A5
+Elevated insomnia, short term memory
+889
+37
+0.721
+47.1
+0.735
+0.530
+Cohort
+6031
+42
+0.78
+47.0
+0.778
+0.637
+........................................................................................................................................................... 
+For each numeric value the cluster with the highest value is shown in bold. Descriptive names have been assigned to each cluster based on characteristic symptoms, however 
+more details are given in the text. Age corresponds to the midpoint average of the age class of patients within a cluster. Women lists the fraction of patients whose reported 
+gender was woman. Cognitive and physical PEM are averaged reported cognitive and physical symptom severity during PEM respectively, calculated as the average of 
+patients who reported experiencing the reported form of PEM. The largest value in each metadata column is highlighted in bold.
+Table 3 Similar to Table 2, but for clustering B.
+...........................................................................................................................................................
+Cluster
+Name
+Size
+Symptom  
+count
+Women
+Age
+Physical PEM  
+Severity
+Cognitive PEM  
+Severity
+...........................................................................................................................................................
+B0
+Speech, memory, cognition, sleep and eye/ 
+vision (neurological).
+615
+53
+0.833
+45.1
+0.806
+0.739
+B1
+Cognitive PEM much less severe than physical  
+PEM. 
+Shortness of breath, chest burning pain, short 
+term memory, heart palpitations. 
+872
+30
+0.748
+47.6
+0.740
+0.478
+B2
+Highest symptom burden. 
+Severe physical and cognitive PEM. Highest  
+proportion of women. 
+Sensory sensitivity, difficulty communicating  
+verbally and processing information,  
+neuropathy, itchy eyes and blurred vision. 
+506
+89
+0.866
+45.5
+0.876
+0.786
+B3
+Largest cluster. Cognitive dysfunction symptoms 
+most enriched. 
+Cognition, long term memory, speech, PEM, 
+and fatigue. 
+1105
+34
+0.693
+47.3
+0.749
+0.654
+B4
+Lowest symptom burden. Highest average age. 
+Lowest PEM severity. 
+Altered smell and taste including loss, 
+respiratory. 
+887
+21
+0.692
+50.3
+0.676
+0.479
+B5
+Nausea, temperature dysregulation, sleep  
+disturbance, paresthesia and vibrations,  
+palpitations, dizziness and vertigo.
+727
+54
+0.834
+45.0
+0.794
+0.611
+B6
+Paresthesia, speech, vision problems, neuropathy, 
+tremors, temperature dysregulation.
+611
+69
+0.856
+45.7
+0.848
+0.736
+B7
+Temperature dysregulation, dry cough, loss of 
+smell, taste and appetite, shortness of breath.
+708
+40
+0.836
+47.2
+0.763
+0.554
+Cohort
+6031
+42
+0.78
+47.0
+0.778
+0.637
+...........................................................................................................................................................
+Oxford Open Immunology, 2026, Vol, 7, Issue 1 | 7  
+
+Clusters particularly of note include C1, which had very high symp­
+tom burden with enrichment for cognitive dysfunction, communica­
+tion difficulties, sensory and allergic symptoms, and musculoskeletal 
+pain, combined with the highest severity of both physical and cogni­
+tive PEM reported. Cluster C4 had the lowest mean symptom burden 
+(11), lowest cognitive PEM severity, and lower frequency of PEM 
+overall (0.57), though 80% of cluster members still reported short- 
+term memory impairment. Cluster C7 had high symptom burden 
+with prominent speech impairment, auditory and visual symptoms, 
+and pain. Cluster C9 had PEM but had markedly reduced prevalence 
+of self-reported sleep disturbance when compared to the dataset 
+overall: difficulty falling asleep (0.00 versus 0.44), waking up during 
+the night (0.00 versus 0.53), and insomnia (0.03 versus 0.76), indica­
+tive of the fact that although PEM is considered a hallmark symptom 
+of ME/CFS, not all Long COVID patients reporting PEM meet ME/CFS 
+diagnostic criteria [21].
+We also explored model changes with respect to held out symp­
+toms, focusing on how the optimal number of clusters changes when 
+fewer symptoms are reported. The optimal number of clusters 
+decreased as symptom numbers were reduced. While the full 13 clus­
+ters required the full dataset, 70% of symptoms (approximately 100) 
+were required for complexity of 12 clusters, and 10 clusters remained 
+optimal with as few as 30% of the reported symptoms (Supp Fig. 3, 
+available as supplementary material OXFIMM Journal online). This 
+demonstrates that studies with significantly fewer symptoms 
+assessed, may miss clusters otherwise distinguishable.
+Comparative analysis
+Despite the internal validity of each clustering, cross-method agree­
+ment was limited. Pairwise AMIs between methods ranged from 0.13 
+(A versus B) to 0.40 (B versus C), indicating only modest overlap in pa­
+tient assignments. Poor separability appeared to be a general feature 
+of the dataset, with manifold learning struggling to produce struc­
+tured 2D embeddings (Supp Note D, available as supplementary 
+material OXFIMM Journal online). Some recurrent features did 
+emerge, however. A high-symptom-burden, multi-systemic symptom 
+cluster was identified in all three methods (A1, B2, C1), but 
+Table 4 Similar to Table 2, but for clustering C.
+...........................................................................................................................................................
+Cluster
+Name
+Size
+Symptom  
+Count
+Women
+Age
+Physical PEM  
+Severity
+Cognitive PEM  
+Severity
+...........................................................................................................................................................
+C0
+Temperature dysregulation, sleep disturbance, 
+cognition (attention/concentration) and short­
+ness of breath
+656
+40
+0.794
+45.2
+0.752
+0.595
+C1
+High symptom burden with cognitive dysfunc­
+tion, difficulty reading and communicating, and 
+sensory and allergic symptoms; 
+Elevated musculoskeletal symptom count; high 
+physical and cognitive PEM severity 
+178
+101
+0.848
+44.0
+0.897
+0.818
+C2
+Difficulty reading and communicating, high  
+prevalence of cognitive symptoms
+399
+56
+0.769
+45.7
+0.804
+0.772
+C3
+Low symptom burden, cognitive symptoms  
+reduced with short term memory difficulty 
+still reported
+549
+27
+0.745
+47.9
+0.701
+0.416
+C4
+Lowest symptom burden, Lowest cognitive PEM 
+severity, reduced frequency of PEM, cognitive 
+symptoms reduced
+389
+11
+0.640
+47.6
+0.637
+0.394
+C5
+Chest tightness, dizziness/vertigo, shortness of 
+breath, gasping for air while oxygen normal
+352
+44
+0.835
+46.8
+0.783
+0.593
+C6
+Impaired reading and communication, elevated 
+temperature and chills/sweats, sleep difficulty 
+and elevated average musculoskeletal symptom  
+count
+449
+58
+0.902
+44.2
+0.821
+0.703
+C7
+High symptom burden with impaired speech,  
+auditory and visual comprehension, blurred  
+vision, pain: muscle aches, muscle spasms,  
+neuralgia and skin burning without associ­
+ated rash.
+544
+78
+0.881
+45.8
+0.854
+0.757
+C8
+Insomnia, difficulty falling asleep and waking up 
+in night, lower symptom burden
+490
+23
+0.673
+49.4
+0.732
+0.539
+C9
+Consistent sleepers with PEM and cognitive  
+impairment, lower symptom burden
+534
+24
+0.738
+47.3
+0.696
+0.574
+C10
+Insomnia, tremors, sensory features: tingling/ 
+prickling, skin burning without rash, vibrations.
+509
+45
+0.800
+46.9
+0.751
+0.555
+C11
+Speech and cognition with moderate symptom  
+burden
+608
+38
+0.745
+46.3
+0.767
+0.682
+C12
+High symptom burden with reduced cognitive/ 
+speech, elevated musculoskeletal symptom  
+count
+374
+63
+0.813
+45.3
+0.820
+0.675
+Cohort
+6031
+42
+0.78
+47.0
+0.778
+0.637
+...........................................................................................................................................................
+8 | Oxford Open Immunology, 2026, Vol, 7, Issue 1  
+
+membership overlapped only partially: most patients in B2 and C1 
+were contained within A1 81% and 90% respectively), but fewer than 
+10% of patients in A1 are assigned to B2 or C1 in their respective clus­
+terings (Fig. 3). Low symptom burden clusters B4 and C4 strongly 
+overlapped (C4 making up 34% of B4 and B4 making up 79% of C4) 
+and shared higher average age and lower proportion of women; 
+however, method A assigned many of these patients to the noise clus­
+ter AX. This is likely due to the pre-autoencoder dimensionality reduc­
+tion, in which symptom features were dropped using skewness and 
+correlation measures. Clusters B2 and C7 overlapped substantially, 
+with 306 patients assigned to both clusters, and shared enrichment 
+for speech and communication difficulties, suggesting a reproducible 
+subgroup with prominent cognitive-linguistic impairment, as has 
+been observed elsewhere [45, 46]. Cluster C9 (PEM with minimal self- 
+reported sleep disturbance) shared 304 patients with Cluster A4 an­
+other, low-symptom-burden cluster with relatively lower cognitive 
+PEM severity reported despite persistent PEM presence. This patient 
+subgroup exhibiting PEM, a hallmark symptom of ME/CFS, while also 
+not reporting the sleep disturbance required to meet diagnostic crite­
+ria, has also been observed elsewhere [21].
+Across methods, clusters with lower symptom burden consistently 
+had the highest average age and the lowest proportion of women, 
+whereas high-burden clusters contained higher proportions of 
+women and patients with more severe physical and cognitive PEM. 
+This aligns with other studies reporting higher symptom complexity 
+and burden among women with Long COVID [47, 48]. Physical PEM 
+was more severe than cognitive PEM for 89% of patients, but several 
+clusters identified by Method B (e.g. B0, B3) exhibited relatively more 
+severe cognitive PEM and enrichment of cognitive and speech symp­
+toms, suggesting a subgroup with disproportionate cognitive exertion 
+intolerance.
+Discussion
+Using data from a large, patient-led survey of 162 symptoms in 6031 
+adults with Long COVID, we applied three distinct machine learning 
+clustering methods and found that each method produced clinically 
+plausible symptom clusters, including high- and low-burden group­
+ings and recognizable patterns such as neurocognitive, autonomic, 
+and pain-dominant symptom profiles. However, cluster membership 
+was highly sensitive to algorithm choice: pairwise AMI between 
+methods was low, and even conceptually similar clusters (e.g. high- 
+burden groups) contained different sets of patients depending on the 
+method used. The overall symptom space appeared approximately 
+continuous rather than partitioned into distinct, naturally occurring 
+clusters, making it difficult for any single algorithm to identify robust, 
+reproducible phenotypes.
+Figure 3 Cluster overlaps between the three methodologies. Top row depicts row-normalized data, in which each square is colored by the fraction of 
+each row which is made up by patients from each column. A dark box indicates that patients from the group corresponding the row are 
+predominantly in the corresponding column. The bottom row of plots is column-normalized, depicting the fraction of each column made up by each 
+row. A dark box indicates that patients from the column cluster are predominantly also assigned to the corresponding row cluster. For example, 
+comparing the joint membership of clusters a and B, cluster B2 is mostly composed of members of cluster A1 (bottom left graph), but cluster A1 is 
+mostly composed of members of B4 (top right graph).
+Oxford Open Immunology, 2026, Vol, 7, Issue 1 | 9  
+
+Some features, however, were reproducible across methods, in­
+cluding the association of high symptom burden and more severe 
+self-reported PEM with a higher proportion of women, aligning with 
+several prior studies demonstrating that female patients with Long 
+COVID had higher symptom frequencies than male patients, and 
+were more likely to have complex multisystemic symptoms [47, 48]. It 
+is also worth noting that not all studies have observed the same pro­
+portion, with reported sex distributions varying by case definition, 
+sampling strategy, and data source [41–44]. Differences may also re­
+flect question phrasing; PEM in this study was assessed via self-report 
+of symptom exacerbation following physical or cognitive activity, 
+without requiring delayed onset or disproportionate response, and 
+may therefore capture a broader range of exertion-related symptom 
+exacerbation. Similarly, a subset of patients with prominent speech 
+and cognitive-linguistic difficulties emerged across multiple methods 
+(B0/B3 and C1), and a group reporting PEM without sleep disturbance 
+(A4 and C9). PEM is a hallmark symptom of ME/CFS, which includes 
+fatigue as well as exacerbation of symptoms related to pain, immune 
+dysfunction, neurocognition, gastrointestinal function and sleep dis­
+turbance [49–51], including sleep onset latency, frequent awaken­
+ings, and apnea, with unrefreshing sleep part of the diagnostic 
+criteria for the illness [52–54]. Unrefreshing sleep and sleep issues 
+that usually require a medical diagnosis (e.g. restless leg syndrome 
+and sleep apnea) were not among the symptoms surveyed in our 
+dataset. Moreover, sleep disorders are multifactorial in nature and 
+can have diverse presentations not necessarily linked to ME/CFS and 
+may occur independent of exertion intolerance [55, 56]. Additionally, 
+given the limitations of our measurement, we cannot determine de­
+finitively whether the symptom exacerbation captured here reflects 
+PEM as defined in ME/CFS, or represents a broader category of exer­
+tion intolerance. Thus, we cannot with complete certainty state that 
+patients in this cluster experience PEM without meeting ME/CFS diag­
+nostic criteria; however, such a population has been observed else­
+where [21, 51], and the reproducibility of the cluster in our dataset 
+suggests that this patient subgroup exists in this cohort as well.
+In totality, our results indicate that symptom-based phenotypes of 
+Long COVID are not uniquely defined by the data, instead depending 
+strongly on modeling decisions. In a setting where clusters are being 
+used to design clinical trials and interpret biomarker findings, this in­
+stability has significant implications. These findings differ from those 
+of several phenotyping studies that have reported relatively stable 
+symptom clusters using fewer symptoms or different data sources. 
+For example, cluster analyses in post-hospital cohorts have identified 
+respiratory-dominant, neurocognitive, and fatigue/pain clusters that 
+appear reproducible within their datasets [41, 42]. Studies based on 
+outpatient cohorts and EHR data have likewise identified subgroups 
+characterized by neurocognitive symptoms, autonomic dysfunction, 
+or multi-system involvement [28, 57].
+In contrast to many other Long COVID phenotyping studies, our 
+sample reflects a self-selected, non-random cohort of often severely 
+impacted community members rather than patients gathered 
+through their interaction with the medical system, and includes 
+many participants with PEM and multi-system symptoms that may 
+be missed in EHR-only cohorts, which lack robust discernment of 
+PEM presence due to the lack of a PEM ICD-10 code [58]. PEM in this 
+study was identified via self-report via survey questions and severity 
+ratings rather than through biomedical or clinical assessment, which 
+may contribute to misclassification and impacts generalizability. We 
+included 162 symptoms, while most prior clustering studies assessed 
+12–40 [24, 59, 60]. Sensitivity analysis for the LCA clustering method, 
+which mathematically optimizes cluster count using BIC, showed that 
+the optimal number of clusters decreased markedly as symptoms 
+were removed, suggesting that shorter symptom lists may miss im­
+portant heterogeneity and impose smaller, more stable but poten­
+tially less-representative, cluster structures. Additionally, previous 
+studies have not directly compared different clustering algorithms on 
+the same symptom dataset, preventing the method robustness analy­
+sis available via direct comparison here. Our findings demonstrate 
+the dependence of clusters on symptom selection, sampling frame, 
+and analytic approach, and complement calls to integrate symptom 
+phenotypes with immunologic and biomarker data to define biologi­
+cally meaningful endotypes, rather than relying solely on symptom 
+cluster boundaries to define patient subgroups [61, 62]. Additional 
+discussion of how implementation of the algorithms we used could 
+be enhanced is provided in Supp Note D, available as supplementary 
+material OXFIMM Journal online.
+Limitations of this study include that it does not include children 
+and adolescents, does not account for asymptomatic organ damage, 
+and reflects a cohort with a median illness duration of 198 days at 
+time of survey. As a questionnaire-based, patient-led study recruited 
+primarily through online channels, the sample is self-selected and 
+may preferentially capture individuals with higher symptom burden, 
+greater functional impairment, or symptoms that are poorly recog­
+nized or managed in clinical settings. Accordingly, some of our ob­
+served symptom frequencies indicate that our cohort may be non- 
+representative Long COVID populations observed in other studies. In 
+particular, PEM is identified only in a subset of Long COVID studies, 
+with prevalence varying widely depending on study design, symp­
+tom definitions, sampling frame, and whether PEM is explicitly 
+assessed [21–23, 63]. While a recent meta-analysis estimated PEM 
+prevalence at approximately half of participants across studies, this 
+estimate is drawn from substantial heterogeneity across studies and 
+should not be interpreted as a universal feature of Long COVID [23]. 
+In our cohort, 88.4% of our participants reported experiencing PEM, 
+which may reflect the patient-led nature of recruitment, explicit que­
+rying of PEM and differences in question wording, which has been 
+shown to significantly influence rates of PEM reported [64]. In partic­
+ular, in this study, PEM was defined for survey takers as worsening 
+or relapse of symptoms following physical or cognitive exertion, 
+likely capturing more individuals than questions also requiring 
+delayed onset of symptom exacerbation. Prior work has found that 
+most Long COVID patients who do not meet ME/CFS diagnostic crite­
+ria nonetheless exhibit exertion intolerance with shorter-duration 
+PEM < 14 hours [63]; some of the difference between our survey and 
+other results may be patients with this form of exertion intolerance, 
+as duration of exacerbation was not included in our analysis. It is also 
+possible that patients with Long COVID that maps onto known diagno­
+ses, such as those who develop post-COVID diabetes, are less likely to 
+participate in Long COVID research studies, as their illness is better un­
+derstood biomedically [65]. Such dynamics may impact many aspects 
+of the cohort composition, including observed sex distributions, and 
+limit generalizability to the broader post-COVID population.
+An additional limitation is that the survey did not systematically 
+capture reinfection status at the time this analysis was conducted. Some 
+respondents may have experienced multiple SARS-CoV-2 infections, but 
+we were unable to distinguish initial infection from reinfection in this 
+dataset. As discussed above, on the analysis side, feature-dropping 
+thresholds, dimensionality reduction strategies, and algorithmic 
+10 | Oxford Open Immunology, 2026, Vol, 7, Issue 1  
+
+assumptions differed across methods, each of which may influence 
+cluster structure and contribute to non-reproducibility. In particular, the 
+methods used here vary in their sensitivity to noise, assumptions about 
+cluster separability and homogeneity, and stability with respect to ini­
+tialization and parameterization. However, even when preprocessing 
+was aligned to the extent feasible, the core findings of low cross-method 
+agreement and continuous symptom structure remained. A detailed 
+discussion of method-specific limitations and potential avenues for im­
+proving stability is provided in Supplementary Note D, available as 
+supplementary material OXFIMM Journal online.
+Visualizations suggested that symptom burden and symptom 
+group prevalence vary smoothly, with no obvious natural breaks 
+(Supp Fig. 1, available as supplementary material OXFIMM Journal 
+online). In such a landscape, any clustering algorithm will partition 
+the space, but the exact boundaries will depend on modeling assump­
+tions, leading to algorithm specific phenotypes as observed here. 
+Long COVID likely reflects multiple overlapping mechanisms (e.g. mi­
+crovascular dysfunction, autoimmunity, persistent viral reservoirs, 
+reactivation of latent infections) [2, 66]. Patients can plausibly exhibit 
+features of multiple endotypes simultaneously, making single-label 
+symptom clusters an imperfect representation. Additionally, the sur­
+vey data used does not include information as to symptom severity, 
+intensity, or duration, which can vary substantially in Long COVID 
+[19, 67]. The incapacity to distinguish symptom severity and duration 
+may blur clinically important distinctions. Instruments such as the 
+DePaul Questionnaire for PEM [68] and the symptom burden ques­
+tionnaire for Long COVID [69] may better capture gradations in 
+symptom severity and impact. Despite these challenges, all three 
+methods employed in this work are designed to tolerate noise and re­
+cover structure where it exists: Method A by explicitly including a 
+noise structure, Method B by averaging over many base clusterings, 
+and Method C by modeling residual variation probabilistically. Their 
+collective failure to identify shared, discrete phenotypes suggests that 
+the symptom data, as measured here, does not naturally segregate 
+into a small set of stable phenotypes.
+For clinicians, our findings argue for caution in treating symptom- 
+based Long COVID clusters as distinct diagnostic entities. An individual 
+patient might be assigned to a high-burden neurocognitive cluster by 
+one algorithm and a more generalized multi-system cluster by another, 
+with no clear way to determine which is ‘correct’, and it is important to 
+remember that symptom clusters are not ‘types’ of patients. Recurrent 
+patterns are still useful, however. Women were over-represented in 
+high-burden clusters and under-represented in low-burden clusters; 
+high symptom burden was associated with more severe PEM; and sub­
+groups with prominent speech and cognitive-linguistic impairment 
+appeared across all methods, consistent with emerging literature on 
+language and cognitive deficits in Long COVID [45] and pointing to a 
+need for structured evaluation of PEM and cognitive-linguistic func­
+tion. Moreover, we demonstrate that PEM, as captured by this dataset, 
+is not monolithic. Differences in the ratio of cognitive to physical PEM 
+across subgroups, and the robust observation of patients with PEM but 
+minimal self-reported sleep disturbance, suggests multiple PEM- 
+related phenotypes, aligning with work in ME/CFS and Long COVID in­
+dicating diverse PEM triggers and trajectories [29, 70] and suggesting a 
+need to probe physical and cognitive triggers separately and focus on 
+individualized pacing and rehabilitation strategies. More broadly, our 
+results support using symptom clusters as exploratory tools to generate 
+hypotheses and help communicate about patterns of illness, rather 
+than as rigid labels that define eligibility or predict response to specific 
+treatments. With any clustering, caution is needed to ensure that algo­
+rithmically imposed boundaries are not mistakenly interpreted as 
+biologically discrete or clinically stable subtypes, particularly in condi­
+tions such as Long COVID where symptom burden varies along largely 
+continuous dimensions and cluster membership is highly sensitive to 
+analytic choices.
+Our multi-method analysis highlights several methodological les­
+sons for future Long COVID phenotyping. Taken together, our find­
+ings suggest that clustering studies of Long COVID patients need to be 
+skeptical of cluster outputs, and particularly cluster reproducibility. 
+Machine learning algorithms excel at finding statistically meaningful 
+data subdivisions, but in the context of a homogeneously varying 
+dataset, these partitions are fundamentally arbitrary. Studies should 
+report not only internal validity metrics (e.g. silhouette scores) but 
+also sensitivity of clusters to algorithm choice, parameter settings, 
+and subsampling of patients and symptoms, particularly in cases 
+where analysis of the data to be clustered suggests a continuous 
+symptom space. Incorporating symptom severity, trajectory, and bio­
+logical markers are all likely to be helpful in defining endotypes, and 
+future work should focus on whether clusters defined jointly in 
+symptom-biomarker space are more robust and clinically useful. 
+While studies with fewer reported symptoms may achieve more con­
+sistent results, these outcomes may be artifacts of the limited number 
+of symptoms under consideration. More research is needed to deter­
+mine not only what symptoms, but what conditions and biological 
+markers can help consistently reproduce Long COVID phenotypes.
+Author contributions
+Tessa Durakis Green (Data curation [Equal], Formal analysis [Equal], 
+Methodology [Equal], Visualization [Equal], Writing—original draft 
+[Equal], Writing—review & editing [Lead]), Christopher McWilliams (Data 
+curation [Equal], Formal analysis [Equal], Methodology [Equal], 
+Visualization [Equal], Writing—original draft [Equal], Writing—review & 
+editing [Equal]), Leonardo de Figueiredo (Data curation [Equal], Formal 
+analysis [Equal], Methodology [Equal], Visualization [Equal], Writing— 
+original draft [Equal], Writing—review & editing [Equal]), Leticia Soares 
+(Writing—original draft [Equal], Writing—review & editing [Equal]), 
+Bethany Pollack (Writing—original draft [Equal], Writing—review & edit­
+ing [Equal]), Alison K Cohen (Writing—original draft [Equal], Writing—re­
+view & editing [Equal]), Tan Zhi-Xuan (Methodology [Equal], Writing— 
+review & editing [Equal]), Tess Falor (Writing—review & editing [Equal]), 
+and Hannah E. Davis (Conceptualization [Equal], Data curation [Equal], 
+Funding acquisition [Equal], Methodology [Equal], Writing—original draft 
+[Equal], Writing—review & editing [Equal])
+Supplementary material
+Supplementary material is available at OXFIMM Journal online.
+Conflicts of interest
+At the time of the research, Tessa Green was affiliated with Patient-Led 
+Research Collaborative and Harvard Medical School; Tessa Green is cur­
+rently an employee of KiraGen Bio.
+Funding
+This research was supported by Kanro.
+Oxford Open Immunology, 2026, Vol, 7, Issue 1 | 11  
+
+Data availability
+Data available upon reasonable request to the corresponding author. 
+Code for data preprocessing and clustering is publicly available (https:// 
+github.com/leothesouthafrican/PLR).
+Ethics approval
+The study was approved by the University College London (UCL) Research 
+Ethics Committee [16,159.002] (London, UK).
+Informed consent
+All participants provided written informed consent with no financial 
+incentives or compensation.
+APC funding
+Individual supporters of the Patient-Led Research Collaborative.
+Works Cited
+01.
+Greenhalgh T, Sivan M, Perlowski A et al. Long COVID: A clinical 
+update. Lancet 2024;404:707–24.
+02.
+Davis HE, McCorkell L, Vogel JM et al. Long COVID: Major findings, 
+mechanisms and recommendations. Nat Rev Microbiol 2023; 
+21:133–46.
+03.
+Skevaki C, Moschopoulos CD, Fragkou PC et al. Long COVID: 
+Pathophysiology, current concepts, and future directions. J Allergy 
+Clin Immunol 2025;155:1059–70.
+04.
+Fogarty H, Townsend L, Morrin H et al. Persistent endotheliopathy 
+in the pathogenesis of long COVID syndrome. J Thromb Haemost 
+2021;19:2546–53.
+05.
+Prasannan N, Heightman M, Hillman T et al. Impaired exercise ca­
+pacity in post–COVID-19 syndrome: the role of VWF-ADAMTS13 
+axis. Blood Adv 2022;6:4041–8.
+06.
+Pretorius E, Venter C, Laubscher GJ et al. Prevalence of symptoms, 
+comorbidities, fibrin amyloid microclots and platelet pathology in 
+individuals with Long COVID/Post-Acute Sequelae of COVID-19 
+(PASC). Cardiovasc Diabetol 2022;21:148.
+07.
+Stein SR, Ramelli SC, Grazioli A, et al. SARS-CoV-2 infection and per­
+sistence in the human body and brain at autopsy. Nature 2022; 
+612:758–63.
+08.
+Swank Z, Senussi Y, Manickas-Hill Z et al. Persistent circulating se­
+vere acute respiratory syndrome coronavirus 2 spike is associated 
+with post-acute coronavirus disease 2019 sequelae. Clin Infect Dis 
+2023;76:e487–90.
+09.
+Zollner A, Koch R, Jukic A et al. Postacute COVID-19 is characterized 
+by gut viral antigen persistence in inflammatory bowel diseases. 
+Gastroenterology 2022;163:495–506.e8.
+10.
+Lim SH, Ju HJ, Han JH et al. Autoimmune and autoinflammatory 
+connective tissue disorders following COVID-19. JAMA Netw Open 
+2023;6:e2336120.
+11.
+Klein J, Wood J, Jaycox JR et al. Distinguishing features of long 
+COVID identified through immune profiling. Nature 2023; 
+623:139–48.
+12.
+Peluso MJ, Deitchman AN, Torres L et al. Long-term SARS-CoV-2- 
+specific immune and inflammatory responses in individuals 
+recovering from COVID-19 with and without post-acute symptoms. 
+Cell Rep 2021;36:109518.https://doi.org/10.1016/j.celrep.2021.109518
+13.
+Yin K, Peluso MJ, Luo X et al. Long COVID manifests with T cell dys­
+regulation, inflammation and an uncoordinated adaptive immune 
+response to SARS-CoV-2. Nat Immunol 2024;25:218–25.
+14.
+Dennis A, Wamil M, Alberts J, et al. Multiorgan impairment in low- 
+risk individuals with post-COVID-19 syndrome: a prospective, 
+community-based study. BMJ Open 2021;11:e048391.
+15.
+Ancona G, Alagna L, Alteri C et al. Gut and airway microbiota dys­
+biosis and their role in COVID-19 and long-COVID. Front Immunol 
+2023;14:1080043.https://doi.org/10.3389/fimmu.2023.1080043
+16.
+Zhang D, Zhou Y, Ma Y et al. Gut microbiota dysbiosis correlates 
+with Long COVID-19 at one-year after discharge. J Korean Med Sci 
+2023;38:e120.
+17.
+Soung AL, Vanderheiden A, Nordvig AS et al. COVID-19 induces 
+CNS cytokine expression and loss of hippocampal neurogenesis. 
+Brain 2022;145:4193–201.
+18.
+Bohmwald K, Diethelm-Varela B, Rodrıguez-Guilarte L et al. 
+Pathophysiological, immunological, and inflammatory features of 
+long COVID. Front Immunol 2024;15:1341600.https://doi.org/10. 
+3389/fimmu.2024.1341600
+19.
+Davis HE, Assaf GS, McCorkell L et al. Characterizing long COVID in 
+an international cohort: 7 months of symptoms and their impact. 
+eClinicalMedicine 2021;38:101019.https://doi.org/10.1016/j.eclinm. 
+2021.101019
+20.
+Deer RR, Rock MA, Vasilevsky N et al. Characterizing Long COVID: 
+Deep phenotype of a complex condition. eBioMedicine 2021;74: 
+103722.https://doi.org/10.1016/j.ebiom.2021.103722
+21.
+Twomey R, DeMars J, Franklin K et al. Chronic fatigue and postex­
+ertional malaise in people living with Long COVID: An observa­
+tional study. Phys Ther 2022;102:pzac005.
+22.
+Thaweethai T, Jolley SE, Karlson EW et al. Development of a defini­
+tion of postacute sequelae of SARS-CoV-2 infection. JAMA 2023; 
+329:1934–46.
+23.
+An Y, Guo Z, Fan J et al. Prevalence and measurement of post- 
+exertional malaise in post-acute COVID-19 syndrome: A systematic 
+review and meta-analysis. Gen Hosp Psychiatry 2024;91:130–42.
+24.
+Kenny G, McCann K, O’Brien C et al. Identification of distinct Long 
+COVID clinical phenotypes through cluster analysis of self- 
+reported symptoms. Open Forum Infect Dis 2022;9:ofac060.
+25.
+Lorman V, Song X, Rao S et al. 1362. Pediatric long COVID subphe­
+notypes: an EHR-based study from the RECOVER program. Open 
+Forum Infect Dis 2023;10:ofad500.1199.
+26.
+Zhang H, Zang C, Xu Z et al. Data-driven identification of post-acute 
+SARS-CoV-2 infection subphenotypes. Nat Med 2023;29:226–35.
+27.
+Peng B, Zhang Y, Dalhuisen T et al. Machine learning analysis of 
+post-acute COVID symptoms identifies distinct clusters and sever­
+ity groups. 2025:2025.11.16.25340350.
+28.
+Dagliati A, Strasser ZH, Abad ZSH et al. Characterization of long COVID 
+temporal sub-phenotypes by distributed representation learning 
+from electronic health record data: A cohort study. eClinicalMedicine 
+2023;64:102210.https://doi.org/10.1016/j.eclinm.2023.102210
+29.
+Thaweethai T, Donohue SE, Martin JN et al. Long COVID trajecto­
+ries in the prospectively followed RECOVER-adult US cohort. Nat 
+Commun 2025;16:9557.
+30.
+Kuodi P, Gorelik Y, Gausi B et al. Characterization of post-COVID 
+syndromes by symptom cluster and time period up to 12 months 
+post-infection: A systematic review and meta-analysis. Int J Infect 
+Dis 2023;134:1–7.
+12 | Oxford Open Immunology, 2026, Vol, 7, Issue 1  
+
+31.
+Natarajan A, Shetty A, Delanerolle G et al. A systematic review and 
+meta-analysis of long COVID symptoms. Syst Rev 2023;12:88.
+32.
+Re’em Y, Stelson EA, Davis HE et al. Factors associated with psychi­
+atric outcomes and coping in Long COVID. Nat Mental Health 2023; 
+1:361–72.
+33.
+Questionnaire to Characterize Long COVID: 200+ symptoms over 7 
+months. figshare 2021, 10.6084/m9.figshare.13642553.v2
+34.
+Campello RJGB, Moulavi D, Sander J. Density-based clustering 
+based on hierarchical density estimates. In: J Pei, VS Tseng, L Cao et 
+al. (eds.), Advances in Knowledge Discovery and Data Mining. Berlin, 
+Heidelberg: Springer, 2013, 160–72.
+35.
+Rousseeuw PJ. Silhouettes: A graphical aid to the interpretation and 
+validation of cluster analysis. J Comput Appl Math 1987;20:53–65.
+36.
+Fern XZ, Lin W. Cluster ensemble selection. Stat Anal 2008;1:128–41.
+37.
+von Luxburg U. A tutorial on spectral clustering. Stat Comput 2007; 
+17:395–416.
+38.
+Morin S, Legault R, Laliberte F et al. StepMix: A Python package for 
+pseudo-likelihood estimation of generalized mixture models with 
+external variables. J Stat Soft 2025;113:1–39. https://doi.org/10. 
+18637/jss.v113.i08
+39.
+Vinh NX, Epps J, Bailey J. Information theoretic measures for clus­
+terings comparison: Variants, properties, normalization and cor­
+rection for chance. J Mach Learn Res 2010;11:2837–54.
+40.
+Romano S, Vinh NX, Bailey J et al. Adjusting for chance clustering 
+comparison measures. J Mach Learn Res 2016;17:4635–66.
+41.
+Evans RA, McAuley H, Harrison EM et al. Physical, cognitive, and 
+mental health impacts of COVID-19 after hospitalisation (PHOSP- 
+COVID): A UK multicentre, prospective cohort study. Lancet Respir 
+Med 2021;9:1275–87.
+42.
+Sudre CH, Murray B, Varsavsky T et al. Attributes and predictors of 
+long COVID. Nat Med 2021;27:626–31.
+43.
+Shah DP, Thaweethai T, Karlson EW et al. Sex differences in long 
+COVID. JAMA Netw Open 2025;8:e2455430.
+44.
+Long COVID—Household Pulse Survey—COVID-19. 2025.
+45.
+Cummings L. Cognitive-linguistic difficulties in adults with Long 
+COVID: A follow-up study. Lang Health 2024;2:1–21.
+46.
+Cummings L. Long COVID: The impact on language and cognition. 
+Lang Health 2023;1:2–9. https://doi.org/10.1016/j.laheal.2023.05.001
+47.
+Silva J, Takahashi T, Wood J et al. Sex differences in symptomatology 
+and immune profiles of Long COVID. 2024:2024.02.29.24303568.
+48.
+Sylvester SV, Rusu R, Chan B et al. Sex differences in sequelae from 
+COVID-19 infection and in long COVID syndrome: a review. Curr 
+Med Res Opin 2022;38:1391–9.
+49.
+Chu L, Valencia IJ, Garvert DW et al. Deconstructing post- 
+exertional malaise in myalgic encephalomyelitis/ chronic fatigue 
+syndrome: A patient-centered, cross-sectional survey. Plos ONE 
+2018;13:e0197811.
+50.
+Holtzman CS, Bhatia S, Cotler J et al. Assessment of Post-Exertional 
+Malaise (PEM) in patients with Myalgic Encephalomyelitis (ME) 
+and Chronic Fatigue Syndrome (CFS): A patient-driven survey. 
+Diagnostics 2019;9:26.
+51.
+Vernon SD, Hartle M, Sullivan K et al. Post-exertional malaise among 
+people with long COVID compared to myalgic encephalomyelitis/ 
+chronic fatigue syndrome (ME/CFS). WORK 2023;74:1179–86.
+52.
+Chang C-J, Hung L-Y, Kogelnik AM et al. A comprehensive examina­
+tion of severely ill ME/CFS patients. Healthcare 2021;9:1290.
+53.
+Jackson ML, Bruck D. Sleep abnormalities in chronic fatigue syn­
+drome/myalgic encephalomyelitis: A review. J Clin Sleep Med JCSM 
+Off Publ Am Acad Sleep Med 2012;8:719–28.
+54.
+Le Bon O, Fischler B, Hoffmann G et al. How significant are pri­
+mary sleep disorders and sleepiness in the chronic fatigue syn­
+drome? Sleep Res Online SRO 2000;3:43–8.
+55.
+Buysse DJ. Sleep health: Can we define it? Does it matter? Sleep 
+2014;37:9–17.
+56.
+Medic G, Wille M, Hemels ME. Short- and long-term health conse­
+quences of sleep disruption. Nat Sci Sleep 2017;9:151–61.
+57.
+Zang C, Zhang Y, Xu J et al. Data-driven analysis to understand long 
+COVID using electronic health records from the RECOVER initia­
+tive. Nat Commun 2023;14:1948.
+58.
+Mandel HL, Shah SN, Bailey LC et al. Opportunities and challenges 
+in using electronic health record systems to study postacute se­
+quelae of SARS-CoV-2 infection: Insights from the NIH RECOVER 
+initiative. J Med Internet Res 2025;27:e59217.
+59.
+Fernandez-de-las-Pe~nas C, Martın-Guerrero JD, Florencio LL et al. 
+Clustering analysis reveals different profiles associating long-term 
+post-COVID symptoms, COVID-19 symptoms at hospital admission 
+and previous medical co-morbidities in previously hospitalized 
+COVID-19 survivors. Infection 2023;51:61–9.
+60.
+Ziauddeen N, Gurdasani D, O’Hara ME et al. Characteristics and im­
+pact of Long Covid: Findings from an online survey. Plos ONE 
+2022;17:e0264331.
+61.
+Proal AD, VanElzakker MB. Long COVID or post-acute sequelae of 
+COVID-19 (PASC): An overview of biological factors that may con­
+tribute to persistent symptoms. Front Microbiol 2021;12:698169.
+62.
+Peluso MJ, Deeks SG. Mechanisms of long COVID and the path to­
+ward therapeutics. Cell 2024;187:5500–29.
+63.
+Kedor C, Freitag H, Meyer-Arndt L et al. A prospective observa­
+tional study of post-COVID-19 chronic fatigue syndrome following 
+the first pandemic wave in Germany and biomarkers associated 
+with symptom severity. Nat Commun 2022;13:5104.
+64.
+Jason LA, Evans M, So S et al. Problems in defining post-exertional 
+malaise. J Prev Interv Community 2015;43:20–31.
+65.
+Harding JL, Oviedo SA, Ali MK et al. The bidirectional association 
+between diabetes and long-COVID-19 – a systematic review. 
+Diabetes Res Clin Pract 2023;195:110202.https://doi.org/10.1016/j. 
+diabres.2022.110202
+66.
+Turner S, Khan MA, Putrino D et al. Long COVID: Pathophysiological 
+factors and abnormalities of coagulation. Trends Endocrinol Metab 
+2023;34:321–44.
+67.
+Fjelltveit EB, Blomberg B, Kuwelker K et al. Symptom burden and 
+immune dynamics 6 to 18 months following mild severe acute re­
+spiratory syndrome coronavirus 2 infection (SARS-CoV-2): A case- 
+control study. Clin Infect Dis 2023;76:e60–70–e70.
+68.
+Cotler J, Holtzman C, Dudun C et al. A brief questionnaire to assess 
+post-exertional malaise. Diagnostics 2018;8:66.
+69.
+Hughes SE, Haroon S, Subramanian A et al. Development and vali­
+dation of the symptom burden questionnaire for long covid (SBQ- 
+LC): Rasch analysis. BMJ 2022;377:e070230.
+70.
+Hartle M, Bateman L, Vernon SD. Dissecting the nature of post- 
+exertional malaise. Fatigue Biomed Health Behav 2021;9:33–44.
+© The Author(s) 2026. Published by Oxford University Press.
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/), which 
+permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.
+Oxford Open Immunology, 2026, 7, 1–13
+https://doi.org/10.1093/oxfimm/iqag010
+Original Research
+Oxford Open Immunology, 2026, Vol, 7, Issue 1 | 13  

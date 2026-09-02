@@ -1,0 +1,1526 @@
+ORIGINAL RESEARCH
+Sustained Reduction in Cardiopulmonary 
+Fitness in Long COVID
+A Report from the RECOVER-adult Cohort Study
+Julia Moore Vogel, PHD,a,b,† Trevor Jenkins, MD,c,† Marta Cerda, JD,d Hillary Chen,e Jason Goldman, MD, MPH,f,g
+Stuart D. Katz, MD,h Thomas F. Patterson, MD,i Hassan Ashktorab, PHD,j Logan Bartram, MD,k Souptik Barua, PHD,l
+Hassan Brim, PHD,j Jeanette P. Brown, MD, PHD,m Mario Castro, MD, MPH,n Elias Chaibub Neto, PHD,o
+David Chestek, DO,p Matthew S. Durstenfeld, MD, MAS,q Kristine M. Erlandson, MD,r Valerie Flaherman, MD, PHD,q
+Andrea S. Foulkes, SCD,s,t Maher Ghamloush, MD,u Francois Haddad, MD,v Jennifer Hadlock, MD,w
+James R. Heath, PHD,x Bjoern Hornikel, PHD,x Elizabeth W. Karlson, MD,y Elizabeth S. Kaufman, MD,z
+Dean L. Kellogg, JR, MD, PHD,aa Emily B. Levitan, SCD,x Bruce D. Levy, MD,ab Jeff Martin, MD, MPH,ac
+Grace A. McComsey, MD,ad Torri D. Metz, MD, MS,ae Robert W. Motl, PHD,af Talal Moukabary, MD,ag
+Janet M. Mullington, PHD,ah Igho Ofotokun, MD, MSC,ai Megumi J. Okumura, MD, MAS,aj
+Sairam Parthasarathy, MD,ak Beth A. Plunkett, MD, MPH,al W. Brian Reeves, MD,am Franz Rischard, DO, MSC,an
+JohnRoss Rizzo, MD,ao Jake A. Scott, MD,v Zaki A. Sherif, PHD,ap Tanayott Thaweethai, PHD,aq,ar
+Joel D. Trinity, PHD,as Meghasyam Tummalacherla, MSE,at Alfredo E. Urdaneta, MD,au Andrew J. Vasey, MD,av
+Daphne-Dominique Villanueva, MD,aw Tiffany A. Walker, MD,aj Zanthia Wiley, MD,aj Solveig K. Sieberts, PHD,ax,*
+Jerry A. Krishnan, MD, PHD,ay,* for the RECOVER Consortium 
+ABSTRACT
+BACKGROUND Long-term effect of COVID-19 (Long COVID) may persist for months or years after SARS-CoV-2 
+infection, but longer-term cardiopulmonary manifestations have not been previously reported.
+OBJECTIVES The objective of the study was to characterize cardiopulmonary function after SARS-CoV-2 infection in a 
+digital health substudy of the nationwide Researching COVID-19 to Enhance Recovery Adult Cohort Study.
+METHODS Associations between wearable sensor device measures of cardiopulmonary fitness and survey-derived 
+Long COVID symptoms were estimated over a 6-month window at least 6 months after infection using linear regression 
+models adjusted for wear time, age, sex, race/ethnicity, and body mass index.
+RESULTS Among 1,475 participants (72% female, 65% non-Hispanic White) a median of 21 months (IQR: 15-31 months) 
+after infection, 498 (34%) had high symptom burden as characterized by the Researching COVID-19 to Enhance Re­
+covery Long COVID Research Index (LCRI). High LCRI (vs low LCRI) was associated with significantly lower heart rate 
+variability (−4.4 ms; 95% CI: −6.5 to −2.4; P < 0.001), higher resting heart rate (+1.5 beats/min [+0.7 to +2.4]; 
+P < 0.001), fewer metabolic equivalent of task minutes (−96.3 [–128.8 to −63.8]; P < 0.001), lower step counts 
+(−1,624 steps/day [–1,952 to −1,296]; P < 0.001), and lower activity levels (−7.9 minutes/day very or fairly active 
+[–10.9 to −5.0]; P < 0.001). Hierarchal clustering analysis identified two subphenotypes with abnormal cardiovascular 
+measures associated with low quality of life scores.
+CONCLUSIONS Long COVID is associated with worse cardiovascular fitness. Additional studies are needed to 
+determine if Long COVID is a novel risk factor for incident cardiovascular disease. (JACC Adv. 2026;5:102923) 
+© 2026 The Authors. Published by Elsevier on behalf of the American College of Cardiology Foundation. This is an 
+open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+ISSN 2772-963X 
+https://doi.org/10.1016/j.jacadv.2026.102923
+J A C C : A D V A N C E S 
+V O L . 5 , N O . 7 , 2 0 2 6 
+ª 2 0 2 6 T H E A U T H O R S . P U B L I S H E D B Y E L S E V I E R O N B E H A L F O F T H E A M E R I C A N 
+C O L L E G E O F C A R D I O L O G Y F O U N D A T I O N . T H I S I S A N O P E N A C C E S S A R T I C L E U N D E R 
+T H E C C B Y - N C - N D L I C E N S E ( h t t p : / / c r e a t i v e c o m m o n s . o r g / l i c e n s e s / b y - n c - n d / 4 . 0 / ) . 
+
+A
+cute 
+cardiopulmonary 
+complica­
+tions of SARS-CoV-2 infection are 
+mediated by viral infection and 
+replication within cardiac, pulmonary, and 
+vascular tissues with cell surface expression 
+of the angiotensin converting enzyme-2 re­
+ceptor and concomitant activation of sys­
+temic inflammatory pathways. The acute 
+inflammatory response to SARS-CoV-2 infec­
+tion is known to be associated with pneumo­
+nitis, myocarditis, pericarditis, thrombosis, 
+and subacute short-term increases in the 
+incidence 
+of 
+hypertension, 
+arrhythmias, 
+and atherothrombotic and venous thrombo­
+embolism events.1-3
+SARS-CoV-2 infection may also result in 
+various postacute sequelae. Long-term effect 
+of COVID-19 (Long COVID) is defined as an infection- 
+associated 
+chronic 
+condition 
+after 
+SARS-CoV-2 
+infection and is present for at least 3 months as a 
+continuous, relapsing and remitting, or progressive 
+disease state that affects 1 or more organ systems.3,4
+Long COVID has impacted at least 400 million in­
+dividuals worldwide with heterogeneous clinical 
+presentations associated with multisystem organ 
+dysfunction, diverse symptomatology, and varying 
+degrees of disability.5-7
+Symptoms traditionally 
+linked to cardiopulmonary disorders, including pal­
+pitations, orthostatic intolerance, fatigue, shortness 
+of breath, cough, and chest pain, and postexertional 
+malaise are common in Long COVID, may persist for 
+years, and are often associated with autonomic 
+dysfunction and decreased functional capacity.8,9
+Wrist-worn 
+wearable 
+sensors 
+(“wearables”) 
+passively collect data during daily activities and 
+provide objective quantitative measurements of car­
+diopulmonary fitness and activity level over time.10,11
+Prior reports of wearables sensor data in post-COVID 
+populations have described short-term changes in 
+cardiopulmonary fitness within 6 months of the 
+inciting COVID infection,12,13 but long-term effects of 
+SARS-CoV-2 infections on cardiopulmonary symp­
+toms have not been characterized. Accordingly, we 
+conducted a digital health substudy of the nation­
+wide National Institute of Health–funded Research­
+ing COVID-19 to Enhance Recovery (RECOVER) Adult 
+Cohort Study to examine the long-term (median of 
+about 2 years) cardiopulmonary consequences of 
+A B B R E V I A T I O N S 
+A N D A C R O N Y M S
+BMI = body mass index
+DHP = Digital Health Platform
+HRV = heart rate variability
+Long COVID = long-term 
+effect of COVID-19
+LCRI = Long COVID Research 
+Index
+MET = metabolic equivalent of 
+task
+PROMIS = Patient-Reported 
+Outcomes Measurement 
+Information System
+RECOVER = National Institute 
+of Health–funded Researching 
+COVID-19 to Enhance Recovery
+From the aSage Bionetworks, Seattle, Washington, USA; bScripps Research, La Jolla, California, USA; cHarrington Heart & 
+Vascular Institute, Case Western Reserve University, Ohio, USA; dIllinois Research Network (ILLInet), Illinois Unidos, Chicago, 
+Illinois, USA; eIndependent Patient Representative, Seattle, Washington, USA; fProvidence Swedish Medical Center, Seattle, 
+Washington, USA; gDivision of Allergy and Infectious Diseases, University of Washington, Seattle, Washington, USA; hNYU 
+Grossman School of Medicine, New York, New York, USA; iUT Health San Antonio, San Antonio, Texas, USA; jHoward University, 
+College of Medicine, Washington, DC, USA; kIcahn School of Medicine at Mount Sinai, New York, New York, USA; lNYU Grossman 
+School of Medicine, New York, New York, USA; mUniversity of Utah, Salt Lake City, Utah, USA; nUniversity of Kansas, Kansas 
+City, Kansas, USA; oSage Bionetworks, Seattle, Washington, USA; pIllinois Research Network (ILLInet), University of Illinois, 
+Illinois, USA; qUniversity of California, San Francisco, San Francisco, California, USA; rUniversity of Colorado Anschutz Medical 
+Center; Aurora, Colorado, USA; sMassachusetts General Hospital Biostatistics, Boston, Massachusetts, USA; tHarvard Medical 
+School, Boston, Massachusetts, USA; uTufts Medical Center, Tufts University School of Medicine, Boston, Massachusetts, USA; 
+vStanford University School of Medicine, Palo Alto, California, USA; wInstitute for Systems Biology, Seattle, Washington, USA; 
+xUniversity of Alabama at Birmingham, Birmingham, Alabama, USA; yBrigham and Women’s Hospital, Boston, Massachusetts, 
+USA; zMetroHealth Campus, Case Western Reserve University, Cleveland, Ohio, USA; aaUniversity of Texas Health Science Center 
+and Veterans Administration Geriatric Research, Education, and Clinical Center, San Antonio, Texas, USA; abBrigham and 
+Women’s Hospital and Harvard Medical School, Boston, Massachusetts, USA; acUniversity of California, San Francisco, San 
+Francisco, California, USA; adCase Western Reserve University, Cleveland, Ohio, USA; aeUniversity of Utah Health, Salt Lake City, 
+Utah, USA; afIllinois Research Network (ILLInet), University of Illinois Chicago, Chicago, Illinois, USA; agUniversity of Arizona, 
+Tucson, Arizona, USA; ahBeth Israel Deaconess Medical Center, and Harvard Medical School, Boston, Massachusetts, USA; 
+aiEmory University School of Medicine, Atlanta, Georgia, USA; ajUniversity of California, San Francisco, San Francisco, California, 
+USA; akUniversity of Arizona, Tucson, Arizona, USA; alEndeavor Health (previously NorthShore University HealthSystem), 
+Evanston, Illinois, USA; amUT Health San Antonio, San Antonio, Texas, USA; anUniversity of Arizona, Tucson, Arizona, USA; 
+aoNYU Grossman School of Medicine, New York, New York, USA; apHoward University College of Medicine, Washington DC, USA; 
+aqMassachusetts General Hospital Biostatistics, Boston, Massachusetts, USA; arHarvard Medical School, Boston, Massachusetts, 
+USA; asDivision of Geriatrics, Department of Internal Medicine, University of Utah, Salt Lake City, Utah, USA; atSage Bionetworks, 
+Seattle, Washington, USA; auStanford Hospitals and Clinics, Stanford, California, USA; avUniversity of Nebraska Medical Center, 
+Omaha, Nebraska, USA; awWest Virginia University, Morgantown, West Virginia, USA; axSage Bionetworks, Seattle, Washington, 
+USA; and the ayIllinois Research Network (ILLInet), University of Illinois Chicago, Chicago, Illinois, USA. *These authors are 
+co-senior authors. †These authors are co-first authors.
+The authors attest they are in compliance with human studies committees and animal welfare regulations of the authors’ 
+institutions and Food and Drug Administration guidelines, including patient consent where appropriate. For more 
+information, visit the Author Center.
+Manuscript received February 2, 2026; revised manuscript received May 14, 2026, accepted May 20, 2026. 
+Vogel et al 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3
+2
+
+Long COVID with wearable sensor-derived cardio­
+pulmonary measures and participant surveys of car­
+diopulmonary symptoms (Central Illustration).
+METHODS
+OVERVIEW OF THE RECOVER-ADULT COHORT 
+STUDY. Participants were enrolled at 83 participating 
+sites in the United States, including Puerto Rico. The 
+study protocol was posted on the clinicaltrials.gov 
+website (NCT05172024) and approved by the Insti­
+tutional Review Board at NYU Grossman School of 
+Medicine and collaborating sites. Enrollment in the 
+parent Adult Cohort Study began in 2021, and all 
+participants provided written informed consent.
+PARTICIPANTS IN THE DIGITAL HEALTH SUBSTUDY. Study 
+sites invited participants enrolled in the RECOVER 
+Adult Cohort Study to join the digital health substudy 
+starting on March 27, 2023. Participants who enrolled 
+in the substudy were asked to connect and share data 
+from their personal consumer-grade wearables or or­
+der a study-provided device (Fitbit Sense 2 or Fitbit 
+Charge 5), available to participants at no cost. To 
+include only participants with sufficient time after 
+infection to develop Long COVID, analysis was limited 
+to participants who had a study visit at least 6 months 
+after an index SARS-CoV-2 infection.
+A total of 6,529 participants enrolled in the digital 
+health substudy (43% of 15,161 enrolled in the parent 
+RECOVER Adult Cohort Study). Among digital health 
+substudy participants, 4,122 (62%) connected a 
+wearable device. We limited our analysis to Fitbit 
+data since Fitbits comprised the majority (83% of 
+4,122) of wearables used by cohort participants who 
+connected a wearable to the Digital Health Platform 
+(DHP) substudy. Among the 3,412 participants who 
+shared Fitbit data, 1,596 were excluded because of 
+insufficient evaluable data (defined as at least 5 days 
+of at least 8 hours of data during the 6-month data 
+collection window). This minimum data threshold 
+was instituted to limit bias due to selective sampling 
+times, cyclical patterns of activity, and higher levels 
+of use immediately after starting the use of wearables 
+(Hawthorne effect).
+WEARABLES MEASURES. We extracted cardiopul­
+monary and activity measures from Fitbit devices 
+during a 6-month window centered on the first 2 
+consecutive symptom survey time points available at 
+least 6 months after the index SARS-CoV-2 infection 
+(Supplemental Table 2 and Supplemental Figure 2): 1) 
+cardiovascular measures (resting heart rate, active 
+heart rate, heart rate variability [HRV] [root-mean- 
+square of the successive normal sinus time between 
+consecutive heart beats difference in milliseconds, 
+ms],14 metabolic equivalent of task [MET] minutes [1 
+MET minute is equal to basal metabolic energy 
+expended in 1 minute, 1 kcal/kg/hour],15 and cardio 
+fitness score [unit-less Fitbit estimate of predicted 
+maximum oxygen uptake (VO2 max) based on a pro­
+prietary algorithm incorporating resting heart rate, 
+age, sex, weight, and other user-entered characteris­
+tics])16; 2) physical activity (step count, activity level 
+at 4 intensities [minutes sedentary, lightly active, 
+fairly active, or very active])14-16; and 3) pulmonary 
+measures during sleep (peripheral oxygen saturation 
+[SpO2] [average, minimum, and maximum in percent 
+(%)], respiratory rate). Methods for wrist-worn wear­
+able sensor data from Fitbit, derived using acceler­
+ometers and photoplethysmography, have been 
+previously described.17-19 We analyzed Fitbit daily 
+summaries, with the following exceptions: 1) daily 
+MET minutes: sum of minute-level data provided by 
+Fitbit; 2) daily average active heart rate: averaged 
+minute-level heart rates from Fitbit’s activity logs; and 
+3) “combined active minutes:” sum of the daily sum­
+mary of minutes “very active” plus minutes “fairly 
+active.” The mean of daily values over the 6-month 
+window provided a single value for each of the wear­
+able measures per participant.
+PARTICIPANT-REPORTED INFORMATION. The RECOVER 
+Adult 
+Cohort 
+Study 
+assessed 
+symptoms 
+and 
+participant-reported diagnoses on questionnaires 
+(Supplemental Table 1) at enrollment and every 
+3 months.20 Because symptoms may change over 
+time, we used data from 2 consecutive completed 
+questionnaires that were 1 to 6 months apart and 
+after the start of digital health data collection. We 
+estimated Long COVID symptom burden using the 
+RECOVER 2024 Long COVID Research Index (LCRI) 
+(range 0-30, with LCRI index score $11 previously 
+determined as the optimal threshold to identify 
+likely Long COVID in the RECOVER adult cohort).8
+Each symptom was deemed “positive” for the current 
+analysis if a participant reported the symptom at 1 or 
+both time points or “negative” if symptom was ab­
+sent at both time points. Individuals with LCRI 11 to 
+30 for at least 1 time point during the 6-month 
+observation period are referred to as “high LCRI.” 
+Individuals with LCRI 0 to 10 at both time points 
+were considered “low LCRI.” In a sensitivity analysis, 
+we compared high LCRI to LCRI = 0, a group 
+reporting no symptoms in the RECOVER question­
+naire. We also examined participant-reported car­
+diopulmonary symptoms, other common symptoms 
+of 
+Long 
+COVID, 
+symptoms 
+indicating 
+myalgic 
+encephalomyelitis/chronic fatigue syndrome,21 diag­
+nosis of dysautonomia, and the Patient-Reported 
+Outcomes 
+Measurement 
+Information 
+System 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Vogel et al 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID
+3
+
+(PROMIS) Global Health-10 measure v1.2, a 10-item 
+patient-reported 
+survey 
+to 
+assess 
+participant’s 
+overall physical and mental health. The PROMIS 
+Global Physical Health and PROMIS Global Mental 
+Health subscales were examined separately; higher 
+values on the measures indicate better health. 
+PROMIS scores were converted to T-scores with a 
+mean score of 50 and an SD of 10 points.22,23
+STATISTICAL ANALYSIS. Overview. We used cross- 
+sectional analyses to evaluate associations between 
+CENTRAL ILLUSTRATION Sustained Reduction in Cardiopulmonary Fitness: A 
+RECOVER Substudy 
+A high Long COVID symptom burden is associated
+with chronic, objectively measured reductions in
+physical activity and cardiopulmonary ﬁtness.
+The study evaluated 1,475 adults a
+median 21 months after SARS-CoV-2
+infection. 34% experienced a high burden
+of Long COVID symptoms, as deﬁned by
+the Long COVID Research Index (LCRI).
+Potential Downstream
+Cardiovascular Risk
+Reduced
+Quality of Life
+Neurocognitive
+Dysfunction
+Dizziness/Orthostatic
+Intolerance
+Fatigue
+SYMPTOMS
++3.0%
+No Change
++2.5%
+Average SpO2,%
+Resting heart rate,
+beats per minute
+Minutes
+sedentary
+−4.8%
+−25.4%
+MET minutes,
+kcal/kg/hour
+Average
+Daily Steps
+−17.0%
+−43.1%
+Heart rate
+variability, ms
+Minutes
+active, combined
+High LCRI vs. Low LCRI Groups
+(% Change)
+O2
+%
+Vogel JM, et al. JACC Adv. 2026;5(7):102923. 
+In this secondary analysis of 1,475 RECOVER study participants, a cross-sectional analysis was performed using passively collected data from 
+wrist-worn wearable devices. At a median 21 months from index SARS-CoV-2 infection, 34% of those studied had a high burden of Long 
+COVID symptoms, based on the Long COVID Research Index (LCRI). Compared to those with low LCRI, participants with high LCRI had 
+reduced daily step count, less time active and higher time sedentary. In addition, the degree of decreased heart rate variability and total 
+MET minutes are suggestive of increased cardiovascular risk or mortality in other populations. A high Long COVID symptom burden is 
+associated with reduced quality of life and objectively measured reductions in physical activity and cardiopulmonary fitness. Prospective 
+studies will need to determine if these metrics of reduced physical activity and cardiopulmonary fitness translate into increased 
+cardiovascular risk. MET = metabolic equivalent of task; SpO2 = peripheral oxygen saturation.
+Vogel et al 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3
+4
+
+wearables measures and Long COVID symptoms 
+collected within a 6-month window (Supplemental 
+Figure 2). All analyses were performed using R 
+(R Foundation for Statistical Computing, 4.4.0).
+Association between wearables measures and 
+Long COVID. In the primary analysis, individual 
+wearables measures were modeled in linear regression 
+as the dependent variable against LCRI (high vs low 
+LCRI). For each analysis, 4 models were considered: 1) 
+base model adjusting for average wear time; 2) model 1 
+plus wear time and age, sex, and race/ethnicity; 3) 
+model 2 plus body mass index (BMI)24; and 4) model 3 
+plus alcohol consumption, smoking, seasonality, time 
+between surveys, and the number of Fitbit records in 
+the time window. Model 3 was considered the primary 
+model, as it is adjusted for potential confounders of 
+cardiopulmonary health and Long COVID. Participants 
+who did not report their sex or reported intersex (0.3% 
+of the digital health substudy) were grouped with the 
+male group for the purpose of analysis. Analyses were 
+repeated comparing high LCRI vs LCRI = 0 groups. To 
+adjust for testing multiple hypotheses, we used the 
+Benjamini-Hochberg method using the significance 
+cutoff of q-value <0.05.25
+Clustering analysis. Hierarchical clustering was 
+performed using a subset of wearables measures that 
+were strongly correlated with global physical and 
+mental health scores (for external validity). Each 
+measure was normalized by subtracting the mean 
+and dividing the SD. Clusters were generated using 
+“hclust” in the R “stats” package with the Ward.D2 
+agglomeration method to minimize within-cluster 
+variance. The dendrogram was cut using a hybrid 
+algorithm in the “cutreeDynamic” function in the 
+“dynamicTreeCut” package. The optimal cluster 
+number was determined by visual inspection of the 
+scree plot, selecting the number of clusters at the 
+elbow of the plot (Supplemental Figure 8), and 
+confirmed using Bayesian Information Criterion in 
+the “mclustBIC” function of the “mclust” package 
+(Supplemental Figure 8). We further investigated the 
+demographics, LCRI status, and distribution of 
+overall health within each cluster.
+RESULTS
+PARTICIPANT 
+DEMOGRAPHICS 
+AND 
+CLINICAL 
+CHARACTERISTICS. Most of the 1,475 participants in 
+the digital health substudy were females (76%), non- 
+Hispanic White (65%), overweight or obese (70%), 
+and had low LCRI (66%); Table 1. The digital 
+health substudy participants resemble the overall 
+RECOVER-Adult Cohort Study, except the digital 
+health subgroup included 4% fewer Hispanic and 5% 
+fewer non-Hispanic Black participants. Digital health 
+subgroup participants with high LCRI (vs low LCRI) 
+were 3 years older on average and more frequently 
+overweight or obese (77% vs 64%).
+ASSOCIATION OF CARDIOPULMONARY WEARABLES 
+MEASURES WITH LONG COVID. Participants had a me­
+dian of 4 months of wearables data with 21 hours of 
+wear time per day (Supplemental Table 3). The first 
+time point for participant-reported information was a 
+median of 21 months (IQR: 15, 31) for all participants 
+included in this report, 27 months (IQR: 18, 36) after 
+SARS-CoV-2 infection in the high LCRI group, and 
+18 months (IQR: 12, 27) in the low LCRI group. The 
+proportion of participants with missing participant- 
+reported information at time point 2 and months 
+between time points 1 and 2 was similar in the high 
+and low LCRI groups.
+High LCRI was associated with lower HRV, 
+elevated resting heart rate, lower average step count, 
+and reduced active minutes, when compared with 
+low LCRI (Figure 1, Table 2). SpO2 and respiratory rate 
+during sleep were similar between groups. A com­
+parable pattern was noted in analyses stratified by 
+sex, age, and BMI (Supplemental Table 4-7). After 
+adjusting for wear time, age, sex, race and ethnicity, 
+and BMI in a regression model, high LCRI (vs low 
+LCRI) was associated with significantly higher resting 
+heart rate and less HRV in the high LCRI group. 
+Adjusted differences also indicate fewer steps per 
+day, minutes of activity, and MET minutes; as well as 
+more minutes sedentary. (Figure 2, Supplemental 
+Table 8). Group differences in mean SpO2 (−0.2%) 
+and maximum SpO2 (−0.3%) during sleep were small 
+but statistically significant. No between-group dif­
+ferences in minimum SpO2 or respiratory rate during 
+sleep were observed. A comparable pattern was pre­
+sent comparing high LCRI vs low LCRI regardless of 
+the model employed in the regression analyses 
+(Supplemental Figures 3 to 5, Supplemental Table 9). 
+We also observed comparable, but numerically larger 
+differences in a sensitivity analysis restricting the 
+comparison groups to high LCRI and LCRI = 0 
+(Supplemental Figure 6, Supplemental Table 10). 
+For example, after model 3 adjustments, high LCRI 
+was associated with 2,162 fewer steps per day 
+(95% CI: −2,576 to −1,748) vs LCRI = 0, compared to 
+1,624 fewer steps per day (95% CI: −1,952 to −1,296) 
+(Supplemental Table 8) vs low LCRI.
+ASSOCIATION OF SYMPTOMS AND CONDITIONS 
+WITH DIGITAL CARDIOPULMONARY MEASURES.
+Analyses of partial correlations indicate that symp­
+toms, participant-reported conditions, and worse 
+PROMIS Global Physical Health and PROMIS Global 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Vogel et al 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID
+5
+
+Mental Health scores were associated with worse 
+wearables-measured physical health (less physical 
+activity, higher resting heart rate, and lower HRV) as 
+measured by wearables (3). Higher LCRI score, as a 
+continuous measure, was associated with worse 
+wearable-measured health metrics (less physical ac­
+tivity, higher resting heart rate, and lower HRV). 
+This pattern was similar for many individual symp­
+toms; however, associations were less consistently 
+observed for chronic cough, dysautonomia, head­
+ache, as well as for wearables measures of SpO2 and 
+respiratory rate.
+CLUSTER 
+ANALYSIS 
+OF 
+DIGITALLY-DERIVED 
+CARDIOPULMONARY 
+MEASURES. We 
+performed 
+hierarchical clustering using 6 digital measures 
+(HRV, resting heart rate, steps, minutes very active, 
+minutes 
+lightly 
+active, 
+and 
+average 
+SpO2) 
+to 
+compare wearable data patterns with participant- 
+reported information. We identified 6 primary clus­
+ters showing different patterns of digital health 
+measures (Table 3, Figure 3, Supplemental Figure 7). 
+We numbered the digital health clusters (1-6) in 
+descending order of the prevalence of high LCRI 
+(57% to 20%). Notably, cluster 1 (“low physical ac­
+tivity with low SpO2”) and cluster 2 (“low physical 
+activity without low SpO2”), show the lowest activ­
+ity profiles, as well as low HRV and high resting 
+heart rate. Both show a high proportion of high LCRI 
+and participants reporting postexertional malaise, 
+along with lower PROMIS Global Physical and 
+Mental Health scores. Relative to cluster 1, cluster 2 
+tends to be younger (Table 3).
+DISCUSSION
+In this cross-sectional analysis of about 1,500 adults 
+at a median of 21 months after SARS-CoV-2 infection, 
+higher Long COVID symptom burden was associated 
+with substantial reductions in wearable-derived 
+measures of cardiopulmonary fitness and physical 
+activity. Hierarchical clustering revealed subgroups 
+of participants with distinct profiles of several 
+abnormal cardiopulmonary measures known to be 
+associated with an increased risk of incident cardio­
+vascular events.
+A prior study13 reported reduction in HRV with 
+onset of acute COVID infection and subacute phase 
+(< 6 months). Our study demonstrated a reduction of 
+4.4 ms group mean difference in HRV between high 
+LCRI and low LCRI at a median of 21 months after 
+SARS-CoV-2 infection. The lowest HRV was seen in 
+clusters 1 and 2 (low physical activity with low SpO2, 
+and low physical activity without low SpO2, respec­
+tively), which also showed the lowest PROMIS Global 
+Physical and Global Mental Health survey scores,26,27
+TABLE 1
+Demographic and Body Mass Index of Study Population in the DHP Substudy Compared to the Overall RECOVER Adult Cohort 
+Parent Study
+Characteristic
+RECOVER Adult 
+Cohort Parent Study 
+(N = 15,161)
+DHP Substudy
+Overall 
+(N = 1,475)
+Low LCRI 
+(n = 977)
+High LCRI 
+(n = 498)
+Sex assigned at birth
+Male
+4,086 (28%)
+354 (24%)
+256 (26%)
+98 (20%)
+Female
+10,551 (72%)
+1,115 (76%)
+716 (74%)
+399 (80%)
+Intersex
+5 (<0.1%)
+2 (0.1%)
+2 (0.2%)
+0 (0.0%)
+Age at enrollment, years
+45 (34, 59)
+45 (35, 58)
+44 (34, 58)
+47 (37, 57)
+Race and ethnicity
+Non-Hispanic White
+8,335 (55%)
+962 (65%)
+624 (64%)
+338 (68%)
+Hispanic
+2,548 (17%)
+197 (13%)
+129 (13%)
+68 (14%)
+Non-Hispanic Black
+2,154 (14%)
+133 (9.0%)
+88 (9.0%)
+45 (9.0%)
+Non-Hispanic Asian
+853 (5.6%)
+95 (6.4%)
+82 (8.4%)
+13 (2.6%)
+Mixed race/other/missing
+1,271 (8.4%)
+88 (6.0%)
+54 (5.5%)
+34 (6.8%)
+Body mass index (BMI)a
+Underweight (<18.5)
+211 (1.5%)
+21 (1.4%)
+16 (1.6%)
+5 (1.0%)
+Normal weight (18.5-24.9)
+4,117 (29%)
+432 (29%)
+325 (33%)
+107 (22%)
+Overweight (25.0-29.9)
+4,241 (30%)
+419 (29%)
+283 (29%)
+136 (27%)
+Obese (>30.0)
+5,691 (40%)
+597 (41%)
+349 (36%)
+248 (50%)
+Value are n except for age: median years (quartile 1, quartile 3). Number of individuals in the RECOVER Adult Cohort Study (parent study), DHP substudy overall, DHP 
+substudy high LCRI, and DHP substudy low LCRI groups with missing data for each variable include: sex assigned at birth: 519, 4, 3, and 1, respectively; age at enrollment: 43, 
+0, 0, and 0, respectively; and Body mass index: 901, 6, 4, and 2; and LCRI: 1,547, 1, 0, and 0, respectively. The proportion of participants with high LCRI at 6 months after 
+index SARS-CoV-2 infection in the RECOVER Adult Cohort Study and DHP substudy are 18% and 26%, respectively. aWHO BMI categories.24
+DHP = Digital Health Platform; LCRI = Long COVID Research Index; RECOVER = National Institute of Health–funded Researching COVID-19 to Enhance Recovery.
+Vogel et al 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3
+6
+
+FIGURE 1
+Digital Health Measure Differences Between High and Low LCRI 
+Differences (high LCRI minus low LCRI groups) in step count per day (Steps), very plus fairly active minutes (Comb. Active Mins), MET 
+minutes, resting heart rate (RHR) in beats per minute, heart rate variability (HRV) in ms, and average SpO2 in % (SpO2) between groups. 
+Estimates < 0 indicate lower values in the high LCRI group, adjusted for wear time, age, sex, race/ethnicity, and body mass index (model 3 
+[m3]; see Methods for details). Error bars indicate 95% CIs; 2-tailed significance ***0.001, and *0.05. LCRI = Long COVID Research Index; 
+MET = metabolic equivalent of task; SpO2 = peripheral oxygen saturation.
+TABLE 2
+Wrist-Worn Digitally-Derived Cardiopulmonary Measures in High vs Low LCRI Groups
+Low LCRI 
+(n = 977)
+High LCRI 
+(n = 498)
+Average daily steps
+7,497 (5,677, 9,535)
+5,593 (3,867, 7,614)
+Minutes very active
+12.0 (5.2, 24.0)
+5.4 (2.2, 13.2)
+Minutes fairly active
+13.2 (7.5, 20.5)
+8.9 (4.4, 17.0)
+Minutes lightly active
+223.4 (185.0, 269.6)
+201.3 (158.6, 250.5)
+Minutes sedentary
+799.5 (708.7, 969.9)
+819.8 (726.7, 966.4)
+Minutes active, combineda
+26.7 (14.3, 45.4)
+15.2 (7.0, 30.2)
+MET minutes, kcal/kg/hour
+2,212 (2,075, 2,368)
+2,105 (1,938, 2,268)
+Resting heart rate, beats per minute
+67.0 (60.9, 72.5)
+69.0 (63.5, 74.4)
+Average active heart rate, beats per minute
+103.8 (98.1, 109.8)
+104.2 (96.8, 110.0)
+Heart rate variability, ms
+27.7 (20.4, 41.0)
+23.0 (17.0, 33.8)
+Cardio fitness scoreb
+37.1 (31.6, 42.6)
+33.6 (29.3, 39.1)
+Average SpO2, %
+95 (94, 96)
+95 (94, 96)
+Maximum SpO2, %
+98 (97, 98)
+97 (96, 98)
+Minimum SpO2, %
+92 (92, 93)
+92 (91, 93)
+Respiratory rate, breaths per minute
+15 (14, 17)
+15 (14, 17)
+First questionnaire, months after infection (timepoint 1)
+18 (12, 27)
+27 (18, 36)
+Values are reported as median (Q1, Q3), unadjusted for wear time, age, sex, race/ethnicity, and body mass index. aMinutes active is the sum of daily minutes very active and 
+minutes fairly active. bCardio fitness score is a Fitbit proprietary algorithm estimating VO2 max (see Methods).
+MET = metabolic equivalent of task (1 MET = 3.5 mL/kg/min O2 consumption = 1 kcal/kg/min) minutes; SpO2 = peripheral oxygen saturation; other abbreviation 
+as in Table 1.
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Vogel et al 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID
+7
+
+and increased prevalence of postexertional malaise. 
+Postexertional malaise in Long COVID has been 
+previously linked to reduced skeletal muscle mito­
+chondrial density and skeletal muscle necrosis, 
+demonstrating a physiological basis of activity limi­
+tations in this population.28
+Systematic meta-analyses of general population 
+studies have established associations between higher 
+mortality and both lower HRV and higher resting 
+heart rate.29,30 The 4.7 ms reduction in HRV in the 
+high vs low LCRI groups is similar to the expected 
+decrease in HRV after 10 years of aging.14 We also 
+observed an approximate 100 MET minutes reduction 
+in the high (vs low) LCRI group. Results of a large 
+population-based cohort that assessed physical ac­
+tivity using a self-reported questionnaire indicate 
+FIGURE 2
+Associations Between Digital Health Measures, Symptoms, and Conditions 
+Partial correlations between digital health measures and symptoms, conditions, and PROMIS Global Physical and Global Mental health 
+subscales, adjusted for wear time, age, sex, race/ethnicity, and BMI. Red color indicates a positive partial correlation (higher value of one 
+measure is associated with higher value of the other), whereas blue indicates a negative partial correlation. An asterisk (‘*’) indicates 
+statistical significance at FDR 0.05. HR = heart rate; HRV = heart rate variability; ME/CFS = myalgic encephalomyelitis/chronic fatigue 
+syndrome; QoL = quality of life; RHR = resting heart rate; other abbreviations as in Figure 1.
+Vogel et al 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3
+8
+
+TABLE 3
+Cluster Analysis of Digitally-Derived Cardiopulmonary Measures
+Cluster 1 
+Low Physical 
+Activity and Low SpO2 
+(n = 134)
+Cluster 2 
+Low Physical 
+Activity Without 
+Low SpO2 (n = 165)
+Cluster 3 
+Intermediate Physical 
+Activity Without 
+High RHR (n = 257)
+Cluster 4 
+Intermediate Physical 
+Activity With 
+High RHR (n = 153)
+Cluster 5 
+Lightly Physically 
+Active (n = 243)
+Cluster 6 
+Very Physically 
+Active (n = 213)
+Sex assigned at birth
+Female
+114 (85%)
+133 (81%)
+179 (70%)
+127 (84%)
+199 (82%)
+134 (63%)
+Male
+20 (15%)
+32 (19%)
+76 (30%)
+25 (16%)
+44 (18%)
+78 (37%)
+Unknown
+0
+0
+2
+1
+0
+1
+Long COVID category
+High LCRI
+76 (57%)
+90 (55%)
+83 (32%)
+47 (31%)
+62 (26%)
+42 (20%)
+Low LCRI
+58 (43%)
+75 (45%)
+174 (68%)
+106 (69%)
+181 (74%)
+171 (80%)
+ME/CFS
+6 (5.2%)
+14 (9.8%)
+7 (3.0%)
+7 (5.0%)
+3 (1.4%)
+3 (1.5%)
+Unknown
+19
+22
+22
+12
+27
+12
+Dysautonomia
+1 (0.9%)
+14 (9.6%)
+10 (4.3%)
+7 (5.0%)
+4 (1.8%)
+4 (2.1%)
+Unknown
+21
+19
+22
+12
+24
+18
+Postexertional malaise
+84 (64%)
+107 (66%)
+103 (40%)
+66 (44%)
+80 (34%)
+56 (27%)
+Unknown
+3
+4
+2
+2
+5
+2
+Age at enrollment, years
+55 (44, 62)
+44 (35, 55)
+50 (37, 62)
+41 (34, 49)
+41 (33, 53)
+42 (30, 59)
+PROMIS Global Physical, t-score
+43 (39, 48)
+41 (36, 49)
+49 (42, 54)
+48 (41, 54)
+51 (45, 56)
+52 (47, 58)
+Unknown
+0
+0
+1
+0
+0
+0
+PROMIS Global Mental, t-score
+44 (39, 50)
+41 (36, 48)
+48 (41, 53)
+45 (40, 51)
+50 (44, 54)
+51 (44, 56)
+Unknown
+0
+0
+1
+0
+0
+0
+Value are n (%), except for age: median years (quartile 1, quartile 3). Results of hierarchical clustering based on 6 digital measures (steps, minutes very active, minutes lightly active, resting heart rate, 
+heart rate variability, and average SpO2). Six primary clusters were identified, presented in the Table in descending order of the proportion with high LCRI (57% to 20%, cluster 1-6), also corresponds a 
+descending order of the proportion with postexertional malaise (64% to 27%), age (55 years to 42 years), worse PROMIS Global Physical Health score (43-52, lower scores indicate worse health), and 
+worse PROMIS Global Mental Health score (44-51, lower scores indicate worse health).
+ME/CFS = myalgic encephalomyelitis/chronic fatigue syndrome; PROMIS = Patient-Reported Outcomes Measurement Information System; RHR = resting heart rate; other abbreviation as in 
+Tables 1 and 2.
+FIGURE 3
+Radar Plot Showing Clusters and Digital Health Metrics 
+Plots of clusters derived from digital health data. CV = cardiovascular; other abbreviations as in Figures 1 and 2. Cluster 1 (“low physical 
+activity with low SpO2”) and cluster 2 (“low physical activity without low SpO2”), show the lowest activity profiles, as well as low heart rate 
+variability and high resting heart rate. Cluster 5 (“lightly physically active”) has higher-than-average step count and higher minutes lightly 
+active, average heart rate variability, and resting heart rate. Cluster 6 (“very physically active”) has the highest step count, minutes very 
+active, heart rate variability, and lowest resting heart rate. Cluster 3 (“intermediate activity without high resting heart rate”) shows 
+moderate levels across all digital health measures, whereas cluster 4 (“intermediate physical activity with high resting heart rate”) shows 
+moderate activity, but high resting heart rate and low heart rate variability.
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Vogel et al 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID
+9
+
+that a 71 MET minute per day activity increase is 
+associated with a 14% decrease in mortality.32 In 
+addition, we observe increased minutes sedentary in 
+the high LCRI group, which has been associated with 
+higher rates of mortality and cardiovascular dis­
+ease.33-35 Further validation of these cardiopulmo­
+nary fitness estimates by wearables may have clinical 
+treatment implications, as each 1 MET increase in 
+peak exercise capacity is associated with a 13% 
+reduction in mortality and 15% reduction in cardio­
+vascular disease risk.36
+Our findings are also concordant with smaller prior 
+studies (39-553 participants) using direct physiolog­
+ical measurements other than wearable devices 
+demonstrating impaired exercise capacity and auto­
+nomic dysfunction in post-COVID syndromes.26,37-42
+In the current report, the median daily step count in 
+the high LCRI group (5,593 steps/day) was below the 
+25th percentile of both the low LCRI group (5,667 
+steps/day) and a sample of the U.S. population (5,866 
+steps/day).43 A recent meta-analysis noted that tak­
+ing at least 7,000 steps per day is associated with a 
+marked decrease in the risk of mortality and inci­
+dence 
+of 
+several 
+illnesses.44
+Population-based 
+studies demonstrate that small reductions in activ­
+ity levels detected by wearables are associated with 
+long-term risk or increased mortality and incident 
+cardiovascular events.45,46
+In the Long COVID population, prior studies sug­
+gest that reduced cardiopulmonary fitness and 
+decreased physical activity reflects a combination of 
+limited exercise capacity and intentional pacing to 
+reduce the risk of postexertional malaise,9,47,48
+rather than a lack of motivation or interest in exer­
+cise.49 Our wearable sensor data cannot definitively 
+disentangle the effects of physiologic impairment 
+(eg, ventilatory, circulatory, and neuromuscular 
+limitations) vs intentional effort restriction on the 
+cardiopulmonary fitness among study participants. 
+This study’s strengths include a well-characterized, 
+multicenter cohort of nearly 1,500 individuals with 
+Long COVID drawn from 83 sites across the United 
+States with wearables data obtained an average of 
+nearly 2 years after SARS-CoV-2 infection. In this 
+report, we integrated wearables metrics and stan­
+dardized questionnaires (including PROMIS physical 
+and mental health), offering a comprehensive, 
+multidimensional assessment of Long COVID at 
+6 months or more after SARS-CoV-2 infection. The 
+interdisciplinary approach to developing this report, 
+including collaboration with people with lived 
+experience of Long COVID, aligns with best practices 
+in research.50,51
+STUDY LIMITATIONS. There are several caveats to 
+consider 
+when 
+interpreting 
+our 
+findings. 
+The 
+requirement for in-person enrollment into RECOVER 
+Adult Cohort Study likely excluded individuals with 
+more severe postexertional malaise who may be 
+housebound or bedbound and unable to travel to 
+study sites.51,52 Also, participation in the parent 
+cohort study and DHP substudy was based on self- 
+selection (people opting in to join the study), with 
+a predominance of White females, potentially intro­
+ducing selection bias and limiting generalizability of 
+our findings. Our wearable sensor data demonstrated 
+significant but small between group differences in 
+measures 
+of 
+cardiopulmonary 
+fitness 
+between 
+groups which would not be considered actionable in 
+clinical practice. Further studies are needed to vali­
+date the wearable sensor measures against the gold 
+standard clinical testing. There was a shorter delay 
+between the first SARS-CoV-2 infection and the start 
+of participant-reported data collection in the low 
+LCRI vs high LCRI groups (18 and 27 months, 
+respectively). We can only speculate about the rea­
+sons for the difference in timing of enrollment in the 
+DHP substudy by LCRI group, which may include 
+differences in the SARS-CoV-2 variant exposure, 
+availability of vaccination, or other time-varying 
+pandemic treatments that may impact the risk of 
+Long COVID.53
+The cross-sectional analyses establish an associa­
+tion between Long COVID and objective measures 
+of physical activity and cardiovascular fitness, but 
+do not establish causation. Sufficient data from 
+wearables before SARS-CoV-2 infection were not 
+available in our cohort, so we are unable to quantify 
+individual changes after contracting Long COVID and 
+cannot exclude reverse causation; although reverse 
+causation would not diminish risk conferred by 
+chronic reductions in activity.26,27 We relied on 
+patient-reported diagnoses of dysautonomia and 
+symptoms of ME/CFS,21
+so underdiagnosis and 
+misclassification 
+are 
+possible.31,54-56
+Consumer 
+wearables use proprietary algorithms developed in 
+healthy populations that may introduce bias when 
+applied to disease populations. Additional studies 
+are needed to validate consumer wearables vs 
+research-grade 
+wearables 
+(e.g., 
+ActiGraph 
+GT3X + hip worn tri-directional accelerometry) and 
+the gold standard clinical testing in a subset of 
+participants with Long COVID.57
+Fitbit devices 
+provided summary reports of SpO2 and respiratory 
+rate only during sleep, so we were unable to assess 
+the relationships of SpO2 and respiratory rate with 
+physical activity.
+Vogel et al 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3
+10
+
+FUTURE DIRECTIONS
+Taken together, our findings support the potential 
+for wearables to complement symptom-based as­
+sessments in clinical and research settings for Long 
+COVID. Longitudinal analyses of physical activity 
+with long-term follow-up are needed to evaluate 
+whether the indicators of cardiovascular fitness and 
+decreases in physical activity translate into an 
+increased 
+risk 
+of 
+cardiovascular 
+disease. 
+Our 
+cluster analysis suggests that combining symptom 
+data with digital health metrics may enable devel­
+opment of a digital biomarker for Long COVID, 
+which might be useful to evaluate unexplained 
+poor functional capacity in clinical practice and also 
+serve as objective endpoints in Long COVID clinical 
+trials. Advances in wearable sensor technology, 
+including miniaturization of sensors and use of 
+artificial intelligence may further improve the 
+accuracy and clinical utility of wearables for Long 
+COVID.58,59
+In conclusion, the results from this digital health 
+substudy of the RECOVER Adult Cohort Study 
+demonstrate associations between a high burden of 
+persistent Long COVID symptoms and objective in­
+dicators of impaired cardiopulmonary fitness. Find­
+ings from the cross-sectional study design in the 
+current report do not establish causation. Additional 
+research, including those employing longitudinal 
+designs, is needed to determine if Long COVID at 
+least 6 months after SARS-CoV-2 infection is a novel 
+risk factor for cardiopulmonary disease.
+ACKNOWLEDGMENTS The authors would like to 
+thank the RECOVER National Community Engage­
+ment Group (NCEG), community representatives, and 
+participants enrolled in the RECOVER-Adult Cohort 
+Study.
+FUNDING SUPPORT AND AUTHOR DISCLOSURES 
+This research was funded by the NIH OT2HL161847 as part of the 
+Researching COVID to Enhance Recovery (RECOVER) Initiative. This 
+content is solely the responsibility of the authors and does not 
+necessarily represent the official views of the RECOVER. Initiative, 
+the NIH, or other funders. Dr Vogel has received unrelated grant 
+funding from the National Institutes of Health. Dr Goldman has 
+received contracted research from Gilead, BioVie, Pfizer, and Helix; 
+grants from Gilead; and serving as a speaker and or advisory board 
+member for Gilead, Merck, and Invivyd. J.D.G. reports a grant from 
+Gilead; contracted research from Gilead, BioVie andPfizer, and 
+serving as a speaker, consultant or advisory board member for 
+Gilead, Merck and Invivyd related to Long COVID, outside the sub­
+mitted work. Dr Brown has received consulting fees from Baxter and 
+Breas Medical outside of the submitted work. Dr Castro has received 
+grants 
+from 
+American 
+Lung 
+Association, 
+AstraZeneca, 
+Gala 
+Therapeutics, Genentech, GSK, NIH, Novartis, PCORI, Pulmatrix, 
+Sanofi, Shionogi, and Theravance Biopharma during the conduct of 
+the study; consulting fees from Allakos, Amgen, Arrowhead Phar­
+maceuticals, Genentech, GSK, Merck & Co., Novartis, OM Pharma, 
+Pfizer, Pioneering Medicines, Sanofi, and Teva; speaker fees from 
+Amgen, AstraZeneca, Genentech, Regeneron Pharmaceuticals Inc, 
+Sanofi, and Teva; and royalties from Aer Therapeutics. Dr Dur­
+stenfeld has received grants from the National Institutes of Health 
+during the conduct of the study; and consulting fees from Merck 
+outside the submitted work. Dr Erlandson has received grants from 
+the National Institutes of Health during the conduct of the study; 
+and consulting fees from Gilead, Merck, and ViiV outside of the 
+submitted work (paid to the University of Colorado). Dr Flaherman 
+has received grants from the National Institutes of Health during the 
+conduct of the study. Dr Foulkes has received grants from NIH dur­
+ing the conduct of the study. Dr Heath has received grants from the 
+National Institutes of Health and consulting fees from Regeneron 
+during the conduct of this study. Dr Kellogg has received grants from 
+the National Institute on Aging, National Institutes of Health, and 
+Veterans Administration during the conduct of the study. Dr Levitan 
+has received grants from the NIH during the conduct of this study; 
+grants from Amgen unrelated to the current work; and personal fees 
+from University of Pittsburgh. Dr McComsey has received grants 
+from NIH and Pfizer during the conduct of the study; and consultant 
+fees from Merck, Gilead, and GlaxoSmithkline unrelated to the cur­
+rent work. Dr Metz has received grants from Pfizer during the 
+conduct of the study; and royalties from UpToDate unrelated to the 
+current work. Dr Motl reports grants from National Institutes of 
+Health, Department of Defense, PCORI, National MS Society, and 
+Brystol Myers Squibb Foundation during the conduct of the study. Dr 
+Mullington has received grants from the National Institutes of Health 
+during the conduct of the study; and foundation research grants 
+from the Open Medicine Foundation and Patient Led Collaborative. 
+Dr Reeves has received grants from the National Institutes of Health 
+during the conduct of this study. Dr Rischard reports grant support 
+from NIH/NHLBI, United Therapeutics, Merck, OrphAI, Tenax, and 
+Bayer. Dr Thaweethai has received grants from NIH during the 
+conduct of the study. Dr Trinity reports grants from the National 
+Institutes of Health and VA during the conduct of the study. Dr 
+Urdaneta has received grants from the NIH during the conduct of this 
+study. Dr Villanueva has received grants from NIH during the 
+conduct of this study. Dr Walker has received grants from NIH, 
+AHRQ, Alzheimer’s Association during the conduct of this study. Dr 
+Wiley reports grants from the National Institutes of Health during 
+conduct of the study. She also reports research grants from Health 
+Resources and Service Administration (HRSA), Agency for Healthcare 
+Research and Quality (AHRQ), and Administration for Strategic Pre­
+paredness and Response (ASPR) within the U.S. Department of 
+Health and Human Services outside of the submitted work. Dr Sie­
+berts has received grants from the NIH during the conduct of the 
+study. Dr Krishnan has received grants from National Institutes of 
+Health during the conduct of the study; research grants from the 
+American Lung Association, BioVie Pharma, COPD Foundation, and 
+Patient Centered Outcomes Research Institute outside the submitted 
+work; and personal fees from AstraZeneca, Inogen, MedImmune, 
+RespirAI, and Verona Pharma. All other authors have reported that 
+they have no relationships relevant to the contents of this paper to 
+disclose.
+ADDRESS FOR CORRESPONDENCE: Dr Julia Moore 
+Vogel, Scripps Research, 3344 North Torrey Pines Ct, 
+La Jolla, California 92037, USA E-mail: juliamv@ 
+scripps.edu. X handle: @julialmv.
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Vogel et al 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID
+11
+
+R E F E R E N C E S
+1. Akhmerov A, Marban E. COVID-19 and the 
+heart. Circ Res. 2020;126(10):1443–1455. https:// 
+doi.org/10.1161/CIRCRESAHA.120.317055
+2. Stahlberg 
+M, 
+Mahdi 
+A, 
+Johansson 
+M, 
+Fedorowski A, Olshansky B. Cardiovascular dys­
+autonomia in postacute sequelae of SARS-CoV-2 
+infection. J Cardiovasc Electrophysiol. 2024;35 
+(3):608–617. https://doi.org/10.1111/jce.16117
+3. Ely EW, Brown LM, Fineberg HV. National 
+Academies of Sciences E, Medicine Committee on 
+examining the working definition for long C Long 
+covid defined. N Engl J Med. 2024;391(18):1746– 
+1753. https://doi.org/10.1056/NEJMsb2408466
+4. Krishnan JA, Cao B, Chotirmall SH, et al. Using 
+the 2024 NASEM definition of long COVID: im­
+plications for pulmonary and critical care medi­
+cine. Am J Respir Crit Care Med. 2025.
+5. Al-Aly Z, Davis H, McCorkell L, et al. Long 
+COVID science, research and policy. Nat Med. 
+2024;30(8):2148–2164. https://doi.org/10.1038/ 
+s41591-024-03173-6
+6. Greenhalgh 
+T, 
+Sivan 
+M, 
+Perlowski 
+A, 
+Nikolich JZ. Long COVID: a clinical update. Lancet. 
+2024;404(10453):707–724. 
+https://doi.org/10. 
+1016/S0140-6736(24)01136-X
+7. Davis HE, Assaf GS, McCorkell L, et al. Char­
+acterizing long COVID in an international cohort: 
+7 months of symptoms and their impact. EClini­
+calMedicine. 2021;38:101019. https://doi.org/10. 
+1016/j.eclinm.2021.101019
+8. Geng LN, Erlandson KM, Hornig M, et al. 2024 
+update of the RECOVER-Adult long COVID 
+research index. JAMA. 2025;333(8):694–700. 
+https://doi.org/10.1001/jama.2024.24184
+9. Davis HE, McCorkell L, Vogel JM, Topol EJ. Long 
+COVID: major findings, mechanisms and recom­
+mendations. Nat Rev Microbiol. 2023;21(3):133–146. 
+https://doi.org/10.1038/s41579-022-00846-2
+10. Huhn S, Axt M, Gunga HC, et al. The impact of 
+wearable technologies in health research: scoping 
+review. 
+JMIR 
+Mhealth 
+Uhealth. 
+2022;10(1): 
+e34384. https://doi.org/10.2196/34384
+11. Hughes A, Shandhi MMH, Master H, Dunn J, 
+Brittain E. Wearable devices in cardiovascular 
+medicine. Circ Res. 2023;132(5):652–670. https:// 
+doi.org/10.1161/CIRCRESAHA.122.322389
+12. Stewart C, Ranjan Y, Conde P, et al. Physiolog­
+ical presentation and risk factors of long COVID in 
+the UK using smartphones and wearable devices: a 
+longitudinal, citizen science, case-control study. 
+Lancet Digit Health. 2024;6(9):e640–e650. https:// 
+doi.org/10.1016/S2589-7500(24)00140-7
+13. Borhani S, Silva I, Damiano RJ, et al. Automatic 
+detection of persistent physiological changes after 
+COVID infection via wearable devices with potential for 
+long COVID management. Sci Rep. 2025;15(1):29443. 
+https://doi.org/10.1038/s41598-025-15208-0
+14. Umetani K, Singer DH, McCraty R, Atkinson M. 
+Twenty-four hour time domain heart rate variability 
+and heart rate: relations to age and gender over nine 
+decades. J Am Coll Cardiol. 1998;31(3):593–601. 
+https://doi.org/10.1016/s0735-1097(97)00554-8
+15. Norgan NG. ENERGY | Energy Expenditure and 
+Energy Balance. Encyclopedia of Food Sciences 
+and Nutrition. Second Edition. Academic Press; 
+2003.
+16. Shaffer F, Ginsberg JP. An overview of heart 
+rate variability metrics and norms. Front Public 
+Health. 
+2017;5:258. 
+https://doi.org/10.3389/ 
+fpubh.2017.00258
+17. Feehan LM, Geldman J, Sayre EC, et al. Ac­
+curacy of fitbit devices: systematic review and 
+narrative syntheses of quantitative data. JMIR 
+Mhealth Uhealth. 2018;6(8):e10527. https://doi. 
+org/10.2196/10527
+18. Diaz KM, Krupka DJ, Chang MJ, et al. Fitbit(R): 
+an accurate and reliable device for wireless physical 
+activity tracking. Int J Cardiol. 2015;185:138–140. 
+https://doi.org/10.1016/j.ijcard.2015.03.038
+19. Natarajan A, Pantelopoulos A, Emir-Farinas H, 
+Natarajan P. Heart rate variability with photo­
+plethysmography in 8 million individuals: a cross- 
+sectional study. Lancet Digit Health. 2020;2(12): 
+e650–e657. https://doi.org/10.1016/S2589-7500 
+(20)30246-6
+20. Horwitz LI, Thaweethai T, Brosnahan SB, et al. 
+Researching 
+COVID 
+to 
+Enhance 
+Recovery 
+(RECOVER) adult study protocol: rationale, objec­
+tives, and design. PLoS One. 2023;18(6):e0286297. 
+https://doi.org/10.1371/journal.pone.0286297
+21. Vernon SD, Zheng T, Do H, et al. Incidence and 
+prevalence of Post-COVID-19 myalgic encephalo­
+myelitis: 
+a 
+report 
+from 
+the 
+observational 
+RECOVER-Adult Study. J Gen Intern Med. 2025;40 
+(5):1085–1094. https://doi.org/10.1007/s11606- 
+024-09290-9
+22. Hays RD, Bjorner JB, Revicki DA, Spritzer KL, 
+Cella D. Development of physical and mental 
+health summary scores from the patient-reported 
+outcomes 
+measurement 
+information 
+system 
+(PROMIS) global items. Qual Life Res. 2009;18(7): 
+873–880. 
+https://doi.org/10.1007/s11136-009- 
+9496-9
+23. PROMIS global health scoring manual. 2023. 
+Accessed June 22, 2023. https://www.healthmeasures. 
+net/images/PROMIS/manuals/Scoring_Manual_Only/ 
+PROMIS_Global_Health_Scoring_Manual_22June2023. 
+pdf
+24. Obesity: preventing and managing the global 
+epidemic. Report of a WHO consultation. World 
+Health Organ Tech Rep Ser. 2000;894:1–253.
+25. Benjamini YHY. Controlling the false discovery 
+rate: a practical and powerful approach to multi­
+ple testing. J Royal Stat Society: Series B. 1995;57 
+(1):289–300.
+26. Radin JM, Vogel JM, Delgado F, et al. Long- 
+term changes in wearable sensor data in people 
+with and without long covid. NPJ Digit Med. 
+2024;7(1):246. https://doi.org/10.1038/s41746- 
+024-01238-x
+27. Ledebur K, Wiedermann M, Puta C, Thurner S, 
+Klimek P, Brockmann D. Wearable data reveals 
+distinct characteristics of individuals with persis­
+tent symptoms after a SARS-CoV-2 infection. NPJ 
+Digit Med. 2025;8(1):167. https://doi.org/10. 
+1038/s41746-025-01456-x
+28. Appelman B, Charlton BT, Goulding RP, et al. 
+Muscle abnormalities worsen after post-exertional 
+malaise in long COVID. Nat Commun. 2024;15(1): 
+17. https://doi.org/10.1038/s41467-023-44432-3
+29. Jarczok MN, Weimer K, Braun C, et al. Heart 
+rate variability in the prediction of mortality: a 
+systematic review and meta-analysis of healthy 
+and patient populations. Neurosci Biobehav Rev. 
+Dec 2022;143:104907. https://doi.org/10.1016/j. 
+neubiorev.2022.104907
+30. Zhang D, Shen X, Qi X. Resting heart rate and 
+all-cause and cardiovascular mortality in the general 
+population: a meta-analysis. CMAJ. 2016;188(3): 
+E53–E63. https://doi.org/10.1503/cmaj.150535
+31. Dehlia A, Guthridge MA. The persistence of 
+myalgic encephalomyelitis/chronic fatigue syn­
+drome (ME/CFS) after SARS-CoV-2 infection: a 
+systematic review and meta-analysis. J Infect. 
+2024;89(6):106297. https://doi.org/10.1016/j.jinf. 
+2024.106297
+32. Jeong SW, Kim SH, Kang SH, et al. Mortality 
+reduction with physical activity in patients with and 
+without cardiovascular disease. Eur Heart J. 
+2019;40(43):3547–3555. https://doi.org/10.1093/ 
+eurheartj/ehz564
+33. Koster A, Caserotti P, Patel KV, et al. Associ­
+ation of sedentary time with mortality indepen­
+dent of moderate to vigorous physical activity. 
+PLoS One. 2012;7(6):e37696. https://doi.org/10. 
+1371/journal.pone.0037696
+34. Ajufo E, Kany S, Ramo JT, et al. Accelerom­
+eter-measured sedentary behavior and risk of 
+future cardiovascular disease. J Am Coll Cardiol. 
+2025;85(5):473–486. 
+https://doi.org/10.1016/j. 
+jacc.2024.10.065
+35. Walmsley R, Chan S, Smith-Byrne K, et al. 
+Reallocation of time between device-measured 
+movement behaviours and risk of incident cardio­
+vascular disease. Br J Sports Med. 2021;56(18): 
+1008–1017. https://doi.org/10.1136/bjsports-2021- 
+104050
+36. Kodama S, Saito K, Tanaka S, et al. Cardiore­
+spiratory fitness as a quantitative predictor of all- 
+cause mortality and cardiovascular events in 
+healthy men and women: a meta-analysis. JAMA. 
+2009;301(19):2024–2035. https://doi.org/10.1001/ 
+jama.2009.681
+37. Mustonen 
+T, 
+Kanerva 
+M, 
+Luukkonen 
+R, 
+Lantto H, Uusitalo A, Piirila P. Cardiopulmonary 
+exercise testing in long covid shows the presence of 
+dysautonomia or chronotropic incompetence inde­
+pendent of subjective exercise intolerance and fa­
+tigue. BMC Cardiovasc Disord. 2024;24(1):413. 
+https://doi.org/10.1186/s12872-024-04081-w
+38. Mooren FC, Bockelmann I, Waranski M, et al. 
+Autonomic dysregulation in long-term patients 
+suffering from Post-COVID-19 Syndrome assessed 
+by heart rate variability. Sci Rep. 2023;13(1):15814. 
+https://doi.org/10.1038/s41598-023-42615-y
+39. Barizien N, Le Guen M, Russel S, Touche P, 
+Huang F, Vallee A. Clinical characterization of dys­
+autonomia in long COVID-19 patients. Sci Rep. 
+2021;11(1):14042. https://doi.org/10.1038/s41598- 
+021-93546-5
+Vogel et al 
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3
+12
+
+40. Cherneva R, Cherneva Z, Youroukova V, et al. 
+Autonomic 
+dysfunction 
+and 
+low 
+cardio- 
+respiratory fitness in long-term Post-COVID-19 
+syndrome. Biomedicines. 2025;13(5). https://doi. 
+org/10.3390/biomedicines13051138
+41. Durstenfeld MS, Sun K, Tahir P, et al. Use of 
+cardiopulmonary exercise testing to evaluate 
+long COVID-19 symptoms in adults: a systematic 
+review and meta-analysis. JAMA Netw Open. 
+2022;5(10):e2236057. 
+https://doi.org/10.1001/ 
+jamanetworkopen.2022.36057
+42. Gunturkun F, Hedlin H, Botzheim B, et al. Dig­
+ital biometric measures in long COVID: a secondary 
+analysis of the STOP-PASC randomized clinical trial. 
+JAMA Netw Open. 2025;8(8):e2526901. https:// 
+doi.org/10.1001/jamanetworkopen.2025.26901
+43. Master H, Annis J, Huang S, et al. Association 
+of step counts over time with the risk of chronic 
+disease in the all of Us Research Program. Nat 
+Med. 2022;28(11):2301–2308. https://doi.org/10. 
+1038/s41591-022-02012-w
+44. Ding D, Nguyen B, Nau T, et al. Daily steps 
+and health outcomes in adults: a systematic re­
+view and dose-response meta-analysis. Lancet 
+Public Health. 2025;10:e668–e681. https://doi. 
+org/10.1016/S2468-2667(25)00164-1
+45. Koemel NA, Biswas RK, Ahmadi MN, et al. 
+Minimum combined sleep, physical activity, and 
+nutrition variations associated with lifeSPAN and 
+healthSPAN improvements: a population cohort 
+study. eClinicalMedicine. 2026:103741. https:// 
+doi.org/10.1016/j.eclinm.2025.103741
+46. Ekelund U, Tarp J, Ding D, et al. Deaths 
+potentially averted by small changes in physical 
+activity 
+and 
+sedentary 
+time: 
+an 
+individual 
+participant data meta-analysis of prospective 
+cohort studies. Lancet. 2026;407(10526):339–349. 
+https://doi.org/10.1016/S0140-6736(25)02219-6
+47. Ghali A, Lacombe V, Ravaiau C, et al. The 
+relevance of pacing strategies in managing 
+symptoms of post-COVID-19 syndrome. J Transl 
+Med. 
+2023;21(1):375. 
+https://doi.org/10.1186/ 
+s12967-023-04229-w
+48. Ewing AG, Joffe D, Blitshteyn S, et al. Long 
+COVID clinical evaluation, research and impact on 
+society: a global expert consensus. Ann Clin 
+Microbiol Antimicrob. 2025;24(1):27. https://doi. 
+org/10.1186/s12941-025-00793-9
+49. Appelman B, Charlton BT, Goulding RP, et al. 
+Reply: muscle abnormalities in long COVID. Nat 
+Commun. 
+2025;16(1):1491. 
+https://doi.org/10. 
+1038/s41467-025-56431-7
+50. Fitzgerald ML, Cohen AK, Jaudon TW, et al. 
+A call from patient-researchers to advance research 
+on long COVID. Cell. 2024;187(20):5490–5496. 
+https://doi.org/10.1016/j.cell.2024.09.011
+51. Vogel JM, Pollack B, Spier E, et al. Designing 
+and optimizing clinical trials for long COVID. Life 
+Sci. 2024;355:122970. https://doi.org/10.1016/j. 
+lfs.2024.122970
+52. O’Brien KK, Brown DA, McDuff K, et al. 
+Episodic disability framework in the context of 
+long COVID: findings from a community-engaged 
+international 
+qualitative 
+study. 
+PLoS 
+One. 
+2025;20(2):e0305187. 
+https://doi.org/10.1371/ 
+journal.pone.0305187
+53. Lugtu EJ, Iv DYP, Cabunoc MH, et al. Prevalence 
+of post-COVID symptoms across variants of concern 
+and follow-up periods: a systematic review and 
+meta-analysis. Int J Infect Dis. 2026;166:108522. 
+https://doi.org/10.1016/j.ijid.2026.108522
+54. Seeley MC, Gallagher C, Ong E, et al. High inci­
+dence of autonomic dysfunction and postural ortho­
+static tachycardia syndrome in patients with long 
+COVID: implications for management and health care 
+planning. Am J Med. 2025;138(2):354–361.e1. https:// 
+doi.org/10.1016/j.amjmed.2023.06.010
+55. Jason LA, Dorri JA. ME/CFS and post- 
+exertional malaise among patients with long 
+COVID. Neurol Int. 2022;15(1):1–11. https://doi. 
+org/10.3390/neurolint15010001
+56. Shaw BH, Stiles LE, Bourne K, et al. The face 
+of postural tachycardia syndrome - insights from a 
+large cross-sectional online community-based 
+survey. J Intern Med. 2019;286(4):438–448. 
+https://doi.org/10.1111/joim.12895
+57. Ngueleu AM, Barthod C, Best KL, Routhier F, 
+Otis M, Batcho CS. Criterion validity of ActiGraph 
+monitoring devices for step counting and distance 
+measurement in adults and older adults: a system­
+atic review. J Neuroeng Rehabil. 2022;19(1):112. 
+https://doi.org/10.1186/s12984-022-01085-5
+58. Bhaltadak 
+V, 
+Ghewade 
+B, 
+Yelne 
+S. 
+A comprehensive review on advancements in 
+wearable technologies: revolutionizing cardio­
+vascular medicine. Cureus. 2024;16(5):e61312. 
+https://doi.org/10.7759/cureus.61312
+59. Pedroso AF, Khera R. Leveraging AI-enhanced 
+digital health with consumer devices for scalable 
+cardiovascular screening, prediction, and moni­
+toring. NPJ Cardiovasc Health. 2025;2(1):34. 
+https://doi.org/10.1038/s44325-025-00071-9
+KEY WORDS digital health, heart rate 
+variability, long COVID, physical activity, 
+wearables
+APPENDIX For supplemental tables and 
+figures, please see the online version of this 
+paper.
+J A C C : A D V A N C E S , V O L . 5 , N O . 7 , 2 0 2 6 
+Vogel et al 
+J U L Y 2 0 2 6 : 1 0 2 9 2 3 
+Sustained Reduction in Cardiopulmonary Fitness in Long COVID
+13
