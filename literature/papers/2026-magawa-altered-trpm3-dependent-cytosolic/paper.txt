@@ -1,0 +1,1578 @@
+European Journal of Immunology 
+RESEARCH ARTICLE
+Immunity to Infection 
+Altered TRPM3-Dependent Cytosolic and Mitochondrial 
+Calcium Influx in Natural Killer Cells of Post-COVID-19 
+Condition Patients 
+Chandi Tabeth Magawa1 , 2 , 3 
+Natalie Eaton-Fitch1 , 2 
+Katsuhiko Muraki4 
+Sonya Marshall-Gradisnik1 , 2 
+1 National Centre for Neuroimmunology and Emerging Diseases, Health Group, Griffith University, Gold Coast Campus, Gold Coast, Australia 
+2 Consortium 
+Health International For Myalgic Encephalomyelitis, Griffith University, Gold Coast Campus, Gold Coast, Australia 
+3 School of Pharmacy and Medical 
+Sciences, Griffith University, Gold Coast Campus, Gold Coast, Australia 
+4 Laboratory of Cellular Pharmacology, School of Pharmacy, Aichi-Gakuin University, 
+Nagoya, Japan 
+Correspondence: Chandi Tabeth Magawa ( chandi.magawa@griffithuni.edu.au; c.magawa@griffith.edu.au) 
+Received: 9 January 2026 
+Revised: 1 June 2026 
+Accepted: 29 June 2026 
+Keywords: calcium signalling | mitochondria | natural killer cells | post-COVID-19 condition | TRP channels | TRPM3 
+ABSTRACT 
+According to the World Health Organization (WHO), approximately 6% of COVID-19 cases develop serious long-term sequelae 
+referred to as post-COVID-19 condition (PCC). Immunological disturbances such as persistent activation of immune cells and 
+reduced cytotoxicity by natural killer (NK) cells are reported as key aspects in PCC. Recently, electrophysiological studies by 
+our group demonstrated impairment of transient receptor potential melastatin 3 (TRPM3) ion channels in NK cells from PCC 
+patients. The significant reduction in TRPM3 channel function and reduced functional activity by NK cells warrants further 
+investigation. Hence, using live cell calcium (Ca2 + ) imaging ex vivo, we examined the downstream impact of TRPM3 ion channel 
+dysfunction on intracellular and mitochondrial Ca2 + mobilization in NK cells from N = 8 PCC patients, age and sex matched 
+to N = 8 PCC healthy controls (HC). Our findings provide new evidence of altered passive and TRPM3-mediated Ca2 + influx, 
+significantly impacting cytoplasmic and mitochondrial Ca2 + mobilization in PCC. Passive cytosolic Ca2 + influx amplitude ( p 
+< 0.0001) was significantly reduced in PCC; however, passive mitochondrial Ca2 + mobilization ( p < 0.0001) was significantly 
+increased. Importantly, cytoplasmic and mitochondrial response rates (slope, p < 0.001) to pregnenolone sulphate stimulation 
+were significantly reduced in PCC. Consequently, TRPM3-dependent cytosolic ( p < 0.001) and mitochondrial ( p < 0.0005) Ca2 + 
+mobilization were significantly reduced in PCC compared with HC. Altered ion channel Ca2 + signalling can severely impact 
+both the immune system and bioenergetic processes, potentially leading to broader systemic dysregulations underpinning the 
+pathomechanism of the PCC condition, and warrants further investigations. 
+Abbreviations: ATP, adenosine triphosphate; BMI, body mass index; Ca2 + , calcium; CaM, calmodulin; CNS, central nervous system; COVID-19, coronavirus disease 2019; 
+CRAC, calcium-release-activated channel; ER/SR, endoplasmic/sarcoplasmic reticulum; F0, minimum fluorescence; FBC, full blood count; FCCP, carbonyl cyanide 
+4-(trifluoromethoxy)phenylhydrazone; Fmax, fluorescence at maximum peak; HC, healthy control; MCC, Manders’ colocalization coefficients; ME/CFS, myalgic 
+encephalomyelitis/chronic fatigue syndrome; N , number of participants; NCNED, National Centre for Neuroimmunology and Emerging Diseases; NK cells, natural killer 
+cells; PCC, post-COVID-19 condition; Pearson’s r , Pearson’s correlation coefficient; PregS, pregnenolone sulfate; RFI, relative fluorescence intensity; ROI, region of interest; 
+SARS-CoV-2, severe acute respiratory syndrome coronavirus 2; SD, standard deviation; SERCA, sarco/endoplasmic reticulum calcium-ATPase; SF-36, 36-item short-form 
+health survey; SOCE, store operated Ca2 + entry; SPSS, statistical package for the social sciences; Stim1, stromal interaction molecule 1; T1 , time at minimum fluorescence 
+intensity; T1/2 , half-time to peak Ca2 + influx; T2 , time at maximum fluorescence intensity; TRP, transient receptor potential; TRPM3, transient receptor potential melastatin 
+3; WHO, World Health Organization. 
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the 
+original work is properly cited. 
+© 2026 The Author(s). European Journal of Immunology published by Wiley-VCH GmbH. 
+European Journal of Immunology , 2026; 56:e70240 
+https://doi.org/10.1002/eji.70240
+1 of 17
+
+1 
+Background 
+The repercussions of the coronavirus disease 2019 (COVID-19) 
+caused by the severe acute respiratory syndrome coronavirus 
+2 (SARS-CoV-2) remain a global public health concern [ 1, 2 ]. 
+Although most people with COVID-19 recover fully within 1 
+month after infection, approximately 6% of cases are reported 
+to develop serious long-term sequelae post-infection [ 3 ]. Long 
+COVID, post-COVID-19 condition (PCC), post-acute sequelae of 
+SARS-CoV-2 (PASC) and long-haul COVID are interchangeably 
+used to describe the persistent and chronic symptoms following 
+acute infection [ 3, 4 ]. The World Health Organization (WHO) 
+defined PCC as occurring in patients with a history of probable 
+or confirmed SARS-CoV-2 infection, usually three months from 
+the acute infection, with symptoms that last for two or more 
+months and that an alternative diagnosis cannot explain [ 3 ]. 
+Patients with PCC exhibit a constellation of symptoms such as 
+chronic fatigue, shortness of breath, cognitive disturbances, sleep 
+disturbances, dyspnoea, myalgia and post-exertional malaise, 
+which indicate interconnected consequences of disruptions in 
+multiple body systems [ 5–13 ]. Currently, there is an absence 
+of a universal standard laboratory-based diagnostic tests, hence 
+diagnosis for PCC is reliant on the fulfilment of clinical case 
+definitions [ 1, 3, 14 ]. 
+Although the pathomechanism underlying the extended per- 
+sistent symptoms exhibited in PCC is yet to be elucidated, 
+research has demonstrated structural and functional dysregula- 
+tion of neurological, immunological, cardiovascular, pulmonary 
+and metabolic systems [ 5, 9, 15–19 ]. A key feature is immune 
+dysregulation, potentially induced by numerous factors such 
+as the presence of viral reservoirs, viral fragments, metabolic 
+dysregulation and complex immune responses to SARS-CoV- 
+2 infection [ 18, 20, 21 ]. Immunological dysregulations such as 
+persistent activation of immune cells, such as neutrophils and 
+monocytes, altered immune communication, exhausted T cells, 
+altered B cell function, elevated cytokine levels and functionally 
+impaired natural killer (NK) cells in PCC, have been reported in 
+various studies [ 13, 18, 19, 22–24 ]. Furthermore, previous research 
+in severely ill COVID-19 patients has reported suppression of 
+genes involved in cytotoxic activity in CD8 T lymphocytes and NK 
+cells, which was associated with disease severity [ 25 ]. 
+In humans, NK cells are part of the innate immune system that 
+form the first line of defence against viral infections by both lysing 
+target cells and producing early immunoregulatory cytokines 
+[ 26 ]. They are identified by the surface expression of the neural 
+cell-adhesion molecule CD56 (positive), the low-affinity Fc IgG 
+receptor III (Fc γRIII, CD16) and negative expression of the CD3 
+T cell marker [ 27, 28 ]. Functionally, the CD3− CD56dim CD16bright 
+subset has cytotoxic properties, and the CD3− CD56bright CD16dim 
+subset has immunoregulatory roles [ 26, 29 ]. Persistent NK cell 
+functional disturbances associated with disease severity were 
+reported in patients with COVID-19 [ 30 ]. The regulation of NK 
+cell function is reliant on a synergistic network of receptors, pro- 
+teins, cytolytic granules and the dynamic mitochondrial function, 
+which all together influence their target killing potential through 
+precise regulation of intracellular Ca2 + ions, that modulates their 
+effector efficacy [ 27, 29, 31, 32 ]. In activated NK cells, Ca2 + 
+drives signalling, making the ion essential for lytic granule polar- 
+isation, immune synapse formation and exocytosis of cytolytic 
+proteins [ 33 ]. 
+Ca2 + ions serve as highly crucial cellular signalling messengers 
+for various biological processes such as cell growth, metabolism, 
+gene transcription, muscle contraction and cell death [ 34 ]. 
+Importantly, maintaining Ca2 + homeostasis is crucial. Ca2 + 
+permeable ion channels such as transient receptor potential 
+(TRP) channels and calcium-release-activated calcium (CRAC) 
+channels, together with a dynamic network of organelles such 
+as the endoplasmic/sarcoplasmic reticulum (ER/SR) and the 
+mitochondria, synergistically function to precisely mediate cyto- 
+plasmic Ca2 + entry and intracellular signalling processes [ 34–36 ]. 
+The mitochondria play a key role as adenosine triphosphate 
+(ATP) producers; in addition, they are also involved in various 
+interconnected processes, including cell growth, information 
+transmission, immune responses, Ca2 + storage and regulation [ 37, 
+38 ]. Intracellular Ca2 + entry is facilitated by various mechanisms 
+including in response to receptor stimulation, depletion of Ca2 + 
+stores, changes in membrane potential electrical signalling and 
+binding of specific ligands; however, the depletion of intracellular 
+Ca2 + stores induces the store operated Ca2 + entry (SOCE), a major 
+Ca2 + signalling pathway that leads to activation and regulation 
+of various Ca2 + sensitive ion channels in immune cells [ 39, 40 ]. 
+During SOCE activation, the mitochondrial network regulates 
+Ca2 + mobilization by actively taking up Ca2 + , thereby indirectly 
+inhibiting inactivation of Ca2 + permeable ion channels [ 41 ]. The 
+process prolongs cytosolic Ca2 + influx, which is required for 
+immune cell activation [ 32, 39, 41 ]. 
+Importantly, since NK cells require Ca2 + to exert their target 
+effector cytotoxicity [ 42–44 ], in mylagic encephalomyelitis or 
+chronic fatigue syndrome (ME/CFS), reduced NK cell cytotoxicity 
+was linked to decreased Ca2 + influx via the transient receptor 
+potential melastatin 3 (TRPM3) ion channel in previous studies 
+[ 45–47 ]. ME/CFS is a complex multisystemic illness, and research 
+over the past few years has reported a considerable overlap in 
+clinical manifestations and pathomechanisms with PCC [ 48–50 ]. 
+In addition, it is hypothesised that SARS-CoV-2 is a potential 
+infectious trigger for ME/CFS [ 51–53 ], and more recently, elec- 
+trophysiology investigations reported impairment of the TRPM3 
+ion channel in NK cells from patients with ME/CFS and PCC; 
+however, further research is required [ 54 ]. 
+TRPM3 belongs to a family of transient receptor potential (TRP) 
+ion channels, a large and diverse family of nonselective cation 
+channels that respond to a wide range of chemical and physical 
+stimuli [ 55 ]. TRPM3 is a Ca2 + permeable polymodal ion channel 
+that is expressed in a wide variety of tissues and cells, but is highly 
+expressed in the brain, spinal cord, eye, pituitary gland, kidney, 
+adipose tissue and pancreatic beta cells [ 56–58 ]. TRP channels are 
+involved in numerous critical physiological processes, including 
+temperature sensing, taste, vision, nociception, epithelial ion 
+transport, and mineral homeostasis [ 56–58 ]. Therefore, due to 
+their biological roles and wide expression in the body, dysregula- 
+tion of expression or activity of TRP channels has been linked to 
+some disease onset, such as neuropathic pain, neurodegenerative 
+diseases, and cancer, collectively referred to as TRP-related 
+channelopathies [ 59–61 ]. TRPM3 ion channel impairment has 
+also been linked to various illnesses such as intellectual disability, 
+2 of 17
+European Journal of Immunology, 2026
+
+epilepsy, musculoskeletal anomalies, altered pain perception, 
+glaucoma and ME/CFS [ 62–64 ]. 
+The TRPM3 ion channel can be activated by both thermal and 
+chemical stimuli, such as the endogenous neurosteroid preg- 
+nenolone sulfate (PregS), and reversibly inhibited by ononetin 
+[ 65, 66 ]. Furthermore, the TRPM3 ion channel was indicated 
+to form plasmalemmal Ca2 + channels with Orai1 and stromal 
+interaction molecule 1 (Stim1) in white matter (WM) glia, con- 
+tributing to increased Ca2 + influx in the central nervous system 
+(CNS) cells [ 67, 68 ]. The TRPM3 ion channel senses the changes 
+in Ca2 + concentration via calmodulin (CaM), a Ca2 + binding 
+protein located on the N-terminus of the channel, leading to 
+either up- or downregulation of the channel’s activity [ 69, 70 ]. 
+Activation of the TRPM3 ion channel leads to a Ca2 + increase, 
+engaging downstream transcriptional regulators such as nuclear 
+factor of activated T cells (NFAT), nuclear factor kappa-light- 
+chain- enhancer of activated B cells (NF- κB) and c-Jun N-terminal 
+kinase (JNK) [ 71 ]. This coupling of membrane-proximal ion flux 
+to transcriptional activity underpins the role of TRPM3 in regu- 
+lating Ca2 + -dependent immune gene expression and downstream 
+immune responses [ 57, 71, 72 ]. 
+Given previous research reporting significant dysfunction of 
+TRPM3 and calcium influx in NK cells of PCC patients compared 
+with HCs, the aim of this current investigation was to determine 
+TRPM3 ion channel function on Ca2 + influx into the cytoplasm 
+and mitochondria in NK cells using fluorescence live cell imaging 
+from PCC patients compared with HCs. 
+2 
+Materials and Methods 
+2.1 
+Study Participants 
+This research was conducted in accordance with Griffith Univer- 
+sity’s Human Research Ethics guidelines, the National Statement 
+on Ethical Conduct in Human Research (2007, updated 2018), the 
+Australian Code for the Responsible Conduct of Research (2018) 
+and in accordance with the Declaration of Helsinki. The human 
+research ethics application was approved by the Griffith Univer- 
+sity Human Research Ethics Committee (GU HREC 2022/666), 
+and all participants provided informed and written consent 
+before blood collection. PCC patients and HC were recruited by 
+clinical referral or the National Centre for Neuroimmunology 
+and Emerging Diseases (NCNED) patient database. Between May 
+2024 and May 2025, eight PCC patients and eight age and sex 
+matched HC volunteered for this study. Patients with PCC were 
+required to have received a clinical diagnosis and meet the clinical 
+case definition by Delphi consensus published by the WHO [ 3 ], 
+while HC participants were in good health without incidence of 
+fatigue or evidence of illness. Participants were excluded from this 
+study if pregnant, breastfeeding, reported previous alcohol abuse, 
+obese (body mass index (BMI) ≥ 30), aged under 18 years or over 
+65 years, or suffered from chronic illness such as autoimmune 
+diseases, cardiovascular disease, diabetes, metabolic syndrome, 
+thyroid disease, malignancies, insomnia, chronic fatigue, or pri- 
+mary psychological disorders. Participants were excluded if they 
+were routinely taking any pharmacological agents that directly or 
+indirectly influence TRPM3 or Ca2 + signalling. Participants were 
+provided with the option to cease any conflicting medications for 
+a minimum of 14 days before blood donation after approval from 
+their physician. 
+All participants completed an online questionnaire providing 
+sociodemographic background, medical history, medications 
+taken, and quality of life (QoL) assessed using the 36-item short 
+form health survey (SF-36) and the WHO Disability Assessment 
+Schedule (DAS). The SF-36 was scored across eight domains, 
+including physical functioning, role limitations due to physi- 
+cal health problems, bodily pain, general health perceptions, 
+energy/vitality, social functioning, role limitations due to per- 
+sonal or emotional problems, and emotional wellbeing/general 
+mental health. Domains were scored on a scale of 0% to 100%, 
+whereby 0 indicated very severe, and 100 indicated no symptom 
+[ 73 ]. The WHO DAS assessed functional capacity across six 
+domains of life: cognition, mobility, self-care, getting along, work 
+and school participation, general life activities, and participation 
+in society. Each of the 36 items of the WHO DAS 2.0 was scored 
+on a five-point scale: none, mild, moderate, severe, and extreme or 
+cannot do. The subscale scores were generated by first converting 
+each item score into the corresponding, predefined weighted 
+values as outlined in the WHO DAS 2.0 manual (available online 
+at: https://apps.who.int/iris/handle/10665/43974 .) [ 74 ]. Low per- 
+centage scores were associated with no disability, while a high 
+degree of difficulty or greater disability was represented by higher 
+percentages (0 = no symptom, 100 = very severe) [ 75 ]. Participants 
+with PCC reported on the presence, frequency, and severity of 
+symptoms. Symptoms were categorised in 10 diverse groups, 
+including cognitive difficulties, pain, sleep disturbances, cardio- 
+vascular, gastrointestinal, respiratory, urinary, immunological, 
+and thermoregulatory intolerances, and sensory disturbances. 
+2.2 
+Natural Killer Cells Isolation 
+84 mL of whole blood was collected in ethylenediaminetetraacetic 
+acid ([EDTA], Becton Dickinson, BD Biosciences, San Diego, 
+CA, USA) tubes from the antecubital vein of each participant 
+via venepuncture. All blood collections were performed between 
+6:30 am and 10:00 am at convenient locations for participants, 
+including the Gold Coast campus of Griffith University, Robina 
+Hospital, patient homes, or private laboratories in South East 
+Queensland and North-East New South Wales. Full blood count 
+was performed within 4 h of collection for each participant, 
+analysing red blood cell count, white blood cell count, and 
+granulocyte cell count at Gold Coast University Hospital or 
+private laboratories in Australia that are NATA certified. 
+All samples were de-identified using a unique alphanumeric 
+code before arriving at the NCNED laboratories. PBMCs were 
+isolated from 80 mL of whole blood samples by density gradi- 
+ent centrifugation (Ficoll Paque Plus (Cytiva), GE Healthcare, 
+Uppsala, Sweden), as previously described [ 76, 77 ]. Cell counts 
+and cell viability were determined using trypan blue stain 
+(Invitrogen, Carlsbad, CA, USA) and an automatic cell counter 
+(TC20 Automated cell counter, Bio-Rad Laboratories, Hercules, 
+CA, USA). 
+NK cells were isolated from PBMCs by immunomagnetic selec- 
+tion using the EasySep human NK cell enrichment kit (Stem 
+Cell Technologies, Vancouver, BC, Canada). The purity of isolated 
+European Journal of Immunology, 2026
+3 of 17
+
+NK cells was determined by CD3− CD56+ phenotypic surface 
+expression using flow cytometry. NK cells were incubated for 
+20 min at room temperature in the presence of CD3 PE-Cy7 
+(5 µL/test) and CD56 APC (20 µL/test) monoclonal antibodies 
+(BD, Biosciences). Cells were acquired at 10,000 events using the 
+BD X20 flow cytometer (BD Biosciences). Acceptable NK cell 
+purity was ≥ 75% (Figure S1 ). 
+2.3 
+Cell Staining 
+Cells were initially prepared and washed in 0 mM Ca2 + EDTA- 
+free buffer, unless otherwise stated. The 0 mM Ca2 + buffer was 
+prepared in milliQ water and contained Sodium chloride (NaCl) 
+140 mM, Potassium chloride (KCl) 5.4 mM, Magnesium chloride 
+(MgCl) 2 1.0 mM, and HEPES 10 mM. The pH was adjusted to 7.40 
+± 0.05 using NaOH, and the osmolality was adjusted to 300 ± 10 
+mOsm/L using D-glucose. 
+NK cells were adhered to 24-well glass bottom plates (Celvis, 
+P24-1.5H-N) using Corning Cell-Tak cell and tissue adhesive (Bio- 
+Strategy, Campbellf ield, Vic, Australia) as previously described 
+[ 78 ]. For specific mitochondrial identification and Ca2 + indi- 
+cation, NK cells were stained with 1 µM Mito Tracker Green 
+FM for 30 min at 37◦C, washed, then stained with 1 µM 
+Hoechst 33342 and 1 µM Rhod-2 AM in the presence of 0.02 % 
+Pluronic F127 (Thermofisher, Waltham, MA, USA) for 15 min 
+at room temperature (RT). To promote sequestration of Rhod- 
+2 AM into the mitochondria, Rhod-2 AM was first reduced 
+to a colourless nonfluorescent dihydrorhod-2 AM by adding a 
+small solid excess of sodium borohydride (NaBH4 ). For cytosolic 
+calcium determination, NK cells were stained with 1 µM Fluo- 
+8-acetoxymethyl ester (AM) (Abcam, Cambridge, UK) in the 
+presence of 0.02% Pluronic F127 for 30 min at 37◦C. After a 
+wash cycle, cells were pre-depleted with 1 µM Thapsigargin 
+(Sigma-Aldrich) for 15 min at RT, then left for a further 15 min, 
+allowing de-esterification of Fuo-8-AM and Rhod 2-AM, ready for 
+imaging. 
+2.4 
+Live-Cell Imaging 
+To investigate TRPM3-dependent intracellular Ca2 + mobilization, 
+pharmacomodulations were administered via a continuous grav- 
+ity perfusion system in 1.8 mM Ca2 + buffer. The 1.8 mM Ca2 + 
+buffer was prepared in milliQ water and contained NaCl 140 mM, 
+KCl 5.4 mM, Calcium chloride (CaCl2 ) 1.8 mM, MgCl2 1.0 mM, 
+and HEPES 10 mM. The pH was adjusted to 7.40 ± 0.05 using 
+NaOH, and the osmolality was adjusted to 300 ± 10 mOsm/L 
+using D -glucose. Stained NK cells adhered to 24-well glass-bottom 
+plates were imaged using the Evident IXplore IX83 SpinSR Super 
+Resolution microscope system (60 × objective, oil immersion, 
+spinning disk confocal configuration) with a Hamamatsu ORCA- 
+Fusion camera and Olympus Cellsens Dimension 4.2 acquisition 
+software (Evident Corporation, Tokyo, Japan). Fluo-8 fluores- 
+cence was acquired at excitation/emission (Ex/Em) 489/508 nm, 
+Mito Tracker Green FM fluorescence at Ex/Em: 490/516 nm, 
+Rhod-2 fluorescence at 552/581 nm and Hoechst 33342 at Ex/Em: 
+341/542 nm wavelengths. Time-lapse images were acquired at 
+15 s intervals. All experiments were performed at RT (20–25◦C). 
+For TRPM3 stimulation, three wells were recorded per partic- 
+ipant (Fluo-8 alone well, Fluo-8 combined with Rhod-2 well, 
+Mitotracker Green + Rhod-2 + Hoechst 33342), the baseline was 
+recorded in 0 mM Ca2 + for 60 s, sequentially followed by addition 
+(for 3 min each) of 1.8 mM Ca2 + , then activation with 50 µM PregS 
+(in vitro technology), ending the experiment by addition of 1 µM 
+Carbonyl cyanide 4-(trifluoromethoxy)phenylhydrazone (FCCP) 
+to monitor and indicate mitochondrial uncoupling. The perfusion 
+line was adequately washed with 0 mM Ca2 + solution between 
+subsequent recordings. To confirm Ca2 + influx via TRPM3 ion 
+channel mediation, Ononetin was used for TRPM3 inhibition, 
+and the baseline was recorded in 0 mM Ca2 + for 60 s, sequentially 
+followed by addition (all for 3 min each) of 1.8 mM Ca2 + , 
+inhibition by Ononetin alone, combined modulation using PregS 
+and Ononetin, TRPM3 activation using PregS alone and ending 
+the experiment with mitochondrial uncoupling using 1 µM FCCP 
+(Figure S3 ). 
+2.5 
+Image Analysis 
+Time-lapse image data were extracted using Olympus cellSens 
+Dimension Desktop 4.3 software by selecting regions of interest 
+(ROIs) per well. The background was subtracted by drawing 
+an ROI on an area without visible cells. Cells were selected 
+based on good morphology (cells with intact membranes) and 
+their presence throughout the duration of the recording. ROIs 
+around Mito Tracker Green FM perimeter and Rhod-2 colocal- 
+ization were used to identify the mitochondrial network. For 
+additional insights, colocalization of the two stains was measured 
+using the ImageJ [JACop (Just Another Colocalization Plugin) 
+software [ 79 ], using Pearson’s correlation coefficient (Pearson’s 
+r ) and Manders’ Colocalization Coefficients (MCC). Pearson’s 
+correlation coefficient was calculated on a pixel-by-pixel basis 
+to assess the linear correlation between fluorescence intensity 
+distributions in the two channels, yielding values ranging from − 1 
+to + 1, where higher positive values indicate stronger covariance 
+of signal intensities. Manders’ coefficients (M1 and M2) were 
+computed following intensity thresholding to determine the 
+proportion of one fluorophore’s signal overlapping with the other, 
+independent of signal proportionality, thereby providing a mea- 
+sure of spatial co-occurrence. M1 = red, fraction of Rhod-2 over- 
+lapping green (Mitotracker Green); M2 = fraction of Mitotracker 
+Green overlapping red (Rhod-2). Fluorescence intensity raw data 
+output was presented in excel spreadsheet format, then copied 
+and analysed using programmable spreadsheets as illustrated in 
+Figure 1 [baseline fluorescence: recorded from 0–60 s in 0 mM 
+Ca2 + solution; F0 : minimum fluorescence; Fmax : fluorescence at 
+maximum peak; T1 : time at minimum fluorescence intensity; T2 : 
+time at maximum fluorescence intensity; relative fluorescence 
+= Fmax / F0 ; slope = [( Fmax − F0 )/( T2 − T1 )]; half-time ( T1/2 ) of Ca2 + 
+influx = T1/2 max]. 
+2.6 
+Biological and Chemical Reagents 
+EDTA Tubes (product code: 367839) for blood collection were 
+purchased from BD Biosciences. Ficoll paque plus (product 
+code: GEHE17-1440-03), used for PMBCs isolation and Cell- 
+Tak cell adhesion (product code: BDAA354240, Bio-Strategy), 
+was purchased from Bio-Strategy, Australia. EasySep human NK 
+cell enrichment kits (product code: 19055) and EasySep buffer 
+4 of 17
+European Journal of Immunology, 2026
+
+(product code: 20144) were purchased from Stem Cell Tech- 
+nologies. The following reagents were purchased from Thermo 
+Fisher Scientific: RPMI 1640 (product code: 11835030), HEPES, 
+Mito Tracker TM Green FM (M7514), Rhod 2 AM (R1245MP), 
+Hoechst 33342 (H3570) and Pluronic F-127 (P3000MP). A 24- 
+well glass-bottom plate with high-performance #1.5 cover glass 
+(product code: P24-1.5H-N) was purchased from Cellvis, USA. 
+NaHCO3 (product: S5761-500g), NaCl (product code: 793566- 
+500G), KCl (product code: 793590-500G), CaCl2 (product code: 
+C5670-100G), MgCl2 (product code: 63069–100ML), NaBH4 (prod- 
+uct code: 452882-100g), FCCP (product code: C2920), Thapsigar- 
+gin (product code: T9033-1MG), DMSO (product code: D2650- 
+5 ×10 mL) were purchased from Sigma-Aldrich. PregS (product 
+code: RDS537650) and Ononetin (product code: RDS514350) 
+were purchased from In Vitro Technologies. Stock solutions for 
+PregS, Ononetin, Thapsigargin, Fluo-8 AM, Mitotracker Green, 
+and Rhod-2 AM were prepared in dimethylsulfoxide (DMSO) 
+(product code: D2650, Sigma-Aldrich). 
+2.7 
+Statistical Analysis 
+Participant demographics data were analysed using Statistical 
+Package for the Social Sciences (SPSS) v26 (IBM Corp, Version 29, 
+Armonk, NY, USA). Flow cytometry data were exported from the 
+BD X20 flow cytometer and analysed for purity using GraphPad 
+Prism, version 9 (GraphPad software Inc., CA, USA). Extracted 
+time-lapse fluorescence intensity imaging data were analysed 
+using a programmable Excel sheet, Origin software version 
+2024b (OriginLab Corporation, Massachusetts, USA) for quality 
+analysis check, and GraphPad Prism for statistical analyses. The 
+robust regression and outlier removal (ROUT) method was used 
+to identify and remove outliers from the analysis. For statistical 
+comparison, the normality of distribution of parameters was 
+assessed using the Shapiro–Wilk test. The Mann–Whitney U 
+test was performed on nested nonparametric data. The data 
+are presented as median (Mdn) values and mean ± standard 
+deviation (SD) for descriptive statistics. Significance was set at p 
+< 0.05. 
+3 
+Results 
+3.1 
+Participants Demographics 
+Sixteen participants were included in this study: N = 8 HC and N 
+= 8 PCC patients who met the WHO clinical case definition [ 3 ] 
+and did not report other fatigue-related illnesses that explained 
+their symptoms. Demographic data are presented in Table 1 . For 
+PCC patients, the average age and SD were 42.50 ± 15.57 years and 
+45.00 ± 14.83 years for HC. Three HC and three PCC were female 
+participants. Five HC and five PCC were male participants. There 
+was no significant difference in gender, age, and BMI among 
+groups. 
+WHO DAS and SF-36 surveys were used to assess the QoL and 
+disability for all participants. Data are shown in Table 1 . There 
+was a significant difference identified between HC and PCC 
+patients in all domains of SF-36, including physical functioning, 
+physical role, social functioning and vitality ( p = 0.001), general 
+health ( p = 0.001), pain ( p = 0.001), emotional wellbeing ( p 
+= 0.004) and emotional role ( p = 0.008). WHO DAS scores 
+were significantly different between the two groups in all 
+domains except work/school participation ( p = 0.132). Commu- 
+nication and understanding ( p = 0.022), mobility ( p = 0.004), 
+life activities ( p = 0.001), self-care ( p = 0.035), interpersonal 
+relationships ( p = 0.023) and participation in society ( p = 
+0.008). 
+3.1.1 
+Participant Demographics Quality of Life and 
+Disability Scores (SF-36 and WHODAS) 
+3.1.2 
+Symptoms and Onset Details From 
+Post-COVID-19 Group 
+The average age and SD of illness onset for PCC patients were 
+40.13 ± 15.45 years, with 2.68 ± 0.51 years as the average and 
+SD for disease duration. All 8 (100.0%) PCC patients reported 
+experiencing fatigue and sleep disturbances, while 7 (87.5%) 
+reported experiencing cognitive difficulties and pain. Sensory, 
+immune, gastrointestinal, and cardiovascular disturbances were 
+declared by 6 (75.0%), respiratory problems were reported by 
+4 (50.0%) and thermostatic intolerance by 5 (62.5%) of PCC 
+patients. Only 1(12.5%) PCC patient reported experiencing urinary 
+disturbances. All symptoms and frequency data are detailed in 
+Table 2 . 
+3.1.3 
+Full Blood Count Parameters 
+A full blood count was performed for all participants. The 
+results were within the normal range for all cases, as defined 
+by pathology service providers that were a NATA-accredited 
+laboratory. However, PCC patients had significantly elevated 
+haematocrit ( p = 0.027) and haemoglobin ( p = 0.031) levels. 
+We concluded this could have been due to dehydration in 
+some of the participants. Full blood count results are shown in 
+Table 3 . 
+3.2 
+Changes in Cytosolic Calcium Influx in 
+Response to PregS Stimulation in NK Cells in 
+Post-COVID-19 Condition Patients 
+Fluorescence live cell imaging measured the relative amount of 
+Ca2 + influx and rate of response using Fluo-8 AM Ca2 + indicator, 
+as illustrated in Figure 1 . Results are presented in Figure 2 . 
+Cytosolic Ca2 + influx data are presented as the relative change 
+in fluorescence intensity (Fmax/F0) of Fluo-8 AM, as shown in 
+Figure 2a . The average Ca2 + influx amplitude into the cytosol was 
+significantly reduced in NK cells from PCC patients (Mdn = 5.26, 
+3.31–8.16) compared with HC (Mdn = 8.62 (7.11–17.0) (Figure 2b , 
+p < 0.0001) after depletion of Ca2 + stores using 1 µM thapsigargin, 
+followed by addition of 1.8 mM Ca2 + buffer. Although there 
+was no significant difference in the rate of response (slope, p 
+= 0.2209, Figure 2d ) to 1.8 mM Ca2 + buffer, the time to half- 
+maximal ( T1/2 ) response was significantly longer in PCC patients 
+compared with HC (Figure 2e , p = 0.0016). Stimulation of the 
+TRPM3 ion channel with 50 µM PregS successfully induced 
+a significantly higher rate of response (Figure 2d , slope, p < 
+0.0001) in HC compared with PCC patients. In contrast, following 
+European Journal of Immunology, 2026
+5 of 17
+
+TABLE 1 
+Variations in QoL and disability scores between HC and PCC patients, based on WHO DAS and SF-36 surveys. 
+HC 
+PCC 
+p -value 
+Age (years) 
+45.00 ± 14.83 
+42.50 ± 15.57 
+0.951 
+Gender 
+Male 
+5 (62.5) 
+5 (62.5) 
+Female 
+3 (37.5) 
+3 (37.5) 
+BMI (kg/m2 ) 
+25.12 ± 5.29 
+24.38 ± 3.73 
+0.957 
+SF-36 (%) 
+Physical functioning 
+98.57 ± 2.44 
+49.36 ± 26.25 
+0.001 
+Physical role 
+100.00 ± 0.00 
+16.41 ± 25.65 
+0.001 
+Pain 
+94.29 ± 5.35 
+44.38 ± 33.29 
+0.001 
+General health 
+73.81 ± 20.37 
+34.38 ± 17.92 
+0.001 
+Social functioning 
+92.86 ± 18.90 
+25.00 ± 21.13 
+0.001 
+Emotional role 
+100.00 ± 0.00 
+67.71 ± 37.12 
+0.008 
+Emotional wellbeing 
+80.71 ± 9.32 
+53.75 ± 27.22 
+0.004 
+Vitality 
+70.54 ± 8.63 
+21.09 ± 19.75 
+0.001 
+WHODAS (%) 
+Communication and understanding 
+6.77 ± 9.94 
+34.90 ± 31.34 
+0.022 
+Mobility 
+3.13 ± 8.84 
+36.88 ± 27.25 
+0.004 
+Self-care 
+0.78 ± 2.21 
+20.31 ± 26.46 
+0.035 
+Interpersonal relationships 
+7.03 ± 7.04 
+35.94 ± 34.19 
+0.023 
+Life activities 
+3.13 ± 8.84 
+51.56 ± 33.53 
+0.001 
+Work/school participation 
+10.94 ± 12.83 
+37.50 ± 40.78 
+0.132 
+Participation in society 
+5.04 ± 6.58 
+35.98 ± 28.68 
+0.008 
+Note: High SF-36 scores reflected good QoL, and low scores suggested poor QoL (0 = severe symptoms and 100 = no symptoms). Low WHO DAS scores were 
+associated with no functional limitations, and high scores reflected severe functional impairments (0 = no symptom, 100 = very severe). Data is presented as mean 
+± SD or N (%). Values of p < 0.05 are bolded. 
+Abbreviations: BMI, body mass index; HC, healthy controls; PCC, post-COVID-19 condition; SF-36, 36-item short-form health survey; WHODAS, World Health 
+Organization disability assessment schedule. 
+PregS stimulation, the slope (Figure 2d ) and cytosolic Ca2 + influx 
+amplitude (Figure 2c , p < 0.0001) were significantly reduced in 
+PCC (Mdn = 1.06, 1.00–1.19) compared with HC (Mdn = 1.11, 1.01–
+1.39), indicating altered channel function. The T1/2 response to 
+PregS stimulation was comparable between groups (Figure 2e , 
+p = 0.1017). Representative time-lapse fluorescence intensity 
+responses of NK cells in HC are shown in Figure 2f,g , respectively. 
+3.3 
+Changes in Calcium Mobilization in the 
+Mitochondria in Response to PregS Stimulation in 
+NK Cells in Post-COVID-19 Patients 
+The downstream effect of TRPM3 ion channel impairment 
+on Ca2 + influx into the mitochondria was examined using 
+mitochondrial Ca2 + indicator Rhod-2. Results are illustrated in 
+Figure 3 . Mitochondrial Ca2 + influx data are expressed as the 
+relative change in fluorescence intensity (Fmax/F0) of Rhod-2 
+as presented in Figure 3a . Following depletion of internal Ca2 + 
+stores, addition of 1.8 mM Ca2 + buffer resulted in a significantly 
+faster rate of response (Figure 3b , slope, p < 0.0001) and higher 
+mitochondrial Ca2 + influx amplitude (Figure 3c , p < 0.0001 in 
+PCC (Mdn = 2.30, 1.76–2.83) compared with HC (Mdn = 1.77, 
+1.42–2.49). However, the T1/2 response (Figure 3e , p = 0.2845) was 
+comparable. Meanwhile, although the slope for PregS response 
+was significantly higher (Figure 3b , slope, p = 0.0001) in PCC, 
+the TRPM3-dependent Ca2 + influx amplitude (Figure 3d , p = 
+0.0036) into the mitochondria was significantly reduced in PCC 
+(Mdn = 1.21, 1.07–140) compared with HC (Mdn = 1.24, 1.11–1.50). 
+The T1/2 response (Figure 3e , p = 0.0042) to PregS stimulation 
+was significantly shorter in PCC patients, indicating altered 
+channel function. Figure 2f,g shows representative time-lapse 
+fluorescence intensity responses of NK cells from an HC and 
+a PCC, respectively. As a monitor to indicate mitochondrial 
+uncoupling signals, the mitochondrial Ca2 + influx response in 
+both groups was significantly attenuated when NK cells were 
+treated with the mitochondrial uncoupling agent FCCP (1 µM). 
+To demonstrate a potential downstream signalling of TRPM3- 
+dependent Ca2 + influx into the mitochondria, NK cells stained 
+with Fluo-8 and Rhod-2 were imaged simultaneously (Figure 
+S2 ). We successfully detected TRPM3-dependent Ca2 + influx 
+response and the downstream signalling into the mitochondria 
+in HC, whereby the responses in PCC were highly altered. To 
+confirm Ca2 + influx via TRPM3 ion channel mediation, ononetin 
+successfully inhibited TRPM3 activity, which was successfully 
+activated again by PregS stimulation (Figure S3 ). TRPM3 inhibi- 
+tion and activation in NK cells were apparent when cytosolic and 
+mitochondrial Ca2 + responses were plotted against each other. 
+6 of 17
+European Journal of Immunology, 2026
+
+FIGURE 1 
+Illustration of analysis of cytosolic and mitochondrial Ca2 + influx in NK cells. Measurements were performed during different 
+conditions. Baseline fluorescence was first measured at resting conditions for 60 s, followed by measurement of passive Ca2 + influx for 3 min, TRPM3- 
+dependent Ca2 + influx for 3 min, and Ca2 + release from the mitochondria following FCCP treatment for another 3 min. The dotted lines indicate F0s 
+and corresponding T1 s for each stimulation phase (black, baseline; magenta, F1/2 max; blue, 1.8 mM Ca2 + response; orange, PregS response; and green, 
+FCCP response. Fluorescence intensity raw data output was presented in Excel spreadsheet format, then copied and analysed using programmable 
+spreadsheets as illustrated in Figure 1 . Relative fluorescence = Fmax / F0 ; slope = [( Fmax − F0 )/( T2 − T1 )]; half-time ( T1/2 ) of Ca2 + influx = T1/2 max]. AU, 
+arbitrary units; Ca2 + , calcium; F0 , minimum fluorescence: T0 : time at baseline; Fmax : fluorescence at maximum peak; T1 : Time at minimum fluorescence 
+intensity; T2 : Time at maximum fluorescence intensity; Fmax , maximum fluorescence; F0 , minimum fluorescence; PregS, pregnenolone sulfate; FCCP, 
+carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone; RFI, relative fluorescence intensity; Slp, slope. 
+The Ca2 + responses from single dye wells (Fluo-8 alone and Rhod- 
+2 + Mitotracker Green) were consistent with combined dye wells 
+(Fluo-8 + Rhod-2) responses. 
+3.4 
+Colocalization of Mitotracker Green and 
+Rhod-2 Signals Over Time in NK Cells in 
+Post-COVID-19 Patients 
+For additional insights into a downstream signal into the mito- 
+chondria, Ca2 + influx into the mitochondria was confirmed 
+using scatterplots demonstrating Mitotracker Green and Rhod-2 
+overlay, and changes in Rhod-2 fluorescence intensity over- 
+time. Pearson’s r provided a pixel-by-pixel linear correlation 
+between fluorescence intensity distributions in the two channels, 
+while Manders’ coefficients (M1 and M2) provided a measure 
+of spatial co-occurrence overtime. Changes in the distribution 
+and colocalization of Rhod-2 with Mitotracker Green in the 
+mitochondria were visible overtime, as illustrated in Figure 4a 
+for PCC and Figure S4 for HC. The degree of colocalization 
+between Rhod-2 (M1 = red) and Mitotracker Green (M2 = green) 
+over time is presented in Figure 4 . The scatterplots (Figure 4b–
+d ) display the intensity range of Mitotracker Green and Rhod-2. 
+At resting conditions, the distribution of the two stains was 
+positively mapped, with a Pearson’s r of 0.799, M1 = 0.517, 
+and M2 = 0.705 (Figure 4b ). Increased Rhod-2 fluorescence 
+intensity and overlapping of the two stains were observed 
+following stimulation of NK cells with PregS (Pearson’s r = 
+0.847, M1 = 0.821, and M2 = 0.762) (Figure 4c ), indicating 
+PregS induced Ca2 + influx into the mitochondria. Hence, a 
+change in slope by the fitted line, movement of more dotted 
+points toward the fitted line, and rotation of the dotted cloud 
+toward the Rhod-2 axis as shown in the scatterplot in Figure 4c . 
+The Ca2 + signal of Rhod-2 was attenuated when NK cells 
+were treated with the mitochondrial uncoupling agent FCCP 
+(1 µM) (Pearson’s r = 0.799, M1 = 0.536 and M2 = 0.742). 
+European Journal of Immunology, 2026
+7 of 17
+
+FIGURE 2 
+Cytosolic Ca2 + influx response in freshly isolated NK cells. (a) Examples of NK cells from a PCC patient stained with Fluo-8 AM 
+intracellular calcium indicator imaged at 60 ×, at the start of the experiment and after stimulation with PregS and FCCP, respectively. Group comparisons 
+for pooled data (b–e) were performed with unadjusted two-sided Mann–Whitney U tests on nested data. The violin plots show median (central line) and 
+quartile levels for pooled data. *Represents significant differences after group comparison. (b) Comparison of pooled cytosolic Ca2 + influx in PCC ( N = 8, 
+n = 552 NK cells) and HC ( N = 8, n = 540 NK cells) following addition of 1.8 mM Ca2 + to NK cells. Fluorescence intensity is shown as the ratio of measured 
+intensity (Fmax) and the minimum fluorescence value (F0). (c) Response to 50 µM PregS stimulation in HC ( N = 8, n = 415 NK cells) and PPC ( N = 8, n 
+= 393 NK cells), (d) the rate (slope) of response to 1.8 mM Ca2 + and PregS. (e) T1/2 response for 1.8 mM Ca2 + and PregS. (f) Example of Fluo-8 AM time 
+lapse fluorescence intensity curves for NK cells from an HC, (g) time lapse fluorescence intensity curves for ROI 1 and ROI 2 shown in (a) from a PCC 
+patient. The dotted lines indicate F0 s and corresponding T1 s for each stimulation condition (f: Light blue, baseline; black and orange, PregS responses; 
+blue and magenta, FCCP responses; g: green, baseline; light blue and green, PregS response and black and orange, FCCP responses). Ca2 + , calcium; HC, 
+healthy control; PCC, post-COVID-19 condition; ROI, region of interest; FCCP, carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone; Fmax , maximum 
+fluorescence; F0 , minimum fluorescence; PregS, pregnenolone sulfate. Imaging analysis was performed using cellSens Dimension Desktop by drawing 
+perimeters around ROIs, then edited using Adobe Illustrator. Time-lapse fluorescence Graphs were constructed using Origin software. 
+8 of 17
+European Journal of Immunology, 2026
+
+FIGURE 3
+Fluorescence imaging of calcium influx into the mitochondria in NK cells. (a) Representative images of NK cells from an HC participant 
+stained with Mitotracker Green FM (green), Rhod-2 AM (red), and Hoechst 33342 (blue) taken at the start of the experiment, after PregS and FCCP 
+stimulation, respectively, at 60 ×. Arrows indicate ROI perimeter around mitochondrial network, indicating change in Rhod-2 fluorescence intensity 
+overtime (increased yellow spots overtime). Group comparisons for pooled nested data (b–e) were performed with unadjusted two-sided Mann–Whitney 
+U tests. The violin plots show median (central line) and quartile levels for pooled data. *Represents significant differences after group comparison. (b) 
+Comparison of pooled rate (slope) of responses to 1.8 mM Ca2 + and PregS, in HC and PCC, respectively, (c) 1.8 mM Ca2 + influx amplitude in HC ( N = 8, n = 
+336 NK cells) and PCC ( N = 8, n = 290 NK cells), and (d) PregS stimulation in HC ( N = 8, n = 336 NK cells) and PCC ( N = 8, n = 289 NK cells), respectively. 
+European Journal of Immunology, 2026
+9 of 17
+
+TABLE 2 
+The symptoms and onset details from the PCC group. 
+PCC 
+Age of onset (years [mean ± SD]) 
+40.13 ± 15.45 
+Disease duration (years [mean 
+± SD]) 
+2.68 ± 0.51 
+Fatigue 
+Yes 
+No 
+8 (100.0%) 
+0 (0.0%) 
+Cognitive difficulties 
+Yes 
+No 
+7 (87.5%) 
+1 (12.5%) 
+Pain 
+Yes 
+No 
+7 (87.5%) 
+1 (12.5%) 
+Sleep disturbances 
+Yes 
+No 
+8 (100.00%) 
+0 (0.0%) 
+Sensory disturbances 
+Yes 
+No 
+6 (75.0%) 
+2 (25.0%) 
+Immune disturbances 
+Yes 
+No 
+6 (75.0%) 
+2 (25.0%) 
+Gastrointestinal disturbances 
+Yes 
+No 
+6 (75.0%) 
+2 (25.0%) 
+Cardiovascular disturbances 
+Yes 
+No 
+6 (75.0%) 
+2 (25.0%) 
+Respiratory 
+Yes 
+No 
+4 (50.0%) 
+4 (50.0%) 
+Thermostatic intolerance 
+Yes 
+No 
+5 (62.5%) 
+3 (37.5%) 
+Urinary disturbances 
+Yes 
+No 
+1 (12.5%) 
+7 (87.5%) 
+Note: Data presented as mean ± SD or N (%). 
+Abbreviations: N , number of participants; PCC, post-COVID-19 condition; SD, 
+standard deviation. 
+Consequently, a change in the slope and separation of the 
+dotted cloud was observed (Figure 4d ). A summary of Pearson’s 
+r indicating strong coordinated signal variation and Manders’ 
+colocalization coefficients showing changes in spatial overlap 
+between fluorescence signals overtime, respectively, is presented 
+in Figure 4e . Together, these complementary metrics enabled a 
+robust quantitative assessment of both signal correlation and sub- 
+cellular colocalization overtime. Collectively, despite evidence of 
+TRPM3 dysfunction in NK cells from PCC patients, PregS may 
+facilitate compensatory mitochondrial Ca2 + uptake, potentially 
+through activation of residual TRPM3 channels or via unknown 
+pathways. 
+4 
+Discussion 
+This recent study investigated TRPM3-dependent Ca2 + influx 
+into the mitochondria in NK cells freshly isolated from patients 
+with PCC and HC. We report for the first time the significant 
+decrease in TRPM3-dependent Ca2 + influx into the mitochondria 
+in NK cells from PCC. Results from this study further highlight 
+the role of ion channel dysfunction and consequential decreased 
+Ca2 + influx into the mitochondria, suggesting further evidence 
+of TRPM3 dysfunction and Ca2 + influx in the pathomechanism 
+of PCC and their adverse impact on cellular organelles, in this 
+instance, the mitochondria. Importantly, these current findings 
+support recent electrophysiological findings of TRPM3 ion chan- 
+nel dysfunction ex vivo in NK cells from PCC patients [ 54 ] and 
+further support a common pathomechanism identified in PCC 
+and ME/CFS [ 45–47, 54 ]. 
+Immune dysregulation is reported as a key feature in patients 
+recovering from COVID-19 disease, with various studies report- 
+ing altered immune cell populations, increased presence of 
+inflammatory mediators and reduced cytotoxicity by NK cells 
+[ 19, 22, 23, 80–82 ]. The function and cytotoxicity of NK cells 
+are dependent upon a stable supply of Ca2 + ions, with SOCE 
+representing the principal pathway for Ca2 + entry [ 83 ]. Accord- 
+ingly, the distribution and functional states of Ca2 + permeable 
+ion channels, receptors, pumps and Ca2 + storage organelles 
+fundamentally impact Ca2 + mobilization across cells [ 32, 67, 84, 
+85 ]. Hence, we initially assessed NK cell responses to the addition 
+of 1.8 mM extracellular Ca2 + following depletion of ER Ca2 + 
+stores using 1 µM thapsigargin. The addition of 1.8 mM Ca2 + 
+led to a slow, sustained, and higher cytosolic Ca2 + rise in NK 
+cells from HC compared with PCC, successfully demonstrating a 
+reintroduction of Ca2 + to intracellular stores expected in healthy 
+cells. Depletion of intracellular Ca2 + stores and inhibition of the 
+sarco/endoplasmic reticulum calcium-ATPase (SERCA) pump by 
+thapsigargin activate the SOCE and subsequently additional Ca2 + 
+permeable channels to replenish the Ca2 + stores [ 86 ]. Notably, 
+TRP channels, including TRPM3, are proposed to contribute to 
+SOCE, acting as modulators of intracellular Ca2 + homeostasis [ 57, 
+87 ]. Thus, a significant reduction in cytosolic Ca2 + influx observed 
+in NK cells from individuals with PCC suggests impaired SOCE 
+responses. 
+The ability of cells to maintain a stable Ca2 + homeostasis across 
+cells is vital for activation and initiation of both the innate 
+and adaptive immune response; therefore, the efficiency and 
+speed of Ca2 + signalling is crucial for maintaining homeostasis 
+[ 84 ]. Over the last few years, various studies have reported 
+persistent immune dysregulation such as compromised B-cell 
+function, impaired memory T cell responses and reduced NK 
+(e) T1/2 response to 1.8 mM Ca2 + and PregS, respectively. (f) Examples of Rhod-2 time-lapse fluorescence intensity curves for NK cells from an HC are 
+shown in (a). The dotted lines indicate F0 s and corresponding T1 s for each stimulation condition (blue, baseline; black and orange, PregS response and 
+black, FCCP response). (g) Examples of Rhod-2 time-lapse fluorescence intensity curves for NK cells from a PCC patient (magenta and black, baseline; 
+magenta and blue, PregS response and green, FCCP response). Abbreviations: Ca2 + , calcium; HC, healthy control; PCC, post-COVID-19 condition; ROI, 
+region of interest; 4-(FCCP, carbonyl cyanide trifluoromethoxy) phenylhydrazone; Fmax , maximum fluorescence; F0 , minimum fluorescence; PregS, 
+Pregnenolone sulate. Imaging analysis was performed using cellSens Dimension Desktop by drawing perimeters around ROIs, then edited using Adobe 
+Illustrator. Time-lapse fluorescence Graphs were constructed using Origin software. 
+10 of 17
+European Journal of Immunology, 2026
+
+FIGURE 4 
+Colocalization analysis with JACop; Pearson and Manders, scatter plots and correlation coefficients. (a) Representative grey scale 
+images of NK cells from a PCC patient stained with Mitotracker Green FM and Rhod-2 AM exhibiting similar changes in Rhod-2 fluorescence intensity 
+over time, at 60 ×, shown in Figure 3 . Arrows indicate mitochondrial networks in two cells containing both stains, showing a change in fluorescence 
+intensity overtime. Scatter plots (b–d) correspond to the colocalization of Mitotracker Green FM and Rhod-2 in response to changes in Ca2 + influx 
+in the mitochondria. (b) Corresponding scatterplot of Mitotracker Green and Rhod-2 fluorescence intensities of NK cells at resting conditions. (c) 
+Corresponding scatterplot of Mitotracker Green and Rhod 2 fluorescence intensities of NK cells after stimulation with PregS, showing increased Rhod-2 
+fluorescence intensity, indicating Ca2 + mobilization into the mitochondria, consequently, a change in slope by the fitted line and rotation of the dotted 
+cloud toward Mitotracker Green axis. (d) Corresponding scatterplot of Mitotracker Green and Rhod 2 fluorescence intensities of NK cells after treatment 
+with FCCP, showing decreased Rhod-2 fluorescence intensity as Ca2 + efflux from the mitochondria into the cytoplasm, resulting in a change of the 
+slope toward the Rhod-2 axis and separation of the dotted cloud. (e) Summary of the Pearson’s r and Manders’ coefficients. Ca2 + , calcium; Pearson’s 
+r , Pearson correlation coefficient; PCC, post-COVID-19 condition; M1 = Rhod-2 and M2 = Mitotracker Green, MCC, Manders correlation coefficients; 
+PregS, pregnenolone sulate; 4-(FCCP, carbonyl cyanide trifluoromethoxy) phenylhydrazone. 
+European Journal of Immunology, 2026
+11 of 17
+
+TABLE 3 
+Full blood count parameters. 
+HC 
+PCC 
+p -value 
+Full blood count 
+White Cell Count 
+(4.0–11.0 × 109 /L) 
+5.69 ± 1.15 
+5.81 ± 1.26 
+0.844 
+Lymphocytes 
+(1.0–4.0 × 109 /L) 
+1.75 ± 0.52 
+1.67 ± 0.34 
+0.754 
+Neutrophils 
+(2.0–8.0 × 109 /L) 
+3.15 ± 0.54 
+3.42 ± 1.04 
+0.527 
+Monocytes 
+(0.1–1.0 × 109 /L) 
+0.51 ± 0.21 
+0.45 ± 0.15 
+0.556 
+Eosinophils 
+( < 0.6 × 109 /L) 
+0.24 ± 0.17 
+0.23 ± 0.08 
+0.954 
+Basophils 
+( < 0.2 × 109 /L) 
+0.05 ± 0.02 
+0.03 ± 0.02 
+0.319 
+Platelets 
+(140–400 × 109 /L) 
+244.00 ± 29.77 
+253.38 ± 56.51 
+0.674 
+Red Cell Count 
+(3.8–5.2 × 1012 /L) 
+4.79 ± 0.44 
+5.14 ± 0.44 
+0.086 
+Haematocrit 
+(0.33–0.47) 
+0.42 ± 0.03 
+0.45 ± 0.03 
+0.027 
+Haemoglobin 
+(115–160 g/L) 
+140.13 ± 12.52 
+150.00 ± 10.47 
+0.031 
+Note: Data are presented as mean ± SD. Reference ranges for full blood count parameters have been included in the table. 
+Abbreviations: FBC, full blood count; HC, healthy controls; N , number of participants; PCC, post-COVID-19 condition. 
+cell cytotoxicity in PCC [ 18, 22, 88 ]. The reduced reintroduc- 
+tion of Ca2 + into the cytoplasm of NK cells in PCC after 
+depletion of ER stores found in this study could potentially 
+contribute to previously reported reduced cytotoxicity by NK 
+cells [ 22, 24, 88, 89 ]. As Ca2 + ions are vital for many vital 
+biological processes, a disturbance to Ca2 + signalling could 
+contribute to pathological outcomes involving other body sys- 
+tems, including the immune system, metabolism and neurolog- 
+ical dysfunction exhibited in PCC, thus supporting the above 
+claim [ 90 ]. 
+Recently, TRPM3 ion channel impairment in NK cells from 
+PCC and ME/CFS was demonstrated using the patch-clamp 
+technique [ 54 ]. TRP channels function as critical sensors of phys- 
+ical and chemical stimuli, regulating inflammatory responses 
+and immune cell function through Ca2 + -dependent signalling 
+pathways, thereby shaping and maintaining intracellular and 
+extracellular Ca2 + homeostasis [ 84, 87 ]. Notably, these chan- 
+nels are expressed in virus-susceptible host cells, where viral 
+pathogens can alter their expression and activity to exploit TRP- 
+mediated Ca2 + influx for key stages of the viral life cycle, including 
+entry, replication, and egress [ 91 ]. This hijacking of host Ca2 + 
+signalling machinery frequently results in dysregulated intracel- 
+lular Ca2 + concentrations, contributing to cellular dysfunction 
+[ 92 ]. Mutations within TRP channel genes are associated with 
+a spectrum of channelopathies characterised by either gain or 
+loss-of-function phenotype, including neurological, metabolic, 
+and immunological disorders [ 93 ]. In this context, impaired 
+TRPM3 activity in NK cells from individuals with PCC was 
+first reported using the patch clamp technique, highlighting 
+potential dysfunctional similarities with ME/CFS [ 54 ]. Hence, 
+we examined the effect of TRPM3-dependent Ca2 + influx into 
+the cytoplasm. Activation of the TRPM3 ion channel with 50 µM 
+PregS successfully evoked a significantly higher response rate 
+( p < 0.0001) in HC, triggering a significantly higher cytosolic 
+Ca2 + influx. In contrast, the amplitude ( p < 0.0001) and rate 
+of Ca2 + influx were significantly reduced in PCC compared 
+with HC. These results support previous findings that reported 
+TRPM3 dysfunction in PCC using the electrophysiology tech- 
+nique [ 54 ]. The decreased TRPM3 activity observed in NK cells 
+from individuals with PCC may arise from multiple converging 
+mechanisms involving isoform dysregulation and inflammatory 
+modulation. TRPM3 functional integrity is highly dependent 
+on its primary amino acid sequence and structural domains; 
+specifically, alterations within exon 24, which encodes the pore- 
+forming region of TRPM3, can significantly alter ionic selectivity 
+and reduce Ca2 + permeability by modifying electrostatic prop- 
+erties within the channel pore [ 94 ]. Additionally, deletions or 
+mutations within exon 13, encoding a critical TRPM3 structural 
+and functional domain known as the region indispensable for 
+channel function (ICF), result in the generation of nonfunctional 
+TRPM3 isoforms [ 95 ]. These altered isoforms can exert dominant- 
+negative effects, interfering with the activity of fully functional 
+channels and thereby attenuating overall TRPM3-mediated Ca 
+2 + influx [ 95 ]. 
+TRPM3-mediated Ca2 + mobilization engages broader signalling 
+networks, including phosphorylation and activation of phos- 
+phatidylinositol 3-kinase (PI3K) and mitogen-activated protein 
+kinases (MAPKs) such as rapidly accelerated fibrosarcoma 
+(Raf), extracellular signal-related kinases (ERK1/2) and c-Jun N- 
+terminal kinase (JNK), which are implicated in the regulation 
+12 of 17
+European Journal of Immunology, 2026
+
+of NK cell activation, degranulation and inflammatory cytokine 
+release [ 71, 96 ]. In parallel, ligand binding on natural killer group 
+(NKG) family or natural cytotoxicity receptors (NCR) family 
+receptors evokes Ca2 + entry through the SOCE pathway and 
+Ca2 + -permeable channels, including TRPM3, activating Ca2 + - 
+dependent immune responses [ 32, 97 ]. Thus, reduced Ca2 + influx 
+rate correlates with lower cell activation and diminished effector 
+functions. Accordingly, impaired TRPM3 function may blunt 
+Ca2 + signalling, weaken MAPK/PI3K pathway activation and 
+impair Ca2 + -dependent processes required for effective NK cell 
+cytotoxicity. While outside the scope of the current investigation, 
+future research should aim to elucidate the downstream con- 
+sequences of protein kinase phosphorylation following NK cell 
+activation. 
+In addition to their role as active Ca2 + ion channels, TRP ion 
+channels in the plasma membrane contribute to changes in 
+cytosolic Ca2 + by modulating alternative Ca2 + -permeable ion 
+channels and driving force pathways, including the SOCE pro- 
+cess, voltage-gated Ca2 + channels and changing the membrane 
+potential [ 85, 98 ]. Therefore, alteration to their optimal func- 
+tioning has a potential downstream cumulative effect leading 
+to detrimental cellular consequences, is this instance decrement 
+in Ca2 + mobilization in NK cells, potentially contributing to 
+reduced cytotoxicity properties and other disturbances reported 
+in PCC. Further, since TRPM3 is highly expressed in various 
+tissue organs and cells, including the brain, spinal cord, eye, 
+pituitary gland, kidney, adipose tissue and pancreatic beta cells 
+[ 56–58 ], the impaired TRPM3-dependent Ca2 + mobilization may 
+potentially be present in other tissues, contributing to cognitive 
+dysfunction, chronic fatigue and other disturbances exhibited 
+in PCC. 
+Further, attributable to their dynamic function, the mitochondria 
+have the ability to accumulate and store Ca2 + ions, contributing 
+to a stable intracellular homeostasis [ 35, 99 ]. Recently, TRPM3 
+activation was found to trigger mitochondrial Ca2 + loading in 
+nociceptive dorsal root ganglion (DRG) neurons, highlighting 
+dynamic mitochondrial activity downstream of TRPM3 activation 
+[ 100 ]. Given that these proteins and organelles are functionally 
+coupled, it was deemed relevant to investigate TRPM3-dependent 
+Ca2 + influx into the mitochondria in NK cells from PCC patients. 
+Following depletion of internal Ca2 + stores, addition of 1.8 mM 
+Ca2 + led to significantly higher Ca2 + influx amplitude into the 
+mitochondria, response rate (slope) and T1/2 response in PCC 
+compared with HC ( p < 0.0001). Although stimulation of NK cells 
+with PregS pronouncedly activated the TRPM3 ion channel ( p < 
+0.0001) in HC, and triggered significant Ca2 + influx, Ca2 + loading 
+into the mitochondria and T1/2 response ( p = 0.0001) was signifi- 
+cantly reduced in PCC patients compared with HC. On the other 
+hand, NK cells from PCC had a faster rate of Ca2 + influx (slope, 
+p = 0.0001) into the mitochondria, and the TRPM3 activation 
+T1/2 was shorter compared with HC. The rapid and higher Ca2 + 
+rise into the mitochondria in NK cells from PCC contrasts with 
+the slower and lower Ca2 + rise observed in the cytoplasm. Based 
+on our current results, given that Ca2 + influx into the cytoplasm 
+was significantly reduced in NK cells from PCC patients, it is 
+possible that Ca2 + storage amount in the mitochondria is reduced, 
+consequently causing rapid (increased slope) Ca2 + uptake for 
+a longer time (longer T1/2 response) to replenish Ca2 + stores. 
+Indeed, a compensatory mechanism to rapidly replenish Ca2 + 
+stores and buffering by the mitochondria is proposed [ 90, 101 ]. 
+In addition, alterations in the Ca2 + flux pathways and speed 
+were found to subsequently increase the Ca2 + influx speed into 
+the mitochondria and amount via the mitochondrial calcium 
+uniporter (MCU), even at relatively low cytosolic Ca2 + , poten- 
+tially leading to mitochondrial Ca2 + overload [ 102 ]. Although 
+the mitochondria possess the ability to accumulate substantial 
+amounts of Ca2 + in their matrix, stockpiling high levels of Ca2 + 
+has detrimental consequences, particularly the collapse of energy 
+homeostasis [ 103 ]. Disturbances in mitochondrial Ca2 + handling 
+are linked to neurodegenerative diseases such as Alzheimer’s 
+disease, Parkinson’s disease and Huntington’s disease [ 37, 104, 
+105 ]. Under conditions that disturb cytosolic Ca2 + homeostasis, 
+the MCU rapidly load Ca2 + into the matrix at a rate that exceeds 
+the mitochondrial sodium/calcium/lithium exchanger (NCLX) 
+Ca2 + clearance [ 101 ]. This excessive rise in Ca2 + concentration 
+in the mitochondria leads to increased permeability of the inner 
+mitochondrial membrane (IMM), provoking IMM depolarisation 
+and matrix swelling, eventually leading to compromised cell 
+function and cell death [ 90, 104 ]. 
+Ca2 + modulates the activity of TRP ion channels, which generates 
+positive or negative feedback, moulding overall intracellular 
+Ca2 + concentration [ 98 ]. As mentioned above, changes in the 
+activity of ion channels and pumps that regulate Ca2 + have a 
+central role in some disease onset and progression, including 
+Alzheimer’s, Parkinson’s, Huntington’s, and myopathies; hence, 
+maintaining Ca2 + at a homeostatic balance is very important 
+for optimal cell function [ 39, 61, 104, 105 ]. Given the vital 
+role Ca2 + ions play in various important biological processes, 
+more research focusing on exploring the potential implications 
+of TRP channels and Ca2 + dysregulation to PCC onset and 
+progression is required. The upstream disruptions, in this case, 
+TRPM3 ion channel impairment in both PCC and ME/CFS [ 54 ], 
+are believed to potentially lead to downstream disturbances in 
+bioenergetics, such as the mitochondria, thus contributing to 
+loss of cell activity. Accordingly, future investigations should 
+investigate the functional consequences of impaired TRPM3 
+activity and associated downstream Ca2 + dysregulation in NK 
+cells from individuals with PCC. In particular, it will be essential 
+to determine the mechanistic link between TRPM3 dysfunc- 
+tion, Ca2 + signalling abnormalities, mitochondrial impairment, 
+and reduced NK cell function reported in PCC. Given the 
+central role of Ca2 + in regulating mitochondrial bioenerget- 
+ics and immune cell effector functions, this may be further 
+explored through assessment of mitochondrial reactive oxygen 
+species (ROS) production, intracellular ATP levels, mitochon- 
+drial membrane potential, metabolic activity, and respiratory 
+capacity using approaches such as Seahorse extracellular flux 
+analysis. 
+The use of patient-derived NK cells in this study enhances the 
+biological and clinical relevance of the findings; however, the 
+limited yield of primary cells per participant constrained the 
+number of experimental conditions that could be performed. 
+Moreover, in vitro expansion was not feasible due to the limited 
+proliferative capacity of primary NK cells relative to immortalised 
+lines, as prolonged culture is associated with cellular stress, 
+phenotypic drift, senescence, and reduced viability, thereby 
+limiting large-scale expansion without compromising biological 
+integrity. 
+European Journal of Immunology, 2026
+13 of 17
+
+This study used an extremely strict participant selection criterion; 
+for instance, participants were excluded if diagnosed with other 
+chronic illnesses or were extensively using medications that 
+directly or indirectly influence TRPM3 or Ca2 + activity, hence 
+our sample size was small. To mitigate this limitation, method- 
+ological steps were taken to increase the population of NK cells 
+analysed per participant, strategically increasing the total number 
+of cells analysed per group. Additionally, to mitigate potential 
+technical limitations, protocol optimizations were performed, 
+and six separate wells were imaged per participant, including 
+single dye control wells. Further, previously optimized concen- 
+trations of PregS and ononetin were applied to limit potential 
+off-target effects. Inhibition of TRPM3 activity using ononetin, 
+sequentially followed by activation using PregS, was performed to 
+confirm TRPM3 channel activity. Further, to monitor and confirm 
+mitochondrial uncoupling, FCCP was used at the end of each 
+experiment. 
+In conclusion, research from this study provided new evidence 
+that demonstrate that TRPM3 ion channel dysfunction has a 
+significant impact on cytoplasmic and Ca2 + mobilization in 
+the mitochondria in PCC. In addition, this study highlighted 
+potential overcompensatory mechanisms in the mitochondria, 
+possibly arising from altered Ca2 + signalling processes. Altered 
+Ca2 + signalling can lead to broader systemic issues, impacting 
+both the immune system and bioenergetic processes. Collectively, 
+these findings provide an avenue for further studies on the 
+physiological functions of the TRPM3 ion channel and its role in 
+PCC and similar chronic illnesses. Further, the combination of 
+electrophysiology and Ca2 + imaging protocols provides a compre- 
+hensive characterisation and analysis of Ca2 + influx via TRPM3 in 
+NK cells of PCC and similar illnesses, such as ME/CFS patients. 
+Recently, research has reported considerable overlap in symp- 
+tom presentations predominantly associated with neurological, 
+metabolic, and immunological disturbances between PCC and 
+ME/CFS patients. In addition, a proportion of PCC patients meet 
+the diagnostic criteria for ME/CFS. For this reason, it is crucial 
+to employ a multidisciplinary approach for the investigation of 
+both conditions. Further, considering both conditions have a 
+significant impact on quality of life and an enormous impact 
+on public health, more research focusing on understanding the 
+pathomechanisms involved is required. 
+Author Contributions 
+C.T.M. performed all the experiments, data analysis and writing of 
+the manuscript. S.M.-G. conceived the project and study coordination. 
+C.T.M., N.E.-F., K.M., and S.M.-G. contributed to the experimental design. 
+C.T.M., N.E.-F., K.M., and S.M.-G. contributed to the critical analysis of 
+the data. All the authors critically reviewed this manuscript and approved 
+the final version. 
+Acknowledgements 
+The authors are grateful to those who volunteered their time and blood 
+samples for this project. We acknowledge the NCNED team members 
+Prof Sonya Marshall-Gradisnik, Dr Natalie Eaton-Fitch, Kay Schwarz, 
+Dr Kiran Thapaliya, Dr Leighton Barnden, Dr Etianne Martini Sasso, 
+Tania Manning, Jessica Dwyer, Jacob Batham, Maira Inderyas, Sofia 
+Jimenez Sanchez, Breanna Weigel, Tuong Huynh, Urooj Ishrat and 
+Tanoj Singh. The authors would like to further extend their gratitude 
+to the funding bodies. We thank the Steering Committee Members, Mr 
+Ross Humphreys (Chair), and Mrs Christine Hunter. We appreciate the 
+specialist clinical collaborators at GU, Dr Peter Smith, MBBS FRACP 
+PhD and Dr Jennifer Ng, MBBS MRCP FRACP. We are grateful to the 
+CHIME Collaborators Prof Katsuhiko Muraki, Aichi-Gakuin University, 
+Japan, Prof John Stenos, ARRL, Geelong, Australia, Prof James Baraniuk, 
+Georgetown University, USA, and Prof Pawel Zalewski, Nicolaus Coper- 
+nicus University, Poland. Our sincere gratitude to the funding bodies: the 
+Stafford Fox Medical Research Foundation (489798), National Health and 
+Medical Research Council (1199502), McCusker Charitable Foundation 
+(49979), Henty Community (4879), Henty Lions Club (4880), Blake 
+Beckett Trust Foundation (4579), Alison Hunter Memorial Foundation 
+(4570), Talei Stewart (0000) 
+Open access publishing facilitated by Griffith University, as part of the 
+Wiley – Griffith University agreement via the Council of Australasian 
+University Librarians 
+Resource Availability 
+Requests for further information and resources should be directed 
+to and will be fulfilled by the lead contact, Chandi Tabeth Magawa 
+(chandi.magawa@griffithuni.edu.au; c.magawa@griffith.edu.au). This 
+study did not generate new, unique reagents. 
+Ethics Approval and Consent to Participate 
+This project was approved by Griffith University Human Research Ethics 
+Committee (GU: 2022/666). All participants provided written consent 
+before participation. 
+Consent for Publication 
+All participants provided informed and written consent before participa- 
+tion. 
+Conflicts of Interest 
+The authors declare no conflicts of interest. 
+Data Availability Statement 
+All relevant data are present within the manuscript. The datasets from 
+this study are not publicly available due to confidentiality agreements, but 
+could be available on reasonable request. Any request should be submitted 
+to the Chair, Griffith University Human Research Ethics Committee, by 
+email at research-ethics@griffith.edu.au. 
+Peer Review 
+For transparency, the peer review documents associated with this article 
+are available at https://doi.org/10.1002/eji.70240 . 
+References 
+1 . J. B. Soriano, S. Murthy, J. C. Marshall, P. Relan, and J. V. Diaz, 
+“A Clinical Case Definition of Post-COVID-19 Condition by a Delphi 
+Consensus,” The Lancet Infectious Diseases 22, no. 4 (2022): e102–e107. 
+2 . Y. Miyah, et al., “COVID-19 Impact on Public Health, Environment, 
+Human Psychology, Global Socioeconomy, and Education,” The Scientific 
+World Journal 2022, no. 1 (2022): 5578284. 
+3 . World Health Organization. A Clinical Case Definition of Post-COVID- 
+19 Condition by a Delphi Consensus, 6 October 2021. 2021 [cited 
+2025 02 September]; https://www.who.int/publications/i/item/WHO- 
+2019- nCoV- Post_COVID- 19_condition- Clinical_case_definition- 2021.1 . 
+4 . A. Nalbandian, K. Sehgal, A. Gupta, et al., “Post-acute COVID-19 
+Syndrome,” Nature Medicine 27, no. 4 (2021): 601–615. 
+5 . V. Tsampasian, H. Elghazaly, R. Chattopadhyay, et al., “Risk Fac- 
+tors Associated With Post-COVID-19 Condition: A Systematic Review 
+and Meta-analysis,” JAMA Internal Medicine 183, no. 6 (2023): 566–
+580. 
+14 of 17
+European Journal of Immunology, 2026
+
+6 . A. Nalbandian, A. Desai, and E. Wan, “Post-COVID-19 Condition,”
+Annual Review of Medicine 74, no. 1 (2023): 55–64. 
+7 . C. Chen, S. R. Haupert, L. Zimmermann, X. Shi, L. G. Fritsche, 
+and B. Mukherjee, “Global Prevalence of Post-Coronavirus Disease 2019 
+(COVID-19) Condition or Long COVID: A Meta-Analysis and Systematic 
+Review,” The Journal of Infectious Diseases 226, no. 9 (2022): 1593–1607. 
+8 . R. A. Evans, O. C. Leavy, M. Richardson, et al., “Clinical Characteristics 
+With Inflammation Profiling of Long COVID and Association With 
+1-Year Recovery Following Hospitalisation in the UK: A Prospective 
+Observational Study,” The Lancet Respiratory Medicine 10, no. 8 (2022): 
+761–775. 
+9 . L. Tabacof, J. Tosto-Mancuso, J. Wood, et al., “Post-Acute COVID-19 
+Syndrome Negatively Impacts Physical Function, Cognitive Function, 
+Health-related Quality of Life, and Participation,” American Journal of 
+Physical Medicine & Rehabilitation 101, no. 1 (2022): 48–52. 
+10 . S. Lopez-Leon, T. Wegman-Ostrosky, C. Perelman, et al., “More 
+Than 50 Long-term Effects of COVID-19: A Systematic Review and 
+Meta-Analysis,” Scientific Reports 11, no. 1 (2021): 16144. 
+11 . T. J. Hartung, C. Neumann, T. Bahmer, et al., “Fatigue and Cog- 
+nitive Impairment After COVID-19: A Prospective Multicentre Study,”
+EClinicalMedicine 53 (2022): 101651. 
+12 . H. E. Davis, G. S. Assaf, L. McCorkell, et al., “Characterizing Long 
+COVID in an International Cohort: 7 Months of Symptoms and Their 
+Impact,” EClinicalMedicine 38 (2021): 101019. 
+13 . P. Glynne, N. Tahmasebi, V. Gant, and R. Gupta, “Long COVID 
+Following Mild SARS-CoV-2 Infection: Characteristic T Cell Alterations 
+and Response to Antihistamines,” Journal of Investigative Medicine 70, no. 
+1 (2022): 61–67. 
+14 . National Institute for Health and Care Excellence, N. COVID-19 
+Rapid Guideline: Managing the Long-Term Effects of COVID-19. NG188 
+2020 [cited 2025 02 September 2025]; https://www.nice.org.uk/guidance/ 
+ng188/chapter/1- Identification# case- definition . 
+15 . K. Thapaliya, S. Marshall-Gradisnik, N. Eaton-Fitch, Z. Eftekhari, 
+M. Inderyas, and L. Barnden, “Imbalanced Brain Neurochemicals in 
+Long COVID and ME/CFS: A Preliminary Study Using MRI,” American 
+Journal of Medicine 138, no. 3 (2025): 567–574. 
+16 . C. Scheibenbogen and K. Wirth, “Key Pathophysiological 
+Role of Skeletal Muscle Disturbance in Post-COVID and Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Accumulated 
+Evidence,” Journal of Cachexia, Sarcopenia and Muscle 16, no. 1 (2025): 
+e13669. 
+17 . J. W. Guarnieri, J. M. Dybas, H. Fazelinia, et al., “Core Mitochondrial 
+Genes Are Down-Regulated During SARS-CoV-2 Infection of Rodent 
+and Human Hosts,” Science Translational Medicine 15, no. 708 (2023): 
+eabq1533. 
+18 . H. E. Davis, L. McCorkell, J. M. Vogel, and E. J. Topol, “Long COVID: 
+Major Findings, Mechanisms and Recommendations,” Nature Reviews 
+Microbiology 21, no. 3 (2023): 133–146. 
+19 . C. Phetsouphanh, D. R. Darley, D. B. Wilson, et al., “Immuno- 
+logical Dysfunction Persists for 8 Months Following Initial Mild-to- 
+Moderate SARS-CoV-2 Infection,” Nature Immunology 23, no. 2 (2022): 
+210–216. 
+20 . A. Proal and M. VanElzakker, “Long COVID or Post-acute Sequelae 
+of COVID-19 (PASC): An Overview of Biological Factors That May 
+Contribute to Persistent Symptoms,” Frontiers in Microbiology 12 (2021): 
+698169. 
+21 . Z. Swank, Y. Senussi, Z. Manickas-Hill, et al., “Persistent Circulating 
+Severe Acute Respiratory Syndrome Coronavirus 2 Spike Is Associated 
+With Post-acute Coronavirus Disease 2019 Sequelae,” Clinical Infectious 
+Diseases 76, no. 3 (2023): e487–e490. 
+22 . T. Tsao, A. M. Buck, L. Grimbert, et al., “Long COVID Is Associated 
+With Lower Percentages of Mature, Cytotoxic NK Cell Phenotypes,” The 
+Journal of Clinical Investigation 135, no. 4 (2025): 188182. 
+23 . K. Yin, M. J. Peluso, X. Luo, et al., “Long COVID Manifests With 
+T Cell Dysregulation, Inflammation and an Uncoordinated Adaptive 
+Immune Response to SARS-CoV-2,” Nature Immunology 25, no. 2 (2024): 
+218–225. 
+24 . M. Osman, R. M. Faridi, W. Sligl, et al., “Impaired Natural Killer Cell 
+Counts and Cytolytic Activity in Patients With Severe COVID-19,” Blood 
+Advances 4, no. 20 (2020): 5035–5039. 
+25 . C. Yao, S. A. Bora, T. Parimon, et al., “Cell-Type-Specific Immune 
+Dysregulation in Severely Ill COVID-19 Patients,” Cell Reports 34, no. 1 
+(2021): 108590. 
+26 . M. Robertson and J. Ritz, “Biology and Clinical Relevance of Human 
+Natural Killer Cells,” Blood 76, no. 12 (1990): 2421–2438. 
+27 . M. Caligiuri, “Human Natural Killer Cells,” Blood 112, no. 3 (2008): 
+461–469. 
+28 . M. Cooper, T. Fehniger, and M. Caligiuri, “The Biology of human 
+Natural Killer-cell Subsets,” Trends in Immunology 22, no. 11 (2001): 
+633–640. 
+29 . E. Vivier, E. Tomasello, M. Baratin, T. Walzer, and S. Ugolini, 
+“Functions of Natural Killer Cells,” Nature Immunology 9, no. 5 (2008): 
+503–510. 
+30 . B. Krämer, R. Knoll, L. Bonaguro, et al., “Early IFN- α Signatures and 
+Persistent Dysfunction Are Distinguishing Features of NK Cells in Severe 
+COVID-19,” Immunity 54, no. 11 (2021): 2650–2669. 
+31 . D. Clapham, “Calcium Signaling,” Cell 131, no. 6 (2007): 1047–1058. 
+32 . X. Zhou, K. S. Friedmann, H. Lyrmann, et al., “A Calcium Optimum 
+for Cytotoxic T Lymphocyte and Natural Killer Cell Cytotoxicity,” The 
+Journal of Physiology 596, no. 14 (2018): 2681–2698. 
+33 . E. O. Long, H. Sik Kim, D. Liu, M. E. Peterson, and S. Rajagopalan, 
+“Contr olling N atural Killer Cell Responses: Integration of Signals for 
+Activation and Inhibition,” Annual Review of Immunology 31 (2013): 
+227–258. 
+34 . M. Berridge, P. Lipp, and M. Bootman, “The Versatility and Universal- 
+ity of Calcium Signalling,” Nature Reviews Molecular Cell Biology 1, no. 1 
+(2000): 11–21. 
+35 . R. Rizzuto, D. De Stefani, A. Raffaello, and C. Mammucari, “Mitochon- 
+dria as Sensors and Regulators of Calcium Signalling,” Nature Reviews 
+Molecular Cell Biology 13, no. 9 (2012): 566–578. 
+36 . D. Prins and M. Michalak, “Organellar Calcium Buffers,” Cold Spring 
+Harbor Perspectives in Biology 3, no. 3 (2011): a004069. 
+37 . D. Matuz-Mares, M. González-Andrade, M. G. Araiza-Villanueva, M. 
+M. Vilchis-Landeros, and H. Vázquez-Meza, “Mitochondrial Calcium: 
+Effects of Its Imbalance in Disease,” Antioxidants 11, no. 5 (2022): 
+801. 
+38 . T. Verhezen, et al., “Powering Immunity: Mitochondrial Dynamics in 
+Natural Killer Cells,” Trends in Molecular Medicine (2025): 49-64. 
+39 . S. Feske, “Calcium Signalling in Lymphocyte Activation and Disease,”
+Nature Reviews Immunology 7, no. 9 (2007): 690–702. 
+40 . R. Lewis, “Store-Operated Calcium Channels: From Function to 
+Structure and Back Again,” Cold Spring Harbor Perspectives in Biology 12, 
+no. 5 (2020): a035055. 
+41 . S. Romero-Garcia and H. Prado-Garcia, “Mitochondrial Calcium: 
+Transport and Modulation of Cellular Processes in Homeostasis and 
+Cancer,” International Journal of Oncology 54, no. 4 (2019): 1155–1167. 
+42 . E. Schwarz, B. Qu, and M. Hoth, “Calcium, Cancer and Killing: The 
+Role of Calcium in Killing Cancer Cells by Cytotoxic T Lymphocytes and 
+Natural Killer Cells,” Biochimica et Biophysica Acta (BBA)-Molecular Cell 
+Research 1833, no. 7 (2013): 1603–1611. 
+43 . C. Anasetti, P. J. Martin, C. H. June, et al., “Induction of Calcium 
+Flux and Enhancement of Cytolytic Activity in Natural Killer Cells by 
+Cross-Linking of the Sheep Erythrocyte Binding Protein (CD2) and the 
+Fc-Receptor (CD16),” Journal of Immunology (Baltimore, MD: 1950) 139, 
+no. 6 (1987): 1772–1779. 
+European Journal of Immunology, 2026
+15 of 17
+
+44 . P. Henkart, “Mechanism of Lymphocyte-Mediated Cytotoxicity,”
+Annual Review of Immunology 3, no. 1 (1985): 31–58. 
+45 . H. Cabanas, K. Muraki, C. Balinas, N. Eaton-Fitch, D. Staines, 
+and S. Marshall- Gradisnik, “Validation of Impaired Transient Receptor 
+Potential Melastatin 3 Ion Channel Activity in Natural Killer Cells 
+From Chronic Fatigue Syndrome/Myalgic Encephalomyelitis Patients,”
+Molecular Medicine 25 (2019): 1–15. 
+46 . H. Cabanas, K. Muraki, N. Eaton, C. Balinas, D. Staines, and S. 
+Marshall-Gradisnik, “Loss of Transient Receptor Potential Melastatin 3 
+Ion Channel Function in Natural Killer Cells From Chronic Fatigue 
+Syndrome/Myalgic Encephalomyelitis Patients,” Molecular Medicine 24, 
+no. 1 (2018): 44. 
+47 . T. Nguyen, S. Johnston, L. Clarke, P. Smith, D. Staines, and S. Marshall- 
+Gradisnik, “Impaired Calcium Mobilization in Natural Killer Cells 
+From Chronic Fatigue Syndrome/Myalgic Encephalomyelitis Patients 
+Is Associated With Transient Receptor Potential Melastatin 3 Ion 
+Channels,” Clinical and Experimental Immunology 187, no. 2 (2017): 
+284–293. 
+48 . A. Komaroff and W. Lipkin, “ME/CFS and Long COVID Share Similar 
+Symptoms and Biological Abnormalities: Road Map to the Literature,”
+Frontiers in Medicine 10 (2023): 1187163. 
+49 . T. Wong and D. Weitzer, “Long COVID and Myalgic Encephalomyeli- 
+tis/Chronic Fatigue Syndrome (ME/CFS)—A Systemic Review and 
+Comparison of Clinical Presentation and Symptomatology,” Medicina 57, 
+no. 5 (2021): 418. 
+50 . E. Mantovani, S. Mariotto, D. Gabbiani, et al., “Chronic Fatigue 
+Syndrome: An Emerging Sequela in COVID-19 Survivors?,” Journal of 
+Neurovirology 27, no. 4 (2021): 631–637. 
+51 . S. Poenaru, S. J. Abdallah, V. Corrales-Medina, and J. Cowan, “COVID- 
+19 and Post-Infectious Myalgic Encephalomyelitis/Chronic Fatigue Syn- 
+drome: A Narrative Review,” Therapeutic advances in infectious disease 8 
+(2021): 20499361211009385. 
+52 . C. Kedor, et al., “Chronic COVID-19 Syndrome and Chronic Fatigue 
+Syndrome (ME/CFS) Following the First Pandemic Wave in Germany–
+a First Analysis of a Prospective Observational Study,” MedRxiv (2021): 
+2021-02. 
+53 . D. Araja, U. Berkis, A. Lunga, and M. Murovska, “Shadow Burden 
+of Undiagnosed Myalgic Encephalomyelitis/Chronic Fatigue Syndrome 
+(ME/CFS) on Society: Retrospective and Prospective—In Light of COVID- 
+19,” Journal of Clinical Medicine 10, no. 14 (2021): 3017. 
+54 . E. M. Sasso, K. Muraki, N. Eaton-Fitch, et al., “Transient Recep- 
+tor Potential Melastatin 3 Dysfunction in Post-COVID-19 Condition 
+and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome Patients,”
+Molecular Medicine 28, no. 1 (2022): 98. 
+55 . K. Venkatachalam and C. Montell, “TRP Channels,” Annual Review of 
+Biochemistry 76 (2007): 387–417. 
+56 . E. FONFRIA, P. R. MURDOCK, F. S. CUSDIN, C. D. BENHAM, R. 
+E. KELSELL, and S. MCNULTY, “Tissue Distribution Profiles of the 
+human TRPM Cation Channel family,” Journal of Receptors and Signal 
+Transduction 26, no. 3 (2006): 159–178. 
+57 . N. Lee, J. Chen, L. Sun, et al., “Expression and Characterization of 
+human Transient Receptor Potential Melastatin 3 (hTRPM3),” Journal of 
+Biological Chemistry 278, no. 23 (2003): 20890–20897. 
+58 . C. Grimm, R. Kraft, S. Sauerbruch, G. Schultz, and C. Harteneck, 
+“Molecular and Functional Characterization of the Melastatin-Related 
+Cation Channel TRPM3,” Journal of Biological Chemistry 278, no. 24 
+(2003): 21493–21501. 
+59 . T. Woudenberg-Vrenken, R. Bindels, and J. Hoenderop, “The Role 
+of Transient Receptor Potential Channels in Kidney Disease,” Nature 
+Reviews Nephrology 5, no. 8 (2009): 441–449. 
+60 . B. Nilius, G. Owsianik, and T. Voets, “Transient Receptor Potential 
+Channels Meet Phosphoinositides,” The EMBO Journal 27, no. 21 (2008): 
+2809–2816. 
+61 . B. Nilius, “TRP Channels in Disease,” Biochimica et Biophysica Acta 
+(BBA)-Molecular Basis of Disease 1772, no. 8 (2007): 805–812. 
+62 . K. Held and B. Tóth, “TRPM3 in Brain (Patho)Physiology,” Frontiers 
+in Cell and Developmental Biology 9, no. 353 (2021): 635659. 
+63 . A. Shiels, “TRPM3_miR-204: A Complex Locus for Eye Development 
+and Disease,” Human Genomics 14, no. 1 (2020): 7. 
+64 . D. A. Dyment, P. A. Terhal, C. F. Rustad, et al., “De Novo Substitutions 
+of TRPM3 Cause Intellectual Disability and Epilepsy,” European Journal 
+of Human Genetics 27, no. 10 (2019): 1611–1618. 
+65 . I. Straub, U. Krügel, F. Mohr, et al., “Flavanones That Selectively 
+Inhibit TRPM3 Attenuate Thermal Nociception in Vivo,” Molecular 
+Pharmacology 84, no. 5 (2013): 736–750. 
+66 . T. F. Wagner, S. Loch, S. Lambert, et al., “Transient Receptor Potential 
+M3 Channels Are Ionotropic Steroid Receptors in Pancreatic β Cells,”
+Nature Cell Biology 10, no. 12 (2008): 1421–1430. 
+67 . G. H. Souza Bomfim, B. A. Niemeyer, R. S. Lacruz, and A. Lis, “On the 
+Connections Between TRPM Channels and SOCE,” Cells 11, no. 7 (2022): 
+1190. 
+68 . M. Papanikolaou, A. Lewis, and A. Butt, “Store-Operated Calcium 
+Entry Is Essential for Glial Calcium Signalling in CNS White Matter,”
+Brain Structure and Function 222, no. 7 (2017): 2993–3005. 
+69 . J. Przibilla, S. Dembla, O. Rizun, et al., “Ca2 + -Dependent Regulation 
+and Binding of Calmodulin to Multiple Sites of Transient Receptor 
+Potential Melastatin 3 (TRPM3) Ion Channels,” Cell Calcium 73 (2018): 
+40–52. 
+70 . B. Holendova, L. Grycova, M. Jirku, and J. Teisinger, “PtdIns (4, 5) P 2 
+Interacts With CaM Binding Domains on TRPM3 N-Terminus,” Channels 
+6, no. 6 (2012): 479–482. 
+71 . G. Thiel, S. Rubil, A. Lesch, L. A. Guethlein, and O. G. Rössler, “Tran- 
+sient Receptor Potential TRPM3 Channels: Pharmacology, Signaling, and 
+Biological Functions,” Pharmacological Research 124 (2017): 92–99. 
+72 . T. F. J. Wagner, A. Drews, S. Loch, et al., “TRPM3 Channels Provide 
+a Regulated Influx Pathway for Zinc in Pancreatic Beta Cells,” Pflügers 
+Archiv-European Journal of Physiology 460 (2010): 755–765. 
+73 . C. Stevenson, SF-36: Interim Norms for Australian Data (Australian 
+Institute of Health and Welfare, 1996). 
+74 . T. Ustun, Measuring Health and Disability: Manual for WHO Disability 
+Assessment Schedule (WHODAS 2.0) , ed. Üstün, T.B., Kostanjsek, N., 
+Chatterji, S., and Rehm, J. (World Health Organization: Geneva, 2010). 
+75 . G. Andrews, A. Kemp, M. Sunderland, M. Von Korff, and T. B. Ustun, 
+“Normative Data for the 12 Item WHO Disability Assessment Schedule 
+2.0,” PLoS ONE 4, no. 12 (2009): e8343. 
+76 . E. W. Brenu, M. L. van Driel, D. R. Staines, et al., “Immunolog- 
+ical Abnormalities as Potential Biomarkers in Chronic Fatigue Syn- 
+drome/Myalgic Encephalomyelitis,” Journal of Translational Medicine 9, 
+no. 1 (2011): 1–9. 
+77 . C. T. Magawa, N. Eaton-Fitch, C. Balinas, et al., “Identification of Tran- 
+sient Receptor Potential Melastatin 3 Proteotypic Peptides Employing an 
+Efficient Membrane Protein Extraction Method for Natural Killer Cells,”
+Frontiers in Physiology 13 (2022): 947723. 
+78 . H. Cabanas, et al., “Naltrexone Restores Impaired Transient Receptor 
+Potential Melastatin 3 Ion Channel Function in Natural Killer Cells 
+From Myalgic encephalomyelitis/Chronic fatigue Syndrome Patients,”
+Frontiers in Immunology 10, no. OCT (2019): 2545. 
+79 . S. Bolte and F. Cordelières, “A Guided Tour Into Subcellular Colocal- 
+ization Analysis in Light Microscopy,” Journal of Microscopy 224, no. 3 
+(2006): 213–232. 
+80 . F. J. Ryan, C. M. Hope, M. G. Masavuli, et al., “Long-Term Perturbation 
+of the Peripheral Immune System Months After SARS-CoV-2 Infection,”
+BMC Medicine 20, no. 1 (2022): 1–23. 
+81 . M. J. Peluso, A. N. Deitchman, L. Torres, et al., “Long-Term SARS- 
+CoV-2-Specific Immune and Inflammatory Responses in Individuals 
+16 of 17
+European Journal of Immunology, 2026
+
+Recovering From COVID-19 With and Without Post-Acute Symptoms,”
+Cell Reports 36, no. 6 (2021): 109518. 
+82 . L. Tang, R. R. Swezey, C. E. Green, and J. C. Mirsalis, “Corr ection to: 
+Enhancement of Sensitivity and Quantification Quality in the LC-MS/MS 
+Measurement of Large Biomolecules With Sum of MRM (SMRM),”
+Analytical and Bioanalytical Chemistry 414, no. 8 (2022): 2787. 
+83 . F. Reddish, C. Miller, R. Gorkhali, and J. Yang, “Calcium Dynamics 
+Mediated by the Endoplasmic/Sarcoplasmic Reticulum and Related 
+Diseases,” International Journal of Molecular Sciences 18, no. 5 (2017): 
+1024. 
+84 . M. Trebak and J. Kinet, “Calcium Signalling in T Cells,” Nature 
+Reviews Immunology 19, no. 3 (2019): 154–169. 
+85 . Q. Yan, C. Gao, M. Li, et al., “TRP Ion Channels in Immune Cells and 
+Their Implications for Inflammation,” International Journal of Molecular 
+Sciences 25, no. 5 (2024): 2719. 
+86 . M. Cahalan, “STIMulating Store-Operated Ca2 + Entry,” Nature Cell 
+Biology 11, no. 6 (2009): 669–677. 
+87 . L. Vangeel and T. Voets, “Transient Receptor Potential Channels and 
+Calcium Signaling,” Cold Spring Harbor Perspectives in Biology 11, no. 6 
+(2019): a035048. 
+88 . K. Dizaji Asl, Z. Mazloumi, G. Majidi, H. Kalarestaghi, S. Sabetkam, 
+and A. Rafat, “NK Cell Dysfunction Is Linked With Disease Severity in 
+SARS-CoV-2 Patients,” Cell Biochemistry and Function 40, no. 6 (2022): 
+559–568. 
+89 . J. Bi, “NK Cell Dysfunction in Patients With COVID-19,” Cellular & 
+Molecular Immunology 19, no. 2 (2022): 127–129. 
+90 . L. Modesti, A. Danese, V. Angela Maria Vitto, et al., “Mitochondrial 
+Ca2 + Signaling in Health, Disease and Therapy,” Cells 10, no. 6 (2021): 
+1317. 
+91 . W. Qi, et al., “Transient Receptor Potential Channels in Viral Infec- 
+tious Diseases: Biological Characteristics and Regulatory Mechanisms,”
+Journal of Advanced Research (2024): 119-133. 
+92 . P. S. Kumar, A. Radhakrishnan, T. Mukherjee, S. Khamaru, S. 
+Chattopadhyay, and S. Chattopadhyay, “Understanding the Role of Ca2 + 
+via Transient Receptor Potential (TRP) Channel in Viral Infection: 
+Implications in Developing Future Antiviral Strategies,” Virus Research 
+323 (2023): 198992. 
+93 . D. Liao, S. Jiang, T. Wu, et al., “TRP Channels at the Crossroads of 
+Metabolism and Immunity: Ion–Metabolite Coupling in Inflammation 
+and Disease,” Metabolism 176 (2026): 156486. 
+94 . J. Oberwinkler, A. Lis, K. M. Giehl, V. Flockerzi, and S. E. Philipp, 
+“Alternative Splicing Switches the Divalent Cation Selectivity of TRPM3 
+Channels,” Journal of Biological Chemistry 280, no. 23 (2005): 22540–
+22548. 
+95 . J. Frühwald, J. Camacho Londoño, S. Dembla, et al., “Alternative 
+Splicing of a Protein Domain Indispensable for Function of Transient 
+Receptor Potential Melastatin 3 (TRPM3) Ion Channels,” Journal of 
+Biological Chemistry 287, no. 44 (2012): 36663–36672. 
+96 . X. Chen, P. P. Trivedi, B. Ge, K. Krzewski, and J. L. Strominger, “Many 
+NK Cell Receptors Activate ERK2 and JNK1 to Trigger Microtubule Orga- 
+nizing Center and Granule Polarization and Cytotoxicity,” Proceedings of 
+the National Academy of Sciences 104, no. 15 (2007): 6329–6334. 
+97 . S. Chen, H. Zhu, and Y. Jounaidi, “Comprehensive Snapshots of 
+Natural Killer Cells Functions, Signaling, Molecular Mechanisms and 
+Clinical Utilization,” Signal Transduction and Targeted Therapy 9, no. 1 
+(2024): 302. 
+98 . M. Gees, B. Colsoul, and B. Nilius, “The Role of Transient Receptor 
+Potential Cation Channels in Ca2 + Signaling,” Cold Spring Harbor 
+Perspectives in Biology 2, no. 10 (2010): a003962. 
+99 . G. Szabadkai, A. Simoni, K. Bianchi, et al., “Mitochondrial Dynamics 
+and Ca2 + Signaling,” Biochimica Et Biophysica Acta 1763, no. 5-6 (2006): 
+442–449. 
+100 . D. Wang, Q. Gao, I. Schaefer, et al., “TRPM3-mediated Dynamic 
+Mitochondrial Activity in Nerve Growth Factor-Induced Latent Sensiti- 
+zation of Chronic Low Back Pain,” Pain 163, no. 11 (2022): e1115–e1128. 
+101 . L. Walkon, J. Strubbe-Rivera, and J. Bazil, “Calcium Overload and 
+Mitochondrial Metabolism,” Biomolecules 12, no. 12 (2022): 1891. 
+102 . E. Basso, G. Rigotto, A. E. Zucchetti, and T. Pozzan, “Slow Activation 
+of Fast Mitochondrial Ca2 + Uptake by Cytosolic Ca2 + ,” Journal of 
+Biological Chemistry 293, no. 44 (2018): 17081–17094. 
+103 . B. Glancy and R. Balaban, “Role of Mitochondrial Ca2 + in the 
+Regulation of Cellular Energetics,” Biochemistry 51, no. 14 (2012): 2959–
+2973. 
+104 . C. Giorgi, C. Agnoletto, A. Bononi, et al., “Mitochondrial Cal- 
+cium Homeostasis as Potential Target for Mitochondrial Medicine,”
+Mitochondrion 12, no. 1 (2012): 77–85. 
+105 . E. Benarroch, “TRP Channels: Functions and Involvement in Neuro- 
+logic Disease,” Neurology 70, no. 8 (2008): 648–652. 
+Supporting Information 
+Additional supporting information can be found online in the Supporting 
+Information section. 
+Supporting File: eji70240-sup-0001-SuppMat.pdf. 
+European Journal of Immunology, 2026
+17 of 17

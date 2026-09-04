@@ -7,25 +7,28 @@ year: 2026
 venue: "International Journal of Molecular Sciences"
 doi: 10.3390/ijms27146535
 url: https://doi.org/10.3390/ijms27146535
-pdf: https://doi.org/10.3390/ijms27146535
-text: null
+pdf: literature/papers/2026-rusin-low-dose-ionizing-radiation/paper.pdf
+text: literature/papers/2026-rusin-low-dose-ionizing-radiation/paper.txt
 tags: [immunology, metabolism, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: rusin2026
+cover: "[[literature/papers/2026-rusin-low-dose-ionizing-radiation/cover.png]]"
 ---
 
 # Low-Dose Ionizing Radiation and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): A Review
 
 ## Related files
+![[literature/papers/2026-rusin-low-dose-ionizing-radiation/paper.pdf]]
 - [[literature/papers/2026-rusin-low-dose-ionizing-radiation/citation.bib]]
+- [[literature/papers/2026-rusin-low-dose-ionizing-radiation/paper.txt]]
 
 ## Summary
 
 This review proposes a speculative idea: that low-dose radiation exposure (much lower than what causes radiation sickness) might trigger some of the same cell-damage-signal pathways seen in ME/CFS, including tired-out cellular batteries (mitochondria), a stress-response protein pattern, and immune over-activation. The authors are upfront that this is a hypothesis, not proven — the proposed pathways are shared with ME/CFS, but no study has yet directly shown radiation actually causing ME/CFS in people.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

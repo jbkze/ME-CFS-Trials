@@ -7,25 +7,28 @@ year: 2026
 venue: "BMJ Open"
 doi: 10.1136/bmjopen-2026-118726
 url: https://doi.org/10.1136/bmjopen-2026-118726
-pdf: https://doi.org/10.1136/bmjopen-2026-118726
-text: null
+pdf: literature/papers/2026-markham-address-protocol-phase-triple/paper.pdf
+text: literature/papers/2026-markham-address-protocol-phase-triple/paper.txt
 tags: [immunology, neuroinflammation, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: markham2026
+cover: "[[literature/papers/2026-markham-address-protocol-phase-triple/cover.png]]"
 ---
 
 # ADDRESS-LC: study protocol for a phase 2, triple-blind, randomised, placebo-controlled trial to evaluate the efficacy and safety of bezisterim (NE3107) in adults with long COVID
 
 ## Related files
+![[literature/papers/2026-markham-address-protocol-phase-triple/paper.pdf]]
 - [[literature/papers/2026-markham-address-protocol-phase-triple/citation.bib]]
+- [[literature/papers/2026-markham-address-protocol-phase-triple/paper.txt]]
 
 ## Summary
 
 This is a study plan (a protocol, not results yet) for a trial that will test bezisterim, a drug that calms a specific inflammation pathway in the body and brain, in 208 adults with long COVID who have had ongoing fatigue and 'brain fog' (trouble thinking clearly) for at least three months. Half will get the drug and half a placebo (dummy pill) for 12 weeks, with neither patients nor doctors knowing who got which.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

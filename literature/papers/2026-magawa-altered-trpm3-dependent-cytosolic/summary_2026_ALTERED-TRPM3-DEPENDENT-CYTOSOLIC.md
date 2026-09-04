@@ -7,25 +7,28 @@ year: 2026
 venue: "European Journal of Immunology"
 doi: 10.1002/eji.70240
 url: https://doi.org/10.1002/eji.70240
-pdf: https://doi.org/10.1002/eji.70240
-text: null
+pdf: literature/papers/2026-magawa-altered-trpm3-dependent-cytosolic/paper.pdf
+text: literature/papers/2026-magawa-altered-trpm3-dependent-cytosolic/paper.txt
 tags: [immunology, metabolism, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: magawa2026
+cover: "[[literature/papers/2026-magawa-altered-trpm3-dependent-cytosolic/cover.png]]"
 ---
 
 # Altered TRPM3-Dependent Cytosolic and Mitochondrial Calcium Influx in Natural Killer Cells of Post-COVID-19 Condition Patients
 
 ## Related files
+![[literature/papers/2026-magawa-altered-trpm3-dependent-cytosolic/paper.pdf]]
 - [[literature/papers/2026-magawa-altered-trpm3-dependent-cytosolic/citation.bib]]
+- [[literature/papers/2026-magawa-altered-trpm3-dependent-cytosolic/paper.txt]]
 
 ## Summary
 
 Researchers looked at natural killer (NK) cells — a type of immune cell — in 8 people with long-lasting post-COVID illness and 8 healthy people. The patients' NK cells had a faulty calcium "gate" (a channel called TRPM3): too little calcium got into the main body of the cell, but too much built up inside the cell's energy-making parts (mitochondria), and the cells barely responded when stimulated.
 
-> _No PDF available_ — Wiley — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
