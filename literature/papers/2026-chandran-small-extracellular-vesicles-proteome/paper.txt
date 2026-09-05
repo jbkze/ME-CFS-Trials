@@ -1,0 +1,1024 @@
+Small extracellular vesicles
+proteome reveals persistent
+inﬂammatory and coagulopathic
+dysregulation in long-COVID
+Sivasankar Chandran 1, Ling Chen 1, Anil Kumar Ram 1,
+Leslie Spikes 1, Prabhakar Chalise 2 and Navneet K. Dhillon 1*
+1Division of Pulmonary and Critical Care Medicine, Department of Internal Medicine, Kansas City,
+KS, United States, 2Department of Biostatistics & Data Science, University of Kansas Medical Center,
+Kansas City, KS, United States
+Background: Post-acute sequelae of SARS-CoV-2 (PASC) or Long-COVID affects
+millions and remains mechanistically undeﬁned due to its heterogeneous clinical
+presentation. Identifying robust biological signatures is essential for
+understanding disease mechanisms and improving diagnosis. Here, we
+investigated the protein cargo of plasma-derived small extracellular vesicles
+(SEVs) from PASC-positive and PASC-negative individuals to identify EV-linked
+biomarkers of Long-COVID.
+Methods: SEVs were isolated from EDTA plasma of PASC-positive (n=20) and
+PASC-negative (n=11) individuals using size-exclusion chromatography. SEV
+protein cargo was proﬁled across more than 5400 proteins using the Olink
+Explore HT platform.
+Results: PASC-positive patients commonly reported fatigue, shortness of breath,
+brain fog, sleep disruption, and mood changes. Proteomic analysis revealed 269
+signiﬁcantly dysregulated proteins, including 84 upregulated and 21
+downregulated, with a fold change >2 in PASC. These differentially altered
+proteins were enriched in pathways related to coagulation, inﬂammation,
+apoptosis, ﬁbrosis, extracellular matrix remodeling, mitochondrial dynamics,
+and immune activation. PASC-positive SEVs showed persistent increases in FN1,
+HCF-H, HGF, and IL-17RA, proteins previously dysregulated in acute COVID-19.
+These markers showed greater differences in SEVs than in matched plasma,
+particularly HGF and IL-17RA, which were signiﬁcantly altered in SEVs but not
+in plasma.
+Conclusion: Proteomic alterations in SEVs from PASC patients highlight the
+inﬂammatory, thrombotic, and neurobiological dysregulation, underscoring the
+potential of SEVs as biomarkers and mechanistic drivers of long COVID.
+KEYWORDS
+acute-COVID-19, extracellualr vesicles, PASC, plasma, proteomics
+Frontiers in Immunology
+frontiersin.org
+01
+OPEN ACCESS
+EDITED BY
+Baojun Wu,
+Henry Ford Health System, United States
+REVIEWED BY
+Luzia Maria De-Oliveira-Pinto,
+Oswaldo Cruz Foundation (Fiocruz),
+Brazil
+Edward J Goetzl,
+University of California, San Francisco,
+United States
+*CORRESPONDENCE
+Navneet K. Dhillon
+ndhillon@kumc.edu
+RECEIVED 05 February 2026
+REVISED 13 June 2026
+ACCEPTED 01 July 2026
+PUBLISHED 20 July 2026
+CITATION
+Chandran S, Chen L, Ram AK, Spikes L,
+Chalise P and Dhillon NK (2026) Small
+extracellular vesicles proteome reveals
+persistent inﬂammatory and
+coagulopathic dysregulation
+in long-COVID.
+Front. Immunol. 17:1805159.
+doi: 10.3389/fimmu.2026.1805159
+COPYRIGHT
+© 2026 Chandran, Chen, Ram, Spikes,
+Chalise and Dhillon. This is an open-
+access article distributed under the terms
+of the Creative Commons Attribution
+License (CC BY). The use, distribution or
+reproduction in other forums is
+permitted, provided the original
+author(s) and the copyright owner(s) are
+credited and that the original publication
+in this journal is cited, in accordance
+with accepted academic practice. No
+use, distribution or reproduction is
+permitted which does not comply with
+these terms.
+TYPE Original Research
+PUBLISHED 20 July 2026
+DOI 10.3389/fimmu.2026.1805159
+
+Introduction
+Regardless of the severity of the severe acute respiratory
+syndrome coronavirus-2 (SARS-CoV-2) infection, studies indicate
+that approximately 45% of COVID-19 survivors continue to exhibit
+post-acute sequelae of SARS-CoV-2 infection (PASC), commonly
+referred to as long COVID (1). More recently, a 2025 meta-analysis
+estimated that the global pooled prevalence of long COVID is about
+36% among individuals with conﬁrmed COVID-19 (2). The short-
+and long-term consequences of PASC markedly affect patients’
+quality of life, productivity, and overall health care expenditures (3).
+The clinical presentation of PASC varies widely and therefore
+represents a signiﬁcant challenge for both clinical management
+and public health (4) (5).
+PASC is characterized by a broad spectrum of symptoms
+affecting multiple physiological systems, with over 100 distinct
+manifestations reported. As a multiorgan condition, PASC fre-
+quently presents with persistent pulmonary symptoms such as
+dyspnea, reduced exercise tolerance, hypoxemia, and restrictive
+ventilatory defects (6). Neuropsychiatric manifestations such as
+fatigue, cognitive deﬁcits (brain fog), anxiety, and sleep disturbances
+are also frequently observed (7, 8). Cardiovascular manifestations,
+including palpitations, chest discomfort, and myocardial impair-
+ments, further contribute to the clinical burden (9, 10). In addition,
+endocrine (11, 12) renal, gastrointestinal, hepatobiliary, and der-
+matologic abnormalities, highlight the multisystemic nature of
+post-acute sequelae of COVID-19 (13). Several interrelated patho-
+genic mechanisms have been proposed to underlie the development
+of long COVID, with the most prominent including immune
+dysregulation, viral persistence, or the continued presence of viral
+components, autoimmune responses, and endotheliopathy (5).
+Extracellular vesicles (EVs) released by cells in response to
+multiple physiological and pathological stimuli, such as infection,
+stress, and inﬂammation, play a crucial role in disease pathogenesis
+(14–18). EVs carry bioactive molecules such as proteins, lipids, and
+microRNAs that have the ability to modulate inﬂammation, coag-
+ulation, vascular remodeling, and immune responses (19, 20). EV
+cargo is increasingly recognized as a valuable source of biomarkers
+for monitoring disease progression with improved detection of
+subtle molecular alterations. Compared with whole−blood analytes,
+plasma−derived EV contents may serve as better biomarkers
+because they are less complex, shielded from degradation, and
+remain stable for extended periods (21, 22).
+EVs have already gained considerable importance as informa-
+tive biomarkers in acute COVID-19, reﬂecting both viral persis-
+tence and host immune responses (23). Emerging evidence
+indicates that EV proﬁles differ between mild and severe disease
+and are closely associated with inﬂammation and immune
+dysregulation, supporting their utility in assessing disease severity
+(14). Our previous proteomic analysis of EVs from patients with
+acute COVID-19 showed enrichment of proinﬂammatory,
+procoagulant, immunoregulatory, and tissue remodeling proteins,
+clearly distinguishing symptomatic patients from uninfected con-
+trols with matched comorbidities (17). Furthermore, EV cargo
+differed between moderate and critical disease severity. Other
+studies have similarly highlighted EVs as a promising liquid
+biopsy platform for integrated diagnosis and monitoring of
+COVID-19 disease progression (14, 24). In this study, we now
+investigate the protein cargo in circulating small EVs (SEVs) from
+PASC positive patients to identify EV-associated biomarkers indic-
+ative of Long-COVID and further understand the pathophysiology
+of PASC.
+Materials and methods
+Human samples and data collection
+Participants classiﬁed as having post−acute sequelae of SARS
+−CoV−2 infection (PASC) (N = 20) were those who reported one or
+more ongoing symptoms persisting beyond 6-9 months after their
+initial infection, except one participant infected 66 days prior, and
+two others infected 85 and 89 days before, respectively. Symptom
+persistence was identiﬁed either through responses to a REDCap
+survey or documentation of continued symptoms during clinical
+follow−up. Reported symptoms included fatigue, post−exertional
+malaise, dyspnea, cough, anosmia or ageusia, fever, myalgias,
+headaches, chest discomfort, cognitive difﬁculties (“brain fog”),
+sleep disturbances, mood changes, rash, and tinnitus. Individuals
+without PASC were selected from participants in the ACTIV−2
+clinical trial who had completed the ﬁrst 24 weeks of study follow
+−up. These participants had a conﬁrmed prior SARS−CoV−2
+infection (PCR−positive) 6-15 months before assessment and
+reported no persistent symptoms (N = 11). One PASC negative
+individual, however, underwent a blood draw at 84 days after acute
+infection. For validation analyses, plasma samples were also ob-
+tained from hospitalized acutely infected patients with a conﬁrmed
+positivity for COVID-19 PCR (N = 10) and from healthy volunteers
+whose samples were collected before the COVID−19 pandemic
+(N = 5). All participants were enrolled through The University of
+Kansas Health System (TUKHS) COVID-19 Biorepository, and
+blood samples were collected in accordance with the protocols
+approved by the Institutional Review Board. Demographic charac-
+teristics, comorbidities, body mass index, interval from last positive
+test to study enrollment, and symptom proﬁles were obtained from
+electronic medical records or participant surveys and stored in a
+secure database. Survey data were collected using REDCap and
+incorporated the standardized World Health Organization (WHO)
+Global COVID−19 Clinical Platform Case Report Form for Post
+−COVID Conditions. Participants completed surveys at enrollment
+and at 3−month intervals thereafter.
+Isolation of small EVs from plasma samples
+EDTA plasma was separated within 4 hours of collection by
+centrifugation at 2000 × g for 15 minutes at 4 °C, aliquoted
+immediately, and stored at −80 °C until analysis. Plasma turbidity
+was monitored; in cases of hemolysis, it was documented, and such
+samples were excluded from EV isolation. Approximately 500 µl of
+frozen EDTA plasma (without prior freeze–thaw cycles) was
+thawed at room temperature and centrifuged at 2500 × g for
+15 min at room temperature to obtain platelet-free plasma (PFP).
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+02
+
+The PFP was subsequently centrifuged at 20,000 × g for 15 min at
+4 °C to pellet large extracellular vesicles, which were removed and
+stored separately. The resulting supernatant was subjected to small
+EV (SEV) isolation via size-exclusion chromatography (qEV orig-
+inal 35 nm columns; Izon Science, Cambridge, MA) as previously
+reported (17). Final SEV preparation was reconstituted in the same
+volume as the starting plasma volume used for isolation of EVs.
+NanoSight nanoparticle tracking analysis (NTA) was used to
+identify EV-enriched fractions, and fractions 7–10 were pooled.
+Pooled SEV fractions were concentrated to a ﬁnal volume of 500 µl
+using Amicon Ultra-4 centrifugal ﬁlters (10 kDa; Millipore
+Sigma, USA).
+Characterization of SEVs
+To assess the size distribution and concentration of SEVs, NTA
+was performed in each sample as described previously (17). Samples
+were diluted 1:100 in phosphate-buffered saline (PBS) and gently
+vortexed before analysis. The diluted suspensions were then intro-
+duced into the sample chamber using a syringe pump. For each
+sample, ﬁve 60-second videos were recorded using NanoSight soft-
+ware (version NTA 3.4) with screen gain set to 4 and camera gain to
+10 during acquisition. A detection threshold of 10 and screen gain of
+10 were used for data processing. Manual focusing was performed to
+optimize visualization and maximize SEV detection.
+Isolated SEVs were lysed using a RIPA lysis buffer for Western
+Blot analysis of EV markers. Approximately 5 mg of SEV lysates
+were resolved on a 12% SDS-PAGE gel and subsequently trans-
+ferred onto an Immobilon-P PVDF membrane. The membranes
+were incubated overnight at 4 °C with primary antibodies against
+established EV markers, including the tetraspanins: CD9, CD81,
+CD63; Integrin b1; and cytosolic proteins: TSG101 and Alix. HRP-
+conjugated IgG secondary antibodies were used for detection.
+Signals were developed using the Pierce ECL and SuperSignal
+West Femto (Thermo Fisher Scientiﬁc, USA), and the images
+were captured with the LI-COR Odyssey Fc imaging system.
+Olink proximity extension analysis
+An equal volume of SEV sample from each PASC-positive
+(n=13) and PASC-negative (n=10) individual was lysed for Olink
+analysis using a proteomic-grade lysis buffer as described in
+previous studies (17, 25). Fifty microliters of lysed SEVs was then
+transferred in a randomized order to a 96-well PCR plate and
+submitted to the Clinical Genomics Center at the Oklahoma
+Medical Research Foundation for analysis. SEV protein cargo was
+proﬁled using the Olink Explore HT panels. Samples were ran-
+domly distributed across the plate, and both assay performance and
+sample quality were monitored using four internal controls. Protein
+abundance was reported as normalized protein expression (NPX)
+values on a log2 scale, where higher NPX values correspond to
+higher protein expression levels. Samples failing technical quality
+metrics or exhibiting abnormally high variability were excluded
+from further analysis. For validation, ELISA kits were obtained
+from Proteintech (Catalog numbers KE00788; KE00168, KE00900;
+KE00039) and the experiments were performed as per the manu-
+facturer’s instructions.
+Statistical analysis
+Differences in protein expression NPX values between PASC-
+positive and PASC-negative groups were assessed using linear
+models for omics data implemented in the limma Bioconductor R
+package (26). The Wilcoxon Rank Sum test was used to compare
+protein levels between participants with or without binary clinical
+symptoms such as shortness of breath, brain fog, and sleep
+disturbance. The protein level changes were visualized using
+heatmaps, and the differential expression analyses were summarized
+with volcano plots. All protein expression analyses were performed
+using R software version 4.5.0. For the SEV concentration mea-
+surement, Student’s t-test analysis was carried out using GraphPad
+Prism 9. A p-value <0.05 was considered statistically signiﬁcant.
+Pathway enrichment analysis
+Gene Ontology (GO) and Kyoto Encyclopedia of Genes and
+Genomes (KEGG) pathway enrichment analyses were performed
+using the Enrichr platform (https://maayanlab.cloud/Enrichr/).
+Canonical pathway analysis was conducted using Ingenuity
+Pathway Analysis (IPA; Qiagen), and Reactome pathway mapping
+was carried out using STRING database version 12.0, followed by
+visualization and network conﬁrmation using Cytoscape. All bio-
+informatics analyses were conducted using the respective tools and
+databases available as of August 2025.
+Results
+Demographic and clinical characteristics
+Demographic and clinical characteristics of participants whose
+plasma-derived SEVs were analyzed by PEA proteomics are sum-
+marized in Table 1. Age, sex, vaccination status, and smoking status
+did not differ between the groups. Although BMI values were
+slightly higher in PASC-positive participants compared with
+PASC-negative controls, the difference was not statistically signif-
+icant. Similarly, the interval between the initial SARS-CoV-2
+positive test and study enrollment appeared shorter among
+PASC-positive individuals; however, this difference was also not
+statistically signiﬁcant. Pulmonary disease, depressive disorder, and
+GERD were more common among PASC-positive participants,
+whereas coronary artery disease was observed only in PASC-
+negative individuals, as shown in Table 1. Other conditions, such
+as diabetes and hypertension, occurred at comparable frequencies
+across groups. Within the PASC-positive cohort, the most fre-
+quently reported persistent symptoms included fatigue (76.9%),
+shortness of breath (69.2%), brain fog (46.2%), sleep disturbances
+(38.5%), musculoskeletal or chest pain (46.2%), and rash (38.5%),
+consistent with established clinical features of post-acute sequelae of
+SARS-CoV-2 infection.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+03
+
+Plasma-derived SEV characterization
+reveals no differences in particle number
+or size between PASC-positive and PASC-
+negative individuals
+SEVs isolated by size exclusion chromatography from PASC-
+positive and PASC-negative plasma samples were evaluated for
+particle concentration and size distribution. Particle size distributions
+were comparable between the groups, with the majority of SEVs falling
+within the 50-200 nm range, as illustrated in Figure 1A. Total SEV
+concentration, normalized per milliliter of plasma or per microgram of
+EV protein, also showed no signiﬁcant differences between the groups
+(Figures 1B, C). Western blotting conﬁrmed the presence of canonical
+EV markers, including tetraspanins, CD9, CD81, and CD63, as well as
+Integrin b1, Alix, and TSG101 (Figure 1D).
+SEV protein cargo exhibits signiﬁcant
+alterations in PASC-positive individuals
+Proteomic proﬁling using the Olink Explore HT platform
+identiﬁed substantial differences in SEV-associated proteins be-
+tween PASC-positive (n = 13) and PASC-negative (n = 10)
+groups. Heatmaps illustrate differential protein expression patterns
+between groups (Figure 2A), with pronounced alterations in the
+TABLE 1 Demographic and clinical characteristics of individuals with and without PASC.
+Characteristics
+PASC positive (N = 13)1
+PASC negative (N = 10)1
+P value
+Age (years)
+44, (32-56)
+57.5, (45-67)
+0.11
+Male
+6 (46%)
+5 (50%)
+Female
+7 (54%)
+5 (50%)
+BMI
+30.13 (26.7-38.1)
+30 (26.1-32.7)
+0.4
+Days between positive test and study enrollment
+180 (126-221)
+261 (181-319)
+0.8
+Hospitalized during an acute infection
+6 (46.15%)
+4 (50.00%)
+>0.9999
+Days of Hospitalization (if applicable)
+4-29
+2-35
+0.8
+COVID-19 Vaccinated
+9 (69.23%)
+6 (60.00%)
+0.685
+Boosted
+6 (46.15%)
+4 (57.14%)
+0.6802
+Co-morbidities
+Diabetes
+2 (15.38%)
+2 (25.00%)
+>0.9999
+Hypertension
+4 (30.77%)
+2 (25.00%)
+0.66
+Congestive Heart Failure
+1 (7.69%)
+1 (12.50%)
+>0.9999
+Coronary Artery Disease
+0 (0.00%)
+3 (37.50%)
+0.0678
+Kidney Disease
+1 (7.69%)
+1 (12.50%)
+>0.9999
+Pulmonary Disease
+5 (38.46%)
+1 (12.50%)
+0.179
+Depressive Disorder
+4 (30.77%)
+1 (12.50%)
+0.3394
+Anxiety
+3 (23.08%)
+0 (0.00%)
+0.2292
+GERD
+4 (30.77%)
+1 (12.50%)
+0.3394
+Smoking Status
+1 (7.7%)
+0 (0.00%)
+>0.9999
+Hyperlipidemia, Hypercholesterolemia, or Dyslipidemia
+3(23.08%)
+1 (12.50%)
+0.6036
+Migraines
+3 (23.08%)
+0 (0.00%)
+0.2292
+PASC symptoms
+Fatigue
+10 (76.92%)
+NA
+Post-exertional malaise
+3 (23.08%)
+NA
+Shortness of Breath
+9 (69.23%)
+NA
+Coughing
+2 (15.38%)
+NA
+Loss of taste or smell
+4 (30.77%)
+NA
+Fever
+1 (7.69%)
+NA
+Body aches, headaches, chest pain, stomach pain
+6 (46.15%)
+NA
+Brain Fog
+6 (46.15%)
+NA
+Sleep Disturbances
+5 (38.46%)
+NA
+Mood Changes
+2 (15.38%)
+NA
+Rash
+5 (38.46%)
+NA
+1n (%); Median (IQR).
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+04
+
+proteins related to prothrombotic activity, apoptosis, cell prolifer-
+ation, complement activation, and inﬂammatory signaling. The
+heatmap highlights differential SEV protein expression between
+groups. Overall, six distinct clusters of protein expression patterns
+were identiﬁed. Notably, one cluster on the top showed a consistent
+downregulation of proteins in the PASC-positive group, while the
+remaining ﬁve clusters exhibited predominant upregulation of SEV
+protein cargo in PASC-positive individuals.
+A volcano plot summarizing the differential expression results
+revealed 269 signiﬁcantly dysregulated proteins (P < 0.05) out of 5,416
+analyzed, among which 210 proteins were at higher levels, while 59
+were reduced in the PASC-positive group (Figure 2B). Notably, 17
+proteins demonstrated >4 fold increase, including WAPL (WAPL
+cohesion release factor), AUNIP (aurora kinase A and ninein interact-
+ing protein), RGS22 (regulator of G protein signaling 22), MEX3D
+(mex-3 RNA binding family member D), ASB6 (ankyrin repeat and
+SOCS box containing 6), and EMC7 (ER membrane protein complex
+subunit 7). Thirteen proteins exhibited fold decrease below 0.58,
+including ADH4 (alcohol dehydrogenase 4, class II, pi polypeptide),
+IL3 (interleukin 3), DDX25 (DEAD-box helicase 25), PLAAT3 (phos-
+pholipase A and acyltransferase 3), and CCDC66 (coiled-coil domain
+containing 66). On the contrary, proteomic proﬁling of SEVs also
+revealed signiﬁcantly reduced levels of CSF2 (GM-CSF), IL-3, and IL-
+13 in the PASC-positive group compared to the PASC-negative group.
+IFIT1 (Interferon-induced protein with tetratricopeptide repeats 1) was
+one of the most prominently downregulated proteins and is a major
+mediator of antiviral immune responses.
+Functional enrichment reveals
+dysregulated coagulation, complement,
+and inﬂammatory pathways in PASC
+Functional enrichment analyses using KEGG, GO, Reactome, and
+IPA databases consistently identiﬁed signiﬁcant dysregulation of in-
+ﬂammatory, thrombotic, and complement pathways among altered
+SEV-associated proteins. Pathways related to apoptosis, immune
+regulation, and cell migration were also enriched, suggesting persistent
+immune activation and impaired tissue homeostasis(Figures 3A–C,
+Figure 4B). IPA further highlighted dysregulation of apoptosis/cell-
+cycle regulation, ﬁbrin clot formation, and immune activation/inﬂam-
+mation signaling cascades. (Figures 3D, 4A). Figure 5A shows a
+comparison of NPX values between groups of markedly elevated
+proteins in SEVs from PASC positive group implicated in coagulation
+and thrombosis, such as FGA, FGG, FN1, PECAM1, HGF, RAB27B,
+STX4, VEGFD, and PRTN3. Additional increased proteins associated
+with apoptosis, and Wnt signaling (CBY1, RSPO3, CASP8, DBNL,
+DFFA, STK24, and FGF1) and those involved in cell-cycle regulation or
+proliferation (ANAPC1, ASB6, FBXO40, MATN3, DMP1, CUL7,
+PSMD9, and PSMB11) are also shown across groups. Complement
+components, CFH, C3, CFP, and C4B, showing elevated levels in the
+PASC-positive group, highlight the complement activation as one of
+the major immunological features. Increased IL17F, IL17RA, IL18, and
+PPP3CA levels in the PASC group further indicate heightened pro-
+inﬂammatory cytokine signaling. S100A12 (ENRAGE), which we
+previously reported as one of the top-ranked inﬂammatory proteins
+associated with COVID-19 disease severity and prolonged hospitaliza-
+tion, also remained persistently elevated in SEVs from PASC-positive
+individuals. However, this increase did not reach statistical signiﬁcance,
+likely due to the small sample size and the heterogeneity of symptoms
+within the PASC-positive cohort. STRING network analysis demon-
+strated extensive molecular interconnectivity among differentially ex-
+pressed proteins (Figure 5B). Collectively, these results indicate that
+SEVs from PASC patients are enriched for proteins involved in
+immune and inﬂammatory signaling, coagulation cascades, apoptosis,
+and cell-cycle regulation.
+Symptom-associated SEV proteomic
+signatures in PASC-positive individuals
+Exploratory Wilcoxon rank-sum analyses, without multiple
+testing adjustments, identiﬁed four proteins: NOL4L, STK24,
+PRTN3, and IL17RA, signiﬁcantly associated with self-reported
+FIGURE 1
+Characterization of plasma-derived small extracellular vesicles (SEVs) from PASC-positive (n = 13) and PASC-negative (n = 10) patients. SEVs were
+isolated from 0.5 ml of platelet-free EDTA plasma. (A) A representative line diagram of EV size distribution and (B) Nanoparticle tracking analysis
+(NTA) of total SEV counts expressed as particles per ml of the ﬁnal EV suspension; and (C) SEV counts per ug of EV protein in each group using
+NanoSight nanoparticle tracking analyzer. (D) Representative western blot images showing EV-speciﬁc markers in the EV lysate from PASC samples.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+05
+
+brain fog in PASC-positive individuals, suggesting potential in-
+volvement of inﬂammatory signaling pathways relevant to
+neurocognitive impairment. Sleep disturbance was associated with
+IFIT1, AUNIP, METTL16, PPP3CA, and RGS22 proteins
+implicated in immune activation, complement activation, cell
+cycle regulation, and coagulation. These associations highlight
+broad systemic immune and metabolic perturbations contributing
+to the symptom burden in PASC.
+FIGURE 2
+Proximity extension analysis (PEA) of circulating SEVs in PASC patients. EDTA plasma samples from PASC-positive (n = 13) and PASC-negative (n =
+10) individuals were analyzed to compare SEV-associated protein cargo using Olink’s multiplex PEA technology. (A) A heatmap with hierarchical
+clustering displays signiﬁcantly altered EV proteins between the two groups (P<0.05). (B) Volcano plots illustrate pairwise post hoc comparisons of
+SEV protein cargo, with −log10 (P value) plotted against the mean difference. Differentially altered proteins with P < 0.05 are highlighted in red.
+Positive and negative log 2 fold change values indicate upregulated and downregulated proteins, respectively.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+06
+
+Validation and comparison of PASC-
+associated SEV protein signatures with
+acute COVID-19 SEVs and matched plasma
+We next validated four of the signiﬁcantly altered PASC-
+positive signature proteins, which were previously reported as
+dysregulated in SEVs from hospitalized individuals with acute
+COVID-19 (17), to conﬁrm whether speciﬁc acute- phase protein
+signatures persist into the post-acute period and contribute to
+PASC. As shown in Figure 6, SEVs from PASC−positive individuals
+exhibited signiﬁcantly elevated levels of FN1, HCF−H, HGF, and IL
+−17RA compared with both PASC−negative participants and
+healthy controls, as measured by ELISA. Consistent with prior
+observations, SEVs from acute COVID−19 patients also showed
+higher levels of these proteins relative to PASC−negative and
+healthy groups. Although HCF-H and IL-17RA levels declined
+FIGURE 3
+The top 10 signiﬁcantly enriched pathways of signiﬁcantly altered SEV-proteins between PASC-positive and PASC-negative groups (P<0.05) based
+on (A) KEGG, (B) Gene ontology biological process, (C) REACTOME, and (D) IPA analysis. Relevant biological processes are highlighted in yellow.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+07
+
+signiﬁcantly from the acute to the PASC positive phase, FN1 and
+HGF levels not only remained elevated but showed a slight
+further increase.
+Parallel analysis of corresponding plasma samples showed that
+FN1 and HCF-H levels were signiﬁcantly elevated in PASC-positive
+plasma compared with PASC-ve and healthy donors, while HGF
+and IL17RA showed no signiﬁcant differences across groups
+(Figure 6). Although FN1, HGF, and HCF-H were present at
+substantially higher absolute concentrations in plasma, approxi-
+mately 4-40-fold greater than in plasma-derived SEVs, SEV-based
+comparisons demonstrated better discrimination between PASC-
+positive and PASC-negative individuals. In particular, HGF and
+IL17RA exhibited signiﬁcant alterations exclusively in SEVs but not
+in matched plasma samples, with higher concentrations of IL-17RA
+in SEVs than plasma, underscoring the enhanced sensitivity of SEV-
+associated proteins for distinguishing PASC status. Furthermore,
+the median fold difference for HCF-H between PASC-positive and
+PASC-negative groups was nearly twice in SEVs (4.6-fold) than in
+plasma (2.3-fold). Collectively, these ﬁndings suggest that SEVs
+may offer better discrimination of certain disease-associated mo-
+lecular alterations compared with direct plasma analysis.
+Discussion
+In this study, we compared the plasma-derived SEV-associated
+protein cargo of individuals with and without PASC and identiﬁed
+clear molecular differences that highlight inﬂammation, coagulation
+abnormalities, complement activation, and cell-cycle dysregulation.
+Persistent elevations of certain proteins previously dysregulated in
+acute COVID-19 were far more pronounced in SEVs than in
+matched plasma, with some showing signiﬁcant changes only in
+the SEV compartment. These SEV-linked alterations, strongly
+differentiating PASC-positive individuals from PASC-negative in-
+dividuals, underscore the importance of SEVs as indicators of
+ongoing pathophysiological processes.
+Extracellular vesicles have been widely recognized as critical medi-
+ators in COVID-19 by contributing to both the hyperinﬂammatory and
+pro-thrombotic state that characterizes severe acute infection (27). Prior
+work, including our own, demonstrated that the plasma EVs from acute
+COVID-19 patients are enriched in pro-inﬂammatory and pro-throm-
+botic proteins such as tissue factor, complement components, and
+endothelial markers (17, 28, 29) and can directly trigger apoptosis in
+endothelial cells (17). Other studies similarly showed that circulating EVs
+FIGURE 4
+(A) IPA disease and function plot and (B) Voronoi diagram from the REACTOME tool depicting the interactions and relationships of the 269
+signiﬁcantly dysregulated proteins (P<0.05) between PASC-positive and PASC-negative groups. It shows predicted biological functions, diseases, and
+pathways. Each polygon/square (tile) represents a function or pathway, with the tile size proportional to the number of associated proteins. Tiles
+positioned closer together indicate functions that share molecular overlaps or are biologically related. (A) In IPA Colors reﬂect predicted activity
+states, where orange/red indicates activation, blue denotes inhibition, and white/gray corresponds to no signiﬁcant prediction.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+08
+
+from critically ill COVID-19 patients drive lung inﬂammation and
+promote macrophage polarization toward a pro-inﬂammatory M1
+phenotype (30). Collectively, these ﬁndings establish EVs as active
+participants in acute COVID-19 pathogenesis.
+Emerging evidence now extends the role of EVs in the patho-
+physiology of Long-COVID or PASC by acting as persistent carriers
+of viral and inﬂammatory molecules. EVs containing viral compo-
+nents may facilitate the systemic spread of the virus, evade immune
+surveillance, and allow delivery of viral proteins to cells without
+relying solely on conventional receptor-mediated entry mechanisms
+(31, 32). Our previous work demonstrated the persistent presence of
+SARS-CoV-2 spike protein within circulating SEVs from PASC
+patients up to a year or longer post-infection (33), while individuals
+without PASC showed decline or clearance. This persistent presence
+of spike-containing SEVs may serve as an ongoing trigger for
+immune dysregulation in PASC (33). In the present study, we
+used a high-throughput proteomic approach to understand the
+alterations in the SEV cargo associated with the development
+of PASC.
+The SEV proteome of PASC-positive individuals revealed
+enrichment in proteins linked to inﬂammation, coagulation, and
+complement activation. These ﬁndings align well with multiple
+recent reports implicating persistent immune activation in PASC
+(34–38). Multiple proteins associated with apoptosis, cell cycle
+dysregulation, and lung injury were also elevated, consistent with
+plasma biomarker signatures described in PASC samples reporting
+breathlessness (36). Complement components such as C4b, FGG,
+and CFP, previously reported to be dysregulated during acute
+COVID-19 and contributing to thrombo-inﬂammation, were sim-
+ilarly elevated in PASC SEVs, further supporting the concept of a
+sustained complement-coagulation imbalance in long COVID (39–
+41). SEVs from individuals with PASC showed signiﬁcantly higher
+levels of FN1, HCF-H, HGF, and IL-17RA compared with both
+PASC-negative participants and healthy controls. These ﬁndings
+mirror patterns previously observed in hospitalized patients during
+acute COVID-19 (17). While HCF-H, and IL-17RA levels dropped
+from the acute phase to the post-acute period, FN1 and HGF
+remained elevated, suggesting that certain acute-phase protein
+signatures persist and may contribute to ongoing PASC biology.
+This is even more interesting as the acute COVID-19 cohort that
+was compared for validation studies consisted entirely of hospital-
+ized patients, whereas most of the individuals in the PASC cohort
+FIGURE 5
+(A) Box-and-whisker plots showing differences in the levels of SEV-associated proteins related to inﬂammatory, thrombotic, apoptotic, and ﬁbrotic
+pathways between PASC -positive and -negative groups. Plot displays normalized protein expression (NPX) on a log2 scale. The boxes represent the
+interquartile range (Q1–Q3) with the median shown as a line within the box, while the whiskers extend up to 1.5 times the IQR. Corresponding P
+values are indicated above each plot. (B) STRING protein-protein interaction network illustrating molecular interactions among the identiﬁed targets.
+Nodes denote proteins, while lines represent functional and physical associations derived from experimental evidence, curated databases, and
+predicted interactions.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+09
+
+had mild initial infections. Altogether, the persistence of molecules
+implicated in acute COVID-19 biology within SEVs suggests a
+potential mechanistic link between EV cargo and the chronic
+features observed in PASC.
+Furthermore, cytokines primarily involved in immune-cell
+maintenance, immunoregulatory signaling, and homeostatic
+immune responses, such as IFIT1, CSF2 (GM-CSF), IL-3, and IL-
+13 (42–45) were reduced in the PASC-positive group. IFIT1, also
+known as ISG56, which acts as a critical host anti-viral protein,
+including SARS-CoV-2 (46) was also markedly low in the PASC-
+positive SEVs. The coordinated downregulation of these proteins
+suggests altered immune-homeostatic signaling and compromised
+antiviral response in PASC-positive individuals.
+Although numerous plasma- and serum-based proteomic stud-
+ies have identiﬁed inﬂammatory, coagulopathic, and vascular pro-
+liferative pathways associated with PASC (37, 38, 47, 48), EV-based
+proﬁling may offer greater sensitivity for detecting persistent
+abnormalities. A notable multiplex study comparing plasma and
+plasma-derived EVs collected from COVID-19 survivors and un-
+infected controls 15 months after acute SARS-CoV-2 infection
+found elevated pro-inﬂammatory cytokines and neuroﬁlament
+proteins in EVs but not in the plasma of COVID-19 survivors.
+Similarly, we observed stronger differences between PASC-positive
+and PASC-negative SEVs compared to matched plasma, particu-
+larly HGF and IL-17RA, which were signiﬁcantly altered in SEVs
+but not in plasma. Additionally, IL-17RA levels were found to be
+higher in SEVs compared to plasma, and this could be because IL-
+17RA is a membrane-bound receptor protein, and therefore effec-
+tively detected in SEVs than in plasma. This suggests the impor-
+tance of EVs in the persistence of immune activation post-COVID
+infection (49) and highlights the unique ability of EVs to capture
+subtle biological disturbances.
+Circulating EVs have also been shown to mediate endothelial
+dysfunction in PASC, reinforcing their pathogenic contribution
+(50). EV protein proﬁling importance is further highlighted from a
+study comparing mitochondrial proteins in the plasma-derived EVs
+across uninfected individuals, acute-COVID, PASC-positive, and
+PASC-negative groups (51). This study demonstrated that abnor-
+mal levels of mitochondrial proteins in EVs during acute infection
+may serve as a predictor of future PASC development. Additionally,
+persistent alterations of these mitochondrial proteins in EVs from
+PASC -positive individuals were associated with neuropsychiatric
+symptoms (51).
+Our symptom−speciﬁc analysis of SEV−associated proteins iden-
+tiﬁed molecular patterns that were associated with particular PASC
+symptoms. Brain fog corresponded to higher levels of NOL4L,
+STK24, PRTN3, and IL17RA, suggesting involvement of stress−re-
+sponsive signaling, apoptosis, neuroinﬂammation, and blood–brain
+barrier injury (52–56). Sleep disturbance was associated with in-
+creased IFIT1, AUNIP, METTL16, PPP3CA, and RGS22, pointing
+FIGURE 6
+(A) Levels of FN1, HCF-H, HGF, and IL17RA in SEVs from Acute COVID-19 (n=10), PASC-positive ((n=20)), PASC-negative ((n=11)), and healthy
+individuals ((n=5)) using ELISA. (B) Comparison of FN1, HCF-H, HGF, and IL17RA levels across plasma from PASC-positive, PASC-negative, and
+healthy donor groups as measured by ELISA. p > 0.05; *p < 0.033; **p < 0.002; ***p < 0.001.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+10
+
+toward antiviral activity, cell−cycle regulation, RNA methylation, and
+cerebrospinal ﬂuid-related homeostasis (45, 57–60).
+These symptom−linked signatures suggest that SEVs reﬂect
+activation of inﬂammatory and stress−related pathways in PASC-
+positive individuals experiencing brain fog and sleep disturbances.
+However, these ﬁndings should be interpreted cautiously due to the
+study’s sample size and the multifactorial nature of symptoms that
+overlap with many inﬂammatory, neurological, and metabolic
+conditions. Another key limitation is that PASC-positive partici-
+pants were identiﬁed through self-reported symptoms, introducing
+the possibility of misclassiﬁcation. In addition, many participants
+had comorbidities, making it difﬁcult to determine whether their
+symptoms reﬂected true PASC or simply the worsening of under-
+lying chronic conditions.
+Overall, our ﬁndings support the hypothesis that circulating
+SEVs contribute to PASC pathophysiology and carry biomarker
+candidates reﬂecting immune, vascular, and neurological abnor-
+malities. Future studies in larger, clinically well-characterized co-
+horts, including comparisons between PASC individuals with and
+without organ-speciﬁc symptom clusters, will be essential to vali-
+date these associations. In conclusion, this study highlights a
+potential role of SEVs and their molecular cargo in the inﬂamma-
+tory, thrombotic, coagulopathic, and endothelial abnormalities
+characteristic of PASC. Targeting SEV-associated pathways or
+leveraging SEV cargo as minimally invasive biomarkers may ulti-
+mately improve diagnostic accuracy and guide therapeutic strate-
+gies for Long-COVID.
+Data availability statement
+Original datasets are available in a publicly accessible reposi-
+tory: This data can be found here: https://doi.org/10.5281/
+zenodo.21283519.
+Ethics statement
+The studies involving humans were approved by University of
+Kansas Medical Center Institutional Review Board, IRB #
+STUDY00145888. The studies were conducted in accordance with
+the local legislation and institutional requirements. The participants
+provided their written informed consent to participate in this study.
+Author contributions
+SC: Data curation, Formal analysis, Investigation, Methodology,
+Software, Validation, Writing – original draft. LC: Formal analysis,
+Investigation, Methodology, Validation, Writing – review & editing.
+PC: Data curation, Formal analysis, Investigation, Methodology,
+Software, Validation, Writing – review & editing. AR: Investigation,
+Methodology, Writing – review & editing. LS: Data curation,
+Resources, Writing – review & editing. ND: Conceptualization,
+Data curation, Formal analysis, Funding acquisition, Investigation,
+Project administration, Resources, Supervision, Validation, Writing –
+review & editing, Writing – original draft.
+Funding
+The author(s) declared that ﬁnancial support was received for
+this work and/or its publication. The study was in part supported by
+grants from the National Institute of Health (R01HL152832), the
+American Lung Association (ALA) Emerging Respiratory Pathogen
+Award (1252860), and the American Heart Association
+Transformational Project Award (25TPA1479956) awarded
+to N.K.D.
+Conﬂict of interest
+The author(s) declared that this work was conducted in the
+absence of any commercial or ﬁnancial relationships that could be
+construed as a potential conﬂict of interest.
+Generative AI statement
+The author(s) declared that generative AI was used in the
+creation of this manuscript. Grammarly, co-pilot for proofreading.
+Any alternative text (alt text) provided alongside ﬁgures in this
+article has been generated by Frontiers with the support of artiﬁcial
+intelligence and reasonable efforts have been made to ensure
+accuracy, including review by the authors wherever possible. If
+you identify any issues, please contact us.
+Publisher’s note
+All claims expressed in this article are solely those of the authors
+and do not necessarily represent those of their afﬁliated organizations,
+or those of the publisher, the editors and the reviewers. Any product
+that may be evaluated in this article, or claim that may be made by its
+manufacturer, is not guaranteed or endorsed by the publisher.
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+11
+
+References
+1. O'Mahoney LL, Routen A, Gillies C, Ekezie W, Welford A, Zhang A, et al.
+Corrigendum to "The prevalence and long-term health effects of long Covid among
+hospitalised and non-hospitalised populations: a systematic review and meta-analysis.
+EClinicalMedicine. (2023) 59:101959. doi: 10.1016/j.eclinm.2023.101959
+2. Hou Y, Gu T, Ni Z, Shi X, Ranney ML, Mukherjee B. Global prevalence of long
+COVID, its subtypes and risk factors: An updated systematic review and meta-analysis.
+medRxiv. (2025) medRxiv 2025.01.01.24319384. doi: 10.1101/2025.01.01.24319384
+3. Cutler DM. The costs of long COVID. JAMA Health Forum. (2022) 3:e221809.
+doi: 10.1001/jamahealthforum.2022.1809
+4. Davis HE, Assaf GS, McCorkell L, Wei H, Low RJ, Re'em Y, et al. Characterizing
+long COVID in an international cohort: 7 months of symptoms and their impact.
+EClinicalMedicine. (2021) 38:101019. doi: 10.1016/j.eclinm.2021.101019
+5. Kenny G, Townsend L, Savinelli S, Mallon PWG. Long COVID: Clinical charac-
+teristics, proposed pathogenesis and potential therapeutic targets. Front Mol Biosci.
+(2023) 10:1157651. doi: 10.3389/fmolb.2023.1157651
+6. Simon M, Simmons JE. A review of respiratory post-acute sequelae of COVID-19
+(PASC) and the potential beneﬁts of pulmonary rehabilitation. R I Med J. (2022) 105:11–5.
+7. Cahan J, Finley JA, Cotton E, Orban ZS, Jimenez M, Weintraub S, et al. Cognitive
+functioning in patients with neuro-PASC: the role of fatigue, mood, and hospitalization
+status. Front Neurol. (2024) 15:1401796. doi: 10.3389/fneur.2024.1401796
+8. Baslet G, Aybek S, Ducharme S, Modirrousta M, Nicholson TR. Neuropsychiatry's
+role in the postacute sequelae of COVID-19: Report from the American
+Neuropsychiatric Association Committee on Research. J Neuropsychiatry Clin
+Neurosci. (2022) 34:341–50. doi: 10.1176/appi.neuropsych.21080209
+9. Wang SY, Adejumo P, See C, Onuma OK, Miller EJ, Spatz ES. Characteristics of
+patients referred to a cardiovascular disease clinic for post-acute sequelae of SARS-
+CoV-2 infection. Am Heart J Plus. (2022) 18:100176. doi: 10.1016/j.ahjo.2022.100176
+10. Raman B, Bluemke DA, Lüscher TF, Neubauer S. Long COVID: post-acute
+sequelae of COVID-19 with a cardiovascular focus. Eur Heart J. (2022) 43:1157–72.
+doi: 10.1093/eurheartj/ehac031
+11. Szczerbiński Ł, Okruszko MA, Szabłowski M, Sołomacha S, Sowa P, Kiszkiel Ł, et al.
+Long-term effects of COVID-19 on the endocrine system - a pilot case-control study.
+Front Endocrinol (Lausanne). (2023) 14:1192174. doi: 10.3389/fendo.2023.1192174
+12. Suwanwongse K, Shabarek N. Newly diagnosed diabetes mellitus, DKA, and
+COVID-19: Causality or coincidence? A report of three cases. J Med Virol. (2021)
+93:1150–3. doi: 10.1002/jmv.26339
+13. Nalbandian A, Sehgal K, Gupta A, Madhavan MV, McGroder C, Stevens JS, et al. Post-
+acute COVID-19 syndrome. Nat Med. (2021) 27:601–15. doi: 10.1038/s41591-021-01283-z
+14. Tertel T, Tomić S, Đokić J, Radojević D, Stevanović D, Ilić N, et al. Serum-derived
+extracellular vesicles: Novel biomarkers reﬂecting the disease severity of COVID-19
+patients. J Extracell Vesicles. (2022) 11:e12257. doi: 10.1002/jev2.12257
+15. Paes Leme AF, Yokoo S, Normando AGC, Ormonde JVS, Domingues RR, Cruz FF,
+et al. Proteomics of serum-derived extracellular vesicles are associated with the severity
+and different clinical proﬁles of patients with COVID-19: An exploratory secondary
+analysis. Cytotherapy. (2024) 26:444–55. doi: 10.1016/j.jcyt.2024.02.001
+16. Hambo S, Harb H. Extracellular vesicles and their role in lung infections. Int J Mol
+Sci. (2023) 24(22):16139. doi: 10.3390/ijms242216139
+17. Krishnamachary B, Cook C, Kumar A, Spikes L, Chalise P, Dhillon NK. Extracellular
+vesicle-mediated endothelial apoptosis and EV-associated proteins correlate with
+COVID-19 disease severity. J Extracell Vesicles. (2021) 10:e12117. doi: 10.1002/jev2.12117
+18. Rizzuto AS, Faggiano A, Macchi C, Carugo S, Perrino C, Ruscica M. Extracellular
+vesicles in cardiomyopathies: A narrative review. Heliyon. (2024) 10:e23765.
+doi: 10.1016/j.heliyon.2023.e23765
+19. Kumar MA, Baba SK, Sadida HQ, Marzooqi SA, Jerobin J, Altemani FH, et al.
+Extracellular vesicles as tools and targets in therapy for diseases. Signal Transduct
+Target Ther. (2024) 9:27. doi: 10.1038/s41392-024-01735-1
+20. Lim CZJ, Natalia A, Sundah NR, Shao H. Biomarker organization in circulating
+extracellular vesicles: New applications in detecting neurodegenerative diseases. Adv
+Biosyst. (2020) 4:e1900309. doi: 10.1002/adbi.201900309
+21. Min L, Zhu S, Chen L, Liu X, Wei R, Zhao L, et al. Evaluation of circulating small
+extracellular vesicles derived miRNAs as biomarkers of early colon cancer: a compar-
+ison with plasma total miRNAs. J Extracell Vesicles. (2019) 8:1643670. doi: 10.1080/
+20013078.2019.1643670
+22. Ghosh M, Bayat AH, Pearse DD. Small extracellular vesicles in neurodegenerative
+disease: Emerging roles in pathogenesis, biomarker discovery, and therapy. Int J Mol
+Sci. (2025) 26(15):7246. doi: 10.3390/ijms26157246
+23. Saleem M, Chang CW, Qadeer A, Asiri M, Alzahrani FM, Alzahrani KJ, et al. The
+emerging role of extracellular vesicles in viral transmission and immune evasion. Front
+Immunol. (2025) 16:1634758. doi: 10.3389/ﬁmmu.2025.1634758
+24. Yim KHW, Borgoni S, Chahwan R. Serum extracellular vesicles proﬁling is
+associated with COVID-19 progression and immune responses. J Extracell Biol.
+(2022) 1:e37. doi: 10.1002/jex2.37
+25. Larssen P, Wik L, Czarnewski P, Eldh M, Löf L, Ronquist KG, et al. Tracing cellular
+origin of human exosomes using multiplex proximity extension assays. Mol Cell
+Proteomics. (2017) 16:502–11. doi: 10.1074/mcp.a116.064725
+26. Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. limma powers
+differential expression analyses for RNA-sequencing and microarray studies. Nucleic
+Acids Res. (2015) 43:e47. doi: 10.1093/nar/gkv007
+27. Schiavello M, Vizio B, Bosco O, Pivetta E, Mariano F, Montrucchio G, et al.
+Extracellular vesicles: New players in the mechanisms of sepsis- and COVID-19-related
+thromboinﬂammation. Int J Mol Sci. (2023) 24(3):1920. doi: 10.3390/ijms24031920
+28. Aharon A, Dangot A, Kinaani F, Zavaro M, Bannon L, Bar-Lev T, et al.
+Extracellular vesicles of COVID-19 patients reﬂect inﬂammation, thrombogenicity,
+and disease severity. Int J Mol Sci. (2023) 24(6):5918. doi: 10.3390/ijms24065918
+29. Moraes E, Martins-Gonçalves R, da Silva LR, Mandacaru SC, Melo RM, Azevedo-
+Quintanilha I, et al. Proteomic proﬁle of procoagulant extracellular vesicles reﬂects
+complement system activation and platelet hyperreactivity of patients with severe
+COVID-19. Front Cell Infect Microbiol. (2022) 12:926352. doi: 10.3389/fcimb.
+2022.926352
+30. Qian H, Zang R, Zhang R, Zheng G, Qiu G, Meng J, et al. Circulating extracellular
+vesicles from severe COVID-19 patients induce lung inﬂammation. mSphere. (2024) 9:
+e0076424. doi: 10.1128/msphere.00764-24
+31. Xia B, Pan X, Luo RH, Shen X, Li S, Wang Y, et al. Extracellular vesicles mediate
+antibody-resistant transmission of SARS-CoV-2. Cell Discov. (2023) 9:2. doi: 10.1038/
+s41421-022-00510-2
+32. Troyer Z, Alhusaini N, Tabler CO, Sweet T, de Carvalho KIL, Schlatzer DM, et al.
+Extracellular vesicles carry SARS-CoV-2 spike protein and serve as decoys for
+neutralizing antibodies. J Extracell Vesicles. (2021) 10:e12112. doi: 10.1002/jev2.12112
+33. Craddock V, Mahajan A, Spikes L, Krishnamachary B, Ram AK, Kumar A, et al.
+Persistent circulation of soluble and extracellular vesicle-linked Spike protein in
+individuals with postacute sequelae of COVID-19. J Med Virol. (2023) 95:e28568.
+doi: 10.1002/jmv.28568
+34. Hanson BA, Visvabharathy L, Orban ZS, Jimenez M, Batra A, Liotta EM, et al.
+Plasma proteomics show altered inﬂammatory and mitochondrial proteins in patients
+with neurologic symptoms of post-acute sequelae of SARS-CoV-2 infection. Brain
+Behav Immun. (2023) 114:462–74. doi: 10.1016/j.bbi.2023.08.022
+35. Yang H, Guan L, Xue Y, Li X, Gao L, Zhang Z, et al. Longitudinal multi-omics
+analysis of convalescent individuals with respiratory sequelae 6-36 months after
+COVID-19. BMC Med. (2025) 23:134. doi: 10.1186/s12916-025-03971-w
+36. Gao Y, Cai C, Adamo S, Biteus E, Kamal H, Dager L, et al. Identiﬁcation of soluble
+biomarkers that associate with distinct manifestations of long COVID. Nat Immunol.
+(2025) 26:692–705. doi: 10.21203/rs.3.rs-4466781/v1
+37. Iosef C, Knauer MJ, Nicholson M, Van Nynatten LR, Cepinskas G, Draghici S, et al.
+Plasma proteome of long-COVID patients indicates HIF-mediated vasculo-prolifera-
+tive disease with impact on brain and heart function. J Transl Med. (2023) 21:377.
+doi: 10.1186/s12967-023-04149-9
+38. Talla A, Vasaikar SV, Szeto GL, Lemos MP, Czartoski JL, MacMillan H, et al.
+Persistent serum protein signatures deﬁne an inﬂammatory subcategory of long
+COVID. Nat Commun. (2023) 14:3417. doi: 10.1038/s41467-023-38682-4
+39. Kumari B, Hajela K, Ali A, Sharma AK, Yadav RK, Ranjan A, et al. Evaluation of
+C4b as an adjunct marker in symptomatic RT-PCR negative Covid-19 cases. Indian J
+Clin Biochem. (2023) 38:102–9. doi: 10.1007/s12291-022-01033-z
+40. Liu S, Shi H, Yang Y, Zhu C, Zhou J, Jin W, et al. Bioinformatics analysis of the
+proteome in the pathway of complement and coagulation cascades in COVID-19:
+discovering potential biomarkers of FGB and SERPINA5. BMC Infect Dis. (2025)
+25:1252. doi: 10.1186/s12879-025-11598-8
+41. Boussier J, Yatim N, Marchal A, Hadjadj J, Charbit B, El Sissy C, et al. Severe
+COVID-19 is associated with hyperactivation of the alternative complement pathway. J
+Allergy Clin Immunol. (2022) 149:550–556.e2. doi: 10.1016/j.jaci.2021.11.004
+42. Becher B, Tugues S, Greter M. GM-CSF: From growth factor to central mediator of
+tissue inﬂammation. Immunity. (2016) 45:963–72. doi: 10.1016/j.immuni.2016.10.026
+43. Willinger T, Rongvaux A, Takizawa H, Yancopoulos GD, Valenzuela DM, Murphy
+AJ, et al. Human IL-3/GM-CSF knock-in mice support human alveolar macrophage
+development and human immune responses in the lung. Proc Natl Acad Sci USA.
+(2011) 108:2390–5. doi: 10.1073/pnas.1019682108
+44. Bernstein ZJ, Shenoy A, Chen A, Heller NM, Spangler JB. Engineering the IL-4/IL-13
+axis for targeted immune modulation. Immunol Rev. (2023) 320:29–57. doi: 10.1111/
+imr.13230
+45. Sun L, Wang X, Zhou Y, Zhou RH, Ho WZ, Li JL. Exosomes contribute to the
+transmission of anti-HIV activity from TLR3-activated brain microvascular endothelial
+cells to macrophages. Antiviral Res. (2016) 134:167–71. doi: 10.1016/j.antiviral.2016.
+07.013
+46. Schindewolf C, Lokugamage K, Vu MN, Johnson BA, Scharton D, Plante JA, et al.
+SARS-CoV-2 uses nonstructural protein 16 to evade restriction by IFIT1 and IFIT3. J
+Virol. (2023) 97:e0153222. doi: 10.1128/jvi.01532-22
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+12
+
+47. Wei Y, Gu H, Ma J, Mao X, Wang B, Wu W, et al. Proteomic and metabolomic
+proﬁling of plasma uncovers immune responses in patients with long COVID-19. Front
+Microbiol. (2024) 15:1470193. doi: 10.3389/fmicb.2024.1470193
+48. Liu J, Guo L, Zhong J, Wu Y, Wang X, Tang X, et al. Proteomic analysis of 442 clinical
+plasma samples from individuals with symptom records revealed subtypes of convalescent
+patients who had COVID-19. J Med Virol. (2025) 97:e70203. doi: 10.1002/jmv.70203
+49. Bachiller S, Vitallé J, Camprubı́-Ferrer L, Garcı́a M, Gallego I, López-Garcı́a M,
+et al. SARS-CoV-2 post-acute sequelae linked to inﬂammation via extracellular vesicles.
+Front Immunol. (2025) 16:1501666. doi: 10.3389/ﬁmmu.2025.1501666
+50. Bobato GR, Rocha JQ, Guizoni DM, Nóbrega NRC, Moura LD, Rocha ML, et al.
+Extracellular vesicles from post-COVID-19 patients alter endothelial function under
+protein restriction. Am J Physiol Cell Physiol. (2025) 329:C1121–c1129. doi: 10.1152/
+ajpcell.00450.2025
+51. Goetzl EJ, Yao PJ, Kapogiannis D. Prediction of post-acute-sequelae of COVID-19
+by cargo protein biomarkers of blood total extracellular vesicles in acute COVID-19.
+Am J Med. (2023) 136:824–9. doi: 10.1016/j.amjmed.2023.03.026
+52. Flandreau EI, Nguyen DM, Hagenauer MH, Nguyen M, Kim H, Duan T, et al.
+Effect of chronic stress on whole blood transcriptome: A meta-analysis of publicly
+available datasets from rodent models. bioRxiv. (2025) bioRxiv 2025.05.30.657043.
+doi: 10.1101/2025.05.30.657043
+53. Yang J, Jiang Q, Yu X, Xu T, Wang Y, Deng J, et al. STK24 modulates excitatory
+synaptic transmission in epileptic hippocampal neurons. CNS Neurosci Ther. (2020)
+26:851–61. doi: 10.1111/cns.13391
+54. Wu KY, Tsao CH, Su NC, Deng SM, Huang GJ. Stk24 deﬁciency causes disrupted
+hippocampal neurogenesis and anxiety-like behavior in mice. Commun Biol. (2025)
+8:663. doi: 10.1038/s42003-025-08035-6
+55. Martonik D, Parﬁeniuk-Kowerda A, Rogalska M, Flisiak R. The role of Th17
+response in COVID-19. Cells. (2021) 10(6):1550. doi: 10.3390/cells10061550
+56. Park SE, Ferreira AFF, Kwon H, Yu J, Diniz L, Ulrich H, et al. The role of
+interleukin-17 in neurological disorders. Anim Cells Syst (Seoul). (2025) 29:372–86.
+doi: 10.1080/19768354.2025.2510994
+57. Ma C, Kang W, Yu L, Yang Z, Ding T. AUNIP expression is correlated with
+immune inﬁltration and is a candidate diagnostic and prognostic biomarker for
+hepatocellular carcinoma and lung adenocarcinoma. Front Oncol. (2020) 10:590006.
+doi: 10.3389/fonc.2020.590006
+58. Yang Z, Liang X, Fu Y, Liu Y, Zheng L, Liu F, et al. Identiﬁcation of AUNIP as a
+candidate diagnostic and prognostic biomarker for oral squamous cell carcinoma.
+EBioMedicine. (2019) 47:44–57. doi: 10.1016/j.ebiom.2019.08.013
+59. Holton SE, Stanaway IB, Hu A, Morrell ED, Chalian H, Pipavath S, et al. Interferon
+and immune response pathways are associated with mortality in proteomic and
+transcriptomic analyses of lower respiratory tract samples in patients with severe
+COVID-19. Am J Respir Crit Care Med. (2025) 211:A3490–0. doi: 10.1164/
+ajrccm.2025.211.abstracts.a3490
+60. Favaro J, Iodice A, Nosadini M, Asta F, Toldo I, Ancona C, et al. PPP3CA gene-
+related developmental and epileptic encephalopathy: Expanding the electro-clinical
+phenotype. Seizure. (2024) 121:253–61. doi: 10.1016/j.seizure.2024.08.017
+Chandran et al.
+10.3389/fimmu.2026.1805159
+Frontiers in Immunology
+frontiersin.org
+13

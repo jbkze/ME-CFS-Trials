@@ -1,0 +1,1446 @@
+Molecular, cellular and network mapping of brain structural deviations in 
+patients with Post-COVID19 syndrome
+Daniel Martins a,b,c,*
+, Ziyuan Cai a, Nicole Mariani d, Alessandra Borsini d, Valeria Mondelli d,  
+Brandi Eiff a, Silvia Rota a, Daniel van Wamelen a,e, Timothy Nicholson f, Laila Rida a,  
+Adam Hampshire a, Lia Fernandes b,c, Fernando Zelaya a, Aleksandra Podlewska e,  
+Ray Chaudhuri e, Federico Turkheimer a,g, Steven C.R. Williams a, Mattia Veronese a,h
+a Department of Neuroimaging, Institute of Psychiatry, Psychology and Neuroscience, King's College London, UK
+b Department of Clinical Neurosciences and Mental Health, Faculty of Medicine, University of Porto, Portugal
+c RISE-HEALTH (Neurosciences Thematic Line) Department of Clinical Neurosciences and Mental Health, Faculty of Medicine, University of Porto, Portugal
+d Department of Psychological Medicine, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK
+e King's College Hospital NHS Foundation Trust, UK
+f Department of Psychosis Studies, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK
+g Institute for Human and Synthetic Minds, King's College London, UK
+h Department of Biomedical Engineering, University of Padova, Italy
+A B S T R A C T
+Post-COVID-19 syndrome encompasses persistent cognitive, neurological, and psychiatric symptoms following SARS-CoV-2 infection, profoundly affecting global 
+quality of life. Clarifying the neurobiological basis of these symptoms is vital for effective therapeutic interventions. This study utilized normative modelling of brain 
+structure ("CentileBrain") to quantify subject-level deviations in cortical thickness, surface area, and subcortical volumes among 20 patients experiencing persistent 
+fatigue following mild COVID-19, compared to 20 matched healthy controls. Group-level analyses on deviation scores revealed subtle yet distinct regional alterations 
+in cortical thickness, specifically decreased thickness within orbitofrontal cortices and increased thickness in occipital/sensory cortices. Although at the individual 
+regional level, the proportion of patients exhibiting infranormal or supranormal thickness values was relatively low (<35%) and comparable to controls, deviations 
+frequently clustered within structurally connected circuits, affecting up to 50% more of patients. Spatial analysis of regional cortical thickness alterations correlated 
+significantly with the constitutive expression patterns of TMPRSS2, an essential protein facilitating SARS-CoV-2 cellular entry. Canonical correlation analyses further 
+identified specific cell-type distributions and neuroreceptor densities predictive of regional thickness changes, highlighting neurons and molecular targets associated 
+with serotoninergic, cannabinoid, cholinergic, and glutamatergic signalling pathways. Network-diffusion modelling constrained by a canonical structural con­
+nectome significantly outperformed null models based on permuted connectomes and Euclidean distance metrics, identifying posterior-parietal regions as probable 
+initiation points ("seeds") for network-wide structural changes. Seed likelihood correlated positively with TMPRSS2 expression levels, suggesting that these posterior- 
+parietal regions may be particularly susceptible to SARS-CoV-2 infection. This highlights a plausible mechanism where structural alterations could propagate through 
+connected neural networks, although direct evidence of such propagation requires further investigation. These findings provide novel insights into potential 
+mechanisms underlying neural circuit disruptions in post-COVID-19 fatigue and suggest avenues for therapeutic neuromodulation.
+1. Introduction
+Post-COVID-19 syndrome has rapidly emerged as a significant global 
+health concern, characterized by an array of persistent cognitive, 
+neurological, and psychiatric symptoms that occur following infection 
+with SARS-CoV-2 (Davis et al., 2021; Nalbandian et al., 2021). Among 
+these lingering symptoms, fatigue is notably prevalent and severely 
+debilitating, adversely affecting daily functioning, productivity, and 
+overall quality of life for millions worldwide (Davis et al., 2021; 
+Nalbandian et al., 2021; Cipolli et al., 2023). Despite extensive clinical 
+research and public health awareness, the precise neurobiological 
+mechanisms underlying these persistent symptoms, particularly fatigue, 
+remain poorly understood. This gap in knowledge critically impedes the 
+development of targeted therapeutic interventions aimed at alleviating 
+the burden of post-COVID-19 syndrome (Nalbandian et al., 2021; Proal 
+and VanElzakker, 2021; Peluso and Deeks, 2024).
+* Corresponding author. Department of Neuroimaging Centre for Neuroimaging Sciences Institute of Psychiatry, Psychology and Neuroscience, King's College 
+London Denmark Hill, SE5 8AF, London, UK.
+E-mail address: Daniel.martins@kcl.ac.uk (D. Martins). 
+Contents lists available at ScienceDirect
+Brain, Behavior, & Immunity - Health
+journal homepage: www.editorialmanager.com/bbih/default.aspx
+https://doi.org/10.1016/j.bbih.2026.101292
+Received 4 March 2026; Received in revised form 21 June 2026; Accepted 21 June 2026  
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+Available online 26 June 2026 
+2666-3546/© 2026 Published by Elsevier Inc. This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ). 
+
+Magnetic resonance imaging (MRI) has played a central role in 
+characterizing the neurobiological impact of COVID-19 across acute and 
+post-acute stages. Beyond descriptive findings, MRI provides a non- 
+invasive window into circuit-level brain organization, offering poten­
+tial translational value for mechanistic understanding, patient stratifi­
+cation, and monitoring of post-infectious neurological sequelae (Li et al., 
+2025). Emerging evidence from neuroimaging studies has suggested 
+that structural brain alterations might accompany even mild cases of 
+COVID-19 infection (Li et al., 2025). These alterations include subtle but 
+potentially significant changes in cortical thickness, surface area, and 
+subcortical brain volumes within regions involving olfactory, fronto­
+parietal or limbic circuits (Douaud et al., 2022; Lu et al., 2020; Alhazmi 
+et al., 2023). However, existing findings are often inconsistent across 
+studies, potentially due to methodological variability, small sample 
+sizes, or the heterogeneity of patient populations. Moreover, traditional 
+approaches typically rely on group-level analyses, which can obscure 
+subtle individual differences in brain structure that may be clinically 
+relevant. Consequently, a more nuanced approach capable of capturing 
+individualized patterns of neuroanatomical deviation is necessary to 
+better understand the underlying pathophysiological mechanisms (Ge 
+et al., 2024; Lawn et al., 2024; Giacomel et al., 2025; Rutherford 
+et al., 2023).
+To address these limitations, our study employed a sophisticated 
+normative modelling technique known as CentileBrain (Ge et al., 2024). 
+This method leverages large, demographically diverse reference datasets 
+- including tens of thousands of healthy individuals - spanning a wide 
+age range to establish robust, population-informed models of brain 
+structure. Using Gaussian process regression, CentileBrain generates 
+centile-based predictions of cortical and subcortical anatomy for each 
+individual, accounting for covariates such as age, sex, and intracranial 
+volume. By comparing observed brain morphometry to these normative 
+expectations, the approach yields individualized deviation scores 
+(z-scores), allowing detection of subtle structural abnormalities that 
+may be clinically relevant but diluted in group-level comparisons 
+(Rutherford et al., 2022, 2023). In this study, we applied CentileBrain to 
+quantify deviations in cortical thickness, surface area, and subcortical 
+volumes among patients with persistent fatigue following mild 
+COVID-19. This personalized framework would allow us the identifica­
+tion of heterogeneously distributed and circuit-convergent brain alter­
+ations, offering deeper insight into the neuroanatomical basis of 
+post-COVID syndrome.
+Given that structural brain alterations alone do not directly reveal 
+the underlying biological mechanisms, we sought to contextualize our 
+neuroanatomical findings within molecular, cellular, and network-level 
+frameworks (Markello et al., 2022; Martins et al., 2021). To this end, we 
+tested a series of interrelated hypotheses designed to illuminate poten­
+tial drivers of the structural changes observed in PCS. First, we examined 
+whether regional deviations in cortical thickness and surface area were 
+spatially correlated with the expression of genes implicated in viral 
+entry and neuroimmune signalling, such as TMPRSS2, FURIN, and NRP1 
+(Cantuti-Castelvetri et al., 2020; Moriyama et al., 2024), which are 
+central to viral entry mechanisms, and TLR4, a key component of the 
+innate immune system involved in pro-inflammatory signalling trig­
+gered by the viral spike protein (Asaba et al., 2024). This analysis was 
+intended to explore whether direct viral neurotropism or associated 
+entry mechanisms contribute to regional structural vulnerability.
+Second, we investigated whether these anatomical changes were 
+associated with the spatial distribution of distinct brain cell types and 
+neurotransmitter receptor systems, drawing on normative tran­
+scriptomic and PET-based datasets (Markello et al., 2022; Martins et al., 
+2021). We focused in particular on systems previously implicated in 
+fatigue and neuropsychiatric dysfunction, including serotonergic, 
+cannabinoid, cholinergic, and glutamatergic pathways. This approach 
+aimed to identify whether specific neural populations or signalling 
+systems are preferentially involved in PCS, thereby suggesting possible 
+neurochemical mechanisms or therapeutic targets for prioritisation. 
+Finally, we applied network-diffusion modelling using canonical struc­
+tural connectivity data from the Human Connectome Project (Chopra 
+et al., 2023; Bhattarai et al., 2022; Agosta et al., 2025; Parsons et al., 
+2021; Shafiei et al., 2023). This allowed us to test whether focal struc­
+tural deviations might propagate along anatomical pathways, giving rise 
+to the distributed and heterogeneous patterns of brain alterations seen in 
+PCS. By identifying putative epicenters and characterizing their diffu­
+sion dynamics, this approach sought to offers insight into how localized 
+pathology may result in widespread circuit dysfunction and the multi­
+faceted clinical symptoms characteristic of post-COVID fatigue.
+2. Methods
+2.1. Study design and participants
+As described elsewhere, this study employed a single-site observa­
+tional case-control design. All participants, both PCS cases and recov­
+ered controls, were required to have had biologically confirmed SARS- 
+CoV-2 infection at least three months prior to enrolment, consistent 
+with the WHO clinical case definition of Post-COVID-19 condition 
+(Soriano et al., 2022). Individuals in the PCS group were characterised 
+by persistent symptoms lasting ≥3 months after infection, whereas 
+recovered controls were required to be fully asymptomatic, with com­
+plete resolution of all COVID symptoms. We included individuals with 
+mild acute COVID-19 only, to minimize potential confounding effects of 
+hospitalisation, hypoxia, or severe systemic inflammation on brain 
+perfusion and metabolism, and to ensure that any observed group dif­
+ferences were not attributable to the neurological sequelae of moder­
+ate–severe disease. All participants were required to have had 
+biologically confirmed SARS-CoV-2 infection prior to enrolment. 
+Confirmation was based on either a positive reverse-transcription po­
+lymerase chain reaction (RT-PCR) test from a nasopharyngeal swab or 
+documented serological evidence of prior infection, in accordance with 
+UK national testing guidelines at the time of acute illness. Participants 
+with only clinically suspected but biologically unconfirmed COVID-19 
+were not included. Recovered healthy control participants were 
+required to have a history of biologically confirmed SARS-CoV-2 infec­
+tion, followed by complete resolution of all acute and post-acute 
+symptoms. To minimize the risk of including individuals with subtle 
+or subclinical post-COVID manifestations, control participants were 
+screened using the same standardized clinical instruments applied to the 
+PCS group, including the Fatigue Assessment Inventory. Only in­
+dividuals scoring below established clinical thresholds, and reporting no 
+persistent fatigue, cognitive complaints, affective symptoms, autonomic 
+dysfunction, or post-exertional malaise at the time of assessment, were 
+included as healthy controls. In addition, control participants underwent 
+the same cognitive assessment battery and clinical interview as PCS 
+participants, and individuals demonstrating clinically relevant de­
+viations from normative performance or reporting residual symptoms 
+were excluded. This stringent screening strategy ensured that the control 
+group represented a recovered post-COVID population without ongoing 
+symptomatology, rather than asymptomatic or mildly affected PCS 
+cases.
+We recruited participants through King's College Hospital NHS Trust 
+and surrounding community networks. Eligible individuals were aged 
+16–65 years, fluent in English, and capable of providing informed con­
+sent. We excluded individuals with a history of major neurological or 
+psychiatric disorders, current substance misuse, systemic or central 
+nervous system inflammatory conditions, chronic respiratory or cardiac 
+disease, recent vaccination (within two weeks), pregnancy or breast­
+feeding, BMI >30, or current use of immunomodulatory or psychoactive 
+medications. We used the global severity score of Fatigue Assessment 
+Inventory (FAI) to pre-screen participants for symptom severity 
+(Schwartz et al., 1993). Individuals scoring greater than 4 on the global 
+fatigue severity scale were classified into the PCS group with persistent 
+fatigue, while those scoring 4 or below were included as recovered 
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+2 
+
+controls. The threshold of >4 was selected to ensure inclusion of in­
+dividuals with clinically meaningful levels of fatigue, consistent with 
+prior applications of the FAI in post-viral and chronic fatigue contexts 
+(Schwartz et al., 1993). Groups were balanced for age, sex, BMI, and 
+acute COVID-19 severity. All participants underwent a structured 
+diagnostic assessment using the Mini International Neuropsychiatric 
+Interview (MINI) to exclude current or past major psychiatric disorders, 
+including mood, anxiety, psychotic, and substance use disorders.
+The study received ethical approval from the UK Health Research 
+Authority (IRAS ID: 308661) and was conducted in accordance with the 
+Declaration of Helsinki and Good Clinical Practice (GCP) guidelines. All 
+participants provided written informed consent prior to study 
+procedures.
+We conducted an a priori power analysis using G*Power (version 
+3.1) to estimate the required sample size for detecting group differences 
+using analysis of covariance (ANCOVA). Assuming a medium to large 
+effect size (Cohen's f = 0.30, equivalent to ηp2≈0.08), alpha = 0.05, 
+power (1 −
+β) = 0.80, and three covariates (age, sex, and handedness), 
+the estimated sample size required per group was 19. Our sample of 20 
+participants per group therefore provides adequate power to detect ef­
+fects in this range. Importantly, individualized deviation scores were 
+derived using the CentileBrain normative modelling framework, which 
+is trained on large independent reference datasets comprising tens of 
+thousands of healthy individuals across the lifespan. The normative 
+model is estimated externally and independently of the present sample. 
+Each participant's cortical thickness, surface area, or subcortical volume 
+is compared against population-level expectations adjusted for age, sex, 
+and intracranial volume, yielding subject-specific deviation z-scores. 
+Thus, the estimation of individual deviations does not depend on the size 
+of the current patient group. Sample size primarily affects the precision 
+of group-level inference and the stability of spatial overlap maps, rather 
+than the validity of deviation computation itself.
+2.2. Procedures
+Each participant completed a single study visit that included clinical 
+assessments, venous blood collection, and a multimodal MRI scan. 
+Clinical assessments included medical and psychiatric history, physical 
+examination, vital signs, and a structured battery of standardized 
+questionnaires. Fatigue was assessed using both the full Fatigue 
+Assessment Inventory (Schwartz et al., 1993) and the Multidimensional 
+Fatigue Inventory (Smets et al., 1995) to differentiate between mental 
+and physical fatigue. Symptoms of autonomic dysfunction were evalu­
+ated using the Composite Autonomic Symptom Score (COMPASS-31) 
+(Sletten et al., 2012), while mood and anxiety were measured using the 
+Hospital Anxiety and Depression Scale (HADS) (Zigmond and Snaith, 
+1983). Sleep quality was assessed with the Pittsburgh Sleep Quality 
+Index (Buysse et al., 1989), and respiratory symptoms were rated using 
+the MRC Dyspnoea Scale (Bestall et al., 1999). Additional measures 
+included the DePaul Symptom Questionnaire (Sunnquist et al., 2019), 
+the American College of Rheumatology (ACR) fibromyalgia criteria 
+(Wolfe et al., 2016), the PAIN Detect questionnaire (Shaygan et al., 
+2013), and Montreal Cognitive Assessment (Nasreddine et al., 2005). 
+Most self-report questionnaires were completed remotely via the Qual­
+trics platform within 72 h of the in-person visit.
+2.3. Blood analysis
+Venous blood samples (up to 30 mL) were collected on the day of 
+imaging. Standard hematological and biochemical panels - including 
+erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), thyroid- 
+stimulating hormone (TSH), free thyroxine (T4), and liver function tests 
+- were processed by Synnovis (Viapath) at King's College Hospital NHS 
+Foundation Trust. Serum samples were frozen at −80◦C and later 
+assayed for cytokines and glial markers using electrochemiluminescence 
+immunoassays (Meso Scale Discovery, Rockville, MD, USA). The 
+cytokine panel included interleukin-1 beta (IL-1β), interleukin-2 (IL-2), 
+interleukin-4 
+(IL-4), 
+interleukin-6 
+(IL-6), 
+interleukin-8 
+(IL-8), 
+interleukin-10 (IL-10), interleukin-12p70 (IL-12p70), interleukin-13 (IL- 
+13), tumor necrosis factor-alpha (TNF-α), and interferon-gamma (IFN- 
+γ). Glial markers included glial fibrillary acidic protein (GFAP), 
+measured with the ultrasensitive kit, and S100β. Assays were performed 
+in duplicate. Values below the detection limit were discarded. This led 
+us to discard all quantifications of IL-2, IL-4 and IL-12p70. Outliers 
+greater than three standard deviations from the group mean were win­
+sorized. No analyte had more than 10% missing data, therefore all data 
+were included.
+2.4. Cognitron
+Cognitive performance was assessed online using a battery of 
+computerized tasks from the Cognitron platform, covering delayed 
+verbal memory, working memory, executive function, attention, motor 
+coordination, and spatial manipulation (Hampshire et al., 2024). Tasks 
+included Verbal Analogies (abstract reasoning and semantic integra­
+tion), Immediate and Delayed Prospective Memory (episodic memory 
+and planning), 2D Spatial Manipulation (visuospatial working memory 
+and mental rotation), Motor Control (sensorimotor coordination and 
+reaction consistency), Spotter (vigilance and sustained attention), and 
+Block Reasoning (fluid intelligence and rule-based problem solving). 
+Each task involves trial-level response collection, capturing both accu­
+racy and reaction time. Performance metrics were transformed into 
+standardized deviation-from-expected (DFE) scores using normative 
+models derived from a large independent sample (n > 20,000), adjusted 
+for age, sex, handedness, and harmonized ethnicity. DFE scores repre­
+sent standardized residuals (observed minus expected performance 
+divided by normative standard deviation) and were computed sepa­
+rately for accuracy and reaction time.
+2.5. Neuroimaging acquisition and processing
+Magnetic resonance imaging (MRI) data were acquired using stan­
+dardized imaging protocols on a 3T MRI scanner equipped with a 
+standard head coil. High-resolution structural images were collected, 
+including T1-weighted anatomical scans obtained using an MPRAGE 
+sequence (isotropic voxel size = 1 mm3, TR = 2300 ms, TE = 2.98 ms, 
+flip angle = 9◦, field-of-view [FOV] = 256 mm) and complementary T2- 
+weighted images (voxel size = 1 mm3, TR = 3200 ms, TE = 408 ms, flip 
+angle = 120◦, FOV = 256 mm). These sequences allowed detailed 
+assessment of cortical thickness, cortical surface area, and subcortical 
+brain volumes, leveraging the complementary tissue contrast provided 
+by both imaging modalities. Image preprocessing and morphometric 
+analyses were conducted using validated, automated pipelines imple­
+mented in FreeSurfer (version 7.2) (Fischl 2012). T1-weighted images 
+were initially processed through skull stripping to remove non-brain 
+tissue, followed by bias field correction to mitigate intensity in­
+homogeneities. Subsequently, images underwent segmentation into 
+gray matter, white matter, and cerebrospinal fluid. The complementary 
+T2-weighted images were integrated into the FreeSurfer pipeline, 
+enhancing the accuracy of pial surface delineation and improving seg­
+mentation quality, particularly in cortical regions and areas adjacent to 
+cerebrospinal fluid.
+Rigorous quality control (QC) procedures were implemented at 
+multiple stages of the neuroimaging pipeline to ensure the accuracy and 
+reliability of morphometric estimates. In addition to the default Free­
+Surfer QC procedures, we utilized the open-source FSQC tool developed 
+by the Deep-MI initiative (https://deep-mi.org/fsqc/dev/index.html) to 
+automate the detection of potential segmentation errors and anatomical 
+outliers across multiple FreeSurfer outputs (Bedford et al., 2023). Each 
+participant's imaging data and segmentation outputs were subsequently 
+subjected to detailed manual visual inspection by an experienced rater, 
+using the FSQC interface alongside FreeSurfer's built-in visualizations. 
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+3 
+
+Key 
+features 
+examined 
+included 
+motion 
+artifacts, 
+intensity 
+non-uniformities, accuracy of white and pial surface placement, and the 
+fidelity of cortical and subcortical parcellation. Datasets failing initial 
+QC underwent manual correction, including adjustments to brain masks, 
+removal of skull-strip artifacts, and refinements of white matter and pial 
+boundaries. Corrected images were reprocessed through the FreeSurfer 
+pipeline and re-evaluated to confirm improved segmentation quality. 
+Only datasets that passed both automated and manual QC thresholds 
+were retained for subsequent statistical analyses. This stringent 
+multi-step approach ensured high-quality morphometric data and 
+minimized the inclusion of artifacts or segmentation errors that could 
+confound 
+downstream 
+individual-level 
+deviation 
+estimates 
+or 
+group-level comparisons.
+2.6. Normative modelling approach
+To quantify individual deviations in brain structure, we employed 
+the CentileBrain normative modelling framework, which estimates ex­
+pected neuroanatomical features - cortical thickness, surface area, and 
+subcortical volumes - based on a large reference dataset of healthy 
+controls using Gaussian Process Regression (Ge et al., 2024). Individual 
+deviation scores were expressed as z-scores, reflecting how much a given 
+regional brain measurement deviated from the normative prediction for 
+that person's age, sex, and intracranial volume. We defined extreme 
+deviations as z-scores falling outside the ±1.96 threshold, correspond­
+ing to values in the top or bottom 2.5% of the normative distribution (i. 
+e., below the 5th percentile or above the 95th percentile). For each 
+cortical or subcortical region, we determined whether a participant 
+exhibited an extreme deviation. This binarized information was used to 
+calculate regional overlap, defined as the proportion of participants in 
+each group (PCS or controls) showing extreme deviations in each region. 
+Group differences in overlap were visualized as difference maps, where 
+positive values indicated greater overlap in PCS and negative values 
+indicated greater overlap in controls.
+The CentileBrain normative model used in this study was previously 
+trained on large independent reference datasets comprising tens of 
+thousands of healthy individuals across the lifespan and was not reca­
+librated using the present sample. Model hyperparameters and Gaussian 
+Process Regression settings were fixed prior to application. All partici­
+pants in the current study (PCS and recovered controls) were processed 
+identically through FreeSurfer and subsequently entered into the pre­
+trained normative framework. For each individual, region-specific ex­
+pected morphometric values were generated conditional on age, sex, 
+and intracranial volume, and deviation scores were calculated as stan­
+dardized residuals (observed minus predicted divided by predictive 
+uncertainty). The 20 recovered controls in this cohort were not used to 
+train or fine-tune the normative model; instead, they served as an in­
+dependent comparison group for evaluating deviation distributions be­
+tween PCS and recovered individuals. No dataset-specific harmonization 
+or recalibration procedures were performed. While deviation scores are 
+defined relative to an external normative reference, group-level com­
+parisons of deviation Z-scores were conducted to determine whether 
+PCS participants exhibited systematic shifts in deviation burden or 
+spatial distribution relative to recovered controls. These analyses oper­
+ate on standardized residuals rather than raw morphometric measures 
+and therefore assess differences in departure from population expecta­
+tions, rather than classical case–control anatomical contrasts.
+To examine whether these deviations converged within large-scale 
+brain systems, we performed circuit-level overlap analyses. Following 
+the principles of lesion-network mapping (Joutsa et al., 2022), for each 
+individual, we also identified regions with extreme deviations and then 
+mapped their structural connectivity profiles using a normative struc­
+tural connectome derived from diffusion-weighted imaging data in the 
+Human Connectome Project (Kruper et al., 2024). For each deviated 
+region, we extracted all directly connected regions (first-order neigh­
+bours) and combined them into a participant-specific circuit (Segal 
+et al., 2023). We then calculated the percentage of participants in 
+each group who showed at least one extreme deviation within each 
+circuit. Circuit-level overlap thus captured the frequency with which 
+deviations occurred in anatomically connected subnetworks, even if the 
+specific deviated nodes varied across individuals. Together, the regional 
+and circuit-level analyses enabled us to assess whether the anatomical 
+deviations observed in PCS were spatially random or showed consistent 
+patterns of convergence within specific areas or networks. This multi­
+scale framework allowed us to identify not only which brain regions 
+were most frequently affected across individuals, but also whether these 
+deviations reflected disruption of shared neural circuits (Segal et al., 
+2023). Subcortical volumes were not included in the circuit-level over­
+lap analysis because extreme deviations in subcortical regions were 
+infrequent and did not differ meaningfully between groups, and because 
+structural connectivity modelling within the adopted parcellation 
+framework provides greater spatial reliability for cortical than subcor­
+tical nodes.
+2.7. Network-diffusion modelling
+To examine the potential propagation pathways of structural brain 
+alterations across neural circuits, we implemented network-diffusion 
+modelling using structural connectivity data from the Human Con­
+nectome Project (Chopra et al., 2023; Bhattarai et al., 2022; Agosta 
+et al., 2025; Parsons et al., 2021; Shafiei et al., 2023) obtained from 
+the ENIGMA toolbox. T1-weighted and diffusion-weighted images were 
+preprocessed using standard HCP pipelines, including denoising, Gibbs 
+ringing removal, eddy-current and motion correction, EPI distortion 
+correction, and bias-field correction. Whole-brain probabilistic trac­
+tography was performed using MRtrix3 (tckgen) with constrained 
+spherical deconvolution and anatomically constrained tractography 
+(ACT). Streamlines were filtered using SIFT2 to improve quantitative 
+correspondence with underlying white matter fiber densities. Nodes 
+were defined according to the Desikan–Killiany atlas parcellation 
+applied to T1 images, yielding 68 cortical regions and selected subcor­
+tical nuclei. Pairwise connection weights were computed as the 
+SIFT2-weighted sum of streamlines connecting each node pair, 
+normalized by node volume. The resulting symmetric connectivity ma­
+trix served as the structural constraint in the network diffusion models.
+Subcortical volumes were not included in the network diffusion an­
+alyses because these models were specifically designed to examine 
+spatial patterns of cortical thickness deviations. Cortical thickness is 
+defined only for cortical regions and is parcellated according to the 
+Desikan–Killiany cortical atlas used in the connectome framework. To 
+ensure methodological consistency between the deviation maps and the 
+structural connectivity matrix, diffusion modelling was therefore 
+restricted to cortical nodes. This exclusion does not imply that subcor­
+tical structures are unimportant in post-COVID symptomatology; rather, 
+in the present analytic framework, the diffusion process was defined 
+over cortical thickness measures, which are inherently cortical metrics.
+Our use of network-diffusion modelling is not intended to infer 
+temporal or causal propagation of pathology. Instead, it tests whether 
+the spatial distribution of cortical deviations is better explained by the 
+topology of the structural connectome than by spatially constrained null 
+models. The diffusion modelling was based on a heat-kernel diffusion 
+process applied to a structural connectome derived from diffusion- 
+weighted imaging as previously reported (Pandya et al., 2022), 
+repeating the seeding process iteratively from each region of the par­
+cellation used at a time. In this context, the term “seed” refers to regions 
+whose simulated diffusion profiles best recapitulate the empirical spatial 
+distribution of deviations under a connectome-constrained model. It 
+should be interpreted as a statistical epicentre within the modelling 
+framework, rather than as evidence of a temporally verified origin of 
+pathology. The diffusion model involved optimizing the diffusion coef­
+ficient (β), which controls the rate of propagation within the con­
+nectome. Optimization of β was achieved by systematically evaluating 
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+4 
+
+diffusion performance across a range of values (0.1–1.0, increments of 
+0.1), selecting the β parameter that maximized the correlation between 
+the simulated diffusion pattern and empirical neuroanatomical thick­
+ness deviations as it was in this metric where we found most differences. 
+Diffusion simulations were constrained to reflect propagation over a 
+biologically plausible time range (0–24 months post-infection), enabling 
+investigation of both short-term and long-term diffusion dynamics. 
+Permutation testing was performed to assess the statistical significance 
+of the observed diffusion patterns. Specifically, empirical diffusion re­
+sults were compared against null distributions generated by running 
+diffusion simulations on scrambled connectomes with randomized 
+connectivity patterns and Euclidean distance-based surrogate con­
+nectomes. A total of 1000 permutations were conducted for each 
+approach, establishing the statistical robustness of observed propagation 
+patterns and identifying network hubs and pathways preferentially 
+involved in structural alterations associated with prolonged fatigue 
+following mild COVID-19 infection.
+2.8. Molecular and cellular analyses
+Regional microarray expression data: Gene expression data from the 
+AHBA were obtained from six adult postmortem brains aged 24–57 
+years. Genetic probes were reannotated following standardized methods 
+outlined in (Arnatkeviciute et al., 2019) to increase accuracy, and 
+probes deemed unreliable were excluded. For each gene, the most stable 
+probe was selected based on pooled donor correlations, resulting in a 
+final dataset of 15,633 probes across the brain. Microarray samples were 
+spatially assigned to the 83 regions of the Desikan-Killiany atlas40 using 
+the abagen toolbox (https://abagen.readthedocs.io/en/stable/), with 
+regional assignment based on corrected MNI coordinates (Markello 
+et al., 2021). Assignments were constrained by hemisphere and corti­
+cal/subcortical boundaries to improve anatomical accuracy. Gene 
+expression values were normalized using a robust sigmoid function and 
+rescaled to a unit interval for cross-region and cross-donor compara­
+bility. Normalization was performed separately for cortical and 
+subcortical regions to circumvent know differences in mean gene 
+expression between cortex and subcortex. Due to limited availability of 
+samples from the right hemisphere, we mirrored samples from the left 
+hemisphere into the right hemisphere to ensure all regions are assigned 
+values of gene expression for all genes.
+2.9. Candidate gene analyses
+To explore the molecular vulnerability of specific brain regions to 
+SARS-CoV-2-related pathology, we examined whether regional varia­
+tions in cortical thickness and surface area—derived from normative 
+modelling - corresponded spatially with the constitutive expression of 
+genes implicated in viral entry and neuroimmune signalling, as previ­
+ously mapped using the same anatomical parcellation. We focused on a 
+set of a priori candidate genes with well-established roles in mediating 
+SARS-CoV-2 infection and its downstream inflammatory responses. 
+TMPRSS2 (transmembrane serine protease 2) plays a critical role in 
+priming the viral spike (S) protein, facilitating fusion of the viral and 
+host cell membranes and enabling entry into host cells. TMPRSS2 is 
+expressed in both respiratory and neural tissues and is thought to 
+modulate region-specific susceptibility to direct viral invasion 
+(Hoffmann et al., 2020). FURIN encodes a proprotein convertase that 
+cleaves and activates the spike protein at the S1/S2 site, a step essential 
+for viral infectivity. Its widespread expression in the central nervous 
+system may contribute to facilitating viral spread in brain tissue, 
+particularly in regions with high baseline FURIN activity (Coutard et al., 
+2020). NRP1 (neuropilin-1) has been identified as a co-receptor that 
+enhances SARS-CoV-2 cell entry by stabilizing spike protein interactions 
+with ACE2. Beyond its role in viral infectivity, NRP1 is also involved in 
+axonal guidance and neurovascular signaling, raising the possibility that 
+its expression could influence both entry pathways and downstream 
+neurovascular dysfunction (Cantuti-Castelvetri et al., 2020). TLR4 
+(toll-like receptor 4) is a key component of the innate immune system 
+that recognizes pathogen-associated molecular patterns (PAMPs) and 
+initiates inflammatory cascades. Recent studies have shown that TLR4 
+may directly respond to the SARS-CoV-2 spike protein, leading to 
+exaggerated pro-inflammatory responses. In the CNS, TLR4 activation 
+has been implicated in microglial priming and neuroinflammation, 
+which are candidate mechanisms for post-viral neuropsychiatric 
+sequelae (Shirato and Kizaki, 2021). Together, these genes represent 
+plausible molecular entry points and immunological amplifiers of 
+SARS-CoV-2-related effects on the brain. Unfortunately, the expression 
+data for ACE2 did not pass our quality filtering criteria even if it con­
+stitutes the main point of entry for viral infection of cells and would 
+therefore, at least theoretically, configure an important candidate gene 
+in these analyses. Spatial correlations between their expression profiles 
+and structural brain deviations may help to explain region-specific 
+vulnerability and support the hypothesis that SARS-CoV-2-related 
+neuropathology is shaped by underlying molecular architecture.
+2.10. Cellular maps
+To investigate the cellular substrates underlying the regional brain 
+structural deviations observed in post-COVID syndrome, we derived 
+cortical and subcortical cell-type distribution maps using the Bretigea 
+package (McKenzie et al., 2018). This analytical framework utilizes gene 
+expression data from the Allen Human Brain Atlas (AHBA) and in­
+tegrates curated gene sets derived from human single-cell transcriptomic 
+studies to estimate the relative abundance of specific cell types across 
+brain regions. The cell populations included in the analysis encompassed 
+neurons, astrocytes, microglia, oligodendrocytes, oligodendrocyte pre­
+cursor cells (OPCs), and endothelial cells. Gene markers corresponding 
+to each cell class were used to compute regional enrichment scores, 
+which were then aggregated and spatially aligned to the same 
+Desikan-Killiany atlas used for our cortical thickness and surface area 
+analyses. This ensured that cell-type density estimates were matched to 
+the spatial resolution of our imaging data. We then assessed the rela­
+tionship between cell-type densities and neuroanatomical deviations 
+derived from the normative modelling framework. Specifically, we 
+calculated region-wise correlations between cell-type density maps and 
+z-scored deviations in cortical thickness and surface area. This approach 
+would allow us to identify which cellular populations most strongly 
+aligned with the pattern of structural brain changes observed in PCS, 
+which in turn might hint at possible pathophysiological processes, 
+including neuroinflammation (via microglial and astrocytic involve­
+ment), demyelination or oligodendrocyte dysfunction, and disruptions 
+in neurovascular integrity.
+2.11. Neurotransmitter molecular targets
+To further investigate the molecular architecture associated with 
+regional brain alterations, we incorporated receptor density maps 
+derived from normative Positron Emission Tomography (PET) imaging 
+data. These templates represent in vivo estimates of neurotransmitter 
+receptor and transporter availability across the human brain and were 
+sourced from publicly available datasets generated using high-affinity 
+radioligands in healthy adult populations and are available as part of 
+the neuromaps toolbox (Markello et al., 2022). The receptor maps 
+included distributions for key molecular systems implicated in neuro­
+psychiatric function and fatigue regulation, such as the serotonergic 
+system (5-HT1A, 5-HT1B, 5-HT2A, 5-HT4, 5-HT6, 5HT transporter), 
+dopaminergic system (D1, D2, and dopamine transporter [DAT]), glu­
+tamatergic system (NMDA, mGluR5), cholinergic system (M1 musca­
+rinic 
+receptor, 
+vesicular 
+acetylcholine 
+transporter 
+[VAChT]), 
+cannabinoid system (CB1 receptor), GABAergic system (GABA-A re­
+ceptor), opioid system (mu, kappa, and delta opioid receptors), norad­
+renergic system (norepinephrine transporter [NET]), and histaminergic 
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+5 
+
+system (H3 receptor). For details on the data originating each of these 
+maps, we direct the reader to the original neuromaps publication 
+(Markello et al., 2022). Each PET-derived receptor density map was 
+spatially registered and parcellated to match the Desikan-Killiany atlas 
+used for cortical morphometry analyses. This alignment enabled 
+region-wise comparison between individual structural deviations (e.g., 
+cortical thickness or surface area z-scores from normative modelling) 
+and normative receptor distributions. Associations were quantified 
+using correlation and canonical correlation analyses, allowing us to 
+assess which neurochemical systems best predicted the spatial distri­
+bution of observed structural alterations in PCS. This receptor-informed 
+analysis would provide a neurochemical dimension to the observed 
+anatomical deviations, facilitating the prioritisation of specific molec­
+ular systems that may underlie or modulate the persistent fatigue and 
+neuropsychiatric symptoms reported in post-COVID syndrome.
+2.12. Statistical analysis
+Statistical analyses were performed to examine group differences 
+and associations across demographic, clinical, cognitive, and neuro­
+imaging measures. Between-group comparisons for continuous de­
+mographic and clinical variables were conducted using independent- 
+samples t-tests, with effect sizes reported as Cohen's d. Categorical 
+variables were compared using chi-square tests. Bayes factors (BF10) 
+were also computed to quantify the strength of evidence supporting 
+group differences. For neuroimaging data, all group comparisons - 
+including regional structural deviations (z-scores for cortical thickness, 
+surface area, and subcortical volumes) - were evaluated using analysis of 
+covariance (ANCOVA) models. These models included age, gender, 
+handedness (manual dexterity), and total intracranial volume (TIV) as 
+covariates to control for known sources of anatomical and physiological 
+variability. To evaluate relationships between regional neuroanatomical 
+deviations and molecular or cellular variables (candidate gene expres­
+sion, cellular densities, receptor distributions), Spearman's rank corre­
+lation analyses were conducted. Given the inherent spatial 
+autocorrelation 
+in 
+cortical 
+neuroimaging 
+data, we 
+employed 
+permutation-based spin tests (1000 permutations), generating null dis­
+tributions by systematically rotating cortical maps while preserving 
+spatial relationships (Vasa method) (Vasa et al., 2018). This rigorous 
+approach ensured accurate assessments of statistical significance and 
+minimized false-positive findings due to spatial dependencies. For 
+multivariate integration of structural imaging metrics with molecular 
+and cellular profiles, canonical correlation analysis (CCA) was per­
+formed (Mihalik et al., 2022). Statistical significance of canonical cor­
+relations 
+was 
+assessed 
+through 
+permutation 
+testing 
+(1000 
+permutations), also accounting for spatial autocorrelation using spin 
+permutations. Network-diffusion modelling outcomes were validated 
+against null models generated by permutations of structural connectiv­
+ity matrices (scrambled connectomes) and Euclidean-distance-based 
+surrogate connectomes (1000 permutations), further ensuring the 
+robustness and specificity of observed diffusion patterns (Vasa and 
+Misic, 2022). All statistical procedures and significance testing were 
+performed using Python and R software packages specialized for neu­
+roimaging and spatial analyses, with an alpha threshold set at p < 0.05 
+(two-tailed) for statistical significance, unless otherwise specified.
+3. Results
+3.1. Sociodemographics and clinical characterisation
+Results have been first reported elsewhere. Here we describe the 
+main findings that might be relevant to interpret the new neuroimaging 
+findings. The groups were matched for age, sex, ethnicity, and body 
+mass index (BMI), with no significant differences observed across these 
+variables (all p > 0.5; Table 1). However, groups differed significantly in 
+years of education, with HC participants reporting higher educational 
+attainment. PCS participants also had a significantly longer duration 
+since first SARS-CoV-2 infection, and were significantly less likely to 
+have been vaccinated prior to infection. Clinically, individuals with PCS 
+reported significantly greater symptom burden across multiple domains. 
+These included fatigue (both visual analogue scale and multidimen­
+sional components), sleep disturbance (PSQI), post-exertional malaise, 
+autonomic dysfunction (COMPASS-31), affective symptoms (HADS 
+depression/anxiety), PTSD-related symptoms, and musculoskeletal 
+complaints (WPI and SS scores). Notably, 40% of PCS participants met 
+criteria for fibromyalgia, compared to none in the HC group. These 
+differences were supported by both frequentist (p < 0.05) and Bayesian 
+inference, with many outcomes yielding strong to extreme evidence in 
+favor of group separation (BF10 > 10), particularly for fatigue, post- 
+exertional malaise, and pain sensitivity (Supplementary Table S1).
+3.2. Clinical routine blood tests
+Group comparisons of routine blood parameters revealed no major 
+differences between PCS and HC participants (Supplementary Table S2). 
+However, PCS participants showed numerically higher creatinine and 
+Gamma-GT levels, with corresponding Bayes factors (BF10 = 1.232 and 
+1.735, respectively) providing anecdotal to moderate evidence for group 
+differences. Platelet count also trended higher in the PCS group 
+(p = 0.08; BF10 = 1.123). Other metabolic, inflammatory, and haema­
+tological markers - including C-reactive protein, white and red cell 
+counts, haemoglobin, and thyroid function - did not differ significantly 
+between groups.
+3.3. Serum cytokines and glial markers
+No statistically significant differences were observed in circulating 
+levels of IFN-γ, IL-1β, IL-6, IL-8, IL-10, IL-13, TNF-α or GFAP 
+(Supplementary Table S3). However, TNF-α (p = 0.116; BF10 = 1.094) 
+Table 1 
+Sociodemographic and clinical characteristics of PCS and healthy control 
+participants. Group comparisons of demographic and COVID-19-related vari­
+ables between individuals with Post-COVID-19 Syndrome (PCS) and matched 
+healthy controls (HC). Data are shown as mean (standard deviation) or counts. 
+Between-group differences were assessed using independent samples t-tests or 
+chi-squared tests as appropriate. Bayes factors (BF10) quantify evidence for 
+group differences; values > 1 indicate increasing support for the alternative 
+hypothesis. Asterisks (*) denote statistically significant results at p < 0.05 or 
+BF10 > 1.
+Variable
+PCS Mean 
+(std)
+HC Mean 
+(std)
+Statistics
+p
+B10
+Age
+40.6 
+(10.9)
+40.0 
+(10.4)
+T(38) = 0.208
+0.837
+0.312
+Gender
+18F/2M
+17F/3M
+χ (Nalbandian 
+et al., 2021) 
+(1) = 0.229
+0.663
+N/A
+Ethnicity
+White: 18
+White: 15
+χ (Nalbandian 
+et al., 2021) 
+(5) = 5.273
+0.384
+N/A
+Mixed: 0
+Mixed: 1
+Asian: 1
+Asian: 1
+Black: 0
+Black: 2
+South 
+Asian: 1
+South 
+Asian: 0
+Hispanic: 
+0
+Hispanic: 
+1
+BMI
+23.8 
+(3.44)
+24.4 
+(3.84)
+T(38) = -0.55
+0.582
+0.346
+Years of 
+education
+17.30 
+(2.94)
+19.35 
+(3.13)
+T(38) = -2.13
+0.039*
+1.845
+Time since 
+first 
+infection 
+(months)
+23.0 
+(9.17)
+15.7 
+(11.5)
+T(38) = 2.21
+0.033*
+0.749
+Vaccination 
+prior 
+infection
+Yes: 4
+Yes: 14
+χ (Nalbandian 
+et al., 2021) 
+(1) = 10.101
+0.001*
+N/A
+No: 16
+No: 6
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+6 
+
+and S100β (p = 0.149; BF10 = 1.025) showed suggestive evidence of 
+elevation in the PCS group, which may be compatible with subtle glial or 
+immune-related processes, although these findings were not statistically 
+robust.
+3.4. Cognitive performance
+Cognitive testing revealed modest and domain-specific group dif­
+ferences between groups (Supplementary Table S4). PCS participants 
+showed significantly poorer performance on the delayed object memory 
+task (RT_DFE; p = 0.02; BF10 = 2.653), as well as trend-level impair­
+ments in the Lead Balloon task (abstract reasoning; p = 0.06; 
+BF10 = 1.330) and vigilance (Spotter task RT; p = 0.06; BF10 = 1.303). 
+Other domains - including motor control, 2D spatial manipulation, and 
+verbal analogies - did not show significant differences. Overall, Bayesian 
+analysis provided moderate evidence for reduced memory and atten­
+tional function in PCS.
+3.5. Group differences in the total amounts of positive and negative 
+extreme deviations
+Using our predefined threshold of |z|>1.96, extreme deviations were 
+mostly present for thickness and absent for surface and subcortical 
+volume. PCS and control participants did not differ in the total number 
+of either positive or negative extreme deviations in cortical thickness 
+(positive: F(35) = 0.082, p = 0.776; negative: F(35) = 0.368, p = 0.548) 
+(see Fig. 1).
+3.6. Links between total amounts of positive and negative extreme 
+thickness deviations and clinical, blood and cognitive parameters
+Exploratory partial spearman correlations accounting for group, age, 
+gender, dexterity and TIV revealed significant positive correlations be­
+tween the total amount of positive extreme thickness deviations and 
+performance in the Spotter task and blood magnesium, and negative 
+correlations with AST levels, mental fatigue and total FAI scores, as well 
+as severity of autonomic and immune symptoms assessed by the DePaul 
+questionnaire. In the case of the total amount of negative extreme 
+thickness deviations we found positive associations with serum S100β, 
+blood creatinine and urea, and blood count of eosinophils. None of these 
+associations would have survived FDR correction for the total number of 
+parameters assessed (Supplementary Table S5) and should therefore be 
+interpreted cautiously.
+3.7. Group differences in regional structural deviation Z-scores
+Normative modelling revealed subtle but spatially distinct patterns 
+of cortical deviation in PCS. At the group level, patients exhibited 
+reduced cortical thickness deviation Z-scores in the left medial and right 
+lateral orbitofrontal cortex, right pars opercularis and triangularis of the 
+frontal cortex and left fusiform gyrus; and increased deviation Z-scores 
+thickness in the left lateroccipital cortex and right post-central gyrus 
+(Fig. 2). Surface area Z-score deviation scores showed reduced values in 
+the right postcentral gyrus and increases in the right frontal pole. None 
+of these regions would have survived FDR correction for the number of 
+regions tested. For subcortical volumes, no comparisons reached 
+significance.
+As a sensitivity analysis and because alterations in brain structure in 
+PCS are often simply attributed to the presence of olfactory dysfunction, 
+we repeated the same group comparisons on deviation Z-scores this time 
+additionally accounting for the presence of anosmia/ageusia. As shown 
+in Supplementary Fig. S1, many of the reported group differences were 
+still evident and others not reaching significance before did after this 
+additional covariate. For cortical thickness, we found decreases in Z 
+scores for left fusiform and middle orbitofrontal gyri and an increase for 
+the right isthmus cingulate. For surface area, we found increases in the 
+left caudal middle frontal gyrus, left pars orbitalis and right pars trian­
+gularis of the frontal gyrus, and right frontal pole, and decreases in the 
+right postcentral gyrus (Supplementary Table S6).
+3.8. Regional and circuit overlap of extreme positive and negative 
+deviations
+Extreme deviations were heterogeneous at the individual regional 
+level with every individual region being identified as extreme in <35% 
+of the members of either group. However, a circuit-based overlap 
+analysis, where we considered deviated regions as well as all other brain 
+regions structurally connected to them, revealed significant conver­
+gence within specific structural networks, affecting up to an excess of 
+50% of patients in the PCS group. These deviations mapped predomi­
+nantly onto salience and attention-related circuits, suggesting distrib­
+uted but coherent alterations in anatomically and functionally 
+connected regions (Fig. 3).
+3.9. Network-diffusion modelling
+Network diffusion modelling demonstrated that structural deviations 
+in PCS are not randomly distributed but follow pathways consistent with 
+structural connectivity. The optimized model (β = 0.010) produced 
+simulated deviation patterns that significantly correlated with empirical 
+data (Fig. 4). Posterior-temporoparietal regions emerged as likely 
+“seeds” for network-wide propagation, showing the highest seed likeli­
+hood scores. These regions are involved in multisensory integration and 
+attention and may represent key vulnerability nodes in PCS. Permuta­
+tion testing confirmed that these findings exceeded chance expectations 
+(p < 0.05), with simulations based on scrambled connectomes and 
+Euclidean distance metrics showing significantly lower correspondence 
+with empirical data.
+3.10. Candidate genes related to SARS-CoV-2 entry into host cells
+Spatial correlations between neuroanatomical deviations and 
+candidate gene expression revealed strong associations with TMPRSS2, 
+a known facilitator of SARS-CoV-2 entry into host cells. TMPRSS2 
+expression was significantly associated with regional changes in cortical 
+Fig. 1. Distribution of Individual-Level Extreme Neuroanatomical De­
+viations in PCS and Healthy Controls. Violin plots showing the distribution of 
+total extreme deviations in cortical and subcortical morphometry metrics by 
+group (PCS vs HC). Each plot displays the number of extreme deviations per 
+participant (z-scores |z| > 1.96) across six categories: positive and negative 
+deviations in cortical thickness, surface area, and subcortical volume. Violin 
+widths reflect kernel density estimates, with overlaid boxplots showing medians 
+and interquartile ranges. Individual data points are also plotted. PCS = post- 
+COVID syndrome group; HC = healthy controls; EPD – extreme positive de­
+viations; END – extreme negative deviations.
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+7 
+
+thickness, surface area, and seed likelihood from network diffusion 
+models (Fig. 5). Other entry-related genes, such as FURIN, NRP1, and 
+TLR4, showed weaker or nonsignificant associations.
+3.11. Cellular and neurochemical correlates
+Canonical correlation analyses (CCA) identified significant re­
+lationships between brain structural deviations and regional cell-type 
+distributions. The strongest loadings involved neurons and microglia, 
+Fig. 2. Regional differences in cortical thickness, surface area, and subcortical volumes deviation scores between post-COVID-19 patients and healthy 
+controls. Comparisons were adjusted for age, gender, handedness, and total intracranial volume (TIV). Colours indicate effect sizes (Cohen's d), with red representing 
+increased measures and blue indicating decreased measures in post-COVID-19 patients compared to controls. Significant results are thresholded at uncorrected 
+p < 0.05. (For interpretation of the references to colour in this figure legend, the reader is referred to the Web version of this article.)
+Fig. 3. Regional (A) and circuit-based (B) overlap analysis comparing positive and negative deviations in cortical thickness and surface area between 
+post-COVID syndrome (PCS) patients and healthy controls. Colour gradients indicate the difference (Δ percentage overlap) in the proportion of participants 
+showing deviations, with red reflecting greater overlap in PCS patients and blue representing greater overlap in controls. (For interpretation of the references to 
+colour in this figure legend, the reader is referred to the Web version of this article.)
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+8 
+
+suggesting a role for neuroinflammatory and excitatory/inhibitory im­
+balances in PCS-related alterations (Fig. 6A). Associations were stronger 
+for cortical thickness than surface area, consistent with prior work 
+showing thickness as a sensitive index of neuroimmune changes.
+Receptor-based CCA further linked cortical deviations in thickness 
+with a multivariate pattern of neurotransmitter systems. The most 
+robust negative associations were observed for serotonergic 5HT1A and 
+B, 5HT6, cholinergic (VAChT), and cannabinoid (CB1) targets, while 
+mGlu5R had the highest positive loading (Fig. 6B). The neurotransmitter 
+system CCA model did not reach significance for deviation in surface 
+area.
+4. Discussion
+We applied a multimodal analytic framework to investigate neuro­
+anatomical deviations in individuals with PCS and persistent fatigue 
+following mild SARS-CoV-2 infection. By integrating individualized 
+morphometric deviation mapping with gene expression profiles, cellular 
+composition, receptor distributions, and network diffusion modelling, 
+we identified spatially organized patterns of cortical change. Although 
+individual regional deviations were modest and variable, they 
+converged across structurally connected circuits and aligned with spe­
+cific molecular and neurochemical features. While preliminary, these 
+Fig. 4. Network diffusion modelling results. Upper left panel shows beta optimization, identifying the best diffusion coefficient (β = 0.010) based on maximum 
+mean Spearman correlation. Upper right panel illustrates optimized Spearman correlation (R) curves over time across all potential seed regions. The lower left panel 
+maps seed likelihood (maximum Spearman correlation) across brain regions, with higher likelihood regions indicated in red. The lower right panel demonstrates the 
+significant positive correlation between seed likelihood and empirical cortical thickness changes (Spearman ρ = 0.703, p < 0.001). Permutation testing against 
+scrambled connectomes and Euclidean distance models confirmed the significance of these findings (p < 0.05). (For interpretation of the references to colour in this 
+figure legend, the reader is referred to the Web version of this article.)
+Fig. 5. Associations between SARS-CoV-2-related gene expression (NRP1, FURIN, TLR4, TMPRSS2) and neuroimaging metrics (cortical thickness, surface 
+area, subcortical volume, and network diffusion model [NDM] seed likelihood). Left panel illustrates regional mRNA expression (Z-scores). Right panel 
+summarizes Spearman's correlations (rho) and associated permutation-based spin-test p-values (pspin), highlighting significant associations (*p < 0.05, **p<0.001).
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+9 
+
+findings lay the groundwork for future studies seeking to clarify the 
+biological basis of post-COVID fatigue and identify potential targets for 
+intervention.
+We observed reduced cortical thickness in orbitofrontal regions and 
+increased thickness in occipital and sensory cortices. Recent systematic 
+syntheses of neuroimaging findings in acute and post-acute COVID-19 
+cohorts have reported heterogeneous but recurrent patterns of cortical 
+thinning, white matter microstructural alterations, and network-level 
+disruptions, particularly involving frontal, temporal, and limbic cir­
+cuits (Li et al., 2025). These findings underscore both the variability and 
+the distributed nature of COVID-related brain changes, while also 
+highlighting the limitations of conventional group-level comparisons in 
+capturing individual heterogeneity. Moreover, these changes align with 
+prior evidence of frontal vulnerability in chronic fatigue and 
+post-infectious conditions and may reflect disruption of circuits involved 
+in reward processing, emotional regulation, and sensory integration 
+(Douaud et al., 2022; Lu et al., 2020; Alhazmi et al., 2023). Importantly, 
+deviation estimates were derived from a pretrained large-scale norma­
+tive reference and were independent of the local control group, ensuring 
+that individualized deviations reflect departure from population ex­
+pectations rather than cohort-specific calibration. Rather than affecting 
+the same regions uniformly, deviations clustered within structurally 
+connected networks, suggesting that circuit-level organization better 
+accounts for symptom-related alterations than isolated anatomical loci. 
+Similar conclusions have been reached regarding brain structure and 
+function within the context of other classical neuropsychiatric disorders 
+(Segal et al., 2023). Because no individual regional morphometric 
+findings survived correction for multiple comparisons, all downstream 
+spatial correspondence analyses should be interpreted as exploratory 
+analyses anchored on subtle spatial effect distributions rather than 
+robust focal anatomical abnormalities.
+Network diffusion modelling extended these findings by identifying 
+posterior-temporoparietal regions as likely sources for a slow propaga­
+tion of structural alterations across the connectome, reinforcing their 
+role as integrative hubs for sensory and attentional information - 
+functions frequently disrupted in PCS (Davis et al., 2021; Chiappelli and 
+Fotovat, 2022; Churchill et al., 2023, 2024). We optimized a diffusion 
+coefficient (β = 0.010) within a biologically realistic range, indicating a 
+slow and spatially constrained propagation pattern (Chopra et al., 2023; 
+Bhattarai et al., 2022; Agosta et al., 2025; Parsons et al., 2021; Shafiei 
+et al., 2023). The same regions also showed higher expression of 
+TMPRSS2, a host gene required for SARS-CoV-2 cellular entry 
+(Hoffmann et al., 2020). While TMPRSS2 expression alone does not 
+imply ongoing viral effects, its spatial correlation with structural devi­
+ation patterns suggests that pre-existing molecular architecture may 
+influence regional vulnerability during or after SARS-CoV-2 infection 
+(Arnatkeviciute et al., 2022; Mroczek et al., 2021). It is worth noting 
+though our use of diffusion modelling here is not intended to imply a 
+temporally verified spreading process as in progressive neurodegener­
+ative disease (Xia et al., 2025), but rather to assess whether the empirical 
+spatial topology of deviations is statistically consistent with a 
+connectivity-informed propagation model compared with spatially 
+constrained nulls. In this sense, we leverage the diffusion framework as a 
+topographical organizing principle - testing whether structural covari­
+ance of deviations respects the geometry of the connectome - rather than 
+as a literal model of biological propagation over time.
+We found that cortical thickness deviations correlated with norma­
+tive maps of neuronal and microglial density. Regions with greater 
+neuronal density may be more susceptible to deviation through 
+increased metabolic or synaptic demands (Clemente-Suarez et al., 2023; 
+Pulido and Ryan, 2021). Microglial alignment may reflect structural 
+consequences of immune surveillance or low-grade inflammation 
+(Chagas and Serfaty, 2024; Gerhard, 2023). These associations highlight 
+potential cellular substrates of PCS-related cortical changes. In parallel, 
+canonical correlation analyses linked structural deviations to the dis­
+tribution of serotonergic, cholinergic, cannabinoid, and glutamatergic 
+receptors. Regions enriched in 5-HT1A, 5-HT1B, 5-HT6, VAChT, CB1, 
+and mGlu5 showed the strongest anatomical correspondence. These 
+systems contribute to arousal, mood, cognition, and fatigue regulation 
+(Leitzke et al., 2025; Wong et al., 2023; Eslami and Joshaghani, 2024; 
+Fig. 6. Cellular and neuroreceptor correlates of structural deviations in PCS. (A) Brain cell-type regional distributions illustrating Z-scores for astrocytes, 
+endothelial cells, microglia, neurons, oligodendrocytes, and oligodendrocyte precursor cells (OPCs). The accompanying table summarizes canonical correlation 
+analysis (CCA) loadings and permutation-based spin-test p-values (pspin), indicating significant associations between specific cell types and regional alterations in 
+cortical thickness and surface area. (B) Canonical correlation analysis loadings for neuroreceptor densities predicting cortical thickness and surface area alterations. 
+Predictors include serotonergic (5HT receptors), cannabinoid (CB1), dopaminergic (D1, D2, DAT), histaminergic (H3), cholinergic (M1, VAChT), glutamatergic 
+(NMDA, mGluR5), opioid (MOR, NOR, DOR), noradrenergic (NAT), amyloid-beta (A4B2), and GABAergic (GABAAR) systems. The table also reports R2 values with 
+corresponding permutation-based significance (p-values in parentheses), highlighting stronger associations for thickness compared to surface area.
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+10 
+
+Cinar et al., 2022; Meeusen and Roelands, 2018). While we did not 
+assess receptor binding or neurotransmitter function directly, the spatial 
+alignment with structural deviations indicates that cortical regions 
+embedded in specific neuromodulatory environments might be differ­
+entially affected in PCS. These findings are particularly interesting 
+within the context of ongoing pharmacological trials investigating 
+neuromodulatory agents - such as vortioxetine, which modulates 
+5-HT1A, 5-HT1B, and 5-HT6 receptors (Stahl, 2015) - for the treatment 
+of cognitive and affective symptoms in PCS (McIntyre et al., 2024).
+PCS participants showed impairments in delayed visual memory and 
+sustained attention, with slower reaction times on delayed object recall 
+and trend-level reductions in vigilance performance. These cognitive 
+differences showed partial spatial correspondence with the distributed 
+structural deviation patterns identified in PCS. Notably, sustained 
+attention performance correlated with the burden of extreme positive 
+deviations in cortical thickness, suggesting that individuals showing 
+greater anatomical deviation also exhibited measurable functional 
+change (Hampshire et al., 2024; Wood et al., 2025). Although serum 
+biomarkers showed no major group-level differences, exploratory ana­
+lyses revealed associations between cortical thinning and S100β, creat­
+inine, urea, and eosinophils, consistent with subtle glial and systemic 
+contributions to brain structure. These patterns converge on a model in 
+which regional structural alterations, likely embedded within neuro­
+immune and neuromodulatory gradients, underlie selective cognitive 
+dysfunction in PCS. Peripheral cytokines may nevertheless not reliably 
+reflect central nervous system inflammatory activity, and the absence of 
+strong associations between circulating markers, structural deviations, 
+and cognition underscores the need for direct in vivo measures of neu­
+roinflammation to clarify brain–immune coupling in post-COVID-19 
+syndrome. Moreover, emerging work has proposed biologically 
+informed subtypes of COVID-19 and psychiatric conditions based on 
+multimodal data integration (Wang et al., 2026). While our sample size 
+does not permit formal subtype derivation, the combination of indi­
+vidualized normative deviation mapping with transcriptomic and 
+receptor-informed spatial analyses represents a conceptual step toward 
+mechanistically grounded stratification. Larger cohorts incorporating 
+longitudinal immune profiling and multimodal imaging will be required 
+to determine whether distinct PCS phenotypes map onto dissociable 
+neurobiological signatures (Zhang et al., 2025; Fu et al., 2019).
+Post-COVID syndrome is clinically heterogeneous, with variable 
+combinations of fatigue, cognitive impairment, autonomic dysfunction, 
+sleep disturbance, and affective symptoms. Although we observed subtle 
+associations between structural deviation burden and selected cognitive 
+measures, these exploratory correlations did not survive correction for 
+multiple comparisons and should be interpreted cautiously. We did not 
+identify robust region-specific mappings between distinct symptom di­
+mensions and specific cortical deviations in this cohort. Rather than 
+supporting a one-to-one regional–symptom correspondence, our find­
+ings suggest that structural deviations may reflect disruption of 
+distributed circuits implicated in attention, interoception, and salience 
+processing, which could manifest differently across individuals 
+depending on baseline vulnerability, immune response, and compensa­
+tory capacity. Larger cohorts incorporating dimensional symptom 
+modelling, latent class approaches, or longitudinal designs will be 
+necessary to determine whether distinct PCS phenotypes map onto 
+dissociable neurobiological signatures.
+Our study's integrative approach - combining personalized structural 
+modelling with gene expression and receptor data - represents a meth­
+odological advance and supports a biologically coherent narrative of 
+PCS-related fatigue. More broadly, recent work integrating tran­
+scriptomic and neuroimaging data has emphasized the potential of 
+multimodal frameworks to move beyond descriptive neuroimaging to­
+ward biologically informed stratification and treatment selection (Wang 
+et al., 2024). While the present study was not designed for diagnostic 
+prediction, the alignment between individualized structural deviation 
+patterns and normative molecular gradients illustrates how such 
+approaches may, in the future, contribute to mechanistically informed 
+phenotyping. Translation to clinical decision-making will require 
+replication in larger cohorts, longitudinal validation, and integration 
+with prospective treatment outcomes. Nevertheless, several limitations 
+must be acknowledged. First, the sample size was small, limiting the 
+detection of small effects, reducing the precision of multivariate asso­
+ciations, and constraining generalizability. Accordingly, our molecular, 
+cellular, and network-level findings should similarly be considered 
+exploratory and hypothesis-generating. Replication in larger, ideally 
+longitudinal cohorts will be necessary to confirm the stability and 
+clinical relevance of the reported patterns. Future larger-scale studies 
+should evaluate the robustness of overlap patterns across alternative 
+deviation thresholds and continuous burden metrics. Second, the 
+cross-sectional design precludes inference about temporal progression 
+or reversibility. For instance, longitudinal neuroimaging would be 
+required to test whether posterior-temporoparietal regions indeed show 
+earlier or progressive changes relative to other areas. Such data would 
+allow formal testing of temporal precedence and dynamic spread. Third, 
+while we adjusted for key demographic and imaging covariates, un­
+measured confounders - such as variations in SARS-COV2 variant and 
+off-label treatment with supplements/hormonal therapy/histamine 
+blockers - may have influenced both brain structure and symptom 
+expression. Because education and vaccination status differed system­
+atically between groups and were collinear with group membership, we 
+did not include them as nuisance covariates in primary models risking 
+model instability; larger cohorts with balanced sampling will be 
+required to disentangle PCS-related effects from these correlated expo­
+sures. Moreover, unmeasured visual symptoms could contribute to 
+variance in occipital and sensory regions but formal ophthalmic 
+assessment was not available in this dataset. Fourth, molecular and re­
+ceptor associations were based on population-average postmortem 
+datasets - including the Allen Human Brain Atlas, which includes only 
+six adult donors - limiting generalizability and precluding inferences 
+about individual-level or state-dependent biology (Shen et al., 2012). 
+The receptor maps derived from PET templates also reflect healthy 
+population averages and do not capture potential dynamic changes in 
+neurotransmitter function following infection/inflammation (Felger and 
+Treadway, 2017). These datasets do not capture individual-level bio­
+logical variability, state-dependent molecular changes, or dynamic al­
+terations induced by infection or inflammation. Accordingly, the spatial 
+correlations reported here should be interpreted as reflecting alignment 
+with normative molecular architecture rather than direct evidence of 
+altered gene expression or receptor density in PCS participants. 
+Furthermore, while spatial permutation (spin) testing was used to ac­
+count for spatial autocorrelation, these analyses remain correlational 
+and cannot establish causal relationships between molecular gradients 
+and structural alterations. Given the biological heterogeneity of 
+SARS-CoV-2, including differences across viral variants and host im­
+mune responses, and the absence of variant-level stratification in the 
+present cohort, the present findings should not be interpreted as 
+demonstrating neurobiological specificity to PCS, and may instead 
+reflect partially shared mechanisms across post-viral, fatigue-related, 
+and neuroimmune conditions.
+Taken together, our findings reveal that PCS-related fatigue is asso­
+ciated with distributed cortical deviations that follow structural con­
+nectivity and co-localize with specific molecular and cellular features. 
+These results characterize PCS as a condition involving spatially struc­
+tured brain alterations embedded within established neurochemical and 
+immune architectures. Future research should aim to replicate and 
+extend these findings in larger, longitudinal cohorts, ideally integrating 
+multimodal imaging with direct measures of neuroinflammation and 
+neurotransmitter function.
+CRediT authorship contribution statement
+Daniel Martins: Conceptualization, Data curation, Formal analysis, 
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+11 
+
+Funding acquisition, Investigation, Methodology, Project administra­
+tion, Resources, Software, Supervision, Validation, Visualization, 
+Writing – original draft, Writing – review & editing. Ziyuan Cai: Formal 
+analysis, Writing – review & editing. Nicole Mariani: Formal analysis, 
+Writing – review & editing. Alessandra Borsini: Formal analysis, 
+Funding acquisition, Resources, Writing – review & editing. Valeria 
+Mondelli: Funding acquisition, Resources, Supervision, Writing – re­
+view & editing. Brandi Eiff: Data curation, Investigation, Writing – re­
+view & editing. Silvia Rota: Investigation, Project administration, 
+Writing – review & editing. Daniel van Wamelen: Investigation, 
+Writing – review & editing. Timothy Nicholson: Investigation, Writing 
+– review & editing. Laila Rida: Software, Writing – review & editing. 
+Adam Hampshire: Software, Writing – review & editing. Lia Fer­
+nandes: Validation, Writing – review & editing. Fernando Zelaya: 
+Methodology, Writing – review & editing. Aleksandra Podlewska: 
+Project administration, Writing – review & editing. Ray Chaudhuri: 
+Project administration, Writing – review & editing. Federico Tur­
+kheimer: Conceptualization, Funding acquisition, Supervision, Valida­
+tion, 
+Writing 
+– 
+review 
+& 
+editing. 
+Steven 
+C.R. 
+Williams: 
+Conceptualization, Funding acquisition, Validation, Writing – review & 
+editing. Mattia Veronese: Conceptualization, Supervision, Validation, 
+Writing – review & editing.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+This study was funded by the National Institute for Health and Care 
+Research (NIHR) Maudsley Biomedical Research Centre (BRC), South 
+London and Maudsley NHS Foundation Trust, under the “Reach Out” 
+funding call (Ref: R0-01). We are grateful to all participants for their 
+time and commitment to the study. We thank the radiographers and 
+technical staff at the Centre for Neuroimaging Sciences (King's College 
+London) for their assistance with MRI acquisition. We also acknowledge 
+Synnovis (Viapath) for processing routine blood analyses, the Clinical 
+Research Facility (CRF) team at King's College Hospital Foundation 
+Trust for their support during participant visits and blood collection, and 
+the Cognitron platform team for assistance with cognitive data man­
+agement and normative modeling.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.bbih.2026.101292.
+Data availability
+Data will be made available on request.
+References
+Agosta, F., Basaia, S., Spinelli, E.G., Facente, F., Lumaca, L., Ghirelli, A., et al., 2025. 
+Modelling pathological spread through the structural connectome in the 
+frontotemporal dementia clinical spectrum. Brain 148 (6), 1994–2007.
+Alhazmi, F.H., Alsharif, W.M., Alshoabi, S.A., Gameraddin, M., Aloufi, K.M., Abdulaal, O. 
+M., et al., 2023. Identifying cerebral microstructural changes in patients with 
+COVID-19 using MRI: a systematic review. Brain Circ 9 (1), 6–15.
+Arnatkeviciute, A., Fulcher, B.D., Bellgrove, M.A., Fornito, A., 2022. Imaging 
+transcriptomics of brain disorders. Biol Psychiatry Glob Open Sci 2 (4), 319–331.
+Arnatkeviciute, A., Fulcher, B.D., Fornito, A., 2019. A practical guide to linking brain- 
+wide gene expression and neuroimaging data. Neuroimage 189, 353–367.
+Asaba, C.N., Ekabe, C.J., Ayuk, H.S., Gwanyama, B.N., Bitazar, R., Bukong, T.N., 2024. 
+Interplay of TLR4 and SARS-CoV-2: unveiling the complex mechanisms of 
+inflammation and severity in COVID-19 infections. J. Inflamm. Res. 17, 5077–5091.
+Bedford, S.A., Ortiz-Rosa, A., Schabdach, J.M., Costantino, M., Tullo, S., Piercy, T., et al., 
+2023. The impact of quality control on cortical morphometry comparisons in autism. 
+Imaging Neurosci (Camb) 1, 1–21.
+Bestall, J.C., Paul, E.A., Garrod, R., Garnham, R., Jones, P.W., Wedzicha, J.A., 1999. 
+Usefulness of the Medical Research Council (MRC) dyspnoea scale as a measure of 
+disability in patients with chronic obstructive pulmonary disease. Thorax 54 (7), 
+581–586.
+Bhattarai, A., Chen, Z., Chua, P., Talman, P., Mathers, S., Chapman, C., et al., 2022. 
+Network diffusion model predicts neurodegeneration in limb-onset Amyotrophic 
+Lateral Sclerosis. PLoS One 17 (8), e0272736.
+Buysse, D.J., Reynolds 3rd, C.F., Monk, T.H., Berman, S.R., Kupfer, D.J., 1989. The 
+Pittsburgh sleep quality index: a new instrument for psychiatric practice and 
+research. Psychiatry Res. 28 (2), 193–213.
+Cantuti-Castelvetri, L., Ojha, R., Pedro, L.D., Djannatian, M., Franz, J., Kuivanen, S., 
+et al., 2020. Neuropilin-1 facilitates SARS-CoV-2 cell entry and infectivity. Science 
+370 (6518), 856–860.
+Chagas, L.D.S., Serfaty, C.A., 2024. The influence of microglia on neuroplasticity and 
+long-term cognitive sequelae in long COVID: impacts on brain development and 
+beyond. Int. J. Mol. Sci. 25 (7).
+Chiappelli, F., Fotovat, L., 2022. Post acute CoViD-19 syndrome (PACS) - long CoViD. 
+Bioinformation 18 (10), 908–911.
+Chopra, S., Segal, A., Oldham, S., Holmes, A., Sabaroedin, K., Orchard, E.R., et al., 2023. 
+Network-based spreading of gray matter changes across different stages of psychosis. 
+JAMA Psychiatry 80 (12), 1246–1257.
+Churchill, N.W., Roudaia, E., Chen, J.J., Gilboa, A., Sekuler, A., Ji, X., et al., 2023. Effects 
+of post-acute COVID-19 syndrome on the functional brain networks of non- 
+hospitalized individuals. Front. Neurol. 14, 1136408.
+Churchill, N.W., Roudaia, E., Chen, J.J., Sekuler, A., Gao, F., Masellis, M., et al., 2024. 
+Effects of post-acute COVID-19 syndrome on cerebral white matter and emotional 
+health among non-hospitalized individuals. Front. Neurol. 15, 1432450.
+Cinar, R., Iyer, M.R., Kunos, G., 2022. Dual inhibition of CB(1) receptors and iNOS, as a 
+potential novel approach to the pharmacological management of acute and long 
+COVID-19. Br. J. Pharmacol. 179 (10), 2121–2127.
+Cipolli, G.C., Alonso, V., Yasuda, C.L., Assumpcao, D., Cachioni, M., Melo, R.C., et al., 
+2023. Cognitive impairment in post-acute COVID-19 syndrome: a scoping review. 
+Arq Neuropsiquiatr 81 (12), 1053–1069.
+Clemente-Suarez, V.J., Beltran-Velasco, A.I., Redondo-Florez, L., Martin-Rodriguez, A., 
+Yanez-Sepulveda, R., Tornero-Aguilera, J.F., 2023. Neuro-vulnerability in energy 
+metabolism regulation: a comprehensive narrative review. Nutrients 15 (14).
+Coutard, B., Valle, C., de Lamballerie, X., Canard, B., Seidah, N.G., Decroly, E., 2020. The 
+spike glycoprotein of the new coronavirus 2019-nCoV contains a furin-like cleavage 
+site absent in CoV of the same clade. Antivir. Res. 176, 104742.
+Davis, H.E., Assaf, G.S., McCorkell, L., Wei, H., Low, R.J., Re'em, Y., et al., 2021. 
+Characterizing long COVID in an international cohort: 7 months of symptoms and 
+their impact. EClinicalMedicine 38, 101019.
+Douaud, G., Lee, S., Alfaro-Almagro, F., Arthofer, C., Wang, C., McCarthy, P., et al., 2022. 
+SARS-CoV-2 is associated with changes in brain structure in UK Biobank. Nature 604 
+(7907), 697–707.
+Eslami, Z., Joshaghani, H., 2024. Investigating the role of serotonin levels in cognitive 
+impairments associated with long COVID-19. Chonnam Med. J. 60 (3), 141–146.
+Felger, J.C., Treadway, M.T., 2017. Inflammation effects on motivation and motor 
+activity: role of dopamine. Neuropsychopharmacology 42 (1), 216–241.
+Fischl, B., 2012. FreeSurfer. Neuroimage 62 (2), 774–781.
+Fu, G., Zhang, W., Dai, J., Liu, J., Li, F., Wu, D., et al., 2019. Increased peripheral 
+interleukin 10 relate to white matter integrity in schizophrenia. Front. Neurosci. 13, 
+52.
+Ge, R., Yu, Y., Qi, Y.X., Fan, Y.N., Chen, S., Gao, C., et al., 2024. Normative modelling of 
+brain morphometry across the lifespan with CentileBrain: algorithm benchmarking 
+and model optimisation. Lancet Digit. Health 6 (3), e211–e221.
+Gerhard, A., 2023. Does microglial activation lead to cognitive changes after COVID-19 
+infection? JAMA Psychiatry 80 (8), 767.
+Giacomel, A., Martins, D., Nordio, G., Easmin, R., Howes, O., Selvaggi, P., et al., 2025. 
+Investigating dopaminergic abnormalities in schizophrenia and first-episode 
+psychosis with normative modelling and multisite molecular neuroimaging. Mol. 
+Psychiatr.
+Hampshire, A., Azor, A., Atchison, C., Trender, W., Hellyer, P.J., Giunchiglia, V., et al., 
+2024. Cognition and memory after Covid-19 in a large community sample. N. Engl. 
+J. Med. 390 (9), 806–818.
+Hoffmann, M., Kleine-Weber, H., Schroeder, S., Kruger, N., Herrler, T., Erichsen, S., et al., 
+2020. SARS-CoV-2 cell entry depends on ACE2 and TMPRSS2 and is blocked by a 
+clinically proven protease inhibitor. Cell 181 (2), 271–280 e278.
+Joutsa, J., Corp, D.T., Fox, M.D., 2022. Lesion network mapping for symptom 
+localization: recent developments and future directions. Curr. Opin. Neurol. 35 (4), 
+453–459.
+Kruper, J., Hagen, M.P., Rheault, F., Crane, I., Gilmore, A., Narayan, M., et al., 2024. 
+Tractometry of the human connectome project: resources and insights. Front. 
+Neurosci. 18, 1389680.
+Lawn, T., Giacomel, A., Martins, D., Veronese, M., Howard, M., Turkheimer, F.E., et al., 
+2024. Normative modelling of molecular-based functional circuits captures clinical 
+heterogeneity transdiagnostically in psychiatric patients. Commun. Biol. 7 (1), 689.
+Leitzke, M., Roach, D.T., Hesse, S., Schonknecht, P., Becker, G.A., Rullmann, M., et al., 
+2025. Long COVID - a critical disruption of cholinergic neurotransmission? 
+Bioelectron. Med. 11 (1), 5.
+Li, P., Ni, S., Lin, X., Ding, Z., Zeng, N., Zhao, Y., et al., 2025. Systematic review and 
+meta-analysis of brain neuroimaging abnormalities in COVID-19 patients and 
+survivors. Psychoradiology 5, kkaf030.
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+12 
+
+Lu, Y., Li, X., Geng, D., Mei, N., Wu, P.Y., Huang, C.C., et al., 2020. Cerebral micro- 
+structural changes in COVID-19 patients - an MRI-based 3-month Follow-up study. 
+EClinicalMedicine 25, 100484.
+Markello, R.D., Arnatkeviciute, A., Poline, J.B., Fulcher, B.D., Fornito, A., Misic, B., 2021. 
+Standardizing workflows in imaging transcriptomics with the abagen toolbox. eLife 
+10.
+Markello, R.D., Hansen, J.Y., Liu, Z.Q., Bazinet, V., Shafiei, G., Suarez, L.E., et al., 2022. 
+Neuromaps: structural and functional interpretation of brain maps. Nat. Methods 19 
+(11), 1472–1479.
+Martins, D., Giacomel, A., Williams, S.C.R., Turkheimer, F., Dipasquale, O., Veronese, M., 
+et al., 2021. Imaging transcriptomics: convergent cellular, transcriptomic, and 
+molecular neuroimaging signatures in the healthy adult human brain. Cell Rep. 37 
+(13), 110173.
+McIntyre, R.S., Phan, L., Kwan, A.T.H., Mansur, R.B., Rosenblat, J.D., Guo, Z., et al., 
+2024. Vortioxetine for the treatment of post-COVID-19 condition: a randomized 
+controlled trial. Brain 147 (3), 849–857.
+McKenzie, A.T., Wang, M., Hauberg, M.E., Fullard, J.F., Kozlenkov, A., Keenan, A., et al., 
+2018. Brain cell type specific gene expression and Co-expression network 
+architectures. Sci. Rep. 8 (1), 8868.
+Meeusen, R., Roelands, B., 2018. Fatigue: is it all neurochemistry? Eur. J. Sport Sci. 18 
+(1), 37–46.
+Mihalik, A., Chapman, J., Adams, R.A., Winter, N.R., Ferreira, F.S., Shawe-Taylor, J., 
+et al., 2022. Canonical correlation analysis and partial least squares for identifying 
+brain-behavior associations: a tutorial and a comparative study. Biol. Psychiatry 
+Cogn. Neurosci. Neuroimaging 7 (11), 1055–1067.
+Moriyama, R., Nakamura, S., Mitsui, I., Sugiyama, M., Fukui, H., Fukui, H., et al., 2024. 
+Expression of SARS-CoV-2 entry molecules ACE2, NRP1, TMPRSS2, and FURIN in 
+the reproductive tissues of male macaques. Histochem. Cell Biol. 162 (6), 465–475.
+Mroczek, M., Desouky, A., Sirry, W., 2021. Imaging transcriptomics in 
+neurodegenerative diseases. J. Neuroimaging 31 (2), 244–250.
+Nalbandian, A., Sehgal, K., Gupta, A., Madhavan, M.V., McGroder, C., Stevens, J.S., et al., 
+2021. Post-acute COVID-19 syndrome. Nat Med 27 (4), 601–615.
+Nasreddine, Z.S., Phillips, N.A., Bedirian, V., Charbonneau, S., Whitehead, V., Collin, I., 
+et al., 2005. The Montreal Cognitive Assessment, MoCA: a brief screening tool for 
+mild cognitive impairment. J. Am. Geriatr. Soc. 53 (4), 695–699.
+Pandya, S., Maia, P.D., Freeze, B., Menke, R.A.L., Talbot, K., Turner, M.R., et al., 2022. 
+Modeling seeding and neuroanatomic spread of pathology in amyotrophic lateral 
+sclerosis. Neuroimage 251, 118968.
+Parsons, N., Outsikas, A., Parish, A., Clohesy, R., D'Aprano, F., Toomey, F., et al., 2021. 
+Modelling the anatomic distribution of neurologic events in patients with COVID-19: 
+a systematic review of MRI findings. AJNR Am J Neuroradiol 42 (7), 1190–1195.
+Peluso, M.J., Deeks, S.G., 2024. Mechanisms of long COVID and the path toward 
+therapeutics. Cell 187 (20), 5500–5529.
+Proal, A.D., VanElzakker, M.B., 2021. Long COVID or Post-acute Sequelae of COVID-19 
+(PASC): an overview of biological factors that May contribute to persistent 
+symptoms. Front. Microbiol. 12, 698169.
+Pulido, C., Ryan, T.A., 2021. Synaptic vesicle pools are a major hidden resting metabolic 
+burden of nerve terminals. Sci. Adv. 7 (49).
+Rutherford, S., Barkema, P., Tso, I.F., Sripada, C., Beckmann, C.F., Ruhe, H.G., et al., 
+2023. Evidence for embracing normative modeling. eLife 12.
+Rutherford, S., Kia, S.M., Wolfers, T., Fraza, C., Zabihi, M., Dinga, R., et al., 2022. The 
+normative modeling framework for computational psychiatry. Nat. Protoc. 17 (7), 
+1711–1734.
+Schwartz, J.E., Jandorf, L., Krupp, L.B., 1993. The measurement of fatigue: a new 
+instrument. J. Psychosom. Res. 37 (7), 753–762.
+Segal, A., Parkes, L., Aquino, K., Kia, S.M., Wolfers, T., Franke, B., et al., 2023. Regional, 
+circuit and network heterogeneity of brain abnormalities in psychiatric disorders. 
+Nat. Neurosci. 26 (9), 1613–1629.
+Shafiei, G., Bazinet, V., Dadar, M., Manera, A.L., Collins, D.L., Dagher, A., et al., 2023. 
+Network structure and transcriptomic vulnerability shape atrophy in frontotemporal 
+dementia. Brain 146 (1), 321–336.
+Shaygan, M., Boger, A., Kroner-Herwig, B., 2013. Clinical features of chronic pain with 
+neuropathic characteristics: a symptom-based assessment using the pain DETECT 
+questionnaire. Eur. J. Pain 17 (10), 1529–1538.
+Shen, E.H., Overly, C.C., Jones, A.R., 2012. The Allen Human Brain Atlas: comprehensive 
+gene expression mapping of the human brain. Trends Neurosci. 35 (12), 711–714.
+Shirato, K., Kizaki, T., 2021. SARS-CoV-2 spike protein S1 subunit induces pro- 
+inflammatory responses via toll-like receptor 4 signaling in murine and human 
+macrophages. Heliyon 7 (2), e06187.
+Sletten, D.M., Suarez, G.A., Low, P.A., Mandrekar, J., Singer, W., 2012. Compass 31: a 
+refined and abbreviated composite autonomic symptom score. Mayo Clin. Proc. 87 
+(12), 1196–1201.
+Smets, E.M., Garssen, B., Bonke, B., De Haes, J.C., 1995. The Multidimensional Fatigue 
+Inventory (MFI) psychometric qualities of an instrument to assess fatigue. 
+J. Psychosom. Res. 39 (3), 315–325.
+Soriano, J.B., Murthy, S., Marshall, J.C., Relan, P., Diaz, J.V., 
+Condition, WHOCCDWGoP-C-, 2022. A clinical case definition of post-COVID-19 
+condition by a Delphi consensus. Lancet Infect. Dis. 22 (4), e102–e107.
+Stahl, S.M., 2015. Modes and nodes explain the mechanism of action of vortioxetine, a 
+multimodal agent (MMA): enhancing serotonin release by combining serotonin 
+(5HT) transporter inhibition with actions at 5HT receptors (5HT1A, 5HT1B, 5HT1D, 
+5HT7 receptors). CNS Spectr. 20 (2), 93–97.
+Sunnquist, M., Lazarus, S., Jason, L.A., 2019. The development of a short form of the 
+DePaul Symptom Questionnaire. Rehabil. Psychol. 64 (4), 453–462.
+Vasa, F., Seidlitz, J., Romero-Garcia, R., Whitaker, K.J., Rosenthal, G., Vertes, P.E., et al., 
+2018. Adolescent tuning of Association cortex in human structural brain networks. 
+Cereb Cortex 28 (1), 281–294.
+Vasa, F., Misic, B., 2022. Null models in network neuroscience. Nat. Rev. Neurosci. 23 
+(8), 493–504.
+Wang, B., Luo, X., Wu, M., Wang, Z., Zhang, J., Wang, Z., et al., 2026. Identifying 
+subtypes of long COVID: a systematic review. EClinicalMedicine 91, 103705.
+Wang, M., Zhao, S.W., Wu, D., Zhang, Y.H., Han, Y.K., Zhao, K., et al., 2024. 
+Transcriptomic and neuroimaging data integration enhances machine learning 
+classification of schizophrenia. Psychoradiology 4.
+Wolfe, F., Clauw, D.J., Fitzcharles, M.A., Goldenberg, D.L., Hauser, W., Katz, R.L., et al., 
+2016. Revisions to the 2010/2011 fibromyalgia diagnostic criteria. Semin. Arthritis 
+Rheum. 46 (3), 319–329, 2016. 
+Wong, A.C., Devason, A.S., Umana, I.C., Cox, T.O., Dohnalova, L., Litichevskiy, L., et al., 
+2023. Serotonin reduction in post-acute sequelae of viral infection. Cell 186 (22), 
+4851–4867 e4820.
+Wood, G.K., Sargent, B.F., Ahmad, Z.U., Tharmaratnam, K., Dunai, C., Egbe, F.N., et al., 
+2025. Posthospitalization COVID-19 cognitive deficits at 1 year are global and 
+associated with elevated brain injury markers and gray matter volume reduction. 
+Nat Med 31 (1), 245–257.
+Xia, J., Yang, S., Li, J., Meng, Y., Niu, J., Chen, H., et al., 2025. Normative structural 
+connectome constrains spreading transient brain activity in generalized epilepsy. 
+BMC Med. 23 (1), 258.
+Zhang, L., Yang, C., Zhang, W., Lui, S., Bishop, J.R., 2025. Human leukocyte antigen 
+(HLA) class I and II genetic relationships with brain imaging measures: a systematic 
+review and meta-analysis. Brain Behav. Immun. 128, 336–351.
+Zigmond, A.S., Snaith, R.P., 1983. The hospital anxiety and depression scale. Acta 
+Psychiatr. Scand. 67 (6), 361–370.
+D. Martins et al.                                                                                                                                                                                                                                 
+Brain, Behavior, & Immunity - Health 55 (2026) 101292 
+13 
