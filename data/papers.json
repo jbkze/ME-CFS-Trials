@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-05",
+  "last_check": "2026-09-06",
   "papers": [
     {
       "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
@@ -2507,7 +2507,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "J Transl Med, published online 2026-08-22. UK group (PhosphoBiomed/Oxford Biodynamics; Akoulitchev/Pchejetski senior authors) building on the group's earlier ME/CFS EpiSwitch chromosome-conformation biomarker work (already tracked as hunter-2025-episwitch-biomarker) with a new cross-disease comparison (ME/CFS, long COVID, PTSD, RA, MS) via the EpiSwitch/Orion 3D-genome-architecture platform. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2522,7 +2522,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "QRB Discovery, published online 2026-07-31. Review article, no new patient data, by Pretorius/Kell (Stellenbosch/Liverpool), the group most associated with the fibrinaloid microclot hypothesis in long COVID/ME-CFS. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2537,7 +2537,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Redox Biology, published online 2026-06-27. German group (Essen University Hospital / University Duisburg-Essen). n~750, roughly 2 years post-SARS-CoV-2, cross-sectional biomarker association study (serum selenium, SELENOP levels and anti-SELENOP autoantibodies vs persistent fatigue). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2552,7 +2552,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "IJMS 27(13):5723, published online 2026-06-25. UCSF LIINC long-COVID cohort (senior authors Deeks/Henrich/Peluso). Proof-of-concept EV surface-glycosylation (mannosylation) profiling and affinity-capture method. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2567,7 +2567,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Brain Behav Immun Health, published online 2026-06-26. King's College London group. n=20 persistent-fatigue-after-mild-COVID patients, structural MRI with molecular/receptor-density mapping (co-registered PET-derived atlases). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2582,7 +2582,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Front Cell Infect Microbiol, published online 2026-06-04. Canadian group (University of British Columbia / BC Children's Hospital). Small pilot, longitudinal transcriptomic + metabolomic profiling of non-hospitalized healthcare workers with long COVID (fatigue/brain-fog-predominant) vs recovered controls. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2597,7 +2597,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Front Immunol, published online 2026-07-20. US group (University of Kansas Medical Center). Small-EV proteomic profiling in long-COVID patients (fatigue/brain-fog/sleep-disturbance symptom profile) vs controls; inflammatory and coagulation-pathway protein dysregulation. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2612,7 +2612,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Front Digit Health, published online 2026-07-16. Swiss group (Empa / ETH Zurich). n=30 post-COVID rehabilitation patients, continuous wearable cardio-respiratory monitoring correlated with multidimensional fatigue questionnaire subscales (physical/mental/emotional). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
     },
     {
@@ -2627,7 +2627,7 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "Research Square preprint, posted 2026-06-09, not yet peer-reviewed. Spanish group (BioICOPER study, Salamanca). n=304 long-COVID patients; cross-sectional comparison of those meeting Fukuda CFS criteria vs those who don't, on quality-of-life and health-status measures. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API preprint record (title/authors/date/DOI match)."
     },
     {
@@ -2642,8 +2642,42 @@
       "first_seen": "2026-09-05",
       "last_checked": "2026-09-05",
       "flags": [],
-      "isNew": true,
+      "isNew": false,
       "notes": "J Transl Med, published online 2026-07-11. German group (Hannover Medical School / MHH, Herrmann-Lingen/de Zwaan). n=1,673 post-COVID-19 condition patients in Germany; symptom-based cluster analysis (14 symptoms incl. fatigue). Complements the already-tracked DecodeME/Habermann-Horstmeier subgrouping papers. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI match)."
+    },
+    {
+      "id": "liou-2026-saliva-proteins-postviral-sequelae",
+      "title": "Acute Protein Responses Control SARS-CoV-2-specific Neurocognitive and General Post-Viral Sequelae",
+      "authors": "Liou TG, Andrews RJ, Bass BL, et al. (33 authors, incl. Adler FR)",
+      "journal": "medRxiv (preprint)",
+      "date": "Aug 2026 (posted Aug 31, 2026)",
+      "summary": "Researchers tested saliva samples taken soon after a COVID-19 infection and found that people whose bodies made more of certain antiviral immune proteins early on were less likely to develop lasting brain fog and fatigue-type symptoms months later.",
+      "why": "A simple, early saliva test might one day flag who is at risk of long-term post-viral fatigue and brain fog, and points to specific immune proteins as possible treatment targets.",
+      "link": "https://doi.org/10.64898/2026.08.27.26361488",
+      "first_seen": "2026-09-06",
+      "last_checked": "2026-09-06",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "medRxiv preprint, University of Utah group (Liou/Adler et al.), 33 authors. Saliva proteomics cohort linking acute-phase antiviral protein responses to reduced risk of later neurocognitive/general post-viral sequelae (fatigue, brain fog) after SARS-CoV-2 infection. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/source/DOI exact match); direct medRxiv page fetch returned HTTP 403, so confirmation rests on Europe PMC's structured metadata record rather than the raw preprint page."
+    },
+    {
+      "id": "sebastianelli-2026-postexercise-corticomotor-depression-fatigue",
+      "title": "Abnormal post-exercise depression of corticomotor excitability is associated with fatigue in post-COVID-19 condition",
+      "authors": "Sebastianelli L, Dezi S, Ortelli P, Ferrazzoli D, Oliviero A, Versace V",
+      "journal": "Clinical Neurophysiology",
+      "date": "Aug 2026 (online Aug 24, 2026)",
+      "summary": "Using magnetic pulses to test brain-to-muscle signaling before and after exercise in 58 people with long COVID, researchers found the brain's motor output failed to recover normally after physical effort, and this abnormal pattern matched how fatigued patients said they felt.",
+      "why": "Gives doctors an objective, brain-based way to measure post-exertional fatigue instead of relying only on self-reported tiredness, which could help diagnose patients and track treatment response in future trials.",
+      "link": "https://doi.org/10.1016/j.clinph.2026.2112384",
+      "first_seen": "2026-09-06",
+      "last_checked": "2026-09-06",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Clinical Neurophysiology (Elsevier), Italian group (Sebastianelli et al., Villa Beretta Rehabilitation Center / Vita-Salute San Raffaele). TMS (transcranial magnetic stimulation) study of post-exercise corticomotor excitability in 58 post-COVID-19 patients with fatigue as the primary outcome. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and DOI resolution to the Clinical Neurophysiology/ScienceDirect page (PII S1388245726008849)."
     }
   ]
 }
