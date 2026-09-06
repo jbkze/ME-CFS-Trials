@@ -41,10 +41,10 @@ STATUS_LABEL = {
 # Statuses not listed here (completed / terminated / withdrawn / suspended /
 # unknown) are treated as archived and omitted from the dashboard.
 DASH_BUCKET = {
-    "recruiting": ("recruiting", "Recruiting"),
-    "enrolling_by_invitation": ("recruiting", "Enrolling (invite)"),
-    "not_yet_recruiting": ("soon", "Planned"),
-    "active_not_recruiting": ("planned", "Active, not recruiting"),
+    "recruiting": ("recruiting", "Rekrutierend"),
+    "enrolling_by_invitation": ("recruiting", "Rekrutierung (auf Einladung)"),
+    "not_yet_recruiting": ("soon", "Geplant"),
+    "active_not_recruiting": ("planned", "Aktiv, nicht rekrutierend"),
 }
 BUCKET_ORDER = {"recruiting": 0, "soon": 1, "planned": 2}
 
@@ -129,9 +129,9 @@ def render_markdown(db: dict, trials: list) -> None:
 def study_location(germany: dict) -> str:
     sites = [s for s in (germany.get("sites") or []) if s.get("institution") or s.get("city")]
     if not sites:
-        return "Germany" if germany.get("has_german_site") else "—"
+        return "Deutschland" if germany.get("has_german_site") else "—"
     first = ", ".join(p for p in [sites[0].get("institution"), sites[0].get("city")] if p)
-    return first + (f" +{len(sites) - 1} more" if len(sites) > 1 else "")
+    return first + (f" +{len(sites) - 1} weitere" if len(sites) > 1 else "")
 
 
 def to_study(t: dict):
@@ -139,7 +139,7 @@ def to_study(t: dict):
     if bucket is None:
         return None  # archived / closed → not shown on the dashboard
     flags = t.get("flags") or []
-    title = t.get("name") or t.get("id") or "Untitled study"
+    title = t.get("name") or t.get("id") or "Studie ohne Titel"
     if t.get("acronym"):
         title = f"{t['acronym']} — {title}"
     reg = t.get("registry") or {}
@@ -175,6 +175,16 @@ def load_papers() -> list:
     return papers
 
 
+GERMAN_MONTH_ABBR = [
+    "Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
+    "Jul", "Aug", "Sep", "Okt", "Nov", "Dez",
+]
+
+
+def de_date(d: datetime) -> str:
+    return f"{d.day:02d}. {GERMAN_MONTH_ABBR[d.month - 1]} {d.year}"
+
+
 def format_run(db: dict):
     """Return (last_run_at_iso, lastRun_date_str, nextRun_str).
 
@@ -185,7 +195,7 @@ def format_run(db: dict):
     at = db.get("last_run_at")  # ISO with time, e.g. "2026-06-25T14:21:48Z"
     last = db.get("last_check")  # date only, e.g. "2026-06-25"
     if not at and not last:
-        return None, "Not run yet", "First scheduled run pending"
+        return None, "Noch nicht ausgeführt", "Erster geplanter Lauf steht noch aus"
     d = None
     for candidate in (at[:10] if at else None, last):
         if candidate:
@@ -196,7 +206,7 @@ def format_run(db: dict):
                 continue
     if d is None:
         return at, (last or "—"), ""
-    return at, d.strftime("%d %b %Y"), "Next run ~" + (d + timedelta(days=1)).strftime("%d %b %Y")
+    return at, de_date(d), "Nächster Lauf ~" + de_date(d + timedelta(days=1))
 
 
 def build_dashboard(db: dict, trials: list) -> int:

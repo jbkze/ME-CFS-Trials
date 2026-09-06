@@ -57,7 +57,10 @@ below is ambiguous. In short:
 - **Papers track:** notable new ME/CFS research, prioritising Wirth/Scheibenbogen
   but **not** Germany-restricted; recent (~last 3 months / since `last_check`);
   confirmed via DOI/journal/preprint; `summary` + `why` written in **plain,
-  layperson language** (minimal jargon, explained inline). → `data/papers.json`.
+  layperson German** (minimal jargon, explained inline) — the dashboard is a
+  German-language page; proper nouns, drug/gene names, and registry names stay
+  as-is, titles/authors/journals stay in their original language.
+  → `data/papers.json`.
 - **Never hand-edit `TRIALS.md` or `docs/dashboard.json`** — they are generated;
   edit the JSON and re-run the script.
 - **Never delete** a trial that drops out of scope — update its status + flag it.

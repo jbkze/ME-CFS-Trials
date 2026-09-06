@@ -54,14 +54,19 @@ notable ME/CFS science (e.g. DecodeME genetics, micro-clots, mitochondrial/muscl
 findings). Confirm each via its **DOI / journal / preprint page**; news/blogs are
 leads only — never fabricate.
 
-**Write summaries for laypeople.** Both `summary` and `why` must be understandable
-by someone with no medical background: short sentences, plain words, as many
-technical terms as necessary but as few as possible — and when a term is
-unavoidable, explain it in a few words right there (e.g. *"post-exertional malaise
-(a crash after activity)"*, *"autoantibodies (antibodies that mistakenly attack the
-body)"*). Avoid statistics, p-values, and acronyms unless essential. Aim for 1–2
-short sentences each. The existing entries in `data/papers.json` are the style
-reference — match their tone.
+**Write summaries for laypeople, in German.** Both `summary` and `why` must be
+understandable by someone with no medical background: short sentences, plain
+words, as many technical terms as necessary but as few as possible — and when a
+term is unavoidable, explain it in a few words right there (e.g. *"Post-Exertional
+Malaise (ein Zusammenbruch nach Belastung)"*, *"Autoantikörper (Antikörper, die
+fälschlicherweise den eigenen Körper angreifen)"*). Avoid statistics, p-values,
+and acronyms unless essential. Aim for 1–2 short sentences each. Write both
+fields in **German** — the dashboard (`docs/index.html`) is a German-language
+page — while keeping proper nouns (researcher/institution names, drug/gene
+names, registry names like DRKS/ClinicalTrials.gov, acronyms like ME/CFS/PEM) as
+they are. Titles, authors, and journal names stay in their original language
+(they are bibliographic references, not translated). The existing entries in
+`data/papers.json` are the style reference — match their tone.
 
 ## Status vocabulary (trials)
 
