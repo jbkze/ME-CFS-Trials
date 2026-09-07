@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-06",
+  "last_check": "2026-09-07",
   "papers": [
     {
       "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
@@ -2659,7 +2659,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "medRxiv preprint, University of Utah group (Liou/Adler et al.), 33 authors. Saliva proteomics cohort linking acute-phase antiviral protein responses to reduced risk of later neurocognitive/general post-viral sequelae (fatigue, brain fog) after SARS-CoV-2 infection. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/source/DOI exact match); direct medRxiv page fetch returned HTTP 403, so confirmation rests on Europe PMC's structured metadata record rather than the raw preprint page."
     },
     {
@@ -2676,7 +2676,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "Clinical Neurophysiology (Elsevier), Italian group (Sebastianelli et al., Villa Beretta Rehabilitation Center / Vita-Salute San Raffaele). TMS (transcranial magnetic stimulation) study of post-exercise corticomotor excitability in 58 post-COVID-19 patients with fatigue as the primary outcome. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and DOI resolution to the Clinical Neurophysiology/ScienceDirect page (PII S1388245726008849)."
     }
   ]
