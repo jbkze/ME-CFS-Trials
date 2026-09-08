@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-07",
+  "last_check": "2026-09-08",
   "papers": [
     {
       "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
@@ -2324,9 +2324,7 @@
       "link": "https://doi.org/10.20944/preprints202608.1772.v1",
       "first_seen": "2026-08-27",
       "last_checked": "2026-09-04",
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "Posted Preprints.org 2026-08-25 (v1). Solo-authored hypothesis paper by Klaus Wirth (Mitodicure) — HIGH PRIORITY, Wirth-authored, same lower-tier preprint-venue caveat as other already-tracked Preprints.org Wirth entries (wirth-2026-hypovolemia-review, wirth-2026-connective-tissue-laxity). Direct fetch of preprints.org manuscript page returned HTTP 403; confirmed instead via doi.org redirect resolving to the correct preprints.org manuscript URL plus independent corroboration from a Science for ME forum thread quoting the abstract verbatim (title/author/DOI/mechanism match). Not yet peer-reviewed. Extends Wirth's Na+/K+-ATPase / NCX calcium-overload skeletal-muscle hypothesis (already tracked via wirth-2026-myasthenia-electrophysiology and the earlier skeletal-muscle reviews) to argue orthostatic stress alone, via impaired beta2-adrenergic Na+/K+-ATPase activity, can trigger the same PEM-causing calcium overload without physical exertion."
     },
@@ -2656,9 +2654,7 @@
       "link": "https://doi.org/10.64898/2026.08.27.26361488",
       "first_seen": "2026-09-06",
       "last_checked": "2026-09-06",
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "medRxiv preprint, University of Utah group (Liou/Adler et al.), 33 authors. Saliva proteomics cohort linking acute-phase antiviral protein responses to reduced risk of later neurocognitive/general post-viral sequelae (fatigue, brain fog) after SARS-CoV-2 infection. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/source/DOI exact match); direct medRxiv page fetch returned HTTP 403, so confirmation rests on Europe PMC's structured metadata record rather than the raw preprint page."
     },
@@ -2673,11 +2669,77 @@
       "link": "https://doi.org/10.1016/j.clinph.2026.2112384",
       "first_seen": "2026-09-06",
       "last_checked": "2026-09-06",
+      "flags": [],
+      "isNew": false,
+      "notes": "Clinical Neurophysiology (Elsevier), Italian group (Sebastianelli et al., Villa Beretta Rehabilitation Center / Vita-Salute San Raffaele). TMS (transcranial magnetic stimulation) study of post-exercise corticomotor excitability in 58 post-COVID-19 patients with fatigue as the primary outcome. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and DOI resolution to the Clinical Neurophysiology/ScienceDirect page (PII S1388245726008849)."
+    },
+    {
+      "id": "yuan-2026-effector-bcell-autoantibody-covid",
+      "title": "A distinct effector B cell population drives autoantibody production in SARS-CoV-2 infection",
+      "authors": "Yuan D, Li S, Zhang R, et al.",
+      "journal": "Immunity",
+      "date": "Aug 2026 (published Aug 28, 2026)",
+      "summary": "Studying blood samples from COVID-19 patients, researchers found a specific type of immune cell (a kind of B cell) that makes autoantibodies — antibodies that mistakenly attack the body's own tissues — and identified a signal that switches these cells on.",
+      "why": "Autoantibodies are a leading suspect behind symptoms in ME/CFS and long COVID; pinpointing the exact cell type and its trigger gives researchers a specific new target to aim future drugs at.",
+      "link": "https://doi.org/10.1016/j.immuni.2026.08.002",
+      "first_seen": "2026-09-08",
+      "last_checked": "2026-09-08",
       "flags": [
         "new"
       ],
-      "isNew": false,
-      "notes": "Clinical Neurophysiology (Elsevier), Italian group (Sebastianelli et al., Villa Beretta Rehabilitation Center / Vita-Salute San Raffaele). TMS (transcranial magnetic stimulation) study of post-exercise corticomotor excitability in 58 post-COVID-19 patients with fatigue as the primary outcome. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and DOI resolution to the Clinical Neurophysiology/ScienceDirect page (PII S1388245726008849)."
+      "isNew": true,
+      "notes": "Institute for Systems Biology / Stanford INCOV cohort (Yuan, Li, Zhang, Heath, Snyder et al.). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
+    },
+    {
+      "id": "liu-2026-vmat2-dopamine-longcovid",
+      "title": "Loss of vesicular monoamine transporter 2 in striatum of long COVID and relationship to neuropsychiatric symptoms",
+      "authors": "Liu YK, Persaud D, Vieira EL, et al.",
+      "journal": "EBioMedicine",
+      "date": "Jul 2026 (online Jul 10, 2026)",
+      "summary": "Brain scans of people with long COVID showed fewer working dopamine-releasing nerve endings in a brain region involved in motivation and movement, and the loss lined up with how apathetic, slowed-down, or forgetful people felt.",
+      "why": "Points to a specific, measurable brain change behind some long COVID motivation and thinking problems, and suggests boosting dopamine signalling could be worth testing as a treatment.",
+      "link": "https://doi.org/10.1016/j.ebiom.2026.106339",
+      "first_seen": "2026-09-08",
+      "last_checked": "2026-09-08",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Toronto group (Liu, Persaud, Vieira, Meyer et al.), PET imaging study. Not Wirth/Scheibenbogen-affiliated. Published Jul 10 2026 — outside this run's usual ~2-week sweep window but within the routine's ~3-month recency bar and not previously tracked; added now having been independently confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
+    },
+    {
+      "id": "hanson-2026-monocyte-neuro-pasc-cognition",
+      "title": "Cognition-Linked Monocyte State Reveals Altered Myeloid-Lymphoid Coordination in Neuro-PASC",
+      "authors": "Hanson BA, Cogswell AC, Lopez M, et al.",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "Aug 2026 (online Aug 21, 2026)",
+      "summary": "In older adults with long-COVID brain fog, researchers found an unusual state of certain white blood cells (monocytes) that coincided with poorer coordination between different parts of the immune system.",
+      "why": "Adds to evidence that immune-cell dysfunction, not just direct brain injury, may underlie the fatigue and cognitive problems seen in long COVID and ME/CFS.",
+      "link": "https://doi.org/10.3390/ijms27167474",
+      "first_seen": "2026-09-08",
+      "last_checked": "2026-09-08",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Northwestern group (Hanson, Cogswell, Koralnik et al.), cohort of adults >55 with neuro-PASC. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
+    },
+    {
+      "id": "neumann-2026-eeg-theta-alpha-fatigue-postviral",
+      "title": "Fatigue is associated with stimulus-related theta and alpha power and distinguishes subjective from objective cognition in a post-viral cohort: A cross-sectional study",
+      "authors": "Neumann C, Godbersen L, Schmeer L, et al.",
+      "journal": "Research Square (preprint)",
+      "date": "Sep 2026 (posted Sep 4, 2026)",
+      "summary": "In a large German post-viral cohort, brainwave recordings (EEG) showed that people who felt more fatigued had different patterns of brain activity (theta and alpha waves) during mental tasks, even when their measured performance looked normal.",
+      "why": "Offers an objective, brain-based marker for the mismatch between how fatigued someone feels and how they perform on tests — a mismatch that is common and hard to explain in ME/CFS and long COVID.",
+      "link": "https://doi.org/10.21203/rs.3.rs-10753262/v1",
+      "first_seen": "2026-09-08",
+      "last_checked": "2026-09-08",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "German NAPKON/COVIDOM cohort (Kiel-based group; Neumann, Welzel, Keil, Schreiber, Vehreschild JJ among authors), n=98 with n=2,549 replication. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
     }
   ]
 }
