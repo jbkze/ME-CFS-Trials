@@ -1,0 +1,3165 @@
+Article
+Mapping the complexity of ME/CFS: Evidence for 
+abnormal energy metabolism, altered immune 
+profile, and vascular dysfunction
+Graphical abstract
+Highlights
+• This study involves age- and sex-matched 61 healthy 
+controls and 61 ME/CFS patients
+• Abundance of AMP and ADP, with reduced ATP/ADP ratio in 
+immune cells
+• Lower proportion of terminal effector memory T cell, NK, and 
+DC subpopulations
+• Elevated plasma proteins associated with vascular and anti-
+inflammation activity
+Authors
+Benjamin Heng, Bavani Gunasegaran,
+Shivani Krishnamurthy, ...,
+Alexandra Sharland, Richard Schloeffel, 
+Gilles J. Guillemin
+Correspondence
+benjamin.heng@mq.edu.au
+In brief
+Heng et al. apply a multi-omics approach 
+combining analyses of energy 
+metabolism, immune cell composition, 
+and plasma proteomics. They reveal 
+altered energy metabolism and immune 
+profiles, alongside plasma proteins 
+associated with vascular dysfunction in 
+ME/CFS, highlighting coordinated 
+dysregulation across multiple biological 
+systems in this disorder.
+Heng et al., 2025, Cell Reports Medicine 6, 102514
+December 16, 2025 © 2025 The Authors. Published by Elsevier Inc. 
+https://doi.org/10.1016/j.xcrm.2025.102514
+ll
+
+Article
+Mapping the complexity of ME/CFS: Evidence 
+for abnormal energy metabolism, altered 
+immune profile, and vascular dysfunction
+Benjamin Heng, 1,10, * Bavani Gunasegaran, 1 Shivani Krishnamurthy, 1 Sonia Bustamante, 2 Ananda Staats Pires, 1 
+Sharron Chow, 1 Seong Beom Ahn, 1 Moumita Paul-Heng, 3 Yolande Maciver, 4 Kirsten Smith, 4 Denise P. Tran, 5 
+Peter P. Howley, 1,6 Ayse Aysin Bilgin, 7 Alexandra Sharland, 3 Richard Schloeffel, 1,4,9 and Gilles J. Guillemin 1,8,9
+1 Faculty of Medicine, Health and Human Sciences, Macquarie University, Sydney, NSW, Australia
+2 Bioanalytical Mass Spectrometry Facility, University of New South Wales, Sydney, NSW, Australia
+3 Transplantation Immunobiology Research Group, Faculty of Medicine and Health, Charles Perkins Centre, The University of Sydney, Sydney, 
+NSW, Australia
+4 The Grove Health Pymble, Sydney, NSW, Australia
+5 Sydney Mass Spectrometry, Charles Perkins Centre, The University of Sydney, Sydney, NSW, Australia
+6 Hunter Medical Research Institute, Newcastle, NSW, Australia
+7 Faculty of Sciences and Engineering, Macquarie University, Sydney, NSW, Australia
+8 IPB Department of Chemistry, Faculty of Mathematics and Natural Sciences, IPB University, Bogor, Indonesia
+9 Senior authors
+10 Lead contact
+*Correspondence: benjamin.heng@mq.edu.au
+https://doi.org/10.1016/j.xcrm.2025.102514
+SUMMARY
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a complex disorder with undefined mech-
+anisms, no diagnostic tools and treatments. To investigate concurrent system dysfunctions, we recruited 
+age- and sex-matched ME/CFS patients and healthy controls for a multimodal analysis of energy meta-
+bolism, immune profiles, and plasma proteomics. Immune cells from ME/CFS patients show elevated aden-
+osine monophosphate (AMP) and adenosine diphosphate (ADP) with a reduced ATP/ADP ratio, indicating 
+decreased ATP generation and cellular energy stress. Immune profiling reveals skewing toward less mature 
+effector subsets of CD4 + , CD8 + , and γδ T cells, with reduced CD1c + CD141 − conventional DC type 2 and 
+CD56 low CD16 + terminal natural killer cells. Elevated levels of plasma proteins associated with thrombus for-
+mation and vascular reactivity may contribute to the endothelial dysfunction observed in ME/CFS patients. 
+Classification and regression tree modeling identifies variables with strong predictive potential for ME/ 
+CFS. Together, this study provides insights into the somatic symptoms and underlying biology of ME/CFS.
+INTRODUCTION
+Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) 
+affects approximately 1% of the global population. According 
+to the Canadian Consensus Criteria, 1 the key clinical presenta-
+tions for ME/CFS include fatigue, post-exertional malaise, sleep 
+dysfunction, and pain. 2,3 Despite identification of these key 
+symptoms, the diagnosis of ME/CFS remains challenging. Cur-
+rent diagnosis relies on self-reporting and thorough medical his-
+tory evaluation, highlighting the need to better understand the 
+biology of ME/CFS and identify reliable parameter(s) for patient 
+management.
+While the intrinsic heterogeneity of ME/CFS may contribute to 
+contradictory observations, 4 a key mechanism strongly associ-
+ated with the prominent symptom of fatigue is disturbance of 
+mitochondrial respiration. 4 Disruption to mitochondrial meta-
+bolism leads to redox imbalance and reduced adenosine 
+triphosphate (ATP) production. 5–7 The kynurenine pathway
+(KP), a crucial nicotinamide adenine dinucleotide (NAD + ) de 
+novo synthesis pathway, is also emerging as an important factor 
+in ME/CFS pathology. 8,9 NAD + is critical in mitochondrial respira-
+tion as an acceptor of hydride generated in various metabolic 
+processes such as the tri-carboxylic acid (TCA) cycle. 
+Mitochondrial dysfunction affects lymphocytes and myeloid 
+cells, 6,10,11 leading to exhaustion or hyperactivation of the im-
+mune system. 12 ME/CFS patients show altered immune profiles, 
+including significantly lower proportions of effector T cell subsets 
+and NK cell populations, alongside elevated levels of proinflam-
+matory cytokines. 11 Nonetheless, there are also contradictory 
+findings regarding immune cell populations and responses. 13 
+An altered immune profile in ME/CFS patients is consistent 
+with limited immune responses and sustained ineffective spe-
+cific immunity. This observation shifts the focus onto profes-
+sional antigen-presenting cells such as dendritic cells (DCs) 
+and macrophages, which have remained largely uncharacter-
+ized in ME/CFS to date. An understanding of individual immune
+Cell Reports Medicine 6, 102514, December 16, 2025 © 2025 The Authors. Published by Elsevier Inc. 
+1
+This is an open access article under the CC BY-NC license (http://creativecommons.org/licenses/by-nc/4.0/).
+ll
+OPEN ACCESS
+
+cell phenotype distributions may shed light on their functional 
+state.
+Although mitochondrial dysfunction and altered immune pro-
+file in ME/CFS patients have been extensively studied, their 
+concurrence and biological significance remain unclear, as pre-
+vious studies have often focused on a single analytical platform. 
+This study addresses that gap by evaluating energy metabolism 
+(NAD + and ATP) together with immune cell composition in 
+plasma and circulating immune cells from a well-defined, age-
+and sex-matched cohort of 61 ME/CFS patients and 61 healthy 
+participants. Comprehensive plasma proteomics were per-
+formed to identify potential additional disease mechanisms. 
+These analyses were conducted using a multimodal approach 
+that combined chromatography- and mass-spectrometry (MS)- 
+based methods together with both conventional and spectral
+flow cytometry, enabling parallel assessment of metabolic, im-
+mune, and proteomic domains. Our results revealed abnormal
+NAD + metabolism and reduced ATP generation, an altered im-
+mune profile, and a plasma protein composition associated 
+with vascular dysfunction in ME/CFS patients. Together with 
+exploratory machine learning on combined data from various 
+modalities, these findings offer important insights into potential 
+links between biochemical, immune, and vascular dysfunction 
+in ME/CFS. Moreover, we identified variables with strong predic-
+tive potential for ME/CFS, pending further validation in an inde-
+pendent cohort of ME/CFS patients.
+RESULTS
+Study cohort demographics
+Sixty-three potential ME/CFS patients were recruited and under-
+went detailed case review. Of these patients, 61 met the Cana-
+dian Consensus Criteria 1 and satisfied the case definition classi-
+fication according to the DePaul Symptom Questionnaire-Short 
+Form (DSQ-SF) 14 for ME/CFS. Sixty-one healthy controls were 
+recruited separately to age- and sex-match the patient cohort. 
+All participants were further assessed on their health status 
+and quality of life using the SF-36 and Karnofsky Performance 
+Scale. 15 The workflow is outlined in Figure 1, and the demo-
+graphic and clinical features of all study participants are summa-
+rized in Table 1.
+Based on the Karnofsky Performance Scale, 19.7% of ME/
+CFS patients were rated as disabled (score <50), another 
+36.1% required considerable or occasional assistance (score 
+50–60), and only 44.3% of patients were capable of self-care 
+with limited normal activity (score 70) (Table 1). All patients 
+with ME/CFS had experienced CFS for at least 5 years, with 
+almost 46% living with the condition for 10–19 years, another 
+34% for 20–29 years, and 8.2% for over 30 years (Table 1). 
+The scores for all of the SF-36 items were significantly lower in 
+the ME/CFS patient cohort than in the healthy controls. The 
+mean scores for role limitations due to physical health and en-
+ergy/fatigue were particularly low with a value of less than 20, 
+congruent with values observed in another study of severe ME/ 
+CFS patients. 16 The physical function of the patient cohort in 
+the present study was below 50% (score 37.2 ± 20.5), which is 
+comparable to other ME/CFS studies, such as the metabolic 
+study by Hoel et al. (29.3 ± 19.5) 17 and the RituxME clinical trial 
+(NCT02229942; score 35.2). 18
+Individuals in the control cohort were unlimited in their capac-
+ity for self-care, unaided in work activities, and either completely 
+healthy or minimally affected by other conditions (Table 1). 
+Importantly, the sex distribution, the mean age, and the age 
+range were not statistically significantly different from ME/CFS 
+patients and thus a robust foundation for comparison.
+Plasma analysis reveals disruption of the NAD + de novo 
+pathway with accumulation of 3-hydroxykynurenine 
+Given that the KP is the major NAD + de novo synthesis pathway 
+in mammals (Figure 2A), we measured KP metabolites in plasma 
+from healthy controls and patients with ME/CFS. We observed a 
+deviation at the first node of this pathway at which kynurenine 
+(KYN) can be converted to 3-hydroxykynurenine (3HK),
+Karnofsky Performance Scale 
+score of >80 
+Karnofsky Performance Scale
+score of <70 
+1. Canadian Consensus Criteria
+2. DePaul Questionnaire-short form/Short 
+Form 36 
+"2-2" threshold for frequency and severity
+n = 38 
+n = 23 
+n = 49 n = 14
+n = 38 
+n = 23 
+n = 47 n = 14
+Whole blood
+Recruitment
+Screening
+Immune 
+PBMCs 
+Plasma 
+proteome 
+analysis
+Targeted metabolite 
+analysis of plasma 
+and PBMCs
+Healthy controls
+Potential ME/CFS 
+patients
+Figure 1. Overall recruitment and experimental workflow
+Sixty-three potential ME/CFS patients were recruited and underwent detailed 
+case reviews. Among them, two did not meet the Canadian Consensus 
+Criteria 1 or satisfy the case definition classification according to the DePaul 
+Symptoms Questionnaire-Short Form (DSQ-SF) 14 and were therefore 
+excluded. Sixty-one healthy controls were recruited separately to age- and 
+sex-match the patient cohort. All participants were further assessed for their 
+health status and quality of life using the SF-36 and Karnofsky Performance 
+Scale. 15 Blood was collected and processed for plasma, and peripheral blood 
+mononuclear cells (PBMCs) were isolated for downstream targeted metabolite 
+analysis, immune profiling, and plasma proteome analysis.
+2 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+kynurenic acid (KYNA), or anthranilic acid (AA). A higher concen-
+tration of 3HK in ME/CFS patients (34.29 nM; 95% confidence in-
+terval [CI] 31.26–37.22) was measured compared to healthy con-
+trols (26.67 nM; 95% CI 25.09–32.36) (Figure 2B), and the levels 
+of KYNA were lower (23.38 nM; 95% CI 22.4–33.05) than in 
+healthy control samples (30.26 nM; 95% CI 29.92–42.41; 
+Figure 2B), consistent with elevated kynurenine monooxygenase 
+(KMO) activity. 19 Furthermore, we observed lower levels of pico-
+linic acid (PIC) and quinolinic acid (QUIN) in ME/CFS patients 
+(PIC: 141.8 nM; 95% CI 71.64–1297 and QUIN: 412.5 nM; 95% 
+CI 402.6–532) as compared to healthy controls (PIC: 208 nM; 
+95% CI 193–290.4 and QUIN: 463.5 nM; 95% CI 463.7–571) 
+(Figure 2B). No differences were evident in the median levels of 
+tryptophan (TRP), KYN, AA, and 3-hydroxyanthranilic acid 
+(3HAA) between the two cohorts (Figure 2B). The net effect of 
+these changes reduces systemic availability of QUIN, the sub-
+strate for NAD + generation.
+High concentration of AMP in plasma of ME/CFS 
+patients
+We next investigated whether the KP dysregulation in ME/CFS 
+patients could contribute to energy deficiency. It is well estab-
+lished that NAD + plays a critical role in ATP production. 20 There-
+fore, we analyzed plasma concentrations of adenine nucleo-
+tides, such as adenosine monophosphate (AMP), adenosine 
+diphosphate (ADP), and ATP in the plasma of ME/CFS patients 
+and healthy controls. Although we observed higher median 
+levels of AMP in ME/CFS patients (312.2 nM; 95% CI 285.0– 
+439.7) than in healthy controls (147.2 nM; 95% CI 229.8– 
+432.7), this difference did not achieve statistical significance 
+(Figure 2C). There was no difference in the levels of ADP or 
+ATP between the cohorts. Only the median levels of AMP were 
+higher in female patients compared to female healthy controls 
+(Figure S1).
+High metabolic and redox potential profile in PBMC of 
+ME/CFS patients
+Alterations in the immune system are frequently observed in ME/ 
+CFS, and since immune responses are closely associated with 
+cellular energy states 21 and NAD + is synthesized and compart-
+mentalized intracellularly, we evaluated the energy metabolism 
+of patient peripheral blood mononuclear cells (PBMCs). Elevated 
+levels of NAD + (300.3 nM; 95% CI 248.3–311.9 vs. 257.7 nM, 
+95% CI 219.3–274) and higher NADP + /NADPH ratio (0.023, 
+95% CI 0.02–0.06 vs. 0.016, 95% CI 0.014–0.023) were 
+measured in patients compared to healthy controls (Figure 2D).
+Table 1. Demographics and quality of life of healthy controls and ME/CFS patients
+Healthy controls (n = 61)
+Patients (n = 61)
+p value
+Age in years (mean; range)
+45.87 (26–76)
+49.11 (20–79)
+0.3129
+Sex (F/M; % female)
+38/23; 62.0%
+47/14; 77.0%
+0.1151
+Duration of illness (years; mean ± SD)
+NA
+17.6 ± 8.3
+–
+Less than 10 years
+NA
+11.5%
+–
+10–19 years
+NA
+45.9%
+–
+20–years
+NA
+34.4%
+–
+30–40 years
+NA
+8.2%
+–
+Karnofsky Performance Scale index (%)
+30: severely disabled; hospital admission is indicated although death not imminent
+0%
+3.3%
+–
+40: disabled; requires special care and assistance
+0%
+16.4%
+–
+50: requires considerable assistance and frequent medical care
+0%
+16.4%
+–
+60: requires occasional assistance but is able to care for most of 
+his/her personal needs
+0%
+19.7%
+–
+70: cares for self; unable to carry on normal activity or to do active work
+0%
+44.3%
+–
+80: normal activity with effort; some signs or symptoms of disease
+4.9%
+0%
+–
+90: able to carry on normal activity; minor signs or symptoms of disease
+29.5%
+0%
+–
+100: normal; no complaints; no evidence of disease
+65.6%
+0%
+–
+Quality of life (SF-36 score; mean ± SD)
+Physical functioning
+93.4 ± 9.4
+37.2 ± 20.5
+<0.0001
+Role limitations due to physical health
+80.6 ± 35.2
+4.9 ± 15.7
+<0.0001
+Role limitations due to emotional problems
+86.3 ± 28.8
+37.1 ± 42.7
+<0.0001
+Energy/fatigue
+72.6 ± 27.3
+13.7 ± 15.8
+<0.0001
+Mental health/emotional well-being
+84.1 ± 17.8
+52.5 ± 21.4
+<0.0001
+Social functioning
+88.4 ± 18.1
+26.0 ± 21.1
+<0.0001
+Pain
+88.0 ± 15.4
+36.1 ± 24
+<0.0001
+General health
+76.3 ± 28.0
+21.2 ± 14.2
+<0.0001
+Health change
+73.4 ± 27.7
+43.4 ± 25
+<0.0001
+Cell Reports Medicine 6, 102514, December 16, 2025 
+3
+Article
+ll
+OPEN ACCESS
+
+IDO1/TDO
+KYNU
+KATs
+KMO
+KYNU
+Healthy control 
+ME/CFS
+[µM]
+[nM]
+[nM]
+[nM]
+[nM]
+[nM]
+[nM]
+[nM]
+[nM]
+[nM]
+[nM]/[nM]
+[nM]
+[nM]/[nM]
+[nM]
+[nM]
+[nM]/[nM]
+[nM]
+[nM]
+[nM]
+[nM]
+0
+20
+40
+60
+80
+0
+1
+2
+3
+4
+5
+0
+20
+40
+60
+80
+100
+0.0067
+0
+10
+20
+30
+40
+0
+20
+40
+60
+80
+100
+0
+50
+100
+150
+200
+0.0050
+0
+200
+400
+600
+800
+1000
+0.0071
+0
+500
+1000
+0.0396
+0
+500
+1000
+1500
+2000
+2500
+0
+1000
+2000
+3000
+4000
+5000
+0
+500
+1000
+1500
+2000
+2500
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.0335
+0
+1
+2
+3
+4
+0.0279
+0
+10
+20
+30
+0
+10
+20
+30
+0.0047
+0
+200
+400
+600
+0.0432
+0
+1000
+2000
+3000
+4000
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+0
+200
+400
+600
+800
+1000
+0
+10000
+20000
+30000
+0.0
+0.2
+0.4
+0.6
+0.0005
+[µM]
+[nM]/[nM]
+Tryptophan (TRP)
+Kynurenine (KYN)
+3-Hydroxykynurenine (3HK)
+3-Hydroxyanthranilic 
+acid (3HAA)
+Kynureninic acid 
+(KYNA)
+Anthranilic acid 
+(AA)
+Quinolinic acid 
+(QUIN)
+Picolinic acid (PIC)
+AMP
+ADP
+ATP
+ATP/ADP ratio
+AMP
+ADP
+ATP
+NAD 
++
+NADH
+NAD+/NADH ratio
+NADP 
++
+NADPH
+NADP+/NADPH ratio
+ATP/ADP ratio
+Plasma
+PBMCs
+Plasma
+Tryptophan (TRP)
+IDO1/TDO
+Kynurenine (KYN)
+KMO
+3-Hydroxykynurenine (3HK)
+KYNU
+3-Hydroxyanthranilic 
+acid (3HAA)
+KYNU
+KATs
+An thran ilic acid 
+(AA)
+Kynureninic acid 
+(KYNA)
+Picolinic acid 
+(PIC)
+Quinolinic acid 
+(QUIN)
+NAD 
++
+NADP 
++
+NADPH
+NADH
+A
+B
+C
+D
+Figure 2. Analysis of energy metabolism of pe-
+ripheral and immune cell population
+(A) Simplified schematic of the kynurenine pathway
+(KP), illustrating its role in producing NAD + .
+(B) Shows plasma levels of metabolites in the KP. 3HK 
+was significantly higher, whereas KYNA, PIC, and 
+QUIN were significantly lower in patients compared to 
+healthy controls.
+(C) ME/CFS patients had a higher level of AMP and 
+lower ATP/ADP ratio in their plasma, indicating 
+reduced ATP production.
+(D) In ME/CFS patient PBMCs, levels of NAD + , AMP, 
+ADP, and the NADP/NADPH ratio were elevated, 
+whereas the ATP/ADP ratio was reduced. Collec-
+tively, these findings suggest abnormal energy pro-
+duction in patients with ME/CFS, potentially contrib-
+uting to their chronic fatigue. Each scatterplot 
+represents individual participants (dots), and data are 
+presented as the median and 95% confidence in-
+tervals. p value was calculated using Mann-Whitney U 
+test. Plasma samples were collected from 61 ME/CFS 
+patients and 61 healthy controls. However, matched 
+PBMC samples were available for only 60 patients 
+and 60 healthy controls due to insufficient immune cell 
+yield from one healthy control sample and no quan-
+tification signals from one ME/CFS patient sample, as 
+described under sample collection. For the calcula-
+tion of the NADP/NADPH ratio, only 47 of 60 healthy 
+controls were included, as 13 controls recorded zero
+value for NADP + .
+4 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+Moreover, in contrast to the findings in plasma, the levels of AMP 
+(0.4 nM, 95% CI 0.39–0.47) and ADP (1.79 μM, 95% CI 1.49– 
+1.89) were significantly higher in ME/CFS patients than in con-
+trols (AMP: 0.35 nM, 95% CI 0.34–0.45; ADP: 1.25 μM, 95% CI 
+1.19–1.6). The dynamics of the adenylate energy system were 
+determined by calculating the rate of ATP synthesis from phos-
+phorylation of ADP, using the ATP/ADP ratio. 22 We observed a 
+reduced ATP/ADP ratio in ME/CFS patients (5.25, 95% CI 
+4.93–5.71 cf. 6.25, 95% CI 5.63–7.75) (Figure 2D). Although there 
+were no significant differences in plasma adenosine levels, 
+Spearman’s correlation analysis revealed a negative association 
+between PBMC ATP and plasma AMP (p = 0.0497). A trend-level 
+positive association was also observed between PBMC AMP 
+and plasma ATP (p = 0.073) although this did not reach statistical 
+significance (Table S1). Among the female patients, there were 
+significantly lower levels of ATP and a reduced ATP/ADP ratio 
+compared to healthy controls. There was a trend toward 
+increased levels of AMP in female ME/CFS patients (Figure S1). 
+Taken together, the metabolomic analysis revealed two key 
+features: 3HK accumulation, which indicates disruption of the 
+KP and is linked to NAD + production, and higher levels of AMP 
+implying compromised energy status at a systemic level. These 
+findings align with the survey data showing 82% of patients 
+report chronic fatigue (Table 1)—a classic symptom of ME/ 
+CFS. 4 Additionally, the increased levels of AMP and ADP, along 
+with a reduced ATP/ADP ratio in PBMC suggest lower energy 
+generation in immune cell populations.
+Altered CD11c + HLA-DR + dendritic cell populations in 
+ME/CFS
+To understand how perturbations in energy metabolism may be 
+associated with changes in immune cell populations in ME/CFS, 
+PBMCs were immunophenotyped using high-dimensional 
+spectral flow cytometry. Although the total CD11c + HLA-DR + 
+DC population showed no significant difference between ME/ 
+CFS patients and healthy control PMBCs, further analysis 
+revealed that there was a significantly lower proportion of 
+CD1c + CD141 − conventional DC type 2 (cDC2; p = 0.001) but 
+not CD1c − CD141 + conventional DC type 1 (cDC1) and higher 
+proportion of CD11c − CD123 + plasmacytoid DC (pDC; p = 
+0.0149) in patient PBMCs (Figure 3A). Within the female cohorts, 
+ME/CFS patients had a significantly lower proportion of cDC2 
+(p = 0.001). There were no detectable differences in CD14 + 
+monocyte populations between female patients and the healthy 
+control cohort (Figure S2).
+Reduced mature effector subsets among the peripheral 
+blood lymphocytes of ME/CFS patients
+Peripheral blood T cells were divided into subsets reflecting their 
+maturation level and function based on surface antigen expres-
+sion. Within the CD4 + T cell population, there were significantly 
+less CD45RA − CCR7 − effector memory CD4 + T cells in ME/ 
+CFS patients compared to heathy controls (p = 0.0491; 
+Figure 3B), but no difference was observed in the proportions 
+of other CD4 + T cell subsets (Figure S2). Recognizing the pivotal 
+role of the T cell response in protecting against infections, we 
+further analyzed the status of each CD4 + T cell effector memory 
+subset. The CD45RA − CCR7 − CD4 + effector memory T cell pop-
+ulation was dominated by cells expressing the CD27 + CD28 + 
+early effector memory phenotype (p = 0.0037), while the 
+CD27 − CD28 − terminal effector memory subset was significantly 
+reduced in patient PBMCs when compared to those from healthy 
+controls (p = 0.0056) (Figure 3B).
+The general proportions of CD8 + T cell subsets were found to 
+mirror those of CD4 + cells in ME/CFS patients. A significantly 
+lower proportion of CD45RA − CCR7 − effector memory CD8 + 
+T cells (p = 0.019) and particularly the CD27 − CD28 − terminal 
+effector memory subset (p = 0.0476) was evident in ME/CFS pa-
+tients. Instead, there was a higher proportion of cells bearing the 
+CD27 + CD28 + early effector memory phenotype (Figure 4C). 
+Similar differences in phenotype were noted in the γδ T cell 
+population. The proportion of CD45RA + CCR7 − TEMRA γδ 
+T cells was significantly lower in ME/CFS patients (p = 0.0397) 
+(Figure 3D).
+We observed a smaller fraction of total CD56 + NK cells in pa-
+tients compared to healthy controls, and this was primarily attrib-
+utable to the reduction of CD56 low CD16 + terminal NK cells in 
+these patients (p = 0.0187; Figure 3E). There was no difference 
+in subsets of B cells or regulatory T cells between ME/CFS pa-
+tients and healthy controls (Figure S2). Female patients had a 
+significantly reduced proportion of CD27 − CD28 − CD4 + terminal 
+effector memory (p = 0.0158) and CD27 − CD28 − CD8 + intermedi-
+ate effector memory (p = 0.0451) T cell subsets and 
+CD56 low CD16 + terminal NK cells (p = 0.0324) compared to 
+healthy controls (Figure S2).
+Multiple plasma cytokines (interleukins [IL]-1β, IL-2, IL-4, 
+IL-6, IL-8, IL-10, IL-12p70, IL-13, IL-17A, IL-18, IL-23, IL-33, 
+monocyte chemoattractant protein 1[MCP-1], tumor necrosis 
+factor [TNF], interferon alpha [IFN-α], and IFN-γ) were detected 
+and found to be similar in abundance in both cohorts 
+(Figure S3).
+Altered levels of endothelial and circulating proteins in 
+the plasma of patients with ME/CFS
+We expanded our analysis to include a more comprehensive 
+range of plasma proteins using MS-based proteomics. This al-
+lowed us to identify and quantify a total of 322 distinct proteins 
+with high confidence (≤1% false discovery rate, ≥1 unique pep-
+tides) throughout all patient and control plasma samples. Among 
+the 322 quantified plasma proteins, 20 proteins demonstrated 
+significantly upregulated expression in the ME/CFS patient 
+cohort compared to healthy controls, while eight proteins 
+were significantly downregulated (p value <0.05 and a fold 
+change ±1.2; Figure 4A; Table 2). Most of the upregulated pro-
+teins were secreted proteins, including fibronectin 1 (FN1), 
+sex-hormone-binding globulin (SHBG), protein C (PROC), pro-
+teoglycan 4 (PRG4), thrombospondin 1 (THBS1), von Willebrand 
+factor (VWF), epidermal growth factor (EGF) containing fibulin 
+extracellular matrix protein 1 (EFEMP1), and fetuin B (FETUB). 
+Circulating immune-related proteins included beta-2-microglo-
+bulin (B2M), complement-factor-H-related 5 (CFHR5), comple-
+ment-factor-H-related 2 (CFHR2), mannose-binding lectin 
+(MBL)-associated serine protease 1 (MASP1), polymeric immu-
+noglobulin receptor (PIGR), immunoglobulin heavy variable 
+5-51 (IGHV5-51), immunoglobulin heavy variable 3-74 (IGHV3-
+74), and immunoglobulin kappa variable 6-21 (IGKV6-21).
+Cell Reports Medicine 6, 102514, December 16, 2025 
+5
+Article
+ll
+OPEN ACCESS
+
+Lymphatic vessel endothelial hyaluronan receptor 1 (LYVE1) 23 
+and vasorin (VASN) 24 are membrane-bound proteins that can 
+be enzymatically cleaved to release their ectodomains into circu-
+lation. In contrast, DnaJ heat shock protein family 40 member C2 
+(DNAJC2) and prenylcysteine oxidase 1 (PCYOX1) are intracel-
+lular proteins with no evidence supporting their secretion or 
+release. Among the upregulated proteins (Figure 4B), levels of 
+LYVE1 and DNAJC2 were significantly elevated with greater 
+than or equal to 2-fold increase in ME/CFS patient plasma, 
+whereas THBS1, VASN, IGHV3-74, IGKV6-21, PIGR, CFHR5,
+and EFEMP1 were increased by 1.6- to1.9-fold in the plasma 
+of ME/CFS patients. Levels of the remaining proteins SHBG, 
+PRG4, PROC, FN1, B2M, PCYOX1, VWF, CFHR2, MASP1, 
+IGHV5-51, and FETUB were also elevated in ME/CFS patients’ 
+plasma, with fold change between 1.2 and 1.5 compared to 
+healthy controls (Figure 4B).
+Six of the eight significantly downregulated proteins—immu-
+noglobulin lambda like polypeptide 1 (IGLL1), immunoglobulin 
+heavy constant gamma 2 (IGHG2), immunoglobulin heavy 
+constant gamma 3 (IGHG3), immunoglobulin kappa variable
+% of dendritic cells
+% of Lin 
+neg DR 
++
+HC              M 
+HC              M 
+HC              M
+0.0
+0.5
+1.0
+1.5
+2.0
+0
+10
+20
+30
+40
+0.0010
+0
+20
+40
+60
+80
+0.0149
+100%
+75%
+50%
+25%
+0%
+cDC1
+cDC2
+Plasmacytoid
+Non-classical
+% of dendritic cells
+HC       M 
+CD11c 
++ HLA 
+- DR 
++ 
+Dendritic cells
+CD1c 
++ CD141 
+- 
+conv. DC2
+CD11c 
+low CD123 
++ 
+plasmacytoid DCs
+HC              M
+HC              M
+0
+10
+20
+30
+40
+0
+5
+10
+15
+0.0187
+100%
+75%
+50%
+25%
+0%
+Early
+Mature
+Terminal
+% of NK cells
+HC       M
+CD56 
++  NK cells
+CD56 
+low CD16 
++ 
+Terminal NK cells
+% of CD4 
++  EM cells
+% of CD4 
++  EM cells
+HC              M
+HC              M
+HC              M
+HC              M
+0
+20
+40
+60
+0
+10
+20
+30
+40
+0.0491
+0
+20
+40
+60
+80
+100
+0.0037
+0
+20
+40
+60
+80
+100
+0.0056
+100%
+75%
+50%
+25%
+0%
+Naive
+Central mem. 
+Effector mem.
+100%
+75%
+50%
+25%
+0%
+Early
+Early-like
+Terminal
+% of CD4+ cells
+% of CD4+ cells
+% of CD4 
++  EM cells
+HC       M
+HC       M
+CD4 
++ αβ T cells
+CD45RA 
+- CCR7 
+- 
+Effector memory (EM)
+CD27 
++ CD28 
++ 
+Early EM
+CD27 
+- CD28 
+- 
+Terminal EM
+% of CD8+ cells
+% of CD8 
++  EM cells
+% of CD8 
++ EM cells
+% of CD56+  NK cells 
+HC              M 
+HC              M 
+HC              M 
+HC              M
+0
+10
+20
+30
+40
+0
+20
+40
+60
+80
+0.0190
+0
+20
+40
+60
+80
+100
+0
+20
+40
+60
+80
+100
+0.0476
+100%
+75%
+50%
+25%
+0%
+Naive
+Central mem. 
+Effector mem.
+Early
+Early-like
+Intermediate
+Terminal
+100%
+75%
+50%
+25%
+0%
+% of CD8+ cells
+% of CD8 
++  EM cells
+HC       M 
+HC       M 
+CD8 
++ αβ T cells
+CD45RA 
+- CCR7 
+- 
+Effector memory (EM)
+CD27 
++ CD28 
++ 
+Early EM
+CD27 
+- CD28 
+- 
+Terminal EM
+HC              M
+HC              M
+HC       M
+% of CD45+ cells
+% of CD45 
++  cells
+% of CD45+ cells
+% of CD45+ cells
+% of CD45+ cells
+% of      T cells
+0
+5
+10
+15
+20
+25
+0
+20
+40
+60
+80
+100
+0.0397
+Naive
+Central mem.
+Effector mem. 
+TEMRA
+100%
+75%
+50%
+25%
+0%
+% of      T cells
+   T cells
+CD45RA 
++ CCR7 
+- 
+TEMRA
+Healthy control 
+ME/CFS
+A
+B
+C
+D
+E
+Figure 3. Immunophenotyping of peripheral blood mononuclear cells
+We observed a significantly lower proportion of (A) CD1c + CD141 − conventional dendritic cells 2 (cDC2) and a higher proportion of CD11c − CD123 + plasmacytoid 
+dendritic cells (pDC) in ME/CFS patients. There was a significantly lower proportion of effector memory cell subsets of (B) CD4 + and (C) CD8 + T cells, primarily 
+attributable to the reduction in CD27 − CD28 − terminal subset of the effector memory population. Additionally, ME/CFS patients also had decreased proportions of 
+(D) the CD45RA + CCR7 − TEMRA γδ T cell subset and (E) CD56 low CD16 + terminal NK cells. Collectively, the reduction in pathogen-responding immune cell 
+subsets suggests an altered immune system in ME/CFS patients and an increased vulnerability to viral infection. Each scatterplot represents individual par-
+ticipants (dots), and data are presented as the median and 95% confidence intervals. p value was calculated using Mann-Whitney U test or Welsh’s t test. PBMCs 
+were collected from 61 ME/CFS patients and 60 age- and sex-matched healthy controls.
+6 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+-2.0
+-1.5
+-1.0
+-0.5
+0.0
+0.5
+1.0
+1.5
+2.0
+0
+2
+4
+6
+8
+-log 10  (p value)
+Log 
+2  fold change
+LYVE1
+VWF
+DNAJ2
+THBS1
+VASN
+FN1
+IGKC
+IGLL1
+IGHG2
+CDH5
+-2
+0
+2
+4
+6
+log2 (intensity)
+0.0071
+-2
+0
+2
+4
+6
+8
+log2 (intensity)
+0.0335
+-2
+0
+2
+4
+6
+8
+log2 (intensity)
+0.0044
+-2
+0
+2
+4
+6
+8
+log2 (intensity)
+0.0067
+-2
+0
+2
+4
+6
+log2 (intensity)
+0.0258
+-2
+0
+2
+4
+6
+0.0025
+-2
+0
+2
+4
+6
+0.0423
+-2
+0
+2
+4
+6
+8
+0.0020
+-2
+0
+2
+4
+6
+0.0092
+-2
+0
+2
+4
+6
+0.0483
+-2
+0
+2
+4
+6
+8
+0.0105
+-2
+0
+2
+4
+6
+0.0012
+-2
+0
+2
+4
+6
+0.0255
+-2
+-1
+0
+1
+2
+3
+4
+5
+0.0101
+-2
+0
+2
+4
+6
+0.0036
+-2
+0
+2
+4
+6
+0.0214
+-2
+0
+2
+4
+6
+8
+0.0156
+-2
+0
+2
+4
+6
+0.0058
+5
+6
+7
+8
+9
+<0.0001
+-2
+0
+2
+4
+6
+8
+0.0167
+6
+8
+10
+12
+log2 (intensity)
+0.0259
+7
+8
+9
+10
+11
+12
+log2 (intensity)
+0.0168
+-2
+0
+2
+4
+6
+8
+log2 (intensity)
+0.0329
+8
+9
+10
+11
+12
+log2 (intensity)
+<0.0001
+0
+2
+4
+6
+8
+10
+12
+0.0053
+-2
+0
+2
+4
+6
+8
+10
+0.0472
+-2
+0
+2
+4
+6
+8
+0.0123
+3
+4
+5
+6
+7
+0.0042
+Healthy control
+ME/CFS
+VASN
+CFHR5
+IGHV5-51
+PROC
+IGHG3
+IGHG2
+IGKV6-21
+PRG4
+LYVE1
+DNAJ2
+IGHA1
+PIEZO1
+PIGR
+SHBG
+FETUB
+MASP1
+CDH5
+IGLL1
+THBS1
+B2M
+EFEMP1
+FN1
+VWF
+PCYOX1
+IGHV3-74
+CFHR2
+IGKC
+IGKV1-17
+A
+B
+C
+D
+Figure 4. Proteomic analysis of plasma pro-
+tein in ME/CFS patients and healthy con-
+trols
+(A) Volcano plot illustrating the distribution of 
+plasma proteins that were shown to be differen-
+tially expressed in ME/CFS patients compared to 
+healthy controls. Twenty proteins were elevated in 
+ME/CFS patients: namely (B) LYVE1, DNAJC2, 
+THBS1, VASN, IGHV3-74, IGKV6-21, PIGR, 
+CFHR5, EFEMP1, SHBG, PRG4, PROC, FN1, 
+B2M, PCYOX1, VWF, CFHR2, MASP1, IGHV5-51, 
+and FETUB.
+(C) Eight plasma proteins were significantly lower 
+in ME/CFS patients: IGHG3, IGHG2, IGKV1-17, 
+IGHA1, IGKC, PIEZO1, CDH5, and IGLL1. Many of 
+these proteins are associated with immune activ-
+ity or vascular integrity. Each scatterplot repre-
+sents individual participants (dots), and data are 
+presented as the median and 95% confidence 
+intervals. A relative abundance comparison was 
+made by t test in R. Proteins with p value <0.05 
+and fold change >1.2 were determined to be 
+differentially expressed between healthy controls 
+and patients with ME/CFS. Plasma was collected 
+from age- and sex-matched 61 ME/CFS patients 
+and 61 healthy controls.
+(D) Top 10 upregulated and downregulated path-
+ways in MECFS patient compared to controls, 
+ranked by the highest and lowest Z score based 
+on differentially expressed proteins. The bars are 
+color-coded to indicate the regulatory status of 
+the genes within each pathway.
+Cell Reports Medicine 6, 102514, December 16, 2025 
+7
+Article
+ll
+OPEN ACCESS
+
+Table 2. Differentially expressed plasma proteins between ME/CFS and healthy controls
+Gene name
+Protein name
+Cell origin (most abundantly 
+produced)
+Mechanism
+ 
+of release
+Known function as soluble form
+Fold-change
+LYVE1
+lymphatic vessel endothelial 
+hyaluronan receptor 1
+lymphatic endothelial cells
+enzymatically cleaved, soluble 
+circulating shed protein
+binds to fibroblast growth factor 2, 
+preventing lymphangiogenesis 
+23
+2.1
+DNAJC2
+DnaJ heat shock protein family 40 
+member C2
+all cell types
+intracellular (cytoplasm), no known 
+evidence of extracellular release
+not applicable
+2
+THBS1
+thrombospondin
+endothelial cells, platelets
+soluble circulating shed protein
+• soluble THBS1 binds to CD36 
+and CD47 on endothelial cells, 
+inhibiting NO signaling pathway 
+and angiogenesis 
+25
+• binds to CD36 and CD47 on DCs 
+to reduced cytokine release and 
+phenotypic maturation 
+26
+• promotes platelet aggregation at 
+site of vascular injury in the pres-
+ence of VWF, leading to formation 
+of thrombus 
+27,28
+1.9
+IGHV3-74
+immunoglobulin heavy variable 3-74
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+antigen recognition and binding 
+region of a soluble antibody
+1.8
+VASN
+vasorin
+vascular smooth muscle cells of 
+blood vessels
+enzymatically cleaved, soluble 
+circulating shed protein
+soluble VASN binds to TGF-B 
+receptor, inhibiting TGF-B pathways 
+and angiogenesis 
+24
+1.8
+IGKV6-21
+immunoglobulin kappa variable 6-21
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+facilitate antigen binding
+1.7
+CFHR5
+complement factor H-related 5
+immune cells
+soluble circulating secreted protein
+a negative regulator of the major 
+complement pathway proteins 
+29,30
+1.6
+EFEMP1
+EGF containing fibulin extracellular 
+matrix protein 1
+fibroblast
+soluble circulating protein
+organization of extracellular matrix 
+31
+1.6
+PIGR
+polymeric immunoglobulin receptor
+immune cells
+membrane-bound receptor and 
+soluble shed protein
+stabilizes antibodies in secretions 
+32
+1.6
+FN1
+fibronectin 1
+hepatocytes
+soluble circulating protein
+promotes the aggregation of 
+platelets at site of vascular injury, 
+leading to thrombus formation 
+33
+1.5
+PRG4
+proteoglycan 4
+synoviocytes
+soluble circulating protein
+anti-inflammatory 
+34,35
+1.5
+PROC
+protein C
+hepatocytes
+soluble circulating protein
+anti-inflammatory 
+36
+1.5
+SHBG
+sex-hormone-binding globulin
+hepatocytes
+soluble circulating protein
+regulates bioavailability of sex 
+hormones 
+37
+1.5
+B2M
+beta-2-microglobulin
+all nucleated cells
+soluble circulating shed protein
+released as part of its routine 
+degradation and recycling of MHC 
+class I molecules
+1.4
+PCYOX1
+prenylcysteine oxidase 1
+all cell types
+intracellular (cytoplasm), no known 
+evidence of extracellular release
+not applicable
+1.4
+(Continued on next page)
+8 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+Table 2. 
+Continued
+Gene name
+Protein name
+Cell origin (most abundantly 
+produced)
+Mechanism
+ 
+of release
+Known function as soluble form
+Fold-change
+CFHR2
+complement factor H-related 2
+immune cells
+soluble circulating secreted protein
+a negative regulator of the major 
+complement pathway proteins 
+29,30
+1.3
+FETUB
+fetuin B
+hepatocytes
+soluble circulating protein
+supports fertilization of oozytes
+1.3
+IGHV5-51
+immunoglobulin heavy variable 5-51
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+antigen recognition and binding 
+region of a soluble antibody
+1.3
+MASP1
+MBL-associated serine protease 1
+immune cells
+soluble circulating secreted protein
+binds to pattern recognition 
+molecules and activator of lectin 
+pathway of the complement 
+system
+ 
+38,39
+1.3
+VWF
+von Willebrand factor
+endothelial cells, platelets 
+(megakaryocytes)
+soluble circulating protein
+promotes the aggregation of 
+platelets at site of vascular injury, 
+leading to thrombus formation 
+28
+1.3
+IGHA1
+immunoglobulin heavy constant 
+alpha 1
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+a component of the constant region 
+of the heavy chain of IgA
+− 1.2
+IGHG3
+immunoglobulin heavy constant 
+gamma 3
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+heavy constant region of a soluble 
+antibody
+− 1.2
+IGKC
+immunoglobulin kappa constant
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+heavy constant region of a soluble 
+antibody
+− 1.2
+IGKV1-17
+immunoglobulin kappa variable 1-17
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+facilitate antigen binding
+− 1.2
+IGHG2
+immunoglobulin heavy constant 
+gamma 2
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+heavy constant region of a soluble 
+antibody
+− 1.3
+PIEZO1
+Piezo-type mechanosensitive ion 
+channel component 1
+endothelial cells
+intracellular (cytoplasm), no known 
+evidence of extracellular release
+not applicable
+− 1.4
+CDH5
+cadherin 5/VE-cadherin
+endothelial cells
+enzymatically cleaved, soluble 
+circulating shed protein
+no known evidence of function
+− 1.5
+IGLL1
+immunoglobulin lambda like 
+polypeptide 1
+immune cells
+soluble circulating secreted protein, 
+as part of antibodies
+component of the surrogate light 
+chain in the pre-B cell receptor
+− 1.6
+Cell Reports Medicine 6, 102514, December 16, 2025 
+9
+Article
+ll
+OPEN ACCESS
+
+1-17 (IGKV1-17), immunoglobulin heavy constant alpha 1 
+(IGHA1), and immunoglobulin kappa constant (IGKC)—are 
+circulating immune-related proteins. The remaining two down-
+regulated proteins, Piezo-type mechanosensitive ion channel 
+component 1 (PIEZO1) and cadherin 5/VE-cadherin (CDH5), 
+are membrane proteins. Notably, CDH5 can be enzymatically 
+cleaved and released to circulation under hypoxic 40 or inflam-
+matory conditions. 41 PIEZO1, CDH5, and IGLL1 showed a 
+reduction of 1.4- to 1.6-fold, while IGHG3, IGHG2, IGKV1-
+17, IGHA1, and IGKC were downregulated by 1.2- to 1.4-
+fold (Figure 3C). These findings were recapitulated in the 
+female patient cohort (Figure S4). Among the antibody frag-
+ments detected, IGHV3-74 and IGHV5-51 may confer speci-
+ficity for particular antigens. A search in The Patent & Litera-
+ture Antibody Database (PLAbDab 42 ; accessed on 20 th 
+October 2024) showed that IGHV5-51 is strongly associated 
+with binding to human parainfluenza virus 3, a pathogen that 
+causes severe respiratory illness. 43 It is noteworthy to mention 
+that most of the top upregulated proteins are associated with 
+vascular processes, while the top downregulated proteins 
+are linked to immune responses. This pattern is reflected in 
+the canonical pathway analysis (Figure 4D), where the most 
+significantly upregulated pathways include integrin cell surface 
+interactions, the RAF/MAP kinase cascade, hematoma resolu-
+tion signaling, acute phase response signaling, and the coag-
+ulation system. Together, these pathways suggest endothelial 
+activation and vascular remodeling, supported by the upregu-
+lation of FN1, VASN, THBS1, and VWF. In contrast, the most 
+significantly downregulated pathways included Fcγ-receptor-
+mediated phagocytosis, B cell receptor signaling, and FcεRI 
+signaling, driven by reduced levels of immunoglobulin-related 
+proteins. These findings align with the observed lower abun-
+dance of circulating immunoglobulins. Collectively, these 
+pathway alterations highlight a disruption of vascular and im-
+mune homeostasis in ME/CFS.
+To assess the impact of filtering thresholds on protein quanti-
+fication, we repeated the analysis using a stricter criterion 
+requiring proteins to be present in at least 70% of all samples. 
+This reduced the number of differentially expressed proteins 
+from 28 to 23, excluding PRG4, PCYOX1, PIEZO1, IGHV3-74, 
+and EFEMP1 (Figure S5). The 23 remaining proteins showed 
+the same fold change as those identified using the 50% 
+threshold, supporting the robustness of the findings. Although 
+excluded under the 70% threshold, PRG4 and PCYOX1 re-
+mained to be in higher abundance in ME/CFS patients, 
+while PIEZO1 showed lower abundance in ME/CFS patients 
+compared to healthy controls. IGHV3-74 and EFEMP1 were de-
+tected in over 70% of ME/CFS patients but in fewer than 55% 
+of controls, suggesting preferential expression in the patient 
+group. These differences between the 50% and 70% selection 
+threshold likely reflect how data-independent acquisition mass 
+spectrometry (DIA-MS) handles missing values, where absence 
+may result from detection limit rather than true lack of expres-
+sion. 44 Given the heterogeneity of ME/CFS and our aim to cap-
+ture both shared and condition-specific changes, we retained 
+the 50% threshold to preserve proteins that may hold biological 
+relevance but would otherwise be excluded under stricter 
+filtering.
+Predictive performance of altered biological
+parameters
+Classification and regression tree (CART) modeling, a predictive 
+algorithm used in machine learning to develop classification 
+models, was employed to explore whether DSQ-SF-based 
+ME/CFS diagnosis may be predicted by any combination of 
+the 114 biological variables selected from all PBMC subsets, 
+metabolites, and differentially expressed plasma proteins 
+(Table S2). Sex and age were also included in the modeling pro-
+cess. The decision to include only the differentially expressed 
+plasma proteins was made to reduce the number of inputs and 
+help mitigate the risk of overfitting, thereby supporting interpret-
+ability in this initial exploratory analysis. 45 This would increase 
+the likelihood that the model produces consistent and interpret-
+able results during this initial exploratory analysis. In contrast, all 
+immune cell and metabolite variables were retained, as they 
+have been previously linked to ME/CFS. This approach was in-
+tended to balance dimensionality reduction with biological rele-
+vance and produce a simple and parsimonious model that could 
+generate hypotheses for future validation. We identified seven 
+parameters from among plasma proteins (FN1, VWF, LYVE1, 
+IGHG2, and THBS1), an immune cell subset (cDC1), and plasma 
+AMP levels to be the most significant contributors to predicting 
+ME/CFS. Although the proportions of cDC1 were not found to 
+be significantly different between the cohorts, its inclusion in 
+the modeling contributes to the decision-making process 
+through interaction with other variables. When used together 
+as a set, the model produced the highest area under curve 
+(96.2%), with 85.2% sensitivity, 96.7% specificity, and 91% ac-
+curacy (Figure 5). While these results are encouraging, they 
+should be regarded as exploratory and intended to highlight po-
+tential associations.
+DISCUSSION
+The multimodal approach enables simultaneous investigation of 
+multiple biological systems, potentially yielding information 
+about interactions between them. This is of particular impor-
+tance in ME/CFS, a heterogeneous disease in which different as-
+pects of biological dysfunction are rarely studied within the same 
+subjects. This study concurrently examines energy metabolism 
+(NAD + and ATP), immune profiles, and vascular dysfunction in 
+a single, well-defined cohort. Our findings provide insights into 
+the clinical and biological complexity of ME/CFS and highlight 
+potential mechanistic interactions that may contribute to the dis-
+ease’s clinical manifestations.
+The most striking differences in energy metabolism in ME/CFS 
+patients include the abundance of AMP in the plasma and im-
+mune cells, alongside increased levels of ADP and reduced 
+ATP/ADP ratio in PBMCs (Figures 1C and 1D), consistent with 
+previous reports of reduced ATP production in PBMCs from 
+ME/CFS patients. 46,47 The elevated NAD + levels observed in 
+PBMCs, together with the increased AMP and ADP, suggest 
+that NAD + is not being efficiently reduced to NADH to drive 
+ATP synthesis through oxidative phosphorylation. 20 This 
+impaired reduction of NAD + to NADH may also help explain the 
+observed inverse correlation between plasma AMP and PBMC 
+ATP levels, although this finding requires further study.
+10 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+Collectively, these findings indicate mitochondrial dysfunction 
+and energy stress.
+The higher levels of plasma AMP observed in ME/CFS may 
+be attributed to a combination of impaired purinergic meta-
+bolism involving CD39-CD73 axis, 48,49 with insufficient con-
+version of AMP to adenosine by CD73, and direct extracellular 
+release of AMP from stressed or damaged cells, 50 leading to 
+an accumulation of AMP in the plasma. While this interpreta-
+tion is consistent with known mechanisms of extracellular 
+nucleotide regulation, further studies are required to confirm 
+this hypothesis and establish its relevance to ME/CFS patho-
+physiology. Under conditions of high AMP concentration, 
+free AMP interacts with mitochondrial fission factor and dyna-
+min-related protein (Drp1), promoting mitochondrial fission 
+and potentially contributing to the observed mitochondrial 
+dysfunction. 51
+We also demonstrated that the KP is dysregulated with 
+elevated levels of 3HK (implying elevated activity of KMO) and 
+reduced levels of KYNA, PIC, and QUIN. Previous studies have 
+described similar KP alterations in ME/CFS. 9,17,52 3HK induces 
+oxidative stress and mitochondrial membrane potential loss 
+through its generation of reactive oxygen species 53 (Figure 1A). 
+While the overexpression of KMO in cells reduces sensitivity to 
+oxidative stress, 54 it also has an effect on mitochondrial dy-
+namics, due to its location on the outer mitochondrial mem-
+brane 55 and interaction with Drp1. This interaction leads to the 
+dephosphorylation of Drp1 at Serine 616 and Serine 637, 
+enhancing Drp1 GTPase activity and thereby promoting mito-
+chondrial fission and disruption. 56–58 This aligns with the recent 
+findings indicating that interference with mitochondrial proteins 
+in muscle cells can lead to increased fatigue likely due 
+to increased endoplasmic reticulum stress mediated by
+Figure 5. Identification of strong predictive potential for ME/CFS using classification and regression tree modeling
+Among the 114 biological parameters, CART modeling identified seven significant contributors to discriminate between ME/CFS patients and controls with 
+85.2% sensitivity, 96.7% specificity, and 91% accuracy. These were FN1, cDC1, VWF, LYVE1, AMP (plasma), IGHG2, and THBS1 to predicting ME/CFS patients. 
+CART modeling was used to develop a classification model using IBM SPSS Statistics v.29 and JMP v.17.2.
+Cell Reports Medicine 6, 102514, December 16, 2025 
+11
+Article
+ll
+OPEN ACCESS
+
+overexpression of the gene WASF3. 7 Our findings suggest that 
+the energy constraints in ME/CFS extend beyond mitochondrial 
+dysfunction and could involve alterations in the KP. These com-
+bined changes might contribute to clinical fatigue symptoms in 
+ME/CFS, but further studies are needed to confirm this 
+mechanism.
+Immunophenotyping showed changes in the proportions of 
+NK and DC populations but not monocytes. Consistent with ex-
+isting studies, 59–62 we observed significantly smaller populations 
+of CD56 low CD16 + NK cells in ME/CFS patients (Figure 3E). The 
+lower proportion of this NK cell subtype, known for its potent 
+cytolytic 63 and antiviral 64 activity, implies an increased vulnera-
+bility to viral infection. 65 Our observation of increased propor-
+tions of pDC (which specialize in responding to viral infections 
+by producing type I and III IFNs 66 ) in peripheral blood of ME/ 
+CFS patients is consistent with earlier findings of pDC enrich-
+ment in ME/CFS duodenum. 67 The high frequency of pDC and 
+the increased production of type I IFNs 68 have the potential to 
+contribute to the increased susceptibility to autoimmune dis-
+eases in ME/CFS. 69 Moreover, we noted significantly lower pro-
+portions of cDC2 in patients compared to healthy controls. As 
+these cells primarily respond to flagellin and bacterial proteins, 
+this reduction may be linked to the microbiome dysbiosis 
+observed in ME. 70 The altered cDC2 populations observed in 
+ME/CFS suggests changes in DC composition that warrants 
+further investigation. cDC2 are also essential cross-presenting 
+immune cells that prime CD4 + and CD8 + T cells. 71 These findings 
+are important due to the diverse roles played by these DC sub-
+sets in enhancing innate immune cell responses and priming 
+adaptive immune cells. cDC2 play a critical role in co-stimulation 
+with pDC to enhance NK cell cytotoxicity and in the differentia-
+tion of plasma cells from activated B cells. 72 This interaction 
+potentially explains the previously observed lower NK cytotox-
+icity in ME/CFS. However, our findings regarding NK cells differ 
+from those of Brenu et al., who observed a decreased population 
+of CD56 high CD16 - NK cells and pDC but no difference in 
+CD56 dim CD16 + NK cells or mature DCs. 61 Differences were 
+also noted when comparing T and B cell observations with other 
+studies. 73,74 This discrepancy may be associated with differ-
+ences in the patient selection criteria; Brenu et al. used the Cen-
+ter for Disease Prevention and Control case definition 1994 
+criteria while we used the Canadian Consensus Criteria. The 
+variation in criteria highlights the potential impact of patient se-
+lection on the observed immune cell alterations in ME/CFS. 
+Within adaptive immune cells, we observed a decline in the 
+CD45RA − CCR7 − effector memory population in CD4 + αβ, 
+CD8 + αβ, and γδ T cells, which could be attributed to various fac-
+tors. First, the reduced population of cDC2, the predominant 
+subset of conventional DC, 66 may limit T cell priming capacity. 75 
+A role for NK cells in antigen presentation has been described. 76 
+Accordingly, the decreased fraction of CD56 + NK cells in our pa-
+tient cohort could also be reflected in reduced antigen presenta-
+tion, 76 further impacting T cell activation and proliferation. The 
+increased proportion of CD27 + CD28 + early effector memory 
+subsets of CD4 + and CD8 + T cells observed in ME/CFS patients 
+may be associated with the lack of exposure to presented anti-
+gens, thereby limiting the ability to respond to infections. 77 
+One further potential explanation for the imbalance in effector
+populations may stem from our proteomic finding of elevated 
+circulating levels of LYVE1 in the plasma of ME/CFS patients. 
+LYVE1, a major receptor for hyaluronan, is predominantly ex-
+pressed in lymphatic endothelial cells. 78 It serves as a crucial 
+lymphatic docking receptor for immune cells, such as DCs, 79 
+enabling their entry into peripheral lymphatics to prime adaptive 
+immune cells such as CD8 + T cells. 80 LYVE1 can be enzymati-
+cally cleaved and released into the peripheral circulation, 23,81 
+contributing to its presence in plasma. The observed elevated 
+levels of LYVE1 may reflect cleavage and thus limited availability 
+of LYVE1 on the lymphatic endothelium, significantly hindering 
+DC migration and T cell priming, as demonstrated in an animal 
+study using a Lyve1 − /− mouse model or LYVE1 neutralizing an-
+tibodies. 82 Although these findings suggest a possible mecha-
+nism by which impaired DC trafficking could contribute 
+to reduced adaptive immune responses in ME/CFS, our 
+data cannot establish a causal link and thus warrant validation 
+by future studies. Given the role that CD4 + and CD8 + 
+CD27 − CD28 − terminal effector T cells play in immune responses 
+characterized by the production of granzyme B, perforin, and cy-
+tokines, 77,83 the low proportion of these cell subtypes has been 
+implicated in the ME/CFS patients’ reduced capacity to resolve 
+infection. 84 This limited response by adaptive immune cells cor-
+relates well with the reduced effector adaptive populations in our 
+patient cohort. These intricate and complex relationships shed 
+light on potential mechanisms contributing to the clinical symp-
+toms observed in ME/CFS patients, particularly fatigue and sus-
+ceptibility to infection.
+We did not observe any differences in pro-inflammatory cyto-
+kines between cohorts in our study, and this is consistent with 
+some reports but differs from others, reflecting the inconsistent 
+detection of cytokines in ME/CFS plasma, as summarized in 
+our previous comprehensive review. 13 The lack of elevated 
+pro-inflammatory cytokines could be attributable to the combi-
+nation of reduced frequency of mature immune cells, as dis-
+cussed above, or actions of other plasma proteins elevated in 
+the patient cohort, namely PRG4 and PROC. PRG4 is a 
+mucinous glycoprotein with a potent anti-inflammatory effect. 
+By inhibiting the activation of toll-like receptor 2/4 signaling path-
+ways and CD44, it plays a key role in maintaining an anti-inflam-
+matory macrophage phenotype 35 as well as limiting neuroinflam-
+mation. 34 PROC is a zymogen secreted by the liver and becomes 
+activated after binding to the PROC receptor. 85 Despite being 
+predominantly known for its anticoagulant activity, PROC also 
+has anti-inflammatory functions mediated by reducing the syn-
+thesis of nuclear factor κβ (NF-κβ) components and their nuclear 
+translocation. 36 This in turn reduces the transcription of cytokine 
+genes. In previous studies, animals with PROC deficiency 
+develop prothrombotic and inflammatory phenotypes 86,87 but 
+can be rescued with the addition of recombinant human-acti-
+vated PROC. 87
+Our proteomic data revealed elevated levels of complement 
+cascade proteins CFHR2, CFHR5, and MASP1 but not any of 
+the major components of the pathway as quantified by previous 
+studies. 88–90 The presence of CFHR2 and CFHR5 appears to 
+constitute a feedback mechanism with negative regulation of 
+the major complement pathway proteins 29,30 while MASP1 rep-
+resents a preference for the immunoglobulin-independent MBL
+12 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+pathway. 38,39 While these observations are consistent with a po-
+tential feedback mechanism, further studies are needed to clarify 
+their relevance in ME/CFS.
+Several of the differentially expressed proteins in the plasma 
+may be relevant to ME/CFS pathophysiology. Among these, sol-
+uble THBS1, VWF, and VASN are implicated in vascular reac-
+tivity, potentially contributing to the endothelial dysfunction 
+observed in ME/CFS patients. 91,92 Soluble THBS1 promotes 
+platelet aggregation at the site of vascular injury in the presence 
+of VWF, 28 which was also elevated in our study. This interaction 
+facilitates thrombus formation. 27,93 Furthermore, THBS1 can 
+bind to two receptors, CD36 and CD47, to antagonize the nitric 
+oxide signaling pathway. Binding to these receptors on vascular 
+smooth muscle cells impairs vasodilation 94 and restricts blood 
+flow, while when binding to endothelial cells, THBS1 inhibits 
+cell growth and angiogenesis. 25 These activities could collec-
+tively reduce overall blood flow in the ME/CFS patient and may 
+contribute to the severity of fatigue experienced by these individ-
+uals. 95 This finding of elevated levels of THBS1 corroborates an 
+earlier study suggesting that this antiangiogenic glycoprotein re-
+stricts brain-blood flow in a subset of ME/CFS patients, possibly 
+contributing to brain fog and post-exertional malaise. 96 This has 
+prompted the initiation of the STOP-ME study funded by Open 
+Medicine Foundation Canada, aiming to investigate THBS1’s 
+role in ME/CFS pathogenesis. Additionally, THBS1 has been 
+shown to suppress DC activation and secretion of cytokines, 26 
+which could explain the significant decrease of cDC2 popula-
+tions in our patient cohort and the minimal differences in the in-
+flammatory cytokines between the cohorts observed in our 
+study. VASN is a transmembrane glycoprotein that exerts its 
+function by inhibiting the activation of the transforming growth 
+factor β (TGF-β) pathway. This occurs when its secreted form 
+binds to TGF-β, preventing the growth factor from interacting 
+with its receptor. 24 The TGF-β signaling pathway plays a critical 
+role in the formation of vascular plexus and integrity. 97 A previ-
+ous study reported impaired vascular development with hyper-
+dilated, leaky vessels in mice lacking TGF-β signaling pathway 
+components. 98 In view of a similar impact on vascular integrity 
+to THBS1, this protein may also contribute to brain fog in ME/ 
+CFS patients. While FN1 may not have a direct role in vascular 
+modeling, it can promote aggregation of platelets and thrombus 
+formation, 33 thus possibly contributing to the restriction of blood 
+flow and warranting further study. Additionally, the significantly 
+lower amount of soluble CDH5 in the plasma in the ME/CFS pa-
+tient cohort supports the notion of altered vascular integrity in 
+ME/CFS. CDH5 is a critical protein for vasculogenesis 99 and 
+blood vessel maintenance, 100 as evidenced by studies demon-
+strating severe vascular malformations in CDH5 − /− mice 101 
+and venous stasis in mice treated with anti-CDH5 antibody. 102 
+The reduced presence of shed CDH5 in plasma may indicate 
+increased retention of this protein at endothelial junctions, 
+possibly reflecting compensatory mechanisms for vascular re-
+modeling or repair in ME/CFS patients. However, although these 
+plasma proteins are involved in vascular regulation, their precise 
+roles in ME/CFS remain unproven and will require confirmation in 
+future studies.
+We observed lower overall levels of multiple immunoglobulin 
+isotypes in ME/CFS patients’ plasma. It remains to be deter-
+mined whether these immunoglobulin differences contribute to 
+ME/CFS pathophysiology. The elevated levels of particular 
+immunoglobulin variable domains could reflect prior exposure 
+or ongoing immune responses to organisms such as human par-
+ainfluenza virus 3, which is associated with IGHV5-51. 43 How-
+ever, our study does not provide direct evidence for such asso-
+ciation, and further research are needed to examine whether 
+such specific immune responses occur in ME/CFS patients. 
+Similar antibody production biases were previously reported 103 ; 
+however, differences in the technical aspects of sample prepara-
+tion and instrument sensitivity preclude a direct comparison with 
+our data.
+Taken together, the molecular and immune cell changes 
+observed in our study complement the canonical pathways iden-
+tified by IPA, namely downregulation of immune-related 
+signaling and upregulation of vascular and integrin-related path-
+ways. Although pathway enrichment analysis does not provide 
+direct causal evidence, it highlights the biological relevance of 
+these findings in ME/CFS. It is noteworthy that our pathway 
+enrichment of RAF/MAPK signaling in plasma is consistent 
+with PBMC transcriptomic enrichment studies, 74,104,105 sug-
+gesting this pathway may be of importance in ME/CFS. In 
+contrast, B-cell-related pathways were downregulated in our 
+plasma enrichment analysis but upregulated in PBMC enrich-
+ment, 74 likely reflecting differences between soluble proteins 
+and cellular transcriptional programs. Although no enrichment 
+analysis was performed in a separate MS-based plasma prote-
+omics study, 106 their findings of vascular and endothelial 
+dysfunction complement our enrichment of vascular and integ-
+rin-related pathways. Future work is needed to validate these 
+pathway-level associations across ME/CFS cohorts.
+Finally, our exploratory analysis identified a model comprising 
+seven variables that was associated with ME/CFS and sug-
+gested predictive potential to distinguish ME/CFS patients with 
+85.2% sensitivity, 96.7% specificity, and 91% accuracy. 
+Notably, these variables span adenosine metabolism (AMP), im-
+mune functions (cDC1, LYVE1, and IGHG2), and vascular factors 
+(FN1, VWF, and THBS1), highlighting potential interactions be-
+tween these areas of dysfunction that contribute to ME/CFS. 
+This exploratory model performs comparably to the established 
+questionnaire DSQ-SF with 87.7% sensitivity, 84.7% specificity, 
+and 86.8% accuracy in classifying individuals by the Canadian 
+Consensus Criteria. 14 While further validation in an independent 
+cohort of ME/CFS patients is essential, these findings suggest 
+that our model could support future diagnostic advances. Accu-
+rate diagnosis using such a model may reduce diagnostic de-
+lays, alleviating the prolonged suffering and economic burden 
+faced by patients. ME/CFS imposes substantial economic costs, 
+with annual expenses estimated at $63,000 per patient, primarily 
+due to indirect costs such as lost productivity and work 
+absence. 107 Although there may be an initial cost in implement-
+ing this tool, its potential to reduce these indirect costs and 
+improve patient quality of life makes it a worthwhile 
+consideration.
+Sex-stratified analysis revealed that female ME/CFS patients 
+exhibited reduced ATP levels and ATP/ADP ratios in PBMCs, 
+alongside elevated AMP in plasma and PBMCs. Reduced 
+plasma adenosine in female patients was also observed in a
+Cell Reports Medicine 6, 102514, December 16, 2025 
+13
+Article
+ll
+OPEN ACCESS
+
+previous metabolomic study, 108 suggesting impaired ATP syn-
+thesis or turnover. Additionally, a lower proportion of cDC2, 
+CD56 low CD16 + NK cells, CD27 − CD28 − CD4 + terminal effector 
+memory, and CD27 − CD28 − CD8 + intermediate effector memory 
+T cell subsets was observed in female patients compared to 
+healthy controls. The plasma proteomic profile in female patients 
+was broadly similar to that of the overall cohort, although not all 
+protein changes were identical. Importantly, the five proteins 
+identified as the most significant contributors to predicting ME/ 
+CFS were also observed in the female subgroup. Overall, these 
+findings may be due to estrogen-mediated regulation of mito-
+chondrial and immune function, 109 as reported in other female-
+biased conditions such as multiple sclerosis. 110 However, due 
+to the limited number of male participants, we were unable to 
+perform a reliable comparison between male ME/CFS patients 
+and healthy male controls or to directly contrast male and female 
+ME/CFS subgroups.
+In conclusion, this study provides compelling evidence that 
+ME/CFS is associated with dysfunction across multiple biolog-
+ical systems, challenging its dismissal as a psychological disor-
+der. Notably, we identified variables from three distinct biological 
+systems with strong predictive potential for ME/CFS, high-
+lighting the crosstalk between immune, vascular, and energy 
+production dysfunction. These findings reinforce the legitimacy 
+of ME/CFS as a medical condition and should pave the way for 
+promoting broader acceptance of the condition within the med-
+ical community and society at large, thus improving patient man-
+agement and outcomes.
+Limitations of the study
+Our study has certain limitations. First, our patient cohort did not 
+stratify according to disease severity; therefore, the association 
+between dysfunction and severity could not be determined. A 
+notable feature of the cohort demographics is the predominance 
+of women, typical of the sex distribution of ME/CFS patients 111 
+(Table 1). Consequently, the small number of male healthy con-
+trols and patients results in insufficient statistical power for 
+robust analysis in this subgroup. Hence, statistical analysis 
+was performed on the entire cohort and on female healthy con-
+trols and patients. Next, patients recruited to this study were not 
+sampled at a uniform time point; samples could not be captured 
+at the start of ME/CFS but rather after varying durations of the 
+condition. Additionally, the heterogeneous clinical status of the 
+patients includes nearly 20% who are disabled (i.e., score
+≤50), yet 44.3% who are capable of a degree of normal activity 
+(score ≤70). Hence, there is a potential for confounding by other 
+underlying conditions that may affect ME/CFS. This shortcoming 
+could potentially be addressed through longitudinal sampling to 
+determine the stability or fluctuation of measured parameters 
+over time. Without identifying the underlying cause of ME/CFS, 
+a therapeutic target cannot be determined. Nonetheless, there 
+may be scope for targeting known pathways to provide symp-
+tomatic relief. The analytical chemistry (LC-MS/MS, GC-MS, 
+uHPLC, and HPLC) and flow cytometry (conventional and spec-
+tral) methods used here, while validated for plasma and PBMCs, 
+have inherent limitations. Some metabolite and cytokine mea-
+surements were close to the lower limits of detection, reducing 
+precision and potentially introducing variability that could affect
+statistical analyses and the reliability of certain results. The 
+plasma proteome approach may also underrepresent low-abun-
+dance proteins of potential relevance to ME/CFS. 112 Future 
+studies could improve coverage by depleting high-abundance 
+proteins or applying targeted approaches such as recombinant 
+protein spectral libraries. 113,114 Similarly, the 25-color flow cy-
+tometry panel available at the time limited resolution of minor 
+subsets (exhaustion markers or MAIT cells). However, there 
+are 40-color panels available now that permit deeper immune 
+profiling. Although our study benefits from a relatively large 
+and well-matched cohort, effect sizes for some variables remain 
+modest, and validation in independent cohorts will be essential 
+to confirm reproducibility and clinical relevance. This limitation 
+has also been noted in another recent multimodal study of ME/ 
+CFS, 74 which, despite important insights, was constrained by a 
+smaller cohort size. Table S3 contains the effect sizes and corre-
+sponding sample sizes (80% power) for the most significant and 
+biologically relevant findings using Cliff’s δ.
+RESOURCE AVAILABILITY
+Lead contact
+Request for further information and resources should be directed to and will be 
+fulfilled by the lead contact, Dr. Benjamin Heng (benjamin.heng@mq.edu.au).
+Materials availability
+This study did not generate new unique reagents.
+Data and code availability
+• Proteomics data generated in this study are available through 
+ProteomeXchange (PRIDE). The accession number is listed in the 
+deposited data section of the key resources table.
+• Raw metabolomic, immune, and demography data are stored on Fig-
+share with restricted access. These data cannot be deposited in an 
+external public repository because participant consent for open sharing 
+was not obtained at recruitment. Participant-level data can be re-
+quested from the lead contact with a detailed research proposal outlin-
+ing the intended use of the data. Data access will only be provided once 
+an appropriate Human Research Ethics Committee (HREC) or equiva-
+lent institutional approval is in place.
+• This paper does not report original codes.
+• Any additional information required to reanalyze the data reported in this 
+work is available from the lead contact upon request.
+ACKNOWLEDGMENTS
+We thank the participants in this study for their valuable contribution. We also 
+thank Ryan Hyland and Andrew Lim from Cytek Biosciences for their advice 
+and support on the setup of the flow cytometry panel. We gratefully acknowl-
+edge the generous support and encouragement provided by Mr Barry Scha-
+del, Mr Gregory Dring, and Ms Jan Counchman. The graphical abstract was 
+created using BioRender. B.G. is supported by the Susie Myers Glioblastoma 
+Scholarship (PANDIS) and Macquarie University Research Training Program 
+Domestic Scholarship; S.K. is supported by International PhD scholarships 
+from Macquarie University; M.P.H. is supported by Sydney University 
+Research Training Program Domestic Scholarship; S.B.A. is supported by 
+Cancer Council NSW funding RG23-06 and Targeted Call Research-National 
+Health and Medical Research Council (NHMRC) funding GNT2015197; and 
+G.J.G. was supported by the NHMRC funding APP1176660.
+AUTHOR CONTRIBUTIONS
+B.H., S.B., R.S., and G.J.G., conceived and supported the study; P.P.H., and 
+A.A.B., performed statistical analysis; B.H., S.B., S.C., A.S.P., and G.J.G.,
+14 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+metabolomic sample processing and data acquisition; B.H., S.B.A., D.P.T., 
+and S.K., proteomic sample processing and data acquisition; B.H., B.G., 
+S.K., A.S., and M.P.-H., spectral flow cytometry cells processing and data 
+acquisition; B.H., B.G., and S.K., cytokine assay processing and data acquisi-
+tion; R.S., Y.M., and K.S., recruitment, clinical information, and sample collec-
+tion from participants; B.H., S.B.A., B.G., S.K., and S.C., clinical sample pro-
+cessing; B.H., S.B.A., B.G., S.B., M.P.-H., S.C., A.S.P., G.J.G., S.K., A.S., 
+and R.S., data analysis and interpretation; B.H. wrote the manuscript, with 
+all authors having read and approved the final version of the manuscript.
+DECLARATION OF INTERESTS
+The authors declare no competing interests.
+STAR★METHODS
+Detailed methods are provided in the online version of this paper and include 
+the following:
+• KEY RESOURCES TABLE
+• EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+○ Study cohorts
+• METHOD DETAILS
+○ Data collection from questionaries
+○ Human peripheral blood collection
+○ Sample preparation for targeted metabolomic analysis
+○ KP metabolite quantification by high-performance liquid chroma-
+tography (HPLC)
+○ KP metabolite quantification by gas chromatography-mass spec-
+trometry (GCMS)
+○ NADomics and adenine nucleotide quantification by liquid chroma-
+tography/MS-MS (LC-MS/MS)
+○ Analysis of plasma cytokines
+○ Spectral flow cytometry preparation and data analysis
+○ Sample preparation for proteomics
+○ Protein analysis by LC-MS
+○ Ingenuity pathway analysis
+• QUANTIFICATION AND STATISTICAL ANALYSIS
+○ Statistical analysis
+○ Statistical modeling
+SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j. 
+xcrm.2025.102514.
+Received: January 28, 2025 
+Revised: August 20, 2025 
+Accepted: November 17, 2025 
+Published: December 16, 2025
+REFERENCES
+1. Carruthers, B.M., van de Sande, M.I., De Meirleir, K.L., Klimas, N.G., Bro-
+derick, G., Mitchell, T., Staines, D., Powles, A.P., Speight, N., Vallings, R., 
+and Bateman, L. (2011). Myalgic encephalomyelitis: International 
+Consensus Criteria. J. Intern. Med. 270, 327–338. https://doi.org/10. 
+1111/j.1365-2796.2011.02428.x.
+2. NICE guideline (2017). Surveillance Report 2017 - Chronic Fatigue Syn-
+drome/myalgic Encephalomyelitis (Or Encephalopathy): Diagnosis and 
+Management (2007) (NICE guideline CG53).
+3. Twisk, F. (2018). Myalgic Encephalomyelitis or What? The International 
+Consensus Criteria. Diagnostics 9, 1. https://doi.org/10.3390/diag-
+nostics9010001.
+4. Annesley, S.J., Missailidis, D., Heng, B., Josev, E.K., and Armstrong, 
+C.W. (2024). Unravelling shared mechanisms: insights from recent ME/
+CFS research to illuminate long COVID pathologies. Trends Mol. Med. 
+30, 443–458. https://doi.org/10.1016/j.molmed.2024.02.003.
+5. Missailidis, D., Annesley, S.J., Allan, C.Y., Sanislav, O., Lidbury, B.A., 
+Lewis, D.P., and Fisher, P.R. (2020). An Isolated Complex V Inefficiency 
+and Dysregulated Mitochondrial Function in Immortalized Lymphocytes 
+from ME/CFS Patients. Int. J. Mol. Sci. 21, 1074. https://doi.org/10. 
+3390/ijms21031074.
+6. Tomas, C., Elson, J.L., Strassheim, V., Newton, J.L., and Walker, M. 
+(2020). The effect of myalgic encephalomyelitis/chronic fatigue syn-
+drome (ME/CFS) severity on cellular bioenergetic function. PLoS One 
+15, e0231136. https://doi.org/10.1371/journal.pone.0231136.
+7. Wang, P.Y., Ma, J., Kim, Y.C., Son, A.Y., Syed, A.M., Liu, C., Mori, M.P., 
+Huffstutler, R.D., Stolinski, J.L., Talagala, S.L., et al. (2023). WASF3 dis-
+rupts mitochondrial respiration and may mediate exercise intolerance in 
+myalgic encephalomyelitis/chronic fatigue syndrome. Proc. Natl. Acad. 
+Sci. USA 120, e2302738120. https://doi.org/10.1073/pnas.2302738120.
+8. Kavyani, B., Ahn, S.B., Missailidis, D., Annesley, S.J., Fisher, P.R., 
+Schloeffel, R., Guillemin, G.J., Lovejoy, D.B., and Heng, B. (2024). Dysre-
+gulation of the Kynurenine Pathway, Cytokine Expression Pattern, 
+and Proteomics Profile Link to Symptomology in Myalgic Encephalomy-
+elitis/Chronic Fatigue Syndrome (ME/CFS). Mol. Neurobiol. 61, 3771– 
+3787. https://doi.org/10.1007/s12035-023-03784-z.
+9. Simonato, M., Dall’Acqua, S., Zilli, C., Sut, S., Tenconi, R., Gallo, N., 
+Sfriso, P., Sartori, L., Cavallin, F., Fiocco, U., et al. (2021). Tryptophan 
+Metabolites, Cytokines, and Fatty Acid Binding Protein 2 in Myalgic 
+Encephalomyelitis/Chronic Fatigue Syndrome. Biomedicines 9, 1724. 
+https://doi.org/10.3390/biomedicines9111724.
+10. Fernandez-Guerra, P., Gonzalez-Ebsen, A.C., Boonen, S.E., Courraud, 
+J., Gregersen, N., Mehlsen, J., Palmfeldt, J., Olsen, R.K.J., and Brinth, 
+L.S. (2021). Bioenergetic and Proteomic Profiling of Immune Cells in 
+Myalgic Encephalomyelitis/Chronic Fatigue Syndrome Patients: An 
+Exploratory Study. Biomolecules 11, 961. https://doi.org/10.3390/ 
+biom11070961.
+11. Mandarano, A.H., Maya, J., Giloteaux, L., Peterson, D.L., Maynard, M., 
+Gottschalk, C.G., and Hanson, M.R. (2020). Myalgic encephalomyelitis/ 
+chronic fatigue syndrome patients exhibit altered T cell metabolism 
+and cytokine associations. J. Clin. Investig. 130, 1491–1505. https:// 
+doi.org/10.1172/JCI132185.
+12. Olenchock, B.A., Rathmell, J.C., and Vander Heiden, M.G. (2017). 
+Biochemical Underpinnings of Immune Cell Metabolic Phenotypes. Im-
+munity 46, 703–713. https://doi.org/10.1016/j.immuni.2017.04.013.
+13. Kavyani, B., Lidbury, B.A., Schloeffel, R., Fisher, P.R., Missailidis, D., An-
+nesley, S.J., Dehhaghi, M., Heng, B., and Guillemin, G.J. (2022). Could 
+the kynurenine pathway be the key missing piece of Myalgic Encephalo-
+myelitis/Chronic Fatigue Syndrome (ME/CFS) complex puzzle? Cell. Mol. 
+Life Sci. 79, 412. https://doi.org/10.1007/s00018-022-04380-5.
+14. Sunnquist, M., Lazarus, S., and Jason, L.A. (2019). The development of a 
+short form of the DePaul Symptom Questionnaire. Rehabil. Psychol. 64, 
+453–462. https://doi.org/10.1037/rep0000285.
+15. Peus, D., Newcomb, N., and Hofer, S. (2013). Appraisal of the Karnofsky 
+Performance Status and proposal of a simple algorithmic system for its 
+evaluation. BMC Med. Inf. Decis. Making 13, 72. https://doi.org/10. 
+1186/1472-6947-13-72.
+16. Chang, C.J., Hung, L.Y., Kogelnik, A.M., Kaufman, D., Aiyar, R.S., Chu, 
+A.M., Wilhelmy, J., Li, P., Tannenbaum, L., Xiao, W., and Davis, R.W. 
+(2021). A Comprehensive Examination of Severely Ill ME/CFS Patients. 
+Healthcare 9, 1290. https://doi.org/10.3390/healthcare9101290.
+17. Hoel, F., Hoel, A., Pettersen, I.K., Rekeland, I.G., Risa, K., Alme, K., 
+Sørland, K., Fossa˚ , A., Lien, K., Herder, I., et al. (2021). A map of meta-
+bolic phenotypes in patients with myalgic encephalomyelitis/chronic fa-
+tigue syndrome. JCI Insight 6, e149217. https://doi.org/10.1172/jci. 
+insight.149217.
+18. Fluge, Ø., Rekeland, I.G., Lien, K., Thu¨ rmer, H., Borchgrevink, P.C., 
+Scha¨ fer, C., Sørland, K., Aßmus, J., Ktoridou-Valen, I., Herder, I., et al.
+Cell Reports Medicine 6, 102514, December 16, 2025 
+15
+Article
+ll
+OPEN ACCESS
+
+(2019). B-Lymphocyte Depletion in Patients With Myalgic Encephalomy-
+elitis/Chronic Fatigue Syndrome: A Randomized, Double-Blind, Placebo-
+Controlled Trial. Ann. Intern. Med. 170, 585–593. https://doi.org/10. 
+7326/M18-1451.
+19. Pires, A.S., Sundaram, G., Heng, B., Krishnamurthy, S., Brew, B.J., and 
+Guillemin, G.J. (2022). Recent advances in clinical trials targeting the ky-
+nurenine pathway. Pharmacol. Ther. 236, 108055. https://doi.org/10. 
+1016/j.pharmthera.2021.108055.
+20. Canto, C., Menzies, K.J., and Auwerx, J. (2015). NAD(+) Metabolism and 
+the Control of Energy Homeostasis: A Balancing Act between Mitochon-
+dria and the Nucleus. Cell Metab. 22, 31–53. https://doi.org/10.1016/j. 
+cmet.2015.05.023.
+21. Chi, H. (2022). Immunometabolism at the intersection of metabolic 
+signaling, cell fate, and systems immunology. Cell. Mol. Immunol. 19, 
+299–302. https://doi.org/10.1038/s41423-022-00840-x.
+22. Maldonado, E.N., and Lemasters, J.J. (2014). ATP/ADP ratio, the missed 
+connection between mitochondria and the Warburg effect. Mitochon-
+drion 19, 78–84. https://doi.org/10.1016/j.mito.2014.09.002.
+23. Wong, H.L.X., Jin, G., Cao, R., Zhang, S., Cao, Y., and Zhou, Z. (2016). 
+MT1-MMP sheds LYVE-1 on lymphatic endothelial cells and suppresses 
+VEGF-C production to inhibit lymphangiogenesis. Nat. Commun. 7, 
+10824. https://doi.org/10.1038/ncomms10824.
+24. Malapeira, J., Esselens, C., Bech-Serra, J.J., Canals, F., and Arribas, J. 
+(2011). ADAM17 (TACE) regulates TGFbeta signaling through the cleav-
+age of vasorin. Oncogene 30, 1912–1922. https://doi.org/10.1038/onc. 
+2010.565.
+25. Isenberg, J.S., Martin-Manso, G., Maxhimer, J.B., and Roberts, D.D. 
+(2009). Regulation of nitric oxide signalling by thrombospondin 1: impli-
+cations for anti-angiogenic therapies. Nat. Rev. Cancer 9, 182–194. 
+https://doi.org/10.1038/nrc2561.
+26. Doyen, V., Rubio, M., Braun, D., Nakajima, T., Abe, J., Saito, H., Dele-
+spesse, G., and Sarfati, M. (2003). Thrombospondin 1 is an autocrine 
+negative regulator of human dendritic cell activation. J. Exp. Med. 198, 
+1277–1283. https://doi.org/10.1084/jem.20030705.
+27. Roberts, W., Magwenzi, S., Aburima, A., and Naseem, K.M. (2010). 
+Thrombospondin-1 induces platelet activation through CD36-dependent 
+inhibition of the cAMP/protein kinase A signaling cascade. Blood 116, 
+4297–4306. https://doi.org/10.1182/blood-2010-01-265561.
+28. Ruggeri, Z.M. (2007). The role of von Willebrand factor in thrombus for-
+mation. Thromb. Res. 120, S5–S9. https://doi.org/10.1016/j.thromres. 
+2007.03.011.
+29. Lores-Motta, L., van Beek, A.E., Willems, E., Zandstra, J., van Mierlo, G., 
+Einhaus, A., Mary, J.L., Stucki, C.,, Bakker, B., Hoyng, C.B., et al. (2021). 
+Common haplotypes at the CFH locus and low-frequency variants in 
+CFHR2 and CFHR5 associate with systemic FHR concentrations and 
+age-related macular degeneration. Am. J. Hum. Genet. 108, 1367– 
+1384. https://doi.org/10.1016/j.ajhg.2021.06.002.
+30. Skerka, C., Chen, Q., Fremeaux-Bacchi, V., and Roumenina, L.T. (2013). 
+Complement factor H related proteins (CFHRs). Mol. Immunol. 56, 
+170–180. https://doi.org/10.1016/j.molimm.2013.06.001.
+31. Livingstone, I., Uversky, V.N., Furniss, D., and Wiberg, A. (2020). The 
+Pathophysiological Significance of Fibulin-3. Biomolecules 10. https:// 
+doi.org/10.3390/biom10091294.
+32. Turula, H., and Wobus, C.E. (2018). The Role of the Polymeric Immuno-
+globulin Receptor and Secretory Immunoglobulins during Mucosal Infec-
+tion and Immunity. Viruses 10. https://doi.org/10.3390/v1005023.
+33. Ni, H., Yuen, P.S.T., Papalia, J.M., Trevithick, J.E., Sakai, T., Fa¨ ssler, R., 
+Hynes, R.O., and Wagner, D.D. (2003). Plasma fibronectin promotes 
+thrombus growth and stability in injured arterioles. Proc. Natl. Acad. 
+Sci. USA 100, 2415–2419. https://doi.org/10.1073/pnas.2628067100.
+34. Bennett, M., Chin, A., Lee, H.J., Morales Cestero, E., Strazielle, N., 
+Ghersi-Egea, J.F., Threlkeld, S.W., Schmidt, T.A., Richendrfer, H.A., 
+Szmydynger-Chodobska, J., et al. (2021). Proteoglycan 4 Reduces Neu-
+roinflammation and Protects the Blood-Brain Barrier after Traumatic 
+Brain Injury. J. Neurotrauma 38, 385–398. https://doi.org/10.1089/neu. 
+2020.7229.
+35. Qadri, M., Jay, G.D., Zhang, L.X., Schmidt, T.A., Totonchy, J., and Elsaid, 
+K.A. (2021). Proteoglycan-4 is an essential regulator of synovial macro-
+phage polarization and inflammatory macrophage joint infiltration. 
+Arthritis Res. Ther. 23, 241. https://doi.org/10.1186/s13075-021-
+02621-9.
+36. Joyce, D.E., Gelbert, L., Ciaccia, A., DeHoff, B., and Grinnell, B.W. (2001). 
+Gene expression profile of antithrombotic protein c defines new mecha-
+nisms modulating inflammation and apoptosis. J. Biol. Chem. 276, 
+11199–11203. https://doi.org/10.1074/jbc.C100017200.
+37. Goldman, A.L., Bhasin, S., Wu, F.C.W., Krishna, M., Matsumoto, A.M., 
+and Jasuja, R. (2017). A Reappraisal of Testosterone’s Binding in Circu-
+lation: Physiological and Clinical Implications. Endocr Rev. 38, 302–324. 
+https://doi.org/10.1210/er.2017-00025.
+38. Degn, S.E., Jensenius, J.C., and Bjerre, M. (2011). The lectin pathway 
+and its implications in coagulation, infections and auto-immunity. Curr. 
+Opin. Organ Transplant. 16, 21–27. https://doi.org/10.1097/MOT. 
+0b013e32834253df.
+39. He´ ja, D., Kocsis, A., Dobo´ , J., Szila´ gyi, K., Sza´ sz, R., Za´ vodszky, P., Pa´ l, 
+G., and Ga´ l, P. (2012). Revised mechanism of complement lectin-
+pathway activation revealing the role of serine protease MASP-1 as the 
+exclusive activator of MASP-2. Proc. Natl. Acad. Sci. USA 109, 10498– 
+10503. https://doi.org/10.1073/pnas.1202588109.
+40. Harki, O., Tamisier, R., Pe´ pin, J.L., Bailly, S., Mahmani, A., Gonthier, B., 
+Salomon, A., Vilgrain, I., Faury, G., and Brianc¸ on-Marjollet, A. (2021). VE-
+cadherin cleavage in sleep apnoea: new insights into intermittent hypox-
+ia-related endothelial permeability. Eur. Respir. J. 58, 2004518. https:// 
+doi.org/10.1183/13993003.04518-2020.
+41. Burg, N., Malpass, R., Alex, L., Tran, M., Englebrecht, E., Kuo, A., Panne-
+lini, T., Minett, M., Athukorala, K., Worgall, T., et al. (2024). Endothelial cell 
+sphingosine 1-phosphate receptor 1 restrains VE-cadherin cleavage and 
+attenuates experimental inflammatory arthritis. JCI Insight 9, e171467. 
+https://doi.org/10.1172/jci.insight.171467.
+42. Abanades, B., Olsen, T.H., Raybould, M.I.J., Aguilar-Sanjuan, B., Wong, 
+W.K., Georges, G., Bujotzek, A., and Deane, C.M. (2024). The Patent and 
+Literature Antibody Database (PLAbDab): an evolving reference set of 
+functionally diverse, literature-annotated antibody sequences and struc-
+tures. Nucleic Acids Res. 52, D545–D551. https://doi.org/10.1093/nar/ 
+gkad1056.
+43. Abu-Shmais, A.A., Miller, R.J., Janke, A.K., Wolters, R.M., Holt, C.M., 
+Raju, N., Carnahan, R.H., Crowe, J.E., Jr., Mousa, J.J., and Georgiev, 
+I.S. (2024). Potent HPIV3-neutralizing IGHV5-51 Antibodies Identified 
+from Multiple Individuals Show L Chain and CDRH3 Promiscuity. 
+J. Immunol. 212, 1450–1456. https://doi.org/10.4049/jimmunol. 
+2300880.
+44. McGurk, K.A., Dagliati, A., Chiasserini, D., Lee, D., Plant, D., Baricevic-
+Jones, I., Kelsall, J., Eineman, R., Reed, R., Geary, B., et al. (2020). The 
+use of missing values in proteomic data-independent acquisition mass 
+spectrometry to enable disease activity discrimination. Bioinformatics 
+36, 2217–2223. https://doi.org/10.1093/bioinformatics/btz898.
+45. Carrizosa, E., Molero-Rı´o, C., and Romero Morales, D. (2021). Mathe-
+matical optimization in classification and regression trees. Top 29, 
+5–33. https://doi.org/10.1007/s11750-021-00594-1.
+46. Castro-Marrero, J., Cordero, M.D., Sa´ ez-Francas, N., Jimenez-Gutier-
+rez, C., Aguilar-Montilla, F.J., Aliste, L., and Alegre-Martin, J. (2013). 
+Could mitochondrial dysfunction be a differentiating marker between 
+chronic fatigue syndrome and fibromyalgia? Antioxid. Redox Signal. 
+19, 1855–1860. https://doi.org/10.1089/ars.2013.5346.
+47. Myhill, S., Booth, N.E., and McLaren-Howard, J. (2009). Chronic fatigue 
+syndrome and mitochondrial dysfunction. Int. J. Clin. Exp. Med. 2, 1–16.
+16 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+48. Eltzschig, H.K., Sitkovsky, M.V., and Robson, S.C. (2012). Purinergic 
+signaling during inflammation. N. Engl. J. Med. 367, 2322–2333. 
+https://doi.org/10.1056/NEJMra1205750.
+49. Giuliani, A.L., Sarti, A.C., and Di Virgilio, F. (2020). Ectonucleotidases in 
+Acute and Chronic Inflammation. Front. Pharmacol. 11, 619458. 
+https://doi.org/10.3389/fphar.2020.619458.
+50. Dosch, M., Gerber, J., Jebbawi, F., and Beldi, G. (2018). Mechanisms of 
+ATP Release by Inflammatory Cells. Int. J. Mol. Sci. 19, 1222. https://doi. 
+org/10.3390/ijms19041222.
+51. Toyama, E.Q., Herzig, S., Courchet, J., Lewis, T.L., Jr., Loso´ n, O.C., Hell-
+berg, K., Young, N.P., Chen, H., Polleux, F., Chan, D.C., and Shaw, R.J. 
+(2016). Metabolism. AMP-activated protein kinase mediates mitochon-
+drial fission in response to energy stress. Science 351, 275–281. 
+https://doi.org/10.1126/science.aab4138.
+52. Russell, A., Hepgul, N., Nikkheslat, N., Borsini, A., Zajkowska, Z., Moll, 
+N., Forton, D., Agarwal, K., Chalder, T., Mondelli, V., et al. (2019). Persis-
+tent fatigue induced by interferon-alpha: a novel, inflammation-based, 
+proxy model of chronic fatigue syndrome. Psychoneuroendocrinology 
+100, 276–285. https://doi.org/10.1016/j.psyneuen.2018.11.032.
+53. Crozier-Reabe, K.R., Phillips, R.S., and Moran, G.R. (2008). Kynurenine 
+3-monooxygenase from Pseudomonas fluorescens: substrate-like inhib-
+itors both stimulate flavin reduction and stabilize the flavin-peroxo inter-
+mediate yet result in the production of hydrogen peroxide. Biochemistry 
+47, 12420–12433. https://doi.org/10.1021/bi8010434.
+54. Wilson, K., Auer, M., Binnie, M., Zheng, X., Pham, N.T., Iredale, J.P., 
+Webster, S.P., and Mole, D.J. (2016). Overexpression of human kynure-
+nine-3-monooxygenase protects against 3-hydroxykynurenine-medi-
+ated apoptosis through bidirectional nonlinear feedback. Cell Death 
+Dis. 7, e2197. https://doi.org/10.1038/cddis.2016.87.
+55. Hirai, K., Kuroyanagi, H., Tatebayashi, Y., Hayashi, Y., Hirabayashi-Taka-
+hashi, K., Saito, K., Haga, S., Uemura, T., and Izumi, S. (2010). Dual role of 
+the carboxyl-terminal region of pig liver L-kynurenine 3-monooxygenase: 
+mitochondrial-targeting signal and enzymatic activity. J. Biochem. 148, 
+639–650. https://doi.org/10.1093/jb/mvq099.
+56. Cribbs, J.T., and Strack, S. (2007). Reversible phosphorylation of Drp1 by 
+cyclic AMP-dependent protein kinase and calcineurin regulates mito-
+chondrial fission and cell death. EMBO Rep. 8, 939–944. https://doi. 
+org/10.1038/sj.embor.7401062.
+57. Cereghetti, G.M., Stangherlin, A., Martins de Brito, O., Chang, C.R., 
+Blackstone, C., Bernardi, P., and Scorrano, L. (2008). Dephosphorylation 
+by calcineurin regulates translocation of Drp1 to mitochondria. Proc. 
+Natl. Acad. Sci. USA 105, 15803–15808. https://doi.org/10.1073/pnas. 
+0808249105.
+58. Maddison, D.C., Alfonso-Nu´ n˜ ez, M., Swaih, A.M., Breda, C., Campesan, 
+S., Allcock, N., Straatman-Iwanowska, A., Kyriacou, C.P., and Giorgini, 
+F. (2020). A novel role for kynurenine 3-monooxygenase in mitochondrial 
+dynamics. PLoS Genet. 16, e1009129. https://doi.org/10.1371/journal. 
+pgen.1009129.
+59. Barker, E., Fujimura, S.F., Fadem, M.B., Landay, A.L., and Levy, J.A. 
+(1994). Immunologic abnormalities associated with chronic fatigue syn-
+drome. Clin. Infect. Dis. 18, S136–S141. https://doi.org/10.1093/clin-
+ids/18.supplement_1.s136.
+60. Hardcastle, S.L., Brenu, E.W., Johnston, S., Nguyen, T., Huth, T., Wong, 
+N., Ramos, S., Staines, D., and Marshall-Gradisnik, S. (2015). Character-
+isation of cell functions and receptors in Chronic Fatigue Syndrome/ 
+Myalgic Encephalomyelitis (CFS/ME). BMC Immunol. 16, 35. https:// 
+doi.org/10.1186/s12865-015-0101-4.
+61. Brenu, E.W., Huth, T.K., Hardcastle, S.L., Fuller, K., Kaur, M., Johnston, 
+S., Ramos, S.B., Staines, D.R., and Marshall-Gradisnik, S.M. (2014). Role 
+of adaptive and innate immune cells in chronic fatigue syndrome/myalgic 
+encephalomyelitis. Int. Immunol. 26, 233–242. https://doi.org/10.1093/ 
+intimm/dxt068.
+62. Brenu, E.W., van Driel, M.L., Staines, D.R., Ashton, K.J., Ramos, S.B., 
+Keane, J., Klimas, N.G., and Marshall-Gradisnik, S.M. (2011). Immuno-
+logical abnormalities as potential biomarkers in Chronic Fatigue Syn-
+drome/Myalgic Encephalomyelitis. J. Transl. Med. 9, 81. https://doi. 
+org/10.1186/1479-5876-9-81.
+63. Abel, A.M., Yang, C., Thakar, M.S., and Malarkannan, S. (2018). Natural 
+Killer Cells: Development, Maturation, and Clinical Utilization. Front. Im-
+munol. 9, 1869. https://doi.org/10.3389/fimmu.2018.01869.
+64. Bi, J., and Wang, X. (2020). Molecular Regulation of NK Cell Maturation. 
+Front. Immunol. 11, 1945. https://doi.org/10.3389/fimmu.2020.01945.
+65. Ebbo, M., Ge´ rard, L., Carpentier, S., Ve´ ly, F., Cypowyj, S., Farnarier, C., 
+Vince, N., Malphettes, M., Fieschi, C., Oksenhendler, E., et al. (2016). 
+Low Circulating Natural Killer Cell Counts are Associated With Severe 
+Disease in Patients With Common Variable Immunodeficiency. EBioMe-
+dicine 6, 222–230. https://doi.org/10.1016/j.ebiom.2016.02.025.
+66. Collin, M., and Bigley, V. (2018). Human dendritic cell subsets: an update. 
+Immunology 154, 3–20. https://doi.org/10.1111/imm.12888.
+67. De Meirleir, K.L., Khaiboullina, S.F., Fre´ mont, M., Hulstaert, J., Rizvanov, 
+A.A., Palota´ s, A., and Lombardi, V.C. (2013). Plasmacytoid dendritic cells 
+in the duodenum of individuals diagnosed with myalgic encephalomy-
+elitis are uniquely immunoreactive to antibodies to human endogenous 
+retroviral proteins. In Vivo (Athens) 27, 177–187.
+68. Berggren, O., Alexsson, A., Morris, D.L., Tandre, K., Weber, G., Vyse, 
+T.J., Syva¨ nen, A.C., Ro¨ nnblom, L., and Eloranta, M.L. (2015). IFN-alpha 
+production by plasmacytoid dendritic cell associations with polymor-
+phisms in gene loci related to autoimmune and inflammatory diseases. 
+Hum. Mol. Genet. 24, 3571–3581. https://doi.org/10.1093/hmg/ddv095.
+69. Sotzny, F., Blanco, J., Capelli, E., Castro-Marrero, J., Steiner, S., Murov-
+ska, M., and Scheibenbogen, C.; European Network on ME/CFS EURO-
+MENE (2018). Myalgic Encephalomyelitis/Chronic Fatigue Syndrome - 
+Evidence for an autoimmune disease. Autoimmun. Rev. 17, 601–609. 
+https://doi.org/10.1016/j.autrev.2018.01.009.
+70. Xiong, R., Gunter, C., Fleming, E., Vernon, S.D., Bateman, L., Unutmaz, 
+D., and Oh, J. (2023). Multi-’omics of gut microbiome-host interactions 
+in short- and long-term myalgic encephalomyelitis/chronic fatigue syn-
+drome patients. Cell Host Microbe 31, 273–287.e5. https://doi.org/10. 
+1016/j.chom.2023.01.001.
+71. Tussiwand, R., and Gautier, E.L. (2015). Transcriptional Regulation of 
+Mononuclear Phagocyte Development. Front. Immunol. 6, 533. https:// 
+doi.org/10.3389/fimmu.2015.00533.
+72. van Beek, J.J.P., Gorris, M.A.J., Sko¨ ld, A.E., Hatipoglu, I., Van Acker, 
+H.H., Smits, E.L., de Vries, I.J.M., and Bakdash, G. (2016). Human blood 
+myeloid and plasmacytoid dendritic cells cross activate each other and 
+synergize in inducing NK cell cytotoxicity. OncoImmunology 5, 
+e1227902. https://doi.org/10.1080/2162402X.2016.1227902.
+73. Curriu, M., Carrillo, J., Massanella, M., Rigau, J., Alegre, J., Puig, J., Gar-
+cia-Quintana, A.M., Castro-Marrero, J., Negredo, E., Clotet, B., et al. 
+(2013). Screening NK-B- and T-cell phenotype and function in patients 
+suffering from Chronic Fatigue Syndrome. J. Transl. Med. 11, 68. 
+https://doi.org/10.1186/1479-5876-11-68.
+74. Walitt, B., Singh, K., LaMunion, S.R., Hallett, M., Jacobson, S., Chen, K., 
+Enose-Akahata, Y., Apps, R., Barb, J.J., Bedard, P., et al. (2024). Deep 
+phenotyping of post-infectious myalgic encephalomyelitis/chronic fa-
+tigue syndrome. Nat. Commun. 15, 907. https://doi.org/10.1038/ 
+s41467-024-45107-3.
+75. Hilligan, K.L., and Ronchese, F. (2020). Antigen presentation by dendritic 
+cells and their instruction of CD4+ T helper cell responses. Cell. Mol. Im-
+munol. 17, 587–599. https://doi.org/10.1038/s41423-020-0465-0.
+76. Erokhina, S.A., Streltsova, M.A., Kanevskiy, L.M., Grechikhina, M.V., 
+Sapozhnikov, A.M., and Kovalenko, E.I. (2021). HLA-DR-expressing NK 
+cells: Effective killers suspected for antigen presentation. J. Leukoc. 
+Biol. 109, 327–337. https://doi.org/10.1002/JLB.3RU0420-668RR.
+77. Cui, W., and Kaech, S.M. (2010). Generation of effector CD8+ T cells and 
+their conversion to memory T cells. Immunol. Rev. 236, 151–166. https:// 
+doi.org/10.1111/j.1600-065X.2010.00926.x.
+Cell Reports Medicine 6, 102514, December 16, 2025 
+17
+Article
+ll
+OPEN ACCESS
+
+78. Jackson, D.G. (2009). Immunological functions of hyaluronan and its re-
+ceptors in the lymphatics. Immunol. Rev. 230, 216–231. https://doi.org/ 
+10.1111/j.1600-065X.2009.00803.x.
+79. Lawrance, W., Banerji, S., Day, A.J., Bhattacharjee, S., and Jackson, 
+D.G. (2016). Binding of Hyaluronan to the Native Lymphatic Vessel Endo-
+thelial Receptor LYVE-1 Is Critically Dependent on Receptor Clustering 
+and Hyaluronan Organization. J. Biol. Chem. 291, 8014–8030. https:// 
+doi.org/10.1074/jbc.M115.708305.
+80. Jackson, D.G. (2019). Hyaluronan in the lymphatics: The key role of the 
+hyaluronan receptor LYVE-1 in leucocyte trafficking. Matrix Biol. 78–79, 
+219–235. https://doi.org/10.1016/j.matbio.2018.02.001.
+81. Nishida-Fukuda, H., Araki, R., Shudou, M., Okazaki, H., Tomono, Y., Na-
+kayama, H., Fukuda, S., Sakaue, T., Shirakata, Y., Sayama, K., et al. 
+(2016). Ectodomain Shedding of Lymphatic Vessel Endothelial Hyalur-
+onan Receptor 1 (LYVE-1) Is Induced by Vascular Endothelial Growth 
+Factor A (VEGF-A). J. Biol. Chem. 291, 10490–10500. https://doi.org/ 
+10.1074/jbc.M115.683201.
+82. Johnson, L.A., Banerji, S., Lawrance, W., Gileadi, U., Prota, G., Holder, 
+K.A., Roshorm, Y.M., Hanke, T., Cerundolo, V., Gale, N.W., and Jackson, 
+D.G. (2017). Dendritic cells enter lymph vessels by hyaluronan-mediated 
+docking to the endothelial receptor LYVE-1. Nat. Immunol. 18, 762–770. 
+https://doi.org/10.1038/ni.3750.
+83. Romero, P., Zippelius, A., Kurth, I., Pittet, M.J., Touvrey, C., Iancu, E.M., 
+Corthesy, P., Devevre, E., Speiser, D.E., and Rufer, N. (2007). Four func-
+tionally distinct populations of human effector-memory CD8+ T lympho-
+cytes. J. Immunol. 178, 4112–4119. https://doi.org/10.4049/jimmunol. 
+178.7.4112.
+84. Kaech, S.M., Wherry, E.J., and Ahmed, R. (2002). Effector and memory 
+T-cell differentiation: implications for vaccine development. Nat. Rev. Im-
+munol. 2, 251–262. https://doi.org/10.1038/nri778.
+85. Christiaans, S.C., Wagener, B.M., Esmon, C.T., and Pittet, J.F. (2013). 
+Protein C and acute inflammation: a clinical and biological perspective. 
+Am. J. Physiol. Lung Cell. Mol. Physiol. 305, L455–L466. https://doi. 
+org/10.1152/ajplung.00093.2013.
+86. Lay, A.J., Liang, Z., Rosen, E.D., and Castellino, F.J. (2005). Mice with a 
+severe deficiency in protein C display prothrombotic and proinflamma-
+tory phenotypes and compromised maternal reproductive capabilities. 
+J. Clin. Investig. 115, 1552–1561. https://doi.org/10.1172/JCI24030.
+87. Lay, A.J., Donahue, D., Tsai, M.J., and Castellino, F.J. (2007). Acute 
+inflammation is exacerbated in mice genetically predisposed to a severe 
+protein C deficiency. Blood 109, 1984–1991. https://doi.org/10.1182/ 
+blood-2006-07-037945.
+88. Sorensen, B., Streib, J.E., Strand, M., Make, B., Giclas, P.C., Fleshner, 
+M., and Jones, J.F. (2003). Complement activation in a model of chronic 
+fatigue syndrome. J. Allergy Clin. Immunol. 112, 397–403. https://doi. 
+org/10.1067/mai.2003.1615.
+89. Sorensen, B., Jones, J.F., Vernon, S.D., and Rajeevan, M.S. (2009). Tran-
+scriptional control of complement activation in an exercise model of 
+chronic fatigue syndrome. Mol. Med. 15, 34–42. https://doi.org/10. 
+2119/molmed.2008.00098.
+90. Castro-Marrero, J., Zacares, M., Almenar-Perez, E., Alegre-Martin, J., 
+and Oltra, E. (2021). Complement Component C1q as a Potential Diag-
+nostic Tool for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome 
+Subtyping. J. Clin. Med. 10, 4171. https://doi.org/10.3390/jcm10184171.
+91. Sandvik, M.K., Sørland, K., Leirgul, E., Rekeland, I.G., Stavland, C.S., 
+Mella, O., and Fluge, Ø. (2023). Endothelial dysfunction in ME/CFS pa-
+tients. PLoS One 18, e0280942. https://doi.org/10.1371/journal.pone. 
+0280942.
+92. Scherbakov, N., Szklarski, M., Hartwig, J., Sotzny, F., Lorenz, S., Meyer, 
+A., Grabowski, P., Doehner, W., and Scheibenbogen, C. (2020). Periph-
+eral endothelial dysfunction in myalgic encephalomyelitis/chronic fatigue 
+syndrome. ESC Heart Fail. 7, 1064–1071. https://doi.org/10.1002/ehf2. 
+12633.
+93. Prakash, P., Kulkarni, P.P., and Chauhan, A.K. (2015). Thrombospondin 1 
+requires von Willebrand factor to modulate arterial thrombosis in mice. 
+Blood 125, 399–406. https://doi.org/10.1182/blood-2014-06-581942.
+94. Isenberg, J.S., Hyodo, F., Matsumoto, K.I., Romeo, M.J., Abu-Asab, M., 
+Tsokos, M., Kuppusamy, P., Wink, D.A., Krishna, M.C., and Roberts, 
+D.D. (2007). Thrombospondin-1 limits ischemic tissue survival by inhibit-
+ing nitric oxide-mediated vascular smooth muscle relaxation. Blood 109, 
+1945–1952. https://doi.org/10.1182/blood-2006-08-041368.
+95. Boissoneault, J., Letzen, J., Robinson, M., and Staud, R. (2019). Cerebral 
+blood flow and heart rate variability predict fatigue severity in patients 
+with chronic fatigue syndrome. Brain Imaging Behav. 13, 789–797. 
+https://doi.org/10.1007/s11682-018-9897-x.
+96. Gutierrez, L.S., and Gutierrez, J. (2021). Thrombospondin 1 in Metabolic 
+Diseases. Front. Endocrinol. 12, 638536. https://doi.org/10.3389/fendo. 
+2021.638536.
+97. Goumans, M.J., Liu, Z., and ten Dijke, P. (2009). TGF-beta signaling in 
+vascular biology and dysfunction. Cell Res. 19, 116–127. https://doi. 
+org/10.1038/cr.2008.326.
+98. Goumans, M.J., and Mummery, C. (2000). Functional analysis of the 
+TGFbeta receptor/Smad pathway through gene ablation in mice. Int. J. 
+Dev. Biol. 44, 253–265.
+99. Vittet, D., Buchou, T., Schweitzer, A., Dejana, E., and Huber, P. (1997). 
+Targeted null-mutation in the vascular endothelial-cadherin gene impairs 
+the organization of vascular-like structures in embryoid bodies. Proc. 
+Natl. Acad. Sci. USA 94, 6273–6278. https://doi.org/10.1073/pnas.94. 
+12.6273.
+100. Sauteur, L., Krudewig, A., Herwig, L., Ehrenfeuchter, N., Lenard, A., 
+Affolter, M., and Belting, H.G. (2014). Cdh5/VE-cadherin promotes endo-
+thelial cell interface elongation via cortical actin polymerization during 
+angiogenic sprouting. Cell Rep. 9, 504–513. https://doi.org/10.1016/j. 
+celrep.2014.09.024.
+101. Gory-Faure´ , S., Prandini, M.H., Pointu, H., Roullot, V., Pignot-Paintrand, 
+I., Vernet, M., and Huber, P. (1999). Role of vascular endothelial-cadherin 
+in vascular morphogenesis. Development 126, 2093–2102. https://doi. 
+org/10.1242/dev.126.10.2093.
+102. Matsuyoshi, N., Toda, K., Horiguchi, Y., Tanaka, T., Nakagawa, S., Take-
+ichi, M., and Imamura, S. (1997). In vivo evidence of the critical role of 
+cadherin-5 in murine vascular integrity. Proc. Assoc. Am. Physicians 
+109, 362–371.
+103. Milivojevic, M., Che, X., Bateman, L., Cheng, A., Garcia, B.A., Hornig, M., 
+Huber, M., Klimas, N.G., Lee, B., Lee, H., et al. (2020). Plasma proteomic 
+profiling suggests an association between antigen driven clonal B cell 
+expansion and ME/CFS. PLoS One 15, e0236148. https://doi.org/10. 
+1371/journal.pone.0236148.
+104. Trivedi, M.S., Oltra, E., Sarria, L., Rose, N., Beljanski, V., Fletcher, M.A., 
+Klimas, N.G., and Nathanson, L. (2018). Identification of Myalgic Enceph-
+alomyelitis/Chronic Fatigue Syndrome-associated DNA methylation pat-
+terns. PLoS One 13, e0201066. https://doi.org/10.1371/journal.pone. 
+0201066.
+105. Sweetman, E., Ryan, M., Edgar, C., MacKay, A., Vallings, R., and Tate, W. 
+(2019). Changes in the transcriptome of circulating immune cells of a New 
+Zealand cohort with myalgic encephalomyelitis/chronic fatigue syn-
+drome. Int. J. Immunopathol. Pharmacol. 33, 2058738418820402. 
+https://doi.org/10.1177/2058738418820402.
+106. Nunes, M., Vlok, M., Proal, A., Kell, D.B., and Pretorius, E. (2024). Data-
+independent LC-MS/MS analysis of ME/CFS plasma reveals a dysregu-
+lated coagulation system, endothelial dysfunction, downregulation of 
+complement machinery. Cardiovasc. Diabetol. 23, 254. https://doi.org/ 
+10.1186/s12933-024-02315-x.
+107. Zhao, T., Cox, I.A., Ahmad, H., Campbell, J.A., Hensher, M., Palmer, A.J., 
+Kelly, R.M., Rogerson, M.J., Wills, K., and de Graaff, B. (2023). The eco-
+nomic burden of myalgic encephalomyelitis/chronic fatigue syndrome in 
+Australia. Aust. Health Rev. 47, 707–715. https://doi.org/10.1071/ 
+AH23106.
+18 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+108. Naviaux, R.K., Naviaux, J.C., Li, K., Bright, A.T., Alaynick, W.A., Wang, L., 
+Baxter, A., Nathan, N., Anderson, W., and Gordon, E. (2016). Metabolic 
+features of chronic fatigue syndrome. Proc. Natl. Acad. Sci. USA 113, 
+E5472–E5480. https://doi.org/10.1073/pnas.1607571113.
+109. Thomas, N., Gurvich, C., Huang, K., Gooley, P.R., and Armstrong, C.W. 
+(2022). The underlying sex differences in neuroendocrine adaptations 
+relevant to Myalgic Encephalomyelitis Chronic Fatigue Syndrome. Front. 
+Neuroendocrinol. 66, 100995. https://doi.org/10.1016/j.yfrne.2022. 
+100995.
+110. Maglione, A., Rolla, S., Mercanti, S.F.D., Cutrupi, S., and Clerico, M. 
+(2019). The Adaptive Immune System in Multiple Sclerosis: An Estro-
+gen-Mediated Point of View. Cells 8, 1280. https://doi.org/10.3390/ 
+cells8101280.
+111. Bakken, I.J., Tveito, K., Gunnes, N., Ghaderi, S., Stoltenberg, C., Trog-
+stad, L., Ha˚ berg, S.E., and Magnus, P. (2014). Two age peaks in the inci-
+dence of chronic fatigue syndrome/myalgic encephalomyelitis: a popula-
+tion-based registry study from Norway 2008-2012. BMC Med. 12, 167. 
+https://doi.org/10.1186/s12916-014-0167-5.
+112. Ahn, S.B., Sharma, S., Mohamedali, A., Mahboob, S., Redmond, W.J., 
+Pascovici, D., Wu, J.X., Zaw, T., Adhikari, S., Vaibhav, V., et al. (2019). 
+Potential early clinical stage colorectal cancer diagnosis using a prote-
+omics blood test panel. Clin. Proteomics 16, 34. https://doi.org/10. 
+1186/s12014-019-9255-z.
+113. Krishnamurthy, S., Gunasegaran, B., Paul-Heng, M., Mohamedali, A., P 
+Klare, W., Pang, C.N.I., Gluch, L., Shin, J.S., Chan, C., Baker, M.S., 
+et al. (2025). Recombinant Protein Spectral Library (rPSL) DIA-MS 
+method improves identification and quantification of low-abundance 
+cancer-associated and kynurenine pathway proteins. Commun. Chem. 
+8, 141. https://doi.org/10.1038/s42004-025-01531-0.
+114. Ahn, S.B., Kamath, K.S., Mohamedali, A., Noor, Z., Wu, J.X., Pascovici, 
+D., Adhikari, S., Cheruku, H.R., Guillemin, G.J., McKay, M.J., et al. (2021). 
+Use of a Recombinant Biomarker Protein DDA Library Increases DIA 
+Coverage of Low Abundance Plasma Proteins. J. Proteome Res. 20, 
+2374–2389. https://doi.org/10.1021/acs.jproteome.0c00898.
+115. Ware, J.E., Jr., and Sherbourne, C.D. (1992). The MOS 36-item short-
+form health survey (SF-36). I. Conceptual framework and item selection. 
+Med. Care 30, 473–483.
+116. Jerram, A., Guy, T.V., Beutler, L., Gunasegaran, B., Sluyter, R., Fazekas 
+de St Groth, B., and McGuire, H.M. (2021). Effects of storage time and 
+temperature on highly multiparametric flow analysis of peripheral blood 
+samples; implications for clinical trial samples. Biosci. Rep. 41, 
+BSR20203827. https://doi.org/10.1042/BSR20203827.
+117. Heng, B., Pires, A.S., Chow, S., Krishnamurthy, S., Bonnell, B., Busta-
+mante, S., and Guillemin, G.J. (2023). Stability Studies of Kynurenine 
+Pathway Metabolites in Blood Components Define Optimal Blood Pro-
+cessing Conditions. Int. J. Tryptophan Res. 16, 11786469231213521. 
+https://doi.org/10.1177/11786469231213521.
+118. Bustamante, S., Jayasena, T., Richani, D., Gilchrist, R.B., Wu, L.E., Sin-
+clair, D.A., Sachdev, P.S., and Braidy, N. (2017). Quantifying the cellular 
+NAD+ metabolome using a tandem liquid chromatography mass spec-
+trometry approach. Metabolomics 14, 15. https://doi.org/10.1007/ 
+s11306-017-1310-z.
+119. Ashhurst, T.M., Marsh-Wakefield, F., Putri, G.H., Spiteri, A.G., Shinko, D., 
+Read, M.N., Smith, A.L., and King, N.J.C. (2022). Integration, exploration, 
+and analysis of high-dimensional single-cell cytometry data using 
+Spectre. Cytometry. A. 101, 237–253. https://doi.org/10.1002/cyto.a. 
+24350.
+120. Van Gassen, S., Gaudilliere, B., Angst, M.S., Saeys, Y., and Aghaeepour, 
+N. (2020). CytoNorm: A Normalization Algorithm for Cytometry Data. Cy-
+tometry. A. 97, 268–278. https://doi.org/10.1002/cyto.a.23904.
+121. Van Gassen, S., Callebaut, B., Van Helden, M.J., Lambrecht, B.N., De-
+meester, P., Dhaene, T., and Saeys, Y. (2015). FlowSOM: Using self-
+organizing maps for visualization and interpretation of cytometry data. 
+Cytometry. A. 87, 636–645. https://doi.org/10.1002/cyto.a.22625.
+122. Linderman, G.C., Rachh, M., Hoskins, J.G., Steinerberger, S., and 
+Kluger, Y. (2019). Fast interpolation-based t-SNE for improved visualiza-
+tion of single-cell RNA-seq data. Nat. Methods 16, 243–245. https://doi. 
+org/10.1038/s41592-018-0308-4.
+123. Rappsilber, J., Mann, M., and Ishihama, Y. (2007). Protocol for micro-pu-
+rification, enrichment, pre-fractionation and storage of peptides for pro-
+teomics using StageTips. Nat. Protoc. 2, 1896–1906. https://doi.org/10. 
+1038/nprot.2007.261.
+124. Lazar, C., Gatto, L., Ferro, M., Bruley, C., and Burger, T. (2016). Account-
+ing for the Multiple Natures of Missing Values in Label-Free Quantitative 
+Proteomics Data Sets to Compare Imputation Strategies. J. Proteome 
+Res. 15, 1116–1125. https://doi.org/10.1021/acs.jproteome.5b00981.
+125. McClintick, J.N., and Edenberg, H.J. (2006). Effects of filtering by Present 
+call on analysis of microarray experiments. BMC Bioinf. 7, 49. https://doi. 
+org/10.1186/1471-2105-7-49.
+126. Liu, M., and Dongre, A. (2021). Proper imputation of missing values in 
+proteomics datasets for differential expression analysis. Brief. Bioinform. 
+22, bbaa112. https://doi.org/10.1093/bib/bbaa112.
+127. Tyanova, S., Temu, T., Sinitcyn, P., Carlson, A., Hein, M.Y., Geiger, T., 
+Mann, M., and Cox, J. (2016). The Perseus computational platform for 
+comprehensive analysis of (prote)omics data. Nat. Methods 13, 
+731–740. https://doi.org/10.1038/nmeth.3901.
+128. Bjelosevic, S., Pascovici, D., Ping, H., Karlaftis, V., Zaw, T., Song, X., Mol-
+loy, M.P., Monagle, P., and Ignjatovic, V. (2017). Quantitative Age-spe-
+cific Variability of Plasma Proteins in Healthy Neonates, Children and 
+Adults. Mol. Cell. Proteomics 16, 924–935. https://doi.org/10.1074/ 
+mcp.M116.066720.
+129. Pascovici, D., Handler, D.C.L., Wu, J.X., and Haynes, P.A. (2016). Multi-
+ple testing corrections in quantitative proteomics: A useful but blunt tool. 
+Proteomics 16, 2448–2453. https://doi.org/10.1002/pmic.201600044.
+Cell Reports Medicine 6, 102514, December 16, 2025 
+19
+Article
+ll
+OPEN ACCESS
+
+STAR★METHODS
+KEY RESOURCES TABLE
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Chemicals, peptides, and recombinant proteins
+Ficoll-Paque Plus
+Merck
+Cat# GE17-1440-02
+PBS
+Gibco
+Cat# 10010023
+RPMI-1640
+Gibco
+Cat# 11875093
+DMSO
+Thermo Scientific
+Cat# J66650.AE
+Trichloroacetic acid
+Sigma Aldrich
+Cat# T6399
+1,1,1,3,3,3 hexafluoroisopropanol
+Sigma Aldrich
+Cat# 105228
+Trifluoroacetic anhydride
+Sigma Aldrich
+Cat# 106232
+Toluene
+Sigma Aldrich
+Cat# 244511
+Sodium bicarbonate
+Sigma Aldrich
+Cat# S6014
+L-kynurenine
+Sigma Aldrich
+Cat# K8625
+Kynurenic acid
+Sigma Aldrich
+Cat# K3375
+L-tryptophan
+Sigma Aldrich
+Cat# 93659
+2,3-Pyridinedicarboxylic acid
+Sigma Aldrich
+Cat# P63204
+Picolinic acid
+Sigma Aldrich
+Cat# P5503
+Anthranilic acid
+Sigma Aldrich
+Cat# A89855
+3-Hydroxy-DL-kynurenine
+Sigma Aldrich
+Cat# H1771
+3-Hydroxyanthranilic acid
+Sigma Aldrich
+Cat# H9391
+Zinc acetate dihydrate
+Sigma Aldrich
+Cat# 96459
+Sodium Acetate
+Sigma Aldrich
+Cat# 241245
+Acetonitrile
+Sigma Aldrich
+Cat# 34998
+2-Picolinic-d 4 acid
+Sigma Aldrich
+Cat# 615757
+Quinolinic acid-d 3
+MedchemExpress
+Cat# HY-100807S
+Formic acid
+Fisher Chemical
+Cat# A117
+Ammonium acetate
+Sigma Aldrich
+Cat# 238074
+Trypan Blue solution
+Sigma Aldrich
+Cat# T8154
+DL-Dithiothreitol
+Sigma Aldrich
+Cat# D0632
+Iodoacetamide
+Sigma Aldrich
+Cat# I1149
+Trypsin
+Promega
+Cat# V5111
+Adenosine 5 ′ -monophosphate
+Sigma Aldrich
+Cat# 01930
+Adenosine 5 ′ -diphosphate
+Sigma Aldrich
+Cat# 01905
+Adenosine 5 ′ -triphosphate
+Sigma Aldrich
+Cat# 7699
+β-Nicotinamide adenine dinucleotide, reduced
+Sigma Aldrich
+Cat# N8129
+β-Nicotinamide adenine dinucleotide hydrate
+Sigma Aldrich
+Cat# 43410
+β-Nicotinamide adenine dinucleotide 2 ′ -phosphate reduced
+Sigma Aldrich
+Cat# N6505
+β-Nicotinamide adenine dinucleotide phosphate hydrate
+Sigma Aldrich
+Cat# N3886
+Nicotinamide-d4
+Toronto Research Chemicals
+Cat# N407752
+β-Nicotinamide adenine dinucleotide, reduced-d5 (d4-major)
+Toronto Research Chemicals
+Cat# N201487
+β-Nicotinamide Adenine Dinucleotide-d4 Ammonium Salt (d3 major)
+Toronto Research Chemicals
+Cat# N407783
+β-Nicotinamide-d4 Mononucleotide (d3-major)
+Toronto Research Chemicals
+Cat# N407768
+Adenosine 5 ′ -Diphosphate-13C5
+Toronto Research Chemicals
+Cat# A281697
+Adenosine 5 ′ -Monophosphate-13C5
+Toronto Research Chemicals
+Cat# A281782
+Adenosine-13C10,15N5 5 ′ -triphosphate disodium salt solution
+Sigma Aldrich
+Cat# 645702
+FBS
+Bovogen
+SFBS-AU
+(Continued on next page)
+e1
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS
+Study cohorts
+Patients were recruited from The Grove Health Pymble clinic in Sydney, Australia. Potential patients were clinically diagnosed with 
+ME/CFS as defined by the Canadian Consensus Criteria 1 and satisfied the case definition classification according to the DSQ-SF. 14 
+Additional inclusion criteria were age ≥18, adequate understanding of English and the ability to provide informed consent, a low 
+score in physical status (physical functioning score from SF-36, 115 and Karnofsky Performance Scale 15 of ≤70). The exclusion criteria 
+consisted of pregnancy, inability to provide informed consent, and not carrying a clinical diagnosis of ME/CFS as defined by the Ca-
+nadian Consensus Criteria. 1 The healthy control group was selected to approximately match the age and sex distribution of the ME/ 
+CFS patient cohort. Informed consent was obtained from all participants, and our study was approved by the Macquarie University 
+Human Research Ethics committee (ref. 52024922255391). Recruitment was randomised and concurrent across both cohorts to 
+avoid collection bias.
+Continued
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Critical commercial assays
+LEGENDPlex Inflammation Panel 1 (13-plex)
+BioLegend
+Cat# 740007
+Human B Effector 2 Panel (5-plex)
+BioLegend
+Cat# 740531
+Immunoprofiling Assay, cFluor® Reagent Kit (18 colors)
+Cytek
+Cat# SKU R7-40002
+Immunoprofiling Kit, 7 Color (Brilliant Violet TM )
+BioLegend
+Cat# 900004160
+Pierce TM BCA Protein Assay Kits
+Thermo Scientific
+Cat# 23225
+Deposited data
+Proteomic data
+Proteomexchange
+PXD068504
+Metabolites, cytokine, flow cytometry and demography data
+Figshare
+https://doi.org/10.25949/30195544
+Software and algorithms
+Agilent OpenLAB CDS ChemStation (Edition C.01.04)
+Agilent
+https://www.agilent.com/en/product/ 
+software-informatics/analytical-software-
+suite/chromatography-data-systems/ 
+openlab-chemstation
+Agilent GC/MSD ChemStation software (Edition 02.02.1431)
+Agilent
+https://www.agilent.com/en/product/ 
+software-informatics/analytical-
+software-suite/chromatography-
+data-systems/openlab-chemstation
+SpectroFlo Software (V2.2.0.2)
+Cytek
+https://cytekbio.com/pages/spectro-flo
+Spectronaut
+Biognosys
+https://biognosys.com/software/
+spectronaut/
+Ingenuity Pathway Analysis
+Qiagen
+https://digitalinsights.qiagen.com/ 
+products-overview/discovery-
+insights-portfolio/analysis-and-
+visualization/qiagen-ipa/
+Prism 10 (Version 10)
+GraphPad
+https://www.graphpad.com
+IBM SPSS Statistics (Version 29)
+IBM
+https://www.ibm.com/products/
+spss-statistics
+JMP Software (Version 17.2)
+IBM
+https://www.jmp.com/en/home
+FlowJo Software (Version 10.8.2)
+BD Bioscience
+https://www.bdbiosciences.com/ 
+en-ch/products/software/flowjo-
+software?tab=flowjo-v10-software
+R studio
+Posit
+https://posit.co/download/
+rstudio-desktop/
+LEGENDPlex Data Analysis Software
+BioLegend
+https://www.biolegend.com/en-ie/
+immunoassays/legendplex/
+support/software
+Cell Reports Medicine 6, 102514, December 16, 2025 
+e2
+Article
+ll
+OPEN ACCESS
+
+METHOD DETAILS
+Data collection from questionaries
+Health status and quality of life were assessed on the day of physical examination and biological sample collection from patients and 
+healthy control subjects using the DSQ-SF, SF-36 and Karnofsky Performance Scale. The DSQ-SF comprises 14 questions assess-
+ing the frequency and severity of major ME/CFS symptoms. It employs a ‘‘2-2’’ threshold for both frequency and severity whereby the 
+presence of a symptom is determined when both values are ‘‘2’’. The SF-36 evaluates various aspects of physical and social func-
+tioning, physical and emotional limitations, energy, pain, general health and health changes. The Karnofsky Performance Scale ac-
+cesses the functional and performance status of the participant, scored between 10 and 100 and was administered by a clinician.
+Human peripheral blood collection
+Blood samples were collected from non-fasting participants into BD Vacutainer EDTA tubes (BD Biosciences, Cat#366473) by a 
+registered nurse or clinician, and processed within an hour to minimise any storage effects. 116 Fasting was not required as it could 
+exacerbate symptoms in some ME/CFS participants. Plasma was separated and collected from whole blood after initial centrifuga-
+tion at 1300×g for 10 min at 20 ◦ C with no brake. Next, the remaining components of the blood were diluted with an equal volume of 
+phosphate-buffered saline (PBS; Thermo Fisher Scientific, MA, USA) before being layered on top of Ficoll-Paque Plus (Sigma Aldrich, 
+MO, USA) and centrifuged at 400×g for 40 min at 20 ◦ C with no brake. The PBMC layer was transferred into a new tube, washed with 
+PBS, and the cell pellet was resuspended with freezing medium [consisting of RPMI-1640 (Thermo Fisher Scientific, MA, USA) sup-
+plemented with 10% human serum and 10% DMSO (Thermo Fisher Scientific, MA, USA)] for storage. Plasma and PBMC were cry-
+opreserved in liquid nitrogen and stored for a maximum of two months until sufficient numbers of healthy controls and ME/CFS pa-
+tients were enrolled. To minimise potential effects of repeated freeze–thaw cycles, samples were aliquoted for individual assays, and 
+each aliquot underwent only a single thaw cycle prior to analysis. Cell quantity and viability were assessed using Trypan Blue staining. 
+One of the healthy control blood samples did not yield sufficient cell numbers for NADomics, adenine nucleotide quantification, and/ 
+or immune profiling.
+Sample preparation for targeted metabolomic analysis
+1 volume of 10% (w/v) trichloroacetic acid (Sigma Aldrich, MA, USA) was added to deproteinise plasma samples before centrifuga-
+tion at 12,000×g for 10 min at 4 ◦ C. The plasma supernatants were collected and filtered through a 0.22 μm PTFE syringe filter (Merck-
+Millipore, CA, USA) before transferring into vials for liquid chromatography analysis.
+For gas chromatography analysis, an aliquot of deproteinised plasma was mixed with a fixed concentration of deuterated internal 
+standards for QUIN and PIC. The mixture was dried under vacuum and derivatized with 120 μL of 1,1,1,3,3,3 hexafluoroisopropanol 
+and trifluoroacetic anhydride for 1 h at 60 ◦ C. Toluene was used to extract the fluorinated esters and washed with 5% sodium bicar-
+bonate. Finally, the esters were dried using sodium sulfate packed pipette tips and then transferred into vials for gas chromatography 
+analysis.
+KP metabolite quantification by high-performance liquid chromatography (HPLC)
+The Agilent 1290 Infinity HPLC (Agilent, CA, USA) was used to determine the plasma levels of KP metabolites, TRP, KYN, 3HK, 3-HAA 
+and AA as previously described. 117 20 μL of processed samples were injected into an analytical column ZORBAX Rapid Resolution 
+High Definition C18 (2.1 mm × 150 mm, 1.8μm particle size; Agilent, CA, USA) by reverse phase gradient elution with an isocratic flow 
+rate of 0.75 mL/min for 12 min at 38 ◦ C. The mobile phase used was 0.1 M sodium acetate (pH 4.6). TRP was detected at excitation/ 
+emission wavelength of 280 nm/438 nm while 3HAA and AA were detected at excitation/emission wavelength of 320 nm/438 nm us-
+ing the fluorescence detector (G1321B; xenon flash lamp; Agilent). The UV detector set (G4212A; Agilent) was used to detect KYN 
+and 3HK at 365 nm (reference signal off). The chromatogram output of these KP metabolites was analyzed using the Agilent OpenLAB 
+CDS ChemStation (Edition C.01.04).
+The Agilent 1260 Infinity HPLC (Agilent, CA, USA) was used to determine the KYNA plasma levels as previously described. 117 10 μL 
+of processed samples were injected into an analytical column ZORBAX Rapid Resolution High Definition C18 (4.6 mm × 100 mm, 
+3.5 μm particle size, Agilent Technologies, CA, USA) using a reverse phase gradient elution with an isocratic flow rate of 1 mL/min 
+for 8 min at 30 ◦ C. The mobile phase used was 95% of 0.05 M sodium acetate, 0.05M zinc acetate (pH 5.2), and 5% HPLC grade 
+acetonitrile. The fluorescence detector (G1321B xenon flash lamp, Agilent, CA, USA) was set at excitation/emission wavelength 
+of 344 nm/388 nm for detection of KYNA. The chromatogram output of KYNA was analyzed using the Agilent OpenLAB CDS 
+ChemStation (Edition C.01.04).
+KP metabolite quantification by gas chromatography-mass spectrometry (GCMS)
+The plasma levels of PIC and QUIN were quantified using the Agilent 7890 GCMS (Agilent, CA, USA) coupled with an Agilent 5975 
+mass spectrometer as previously described. 117 1 μL of processed sample was injected using spitless mode onto an HP-5MS GC 
+capillary column (Agilent, CA, USA). Analysis was performed in negative chemical ionization mode. Selected ions (m/z 273 for 
+PIC, m/z 277 for d4-PIC, m/z 467 for QUIN and m/z 470 for d3-QUIN) were simultaneously monitored. GC oven was set at 75 ◦ C 
+for 3 min, before ramping up to 300 ◦ C at a rate of 25 ◦ C/min and maintained at 300 ◦ C for 4 min for a total run time of 15.6 min.
+e3 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS
+
+Calibration curves of QUIN and PIC were constructed using peak area ratios (peak area of the QUIN and PIC divided by peak area of 
+d3-QUIN and d4-PIC, respectively) of each calibrating solution versus its concentration. All spectra were processed, and peak areas 
+integrated using Agilent GC/MSD ChemStation software (Edition 02.02.1431).
+NADomics and adenine nucleotide quantification by liquid chromatography/MS-MS (LC-MS/MS)
+The levels of AMP, ADP and ATP (in plasma and PBMC) and NAD, NADH, NADP, NADPH (in PBMC) were quantified using the TSQ 
+Vantage MS (Thermo Fisher, MA, USA) coupled with the Vanquish (Thermo Fisher, MA, USA) solvent delivery/autosampler system.
+20 μL of processed sample were injected into an amino (NH2) column (150 mm × 2 mm, 3 μm, 100 A 
+˚ , Phenomenex, Torrance, CA,
+USA) using a gradient elution at 25 ◦ C with 5 mM aqueous ammonium acetate and acetonitrile gradient as previously described. 118 
+For normalization, all PBMC samples were adjusted to 2 million cells prior to extraction. One ME/CFS patient sample failed to 
+generate signals for quantification. In addition to a healthy control blood collection that had insufficient immune cells mentioned un-
+der sample collection, this resulted in analysis of 60 healthy controls and 60 patient samples. For the calculation of NADP/NADPH 
+ratio, only 47 of the 60 controls were included as 13 controls recorded zero concentration for NADP.
+Analysis of plasma cytokines
+LEGENDPlex Inflammation Panel 1 (13-plex, Cat: 740007, BioLegend) and Human B Effector 2 Panel (5-plex, Cat: 740531, 
+BioLegend) assays were performed to quantify the levels of 13 and 5 human cytokines/chemokines respectively in patient and 
+healthy control plasma. The assays were performed according to the manufacturer’s manual, using a BD LSR Fortessa cell analyser 
+(BD Bioscience, NJ, USA). Data analysis was performed using the LEGENDPlex Data Analysis Software (BioLegend, CA, USA). IL-6 
+and TNF measurements were included in both kits. Therefore, the averaged values of these cytokines were used for statistical 
+analysis.
+Spectral flow cytometry preparation and data analysis
+PBMC were stained for spectral cytometry in three batches using the 25-Color Immunoprofiling Assay, cFluor Reagent Kit with 18 
+colors (Cat: SKU R7-40002, Cytek) and Immunoprofiling Kit, 7 Color (Brilliant Violet) (Cat: 900004160, BioLegend) according to the 
+manufacturer’s protocol. Cell viability was assessed after thawing using Trypan Blue staining to determine the proportion of live cells 
+prior to staining (Table S4). Each batch contained a representation of healthy control and patient groups and a batch control PBMC 
+sample from a healthy donor. All antibodies were validated, titred, and supplied in per-test amounts by Cytek. Single stained refer-
+ence controls and gating strategy (Figure S6) were performed according to the manufacturer’s instructions.
+Stained cells were analyzed using a Cytek Aurora flow cytometer (5-laser; 355 nm, 405 nm, 488 nm, 561 nm, and 640 nm) with 
+SpectroFlo Software v2.2.0.2. The raw fluorescent signals were unmixed using appropriate reference controls, with autofluores-
+cence extraction enabled. To reduce unmixing errors, the spectrum of the single stained reference controls was verified against 
+the expected spectrum profile provided by Cytek Full Spectrum Viewer (https://spectrum.cytekbio.com). The unmixed FCS files 
+were used for further data analysis using FlowJo 10.8.2 (Becton Dickinson & Company). Single events were distinguished from dou-
+blets and debris, and ViaDye-negative live cells were then selected. Identification of major PBMC populations was performed using 
+Cytek’s gating strategy which accompanied the reagent kit (Figure S6). Analysis of cell subset percentages included both percent of 
+live cells (% live) and/or percent of parent subset (% parent). Percentages of live cells (% live) were derived from the live cell gate. 
+Further analysis was also performed on R using Spectre, 119 to correct for batch alignments, 120 clustering, 121 generating dimension-
+ality reduction (FIt-SNE) plots 122 (Figure S6).
+Sample preparation for proteomics
+Plasma protein concentrations were measured using a BCA Protein Assay Kit (Thermofisher, MA, USA) following the manufacturer’s 
+protocol. The protein samples underwent a reduction step using 15 mM dithiothreitol at 60 ◦ C for 30 min, after which they were alky-
+lated with 30 mM iodoacetamide at room temperature for 30 min while shielded from light. Following that, the samples were digested 
+with trypsin at a 1:30 ratio for 16 h at 37 ◦ C with gentle agitation. In preparation for LC-MS analysis, the digested peptide mixtures were 
+subjected to desalting and purification using the C18 StageTips method. 123
+Protein analysis by LC-MS
+The desalted samples were resuspended into loading buffer (0.1% FA) and analyzed by liquid chromatography-mass spectrometry 
+(LC-MS). Peptides were separated using a Nexera Series UHPLC LC-40 system (Shizmadzu, Kyoto, Japan) coupled to an InfinityLab
+Poroshell 120 A 
+˚ , 1.9 μm, 2.1 mm × 50 mm C18 column with a UHPLC guard attached (Agilent, Santa Clara, United States) maintained
+at 40 ◦ C. LC mobile phase buffers were comprised of A: 0.1% (v/v) formic acid, 99.9% water and B: 0.1% (v/v) formic acid, 99.9% 
+acetonitrile. The peptides were eluted using a linear gradient of 9% B to 29% B over 5.6 min, then 29% B to 42% B over 0.6 min, 
+then 42% B to 80% B over 0.2 min. The column was washed with 80% B for 0.2 min before re-equilibrating with 3% B. The flow 
+rate was 0.8 mL/min.
+The separated peptides were analyzed with a ZenoToF 7600 (Sciex, Toronto, Canada) with the sequential window acquisition of all 
+theoretical (SWATH) MS experiment conducted in positive polarity. Ion source gases were: ion source 1:60 psi, ion curtain gas at 40 
+psi, and CAD gas at 7 psi. Spray voltage was set to 4500 V and the heated capillary set to 700 ◦ C. Ions were generated by electrospray
+Cell Reports Medicine 6, 102514, December 16, 2025 
+e4
+Article
+ll
+OPEN ACCESS
+
+and data acquired in SWATH acquisition mode using varying isolation widths of approximately 5–42 m/z (containing 1 m/z for the 
+window overlap and decreasing in width toward 650 m/z). A set of 60 overlapping windows was constructed covering the precursor 
+mass range of 400–900 m/z and the effective isolation windows can be considered as being 399.5–441.2, 440.2–459.9, etc. SWATH 
+MS2 spectra were collected from 100 to 1800 m/z. The collision energy for each window varied 19–43 V, starting at 19 V and 
+increasing 1–2 V per window with increasing m/z. An accumulation time of 5 ms was used for all fragment-ion scans in high-sensitivity 
+mode, resulting in a total duty cycle of ∼0.627 s. Zeno pulsing was applied.
+Raw DIA-MS files were analyzed using Spectronaut (Biognosys) with the DirectDIA, library-free workflow. Peptide lengths ranged 
+from 9 to 52 amino acids, with enzyme specificity set to trypsin, allowing a maximum of one missed cleavage site. Carbamidome-
+thylation of cysteine (C) was applied as a fixed modification, while oxidation of methionine (M) and N-terminal acetylation were 
+included as variable modifications, allowing up to five modifications per peptide. At least one unique peptide per protein was selected 
+for quantification. The false discovery rate (FDR) was set at 0.01 (1%) for both peptides and proteins.
+Ingenuity pathway analysis
+Ingenuity Pathway Analysis (IPA; Qiagen, Redwood City, CA, USA) was used to identify enriched biological pathways and functions 
+associated with differentially expressed proteins (FDR <0.05) through canonical pathway and functional annotation analyses. Statis-
+tical significance of pathway enrichment was determined using Fisher’s exact test (p < 0.05), while activation or inhibition states were 
+inferred using IPA’s activation Z score, with thresholds of ≥ +2 or ≤ − 2 considered significant.
+QUANTIFICATION AND STATISTICAL ANALYSIS
+Statistical analysis
+t test and Pearson’s Chi-squared test were used to analyze the difference of age and sex between the cohorts respectively. The dis-
+tribution of metabolite data was assessed using Shapiro-Wilk test, while the proportion of cell subsets from flow cytometry were logit-
+transformed before their distributions were evaluated using the Shapiro-Wilk test. The Mann-Whitney test was applied to non-nor-
+mally distributed data whereas Welsh’s t test was used for normally distributed data. Effect sizes were calculated using Cliff’s δ as 
+nonparametric Wilcoxon rank-sum test was used to detect group difference. Correlations between plasma and PBMC adenosine 
+metabolites were assessed using Spearman’s correlation. The differences between the compared groups of values were considered 
+to be statistically significant at a p-value ≤0.05. Graphs were generated using GraphPad Prism 10 (GraphPad, San Diego, USA). 
+Quantitative MS proteomics analysis results were first filtered for protein groups that had observations in at least 50% of the co-
+horts. This threshold was chosen to retain proteins that may be specifically expressed in either the disease or control group but 
+missing in the other. Thus, this would result in these proteins being detected in approximately 50% of the total cohort. Exclusion 
+of such proteins based on presence thresholds could lead to the loss of biologically relevance and/or condition-specific signals 
+and potentially result in misleading conclusions. This approach aligns with common practices in omics studies, where a 50% ‘‘pre-
+sent call’’ threshold is often used in gene expression analyses to ensure the inclusion of informative features across cohorts. 124,125 
+We have also included a 70% cohort observation threshold for increased stringency as a comparison. The data was then normalised 
+by adjusting the median peak intensity of each sample to the global median. Missing values are a common occurrence in large-scale 
+proteomics datasets and often arise from the inability to detect low-abundance proteins due to the sensitivity limitations of mass 
+spectrometry. Missing values were imputed using a Missing Not At Random (MNAR) strategy, which assumes that missing values 
+correspond to low-abundance proteins. 126 For each variable, missing values were randomly imputed around a value shifted below 
+the mean of the observed intensities, with variability introduced based on the standard deviation of the observed data. This approach 
+ensures that imputed values fall near the lower end of the observed intensity range, effectively mimicking low-abundance proteins. 127 
+Relative abundance comparison was performed across sample groups and analyzed by t test in R. Proteins with a p-value <0.05 
+and a fold change >1.2 were determined to be differentially expressed between healthy control and patient with ME/CFS. This cutoffs 
+criterion, which combines fold change and p-value, has been validated in spike-in studies using DIA analysis that demonstrates to 
+control the false discovery rate effectively. 128,129
+Statistical modeling
+CART modeling was used to develop a classification model using IBM SPSS Statistics version 29 and JMP version 17.2. All 114 bio-
+logical parameters, including sex and age, were included in the modeling process (Table S2). To reduce the chance of overfitting to 
+the data, a 10-fold cross-validation process was applied with binary splits for any given node. Furthermore, upon identification of the 
+resultant best subset of predictors, CART modeling was additionally repeated after excluding the principally identified predictor (first 
+split) in the identified best subset. This was done to explore whether any other predictors, or groups of predictors, may become 
+important or collectively better predict ME/CFS diagnosis. The ‘‘goodness of fit’’ of each of the resultant CART models was assessed 
+primarily on sensitivity, specificity and AUC. Results are provided for the model having the highest sensitivity, specificity and AUC, 
+along with more parsimonious models with similar diagnostic values.
+e5 
+Cell Reports Medicine 6, 102514, December 16, 2025
+Article
+ll
+OPEN ACCESS

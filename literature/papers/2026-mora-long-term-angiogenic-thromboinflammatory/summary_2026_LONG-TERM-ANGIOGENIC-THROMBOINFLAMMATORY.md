@@ -7,25 +7,28 @@ year: 2026
 venue: "Angiogenesis"
 doi: 10.1007/s10456-026-10075-3
 url: https://doi.org/10.1007/s10456-026-10075-3
-pdf: https://doi.org/10.1007/s10456-026-10075-3
-text: null
+pdf: literature/papers/2026-mora-long-term-angiogenic-thromboinflammatory/paper.pdf
+text: literature/papers/2026-mora-long-term-angiogenic-thromboinflammatory/paper.txt
 tags: [immunology, autonomic, biomarker, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: mora2026
+cover: "[[literature/papers/2026-mora-long-term-angiogenic-thromboinflammatory/cover.png]]"
 ---
 
 # Long-term angiogenic and thromboinflammatory signatures in post-COVID-19 syndrome
 
 ## Related files
+![[literature/papers/2026-mora-long-term-angiogenic-thromboinflammatory/paper.pdf]]
 - [[literature/papers/2026-mora-long-term-angiogenic-thromboinflammatory/citation.bib]]
+- [[literature/papers/2026-mora-long-term-angiogenic-thromboinflammatory/paper.txt]]
 
 ## Summary
 
 Researchers followed 32 people who had been hospitalized with COVID-19, three and a half years later. About two-thirds still had fatigue, breathlessness, or trouble concentrating, and their blood still showed high levels of proteins that drive blood-vessel growth (VEGF-D, angiopoietin-1) plus signs of a sluggish clotting system.
 
-> _No PDF available_ — Springer — not open access / blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

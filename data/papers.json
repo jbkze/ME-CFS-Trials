@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-08",
+  "last_check": "2026-09-09",
   "papers": [
     {
       "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
@@ -2683,11 +2683,9 @@
       "why": "Autoantibodies are a leading suspect behind symptoms in ME/CFS and long COVID; pinpointing the exact cell type and its trigger gives researchers a specific new target to aim future drugs at.",
       "link": "https://doi.org/10.1016/j.immuni.2026.08.002",
       "first_seen": "2026-09-08",
-      "last_checked": "2026-09-08",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-09-09",
+      "flags": [],
+      "isNew": false,
       "notes": "Institute for Systems Biology / Stanford INCOV cohort (Yuan, Li, Zhang, Heath, Snyder et al.). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
     },
     {
@@ -2700,11 +2698,9 @@
       "why": "Points to a specific, measurable brain change behind some long COVID motivation and thinking problems, and suggests boosting dopamine signalling could be worth testing as a treatment.",
       "link": "https://doi.org/10.1016/j.ebiom.2026.106339",
       "first_seen": "2026-09-08",
-      "last_checked": "2026-09-08",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-09-09",
+      "flags": [],
+      "isNew": false,
       "notes": "Toronto group (Liu, Persaud, Vieira, Meyer et al.), PET imaging study. Not Wirth/Scheibenbogen-affiliated. Published Jul 10 2026 — outside this run's usual ~2-week sweep window but within the routine's ~3-month recency bar and not previously tracked; added now having been independently confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
     },
     {
@@ -2717,11 +2713,9 @@
       "why": "Adds to evidence that immune-cell dysfunction, not just direct brain injury, may underlie the fatigue and cognitive problems seen in long COVID and ME/CFS.",
       "link": "https://doi.org/10.3390/ijms27167474",
       "first_seen": "2026-09-08",
-      "last_checked": "2026-09-08",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "last_checked": "2026-09-09",
+      "flags": [],
+      "isNew": false,
       "notes": "Northwestern group (Hanson, Cogswell, Koralnik et al.), cohort of adults >55 with neuro-PASC. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
     },
     {
@@ -2734,12 +2728,27 @@
       "why": "Offers an objective, brain-based marker for the mismatch between how fatigued someone feels and how they perform on tests — a mismatch that is common and hard to explain in ME/CFS and long COVID.",
       "link": "https://doi.org/10.21203/rs.3.rs-10753262/v1",
       "first_seen": "2026-09-08",
-      "last_checked": "2026-09-08",
+      "last_checked": "2026-09-09",
+      "flags": [],
+      "isNew": false,
+      "notes": "German NAPKON/COVIDOM cohort (Kiel-based group; Neumann, Welzel, Keil, Schreiber, Vehreschild JJ among authors), n=98 with n=2,549 replication. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
+    },
+    {
+      "id": "heng-2025-mecfs-energy-immune-vascular-multimodal",
+      "title": "Mapping the complexity of ME/CFS: Evidence for abnormal energy metabolism, altered immune profile, and vascular dysfunction",
+      "authors": "Heng B, Gunasegaran B, Krishnamurthy S, et al.",
+      "journal": "Cell Reports Medicine",
+      "date": "Dec 2025 (published Dec 16, 2025)",
+      "summary": "Comparing blood from ME/CFS patients and healthy people, researchers found several problems at once: immune cells were short on the energy molecule ATP (the cell's fuel), several immune-cell types looked less mature than normal, and blood proteins linked to clotting and blood-vessel reactivity were raised — a sign of blood-vessel (endothelial) dysfunction.",
+      "why": "Brings together energy, immune and blood-vessel abnormalities in ME/CFS in one study, and points toward measurable markers that could eventually help diagnose the illness or targets for treatment.",
+      "link": "https://doi.org/10.1016/j.xcrm.2025.102514",
+      "first_seen": "2026-09-09",
+      "last_checked": "2026-09-09",
       "flags": [
         "new"
       ],
       "isNew": true,
-      "notes": "German NAPKON/COVIDOM cohort (Kiel-based group; Neumann, Welzel, Keil, Schreiber, Vehreschild JJ among authors), n=98 with n=2,549 replication. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (title/authors/journal/date/DOI exact match)."
+      "notes": "Macquarie University group (Heng, Gunasegaran, Krishnamurthy, Guillemin, Schloeffel et al.), Sydney, Australia. Not Wirth/Scheibenbogen-affiliated. Backfilled this run: published Dec 2025, well outside the routine's usual ~3-month/since-last-check sweep window, so missed by all prior daily runs — surfaced only via a May 2026 news cycle (ABC News) referencing the original Dec 2025 publication. Confirmed directly via Europe PMC REST API record (PMID 41406947, PMCID PMC12765951, title/authors/journal/volume/issue/date/DOI exact match) and its own abstract; added as a one-off gap-fill given its quality (peer-reviewed, Cell Press journal, already cited 11 times) rather than left untracked. DOI resolves via Elsevier (linkinghub.elsevier.com/retrieve/pii/S2666379125005877); open access, PDF available via PMC."
     }
   ]
 }
