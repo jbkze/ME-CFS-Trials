@@ -7,25 +7,28 @@ year: 2026
 venue: "Journal of Translational Medicine"
 doi: 10.1186/s12967-026-08556-6
 url: https://doi.org/10.1186/s12967-026-08556-6
-pdf: https://doi.org/10.1186/s12967-026-08556-6
-text: null
+pdf: literature/papers/2026-cambras-association-between-light-exposure/paper.pdf
+text: literature/papers/2026-cambras-association-between-light-exposure/paper.txt
 tags: [treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: cambras2026
+cover: "[[literature/papers/2026-cambras-association-between-light-exposure/cover.png]]"
 ---
 
 # Association between light exposure patterns and multidimensional health outcomes in individuals with myalgic encephalomyelitis/chronic fatigue syndrome
 
 ## Related files
+![[literature/papers/2026-cambras-association-between-light-exposure/paper.pdf]]
 - [[literature/papers/2026-cambras-association-between-light-exposure/citation.bib]]
+- [[literature/papers/2026-cambras-association-between-light-exposure/paper.txt]]
 
 ## Summary
 
 Using a week of wrist-worn light and activity sensors in 100 ME/CFS patients and 56 healthy people, researchers found four patterns of daily light exposure; patients with a 'healthy' pattern (stable light during the day) had less fatigue and better sleep than patients with poor daytime light exposure.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

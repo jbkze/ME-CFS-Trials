@@ -7,25 +7,28 @@ year: 2026
 venue: "Cardiovascular Diabetology"
 doi: 10.1186/s12933-026-03316-8
 url: https://doi.org/10.1186/s12933-026-03316-8
-pdf: https://doi.org/10.1186/s12933-026-03316-8
-text: null
+pdf: literature/papers/2026-westermeier-cardiometabolic-perspective-post-exertional/paper.pdf
+text: literature/papers/2026-westermeier-cardiometabolic-perspective-post-exertional/paper.txt
 tags: [metabolism, exercise-physiology, post-exertional-malaise, treatment, infection-trigger, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: westermeier2026
+cover: "[[literature/papers/2026-westermeier-cardiometabolic-perspective-post-exertional/cover.png]]"
 ---
 
 # A cardiometabolic perspective on post-exertional malaise in myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) and Long COVID
 
 ## Related files
+![[literature/papers/2026-westermeier-cardiometabolic-perspective-post-exertional/paper.pdf]]
 - [[literature/papers/2026-westermeier-cardiometabolic-perspective-post-exertional/citation.bib]]
+- [[literature/papers/2026-westermeier-cardiometabolic-perspective-post-exertional/paper.txt]]
 
 ## Summary
 
 This opinion article argues that post-exertional malaise (PEM, the crash after activity that is the hallmark of ME/CFS) isn't just one system flaring up, but a breakdown in how the heart, blood vessels and metabolism coordinate with each other in the hours and days after exertion — especially in patients who also have obesity or type 2 diabetes.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

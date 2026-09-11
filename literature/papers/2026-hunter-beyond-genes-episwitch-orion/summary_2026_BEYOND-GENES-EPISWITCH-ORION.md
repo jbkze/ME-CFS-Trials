@@ -7,7 +7,7 @@ year: 2026
 venue: "Journal of Translational Medicine"
 doi: 10.1186/s12967-026-08874-9
 url: https://doi.org/10.1186/s12967-026-08874-9
-pdf: https://doi.org/10.1186/s12967-026-08874-9
+pdf: literature/papers/2026-hunter-beyond-genes-episwitch-orion/paper.pdf
 text: null
 tags: [genetics, biomarker, infection-trigger]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: hunter2026
 # Beyond genes: EpiSwitch® and Orion platform-powered 3D genome architecture biomarkers reveal shared biology across ME/CFS, long COVID, PTSD, rheumatoid arthritis, and multiple sclerosis
 
 ## Related files
+![[literature/papers/2026-hunter-beyond-genes-episwitch-orion/paper.pdf]]
 - [[literature/papers/2026-hunter-beyond-genes-episwitch-orion/citation.bib]]
 
 ## Summary
 
 Some genes are switched on or off depending on how DNA is folded up in 3D inside the cell, not just by the DNA code itself. Using a technology that reads this 3D folding pattern, researchers compared blood samples from people with ME/CFS, long COVID, PTSD, rheumatoid arthritis, and multiple sclerosis, and found overlapping folding-pattern "fingerprints" shared across these very different-looking illnesses.
-
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

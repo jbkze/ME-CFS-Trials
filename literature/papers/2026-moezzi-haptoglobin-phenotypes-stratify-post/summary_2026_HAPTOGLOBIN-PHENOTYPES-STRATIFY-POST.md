@@ -7,25 +7,28 @@ year: 2026
 venue: "International Journal of Molecular Sciences"
 doi: 10.3390/ijms27157000
 url: https://doi.org/10.3390/ijms27157000
-pdf: https://doi.org/10.3390/ijms27157000
-text: null
+pdf: literature/papers/2026-moezzi-haptoglobin-phenotypes-stratify-post/paper.pdf
+text: literature/papers/2026-moezzi-haptoglobin-phenotypes-stratify-post/paper.txt
 tags: [metabolism, exercise-physiology, post-exertional-malaise, neuroinflammation, genetics, biomarker, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: moezzi2026
+cover: "[[literature/papers/2026-moezzi-haptoglobin-phenotypes-stratify-post/cover.png]]"
 ---
 
 # Haptoglobin Phenotypes Stratify Post-Exertional Cognitive Dysfunction Associated with Altered Cerebral Oxygenation and Metabolic Signatures in Long COVID
 
 ## Related files
+![[literature/papers/2026-moezzi-haptoglobin-phenotypes-stratify-post/paper.pdf]]
 - [[literature/papers/2026-moezzi-haptoglobin-phenotypes-stratify-post/citation.bib]]
+- [[literature/papers/2026-moezzi-haptoglobin-phenotypes-stratify-post/paper.txt]]
 
 ## Summary
 
 Haptoglobin is a blood protein that comes in different genetic variants (phenotypes). Researchers gave 44 long-COVID patients and 20 recovered people a 90-minute exertion challenge and found that people carrying one variant (Hp2-2) had a clear drop in thinking-test scores afterward, plus differences in brain oxygen levels and blood chemistry — while people with another variant (Hp1-1) stayed cognitively steady.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

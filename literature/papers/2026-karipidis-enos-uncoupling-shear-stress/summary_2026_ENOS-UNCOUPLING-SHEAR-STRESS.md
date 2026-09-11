@@ -7,25 +7,28 @@ year: 2026
 venue: "Microcirculation"
 doi: 10.1111/micc.70082
 url: https://doi.org/10.1111/micc.70082
-pdf: https://doi.org/10.1111/micc.70082
-text: null
+pdf: literature/papers/2026-karipidis-enos-uncoupling-shear-stress/paper.pdf
+text: literature/papers/2026-karipidis-enos-uncoupling-shear-stress/paper.txt
 tags: [exercise-physiology, post-exertional-malaise, skeletal-muscle, treatment, infection-trigger, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: karipidis2026
+cover: "[[literature/papers/2026-karipidis-enos-uncoupling-shear-stress/cover.png]]"
 ---
 
 # eNOS Uncoupling, Shear-Stress Tolerance, and the Two-Threshold Model of Post-Exertional Malaise in Long COVID: A Mechanistic Hypothesis With Implications for Physiotherapy and Recovery Protocols
 
 ## Related files
+![[literature/papers/2026-karipidis-enos-uncoupling-shear-stress/paper.pdf]]
 - [[literature/papers/2026-karipidis-enos-uncoupling-shear-stress/citation.bib]]
+- [[literature/papers/2026-karipidis-enos-uncoupling-shear-stress/paper.txt]]
 
 ## Summary
 
 This paper is a theory piece (not a study with new patients) about post-exertional malaise (PEM, the crash after activity) in some long-COVID patients whose blood vessels look normal on standard scans. The authors propose that COVID-19 damages the inner lining of blood vessels in a way that uses up a helper molecule the body needs to make nitric oxide, a gas that normally helps blood vessels relax and handle the extra blood flow during activity. Without enough of that helper molecule, the same machinery that should make nitric oxide instead makes harmful byproducts, which the authors think build up during and after exertion and trigger the crash.
 
-> _No PDF available_ — Wiley — paywalled, blocks headless download. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

@@ -7,25 +7,28 @@ year: 2026
 venue: "Nature"
 doi: 10.1038/s41586-026-10740-z
 url: https://doi.org/10.1038/s41586-026-10740-z
-pdf: https://doi.org/10.1038/s41586-026-10740-z
-text: null
+pdf: literature/papers/2026-maguire-virus-reactivation-acute-long/paper.pdf
+text: literature/papers/2026-maguire-virus-reactivation-acute-long/paper.txt
 tags: [immunology, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: maguire2026
+cover: "[[literature/papers/2026-maguire-virus-reactivation-acute-long/cover.png]]"
 ---
 
 # Virus reactivation in acute and long COVID-19
 
 ## Related files
+![[literature/papers/2026-maguire-virus-reactivation-acute-long/paper.pdf]]
 - [[literature/papers/2026-maguire-virus-reactivation-acute-long/citation.bib]]
+- [[literature/papers/2026-maguire-virus-reactivation-acute-long/paper.txt]]
 
 ## Summary
 
 In over a thousand people hospitalized with COVID-19, researchers found that dormant viruses many people already carry — like Epstein-Barr virus and cytomegalovirus (both common herpesviruses) — often 'wake up' and become active again during severe COVID-19, even in people whose immune systems were otherwise working normally. A group of usually-harmless viruses called anelloviruses also reactivated, and unlike the herpesviruses, this reactivation persisted for months afterward and was specifically linked to going on to develop long COVID.
 
-> _No PDF available_ — Nature (subscription) — paywalled. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

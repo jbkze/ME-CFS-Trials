@@ -7,25 +7,28 @@ year: 2026
 venue: "Nutrients"
 doi: 10.3390/nu18162650
 url: https://doi.org/10.3390/nu18162650
-pdf: https://doi.org/10.3390/nu18162650
-text: null
+pdf: literature/papers/2026-praet-nutraceuticals-targeting-mitochondrial-oxidative/paper.pdf
+text: literature/papers/2026-praet-nutraceuticals-targeting-mitochondrial-oxidative/paper.txt
 tags: [immunology, metabolism, exercise-physiology, post-exertional-malaise, neuroinflammation, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: praet2026
+cover: "[[literature/papers/2026-praet-nutraceuticals-targeting-mitochondrial-oxidative/cover.png]]"
 ---
 
 # Nutraceuticals targeting mitochondrial and oxidative-inflammatory pathways for post-exertional malaise and cognitive impairment in long COVID: a narrative review
 
 ## Related files
+![[literature/papers/2026-praet-nutraceuticals-targeting-mitochondrial-oxidative/paper.pdf]]
 - [[literature/papers/2026-praet-nutraceuticals-targeting-mitochondrial-oxidative/citation.bib]]
+- [[literature/papers/2026-praet-nutraceuticals-targeting-mitochondrial-oxidative/paper.txt]]
 
 ## Summary
 
 This review pulls together existing research on cell energy production (mitochondria), harmful oxygen byproducts (oxidative stress), and inflammatory signalling molecules to propose that specific vitamins, minerals, and supplements ('nutraceuticals') acting on these pathways could help long-COVID post-exertional malaise (the crash after activity) and brain fog — though this is a proposed framework, not a tested treatment.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
