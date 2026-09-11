@@ -7,25 +7,28 @@ year: 2026
 venue: "BMJ Open"
 doi: 10.1136/bmjopen-2026-117729
 url: https://doi.org/10.1136/bmjopen-2026-117729
-pdf: https://doi.org/10.1136/bmjopen-2026-117729
-text: null
+pdf: literature/papers/2026-nochi-reenergizeme-intermittent-hypoxia-hyperoxia/paper.pdf
+text: literature/papers/2026-nochi-reenergizeme-intermittent-hypoxia-hyperoxia/paper.txt
 tags: [metabolism, exercise-physiology, post-exertional-malaise, treatment]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: nochi2026
+cover: "[[literature/papers/2026-nochi-reenergizeme-intermittent-hypoxia-hyperoxia/cover.png]]"
 ---
 
 # REenergizeME: intermittent hypoxia-hyperoxia treatment for myalgic encephalomyelitis/chronic fatigue syndrome — protocol for a randomised, placebo-controlled trial
 
 ## Related files
+![[literature/papers/2026-nochi-reenergizeme-intermittent-hypoxia-hyperoxia/paper.pdf]]
 - [[literature/papers/2026-nochi-reenergizeme-intermittent-hypoxia-hyperoxia/citation.bib]]
+- [[literature/papers/2026-nochi-reenergizeme-intermittent-hypoxia-hyperoxia/paper.txt]]
 
 ## Summary
 
 This is a study plan (a protocol, not results yet) for a trial testing 'intermittent hypoxia-hyperoxia treatment' (IHHT) — repeated short cycles of breathing air with less, then more, oxygen than normal — meant to retrain the body's energy-making machinery in 104 adults with ME/CFS in Denmark.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

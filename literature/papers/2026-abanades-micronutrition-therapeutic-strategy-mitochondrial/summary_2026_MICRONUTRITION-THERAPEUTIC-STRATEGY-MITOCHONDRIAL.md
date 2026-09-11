@@ -7,25 +7,28 @@ year: 2026
 venue: "Nutrients"
 doi: 10.3390/nu18162702
 url: https://doi.org/10.3390/nu18162702
-pdf: https://doi.org/10.3390/nu18162702
-text: null
+pdf: literature/papers/2026-abanades-micronutrition-therapeutic-strategy-mitochondrial/paper.pdf
+text: literature/papers/2026-abanades-micronutrition-therapeutic-strategy-mitochondrial/paper.txt
 tags: [metabolism, treatment, review]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: abanades2026
+cover: "[[literature/papers/2026-abanades-micronutrition-therapeutic-strategy-mitochondrial/cover.png]]"
 ---
 
 # Micronutrition as a Therapeutic Strategy for Mitochondrial Dysfunction in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome and Fibromyalgia: A Narrative Review
 
 ## Related files
+![[literature/papers/2026-abanades-micronutrition-therapeutic-strategy-mitochondrial/paper.pdf]]
 - [[literature/papers/2026-abanades-micronutrition-therapeutic-strategy-mitochondrial/citation.bib]]
+- [[literature/papers/2026-abanades-micronutrition-therapeutic-strategy-mitochondrial/paper.txt]]
 
 ## Summary
 
 This review rounds up evidence that faulty cell energy production (mitochondrial dysfunction) and cell damage from unstable molecules (oxidative stress) contribute to ME/CFS and fibromyalgia, and asks whether nutrients like NAD+ boosters, B-vitamins, magnesium and CoQ10 could help.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
