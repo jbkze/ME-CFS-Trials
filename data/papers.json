@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-11",
+  "last_check": "2026-09-12",
   "papers": [
     {
       "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
@@ -2762,7 +2762,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "Icahn School of Medicine at Mount Sinai group (Yamazaki, Mancini, Natelson et al.), n=49 ME/CFS patients. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (PMID 42717554, title/authors/journal/date/DOI exact match)."
     },
     {
@@ -2779,7 +2779,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "Basel/Wuerenlingen group (Sakellaropoulos, Spedicato, Pfister), Switzerland. Narrative review plus an uncontrolled 22-patient case series (mean arterial lactate 1.23±0.40 mmol/L rest vs 7.11±2.98 mmol/L peak exercise). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (PMID 42716325, title/authors/journal/date/DOI exact match, abstract read directly)."
     },
     {
@@ -2796,7 +2796,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "Aga Khan University group (Khanum, Ahmed, Iqbal et al.), Karachi, Pakistan; general PASC symptom cohort (myalgia/fatigue/weakness/joint pain), not an ME/CFS-diagnosed or PEM-gated cohort specifically. Not Wirth/Scheibenbogen-affiliated. Preprint, not yet peer-reviewed. Confirmed via Europe PMC REST API record (id PPR1315931, title/authors/date/DOI exact match, abstract read directly)."
     }
   ]
