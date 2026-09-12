@@ -7,25 +7,28 @@ year: 2026
 venue: "International Journal of Molecular Sciences"
 doi: 10.3390/ijms27167474
 url: https://doi.org/10.3390/ijms27167474
-pdf: https://doi.org/10.3390/ijms27167474
-text: null
+pdf: literature/papers/2026-hanson-cognition-linked-monocyte-state/paper.pdf
+text: literature/papers/2026-hanson-cognition-linked-monocyte-state/paper.txt
 tags: [immunology, neuroinflammation, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: hanson2026
+cover: "[[literature/papers/2026-hanson-cognition-linked-monocyte-state/cover.png]]"
 ---
 
 # Cognition-Linked Monocyte State Reveals Altered Myeloid-Lymphoid Coordination in Neuro-PASC
 
 ## Related files
+![[literature/papers/2026-hanson-cognition-linked-monocyte-state/paper.pdf]]
 - [[literature/papers/2026-hanson-cognition-linked-monocyte-state/citation.bib]]
+- [[literature/papers/2026-hanson-cognition-linked-monocyte-state/paper.txt]]
 
 ## Summary
 
 In older adults with long-COVID brain fog, researchers found an unusual state of certain white blood cells (monocytes) that coincided with poorer coordination between different parts of the immune system.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
