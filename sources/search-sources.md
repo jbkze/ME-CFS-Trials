@@ -72,6 +72,20 @@ Status vocabulary to record is defined in `../ROUTINE.md`. "Open for enrollment"
       autoantibody-targeting agents her group discusses.
   - Munich Chronic Fatigue Center for Young People (paediatric ME/CFS) often
     co-recruits — relevant if a trial includes adolescents.
+  - **Watch item (not yet a trial entry): "AIM-ME"** — an anti-CD38 antibody
+    (daratumumab-class) Phase II RCT shown as planned, alongside PIONEER_PAIS,
+    on Scheibenbogen's Feb 2026 TMF conference slide deck
+    (https://www.tmf-ev.de/sites/default/files/2026-02/S3_04_Scheibenbogen_Therapiestudien.pdf,
+    slide 18) under the Charité NKSG programme — follows a completed open-label
+    daratumumab pilot (EudraCT 2022-000281-18, 10 patients, Frontiers in
+    Medicine 2025, 6/10 improved). Not yet in any registry (checked NCT/DRKS/
+    CTIS) and not on Charité's live NKSG trial-listing page
+    (cfc.charite.de/klinische_studien/nksg) as of 2026-09-14 — a conference
+    slide isn't a registry entry or dedicated trial page, so don't add to
+    `data/trials.json` until it registers or gets its own Charité page. Check
+    each run. Don't confuse with the unrelated, already-recruiting Bergen/
+    Norway daratumumab RCT (Fluge/Mella, Haukeland University Hospital) — no
+    German connection.
 
 ---
 
