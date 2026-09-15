@@ -80,12 +80,25 @@ Status vocabulary to record is defined in `../ROUTINE.md`. "Open for enrollment"
     daratumumab pilot (EudraCT 2022-000281-18, 10 patients, Frontiers in
     Medicine 2025, 6/10 improved). Not yet in any registry (checked NCT/DRKS/
     CTIS) and not on Charité's live NKSG trial-listing page
-    (cfc.charite.de/klinische_studien/nksg) as of 2026-09-14 — a conference
+    (cfc.charite.de/en/clinical_research/nksg/) as of 2026-09-15 — a conference
     slide isn't a registry entry or dedicated trial page, so don't add to
     `data/trials.json` until it registers or gets its own Charité page. Check
-    each run. Don't confuse with the unrelated, already-recruiting Bergen/
-    Norway daratumumab RCT (Fluge/Mella, Haukeland University Hospital) — no
-    German connection.
+    each run. **Don't confuse with** the unrelated, already-recruiting Bergen/
+    Norway daratumumab RCT (Fluge/Mella, Haukeland University Hospital,
+    contact oystein.fluge@helse-bergen.no) — confirmed via its EU CTIS record
+    (`2024-520094-13-00`, ctStatus "Authorised", started 2025-06-11) to be
+    Norway-only, no German site — no German connection.
+  - **Watch item (not yet a trial entry): "TAME"** — an open-label follow-up
+    study giving **tafasitamab** to the ~38 participants of PIONEER_PAIS
+    (NCT07724834) after they complete that trial, led by the same PIs
+    (Scheibenbogen / Judith Bellmann-Strobl), funded under the ME/CFS Research
+    Foundation's 2026 funding round (one of 7 projects, ~€2.4M total) and due
+    to start "this summer" (2026):
+    https://mecfs-research.org/en/news-researchfunding-projects2026/ — this is
+    a grant-announcement page only (not acceptable as sole source per
+    ROUTINE.md), no registry ID (checked NCT/DRKS/CTIS for "tafasitamab") and
+    no dedicated Charité trial page found as of 2026-09-15. Check each run for
+    registration or a Charité subpage.
 
 ---
 
@@ -122,6 +135,20 @@ and registered under a post-COVID label. Check these every run:
 - **#MEAction / Deutsche Gesellschaft für ME/CFS** — https://www.mecfs.de/ (news, studies)
 - **Health Rising** — https://www.healthrising.org/ (covers Wirth/Scheibenbogen trials in depth)
 - **The Sick Times** — https://thesicktimes.org/
+- **APTA Therapeutics (BC007/rovunaptabin) news page** — https://aptatherapeutics.com/news-update/
+  — the only confirmed new trial as of 2026-09-15 is an investigator-initiated
+  study with CIBIT (Coimbra, Portugal) agreed Dec 2025 — no German site. An Apr
+  2026 item mentions a Fraunhofer SCAI patient-recruitment collaboration, and a
+  Mar 2026 RiffReporter piece (riffreporter.de) references a possible new German
+  trial "later in 2026" (Erlangen mentioned) — neither gives a registry ID or
+  dedicated trial page. Watch this page for a German BC007 trial announcement.
+- **ME/CFS Research Foundation funding pages** (mecfs-research.org/en/) — announces
+  German ME/CFS grants (e.g. the 2026 round funding "TAME", see §3 above) before
+  they reach a registry; grant pages alone are *leads only*, never sole confirmation.
+- **BMFTR "Nationale Dekade gegen Postinfektiöse Erkrankungen"** — 500M EUR/2026-2036;
+  first funding call for clinical-trial projects opened 2026-06-01, applications
+  due 2026-09-02 (bmftr.bund.de). Individual project awardees still unannounced as
+  of 2026-09-15 — check after the application deadline for named awards.
 - PubMed new-publication alerts for both investigators (often precede trials).
 
 > News sources are *leads only*. Never enter a trial into `data/trials.json` on
