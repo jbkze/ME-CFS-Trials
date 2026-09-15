@@ -1,8 +1,25 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-14",
+  "last_check": "2026-09-15",
   "papers": [
+    {
+      "id": "slaughter-2026-gwas-biobank-replication",
+      "title": "Seven replicated genomic associations of myalgic encephalomyelitis/chronic fatigue syndrome: a biobank study",
+      "authors": "Slaughter J, Labayle O, Roskams-Hieter B, Dibble JJ, McGrath SJ, Beentjes SV, Khamseh A, Ponting CP",
+      "journal": "medRxiv (preprint)",
+      "date": "Sep 2026 (posted Sep 14, 2026)",
+      "summary": "Using genetic data from the UK Biobank (about 1,268 people with ME/CFS) and two smaller replication groups, researchers found seven gene regions that show up consistently in ME/CFS, including one (CLYBL) where the ME/CFS-linked gene variant is tied to lower activity of that gene in brain tissue.",
+      "why": "Independent replication of specific ME/CFS gene hits (not just single large studies like DecodeME) strengthens the case that ME/CFS has a real, findable genetic and biological basis, and points to genes worth investigating as drug targets.",
+      "link": "https://doi.org/10.64898/2026.09.09.26362115",
+      "first_seen": "2026-09-15",
+      "last_checked": "2026-09-15",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Chris Ponting group (Edinburgh), DecodeME-adjacent but a separate biobank-based GWAS analysis (UK Biobank discovery cohort + two replication cohorts, n=1,268/319/371 cases). 176 variants significant in discovery, 7 loci replicated (incl. CLYBL, BICD1, GRIN2A, CSMD1, RORA). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and medRxiv preprint page on 2026-09-15; abstract not yet indexed in Europe PMC metadata at confirmation time, confirmed via direct medRxiv fetch instead."
+    },
     {
       "id": "gabriel-2026-registered-trials-gap-pcc-patient-priorities",
       "title": "Registered interventional trials fail to cover patient-prioritised treatments in Post-COVID condition (PCC)",
