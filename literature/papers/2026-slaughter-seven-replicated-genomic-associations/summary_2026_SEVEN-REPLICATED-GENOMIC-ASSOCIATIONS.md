@@ -7,25 +7,28 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.09.09.26362115
 url: https://doi.org/10.64898/2026.09.09.26362115
-pdf: https://doi.org/10.64898/2026.09.09.26362115
-text: null
+pdf: literature/papers/2026-slaughter-seven-replicated-genomic-associations/paper.pdf
+text: literature/papers/2026-slaughter-seven-replicated-genomic-associations/paper.txt
 tags: [neuroinflammation, genetics]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: slaughter2026
+cover: "[[literature/papers/2026-slaughter-seven-replicated-genomic-associations/cover.png]]"
 ---
 
 # Seven replicated genomic associations of myalgic encephalomyelitis/chronic fatigue syndrome: a biobank study
 
 ## Related files
+![[literature/papers/2026-slaughter-seven-replicated-genomic-associations/paper.pdf]]
 - [[literature/papers/2026-slaughter-seven-replicated-genomic-associations/citation.bib]]
+- [[literature/papers/2026-slaughter-seven-replicated-genomic-associations/paper.txt]]
 
 ## Summary
 
 Using genetic data from the UK Biobank (about 1,268 people with ME/CFS) and two smaller replication groups, researchers found seven gene regions that show up consistently in ME/CFS, including one (CLYBL) where the ME/CFS-linked gene variant is tied to lower activity of that gene in brain tissue.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
