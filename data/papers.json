@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-16",
+  "last_check": "2026-09-17",
   "papers": [
     {
       "id": "slaughter-2026-gwas-biobank-replication",
@@ -14,9 +14,7 @@
       "link": "https://doi.org/10.64898/2026.09.09.26362115",
       "first_seen": "2026-09-15",
       "last_checked": "2026-09-15",
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "Chris Ponting group (Edinburgh), DecodeME-adjacent but a separate biobank-based GWAS analysis (UK Biobank discovery cohort + two replication cohorts, n=1,268/319/371 cases). 176 variants significant in discovery, 7 loci replicated (incl. CLYBL, BICD1, GRIN2A, CSMD1, RORA). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record and medRxiv preprint page on 2026-09-15; abstract not yet indexed in Europe PMC metadata at confirmation time, confirmed via direct medRxiv fetch instead."
     },
@@ -2776,9 +2774,7 @@
       "link": "https://doi.org/10.14814/phy2.71087",
       "first_seen": "2026-09-11",
       "last_checked": "2026-09-11",
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "Icahn School of Medicine at Mount Sinai group (Yamazaki, Mancini, Natelson et al.), n=49 ME/CFS patients. Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (PMID 42717554, title/authors/journal/date/DOI exact match)."
     },
@@ -2793,9 +2789,7 @@
       "link": "https://doi.org/10.1016/j.cpcardiol.2026.103453",
       "first_seen": "2026-09-11",
       "last_checked": "2026-09-11",
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "Basel/Wuerenlingen group (Sakellaropoulos, Spedicato, Pfister), Switzerland. Narrative review plus an uncontrolled 22-patient case series (mean arterial lactate 1.23±0.40 mmol/L rest vs 7.11±2.98 mmol/L peak exercise). Not Wirth/Scheibenbogen-affiliated. Confirmed via Europe PMC REST API record (PMID 42716325, title/authors/journal/date/DOI exact match, abstract read directly)."
     },
@@ -2810,11 +2804,26 @@
       "link": "https://doi.org/10.64898/2026.09.04.26361413",
       "first_seen": "2026-09-11",
       "last_checked": "2026-09-11",
+      "flags": [],
+      "isNew": false,
+      "notes": "Aga Khan University group (Khanum, Ahmed, Iqbal et al.), Karachi, Pakistan; general PASC symptom cohort (myalgia/fatigue/weakness/joint pain), not an ME/CFS-diagnosed or PEM-gated cohort specifically. Not Wirth/Scheibenbogen-affiliated. Preprint, not yet peer-reviewed. Confirmed via Europe PMC REST API record (id PPR1315931, title/authors/date/DOI exact match, abstract read directly)."
+    },
+    {
+      "id": "leone-2026-pots-adolescents-mecfs-case-control",
+      "title": "Postural orthostatic tachycardia syndrome in adolescents with ME/CFS — a case control study",
+      "authors": "Leone A, Gerrer K, Viereck A, Grabbe A, Kircher A, Behrends U, Maier A",
+      "journal": "Frontiers in Pediatrics",
+      "date": "Sep 2026",
+      "summary": "Doctors compared 18 teenagers with ME/CFS to 18 healthy teenagers using a simple 10-minute standing test that tracks heart rate and blood pressure. Over a third of the ME/CFS group turned out to have postural orthostatic tachycardia syndrome (POTS, a condition where the heart races too much on standing up), while none of the healthy teens did — and just looking at how much the heart rate rose during that standing test, without needing an expert exam, identified it almost as well.",
+      "why": "Offers a simple, low-cost heart-rate-based test that non-specialist doctors could use to spot a treatable circulation problem (POTS) in teenagers with ME/CFS, potentially speeding up diagnosis and access to treatment.",
+      "link": "https://doi.org/10.3389/fped.2026.1836407",
+      "first_seen": "2026-09-17",
+      "last_checked": "2026-09-17",
       "flags": [
         "new"
       ],
-      "isNew": false,
-      "notes": "Aga Khan University group (Khanum, Ahmed, Iqbal et al.), Karachi, Pakistan; general PASC symptom cohort (myalgia/fatigue/weakness/joint pain), not an ME/CFS-diagnosed or PEM-gated cohort specifically. Not Wirth/Scheibenbogen-affiliated. Preprint, not yet peer-reviewed. Confirmed via Europe PMC REST API record (id PPR1315931, title/authors/date/DOI exact match, abstract read directly)."
+      "isNew": true,
+      "notes": "MRI Chronic Fatigue Center for Young People (MCFC), TU Munich Children's Hospital (Leone, Gerrer, Viereck, Grabbe, Kircher, Behrends), with RWTH Aachen (Maier). Same German pediatric ME/CFS group behind the already-tracked donath-2026-pediatric-postcovid-risk-factors entry. Small case-control study (18 ME/CFS vs 18 matched healthy controls, ages 14-17); PoTS diagnosed in 7/18 ME/CFS vs 0/18 controls. Not Wirth/Scheibenbogen-affiliated (Scheibenbogen not a co-author on this one). Confirmed via PubMed E-utilities (PMID 42746015, DOI 10.3389/fped.2026.1836407) and PMC full text (PMC13574936) — full abstract, methods and results read directly. Published/posted Sep 1, 2026; indexed by PubMed/Europe PMC Sep 16, 2026."
     }
   ]
 }
