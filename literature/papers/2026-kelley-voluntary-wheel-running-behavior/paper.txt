@@ -1,0 +1,1043 @@
+Voluntary wheel running behavior is reduced by SARS-CoV-2 S1 
+administration and mitigates hypothalamic neuroinflammatory processes
+Tel Kelley a,*
+, Matthew G. Frank a,b, Jayson B. Ball b, Shelby Hopkins a,b, Tina H. Nguyen a,  
+Robert S. Thompson a,b, Steven F. Maier b, Monika Fleshner a,b
+a Department of Integrative Physiology, Center for Neuroscience, University of Colorado Boulder, Boulder, CO, 80301, United States
+b Department of Psychology and Neuroscience, Center for Neuroscience, University of Colorado Boulder, Boulder, CO, 80301, United States
+A B S T R A C T
+Post-acute sequelae of SARS-CoV-2 infection (PASC) is a major public health consequence of COVID-19. Persistent PASC symptoms affect multiple physiological 
+systems, including the nervous system. The etiology of PASC is unknown; however, brain-mediated symptoms may arise from dysregulated neuroinflammatory 
+processes. We have reported that intra-cisterna magna (ICM) administration of the SARS-CoV-2 spike (S)1 antigen in rats induces behavioral alterations, prolonged 
+neuroinflammation, and reduced brain corticosterone. Inappropriate neuroinflammation triggered by immune challenge suppresses motivated behaviors, including 
+voluntary wheel running (VWR), and disrupts diurnal rhythms. Accordingly, this study tested the hypothesis that S1 reduces VWR distance and changes diurnal 
+activity patterns. Given evidence that regular physical activity reduces inflammation, we also determined whether VWR attenuates the neuroinflammatory effects of 
+S1. Male Sprague-Dawley rats were housed with either locked (sedentary) or unlocked (VWR) running wheels. After 12 days, rats received ICM S1 or vehicle and 
+remained undisturbed while VWR was recorded for 17 days. S1-treated rats ran less and showed disrupted diurnal VWR patterns compared with vehicle controls. 
+Eighteen days post-ICM injections, sedentary S1-treated rats, but not VWR rats, exhibited persistent elevation of hypothalamic gene expression of IL1β, MhcII, Tlr2, 
+and Tlr4. In contrast, VWR S1-treated rats, but not sedentary S1-treated rats, had elevated hypothalamic corticosterone 18 days post-injection. Taken together, S1 in 
+the brain produces behavioral symptoms of PASC and prolonged neuroinflammation. Despite reductions in total running distance after S1, VWR was sufficient to 
+block the persistent upregulation of neuroinflammatory genes. Brain corticosterone may contribute to the impacts of S1 and VWR.
+1. Introduction
+Long COVID, or post-acute sequelae of SARS-CoV-2 (PASC), is a 
+persisting, remitting syndrome characterized by a constellation of 
+symptoms that endure beyond the acute phase of SARS-CoV-2 infection 
+(Al-Aly et al., 2024). In approximately 10% of patients (Davis et al., 
+2023), a diagnosis of PASC is made after partial or complete recovery 
+from an acute infection, with symptoms persisting for at least 3 months 
+(Huerne et al., 2023). Symptoms of PASC are heterogeneous and affect 
+multiple physiological systems, including the nervous system.
+Brain-related PASC symptoms span cognitive and behavioral do­
+mains. Cognitive symptoms, including deficits in attention and working 
+memory, have been shown to be associated with reduced frontal-parietal 
+and frontal-occipital connectivity (Niemczak et al., 2025; Ran et al., 
+2026). Behavioral symptoms, the focus of this study, include exercise 
+intolerance, post-exertional malaise, fatigue, and diurnal activity dis­
+ruptions (An et al., 2024; Das et al., 2024; Gil et al., 2023a; Kolenicova 
+et al., 2023; Stussman et al., 2025; Wilson et al., 2025). In general, pa­
+tients with PASC experience a decline in physical activity, which may 
+contribute to additional health problems, including reduced cardiopul­
+monary fitness (Vogel et al., 2026).
+Exercise intolerance and its more severe form, post-exertional mal­
+aise (PEM), are characterized by extreme fatigue after physical activity 
+that was previously nonchallenging. Both exercise intolerance and PEM 
+are aversive and likely contribute to the notable decrease in physical 
+activity among patients with PASC (Aschman et al., 2023; Durstenfeld 
+et al., 2023; Zheng et al., 2024). Gil et al. report that there is a 57% 
+higher chance of physical inactivity among patients with PASC (Gil 
+et al., 2023b). Furthermore, V´elez-Santamaría et al. found a signifi­
+cant association between PASC and lower physical activity, with 44.7% 
+of patients reporting a decline in physical activity since their PASC 
+diagnosis (V´elez-Santamaría et al., 2023).
+PASC patients also report daytime sleepiness and altered wake/sleep 
+cycles (Batool-Anwar et al., 2025; Coelho et al., 2024; Wilson et al., 
+2025). Both reduced physical activity (Say et al., 2025; Turner and 
+Reed, 2022) and disrupted diurnal activity patterns (Almeneessier and 
+BaHammam, 2018; Batool-Anwar et al., 2025; Nishimon et al., 2019) 
+contribute 
+to 
+sleep 
+disturbances 
+and 
+generalized 
+fatigue 
+* Corresponding author. 2860 Wilderness Pl, Boulder, CO, 80301, United States.
+E-mail address: tel.kelley@colorado.edu (T. Kelley). 
+Contents lists available at ScienceDirect
+Brain, Behavior, & Immunity - Health
+journal homepage: www.editorialmanager.com/bbih/default.aspx
+https://doi.org/10.1016/j.bbih.2026.101331
+Received 13 March 2026; Received in revised form 20 July 2026; Accepted 9 August 2026  
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+Available online 10 August 2026 
+2666-3546/© 2026 The Authors. Published by Elsevier Inc. This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by- 
+nc-nd/4.0/ ). 
+
+(Clemente-Suarez et al., 2026; Huang et al., 2026). The neural and pe­
+ripheral mechanisms underlying these behavioral symptoms remain 
+unknown.
+Findings from animal studies and clinical evidence reveal a causal 
+link between neuroinflammation and brain-mediated outcomes 
+(Fontes-Dantas et al., 2023; Frank et al., 2022, 2023b, 2024). Evidence 
+indicates that SARS-CoV-2 antigens can enter the brain, trigger inap­
+propriate inflammation, and affect behavior. Rhea et al. demonstrated 
+that SARS-CoV-2 antigens injected into the bloodstream can cross the 
+blood-brain barrier and infiltrate brain tissue (Rhea et al., 2021). 
+Erickson et al. determined that S1 directly affects endothelial cells and 
+reduces blood-brain barrier integrity (Erickson et al., 2021). Frank et al. 
+reported that intra-cisterna magna (ICM) injection of S1 into male rats 
+increases microglial neuroinflammatory gene expression and protein 
+levels in a TLR2-and TLR4-dependent manner (Frank et al., 2022, 
+2023a, 2024). Furthermore, ICM injection of S1 produced anxiety-like 
+behavior, disrupted sleep, and altered naturalistic home-cage behav­
+iors in male rats (Frank et al., 2022, 2024). Finally, SARS-CoV-2 antigen 
+also reduces serum and brain corticosterone, potentially sustaining 
+neuroinflammatory processes (Frank et al., 2024).
+Clinical and preclinical studies suggest that regular physical activity 
+reduces neuroinflammation (Alves et al., 2025; Feng et al., 2026; 
+Kinoshita et al., 2026; Kruijff et al., 2026; Littlefield et al., 2015; Sahoo 
+et al., 2026; Speaker et al., 2014; Zhou et al., 2026). VWR is sufficient to 
+reduce inappropriate neuroinflammation following exposure to neuro­
+inflammatory triggers, including lipopolysaccharide (LPS), stress, and 
+aging (Alves et al., 2025; Grabowski et al., 2025; Grace et al., 2016; 
+Littlefield et al., 2015; Martin et al., 2013; Speaker et al., 2014). 
+Furthermore, several clinical studies have reported decreased serum 
+glucocorticoid levels (e.g., cortisol) in patients with PASC (Klein et al., 
+2023; Marques et al., 2023; Porntharukchareon et al., 2024). Hypo­
+cortisolism can cause fatigue (Garcia-Gonzalez et al., 2024) and allow 
+inflammation to go unchecked. Taken together, the clinical and pre­
+clinical literature suggests that SARS-CoV-2 antigens present in the 
+serum could readily cross the blood-brain barrier and trigger neuro­
+inflammatory 
+processes. 
+Physical 
+inactivity 
+and 
+reduced 
+anti-inflammatory cortisol may contribute to the persistence of inap­
+propriate neural inflammation and PASC brain-mediated symptoms 
+(Aoyagi et al., 2025; Kruijff et al., 2026; Liu et al., 2026; Wang et al., 
+2026; Zhou et al., 2026).
+It is therefore important to establish an animal model that enables 
+future studies to explore the links among physical inactivity, brain 
+cortisol, and sustained neuroinflammation, and to develop interventions 
+that restore these key anti-inflammatory mechanisms. Voluntary wheel 
+running (VWR) is a non-stressful, innately motivated, and rewarding 
+behavior that increases physical activity in rats (Dishman et al., 2006; 
+Grace et al., 2016; Greenwood and Fleshner, 2008, 2019; Greenwood 
+et al., 2009, 2011; Herrera et al., 2016; Kennedy et al., 2005; Sasse 
+et al., 2008; Thompson et al., 2016a). Furthermore, VWR is an ideal 
+method for assessing disruptions in diurnal activity patterns (Bowers 
+et al., 2020; Clark et al., 2014; Greenwood et al., 2013, 2014; 
+Thompson et al., 2013, 2016b).
+The current study therefore tested the hypothesis that S1 leads to 
+persistent reductions in VWR behavior and changes in diurnal activity 
+patterns. Given evidence that regular physical activity reduces inap­
+propriate inflammation, we also tested whether VWR attenuates S1's 
+effects on neuroinflammatory processes and corticosterone in the hy­
+pothalamus, a region previously shown to be responsive to S1 and to 
+orchestrate the behavioral outcomes assessed in this study.
+2. Methods
+2.1. Animals
+Male Sprague-Dawley rats (60-90 days of age; 200-250 g; Envigo, 
+Indianapolis, IN) were single-housed on a 12-h light-dark cycle (lights 
+on at 0700h) and housed in a specific-pathogen-free barrier facility. 
+Animal care was provided once per week, and food (standard laboratory 
+chow) and water were available ad libitum. Rats were acclimated to vi­
+varium conditions for one week before experimentation. All experiments 
+were approved by the Institutional Animal Care and Use Committee of 
+the University of Colorado Boulder (Protocol Number 03004) in 
+compliance with the National Institutes of Health Guide for the Care and 
+Use of Laboratory Animals as well as the ARRIVE guidelines for animal 
+use.
+2.2. Experimental Design (see Fig. 1)
+On experimental day −7, male Sprague-Dawley rats (N = 30) arrived 
+at our facility and were immediately single-housed with a locked 
+running wheel. After a 1-week acclimation period in the vivarium, rats 
+were randomly assigned to either a sedentary (N = 10) or a voluntary 
+wheel-running (VWR; N = 20) group (experimental day 0). We assigned 
+more animals to the VWR group to account for known variability in 
+wheel-running behavior (Garvey et al., 2015). Sedentary rats remained 
+in home cages with locked running wheels for the remainder of the 
+study. Running wheels were unlocked for VWR rats on experimental day 
+0, and rats were allowed to run for 12 days to stabilize running patterns. 
+On experimental day 12, all rats were randomly assigned to receive 
+either S1 antigen (S1; 1.0 μg) or saline (Veh; sterile 1x PBS) via 
+intra-cisterna magna injection (N = 5 Veh/Sed; N = 5 S1/Sed; N = 10 
+Veh/VWR; N = 10 S1/VWR). Rats were then left undisturbed for the 
+remainder of the study. Wheel-running behavior of VWR rats was 
+evaluated through the end of the study. On experimental day 30 (18 
+days post-treatment), rats were saline-perfused, and the hypothalamus 
+was dissected.
+2.3. VWR
+All rats were housed individually in standard Nalgene Plexiglas cages 
+(45 × 25.2 × 14.7 cm) with a stainless-steel open running wheel 
+(49.5 × 26.4 × 36 cm) attached. Wheels were locked during the accli­
+matization period (Exp. Day −7 – Exp. Day 0). For sedentary animals, 
+wheels remained locked throughout the experiment. Following accli­
+matization (Exp. Day 0), wheels for VWR animals were unlocked. VWR 
+animals were allowed to run ad libitum for the remainder of the study. 
+Daily wheel revolutions were recorded using VitalView Automated 
+Data-Acquisition software (Starr Life Sciences, Oakmont, PA, USA). 
+Distance (m) was calculated by multiplying the wheel circumference 
+(1.081 m) by the number of revolutions recorded for each animal.
+2.4. SARS-CoV-2 S1 subunit antigen
+The full-length S1 subunit of recombinant SARS-CoV-2 was obtained 
+from Raybiotech (cat# 230-30161). The S1 antigen (Val16-Gln690) is 
+produced in HEK293 cells, free of the immunogen lipopolysaccharide, 
+and is sequence-matched to the original Wuhan-Hu-1 isolate (Wu et al., 
+2020). The injected S1 antigen is identical to that used by Rhea et al., 
+who demonstrated that it crosses the blood-brain barrier into the brain 
+parenchyma after intravenous (IV) injection (Rhea et al., 2021).
+2.5. Intra-cisterna magna (ICM) injection
+To avoid peripheral inflammatory impacts that could be induced by 
+IV injection and to directly assess effects in the CNS, we injected the S1 
+subunit (1.0 μg) or vehicle (2.5 μg, 0.2 μm filtered, sterile 1x PBS, pH 
+7.4) ICM. The S1 subunit dose is based on prior studies demonstrating 
+the neuroinflammatory effects of the S1 subunit (Frank et al., 2022, 
+2024). This procedure does not produce detectable inflammatory re­
+sponses, and substances injected ICM reach forebrain regions in the CNS 
+(Frank et al., 2012). Proescholdt and colleagues also reported that ICM 
+injection of substances produces widespread distribution throughout the 
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+2 
+
+rat brain (Proescholdt et al., 2000). Briefly, rats were anesthetized with 
+5% isoflurane in oxygen and maintained on 3% isoflurane during the 
+procedure (estimated duration: ~3 min). The dorsal region of the skull 
+was shaved and swabbed with 70% EtOH. A sterile 27-gauge needle 
+attached via sterile PE50 tubing to a 25.0 μl Hamilton syringe was 
+inserted into the cisterna magna (verified by withdrawing 2.0 μl of clear 
+CSF), and the drug was injected over a 30 s period. After injection, the 
+needle was left in place for 30 s to allow diffusion of the drug.
+2.6. Tissue dissection
+At the conclusion of the study, animals received a lethal intraperi­
+toneal (IP) dose of sodium pentobarbital (150.0 mg/kg). After full 
+anesthesia, cardiac blood was collected, followed by a 3-min trans­
+cardiac perfusion with cold saline (0.9%) to remove peripheral immune 
+leukocytes from the CNS vasculature. Brains were rapidly extracted, and 
+the hypothalamus was bisected for protein and mRNA analyses. Tissues 
+were immediately flash-frozen in liquid nitrogen and stored at −80 ◦C.
+2.7. Tissue processing for protein assay
+Hypothalamic samples were sonicated on ice in a tissue extraction 
+reagent (Invitrogen, cat#: FNN0071) supplemented with a protease in­
+hibitor cocktail (Sigma-Aldrich, cat#: P2714). Homogenates were 
+centrifuged at 14,000 × g for 10 min at 4 ◦C, and supernatants were 
+collected and stored at −80 ◦C. Total protein was quantified using a 
+Bradford assay.
+2.8. Enzyme-linked immunosorbent assay (ELISA)
+An ELISA for rat corticosterone (Enzo, cat#: ADI-900–097) was 
+performed on hypothalamic protein lysates. The ELISA was run ac­
+cording to the manufacturer's instructions, and protein and steroid levels 
+were normalized to total protein.
+2.9. Real-time RT-PCR measurement of gene expression
+Total RNA was isolated from the hypothalamus using TRI Reagent 
+(MilliPore Sigma, cat#: 93289) and a standard phenol:chloroform 
+extraction (Chomczynski and Sacchi, 1987). Total RNA was quantified 
+using a NanoDrop 2000 spectrophotometer (ThermoFisher). cDNA 
+synthesis was performed using the SuperScript II Reverse Transcriptase 
+kit (ThermoFisher, cat#: 18064014). A detailed description of the PCR 
+amplification protocol has been published previously (Frank et al., 
+2006). cDNA sequences were obtained from GenBank at the National 
+Center for Biotechnology Information (NCBI; https://www.ncbi.nlm.nih 
+.gov). Primer sequences are provided in Supplemental Table 1. Primer 
+specificity was tested using the Basic Local Alignment Search Tool at 
+NCBI (Altschul et al., 1997). Primers were obtained from ThermoFisher. 
+Melt curve analyses verified primer specificity. All primers were 
+designed to span exon-exon boundaries and thus exclude amplification 
+of genomic DNA. PCR amplification of cDNA was performed using the 
+Quantitect SYBR Green PCR Kit (Qiagen, cat#: 204145). The formation 
+of the PCR product was monitored in real time using the CFX96 Touch 
+Real-Time PCR Detection System (Bio-Rad). Relative gene expression 
+was determined using Actb as the housekeeping gene and the 2−ΔΔCT 
+method (Livak and Schmittgen, 2001). Neuroinflammatory state was 
+assessed by measuring the following: proinflammatory cytokine (IL1β), 
+microglia/brain macrophage activation markers (MhcII), inflammasome 
+(Nlrp3), TLR2 (Tlr2), and TLR4 (TLR4). The genes were chosen based on 
+prior evidence showing the largest and most enduring S1-induced 
+changes in the hypothalamus (Frank et al., 2022).
+2.10. Statistical analysis
+Running distance analyses are presented as mean ± SEM and were 
+analyzed using a repeated-measures ANOVA with Bonferroni-Holm post 
+hoc tests to correct for multiple comparisons. Where appropriate, 
+running distance was computed as a percentage of baseline running, and 
+data were analyzed using a repeated-measures ANOVA with Bonferroni- 
+Holm post hoc tests to correct for multiple comparisons. Area under the 
+curve (AUC) was computed for daily running distances as a percent of 
+baseline running, and unpaired t-tests were performed between the 
+vehicle and S1 groups. The threshold for statistical significance was set 
+at α = 0.05. Sample sizes are provided in figure captions.
+ClockLab (Actimetrics), as previously described (Thompson et al., 
+2021), was used to assess diurnal running-wheel patterns and to deter­
+mine the acrophase, bathyphase, onset, and offset of running behavior. 
+Acrophase and bathyphase are automatically calculated in the ClockLab 
+analysis by fitting a sine function to the daily activity. Acrophase and 
+bathyphase indicate the peak (maximum) and trough (minimum) of the 
+resulting sine wave. Onset and offset times are estimated using a 
+least-squares fit algorithm on the daily activity data. For each marker, 
+the data are initially exported at the circadian hour of the event based on 
+a 24-h period. Diurnal phase markers, acrophase (peak), bathyphase 
+(trough), onset, and offset of activity were assessed as a percent change 
+from baseline. Area under the curve (AUC) was computed for the 
+percent of baseline for all diurnal markers and unpaired t-tests were 
+performed between the vehicle and S1 groups.
+All neuroimmune measures are presented as % of vehicle control and 
+were analyzed using a two-way ANOVA with unprotected Fisher's LSD 
+post hoc tests to correct for multiple comparisons. Analyses were con­
+ducted using Prism 10 (GraphPad Software, LLC).
+3. Results
+3.1. SARS-CoV-2 S1 subunit treatment reduces VWR distance
+The average total running distance (m) across the study was lower in 
+S1- than in vehicle-injected animals. The reduction in running distance 
+emerged 7 days after injection (Supplemental Fig. 1). When analyzed as 
+a percent of baseline running, VWR was reduced 1 week after S1 
+compared with vehicle and remained lower throughout the study 
+(F(1,18) = 6.73, p = 0.018; Fig. 2A). Area under the curve analysis 
+revealed a significant difference in total distance run between groups 
+(df = 16, t = 3.738, p = 0.0018; Fig. 2B).
+3.2. SARS-CoV-2 S1 subunit alters the diurnal pattern of VWR
+3.2.1. Acrophase and bathyphase
+Compared with vehicle-treated rats, S1 induced a misalignment in 
+the acrophase or peak of running behavior (Fig. 3A). Following S1 
+administration, S1 animals displayed, on average, a 6.13% shift in the 
+time of peak activity, from 21:52 (9:52 p.m.) to 22:49 (10:49 p.m.). In 
+contrast, vehicle animals displayed, on average, a 1.92% shift in peak 
+activity from 21:52 (9:52 p.m.) to 21:55 (9:55 p.m.). AUC was computed 
+for vehicle and S1 treatment groups to provide a summary measure 
+across time (17 days) post-injection (df = 18, t = 2.335, p = 0.0313; 
+Fig. 3B).
+Prior S1 treatment also produced a misalignment in the bathyphase, 
+the lowest level or trough of running behavior (Fig. 3C). Following S1 
+administration, S1 animals displayed, on average, a 15.27% shift in the 
+activity trough from 09:51 (9:51 a.m.) to 10:58 (10:58 a.m.). In contrast, 
+vehicle animals displayed, on average, a 5.42% shift in the activity 
+trough from 09:51 (9:51 a.m.) to 10:01 (10:01 a.m.). AUC was computed 
+for vehicle and S1 treatment groups to provide a summary measure 
+across time (17 days) post-injection (df = 18, t = 2.278, p = 0.0351; 
+Fig. 3D). S1-injected animals exhibited a shift toward a later acrophase 
+and bathyphase, demonstrating a significant effect of S1 injection on 
+diurnal running patterns.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+3 
+
+3.2.2. Onset and offset
+S1 induced a misalignment in the timing of running onset (Fig. 4A). 
+Following S1 administration, S1 animals displayed, on average, a 9.41% 
+shift in activity onset from 17:45 (5:45 p.m.) to 9:05 (7:05 p.m.), 
+whereas vehicle animals displayed, on average, a 2.08% shift in activity 
+onset from 17:45 (5:45 p.m.) to 17:48 (5:58 p.m.). AUC was computed 
+for the vehicle and S1 treatment groups to provide a summary measure 
+across time (17 days) post-injection, demonstrating a significant shift in 
+activity onset in S1-injected animals (df = 18, t = 2.827, p = 0.0112; 
+Fig. 4B). S1 injection did not affect the offset of running behavior 
+(Fig. 4C and D).
+3.3. Effect of VWR on the neuroinflammatory response to the SARS-CoV- 
+2 S1 subunit in the hypothalamus
+To determine whether hypothalamic neuroinflammatory gene 
+expression was upregulated 18 days after S1 in physically active 
+compared with sedentary rats, we measured proinflammatory cytokine 
+(IL1β), microglia/brain macrophage activation markers (MhcII), 
+inflammasome (Nlrp3), TLR2 (Tlr2), and TLR4 (Tlr4).
+3.3.1. Neuroinflammatory gene expression
+There were statistically significant interactions between injection 
+(S1,vehicle) and activity status (VWR, sedentary) for IL1β (F(1,26) = 25.9, 
+Fig. 1. Schematic of Experimental Design. Visualization of experimental days and groups across the experiment. The acclimatization period occurred from 
+experimental day −7 to 0. Wheels were unlocked for VWR rats on experimental day 0. Baseline running was recorded from experimental days 0 to 12. On 
+experimental day 12, all animals were treated with either S1 subunit (1.0 μg) or vehicle (2.5 μg, 0.2 μm filtered, sterile 1x PBS, pH 7.4). Running behavior was then 
+recorded for 18 days post-treatment, until the end of the study (experimental day 30). Figure was prepared using BioRender.
+Fig. 2. Effect of Prior S1 Exposure on VWR Patterns. Rats were injected ICM with vehicle (0.9% saline; N = 10) or S1 (1.0 μg; N = 10). (A) Total running distance was 
+corrected as a % of baseline running, computed over five days before injection (Exp. Days 7 to 11) for both the vehicle and S1 groups. (B) Area under the curve (AUC) 
+was performed for running distances as a percent of baseline to provide a summary measure of the effects of vehicle and S1 on running patterns. S1 vs vehicle, **p 
+< 0.01.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+4 
+
+p < 0.0001; Fig. 5A), MhcII (F(1,26) = 15.92, p = 0.0005; Fig. 5B), Nlrp3 
+(F(1,26) = 10.67, p = 0.003; Fig. 5C), Tlr2 (F(1,26) = 7.323, p = 0.012; 
+Fig. 6A), and Tlr4 (F(1,26) = 22.87, p < 0.0001; Fig. 6B). Post hoc ana­
+lyses (see figure captions) revealed that 18 days after S1, the % of vehicle 
+was higher in sedentary rats than in VWR rats for every gene except 
+Nlrp3.
+3.3.2. Corticosterone
+There was a statistically significant interaction between injection 
+(S1, vehicle) and activity status (VWR, sedentary) for brain corticoste­
+rone (F(1,26) = 6.794, p = 0.015; Fig. 7). Post hoc analyses (see figure 
+caption) revealed that 18 days after S1, the % of vehicle increased in S1- 
+VWR rats but not in S1-sedentary rats.
+4. Discussion
+ICM S1 reduces VWR, disrupts diurnal rhythms, and upregulates 
+markers of microglial priming and activation in the hypothalamus in 
+sedentary rats. Physical activity and brain cortisol regulate neuro­
+inflammatory processes. Despite reduced total running distance, VWR 
+was sufficient to prevent persistent upregulation of neuroinflammatory 
+gene expression and to increase hypothalamic corticosterone 18 days 
+after S1. The results of this study suggest that S1 induces inappropriate 
+neuroinflammatory processes, which may be sustained by the loss of key 
+anti-inflammatory factors, including physical activity and brain cortisol 
+(Aoyagi et al., 2025; Kruijff et al., 2026; Liu et al., 2026; Wang et al., 
+2026; Zhou et al., 2026).
+4.1. S1 reduces VWR
+Our previous work established that S1 is sufficient to produce 
+anxiety-like behavior, disrupted sleep, and changes in naturalistic home- 
+cage behaviors, including reduced total activity, water intake, and self- 
+grooming (Frank et al., 2022). Biological and behavioral symptoms 
+Fig. 3. Effect of Prior S1 Exposure on Acrophase and Bathyphase of Wheel Running Pattern. Rats were injected ICM with vehicle (0.9% saline; N = 10) or S1 (1.0 μg; 
+N = 10). Acrophase (peak) of wheel running behavior (A) was measured across all experimental days and was corrected as a % of baseline running, which was 
+computed for five days (Exp. Day 7 to 11) prior to injection, for both vehicle and S1 groups. (B) Area under the curve (AUC) was performed for acrophase as a percent 
+of baseline to provide a summary measure of the effects of vehicle and S1 on running patterns. Bathyphase (trough) of wheel-running behavior (C) was measured 
+across all experimental days and corrected as a % of baseline running, computed over the 5 days (Exp. Day 7 to 11) prior to injection, for both the vehicle and S1 
+groups. (D) Area under the curve (AUC) was performed for bathyphase as a percent of baseline to provide a summary measure of the effects of vehicle and S1 on 
+running patterns. S1 vs vehicle, *p < 0.05.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+5 
+
+associated with PASC resemble the acute sickness response; however, it 
+remains unclear whether inappropriate neuroinflammatory states, such 
+as those following S1, contribute to persistent reductions in motivated 
+behavior.
+The sickness response is a constellation of adaptive behavioral and 
+physiological responses to infection or injury, common to humans and 
+animals (Dantzer et al., 2008; Saxena and Maze, 2018). A key aspect of 
+the sickness response is the reorganization of motivational states from 
+reward-seeking to coping behaviors after immunological challenges 
+(Dantzer, 2001).
+VWR, like human running, is intrinsically motivating and rewarding 
+(Cadegiani and Kater, 2017; Heyse et al., 2015; Saul et al., 2017; Say 
+et al., 2025). Rats will bar-press to access a running wheel, further 
+underscoring the intrinsic motivation for VWR (Iversen, 1993). Animal 
+studies show that VWR engages reward-related neurocircuitry and that 
+conditioned place preference can develop for locations associated with a 
+running wheel (Greenwood et al., 2011; Herrera et al., 2016).
+Neuroinflammatory processes are well established to play a causal 
+role in the sickness response (Dantzer et al., 2008). Harden and col­
+leagues demonstrated that inflammatory cytokines in the brain 
+contributed to LPS-evoked sickness responses, including fever, 
+decreased body mass, decreased food intake, and VWR (Harden et al., 
+2011). Reductions in home-cage locomotion and VWR occur within 
+hours and persist for 24-48 h after LPS (Alencar et al., 2026; Harden 
+et al., 2011). In contrast, reduced VWR emerges after 5-7 days and 
+persists for 18 days following ICM S1 injection (Supplemental Fig. 1). 
+This pattern does not align with a typical acute sickness response to a 
+proinflammatory challenge such as LPS (Dantzer et al., 2008), suggest­
+ing that S1 triggers atypical sickness responses and that reduced VWR 
+may be more reflective of exercise intolerance than sickness.
+4.2. ICM S1 evokes prolonged microglia activation and priming
+Inflammatory stimuli, stress, and aging trigger inappropriate 
+Fig. 4. Effect of Prior S1 Exposure on Onset and Offset of Wheel Running Pattern. Rats were injected ICM with vehicle (0.9% saline; N = 10) or S1 (1.0 μg; N = 10). 
+Onset of wheel running behavior (A) was measured across all experimental days and was corrected as a % of baseline running, which was computed for five days 
+(Exp. Day 7-11) prior to injection, for both vehicle and S1 groups. (B) Area under the curve (AUC) was performed for onset as a percent of baseline to provide a 
+summary measure of the effects of vehicle and S1 on running patterns. Offset of wheel-running behavior (C) was measured across all experimental days and corrected 
+as a % of baseline running, computed over the five days (Exp. Day 7-11) prior to injection, for both the vehicle and S1 groups. (D) Area under the curve (AUC) was 
+performed for offset as a percent of baseline to provide a summary measure of the effects of vehicle and S1 on running patterns. S1 vs vehicle, *p < 0.05.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+6 
+
+neuroinflammatory processes (Alves et al., 2025; Frank et al., 2010; 
+Grabowski et al., 2025; Littlefield et al., 2015; Martin et al., 2013; 
+Speaker et al., 2014). Here, we report that 18 days after ICM S1, markers 
+of microglial priming and activation were upregulated in sedentary 
+animals, specifically hypothalamic IL1β, MhcII, Tlr2, and Tlr4. We found 
+no detectable differences in Nlrp3 gene expression at this time point in 
+sedentary animals.
+We previously reported that ICM S1 dose-dependently upregulates 
+genes associated with microglial priming and activation (Frank et al., 
+2022) Twenty-four hours after rats were injected with S1, microglia/­
+brain macrophage activation markers (Iba1, Cd11b, MhcII), an astrocyte 
+activation marker (Gfap), Tlr4, Nlrp3, Il1b, and Il6 gene expression, and 
+inflammatory protein concentrations (IL-1β, IL-6, TNF, CXCL1, IL-10) 
+were elevated in the hypothalamus compared with vehicle controls. 
+These findings suggest that S1 acutely induces microglial activation 
+after 8 and 24 h. Furthermore, we demonstrated evidence of persistent 
+microglial priming (Frank et al., 2024). Rats received either ICM S1 or 
+ICM vehicle. Twenty-one days after S1, microglia were isolated and 
+stimulated with LPS. Microglia from rats previously treated with S1, 
+compared with vehicle-treated rats, produced more IL-1β and IL-6 pro­
+tein in culture. The current findings extend our previous work and 
+support the conclusion that ICM S1 activates long-lived, inappropriate 
+neuroinflammatory processes.
+4.3. Neuroinflammation and behavior
+As previously described, Frank et al. reported evidence that ICM S1 
+induces persistent microglial priming. S1 priming resulted in greater 
+proinflammatory responses and greater disruptions in home-cage 
+behavior following LPS than in vehicle rats. Behavioral changes 
+included reduced activity, drinking, and self-grooming (Frank et al., 
+2024). Other groups are revealing potential mechanisms underlying 
+behavioral deficits produced by SARS-CoV-2 antigen in the brain. Yuan 
+et al., using conditional knockout mice, recently showed that 
+depressive-like behaviors after injection of the spike receptor-binding 
+domain into the brain depend on astrocytic Cx43-mediated disruption 
+of intercellular gap junction communication (Yuan et al., 2026). Using 
+whole-cell patch-clamp recordings, Lee et al. demonstrated that inap­
+propriate neuroinflammation and depressive-like behavior following S1 
+injection into the brain result from upregulation of microglial Kv1.3 
+channel activity (Lee et al., 2026). Interestingly, fatigue measures ob­
+tained using the Rotorad handgrip test were unaffected by S1. Inap­
+propriate neuroinflammation also disrupts diurnal rhythms, including 
+VWR (Bowers et al., 2022; Greenwood and Fleshner, 2019; Thompson 
+Fig. 5. Effect of VWR on the Neuroinflammatory Effects of S1 (18d post-treatment). Rats were injected ICM with vehicle (0.9% saline) or S1 (1.0 μg). IL1β (A), MhcII 
+(B), and Nlrp3 (C) were measured in the hypothalamus. Data are reported as a % change from sedentary vehicle animals. N = 5 per sedentary group; N = 10 per VWR 
+group. RGE = relative gene expression. Main effects and post-hoc comparisons are depicted in figures at varying levels of significance, **p < 0.01, ****p < 0.0001.
+Fig. 6. Effect of VWR on Toll-like Receptors Post-S1-treatment (18d post-treatment). Rats were injected ICM with vehicle (0.9% saline) or S1 (1.0 μg). Tlr2 (A) and 
+Tlr4 (B) were measured in the hypothalamus. Data are reported as a % change from sedentary vehicle animals. N = 5 per sedentary group; N = 10 per VWR group. 
+RGE = relative gene expression. Main effects and post-hoc comparisons are depicted in figures at varying levels of significance, *p < 0.05, ***p < 0.001, ****p 
+< 0.0001.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+7 
+
+et al., 2013, 2016a, 2017). Although beyond the scope of the current 
+study, these results suggest that inappropriate neuroinflammation con­
+tributes to PASC symptoms by altering specific neurocircuitry 
+(Niemczak et al., 2025; Ran et al., 2026).
+4.4. PASC and hypocortisolism
+Glucocorticoid dysregulation may also contribute to the behavioral 
+symptoms of PASC (Peter et al., 2025; Troscher et al., 2024; Zheng et al., 
+2024). Recent reports have documented decreased serum glucocorticoid 
+levels (e.g., cortisol) in patients with PASC, prompting growing interest 
+in adrenal disruption as a contributing factor (Klein et al., 2023; 
+Marques et al., 2023; Porntharukchareon et al., 2024). Hypocortisolism 
+can cause fatigue, and in Addison's disease or adrenal insufficiency, fa­
+tigue can be debilitating (Garcia-Gonzalez et al., 2024). Furthermore, 
+similar to PASC, patients with myalgia encephalomyelitis/chronic fa­
+tigue syndrome (ME/CFS) who experience extreme fatigue after phys­
+ical activity that was not previously challenging (Berardi et al., 2026) 
+exhibit hypothalamic-pituitary-adrenal (HPA) dysfunction (Woo et al., 
+2026; Zhang and Wang, 2024).
+Animal experiments have established that SARS-CoV-2 infection or 
+antigen injection reduces serum corticosterone/cortisol concentrations 
+and, more importantly, brain concentrations of these hormones. Frank 
+et al. reported that 9 days after ICM S1, rats had lower brain cortico­
+sterone concentrations than vehicle controls (Frank et al., 2024). Fischer 
+et al. found that cortisol levels in the cerebrospinal fluid of African green 
+monkeys were reduced 18 weeks after SARS-CoV-2 injection (Fischer 
+et al., 2025). Here, we show that 18 days post-S1, sedentary rats 
+exhibit a trend toward lower hypothalamic corticosterone levels than 
+sedentary vehicle controls.
+Several clinical studies failed to detect low basal cortisol levels in 
+blood or saliva among PASC patients, leading some to conclude that 
+hypocortisolism plays no role in PASC (Klein et al., 2023; Peter et al., 
+2025; Quach et al., 2025; Troscher et al., 2024). However, it is 
+feasible that brain cortisol, rather than blood cortisol, plays a role by 
+sustaining neuroinflammation and reducing motivated, rewarding 
+behavior (Yu et al., 2015). VWR activates reward neurocircuitry, and 
+evidence suggests that D1/D3 receptors and corticosterone mediate 
+motivation for VWR (Ebada et al., 2016).
+4.5. Physical activity, neuroinflammation, and brain corticosterone
+Regular physical exercise is a potent modulator of neuro­
+inflammation across multiple contexts (Alves et al., 2025; Connolly 
+et al., 2022; Hu et al., 2024; Xiao et al., 2021). Furthermore, VWR is 
+sufficient to improve outcomes in models of inflammatory disease, 
+including multiple sclerosis, rheumatoid arthritis, and stroke (Aoyagi 
+et al., 2025; Courel-Ibanez et al., 2026; Kinoshita et al., 2026; Zhang 
+et al., 2026).
+Physical activity could affect PASC-associated neuroinflammation 
+and symptoms in numerous ways. We previously reported that S1 re­
+duces corticosterone levels across multiple brain regions at 7 and 9 days 
+post-treatment (Frank et al., 2024). Here, we demonstrate that the 
+S1-associated reduction in brain corticosterone is diminished 18 days 
+post-S1 in sedentary rats, whereas in VWR rats, S1 elevates brain 
+corticosterone. 
+S1 
+may 
+induce 
+a 
+prolonged 
+disruption 
+of 
+glucocorticoid-mediated anti-inflammatory effects that is reversed by 
+exercise. VWR may alter glucocorticoid receptor distribution in the 
+hypothalamus, thereby facilitating greater corticosterone-mediated 
+anti-inflammatory effects. Moreover, exercise may alter the activity or 
+availability of 11β-hydroxysteroid dehydrogenase type 1, an intracel­
+lular enzyme that converts inactive cortisone to active cortisol (Seckl, 
+1997). This study was not designed to unravel mechanisms. Future 
+work is needed to clarify the contribution of corticosterone in the brain 
+to the regulation of neuroinflammation, physical activity, and diurnal 
+activity cycles.
+4.6. Limitations
+This study has limitations. We tested only male rats, and evidence 
+suggests that the neural mechanisms underlying reduced home-cage 
+activity after LPS differ between males and females (Alencar et al., 
+2026). Further, mechanistic interpretations and clinical extensions of 
+our results, including exercise intolerance, dopaminergic and gluco­
+corticoid involvement, and activity 11β-HSD1, are speculative. Future 
+studies are encouraged to build on our findings with direct mechanistic 
+manipulations. Additionally, euthanasia in mice and rats (pentobar­
+bital) can affect neuroinflammatory endpoints. Finally, while our find­
+ings have implications for PASC, the animals were never infected with 
+SARS-CoV-2. Nonetheless, SARS-CoV-2 antigens, including S1, are pre­
+sent in blood, are immunogenic, and produce long-lasting changes in 
+gene expression indicative of microglial priming and activation, as well 
+as reduced or disrupted diurnal wheel-running behavior.
+4.7. Clinical implications
+Several groups are developing exercise training methods as a therapy 
+for PASC (Cavigli et al., 2022; Jie Chee and Dalan, 2023). Rocha et al. 
+report a protective effect of continuous physical activity among PASC 
+patients with musculoskeletal, neurological, and respiratory impacts 
+(Rocha et al., 2023). Centorbi et al. surveyed 1004 participants aged 40 
+or older and reported that those who engage in regular physical activity 
+are better protected against PASC symptoms (Centorbi et al., 2024). 
+Additionally, Sarmento et al. found lower levels of fatigue, chest pain, 
+and dizziness among individuals with PASC symptoms who walked 5000 
+steps or more the previous day (Sarmento et al., 2025). However, a key 
+challenge in implementing exercise therapies is overcoming exercise 
+intolerance in PASC patients. The present evidence suggests that exer­
+cise might alleviate some symptoms of PASC by mitigating neuro­
+inflammatory processes and may inform investigations into effective 
+interventions designed to reduce the brain-mediated symptoms of PASC.
+Declaration of generative AI and AI-assisted technologies in the 
+manuscript preparation process
+During the preparation of this work, the author(s) used ChatGPT to 
+Fig. 7. Effect of VWR on Corticosterone Levels Post-S1-treatment (18d post- 
+treatment). Rats were injected ICM with vehicle (0.9% saline) or S1 (1.0 μg). 
+Data are reported as a % change from sedentary vehicle animals. N = 5 per 
+sedentary group; N = 10 per VWR group. Main effects and post-hoc compari­
+sons are depicted in the figure, **p < 0.01.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+8 
+
+consolidate the abstract to meet the word limit. After using this tool/ 
+service, the author(s) reviewed and edited the content as needed and 
+take(s) full responsibility for the content of the published article.
+Funding source
+This work was supported by a grant to M.G.F., S.F.M., and M.F. from 
+the Polybio Research Foundation.
+CRediT authorship contribution statement
+Tel Kelley: Formal analysis, Investigation, Visualization, Writing – 
+original draft, Writing – review & editing. Matthew G. Frank: 
+Conceptualization, Funding acquisition, Investigation, Methodology, 
+Project administration, Resources, Supervision, Writing – review & 
+editing. Jayson B. Ball: Investigation, Writing – review & editing. 
+Shelby Hopkins: Investigation, Writing – review & editing. Tina H. 
+Nguyen: Investigation, Writing – review & editing. Robert S. Thomp­
+son: Investigation, Writing – review & editing. Steven F. Maier: 
+Conceptualization, Funding acquisition, Writing – review & editing. 
+Monika Fleshner: Conceptualization, Funding acquisition, Supervision, 
+Writing – review & editing.
+Declaration of competing interests
+The authors declare the following financial interests/personal re­
+lationships which may be considered as potential competing interests: 
+M.G.F. , S.F.M. , M.F. reports financial support was provided by PolyBio 
+Research Foundation Inc. If there are other authors, they declare that 
+they have no known competing financial interests or personal re­
+lationships that could have appeared to influence the work reported in 
+this paper.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.bbih.2026.101331.
+Data availability
+Data will be made available on request.
+References
+Al-Aly, Z., Davis, H., McCorkell, L., Soares, L., Wulf-Hanson, S., Iwasaki, A., Topol, E.J., 
+2024. Long COVID science, research and policy. Nat. Med. 30, 2148–2164.
+Alencar, T.S., Santos, M.O., Schneider, V.M.M., Fernandes, S.M.A., Borges, A.P., 
+Guaita, G.O., Costa, R.A., Zampronio, A.R., 2026. Differential effects of 
+hypothalamic ET(B) receptor blockade in fever, hypolocomotion and serotonin 
+release during systemic inflammation in male and female rats. Brain Res. 1888, 
+150417.
+Almeneessier, A.S., BaHammam, A.S., 2018. How does diurnal intermittent fasting 
+impact sleep, daytime sleepiness, and markers of the biological clock? Current 
+insights. Nat. Sci. Sleep 10, 439–452.
+Altschul, S.F., Madden, T.L., Schaffer, A.A., Zhang, J., Zhang, Z., Miller, W., Lipman, D.J., 
+1997. Gapped BLAST and PSI-BLAST: a new generation of protein database search 
+programs. Nucleic Acids Res. 25, 3389–3402.
+Alves, A.C.B., Santos, N.S., Pires, A.C.S., Speck, A.E., Nery, T., Bastos-Pereira, A.L., 
+Scheffer, D.D.L., Prediger, R.D., Latini, A., Aguiar Jr., A.S., 2025. Prior exercise 
+attenuates LPS-Induced neuroinflammation, dopaminergic dysfunction, and fatigue- 
+like behavior in mice. ACS Omega 10, 57568–57577.
+An, Y., Guo, Z., Fan, J., Luo, T., Xu, H., Li, H., Wu, X., 2024. Prevalence and measurement 
+of post-exertional malaise in post-acute COVID-19 syndrome: a systematic review 
+and meta-analysis. Gen. Hosp. Psychiatry 91, 130–142.
+Aoyagi, M., Ito, H., Kuratsubo, R., Shiota, Y., Komatsu, T., Takazawa, Y., 2025. Evidence 
+for exercise therapy in elderly patients with rheumatoid arthritis. Juntendo Med J 
+71, 93–101.
+Aschman, T., Wyler, E., Baum, O., Hentschel, A., Rust, R., Legler, F., Preusse, C., Meyer- 
+Arndt, L., Buttnerova, I., Forster, A., Cengiz, D., Alves, L.G.T., Schneider, J., 
+Kedor, C., Bellmann-Strobl, J., Sanchin, A., Goebel, H.H., Landthaler, M., 
+Corman, V., Roos, A., Heppner, F.L., Radbruch, H., Paul, F., Scheibenbogen, C., 
+Dengler, N.F., Stenzel, W., 2023. Post-COVID exercise intolerance is associated with 
+capillary alterations and immune dysregulations in skeletal muscles. Acta 
+Neuropathol. Commun. 11, 193.
+Batool-Anwar, S., Fashanu, O.S., Quan, S.F., 2025. Long-term effects of COVID-19 on 
+sleep patterns. Thorac Res Pract 26, 9–16.
+Berardi, G., Janowski, A., McNally, S., Post, A., Garg, A., Sluka, K.A., 2026. 
+Postexertional symptom exacerbation after submaximal exercise in individuals with 
+myalgic encephalomyelitis/chronic fatigue syndrome and postacute sequelae of 
+COVID-19. Med. Sci. Sports Exerc. 58, 637–649.
+Bowers, S.J., Summa, K.C., Thompson, R.S., Gonzalez, A., Vargas, F., Olker, C., Jiang, P., 
+Lowry, C.A., Dorrestein, P.C., Knight, R., Wright Jr., K.P., Fleshner, M., Turek, F.W., 
+Vitaterna, M.H., 2022. A prebiotic diet alters the fecal microbiome and improves 
+sleep in response to sleep disruption in rats. Front. Neurosci. 16, 889211.
+Bowers, S.J., Vargas, F., Gonzalez, A., He, S., Jiang, P., Dorrestein, P.C., Knight, R., 
+Wright Jr., K.P., Lowry, C.A., Fleshner, M., Vitaterna, M.H., Turek, F.W., 2020. 
+Repeated sleep disruption in mice leads to persistent shifts in the fecal microbiome 
+and metabolome. PLoS One 15, e0229001.
+Cadegiani, F.A., Kater, C.E., 2017. Hormonal aspects of overtraining syndrome: a 
+systematic review. BMC Sports Sci. Med. Rehabil. 9, 14.
+Cavigli, L., Fusi, C., Focardi, M., Mandoli, G.E., Pastore, M.C., Cameli, M., Valente, S., 
+Zorzi, A., Bonifazi, M., D'Andrea, A., D'Ascenzi, F., 2022. Post-acute sequelae of 
+COVID-19: the potential role of exercise therapy in treating patients and athletes 
+returning to play. J. Clin. Med. 12.
+Centorbi, M., Di Martino, G., Della Valle, C., Iuliano, E., Di Claudio, G., Mascioli, A., 
+Calcagno, G., di Cagno, A., Buonsenso, A., Fiorilli, G., 2024. Regular physical activity 
+can counteract LONG COVID symptoms in adults over 40. J Funct Morphol Kinesiol 
+9.
+Chomczynski, P., Sacchi, N., 1987. Single-step method of RNA isolation by acid 
+guanidinium thiocyanate-phenol-chloroform extraction. Anal. Biochem. 162, 
+156–159.
+Clark, P.J., Ghasem, P.R., Mika, A., Day, H.E., Herrera, J.J., Greenwood, B.N., 
+Fleshner, M., 2014. Wheel running alters patterns of uncontrollable stress-induced 
+cfos mRNA expression in rat dorsal striatum direct and indirect pathways: a possible 
+role for plasticity in adenosine receptors. Behav. Brain Res. 272, 252–263.
+Clemente-Suarez, V.J., Redondo-Florez, L., Beltran-Velasco, A.I., Ramos-Campo, D.J., 
+Ruisoto, P., Yanez-Sepulveda, R., Martin-Rodriguez, A., Tornero-Aguilera, J.F., 
+2026. Bidirectional effects of physical activity and sleep on health: evidence and 
+future directions. Front. Sports Act. Living 8, 1739588.
+Coelho, F.M.S., Czuma, R., Ticotsky, A., Maley, J., Mullington, J.M., Thomas, R.J., 2024. 
+Sleep disorder syndromes of post-acute sequelae of SARS-CoV-2 (PASC)/long covid. 
+Sleep Med. 123, 37–41.
+Connolly, M.G., Bruce, S.R., Kohman, R.A., 2022. Exercise duration differentially effects 
+age-related neuroinflammation and hippocampal neurogenesis. Neuroscience 490, 
+275–286.
+Courel-Ibanez, J., Buendia-Romero, A., Vetrovsky, T., 2026. Effects of exercise 
+interventions on clinical outcomes in pre-clinical and early rheumatoid arthritis: a 
+systematic review and meta-analysis. Ann. Phys. Rehabil. Med. 69, 102115.
+Dantzer, R., 2001. Cytokine-induced sickness behavior: mechanisms and implications. 
+Ann. N. Y. Acad. Sci. 933, 222–234.
+Dantzer, R., O'Connor, J.C., Freund, G.G., Johnson, R.W., Kelley, K.W., 2008. From 
+inflammation to sickness and depression: when the immune system subjugates the 
+brain. Nat. Rev. Neurosci. 9, 46–56.
+Das, S., Khan, R., Banerjee, S., Ray, S., Ray, S., 2024. Alterations in circadian rhythms, 
+sleep, and physical activity in COVID-19: Mechanisms, interventions, and lessons for 
+the future. Mol. Neurobiol. 61, 10115–10137.
+Davis, H.E., McCorkell, L., Vogel, J.M., Topol, E.J., 2023. Long COVID: major findings, 
+mechanisms and recommendations. Nat. Rev. Microbiol. 21, 133–146.
+Dishman, R.K., Berthoud, H.R., Booth, F.W., Cotman, C.W., Edgerton, V.R., Fleshner, M. 
+R., Gandevia, S.C., Gomez-Pinilla, F., Greenwood, B.N., Hillman, C.H., Kramer, A.F., 
+Levin, B.E., Moran, T.H., Russo-Neustadt, A.A., Salamone, J.D., Van Hoomissen, J.D., 
+Wade, C.E., York, D.A., Zigmond, M.J., 2006. Neurobiology of exercise. Obesity 
+(Silver Spring) 14, 345–356.
+Durstenfeld, M.S., Peluso, M.J., Kaveti, P., Hill, C., Li, D., Sander, E., Swaminathan, S., 
+Arechiga, V.M., Lu, S., Goldberg, S.A., Hoh, R., Chenna, A., Yee, B.C., Winslow, J.W., 
+Petropoulos, C.J., Kelly, J.D., Glidden, D.V., Henrich, T.J., Martin, J.N., Lee, Y.J., 
+Aras, M.A., Long, C.S., Grandis, D.J., Deeks, S.G., Hsue, P.Y., 2023. Reduced exercise 
+capacity, chronotropic incompetence, and early systemic inflammation in 
+cardiopulmonary phenotype long coronavirus disease 2019. J. Infect. Dis. 228, 
+542–554.
+Ebada, M.E., Kendall, D.A., Pardon, M.C., 2016. Corticosterone and dopamine D2/D3 
+receptors mediate the motivation for voluntary wheel running in C57BL/6J mice. 
+Behav. Brain Res. 311, 228–238.
+Erickson, M.A., Rhea, E.M., Knopp, R.C., Banks, W.A., 2021. Interactions of SARS-CoV-2 
+with the blood-brain barrier. Int. J. Mol. Sci. 22.
+Feng, Z.T., Zhang, Y.Y., Xue, C.X., 2026. Bioactive compounds and exercise in aging and 
+neurodegeneration: mechanistic insights from the gut-brain-metabolic axis. Front. 
+Nutr. 13, 1781176.
+Fischer, T., Mayer, M., Hellmers, L., Zhang, C., Melain, A., Coyne, C., Golden, N., 
+Picou, B., Lehmicke, G., Smith, B., Williams, K., Maness, N., Doyle, L., Dufour, J., 
+Bohm, R., Russell-Lodrigue, K., Grasperge, B., Vail, K., Baker, K., Rappaport, J., 
+2025. SARS-CoV-2 Infection Disrupts CNS Energy Metabolism and Immune 
+Homeostasis in African Green Monkeys.
+Fontes-Dantas, F.L., Fernandes, G.G., Gutman, E.G., De Lima, E.V., Antonio, L.S., 
+Hammerle, M.B., Mota-Araujo, H.P., Colodeti, L.C., Araujo, S.M.B., Froz, G.M., da 
+Silva, T.N., Duarte, L.A., Salvio, A.L., Pires, K.L., Leon, L.A.A., Vasconcelos, C.C.F., 
+Romao, L., Savio, L.E.B., Silva, J.L., da Costa, R., Clarke, J.R., Da Poian, A.T., Alves- 
+Leon, S.V., Passos, G.F., Figueiredo, C.P., 2023. SARS-CoV-2 spike protein induces 
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+9 
+
+TLR4-mediated long-term cognitive dysfunction recapitulating post-COVID-19 
+syndrome in mice. Cell Rep. 42, 112189.
+Frank, M.G., Ball, J.B., Hopkins, S., Kelley, T., Kuzma, A.J., Thompson, R.S., 
+Fleshner, M., Maier, S.F., 2024. SARS-CoV-2 S1 subunit produces a protracted 
+priming of the neuroinflammatory, physiological, and behavioral responses to a 
+remote immune challenge: a role for corticosteroids. Brain Behav. Immun. 121, 
+87–103.
+Frank, M.G., Barrientos, R.M., Thompson, B.M., Weber, M.D., Watkins, L.R., Maier, S.F., 
+2012. IL-1RA injected intra-cisterna magna confers extended prophylaxis against 
+lipopolysaccharide-induced neuroinflammatory and sickness responses. 
+J. Neuroimmunol. 252, 33–39.
+Frank, M.G., Barrientos, R.M., Watkins, L.R., Maier, S.F., 2010. Aging sensitizes rapidly 
+isolated hippocampal microglia to LPS ex vivo. J. Neuroimmunol. 226, 181–184.
+Frank, M.G., Fleshner, M., Maier, S.F., 2023a. Exploring the immunogenic properties of 
+SARS-CoV-2 structural proteins: PAMP:TLR signaling in the mediation of the 
+neuroinflammatory and neurologic sequelae of COVID-19. Brain Behav. Immun. 
+111, 259–269.
+Frank, M.G., Fleshner, M., Maier, S.F., 2023b. Exploring the immunogenic properties of 
+SARS-CoV-2 structural proteins: PAMP:TLR signaling in the mediation of the 
+neuroinflammatory and neurologic sequelae of COVID-19. Brain Behav. Immun. 
+111, 259–269.
+Frank, M.G., Nguyen, K.H., Ball, J.B., Hopkins, S., Kelley, T., Baratta, M.V., Fleshner, M., 
+Maier, S.F., 2022. SARS-CoV-2 spike S1 subunit induces neuroinflammatory, 
+microglial and behavioral sickness responses: evidence of PAMP-like properties. 
+Brain Behav. Immun. 100, 267–277.
+Frank, M.G., Wieseler-Frank, J.L., Watkins, L.R., Maier, S.F., 2006. Rapid isolation of 
+highly enriched and quiescent microglia from adult rat hippocampus: 
+immunophenotypic and functional characteristics. J. Neurosci. Methods 151, 
+121–130.
+Garcia-Gonzalez, D., Romero-Elias, M., Alvarez-Bustos, A., Rosado-Garcia, S., Sanchez- 
+Lopez, A.J., Cantos, B., Maximiano, C., Mendez, M., Mendez-Otero, M., Cebolla, H., 
+Garcia-Foncillas, J., Ruiz-Casado, A., 2024. Cancer-related fatigue and circulating 
+biomarkers in breast cancer survivors. Biol. Res. Nurs. 26, 270–278.
+Garvey, S.M., Russ, D.W., Skelding, M.B., Dugle, J.E., Edens, N.K., 2015. Molecular and 
+metabolomic effects of voluntary running wheel activity on skeletal muscle in late 
+middle-aged rats. Phys. Rep. 3.
+Gil, S., Gualano, B., de Araujo, A.L., de Oliveira Junior, G.N., Damiano, R.F., Pinna, F., 
+Imamura, M., Rocha, V., Kallas, E., Batistella, L.R., Forlenza, O.V., de Carvalho, C.R. 
+R., Busatto, G.F., Roschel, H., Group, H.C.-S., 2023a. Post-acute sequelae of SARS- 
+CoV-2 associates with physical inactivity in a cohort of COVID-19 survivors. Sci. Rep. 
+13, 215.
+Gil, S., Gualano, B., de Araújo, A.L., de Oliveira Júnior, G.N., Damiano, R.F., Pinna, F., 
+Imamura, M., Rocha, V., Kallas, E., Batistella, L.R., Forlenza, O.V., de Carvalho, C.R. 
+R., Busatto, G.F., Roschel, H., Utiyama, E., Segurado, A., Perondi, B., Morais, A.M., 
+Montal, A., Letaif, L., Fusco, S., da Silva, M.F.R., Rocha, M., Marcilio, I., Rios, I.C., 
+Kawano, F.Y.O., de Jesus, M.A., Kallas, ´E.G., Carmo, C., Tanaka, C., de Souza, H.P., 
+Marchini, J.F.M., Carvalho, C., Ferreira, J.C., de Oliveira, M.S., Guimar˜aes, T., dos 
+Santos L´azari, C., da Silva Duarte, A.J., Sabino, E., Magri, M.M.C., Barros-Filho, T.E. 
+P., Francisco, M.C.P.B., Group, H.C.-S., 2023b. Post-acute sequelae of SARS-CoV-2 
+associates with physical inactivity in a cohort of COVID-19 survivors. Sci. Rep. 13, 
+215.
+Grabowski, M., Grabowska, K., Kostka, M., Pondel, N., Jedrzejowska-Szypulka, H., 
+Malecki, A., Barski, J.J., Nowacka-Chmielewska, M., 2025. Effects of voluntary 
+wheel running on appetite-regulating peptides and neuroinflammation in the 
+hypothalamus of ovariectomized middle-aged mice. Front. Mol. Neurosci. 18, 
+1698306.
+Grace, P.M., Fabisiak, T.J., Green-Fulgham, S.M., Anderson, N.D., Strand, K.A., 
+Kwilasz, A.J., Galer, E.L., Walker, F.R., Greenwood, B.N., Maier, S.F., Fleshner, M., 
+Watkins, L.R., 2016. Prior voluntary wheel running attenuates neuropathic pain. 
+Pain 157, 2012–2023.
+Greenwood, B.N., Fleshner, M., 2008. Exercise, learned helplessness, and the stress- 
+resistant brain. Neuromolecular Med. 10, 81–98.
+Greenwood, B.N., Fleshner, M., 2019. Voluntary wheel running: a useful rodent model 
+for investigating the mechanisms of stress robustness and neural circuits of exercise 
+motivation. Curr. Opin. Behav. Sci. 28, 78–84.
+Greenwood, B.N., Foley, T.E., Le, T.V., Strong, P.V., Loughridge, A.B., Day, H.E., 
+Fleshner, M., 2011. Long-term voluntary wheel running is rewarding and produces 
+plasticity in the mesolimbic reward pathway. Behav. Brain Res. 217, 354–362.
+Greenwood, B.N., Spence, K.G., Crevling, D.M., Clark, P.J., Craig, W.C., Fleshner, M., 
+2013. Exercise-induced stress resistance is independent of exercise controllability 
+and the medial prefrontal cortex. Eur. J. Neurosci. 37, 469–478.
+Greenwood, B.N., Strong, P.V., Foley, T.E., Fleshner, M., 2009. A behavioral analysis of 
+the impact of voluntary physical activity on hippocampus-dependent contextual 
+conditioning. Hippocampus 19, 988–1001.
+Greenwood, B.N., Thompson, R.S., Opp, M.R., Fleshner, M., 2014. Repeated exposure to 
+conditioned fear stress increases anxiety and delays sleep recovery following 
+exposure to an acute traumatic stressor. Front. Psychiatr. 5, 146.
+Harden, L.M., du Plessis, I., Roth, J., Loram, L.C., Poole, S., Laburn, H.P., 2011. 
+Differences in the relative involvement of peripherally released interleukin (IL)-6, 
+brain IL-1beta and prostanoids in mediating lipopolysaccharide-induced fever and 
+sickness behavior. Psychoneuroendocrinology 36, 608–622.
+Herrera, J.J., Fedynska, S., Ghasem, P.R., Wieman, T., Clark, P.J., Gray, N., Loetz, E., 
+Campeau, S., Fleshner, M., Greenwood, B.N., 2016. Neurochemical and behavioural 
+indices of exercise reward are independent of exercise controllability. Eur. J. 
+Neurosci. 43, 1190–1202.
+Heyse, N.C., Brenes, J.C., Schwarting, R.K., 2015. Exercise reward induces appetitive 50- 
+kHz calls in rats. Physiol. Behav. 147, 131–140.
+Hu, J., Huang, B., Chen, K., 2024. The impact of physical exercise on neuroinflammation 
+mechanism in Alzheimer's disease. Front. Aging Neurosci. 16, 2024.
+Huang, Z., Zhang, Y., Xu, W., 2026. Dose-response relationship between physical activity 
+and subjective sleep quality in patients with insomnia: a systematic review and 
+Bayesian meta-analysis of randomized controlled trials. Int. J. Behav. Nutr. Phys. 
+Activ. 23.
+Huerne, K., Filion, K.B., Grad, R., Ernst, P., Gershon, A.S., Eisenberg, M.J., 2023. 
+Epidemiological and clinical perspectives of long COVID syndrome. Am J Med Open 
+9, 100033.
+Iversen, I.H., 1993. Techniques for establishing schedules with wheel running as 
+reinforcement in rats. J. Exp. Anal. Behav. 60, 219–238.
+Jie Chee, Y., Dalan, R., 2023. Repurposing exercise training and pharmacological 
+therapies to address the post-acute sequelae of COVID-19 (PASC) in diabetes 
+mellitus. Diabetes Res. Clin. Pract. 199, 110651.
+Kennedy, S.L., Smith, T.P., Fleshner, M., 2005. Resting cellular and physiological effects 
+of freewheel running. Med. Sci. Sports Exerc. 37, 79–83.
+Kinoshita, R., Yamaguchi, T., Ato, S., Kouzaki, K., Tamura, Y., Nakazato, K., 2026. 
+Voluntary wheel running attenuates peptidoglycan-polysaccharide-induced 
+inflammation and preserves skeletal muscle remodeling in male C57BL/6J mice. 
+Phys. Rep. 14, e70916.
+Klein, J., Wood, J., Jaycox, J.R., Dhodapkar, R.M., Lu, P., Gehlhausen, J.R., 
+Tabachnikova, A., Greene, K., Tabacof, L., Malik, A.A., Silva Monteiro, V., Silva, J., 
+Kamath, K., Zhang, M., Dhal, A., Ott, I.M., Valle, G., Pena-Hernandez, M., Mao, T., 
+Bhattacharjee, B., Takahashi, T., Lucas, C., Song, E., McCarthy, D., Breyman, E., 
+Tosto-Mancuso, J., Dai, Y., Perotti, E., Akduman, K., Tzeng, T.J., Xu, L., Geraghty, A. 
+C., Monje, M., Yildirim, I., Shon, J., Medzhitov, R., Lutchmansingh, D., Possick, J.D., 
+Kaminski, N., Omer, S.B., Krumholz, H.M., Guan, L., Dela Cruz, C.S., van Dijk, D., 
+Ring, A.M., Putrino, D., Iwasaki, A., 2023. Distinguishing features of long COVID 
+identified through immune profiling. Nature 623, 139–148.
+Kolenicova, V., Vnukova, M.S., Anders, M., Fiserova, M., Raboch, J., Ptacek, R., 2023. 
+A review article on exercise intolerance in long COVID: unmasking the causes and 
+optimizing treatment strategies. Med. Sci. Monit. 29, e941079.
+Kruijff, I., van Wegen, E.E.H., Mul, J.D., Jaspers, R.T., Schrantee, A., Scherder, E.J.A., 
+Lucassen, P.J., van Dam, A.M., 2026. Effects of physical exercise on cognitive 
+impairment in patients with Alzheimer's disease, Parkinson's disease or mild 
+cognitive impairment: a systematic review and meta-analysis. Eur Rev Aging Phys 
+Act.
+Lee, H.Y., Lee, Y., Jo, S.H., Choi, S.Y., 2026. SARS-CoV-2 spike protein S1 subunit 
+induces neuroinflammation via microglial Kv1.3 channel. Biol Psychiatry Glob Open 
+Sci 6, 100716.
+Littlefield, A.M., Setti, S.E., Priester, C., Kohman, R.A., 2015. Voluntary exercise 
+attenuates LPS-induced reductions in neurogenesis and increases microglia 
+expression of a proneurogenic phenotype in aged mice. J. Neuroinflammation 12, 
+138.
+Liu, R., Deng, Q., Gong, L., Yang, L., 2026. Role shift of glial cells from physiology to 
+pathology in Alzheimer's disease: the regulatory impact of exercise. Neurosci. Bull.
+Livak, K.J., Schmittgen, T.D., 2001. Analysis of relative gene expression data using real- 
+time quantitative PCR and the 2(-Delta Delta C(T)) method. Methods 25, 402–408.
+Marques, C.A., Almeida, P.P., Goncalves, A.M., Nagirnyak, V., Cabeleira, J., 2023. 
+COVID-19 and adrenal insufficiency: unmasking the link. Cureus 15, e47920.
+Martin, S.A., Pence, B.D., Greene, R.M., Johnson, S.J., Dantzer, R., Kelley, K.W., 
+Woods, J.A., 2013. Effects of voluntary wheel running on LPS-induced sickness 
+behavior in aged mice. Brain Behav. Immun. 29, 113–123.
+Niemczak, C., Skoe, E., Leigh, S., Zhang, L., Dotzenrod, M., Kieley, A., Stone, S., 
+Parsonnet, J., Martin, C., Ealer, C., Clavier, O., Gui, J., Waszkiewicz, A., Roth, R., 
+Buckey, J., 2025. Altered auditory brainstem responses are post-acute sequela of 
+SARS-CoV-2 (PASC). Sci. Rep. 15, 9387.
+Nishimon, S., Nishimon, M., Nishino, S., 2019. Tasimelteon for treating non-24-h sleep- 
+wake rhythm disorder. Expert Opin. Pharmacother. 20, 1065–1073.
+Peter, R.S., Nieters, A., Gopel, S., Merle, U., Steinacker, J.M., Deibert, P., Friedmann- 
+Bette, B., Niess, A., Muller, B., Schilling, C., Erz, G., Giesen, R., Gotz, V., Keller, K., 
+Maier, P., Matits, L., Parthe, S., Rehm, M., Schellenberg, J., Schempf, U., Zhu, M., 
+Krausslich, H.G., Rothenbacher, D., Kern, W.V., Group, E.P.S., 2025. Persistent 
+symptoms and clinical findings in adults with post-acute sequelae of COVID-19/post- 
+COVID-19 syndrome in the second year after acute infection: a population-based, 
+nested case-control study. PLoS Med. 22, e1004511.
+Porntharukchareon, T., Dechates, B., Sirisreetreerux, S., Therawit, P., Tawinprai, K., 
+2024. The existence of adrenal insufficiency in patients with COVID-19 pneumonia. 
+Front. Endocrinol. 15, 1337652.
+Proescholdt, M.G., Hutto, B., Brady, L.S., Herkenham, M., 2000. Studies of cerebrospinal 
+fluid flow and penetration into brain following lateral ventricle and cisterna magna 
+injections of the tracer [14C]inulin in rat. Neuroscience 95, 577–592.
+Quach, T.C., Wilson, A., Sum-Ping, O., Lomba, S., Geng, L.N., Shafer, R., Miglis, M.G., 
+Yang, P.C., Grossman, L., Ricciardiello, G., Bonilla, H., 2025. Can low cortisol predict 
+long COVID? A controversial issue. Biomedicines 13.
+Ran, Y., Wu, S., Liu, S., Chen, C., Li, Y., Gao, T., Fan, Y., Tang, X., 2026. Abnormal brain 
+activation patterns in patients with post-acute sequelae of COVID-19 (PASC) during 
+recovery: a fNIRS study. J. Biophot. 19, e202500206.
+Rhea, E.M., Logsdon, A.F., Hansen, K.M., Williams, L.M., Reed, M.J., Baumann, K.K., 
+Holden, S.J., Raber, J., Banks, W.A., Erickson, M.A., 2021. The S1 protein of SARS- 
+CoV-2 crosses the blood-brain barrier in mice. Nat. Neurosci. 24, 368–378.
+Rocha, J.Q.S., Caputo, E.L., Vieira, Y.P., Afonso, M.D.S., Duro, S.M.S., de Oliveira 
+Saes, M., 2023. Physical activity status prevents symptoms of long covid: Sulcovid- 
+19 survey. BMC Sports Sci. Med. Rehabil. 15, 170.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+10 
+
+Sahoo, S.S., Sahu, P.K., Sa, N., Behera, A., 2026. Neuroprotective cellular and molecular 
+mechanisms of physical exercise on neurodegenerative diseases. ADMET DMPK 14, 
+3058.
+Sarmento, A., Webber, S., Sargent, S., Tittlemier, B., Sanchez-Ramirez, D.C., 2025. 
+Relationship between post-COVID-19 symptoms and daily physical activity. 
+Frontiers in Rehabilitation Sciences 6, 2025.
+Sasse, S.K., Greenwood, B.N., Masini, C.V., Nyhuis, T.J., Fleshner, M., Day, H.E., 
+Campeau, S., 2008. Chronic voluntary wheel running facilitates corticosterone 
+response habituation to repeated audiogenic stress exposure in male rats. Stress 11, 
+425–437.
+Saul, M.C., Majdak, P., Perez, S., Reilly, M., Garland Jr., T., Rhodes, J.S., 2017. High 
+motivation for exercise is associated with altered chromatin regulators of 
+monoamine receptor gene expression in the striatum of selectively bred mice. Gene 
+Brain Behav. 16, 328–341.
+Saxena, S., Maze, M., 2018. Impact on the brain of the inflammatory response to surgery. 
+Presse Med. 47, e73–e81.
+Say, Y.H., Leong, K.Z.M., Ng, H.W., Ng, Z.D., Letchumanan, G., Chook, J.B., 2025. 
+Physical activity levels, exercise intrinsic motivation, physical fitness, and their 
+association with adiposity and oxytocin receptor (OXTR) rs53576 and rs2254298 
+gene variants. PLoS One 20, e0332672.
+Seckl, J.R., 1997. 11beta-Hydroxysteroid dehydrogenase in the brain: a novel regulator 
+of glucocorticoid action? Front. Neuroendocrinol. 18, 49–99.
+Speaker, K.J., Cox, S.S., Paton, M.M., Serebrakian, A., Maslanik, T., Greenwood, B.N., 
+Fleshner, M., 2014. Six weeks of voluntary wheel running modulates inflammatory 
+protein (MCP-1, IL-6, and IL-10) and DAMP (Hsp72) responses to acute stress in 
+white adipose tissue of lean rats. Brain Behav. Immun. 39, 87–98.
+Stussman, B., Camarillo, N., McCrossin, G., Stockman, M., Norato, G., Vetter, C.S., 
+Ferrufino, A., Adedamola, A., Grayson, N., Nath, A., Chan, L., Walitt, B., Chin, L.M. 
+K., 2025. Post-exertional malaise in long COVID: subjective reporting versus 
+objective assessment. Front. Neurol. 16, 1534352.
+Thompson, R.S., Christianson, J.P., Maslanik, T.M., Maier, S.F., Greenwood, B.N., 
+Fleshner, M., 2013. Effects of stressor controllability on diurnal physiological 
+rhythms. Physiol. Behav. 112–113, 32–39.
+Thompson, R.S., Gaffney, M., Hopkins, S., Kelley, T., Gonzalez, A., Bowers, S.J., 
+Vitaterna, M.H., Turek, F.W., Foxx, C.L., Lowry, C.A., Vargas, F., Dorrestein, P.C., 
+Wright Jr., K.P., Knight, R., Fleshner, M., 2021. Ruminiclostridium 5, 
+Parabacteroides distasonis, and bile acid profile are modulated by prebiotic diet and 
+associate with facilitated sleep/clock realignment after chronic disruption of 
+rhythms. Brain Behav. Immun. 97, 150–166.
+Thompson, R.S., Roller, R., Greenwood, B.N., Fleshner, M., 2016a. Wheel running 
+improves REM sleep and attenuates stress-induced flattening of diurnal rhythms in 
+F344 rats. Stress 19, 312–324.
+Thompson, R.S., Roller, R., Mika, A., Greenwood, B.N., Knight, R., Chichlowski, M., 
+Berg, B.M., Fleshner, M., 2016b. Dietary prebiotics and bioactive milk fractions 
+improve NREM sleep, enhance REM sleep rebound and attenuate the stress-induced 
+decrease in diurnal temperature and gut microbial alpha diversity. Front. Behav. 
+Neurosci. 10, 240.
+Thompson, R.S., Roller, R., Mika, A., Greenwood, B.N., Knight, R., Chichlowski, M., 
+Berg, B.M., Fleshner, M., 2017. Dietary prebiotics and bioactive milk fractions 
+improve NREM sleep, enhance REM sleep rebound and attenuate the stress-induced 
+decrease in diurnal temperature and gut microbial alpha diversity. Front. Behav. 
+Neurosci. 10.
+Troscher, A., Gebetsroither, P., Rindler, M., Bohm, V., Dormann, R., von Oertzen, T., 
+Heidbreder, A., Helbok, R., Wagner, J., 2024. High somatization rates, frequent 
+spontaneous recovery, and a lack of organic biomarkers in Post-Covid-19 condition. 
+Brain Behav 14, e70087.
+Turner, A.R., Reed, S.M., 2022. Intrinsic motivation in exercise: a concept analysis. Nurs. 
+Forum 57, 136–143.
+V´elez-Santamaría, R., Fern´andez-Solana, J., M´endez-L´opez, F., Domínguez-García, M., 
+Gonz´alez-Bernal, J.J., Magall´on-Botaya, R., Oliv´an-Bl´azquez, B., Gonz´alez-Santos, J., 
+Santamaría-Pel´aez, M., 2023. Functionality, physical activity, fatigue and quality of 
+life in patients with acute COVID-19 and long COVID infection. Sci. Rep. 13, 19907.
+Vogel, J.M., Jenkins, T., Cerda, M., Chen, H., Goldman, J., Katz, S.D., Patterson, T.F., 
+Ashktorab, H., Bartram, L., Barua, S., Brim, H., Brown, J.P., Castro, M., Chaibub 
+Neto, E., Chestek, D., Durstenfeld, M.S., Erlandson, K.M., Flaherman, V., Foulkes, A. 
+S., Ghamloush, M., Haddad, F., Hadlock, J., Heath, J.R., Hornikel, B., Karlson, E.W., 
+Kaufman, E.S., Kellogg Jr., D.L., Levitan, E.B., Levy, B.D., Martin, J., McComsey, G. 
+A., Metz, T.D., Motl, R.W., Moukabary, T., Mullington, J.M., Ofotokun, I., 
+Okumura, M.J., Parthasarathy, S., Plunkett, B.A., Reeves, W.B., Rischard, F., 
+Rizzo, J., Scott, J.A., Sherif, Z.A., Thaweethai, T., Trinity, J.D., Tummalacherla, M., 
+Urdaneta, A.E., Vasey, A.J., Villanueva, D.D., Walker, T.A., Wiley, Z., Sieberts, S.K., 
+Krishnan, J.A., Consortium, R., 2026. Sustained reduction in cardiopulmonary 
+fitness in long COVID: a report from the RECOVER-adult cohort study. JACC Adv 5, 
+102923.
+Wang, S., Wei, Y., Li, Y., Qing, H., Yan, Y., Cheng, Y., 2026. Effects of different exercise 
+modalities on four major neurodegenerative diseases and their molecular 
+mechanisms. Neuroscience 601, 121–135.
+Wilson, A., Ricciardiello Mejia, G.C., Lomba, S., Geng, L.N., Malunjkar, S., Bonilla, H., 
+Sum-Ping, O., 2025. A multidimensional assessment of sleep disorders in long COVID 
+using the alliance sleep questionnaire. Healthcare (Basel) 13.
+Woo, T.W., Choi, Y.J., Kim, J.Y., Lee, J.S., Son, C.G., 2026. Neuroendocrine signature of 
+ME/CFS: meta-analytic evidence for bioactive cortisol deficit and exaggerated 
+feedback sensitivity. Mol. Psychiatr.
+Wu, F., Zhao, S., Yu, B., Chen, Y.M., Wang, W., Song, Z.G., Hu, Y., Tao, Z.W., Tian, J.H., 
+Pei, Y.Y., Yuan, M.L., Zhang, Y.L., Dai, F.H., Liu, Y., Wang, Q.M., Zheng, J.J., Xu, L., 
+Holmes, E.C., Zhang, Y.Z., 2020. A new coronavirus associated with human 
+respiratory disease in China. Nature 579, 265–269.
+Xiao, K., Luo, Y., Liang, X., Tang, J., Wang, J., Xiao, Q., Qi, Y., Li, Y., Zhu, P., Yang, H., 
+Xie, Y., Wu, H., Tang, Y., 2021. Beneficial effects of running exercise on hippocampal 
+microglia and neuroinflammation in chronic unpredictable stress-induced 
+depression model rats. Transl. Psychiatry 11, 461.
+Yu, T., Xu, H., Wang, W., Li, S., Chen, Z., Deng, H., 2015. Determination of endogenous 
+corticosterone in rodent's blood, brain and hair with LC-APCI-MS/MS. 
+J. Chromatogr., B: Anal. Technol. Biomed. Life Sci. 1002, 267–276.
+Yuan, R.L., Wang, S.S., Li, P.Y., Ruan, Y., He, J.Q., Zhou, R., Wang, W.F., Jiang, Y.T., 
+Ye, J.R., Peng, Y., He, W.B., Chu, S.F., Zhang, Z., Chen, N.H., 2026. SARS-CoV-2 
+spike protein induces depressive-like behaviors by disrupting astrocytic Cx43- 
+mediated gap junction intercellular communication. Brain Behav. Immun. 131, 
+106176.
+Zhang, Q., Dong, X., Huo, H., Zhang, Y., Zhang, M., Wang, D., 2026. Mechanisms of 
+exercise-based rehabilitation following intracerebral hemorrhage: insights from 
+preclinical evidence. Front. Pharmacol. 17, 1783944.
+Zhang, Y.D., Wang, L.N., 2024. Research progress in the treatment of chronic fatigue 
+syndrome through interventions targeting the hypothalamus-pituitary-adrenal axis. 
+Front. Endocrinol. 15, 1373748.
+Zheng, C., Chen, J.J., Dai, Z.H., Wan, K.W., Sun, F.H., Huang, J.H., Chen, X.K., 2024. 
+Physical exercise-related manifestations of long COVID: a systematic review and 
+meta-analysis. J Exerc Sci Fit 22, 341–349.
+Zhou, J., Zhang, X., Yin, S., Xue, S., He, Q., Chen, S., Xue, X., 2026. Molecular 
+mechanisms of exercise-induced improvements in Alzheimer's disease: a focus on 
+lipid homeostasis. Transl. Neurodegener. 15.
+T. Kelley et al.                                                                                                                                                                                                                                   
+Brain, Behavior, & Immunity - Health 56 (2026) 101331 
+11 
