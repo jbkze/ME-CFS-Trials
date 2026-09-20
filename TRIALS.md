@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/trials.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last check: **2026-09-19**
+- Last check: **2026-09-20**
 - Trials tracked: **7** (open for enrollment: **3**, watchlist: **3**, archived: **1**)
 - ⭐ = linked to Klaus Wirth or Carmen Scheibenbogen.
 
@@ -10,17 +10,17 @@
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-09-19 | — |
-| [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) | 🟢 Recruiting | Immunoadsorption (IA apheresis) | — | Berlin (Gemeinschaftskrankenhaus Havelhöhe), Potsdam (Arztpraxis (medical practice)) | DRKS DRKS00033897 | 2026-09-19 | — |
-| [RAPID_ELAPSE](https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00) | 🟢 Recruiting | Bupropion | — | Berlin (Charité - Universitätsmedizin Berlin, Campus Benjamin Franklin (Psychiatry)), Göttingen (Universitätsmedizin Göttingen (Zentrale Notaufnahme)), Frankfurt am Main (Universitätsmedizin Frankfurt (Medizinische Klinik 2, Infektiologie)), Jena (Uniklinikum Jena (Innere Medizin IV)), Gießen/Marburg (University hospital Gießen/Marburg), Köln (University hospital (listed, not yet active)), Heidelberg (University hospital (listed, not yet active)), Freiburg (University hospital (listed, not yet active)), München (LMU München), Würzburg (Universitätsklinikum Würzburg), Kiel (UKSH (listed, not yet active)) | CTIS 2025-524443-12-00 | 2026-09-19 | `details_changed` |
+| ⭐ [IMPACT](https://clinicaltrials.gov/study/NCT07529197) | 🟢 Recruiting | Immunoadsorption (TheraSorb®) | Carmen Scheibenbogen | Berlin (Charité - Universitätsmedizin Berlin, Institute for Medical Immunology) | ClinicalTrials.gov NCT07529197 | 2026-09-20 | — |
+| [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) | 🟢 Recruiting | Immunoadsorption (IA apheresis) | — | Berlin (Gemeinschaftskrankenhaus Havelhöhe), Potsdam (Arztpraxis (medical practice)) | DRKS DRKS00033897 | 2026-09-20 | — |
+| [RAPID_ELAPSE](https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00) | 🟢 Recruiting | Bupropion | — | Berlin (Charité - Universitätsmedizin Berlin, Campus Benjamin Franklin (Psychiatry)), Göttingen (Universitätsmedizin Göttingen (Zentrale Notaufnahme)), Frankfurt am Main (Universitätsmedizin Frankfurt (Medizinische Klinik 2, Infektiologie)), Jena (Uniklinikum Jena (Innere Medizin IV)), Gießen/Marburg (University hospital Gießen/Marburg), Köln (University hospital (listed, not yet active)), Heidelberg (University hospital (listed, not yet active)), Freiburg (University hospital (listed, not yet active)), München (LMU München), Würzburg (Universitätsklinikum Würzburg), Kiel (UKSH (listed, not yet active)) | CTIS 2025-524443-12-00 | 2026-09-20 | — |
 
 ## Planned / not yet recruiting (also relevant)
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| ⭐ [MDC002 Phase 1 Clinical Trial in ME/CFS (planned)](https://mitodicure.com/) | 🟡 Not yet recruiting | MDC002 | Klaus Wirth | — | other not-yet-registered | 2026-09-19 | — |
-| ⭐ [PIONEER_PAIS](https://clinicaltrials.gov/study/NCT07724834) | 🟡 Not yet recruiting | Inebilizumab (Uplizna®) | Carmen Scheibenbogen, Judith Bellmann-Strobl | Berlin (Charité - Universitätsmedizin Berlin) | ClinicalTrials.gov NCT07724834 | 2026-09-19 | — |
-| [PAISE-AriSE](https://clinicaltrials.gov/study/NCT07714213) | 🟡 Not yet recruiting | Low-dose aripiprazole | — | Berlin (Charité - Universitätsmedizin Berlin) | ClinicalTrials.gov NCT07714213 | 2026-09-19 | — |
+| ⭐ [MDC002 Phase 1 Clinical Trial in ME/CFS (planned)](https://mitodicure.com/) | 🟡 Not yet recruiting | MDC002 | Klaus Wirth | — | other not-yet-registered | 2026-09-20 | — |
+| ⭐ [PIONEER_PAIS](https://clinicaltrials.gov/study/NCT07724834) | 🟡 Not yet recruiting | Inebilizumab (Uplizna®) | Carmen Scheibenbogen, Judith Bellmann-Strobl | Berlin (Charité - Universitätsmedizin Berlin) | ClinicalTrials.gov NCT07724834 | 2026-09-20 | — |
+| [PAISE-AriSE](https://clinicaltrials.gov/study/NCT07714213) | 🟡 Not yet recruiting | Low-dose aripiprazole | — | Berlin (Charité - Universitätsmedizin Berlin) | ClinicalTrials.gov NCT07714213 | 2026-09-20 | — |
 
 ## Archived (closed / completed / withdrawn)
 

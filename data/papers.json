@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-19",
+  "last_check": "2026-09-20",
   "papers": [
     {
       "id": "slaughter-2026-gwas-biobank-replication",
@@ -2836,10 +2836,8 @@
       "link": "https://doi.org/10.3389/fsysb.2026.1873899",
       "first_seen": "2026-09-19",
       "last_checked": "2026-09-19",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.3389/fsysb.2026.1873899, published 2026-09-03). Not Wirth/Scheibenbogen-affiliated. Computational/bioinformatics paper (MCC-REFS method), not a clinical or biological experiment; candidate genes: PPP2CB, SOCS3, ARG1, FZD2, IL6R, TRGV3/5, ECHS1."
     },
     {
@@ -2853,10 +2851,8 @@
       "link": "https://doi.org/10.1136/bmjopen-2025-111253",
       "first_seen": "2026-09-19",
       "last_checked": "2026-09-19",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.1136/bmjopen-2025-111253, published Jul 2026). Not Wirth/Scheibenbogen-affiliated. First dedicated systematic evidence synthesis of LDN specifically for long COVID found in this tracker; no existing baseline entry on naltrexone."
     },
     {
@@ -2870,10 +2866,8 @@
       "link": "https://doi.org/10.1080/19490976.2026.2718581",
       "first_seen": "2026-09-19",
       "last_checked": "2026-09-19",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.1080/19490976.2026.2718581, published 2026-08-19, Mayo Clinic). Not Wirth/Scheibenbogen-affiliated. Distinct from existing baseline gut-microbiome entries, which look at already-established ME/CFS/long-COVID cohorts rather than acute-phase prediction."
     },
     {
@@ -2887,10 +2881,8 @@
       "link": "https://doi.org/10.1016/j.bbih.2026.101331",
       "first_seen": "2026-09-19",
       "last_checked": "2026-09-19",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.1016/j.bbih.2026.101331). Not Wirth/Scheibenbogen-affiliated. Animal (rat) model, not human data."
     },
     {
@@ -2904,10 +2896,8 @@
       "link": "https://doi.org/10.3389/fphar.2026.1852220",
       "first_seen": "2026-09-19",
       "last_checked": "2026-09-19",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.3389/fphar.2026.1852220, published 2026-08-05). Not Wirth/Scheibenbogen-affiliated. Narrative review, not new primary data."
     },
     {
@@ -2921,10 +2911,8 @@
       "link": "https://doi.org/10.1016/j.bbih.2026.101315",
       "first_seen": "2026-09-19",
       "last_checked": "2026-09-19",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.1016/j.bbih.2026.101315, published 2026-07-25). Not Wirth/Scheibenbogen-affiliated. Companion study from the same Munich 'All Eyes on PCS' cohort/group (overlapping authors incl. Wallraven T, Schmaderer C, Ribeiro A, Lech M, Lethen I) as the already-tracked wallraven-2026-retinal-microvascular-postcovid-mecfs (BMC Medicine, dynamic/static retinal vessel analysis) — distinct DOI/journal and methodology (OCT/OCT-angiography structural + immune correlates rather than dynamic vessel analysis), not a duplicate."
     }
   ]
