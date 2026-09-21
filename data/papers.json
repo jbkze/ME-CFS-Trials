@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-20",
+  "last_check": "2026-09-21",
   "papers": [
     {
       "id": "slaughter-2026-gwas-biobank-replication",
@@ -2818,9 +2818,8 @@
       "why": "Offers a simple, low-cost heart-rate-based test that non-specialist doctors could use to spot a treatable circulation problem (POTS) in teenagers with ME/CFS, potentially speeding up diagnosis and access to treatment.",
       "link": "https://doi.org/10.3389/fped.2026.1836407",
       "first_seen": "2026-09-17",
-      "last_checked": "2026-09-17",
+      "last_checked": "2026-09-21",
       "flags": [
-        "new"
       ],
       "isNew": false,
       "notes": "MRI Chronic Fatigue Center for Young People (MCFC), TU Munich Children's Hospital (Leone, Gerrer, Viereck, Grabbe, Kircher, Behrends), with RWTH Aachen (Maier). Same German pediatric ME/CFS group behind the already-tracked donath-2026-pediatric-postcovid-risk-factors entry. Small case-control study (18 ME/CFS vs 18 matched healthy controls, ages 14-17); PoTS diagnosed in 7/18 ME/CFS vs 0/18 controls. Not Wirth/Scheibenbogen-affiliated (Scheibenbogen not a co-author on this one). Confirmed via PubMed E-utilities (PMID 42746015, DOI 10.3389/fped.2026.1836407) and PMC full text (PMC13574936) — full abstract, methods and results read directly. Published/posted Sep 1, 2026; indexed by PubMed/Europe PMC Sep 16, 2026."
@@ -2914,6 +2913,21 @@
       "flags": [],
       "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.1016/j.bbih.2026.101315, published 2026-07-25). Not Wirth/Scheibenbogen-affiliated. Companion study from the same Munich 'All Eyes on PCS' cohort/group (overlapping authors incl. Wallraven T, Schmaderer C, Ribeiro A, Lech M, Lethen I) as the already-tracked wallraven-2026-retinal-microvascular-postcovid-mecfs (BMC Medicine, dynamic/static retinal vessel analysis) — distinct DOI/journal and methodology (OCT/OCT-angiography structural + immune correlates rather than dynamic vessel analysis), not a duplicate."
+    },
+    {
+      "id": "kujawski-2026-mecfs-pais-diagnostic-consensus-framework",
+      "title": "Myalgic encephalomyelitis/chronic fatigue syndrome and overlapping post-acute infection syndromes: international expert consensus framework for diagnostic standardization",
+      "authors": "Kujawski S, Eaton-Fitch N, Słomko J, Nijs J, Polli A, Hodges L, Morten KJ, Friedman KJ, Hornig M, Djalilian HR, Miglis MG, Godlewska BR, Prusty BK, Bonilla H, Buonsenso D, Tate W, Murovska M, Marshall-Gradisnik S, Zalewski P",
+      "journal": "BMC Medicine",
+      "date": "Sep 2026 (online Sep 7, 2026)",
+      "summary": "19 international ME/CFS experts agreed on a standard way to measure and score seven core symptoms of ME/CFS and related post-infection illnesses (including long COVID) — such as post-exertional malaise (a crash after activity), autonomic problems (trouble with automatic body functions like heart rate or blood pressure), brain fog, and sleep issues — plus a tiered testing plan that avoids unnecessary or risky tests.",
+      "why": "A shared, validated way to measure ME/CFS symptoms makes future studies and drug trials easier to compare across different research centers, which is a practical building block for better trial design.",
+      "link": "https://doi.org/10.1186/s12916-026-05161-8",
+      "first_seen": "2026-09-21",
+      "last_checked": "2026-09-21",
+      "flags": ["new"],
+      "isNew": true,
+      "notes": "Confirmed via Crossref (DOI 10.1186/s12916-026-05161-8, published online 2026-09-07) and BMC Medicine. Not Wirth/Scheibenbogen-affiliated (no overlap with either name in the author list). A consensus/framework paper rather than new experimental data, but included as especially notable per ROUTINE.md's papers scope (a validated cross-condition measurement framework with direct trial-design implications), distinguishing it from the purely theoretical/no-data reviews this tracker has repeatedly screened out (e.g. the recurring Ruhrländer/Schieffer orexin-GLP-1 review, re-screened out again this run as previously excluded/outside recency window; see below)."
     }
   ]
 }
