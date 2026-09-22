@@ -7,25 +7,28 @@ year: 2026
 venue: "bioRxiv (preprint)"
 doi: 10.64898/2026.08.17.745245
 url: https://doi.org/10.64898/2026.08.17.745245
-pdf: https://doi.org/10.64898/2026.08.17.745245
-text: null
+pdf: literature/papers/2026-chen-ebv-reprograms-cells-autoimmune/paper.pdf
+text: literature/papers/2026-chen-ebv-reprograms-cells-autoimmune/paper.txt
 tags: [autoimmunity, immunology, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: chen2026
+cover: "[[literature/papers/2026-chen-ebv-reprograms-cells-autoimmune/cover.png]]"
 ---
 
 # EBV Reprograms B Cells in an Autoimmune-Like Fashion in Patients with COVID-19
 
 ## Related files
+![[literature/papers/2026-chen-ebv-reprograms-cells-autoimmune/paper.pdf]]
 - [[literature/papers/2026-chen-ebv-reprograms-cells-autoimmune/citation.bib]]
+- [[literature/papers/2026-chen-ebv-reprograms-cells-autoimmune/paper.txt]]
 
 ## Summary
 
 In COVID-19 patients, the Epstein-Barr virus (EBV, a common 'sleeper' virus most people already carry) can reawaken and reprogram the immune cells it infects (B cells) to act as if they're attacking the body's own tissue. People with more of these reprogrammed cells had worse lingering symptoms 2-3 months later.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 

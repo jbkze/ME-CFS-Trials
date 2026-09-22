@@ -1,0 +1,2718 @@
+ 
+1 
+EBV Reprograms B Cells in an Autoimmune-Like Fashion in 
+1 
+Patients with COVID-19 
+2 
+Daniel G. Chen1,2, Dan Yuan2, Yapeng Su3, Andrew Magis1, Helen Chu4,5, Jason D. 
+3 
+Goldman5,6, James R. Heath2,7* 
+4 
+1 UCLA-Caltech Medical Scientist Training Program, University of California, Los Angeles, 
+5 
+Los Angeles, CA 
+6 
+2 Institute of Systems Biology, Seattle, WA 
+7 
+3 Fred Hutchinson Cancer Center, Seattle, WA 
+8 
+4 Division of Global Health, University of Washington, Seattle, WA 
+9 
+5 Division of Allergy and Infectious Diseases, Department of Medicine, University of 
+10 
+Washington, Seattle, WA 
+11 
+6 Swedish Center for Research and Innovation, Providence Swedish Medical Center, 
+12 
+Seattle, WA 
+13 
+7 Department of Bioengineering, University of Washington, Seattle, WA 
+14 
+* Corresponding Author: jim.heath@isbscience.org 
+15 
+ 
+16 
+Abstract 
+17 
+Epstein-Barr virus (EBV) reprograms B cells in autoimmune disease. Reprogrammed 
+18 
+EBV+ B cells activate nearby B and CD4+ T cells, via upregulated antigen presentation 
+19 
+and costimulatory machinery, to drive autoimmune pathology. EBV reactivation is a known 
+20 
+correlate of long COVID, which is a heterogeneous condition that can bear similarities to 
+21 
+autoimmune disease. However, the mechanisms underpinning this association remain 
+22 
+unresolved. We report on EBV metabolically reprogrammed B cells in patients with 
+23 
+COVID-19. We find EBV+ B cells provide stimulatory signals to bystander B and CD4+ T 
+24 
+cells. SARS-CoV-2 infected participants exhibiting elevated fractions of EBV+ B cells 
+25 
+present, at convalescence, with dysregulated lipid profiles, increased autoantibody titers, 
+26 
+and post-acute symptomology likely reflective of this metabolic reprogramming and cell-
+27 
+cell interactions. Enrichment of our EBV+ B cell signatures seen in patients with COVID-
+28 
+19 is similar in patients with lupus and multiple sclerosis suggesting a potentially shared 
+29 
+pathway of EBV-driven dysfunction across diseases. 
+30 
+ 
+31 
+Introduction 
+32 
+Epstein-Barr virus (EBV) is a human gamma herpesvirus that establishes lifelong latency 
+33 
+with intermittent reactivation to lytic replication. EBV causes infectious mononucleosis1 in 
+34 
+a minority with acute infection, and is a well-known oncogenic virus, associated with 
+35 
+multiple cancers (e.g. Burkitt lymphoma2, gastric cancer3 and others4), and is reported to 
+36 
+have infected ≥90% of the global population. In the past decade, large-scale studies have 
+37 
+demonstrated a consistent positive association between prior EBV infection and 
+38 
+increased autoimmune disease risk, particularly for multiple sclerosis (MS)5–7. These 
+39 
+efforts have proposed molecular mimicry (similarity between human and EBV antigens) 
+40 
+and EBV transcription factor (e.g. EBNA2) activity as two potential mechanisms driving 
+41 
+EBV-associated autoimmune disease pathology8–10. Recent works have compounded on 
+42 
+these findings by demonstrating a fundamental reprogramming of EBV-infected B cells 
+43 
+towards a metabolically-distinct cell state11–14 (e.g. increased glycolysis) that markedly 
+44 
+upregulates antigen presentation and co-stimulation machinery15–18. Reprogrammed 
+45 
+EBV-infected B cells can then leverage this machinery to activate autoreactive B and 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+2 
+CD4+ T cells and thus facilitate autoimmune disease pathology, such as autoantibody 
+1 
+production. 
+2 
+ 
+3 
+Long COVID is a debilitating post-acute sequelae of SARS-CoV-2 infection that continues 
+4 
+to affect hundreds of millions of people worldwide. An estimated 7% of adults in the United 
+5 
+States alone have had long COVID (as reported in 2024), with global numbers estimated 
+6 
+as even higher 19,20. Patients with long COVID can be afflicted with a range of symptoms, 
+7 
+including brain fog, post-exertional malaise, chronic fatigue, respiratory, digestive, and/or 
+8 
+cardiovascular issues that can severely limit their quality of life19,21,22. To address this 
+9 
+patient hardship, many studies have sought to identify long COVID risk factors shared 
+10 
+across patient populations, which may thus represent potential therapeutic targets. These 
+11 
+studies have consistently revealed a marked positive association between long COVID 
+12 
+risk and EBV reactivation (or detection via viremia)23–28; these findings have been 
+13 
+increasingly validated in larger patient populations such as the IMPACC cohort29. While 
+14 
+these works establish a clear associative link between EBV and long COVID, they do not 
+15 
+identify underpinning molecular mechanisms. The similarity between certain 
+16 
+immunopathology in long COVID (e.g. dysregulated T cells and B cells and 
+17 
+autoantibodies30) and recently identified EBV driven mechanisms of disease in systemic 
+18 
+lupus erythematous (SLE) and MS raise the possibility of EBV infection as not only a 
+19 
+correlate of long COVID but an active effector that drives the condition’s pathology in at 
+20 
+least a fraction of patients. 
+21 
+ 
+22 
+Results 
+23 
+Identification of EBV+ B cells in patients with COVID-19 
+24 
+We leveraged a reported computational framework in autoimmune disease16,17 to identify 
+25 
+EBV-infected B cells in a primary cohort of 209 patients with COVID-19 (INCOV) and a 
+26 
+validation cohort of 100 patients with COVID-19 (HAARVI)25 (Fig. 1A, Methods); the 
+27 
+INCOV cohort was used for the majority of analyses unless otherwise specified.  
+28 
+ 
+29 
+Detected EBV reads from single-cell RNA-seq (scRNAseq) of peripheral mononuclear 
+30 
+blood cells (PBMCs), largely mapped to the EBNA2 gene (Figs. 1B-C). EBNA2 is a well-
+31 
+known transcriptional activator expressed during latency III of EBV infection31 and 
+32 
+reported to bind at transcription-start-sites of genes involved in B cell survival, activation, 
+33 
+and antigen presentation16,32,33. EBV+ B cells were initially identified using a strict cutoff 
+34 
+for reads that uniquely mapped to the EBV genome (Fig. 1D); this revealed an average 
+35 
+of 0.17±0.06% EBV+ B cells. As viruses bear highly repetitive genomes34, viral reads often 
+36 
+map multiple times to their genome and are thus lost when using strict cutoffs that require 
+37 
+unique mapping. To overcome this, we also assigned B cells with viral reads that mapped 
+38 
+multiple times to the EBV genome as EBV+. We confirmed the validity of this approach 
+39 
+by finding all EBV+ B cells to enrich for an EBV-specific gene signature regardless of the 
+40 
+number of times their EBV reads mapped to the EBV genome (Fig. S1). This resulted in 
+41 
+an average of 2.76±0.27% EBV+ B cells across patients and healthy donors (Table S1). 
+42 
+These EBV+ assignments were subsequently utilized for downstream analyses. Notably, 
+43 
+few EBV+ B cells could be detected in healthy donors in comparison with patients with 
+44 
+COVID-19. This finding is consistent with prior reports of EBV reactivation after SARS-
+45 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+3 
+CoV-2 infection16,23,24,26,27 and focused our subsequent analyses on the EBV+ B cells 
+1 
+derived from patients with COVID-19. 
+2 
+ 
+3 
+EBV transcriptionally reprograms B cells in patients with COVID-19 
+4 
+Inspired by recent reports of marked B cell reprogramming by EBV in autoimmune 
+5 
+disease16–18, we hypothesized that EBV+ B cells may undergo a similar reprogramming in 
+6 
+patients with COVID-19. To investigate this, we first classified single B cells into canonical 
+7 
+B cell states by their marker gene expression (e.g. FCER2 in naïve B cells35) (Figs. 2A 
+8 
+and S2A). We then interrogated for differences in the distribution of B cell states in EBV+ 
+9 
+versus EBV- B cell compartments. This revealed EBV+ B cells to be significantly biased 
+10 
+towards memory B cell and plasmablast states (Fig. 2B) and is reminiscent of previous 
+11 
+findings of EBV-transformed B cells as highly proliferative and plasmablast-like36. EBV+ 
+12 
+naïve B cells suggests recent infection from viral particles released by EBV-infected B 
+13 
+cells that have undergone completion of a reactivated lytic cycle37. 
+14 
+ 
+15 
+To identify the exact transcriptional modules reprogrammed by EBV, we performed 
+16 
+differential gene expression analysis between EBV+ and EBV- B cells (Fig. 2C, Table S2). 
+17 
+Interestingly, we observed EBV+ B cells to present with more significantly upregulated 
+18 
+(N=30, FDR<0.05) rather than downregulated genes (N=3, FDR<0.05). This is consistent 
+19 
+with the expression of the EBV-derived transcriptional activator EBNA2 in EBV+ B cells. 
+20 
+Transcription factor (TF) program enrichment analysis revealed EBV+ B cells to activate 
+21 
+well-known EBV-controlled TFs (Figs. 2D and S2B, Table S3), such as MYC and SPI1 
+22 
+which drive B cell proliferation and interact with EBV proteins (e.g. EBNA2)38–40. Pathway 
+23 
+enrichment analysis revealed a distinct reprogramming of EBV+ B cells towards increased 
+24 
+antigen presentation, energy production via glycolysis, and B cell activation and survival 
+25 
+signaling (Fig. 2E, Table S4). Consistently, EBV has been reported to upregulate 
+26 
+glycolytic11,41 and anti-apoptotic functions42,43 and drives increased antigen presentation 
+27 
+in autoimmune disease16,18. Increased B cell activation in EBV+ B cells was confirmed by 
+28 
+kinase enrichment analysis revealing increased BTK, SYK, and ZAP70 activity44–46 (Table 
+29 
+S5). In conjunction with the enrichment of EBV infection associated genes in EBV+ B cells, 
+30 
+these data suggest that patients with COVID-19 experience bona fide EBV 
+31 
+reprogramming of their B cells towards a distinct transcriptional cell state. We confirmed 
+32 
+these findings of EBV reprogrammed B cells in our independent validation cohort of 100 
+33 
+patients with COVID-19 (HAARVI) (Figs. S2C-D). 
+34 
+ 
+35 
+EBV reprogrammed B cells in COVID-19 resemble those in autoimmune disease 
+36 
+The enrichment of antigen presentation and B cell activation processes in EBV 
+37 
+reprogrammed B cells in the context of COVID-19 is reminiscent of the EBV 
+38 
+reprogramming observed in certain autoimmune diseases16,18. This is supported by the 
+39 
+significant enrichment of autoimmune disease related genes (e.g. SLE) in EBV+ B cells 
+40 
+(Table S10). To formally investigate this similarity, we queried for the expression of genes 
+41 
+(e.g. CD27, CD70, IL2RG, IGHA1, PTPN22) and functions (e.g. proteasome, antigen 
+42 
+presentation, interferon and B cell activation signaling) reported to be specifically 
+43 
+upregulated in EBV reprogrammed B cells in autoimmune disease11,16–18. These markers 
+44 
+were, by and large, all significantly upregulated in EBV+ B cells in patients with COVID-
+45 
+19 (Figs. 3A and S3A). We confirmed these observations by finding EBV+ B cells in 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+4 
+patients with COVID-19 to enrich for reported transcriptomic signatures of EBV+ B cells 
+1 
+in SLE16 (Fig. 3B). To deepen our understanding of these cells, we repeated the above 
+2 
+analyses in our recently reported multiome (transcriptome and epigenome from the same 
+3 
+single cell) dataset of B cells from patients with COVID-19 (Fig. S3B)30. In confirmation 
+4 
+of our previous findings, identified EBV+ B cells once again enriched for cell populations 
+5 
+(e.g. IgA+ plasmablasts, Fig. S3C) and gene signatures (Fig. S3D) reported to be 
+6 
+associated with EBV+ B cells in autoimmune contexts16–18. Epigenetic analysis of 
+7 
+differentially open chromatin in EBV+ B cells revealed significant co-enrichment for RBPJ 
+8 
+and EBF1 transcription factor (TF) binding sites (Fig. S3E); these shared binding sites 
+9 
+were enriched for EBV associated genes, e.g. PTPN647 (Fig. S3F). RBPJ and EBF1 are 
+10 
+known to be co-opted by the EBV protein EBNA2 to form a transcriptional complex that 
+11 
+drives the pathogenic transformation of EBV+ B cells48. Further, these TFs have been 
+12 
+reported to have increased activity in EBV+ B cells from patients with autoimmune 
+13 
+disease16. Together, these data suggest EBV+ B cells in patients with COVID-19 to have 
+14 
+undergone canonical EBV reprogramming in terms of their transcriptomes (individual 
+15 
+genes and pathways) and epigenomes, similar to EBV+ B cells in certain autoimmune 
+16 
+diseases. 
+17 
+ 
+18 
+EBV metabolically reprograms memory B cells in COVID-19 
+19 
+The enrichment of public EBV+ memory B cell gene signatures in the EBV+ B cells 
+20 
+identified in this study (Fig. 3B) aligns with the known preference of EBV to remain latent 
+21 
+in memory B cells. Consistently, in this study we found EBV+ memory B cells to present 
+22 
+with the greatest upregulation of defining EBV reprogramming genes (e.g. HLA-DRA, 
+23 
+HLA-DRB1 encoding for antigen presentation machinery, Fig. 3C). Notably, we also 
+24 
+observed significant overlap (p<0.001, by permutation) in the genes upregulated in EBV+ 
+25 
+B cells across B cell states (Table S11). These genes were enriched for glycolytic and 
+26 
+immunomodulatory functions (e.g. ENO149 and OAS150) and may suggest the existence 
+27 
+of a core EBV reprogramming signature. 
+28 
+ 
+29 
+We then performed a targeted analysis of memory B cells, given their importance in EBV 
+30 
+pathology. EBV+ memory B cells presented with a marked shift in phenotype upregulating 
+31 
+genes related to B cell activation (e.g. BTK44, NFKB151) and costimulation (e.g. CD80, 
+32 
+CD8652) (Figs. 3D and S4A-B). The increased metabolic demands of cell activation, and 
+33 
+subsequent proliferation, aligns with the upregulation of energy production pathways we 
+34 
+observed in Figs. 2B and S2D. Together, this led us to hypothesize that EBV+ B cells may 
+35 
+also undergo metabolic reprogramming, in the context of COVID-19. To address this, we 
+36 
+performed metabolic flux analysis and found EBV+ memory B cells to significantly 
+37 
+upregulate flux through the glycolysis pathway and decrease fatty acid breakdown (i.e. 
+38 
+beta-oxidation) (Fig. 3E, Table S12). 
+39 
+ 
+40 
+With sufficient dysregulation, cellular metabolic reprogramming can lead to shifts in 
+41 
+plasma metabolite levels. We assessed for such dysregulation in patients with increased 
+42 
+proportions of EBV+ B cells and were indeed able to find sets of metabolites whose levels 
+43 
+during convalescence (2-3 months after infection) significantly correlated with patient 
+44 
+EBV+ B cell percentages (Fig. S4C, Table S13). The enrichment of these metabolites for 
+45 
+dicarboxylic acids and carnitines, especially those of longer lengths, is consistent with our 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+5 
+observation of reduced beta-oxidation in EBV+ memory B cells (Fig. S4D-E); these 
+1 
+metabolites accumulate when beta-oxidation is impaired53,54. We confirmed this 
+2 
+enrichment by finding long-chain carnitine and dicarboxylic metabolite modules to be 
+3 
+significantly more abundant in patients with increased proportions of EBV+ B cells (Figs. 
+4 
+3F and S4F). These two metabolic module correlations suggest that the scRNAseq 
+5 
+assessment of EBV-reprogrammed B cells is at least semi-quantitative. Notably, these 
+6 
+metabolic modules are only mildly correlated with each other (shared variance r2=0.07 
+7 
+amongst patients with COVID-19), consistent with established biology that they report on 
+8 
+distinct enzymatic routes. Thus, we find EBV+ memory B cells to undergo metabolic 
+9 
+reprogramming at the cellular level, upregulated glycolysis programs and impaired beta-
+10 
+oxidation, that is reflected by global metabolite changes in plasma. 
+11 
+ 
+12 
+EBV reprogrammed B cells provide stimulatory input to B and CD4+ T cells 
+13 
+The upregulation of costimulatory molecules in EBV+ B cells is reminiscent of reported 
+14 
+mechanisms in autoimmune disease whereby EBV+ B cells activate autoreactive B and 
+15 
+CD4+ T cells. This activation can lead to autoimmune pathology through, for example, the 
+16 
+production of autoantibodies16,55,56. In conjunction with the shared clinical presentations 
+17 
+of long COVID and autoimmune disease57–60, these data raise the possibility of shared 
+18 
+molecular mechanisms between these conditions. To investigate this possibility, we 
+19 
+queried for cell-cell interactions between EBV+ B cells and bystander EBV- B and CD4+ T 
+20 
+cells in patients with COVID-19 (Table S14). Strikingly, we observed EBV+ B cells to be 
+21 
+significantly enriched for ligand-receptor interactions that facilitate B cell survival and 
+22 
+activation (e.g. BAFF:BAFFR, BAFF:TACI)61–65 and CD4+ T cell co-stimulation (e.g. 
+23 
+CD80:CD28, CD86:CD2866,67, CD70:CD2768–70) (Figs. 4A-B and S5). In line with the role 
+24 
+of this mechanism in autoimmune disease, we found patients with increased EBV+ B cell 
+25 
+percentages to present with increased serum levels of autoantibodies (Fig. 4C) and 
+26 
+increased symptomology 2-3 months after acute disease resolution (Fig. S6). Thus, in 
+27 
+the context of COVID-19, EBV+ B cells appear to facilitate B and CD4+ T cell expansion 
+28 
+through the expression of pro-survival and stimulatory ligands; this activation may 
+29 
+facilitate the production of autoantibodies that can contribute to, certain, long COVID 
+30 
+pathology (Fig. 4D)71. 
+31 
+ 
+32 
+COVID-19 EBV+ B cell signature is enriched in patients with autoimmune disease 
+33 
+The molecular similarities between the EBV+ B cells in this work and EBV+ B cells in 
+34 
+autoimmune disease6,16,17,72 suggest the existence of a core EBV reprogramming module 
+35 
+across conditions (Fig. S7A). To investigate this, we interrogated for similarities between 
+36 
+EBV+ B cells in COVID and in SLE, an autoimmune condition that shares some clinical 
+37 
+features with long COVID57–60. We found the EBV+ B cell signature in COVID to 
+38 
+significantly positively correlate with the expression of genes implicated in SLE (RNA, 
+39 
+transcriptomic) and for patient EBV+ B cell percentages to significantly positively correlate 
+40 
+with their polygenic SLE risk (DNA, genomic) (Fig. 5A). We confirmed these findings by 
+41 
+showing our EBV+ B cell signatures in the COVID cohort to be significantly enriched in a 
+42 
+public cohort of patients with SLE73 (Figs. 5B-C and S7B-C, Table S15). As EBV 
+43 
+reprogramming is also implicated in MS, we repeated this analysis in a public cohort of 
+44 
+patients with MS74 and similarly found enrichment of our EBV+ B cell signatures from the 
+45 
+COVID cohort (Fig. 5D). 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+6 
+ 
+1 
+Discussion 
+2 
+In this work, we have identified EBV+ B cells in patients with COVID-19, even 2-3 months 
+3 
+after acute disease resolution, and revealed how they are transcriptionally and 
+4 
+metabolically reprogrammed to facilitate not only their own activation but also the 
+5 
+activation of nearby EBV- B and CD4+ T cells through potent stimulatory signals (Fig. 6). 
+6 
+To this end, we have four fundamental observations. First, the identification of a non-zero 
+7 
+(non-amplified) transcript signal within a B cell that is assignable to the EBV EBNA2 gene 
+8 
+is sufficient to identify that cell as EBV-reprogrammed. Second, that reprogramming, 
+9 
+investigated here within the context of COVID-19, strongly resembles EBV reprogrammed 
+10 
+B cells in autoimmune disease and is indeed associated with increased autoantibody 
+11 
+titers and long COVID symptomology (e.g. difficulty concentrating). Third, the scRNAseq-
+12 
+assessed level of B cell reprogramming is at least semiquantitative; the impact in patients 
+13 
+with a higher % of EBV transformed B cells is measurably greater. Finally, reprogrammed 
+14 
+B cells can exert significant influence over the global plasma environment of an individual. 
+15 
+ 
+16 
+Our finding that EBV+ B cells signatures in COVID-19 are similar to those observed in 
+17 
+autoimmune disease, at the transcriptomic and epigenomic level (Figs. 2C-E, S2B-D, 
+18 
+3A-B, and S3), suggests the existence of a core EBV reprogramming gene module 
+19 
+shared across diseases. This hypothesis is supported by the enrichment of certain 
+20 
+transcriptional programs observed in this work and autoimmune disease in EBV-driven 
+21 
+malignancies and lymphoproliferative disorders (e.g. MYC and NFkB signaling, apoptosis 
+22 
+inhibition)11,75. This core module may be refined and leveraged by future works to 1) 
+23 
+identify additional conditions where EBV reprogramming plays a role and 2) identify 
+24 
+potential therapeutic targets expressed across EBV-associated pathologies. Further, the 
+25 
+interrogation of gene expression changes in EBV+ B cells, by this work and others, will 
+26 
+better our understanding of genes recently implicated as increasing risk EBV infection, 
+27 
+and subsequent elevated risk of autoimmune disease and malignancies76,77. For example, 
+28 
+decreased expression of FOXO1 in EBV+ B cells after COVID-19 may align with the 
+29 
+known repression of that gene by EBV LMP1/2 proteins (Fig. S7D)78. EBV+ B cell 
+30 
+upregulation of NFKB1 and TNFRSF13B proposes these genes as positive regulators of 
+31 
+EBV persistence, potentially through their facilitation of B cell survival signaling62,63. As 
+32 
+EBV+ B cells are more broadly identified and characterized in future studies, the cross-
+33 
+disease sharing and disease-specific roles of these genes will become ever more clear. 
+34 
+ 
+35 
+We reveal EBV+ B cell signatures in COVID-19 as similar to those in autoimmune disease 
+36 
+at the transcriptomic level and in terms of their cell-cell communication profiles (Figs. 3A-
+37 
+B and S5). Recent works on SLE and MS demonstrated EBV+ B cells as drivers of 
+38 
+autoimmune pathology by facilitating the expansion of both themselves and autoreactive 
+39 
+double negative 2 (DN2, IgD-CD27-) and memory B cells into autoantibody secreting 
+40 
+plasmablasts, secondary to stimulatory ligand-receptor interactions16,36,79,80. Here, we find 
+41 
+these same interactions to be present between EBV+ B cells and EBV- B and CD4+ T cells 
+42 
+in patients with COVID-19. These interactions are an attractive explanation for the 
+43 
+increased autoantibody levels observed in patients with COVID-19 with increased EBV+ 
+44 
+B cell percentages (Fig. 3C). This explanation is supported by evidence of COVID-19 
+45 
+DN2 cells as potent secretors of autoantibodies30 and the observed persistence of EBV+ 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+7 
+B cells during convalescence (2-3 months after acute disease resolution) when long 
+1 
+COVID symptoms are present. Should DN2 B cells be stimulated by EBV+ B cells in 
+2 
+patients with COVID-19, as suggested by the EBV+ and EBV- B cell interactions reported 
+3 
+here, then there would exist a shared mechanism of autoantibody production across SLE, 
+4 
+MS, and long COVID. This mechanism is supported by a notable similarity between the 
+5 
+susceptibility of COVID-19 DN2 B cells to differentiate into autoantibody secreting 
+6 
+plasmablasts and increased production of autoantibody secreting plasmablasts in SLE81. 
+7 
+Future efforts analyzing these disease states in parallel may more formally elucidate the 
+8 
+presence or absence of this mechanism. 
+9 
+ 
+10 
+We also find elevated fractions of EBV+ B cells to be associated with increased levels of 
+11 
+both long-chain carnitine and dicarboxylic acid levels (Figs. 3F and S4C-F). These 
+12 
+metabolite levels may be associated with the biology of EBV-driven B cell reprogramming, 
+13 
+that includes increased glycolysis and reduced beta-oxidation. Impaired beta-oxidation, 
+14 
+often secondary to mitochondrial stress, can lead to elevated levels of carnitines and 
+15 
+dicarboxylic acids53,54,82,83. This accumulation can occur due to a build-up of reactants 
+16 
+(e.g. fatty acid associated carnitines) and shunting towards omega-oxidation, which 
+17 
+produces dicarboxylic acids as a product. Future metabolically-focused studies may 
+18 
+explore the exact processes that underpin this metabolic stress and provide deeper 
+19 
+characterizations of the alternate pathways (e.g. omega-oxidation) that are activated as 
+20 
+a result. The observation of serum metabolite changes as a reflection of cellular 
+21 
+dysfunction is not without precedent. Certain inborn errors of metabolism (e.g. medium-
+22 
+chain acyl-CoA dehydrogenase deficiency) that lead to cellular dysfunction can be 
+23 
+diagnosed through plasma metabolite profiles, such as the distribution of carnitines84,85. 
+24 
+It will be important for future studies to validate these findings in larger cohorts with more 
+25 
+comprehensive metabolic panels. Positive reports from these validation studies would 
+26 
+support the use of serum metabolite levels as a biomarker for certain types of long COVID 
+27 
+and EBV-associated disease and propose the treatments used for similar congenital 
+28 
+metabolic disorders as potential therapeutics for these conditions. 
+29 
+ 
+30 
+Together this work synergizes with existing literature to propose a potentially addressable 
+31 
+mechanism of long COVID: EBV+ B cell driven production of autoantibodies, recently 
+32 
+reported to be causative agents of long COVID symptoms71,86, and concomitant immune 
+33 
+cell and metabolic dysregulation, potentially secondary to interactions with EBV+ B cells. 
+34 
+Together, these data suggest the clearance of EBV+ B cells, or disruption of their signaling, 
+35 
+as a potential therapy for long COVID and, given potentially shared molecular 
+36 
+mechanisms and clinical features, autoimmune disease. 
+37 
+ 
+38 
+Limitations of the Study 
+39 
+This study is limited by the number of identified EBV+ B cells. Our approach leveraged 
+40 
+scRNAseq data that did not undergo amplification for EBV reads (via EBV-specific 
+41 
+primers). This has advantages in terms of extracting quantitative relationships, but only 
+42 
+cells with markedly high expression of EBV transcripts could be assigned as EBV+. 
+43 
+Further, due to the limited number of EBV+ B cells in healthy donors, we were restrained 
+44 
+in our ability to comment on the EBV reprogramming differences between healthy donors 
+45 
+and patients with COVID-19. This may be elaborated in future works with larger cohorts 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+8 
+of healthy donors where deep B cell sequencing may identify these rare EBV+ B cells. 
+1 
+Future studies with EBV-specific primers may reveal rare EBV+ B cells in patients with 
+2 
+COVID-19 that could not be observed in this work. While we validated our findings in two 
+3 
+cohorts of patients with COVID-19, validation of these findings in additional cohorts can 
+4 
+help assess the generalizability of our findings. Similarly, the autoimmune disease 
+5 
+comparisons in this work were largely with SLE and MS, though additional autoimmune 
+6 
+diseases were compared against via disease risk scores in Fig. S7A. Future works may 
+7 
+seek to perform comparisons with additional autoimmune diseases as applicable data 
+8 
+becomes available. Last, this study focuses on transcriptomic differences between EBV+ 
+9 
+and EBV- B cells, with metabolic differences inferred from said transcriptomic data. 
+10 
+Emerging technologies that can capture multiple modalities with deep coverage will allow 
+11 
+for more mechanistic understandings of EBV reprogramming of B cells. 
+ 
+12 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+9 
+Methods 
+1 
+Identification of EBV+ cells from scRNAseq data 
+2 
+EBV read detection was performed on two public cohorts of patients with COVID-19 and 
+3 
+healthy controls (INCOV, HAARVI)25. EBV reads were identified using a previously 
+4 
+published computational framework16. In brief, binary alignment map (BAM) files were 
+5 
+retrieved from standard 10x Genomics cellranger output (“possorted_genome_bam.bam”) 
+6 
+and filtered for unmapped reads (i.e. those not mapped to the human genome) via 
+7 
+SAMtools (v1.23.1)87 with “samtools view -b -f 4 INPUT_FILE > OUTPUT_FILE”. Non-
+8 
+human reads were then mapped against the EBV genome (NCBI reference sequence: 
+9 
+NC_007605.1). EBV gene annotations, in gene transfer format (GTF), were refined as 
+10 
+per Younis et al.16 and Grande and Gerhard et al.88. Read mapping was performed using 
+11 
+Spliced Transcripts Alignment to a Reference (STAR, v2.7.10a)89 with parameter values 
+12 
+set to those defined by Younis et al.16; cell barcode whitelists were downloaded from 10x 
+13 
+Genomics (“737K-august-2016.txt” was utilized for the 10x chemistry utilized in this work). 
+14 
+Cell barcodes were gathered from reads that aligned to the EBV genome and visualized 
+15 
+via the Integrative Genomics Viewer (IGV, v2.11.9)90 after deepTools (v3.5.6)91 
+16 
+processing. 
+17 
+ 
+18 
+Assignment of B cell states 
+19 
+Single B cell transcriptome UMAP positions and unbiased clustering assignments 
+20 
+(calculated via the leiden92 algorithm) were previously reported25. B cell marker genes 
+21 
+were utilized to annotate unbiased clusters into B cell states: FCER2 (encoding CD23) 
+22 
+and IGHD (encoding IgD) for naïve B cells, IGHM (encoding IgM) for unswitched memory 
+23 
+B cells, MS4A1 (encoding CD20) for non-plasmablast B cells, ZEB2 and FCRL5 for 
+24 
+atypical memory (double negative 2) B cells, and XBP1 and CD38 for plasmablasts. B 
+25 
+cell states that were heterogenous (composed of multiple unbiased clusters) were 
+26 
+separated with a numerical suffix (e.g. Naïve I, Naïve II, Naïve III). 
+27 
+ 
+28 
+Differential gene expression analysis 
+29 
+Differentially expressed genes were identified through pairwise comparisons between the 
+30 
+expression of each gene in group A (e.g. EBV+ B cells) and group B (e.g. EBV- B cells). 
+31 
+Expression values were normalized by library size (counts per million plus a pseudocount 
+32 
+for one, as previously reported25) and a log-transformation (natural base). Normalized 
+33 
+values are utilized for all statistical analyses, imputed (by MAGIC93) expression was only 
+34 
+utilized for visualization purposes on single cell UMAPs. P-values were calculated using 
+35 
+the Mann-Whitney U test and corrected for multiple hypothesis testing using the 
+36 
+Benjamin-Hochberg method (also called False Discovery Rate or FDR). 
+37 
+ 
+38 
+Gene set enrichment analysis 
+39 
+Differentially expressed genes underwent gene set enrichment analysis as implemented 
+40 
+by EnrichR94 for the enrichment of gene sets from discrete gene lists (top 500 genes 
+41 
+unless otherwise specified) or GSEApy (v1.2.1)95 for the enrichment of gene sets in 
+42 
+continuously ranked gene lists (as ranked by Mann-Whitney U statistic unless otherwise 
+43 
+specified). Transcription factor program enrichment analysis was performed using 
+44 
+ChEA96. Pathway enrichment analysis was performed using KEGG97 and GO Biological 
+45 
+Process98. Kinase enrichment analysis was performed using ARCHS499. Disease 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+10 
+association enrichment analysis was performed using Orphanet100 and GWAS Catalog101. 
+1 
+These databases are natively provided by EnrichrR. The SLE EBV+ memory B cell 
+2 
+(CD27+CD21low) gene set was manually curated from Fig. 3B by Younis et al.16. The SLE 
+3 
+EBV+ all B cell gene set was also curated from Younis et al.16 and defined as the union of 
+4 
+the gene sets in differentially upregulated pathways in EBV+ B cells across B cell states. 
+5 
+Continuous gene set enrichment scores (EBV+ B cell, EBV+ naïve B cell, and EBV+ 
+6 
+memory B cell signatures after COVID) were calculated using Scanpy’s (v1.10.3)102 
+7 
+“scanpy.tl.score_genes” function with the top 500 upregulated genes used as input (e.g. 
+8 
+top 500 upregulated genes in EBV+ memory B cells, compared to EBV- memory B cells, 
+9 
+for the EBV+ memory B cell signature after COVID). Gene signatures were normalized to 
+10 
+standardized Z-scores prior to downstream analyses. 
+11 
+ 
+12 
+Chromatin openness and transcription factor binding analyses 
+13 
+Single cell multiome (simultaneously measured RNA- and ATAC-seq information from the 
+14 
+same single cell; i.e. sc-multiome) data of B cells from patients with COVID-19 was 
+15 
+acquired from our recently reported work30. EBV+ B cells were identified from the 
+16 
+transcriptome portion of the sc-multiome data as per the section “Identification of EBV+ 
+17 
+cells from scRNAseq data”. Epigenetic (ATAC-seq) reads from identified EBV+ and EBV- 
+18 
+B cells were isolated using the subset-bam (v1.1.0) program from 10x Genomics. 
+19 
+Subsetted BAM files were then processed into BigWig files via deepTools (v3.5.6)91 using 
+20 
+reads-per-kilobase-million normalization. Peaks identified by the cellranger-arc (v2.0.2) 
+21 
+package from 10x Genomics were utilized for differential chromatin openness analysis 
+22 
+whereby peaks were identified as being significantly open (p<0.05) via the Mann Whitney 
+23 
+U test. Differentially open peaks were then submitted to MEME (v5.5.9)103 with the motif 
+24 
+position-weighted-matrices in MEME format for EBF1 (MA0154.2) and RBPJ (MA1116.1) 
+25 
+acquired from the JASPAR database104. 
+26 
+ 
+27 
+Metabolic flux and metabolomics analysis 
+28 
+Single cell metabolic flux analysis was performed using scFEA105. scFEA provides 
+29 
+calculated flux values for individual reactions (e.g. conversion of fatty acids to acetyl-CoAs 
+30 
+via beta-oxidation). As scFEA requires imputed expression values, these were calculated 
+31 
+using MAGIC93, as recommended by the package. Metabolomic analyses were 
+32 
+performed on previously reported Metabolon data25. We identified metabolites associated 
+33 
+with increased proportions of EBV+ B cells in patient B cell compartments via correlation 
+34 
+analysis (Pearson’s method). This was performed between a patient’s maximum EBV+ B 
+35 
+cell percentages cross timepoints and timepoint specific metabolite levels in plasma. The 
+36 
+EBV+ B cell percentages described here were utilized for all patient level comparisons 
+37 
+(e.g. with maximum autoantibody levels in patient serum). 
+38 
+ 
+39 
+Cell-cell communication analysis 
+40 
+Cell-cell communication analysis was performed via CellphoneDB (v5)106 using their 
+41 
+method “cpdb_statistical_analysis_method”. Known ligand-receptor pairs are natively 
+42 
+provided by CellphoneDB. Individual blood draws were treated as separate 
+43 
+microenvironments, as cell-cell interactions cannot occur between patients nor transcend 
+44 
+timepoints. Default method parameters were utilized and no subsampling was performed. 
+45 
+CellphoneDB calculated interaction scores were utilized to identify ligand-receptor 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+11 
+interactions differentially prevalent in cell-cell interactions between EBV+ B cells and other 
+1 
+cell types (EBV+ B cells, EBV- B cells, and CD4+ T cells). 
+2 
+ 
+3 
+Association of EBV+ B cell percentage with post-acute symptomology 
+4 
+Post-acute (2-3 months after acute disease resolution) symptom data was acquired from 
+5 
+our previous work25. EBV+ B cell percentage data was computed per sample; samples 
+6 
+with less than 50 B cells were not utilized for analyses as their lower coverage of sample 
+7 
+B cells precludes accurate assessment of EBV+ B cell proportion. The Mann-Whitney U 
+8 
+test was utilized to identify symptoms where there was a significant difference in EBV+ B 
+9 
+cell proportion in patients with and without said symptom. 
+10 
+ 
+11 
+Comparisons between EBV+ B cells in COVID and autoimmune disease 
+12 
+Comparisons to autoimmune disease were performed by quantifying the expression of 
+13 
+polygenic disease risk scores, as calculated by scDRS (v1.0.2)107, in COVID-19 B cells. 
+14 
+Single cell level comparisons were performed in continuous fashions, correlation 
+15 
+(Pearson’s method) between expression of autoimmune disease risk scores and the 
+16 
+COVID-19 EBV+ B cell gene signature reported in this work, and discrete fashions, 
+17 
+calculating for statistical differences in the expression of autoimmune disease risk scores 
+18 
+in EBV+ and EBV- B cells after COVID with p-values calculated by the Mann-Whitney U 
+19 
+test. Patient level comparisons were performed using previously reported polygenic risk 
+20 
+scores30 and patient EBV+ B cell percentages (as defined in the “Metabolic flux and 
+21 
+metabolomics analysis” Methods section: the maximum proportion of a patient’s B cell 
+22 
+compartment that was EBV+ across timepoints). 
+23 
+ 
+24 
+Public scRNAseq data from patients with SLE and healthy controls108 was downloaded 
+25 
+from CELLxGENE109 as an H5AD object. Author annotated B cells (denoted by “B” and 
+26 
+“PB” labels) were subsetted for and subject to batch-corrected k-nearest-neighbor graph 
+27 
+calculation (via bbkNN110 with batch set to “Processing_Cohort”), two-dimensional 
+28 
+UMAP111 projection, and unbiased clustering (via the leiden112 algorithm). B cell marker 
+29 
+genes (e.g. TCL1A, FCER2, CD27, FCRL5) were utilized to define unbiased clusters 
+30 
+representing naïve B cells (clusters 0, 1, 2, 4, and 6) and memory B cells (clusters 3, 5, 
+31 
+and 7). Public scRNAseq data from patients with MS74 and controls with idiopathic 
+32 
+intracranial hypertension was downloaded from GEO113 (GSE138266) and subject to 
+33 
+typical scRNAseq processing: filtering for high-quality cells (≥1000 unique molecular 
+34 
+identifiers per cell, ≥500 unique genes per cell, <10% mitochondrial reads per cell) and 
+35 
+removal of doublets (via Scrublet114) with a maximum doublet score set to 0.25. B cells 
+36 
+were identified as unbiased clusters (calculated via the leiden112 algorithm) with 
+37 
+upregulation of B cell marker genes CD79A and CD79B. Unbiased clustering was 
+38 
+performed on a k-nearest-neighbors graph calculated from principal component analysis 
+39 
+(PCA) dimensions; PCA was performed on highly variable genes as defined by 
+40 
+“scanpy.pp.highly_variable_genes” (which was called with default parameters). EBV+ 
+41 
+naïve and memory B cell gene signatures after COVID were calculated in the same 
+42 
+manner as described in the “Gene set enrichment analysis” Methods section. 
+43 
+ 
+44 
+Quantification and statistical analysis 
+45 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+12 
+P-values were calculated as follows: for pairwise comparisons of continuous values the 
+1 
+Mann-Whitney U test was utilized, for comparisons of the difference in means across 
+2 
+multiple groups (greater than two) the Kruskal-Wallis test was utilized, and for overlap 
+3 
+between multiple sets (greater than two) the Chi-squared test was utilized. P-values were 
+4 
+corrected for multiple hypothesis testing via the Benjamin-Hochberg method (FDR) when 
+5 
+multiple tests were performed. Correlations (and associated correlation coefficients and 
+6 
+p-values) were calculated via Pearson’s method. All single-cell analyses were performed 
+7 
+using Scanpy (v1.10.3)102. All patient level analyses were performed with filtering for 
+8 
+samples with at least ten cells. 
+9 
+ 
+10 
+Data Availability 
+11 
+All analyses were performed on publicly-available data25,73,74,115; relevant calculated 
+12 
+values (e.g. EBV+ B cell assignment) are provided as Supplementary Tables. 
+13 
+ 
+14 
+Code Availability 
+15 
+This paper does not report original code. All work leveraged previously reported pipelines 
+16 
+or publicly-available packages. Any additional information required to reanalyze the data 
+17 
+reported in this work is available from the Lead Contact upon reasonable request. 
+18 
+ 
+19 
+Acknowledgements 
+20 
+We are thankful for kind and insightful discussions from Dr. Heather E. Bukiri, Dr. Bevra 
+21 
+Hahn, Dr. Katie M. Campbell, and Serey Nouth. D.G.C. is supported by the UCLA-Caltech 
+22 
+Medical Scientist Training Program and Paul and Daisy Soros Fellowship. Y.S. is 
+23 
+supported by the Damon Runyon Quantitative Biology Fellowship from the Damon 
+24 
+Runyon Cancer 602 Research Foundation (DRQ-13-22), the Mahan Fellowship at 
+25 
+Herbold Computational Biology Program of Fred Hutchinson Cancer Research Center, 
+26 
+the Translational Data Science Integrated Research Center New Collaboration Award and 
+27 
+Integrated Research Center at Fred Hutchinson Cancer Research Center, Pilot Award of 
+28 
+Immunotherapy Integrated Research Center, and in part through the NIH/NCI Cancer 
+29 
+Center Support Grant P30 (CA015704). J.D.G. is supported by the Swedish Medical 
+30 
+Foundation. J.R.H., J.D.G. and H.C. are supported by the NIH RECOVER Initiative 
+31 
+(OT2HL161847-01), and the INCOV cohort was supported by the Biomedical Advanced 
+32 
+Research and Development Authority (HHSO10201600031C), the Wilke Family 
+33 
+Foundation, the Murdock Trust, and Gilead Sciences. 
+34 
+ 
+35 
+Author Contributions 
+36 
+Conceptualization: D.G.C., Acquired Data: J.D.G., H.C., Data Curation: D.G.C., Y.S., 
+37 
+J.R.H., Formal Analysis: D.G.C., J.R.H., Investigation: D.G.C., J.R.H., Visualization: 
+38 
+D.G.C., Funding Acquisition: J.R.H., Resources: J.R.H., Writing - original draft: D.G.C., 
+39 
+Writing - review & editing: D.G.C., Y.S., H.C., J.D.G., J.R.H., Project Administration: J.R.H., 
+40 
+Supervision: Y.S., J.R.H. 
+41 
+ 
+42 
+Declaration of Interests 
+43 
+D.G.C. reports consulting fees from Georgiamune. J.D.G. reports a grant from Gilead; 
+44 
+contracted research from Gilead, BioVie and Pfizer, and serving as a speaker, consultant 
+45 
+or advisory board member for Gilead, Merck and Invivyd J.R.H. is a consultant to 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+13 
+Regeneron and has received research support from Gilead and Merck. The other authors 
+1 
+declare no competing interests. 
+2 
+ 
+ 
+3 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+14 
+Main Figures 
+1 
+ 
+2 
+Fig. 1: Computational identification of EBV+ cells in PBMCs from patients with COVID-19. 
+3 
+A) Diagram of the EBV read identification process (1), whereby reads that did not 
+4 
+map to the human genome were re-mapped against the EBV genome. EBV+ B 
+5 
+cells were then characterized via scRNAseq and metabolic flux analysis (2). 
+6 
+Patients with high or low proportions of EBV+ B cells were then subjected to 
+7 
+comparisons against plasma metabolites or autoantibody levels. 
+8 
+B) Track plots of reads mapped to the EBV genome (NC_007605.1) across three 
+9 
+representative 10x reactions (A1, A2, A3). The entire EBV genome is presented 
+10 
+below the three track plots with exons represented by solid blue blocks. 
+11 
+C) Track plots of reads mapped to the EBNA2 gene from the EBV genome (a 
+12 
+transcriptional activator expressed during latency III) across three representative 
+13 
+10x reactions. Exons are represented by solid blue blocks. 
+14 
+D) Boxen plots of the percentage of a given sample (blood draw) with detectable EBV 
+15 
+reads out of all PBMCs (left) or B cells (right). Samples are stratified by disease 
+16 
+state: healthy donors (HD), baseline (BL, diagnosis of COVID-19), acute disease 
+17 
+(AC, one week after diagnosis), and convalescence (CV, 2-3 months after acute 
+18 
+disease). Boxen plots represent interquartile range (25 to 75 percentiles) with 
+19 
+successive boxes representing progressively halved quantiles (e.g. 12.5/87.5, 
+20 
+6.25/93.75 percentiles). Dots represent individual samples. 
+21 
+ 
+22 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+15 
+ 
+1 
+Fig. 2: EBV reprograms B cells towards distinct transcriptional cell states in COVID-19. 
+2 
+A) Left: Uniform manifold approximation projection (UMAP) of single B cell 
+3 
+transcriptomes. Cells are colored by their cell state (see legend on the right); 
+4 
+unswitched memory is abbreviated as UnswiMem, switched memory as SwiMem, 
+5 
+and atypical memory as AtypMem. Right: Dot plot of the expression of B cell 
+6 
+marker genes (columns) by cell state (rows). Dot size represents the percent of a 
+7 
+given cell state that expresses said marker gene and color represents expression 
+8 
+magnitude (see legend on the right). 
+9 
+B) Left: Contour plot of the distribution of EBV+ B cells on the UMAP from panel (A). 
+10 
+Right: Stacked bar plots of the distribution of B cell states amongst EBV- and EBV+ 
+11 
+B cells (left and right bars, respectively). Bars are colored by cell state (see legend 
+12 
+on the right). Bar height represents arithmetic mean, and error bars represent 
+13 
+standard error. P-values were calculated using the Mann-Whitney U test (right).  
+14 
+C) Volcano plot of the differentially expressed genes in EBV+ B cells compared to 
+15 
+EBV- B cells. X-axis and color represent log-transformed fold change in gene 
+16 
+expression (genes upregulated in EBV+ B cells are on the right). Y-axis represents 
+17 
+the significance of the difference, -log10 false discovery rate (FDR). 
+18 
+D) Dot plot of the enrichment of transcription factor programs (from ChEA, on the Y-
+19 
+axis) as quantified by -log10(FDR) (represented on the X-axis and by dot size). 
+20 
+Color represents odds ratio (see legend on the lower left). Numbers on the Y-axis 
+21 
+denote dataset (PubMed) ID. 
+22 
+E) Bar plot of the pathways enriched in the differentially expressed genes from panel 
+23 
+(C) in EBV+ B cells (on the Y-axis) as quantified by -log10(FDR) (on the Y-axis). 
+24 
+Color represents shared pathway categories (e.g. antigen presentation). 
+25 
+ 
+26 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+16 
+ 
+1 
+Fig. 3: EBV reprogrammed B cells in COVID-19 are metabolically distinct and resemble 
+2 
+those in autoimmune disease. 
+3 
+A) Bar plots of the expression of marker genes specific for EBV reprogrammed B cells 
+4 
+in autoimmune disease in EBV+ and EBV- B cells in patients with COVID-19. 
+5 
+Genes are grouped by common function when possible (e.g. antigen presentation). 
+6 
+B) Mountain plot of the enrichment of EBV reprogrammed B cell gene sets from 
+7 
+Younis et al.16 for memory B cells (CD27+CD21low) and across all B cells. 
+8 
+Normalized enrichment scores (NES) and FDRs are annotated on the plot. 
+9 
+C) Venn diagram of the overlap between upregulated genes in EBV+ naïve B cells 
+10 
+(red, upper left), memory B cells (blue, upper right), and plasmablasts (purple, 
+11 
+lower). Representative genes upregulated in EBV+ B cells from all three cell states 
+12 
+are annotated on the left. Representative genes upregulated in EBV+ memory B 
+13 
+cells are annotated on the right. P-value was calculated using the Chi-Squared test. 
+14 
+D) Contour plot of the distribution of EBV+ memory B cells on a UMAP of single 
+15 
+memory B cell transcriptomes. Memory B cell states are outlined on the UMAP. 
+16 
+E) Diagram of metabolic flux reactions related to glycolysis. Reactions (depicted by 
+17 
+arrows) are annotated by their activity in EBV+ minus EBV- B cells (positive values 
+18 
+indicate increased activity in EBV+ B cells). 
+19 
+F) Scatter plot of the difference in the average level of plasma long-chain carnitines 
+20 
+(left) or dicarboxylic acids (right) in patients with high (>% reported on the X-axis) 
+21 
+and low (<25th percentile) proportions of EBV+ B cells (Y-axis). EBV+ high patients 
+22 
+were filtered for progressively greater proportions of EBV+ B cells (X-axis); for 
+23 
+example, X=N means we compared EBV low patients against EBV high patients 
+24 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+17 
+who had at least N% of their B cells as EBV+. Differences that are significant 
+1 
+(p<0.05) are indicated by a solid black outline and a dark blue color. 
+2 
+Bar height represents arithmetic mean, and error bars represent standard error. P-values 
+3 
+were calculated using the Mann-Whitney U test. 
+4 
+ 
+5 
+ 
+6 
+Fig. 4: EBV reprogrammed B cells provide stimulatory signals to EBV- B cells and CD4+ 
+7 
+T cells through cell-cell interactions. 
+8 
+A) Heatmap of ligand-receptor (rows) scores for pairwise interactions between EBV+ 
+9 
+B cells, EBV- B cells, and CD4+ T cells (columns). Cell color represents interaction 
+10 
+score magnitude (see legend on the lower right). P-values that are non-significant 
+11 
+(p≥0.05) are indicated with an annotation of “ns”. 
+12 
+B) Bar plots of ligand-receptor interaction scores (Y-axis) between “sender” cells (X-
+13 
+axis) and “receiver” cells (represented by different colored bars). 
+14 
+C) Bar plots of the serum titers of autoantibodies (Y-axis) in patients with high (>75th 
+15 
+percentile) and low (<25th percentile) proportions of EBV+ B cells. 
+16 
+D) Diagram of the cell-cell interactions identified between “sending” EBV+ B cells and 
+17 
+“receiving” EBV- B cells and CD4+ T cells. 
+18 
+Bar height represents arithmetic mean, and error bars represent standard error. P-values 
+19 
+were calculated using the Mann-Whitney U test. 
+20 
+ 
+21 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+18 
+ 
+1 
+Fig. 5: EBV reprogramming gene signatures in COVID are enriched in autoimmune 
+2 
+disease. 
+3 
+A) Left: Fitted line plot between single B cell expression of SLE disease relevance 
+4 
+score (X-axis, from Zhang and Hou et al.107) and this work’s COVID-19 EBV 
+5 
+reprogramming gene signature (Y-axis). Dots represent individual B cells. Right: 
+6 
+Fitted line plot between a patient’s SLE polygenic risk (from DNA, whole genome 
+7 
+sequencing) and the percentage of their B cell compartment that is EBV+ (Y-axis). 
+8 
+Dots represent individual patients. Lines on the left and right represent fitted 
+9 
+average and shaded areas represent 95% confidence interval. Pearson’s method 
+10 
+was utilized to calculate correlation coefficients and p-values. 
+11 
+B) Contour plot of the density of naïve (upper) and memory (lower) B cells from 
+12 
+healthy controls (left) and patients with SLE (center) on a UMAP of single B cell 
+13 
+transcriptomes. On the right, naïve and memory B cells are colored by their 
+14 
+enrichment of this work’s B cell state specific EBV reprogramming signature in 
+15 
+COVID (see legend on the right). 
+16 
+C) Bar plot of the enrichment of this work’s B cell state specific EBV reprogramming 
+17 
+signature in COVID (Y-axis) in naïve (upper) and memory (lower) B cells from 
+18 
+patients with SLE compared to those from healthy controls (X-axis). 
+19 
+D) Bar plot of the enrichment of this work’s B cell state specific EBV reprogramming 
+20 
+signature in COVID (Y-axis) in naïve (left) and memory (right) B cells from patients 
+21 
+with MS compared to those from healthy controls (X-axis). 
+22 
+Bar height represents arithmetic mean, and error bars represent standard error. P-values 
+23 
+were calculated using the Mann-Whitney U test. 
+24 
+ 
+25 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+19 
+ 
+1 
+Fig. 6: EBV reprogramming of B cells in COVID-19 and potential similarities to 
+2 
+autoimmune disease. Diagram of the molecular, cellular, and plasma level characteristics 
+3 
+of EBV reprogramming of B cells in patients with COVID-19 and similarities across these 
+4 
+multi-omics to EBV reprogramming observed in autoimmune diseases. 
+5 
+ 
+ 
+6 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+20 
+Supplementary Figures 
+1 
+ 
+2 
+Fig. S1: Computational EBV+ B cell assignment and validation. 
+3 
+A) Bar plots of the enrichment of an EBV gene signature (derived from differentially 
+4 
+expressed genes in EBV+ B cells) between EBV- and EBV+ B cells (left) and EBV- 
+5 
+B cells and EBV+ B cells stratified by the number of times their EBV viral reads 
+6 
+mapped to the EBV genome (right, e.g. 1=unique mapping, N=mapped N times). 
+7 
+P-values were calculated using the Mann-Whitney U test (left) and Kruskal-Wallis 
+8 
+test (right). 
+9 
+B) Boxen plots of the percentage of a given sample (blood draw) with detectable EBV 
+10 
+reads out of all PBMCs (left) or B cells (right). Samples are stratified by disease 
+11 
+state: healthy donors (HD), baseline (BL, diagnosis of COVID-19), acute disease 
+12 
+(AC, one week after diagnosis), and convalescence (CV, 2-3 months after acute 
+13 
+disease). Boxen plots represent interquartile range (25 to 75 percentiles) with 
+14 
+successive boxes representing progressively halved quantiles (e.g. 12.5/87.5, 
+15 
+6.25/93.75 percentiles). Dots represent individual samples. 
+16 
+ 
+17 
+ 
+18 
+Fig. S2: EBV transcriptionally reprograms B cells in patients with COVID-19. 
+19 
+A) UMAP of single B cell transcriptomes colored by their expression of B cell marker 
+20 
+genes (see legend on the right). 
+21 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+21 
+B) Bar plot of the enrichment of the MYC transcription factor program (from the 
+1 
+Hallmark collection of the MSigDB database) in EBV+ and EBV- B cells. 
+2 
+C) Bar plot of the enrichment of the MYC transcription factor program (from the 
+3 
+Hallmark collection of the MSigDB database) in EBV+ and EBV- B cells from the 
+4 
+validation cohort (HAARVI). 
+5 
+D) Bar plot of the pathways enriched in the differentially expressed genes in EBV+ B 
+6 
+cells compared to EBV- cells in the validation cohort (HAARVI, on the Y-axis) as 
+7 
+quantified by -log10(FDR) (on the Y-axis). Color represents shared pathway 
+8 
+categories (e.g. antigen presentation). 
+9 
+Bar height represents arithmetic mean, and error bars represent standard error. P-values 
+10 
+were calculated using the Mann-Whitney U test. 
+11 
+ 
+12 
+ 
+13 
+Fig. S3: EBV+ B cells in patients with COVID have EBV reprogramming signatures in their 
+14 
+transcriptome and epigenome.  
+15 
+A) Bar plots of the expression of marker genes specific for EBV reprogrammed B cells 
+16 
+in autoimmune disease in EBV+ and EBV- B cells in patients with COVID-19. 
+17 
+B) Left: Uniform manifold approximation projection (UMAP) of single B cell multiomes; 
+18 
+transcriptome (used for embedding) and epigenome were simultaneously 
+19 
+measured from the same single cell. Cells are colored by their cell state (see 
+20 
+legend on the right); unswitched memory is abbreviated as UnswiMem, switched 
+21 
+memory as SwiMem, and atypical memory as AtypMem. Right: Dot plot of the 
+22 
+expression of B cell marker genes (columns) by cell state (rows). Dot size 
+23 
+represents the percent of a given cell state that expresses said marker gene and 
+24 
+color represents expression magnitude (see legend on the right). 
+25 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+22 
+C) Contour plot of the distribution of EBV+ B cells on the UMAP from panel (B).  
+1 
+D) Mountain plot of the enrichment of EBV reprogrammed B cell gene sets from 
+2 
+Younis et al.16 for memory B cells (CD27+CD21low) and across all B cells. 
+3 
+Normalized enrichment scores (NES) and FDRs are annotated on the plot. 
+4 
+E) Venn diagram of the number of differentially open chromatin (“peaks”) in EBV+ B 
+5 
+cells enriched for RBPJ and EBF1 transcription factor binding sites. P-value was 
+6 
+calculated using the hypergeometric overlap test. 
+7 
+F) Track plots of the pseudobulk chromatin landscape (ATAC-seq portion of single 
+8 
+cell multiome from panel [B]) of EBV+ (upper, light blue) and EBV- (lower, dark blue) 
+9 
+B cells. Differentially open chromatin (“peaks”) significantly enriched for EBF1 and 
+10 
+RBPJ binding sites are annotated on the plot. PTPN6 gene body (derived from 
+11 
+RefSeq) is annotated on the plot at the bottom. 
+12 
+ 
+13 
+ 
+14 
+Fig. S4: EBV+ B cells in patients with COVID-19 bear distinct transcriptomes and 
+15 
+metabolic states reminiscent of those in autoimmune disease. 
+16 
+G) Stacked bar plots of the distribution of memory B cell states amongst EBV- and 
+17 
+EBV+ memory B cells. Bars are colored by cell state (see legend on the right). 
+18 
+H) UMAP of single memory B cell transcriptomes colored by their expression of 
+19 
+memory B cell marker genes (see legend on the right). 
+20 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+23 
+I) Fitted line plot between the percentage of a patient’s B cells that are EBV+ (X-axis) 
+1 
+and level of selected metabolites in plasma (Y-axis) at diagnosis (BL, rho=0.18 p-
+2 
+value=1.70x10-2), during acute disease (AC, rho=0.20 p-value=9.08x10-3), and 
+3 
+convalescence (CV, rho=0.50 p-value=1.33x10-8) (see legend on the upper left). 
+4 
+Line represents fitted average and shaded area represents 95% confidence 
+5 
+interval. Average (dashed green line) and 95% confidence interval (shaded green 
+6 
+area) of said metabolites in healthy controls (HCs) are projected on the plot as a 
+7 
+reference. Selected metabolites are those whose CV levels significantly positively 
+8 
+correlate with patient EBV+ B cell percentages. 
+9 
+J) Bar plot of the difference in the average level of plasma carnitines in patients with 
+10 
+high (>75th percentile) and low (<25th percentile) proportions of EBV+ B cells (Y-
+11 
+axis). Carnitines are filtered for progressively longer lengths (X-axis); for example, 
+12 
+X=N means carnitines with a length of at least N are utilized for Y-axis calculation. 
+13 
+Differences that are significant (p<0.05) are indicated by a solid black outline. 
+14 
+K) Bar plots of the average plasma levels of long-chain (LC, ≥18 carbons) carnitines 
+15 
+and dicarboxylic acids in patients with high (>75th percentile) and low (<25th 
+16 
+percentile) proportions of EBV+ B cells. 
+17 
+L) Bar plot of the average plasma levels of a module of long-chain (LC, ≥18 carbons) 
+18 
+carnitines and dicarboxylic acids in patients with high (>10%) and low (<25th 
+19 
+percentile) proportions of EBV+ B cells. 
+20 
+Bar height represents arithmetic mean, and error bars represent standard error. P-values 
+21 
+were calculated using the Mann-Whitney U test. 
+22 
+ 
+23 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+24 
+ 
+1 
+Fig. S5: EBV+ B cells provide survival and costimulatory signals to EBV- B cells and CD4+ 
+2 
+T cells. Bar plots of ligand-receptor interaction scores (Y-axis) between “sender” cells (X-
+3 
+axis) and “receiver” cells (represented by different colored bars). Bar height represents 
+4 
+arithmetic mean, and error bars represent standard error. P-values were calculated using 
+5 
+the Mann-Whitney U test. 
+6 
+ 
+7 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+25 
+ 
+1 
+Fig. S6: Patients with COVID-19 with higher proportions of EBV+ B cells had increased 
+2 
+symptomology 2-3 months after acute disease resolution. 
+3 
+A) Heatmap of the presence (dark blue) or absence (light blue) of each symptom 
+4 
+(rows) for each patient (columns) 2-3 months after acute disease resolution (i.e. 
+5 
+convalescence). Each sample’s EBV+ B cell percentage is annotated on the top 
+6 
+(see color bar on the upper left); gray indicates insufficient number of B cells to 
+7 
+calculate EBV+ B cell proportion. 
+8 
+B) Heatmap of the average difference in EBV+ B cell percentage in patients with and 
+9 
+without a given symptom (rows) at each timepoint (columns); BL is baseline at 
+10 
+diagnosis, AC is acute disease, and CV is convalescence 2-3 months after acute 
+11 
+disease resolution. Red color indicates an increased proportion of EBV+ B cells in 
+12 
+patients with a given symptom, see color bar on the lower right. All differences are 
+13 
+presented on the left, significant differences (p<0.05) are present on the right. P-
+14 
+value were calculated using the Mann-Whitney U test. 
+15 
+ 
+16 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+26 
+ 
+1 
+Fig. S7: EBV+ B cells in COVID-19 are enriched for autoimmune disease features and 
+2 
+genes implicated in EBV viremia by GWAS. 
+3 
+A) Bar plots of the enrichment of autoimmune disease relevance scores (method by 
+4 
+Zhang and Hou et al.107) in EBV+ and EBV- B cells in patients with COVID-19. Bar 
+5 
+height represents arithmetic mean, and error bars represent standard error. P-
+6 
+values were calculated using the Mann-Whitney U test. 
+7 
+B) Left: UMAP of single B cell transcriptomes from patients with SLE and healthy 
+8 
+controls. Cells are colored by their cell state (see legend on the right). Right: Dot 
+9 
+plot of the expression of B cell marker genes (columns) by cell state (rows). Dot 
+10 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+27 
+size represents the percent of a given cell state that expresses said marker gene 
+1 
+and color represents expression magnitude (see legend on the right). 
+2 
+C) Contour plot of the density of B cells from healthy controls (left) and patients with 
+3 
+SLE (right) on the UMAP from panel (B). 
+4 
+D) Left: Expression of genes (X-axis) implicated in EBV viremia in population scale 
+5 
+studies by Schmidt et al.76 (upper) and Nyeo et al.77 (lower) in EBV+ minus EBV- B 
+6 
+cells; positive values indicate increased expression in EBV+ B cells. Right: 
+7 
+Heatmap of the expression of genes (columns) implicated in EBV viremia from 
+8 
+population scale studies by Schmidt et al.76 (upper) and Nyeo et al.77 (lower) in 
+9 
+EBV+ minus EBV- B cells across B cell states (rows); positive values indicate 
+10 
+increased expression in EBV+ B cells (see legend on the upper left).  
+11 
+ 
+ 
+12 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+28 
+Supplementary Tables 
+1 
+Table S1: EBV+ B cell assignment. scRNAseq annotation of B cells sample of origin and 
+2 
+EBV positivity assignment. 
+3 
+Table S2: Differentially expressed genes in EBV+ B cells. Differential gene expression 
+4 
+analysis between EBV+ and EBV- B cells in the INCOV cohort. 
+5 
+Table S3: Transcription factor enrichment in EBV+ B cells. Transcription factor program 
+6 
+enrichment analysis (via ChEA) of genes differentially upregulated in EBV+ B cells in the 
+7 
+INCOV cohort. 
+8 
+Table S4: Pathway enrichment in EBV+ B cells. Pathway enrichment analysis (via GO:BP 
+9 
+and KEGG) of genes differentially upregulated in EBV+ B cells in the INCOV cohort. 
+10 
+Table S5: Kinase enrichment in EBV+ B cells. Kinase enrichment analysis (via ARCHS4) 
+11 
+of genes differentially upregulated in EBV+ B cells in the INCOV cohort. 
+12 
+Table S6: Differentially expressed genes in EBV+ B cells. Differential gene expression 
+13 
+analysis between EBV+ and EBV- B cells in the HAARVI cohort. 
+14 
+Table S7: Transcription factor enrichment in EBV+ B cells. Transcription factor program 
+15 
+enrichment analysis (via ChEA) of genes differentially upregulated in EBV+ B cells in the 
+16 
+HAARVI cohort. 
+17 
+Table S8: Pathway enrichment in EBV+ B cells. Pathway enrichment analysis (via GO:BP 
+18 
+and KEGG) of genes differentially upregulated in EBV+ B cells in the HAARVI cohort. 
+19 
+Table S9: Kinase enrichment in EBV+ B cells. Kinase enrichment analysis (via ARCHS4) 
+20 
+of genes differentially upregulated in EBV+ B cells in the HAARVI cohort. 
+21 
+Table S10: Enrichment of disease associated genes in EBV+ B cells. Enrichment analysis 
+22 
+of disease associated genes (via GWAS Catalog and Orphanet) in EBV+ B cells in the 
+23 
+INCOV cohort. 
+24 
+Table S11: Shared genes between EBV+ B cell states. Overlapping genes between 
+25 
+upregulated genes in EBV+ naive B cells, EBV+ memory B cells, and EBV+ plasmablasts 
+26 
+in the INCOV cohort. 
+27 
+Table S12: Differential metabolic flux reactions in EBV+ memory B cells. Differential 
+28 
+activity analysis of metabolic flux reactions in EBV+ B cells in the INCOV cohort. 
+29 
+Table S13: Serum metabolite correlates of EBV+ B cell repertoires. Correlations 
+30 
+(Pearson’s method) between metabolite plasma levels and the proportion of a patient’s B 
+31 
+cell compartment that is EBV+ in the INCOV cohort. 
+32 
+Table S14: Cell-cell communication of EBV+ B cells with EBV- B cells and CD4+ T cells. 
+33 
+Cell-cell communication interaction scores (computed via CellPhoneDB106) between 
+34 
+EBV+ B cells and EBV- B cells and CD4+ T cells in the INCOV cohort. 
+35 
+Table S15: COVID-19 EBV reprogramming signatures in naïve and memory B cells. Gene 
+36 
+sets defined in this work that are enriched in EBV reprogrammed naïve and memory B 
+37 
+cells from patients with COVID-19 (INCOV cohort). 
+38 
+ 
+ 
+39 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+29 
+References 
+1 
+1. 
+Dunmire, S. K., Hogquist, K. A. & Balfour, H. H. Infectious Mononucleosis BT  - 
+2 
+Epstein Barr Virus Volume 1: One Herpes Virus: Many Diseases. in (ed. Münz, C.) 
+3 
+211–240 (Springer International Publishing, 2015). doi:10.1007/978-3-319-22822-
+4 
+8_9. 
+5 
+2. 
+Brady, G., MacArthur, G. J. & Farrell, P. J. Epstein–Barr virus and Burkitt lymphoma. 
+6 
+Postgrad. Med. J. 84, 372–377 (2008). 
+7 
+3. 
+Yang, J., Liu, Z., Zeng, B., Hu, G. & Gan, R. Epstein–Barr virus-associated gastric 
+8 
+cancer: A distinct subtype. Cancer Lett. 495, 191–199 (2020). 
+9 
+4. 
+Li, J. et al. Development of a Diagnostic Algorithm for Epstein-Barr Virus-Related 
+10 
+Diseases: A Retrospective Observational Study. J. Med. Virol. 97, e70421 (2025). 
+11 
+5. 
+Vietzen, H. et al. Ineffective control of Epstein-Barr-virus-induced autoimmunity 
+12 
+increases the risk for multiple sclerosis. Cell 186, 5705-5718.e13 (2023). 
+13 
+6. 
+Soldan, S. S. & Lieberman, P. M. Epstein–Barr virus and multiple sclerosis. Nat. 
+14 
+Rev. Microbiol. 21, 51–64 (2023). 
+15 
+7. 
+Bjornevik, K. et al. Longitudinal analysis reveals high prevalence of Epstein-Barr 
+16 
+virus associated with multiple sclerosis. Science (80-. ). 375, 296–301 (2022). 
+17 
+8. 
+Lanz, T. V et al. Clonally expanded B cells in multiple sclerosis bind EBV EBNA1 
+18 
+and GlialCAM. Nature 603, 321–327 (2022). 
+19 
+9. 
+Sattarnezhad, N. et al. Antibody reactivity against EBNA1 and GlialCAM 
+20 
+differentiates multiple sclerosis patients from healthy controls. Proc. Natl. Acad. Sci. 
+21 
+122, e2424986122 (2025). 
+22 
+10. 
+Harley, J. B. et al. Transcription factors operate across disease loci, with EBNA2 
+23 
+implicated in autoimmunity. Nat. Genet. 50, 699–707 (2018). 
+24 
+11. 
+Müller-Durovic, B., Jäger, J., Bantug, G. R. & Hess, C. Epstein&#x2013;Barr virus 
+25 
+hijacks B cell metabolism to establish persistent infection and drive pathogenesis. 
+26 
+Trends Immunol. 46, 7–16 (2025). 
+27 
+12. 
+Müller-Durovic, B. et al. A metabolic dependency of EBV can be targeted to hinder 
+28 
+B cell transformation. Science (80-. ). 385, eadk4898 (2026). 
+29 
+13. 
+McFadden, K. et al. Metabolic stress is a barrier to Epstein–Barr virus-mediated B-
+30 
+cell immortalization. Proc. Natl. Acad. Sci. 113, E782–E790 (2016). 
+31 
+14. 
+Dawson, C. W., Port, R. J. & Young, L. S. The role of the EBV-encoded latent 
+32 
+membrane proteins LMP1 and LMP2 in the pathogenesis of nasopharyngeal 
+33 
+carcinoma (NPC). Semin. Cancer Biol. 22, 144–153 (2012). 
+34 
+15. 
+Thomas, O. G. et al. Anoctamin-2-specific T cells link Epstein-Barr virus to multiple 
+35 
+sclerosis. Cell 189, 585-602.e38 (2026). 
+36 
+16. 
+Younis, S. et al. Epstein-Barr virus reprograms autoreactive B cells as antigen-
+37 
+presenting cells in systemic lupus erythematosus. Sci. Transl. Med. 17, eady0210 
+38 
+(2026). 
+39 
+17. 
+Younis, S. et al. EBV reprograms autoreactive anti-CNS B cells as antigen 
+40 
+presenting cells in multiple sclerosis. bioRxiv 2026.02.11.701910 (2026) 
+41 
+doi:10.64898/2026.02.11.701910. 
+42 
+18. 
+Wang, J. et al. EBV infection and HLA-DR15 jointly drive multiple sclerosis by 
+43 
+myelin peptide presentation. Cell 189, 569-584.e14 (2026). 
+44 
+19. 
+Wesley, E. E., M., B. L. & V., F. H. Long Covid Defined. N. Engl. J. Med. 391, 1746–
+45 
+1753 (2024). 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+30 
+20. 
+Hou, Y. et al. Global Prevalence of Long COVID, Its Subtypes, and Risk Factors: 
+1 
+An Updated Systematic Review and Meta-analysis. Open Forum Infect. Dis. 12, 
+2 
+ofaf533 (2025). 
+3 
+21. 
+Davis, H. E. et al. Characterizing long COVID in an international cohort: 7 months 
+4 
+of symptoms and their impact. eClinicalMedicine 38, 101019 (2021). 
+5 
+22. 
+Al-Aly, Z. et al. Long COVID science, research and policy. Nat. Med. 30, 2148–
+6 
+2164 (2024). 
+7 
+23. 
+Gold, J. E., Okyay, R. A., Licht, W. E. & Hurley, D. J. Investigation of Long COVID 
+8 
+Prevalence and Its Relationship to Epstein-Barr Virus Reactivation. Pathogens vol. 
+9 
+10 763 (2021). 
+10 
+24. 
+Vojdani, A., Vojdani, E., Saidara, E. & Maes, M. Persistent SARS-CoV-2 Infection, 
+11 
+EBV, HHV-6 and Other Factors May Contribute to Inflammation and Autoimmunity 
+12 
+in Long COVID. Viruses vol. 15 400 (2023). 
+13 
+25. 
+Su, Y. et al. Multiple early factors anticipate post-acute COVID-19 sequelae. Cell 
+14 
+185, 881-895.e20 (2022). 
+15 
+26. 
+Michalak, K. P., Michalak, A. Z. & Brenk-Krakowska, A. Acute COVID-19 and 
+16 
+LongCOVID syndrome – molecular implications for therapeutic strategies - review. 
+17 
+Front. Immunol. Volume 16, (2025). 
+18 
+27. 
+Wang, C., Ramasamy, A., Verduzco-Gutierrez, M., Brode, W. M. & Melamed, E. 
+19 
+Acute and post-acute sequelae of SARS-CoV-2 infection: a review of risk factors 
+20 
+and social determinants. Virol. J. 20, 124 (2023). 
+21 
+28. 
+Prakash, S. et al. Insights into Persistent SARS-CoV-2 Reservoirs in Chronic Long 
+22 
+COVID. Viruses vol. 17 1310 (2025). 
+23 
+29. 
+Maguire, C. et al. Virus reactivation in acute and long COVID-19. Nature (2026) 
+24 
+doi:10.1038/s41586-026-10740-z. 
+25 
+30. 
+Yuan, D. et al. A Distinct Effector B Cell Population Drives Autoantibody Production 
+26 
+in SARS-CoV-2 Infection. Immunity In Press, (2026). 
+27 
+31. 
+Münz, C. Epstein Barr Virus Volume 2: One Herpes Virus: Many Diseases. vol. 391 
+28 
+(2015). 
+29 
+32. 
+Zhao, B. et al. Epstein-Barr virus exploits intrinsic B-lymphocyte transcription 
+30 
+programs to achieve immortal cell growth. Proc. Natl. Acad. Sci. 108, 14902–14907 
+31 
+(2011). 
+32 
+33. 
+McClellan, M. J. et al. Modulation of enhancer looping and differential gene 
+33 
+targeting by Epstein-Barr virus transcription factors directs cellular reprogramming. 
+34 
+PLoS Pathog. 9, e1003636 (2013). 
+35 
+34. 
+M., B. abdullah M. et al. Heterogeneity of the Epstein-Barr Virus (EBV) Major 
+36 
+Internal Repeat Reveals Evolutionary Mechanisms of EBV and a Functional Defect 
+37 
+in the Prototype EBV Strain B95-8. J. Virol. 91, 10.1128/jvi.00920-17 (2017). 
+38 
+35. 
+Morgan, D. & Tergaonkar, V. Unraveling B cell trajectories at single cell resolution. 
+39 
+Trends Immunol. 43, 210–229 (2022). 
+40 
+36. 
+Mrozek-Gorska, P. et al. Epstein–Barr virus reprograms human B lymphocytes 
+41 
+immediately in the prelatent phase of infection. Proc. Natl. Acad. Sci. 116, 16046–
+42 
+16055 (2019). 
+43 
+37. 
+Gupta, A., Li, R., Shair, K. & Gao, S.-J. Model Systems of Gammaherpesvirus 
+44 
+Infection, Immunity, and Disease. J. Med. Virol. 97, e70581 (2025). 
+45 
+38. 
+Laux, G., Adam, B., Strobl, L. J. & Moreau-Gachelin, F. The Spi-1/PU.1 and Spi-B 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+31 
+ets family transcription factors and the recombination signal binding protein RBP-J 
+1 
+kappa interact with an Epstein-Barr virus nuclear antigen 2 responsive cis-element. 
+2 
+EMBO J. 13, 5624–5632 (1994). 
+3 
+39. 
+Guo, R. et al. MYC Controls the Epstein-Barr Virus Lytic Switch. Mol. Cell 78, 653-
+4 
+669.e8 (2020). 
+5 
+40. 
+M., P. A., E., M. J. & A., L. M. c-Myc Represses Transcription of Epstein-Barr Virus 
+6 
+Latent Membrane Protein 1 Early after Primary B Cell Infection. J. Virol. 92, 
+7 
+10.1128/jvi.01178-17 (2018). 
+8 
+41. 
+Yang, T. et al. EBV Infection and Its Regulated Metabolic Reprogramming in 
+9 
+Nasopharyngeal Tumorigenesis. Front. Cell. Infect. Microbiol. Volume 12, (2022). 
+10 
+42. 
+Price, A. M. et al. Epstein-Barr virus ensures B cell survival by uniquely modulating 
+11 
+apoptosis at early and late times after infection. Elife 6, e22509 (2017). 
+12 
+43. 
+Kvansakul, M. & Hinds, M. G. Structural biology of the Bcl-2 family and its mimicry 
+13 
+by viral proteins. Cell Death Dis. 4, e909–e909 (2013). 
+14 
+44. 
+Pal Singh, S., Dammeijer, F. & Hendriks, R. W. Role of Bruton’s tyrosine kinase in 
+15 
+B cells and malignancies. Mol. Cancer 17, 57 (2018). 
+16 
+45. 
+Gobessi, S. et al. ZAP-70 enhances B-cell–receptor signaling despite absent or 
+17 
+inefficient tyrosine kinase activation in chronic lymphocytic leukemia and lymphoma 
+18 
+B cells. Blood 109, 2032–2039 (2006). 
+19 
+46. 
+Leveille, E., Chan, L. N., Mirza, A.-S., Kume, K. & Müschen, M. SYK and ZAP70 
+20 
+kinases in autoimmunity and lymphoid malignancies. Cell. Signal. 94, 110331 
+21 
+(2022). 
+22 
+47. 
+Sagarika, B. et al. Novel small non-coding RNAs of Epstein-Barr virus upregulated 
+23 
+upon lytic reactivation aid in viral genomic replication and virion production. MBio 
+24 
+16, e04060-24 (2025). 
+25 
+48. 
+Lu, F. et al. EBNA2 Drives Formation of New Chromosome Binding Sites and 
+26 
+Target Genes for B-Cell Master Regulatory Transcription Factors RBP-jκ and EBF1. 
+27 
+PLOS Pathog. 12, e1005339 (2016). 
+28 
+49. 
+Qian, X. et al. Enolase 1 stimulates glycolysis to promote chemoresistance in 
+29 
+gastric cancer. Oncotarget 8, (2017). 
+30 
+50. 
+Yang, R. et al. Multi-omics analysis reveals interferon-stimulated gene OAS1 as a 
+31 
+prognostic and immunological biomarker in pan-cancer. Front. Immunol. Volume 
+32 
+14, (2023). 
+33 
+51. 
+Liu, T., Zhang, L., Joo, D. & Sun, S.-C. NF-κB signaling in inflammation. Signal 
+34 
+Transduct. Target. Ther. 2, 17023 (2017). 
+35 
+52. 
+Good-Jacobson, K. L., Song, E., Anderson, S., Sharpe, A. H. & Shlomchik, M. J. 
+36 
+CD80 Expression on B Cells Regulates Murine T Follicular Helper Development, 
+37 
+Germinal Center B Cell Survival, and Plasma Cell Generation. J. Immunol. 188, 
+38 
+4217–4225 (2012). 
+39 
+53. 
+ter Veld, F., Primassin, S., Hoffmann, L., Mayatepek, E. & Spiekerkoetter, U. 
+40 
+Corresponding increase in long-chain acyl-CoA and acylcarnitine after exercise in 
+41 
+muscle from VLCAD mice. J. Lipid Res. 50, 1556–1562 (2009). 
+42 
+54. 
+MIURA, Y. The biological significance of omega-oxidation of fatty acids. Proc. 
+43 
+Japan Acad. Ser. B 89, 370–382 (2013). 
+44 
+55. 
+Pender, M. P. Infection of autoreactive B lymphocytes with EBV, causing chronic 
+45 
+autoimmune diseases. Trends Immunol. 24, 584–588 (2003). 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+32 
+56. 
+Rawlings, D. J., Metzler, G., Wray-Dutra, M. & Jackson, S. W. Altered B cell 
+1 
+signalling in autoimmunity. Nat. Rev. Immunol. 17, 421–436 (2017). 
+2 
+57. 
+Anaya, J.-M., Herrán, M., Beltrán, S. & Rojas, M. Is post-COVID syndrome an 
+3 
+autoimmune disease? Expert Rev. Clin. Immunol. 18, 653–666 (2022). 
+4 
+58. 
+Tzang, C.-C. et al. Association between COVID-19 and New-Onset Autoimmune 
+5 
+Diseases: Updated Systematic Review and Meta-Analysis of 97 Million Individuals. 
+6 
+Clin. Rev. Allergy Immunol. 68, 111 (2025). 
+7 
+59. 
+Heo, Y.-W., Jeon, J. J., Ha, M. C., Kim, Y. H. & Lee, S. Long-Term Risk of 
+8 
+Autoimmune and Autoinflammatory Connective Tissue Disorders Following 
+9 
+COVID-19. JAMA Dermatology 160, 1278–1287 (2024). 
+10 
+60. 
+Najafi, S., Rajaei, E., Moallemian, R. & Nokhostin, F. The potential similarities of 
+11 
+COVID-19 and autoimmune disease pathogenesis and therapeutic options: new 
+12 
+insights approach. Clin. Rheumatol. 39, 3223–3235 (2020). 
+13 
+61. 
+Li, L. et al. The role of B cell-activating factor system in autoimmune diseases: 
+14 
+mechanisms, disease implications, and therapeutic advances. Front. Immunol. 
+15 
+Volume 16, (2025). 
+16 
+62. 
+Smulski, C. R. & Eibel, H. BAFF and BAFF-receptor in B cell selection and survival. 
+17 
+Front. Immunol. 9, 407701 (2018). 
+18 
+63. 
+Bossen, C. & Schneider, P. BAFF, APRIL and their receptors: Structure, function 
+19 
+and signaling. Semin. Immunol. 18, 263–275 (2006). 
+20 
+64. Kalled, S. L. BAFF: a novel therapeutic target for autoimmunity. Curr. Opin. Investig. 
+21 
+Drugs 3, 1005–1010 (2002). 
+22 
+65. 
+Davidson, A. Targeting BAFF in autoimmunity. Curr. Opin. Immunol. 22, 732–739 
+23 
+(2010). 
+24 
+66. 
+Humblin, E. et al. Sustained CD28 costimulation is required for self-renewal and 
+25 
+differentiation of TCF-1+ PD-1+ CD8 T cells. Sci. Immunol. 8, 1–13 (2023). 
+26 
+67. 
+Esensten, J. H., Helou, Y. A., Chopra, G., Weiss, A. & Bluestone, J. A. CD28 
+27 
+Costimulation: From Mechanism to Therapy. Immunity 44, 973–988 (2016). 
+28 
+68. 
+Jenny Hendriks et al. CD27 is required for generation and long-term maintenance 
+29 
+of T cell immunity. Nat. Immunol. 1, 433–440 (2000). 
+30 
+69. 
+Feau, S. et al. The CD4+ T-cell help signal is transmitted from APC to CD8+ T-cells 
+31 
+via CD27–CD70 interactions. Nat. Commun. 3, 948 (2012). 
+32 
+70. 
+Remedios, K. A. et al. CD27 Promotes CD4+ Effector T Cell Survival in Response 
+33 
+to Tissue Self-Antigen. J. Immunol. 203, 639–646 (2019). 
+34 
+71. 
+de Sá, K. S. G. et al. A causal link between autoantibodies and neurological 
+35 
+symptoms in long COVID. Cell 189, 3214-3235.e37 (2026). 
+36 
+72. 
+Robinson, W. H., Younis, S., Love, Z. Z., Steinman, L. & Lanz, T. V. Epstein–Barr 
+37 
+virus as a potentiator of autoimmune diseases. Nat. Rev. Rheumatol. 20, 729–740 
+38 
+(2024). 
+39 
+73. 
+Perez, R. K. et al. Single-cell RNA-seq reveals cell type-specific molecular and 
+40 
+genetic associations to lupus. Science (80-. ). 376, (2022). 
+41 
+74. 
+Schafflick, D. et al. Integrated single cell analysis of blood and cerebrospinal fluid 
+42 
+leukocytes in multiple sclerosis. Nat. Commun. 11, 247 (2020). 
+43 
+75. 
+Xiao, Q. et al. Viral oncogenesis in cancer: from mechanisms to therapeutics. 
+44 
+Signal Transduct. Target. Ther. 10, 151 (2025). 
+45 
+76. 
+Schmidt, A. et al. Host control of persistent Epstein–Barr virus infection. Nature 653, 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+33 
+444–454 (2026). 
+1 
+77. 
+Nyeo, S. S. et al. Population-scale sequencing resolves determinants of persistent 
+2 
+EBV DNA. Nature 650, 664–672 (2026). 
+3 
+78. 
+M., S. A. et al. Epstein-Barr Virus Represses the FoxO1 Transcription Factor 
+4 
+through Latent Membrane Protein 1 and Latent Membrane Protein 2A. J. Virol. 80, 
+5 
+11191–11199 (2006). 
+6 
+79. 
+Gorochov, G. & Mathian, A. EBV and the making of lupus. Sci. Transl. Med. 17, 
+7 
+eaec0501 (2026). 
+8 
+80. 
+Bjornevik, K., Münz, C., Cohen, J. I. & Ascherio, A. Epstein–Barr virus as a leading 
+9 
+cause of multiple sclerosis: mechanisms and implications. Nat. Rev. Neurol. 19, 
+10 
+160–171 (2023). 
+11 
+81. 
+Suurmond, J. et al. Loss of an IgG plasma cell checkpoint in patients with lupus. J. 
+12 
+Allergy Clin. Immunol. 143, 1586–1597 (2019). 
+13 
+82. 
+Koves, T. R. et al. Mitochondrial Overload and Incomplete Fatty Acid Oxidation 
+14 
+Contribute to Skeletal Muscle Insulin Resistance. Cell Metab. 7, 45–56 (2008). 
+15 
+83. 
+Ranea-Robles, P. & Houten, S. M. The biochemistry and physiology of long-chain 
+16 
+dicarboxylic acid metabolism. Biochem. J. 480, 607–627 (2023). 
+17 
+84. 
+Van Hove, J. L. et al. Medium-chain acyl-CoA dehydrogenase (MCAD) deficiency: 
+18 
+diagnosis by acylcarnitine analysis in blood. Am. J. Hum. Genet. 52, 958–966 
+19 
+(1993). 
+20 
+85. 
+Wanders, R. J. A. et al. Disorders of mitochondrial fatty acyl-CoA β-oxidation. J. 
+21 
+Inherit. Metab. Dis. 22, 442–487 (1999). 
+22 
+86. 
+Talwar, S., Harker, J. A., Openshaw, P. J. M. & Thwaites, R. S. Autoimmunity in 
+23 
+long COVID. J. Allergy Clin. Immunol. 155, 1082–1094 (2025). 
+24 
+87. 
+Danecek, P. et al. Twelve years of SAMtools and BCFtools. Gigascience 10, 1–4 
+25 
+(2021). 
+26 
+88. 
+Grande, B. M. et al. Genome-wide discovery of somatic coding and noncoding 
+27 
+mutations in pediatric endemic and sporadic Burkitt lymphoma. Blood 133, 1313–
+28 
+1324 (2019). 
+29 
+89. 
+Dobin, A. et al. STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29, 15–
+30 
+21 (2013). 
+31 
+90. 
+Robinson, J. T. et al. Integrative genomics viewer. Nat. Biotechnol. 29, 24–26 
+32 
+(2011). 
+33 
+91. 
+Ramírez, F. et al. deepTools2: a next generation web server for deep-sequencing 
+34 
+data analysis. Nucleic Acids Res. 44, W160–W165 (2016). 
+35 
+92. 
+Traag, V. A., Waltman, L. & van Eck, N. J. From Louvain to Leiden: guaranteeing 
+36 
+well-connected communities. Sci. Rep. 9, (2019). 
+37 
+93. 
+van Dijk, D. et al. Recovering Gene Interactions from Single-Cell Data Using Data 
+38 
+Diffusion. Cell 174, 716-729.e27 (2018). 
+39 
+94. 
+Xie, Z. et al. Gene Set Knowledge Discovery with Enrichr. Curr. Protoc. 1, 1–51 
+40 
+(2021). 
+41 
+95. 
+Fang, Z., Liu, X. & Peltz, G. GSEApy: a comprehensive package for performing 
+42 
+gene set enrichment analysis in Python. Bioinformatics 39, btac757 (2023). 
+43 
+96. 
+Keenan, A. B. et al. ChEA3: transcription factor enrichment analysis by orthogonal 
+44 
+omics integration. Nucleic Acids Res. 47, W212–W224 (2019). 
+45 
+97. 
+Kanehisa, M. & Goto, S. KEGG: Kyoto Encyclopedia of Genes and Genomes. 
+46 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 
+
+ 
+34 
+Nucleic Acids Res. 28, 27–30 (2000). 
+1 
+98. 
+Dimmer, E. C. et al. The Gene Ontology — Providing a Functional Role in 
+2 
+Proteomic Studies. Proteomics 8, 3045–3046 (2008). 
+3 
+99. 
+Lachmann, A. et al. Massive mining of publicly available RNA-seq data from human 
+4 
+and mouse. Nat. Commun. 9, 1366 (2018). 
+5 
+100. Rath, A. et al. Representation of rare diseases in health information systems: The 
+6 
+orphanet approach to serve a wide range of end users. Hum. Mutat. 33, 803–808 
+7 
+(2012). 
+8 
+101. Cerezo, M. et al. The NHGRI-EBI GWAS Catalog: standards for reusability, 
+9 
+sustainability and diversity. Nucleic Acids Res. 53, D998–D1005 (2025). 
+10 
+102. Wolf, F. A., Angerer, P. & Theis, F. J. SCANPY: large-scale single-cell gene 
+11 
+expression data analysis. Genome Biol. 19, 15 (2018). 
+12 
+103. Bailey, T. L., Johnson, J., Grant, C. E. & Noble, W. S. The MEME Suite. Nucleic 
+13 
+Acids Res. 43, W39–W49 (2015). 
+14 
+104. Fornes, O. et al. JASPAR 2020: Update of the open-Access database of 
+15 
+transcription factor binding profiles. Nucleic Acids Res. 48, D87–D92 (2020). 
+16 
+105. Alghamdi, N. et al. A graph neural network model to estimate cell-wise metabolic 
+17 
+flux using single-cell RNA-seq data. Genome Res. gr.271205.120 (2021) 
+18 
+doi:10.1101/gr.271205.120. 
+19 
+106. Troulé, K. et al. CellPhoneDB v5: inferring cell–cell communication from single-cell 
+20 
+multiomics data. Nat. Protoc. 20, 3412–3440 (2025). 
+21 
+107. Zhang, M. J. et al. Polygenic enrichment distinguishes disease associations of 
+22 
+individual cells in single-cell RNA-seq data. Nat. Genet. 54, 1572–1580 (2022). 
+23 
+108. Yazar, S. et al. Single-cell eQTL mapping identifies cell type-specific genetic control 
+24 
+of autoimmune disease. Science (80-. ). 376, (2022). 
+25 
+109. Program, C. Z. I. S.-C. B. et al. CZ CELL×GENE Discover: A single-cell data 
+26 
+platform for scalable exploration, analysis and modeling of aggregated data. 
+27 
+bioRxiv 2023.10.30.563174 (2023) doi:10.1101/2023.10.30.563174. 
+28 
+110. Polański, K. et al. BBKNN: Fast batch alignment of single cell transcriptomes. 
+29 
+Bioinformatics 36, 964–965 (2020). 
+30 
+111. McInnes, L., Healy, J. & Melville, J. UMAP: Uniform Manifold Approximation and 
+31 
+Projection for Dimension Reduction. (2018). 
+32 
+112. Muthusamy, N., Barton, K. & Leiden, J. M. Defective activation and survival of T 
+33 
+cells lacking the Ets-1 transcription factor. Nature 377, 639–642 (1995). 
+34 
+113. Clough, E. et al. NCBI GEO: archive for gene expression and epigenomics data 
+35 
+sets: 23-year update. Nucleic Acids Res. 52, D138–D144 (2024). 
+36 
+114. Wolock, S. L., Lopez, R. & Klein, A. M. Scrublet: Computational Identification of Cell 
+37 
+Doublets in Single-Cell Transcriptomic Data. Cell Syst. 8, 281-291.e9 (2019). 
+38 
+115. Su, Y. et al. Multi-Omics Resolves a Sharp Disease-State Shift between Mild and 
+39 
+Moderate COVID-19. Cell 183, 1479-1495.e20 (2020). 
+40 
+ 
+41 
+.
+CC-BY 4.0 International license
+available under a 
+(which was not certified by peer review) is the author/funder, who has granted bioRxiv a license to display the preprint in perpetuity. It is made 
+The copyright holder for this preprint
+this version posted August 18, 2026. 
+; 
+https://doi.org/10.64898/2026.08.17.745245
+doi: 
+bioRxiv preprint 

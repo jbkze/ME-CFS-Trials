@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-21",
+  "last_check": "2026-09-22",
   "papers": [
     {
       "id": "slaughter-2026-gwas-biobank-replication",
@@ -2819,8 +2819,7 @@
       "link": "https://doi.org/10.3389/fped.2026.1836407",
       "first_seen": "2026-09-17",
       "last_checked": "2026-09-21",
-      "flags": [
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "MRI Chronic Fatigue Center for Young People (MCFC), TU Munich Children's Hospital (Leone, Gerrer, Viereck, Grabbe, Kircher, Behrends), with RWTH Aachen (Maier). Same German pediatric ME/CFS group behind the already-tracked donath-2026-pediatric-postcovid-risk-factors entry. Small case-control study (18 ME/CFS vs 18 matched healthy controls, ages 14-17); PoTS diagnosed in 7/18 ME/CFS vs 0/18 controls. Not Wirth/Scheibenbogen-affiliated (Scheibenbogen not a co-author on this one). Confirmed via PubMed E-utilities (PMID 42746015, DOI 10.3389/fped.2026.1836407) and PMC full text (PMC13574936) — full abstract, methods and results read directly. Published/posted Sep 1, 2026; indexed by PubMed/Europe PMC Sep 16, 2026."
     },
@@ -2925,9 +2924,60 @@
       "link": "https://doi.org/10.1186/s12916-026-05161-8",
       "first_seen": "2026-09-21",
       "last_checked": "2026-09-21",
-      "flags": ["new"],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via Crossref (DOI 10.1186/s12916-026-05161-8, published online 2026-09-07) and BMC Medicine. Not Wirth/Scheibenbogen-affiliated (no overlap with either name in the author list). A consensus/framework paper rather than new experimental data, but included as especially notable per ROUTINE.md's papers scope (a validated cross-condition measurement framework with direct trial-design implications), distinguishing it from the purely theoretical/no-data reviews this tracker has repeatedly screened out (e.g. the recurring Ruhrländer/Schieffer orexin-GLP-1 review, re-screened out again this run as previously excluded/outside recency window; see below)."
+    },
+    {
+      "id": "mackay-2026-hemodynamic-phenotyping-mecfs-anoca",
+      "title": "Hemodynamic Phenotyping in ME/CFS and ANOCA: Complementary Insights from Coronary Function Testing and Invasive Cardiopulmonary Exercise Testing",
+      "authors": "Mackay Z, Shah S, Villalobos JG, Latif N, Arun A, Joseph P, Heerdt P, Singh I",
+      "journal": "American Journal of Physiology-Heart and Circulatory Physiology",
+      "date": "Sep 2026 (online Sep 21, 2026)",
+      "summary": "Researchers tested 261 people with unexplained chest pain using detailed heart and blood-vessel tests. 18% of them also had ME/CFS, and 89% of those had \"ANOCA\" — a condition where the heart's tiniest blood vessels don't work properly even though the main arteries look normal. During exercise, their hearts delivered oxygen normally, but their muscles struggled to use it, pointing to a problem in the muscle rather than the heart.",
+      "why": "Diagnosing this small-vessel problem changed how doctors treated 81% of affected patients, suggesting some ME/CFS chest-pain and exercise-intolerance symptoms map onto a specific, already-recognized and testable heart condition — a concrete lead for better diagnosis and management.",
+      "link": "https://doi.org/10.1152/ajpheart.90080.2026",
+      "first_seen": "2026-09-22",
+      "last_checked": "2026-09-22",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Confirmed via DOI/journal page (AJP-Heart Circ Physiol, published online 2026-09-21). Not Wirth/Scheibenbogen-affiliated. Cohort of 261 chest-pain patients undergoing coronary function testing and invasive cardiopulmonary exercise testing; 18% met ME/CFS criteria, 89% of those had ANOCA (angina with non-obstructive coronary arteries)."
+    },
+    {
+      "id": "rydland-2026-extracellular-vesicles-proteomics-mecfs",
+      "title": "Exploring differences in protein cargo of extracellular vesicles from ME/CFS patient plasma compared to healthy controls",
+      "authors": "Rydland A, Yran ES, Nyman TA, Strand EB, Trøseid AS, Øvstebø R, Heinicke F, Lie BA, Viken MK",
+      "journal": "Biochemistry and Biophysics Reports",
+      "date": "Sep 2026 print issue (posted online Jun 20, 2026)",
+      "summary": "Cells release tiny message-carrying particles into the blood called extracellular vesicles. Comparing blood from 49 ME/CFS patients and 50 healthy people, researchers found ME/CFS patients had more of these particles, and 11 of the proteins carried inside them were present in different amounts.",
+      "why": "Adds to evidence that something measurable differs in ME/CFS patients' blood at the molecular level; these particles and their protein cargo are being explored as a possible future blood test (biomarker), though the small sample and modest-tier journal mean this is preliminary.",
+      "link": "https://doi.org/10.1016/j.bbrep.2026.102679",
+      "first_seen": "2026-09-22",
+      "last_checked": "2026-09-22",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Confirmed via DOI/journal page. Not Wirth/Scheibenbogen-affiliated (Norwegian group: Oslo University Hospital/University of Oslo). Small sample (n=49 vs 50) in a modest-tier journal; posted online 2026-06-20, right at the edge of the ~3-month recency window, but not previously in the tracker so flagged now."
+    },
+    {
+      "id": "chau-2026-adolescent-mecfs-cognition-psychosocial",
+      "title": "Clinical Symptomatology, Cognition and Psychosocial Wellbeing in Adolescents With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Cross-Sectional Observational Study",
+      "authors": "Chau T, Josev EK, Scheinberg A, Thomas N, McDonald F, Reveley C, Gooley PR, Armstrong C, Knight S",
+      "journal": "Journal of Paediatrics and Child Health",
+      "date": "Sep 2026 (online Sep 20, 2026)",
+      "summary": "Researchers in Melbourne compared 25 teenagers with mild-to-moderate ME/CFS to 25 healthy teens. The ME/CFS group's overall intelligence was normal, but they were measurably slower at processing information, and reported much worse sleep, quality of life, anxiety and depression; parents also noticed attention and memory problems.",
+      "why": "Shows the \"brain fog\" many young ME/CFS patients describe is a real, measurable slowdown in mental processing speed rather than lower intelligence — supporting flexible school accommodations rather than assuming affected teens just need to try harder.",
+      "link": "https://doi.org/10.1111/jpc.70587",
+      "first_seen": "2026-09-22",
+      "last_checked": "2026-09-22",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Confirmed via DOI/journal page (J Paediatr Child Health, Melbourne group incl. Murdoch Children's Research Institute). Not Wirth/Scheibenbogen-affiliated. Borderline scope call — descriptive cross-sectional phenotyping rather than mechanism/treatment/genetics data — included on the strength of the objective cognitive-processing-speed finding, consistent with precedent for other objective-phenotyping papers already in the tracker."
     }
   ]
 }
