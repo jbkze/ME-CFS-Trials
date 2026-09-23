@@ -285,6 +285,67 @@ def load_papers() -> list:
     return papers
 
 
+_AUTHOR = re.compile(r"^([A-ZÀ-Ž][\w'\-À-ž ]*?) ([A-ZÀ-ÞØ]{1,3})$")
+# Very common surnames can't be told apart by "surname + initial" (several
+# different researchers publish as "Li P"), so they never seed or join a group.
+AMBIGUOUS_SURNAMES = {"li", "wang", "zhang", "liu", "chen", "yang", "huang", "zhao", "wu",
+                      "zhou", "xu", "sun", "ma", "kim", "lee", "park", "nguyen", "smith"}
+GROUP_MIN_PAPERS = 3
+GROUP_ABSORB = 0.6
+GROUP_LIMIT = 10
+
+
+def author_keys(authors: str) -> set:
+    """'Loebel M, Grabowski P, et al. (Scheibenbogen C, senior author)' →
+    {'Loebel M', 'Grabowski P', 'Scheibenbogen C'} (surname + first initial)."""
+    keys = set()
+    for item in re.split(r"[,()]", authors or ""):
+        m = _AUTHOR.match(item.strip())
+        if m and m.group(1).lower() not in AMBIGUOUS_SURNAMES:
+            keys.add(f"{m.group(1)} {m.group(2)[0]}")
+    return keys
+
+
+def research_groups(papers: list) -> list:
+    """Cluster papers into research groups by shared authors, deterministically.
+
+    The most prolific author seeds a group; any other frequent author whose
+    papers mostly (>= GROUP_ABSORB) fall inside that group is merged into it,
+    so e.g. a lab's senior author and their regular co-authors form one cluster
+    instead of five near-identical ones. Papers get the ids of their groups.
+    """
+    by_author = {}
+    for p in papers:
+        for k in author_keys(p["authors"]):
+            by_author.setdefault(k, set()).add(p["id"])
+    cands = sorted((k for k, v in by_author.items() if len(v) >= GROUP_MIN_PAPERS),
+                   key=lambda k: (-len(by_author[k]), k))
+    used, groups = set(), []
+    for lead in cands:
+        if lead in used:
+            continue
+        used.add(lead)
+        members, ids = [lead], set(by_author[lead])
+        for other in cands:
+            if other in used:
+                continue
+            if len(by_author[other] & ids) / len(by_author[other]) >= GROUP_ABSORB:
+                used.add(other)
+                members.append(other)
+                ids |= by_author[other]
+        groups.append({"id": re.sub(r"[^a-z0-9]+", "-", lead.lower()).strip("-"),
+                       "label": lead.rsplit(" ", 1)[0],
+                       "members": [m.rsplit(" ", 1)[0] for m in members],
+                       "count": len(ids), "_ids": ids})
+    groups.sort(key=lambda g: (-g["count"], g["label"]))
+    groups = groups[:GROUP_LIMIT]
+    for p in papers:
+        p["groups"] = [g["id"] for g in groups if p["id"] in g["_ids"]]
+    for g in groups:
+        del g["_ids"]
+    return groups
+
+
 def _neg_date(iso: str) -> tuple:
     parts = [int(x) for x in iso.split("-")] if iso else [0]
     parts += [0] * (3 - len(parts))
@@ -505,6 +566,7 @@ def build_dashboard(db: dict, trials: list):
                                 s["priority"] != "high", s["title"].lower()))
     papers = load_papers()
     sota, warnings = load_sota(papers, trials)
+    groups = research_groups(papers)
     if sota:
         render_sota_markdown(sota)
     last_run_at, last_run, next_run = format_run(db)
@@ -515,6 +577,7 @@ def build_dashboard(db: dict, trials: list):
         "nextRun": next_run,
         "studies": studies,
         "papers": papers,
+        "researchGroups": groups,
         "overview": sota,
     }
     OUT_DASH.parent.mkdir(parents=True, exist_ok=True)

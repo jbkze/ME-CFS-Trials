@@ -4,7 +4,7 @@
 
 - Last content change: **2026-09-23** · last reviewed: **2026-09-23**
 
-A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in. It describes the evidence, not medical advice.
+A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.
 
 ## How the pieces may fit together
 

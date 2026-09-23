@@ -35,7 +35,7 @@
     --info-bg:rgba(34,150,252,.12); --info-fg:#135FA8;
     --neutral-bg:#EEF1F5; --neutral-fg:#4F5F6E;
     --prio-line:rgba(34,150,252,.4);
-    --meter-fill:#256ABF; --meter-track:#CDE2FB;
+    --meter-fill:#256ABF; --meter-track:#CDE2FB; --bar-muted:#C5CED8;
     --shadow:0 1px 2px rgba(2,33,60,.04);
     --ease:ease;
   }
@@ -52,7 +52,7 @@
       --info-bg:rgba(125,184,255,.14); --info-fg:#A4CDFF;
       --neutral-bg:#1A2B3B; --neutral-fg:#B4C1CD;
       --prio-line:rgba(125,184,255,.4);
-      --meter-fill:#6DA7EC; --meter-track:#1F3A58;
+      --meter-fill:#6DA7EC; --meter-track:#1F3A58; --bar-muted:#34485C;
       --shadow:none;
     }
   }
@@ -90,9 +90,7 @@
 
   .tabs{position:sticky;top:0;z-index:5;background:var(--paper);display:flex;gap:8px;padding:18px 22px 12px;}
   .tab{flex:1;min-height:44px;border:1px solid var(--line);background:var(--card);color:var(--ink2);font:600 13px/1 Poppins;padding:0 4px;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .12s var(--ease);}
-  .tab .badge{font:700 11px/1 Poppins;background:var(--neutral-bg);color:var(--neutral-fg);border-radius:999px;padding:2px 6px;}
   .tab[aria-selected="true"]{border-color:var(--tab-on-bg);background:var(--tab-on-bg);color:var(--tab-on-fg);}
-  .tab[aria-selected="true"] .badge{background:rgba(244,174,62,.95);color:#02213C;}
 
   .panel{padding:2px 22px 8px;}
   .foot{padding:6px 22px 30px;font:400 12px/1.6 Poppins;color:var(--ink3);}
@@ -252,6 +250,25 @@
   .grp-more{display:inline-flex;align-items:center;min-height:44px;color:var(--link);font:600 12.5px/1 Poppins;}
   .details-h{margin-top:4px;}
 
+  /* Papers "Explore" bar chart */
+  .explore{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 8px;margin:4px 0 14px;box-shadow:var(--shadow);}
+  .xp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:4px;}
+  .seg{display:inline-flex;background:var(--neutral-bg);border-radius:999px;padding:3px;}
+  .seg button{min-height:38px;border:0;background:none;border-radius:999px;padding:0 12px;font:600 12px/1 Poppins;color:var(--ink2);cursor:pointer;}
+  .seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 2px rgba(2,33,60,.12);}
+  .bars{display:flex;flex-direction:column;gap:4px;}
+  .bar-row{display:grid;grid-template-columns:minmax(104px,42%) 1fr 30px;align-items:center;gap:10px;min-height:44px;border:0;background:none;padding:6px;margin:0 -6px;border-radius:10px;cursor:pointer;text-align:left;color:var(--ink);}
+  .bar-row:hover{background:var(--soft);}
+  .bar-l{font:500 12.5px/1.25 Poppins;overflow:hidden;text-overflow:ellipsis;}
+  .bar-l small{display:block;font:400 10.5px/1.3 Poppins;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .bar-t{height:10px;}
+  .bar-f{display:block;height:10px;border-radius:0 4px 4px 0;background:var(--meter-fill);}
+  .bar-n{font:500 12px/1 Poppins;color:var(--ink2);text-align:right;font-variant-numeric:tabular-nums;}
+  .has-active .bar-row:not(.active) .bar-f{background:var(--bar-muted);}
+  .has-active .bar-row:not(.active) .bar-l{color:var(--ink2);}
+  .bar-row.active .bar-l{font-weight:700;}
+  .xp-more{border:0;background:none;color:var(--link);font:600 12.5px/1 Poppins;min-height:40px;cursor:pointer;padding:0;}
+
   /* Source sheet (tap a citation chip) */
   dialog.sheet{border:0;padding:0;margin:auto auto 0;width:100%;max-width:520px;max-height:85vh;border-radius:18px 18px 0 0;background:var(--card);color:var(--ink);box-shadow:0 -10px 40px rgba(0,0,0,.25);}
   dialog.sheet::backdrop{background:rgba(2,15,28,.45);}
@@ -308,9 +325,9 @@
   <div id="offline" class="offline" hidden>You're offline — showing the data from the last time this page loaded.</div>
 
   <nav class="tabs" role="tablist" aria-label="Sections">
-    <button class="tab" role="tab" id="tab-studies" data-tab="studies" aria-controls="list">Studies<span class="badge" id="studyBadge">0</span></button>
+    <button class="tab" role="tab" id="tab-studies" data-tab="studies" aria-controls="list">Studies</button>
     <button class="tab" role="tab" id="tab-overview" data-tab="overview" aria-controls="list">Overview</button>
-    <button class="tab" role="tab" id="tab-papers" data-tab="papers" aria-controls="list">Papers<span class="badge" id="paperBadge">0</span></button>
+    <button class="tab" role="tab" id="tab-papers" data-tab="papers" aria-controls="list">Papers</button>
   </nav>
 
   <main id="list" class="panel" role="tabpanel"></main>
@@ -407,11 +424,12 @@
   //   #studies  #study/<id>
   //   #overview  #overview/<section-id>
   //   #papers?q=<text>&f=<filter>&t=<topic>  #paper/<id>
-  var DATA = { studies: [], papers: [], overview: null, lastRunAt: null, lastRun: '—', nextRun: '' };
+  var DATA = { studies: [], papers: [], groups: [], overview: null, lastRunAt: null, lastRun: '—', nextRun: '' };
   var TABS = ['studies', 'overview', 'papers'];
   var PAGE = 20;
   var tab = 'studies';
-  var pq = { text: '', filter: 'all', topic: '', shown: PAGE };
+  var pq = { text: '', filter: 'all', topic: '', group: '', shown: PAGE };
+  var explore = { view: 'topics', all: false };
   var focus = null;          // {kind:'paper'|'study'|'section', id}
   var loaded = false, failed = false;
   var list = el('list');
@@ -423,7 +441,7 @@
     if (qi >= 0) { q = h.slice(qi + 1); h = h.slice(0, qi); }
     var parts = h.split('/');
     focus = null;
-    if (parts[0] === 'paper' && parts[1]) { tab = 'papers'; focus = { kind: 'paper', id: parts[1] }; pq = { text: '', filter: 'all', topic: '', shown: PAGE }; }
+    if (parts[0] === 'paper' && parts[1]) { tab = 'papers'; focus = { kind: 'paper', id: parts[1] }; pq = { text: '', filter: 'all', topic: '', group: '', shown: PAGE }; }
     else if (parts[0] === 'study' && parts[1]) { tab = 'studies'; focus = { kind: 'study', id: parts[1] }; }
     else if (parts[0] === 'overview') { tab = 'overview'; if (parts[1]) focus = { kind: 'section', id: parts[1] }; }
     else if (parts[0] === 'papers') {
@@ -432,6 +450,8 @@
       pq.text = params.get('q') || '';
       pq.filter = params.get('f') || 'all';
       pq.topic = params.get('t') || '';
+      pq.group = params.get('g') || '';
+      if (pq.group) explore.view = 'groups';
       pq.shown = PAGE;
     } else if (TABS.indexOf(parts[0]) >= 0) { tab = parts[0]; }
   }
@@ -441,6 +461,7 @@
     if (pq.text) params.set('q', pq.text);
     if (pq.filter !== 'all') params.set('f', pq.filter);
     if (pq.topic) params.set('t', pq.topic);
+    if (pq.group) params.set('g', pq.group);
     var s = params.toString();
     return 'papers' + (s ? '?' + s : '');
   }
@@ -567,6 +588,7 @@
       if (pq.filter === 'recent' && !(pub.slice(0, 7) >= cut)) return false;
       if (pq.filter === 'earlier' && pub.slice(0, 7) >= cut) return false;
       if (pq.topic && (p.topics || []).indexOf(pq.topic) < 0) return false;
+      if (pq.group && (p.groups || []).indexOf(pq.group) < 0) return false;
       if (!words.length) return true;
       var hay = (p.title + ' ' + p.authors + ' ' + p.journal + ' ' + p.summary + ' ' + p.why).toLowerCase();
       return words.every(function (w) { return hay.indexOf(w) >= 0; });
@@ -596,13 +618,56 @@
     '</article>';
   }
 
+  // "Explore" chart: papers per topic or per research group as horizontal
+  // bars (one hue). Tapping a bar filters the list; the chosen bar keeps its
+  // colour and the others turn grey, so the selection reads at a glance.
+  var EXPLORE_TOP = 6;
+  function exploreRows() {
+    if (explore.view === 'groups') {
+      return DATA.groups.map(function (g) {
+        var co = g.members.slice(1);
+        var sub = co.length ? 'with ' + co.slice(0, 2).join(', ') + (co.length > 2 ? ' +' + (co.length - 2) : '') : '';
+        return { id: g.id, label: g.label, sub: sub, count: g.count, active: pq.group === g.id,
+          title: g.members.length > 1 ? 'Research group: ' + g.members.join(', ') : 'Papers with ' + g.label + ' as author' };
+      });
+    }
+    return sections().filter(function (s) { return s.paperCount; })
+      .map(function (s) { return { id: s.id, label: s.shortTitle || s.title, count: s.paperCount, active: pq.topic === s.id, title: s.title }; })
+      .sort(function (a, b) { return b.count - a.count; });
+  }
+  function renderExplore() {
+    var box = el('paperExplore');
+    if (!box) return;
+    var rows = exploreRows();
+    var max = rows.reduce(function (m, r) { return Math.max(m, r.count); }, 1);
+    var anyActive = rows.some(function (r) { return r.active; });
+    var shown = explore.all || anyActive ? rows : rows.slice(0, EXPLORE_TOP);
+    if (anyActive && !explore.all) shown = rows.slice(0, EXPLORE_TOP).concat(rows.slice(EXPLORE_TOP).filter(function (r) { return r.active; }));
+    var h = '<div class="xp-head"><h2 class="block-h" style="margin:0">Explore</h2>' +
+      '<div class="seg" role="group" aria-label="Group papers by">' +
+        '<button type="button" data-xview="topics" aria-pressed="' + (explore.view === 'topics') + '">Topics</button>' +
+        '<button type="button" data-xview="groups" aria-pressed="' + (explore.view === 'groups') + '">Research groups</button>' +
+      '</div></div>' +
+      '<p class="block-sub">' + (explore.view === 'groups'
+        ? 'Labs that appear most often, clustered by shared authors. Tap one to see its papers.'
+        : 'How many tracked papers touch each topic. Tap one to see them.') + '</p>';
+    h += '<div class="bars' + (anyActive ? ' has-active' : '') + '">' + shown.map(function (r) {
+      var w = Math.max(4, Math.round(r.count / max * 100));
+      return '<button type="button" class="bar-row' + (r.active ? ' active' : '') + '" data-xpick="' + esc(r.id) + '" aria-pressed="' + r.active + '" title="' + esc(r.title) + '">' +
+        '<span class="bar-l">' + esc(r.label) + (r.sub ? '<small>' + esc(r.sub) + '</small>' : '') + '</span>' +
+        '<span class="bar-t"><span class="bar-f" style="width:' + w + '%"></span></span>' +
+        '<span class="bar-n">' + r.count + '</span></button>';
+    }).join('') + '</div>';
+    if (rows.length > EXPLORE_TOP && !anyActive) {
+      h += '<button type="button" class="xp-more" data-xall>' + (explore.all ? 'Show fewer' : 'Show all ' + rows.length) + '</button>';
+    }
+    box.innerHTML = h;
+  }
+
   function paperToolbar() {
-    var opts = '<option value="">All topics</option>' + sections().filter(function (s) { return s.paperCount; }).map(function (s) {
-      return '<option value="' + esc(s.id) + '"' + (pq.topic === s.id ? ' selected' : '') + '>' + esc(s.title) + ' (' + s.paperCount + ')</option>';
-    }).join('');
-    return '<div class="paper-tools">' +
+    return '<section class="explore" id="paperExplore" aria-label="Explore papers"></section>' +
+      '<div class="paper-tools">' +
       '<input id="paperSearch" class="search" type="search" placeholder="Search title, author, topic…" aria-label="Search papers" value="' + esc(pq.text) + '">' +
-      '<div class="tools"><select id="paperTopic" class="select" aria-label="Topic">' + opts + '</select></div>' +
       '<div class="chips" role="group" aria-label="Filter papers">' + FILTERS.map(function (f) {
         return '<button type="button" class="chip-btn" data-filter="' + f.id + '" aria-pressed="' + (pq.filter === f.id) + '">' + esc(f.label) + '</button>';
       }).join('') + '</div></div>' +
@@ -618,9 +683,13 @@
       if (idx >= pq.shown) pq.shown = Math.ceil((idx + 1) / PAGE) * PAGE;
     }
     var shown = res.slice(0, pq.shown);
-    var filtered = pq.text || pq.filter !== 'all' || pq.topic;
+    renderExplore();
+    var filtered = pq.text || pq.filter !== 'all' || pq.topic || pq.group;
+    var scope = '';
+    if (pq.topic) { var sec = sections().filter(function (x) { return x.id === pq.topic; })[0]; if (sec) scope = ' on ' + sec.title; }
+    if (pq.group) { var gr = DATA.groups.filter(function (x) { return x.id === pq.group; })[0]; if (gr) scope += ' from the ' + gr.label + ' group'; }
     var h = '<div class="result-n"><span>' + (filtered
-      ? res.length + ' of ' + DATA.papers.length + ' papers match'
+      ? res.length + ' of ' + DATA.papers.length + ' papers' + esc(scope)
       : res.length + ' papers, newest first') + '</span>' +
       (filtered ? '<button type="button" id="clearFilters">Clear filters</button>' : '') + '</div>';
     h += shown.length ? '<div class="grid">' + shown.map(paperCard).join('') + '</div>'
@@ -809,11 +878,8 @@
       el('lastRunTime').textContent = '';
       el('nextRun').textContent = DATA.nextRun || '';
     }
-    var active = DATA.studies.filter(function (s) { return s.tier !== 'archived'; });
     el('newStudyCount').textContent = DATA.studies.filter(function (x) { return x.isNew; }).length;
     el('newPaperCount').textContent = DATA.papers.filter(function (x) { return x.isNew; }).length;
-    el('studyBadge').textContent = active.length;
-    el('paperBadge').textContent = DATA.papers.length;
     TABS.forEach(function (t) {
       var b = el('tab-' + t);
       b.setAttribute('aria-selected', String(t === tab));
@@ -877,14 +943,6 @@
     clearTimeout(searchTimer);
     searchTimer = setTimeout(function () { writeHash(papersHash(), false); }, 300);
   });
-  list.addEventListener('change', function (e) {
-    if (e.target.id !== 'paperTopic') return;
-    pq.topic = e.target.value;
-    pq.shown = PAGE;
-    focus = null;
-    writeHash(papersHash(), false);
-    renderPaperResults();
-  });
   list.addEventListener('click', function (e) {
     var t = e.target;
     // Re-tapping a link to the hash we're already on would do nothing: re-apply it.
@@ -903,9 +961,23 @@
       return;
     }
     if (t.closest('#clearFilters')) {
-      pq = { text: '', filter: 'all', topic: '', shown: PAGE };
+      pq = { text: '', filter: 'all', topic: '', group: '', shown: PAGE };
       writeHash('papers', false);
       render();
+      return;
+    }
+    var xv = t.closest('[data-xview]');
+    if (xv) { explore.view = xv.getAttribute('data-xview'); explore.all = false; renderExplore(); return; }
+    if (t.closest('[data-xall]')) { explore.all = !explore.all; renderExplore(); return; }
+    var xp = t.closest('[data-xpick]');
+    if (xp) {
+      var id = xp.getAttribute('data-xpick');
+      if (explore.view === 'groups') { pq.group = pq.group === id ? '' : id; pq.topic = ''; }
+      else { pq.topic = pq.topic === id ? '' : id; pq.group = ''; }
+      pq.shown = PAGE;
+      focus = null;
+      writeHash(papersHash(), false);
+      renderPaperResults();
       return;
     }
     if (t.closest('#loadMore')) { pq.shown += PAGE; renderPaperResults(); return; }
@@ -956,6 +1028,7 @@
       });
       DATA.papers = Array.isArray(d.papers) ? d.papers : [];
       DATA.overview = d.overview || null;
+      DATA.groups = Array.isArray(d.researchGroups) ? d.researchGroups : [];
       DATA.lastRunAt = d.lastRunAt || null;
       DATA.lastRun = d.lastRun || '—';
       DATA.nextRun = d.nextRun || '';
