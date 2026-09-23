@@ -54,6 +54,9 @@ notable ME/CFS science (e.g. DecodeME genetics, micro-clots, mitochondrial/muscl
 findings). Confirm each via its **DOI / journal / preprint page**; news/blogs are
 leads only — never fabricate.
 
+**Write in English.** All recorded content (papers, trials, state of the art,
+CHANGELOG, reports) is English, even if the request is in German.
+
 **Write summaries for laypeople.** Both `summary` and `why` must be understandable
 by someone with no medical background: short sentences, plain words, as many
 technical terms as necessary but as few as possible — and when a term is

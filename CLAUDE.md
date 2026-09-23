@@ -37,6 +37,9 @@ below is ambiguous. In short:
 
 ## Hard rules (always)
 
+- **Language: English.** All content — dashboard, `summary`/`why`, state of the
+  art, CHANGELOG, reports and issues — is written in English, even when the
+  request comes in German.
 - **Scope filter — all must hold:** condition = ME/CFS · intervention =
   drug/pharmacological (immunoadsorption is borderline → include + note) ·
   German connection (≥1 site in Germany, or — for a planned study without
