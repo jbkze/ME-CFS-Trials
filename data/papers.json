@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-22",
+  "last_check": "2026-09-23",
   "papers": [
     {
       "id": "slaughter-2026-gwas-biobank-replication",
@@ -2939,10 +2939,8 @@
       "link": "https://doi.org/10.1152/ajpheart.90080.2026",
       "first_seen": "2026-09-22",
       "last_checked": "2026-09-22",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via DOI/journal page (AJP-Heart Circ Physiol, published online 2026-09-21). Not Wirth/Scheibenbogen-affiliated. Cohort of 261 chest-pain patients undergoing coronary function testing and invasive cardiopulmonary exercise testing; 18% met ME/CFS criteria, 89% of those had ANOCA (angina with non-obstructive coronary arteries)."
     },
     {
@@ -2956,10 +2954,8 @@
       "link": "https://doi.org/10.1016/j.bbrep.2026.102679",
       "first_seen": "2026-09-22",
       "last_checked": "2026-09-22",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Confirmed via DOI/journal page. Not Wirth/Scheibenbogen-affiliated (Norwegian group: Oslo University Hospital/University of Oslo). Small sample (n=49 vs 50) in a modest-tier journal; posted online 2026-06-20, right at the edge of the ~3-month recency window, but not previously in the tracker so flagged now."
     },
     {
@@ -2973,11 +2969,26 @@
       "link": "https://doi.org/10.1111/jpc.70587",
       "first_seen": "2026-09-22",
       "last_checked": "2026-09-22",
+      "flags": [],
+      "isNew": false,
+      "notes": "Confirmed via DOI/journal page (J Paediatr Child Health, Melbourne group incl. Murdoch Children's Research Institute). Not Wirth/Scheibenbogen-affiliated. Borderline scope call — descriptive cross-sectional phenotyping rather than mechanism/treatment/genetics data — included on the strength of the objective cognitive-processing-speed finding, consistent with precedent for other objective-phenotyping papers already in the tracker."
+    },
+    {
+      "id": "peters-2026-mecfs-multidisciplinary-care-trial",
+      "title": "Evaluation of an Integrated Multidisciplinary Care Model for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Prospective, Open-label, Non-randomized Controlled Intervention Study",
+      "authors": "Peters CK (formerly published as Kedor C), Mödl L, Rust R, Stein E, Tietz P, Kim L, Bellmann-Strobl J, Eltity M, Paul F, Veauthier C, Doehner W, Jauert N, Wolfarth B, Thouet T, Mastmeier-Porst J, Reißhauer A, Hoffmann I, Liebl M, Adamaszek M, Erdmann-Reusch B, Stoklossa C, Hagemann A, Steinle E, Kegel L, Grittner U, Konietschke F, Scheibenbogen C, Wittke K",
+      "journal": "The American Journal of Medicine",
+      "date": "Sep 2026 (online Sep 22, 2026)",
+      "summary": "The Charité Fatigue Center tested a structured care programme for ME/CFS — pacing advice, sleep and pain management, nutrition counselling, social support, and tailored inpatient rehab — against usual single-visit care, following 89 patients on the programme and 93 on usual care for a year.",
+      "why": "The extra structured care did not improve patients' physical functioning or other key outcomes after a year, and disability actually got worse for nearly half of the programme group — a disappointing but important negative result showing that good care coordination alone isn't a substitute for an effective medical treatment.",
+      "link": "https://doi.org/10.1016/j.amjmed.2026.09.013",
+      "first_seen": "2026-09-23",
+      "last_checked": "2026-09-23",
       "flags": [
         "new"
       ],
       "isNew": true,
-      "notes": "Confirmed via DOI/journal page (J Paediatr Child Health, Melbourne group incl. Murdoch Children's Research Institute). Not Wirth/Scheibenbogen-affiliated. Borderline scope call — descriptive cross-sectional phenotyping rather than mechanism/treatment/genetics data — included on the strength of the objective cognitive-processing-speed finding, consistent with precedent for other objective-phenotyping papers already in the tracker."
+      "notes": "High priority (Scheibenbogen). Confirmed via Crossref (DOI 10.1016/j.amjmed.2026.09.013, PMID 42772658) and Elsevier ScienceDirect listing. This is the Charité Fatigue Centrum's 'CFS_CARE' study (enrolled 2022–23); appears to be the peer-reviewed publication of a result previously discussed at a 2026 Berlin ME/CFS conference and circulated as an SSRN preprint under the author's former name 'Claudia Kedor' (author list and topic otherwise identical — apparent name change, not a different study)."
     }
   ]
 }
