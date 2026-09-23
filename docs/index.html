@@ -90,9 +90,7 @@
 
   .tabs{position:sticky;top:0;z-index:5;background:var(--paper);display:flex;gap:8px;padding:18px 22px 12px;}
   .tab{flex:1;min-height:44px;border:1px solid var(--line);background:var(--card);color:var(--ink2);font:600 13px/1 Poppins;padding:0 4px;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .12s var(--ease);}
-  .tab .badge{font:700 11px/1 Poppins;background:var(--neutral-bg);color:var(--neutral-fg);border-radius:999px;padding:2px 6px;}
   .tab[aria-selected="true"]{border-color:var(--tab-on-bg);background:var(--tab-on-bg);color:var(--tab-on-fg);}
-  .tab[aria-selected="true"] .badge{background:rgba(244,174,62,.95);color:#02213C;}
 
   .panel{padding:2px 22px 8px;}
   .foot{padding:6px 22px 30px;font:400 12px/1.6 Poppins;color:var(--ink3);}
@@ -308,9 +306,9 @@
   <div id="offline" class="offline" hidden>You're offline — showing the data from the last time this page loaded.</div>
 
   <nav class="tabs" role="tablist" aria-label="Sections">
-    <button class="tab" role="tab" id="tab-studies" data-tab="studies" aria-controls="list">Studies<span class="badge" id="studyBadge">0</span></button>
+    <button class="tab" role="tab" id="tab-studies" data-tab="studies" aria-controls="list">Studies</button>
     <button class="tab" role="tab" id="tab-overview" data-tab="overview" aria-controls="list">Overview</button>
-    <button class="tab" role="tab" id="tab-papers" data-tab="papers" aria-controls="list">Papers<span class="badge" id="paperBadge">0</span></button>
+    <button class="tab" role="tab" id="tab-papers" data-tab="papers" aria-controls="list">Papers</button>
   </nav>
 
   <main id="list" class="panel" role="tabpanel"></main>
@@ -809,11 +807,8 @@
       el('lastRunTime').textContent = '';
       el('nextRun').textContent = DATA.nextRun || '';
     }
-    var active = DATA.studies.filter(function (s) { return s.tier !== 'archived'; });
     el('newStudyCount').textContent = DATA.studies.filter(function (x) { return x.isNew; }).length;
     el('newPaperCount').textContent = DATA.papers.filter(function (x) { return x.isNew; }).length;
-    el('studyBadge').textContent = active.length;
-    el('paperBadge').textContent = DATA.papers.length;
     TABS.forEach(function (t) {
       var b = el('tab-' + t);
       b.setAttribute('aria-selected', String(t === tab));
