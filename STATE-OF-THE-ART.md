@@ -51,7 +51,7 @@ One leading model, from Wirth and Scheibenbogen, of how the findings may connect
 
 - DecodeME, the largest genetic study so far (over 15,000 patients), found eight DNA regions linked to ME/CFS, several involved in fighting infection. ([Ponting 2025](https://doi.org/10.1101/2025.08.06.25333109))
 - Independent groups have since replicated gene hits in other datasets, with the strongest signals in brain and nerve-signalling genes rather than blood. ([Slaughter 2026](https://doi.org/10.64898/2026.09.09.26362115); [Maccallini 2026](https://doi.org/10.21203/rs.3.rs-9702020/v1))
-- Genetic analyses suggest ME/CFS has its own roots in nerve cells and is not simply a form of depression, even though symptoms can overlap. ([Lee 2026](https://doi.org/10.64898/2026.06.08.26355171); [Saini 2026](https://doi.org/10.1016/j.genhosppsych.2026.08.006))
+- Genetic analyses suggest ME/CFS has its own roots in nerve cells and is not simply a form of depression, even though symptoms can overlap; in a cohort followed after infection, inherited depression risk did not predict who developed a CFS-like post-infective illness. ([Lee 2026](https://doi.org/10.64898/2026.06.08.26355171); [Saini 2026](https://doi.org/10.1016/j.genhosppsych.2026.08.006); [Ruseva 2026](https://doi.org/10.1017/thg.2026.10098))
 - Genetic ‘cause-and-effect’ methods point to cellular energy production and low-grade inflammation and clotting as likely causes, not just consequences, of the illness. ([Wielscher 2026](https://doi.org/10.21203/rs.3.rs-9363637/v2))
 
 <sub>Section updated 2026-09-23</sub>
