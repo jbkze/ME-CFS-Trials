@@ -65,7 +65,7 @@ below is ambiguous. In short:
 - **State of the art** (`data/state_of_the_art.json`): short plain-language
   overview, reviewed every run; every point cites ids from papers/trials JSON;
   revise, don't append.
-- **Never hand-edit `TRIALS.md`, `STATE-OF-THE-ART.md` or `docs/dashboard.json`** — they are generated;
+- **Never hand-edit `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/feed.xml` or `docs/dashboard.json`** — they are generated;
   edit the JSON and re-run the script.
 - **Never delete** a trial that drops out of scope — update its status + flag it.
 - Sources list is a **floor, not a ceiling**; add durable new sources you find.

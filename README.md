@@ -27,7 +27,7 @@ Full procedure and the copy-paste prompt: **[`ROUTINE.md`](ROUTINE.md)**.
 | **`data/trials.json`** | **Source of truth** — structured state of every known trial. Enables "new / changed since last check". Starts empty. |
 | **`data/schema.json`** | JSON Schema documenting every field in a trial record. |
 | **`TRIALS.md`** | Human-readable table, **auto-generated** from `data/trials.json`. Don't edit by hand. |
-| **`docs/`** | The GitHub Pages dashboard: `index.html` (mobile view: Studies / Papers / Overview tabs) + the generated `dashboard.json` feed + self-hosted Poppins in `fonts/` (no Google Fonts requests). See `SETUP-ROUTINE.md` to publish. |
+| **`docs/`** | The GitHub Pages dashboard: `index.html` (Studies / Overview / Papers tabs; light + dark theme; state kept in the URL, nothing stored in the browser) + the generated `dashboard.json` and `feed.xml` (Atom feed) + an installable offline web app (`manifest.webmanifest`, `sw.js`, icons) + self-hosted Poppins in `fonts/`. See `SETUP-ROUTINE.md` to publish. |
 | **`data/papers.json`** | Optional companion store of notable papers, shown on the dashboard's Papers tab (search, filters, newest first). |
 | **`data/state_of_the_art.json`** | Short plain-language research overview (dashboard *Overview* tab), revised by each run; every point cites papers/trials. Rendered to **`STATE-OF-THE-ART.md`** (generated). |
 | **`scripts/render_trials.py`** | Regenerates `TRIALS.md`, `STATE-OF-THE-ART.md` **and** `docs/dashboard.json` from the JSON sources (Python stdlib only). |

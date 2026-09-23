@@ -5,6 +5,7 @@ Outputs:
   - TRIALS.md            (Markdown table, from data/trials.json)
   - STATE-OF-THE-ART.md  (Markdown view of data/state_of_the_art.json)
   - docs/dashboard.json  (feed for the GitHub Pages dashboard, docs/index.html)
+  - docs/feed.xml        (Atom feed: newest papers + trial changes, for feed readers)
 
 Reads:
   - data/trials.json            (studies; source of truth)
@@ -29,6 +30,9 @@ SOTA = ROOT / "data" / "state_of_the_art.json"
 OUT_MD = ROOT / "TRIALS.md"
 OUT_SOTA_MD = ROOT / "STATE-OF-THE-ART.md"
 OUT_DASH = ROOT / "docs" / "dashboard.json"
+OUT_FEED = ROOT / "docs" / "feed.xml"
+SITE_URL = "https://jbkze.github.io/ME-CFS-Trials/"
+FEED_LIMIT = 60
 
 STATUS_LABEL = {
     "recruiting": "🟢 Recruiting",
@@ -177,9 +181,19 @@ def to_study(t: dict) -> dict:
         if s.get("institution") or s.get("city")
     ]
     change = next((CHANGE_LABEL[f] for f in flags if f in CHANGE_LABEL), None)
+    cities = []
+    for s in (t.get("germany") or {}).get("sites") or []:
+        c = (s.get("city") or "").strip()
+        if c and c not in cities:
+            cities.append(c)
     return {
         "id": t.get("id"),
         "title": title,
+        "shortTitle": t.get("acronym") or iv.get("name") or title,
+        "officialTitle": t.get("name") or "",
+        "plainSummary": t.get("plain_summary") or "",
+        "keyRequirement": t.get("key_requirement") or "",
+        "cities": cities,
         "status": bucket[0],
         "statusLabel": bucket[1],
         "tier": TIER[bucket[0]],
@@ -262,6 +276,7 @@ def load_papers() -> list:
             "why": p.get("why", ""),
             "link": p.get("link") or "#",
             "researchers": paper_researchers(p),
+            "topics": [],
             "firstSeen": p.get("first_seen", ""),
             "isNew": p.get("isNew", ("new" in flags)),
         })
@@ -315,6 +330,17 @@ def load_sota(papers: list, trials: list):
         warnings.append(ref)
         return None
 
+    # Topic tagging: a paper belongs to a section if it is cited there or if one
+    # of the section's `keywords` starts a word in its title or summary.
+    for sec in sota.get("sections", []):
+        kws = [k.lower() for k in sec.get("keywords") or []]
+        rx = re.compile(r"\b(" + "|".join(re.escape(k) for k in kws) + ")") if kws else None
+        cited = {r for pt in sec.get("points", []) for r in pt.get("refs", [])}
+        for p in papers:
+            hay = (p["title"] + " " + p["summary"]).lower()
+            if p["id"] in cited or (rx and rx.search(hay)):
+                p["topics"].append(sec.get("id", ""))
+
     sections = []
     for sec in sota.get("sections", []):
         points = []
@@ -328,6 +354,7 @@ def load_sota(papers: list, trials: list):
             "confidence": sec.get("confidence", ""),
             "confidenceLabel": CONFIDENCE.get(sec.get("confidence", ""), ""),
             "updated": sec.get("updated", ""),
+            "paperCount": sum(1 for p in papers if sec.get("id") in p["topics"]),
             "points": points,
         })
     out = {
@@ -385,6 +412,60 @@ def format_run(db: dict):
     return at, d.strftime("%d %b %Y"), "Next run ~" + (d + timedelta(days=1)).strftime("%d %b %Y")
 
 
+def _xml(text) -> str:
+    return (str(text or "").replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def render_feed(db: dict, studies: list, papers: list) -> int:
+    """Atom feed of the newest papers and trial additions/status changes."""
+    entries = []
+    for p in papers:
+        if not p.get("firstSeen"):
+            continue
+        authors = p["authors"].split(",")
+        authors = ",".join(authors[:3]) + (", et al." if len(authors) > 3 else "")
+        source = p["link"] if p["link"].startswith("http") else ""
+        entries.append((p["firstSeen"], "paper-" + p["id"], "Paper: " + p["title"],
+                        SITE_URL + "#paper/" + p["id"],
+                        f"{p['summary']}\n\nWhy it matters: {p['why']}\n\n{p['journal']} · {authors}"
+                        + (f"\n{source}" if source else "")))
+    for s in studies:
+        when = max(s.get("firstSeen") or "", s.get("lastStatusChange") or "")
+        if not when:
+            continue
+        what = "New study" if when == s.get("firstSeen") else "Status change"
+        entries.append((when, f"study-{s['id']}-{when}", f"{what}: {s['shortTitle']} — {s['statusLabel']}",
+                        SITE_URL + "#study/" + s["id"],
+                        f"{s['plainSummary']}\n\n{s['title']}\nStatus: {s['statusLabel']} · {s['location']}"))
+    entries.sort(key=lambda e: e[0], reverse=True)
+    entries = entries[:FEED_LIMIT]
+    updated = (db.get("last_run_at") or (db.get("last_check") or "1970-01-01") + "T00:00:00Z")
+    out = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        '<feed xmlns="http://www.w3.org/2005/Atom">',
+        "  <title>ME/CFS Research Watch</title>",
+        "  <subtitle>New ME/CFS drug trials in Germany and notable new research papers.</subtitle>",
+        f'  <link rel="alternate" href="{SITE_URL}"/>',
+        f'  <link rel="self" href="{SITE_URL}feed.xml"/>',
+        f"  <id>{SITE_URL}</id>",
+        f"  <updated>{_xml(updated)}</updated>",
+    ]
+    for when, eid, title, link_url, summary in entries:
+        out += [
+            "  <entry>",
+            f"    <title>{_xml(title)}</title>",
+            f'    <link href="{_xml(link_url)}"/>',
+            f"    <id>{_xml(SITE_URL + '#' + eid)}</id>",
+            f"    <updated>{_xml(when)}T00:00:00Z</updated>",
+            f"    <summary>{_xml(summary)}</summary>",
+            "  </entry>",
+        ]
+    out.append("</feed>")
+    OUT_FEED.write_text("\n".join(out) + "\n", encoding="utf-8")
+    return len(entries)
+
+
 def build_dashboard(db: dict, trials: list):
     studies = [to_study(t) for t in trials]
     studies.sort(key=lambda s: (BUCKET_ORDER.get(s["status"], 9), not s["isNew"],
@@ -405,6 +486,7 @@ def build_dashboard(db: dict, trials: list):
     }
     OUT_DASH.parent.mkdir(parents=True, exist_ok=True)
     OUT_DASH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    render_feed(db, studies, papers)
     return len(studies), len(papers), sota, warnings
 
 
@@ -426,6 +508,7 @@ def main() -> int:
     if sota:
         print(f"wrote {OUT_SOTA_MD} ({len(sota['sections'])} sections)")
     print(f"wrote {OUT_DASH} ({n_studies} studies, {n_papers} papers)")
+    print(f"wrote {OUT_FEED}")
     for ref in warnings:
         print(f"WARNING: state_of_the_art.json cites unknown id '{ref}' (not in papers.json "
               f"or trials.json) — dropped from the output; fix the id.", file=sys.stderr)

@@ -12,6 +12,8 @@
       "description": "Stable slug. Prefer the lowercased registry id (e.g. 'drks00032963', 'nct07529197'). Otherwise 'sponsor-drug-phase' (e.g. 'mitodicure-mdc002-ph1'). Never reuse an id for a different trial."
     },
     "name": { "type": "string", "description": "Official / full trial title." },
+    "plain_summary": { "type": ["string", "null"], "description": "One or two plain-language sentences for patients: what is tested, on whom, how (layperson style, like papers.json). Shown as the main text of the dashboard card." },
+    "key_requirement": { "type": ["string", "null"], "description": "The single most important entry requirement in a few words (e.g. 'Autoantibodies found in a blood test'). Shown in the card's quick-facts row." },
     "acronym": { "type": ["string", "null"], "description": "Short name or acronym, e.g. 'RIA'." },
     "status": {
       "type": "string",

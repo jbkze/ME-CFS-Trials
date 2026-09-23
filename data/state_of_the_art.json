@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Short, continuously updated plain-language overview of where ME/CFS research stands, shown on the dashboard's Overview tab and rendered to STATE-OF-THE-ART.md. It is a synthesis of the confirmed entries in data/papers.json and data/trials.json — every point cites their ids in `refs`, and nothing may be claimed that those entries do not support. STYLE: layperson language as in papers.json; one-sentence `takeaway` per section; 2–6 `points` per section, each ≤ ~45 words; replace outdated points rather than appending. `confidence` is one of: established, strong, emerging, contested, early. Bump a section's `updated` (and top-level `updated`) only when its content changes; set top-level `reviewed` every run. See ROUTINE.md → 'State of the art'.",
+  "description": "Short, continuously updated plain-language overview of where ME/CFS research stands, shown on the dashboard's Overview tab and rendered to STATE-OF-THE-ART.md. It is a synthesis of the confirmed entries in data/papers.json and data/trials.json — every point cites their ids in `refs`, and nothing may be claimed that those entries do not support. STYLE: layperson language as in papers.json; one-sentence `takeaway` per section; 2–6 `points` per section, each ≤ ~45 words; replace outdated points rather than appending. `confidence` is one of: established, strong, emerging, contested, early. Bump a section's `updated` (and top-level `updated`) only when its content changes; set top-level `reviewed` every run. Optional `keywords` (lower-case substrings matched against paper titles + summaries) assign papers to a section's topic for the Papers-tab topic filter; cited `refs` are always included. See ROUTINE.md → 'State of the art'.",
   "updated": "2026-09-23",
   "reviewed": "2026-09-23",
   "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in. It describes the evidence, not medical advice.",
@@ -57,7 +57,8 @@
           "text": "Genetic ‘cause-and-effect’ methods point to cellular energy production and low-grade inflammation and clotting as likely causes, not just consequences, of the illness.",
           "refs": ["wielscher-2026-decodeme-mendelian-randomization"]
         }
-      ]
+      ],
+      "keywords": ["genetic", "genome", "gwas", "decodeme", "gene variant", "gene region", "mendelian"]
     },
     {
       "id": "immune",
@@ -86,7 +87,8 @@
           "text": "Wiping out B cells with rituximab failed in a large trial, but targeting the antibody-making plasma cells (daratumumab) helped 6 of 10 patients in a small pilot. Charité plans a placebo-controlled B-cell trial (inebilizumab).",
           "refs": ["fluge-2019-rituximab-rituxme", "fluge-2025-daratumumab", "nct07724834"]
         }
-      ]
+      ],
+      "keywords": ["autoantibod", "antibod", "immune", "b cell", "b-cell", "t cell", "natural killer", "nk cell", "cytokine", "immunoadsorption", "plasma exchange", "trpm3"]
     },
     {
       "id": "vessels",
@@ -115,7 +117,8 @@
           "text": "‘Microclots’ (tiny, hard-to-dissolve clots) that may clog small vessels are reported in long COVID and ME/CFS — a theory with growing lab evidence, but not yet tested as a treatment target in the trials tracked here.",
           "refs": ["nunes-2026-microclot-hypercoagulability-longcovid", "grixti-2026-microclot-fibrinaloid-review"]
         }
-      ]
+      ],
+      "keywords": ["blood vessel", "endotheli", "blood flow", "circulation", "orthostatic", "pots", "microclot", "clotting", "vascular", "blood volume", "hypovol", "heart rate"]
     },
     {
       "id": "muscle-energy",
@@ -144,7 +147,8 @@
           "text": "MDC002 (Mitodicure, Klaus Wirth) is designed to break this calcium-overload cycle in muscle. A first trial in humans is planned but not yet registered.",
           "refs": ["wirth-2026-myasthenia-electrophysiology", "mitodicure-mdc002-ph1"]
         }
-      ]
+      ],
+      "keywords": ["muscle", "mitochondri", "energy production", "energy metabolism", "energy-making", "lactate", "metabol", "atp"]
     },
     {
       "id": "brain",
@@ -169,7 +173,8 @@
           "text": "Brain inflammation is not settled: an early scan study found signs of it, while a recent post-COVID study found no immune attack inside the brain.",
           "refs": ["nakatomi-2014-neuroinflammation-pet", "erhart-2026-cns-immune-activation-postcovid"]
         }
-      ]
+      ],
+      "keywords": ["brain", "cognitive", "neuro", "sleep", "eeg", "mri", "cortisol", "spinal fluid", "thalamus", "noradrenaline", "dopamine"]
     },
     {
       "id": "triggers",
@@ -190,7 +195,8 @@
           "text": "Yet the largest antiviral trial (Paxlovid) showed no benefit, and a drug against ‘fossil virus’ proteins in our DNA (temelimab) also failed.",
           "refs": ["baden-2026-recover-vital-paxlovid-longcovid-negative-rct", "nehme-2026-temelimab-herv-w-postcovid-rct"]
         }
-      ]
+      ],
+      "keywords": ["virus", "viral", "epstein", "ebv", "hhv-6", "herpes", "reactivat", "antiviral", "retrovir"]
     },
     {
       "id": "gut",
@@ -211,7 +217,8 @@
           "text": "A small placebo-controlled trial of a probiotic reduced fatigue in long COVID; it needs repeating in more people.",
           "refs": ["amoroso-2026-vsl3-delong3-probiotic-fatigue"]
         }
-      ]
+      ],
+      "keywords": ["gut", "microbiome", "bowel", "intestin", "bacteria", "probiotic", "stomach"]
     },
     {
       "id": "diagnosis",
@@ -236,7 +243,8 @@
           "text": "Patients seem to fall into subgroups — for example, a heavier-symptom group more often after an infection — but how to define them reliably is still open.",
           "refs": ["st-jean-2026-decodeme-symptom-clusters", "green-2026-patient-led-symptom-clustering-longcovid"]
         }
-      ]
+      ],
+      "keywords": ["biomarker", "diagnos", "blood test", "grip", "classif", "subgroup", "cluster", "questionnaire"]
     },
     {
       "id": "treatment",
@@ -261,7 +269,8 @@
           "text": "Trials often miss what patients actually rely on: only about 1 in 14 registered post-COVID trials test a patient-prioritised treatment, and few measure PEM as the main outcome.",
           "refs": ["gabriel-2026-registered-trials-gap-pcc-patient-priorities"]
         }
-      ]
+      ],
+      "keywords": ["randomi", "placebo", "treatment", "therapy", "drug", "trial"]
     },
     {
       "id": "watch",

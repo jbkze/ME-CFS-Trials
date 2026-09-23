@@ -130,8 +130,13 @@ reference — match their tone.
   time** (UTC ISO-8601, e.g. `date -u +%FT%TZ` → `2026-06-25T14:21:48Z`). The
   dashboard localises this to the viewer's timezone and shows the time next to
   the date; `nextRun` is computed as `last_run_at + 1 day` (daily cadence).
+- **New trials also need** `plain_summary` (1–2 plain-language sentences: what is
+  tested, on whom, how — this is the main text of the dashboard card) and
+  `key_requirement` (the single most important entry requirement in a few words).
+  Keep both current when a trial's details change.
 - Regenerate the views: `python3 scripts/render_trials.py` — rebuilds
-  `TRIALS.md`, `STATE-OF-THE-ART.md` and `docs/dashboard.json` (the feed for the
+  `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/feed.xml` (Atom feed of new papers and
+  trial changes) and `docs/dashboard.json` (the feed for the
   GitHub Pages dashboard, `docs/index.html`; studies from `trials.json`, papers
   from `papers.json`, the Overview tab from `state_of_the_art.json`). It exits
   non-zero and prints a `WARNING` if the state of the art cites an unknown id —
@@ -151,7 +156,7 @@ reference — match their tone.
   the env only, never committed). Freshly fetched PDFs are identity-checked (author
   surname + title words) so a wrong record is discarded. Idempotent — existing PDFs
   are kept. Commit the new `literature/` folders. See `literature/README.md`.
-- **Never hand-edit `TRIALS.md`, `STATE-OF-THE-ART.md` or `docs/dashboard.json`**
+- **Never hand-edit `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/feed.xml` or `docs/dashboard.json`**
   — they are generated.
 
 ## State of the art
@@ -175,6 +180,10 @@ current by every run — a living summary, not a changelog.
   summaries do not support. Mention negative results as clearly as positive ones.
   No treatment advice.
 - **Plain language**, same style rules as paper summaries.
+- **Topics:** each section's `keywords` (lower-case word starts, e.g. `"mitochondri"`)
+  tag papers for the Papers-tab topic filter and the "All N papers on this topic"
+  link. Add a keyword when a new paper clearly belongs to a section but isn't
+  picked up.
 - **Dates:** when a section's content changes, set its `updated` and the
   top-level `updated` to today. Always set top-level `reviewed` to today.
 - Keep the *What to watch in Germany* section in sync with the trial tiers
@@ -211,7 +220,7 @@ is no human in the loop, so two things differ from an interactive run:
    from the default branch, so the *previous* run's data is only visible if it was
    committed back to that branch. Therefore the run must **commit** the updated
    `data/trials.json`, `data/papers.json`, `data/state_of_the_art.json`,
-   `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/dashboard.json`, and
+   `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/dashboard.json`, `docs/feed.xml`, and
    `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
    commits straight to the default branch (recommended — keeps the baseline
    current automatically). Without it, it pushes a `claude/` branch and opens a

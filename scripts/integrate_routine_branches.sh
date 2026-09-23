@@ -38,12 +38,12 @@ DRY_RUN="${DRY_RUN:-}"
 # ever grows — that is the one maintenance point that prevents a repeat of the bug.
 is_routine_output() {
   case "$1" in
-    data/trials.json|data/papers.json|data/state_of_the_art.json|TRIALS.md|STATE-OF-THE-ART.md|docs/dashboard.json|checks/CHANGELOG.md|sources/search-sources.md) return 0 ;;
+    data/trials.json|data/papers.json|data/state_of_the_art.json|TRIALS.md|STATE-OF-THE-ART.md|docs/dashboard.json|docs/feed.xml|checks/CHANGELOG.md|sources/search-sources.md) return 0 ;;
     literature/*) return 0 ;;
     *) return 1 ;;
   esac
 }
-COPY_PATHS="data/trials.json data/papers.json data/state_of_the_art.json TRIALS.md STATE-OF-THE-ART.md docs/dashboard.json checks/CHANGELOG.md sources/search-sources.md literature"
+COPY_PATHS="data/trials.json data/papers.json data/state_of_the_art.json TRIALS.md STATE-OF-THE-ART.md docs/dashboard.json docs/feed.xml checks/CHANGELOG.md sources/search-sources.md literature"
 
 have_gh() { command -v gh >/dev/null 2>&1; }
 
