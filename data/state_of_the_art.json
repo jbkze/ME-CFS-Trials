@@ -1,13 +1,157 @@
 {
   "schema_version": 1,
-  "description": "Short, continuously updated plain-language overview of where ME/CFS research stands, shown on the dashboard's Overview tab and rendered to STATE-OF-THE-ART.md. It is a synthesis of the confirmed entries in data/papers.json and data/trials.json — every point cites their ids in `refs`, and nothing may be claimed that those entries do not support. STYLE: layperson language as in papers.json; one-sentence `takeaway` per section; 2–6 `points` per section, each ≤ ~45 words; replace outdated points rather than appending. `confidence` is one of: established, strong, emerging, contested, early. Bump a section's `updated` (and top-level `updated`) only when its content changes; set top-level `reviewed` every run. Optional `keywords` (lower-case substrings matched against paper titles + summaries) assign papers to a section's topic for the Papers-tab topic filter; cited `refs` are always included. See ROUTINE.md → 'State of the art'.",
+  "description": "Short, continuously updated plain-language overview of where ME/CFS research stands, shown on the dashboard's Overview tab and rendered to STATE-OF-THE-ART.md. It is a synthesis of the confirmed entries in data/papers.json and data/trials.json — every point cites their ids in `refs`, and nothing may be claimed that those entries do not support. STYLE: layperson language as in papers.json; one-sentence `takeaway` per section; 2–6 `points` per section, each ≤ ~45 words; replace outdated points rather than appending. `confidence` is one of: established, strong, emerging, contested, early. Bump a section's `updated` (and top-level `updated`) only when its content changes; set top-level `reviewed` every run. Optional `keywords` (lower-case substrings matched against paper titles + summaries) assign papers to a section's topic for the Papers-tab topic filter; cited `refs` are always included. See ROUTINE.md → 'State of the art'. Also holds `model` (the 'how it may fit together' diagram: rows of nodes, each linked to a section) and `treatments` (the treatment board: result = promising | negative | testing, a short `note`, cited `refs`); keep both in sync with the sections. Each section has a `short_title` for its tile.",
   "updated": "2026-09-23",
   "reviewed": "2026-09-23",
   "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in. It describes the evidence, not medical advice.",
+  "model": {
+    "title": "How the pieces may fit together",
+    "caption": "One leading model, from Wirth and Scheibenbogen, of how the findings may connect. Parts are well supported, others are still being tested — and not every patient may fit it.",
+    "refs": ["wirth-scheibenbogen-2020-unifying-hypothesis", "scheibenbogen-wirth-2025-skeletal", "watton-2026-reframing-mecfs-unified"],
+    "rows": [
+      [
+        {
+          "label": "An infection",
+          "sub": "e.g. COVID-19 or Epstein-Barr virus",
+          "section": "triggers"
+        }
+      ],
+      [
+        {
+          "label": "The immune system misfires",
+          "sub": "incl. self-attacking autoantibodies",
+          "section": "immune"
+        }
+      ],
+      [
+        {
+          "label": "Small blood vessels work poorly",
+          "sub": "less blood and oxygen reach the tissue",
+          "section": "vessels"
+        }
+      ],
+      [
+        {
+          "label": "Muscles run short of energy",
+          "section": "muscle-energy"
+        },
+        {
+          "label": "Brain and nerves are affected",
+          "section": "brain"
+        }
+      ],
+      [
+        {
+          "label": "Crash after activity (PEM)",
+          "sub": "the hallmark of ME/CFS",
+          "section": "what-it-is"
+        }
+      ]
+    ]
+  },
+  "treatments": [
+    {
+      "name": "BC007 (rovunaptabin)",
+      "result": "promising",
+      "note": "Neutralises autoantibodies; less fatigue than placebo in long COVID",
+      "refs": ["hohberger-2025-bc007-recover"]
+    },
+    {
+      "name": "Daratumumab",
+      "result": "promising",
+      "note": "Removes antibody-making cells; 6 of 10 improved in a small pilot",
+      "refs": ["fluge-2025-daratumumab"]
+    },
+    {
+      "name": "Hyperbaric oxygen",
+      "result": "promising",
+      "note": "Symptoms improved in a Charité cohort; no placebo group",
+      "refs": ["kim-2026-hbot-mecfs"]
+    },
+    {
+      "name": "Rapamycin",
+      "result": "promising",
+      "note": "Less fatigue in a small pilot; no placebo group",
+      "refs": ["gile-2026-rapamycin-purine-microglia-pilot"]
+    },
+    {
+      "name": "Probiotic (VSL#3)",
+      "result": "promising",
+      "note": "Less fatigue than placebo in a small long-COVID trial",
+      "refs": ["amoroso-2026-vsl3-delong3-probiotic-fatigue"]
+    },
+    {
+      "name": "Rituximab",
+      "result": "negative",
+      "note": "No benefit in a large placebo-controlled trial",
+      "refs": ["fluge-2019-rituximab-rituxme"]
+    },
+    {
+      "name": "Paxlovid",
+      "result": "negative",
+      "note": "No benefit in the largest long-COVID antiviral trial",
+      "refs": ["baden-2026-recover-vital-paxlovid-longcovid-negative-rct"]
+    },
+    {
+      "name": "Temelimab",
+      "result": "negative",
+      "note": "No better than placebo",
+      "refs": ["nehme-2026-temelimab-herv-w-postcovid-rct"]
+    },
+    {
+      "name": "Immunoadsorption vs sham",
+      "result": "negative",
+      "note": "Removed the antibodies, but patients felt no better than with a sham",
+      "refs": ["stortz-2026-immunoadsorption-sham-postcovid"]
+    },
+    {
+      "name": "Repurposed drugs",
+      "result": "negative",
+      "note": "Rivaroxaban, colchicine, famotidine-loratadine: small, temporary benefit only",
+      "refs": ["wall-2026-stimulate-icp-repurposed-drugs-longcovid-fatigue"]
+    },
+    {
+      "name": "Structured care programme",
+      "result": "negative",
+      "note": "No better function after a year (Charité)",
+      "refs": ["peters-2026-mecfs-multidisciplinary-care-trial"]
+    },
+    {
+      "name": "Bupropion",
+      "result": "testing",
+      "note": "Post-COVID fatigue, placebo-controlled",
+      "refs": ["rapid-elapse"]
+    },
+    {
+      "name": "Immunoadsorption",
+      "result": "testing",
+      "note": "Antibody-positive patients, Berlin",
+      "refs": ["nct07529197", "drks00033897"]
+    },
+    {
+      "name": "Inebilizumab",
+      "result": "testing",
+      "note": "Relapse after immunoadsorption, placebo-controlled",
+      "refs": ["nct07724834"]
+    },
+    {
+      "name": "Low-dose aripiprazole",
+      "result": "testing",
+      "note": "Brain-related symptoms, placebo-controlled",
+      "refs": ["nct07714213"]
+    },
+    {
+      "name": "MDC002",
+      "result": "testing",
+      "note": "Wirth's muscle-energy drug; first human study",
+      "refs": ["mitodicure-mdc002-ph1"]
+    }
+  ],
   "sections": [
     {
       "id": "what-it-is",
       "title": "What ME/CFS is",
+      "short_title": "What it is",
       "takeaway": "A serious, long-lasting physical illness whose defining feature is a crash after even small amounts of activity.",
       "confidence": "established",
       "updated": "2026-09-23",
@@ -37,6 +181,7 @@
     {
       "id": "genetics",
       "title": "Genes: a real biological basis",
+      "short_title": "Genes",
       "takeaway": "Large genetic studies show ME/CFS has a real, inherited component that points mainly to the nervous and immune systems.",
       "confidence": "strong",
       "updated": "2026-09-23",
@@ -63,6 +208,7 @@
     {
       "id": "immune",
       "title": "Immune system & autoantibodies",
+      "short_title": "Immune system",
       "takeaway": "The immune system is clearly involved, and ‘self-attacking’ antibodies are a leading theory — but removing them has so far given mixed results.",
       "confidence": "contested",
       "updated": "2026-09-23",
@@ -93,6 +239,7 @@
     {
       "id": "vessels",
       "title": "Blood vessels & circulation",
+      "short_title": "Blood vessels",
       "takeaway": "Poorly working small blood vessels and disturbed blood flow are among the most consistent findings.",
       "confidence": "strong",
       "updated": "2026-09-23",
@@ -123,6 +270,7 @@
     {
       "id": "muscle-energy",
       "title": "Muscles & energy production",
+      "short_title": "Muscles & energy",
       "takeaway": "Muscles and cells’ energy supply are genuinely affected — this is where the Wirth/Scheibenbogen drug MDC002 aims.",
       "confidence": "emerging",
       "updated": "2026-09-23",
@@ -153,6 +301,7 @@
     {
       "id": "brain",
       "title": "Brain & nervous system",
+      "short_title": "Brain & nerves",
       "takeaway": "Brain scans and spinal-fluid tests show measurable changes, but it is still unclear which of them drive the illness.",
       "confidence": "emerging",
       "updated": "2026-09-23",
@@ -179,6 +328,7 @@
     {
       "id": "triggers",
       "title": "Viruses & triggers",
+      "short_title": "Viruses & triggers",
       "takeaway": "Infections, and dormant viruses ‘waking up’, are a likely trigger — but antiviral treatment has not helped so far.",
       "confidence": "contested",
       "updated": "2026-09-23",
@@ -201,6 +351,7 @@
     {
       "id": "gut",
       "title": "Gut",
+      "short_title": "Gut",
       "takeaway": "Gut problems are common and linked to overall severity; treating the gut is an early but plausible idea.",
       "confidence": "early",
       "updated": "2026-09-23",
@@ -223,6 +374,7 @@
     {
       "id": "diagnosis",
       "title": "Tests & biomarkers",
+      "short_title": "Tests & biomarkers",
       "takeaway": "There is still no validated lab test for ME/CFS, but several candidates look promising.",
       "confidence": "emerging",
       "updated": "2026-09-23",
@@ -249,6 +401,7 @@
     {
       "id": "treatment",
       "title": "Treatment: what has been tested",
+      "short_title": "Treatments",
       "takeaway": "There is no approved drug for ME/CFS yet; several ideas show early promise, and several well-run trials were negative.",
       "confidence": "contested",
       "updated": "2026-09-23",
@@ -275,6 +428,7 @@
     {
       "id": "watch",
       "title": "What to watch in Germany",
+      "short_title": "Trials in Germany",
       "takeaway": "Several German drug studies are open or planned — the Studies tab has eligibility details.",
       "confidence": "",
       "updated": "2026-09-23",

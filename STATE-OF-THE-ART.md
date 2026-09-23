@@ -6,6 +6,33 @@
 
 A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in. It describes the evidence, not medical advice.
 
+## How the pieces may fit together
+
+**An infection → The immune system misfires → Small blood vessels work poorly → Muscles run short of energy + Brain and nerves are affected → Crash after activity (PEM)**
+
+One leading model, from Wirth and Scheibenbogen, of how the findings may connect. Parts are well supported, others are still being tested — and not every patient may fit it. ([Wirth 2020](https://doi.org/10.1016/j.autrev.2020.102527); [Scheibenbogen 2025](https://doi.org/10.1002/jcsm.13669); [Watton 2026](https://doi.org/10.1186/s12967-026-08319-3))
+
+## What has been tried
+
+| Result | Treatment | In short | Sources |
+|---|---|---|---|
+| ✅ Promising early signal | BC007 (rovunaptabin) | Neutralises autoantibodies; less fatigue than placebo in long COVID | [Hohberger 2025](https://doi.org/10.1016/j.eclinm.2025.103358) |
+| ✅ Promising early signal | Daratumumab | Removes antibody-making cells; 6 of 10 improved in a small pilot | [Fluge 2025](https://doi.org/10.3389/fmed.2025.1607353) |
+| ✅ Promising early signal | Hyperbaric oxygen | Symptoms improved in a Charité cohort; no placebo group | [Kim 2026](https://doi.org/10.1186/s12967-026-08324-6) |
+| ✅ Promising early signal | Rapamycin | Less fatigue in a small pilot; no placebo group | [Gile 2026](https://doi.org/10.1186/s12967-026-08575-3) |
+| ✅ Promising early signal | Probiotic (VSL#3) | Less fatigue than placebo in a small long-COVID trial | [Amoroso 2026](https://doi.org/10.3389/bjbs.2026.16993) |
+| ❌ No clear benefit | Rituximab | No benefit in a large placebo-controlled trial | [Fluge 2019](https://doi.org/10.7326/M18-1451) |
+| ❌ No clear benefit | Paxlovid | No benefit in the largest long-COVID antiviral trial | [Baden 2026](https://doi.org/10.1016/S1473-3099(26)00406-8) |
+| ❌ No clear benefit | Temelimab | No better than placebo | [Nehme 2026](https://doi.org/10.1016/j.bbi.2026.106892) |
+| ❌ No clear benefit | Immunoadsorption vs sham | Removed the antibodies, but patients felt no better than with a sham | [Stortz 2026](https://doi.org/10.1016/j.lanepe.2026.101744) |
+| ❌ No clear benefit | Repurposed drugs | Rivaroxaban, colchicine, famotidine-loratadine: small, temporary benefit only | [Wall 2026](https://doi.org/10.1016/S1473-3099(26)00242-2) |
+| ❌ No clear benefit | Structured care programme | No better function after a year (Charité) | [Peters 2026](https://doi.org/10.1016/j.amjmed.2026.09.013) |
+| ⏳ Being tested in Germany | Bupropion | Post-COVID fatigue, placebo-controlled | [RAPID_ELAPSE](https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00) |
+| ⏳ Being tested in Germany | Immunoadsorption | Antibody-positive patients, Berlin | [IMPACT](https://clinicaltrials.gov/study/NCT07529197); [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) |
+| ⏳ Being tested in Germany | Inebilizumab | Relapse after immunoadsorption, placebo-controlled | [PIONEER_PAIS](https://clinicaltrials.gov/study/NCT07724834) |
+| ⏳ Being tested in Germany | Low-dose aripiprazole | Brain-related symptoms, placebo-controlled | [PAISE-AriSE](https://clinicaltrials.gov/study/NCT07714213) |
+| ⏳ Being tested in Germany | MDC002 | Wirth's muscle-energy drug; first human study | [MDC002](https://mitodicure.com/) |
+
 ## What ME/CFS is
 
 **A serious, long-lasting physical illness whose defining feature is a crash after even small amounts of activity.** · _Well established_

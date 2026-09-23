@@ -325,8 +325,10 @@ def load_sota(papers: list, trials: list):
             t = by_trial[ref]
             reg = t.get("registry") or {}
             label = t.get("acronym") or (t.get("intervention") or {}).get("name") or ref
+            bucket = DASH_BUCKET.get(t.get("status")) or ("closed", "Closed")
             return {"kind": "trial", "id": ref, "label": label, "title": t.get("name", ""),
-                    "link": reg.get("url") or (t.get("links") or ["#"])[0]}
+                    "link": reg.get("url") or (t.get("links") or ["#"])[0],
+                    "status": bucket[0], "statusLabel": bucket[1]}
         warnings.append(ref)
         return None
 
@@ -350,6 +352,7 @@ def load_sota(papers: list, trials: list):
         sections.append({
             "id": sec.get("id", ""),
             "title": sec.get("title", ""),
+            "shortTitle": sec.get("short_title") or sec.get("title", ""),
             "takeaway": sec.get("takeaway", ""),
             "confidence": sec.get("confidence", ""),
             "confidenceLabel": CONFIDENCE.get(sec.get("confidence", ""), ""),
@@ -357,10 +360,25 @@ def load_sota(papers: list, trials: list):
             "paperCount": sum(1 for p in papers if sec.get("id") in p["topics"]),
             "points": points,
         })
+    section_ids = {sec["id"] for sec in sections}
+    model = sota.get("model") or None
+    if model:
+        for row in model.get("rows", []):
+            for node in row:
+                if node.get("section") and node["section"] not in section_ids:
+                    warnings.append("model→section:" + node["section"])
+        model = dict(model, refs=[c for c in (cite(r) for r in model.get("refs", [])) if c])
+    treatments = [
+        {"name": tr.get("name", ""), "result": tr.get("result", ""), "note": tr.get("note", ""),
+         "refs": [c for c in (cite(r) for r in tr.get("refs", [])) if c]}
+        for tr in sota.get("treatments", [])
+    ]
     out = {
         "updated": sota.get("updated", ""),
         "reviewed": sota.get("reviewed", ""),
         "intro": sota.get("intro", ""),
+        "model": model,
+        "treatments": treatments,
         "sections": sections,
     }
     return out, warnings
@@ -378,6 +396,21 @@ def render_sota_markdown(sota: dict) -> None:
     ]
     if sota.get("intro"):
         lines += [sota["intro"], ""]
+    model = sota.get("model")
+    if model:
+        chain = " → ".join(" + ".join(n["label"] for n in row) for row in model.get("rows", []))
+        refs = "; ".join(f"[{r['label']}]({r['link']})" for r in model.get("refs", []))
+        lines += [f"## {model.get('title', 'Model')}", "", f"**{chain}**", "",
+                  model.get("caption", "") + (f" ({refs})" if refs else ""), ""]
+    if sota.get("treatments"):
+        groups = (("promising", "✅ Promising early signal"), ("negative", "❌ No clear benefit"),
+                  ("testing", "⏳ Being tested in Germany"))
+        lines += ["## What has been tried", "", "| Result | Treatment | In short | Sources |", "|---|---|---|---|"]
+        for key, label in groups:
+            for tr in (t for t in sota["treatments"] if t["result"] == key):
+                refs = "; ".join(f"[{r['label']}]({r['link']})" for r in tr["refs"])
+                lines.append(f"| {label} | {cell(tr['name'])} | {cell(tr['note'])} | {refs or '—'} |")
+        lines.append("")
     for sec in sota["sections"]:
         conf = f" · _{sec['confidenceLabel']}_" if sec["confidenceLabel"] else ""
         lines += [f"## {sec['title']}", "", f"**{sec['takeaway']}**{conf}", ""]

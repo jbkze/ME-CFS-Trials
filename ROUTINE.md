@@ -180,6 +180,14 @@ current by every run — a living summary, not a changelog.
   summaries do not support. Mention negative results as clearly as positive ones.
   No treatment advice.
 - **Plain language**, same style rules as paper summaries.
+- **Treatment board** (`treatments`: name · `result` = promising / negative /
+  testing · one-line `note` · `refs`): add a row when a paper reports a treatment
+  result or a new drug trial enters `trials.json`; move a row from *testing* to
+  *promising*/*negative* when results arrive. Keep notes to one short line.
+- **Model diagram** (`model`): change only if the evidence clearly reshapes the
+  leading picture; keep it labelled as one model, not settled fact.
+- **Tiles** use each section's `short_title` and `confidence`; the confidence
+  meter is what readers see first, so update it deliberately.
 - **Topics:** each section's `keywords` (lower-case word starts, e.g. `"mitochondri"`)
   tag papers for the Papers-tab topic filter and the "All N papers on this topic"
   link. Add a keyword when a new paper clearly belongs to a section but isn't

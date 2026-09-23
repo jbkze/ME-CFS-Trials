@@ -3994,10 +3994,323 @@
     "updated": "2026-09-23",
     "reviewed": "2026-09-23",
     "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in. It describes the evidence, not medical advice.",
+    "model": {
+      "title": "How the pieces may fit together",
+      "caption": "One leading model, from Wirth and Scheibenbogen, of how the findings may connect. Parts are well supported, others are still being tested — and not every patient may fit it.",
+      "refs": [
+        {
+          "kind": "paper",
+          "id": "wirth-scheibenbogen-2020-unifying-hypothesis",
+          "label": "Wirth 2020",
+          "title": "A Unifying Hypothesis of the Pathophysiology of Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Recognitions from the finding of autoantibodies against ß2-adrenergic receptors",
+          "link": "https://doi.org/10.1016/j.autrev.2020.102527"
+        },
+        {
+          "kind": "paper",
+          "id": "scheibenbogen-wirth-2025-skeletal",
+          "label": "Scheibenbogen 2025",
+          "title": "Key Pathophysiological Role of Skeletal Muscle Disturbance in Post COVID and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Accumulated Evidence",
+          "link": "https://doi.org/10.1002/jcsm.13669"
+        },
+        {
+          "kind": "paper",
+          "id": "watton-2026-reframing-mecfs-unified",
+          "label": "Watton 2026",
+          "title": "Reframing ME/CFS: toward a unified mechanistic model of chronic post-infectious diseases",
+          "link": "https://doi.org/10.1186/s12967-026-08319-3"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "label": "An infection",
+            "sub": "e.g. COVID-19 or Epstein-Barr virus",
+            "section": "triggers"
+          }
+        ],
+        [
+          {
+            "label": "The immune system misfires",
+            "sub": "incl. self-attacking autoantibodies",
+            "section": "immune"
+          }
+        ],
+        [
+          {
+            "label": "Small blood vessels work poorly",
+            "sub": "less blood and oxygen reach the tissue",
+            "section": "vessels"
+          }
+        ],
+        [
+          {
+            "label": "Muscles run short of energy",
+            "section": "muscle-energy"
+          },
+          {
+            "label": "Brain and nerves are affected",
+            "section": "brain"
+          }
+        ],
+        [
+          {
+            "label": "Crash after activity (PEM)",
+            "sub": "the hallmark of ME/CFS",
+            "section": "what-it-is"
+          }
+        ]
+      ]
+    },
+    "treatments": [
+      {
+        "name": "BC007 (rovunaptabin)",
+        "result": "promising",
+        "note": "Neutralises autoantibodies; less fatigue than placebo in long COVID",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "hohberger-2025-bc007-recover",
+            "label": "Hohberger 2025",
+            "title": "Safety, tolerability and clinical effects of rovunaptabin (BC007) on fatigue and quality of life in patients with Post-COVID syndrome (reCOVer): a phase IIa randomised controlled trial",
+            "link": "https://doi.org/10.1016/j.eclinm.2025.103358"
+          }
+        ]
+      },
+      {
+        "name": "Daratumumab",
+        "result": "promising",
+        "note": "Removes antibody-making cells; 6 of 10 improved in a small pilot",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "fluge-2025-daratumumab",
+            "label": "Fluge 2025",
+            "title": "Plasma cell targeting with the anti-CD38 antibody daratumumab in myalgic encephalomyelitis/chronic fatigue syndrome — a clinical pilot study",
+            "link": "https://doi.org/10.3389/fmed.2025.1607353"
+          }
+        ]
+      },
+      {
+        "name": "Hyperbaric oxygen",
+        "result": "promising",
+        "note": "Symptoms improved in a Charité cohort; no placebo group",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "kim-2026-hbot-mecfs",
+            "label": "Kim 2026",
+            "title": "Hyperbaric oxygen therapy improves clinical symptoms and functional capacity and modulates thalamic connectivity in ME/CFS: a prospective cohort study",
+            "link": "https://doi.org/10.1186/s12967-026-08324-6"
+          }
+        ]
+      },
+      {
+        "name": "Rapamycin",
+        "result": "promising",
+        "note": "Less fatigue in a small pilot; no placebo group",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "gile-2026-rapamycin-purine-microglia-pilot",
+            "label": "Gile 2026",
+            "title": "Association of rapamycin treatment with the modulation of purine metabolism, reduced microglial inflammatory responses, improved mitochondrial energy metabolism, and alleviation of fatigue symptoms in ME/CFS subjects: pilot findings from phase-II observational study",
+            "link": "https://doi.org/10.1186/s12967-026-08575-3"
+          }
+        ]
+      },
+      {
+        "name": "Probiotic (VSL#3)",
+        "result": "promising",
+        "note": "Less fatigue than placebo in a small long-COVID trial",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "amoroso-2026-vsl3-delong3-probiotic-fatigue",
+            "label": "Amoroso 2026",
+            "title": "VSL#3® supplementation improves fatigue in long COVID: results from the DELong#3 randomized placebo-controlled trial",
+            "link": "https://doi.org/10.3389/bjbs.2026.16993"
+          }
+        ]
+      },
+      {
+        "name": "Rituximab",
+        "result": "negative",
+        "note": "No benefit in a large placebo-controlled trial",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "fluge-2019-rituximab-rituxme",
+            "label": "Fluge 2019",
+            "title": "B-Lymphocyte Depletion in Patients With Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Randomized, Double-Blind, Placebo-Controlled Trial (RituxME)",
+            "link": "https://doi.org/10.7326/M18-1451"
+          }
+        ]
+      },
+      {
+        "name": "Paxlovid",
+        "result": "negative",
+        "note": "No benefit in the largest long-COVID antiviral trial",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "baden-2026-recover-vital-paxlovid-longcovid-negative-rct",
+            "label": "Baden 2026",
+            "title": "Nirmatrelvir-ritonavir for the treatment of long COVID (RECOVER-VITAL): a randomised, placebo-controlled, phase 2 trial",
+            "link": "https://doi.org/10.1016/S1473-3099(26)00406-8"
+          }
+        ]
+      },
+      {
+        "name": "Temelimab",
+        "result": "negative",
+        "note": "No better than placebo",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "nehme-2026-temelimab-herv-w-postcovid-rct",
+            "label": "Nehme 2026",
+            "title": "Temelimab versus placebo in patients with post-COVID condition",
+            "link": "https://doi.org/10.1016/j.bbi.2026.106892"
+          }
+        ]
+      },
+      {
+        "name": "Immunoadsorption vs sham",
+        "result": "negative",
+        "note": "Removed the antibodies, but patients felt no better than with a sham",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "stortz-2026-immunoadsorption-sham-postcovid",
+            "label": "Stortz 2026",
+            "title": "Immunoadsorption Versus Sham Treatment for Post-COVID Syndrome: A Randomised Sham-Controlled Crossover Trial",
+            "link": "https://doi.org/10.1016/j.lanepe.2026.101744"
+          }
+        ]
+      },
+      {
+        "name": "Repurposed drugs",
+        "result": "negative",
+        "note": "Rivaroxaban, colchicine, famotidine-loratadine: small, temporary benefit only",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "wall-2026-stimulate-icp-repurposed-drugs-longcovid-fatigue",
+            "label": "Wall 2026",
+            "title": "Efficacy and safety of rivaroxaban, colchicine, and famotidine-loratadine with specialist supportive clinical care for fatigue in patients with post-COVID-19 condition in the UK: a multisite, open-label, randomised controlled trial",
+            "link": "https://doi.org/10.1016/S1473-3099(26)00242-2"
+          }
+        ]
+      },
+      {
+        "name": "Structured care programme",
+        "result": "negative",
+        "note": "No better function after a year (Charité)",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "peters-2026-mecfs-multidisciplinary-care-trial",
+            "label": "Peters 2026",
+            "title": "Evaluation of an Integrated Multidisciplinary Care Model for Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: A Prospective, Open-label, Non-randomized Controlled Intervention Study",
+            "link": "https://doi.org/10.1016/j.amjmed.2026.09.013"
+          }
+        ]
+      },
+      {
+        "name": "Bupropion",
+        "result": "testing",
+        "note": "Post-COVID fatigue, placebo-controlled",
+        "refs": [
+          {
+            "kind": "trial",
+            "id": "rapid-elapse",
+            "label": "RAPID_ELAPSE",
+            "title": "Randomized Adaptive Assessment of Post-COVID Syndrome Treatments — ELAPSE sub-protocol (bupropion)",
+            "link": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00",
+            "status": "recruiting",
+            "statusLabel": "Recruiting"
+          }
+        ]
+      },
+      {
+        "name": "Immunoadsorption",
+        "result": "testing",
+        "note": "Antibody-positive patients, Berlin",
+        "refs": [
+          {
+            "kind": "trial",
+            "id": "nct07529197",
+            "label": "IMPACT",
+            "title": "Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
+            "link": "https://clinicaltrials.gov/study/NCT07529197",
+            "status": "recruiting",
+            "statusLabel": "Recruiting"
+          },
+          {
+            "kind": "trial",
+            "id": "drks00033897",
+            "label": "IA-Surv",
+            "title": "Observational study on immune adsorption (IA) in patients with GPCR autoantibody-positive post-COVID/post-vac syndrome (IA-Surv)",
+            "link": "https://drks.de/search/en/trial/DRKS00033897",
+            "status": "recruiting",
+            "statusLabel": "Recruiting"
+          }
+        ]
+      },
+      {
+        "name": "Inebilizumab",
+        "result": "testing",
+        "note": "Relapse after immunoadsorption, placebo-controlled",
+        "refs": [
+          {
+            "kind": "trial",
+            "id": "nct07724834",
+            "label": "PIONEER_PAIS",
+            "title": "Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial Evaluating the Efficacy and Safety of the Anti-CD19 Monoclonal Antibody Inebilizumab Compared With Placebo in Patients With Post-acute Infection Syndromes Fulfilling ME/CFS Criteria",
+            "link": "https://clinicaltrials.gov/study/NCT07724834",
+            "status": "soon",
+            "statusLabel": "Planned"
+          }
+        ]
+      },
+      {
+        "name": "Low-dose aripiprazole",
+        "result": "testing",
+        "note": "Brain-related symptoms, placebo-controlled",
+        "refs": [
+          {
+            "kind": "trial",
+            "id": "nct07714213",
+            "label": "PAISE-AriSE",
+            "title": "Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial of Low-dose Aripiprazole in Patients With Neuropsychiatric Impairment in Post-acute Infectious Syndrome (PAIS)",
+            "link": "https://clinicaltrials.gov/study/NCT07714213",
+            "status": "soon",
+            "statusLabel": "Planned"
+          }
+        ]
+      },
+      {
+        "name": "MDC002",
+        "result": "testing",
+        "note": "Wirth's muscle-energy drug; first human study",
+        "refs": [
+          {
+            "kind": "trial",
+            "id": "mitodicure-mdc002-ph1",
+            "label": "MDC002",
+            "title": "MDC002 Phase 1 Clinical Trial in ME/CFS (planned)",
+            "link": "https://mitodicure.com/",
+            "status": "soon",
+            "statusLabel": "Planned"
+          }
+        ]
+      }
+    ],
     "sections": [
       {
         "id": "what-it-is",
         "title": "What ME/CFS is",
+        "shortTitle": "What it is",
         "takeaway": "A serious, long-lasting physical illness whose defining feature is a crash after even small amounts of activity.",
         "confidence": "established",
         "confidenceLabel": "Well established",
@@ -4090,6 +4403,7 @@
       {
         "id": "genetics",
         "title": "Genes: a real biological basis",
+        "shortTitle": "Genes",
         "takeaway": "Large genetic studies show ME/CFS has a real, inherited component that points mainly to the nervous and immune systems.",
         "confidence": "strong",
         "confidenceLabel": "Strong evidence",
@@ -4163,6 +4477,7 @@
       {
         "id": "immune",
         "title": "Immune system & autoantibodies",
+        "shortTitle": "Immune system",
         "takeaway": "The immune system is clearly involved, and ‘self-attacking’ antibodies are a leading theory — but removing them has so far given mixed results.",
         "confidence": "contested",
         "confidenceLabel": "Mixed / contested",
@@ -4262,14 +4577,18 @@
                 "id": "nct07529197",
                 "label": "IMPACT",
                 "title": "Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
-                "link": "https://clinicaltrials.gov/study/NCT07529197"
+                "link": "https://clinicaltrials.gov/study/NCT07529197",
+                "status": "recruiting",
+                "statusLabel": "Recruiting"
               },
               {
                 "kind": "trial",
                 "id": "drks00033897",
                 "label": "IA-Surv",
                 "title": "Observational study on immune adsorption (IA) in patients with GPCR autoantibody-positive post-COVID/post-vac syndrome (IA-Surv)",
-                "link": "https://drks.de/search/en/trial/DRKS00033897"
+                "link": "https://drks.de/search/en/trial/DRKS00033897",
+                "status": "recruiting",
+                "statusLabel": "Recruiting"
               }
             ]
           },
@@ -4295,7 +4614,9 @@
                 "id": "nct07724834",
                 "label": "PIONEER_PAIS",
                 "title": "Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial Evaluating the Efficacy and Safety of the Anti-CD19 Monoclonal Antibody Inebilizumab Compared With Placebo in Patients With Post-acute Infection Syndromes Fulfilling ME/CFS Criteria",
-                "link": "https://clinicaltrials.gov/study/NCT07724834"
+                "link": "https://clinicaltrials.gov/study/NCT07724834",
+                "status": "soon",
+                "statusLabel": "Planned"
               }
             ]
           }
@@ -4304,6 +4625,7 @@
       {
         "id": "vessels",
         "title": "Blood vessels & circulation",
+        "shortTitle": "Blood vessels",
         "takeaway": "Poorly working small blood vessels and disturbed blood flow are among the most consistent findings.",
         "confidence": "strong",
         "confidenceLabel": "Strong evidence",
@@ -4410,6 +4732,7 @@
       {
         "id": "muscle-energy",
         "title": "Muscles & energy production",
+        "shortTitle": "Muscles & energy",
         "takeaway": "Muscles and cells’ energy supply are genuinely affected — this is where the Wirth/Scheibenbogen drug MDC002 aims.",
         "confidence": "emerging",
         "confidenceLabel": "Emerging evidence",
@@ -4514,7 +4837,9 @@
                 "id": "mitodicure-mdc002-ph1",
                 "label": "MDC002",
                 "title": "MDC002 Phase 1 Clinical Trial in ME/CFS (planned)",
-                "link": "https://mitodicure.com/"
+                "link": "https://mitodicure.com/",
+                "status": "soon",
+                "statusLabel": "Planned"
               }
             ]
           }
@@ -4523,6 +4848,7 @@
       {
         "id": "brain",
         "title": "Brain & nervous system",
+        "shortTitle": "Brain & nerves",
         "takeaway": "Brain scans and spinal-fluid tests show measurable changes, but it is still unclear which of them drive the illness.",
         "confidence": "emerging",
         "confidenceLabel": "Emerging evidence",
@@ -4610,6 +4936,7 @@
       {
         "id": "triggers",
         "title": "Viruses & triggers",
+        "shortTitle": "Viruses & triggers",
         "takeaway": "Infections, and dormant viruses ‘waking up’, are a likely trigger — but antiviral treatment has not helped so far.",
         "confidence": "contested",
         "confidenceLabel": "Mixed / contested",
@@ -4678,6 +5005,7 @@
       {
         "id": "gut",
         "title": "Gut",
+        "shortTitle": "Gut",
         "takeaway": "Gut problems are common and linked to overall severity; treating the gut is an early but plausible idea.",
         "confidence": "early",
         "confidenceLabel": "Early ideas",
@@ -4739,6 +5067,7 @@
       {
         "id": "diagnosis",
         "title": "Tests & biomarkers",
+        "shortTitle": "Tests & biomarkers",
         "takeaway": "There is still no validated lab test for ME/CFS, but several candidates look promising.",
         "confidence": "emerging",
         "confidenceLabel": "Emerging evidence",
@@ -4833,6 +5162,7 @@
       {
         "id": "treatment",
         "title": "Treatment: what has been tested",
+        "shortTitle": "Treatments",
         "takeaway": "There is no approved drug for ME/CFS yet; several ideas show early promise, and several well-run trials were negative.",
         "confidence": "contested",
         "confidenceLabel": "Mixed / contested",
@@ -4948,6 +5278,7 @@
       {
         "id": "watch",
         "title": "What to watch in Germany",
+        "shortTitle": "Trials in Germany",
         "takeaway": "Several German drug studies are open or planned — the Studies tab has eligibility details.",
         "confidence": "",
         "confidenceLabel": "",
@@ -4962,21 +5293,27 @@
                 "id": "rapid-elapse",
                 "label": "RAPID_ELAPSE",
                 "title": "Randomized Adaptive Assessment of Post-COVID Syndrome Treatments — ELAPSE sub-protocol (bupropion)",
-                "link": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00"
+                "link": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00",
+                "status": "recruiting",
+                "statusLabel": "Recruiting"
               },
               {
                 "kind": "trial",
                 "id": "nct07529197",
                 "label": "IMPACT",
                 "title": "Observational Study on Immunoadsorption (IA) in Patients With Autoantibody-Positive Post-Infectious ME/CFS",
-                "link": "https://clinicaltrials.gov/study/NCT07529197"
+                "link": "https://clinicaltrials.gov/study/NCT07529197",
+                "status": "recruiting",
+                "statusLabel": "Recruiting"
               },
               {
                 "kind": "trial",
                 "id": "drks00033897",
                 "label": "IA-Surv",
                 "title": "Observational study on immune adsorption (IA) in patients with GPCR autoantibody-positive post-COVID/post-vac syndrome (IA-Surv)",
-                "link": "https://drks.de/search/en/trial/DRKS00033897"
+                "link": "https://drks.de/search/en/trial/DRKS00033897",
+                "status": "recruiting",
+                "statusLabel": "Recruiting"
               }
             ]
           },
@@ -4988,14 +5325,18 @@
                 "id": "nct07724834",
                 "label": "PIONEER_PAIS",
                 "title": "Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial Evaluating the Efficacy and Safety of the Anti-CD19 Monoclonal Antibody Inebilizumab Compared With Placebo in Patients With Post-acute Infection Syndromes Fulfilling ME/CFS Criteria",
-                "link": "https://clinicaltrials.gov/study/NCT07724834"
+                "link": "https://clinicaltrials.gov/study/NCT07724834",
+                "status": "soon",
+                "statusLabel": "Planned"
               },
               {
                 "kind": "trial",
                 "id": "nct07714213",
                 "label": "PAISE-AriSE",
                 "title": "Prospective, Randomized, Double-blind, Placebo-controlled Phase 2b Trial of Low-dose Aripiprazole in Patients With Neuropsychiatric Impairment in Post-acute Infectious Syndrome (PAIS)",
-                "link": "https://clinicaltrials.gov/study/NCT07714213"
+                "link": "https://clinicaltrials.gov/study/NCT07714213",
+                "status": "soon",
+                "statusLabel": "Planned"
               }
             ]
           },
@@ -5007,7 +5348,9 @@
                 "id": "mitodicure-mdc002-ph1",
                 "label": "MDC002",
                 "title": "MDC002 Phase 1 Clinical Trial in ME/CFS (planned)",
-                "link": "https://mitodicure.com/"
+                "link": "https://mitodicure.com/",
+                "status": "soon",
+                "statusLabel": "Planned"
               }
             ]
           }
