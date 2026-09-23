@@ -54,6 +54,9 @@ notable ME/CFS science (e.g. DecodeME genetics, micro-clots, mitochondrial/muscl
 findings). Confirm each via its **DOI / journal / preprint page**; news/blogs are
 leads only — never fabricate.
 
+**Write in English.** All recorded content (papers, trials, state of the art,
+CHANGELOG, reports) is English, even if the request is in German.
+
 **Write summaries for laypeople.** Both `summary` and `why` must be understandable
 by someone with no medical background: short sentences, plain words, as many
 technical terms as necessary but as few as possible — and when a term is
@@ -103,7 +106,7 @@ reference — match their tone.
    - (no flag) — unchanged since last check.
    For papers, mark `isNew: true` only if the `id` is new this run; set it back to
    `false` on later runs.
-6. **Update files** (see below).
+6. **Update files** (see below), including the **state of the art** (see below).
 7. **Report** (see below).
 
 ## Updating the files
@@ -120,14 +123,28 @@ reference — match their tone.
   `summary`, a one-line `why` (why it matters), `link` (DOI), `first_seen`, and
   `isNew`. Write `summary` and `why` in **plain, layperson language** (see the
   style note under "Scope — papers"). Refresh its `isNew` flags as above.
+- **State of the art:** review `data/state_of_the_art.json` (see *State of the
+  art* below) against this run's new/changed papers and trials.
 - Set top-level `last_check` to today's date (YYYY-MM-DD) in both files, and set
   top-level `last_run_at` in `data/trials.json` to the current timestamp **with
   time** (UTC ISO-8601, e.g. `date -u +%FT%TZ` → `2026-06-25T14:21:48Z`). The
   dashboard localises this to the viewer's timezone and shows the time next to
   the date; `nextRun` is computed as `last_run_at + 1 day` (daily cadence).
-- Regenerate the views: `python3 scripts/render_trials.py` — rebuilds both
-  `TRIALS.md` and `docs/dashboard.json` (the feed for the GitHub Pages dashboard,
-  `docs/index.html`; studies from `trials.json`, papers from `papers.json`).
+- **New trials also need** `plain_summary` (1–2 plain-language sentences: what is
+  tested, on whom, how — this is the main text of the dashboard card) and
+  `key_requirement` (the single most important entry requirement in a few words).
+  Keep both current when a trial's details change.
+- Regenerate the views: `python3 scripts/render_trials.py` — rebuilds
+  `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/feed.xml` (Atom feed of new papers and
+  trial changes) and `docs/dashboard.json` (the feed for the
+  GitHub Pages dashboard, `docs/index.html`; studies from `trials.json`, papers
+  from `papers.json`, the Overview tab from `state_of_the_art.json`). It exits
+  non-zero and prints a `WARNING` if the state of the art cites an unknown id —
+  fix the id and re-run.
+- **Paper dates:** the dashboard sorts papers by the earliest date it can parse
+  from `date` (e.g. `"Oct 2026 (posted online Aug 10, 2026)"` → 2026-08-10). Keep
+  writing `date` in that style; if it is ambiguous, add an explicit
+  `"published": "YYYY-MM-DD"` (or `YYYY-MM`) field, which takes precedence.
 - Append one entry to `checks/CHANGELOG.md` using the template at the top of that file.
 - **Literature archive:** run `pip install -q pymupdf` then
   `python3 scripts/literature_intake.py` — for every paper in `data/papers.json` it
@@ -139,7 +156,48 @@ reference — match their tone.
   the env only, never committed). Freshly fetched PDFs are identity-checked (author
   surname + title words) so a wrong record is discarded. Idempotent — existing PDFs
   are kept. Commit the new `literature/` folders. See `literature/README.md`.
-- **Never hand-edit `TRIALS.md` or `docs/dashboard.json`** — they are generated.
+- **Never hand-edit `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/feed.xml` or `docs/dashboard.json`**
+  — they are generated.
+
+## State of the art
+
+`data/state_of_the_art.json` is a short, plain-language overview of where ME/CFS
+research stands (dashboard **Overview** tab + `STATE-OF-THE-ART.md`). It is kept
+current by every run — a living summary, not a changelog.
+
+- **Every run:** read it after the papers/trials step. For each new or changed
+  paper/trial, ask: does this confirm, contradict or add to a section? A notable
+  result (a trial outcome, a replication or failed replication, a new German
+  study, anything Wirth/Scheibenbogen) usually should change something; a small
+  exploratory study usually should not.
+- **Edit by revising, not appending.** Rewrite the affected point (or replace
+  its weakest reference) so each section stays at 2–6 points of ≤ ~45 words.
+  Adjust `takeaway` and `confidence` (`established` · `strong` · `emerging` ·
+  `contested` · `early`) when the balance of evidence shifts. Add a new section
+  only for a genuinely new research area.
+- **Grounded only.** Every point cites ids in `refs` that exist in
+  `data/papers.json` or `data/trials.json`, and says nothing those entries'
+  summaries do not support. Mention negative results as clearly as positive ones.
+  No treatment advice.
+- **Plain language**, same style rules as paper summaries.
+- **Treatment board** (`treatments`: name · `result` = promising / negative /
+  testing · one-line `note` · `refs`): add a row when a paper reports a treatment
+  result or a new drug trial enters `trials.json`; move a row from *testing* to
+  *promising*/*negative* when results arrive. Keep notes to one short line.
+- **Model diagram** (`model`): change only if the evidence clearly reshapes the
+  leading picture; keep it labelled as one model, not settled fact.
+- **Tiles** use each section's `short_title` and `confidence`; the confidence
+  meter is what readers see first, so update it deliberately.
+- **Topics:** each section's `keywords` (lower-case word starts, e.g. `"mitochondri"`)
+  tag papers for the Papers-tab topic filter and the "All N papers on this topic"
+  link. Add a keyword when a new paper clearly belongs to a section but isn't
+  picked up.
+- **Dates:** when a section's content changes, set its `updated` and the
+  top-level `updated` to today. Always set top-level `reviewed` to today.
+- Keep the *What to watch in Germany* section in sync with the trial tiers
+  (open / planned) whenever a trial is added, opens, or closes.
+- Mention in the CHANGELOG entry which sections changed (or "state of the art
+  reviewed, unchanged").
 
 ## Reporting back
 
@@ -169,7 +227,8 @@ is no human in the loop, so two things differ from an interactive run:
 1. **State must persist on the default branch.** Each run clones the repo fresh
    from the default branch, so the *previous* run's data is only visible if it was
    committed back to that branch. Therefore the run must **commit** the updated
-   `data/trials.json`, `data/papers.json`, `TRIALS.md`, `docs/dashboard.json`, and
+   `data/trials.json`, `data/papers.json`, `data/state_of_the_art.json`,
+   `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/dashboard.json`, `docs/feed.xml`, and
    `checks/CHANGELOG.md`. With *Allow unrestricted branch pushes* enabled it
    commits straight to the default branch (recommended — keeps the baseline
    current automatically). Without it, it pushes a `claude/` branch and opens a

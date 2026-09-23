@@ -29,13 +29,17 @@ below is ambiguous. In short:
    the DOI / journal / preprint page.
 4. Update the JSON (set `first_seen`/`isNew` once, refresh `last_checked`, set
    top-level `last_check` + `last_run_at` (UTC timestamp with time), recompute
-   trial `flags`), then run
+   trial `flags`), revise `data/state_of_the_art.json` where the new findings
+   change the picture (ROUTINE.md → "State of the art"), then run
    `python3 scripts/render_trials.py`, then append to `checks/CHANGELOG.md`.
 5. Report newest-first: trials in two tiers (open, then planned), then papers —
    Wirth/Scheibenbogen first. If nothing changed, confirm in one line.
 
 ## Hard rules (always)
 
+- **Language: English.** All content — dashboard, `summary`/`why`, state of the
+  art, CHANGELOG, reports and issues — is written in English, even when the
+  request comes in German.
 - **Scope filter — all must hold:** condition = ME/CFS · intervention =
   drug/pharmacological (immunoadsorption is borderline → include + note) ·
   German connection (≥1 site in Germany, or — for a planned study without
@@ -58,7 +62,10 @@ below is ambiguous. In short:
   but **not** Germany-restricted; recent (~last 3 months / since `last_check`);
   confirmed via DOI/journal/preprint; `summary` + `why` written in **plain,
   layperson language** (minimal jargon, explained inline). → `data/papers.json`.
-- **Never hand-edit `TRIALS.md` or `docs/dashboard.json`** — they are generated;
+- **State of the art** (`data/state_of_the_art.json`): short plain-language
+  overview, reviewed every run; every point cites ids from papers/trials JSON;
+  revise, don't append.
+- **Never hand-edit `TRIALS.md`, `STATE-OF-THE-ART.md`, `docs/feed.xml` or `docs/dashboard.json`** — they are generated;
   edit the JSON and re-run the script.
 - **Never delete** a trial that drops out of scope — update its status + flag it.
 - Sources list is a **floor, not a ceiling**; add durable new sources you find.
@@ -66,7 +73,8 @@ below is ambiguous. In short:
 ## File map
 
 `ROUTINE.md` procedure · `SETUP-ROUTINE.md` scheduled-run setup + canonical prompt ·
-`sources/search-sources.md` where to look · `data/trials.json` + `data/papers.json`
+`sources/search-sources.md` where to look · `data/trials.json` + `data/papers.json` +
+`data/state_of_the_art.json`
 sources of truth · `data/schema.json` field docs · `TRIALS.md` generated view ·
 `docs/` GitHub Pages dashboard (`index.html` + generated `dashboard.json`) ·
 `scripts/render_trials.py` renderer · `literature/papers/` per-paper PDF + summary +

@@ -82,8 +82,14 @@ research papers (broader).
    flags (new / newly_open / status_changed / closed_since_last / details_changed)
    vs the baseline. In data/papers.json add confirmed new papers (title, authors,
    journal, date, one-line summary, one-line "why it matters", DOI link, first_seen,
-   isNew) and refresh last_check. Then run `python3 scripts/render_trials.py` — this
-   rebuilds TRIALS.md AND docs/dashboard.json (the GitHub Pages dashboard feed).
+   isNew) and refresh last_check. Then review data/state_of_the_art.json (the
+   plain-language research overview) per ROUTINE.md "State of the art": revise the
+   points/takeaway/confidence of any section that this run's new or changed papers
+   or trials confirm, contradict or extend — citing only ids from papers.json /
+   trials.json, never appending endlessly — bump `updated` where content changed,
+   and always set `reviewed` to today. Then run `python3 scripts/render_trials.py` —
+   this rebuilds TRIALS.md, STATE-OF-THE-ART.md, docs/feed.xml AND docs/dashboard.json (the GitHub
+   Pages dashboard feed); fix any WARNING about unknown ids and re-run.
    Prepend a dated entry to checks/CHANGELOG.md. Then archive the papers locally:
    `pip install -q pymupdf && python3 scripts/literature_intake.py` — writes
    literature/papers/<slug>/ per paper (open-access PDF + extracted text + cover +
@@ -91,8 +97,9 @@ research papers (broader).
    note). Idempotent; existing PDFs are kept.
 
 5. Persist state — essential, because the next run re-clones the default branch:
-   commit data/trials.json, data/papers.json, TRIALS.md, docs/dashboard.json,
-   checks/CHANGELOG.md and the new literature/ folders to the default branch with message
+   commit data/trials.json, data/papers.json, data/state_of_the_art.json, TRIALS.md,
+   STATE-OF-THE-ART.md, docs/dashboard.json, docs/feed.xml, checks/CHANGELOG.md and the new
+   literature/ folders to the default branch with message
    "Research watch <YYYY-MM-DD>: T new/changed trials, P new papers". If you
    cannot push to the default branch, push a claude/ branch and open a PR with the
    same summary.
@@ -138,7 +145,8 @@ to keep working.
 
 ## Publish the dashboard (GitHub Pages) — one-time
 
-The dashboard lives in `docs/` (`index.html` + the generated `dashboard.json`).
+The dashboard lives in `docs/` (`index.html` + the generated `dashboard.json` +
+self-hosted fonts in `docs/fonts/`, so the page makes no requests to Google).
 To put it online, enable Pages once:
 
 1. Repo → **Settings → Pages**.

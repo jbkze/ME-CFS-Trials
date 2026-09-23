@@ -1,0 +1,451 @@
+{
+  "schema_version": 1,
+  "description": "Short, continuously updated plain-language overview of where ME/CFS research stands, shown on the dashboard's Overview tab and rendered to STATE-OF-THE-ART.md. It is a synthesis of the confirmed entries in data/papers.json and data/trials.json — every point cites their ids in `refs`, and nothing may be claimed that those entries do not support. STYLE: layperson language as in papers.json; one-sentence `takeaway` per section; 2–6 `points` per section, each ≤ ~45 words; replace outdated points rather than appending. `confidence` is one of: established, strong, emerging, contested, early. Bump a section's `updated` (and top-level `updated`) only when its content changes; set top-level `reviewed` every run. Optional `keywords` (lower-case substrings matched against paper titles + summaries) assign papers to a section's topic for the Papers-tab topic filter; cited `refs` are always included. See ROUTINE.md → 'State of the art'. Also holds `model` (the 'how it may fit together' diagram: rows of nodes, each linked to a section) and `treatments` (the treatment board: result = promising | negative | testing, a short `note`, cited `refs`); keep both in sync with the sections. Each section has a `short_title` for its tile.",
+  "updated": "2026-09-23",
+  "reviewed": "2026-09-23",
+  "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in. It describes the evidence, not medical advice.",
+  "model": {
+    "title": "How the pieces may fit together",
+    "caption": "One leading model, from Wirth and Scheibenbogen, of how the findings may connect. Parts are well supported, others are still being tested — and not every patient may fit it.",
+    "refs": ["wirth-scheibenbogen-2020-unifying-hypothesis", "scheibenbogen-wirth-2025-skeletal", "watton-2026-reframing-mecfs-unified"],
+    "rows": [
+      [
+        {
+          "label": "An infection",
+          "sub": "e.g. COVID-19 or Epstein-Barr virus",
+          "section": "triggers"
+        }
+      ],
+      [
+        {
+          "label": "The immune system misfires",
+          "sub": "incl. self-attacking autoantibodies",
+          "section": "immune"
+        }
+      ],
+      [
+        {
+          "label": "Small blood vessels work poorly",
+          "sub": "less blood and oxygen reach the tissue",
+          "section": "vessels"
+        }
+      ],
+      [
+        {
+          "label": "Muscles run short of energy",
+          "section": "muscle-energy"
+        },
+        {
+          "label": "Brain and nerves are affected",
+          "section": "brain"
+        }
+      ],
+      [
+        {
+          "label": "Crash after activity (PEM)",
+          "sub": "the hallmark of ME/CFS",
+          "section": "what-it-is"
+        }
+      ]
+    ]
+  },
+  "treatments": [
+    {
+      "name": "BC007 (rovunaptabin)",
+      "result": "promising",
+      "note": "Neutralises autoantibodies; less fatigue than placebo in long COVID",
+      "refs": ["hohberger-2025-bc007-recover"]
+    },
+    {
+      "name": "Daratumumab",
+      "result": "promising",
+      "note": "Removes antibody-making cells; 6 of 10 improved in a small pilot",
+      "refs": ["fluge-2025-daratumumab"]
+    },
+    {
+      "name": "Hyperbaric oxygen",
+      "result": "promising",
+      "note": "Symptoms improved in a Charité cohort; no placebo group",
+      "refs": ["kim-2026-hbot-mecfs"]
+    },
+    {
+      "name": "Rapamycin",
+      "result": "promising",
+      "note": "Less fatigue in a small pilot; no placebo group",
+      "refs": ["gile-2026-rapamycin-purine-microglia-pilot"]
+    },
+    {
+      "name": "Probiotic (VSL#3)",
+      "result": "promising",
+      "note": "Less fatigue than placebo in a small long-COVID trial",
+      "refs": ["amoroso-2026-vsl3-delong3-probiotic-fatigue"]
+    },
+    {
+      "name": "Rituximab",
+      "result": "negative",
+      "note": "No benefit in a large placebo-controlled trial",
+      "refs": ["fluge-2019-rituximab-rituxme"]
+    },
+    {
+      "name": "Paxlovid",
+      "result": "negative",
+      "note": "No benefit in the largest long-COVID antiviral trial",
+      "refs": ["baden-2026-recover-vital-paxlovid-longcovid-negative-rct"]
+    },
+    {
+      "name": "Temelimab",
+      "result": "negative",
+      "note": "No better than placebo",
+      "refs": ["nehme-2026-temelimab-herv-w-postcovid-rct"]
+    },
+    {
+      "name": "Immunoadsorption vs sham",
+      "result": "negative",
+      "note": "Removed the antibodies, but patients felt no better than with a sham",
+      "refs": ["stortz-2026-immunoadsorption-sham-postcovid"]
+    },
+    {
+      "name": "Repurposed drugs",
+      "result": "negative",
+      "note": "Rivaroxaban, colchicine, famotidine-loratadine: small, temporary benefit only",
+      "refs": ["wall-2026-stimulate-icp-repurposed-drugs-longcovid-fatigue"]
+    },
+    {
+      "name": "Structured care programme",
+      "result": "negative",
+      "note": "No better function after a year (Charité)",
+      "refs": ["peters-2026-mecfs-multidisciplinary-care-trial"]
+    },
+    {
+      "name": "Bupropion",
+      "result": "testing",
+      "note": "Post-COVID fatigue, placebo-controlled",
+      "refs": ["rapid-elapse"]
+    },
+    {
+      "name": "Immunoadsorption",
+      "result": "testing",
+      "note": "Antibody-positive patients, Berlin",
+      "refs": ["nct07529197", "drks00033897"]
+    },
+    {
+      "name": "Inebilizumab",
+      "result": "testing",
+      "note": "Relapse after immunoadsorption, placebo-controlled",
+      "refs": ["nct07724834"]
+    },
+    {
+      "name": "Low-dose aripiprazole",
+      "result": "testing",
+      "note": "Brain-related symptoms, placebo-controlled",
+      "refs": ["nct07714213"]
+    },
+    {
+      "name": "MDC002",
+      "result": "testing",
+      "note": "Wirth's muscle-energy drug; first human study",
+      "refs": ["mitodicure-mdc002-ph1"]
+    }
+  ],
+  "sections": [
+    {
+      "id": "what-it-is",
+      "title": "What ME/CFS is",
+      "short_title": "What it is",
+      "takeaway": "A serious, long-lasting physical illness whose defining feature is a crash after even small amounts of activity.",
+      "confidence": "established",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "The hallmark is post-exertional malaise (PEM): symptoms get markedly worse after physical or mental effort, often with a delay. Modern diagnostic criteria put PEM at the centre.",
+          "refs": ["carruthers-2011-icc", "iom-2015-seid"]
+        },
+        {
+          "text": "PEM can be measured objectively: on two exercise tests 24 hours apart, patients cannot repeat their first-day performance.",
+          "refs": ["keller-2014-twoday-cpet"]
+        },
+        {
+          "text": "Roughly 0.5–1% of people are affected worldwide, depending on the definition used.",
+          "refs": ["lim-2020-prevalence"]
+        },
+        {
+          "text": "Many cases start after an infection. After COVID-19, about one in five people in a large New York survey reported PEM, and post-COVID patients increasingly resemble established ME/CFS over time.",
+          "refs": ["packard-2026-pem-prevalence-nyc-survey", "azcue-2026-postcovid-mecfs-convergence", "komaroff-2021-longcovid-mecfs"]
+        },
+        {
+          "text": "International experts have now agreed on a common way to measure the core symptoms, which should make studies easier to compare.",
+          "refs": ["kujawski-2026-mecfs-pais-diagnostic-consensus-framework"]
+        }
+      ]
+    },
+    {
+      "id": "genetics",
+      "title": "Genes: a real biological basis",
+      "short_title": "Genes",
+      "takeaway": "Large genetic studies show ME/CFS has a real, inherited component that points mainly to the nervous and immune systems.",
+      "confidence": "strong",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "DecodeME, the largest genetic study so far (over 15,000 patients), found eight DNA regions linked to ME/CFS, several involved in fighting infection.",
+          "refs": ["decodeme-2025-gwas"]
+        },
+        {
+          "text": "Independent groups have since replicated gene hits in other datasets, with the strongest signals in brain and nerve-signalling genes rather than blood.",
+          "refs": ["slaughter-2026-gwas-biobank-replication", "maccallini-2026-gwas-wgs-synaptic-genes"]
+        },
+        {
+          "text": "Genetic analyses suggest ME/CFS has its own roots in nerve cells and is not simply a form of depression, even though symptoms can overlap.",
+          "refs": ["lee-2026-genetic-overlap-mecfs-ibs-psychiatric", "saini-2026-symptom-subtypes-id-fd-lifelines"]
+        },
+        {
+          "text": "Genetic ‘cause-and-effect’ methods point to cellular energy production and low-grade inflammation and clotting as likely causes, not just consequences, of the illness.",
+          "refs": ["wielscher-2026-decodeme-mendelian-randomization"]
+        }
+      ],
+      "keywords": ["genetic", "genome", "gwas", "decodeme", "gene variant", "gene region", "mendelian"]
+    },
+    {
+      "id": "immune",
+      "title": "Immune system & autoantibodies",
+      "short_title": "Immune system",
+      "takeaway": "The immune system is clearly involved, and ‘self-attacking’ antibodies are a leading theory — but removing them has so far given mixed results.",
+      "confidence": "contested",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "Many patients carry autoantibodies (antibodies that mistakenly target the body’s own receptors) against receptors that control blood vessels and nerves. This is the basis of the Scheibenbogen group’s autoimmune model.",
+          "refs": ["loebel-2016-autoantibodies", "sotzny-2018-autoimmune-review", "azcue-2026-gpcr-autoantibodies-postcovid"]
+        },
+        {
+          "text": "Lab evidence that such antibodies can do harm: patients’ antibodies damaged cells’ energy machinery, and long-COVID antibodies caused symptoms when transferred into mice.",
+          "refs": ["liu-2026-igg-energetics", "desa-2026-autoantibodies-longcovid-cell"]
+        },
+        {
+          "text": "The ‘first-response’ (innate) immune system tends to overreact, and a calcium channel in immune cells (TRPM3) is faulty — a finding confirmed across several labs.",
+          "refs": ["che-2025-innate-immunity-mecfs", "sasso-2026-trpm3-nkcell", "magawa-2026-trpm3-nk-cells-post-covid"]
+        },
+        {
+          "text": "Filtering antibodies out of the blood (immunoadsorption) lowered antibody levels but did not beat a sham treatment in a German post-COVID trial; another small study was also negative. Two Berlin studies are still following it in antibody-positive patients.",
+          "refs": ["stortz-2026-immunoadsorption-sham-postcovid", "wossidlo-2026-immunoadsorption-postcovid-negative", "nct07529197", "drks00033897"]
+        },
+        {
+          "text": "Wiping out B cells with rituximab failed in a large trial, but targeting the antibody-making plasma cells (daratumumab) helped 6 of 10 patients in a small pilot. Charité plans a placebo-controlled B-cell trial (inebilizumab).",
+          "refs": ["fluge-2019-rituximab-rituxme", "fluge-2025-daratumumab", "nct07724834"]
+        }
+      ],
+      "keywords": ["autoantibod", "antibod", "immune", "b cell", "b-cell", "t cell", "natural killer", "nk cell", "cytokine", "immunoadsorption", "plasma exchange", "trpm3"]
+    },
+    {
+      "id": "vessels",
+      "title": "Blood vessels & circulation",
+      "short_title": "Blood vessels",
+      "takeaway": "Poorly working small blood vessels and disturbed blood flow are among the most consistent findings.",
+      "confidence": "strong",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "The inner lining of blood vessels (endothelium) works poorly in many patients; a simple eye scan showed this was worst in the ME/CFS group of post-COVID patients.",
+          "refs": ["haffke-2022-endothelial-dysfunction", "wallraven-2026-retinal-microvascular-postcovid-mecfs"]
+        },
+        {
+          "text": "During exercise, blood does not return to the heart properly (‘preload failure’), and muscles struggle to use the oxygen they receive.",
+          "refs": ["joseph-2021-invasive-cpet", "mackay-2026-hemodynamic-phenotyping-mecfs-anoca"]
+        },
+        {
+          "text": "Dizziness and a racing heart on standing (orthostatic intolerance, POTS) are common — over a third of teenagers with ME/CFS in one study had POTS.",
+          "refs": ["leone-2026-pots-adolescents-mecfs-case-control", "miwa-2026-orthostatic-intolerance-small-heart"]
+        },
+        {
+          "text": "Whether low blood volume drives this is debated: Wirth proposes it does, while a new measurement study found blood volume made no difference to who was affected.",
+          "refs": ["wirth-2026-hypovolemia-review", "yamazaki-2026-blood-volume-orthostatic-mecfs"]
+        },
+        {
+          "text": "‘Microclots’ (tiny, hard-to-dissolve clots) that may clog small vessels are reported in long COVID and ME/CFS — a theory with growing lab evidence, but not yet tested as a treatment target in the trials tracked here.",
+          "refs": ["nunes-2026-microclot-hypercoagulability-longcovid", "grixti-2026-microclot-fibrinaloid-review"]
+        }
+      ],
+      "keywords": ["blood vessel", "endotheli", "blood flow", "circulation", "orthostatic", "pots", "microclot", "clotting", "vascular", "blood volume", "hypovol", "heart rate"]
+    },
+    {
+      "id": "muscle-energy",
+      "title": "Muscles & energy production",
+      "short_title": "Muscles & energy",
+      "takeaway": "Muscles and cells’ energy supply are genuinely affected — this is where the Wirth/Scheibenbogen drug MDC002 aims.",
+      "confidence": "emerging",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "Wirth and Scheibenbogen’s theory: too little blood flow lets sodium and then calcium build up in muscle cells, damaging their energy units (mitochondria) and causing the crash after activity.",
+          "refs": ["wirth-scheibenbogen-2020-unifying-hypothesis", "wirth-scheibenbogen-2021-skeletal-muscle", "scheibenbogen-wirth-2025-skeletal"]
+        },
+        {
+          "text": "Muscle biopsies differ from people after 60 days of bed rest — so the muscle changes are not just from being inactive.",
+          "refs": ["charlton-2026-skeletal-muscle-bedrest-comparison"]
+        },
+        {
+          "text": "Blood chemistry points to a ‘low-energy survival mode’ and a blocked step in turning food into energy; brain scans show extra lactate, a sign of energy made without enough oxygen.",
+          "refs": ["naviaux-2016-metabolic-features", "fluge-2016-pyruvate-dehydrogenase", "bader-2026-hypoxia-mri-mecfs", "heng-2025-mecfs-energy-immune-vascular-multimodal"]
+        },
+        {
+          "text": "Not everything holds up: a careful repeat of a well-known study found no ‘blood factor’ that disturbs healthy muscle cells.",
+          "refs": ["ryback-2026-myoblast-mitochondria-replication"]
+        },
+        {
+          "text": "MDC002 (Mitodicure, Klaus Wirth) is designed to break this calcium-overload cycle in muscle. A first trial in humans is planned but not yet registered.",
+          "refs": ["wirth-2026-myasthenia-electrophysiology", "mitodicure-mdc002-ph1"]
+        }
+      ],
+      "keywords": ["muscle", "mitochondri", "energy production", "energy metabolism", "energy-making", "lactate", "metabol", "atp"]
+    },
+    {
+      "id": "brain",
+      "title": "Brain & nervous system",
+      "short_title": "Brain & nerves",
+      "takeaway": "Brain scans and spinal-fluid tests show measurable changes, but it is still unclear which of them drive the illness.",
+      "confidence": "emerging",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "Fatigue appears to start partly in the brain: when muscles tire, the brain’s compensating signal barely increases in ME/CFS.",
+          "refs": ["bedard-2026-central-fatigability-neuroimaging"]
+        },
+        {
+          "text": "Brain chemistry is altered: spinal fluid shows too little activity of noradrenaline (an alertness messenger), and the stress hormone cortisol is consistently low.",
+          "refs": ["aregawi-2026-central-noradrenergic-deficiency", "woo-2026-cortisol-hpa-axis-meta-analysis", "wirth-2026-neurotransmitter"]
+        },
+        {
+          "text": "The brain’s nightly ‘cleaning system’ seems weaker, which matches worse sleep and brain fog.",
+          "refs": ["thapaliya-2026-glymphatic-dti-alps", "sun-2026-sleep-eeg-microstructures-longcovid-mecfs"]
+        },
+        {
+          "text": "Brain inflammation is not settled: an early scan study found signs of it, while a recent post-COVID study found no immune attack inside the brain.",
+          "refs": ["nakatomi-2014-neuroinflammation-pet", "erhart-2026-cns-immune-activation-postcovid"]
+        }
+      ],
+      "keywords": ["brain", "cognitive", "neuro", "sleep", "eeg", "mri", "cortisol", "spinal fluid", "thalamus", "noradrenaline", "dopamine"]
+    },
+    {
+      "id": "triggers",
+      "title": "Viruses & triggers",
+      "short_title": "Viruses & triggers",
+      "takeaway": "Infections, and dormant viruses ‘waking up’, are a likely trigger — but antiviral treatment has not helped so far.",
+      "confidence": "contested",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "Common dormant viruses (like Epstein-Barr virus and HHV-6) often reactivate during severe COVID-19, and this has been linked to later long COVID.",
+          "refs": ["maguire-2026-virus-reactivation-impacc-nature", "chen-2026-ebv-reprograms-bcells-covid", "choudhury-2026-hhv6-igg-iga-longcovid-risk"]
+        },
+        {
+          "text": "Leftover pieces of coronavirus have been found in gut tissue of long-COVID patients.",
+          "refs": ["lafranchi-2026-gut-viral-persistence-longcovid"]
+        },
+        {
+          "text": "Yet the largest antiviral trial (Paxlovid) showed no benefit, and a drug against ‘fossil virus’ proteins in our DNA (temelimab) also failed.",
+          "refs": ["baden-2026-recover-vital-paxlovid-longcovid-negative-rct", "nehme-2026-temelimab-herv-w-postcovid-rct"]
+        }
+      ],
+      "keywords": ["virus", "viral", "epstein", "ebv", "hhv-6", "herpes", "reactivat", "antiviral", "retrovir"]
+    },
+    {
+      "id": "gut",
+      "title": "Gut",
+      "short_title": "Gut",
+      "takeaway": "Gut problems are common and linked to overall severity; treating the gut is an early but plausible idea.",
+      "confidence": "early",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "About one in three patients also has irritable bowel syndrome, and worse gut symptoms go along with worse ME/CFS symptoms and more inflammation.",
+          "refs": ["rajabi-2026-ibs-mecfs-meta-analysis", "brown-2026-gi-inflammation"]
+        },
+        {
+          "text": "Patients lack some ‘good’ bacteria, including ones that make a fuel for the gut lining.",
+          "refs": ["xiong-2023-microbiome-multiomics", "donchev-2026-gut-microbiome-mecfs-longcovid"]
+        },
+        {
+          "text": "A small placebo-controlled trial of a probiotic reduced fatigue in long COVID; it needs repeating in more people.",
+          "refs": ["amoroso-2026-vsl3-delong3-probiotic-fatigue"]
+        }
+      ],
+      "keywords": ["gut", "microbiome", "bowel", "intestin", "bacteria", "probiotic", "stomach"]
+    },
+    {
+      "id": "diagnosis",
+      "title": "Tests & biomarkers",
+      "short_title": "Tests & biomarkers",
+      "takeaway": "There is still no validated lab test for ME/CFS, but several candidates look promising.",
+      "confidence": "emerging",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "Blood tests based on DNA folding (96% accuracy in one test group) and on RNA fragments (about 77%) are the most advanced candidates; both still need wider testing.",
+          "refs": ["hunter-2025-episwitch-biomarker", "gardella-2025-cellfree-rna"]
+        },
+        {
+          "text": "Large blood-protein and ‘cell-particle’ studies find consistent differences, including work from the Scheibenbogen group.",
+          "refs": ["hoel-2026-serum-proteomics", "seifert-2026-extracellular-vesicle-biomarker", "eguchi-2026-ev-microrna-biomarker"]
+        },
+        {
+          "text": "Simple physical tests such as repeated hand-grip strength show real, measurable weakness and could track treatment effects, though they cannot diagnose on their own.",
+          "refs": ["mihatsch-2026-pediatric-handgrip-strength", "wunderle-2026-muscle-function-postcovid-longitudinal"]
+        },
+        {
+          "text": "Patients seem to fall into subgroups — for example, a heavier-symptom group more often after an infection — but how to define them reliably is still open.",
+          "refs": ["st-jean-2026-decodeme-symptom-clusters", "green-2026-patient-led-symptom-clustering-longcovid"]
+        }
+      ],
+      "keywords": ["biomarker", "diagnos", "blood test", "grip", "classif", "subgroup", "cluster", "questionnaire"]
+    },
+    {
+      "id": "treatment",
+      "title": "Treatment: what has been tested",
+      "short_title": "Treatments",
+      "takeaway": "There is no approved drug for ME/CFS yet; several ideas show early promise, and several well-run trials were negative.",
+      "confidence": "contested",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "Early positive signals: the antibody-neutraliser BC007 in a placebo-controlled long-COVID trial, daratumumab in a small pilot, and hyperbaric oxygen in a Charité cohort (no placebo group). All need confirmation.",
+          "refs": ["hohberger-2025-bc007-recover", "fluge-2025-daratumumab", "kim-2026-hbot-mecfs"]
+        },
+        {
+          "text": "Clearly negative or disappointing: rituximab, Paxlovid, temelimab, immunoadsorption vs sham, and repurposed drugs that gave only a small, temporary benefit.",
+          "refs": ["fluge-2019-rituximab-rituxme", "baden-2026-recover-vital-paxlovid-longcovid-negative-rct", "nehme-2026-temelimab-herv-w-postcovid-rct", "stortz-2026-immunoadsorption-sham-postcovid", "wall-2026-stimulate-icp-repurposed-drugs-longcovid-fatigue"]
+        },
+        {
+          "text": "Exercise programmes can ease some symptoms but do not improve physical capacity, and patients rate graded exercise as least helpful. Better-organised care alone did not improve function in a Charité trial.",
+          "refs": ["zhao-2026-exercise-meta-analysis", "eckey-2025-treatment-outcomes", "peters-2026-mecfs-multidisciplinary-care-trial"]
+        },
+        {
+          "text": "Trials often miss what patients actually rely on: only about 1 in 14 registered post-COVID trials test a patient-prioritised treatment, and few measure PEM as the main outcome.",
+          "refs": ["gabriel-2026-registered-trials-gap-pcc-patient-priorities"]
+        }
+      ],
+      "keywords": ["randomi", "placebo", "treatment", "therapy", "drug", "trial"]
+    },
+    {
+      "id": "watch",
+      "title": "What to watch in Germany",
+      "short_title": "Trials in Germany",
+      "takeaway": "Several German drug studies are open or planned — the Studies tab has eligibility details.",
+      "confidence": "",
+      "updated": "2026-09-23",
+      "points": [
+        {
+          "text": "Open now: bupropion for post-COVID fatigue at up to 11 university hospitals, and two immunoadsorption studies for antibody-positive patients in Berlin and Potsdam.",
+          "refs": ["rapid-elapse", "nct07529197", "drks00033897"]
+        },
+        {
+          "text": "Planned at Charité: B-cell therapy with inebilizumab for patients who responded to immunoadsorption and then relapsed, and low-dose aripiprazole.",
+          "refs": ["nct07724834", "nct07714213"]
+        },
+        {
+          "text": "Planned by Mitodicure (Klaus Wirth): the first human study of MDC002.",
+          "refs": ["mitodicure-mdc002-ph1"]
+        }
+      ]
+    }
+  ]
+}
