@@ -170,8 +170,8 @@
 
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button class="tab" role="tab" id="tab-studies" data-tab="studies" aria-controls="list">Studies<span class="badge" id="studyBadge">0</span></button>
-    <button class="tab" role="tab" id="tab-papers" data-tab="papers" aria-controls="list">Papers<span class="badge" id="paperBadge">0</span></button>
     <button class="tab" role="tab" id="tab-overview" data-tab="overview" aria-controls="list">Overview</button>
+    <button class="tab" role="tab" id="tab-papers" data-tab="papers" aria-controls="list">Papers<span class="badge" id="paperBadge">0</span></button>
   </nav>
 
   <main id="list" class="panel" role="tabpanel"></main>
@@ -230,7 +230,7 @@
 
   // ---------- state ----------
   var DATA = { studies: [], papers: [], overview: null, lastRunAt: null, lastRun: '—', nextRun: '' };
-  var TABS = ['studies', 'papers', 'overview'];
+  var TABS = ['studies', 'overview', 'papers'];
   var tab = TABS.indexOf(location.hash.slice(1)) >= 0 ? location.hash.slice(1) : 'studies';
   var PAGE = 20;
   var pq = { text: '', filter: 'all', shown: PAGE };
