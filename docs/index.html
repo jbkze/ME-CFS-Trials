@@ -4,77 +4,186 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ME/CFS Research Watch</title>
-<meta name="description" content="New ME/CFS clinical-trial opportunities in Germany — drug studies, open for enrollment, prioritising Klaus Wirth and Carmen Scheibenbogen.">
+<meta name="description" content="New ME/CFS clinical-trial opportunities in Germany, notable new research papers and a plain-language state of the art — prioritising Klaus Wirth and Carmen Scheibenbogen.">
 <meta name="theme-color" content="#02213C">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+<!-- Poppins is self-hosted (docs/fonts/) so the page makes no requests to Google. -->
+<link rel="preload" href="fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/poppins-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/poppins.css">
 <style>
-  /* --- copied verbatim from the design template --- */
+  /* Colours, type scale and spacing follow the original design template
+     (MECFS_Research_Dashboard.html); inline styles were moved into classes. */
+  :root{
+    --navy:#02213C; --blue:#2296FC; --amber:#F4AE3E; --green:#56C8A4;
+    --ink2:#5A6B7B; --ink3:#8A98A6; --muted:#9FB3C7; --muted2:#7E93A8;
+    --line:#E5E8EE; --bg:#EEF1F5; --paper:#FBFBFF;
+    --ease:ease;
+  }
   *{box-sizing:border-box;}
   html,body{margin:0;}
-  body{font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;background:#EEF1F5;}
-  a{text-decoration:none;}
+  body{font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;background:var(--bg);color:var(--navy);}
+  a{text-decoration:none;color:inherit;}
+  button{font-family:inherit;}
   @keyframes oepulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.82);}}
+
+  .app{min-height:100vh;background:var(--paper);max-width:480px;margin:0 auto;box-shadow:0 0 40px rgba(2,33,60,.06);}
+  .head{padding:26px 22px 0;}
+  .eyebrow{font:700 11px/1 Poppins;color:var(--blue);letter-spacing:.1em;text-transform:uppercase;}
+  .h1{font:800 26px/1.14 Poppins;color:var(--navy);margin-top:8px;letter-spacing:-.015em;}
+
+  .run{margin:18px 22px 0;background:var(--navy);border-radius:18px;padding:18px 19px;}
+  .run-row{display:flex;align-items:center;gap:8px;}
+  .pulse{width:8px;height:8px;border-radius:999px;background:var(--green);animation:oepulse 2.4s var(--ease) infinite;}
+  .run-lbl{font:600 11px/1 Poppins;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;}
+  .run-when{margin-top:8px;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;}
+  .run-date{font:700 16px/1.3 Poppins;color:var(--paper);}
+  .run-time,.run-next{font:500 11.5px/1.3 Poppins;color:var(--muted2);}
+  .run-next{font-weight:400;line-height:1.4;margin-top:3px;}
+  .stats{display:flex;gap:10px;margin-top:16px;}
+  .stat{flex:1;background:rgba(255,255,255,.06);border-radius:12px;padding:12px 13px;}
+  .stat-n{font:800 26px/1 Poppins;color:var(--amber);}
+  .stat-l{font:500 11px/1.3 Poppins;color:var(--muted);margin-top:5px;}
+
+  .tabs{position:sticky;top:0;z-index:5;background:var(--paper);display:flex;gap:8px;padding:18px 22px 12px;}
+  .tab{flex:1;border:1px solid var(--line);background:#fff;color:var(--ink2);font:600 13px/1 Poppins;padding:12px 0;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .12s var(--ease);}
+  .tab .badge{font:700 11px/1 Poppins;background:var(--bg);color:var(--ink2);border-radius:999px;padding:2px 6px;}
+  .tab[aria-selected="true"]{border-color:var(--navy);background:var(--navy);color:#fff;}
+  .tab[aria-selected="true"] .badge{background:rgba(244,174,62,.95);color:var(--navy);}
+  .tab:focus-visible,.chip-btn:focus-visible,.more:focus-visible,summary:focus-visible,.search:focus-visible{outline:2px solid var(--blue);outline-offset:2px;}
+
+  .panel{padding:2px 22px 8px;}
+  .foot{padding:4px 22px 30px;font:400 11px/1.5 Poppins;color:#A5A5A5;}
+
+  /* Section headings inside a tab */
+  .sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:14px 0 10px;}
+  .sec-h:first-child{margin-top:4px;}
+  .sec-t{font:700 11px/1.2 Poppins;color:var(--ink2);letter-spacing:.09em;text-transform:uppercase;}
+  .sec-n{font:500 11px/1 Poppins;color:var(--ink3);}
+  .sec-note{font:400 12px/1.5 Poppins;color:var(--ink3);margin:-4px 0 12px;}
+
+  /* Cards */
+  .card{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 16px 15px 17px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 2px rgba(2,33,60,.04);}
+  .card.is-new::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--amber);}
+  .card.is-prio{border-color:rgba(34,150,252,.35);}
+  .meta{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+  .chip{font:600 11px/1 Poppins;padding:5px 9px;border-radius:999px;}
+  .chip.recruiting{background:rgba(31,157,107,.13);color:#157A52;}
+  .chip.soon{background:rgba(244,174,62,.22);color:#9A6A0E;}
+  .chip.planned{background:var(--bg);color:var(--ink2);}
+  .chip.closed{background:rgba(176,82,75,.1);color:#9A433D;}
+  .tag-new{font:700 9px/1 Poppins;letter-spacing:.09em;text-transform:uppercase;background:var(--amber);color:var(--navy);border-radius:999px;padding:4px 7px;}
+  .tag-change{font:700 9px/1 Poppins;letter-spacing:.09em;text-transform:uppercase;background:var(--navy);color:#fff;border-radius:999px;padding:4px 7px;}
+  .tag-prio{display:inline-flex;align-items:center;gap:4px;font:600 10.5px/1 Poppins;background:rgba(34,150,252,.12);color:#1672C4;border-radius:999px;padding:4px 8px;}
+  .title{font:600 15px/1.4 Poppins;color:var(--navy);margin-bottom:9px;}
+  .line{display:flex;align-items:flex-start;gap:6px;color:var(--ink2);font:400 12.5px/1.4 Poppins;margin-bottom:8px;}
+  .line svg{flex-shrink:0;margin-top:2px;}
+  .line b{font-weight:600;color:var(--navy);}
+  .ext{display:inline-flex;align-items:center;gap:6px;font:600 12.5px/1 Poppins;color:var(--blue);}
+  .actions{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:12px;}
+
+  /* Study details */
+  details.more-d{margin-top:4px;border-top:1px solid var(--line);}
+  details.more-d > summary{list-style:none;cursor:pointer;padding:11px 0 2px;font:600 12.5px/1 Poppins;color:var(--navy);display:flex;align-items:center;gap:6px;}
+  details.more-d > summary::-webkit-details-marker{display:none;}
+  details.more-d > summary .chev{transition:transform .15s var(--ease);}
+  details.more-d[open] > summary .chev{transform:rotate(180deg);}
+  .dl{margin:10px 0 0;}
+  .dl-h{font:700 9.5px/1 Poppins;color:var(--blue);letter-spacing:.09em;text-transform:uppercase;margin:12px 0 5px;}
+  .dl-p{font:400 12px/1.55 Poppins;color:var(--navy);margin:0;}
+  .dl ul{margin:4px 0 0;padding-left:18px;font:400 12px/1.5 Poppins;color:var(--navy);}
+  .dl li{margin:2px 0;}
+  .dl .small{font:400 11px/1.5 Poppins;color:var(--ink3);margin-top:12px;}
+  .site-off{color:var(--ink3);}
+  .elig{background:rgba(2,33,60,.045);border-radius:9px;padding:10px 12px;margin-top:10px;}
+
+  details.archive{margin:6px 0 12px;}
+  details.archive > summary{cursor:pointer;font:600 12px/1.4 Poppins;color:var(--ink2);padding:6px 0;}
+
+  /* Papers toolbar */
+  .search{width:100%;border:1px solid var(--line);background:#fff;border-radius:12px;padding:11px 13px 11px 36px;font:400 13px/1.2 Poppins;color:var(--navy);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 24 24' fill='none' stroke='%238A98A6' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:12px 50%;}
+  .search::placeholder{color:var(--ink3);}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px;}
+  .chip-btn{border:1px solid var(--line);background:#fff;color:var(--ink2);font:600 11.5px/1 Poppins;padding:7px 11px;border-radius:999px;cursor:pointer;}
+  .chip-btn[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff;}
+  .result-n{font:400 11.5px/1.4 Poppins;color:var(--ink3);margin:8px 0 12px;}
+  .journal{font:600 10.5px/1.3 Poppins;color:var(--blue);letter-spacing:.04em;text-transform:uppercase;}
+  .pdate{font:400 11.5px/1 Poppins;color:var(--ink3);}
+  .authors{font:italic 400 12px/1.4 Poppins;color:var(--ink3);margin:-4px 0 9px;}
+  .summary{font:400 12.5px/1.55 Poppins;color:var(--ink2);margin:0;}
+  .card:not(.open) .summary{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+  .why{background:rgba(2,33,60,.045);border-radius:9px;padding:10px 12px;margin-top:11px;}
+  .card:not(.open) .why,.card:not(.open) .authors-full{display:none;}
+  .card.open .authors-short{display:none;}
+  .why-h{font:700 9.5px/1 Poppins;color:var(--blue);letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px;}
+  .why-t{font:400 12px/1.5 Poppins;color:var(--navy);}
+  .more{border:0;background:none;padding:0;cursor:pointer;font:600 12.5px/1 Poppins;color:var(--navy);display:inline-flex;align-items:center;gap:5px;}
+  .more .chev{transition:transform .15s var(--ease);}
+  .card.open .more .chev{transform:rotate(180deg);}
+  .load-more{display:block;width:100%;border:1px solid var(--line);background:#fff;color:var(--navy);font:600 13px/1 Poppins;padding:13px 0;border-radius:999px;cursor:pointer;margin:4px 0 14px;}
+
+  /* Overview (state of the art) */
+  .intro{font:400 12.5px/1.6 Poppins;color:var(--ink2);margin:4px 0 6px;}
+  .stamp{font:400 11px/1.5 Poppins;color:var(--ink3);margin-bottom:12px;}
+  .toc{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px;}
+  .toc a{font:500 11px/1 Poppins;color:var(--ink2);background:var(--bg);border-radius:999px;padding:6px 9px;}
+  .sota-t{font:700 16px/1.3 Poppins;color:var(--navy);margin:0 0 8px;}
+  .conf{font:600 10.5px/1 Poppins;padding:4px 8px;border-radius:999px;background:var(--bg);color:var(--ink2);}
+  .conf.established{background:rgba(31,157,107,.13);color:#157A52;}
+  .conf.strong{background:rgba(34,150,252,.12);color:#1672C4;}
+  .conf.emerging{background:rgba(244,174,62,.22);color:#9A6A0E;}
+  .conf.contested{background:rgba(176,82,75,.1);color:#9A433D;}
+  .conf.early{background:var(--bg);color:var(--ink2);}
+  .takeaway{font:600 13px/1.5 Poppins;color:var(--navy);margin:0 0 8px;}
+  .points{margin:0;padding-left:17px;}
+  .points li{font:400 12.5px/1.55 Poppins;color:var(--ink2);margin:0 0 9px;}
+  .points li::marker{color:var(--blue);}
+  .refs{display:inline-flex;flex-wrap:wrap;gap:4px;margin-left:2px;vertical-align:1px;}
+  .ref{font:600 10px/1 Poppins;padding:3px 6px;border-radius:6px;background:rgba(34,150,252,.1);color:#1672C4;white-space:nowrap;}
+  .ref.trial{background:rgba(31,157,107,.13);color:#157A52;}
+  .ref:hover{text-decoration:underline;}
+  [id^="sec-"]{scroll-margin-top:84px;}
+  .sec-upd{font:400 10.5px/1 Poppins;color:var(--ink3);margin-top:4px;}
+
+  .empty,.error{background:#fff;border:1px dashed #D7DCE5;border-radius:14px;padding:28px 18px;text-align:center;color:var(--ink3);font:400 13px/1.55 Poppins;margin-bottom:12px;}
+  .error{border-color:#E7C9C9;color:#B0524B;}
 </style>
 </head>
 <body>
-<!--
-  Design is copy-pasted verbatim from the supplied template (MECFS_Research_Dashboard.html):
-  every inline style string, SVG path, colour and spacing value is unchanged.
-  Only the proprietary {{ }} placeholders and <sc-for>/<sc-if> loops were replaced by
-  vanilla JS that renders the same markup from docs/dashboard.json.
--->
-<div style="min-height:100vh;background:#FBFBFF;max-width:480px;margin:0 auto;box-shadow:0 0 40px rgba(2,33,60,.06);">
+<div class="app">
 
-  <div style="padding:26px 22px 0;">
-    <div style="font:700 11px/1 Poppins;color:#2296FC;letter-spacing:.1em;text-transform:uppercase;">ME/CFS Research Watch</div>
-    <div style="font:800 26px/1.14 Poppins;color:#02213C;margin-top:8px;letter-spacing:-.015em;">Today's intake</div>
-  </div>
+  <header class="head">
+    <div class="eyebrow">ME/CFS Research Watch</div>
+    <div class="h1">Today's intake</div>
+  </header>
 
-  <div style="margin:18px 22px 0;background:#02213C;border-radius:18px;padding:18px 19px;">
-    <div style="display:flex;align-items:center;gap:8px;">
-      <span style="width:8px;height:8px;border-radius:999px;background:#56C8A4;animation:oepulse 2.4s var(--ease-standard,ease) infinite;"></span>
-      <span style="font:600 11px/1 Poppins;color:#9FB3C7;letter-spacing:.09em;text-transform:uppercase;">Last search run</span>
+  <section class="run" aria-label="Last search run">
+    <div class="run-row"><span class="pulse"></span><span class="run-lbl">Last search run</span></div>
+    <div class="run-when"><span id="lastRun" class="run-date">—</span><span id="lastRunTime" class="run-time"></span></div>
+    <div id="nextRun" class="run-next"></div>
+    <div class="stats">
+      <div class="stat"><div id="newStudyCount" class="stat-n">0</div><div class="stat-l">new studies</div></div>
+      <div class="stat"><div id="newPaperCount" class="stat-n">0</div><div class="stat-l">new papers</div></div>
     </div>
-    <div style="margin-top:8px;display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;">
-      <span id="lastRun" style="font:700 16px/1.3 Poppins;color:#FBFBFF;">—</span>
-      <span id="lastRunTime" style="font:500 11.5px/1.3 Poppins;color:#7E93A8;"></span>
-    </div>
-    <div id="nextRun" style="font:400 11.5px/1.4 Poppins;color:#7E93A8;margin-top:3px;"></div>
-    <div style="display:flex;gap:10px;margin-top:16px;">
-      <div style="flex:1;background:rgba(255,255,255,.06);border-radius:12px;padding:12px 13px;">
-        <div id="newStudyCount" style="font:800 26px/1 Poppins;color:#F4AE3E;">0</div>
-        <div style="font:500 11px/1.3 Poppins;color:#9FB3C7;margin-top:5px;">new studies</div>
-      </div>
-      <div style="flex:1;background:rgba(255,255,255,.06);border-radius:12px;padding:12px 13px;">
-        <div id="newPaperCount" style="font:800 26px/1 Poppins;color:#F4AE3E;">0</div>
-        <div style="font:500 11px/1.3 Poppins;color:#9FB3C7;margin-top:5px;">new papers</div>
-      </div>
-    </div>
-  </div>
+  </section>
 
-  <div style="position:sticky;top:0;z-index:5;background:#FBFBFF;display:flex;gap:8px;padding:18px 22px 12px;">
-    <button id="tabStudies" style="flex:1;border:1px solid #02213C;background:#02213C;color:#FFFFFF;font:600 13px/1 Poppins;padding:12px 0;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .12s var(--ease-standard,ease);">Studies<span id="studyBadge" style="font:700 11px/1 Poppins;background:rgba(244,174,62,.95);color:#02213C;border-radius:999px;padding:2px 6px;">0</span></button>
-    <button id="tabPapers" style="flex:1;border:1px solid #E5E8EE;background:#FFFFFF;color:#5A6B7B;font:600 13px/1 Poppins;padding:12px 0;border-radius:999px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .12s var(--ease-standard,ease);">Papers<span id="paperBadge" style="font:700 11px/1 Poppins;background:#EEF1F5;color:#5A6B7B;border-radius:999px;padding:2px 6px;">0</span></button>
-  </div>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" id="tab-studies" data-tab="studies" aria-controls="list">Studies<span class="badge" id="studyBadge">0</span></button>
+    <button class="tab" role="tab" id="tab-papers" data-tab="papers" aria-controls="list">Papers<span class="badge" id="paperBadge">0</span></button>
+    <button class="tab" role="tab" id="tab-overview" data-tab="overview" aria-controls="list">Overview</button>
+  </nav>
 
-  <div id="list" style="padding:2px 22px 8px;"></div>
+  <main id="list" class="panel" role="tabpanel"></main>
 
-  <div style="padding:4px 22px 30px;font:400 11px/1.5 Poppins;color:#A5A5A5;">Updated automatically after each scheduled run.</div>
+  <div class="foot">Updated automatically after each scheduled run. Not medical advice — talk to your doctor or the study team before joining a trial.</div>
 </div>
 
 <script>
 (function () {
   "use strict";
 
-  // Chip palette — copied verbatim from the template's chipMap.
-  var CHIP = {
-    recruiting: { bg: 'rgba(31,157,107,.13)', color: '#157A52' },
-    soon:       { bg: 'rgba(244,174,62,.22)', color: '#9A6A0E' },
-    planned:    { bg: '#EEF1F5',              color: '#5A6B7B' }
-  };
-
+  // ---------- helpers ----------
   function esc(s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -84,85 +193,230 @@
   function safeHref(u) {
     return /^https?:\/\//i.test(String(u || '')) ? esc(u) : '';
   }
+  function linkTag(url, cls, inner, title) {
+    var href = safeHref(url);
+    var t = title ? ' title="' + esc(title) + '"' : '';
+    return href
+      ? '<a class="' + cls + '" href="' + href + '" target="_blank" rel="noopener"' + t + '>' + inner + '</a>'
+      : '<span class="' + cls + '"' + t + '>' + inner + '</span>';
+  }
+  function el(id) { return document.getElementById(id); }
 
-  var ICON_PIN = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#8A98A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+  var ICON_PIN = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#8A98A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>';
+  var ICON_PILL = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#8A98A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path><path d="m8.5 8.5 7 7"></path></svg>';
   var ICON_EXT = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>';
-  var NEW_BADGE = '<span style="font:700 9px/1 Poppins;letter-spacing:.09em;text-transform:uppercase;background:#F4AE3E;color:#02213C;border-radius:999px;padding:4px 7px;">New</span>';
-  var NEW_BAR = '<div style="position:absolute;left:0;top:0;bottom:0;width:4px;background:#F4AE3E;"></div>';
-  var CARD_OPEN = '<div style="position:relative;background:#fff;border:1px solid #E5E8EE;border-radius:14px;padding:15px 16px 15px 17px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 2px rgba(2,33,60,.04);">';
+  var ICON_CHEV = '<svg class="chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>';
+  var NEW_TAG = '<span class="tag-new">New</span>';
 
-  // --- Study card: markup copied verbatim from the template's <sc-for> block ---
+  function prioTags(researchers) {
+    return (researchers || []).map(function (r) {
+      return '<span class="tag-prio" title="Linked to ' + esc(r) + '">★ ' + esc(r) + '</span>';
+    }).join('');
+  }
+
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  // "2026-09-22" → "22 Sep 2026", "2026-09" → "Sep 2026", "2026" → "2026"
+  function fmtIso(iso) {
+    var p = String(iso || '').split('-');
+    if (!p[0]) return '';
+    if (p.length === 1) return p[0];
+    var m = MON[parseInt(p[1], 10) - 1] || '';
+    return (p[2] ? parseInt(p[2], 10) + ' ' : '') + m + ' ' + p[0];
+  }
+  function shortAuthors(a) {
+    var parts = String(a || '').split(',');
+    return parts.length > 3 ? parts.slice(0, 3).join(',') + ', et al.' : a;
+  }
+
+  // ---------- state ----------
+  var DATA = { studies: [], papers: [], overview: null, lastRunAt: null, lastRun: '—', nextRun: '' };
+  var TABS = ['studies', 'papers', 'overview'];
+  var tab = TABS.indexOf(location.hash.slice(1)) >= 0 ? location.hash.slice(1) : 'studies';
+  var PAGE = 20;
+  var pq = { text: '', filter: 'all', shown: PAGE };
+  var loaded = false, failed = false;
+  var list = el('list');
+
+  // ---------- studies ----------
+  function phaseShort(p) { return String(p || '').split(' (')[0]; }
+
+  function studyDetails(it) {
+    var e = it.eligibility || {};
+    var h = '';
+    if (e.summary || e.inclusion.length || e.exclusion.length) {
+      h += '<div class="elig"><div class="dl-h" style="margin-top:0">Who can take part</div>';
+      if (e.summary) h += '<p class="dl-p">' + esc(e.summary) + '</p>';
+      if (e.inclusion.length) h += '<div class="dl-h">Key requirements</div><ul>' + e.inclusion.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+      if (e.exclusion.length) h += '<div class="dl-h">Excluded if</div><ul>' + e.exclusion.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
+      h += '</div>';
+    }
+    if (it.mechanism) h += '<div class="dl-h">How it works</div><p class="dl-p">' + esc(it.mechanism) + '</p>';
+    if (it.phase) h += '<div class="dl-h">Phase</div><p class="dl-p">' + esc(it.phase) + '</p>';
+    if (it.sites && it.sites.length) {
+      h += '<div class="dl-h">Sites in Germany</div><ul>' + it.sites.map(function (s) {
+        var st = s.recruiting === true ? '' : s.recruiting === false ? ' <span class="site-off">(not yet recruiting)</span>' : '';
+        return '<li>' + esc(s.name) + st + '</li>';
+      }).join('') + '</ul>';
+    }
+    if (it.pi) h += '<div class="dl-h">Lead investigator</div><p class="dl-p">' + esc(it.pi) + '</p>';
+    if (it.sponsor) h += '<div class="dl-h">Sponsor</div><p class="dl-p">' + esc(it.sponsor) + '</p>';
+    var stamp = [];
+    if (it.registry) stamp.push('Registry: ' + esc(it.registry));
+    if (it.firstSeen) stamp.push('tracked since ' + esc(fmtIso(it.firstSeen)));
+    if (it.lastChecked) stamp.push('last verified ' + esc(fmtIso(it.lastChecked)));
+    if (stamp.length) h += '<div class="small">' + stamp.join(' · ') + '</div>';
+    return h ? '<details class="more-d"><summary>Details &amp; eligibility' + ICON_CHEV + '</summary><div class="dl">' + h + '</div></details>' : '';
+  }
+
   function studyCard(it) {
-    var c = CHIP[it.status] || { bg: 'transparent', color: '#5A6B7B' };
-    var href = safeHref(it.link);
-    var linkOpen = href ? '<a href="' + href + '" target="_blank" rel="noopener"' : '<span';
-    var linkClose = href ? '</a>' : '</span>';
-    return CARD_OPEN +
-      (it.isNew ? NEW_BAR : '') +
-      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;">' +
-        '<span style="font:600 11px/1 Poppins;padding:5px 9px;border-radius:999px;background:' + c.bg + ';color:' + c.color + ';">' + esc(it.statusLabel) + '</span>' +
-        (it.isNew ? NEW_BADGE : '') +
+    var cls = 'card' + (it.isNew ? ' is-new' : '') + (it.priority === 'high' ? ' is-prio' : '');
+    var iv = [it.intervention, phaseShort(it.phase)].filter(Boolean);
+    return '<article class="' + cls + '">' +
+      '<div class="meta">' +
+        '<span class="chip ' + esc(it.status) + '">' + esc(it.statusLabel) + '</span>' +
+        (it.isNew ? NEW_TAG : '') +
+        (it.change ? '<span class="tag-change">' + esc(it.change) + '</span>' : '') +
+        prioTags(it.researchers) +
       '</div>' +
-      '<div style="font:600 15px/1.4 Poppins;color:#02213C;margin-bottom:9px;">' + esc(it.title) + '</div>' +
-      '<div style="display:flex;align-items:center;gap:6px;color:#5A6B7B;font:400 12.5px/1.4 Poppins;margin-bottom:13px;">' +
-        ICON_PIN + '<span>' + esc(it.location) + '</span>' +
+      '<div class="title">' + esc(it.title) + '</div>' +
+      (iv.length ? '<div class="line">' + ICON_PILL + '<span><b>' + esc(iv[0]) + '</b>' + (iv[1] ? ' · ' + esc(iv[1]) : '') + '</span></div>' : '') +
+      (it.location && it.location !== '—' ? '<div class="line">' + ICON_PIN + '<span>' + esc(it.location) + '</span></div>' : '') +
+      '<div class="actions">' + linkTag(it.link, 'ext', 'Registration &amp; details' + ICON_EXT) + '</div>' +
+      studyDetails(it) +
+    '</article>';
+  }
+
+  function secHead(title, n) {
+    return '<div class="sec-h"><span class="sec-t">' + esc(title) + '</span><span class="sec-n">' + n + '</span></div>';
+  }
+
+  function renderStudies() {
+    var open = DATA.studies.filter(function (s) { return s.tier === 'open'; });
+    var planned = DATA.studies.filter(function (s) { return s.tier === 'planned'; });
+    var archived = DATA.studies.filter(function (s) { return s.tier === 'archived'; });
+    var h = '';
+    h += secHead('Open for enrollment', open.length);
+    h += open.length ? open.map(studyCard).join('') : '<div class="empty">No study is open for enrollment right now.</div>';
+    h += secHead('Planned / not yet recruiting', planned.length);
+    h += '<p class="sec-note">Announced or registered, but not open yet — worth watching so you can apply early.</p>';
+    h += planned.length ? planned.map(studyCard).join('') : '<div class="empty">No planned studies tracked.</div>';
+    if (archived.length) {
+      h += '<details class="archive"><summary>Closed / no longer in scope (' + archived.length + ')</summary>' +
+        archived.map(studyCard).join('') + '</details>';
+    }
+    return h;
+  }
+
+  // ---------- papers ----------
+  var FILTERS = [
+    { id: 'all', label: 'All' },
+    { id: 'prio', label: '★ Wirth / Scheibenbogen' },
+    { id: 'recent', label: 'Last 3 months' },
+    { id: 'earlier', label: 'Earlier' },
+    { id: 'new', label: 'New' }
+  ];
+
+  function cutoffIso() {
+    var d = DATA.lastRunAt ? new Date(DATA.lastRunAt) : new Date();
+    if (isNaN(d.getTime())) d = new Date();
+    d.setMonth(d.getMonth() - 3);
+    return d.toISOString().slice(0, 7); // compare at month precision
+  }
+
+  function filteredPapers() {
+    var cut = cutoffIso();
+    var words = pq.text.toLowerCase().split(/\s+/).filter(Boolean);
+    return DATA.papers.filter(function (p) {
+      var pub = String(p.published || '');
+      if (pq.filter === 'prio' && !(p.researchers && p.researchers.length)) return false;
+      if (pq.filter === 'new' && !p.isNew) return false;
+      if (pq.filter === 'recent' && !(pub.slice(0, 7) >= cut)) return false;
+      if (pq.filter === 'earlier' && pub.slice(0, 7) >= cut) return false;
+      if (!words.length) return true;
+      var hay = (p.title + ' ' + p.authors + ' ' + p.journal + ' ' + p.summary + ' ' + p.why).toLowerCase();
+      return words.every(function (w) { return hay.indexOf(w) >= 0; });
+    });
+  }
+
+  function paperCard(it, i) {
+    var cls = 'card' + (it.isNew ? ' is-new' : '') + (it.researchers && it.researchers.length ? ' is-prio' : '');
+    var short = shortAuthors(it.authors);
+    return '<article class="' + cls + '" data-i="' + i + '">' +
+      '<div class="meta" style="margin-bottom:9px">' +
+        '<span class="journal">' + esc(it.journal) + '</span>' +
+        '<span class="pdate" title="' + esc(it.date) + '">· ' + esc(fmtIso(it.published) || it.date) + '</span>' +
+        (it.isNew ? NEW_TAG : '') +
+        prioTags(it.researchers) +
       '</div>' +
-      linkOpen + ' style="display:inline-flex;align-items:center;gap:6px;font:600 12.5px/1 Poppins;color:#2296FC;">Registration &amp; details' + ICON_EXT + linkClose +
-    '</div>';
-  }
-
-  // --- Paper card: markup copied verbatim from the template's <sc-for> block ---
-  function paperCard(it) {
-    var href = safeHref(it.link);
-    var linkOpen = href ? '<a href="' + href + '" target="_blank" rel="noopener"' : '<span';
-    var linkClose = href ? '</a>' : '</span>';
-    return CARD_OPEN +
-      (it.isNew ? NEW_BAR : '') +
-      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:9px;flex-wrap:wrap;">' +
-        '<span style="font:600 10.5px/1 Poppins;color:#2296FC;letter-spacing:.04em;text-transform:uppercase;">' + esc(it.journal) + '</span>' +
-        '<span style="font:400 11.5px/1 Poppins;color:#8A98A6;">· ' + esc(it.date) + '</span>' +
-        (it.isNew ? NEW_BADGE : '') +
+      '<div class="title" style="margin-bottom:5px">' + esc(it.title) + '</div>' +
+      '<div class="authors"><span class="authors-short">' + esc(short) + '</span><span class="authors-full">' + esc(it.authors) + '</span></div>' +
+      '<p class="summary">' + esc(it.summary) + '</p>' +
+      (it.why ? '<div class="why"><div class="why-h">Why it matters</div><div class="why-t">' + esc(it.why) + '</div></div>' : '') +
+      '<div class="actions">' +
+        '<button class="more" type="button" aria-expanded="false">More' + ICON_CHEV + '</button>' +
+        linkTag(it.link, 'ext', 'Read paper' + ICON_EXT) +
       '</div>' +
-      '<div style="font:600 15px/1.4 Poppins;color:#02213C;margin-bottom:5px;">' + esc(it.title) + '</div>' +
-      '<div style="font:italic 400 12px/1.4 Poppins;color:#8A98A6;margin-bottom:9px;">' + esc(it.authors) + '</div>' +
-      '<div style="font:400 12.5px/1.55 Poppins;color:#5A6B7B;margin-bottom:11px;">' + esc(it.summary) + '</div>' +
-      '<div style="background:rgba(2,33,60,.045);border-radius:9px;padding:10px 12px;margin-bottom:12px;">' +
-        '<div style="font:700 9.5px/1 Poppins;color:#2296FC;letter-spacing:.09em;text-transform:uppercase;margin-bottom:5px;">Why it matters</div>' +
-        '<div style="font:400 12px/1.5 Poppins;color:#02213C;">' + esc(it.why) + '</div>' +
-      '</div>' +
-      linkOpen + ' style="display:inline-flex;align-items:center;gap:6px;font:600 12.5px/1 Poppins;color:#2296FC;">Read paper · DOI' + ICON_EXT + linkClose +
-    '</div>';
+    '</article>';
   }
 
-  function emptyCard(kind) {
-    return '<div style="background:#fff;border:1px dashed #D7DCE5;border-radius:14px;padding:28px 18px;text-align:center;color:#8A98A6;font:400 13px/1.55 Poppins;">' +
-      'No new ' + kind + ' yet.<br>The next scheduled run will populate this.</div>';
-  }
-  function errorCard() {
-    return '<div style="background:#fff;border:1px dashed #E7C9C9;border-radius:14px;padding:28px 18px;text-align:center;color:#B0524B;font:400 13px/1.55 Poppins;">' +
-      'Could not load dashboard.json.<br>Open this page over HTTP (e.g. GitHub Pages), not from the file system.</div>';
-  }
-
-  function applyPill(btn, badge, active) {
-    btn.style.background = active ? '#02213C' : '#FFFFFF';
-    btn.style.color = active ? '#FFFFFF' : '#5A6B7B';
-    btn.style.borderColor = active ? '#02213C' : '#E5E8EE';
-    badge.style.background = active ? 'rgba(244,174,62,.95)' : '#EEF1F5';
-    badge.style.color = active ? '#02213C' : '#5A6B7B';
+  function paperToolbar() {
+    return '<input id="paperSearch" class="search" type="search" placeholder="Search title, author, topic…" aria-label="Search papers" value="' + esc(pq.text) + '">' +
+      '<div class="chips" role="group" aria-label="Filter papers">' + FILTERS.map(function (f) {
+        return '<button type="button" class="chip-btn" data-filter="' + f.id + '" aria-pressed="' + (pq.filter === f.id) + '">' + esc(f.label) + '</button>';
+      }).join('') + '</div>' +
+      '<div id="paperResults"></div>';
   }
 
-  var DATA = { studies: [], papers: [], lastRunAt: null, lastRun: '—', nextRun: '' };
-  var tab = 'studies';
+  function renderPaperResults() {
+    var box = el('paperResults');
+    if (!box) return;
+    var res = filteredPapers();
+    var shown = res.slice(0, pq.shown);
+    var h = '<div class="result-n">' + (res.length === DATA.papers.length && !pq.text
+      ? res.length + ' papers, newest first'
+      : res.length + ' of ' + DATA.papers.length + ' papers match') + '</div>';
+    h += shown.length ? shown.map(paperCard).join('')
+      : '<div class="empty">No papers match.<br>Try another word or filter.</div>';
+    if (res.length > shown.length) {
+      h += '<button type="button" class="load-more" id="loadMore">Show ' + Math.min(PAGE, res.length - shown.length) + ' more (' + (res.length - shown.length) + ' left)</button>';
+    }
+    box.innerHTML = h;
+  }
 
-  var el = function (id) { return document.getElementById(id); };
-  var tabStudies = el('tabStudies'), tabPapers = el('tabPapers');
-  var studyBadge = el('studyBadge'), paperBadge = el('paperBadge'), list = el('list');
+  // ---------- overview ----------
+  function renderOverview() {
+    var o = DATA.overview;
+    if (!o || !o.sections || !o.sections.length) return '<div class="empty">The research overview has not been written yet.</div>';
+    var h = '';
+    if (o.intro) h += '<p class="intro">' + esc(o.intro) + '</p>';
+    h += '<div class="stamp">Last changed ' + esc(fmtIso(o.updated) || '—') + (o.reviewed ? ' · reviewed ' + esc(fmtIso(o.reviewed)) : '') +
+      ' · coloured chips link to the sources (<span class="ref">paper</span> <span class="ref trial">trial</span>)</div>';
+    h += '<div class="toc">' + o.sections.map(function (s) {
+      return '<a href="#sec-' + esc(s.id) + '" data-jump="sec-' + esc(s.id) + '">' + esc(s.title) + '</a>';
+    }).join('') + '</div>';
+    h += o.sections.map(function (s) {
+      return '<article class="card" id="sec-' + esc(s.id) + '">' +
+        '<div class="meta" style="justify-content:space-between;margin-bottom:6px">' +
+          '<h2 class="sota-t" style="margin:0">' + esc(s.title) + '</h2>' +
+          (s.confidenceLabel ? '<span class="conf ' + esc(s.confidence) + '">' + esc(s.confidenceLabel) + '</span>' : '') +
+        '</div>' +
+        (s.takeaway ? '<p class="takeaway">' + esc(s.takeaway) + '</p>' : '') +
+        '<ul class="points">' + s.points.map(function (p) {
+          var refs = (p.refs || []).map(function (r) {
+            return linkTag(r.link, 'ref' + (r.kind === 'trial' ? ' trial' : ''), esc(r.label), r.title);
+          }).join('');
+          return '<li>' + esc(p.text) + (refs ? ' <span class="refs">' + refs + '</span>' : '') + '</li>';
+        }).join('') + '</ul>' +
+        (s.updated ? '<div class="sec-upd">Section updated ' + esc(fmtIso(s.updated)) + '</div>' : '') +
+      '</article>';
+    }).join('');
+    return h;
+  }
 
-  function countNew(arr) { return arr.filter(function (x) { return x.isNew; }).length; }
-
+  // ---------- chrome ----------
   var DFMT = { day: '2-digit', month: 'short', year: 'numeric' };
 
-  function render() {
+  function renderChrome() {
     // Prefer the ISO timestamp so the date+time show in the viewer's own
     // timezone; fall back to the server-rendered strings. Cadence is daily.
     var at = DATA.lastRunAt ? new Date(DATA.lastRunAt) : null;
@@ -175,36 +429,108 @@
       el('lastRunTime').textContent = '';
       el('nextRun').textContent = DATA.nextRun || '';
     }
-    el('newStudyCount').textContent = countNew(DATA.studies);
-    el('newPaperCount').textContent = countNew(DATA.papers);
-    studyBadge.textContent = DATA.studies.length;
-    paperBadge.textContent = DATA.papers.length;
-    var isStudies = tab === 'studies';
-    applyPill(tabStudies, studyBadge, isStudies);
-    applyPill(tabPapers, paperBadge, !isStudies);
-    if (isStudies) {
-      list.innerHTML = DATA.studies.length ? DATA.studies.map(studyCard).join('') : emptyCard('studies');
-    } else {
-      list.innerHTML = DATA.papers.length ? DATA.papers.map(paperCard).join('') : emptyCard('papers');
-    }
+    var active = DATA.studies.filter(function (s) { return s.tier !== 'archived'; });
+    el('newStudyCount').textContent = DATA.studies.filter(function (x) { return x.isNew; }).length;
+    el('newPaperCount').textContent = DATA.papers.filter(function (x) { return x.isNew; }).length;
+    el('studyBadge').textContent = active.length;
+    el('paperBadge').textContent = DATA.papers.length;
+    TABS.forEach(function (t) {
+      var b = el('tab-' + t);
+      b.setAttribute('aria-selected', String(t === tab));
+      b.tabIndex = t === tab ? 0 : -1;
+    });
+    list.setAttribute('aria-labelledby', 'tab-' + tab);
   }
 
-  tabStudies.addEventListener('click', function () { tab = 'studies'; render(); });
-  tabPapers.addEventListener('click', function () { tab = 'papers'; render(); });
+  function render() {
+    renderChrome();
+    if (failed) {
+      list.innerHTML = '<div class="error">Could not load dashboard.json.<br>Open this page over HTTP (e.g. GitHub Pages), not from the file system.</div>';
+      return;
+    }
+    if (!loaded) { list.innerHTML = ''; return; }
+    if (tab === 'studies') list.innerHTML = renderStudies();
+    else if (tab === 'papers') { list.innerHTML = paperToolbar(); renderPaperResults(); }
+    else list.innerHTML = renderOverview();
+  }
+
+  function setTab(t, focus) {
+    if (TABS.indexOf(t) < 0) return;
+    tab = t;
+    if (history.replaceState) history.replaceState(null, '', '#' + t);
+    render();
+    if (focus) el('tab-' + t).focus();
+  }
+
+  // ---------- events ----------
+  document.querySelector('.tabs').addEventListener('click', function (e) {
+    var b = e.target.closest('.tab');
+    if (b) setTab(b.getAttribute('data-tab'));
+  });
+  document.querySelector('.tabs').addEventListener('keydown', function (e) {
+    var i = TABS.indexOf(tab);
+    if (e.key === 'ArrowRight') { setTab(TABS[(i + 1) % TABS.length], true); e.preventDefault(); }
+    if (e.key === 'ArrowLeft') { setTab(TABS[(i + TABS.length - 1) % TABS.length], true); e.preventDefault(); }
+  });
+  window.addEventListener('hashchange', function () {
+    var t = location.hash.slice(1);
+    if (TABS.indexOf(t) >= 0 && t !== tab) { tab = t; render(); }
+  });
+
+  list.addEventListener('input', function (e) {
+    if (e.target.id !== 'paperSearch') return;
+    pq.text = e.target.value;
+    pq.shown = PAGE;
+    renderPaperResults();
+  });
+  list.addEventListener('click', function (e) {
+    var f = e.target.closest('[data-filter]');
+    if (f) {
+      pq.filter = f.getAttribute('data-filter');
+      pq.shown = PAGE;
+      Array.prototype.forEach.call(list.querySelectorAll('[data-filter]'), function (b) {
+        b.setAttribute('aria-pressed', String(b === f));
+      });
+      renderPaperResults();
+      return;
+    }
+    if (e.target.closest('#loadMore')) { pq.shown += PAGE; renderPaperResults(); return; }
+    var m = e.target.closest('.more');
+    if (m) {
+      var card = m.closest('.card');
+      var open = card.classList.toggle('open');
+      m.setAttribute('aria-expanded', String(open));
+      m.firstChild.nodeValue = open ? 'Less' : 'More';
+      return;
+    }
+    var j = e.target.closest('[data-jump]');
+    if (j) {
+      e.preventDefault(); // keep #overview in the URL
+      var target = el(j.getAttribute('data-jump'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
 
   render();
 
   fetch('dashboard.json', { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (d) {
-      DATA.studies = Array.isArray(d.studies) ? d.studies : [];
+      DATA.studies = (Array.isArray(d.studies) ? d.studies : []).map(function (s) {
+        // Feeds from the older renderer have no tier / eligibility — derive them.
+        if (!s.tier) s.tier = s.status === 'recruiting' ? 'open' : 'planned';
+        s.eligibility = s.eligibility || { inclusion: [], exclusion: [] };
+        return s;
+      });
       DATA.papers = Array.isArray(d.papers) ? d.papers : [];
+      DATA.overview = d.overview || null;
       DATA.lastRunAt = d.lastRunAt || null;
       DATA.lastRun = d.lastRun || '—';
       DATA.nextRun = d.nextRun || '';
+      loaded = true;
       render();
     })
-    .catch(function () { list.innerHTML = errorCard(); });
+    .catch(function () { failed = true; render(); });
 })();
 </script>
 </body>
