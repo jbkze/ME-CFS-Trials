@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/state_of_the_art.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last content change: **2026-09-23** · last reviewed: **2026-09-23**
+- Last content change: **2026-09-23** · last reviewed: **2026-09-24**
 
 A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.
 

@@ -1,0 +1,1082 @@
+Chronic stress primes TLR3-mediated systemic inflammation to produce 
+persistent post-viral fatigue syndrome-like symptoms in mice
+Battuvshin Lkhagvasuren a,b, Takafumi Suematsu c, Liu Xiangyu c, Tomokazu Hata c,  
+Shu Takakura c, Tetsuya Hiramoto d, Takakazu Oka e,*, Nobuyuki Sudo a,c,*
+a Department of Psychosomatic Medicine, Kyushu University Hospital, Kyushu University, Fukuoka, Japan
+b Brain Science Institute, Mongolian National University of Medical Sciences, Ulaanbaatar, Mongolia
+c Department of Psychosomatic Medicine, Graduate School of Medical Sciences, Kyushu University, Fukuoka, Japan
+d Department of Clinical Research, NHO Fukuoka National Hospital, Fukuoka, Japan
+e Department of Psychosomatic Internal Medicine, Graduate School of Medical Sciences, International University of Health and Welfare, Tochigi, Japan
+A R T I C L E I N F O
+Keywords:
+Chronic stress
+Poly I:C
+Long COVID
+Post-viral fatigue syndrome
+Depressive-like behavior
+Neuroinflammation
+Allodynia
+Minocycline
+TLR3
+Animal model
+A B S T R A C T
+Background: This study examined the long-term effects of polyinosinic:polycytidylic acid (poly I:C), a synthetic 
+double-stranded RNA and Toll-like receptor 3 (TLR3) agonist, on behavioral and immune outcomes in chroni­
+cally stressed mice.
+Methods: Male C57BL/6J mice were exposed to 21 days of wet bedding stress followed by a poly I:C injection. 
+Post viral fatigue syndrome (PVFS)-like symptoms were evaluated over 7 days post-injection using grip strength 
+testing, the forced swim test, von Frey filament testing, the Morris water maze, the open field test, and the social 
+interaction test. Body temperature and locomotor activity were continuously monitored via intraperitoneally 
+implanted dataloggers. Serum concentrations of interleukin-6 (IL-6), IL-10, and C-X-C motif chemokine ligand 10 
+(CXCL10) were quantified. In separate cohorts, minocycline (a microglial activation inhibitor) or RU486 (a 
+glucocorticoid receptor antagonist) was administered prior to poly I:C injection.
+Results: Following IP injection of poly I:C, body temperatures in both stressed and unstressed mice were 
+significantly elevated, indicating a polyphasic febrile response. At 7 days post-injection, stressed mice treated 
+with poly I:C exhibited persistent fatigue, mechanical allodynia, depressive-like behavior, impaired spatial 
+memory, increased anxiety-like behavior, and reduced social interaction. Serum levels of IL-6 and CXCL10 
+remained elevated and correlated with behavioral outcomes. Pretreatment with minocycline partially attenuated 
+both the behavioral and immune responses, whereas RU486 pretreatment did not.
+Conclusion: These findings demonstrate that TLR3-mediated systemic inflammation induced by poly I:C produces 
+persistent, multi-domain PVFS-like symptoms in chronically stressed mice. The attenuation by minocycline 
+implicates neuroinflammation as a possible mechanism.
+Introduction
+Post-viral fatigue syndrome (PVFS) is characterized by persistent 
+fatigue, cognitive dysfunction, pain, and sleep disturbances that endure 
+for months to years following recovery from acute viral infection 
+(Komaroff & Lipkin, 2021). The phenomenon is not unique to any single 
+pathogen. Historically, approximately 10–12% of patients recovering 
+from Epstein-Barr virus, Ross River virus, and Coxiella burnetii infections 
+developed chronic fatigue syndrome regardless of the specific infectious 
+agent, with initial illness severity rather than psychological factors, 
+predicting prolonged outcomes (Hickie et al., 2006). The COVID-19 
+pandemic has brought renewed urgency to PVFS research, as the post- 
+acute sequelae of SARS-CoV-2 infection, commonly termed long 
+COVID, have emerged as a global health crisis affecting an estimated 65 
+million individuals worldwide with more than 200 reported symptoms 
+spanning multiple organ systems (Davis et al., 2023; Nalbandian et al., 
+2021). The neuropsychiatric manifestations of long COVID are partic­
+ularly prominent and persistent. Large-scale electronic health record 
+analyses have revealed that approximately one-third of COVID-19 sur­
+vivors received a neurological or psychiatric diagnosis within 6 months 
+* Corresponding authors.
+E-mail addresses: okatakakazu@gmail.com (T. Oka), sudo.nobuyuki.935@m.kyushu-u.ac.jp (N. Sudo). 
+Contents lists available at ScienceDirect
+Neuroscience
+journal homepage: www.elsevier.com/locate/nsc
+https://doi.org/10.1016/j.neuroscience.2026.07.002
+Received 1 May 2026; Accepted 1 July 2026  
+Neuroscience 611 (2026) 408–419 
+Available online 4 July 2026 
+0306-4522/© 2026 The Authors. Published by Elsevier Inc. on behalf of International Brain Research Organization (IBRO). This is an open access article under the 
+CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ). 
+
+of infection, a rate significantly exceeding that observed after influenza 
+or other respiratory tract infections (Taquet et al., 2021, Taquet et al., 
+2022).
+The immune pathogenesis of COVID-19 involves the activation of 
+innate immune receptors, including Toll-like receptors (TLR3, TLR7, 
+TLR9), the NOD-like receptor family pyrin domain-containing 3 
+(NLRP3) inflammasome, and the C-X-C motif chemokine receptor 3 
+(CXCR3) pathway, which collectively orchestrate the cytokine storm 
+(Merad et al., 2022). Activation of these receptors engages downstream 
+signaling cascades, including nuclear factor kappa-B (NF-κB), caspase-1, 
+and Janus kinase/signal transducer and activator of transcription (JAK/ 
+STAT), culminating in the production of pro-inflammatory cytokines 
+such as interleukin-6 (IL-6), tumor necrosis factor-α (TNF-α), and C-X-C 
+motif chemokine ligand 10 (CXCL10/IP-10), while concurrently 
+impairing the type I interferon (IFN-I) response (Merad et al., 2022; 
+Mehandru & Merad, 2022). Critically, immunological dysfunction has 
+been shown to persist for at least 8 months following even mild-to- 
+moderate SARS-CoV-2 infection, with elevated IFN-β, IFN-λ1, IL-6, and 
+activated CD14⁺CD16⁺ monocytes constituting a persistent inflamma­
+tory signature in long COVID patients (Phetsouphanh et al., 2022). 
+Recent multi-omic profiling has confirmed that long COVID involves 
+sustained activation of proinflammatory and immune exhaustion path­
+ways, with IL-6 signaling remaining upregulated beyond 180 days post- 
+infection (Aid et al., 2026).
+Beyond the systemic inflammatory response, the central nervous 
+system exhibits distinct pathological changes following viral infection. 
+Even in the absence of direct neuroinvasion, peripheral inflammatory 
+signals compromise blood–brain barrier (BBB) integrity and activate 
+resident microglia and astrocytes, which in turn secrete brain-specific 
+pro-inflammatory cytokines (Vanderheiden & Klein, 2022). Seminal 
+work has demonstrated that mild respiratory SARS-CoV-2 infection in­
+duces white-matter-selective microglial reactivity, impaired hippocam­
+pal neurogenesis, oligodendrocyte loss, and myelin damage persisting 7 
+weeks post-infection, with elevated cerebrospinal fluid CCL11 identified 
+as a key mediator (Fern´andez-Casta˜neda et al., 2022). Human brain 
+organoid studies have further revealed a threefold increase in microglial 
+phagocytosis of synapses following SARS-CoV-2 exposure, accompanied 
+by transcriptomic profiles overlapping with neurodegenerative disor­
+ders (Samudyata et al., 2022). This chronic neuroinflammation driven 
+by activated microglia is hypothesized to underlie the fatigue, sleep 
+disturbances, cognitive deficits, pain hypersensitivity, and depression 
+that characterize long COVID (Dantzer et al., 2008; Dantzer & Kelley, 
+2007).
+Furthermore, clinical evidence indicates that pre-existing psycho­
+logical distress substantially amplifies the risk of developing long 
+COVID. A large prospective cohort study (n = 54,960) from the Nurses’ 
+Health Study demonstrated that depression, anxiety, worry, perceived 
+stress, and loneliness prior to SARS-CoV-2 infection were each inde­
+pendently associated with a 32–46% increased risk of post-COVID 
+conditions (Wang et al., 2022). A comprehensive meta-analysis of 113 
+studies (n = 312,831) confirmed that depression and anxiety were 
+significantly associated with long COVID risk (Engelmann et al., 2024). 
+Complementary multinational data showed that patients with severe 
+acute COVID-19 were 50–60% more likely to develop depression and 
+anxiety persisting up to 16 months (Magnúsd´ottir et al., 2022). These 
+clinical observations raise a mechanistic question: does chronic stress 
+prior to viral infection prolong the cytokine storm-induced sickness 
+response and thereby promote the transition from acute illness to 
+persistent PVFS?
+Polyinosinic:polycytidylic acid (poly I:C) is a synthetic analog of 
+double-stranded RNA that activates TLR3, inducing NF-κB-dependent 
+production of type I interferons and pro-inflammatory cytokines, 
+thereby mimicking the innate immune response to viral infection 
+(Alexopoulou et al., 2001). In our previous study, intraperitoneal 
+administration of poly I:C in rodents produced a well-characterized 
+sickness 
+behavior 
+syndrome 
+comprising 
+fever, 
+depressive-like 
+behavior, and mechanical allodynia (Chijiwa et al., 2015). Poly I:C 
+also caused reduced locomotor activity, anorexia, social withdrawal, 
+and, accompanied by central neuroinflammation including elevated IL- 
+1β, IL-6, and TNF-α in the cortex and hippocampus, kynurenine pathway 
+activation via indoleamine 2,3-dioxygenase, and reduced brain-derived 
+neurotrophic factor expression (Gibney et al., 2013; Dantzer et al., 
+2008). Notably, prior chronic stress has been shown to moderate poly I: 
+C–induced sickness behaviors, plasma cytokine responses (IL-6, IL-10), 
+corticosterone secretion, and central monoamine activity, attenuating 
+the measured immune response on the day of poly I:C administration 
+(Gandhi et al., 2007).
+Moreover, existing animal models of long COVID, including hamster 
+and humanized mouse models, have demonstrated persistent neuro­
+inflammation, microglial activation, and behavioral deficits following 
+SARS-CoV-2 infection (Frere et al., 2022; Soung et al., 2022). However, 
+these models require biosafety level 3 (BSL-3) facilities and live virus 
+handling, substantially limiting their accessibility and throughput for 
+mechanistic studies and therapeutic screening (Usai et al., 2023; Sch¨afer 
+et al., 2024). There is thus a pressing need for practical, widely acces­
+sible animal models that recapitulate the PVFS without requiring 
+containment infrastructure. Our previous work using a TLR3 agonist in 
+repeatedly stressed rats demonstrated robust and prolonged sickness 
+behavior resembling PVFS symptoms (Chijiwa et al., 2015), suggesting 
+that the interaction between chronic stress and TLR3-mediated immune 
+activation may capture the core pathophysiology of PVFS.
+Based on the convergence of clinical evidence implicating 
+stress–immune interactions in long COVID, and the mechanistic plau­
+sibility of TLR3-mediated neuroinflammation as a driver of persistent 
+behavioral symptoms, we hypothesized that systemic inflammation 
+induced by poly I:C in chronically stressed mice would produce persis­
+tent PVFS-like symptoms, including fatigue, mechanical allodynia, 
+depressive-like behavior, cognitive impairment, and social withdrawal, 
+through a neuroinflammatory mechanism involving microglial activa­
+tion. To test this hypothesis, we developed a two-hit model combining 
+21 days of chronic wet bedding stress with a single intraperitoneal in­
+jection of poly I:C in C57BL/6J mice. The primary aims of this study 
+were: (1) to determine whether poly I:C induces persistent, multi- 
+domain behavioral symptoms selectively in chronically stressed mice; 
+(2) to characterize the systemic inflammatory profile (IL-6, IL-10, 
+CXCL10) and its relationship to behavioral outcomes; and (3) to 
+dissect the mechanistic involvement of microglial activation versus 
+glucocorticoid receptor (GR) signaling through pharmacological pre­
+treatment with minocycline and RU486, respectively.
+Experimental procedures
+Animals and ethics statement
+Male C57BL/6J mice (6–7 weeks of age at arrival; n = 96) were 
+obtained from Japan SLC, Hamamatsu, Japan. Mice were housed indi­
+vidually in standard polycarbonate cages under specific pathogen-free 
+(SPF) conditions with a 12 h light/dark cycle (lights on at 8:00 AM) at 
+a controlled ambient temperature of 23 ± 1◦C and relative humidity of 
+50 ± 10%. Standard rodent chow and water were available ad libitum. 
+Upon arrival, mice were allowed 7 days for acclimatization before any 
+experimental procedures. All experiments were performed during the 
+light phase (between 10:00 AM and 5:00 PM) unless otherwise specified. 
+The total sample size was determined by power analysis based on effect 
+sizes from our previous study (Chijiwa et al., 2015), with n = 5–10 mice 
+per group.
+All experimental procedures were conducted in accordance with the 
+Guidelines for Animal Care and the Institute of Laboratory Animals and 
+were approved by the Ethics Committee of Kyushu University (Approval 
+No. A24-350–1). Every effort was made to minimize the number of an­
+imals used and their suffering.
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+409 
+
+Surgery and monitoring of locomotor activity and body temperature
+After acclimatization, mice were anesthetized with a combination of 
+medetomidine (0.3 mg/kg), midazolam (4.0 mg/kg), and butorphanol 
+(5.0 mg/kg) administered intraperitoneally. Under aseptic conditions, a 
+miniature datalogger (nano tag®; weight: 2.7 g, diameter: 17.9 mm; 
+Muromachi Kikai Co., Ltd., Tokyo, Japan) was implanted via a 15-mm 
+midline incision into the peritoneal cavity. This implantable device 
+continuously monitors and records body temperature (Tb; ±0.1◦C res­
+olution) and locomotor activity (La; accelerometer-based activity 
+counts) according to a preprogrammed schedule at 5-min intervals 
+throughout the experimental period. The surgical wound was closed 
+with a 4–0 silk suture. Following surgery, mice received a single sub­
+cutaneous injection of ampicillin sodium (100 mg/kg; Meiji Seika 
+Pharma Co., Ltd., Tokyo, Japan) for prophylactic antibiosis and were 
+placed on a warm pad (35◦C) until full recovery from anesthesia. Mice 
+were allowed 7 days for postoperative recovery and daily handling 
+before the onset of the stress paradigm.
+Chemicals and reagents
+Poly I:C (Sigma-Aldrich, St. Louis, MO, USA, Cat. No. P1530) was 
+dissolved in sterile, endotoxin-free physiological saline on the day of 
+injection, and administered intraperitoneally at a dose of 4 mg/kg body 
+weight in a volume of 10 mL/kg (Chijiwa et al., 2015). Control animals 
+received an equivalent volume of sterile physiological saline. Minocy­
+cline hydrochloride (Sigma-Aldrich, St. Louis, MO, USA, Cat. No. 
+M9511) was dissolved in sterile saline and administered intraperitone­
+ally at a dose of 50 mg/kg (Henry et al., 2008; Kobayashi et al., 2013) 
+once daily for 10 consecutive days prior to poly I:C injection. Mifepris­
+tone (RU486; Sigma-Aldrich St. Louis, MO, USA, Cat. No. M8046) was 
+dissolved in vehicle and administered at a 50 mg/kg (Chijiwa et al., 
+2015) once daily for 10 consecutive days prior to poly I:C injection. 
+Medetomidine hydrochloride (Domitor®), midazolam (Dormicum®), 
+and butorphanol tartrate (Vetorphale®) were obtained from commercial 
+veterinary suppliers.
+Experimental design
+The experimental flowchart is illustrated in Fig. 1a.
+The study employed a 2 × 2 factorial design with stress condition 
+(chronic wet bedding stress vs. no stress) and drug treatment (poly I:C 
+vs. saline) as independent variables, yielding four experimental groups: 
+(1) Control/Saline; (2) Control/Poly I:C; (3) Stress/Saline; and (4) 
+Stress/Poly I:C. Separate cohorts of stressed mice were used to evaluate 
+the effects of minocycline pretreatment (Saline + Stress/Saline, Saline 
++ Stress/Poly I:C, Minocycline + Stress/Saline, Minocycline + Stress/ 
+Poly I:C) and RU486 pretreatment (Saline + Stress/Saline, Saline +
+Stress/Poly I:C, RU486 + Stress/Saline, RU486 + Stress/Poly I:C).
+The experimental timeline was as follows: Day −
+35, arrival and 
+assignment to groups; Days −
+35 to −
+29, acclimatization and habitu­
+ation; Day −
+28, survival surgery for datalogger implantation under 
+anesthesia; Days −28 to −21, postoperative recovery with daily gentle 
+handling; Days −
+21 to 0 (21 consecutive days), chronic wet bedding 
+Fig. 1. Poly I:C induces a febrile response in both stressed and unstressed mice. (a) Experimental flow diagram. C57BL/6J mice (7–8-week-old, males, n = 7–8/ 
+group) underwent datalogger transplantation, followed by 21 days of water-immersion stress (or control conditions), and then received poly I:C (4 mg/kg, i.p.) or 
+saline on Day 0. Locomotor activity and body temperature were monitored continuously, starting on Day −5. Grip strength and von Frey testing conducted on Day 
+–22 (before the stress/control period), Day −1 (before the poly I:C/saline injection), Day 1 (after the poly I:C/saline injection, and Day 7 (before euthanasia). 
+Behavioral tests (MWM on Day 1–5, OFT on Day 3, SIT on Day 5, and FST on Day 6) and tissue collection (Day 7) were performed over the subsequent 7 days. (b) 
+Daily locomotor activity (counts/h) in response to poly I:C/saline injection (n = 7–8). Poly I:C suppressed locomotor activity in the Control/Poly I:C group compared 
+to saline-treated controls in the dark period (p = 0.012). (c) Body temperature (◦C) time course following injection (n = 7–8). Diamonds with dotted lines, saline- 
+treated groups; circles with solid lines, poly I:C-treated groups. Blue, Control; red, Stress. Both poly I:C-treated groups exhibited polyphasic fever. In (b) and (c), the x- 
+axis denotes clock time across the 24-h light/dark cycle, with AM/PM periods labeled (lights on at 8:00 AM/8:00, lights off at 8:00 PM/20:00). (d) Fever index, a 
+cumulative AUC of body temperature change between 2 and 8 h post-injection (n = 7–8). A one-way ANOVA revealed a highly significant overall group effect on 
+fever index (F(3) = 114.48, p < 0.001, Fig. 1d). Post hoc comparisons confirmed that both poly I:C-treated groups exhibited significantly elevated fever indices 
+compared to saline-treated controls (both p < 0.001). Data are presented as mean ± SEM. ***p < 0.001, *p < 0.05.
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+410 
+
+stress exposure (stressed groups) or undisturbed home cage conditions 
+(non-stressed groups), Day 0, intraperitoneal injection of poly I:C (4 mg/ 
+kg) or saline; Days 1–6, post-injection behavioral assessment battery 
+(Day 1–5, Morris water maze test; Day 3, Open field test; Day 5, Social 
+interaction test; Day 6, Forced swim test); Day 7, blood collection via 
+cardiac puncture for serum cytokine analysis followed by euthanasia 
+under deep anesthesia. The time interval between tests scheduled at the 
+same day was maintained at 3 h to ensure the stabilize acute stress- 
+induced physiological and behavioral responses to each test.
+Physiological measurement consisting of grip strength and von Frey 
+testing conducted on Day –22, before the stress/control period (base­
+line); Day −1, before the poly I:C/saline injection; Day 1, after the poly I: 
+C/saline injection; Day 7, before euthanasia.
+Wet bedding stress
+Chronic wet bedding stress was performed as described previously 
+(Arima et al., 2017) with modifications. Mice assigned to the stress 
+groups were exposed to wet bedding for 4 h per day (10:00 AM–2:00 
+PM) for 21 consecutive days. Wet bedding was prepared by adding 
+approximately 100 mL of room-temperature tap water (~23◦C) in a new 
+cage, creating a shallow water layer approximately 5 mm deep sufficient 
+to wet ventral fur without forcing the animal to swim. Following each 4- 
+h stress session, mice were transferred to their home cages. Non-stressed 
+control mice remained undisturbed in their home cages. Body weight 
+was measured daily immediately before each stress session to monitor 
+the physiological impact of chronic stress and to ensure animal welfare.
+Physiological and biochemical assessments
+Grip strength. Forelimb grip strength was measured as a proxy for 
+muscular fatigue using a grip strength meter (RX-5; Aikoh Engineering, 
+Nagoya, Japan) in the SPF experiment room (Deacon, 2013). Each 
+mouse was held by the tail and allowed to grasp a wire mesh grid with its 
+forelimbs. The mouse was then gently pulled horizontally at a constant 
+speed until release. Peak force (in grams) was automatically recorded. 
+Five consecutive trials were performed per mouse with 30-s inter-trial 
+intervals, and the mean of the three highest values was used for anal­
+ysis. Measurements were obtained at four time points: Day –22, Day −1, 
+Day 1, and Day 7. All testing was performed between 10:00 AM and 5:00 
+PM by an experimenter blinded to group assignment.
+Von Frey test. Mechanical allodynia was assessed by measuring the 
+paw withdrawal response frequency using calibrated Semmes-Weinstein 
+monofilaments (Stoelting Co., Wood Dale, IL, USA) as described previ­
+ously (Chaplan et al., 1994). Each mouse was placed individually in a 
+transparent Plexiglas cubicle (9 × 9 × 14 cm) on a wire mesh platform 
+elevated 30 cm above the bench surface and allowed 30 min to accli­
+matize. A von Frey filament of predetermined force (1.4 g) was applied 
+perpendicular to the mid-plantar surface of the left hind paw. The fila­
+ment was applied 10 times with 5-s intervals, and the withdrawal fre­
+quency was recorded. Measurements were obtained at the same four 
+time points as grip strength testing by a blinded experimenter.
+Circadian locomotor activity and body temperature. Body tem­
+perature and locomotor activity were continuously recorded via the 
+intraperitoneally implanted nano tag® dataloggers throughout the 
+experimental period starting on Day −5. Recording was performed 
+continuously from Day −
+5 to Day 7, yielding 12 consecutive days of 
+body temperature and locomotor activity data per animal. Within each 
+cohort, all mice received their assigned injection (poly I:C or saline) on 
+the same day (Day 0) and at the same time of day, such that the post- 
+injection monitoring window was identical across groups. Data were 
+sampled at 5-min intervals. For analysis of circadian locomotor activity, 
+hourly cumulative activity counts were calculated for each day and 
+visualized as heat-map actograms. Body temperature data were 
+analyzed to detect febrile responses following poly I:C injection. Fever 
+index was calculated as the cumulative area under the curve (AUC) of 
+the change in baseline body temperature (a 1-hour average before in­
+jection) between 2 and 8 h after injection.
+Serum cytokine and chemokine measurements. Blood samples 
+were collected via cardiac puncture under deep isoflurane anesthesia at 
+the time of euthanasia (Day 7 post-injection). Blood was allowed to clot 
+at room temperature for 30 min, centrifuged at 1,500 × g for 15 min at 
+4◦C, and serum was stored at −
+80◦C until analysis. Serum concentra­
+tions of IL-6, IL-10, and CXCL10 were quantified using commercially 
+available ELISA kits (R&D Systems, Minneapolis, MN, USA) according to 
+the manufacturer’s instructions. All samples were assayed in duplicate.
+Behavioral tests
+All behavioral tests were conducted during the light phase (10:00 
+AM–5:00 PM) in the SPF experimental room during Days 1–6 post- 
+injection. Test order was consistent across groups, and apparatuses 
+were cleaned with 70% ethanol between animals. All behavioral scoring 
+was performed by an experimenter blinded to group assignment using 
+video-tracking software (ANY-maze; Muromachi Kikai, Japan).
+Open field test. General locomotor activity and anxiety-like 
+behavior were assessed using the open field test (OFT). Each mouse 
+was placed in the center of an open-field arena and allowed to explore 
+freely for 10 min. The arena was virtually divided into a center zone 
+(25% of total area) and peripheral/corner zones. Time spent in the 
+center zone (%) and time spent in the corners (%) were quantified as 
+indices of anxiety-related behavior; reduced center time and increased 
+corner time were interpreted as increased anxiety.
+Social interaction test. Social behavior was assessed using a one- 
+trial social interaction test (SIT). Each subject mouse was placed in an 
+arena containing a wire mesh enclosure housing a novel, unfamiliar 
+stimulus mouse of the same strain, age, and sex. The subject mouse was 
+allowed to explore freely for 10 min. Time spent in the interaction zone 
+(defined as the area immediately surrounding the stimulus enclosure) 
+was recorded as a percentage of total test time. Reduced interaction time 
+was interpreted as social withdrawal.
+Morris water maze test. Spatial learning and memory were assessed 
+using the Morris water maze (MWM). The apparatus consisted of a cir­
+cular pool (120 cm diameter, 45 cm height) filled with opaque water (23 
+± 1◦C). A transparent escape platform (10 cm diameter) was submerged 
+1 cm below the water surface in the target quadrant. During the 
+acquisition phase (Days 1–4 post-injection), each mouse received 4 trials 
+per day for 4 consecutive days. On each trial, the mouse was released 
+from one of four start positions and allowed a maximum of 60 s to locate 
+the hidden platform. Escape latency (s) was recorded. A probe trial 
+(platform removed) was conducted on Day 5: the mouse swam freely for 
+60 s, and time spent in the target quadrant (s) was used as an index of 
+spatial memory retention.
+Forced swim test. Depressive-like behavior was assessed using the 
+forced swim test (FST) as described by Porsolt et al. (1977) and adapted 
+for mice (Can et al., 2012). Each mouse was placed individually in a 
+transparent cylindrical container (20 cm diameter × 25 cm height) filled 
+with water (23 ± 1◦C) to a depth of 18 cm. Mice were forced to swim for 
+10 min, and immobility duration (s) was scored during the 5-min in­
+terval between minutes 1 and 6. Increased immobility time was inter­
+preted as depressive-like behavior.
+Pharmacological pretreatment experiments
+To investigate the mechanistic involvement of microglial activation, 
+a separate cohort of chronically stressed mice received minocycline 
+pretreatment (50 mg/kg, IP) or saline once daily for 10 consecutive days 
+immediately preceding poly I:C injection (Henry et al., 2008; Bassett 
+et al., 2021). Minocycline crosses the blood–brain barrier and selectively 
+inhibits M1 microglial polarization while sparing M2 anti-inflammatory 
+polarization (Kobayashi et al., 2013; Garrido-Mesa et al., 2013).
+To determine whether the PVFS-like phenotype was dependent on 
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+411 
+
+GR signaling, an additional cohort of chronically stressed mice received 
+RU486 or saline pretreatment for 10 consecutive days preceding poly I:C 
+injection. All subsequent behavioral and physiological assessments were 
+identical to those described above for the main experimental groups.
+Statistical analysis
+All data are expressed as mean ± standard error mean (SEM) or 
+presented as box-and-whisker plots showing individual data points. The 
+primary analysis employed one-way analysis of variance (ANOVA) 
+across the four experimental groups. Circadian locomotor activity was 
+analyzed using a cumulative AUC of the total activity over the 12-hour 
+period followed by one-way ANOVA. For repeated-measures data (body 
+temperature, locomotor activity, grip strength and allodynia across time 
+points, MWM acquisition), a two-way repeated-measures ANOVA was 
+used with time or time points as the within-subjects factor. When sig­
+nificant main effects were detected, post hoc pairwise comparisons were 
+conducted using Tukey’s honestly significant difference test or Bonfer­
+roni correction, as appropriate. The relationship between serum cyto­
+kine concentrations and behavioral outcomes was assessed using 
+Pearson correlation analysis. A p-value < 0.05 was considered statisti­
+cally significant. Significance levels are indicated as: *p < 0.05, **p <
+0.01, ***p < 0.001. All statistical analyses were performed using Jamovi 
+version 2.6 (jamovi.org) or SPSS version 21 (IBM, New York, USA).
+Results
+Poly I:C induces a polyphasic febrile response and acute locomotor 
+suppression
+The experimental timeline is depicted in Fig. 1a. To confirm that 
+intraperitoneal injection of poly I:C (4 mg/kg) elicited a systemic innate 
+immune response, core body temperature and locomotor activity were 
+continuously monitored via intraperitoneally implanted dataloggers 
+(Fig. 1b–d). Following the poly I:C injection on Day 0, daily locomotor 
+activity during the dark period was suppressed in both poly I:C-treated 
+groups (between subject effects: F3 = 4.41, p = 0.012, η2G = 0.106), 
+with the Control/Poly I:C group exhibiting a significant reduction 
+compared to the Control/Saline group (post hoc: p = 0.037; Fig. 1b). 
+Saline-treated animals maintained stable activity levels throughout the 
+monitoring period.
+Poly I:C injection induced a prominent polyphasic febrile response in 
+both the Control/Poly I:C and Stress/Poly I:C groups (between subject 
+effects: F3 = 9.53, p < 0.001, η2G = 0.304), whereas saline-treated an­
+imals maintained normal circadian temperature oscillations (Fig. 1c). 
+Post hoc comparisons showed that both poly I:C-treated groups exhibi­
+ted significantly elevated body temperatures compared to saline-treated 
+controls (p = 0.028 and p = 0.014, respectively). The febrile response 
+was quantified as the fever index (cumulative AUC of temperature 
+change between 2 and 8 h post-injection). A one-way ANOVA revealed a 
+highly significant overall group effect on fever index (F3 = 114.48, p <
+0.001, η2G = 0.9; Fig. 1d). Post hoc comparisons confirmed that both 
+poly I:C-treated groups exhibited significantly elevated fever indices 
+compared to saline-treated controls (post hoc: both p < 0.001). These 
+data confirm that poly I:C at 4 mg/kg reliably activated the TLR3- 
+mediated innate immune pathway, producing a robust polyphasic 
+fever consistent with systemic cytokine release (Chijiwa et al., 2015).
+In addition to body temperature, body weight was monitored 
+throughout the experimental period (Supplementary File 1). All groups 
+showed progressive weight gain from before stress through Day 7 post- 
+injection, with no statistically significant differences between groups at 
+any time point. This indicates that the observed behavioral and immune 
+phenotypes were not secondary to differential nutritional status, general 
+health deterioration, or body weight loss.
+Poly I:C induces persistent, multi-domain PVFS-like symptoms selectively 
+in stressed mice
+A comprehensive behavioral battery was administered over the 7- 
+day post-injection period to assess multiple PVFS-relevant symptom 
+domains (Fig. 2a–j).
+Persistent fatigue. Forelimb grip strength was measured at four 
+time points: Day –22, −1, 1, and 7 (Fig. 2a, n = 7–8). All four groups 
+displayed comparable grip strength at baseline (before stress) and the 
+grip strength was decreased in both poly I:C-treated groups (F3 = 5.19, p 
+= 0.003, η2G = 0.154), with the Control/Poly I:C group exhibiting a 
+significant decline compared to the Control/Saline and Stress/Saline 
+groups (post hoc: p = 0.020 and p = 0.005, respectively). When 
+expressed as change from baseline, the results confirm that grip strength 
+is reduced in the other three groups compared to the Control/Saline 
+group (F3 = 21.77, p < 0.001, η2G = 0.31; Fig. 2b). Post hoc comparisons 
+showed that the Stress/Poly I:C group exhibited the greatest reduction in 
+grip strength, significantly exceeding the changes observed in the Con­
+trol/Saline and Stress/Saline groups (p < 0.001 and p = 0.003, respec­
+tively), indicating an interaction between chronic stress and TLR3- 
+mediated immune activation in producing persistent fatigue.
+Persistent mechanical allodynia. Paw withdrawal frequency in 
+response to von Frey filament stimulation was monitored longitudinally 
+(Fig. 2c, n = 7–8). As the results were significantly different between the 
+groups (F3 = 3.95, p = 0.014, η2G = 0.084), with the Stress/Poly I:C 
+group displaying an increase in withdrawal compared to the Control/ 
+Saline group (post hoc: p = 0.007). The change in withdrawal frequency 
+from baseline was also significantly greater in the Stress/Poly I:C group 
+(F3 = 6.29, p < 0.001, η2G = 0.214, post hoc vs Control/Saline: p <
+0.001, vs Stress/Saline: p = 0.030), indicating persistent mechanical 
+allodynia developing selectively in the stress + poly I:C condition.
+Impaired spatial memory. In the Morris water maze acquisition 
+phase (Days 1–4 post-injection), all groups demonstrated decreasing 
+escape latencies across training days, indicating spatial learning is un­
+affected (Fig. 2e). On the probe trial (Day 5), the Stress/Poly I:C group 
+spent significantly less time in the target quadrant compared to Control/ 
+Saline and Stress/Saline groups (post hoc: p = 0.010 and p = 0.039, 
+respectively; Fig. 2f), indicating impaired spatial memory retention. 
+This cognitive deficit is consistent with the hippocampal-dependent 
+memory impairments reported in long COVID patients (Taquet et al., 
+2022; Fern´andez-Casta˜neda et al., 2022).
+Increased anxiety-like behavior. In the open field test (Day 3), 
+compared to the Control/Saline group, the other groups spent signifi­
+cantly less time in the center zone and significantly more time in the 
+corner areas compared (post hoc: Control/Saline vs. other groups, all p 
+< 0.001; Fig. 2g, 2 h). This thigmotactic pattern indicates anxiety-like 
+behavior was increased by both stress and poly I:C independently, 
+without evidence of synergistic interaction.
+Reduced social interaction. In the social interaction test (Day 5), 
+indicating social withdrawal, the other groups spent significantly less 
+time in the interaction zone surrounding the novel stimulus mouse 
+compared to the Control/Saline group (post hoc: Control/Saline vs. 
+other groups, all p < 0.001; Fig. 2i). This finding recapitulates the social 
+isolation and reduced social engagement reported in long COVID and 
+ME/CFS patients (Davis et al., 2023).
+Persistent depressive-like behavior. In the forced swim test (Day 
+6), the Stress/Poly I:C group exhibited significantly increased immo­
+bility duration compared to Control/Saline and Control/Poly I:C groups 
+(post hoc: p < 0.001 and p < 0.044, respectively; Fig. 2j). Both chronic 
+stress alone and poly I:C alone produced moderate increases in immo­
+bility relative to the Control/Saline group (post hoc: all p < 0.001), and 
+the Stress/Poly I:C group displayed tendency to exceed the immobility of 
+the Stress/Saline group (post hoc: p = 0.063). This persistent depressive- 
+like behavior is consistent with the neuroinflammation-driven transition 
+from acute sickness behavior to depression described in the cytokine 
+hypothesis (Dantzer et al., 2008).
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+412 
+
+(caption on next page)
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+413 
+
+Poly I:C disrupts circadian locomotor activity in stressed mice
+Circadian locomotor activity patterns were visualized using heat- 
+map actograms generated from the continuous datalogger recordings 
+(Fig. 3a–d).
+In the Control/Saline group, control mice displayed clear circadian 
+rhythmicity throughout the experimental period, with high locomotor 
+activity (warm colors) concentrated during the dark phase and low ac­
+tivity (cool colors) during the light phase (Fig. 3a). A similar pattern was 
+observed in the other groups during the 5-day period before injection 
+(Fig. 3b-d). However, a transient disruption of circadian activity was 
+observed immediately following poly I:C injection on Day 0, with re­
+covery of normal circadian patterns within several days (F3 = 3.151, p =
+0.034). These disruptions persisted throughout the post-injection 
+monitoring period in poly I:C treated and stress-exposed groups, 
+whereas circadian rhythmicity was unaffected in the Control/Saline 
+group, as a one-way ANOVA indicated significant group differences on 
+Day 7 (F3 = 5.666, p = 0.04). This circadian rhythm disruption parallels 
+the sleep and circadian rhythm disturbances identified as essential fea­
+tures of long COVID (Merikanto et al., 2022; Livieratos et al., 2025).
+Poly I:C induces persistent elevations in serum IL-6 and CXCL10 that 
+correlate with behavioral outcomes in stressed mice
+To characterize the systemic inflammatory profile, serum cytokine 
+concentrations were measured at Day 7 post-injection. Serum IL-6 was 
+markedly elevated in the Stress/Poly I:C group compared to all other 
+groups (post hoc: vs all groups, p < 0.001; Fig. 4a).
+The Control/Poly I:C and Stress/Saline groups exhibited non- 
+significant elevations relative to the Control/Saline group. The persis­
+tent elevation of IL-6 selectively in the Stress/Poly I:C group at 7 days 
+post-injection is noteworthy, as acute poly I:C-induced cytokine re­
+sponses typically resolve within 24–48 h in unstressed animals (Gibney 
+et al., 2013). This persistent IL-6 elevation mirrors the prolonged in­
+flammatory signatures reported in long COVID patients (Phetsouphanh 
+et al., 2022; Aid et al., 2026; Dornas et al., 2025).
+Serum CXCL10 was also significantly elevated in the Stress/Poly I:C 
+group (post hoc: vs. Control/Saline and Control/Poly I:C, both p < 0.05; 
+Fig. 4c), with a modest increase also observed in the Stress/Saline group, 
+suggesting that chronic stress alone partially upregulated CXCL10 
+production.
+Serum IL-10 concentrations were elevated in the Stress/Poly I:C 
+group (post hoc: vs. all groups, all p < 0.05; Fig. 4e), potentially 
+reflecting a compensatory anti-inflammatory response, although the 
+overall group difference did not reach statistical significance (F3 = 3.2, p 
+Fig. 2. Poly I:C induces persistent fatigue, increased allodynia, decreased memory, increased anxiety, decreased social interaction, and increased depressive-like 
+behavior. (a) Grip strength across four time points (Day –22, Day −1, Day 1, Day 7). Grip strength was decreased in both poly I:C-treated groups (F(3) = 5.19, p 
+= 0.003, η2G = 0.154), with the Control/Poly I:C group exhibiting a significant decline compared to the Control/Saline and Stress/Saline groups (post hoc: p = 0.020 
+and p = 0.005, respectively). (b) Grip strength changes from baseline. Box-and-whisker plots with individual data points. When expressed as change from baseline, 
+post hoc comparisons showed that the Stress/Poly I:C group exhibited the greatest reduction in grip strength, significantly exceeding the changes observed in the 
+Control/Saline and Stress/Saline groups (p < 0.001 and p = 0.003, respectively), (c) Withdrawal frequency by von Frey test across four time points. (d) Withdrawal 
+frequency change from baseline. (e) Spatial learning—escape latency in the Morris water maze (Days 1–4). (f) Spatial memory—time spent in the target quadrant 
+during the probe trial. (g) Time spent in the center area in the open field test. (h) Time spent in the corner areas in the open field test. (i) Time spent in the interaction 
+area in the social interaction test. (j) Immobility duration in the forced swim test. Groups: Control/Saline, Control/Poly I:C, Stress/Saline, Stress/Poly I:C. Data are 
+presented as mean ± SEM or box-and-whisker plots with individual data points. ***p < 0.001, **p < 0.01, *p < 0.05.
+Fig. 3. Poly I:C disrupts circadian locomotor activity in stressed mice. Heat-map actograms depicting continuous locomotor activity recorded by intraperitoneally 
+implanted dataloggers from Day −5 to Day 7. (a) Control/Saline. (b) Stress/Saline. (c) Control/Poly I:C. (d) Stress/Poly I:C. White and black horizontal bars indicate 
+light-on and light-off times, respectively. Color scale indicates the number of locomotor activity counts between 0 and 1,200 movements per 15 min. Black dotted 
+lines indicate the injection day (Day 0). In the Control/Saline group, control mice displayed clear circadian rhythmicity throughout the experimental period, with 
+high locomotor activity (warm colors) concentrated during the dark phase and low activity (cool colors) during the light phase (Fig. 3a). A similar pattern was 
+observed in the other groups during the 5-day period before injection (Fig. 3b-d). However, a transient disruption of circadian activity was observed immediately 
+following poly I:C injection on Day 0, with recovery of normal circadian patterns within several days (F3 = 1.151, p = 0.034). These disruptions persisted throughout 
+the post-injection monitoring period in poly I:C treated and stress-exposed groups, whereas circadian rhythmicity was unaffected in the Control/Saline group, as a 
+one-way ANOVA indicated significant group differences on Day 7 (F3 = 5.666, p = 0.04). Data are presented as a heatmap with individual data points. *p < 0.05.
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+414 
+
+= 0.059).
+Critically, serum IL-6 and CXCL10 concentrations correlated signif­
+icantly with key behavioral outcomes. Higher IL-6 levels were associated 
+with reduced time in the social interaction zone, decreased grip 
+strength, and increased FST immobility (Fig. 4b). A similar pattern of 
+correlations was observed for CXCL10 (Fig. 4d). IL-10 showed a positive 
+correlation with social interaction time (Fig. 4f). These correlations 
+provide evidence that the persistent behavioral phenotype was mecha­
+nistically linked to the sustained systemic inflammatory state, rather 
+than representing independent outcomes.
+Minocycline pretreatment partially attenuates PVFS-like symptoms
+To determine whether microglial activation contributed to the PVFS- 
+like phenotype, a separate cohort of chronically stressed mice received 
+minocycline pretreatment (50 mg/kg/day, IP, for 10 days) prior to poly 
+I:C injection (Fig. 5a–d).
+Minocycline pretreatment attenuated the poly I:C-induced grip 
+strength decline in stressed mice (between subject effects: F3 = 5.21, p =
+0.009, η2G = 0.259; Fig. 5a). The Minocycline + Stress/Poly I:C group 
+showed significantly better preservation of grip strength compared to 
+the Saline + Stress/Poly I:C group (post hoc: p = 0.02; Fig. 5b). 
+Minocycline pretreatment also significantly reduced FST immobility 
+duration in stressed mice receiving poly I:C (F3 = 7.78, p < 0.001; 
+Fig. 5c), indicating attenuation of the depressive-like phenotype (post 
+hoc: Minocycline + Stress/Poly I:C vs. Saline + Stress/Poly I:C, p =
+0.004). Similarly, minocycline pretreatment increased the time per­
+centage spent in the interaction area (F3 = 4.53, p = 0.015; Fig. 5d), 
+suggesting improving social interaction (post hoc: Minocycline + Stress/ 
+Poly I:C vs. Saline + Stress/Poly I:C, p = 0.01). Furthermore, minocy­
+cline pretreatment significantly reduced the persistent elevation of 
+serum IL-6 in the Stress/Poly I:C group (F3 = 3.43, p = 0.032; Fig. 5e), 
+indicating reducing inflammation (post hoc: Minocycline + Stress/Poly 
+I:C vs. Saline + Stress/Poly I:C, p = 0.029).
+However, minocycline did not normalize the other behavioral end­
+points to control levels, particularly increased allodynia, impaired 
+spatial memory, and increased anxiety-like behaviors suggesting that 
+additional mechanisms beyond microglial activation may contribute to 
+the PVFS-like phenotype.
+RU486 pretreatment does not attenuate PVFS-like symptoms
+To determine whether the PVFS-like phenotype was dependent on 
+GR signaling, a separate cohort of chronically stressed mice received 
+Fig. 4. Poly IC induced persistent elevation of serum IL-6 and CXCL10 in stressed mice. (a) Serum IL-6 concentration. (b) Correlations between IL and 6 and 
+behavioral test results. (c) Serum CXCL10 concentration. (d) Correlations between CXCL10 and behavioral test results. (e) Serum IL-10 concentration. (f) Correlation 
+between IL and 10 and the time in interaction of the social interaction test. For all correlation panels (b, d, f), the Pearson correlation coefficient (r) and the associated 
+p-value are indicated within each panel. Groups: Control/Saline, Control/Poly I:C, Stress/Saline, Stress/Poly I:C. Data are presented as mean ± SEM or box-and- 
+whisker plots with individual data points. ***p < 0.001, **p < 0.01, *p < 0.05.
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+415 
+
+Fig. 5. Minocycline pretreatment partially attenuates PVFS-like symptoms. (a) Grip strength across four time points (between subject effects: F3 = 5.21, p = 0.009, 
+η2G = 0.259). (b) Grip strength changes from baseline (post hoc: Minocycline + Stress/Poly I:C vs. Saline + Stress/Poly I:C, p = 0.02). (c-d) Withdrawal frequency 
+change. (e) Escape latency, Morris water-maze. (f) Time in the target quadrant, Morris water-maze. (g) Immobility duration, Forced swim test (post hoc: Minocycline 
++ Stress/Poly I:C vs. Saline + Stress/Poly I:C, p = 0.004). (h) Time in the interaction area, Social interaction (post hoc: Minocycline + Stress/Poly I:C vs. Saline +
+Stress/Poly I:C, p = 0.01). (i) Time in the corner areas, Open field test. (j) Serum IL-6 concentration (post hoc: Minocycline + Stress/Poly I:C vs. Saline + Stress/Poly 
+I:C, p = 0.029). (k-l) Serum CXCL10 and IL-10 concentrations. Data are presented as mean ± SEM or box-and-whisker plots with individual data points. *p < 0.05.
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+416 
+
+RU486 pretreatment prior to poly I:C injection (Supplementary File 2). 
+RU486 pretreatment did not significantly attenuate any of the PVFS-like 
+behavioral endpoints, including grip strength decline, increased allo­
+dynia, impaired spatial memory, reduced social interaction, increased 
+anxiety-like behaviors, or increased depressive-like behaviors. Further­
+more, RU486 did not reduce the poly I:C-induced elevation of serum IL- 
+6, CXCL10, or IL-10 in stressed mice.
+This negative finding is informative, as it indicates that the PVFS-like 
+phenotype in this model is not driven by HPA axis hyperactivation or 
+glucocorticoid-mediated immunosuppression. Rather, in conjunction 
+with the positive minocycline findings, these data suggest that the pri­
+mary mechanism involves microglial activation and central neuro­
+inflammation, apart from the classical hypothalamic–pituitary–adrenal 
+(HPA) axis pathway.
+Discussion
+The present study demonstrates that a single intraperitoneal injec­
+tion of poly I:C in chronically stressed mice produces a persistent, multi- 
+domain syndrome recapitulating core clinical characteristics of post- 
+viral fatigue syndrome, including long COVID. At 7 days post- 
+injection, beyond the expected resolution of acute sickness behavior, 
+the Stress/Poly I:C group selectively exhibited persistent fatigue, allo­
+dynia, depressive-like behavior, impaired spatial memory, reduced so­
+cial interaction, disrupted circadian locomotor activity, and sustained 
+elevation of serum IL-6 and CXCL10. Neither poly I:C alone nor chronic 
+stress alone was sufficient to produce this multi-symptom phenotype, 
+indicating that the interaction between chronic stress priming and TLR3- 
+mediated immune activation is critical for the transition from acute 
+sickness to persistent PVFS. The selective attenuation by minocycline, 
+but not RU486, implicates microglial activation and neuroinflammation, 
+rather than HPA axis–glucocorticoid signaling, as the primary mecha­
+nistic driver.
+The stress × poly I:C interaction is grounded in clinical evidence that 
+pre-existing psychological distress amplifies long COVID risk by 32–46% 
+(Wang et al., 2022; Engelmann et al., 2024). Chronic stress activates 
+microglia and promotes monocyte trafficking to the brain (Wohleb et al., 
+2013). Frank et al. (2024) recently demonstrated that SARS-CoV-2 spike 
+protein produces protracted neuroinflammatory priming with exagger­
+ated responses to subsequent immune challenge, suggesting a mecha­
+nism directly analogous to the stress-mediated priming observed here. 
+The present findings extend this literature by demonstrating that stress 
+priming converts a normally self-limiting innate immune response into a 
+persistent, multi-domain behavioral syndrome, PVFS.
+The multi-domain behavioral phenotype distinguishes this model 
+from single-endpoint sickness behavior paradigms. Long COVID patients 
+present with concurrent fatigue, pain, cognitive dysfunction, mood 
+disturbances, circadian disruption, and social withdrawal (Davis et al., 
+2023; Komaroff & Lipkin, 2023). Our model recapitulates these do­
+mains, and the significant correlations between cytokine concentrations 
+and behavioral outcomes provide evidence that these symptoms reflect 
+an integrated pathophysiological process driven by sustained systemic 
+inflammation.
+The persistent elevation of IL-6 and CXCL10 selectively in the Stress/ 
+Poly I:C group is noteworthy. Acute poly I:C-induced cytokine responses 
+typically resolve within 24–48 h in unstressed animals (Gibney et al., 
+2013), yet chronic stress converted this transient response into a sus­
+tained inflammatory state. Both cytokines are consistently elevated in 
+long COVID patients beyond 6 months post-infection (Dornas et al., 
+2025), with the IL-6–JAK/STAT signaling axis remaining activated for 
+over 180 days (Aid et al., 2026).
+The minocycline–RU486 pharmacological dissociation provides a 
+specific insight. Minocycline, which crosses the BBB and selectively in­
+hibits M1 microglial polarization (Kobayashi et al., 2013), partially 
+rescued grip strength, substantially reduced FST immobility, restored 
+social interaction, and attenuated IL-6 elevation, consistent with recent 
+evidence that minocycline attenuates enduring neurological conse­
+quences following systemic inflammation (Hosseini et al., 2024; Zou 
+et al., 2025). Conversely, RU486 failed to improve any endpoint, 
+consistent with evidence that GR signaling in neuroinflammation is 
+context-dependent and can paradoxically enhance central inflammation 
+under chronic stress (Taylor & Kokiko-Cochran, 2024; Meyer et al., 
+2024). The partial attenuation by minocycline suggests that additional 
+mechanisms contribute, potentially including peripheral immune cell 
+trafficking, kynurenine pathway activation, or autonomic dysfunction 
+(Dantzer et al., 2008; Wohleb et al., 2013).
+The circadian disruption in the Stress/Poly I:C group is clinically 
+relevant, as sleep and circadian disturbances are now recognized as 
+essential features of long COVID (Merikanto et al., 2022; Livieratos 
+et al., 2025). Pro-inflammatory cytokines, particularly IL-6, disrupt 
+circadian clock gene oscillations in the hypothalamus and hippocampus 
+(Cheng et al., 2024), providing a mechanistic link between the sustained 
+cytokine elevation and circadian disruption in this model.
+The present approach is best understood in relation to existing pre­
+clinical models of post-acute viral sequelae. Live-virus models in Syrian 
+hamsters (Frere et al., 2022) and susceptible or humanized mice (Soung 
+et al., 2022) have been demonstrated to reproduce SARS-CoV-2–specific 
+central cytokine induction, impaired hippocampal neurogenesis, and 
+lasting systemic perturbations. Conversely, mild respiratory SARS-CoV- 
+2 infection has been shown to produce white-matter–selective micro­
+glial reactivity and myelin dysregulation (Fern´andez-Casta˜neda et al., 
+2022), and human brain organoids exposed to SARS-CoV-2 have been 
+observed to show increased microglial elimination of synapses 
+(Samudyata et al., 2022). Although these systems capture virus-specific 
+neuropathology with high construct validity, they require BSL-3 
+containment, transgenic or humanized hosts, or adapted viral strains 
+(Sch¨afer et al., 2024; Usai et al., 2023), and typically interrogate a single 
+mechanistic endpoint. Component-based approaches have shown to 
+reduce these constraints, i.e., administration of the SARS-CoV-2 S1 
+subunit produces a protracted neuroinflammatory priming with exag­
+gerated responses to subsequent immune challenges (Frank et al., 2024). 
+This finding aligns mechanistically with the chronic-stress priming re­
+ported in this study. The present model is distinguished by three fea­
+tures. Firstly, it isolates the pathogen-independent, TLR3-driven 
+component of post-viral biology, consistent with comparable rates of 
+post-infective fatigue across diverse pathogens (Hickie et al., 2006). 
+Secondly, it assays concurrent multi-domain symptomatology, including 
+fatigue, mechanical allodynia, depressive-like behavior, spatial-memory 
+impairment, circadian disruption, and social withdrawal, within a single 
+design rather than an isolated readout. Thirdly, it incorporates chronic 
+stress as a clinically grounded priming factor that independently ele­
+vates the risk of long COVID (Wang et al., 2022; Engelmann et al., 2024). 
+Its BSL-1 compatibility, reliance on commercially available reagents, 
+and use of the well-characterized C57BL/6J background further 
+enhance accessibility and reproducibility. The model complements, 
+rather than replaces, virus-based systems, as it does not recapitulate 
+viral tropism, immune evasion, or persistent viral reservoirs. Instead, it 
+provides a tractable platform for dissecting the stress–inflammation 
+interaction that drives the transition from acute sickness to persistent 
+post-viral symptoms.
+The findings open several translational directions. First, the model 
+provides a platform for screening microglial-targeted therapeutics 
+beyond minocycline, including PLX5622 (a CSF1R inhibitor that pre­
+vents neuroinflammatory sequelae following systemic inflammation at 
+low doses; Mein et al., 2023) and NLRP3 inflammasome inhibitors such 
+as dapansutrile, which are advancing through clinical trials for neuro­
+inflammatory conditions (Vande Walle & Lamkanfi, 2024). Second, the 
+central role of stress priming suggests that stress-reduction interventions 
+could serve as PVFS prophylaxis; cognitive behavioral therapy probably 
+reduces long COVID fatigue (Zeraatkar et al., 2024), and pre-infection 
+perceived stress predicts ongoing symptomatic COVID-19 (Fazekas 
+et al., 2025). Third, the persistent IL-6 elevation provides a rationale 
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+417 
+
+for testing anti-IL-6 agents (i.e., tocilizumab) or JAK inhibitors (e.g., 
+baricitinib), which reduce acute COVID-19 mortality by 33% and may 
+mitigate subsequent neuropsychiatric sequelae (Amstutz et al., 2025). 
+This model could serve as a preclinical screening platform for such in­
+terventions before clinical trials.
+Several limitations should be acknowledged. Cross-sectional sam­
+pling of serum cytokines and chemokines cannot resolve sustained, 
+oscillatory, or delayed-secondary patterns. Peripheral cytokines rather 
+than central neuroinflammatory markers were assessed. Central neuro­
+inflammation was therefore inferred functionally, from the sensitivity of 
+the phenotype to minocycline and from prior work demonstrating cen­
+tral cytokine elevation after poly I:C (Gibney et al., 2013). Direct 
+quantification of brain-region cytokines, microglial markers, and his­
+tological indices of microglial activation is a priority for confirming the 
+proposed neuroinflammatory mechanism. The seven-day follow-up does 
+not establish whether the phenotype is truly chronic. Sequential 
+behavioral testing during the same post-injection period cannot fully 
+exclude carry-over effects. Furthermore, it has been demonstrated that 
+persistent fatigue can depress performance in the FST, OFT, MWM, and 
+SIT independently of the affective, cognitive, and social processes that 
+these tasks are taken to index. Consequently, the corresponding mea­
+sures are best interpreted as a convergent syndrome rather than as 
+dissociable constructs. As the behavioral tests and the terminal 
+biochemical measures were obtained from the same animals, the 
+behavioral and cytokine readouts are not statistically independent, and 
+serial testing may have influenced the later assays. This design was 
+adopted to reduce animal numbers and to permit within-subject longi­
+tudinal analysis, with a fixed test order arranged from least to most 
+stressful and inter-test recovery intervals to mitigate carry-over. 
+Nevertheless, replication of the key endpoints in independent, single- 
+assay cohorts is warranted. Repeated handling and cumulative novelty 
+exposure may alter immobility, exploration, and spatial learning on later 
+tests. Only male mice were used; sex differences in stress responses and 
+neuroimmune function warrant future studies including female mice. 
+Poly I:C is not a SARS-CoV-2 surrogate; the model recapitulates the post- 
+viral inflammatory–behavioral phenotype rather than virus-specific 
+tropism, immune evasion, or persistent viral reservoirs. Stimulation 
+with the SARS-CoV-2 spike or S1 subunit, or with live virus, would be 
+required to test virus-specific contributions and to extend these 
+pathogen-independent findings (Frank et al., 2024). Minocycline has 
+pleiotropic effects; more specific tools such as PLX5622 or conditional 
+genetic approaches would strengthen mechanistic conclusions.
+In conclusion, the present study demonstrates that TLR3-mediated 
+systemic inflammation induced by poly I:C produces persistent, multi- 
+domain PVFS-like symptoms in chronically stressed mice, recapitu­
+lating core features of PVFS relevant to long COVID. The mechanistic 
+dissociation between minocycline sensitivity and RU486 insensitivity 
+suggests neuroinflammation rather than HPA axis dysregulation as a 
+primary driver of PVFS-like pathology. This model provides a platform 
+for investigating the transition from acute sickness behavior to PVFS and 
+for screening candidate therapeutics, including microglial-targeted 
+agents, NLRP3 inhibitors, and stress-reduction strategies.
+Compliance with ethical standards
+All experimental procedures were conducted in accordance with the 
+Guidelines for Animal Care of the Institute of Laboratory Animals and 
+were approved by the Ethics Committee of Kyushu University (Approval 
+No. A24-350–1).
+CRediT authorship contribution statement
+Battuvshin Lkhagvasuren: Writing – review & editing, Writing – 
+original draft, Visualization, Supervision, Resources, Project adminis­
+tration, Methodology, Investigation, Funding acquisition, Formal anal­
+ysis, 
+Data 
+curation, 
+Conceptualization. 
+Takafumi 
+Suematsu: 
+Visualization, Formal analysis, Data curation. Liu Xiangyu: Software, 
+Investigation, Data curation. Tomokazu Hata: Writing – review & 
+editing, Validation. Shu Takakura: Writing – review & editing, Vali­
+dation. Tetsuya Hiramoto: Writing – review & editing, Validation. 
+Takakazu Oka: Writing – review & editing, Validation, Supervision, 
+Methodology, Funding acquisition, Conceptualization. Nobuyuki Sudo: 
+Writing – review & editing, Validation, Supervision, Funding acquisi­
+tion, Conceptualization.
+Funding
+This study was funded by the Japan Society for the Promotion of 
+Science (Grant-in-Aid for Scientific Research (C) 22 K07480 to Battuv­
+shin Lkhagvasuren); Japan Society for the Promotion of Science (Grant- 
+in-Aid for Scientific Research (C) 22 K07404 and 25 K10689 to Taka­
+kazu Oka); Japan Society for the Promotion of Science (Grant-in-Aid for 
+Scientific Research (B) 25 K02573 to Nobuyuki Sudo).
+Declaration of Competing Interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+We appreciate the excellent technical assistances provided by the 
+Research Support Center, Research Center for Human Disease Modeling, 
+Graduate School of Medical Sciences, Kyushu University.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.neuroscience.2026.07.002.
+References
+Aid, M., Boero-Teyssier, V., McMahan, K., Dang, R., Doyle, M., Belabbaci, N., 
+Borducchi, E., Collier, A.Y., Mullington, J., Barouch, D.H., 2026. Long COVID 
+involves activation of proinflammatory and immune exhaustion pathways. Nat. 
+Immunol. 27 (1), 61–71. https://doi.org/10.1038/s41590-025-02353-x.
+Amstutz, A., Schandelmaier, S., Ewald, H., et al., 2025. Effects of Janus kinase inhibitors 
+in adults admitted to hospital due to COVID-19: a systematic review and individual 
+participant data meta-analysis of randomised clinical trials. Lancet Respir. Med. 13 
+(6), 530–544. https://doi.org/10.1016/S2213-2600(25)00055-4.
+Alexopoulou, L., Holt, A.C., Medzhitov, R., Flavell, R.A., 2001. Recognition of double- 
+stranded RNA and activation of NF-κB by Toll-like receptor 3. Nature 413 (6857), 
+732–738. https://doi.org/10.1038/35099560.
+Arima, Y., Ohki, T., Nishikawa, N., Higuchi, K., Ota, M., Tanaka, Y., Nio-Kobayashi, J., 
+Elfeky, M., Sakai, R., Mori, Y., Kawamoto, T., Stofkova, A., Sakashita, Y., 
+Morimoto, Y., Kuwatani, M., Iwanaga, T., Yoshioka, Y., Sakamoto, N., 
+Yoshimura, A., Takiguchi, M., Murakami, M., 2017. Brain Micro-Inflammation at 
+Specific Vessels Dysregulates Organ-Homeostasis via the Activation of a New Neural 
+Circuit. eLife, 6, e25517. https://doi.org/10.7554/eLife.25517.
+Bassett, B., Subramaniyam, S., Fan, Y., Varney, S., Pan, H., Carneiro, A.M.D., Chung, C. 
+Y., 2021. Minocycline alleviates depression-like symptoms by rescuing decrease in 
+neurogenesis in dorsal hippocampus via blocking microglia activation/phagocytosis. 
+Brain Behav. Immun. 91, 519–530. https://doi.org/10.1016/j.bbi.2020.11.009.
+Can, A., Dao, D.T., Arad, M., Terrillion, C.E., Piantadosi, S.C., Gould, T.D., 2012. The 
+mouse forced swim test. J. Vis. Exp. 59, e3638.
+Chaplan, S.R., Bach, F.W., Pogrel, J.W., Chung, J.M., Yaksh, T.L., 1994. Quantitative 
+assessment of tactile allodynia in the rat paw. J. Neurosci. Methods 53 (1), 55–63. 
+https://doi.org/10.1016/0165-0270(94)90144-9.
+Cheng, W.Y., Chan, P.L., Ong, H.Y., Wong, K.H., Chang, R.C.C., 2024. Systemic 
+inflammation disrupts circadian rhythms and diurnal neuroimmune dynamics. Int. J. 
+Mol. Sci. 25 (13), 7458. https://doi.org/10.3390/ijms25137458.
+Chijiwa, T., Oka, T., Lkhagvasuren, B., Yoshihara, K., Sudo, N., 2015. Prior chronic stress 
+induces persistent polyI:C-induced allodynia and depressive-like behavior in rats: 
+possible involvement of glucocorticoids and microglia. Physiol. Behav. 147, 
+264–273. https://doi.org/10.1016/j.physbeh.2015.04.050.
+Dantzer, R., Kelley, K.W., 2007. Twenty years of research on cytokine-induced sickness 
+behavior. Brain Behav. Immun. 21 (2), 153–160. https://doi.org/10.1016/j. 
+bbi.2006.09.006.
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+418 
+
+Dantzer, R., O’Connor, J.C., Freund, G.G., Johnson, R.W., Kelley, K.W., 2008. From 
+inflammation to sickness and depression: when the immune system subjugates the 
+brain. Nat. Rev. Neurosci. 9 (1), 46–56. https://doi.org/10.1038/nrn2297.
+Davis, H.E., McCorkell, L., Vogel, J.M., Topol, E.J., 2023. Long COVID: Major findings, 
+mechanisms and recommendations. Nat. Rev. Microbiol. 21 (3), 133–146. https:// 
+doi.org/10.1038/s41579-022-00846-2.
+Deacon, R.M.J., 2013. Measuring the strength of mice. J. Vis. Exp. 76, 2610. https://doi. 
+org/10.3791/2610.
+Dornas, W., Reis, J.P., Belilo, T.E., Vaz, L.G., Nasser, H.H., Souza Maia, M.L., 
+Figueiredo, A., Tcherniacovski, A.G., Montenegro, L.C.C., Yang, X., Santiago, H.C., 
+2025. Persistent inflammatory cytokine signature in long Covid-19 patients: a meta- 
+analysis. Inflammopharmacology. https://doi.org/10.1007/s10787-025-02033-0.
+Engelmann, P., Reinke, M., Stein, C., Salzmann, S., L¨owe, B., Toussaint, A., Shedden- 
+Mora, M., 2024. Psychological factors associated with Long COVID: a systematic 
+review and meta-analysis. EClinicalMedicine 74, 102756. https://doi.org/10.1016/ 
+j.eclinm.2024.102756.
+Fazekas, C., Goswami, N., Matzer, F., et al., 2025. Perceived chronic stress prior to SARS- 
+CoV-2 infection predicts ongoing symptomatic COVID-19: a prospective cohort 
+study. Psychother. Psychosom. 95 (1), 76–87. https://doi.org/10.1159/000547858.
+Fern´andez-Casta˜neda, A., Lu, P., Geraghty, A.C., Song, E., Lee, M.-H., Wood, J., Bhatt, D. 
+L., 2022. Mild respiratory COVID can cause multi-lineage neural cell and myelin 
+dysregulation. Cell 185 (14), 2452–2468.e16. https://doi.org/10.1016/j. 
+cell.2022.06.008.
+Frank, M.G., Ball, J.B., Hopkins, S., Kelley, T., Kuzma, A.J., Thompson, R.S., 
+Fleshner, M., Maier, S.F., 2024. SARS-CoV-2 S1 subunit produces a protracted 
+priming of the neuroinflammatory, physiological, and behavioral responses to a 
+remote immune challenge: a role for corticosteroids. Brain Behav. Immun. 121, 
+87–103. https://doi.org/10.1016/j.bbi.2024.07.034.
+Frere, J.J., Serafini, R.A., Pryce, K.D., Zazhytska, M., Oishi, K., Golynker, I., tenOever, B. 
+R., 2022. SARS-CoV-2 infection in hamsters and humans results in lasting and unique 
+systemic perturbations after recovery. Sci. Transl. Med. 14 (664), eabq3059. https:// 
+doi.org/10.1126/scitranslmed.abq3059.
+Gandhi, R., Hayley, S., Bhatt, M., Anisman, H., Bhatt, S., 2007. Influence of poly I:C on 
+sickness behaviors, plasma cytokines, corticosterone and central monoamine 
+activity: Moderation by social stressors. Brain Behav. Immun. 21 (4), 477–489.
+Garrido-Mesa, N., Zarzuelo, A., G´alvez, J., 2013. Minocycline: Far beyond an antibiotic. 
+Br. J. Pharmacol. 169 (2), 337–352. https://doi.org/10.1111/bph.12139.
+Gibney, S.M., McGuinness, B., Prendergast, C., Harkin, A., Connor, T.J., 2013. Poly I:C- 
+induced activation of the immune response is accompanied by depression and 
+anxiety-like behaviours, kynurenine pathway activation and reduced BDNF 
+expression. Brain Behav. Immun. 28, 170–181. https://doi.org/10.1016/j. 
+bbi.2012.11.010.
+Henry, C.J., Huang, Y., Wynne, A., Hanke, M., Himler, J., Bailey, M.T., Sheridan, J.F., 
+Godbout, J.P., 2008. Minocycline attenuates lipopolysaccharide (LPS)-induced 
+neuroinflammation, sickness behavior, and anhedonia. J. Neuroinflammation 5, 15. 
+https://doi.org/10.1186/1742-2094-5-15.
+Hickie, I., Davenport, T., Wakefield, D., Vollmer-Conna, U., Cameron, B., Vernon, S.D., 
+Reeves, W.C., Lloyd, A., 2006. Post-infective and chronic fatigue syndromes 
+precipitated by viral and non-viral pathogens: prospective cohort study. BMJ 333 
+(7568), 575. https://doi.org/10.1136/bmj.38933.585764.AE.
+Hosseini, M., Bardaghi, Z., Askarpour, H., Jafari, M.M., Golkar, A., Shirzad, S., 
+Rajabian, A., Salmani, H., 2024. Minocycline mitigated enduring neurological 
+consequences in the mice model of sepsis. Behav. Brain Res. 461, 114856. https:// 
+doi.org/10.1016/j.bbr.2024.114856.
+Kobayashi, K., Imagama, S., Ohgomori, T., Hirano, K., Uchimura, K., Sakamoto, K., 
+Kadomatsu, K., 2013. Minocycline selectively inhibits M1 polarization of microglia. 
+Cell Death Dis. 4, e525.
+Komaroff, A.L., Lipkin, W.I., 2021. Insights from myalgic encephalomyelitis/chronic 
+fatigue syndrome may help unravel the pathogenesis of postacute COVID-19 
+syndrome. Trends Mol. Med. 27 (9), 895–906. https://doi.org/10.1016/j. 
+molmed.2021.06.002.
+Komaroff, A.L., Lipkin, W.I., 2023. ME/CFS and Long COVID share similar symptoms and 
+biological abnormalities: Road map to the literature. Front. Med. 10, 1187163. 
+https://doi.org/10.3389/fmed.2023.1187163.
+Livieratos, A., Lockley, S.W., Tsiodras, S., 2025. Post infectious fatigue and circadian 
+rhythm disruption in long-COVID and other infections: a need for further research. 
+EClinicalMedicine 80, 103073. https://doi.org/10.1016/j.eclinm.2025.103073.
+Magnúsd´ottir, I., Lovik, A., Unnarsd´ottir, A.B., McCartney, D., Ask, H., K˜oiv, K., 
+Valdimarsd´ottir, U.A., 2022. Acute COVID-19 severity and mental health morbidity 
+trajectories in patient populations of six nations: an observational study. Lancet 
+Public Health 7 (5), e406–e416. https://doi.org/10.1016/S2468-2667(22)00042-1.
+Mehandru, S., Merad, M., 2022. Pathological sequelae of long-haul COVID. Nat. 
+Immunol. 23 (2), 194–202. https://doi.org/10.1038/s41590-021-01104-y.
+Merad, M., Blish, C.A., Sallusto, F., Iwasaki, A., 2022. The immunology and 
+immunopathology of COVID-19. Science 375 (6585), 1122–1127. https://doi.org/ 
+10.1126/science.abm8108.
+Merikanto, I., Dauvilliers, Y., Chung, F., Holzinger, B., De Gennaro, L., Wing, Y.K., 
+Korman, M., Partinen, M., 2022. Disturbances in sleep, circadian rhythms and 
+daytime functioning in relation to coronavirus infection and Long-COVID: a 
+multinational ICOSS study. J. Sleep Res. 31 (4), e13542. https://doi.org/10.1111/ 
+jsr.13542.
+Mein, N., von Stackelberg, N., Wickel, J., Geis, C., Chung, H.Y., 2023. Low-dose PLX5622 
+treatment prevents neuroinflammatory and neurocognitive sequelae after sepsis. 
+J. Neuroinflammation 20 (1), 289. https://doi.org/10.1186/s12974-023-02975-8.
+Meyer, M., Meijer, O., Hunt, H., Belanoff, J., Lima, A., de Kloet, E.R., Gonzalez 
+Deniselle, M.C., De Nicola, A.F., 2024. Stress-induced neuroinflammation of the 
+spinal cord is restrained by Cort113176 (dazucorilant), a specific glucocorticoid 
+receptor modulator. Mol. Neurobiol. 61 (1), 1–14. https://doi.org/10.1007/s12035- 
+023-03554-x.
+Nalbandian, A., Sehgal, K., Gupta, A., Madhavan, M.V., McGroder, C., Stevens, J.S., 
+Bhatt, D.L., 2021. Post-acute COVID-19 syndrome. Nat. Med. 27 (4), 601–615. 
+https://doi.org/10.1038/s41591-021-01283-z.
+Phetsouphanh, C., Darley, D.R., Wilson, D.B., Howe, A., Munier, C.M.L., Patel, S.K., 
+Matthews, G.V., 2022. Immunological dysfunction persists for 8 months following 
+initial mild-to-moderate SARS-CoV-2 infection. Nat. Immunol. 23 (2), 210–216. 
+https://doi.org/10.1038/s41590-021-01113-x.
+Porsolt, R.D., Le Pichon, M., Jalfre, M., 1977. Depression: a new animal model sensitive 
+to antidepressant treatments. Nature 266 (5604), 730–732. https://doi.org/ 
+10.1038/266730a0.
+Samudyata, O., A. O., Malwade, S., Rufino de Sousa, N., Goparaju, S. K., Gracias, J., 
+Bhatt, D. L., 2022. SARS-CoV-2 promotes microglial synapse elimination in human 
+brain organoids. Mol. Psychiatry 27 (10), 3939–3950. https://doi.org/10.1038/ 
+s41380-022-01786-2.
+Sch¨afer, A., Leist, S.R., Powers, J.M., Baric, R.S., 2024. Animal models of Long Covid: a 
+hit-and-run disease. Sci. Transl. Med. 16 (773), eado2104. https://doi.org/10.1126/ 
+scitranslmed.ado2104.
+Soung, A.L., Vanderheiden, A., Nordvig, A.S., Sissoko, C.A., Canoll, P., Mariani, M.B., 
+Jiang, X., Bricker, T., Klein, R.S., 2022. COVID-19 induces CNS cytokine expression 
+and loss of hippocampal neurogenesis. Brain 145 (12), 4193–4201. https://doi.org/ 
+10.1093/brain/awac270.
+Taquet, M., Geddes, J.R., Husain, M., Luciano, S., Harrison, P.J., 2021. 6-month 
+neurological and psychiatric outcomes in 236,379 survivors of COVID-19: a 
+retrospective cohort study using electronic health records. Lancet Psychiatry 8 (5), 
+416–427. https://doi.org/10.1016/S2215-0366(21)00084-5.
+Taquet, M., Sillett, R., Zhu, L., Mendel, J., Camplisson, I., Dercon, Q., Harrison, P.J., 
+2022. Neurological and psychiatric risk trajectories after SARS-CoV-2 infection: an 
+analysis of 2-year retrospective cohort studies including 1,284,437 patients. Lancet 
+Psychiatry 9 (10), 815–827. https://doi.org/10.1016/S2215-0366(22)00260-7.
+Taylor, M.A., Kokiko-Cochran, O.N., 2024. Context is key: Glucocorticoid receptor and 
+corticosteroid therapeutics in outcomes after traumatic brain injury. Front. Cell. 
+Neurosci. 18, 1351685. https://doi.org/10.3389/fncel.2024.1351685.
+Usai, C., et al., 2023. Animal models to study the neurological manifestations of the post- 
+COVID-19 condition. Lab Anim. 52, 202–210. https://doi.org/10.1038/s41684-023- 
+01231-z.
+Vande Walle, L., Lamkanfi, M., 2024. Drugging the NLRP3 inflammasome: from 
+signalling mechanisms to therapeutic targets. Nat. Rev. Drug Discov. 23 (1), 43–66. 
+https://doi.org/10.1038/s41573-023-00822-2.
+Vanderheiden, A., Klein, R.S., 2022. Neuroinflammation and COVID-19. Curr. Opin. 
+Neurobiol. 76, 102608. https://doi.org/10.1016/j.conb.2022.102608.
+Wang, S., Quan, L., Chavarro, J.E., Slopen, N., Kubzansky, L.D., Koenen, K.C., Kang, J.H., 
+Weisskopf, M.G., Branch-Elliman, W., Roberts, A.L., 2022. Associations of 
+depression, anxiety, worry, perceived stress, and loneliness prior to infection with 
+risk of post-COVID-19 conditions. JAMA Psychiat. 79 (11), 1081–1091. https://doi. 
+org/10.1001/jamapsychiatry.2022.2640.
+Wohleb, E.S., Powell, N.D., Godbout, J.P., Sheridan, J.F., 2013. Stress-induced 
+recruitment of bone marrow-derived monocytes to the brain promotes anxiety-like 
+behavior. J. Neurosci. 33 (34), 13820–13833. https://doi.org/10.1523/ 
+JNEUROSCI.1671-13.2013.
+Zeraatkar, D., Ling, M., Kirsh, S., et al., 2024. Interventions for the management of long 
+covid (post-covid condition): living systematic review. BMJ 387, e081318. https:// 
+doi.org/10.1136/bmj-2024-081318.
+Zou, J., Gao, J., Shang, W., Fan, X., 2025. Minocycline ameliorates Staphylococcus aureus- 
+induced neuroinflammation and anxiety-like behaviors by regulating the TLR2 and 
+STAT3 pathways in microglia. Brain Sci. 15 (2), 128. https://doi.org/10.3390/ 
+brainsci15020128.
+B. Lkhagvasuren et al.                                                                                                                                                                                                                         
+Neuroscience 611 (2026) 408–419 
+419 

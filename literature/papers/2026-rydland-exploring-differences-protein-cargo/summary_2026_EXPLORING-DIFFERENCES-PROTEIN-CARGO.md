@@ -36,4 +36,4 @@ The largest such extracellular-vesicle study in ME/CFS so far; a mostly explorat
 
 ## Notes
 
-PMID 42375682. Biochem Biophys Rep, published online Jun 20 2026 (eCollection Sep 2026). Oslo University Hospital / University of Oslo group. Distinct cohort from the Charité/Scheibenbogen extracellular-vesicle paper (seifert-2026-extracellular-vesicle-biomarker) already in this database.
+PMID 42375682. Biochem Biophys Rep, published online Jun 20 2026 (eCollection Sep 2026). Oslo University Hospital / University of Oslo group. Distinct cohort from the Charité/Scheibenbogen extracellular-vesicle paper (seifert-2026-extracellular-vesicle-biomarker) already in this database. Duplicate entry 'rydland-2026-extracellular-vesicles-proteomics-mecfs' (same DOI, added 2026-09-22) merged into this one on 2026-09-23; its more precise date was kept.

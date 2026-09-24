@@ -2,7 +2,7 @@
   "schema_version": 1,
   "description": "Short, continuously updated plain-language overview of where ME/CFS research stands, shown on the dashboard's Overview tab and rendered to STATE-OF-THE-ART.md. It is a synthesis of the confirmed entries in data/papers.json and data/trials.json — every point cites their ids in `refs`, and nothing may be claimed that those entries do not support. STYLE: layperson language as in papers.json; one-sentence `takeaway` per section; 2–6 `points` per section, each ≤ ~45 words; replace outdated points rather than appending. `confidence` is one of: established, strong, emerging, contested, early. Bump a section's `updated` (and top-level `updated`) only when its content changes; set top-level `reviewed` every run. Optional `keywords` (lower-case substrings matched against paper titles + summaries) assign papers to a section's topic for the Papers-tab topic filter; cited `refs` are always included. See ROUTINE.md → 'State of the art'. Also holds `model` (the 'how it may fit together' diagram: rows of nodes, each linked to a section) and `treatments` (the treatment board: result = promising | negative | testing, a short `note`, cited `refs`); keep both in sync with the sections. Each section has a `short_title` for its tile.",
   "updated": "2026-09-23",
-  "reviewed": "2026-09-23",
+  "reviewed": "2026-09-24",
   "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.",
   "model": {
     "title": "How the pieces may fit together",
