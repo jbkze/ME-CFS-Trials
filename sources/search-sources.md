@@ -99,6 +99,13 @@ Status vocabulary to record is defined in `../ROUTINE.md`. "Open for enrollment"
     ROUTINE.md), no registry ID (checked NCT/DRKS/CTIS for "tafasitamab") and
     no dedicated Charité trial page found as of 2026-09-15. Check each run for
     registration or a Charité subpage.
+  - **Watch item (not yet a trial entry): semaglutide** — a Solve M.E. Catalyst
+    Award-funded observational study led by **Carmen Scheibenbogen** at Charité's
+    Institute of Medical Immunology (confirmed via Solve M.E./PRNewswire, Feb
+    2026). No DRKS/NCT/CTIS registry entry and no dedicated Charité trial page
+    found as of 2026-09-25 — grant-announcement page only, not acceptable as
+    sole source per ROUTINE.md. Check each run for registration or a Charité
+    subpage; also note it is observational, not yet confirmed as interventional.
 
 ---
 

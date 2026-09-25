@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-24",
+  "last_check": "2026-09-25",
   "papers": [
     {
       "id": "slaughter-2026-gwas-biobank-replication",
@@ -3002,7 +3002,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "Confirmed via Europe PMC (PMID 42037238) and Crossref (title/authors/journal/dates/abstract match); print issue Sep 2026, online-first Apr 27, 2026. Authors at Philipps University Marburg, Germany (State of Hessen post-COVID Coordination Center) — not Wirth/Scheibenbogen-affiliated, but a notable review in a high-impact endocrinology journal, and a German group, though this is a paper (not Germany-restricted) not a trial. A review/hypothesis paper, not new patient data."
     },
     {
@@ -3019,7 +3019,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "Confirmed via Europe PMC (PMID 42401313) and Crossref; print issue Sep 2026, online Jul 4, 2026. Animal (mouse) model, not a human study — relevant to the neuroinflammation/microglia mechanism thread; the minocycline result is a treatable-target signal, not a human trial result."
     }
   ]
