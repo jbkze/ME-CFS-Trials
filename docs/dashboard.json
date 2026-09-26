@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-25",
-  "lastRunAt": "2026-09-25T04:16:29Z",
-  "lastRun": "25 Sep 2026",
-  "nextRun": "Next run ~26 Sep 2026",
+  "generated": "2026-09-26",
+  "lastRunAt": "2026-09-26T04:08:52Z",
+  "lastRun": "26 Sep 2026",
+  "nextRun": "Next run ~27 Sep 2026",
   "studies": [
     {
       "id": "nct07529197",
@@ -55,7 +55,7 @@
         }
       ],
       "firstSeen": "2026-06-25",
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-09-26",
       "lastStatusChange": ""
     },
     {
@@ -114,7 +114,7 @@
         }
       ],
       "firstSeen": "2026-06-27",
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-09-26",
       "lastStatusChange": ""
     },
     {
@@ -213,7 +213,7 @@
         }
       ],
       "firstSeen": "2026-08-15",
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-09-26",
       "lastStatusChange": ""
     },
     {
@@ -251,7 +251,7 @@
       },
       "sites": [],
       "firstSeen": "2026-06-25",
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-09-26",
       "lastStatusChange": ""
     },
     {
@@ -309,7 +309,7 @@
         }
       ],
       "firstSeen": "2026-07-30",
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-09-26",
       "lastStatusChange": ""
     },
     {
@@ -361,7 +361,7 @@
         }
       ],
       "firstSeen": "2026-07-30",
-      "lastChecked": "2026-09-25",
+      "lastChecked": "2026-09-26",
       "lastStatusChange": ""
     },
     {
@@ -418,6 +418,24 @@
     }
   ],
   "papers": [
+    {
+      "id": "dinser-2026-pacs-pacvs-shared-autoreactivity",
+      "title": "Shared Clinical and Immunological Features of Post-Acute COVID-19 and Post-Acute COVID-19 Vaccination Syndromes",
+      "authors": "Dinser J, Anft M, Wiemers L, Skrzypczyk S, Kohut E, Kurek J, Stervbo U, Seibert FS, Westhoff TH, Rosiewicz K, Babel N",
+      "journal": "medRxiv (preprint, not yet peer-reviewed)",
+      "date": "Sep 2026 (posted online Sep 23, 2026)",
+      "published": "2026-09-23",
+      "summary": "A German team compared people with lasting fatigue and other symptoms after a COVID-19 infection to people with similar lasting symptoms that began after a COVID-19 vaccination rather than an infection. Both groups carried similar autoantibodies (antibodies that mistakenly attack the body's own receptors) against stress-hormone and nerve receptors, and many still had leftover spike protein — a leftover piece of the virus or vaccine — circulating in their blood, especially those whose symptoms began after vaccination.",
+      "why": "It suggests that chronic-fatigue-type illness after an infection and after a vaccination share the same underlying immune problem, supporting the idea that leftover viral/vaccine protein plus self-attacking antibodies — not the specific trigger — may drive the illness, regardless of whether it started with COVID-19 or the vaccine against it.",
+      "link": "https://doi.org/10.64898/2026.09.18.26363380",
+      "researchers": [],
+      "topics": [
+        "immune",
+        "triggers"
+      ],
+      "firstSeen": "2026-09-26",
+      "isNew": true
+    },
     {
       "id": "ruseva-2026-depression-pgs-postinfective-fatigue-dios",
       "title": "Can Depression Polygenic Risk Score Predict Postinfective Fatigue Syndrome (PIFS) in the Dubbo Infection Outcomes Study (DIOS)?",
@@ -4032,8 +4050,8 @@
     }
   ],
   "overview": {
-    "updated": "2026-09-23",
-    "reviewed": "2026-09-25",
+    "updated": "2026-09-26",
+    "reviewed": "2026-09-26",
     "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.",
     "model": {
       "title": "How the pieces may fit together",
@@ -4529,11 +4547,11 @@
         "takeaway": "The immune system is clearly involved, and ‘self-attacking’ antibodies are a leading theory — but removing them has so far given mixed results.",
         "confidence": "contested",
         "confidenceLabel": "Mixed / contested",
-        "updated": "2026-09-23",
-        "paperCount": 51,
+        "updated": "2026-09-26",
+        "paperCount": 52,
         "points": [
           {
-            "text": "Many patients carry autoantibodies (antibodies that mistakenly target the body’s own receptors) against receptors that control blood vessels and nerves. This is the basis of the Scheibenbogen group’s autoimmune model.",
+            "text": "Many patients carry autoantibodies (antibodies that mistakenly target the body’s own receptors) against receptors that control blood vessels and nerves — a similar pattern turns up whether the illness followed an infection or, less commonly, a vaccination. This is the basis of the Scheibenbogen group’s autoimmune model.",
             "refs": [
               {
                 "kind": "paper",
@@ -4555,6 +4573,13 @@
                 "label": "Azcue 2026",
                 "title": "Involvement of autoantibodies against G protein-coupled receptors in post-COVID condition and Chronic Fatigue Syndrome",
                 "link": "https://doi.org/10.1038/s41598-026-49131-9"
+              },
+              {
+                "kind": "paper",
+                "id": "dinser-2026-pacs-pacvs-shared-autoreactivity",
+                "label": "Dinser 2026",
+                "title": "Shared Clinical and Immunological Features of Post-Acute COVID-19 and Post-Acute COVID-19 Vaccination Syndromes",
+                "link": "https://doi.org/10.64898/2026.09.18.26363380"
               }
             ]
           },
@@ -4989,7 +5014,7 @@
         "confidence": "contested",
         "confidenceLabel": "Mixed / contested",
         "updated": "2026-09-23",
-        "paperCount": 16,
+        "paperCount": 17,
         "points": [
           {
             "text": "Common dormant viruses (like Epstein-Barr virus and HHV-6) often reactivate during severe COVID-19, and this has been linked to later long COVID.",

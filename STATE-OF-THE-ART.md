@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/state_of_the_art.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last content change: **2026-09-23** · last reviewed: **2026-09-25**
+- Last content change: **2026-09-26** · last reviewed: **2026-09-26**
 
 A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.
 
@@ -60,13 +60,13 @@ One leading model, from Wirth and Scheibenbogen, of how the findings may connect
 
 **The immune system is clearly involved, and ‘self-attacking’ antibodies are a leading theory — but removing them has so far given mixed results.** · _Mixed / contested_
 
-- Many patients carry autoantibodies (antibodies that mistakenly target the body’s own receptors) against receptors that control blood vessels and nerves. This is the basis of the Scheibenbogen group’s autoimmune model. ([Loebel 2016](https://doi.org/10.1016/j.bbi.2015.09.013); [Sotzny 2018](https://doi.org/10.1016/j.autrev.2018.01.009); [Azcue 2026](https://doi.org/10.1038/s41598-026-49131-9))
+- Many patients carry autoantibodies (antibodies that mistakenly target the body’s own receptors) against receptors that control blood vessels and nerves — a similar pattern turns up whether the illness followed an infection or, less commonly, a vaccination. This is the basis of the Scheibenbogen group’s autoimmune model. ([Loebel 2016](https://doi.org/10.1016/j.bbi.2015.09.013); [Sotzny 2018](https://doi.org/10.1016/j.autrev.2018.01.009); [Azcue 2026](https://doi.org/10.1038/s41598-026-49131-9); [Dinser 2026](https://doi.org/10.64898/2026.09.18.26363380))
 - Lab evidence that such antibodies can do harm: patients’ antibodies damaged cells’ energy machinery, and long-COVID antibodies caused symptoms when transferred into mice. ([Liu 2026](https://doi.org/10.1016/j.bbih.2026.101187); [Santos Guedes de Sá 2026](https://doi.org/10.1016/j.cell.2026.04.042))
 - The ‘first-response’ (innate) immune system tends to overreact, and a calcium channel in immune cells (TRPM3) is faulty — a finding confirmed across several labs. ([Che 2025](https://doi.org/10.1038/s44324-025-00079-w); [Sasso 2026](https://doi.org/10.3389/fmed.2025.1703924); [Magawa 2026](https://doi.org/10.1002/eji.70240))
 - Filtering antibodies out of the blood (immunoadsorption) lowered antibody levels but did not beat a sham treatment in a German post-COVID trial; another small study was also negative. Two Berlin studies are still following it in antibody-positive patients. ([Stortz 2026](https://doi.org/10.1016/j.lanepe.2026.101744); [Wossidlo 2026](https://doi.org/10.1007/s15010-026-02914-8); [IMPACT](https://clinicaltrials.gov/study/NCT07529197); [IA-Surv](https://drks.de/search/en/trial/DRKS00033897))
 - Wiping out B cells with rituximab failed in a large trial, but targeting the antibody-making plasma cells (daratumumab) helped 6 of 10 patients in a small pilot. Charité plans a placebo-controlled B-cell trial (inebilizumab). ([Fluge 2019](https://doi.org/10.7326/M18-1451); [Fluge 2025](https://doi.org/10.3389/fmed.2025.1607353); [PIONEER_PAIS](https://clinicaltrials.gov/study/NCT07724834))
 
-<sub>Section updated 2026-09-23</sub>
+<sub>Section updated 2026-09-26</sub>
 
 ## Blood vessels & circulation
 
