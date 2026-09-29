@@ -1,5 +1,18 @@
 # Check log
 
+## 2026-09-29 (scheduled autonomous, 04:10 UTC)
+- Sources checked — trials (via subagent): ClinicalTrials.gov API v2 lookups (NCT07529197, NCT07724834, NCT07714213) plus condition+Germany sweeps (ME/CFS, CFS, post-COVID, Long COVID, PASC, post-infectious); DRKS00033897; CTIS retrieve API (rapid-elapse, rapid-revive); mitodicure.com/pipeline + /news; cfc.charite.de NKSG page; watch items (AIM-ME, TAME, BC007/rovunaptabin, semaglutide, amifampridine, BMFTR "Nationale Dekade"); open-ended German/English web search. Papers (via subagent): PubMed (Europe PMC returned 503), medRxiv/bioRxiv, Wirth/Scheibenbogen author query; every DOI grepped against the baseline; new candidates verified via Crossref.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials re-verified unchanged. Note: PAISE-AriSE (NCT07714213) has an estimated start of 2026-10-01 and may flip to recruiting soon. MDC002 still preclinical (GLP tox studies pending), no registry entry. Watch items still leads only.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 1 new confirmed paper (203 total)
+  - **sharma-2026-dna-methylation-chronic-conditions** (Trends in Genetics, Sep 24 2026; DOI 10.1016/j.tig.2026.09.001) — review of DNA methylation across ME/CFS, long COVID, fibromyalgia and hypermobile EDS. Not Wirth/Scheibenbogen. Confirmed via Crossref.
+  - Screened out: Tai Chi fMRI RCT in "CFS" (Front Neurosci, 10.3389/fnins.2026.1910307; non-drug, loose CFS criteria); HHV-7 in long COVID (Viruses); EQ-VAS MID (BMJ Open) and PROM harmonisation (HQLO) methods papers; MMW German drug-treatment review (10.1007/s15006-026-6238-7, no abstract, lead only).
+  - isNew cleared on all earlier papers. Literature archive: ran; added Sharma folder (PDF fetched).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-09-29).
+- Delivered: GitHub issue "Research watch 2026-09-29" (papers only).
+
 ## 2026-09-28 (scheduled autonomous, 04:16 UTC)
 - Sources checked — trials (via subagent): ClinicalTrials.gov API v2 direct lookups (NCT07529197, NCT07724834, NCT07714213); DRKS direct trial-page fetch (DRKS00033897); EMA CTIS retrieve API (rapid-revive `2024-511628-16-00`, rapid-elapse `2025-524443-12-00`) plus a CTIS keyword search sweep (~20 CTIS numbers checked); mitodicure.com/pipeline/; cfc.charite.de/en/clinical_research/nksg/; recurring watch-item re-checks (AIM-ME, TAME, BC007/rovunaptabin, semaglutide, BMFTR "Nationale Dekade"); a ClinicalTrials.gov condition+locn=Germany API sweep (post-COVID/Long COVID/PASC/ME-CFS terms); open-ended German/English web search. Papers (via subagent): Europe PMC recency sweep (FIRST_PDATE last 2 weeks, ME/CFS terms), Wirth (ORCID-scoped)/Scheibenbogen author-search sweep (last 4-6 weeks), medRxiv/bioRxiv preprint sweep; every candidate cross-checked by DOI against the full 202-entry baseline.
 - **Trials** — no new trials; no status or detail changes

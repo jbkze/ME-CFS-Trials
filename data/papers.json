@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-09-28",
+  "last_check": "2026-09-29",
   "papers": [
     {
       "id": "slaughter-2026-gwas-biobank-replication",
@@ -3034,6 +3034,23 @@
       "flags": [],
       "isNew": false,
       "notes": "Confirmed via Crossref (DOI resolves to medRxiv, posted 2026-09-23) and medRxiv lookup. Institute for Clinical Immunology, Marien Hospital Herne / University Hospital of the Ruhr-University Bochum — not Wirth/Scheibenbogen. Cross-sectional study: 28 PACS (post-acute COVID-19 syndrome) patients, 29 PACVS (post-acute COVID-19 vaccination syndrome) patients, 16 controls; found substantial clinical and immunological overlap, including GPCR (G-protein coupled receptor) autoantibodies and altered T-cell responses in both groups, with circulating spike protein detected in both (more often in the vaccinated group). Relevant to the existing autoantibody/antigen-persistence pathomechanism thread (loebel-2016-autoantibodies, azcue-2026-gpcr-autoantibodies-postcovid, desa-2026-autoantibodies-longcovid-cell) — adds a post-vaccination comparison arm not previously covered."
+    },
+    {
+      "id": "sharma-2026-dna-methylation-chronic-conditions",
+      "title": "DNA methylation: unifying framework for complex chronic conditions",
+      "authors": "Sharma, Rodger, Chatterjee, Tate et al.",
+      "journal": "Trends in Genetics",
+      "date": "Sep 2026 (published Sep 24, 2026)",
+      "summary": "This review looks at DNA methylation (chemical tags that switch genes on or off) in ME/CFS, long COVID, fibromyalgia and hypermobile Ehlers-Danlos syndrome. These conditions share many symptoms, and the authors suggest they may share a biological root.",
+      "why": "It argues for studying these conditions together, which could lead to shared biomarkers (measurable biological signs) and treatment targets.",
+      "link": "https://doi.org/10.1016/j.tig.2026.09.001",
+      "first_seen": "2026-09-29",
+      "last_checked": "2026-09-29",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Confirmed via Crossref (Trends in Genetics, 2026-09). Review article; not Wirth/Scheibenbogen."
     }
   ]
 }

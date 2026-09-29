@@ -7,25 +7,28 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.07.26.26358852
 url: https://doi.org/10.64898/2026.07.26.26358852
-pdf: https://doi.org/10.64898/2026.07.26.26358852
-text: null
+pdf: literature/papers/2026-faghy-open-label-feasibility-remdesivir/paper.pdf
+text: literature/papers/2026-faghy-open-label-feasibility-remdesivir/paper.txt
 tags: [immunology, treatment, infection-trigger]
 status: to-read
 added: 2026-06-26
 source: doi
 bibtex_key: faghy2026
+cover: "[[literature/papers/2026-faghy-open-label-feasibility-remdesivir/cover.png]]"
 ---
 
 # An Open-Label Feasibility Study of Remdesivir in Long COVID: Results from the ERASE LC Trial
 
 ## Related files
+![[literature/papers/2026-faghy-open-label-feasibility-remdesivir/paper.pdf]]
 - [[literature/papers/2026-faghy-open-label-feasibility-remdesivir/citation.bib]]
+- [[literature/papers/2026-faghy-open-label-feasibility-remdesivir/paper.txt]]
 
 ## Summary
 
 73 people with long COVID in the UK received a 5-day course of the antiviral drug remdesivir (given through an IV drip) to test whether this was feasible and safe — not yet a full test of whether it works. Almost everyone completed treatment safely, and patients reported some improvement in fatigue and walking ability, but the authors say a proper randomised trial with a comparison group is still needed to know if the drug itself caused the improvement.
 
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
+_(Full text in `paper.txt`; the summary above is the curated plain-language abstract — deepen from the full text when reading.)_
 
 ## Why this matters
 
