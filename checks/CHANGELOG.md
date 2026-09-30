@@ -1,5 +1,17 @@
 # Check log
 
+## 2026-09-30 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213 + condition/Germany sweep), CTIS retrieve API (rapid-elapse), mitodicure.com/DRKS/Charité leads via web search, open-ended search. Papers: PubMed edat sweep 2026-09-26..30 (ME/CFS terms, Scheibenbogen author), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials re-verified unchanged. PAISE-AriSE (NCT07714213) still not_yet_recruiting (estimated start 2026-10-01, last registry update 2026-07-20) — may flip soon. PIONEER_PAIS estimated start 2026-12-01. MDC002 still preclinical, unregistered.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (203 total)
+  - habermann-horstmeier-2026-muscle-cluster: peer-reviewed version now published in J Transl Med (DOI 10.1186/s12967-026-09018-9); record updated (journal, date, link), not counted as new.
+  - Screened out: SLE symptom burden (J Transl Med), glycyrrhizic acid mouse fatigue, HHV-7 long COVID (Viruses), PROM harmonisation (HQLO).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-09-30).
+- Delivered: no issue (nothing new or changed).
+
 ## 2026-09-29 (scheduled autonomous, 04:10 UTC)
 - Sources checked — trials (via subagent): ClinicalTrials.gov API v2 lookups (NCT07529197, NCT07724834, NCT07714213) plus condition+Germany sweeps (ME/CFS, CFS, post-COVID, Long COVID, PASC, post-infectious); DRKS00033897; CTIS retrieve API (rapid-elapse, rapid-revive); mitodicure.com/pipeline + /news; cfc.charite.de NKSG page; watch items (AIM-ME, TAME, BC007/rovunaptabin, semaglutide, amifampridine, BMFTR "Nationale Dekade"); open-ended German/English web search. Papers (via subagent): PubMed (Europe PMC returned 503), medRxiv/bioRxiv, Wirth/Scheibenbogen author query; every DOI grepped against the baseline; new candidates verified via Crossref.
 - **Trials** — no new trials; no status or detail changes
