@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-10-01 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213 + ME/CFS and post-COVID/Long COVID/PASC condition+Germany sweeps), open-ended web search, Mitodicure/MDC002 lead. Papers: PubMed sweep 2026-09-29..10-01, web search (Scheibenbogen).
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. PAISE-AriSE (NCT07714213) still not_yet_recruiting (est. start 2026-10-01, registry last updated 2026-07-20). PIONEER_PAIS est. start 2026-12-01. MDC002 still preclinical, unregistered.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (203 total)
+  - Screened out: glycyrrhizic acid mouse fatigue, hyperbaric oxygen CFS-like mouse model, food-science microbiome review, CNAME questionnaire, PEM-subtype psychology paper, MMW German pharmacotherapy review (lead only). Peters et al. (Charité) already in baseline.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-01).
+- Delivered: no issue (nothing new or changed).
+
 ## 2026-09-30 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213 + condition/Germany sweep), CTIS retrieve API (rapid-elapse), mitodicure.com/DRKS/Charité leads via web search, open-ended search. Papers: PubMed edat sweep 2026-09-26..30 (ME/CFS terms, Scheibenbogen author), web search.
 - **Trials** — no new trials; no status or detail changes
