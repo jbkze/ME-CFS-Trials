@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-10-04 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, chronic fatigue syndrome, post-COVID, long COVID, post-acute infection syndrome; all in-scope statuses), Mitodicure/MDC002 web search. Papers: Europe PMC sweep 2026-10-01..04 (ME/CFS terms, Scheibenbogen).
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. PAISE-AriSE (NCT07714213) and NCT07724834 still not_yet_recruiting. MDC002 still preclinical/unregistered. NCT05926505 (anakinra) remains screened out; NCT07197138 (IMPACT-D+, non-drug) out of scope.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (203 total)
+  - Screened out: Clinical Needs Assessment questionnaire (Health Expect.), MMW German pharmacotherapy review (lead only), 89Zr cell-tracking, mouse/TCM fatigue and unrelated hits.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-04).
+- Delivered: no issue (nothing new or changed).
+
 ## 2026-10-03 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (NCT07529197, NCT07724834, NCT07714213 + ME/CFS/post-COVID/PASC condition+Germany sweep over all in-scope statuses), open-ended German/English web search. Papers: Europe PMC sweep 2026-10-03 window (ME/CFS terms), web search (Scheibenbogen/Wirth).
 - **Trials** — no new trials; no status or detail changes
