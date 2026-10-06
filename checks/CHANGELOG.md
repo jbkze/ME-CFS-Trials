@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-10-06 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, myalgic encephalomyelitis, post-COVID, long COVID, post-acute infection; all in-scope statuses), Mitodicure/MDC002 web search. Papers: Europe PMC sweep 2026-10-04..06 (ME/CFS terms, Scheibenbogen), web search (Wirth/Scheibenbogen).
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. PAISE-AriSE (NCT07714213) and NCT07724834 still not_yet_recruiting. MDC002 still unregistered.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (203 total)
+  - Screened out: one unrelated preprint (dimensional-collapse framework); Wirth/Scheibenbogen neurotransmitter review already tracked.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-06).
+- Delivered: no issue (nothing new or changed).
+
 ## 2026-10-05 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, post-COVID, long COVID, post-acute infection; all in-scope statuses). Papers: Europe PMC sweep 2026-10-01..05 (ME/CFS terms).
 - **Trials** — no new trials; no status or detail changes
