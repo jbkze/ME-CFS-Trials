@@ -74,7 +74,10 @@ research papers (broader).
    sources/search-sources.md. Confirm each via its DOI / journal / preprint page;
    news/blogs are leads only. Never fabricate. Write every paper's summary and
    "why it matters" in plain, layperson language: short sentences, minimal jargon,
-   and explain any unavoidable technical term in a few words right there.
+   and explain any unavoidable technical term in a few words right there. Follow
+   ROUTINE.md "Writing style": no em dashes or other dashes as punctuation, no
+   stock phrases, no references to "this tracker"; fix every STYLE line the
+   renderer prints.
 
 4. Update the data: in data/trials.json set first_seen once, refresh last_checked
    and top-level last_check to today (use `date +%F`), set top-level last_run_at
