@@ -37,6 +37,9 @@ below is ambiguous. In short:
 
 ## Hard rules (always)
 
+- **Writing style:** plain, human-sounding text on the site. No em dashes or other
+  dashes as punctuation, no stock phrases, no talk about "this tracker". Rules in
+  ROUTINE.md → "Writing style"; the renderer flags breaks as `STYLE:`.
 - **Language: English.** All content — dashboard, `summary`/`why`, state of the
   art, CHANGELOG, reports and issues — is written in English, even when the
   request comes in German.

@@ -1,6 +1,6 @@
-# ME/CFS drug trials in Germany — tracker
+# ME/CFS drug trials in Germany
 
-> Auto-generated from `data/trials.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
+> Auto-generated from `data/trials.json` by `scripts/render_trials.py`. **Do not edit by hand.** Edit the JSON and re-run the script.
 
 - Last check: **2026-10-07**
 - Trials tracked: **7** (open for enrollment: **3**, watchlist: **3**, archived: **1**)
@@ -26,4 +26,4 @@
 
 | Trial | Status | Drug / intervention | Researcher(s) | German site(s) | Registry | Last checked | Flags |
 |---|---|---|---|---|---|---|---|
-| [RAPID_REVIVE](https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00) | 🔴 Terminated | Vidofludimus calcium (IMU-838) | — | Frankfurt am Main (University Hospital Frankfurt (sponsor / coordinating)), Berlin (Charité – Universitätsmedizin Berlin (Prof. Martin Witzenrath)) | CTIS 2024-511628-16-00 | 2026-10-07 | — |
+| [RAPID_REVIVE](https://euclinicaltrials.eu/ctis-public/view/2024-511628-16-00) | 🔴 Terminated | Vidofludimus calcium (IMU-838) | — | Frankfurt am Main (University Hospital Frankfurt (sponsor / coordinating)), Berlin (Charité - Universitätsmedizin Berlin (Prof. Martin Witzenrath)) | CTIS 2024-511628-16-00 | 2026-10-07 | — |

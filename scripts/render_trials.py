@@ -70,8 +70,8 @@ CHANGE_LABEL = {
 CONFIDENCE = {
     "established": "Well established",
     "strong": "Strong evidence",
-    "emerging": "Emerging evidence",
-    "contested": "Mixed / contested",
+    "emerging": "Some evidence",
+    "contested": "Mixed results",
     "early": "Early ideas",
 }
 
@@ -129,10 +129,10 @@ def render_markdown(db: dict, trials: list) -> None:
         "|---|---|---|---|---|---|---|---|\n"
     )
     lines = [
-        "# ME/CFS drug trials in Germany — tracker",
+        "# ME/CFS drug trials in Germany",
         "",
         "> Auto-generated from `data/trials.json` by `scripts/render_trials.py`. "
-        "**Do not edit by hand** — edit the JSON and re-run the script.",
+        "**Do not edit by hand.** Edit the JSON and re-run the script.",
         "",
         f"- Last check: **{db.get('last_check') or 'never'}**",
         f"- Trials tracked: **{len(trials)}** (open for enrollment: **{len(open_now)}**, "
@@ -170,7 +170,7 @@ def to_study(t: dict) -> dict:
     flags = t.get("flags") or []
     title = t.get("name") or t.get("id") or "Untitled study"
     if t.get("acronym"):
-        title = f"{t['acronym']} — {title}"
+        title = f"{t['acronym']}: {title}"
     reg = t.get("registry") or {}
     iv = t.get("intervention") or {}
     elig = t.get("eligibility") or {}
@@ -386,10 +386,10 @@ def load_sota(papers: list, trials: list):
 
 def render_sota_markdown(sota: dict) -> None:
     lines = [
-        "# ME/CFS research — state of the art",
+        "# ME/CFS research: state of the art",
         "",
         "> Auto-generated from `data/state_of_the_art.json` by `scripts/render_trials.py`. "
-        "**Do not edit by hand** — edit the JSON and re-run the script.",
+        "**Do not edit by hand.** Edit the JSON and re-run the script.",
         "",
         f"- Last content change: **{sota.get('updated') or '—'}** · last reviewed: **{sota.get('reviewed') or '—'}**",
         "",
@@ -468,7 +468,7 @@ def render_feed(db: dict, studies: list, papers: list) -> int:
         if not when:
             continue
         what = "New study" if when == s.get("firstSeen") else "Status change"
-        entries.append((when, f"study-{s['id']}-{when}", f"{what}: {s['shortTitle']} — {s['statusLabel']}",
+        entries.append((when, f"study-{s['id']}-{when}", f"{what}: {s['shortTitle']} ({s['statusLabel']})",
                         SITE_URL + "#study/" + s["id"],
                         f"{s['plainSummary']}\n\n{s['title']}\nStatus: {s['statusLabel']} · {s['location']}"))
     entries.sort(key=lambda e: e[0], reverse=True)
@@ -497,6 +497,45 @@ def render_feed(db: dict, studies: list, papers: list) -> int:
     out.append("</feed>")
     OUT_FEED.write_text("\n".join(out) + "\n", encoding="utf-8")
     return len(entries)
+
+
+# Writing rules for everything shown on the site (see ROUTINE.md "Writing style").
+STYLE_PATTERNS = [
+    (re.compile(r"—"), "em dash"),
+    (re.compile(r"(?<!\d)\s?–\s?(?!\d)"), "en dash used as punctuation"),
+    (re.compile(r" -- "), "double hyphen"),
+    (re.compile(r"[‘’]"), "curly single quotes"),
+    (re.compile(r"worth watching|worth tracking|strengthens? the case|adds? to (the )?growing|"
+                r"growing (body of )?evidence|underscores?|landmark|pivotal|crucial|"
+                r"this (tracker|database)|already tracked|HIGH PRIORITY", re.I), "stock phrase"),
+]
+
+
+def style_problems(trials: list, papers: list, sota) -> list:
+    """List (where, problem) for site-visible text that breaks the writing rules."""
+    texts = []
+    for p in papers:
+        texts += [(f"paper {p['id']}", p["summary"]), (f"paper {p['id']}", p["why"])]
+    for t in trials:
+        el = t.get("eligibility") or {}
+        for v in [t.get("plain_summary"), t.get("key_requirement"), (t.get("intervention") or {}).get("mechanism"),
+                  t.get("phase"), el.get("summary")] + list(el.get("key_inclusion") or []) + list(el.get("key_exclusion") or []):
+            texts.append((f"trial {t.get('id')}", v))
+    if sota:
+        texts.append(("overview intro", sota.get("intro")))
+        if sota.get("model"):
+            texts.append(("overview model", sota["model"].get("caption")))
+        for tr in sota.get("treatments", []):
+            texts.append((f"treatment {tr['name']}", tr["note"]))
+        for sec in sota.get("sections", []):
+            texts.append((f"section {sec['id']}", sec["takeaway"]))
+            texts += [(f"section {sec['id']}", pt["text"]) for pt in sec["points"]]
+    out = []
+    for where, text in texts:
+        for rx, what in STYLE_PATTERNS:
+            if text and rx.search(text):
+                out.append((where, what))
+    return out
 
 
 def build_dashboard(db: dict, trials: list):
@@ -542,6 +581,10 @@ def main() -> int:
         print(f"wrote {OUT_SOTA_MD} ({len(sota['sections'])} sections)")
     print(f"wrote {OUT_DASH} ({n_studies} studies, {n_papers} papers)")
     print(f"wrote {OUT_FEED}")
+    sota_src = json.loads(SOTA.read_text(encoding="utf-8")) if SOTA.exists() else None
+    for where, what in style_problems(trials, json.loads(PAPERS.read_text(encoding="utf-8")).get("papers", [])
+                                      if PAPERS.exists() else [], sota_src):
+        print(f"STYLE: {where}: {what}. Rewrite it (ROUTINE.md, 'Writing style').", file=sys.stderr)
     for ref in warnings:
         print(f"WARNING: state_of_the_art.json cites unknown id '{ref}' (not in papers.json "
               f"or trials.json) — dropped from the output; fix the id.", file=sys.stderr)

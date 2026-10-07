@@ -54,6 +54,25 @@ notable ME/CFS science (e.g. DecodeME genetics, micro-clots, mitochondrial/muscl
 findings). Confirm each via its **DOI / journal / preprint page**; news/blogs are
 leads only — never fabricate.
 
+**Writing style (everything shown on the site).** Write like a careful human
+science journalist, not like a chatbot:
+
+- **No dashes as punctuation:** no em dashes (—), no en dashes or " -- " between
+  words. Use a full stop, a comma, a colon or brackets instead. En dashes in number
+  ranges ("18–65") are fine.
+- **No stock phrases**, for example "worth watching", "adds to the growing
+  evidence", "strengthens the case", "underscores", "landmark", "pivotal",
+  "crucial", "a step toward". Say what the result means in concrete words.
+- **No talk about this site** ("this tracker", "already tracked here", "this
+  database", "HIGH PRIORITY"). The researcher badges show priority.
+- Short sentences, one idea each. No lists of three for rhythm, no "not just X but
+  Y", no scare quotes. Plain straight quotes only.
+- `summary` = what was done and found (1–3 sentences). `why` = what it means for
+  patients or research, with the main limitation said plainly ("The study is
+  small." / "It has not been peer-reviewed.").
+- `render_trials.py` prints a `STYLE:` line for every break of these rules in
+  site-visible text. Fix them before committing.
+
 **Write in English.** All recorded content (papers, trials, state of the art,
 CHANGELOG, reports) is English, even if the request is in German.
 

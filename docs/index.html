@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ME/CFS Research Watch</title>
-<meta name="description" content="New ME/CFS clinical-trial opportunities in Germany, notable new research papers and a plain-language state of the art — prioritising Klaus Wirth and Carmen Scheibenbogen.">
+<meta name="description" content="New ME/CFS drug trials in Germany, new research papers and a plain-language summary of the research, with a focus on Klaus Wirth and Carmen Scheibenbogen.">
 <meta name="theme-color" content="#02213C" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0B1520" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
@@ -291,19 +291,19 @@
 
   <header class="head">
     <div class="eyebrow">ME/CFS Research Watch</div>
-    <div class="h1">Today's intake</div>
+    <div class="h1">What's new</div>
   </header>
 
-  <section class="run" aria-label="Last search run">
-    <div class="run-row"><span class="pulse"></span><span class="run-lbl">Last search run</span></div>
-    <div class="run-when"><span id="lastRun" class="run-date">—</span><span id="lastRunTime" class="run-time"></span></div>
+  <section class="run" aria-label="Last update">
+    <div class="run-row"><span class="pulse"></span><span class="run-lbl">Last update</span></div>
+    <div class="run-when"><span id="lastRun" class="run-date"></span><span id="lastRunTime" class="run-time"></span></div>
     <div id="nextRun" class="run-next"></div>
     <div class="stats">
       <div class="stat"><div id="newStudyCount" class="stat-n">0</div><div class="stat-l">new studies</div></div>
       <div class="stat"><div id="newPaperCount" class="stat-n">0</div><div class="stat-l">new papers</div></div>
     </div>
   </section>
-  <div id="offline" class="offline" hidden>You're offline — showing the data from the last time this page loaded.</div>
+  <div id="offline" class="offline" hidden>You're offline. This is the data from your last visit.</div>
 
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button class="tab" role="tab" id="tab-studies" data-tab="studies" aria-controls="list">Studies</button>
@@ -314,8 +314,8 @@
   <main id="list" class="panel" role="tabpanel"></main>
 
   <div class="foot">
-    Updated automatically after each scheduled run. Not medical advice — talk to your doctor or the study team before joining a trial.<br>
-    <a href="feed.xml">Follow updates in a feed reader (RSS/Atom)</a>
+    Updated every day. This is not medical advice. Please talk to your doctor or the study team before you join a trial.<br>
+    <a href="feed.xml">Get updates by RSS</a>
   </div>
 </div>
 
@@ -405,7 +405,7 @@
   //   #studies  #study/<id>
   //   #overview  #overview/<section-id>
   //   #papers?q=<text>&f=<filter>&t=<topic>  #paper/<id>
-  var DATA = { studies: [], papers: [], overview: null, lastRunAt: null, lastRun: '—', nextRun: '' };
+  var DATA = { studies: [], papers: [], overview: null, lastRunAt: null, lastRun: '', nextRun: '' };
   var TABS = ['studies', 'overview', 'papers'];
   var PAGE = 20;
   var tab = 'studies';
@@ -475,7 +475,7 @@
       if (e.exclusion.length) h += '<div class="dl-h">Excluded if</div><ul>' + e.exclusion.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>';
       h += '</div>';
     }
-    if (it.intervention) h += '<div class="dl-h">Treatment</div><p class="dl-p"><b>' + esc(it.intervention) + '</b>' + (it.mechanism ? ' — ' + esc(it.mechanism) : '') + '</p>';
+    if (it.intervention) h += '<div class="dl-h">Treatment</div><p class="dl-p"><b>' + esc(it.intervention) + '</b>' + (it.mechanism ? ': ' + esc(it.mechanism) : '') + '</p>';
     if (it.phase) h += '<div class="dl-h">Phase</div><p class="dl-p">' + esc(it.phase) + '</p>';
     if (it.sites && it.sites.length) {
       h += '<div class="dl-h">Sites in Germany</div><ul>' + it.sites.map(function (s) {
@@ -491,7 +491,7 @@
     if (it.firstSeen) stamp.push('tracked since ' + esc(fmtIso(it.firstSeen)));
     if (it.lastChecked) stamp.push('last verified ' + esc(fmtIso(it.lastChecked)));
     if (stamp.length) h += '<div class="small">' + stamp.join(' · ') + '</div>';
-    return h ? '<details class="more-d"' + (focus && focus.kind === 'study' && focus.id === it.id ? ' open' : '') + '><summary>Details &amp; eligibility' + ICON_CHEV + '</summary><div class="dl">' + h + '</div></details>' : '';
+    return h ? '<details class="more-d"' + (focus && focus.kind === 'study' && focus.id === it.id ? ' open' : '') + '><summary>Details and who can join' + ICON_CHEV + '</summary><div class="dl">' + h + '</div></details>' : '';
   }
 
   function studyCard(it) {
@@ -525,13 +525,13 @@
     var archived = DATA.studies.filter(function (s) { return s.tier === 'archived'; });
     var focusArchived = focus && focus.kind === 'study' && archived.some(function (s) { return s.id === focus.id; });
     var h = '';
-    h += secHead('Open for enrollment', open.length);
-    h += open.length ? '<div class="grid">' + open.map(studyCard).join('') + '</div>' : '<div class="empty">No study is open for enrollment right now.</div>';
-    h += secHead('Planned / not yet recruiting', planned.length);
-    h += '<p class="sec-note">Announced or registered, but not open yet — worth watching so you can apply early.</p>';
+    h += secHead('Open now', open.length);
+    h += open.length ? '<div class="grid">' + open.map(studyCard).join('') + '</div>' : '<div class="empty">No study is open right now.</div>';
+    h += secHead('Planned', planned.length);
+    h += '<p class="sec-note">Announced or registered, but not open yet. Check back so you can apply early.</p>';
     h += planned.length ? '<div class="grid">' + planned.map(studyCard).join('') + '</div>' : '<div class="empty">No planned studies tracked.</div>';
     if (archived.length) {
-      h += '<details class="archive"' + (focusArchived ? ' open' : '') + '><summary>Closed / no longer in scope (' + archived.length + ')</summary><div class="grid">' +
+      h += '<details class="archive"' + (focusArchived ? ' open' : '') + '><summary>Closed (' + archived.length + ')</summary><div class="grid">' +
         archived.map(studyCard).join('') + '</div></details>';
     }
     return h;
@@ -689,19 +689,19 @@
         (lvl ? meter(lvl, s.confidenceLabel) + '<span class="tile-lvl">' + esc(s.confidenceLabel) + '</span>' : '') +
         (s.paperCount ? '<span class="tile-n">' + s.paperCount + ' papers</span>' : '') + '</a>';
     }).join('');
-    h += '</div><div class="legend">' + meter(3, 'example') + '<span>Bars show how settled the evidence is — from early ideas (1) to well established (4).</span></div>';
+    h += '</div><div class="legend">' + meter(3, 'example') + '<span>The bars show how solid the evidence is, from 1 (early ideas) to 4 (well established).</span></div>';
     return h + '</section>';
   }
 
   var GROUPS = [
-    { id: 'promising', label: 'Promising early signal', icon: '<path d="M20 6 9 17l-5-5"></path>' },
+    { id: 'promising', label: 'Early positive results', icon: '<path d="M20 6 9 17l-5-5"></path>' },
     { id: 'negative', label: 'No clear benefit', icon: '<path d="M18 6 6 18"></path><path d="m6 6 12 12"></path>' },
-    { id: 'testing', label: 'Being tested in Germany', icon: '<circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>' }
+    { id: 'testing', label: 'Now being tested in Germany', icon: '<circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path>' }
   ];
   function renderBoard(items) {
     if (!items || !items.length) return '';
     var h = '<section class="block" aria-labelledby="boardH"><h2 class="block-h" id="boardH">What has been tried</h2>' +
-      '<p class="block-sub">Treatments tested in trials so far. Tap a source for a plain-language summary.</p><div class="board">';
+      '<p class="block-sub">Treatments that have been tested in trials. Tap a source to read a short summary.</p><div class="board">';
     h += GROUPS.map(function (g) {
       var rows = items.filter(function (t) { return t.result === g.id; });
       if (!rows.length) return '';
@@ -723,7 +723,7 @@
     if (!o || !o.sections || !o.sections.length) return '<div class="empty">The research overview has not been written yet.</div>';
     var h = '<div class="ov"><div class="ov-text">';
     if (o.intro) h += '<p class="intro">' + esc(o.intro) + '</p>';
-    h += '<div class="stamp">Last changed ' + esc(fmtIso(o.updated) || '—') + (o.reviewed ? ' · reviewed ' + esc(fmtIso(o.reviewed)) : '') + '</div>';
+    h += '<div class="stamp">Last changed ' + esc(fmtIso(o.updated) || 'not yet') + (o.reviewed ? ' · reviewed ' + esc(fmtIso(o.reviewed)) : '') + '</div>';
     var recent = o.sections.filter(function (s) { return s.updated && s.updated === o.updated; });
     if (recent.length && recent.length < o.sections.length) {
       h += '<div class="recent"><b>Recently updated:</b> ' + recent.map(function (s) {
@@ -803,7 +803,7 @@
       el('lastRunTime').textContent = '· ' + at.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', timeZoneName: 'short' });
       el('nextRun').textContent = 'Next run ~' + new Date(at.getTime() + 86400000).toLocaleDateString('en-GB', DFMT);
     } else {
-      el('lastRun').textContent = DATA.lastRun || '—';
+      el('lastRun').textContent = DATA.lastRun || 'Not yet';
       el('lastRunTime').textContent = '';
       el('nextRun').textContent = DATA.nextRun || '';
     }
@@ -952,7 +952,7 @@
       DATA.papers = Array.isArray(d.papers) ? d.papers : [];
       DATA.overview = d.overview || null;
       DATA.lastRunAt = d.lastRunAt || null;
-      DATA.lastRun = d.lastRun || '—';
+      DATA.lastRun = d.lastRun || '';
       DATA.nextRun = d.nextRun || '';
       loaded = true;
       render();
