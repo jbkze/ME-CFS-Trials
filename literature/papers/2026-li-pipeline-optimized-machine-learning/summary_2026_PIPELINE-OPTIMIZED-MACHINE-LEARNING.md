@@ -7,7 +7,7 @@ year: 2026
 venue: "Computational Biology and Chemistry"
 doi: 10.1016/j.compbiolchem.2026.108995
 url: https://doi.org/10.1016/j.compbiolchem.2026.108995
-pdf: https://doi.org/10.1016/j.compbiolchem.2026.108995
+pdf: literature/papers/2026-li-pipeline-optimized-machine-learning/paper.pdf
 text: null
 tags: [metabolism, genetics, biomarker, diagnostic-criteria]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: li2026
 # Pipeline-optimized machine learning for chronic fatigue syndrome diagnosis: A lightweight, interpretable model using blood biochemical and metabolomic data
 
 ## Related files
+![[literature/papers/2026-li-pipeline-optimized-machine-learning/paper.pdf]]
 - [[literature/papers/2026-li-pipeline-optimized-machine-learning/citation.bib]]
 
 ## Summary
 
 Using blood test results from a huge UK health database (over 68,000 people, including about 1,100 with chronic fatigue syndrome), researchers built a computer model that predicts who has CFS from ordinary blood markers — like urea, blood sugar, and vitamin D — with very high accuracy in this dataset. A separate genetic method suggested six of these blood markers may actually help cause the illness, not just be a side effect of it.
-
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled; set ELSEVIER_API_KEY in the environment to fetch full text via the Elsevier Article API. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

@@ -1,6 +1,6 @@
 ---
 type: paper
-id: nguyen2026
+id: nguyen2026a
 title: "iPSC-Derived Myogenic Progenitor Cells from People with ME/CFS Reveal Altered Genes and Pathways with Drug Repurposing Potential"
 authors: ["Nguyen D", "Truong TTT", "Panizzutti B", "Ellis M", "Spolding B", "Swinton C", "Bortolasci CC", "Bryce J", "Smith J", "Field C", "Liu ZS", "Kim JH", "Berk M", "Walder K"]
 year: 2026
@@ -13,7 +13,7 @@ tags: [immunology, metabolism, skeletal-muscle, review]
 status: to-read
 added: 2026-06-26
 source: doi
-bibtex_key: nguyen2026
+bibtex_key: nguyen2026a
 cover: "[[literature/papers/2026-nguyen-ipsc-derived-myogenic-progenitor/cover.png]]"
 ---
 

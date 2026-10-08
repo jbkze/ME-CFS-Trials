@@ -1,5 +1,17 @@
 # Check log
 
+## 2026-10-08 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, post-COVID, long COVID; all in-scope statuses), web search (DRKS/Germany drug trials, Scheibenbogen). Papers: Europe PMC sweep 2026-09-25..10-08 (ME/CFS, long COVID, Scheibenbogen/Wirth), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. NCT05926505 (anakinra, Jena site) already tracked/previously assessed.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 1 new (204 total)
+  - nguyen-2026-ipsc-myotubes-mecfs-drug-repurposing (bioRxiv preprint, Walder group; lab-grown muscle cells from ME/CFS patients, drug-repurposing leads).
+  - Screened out: long-COVID-only and tangential hits.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-08).
+- Delivered: no issue (no new/changed trials; one minor preprint, no Wirth/Scheibenbogen item).
+
 ## 2026-10-07 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, post-COVID, long COVID, post-acute infection; all in-scope statuses), Mitodicure/MDC002 and Scheibenbogen web search. Papers: Europe PMC sweep 2026-10-05..07 (ME/CFS terms), web search (Wirth/Scheibenbogen).
 - **Trials** — no new trials; no status or detail changes
