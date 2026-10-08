@@ -7,7 +7,7 @@ year: 2026
 venue: "Frontiers in Cellular and Infection Microbiology"
 doi: 10.3389/fcimb.2026.1808564
 url: https://doi.org/10.3389/fcimb.2026.1808564
-pdf: https://doi.org/10.3389/fcimb.2026.1808564
+pdf: literature/papers/2026-espin-pilot-longitudinal-integrated-transcriptomic/paper.pdf
 text: null
 tags: [immunology, metabolism, neuroinflammation, biomarker, infection-trigger]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: espin2026
 # Pilot longitudinal integrated transcriptomic-metabolomic study reveals immune and metabolic signatures in non-hospitalized healthcare workers with long COVID
 
 ## Related files
+![[literature/papers/2026-espin-pilot-longitudinal-integrated-transcriptomic/paper.pdf]]
 - [[literature/papers/2026-espin-pilot-longitudinal-integrated-transcriptomic/citation.bib]]
 
 ## Summary
 
 Healthcare workers who developed long COVID after a mild (non-hospitalized) infection, with fatigue and brain fog as their main symptoms, had unusual patterns in their immune-cell genes and blood chemistry compared to co-workers who fully recovered.
-
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled; set ELSEVIER_API_KEY in the environment to fetch full text via the Elsevier Article API. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

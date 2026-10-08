@@ -7,7 +7,7 @@ year: 2026
 venue: "Current Problems in Cardiology"
 doi: 10.1016/j.cpcardiol.2026.103453
 url: https://doi.org/10.1016/j.cpcardiol.2026.103453
-pdf: https://doi.org/10.1016/j.cpcardiol.2026.103453
+pdf: literature/papers/2026-sakellaropoulos-exercise-lactate-post-covid/paper.pdf
 text: null
 tags: [metabolism, exercise-physiology, post-exertional-malaise, skeletal-muscle, biomarker, infection-trigger, review]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: sakellaropoulos2026
 # Exercise Lactate in Post-COVID-19 Condition: Pathophysiological Signal, Phenotyping Tool, or Candidate Biomarker? A Narrative Review with a Hypothesis-Generating Clinical Observation
 
 ## Related files
+![[literature/papers/2026-sakellaropoulos-exercise-lactate-post-covid/paper.pdf]]
 - [[literature/papers/2026-sakellaropoulos-exercise-lactate-post-covid/citation.bib]]
 
 ## Summary
 
 This review looks at lactate (a byproduct your muscles make when they can't produce energy efficiently) measured during exercise in people with long COVID, adding the authors' own small case series of 22 patients whose blood lactate at peak exertion was about six times higher than at rest. The review concludes lactate varies too much between people and test methods to diagnose the condition on its own.
-
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled; set ELSEVIER_API_KEY in the environment to fetch full text via the Elsevier Article API. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

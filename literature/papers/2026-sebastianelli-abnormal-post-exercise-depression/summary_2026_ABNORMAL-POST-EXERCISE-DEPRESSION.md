@@ -7,7 +7,7 @@ year: 2026
 venue: "Clinical Neurophysiology"
 doi: 10.1016/j.clinph.2026.2112384
 url: https://doi.org/10.1016/j.clinph.2026.2112384
-pdf: https://doi.org/10.1016/j.clinph.2026.2112384
+pdf: literature/papers/2026-sebastianelli-abnormal-post-exercise-depression/paper.pdf
 text: null
 tags: [exercise-physiology, post-exertional-malaise, neuroinflammation, skeletal-muscle, biomarker, treatment, infection-trigger]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: sebastianelli2026
 # Abnormal post-exercise depression of corticomotor excitability is associated with fatigue in post-COVID-19 condition
 
 ## Related files
+![[literature/papers/2026-sebastianelli-abnormal-post-exercise-depression/paper.pdf]]
 - [[literature/papers/2026-sebastianelli-abnormal-post-exercise-depression/citation.bib]]
 
 ## Summary
 
 Using magnetic pulses to test brain-to-muscle signaling before and after exercise in 58 people with long COVID, researchers found the brain's motor output failed to recover normally after physical effort, and this abnormal pattern matched how fatigued patients said they felt.
-
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled; set ELSEVIER_API_KEY in the environment to fetch full text via the Elsevier Article API. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

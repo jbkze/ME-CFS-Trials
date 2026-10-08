@@ -7,7 +7,7 @@ year: 2026
 venue: "Lancet Infectious Diseases"
 doi: 10.1016/S1473-3099(26)00242-2
 url: https://doi.org/10.1016/S1473-3099(26)00242-2
-pdf: https://doi.org/10.1016/S1473-3099(26)00242-2
+pdf: literature/papers/2026-wall-efficacy-safety-rivaroxaban-colchicine/paper.pdf
 text: null
 tags: [immunology, post-exertional-malaise, biomarker, treatment, infection-trigger]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: wall2026
 # Efficacy and safety of rivaroxaban, colchicine, and famotidine-loratadine with specialist supportive clinical care for fatigue in patients with post-COVID-19 condition in the UK: a multisite, open-label, randomised controlled trial
 
 ## Related files
+![[literature/papers/2026-wall-efficacy-safety-rivaroxaban-colchicine/paper.pdf]]
 - [[literature/papers/2026-wall-efficacy-safety-rivaroxaban-colchicine/citation.bib]]
 
 ## Summary
 
 In 778 UK long-COVID patients with fatigue, adding one of three repurposed drugs (an anti-inflammatory, a blood thinner, or an antihistamine combo) to standard care was compared with standard care alone for 12 weeks. Two of the three drugs gave a small extra fatigue improvement over standard care alone, but that edge disappeared by 24 weeks, after the drugs were stopped.
-
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled; set ELSEVIER_API_KEY in the environment to fetch full text via the Elsevier Article API. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

@@ -1,8 +1,23 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-10-07",
+  "last_check": "2026-10-08",
   "papers": [
+    {
+      "id": "nguyen-2026-ipsc-myotubes-mecfs-drug-repurposing",
+      "title": "iPSC-Derived Myotubes from ME/CFS Patients Reveal Signature Genes, Isoforms and Pathways with Drug Repurposing Potential",
+      "authors": "Nguyen D, Truong TTT, Panizzutti B, Ellis M, Spolding B, Swinton C, Bortolasci CC, Bryce J, Smith J, Field C, Liu ZS, Kim JH, Berk M, Walder K",
+      "journal": "bioRxiv (preprint)",
+      "date": "Oct 2026 (posted Oct 7, 2026)",
+      "summary": "Researchers turned blood-derived cells from 6 people with ME/CFS and 7 healthy people into lab-grown muscle cells and compared their gene activity. They found a few gene differences plus broader changes in how cells make proteins, handle damaged parts and use energy, and used this to suggest existing drugs that might be worth testing.",
+      "why": "Muscle problems may help explain the crashes after activity in ME/CFS, and a lab-grown muscle model gives a way to screen existing drugs without testing on patients. It is a small early study, so the drug ideas are only leads.",
+      "link": "https://doi.org/10.64898/2026.10.01.755863",
+      "first_seen": "2026-10-08",
+      "last_checked": "2026-10-08",
+      "flags": [],
+      "isNew": true,
+      "notes": "Walder group (Deakin/IMPACT, Australia); not Wirth/Scheibenbogen. Small n (6 vs 7); only 3 genes significant after FDR. Preprint, not peer-reviewed. Confirmed via Europe PMC record (PPR) on 2026-10-08."
+    },
     {
       "id": "slaughter-2026-gwas-biobank-replication",
       "title": "Seven replicated genomic associations of myalgic encephalomyelitis/chronic fatigue syndrome: a biobank study",
@@ -2999,9 +3014,7 @@
       "link": "https://doi.org/10.1210/endrev/bnag009",
       "first_seen": "2026-09-24",
       "last_checked": "2026-09-24",
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "Confirmed via Europe PMC (PMID 42037238) and Crossref (title/authors/journal/dates/abstract match); print issue Sep 2026, online-first Apr 27, 2026. Authors at Philipps University Marburg, Germany (State of Hessen post-COVID Coordination Center) — not Wirth/Scheibenbogen-affiliated, but a notable review in a high-impact endocrinology journal, and a German group, though this is a paper (not Germany-restricted) not a trial. A review/hypothesis paper, not new patient data."
     },
@@ -3046,9 +3059,7 @@
       "link": "https://doi.org/10.1016/j.tig.2026.09.001",
       "first_seen": "2026-09-29",
       "last_checked": "2026-09-29",
-      "flags": [
-        "new"
-      ],
+      "flags": [],
       "isNew": false,
       "notes": "Confirmed via Crossref (Trends in Genetics, 2026-09). Review article; not Wirth/Scheibenbogen."
     }

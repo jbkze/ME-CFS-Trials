@@ -7,7 +7,7 @@ year: 2026
 venue: "Journal of Psychosomatic Research"
 doi: 10.1016/j.jpsychores.2026.112677
 url: https://doi.org/10.1016/j.jpsychores.2026.112677
-pdf: https://doi.org/10.1016/j.jpsychores.2026.112677
+pdf: literature/papers/2026-zhao-efficacy-exercise-systematic-review/paper.pdf
 text: null
 tags: [exercise-physiology, post-exertional-malaise, treatment, review]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: zhao2026
 # The efficacy of exercise in patients with myalgic encephalomyelitis/chronic fatigue syndrome: A systematic review and meta-analysis
 
 ## Related files
+![[literature/papers/2026-zhao-efficacy-exercise-systematic-review/paper.pdf]]
 - [[literature/papers/2026-zhao-efficacy-exercise-systematic-review/citation.bib]]
 
 ## Summary
 
 Combining results from 17 controlled trials with almost 2,000 ME/CFS patients, exercise programmes improved fatigue, sleep, and quality of life, but did not meaningfully improve heart/lung fitness or physical capacity.
-
-> _No PDF available_ — Elsevier/ScienceDirect — paywalled; set ELSEVIER_API_KEY in the environment to fetch full text via the Elsevier Article API. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 
