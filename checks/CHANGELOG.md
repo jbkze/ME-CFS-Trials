@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-10-09 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, post-COVID, long COVID, post-acute infection; all in-scope statuses), web search (Germany drug trials, Scheibenbogen, Mitodicure/Wirth). Papers: Europe PMC sweep 2026-10-07..09 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. PAISE-AriSE (NCT07714213) and NCT07724834 still not_yet_recruiting. MDC002 still unregistered.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (204 total)
+  - Screened out: long-COVID-only / tangential hits (post-COVID venular dysfunction preprint, fibrin hypothesis, fluoroquinolone hypothesis).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-09).
+- Delivered: no issue (nothing new or changed).
+
 ## 2026-10-08 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, post-COVID, long COVID; all in-scope statuses), web search (DRKS/Germany drug trials, Scheibenbogen). Papers: Europe PMC sweep 2026-09-25..10-08 (ME/CFS, long COVID, Scheibenbogen/Wirth), web search.
 - **Trials** — no new trials; no status or detail changes
