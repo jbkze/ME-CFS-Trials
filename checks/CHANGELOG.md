@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-10-10 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweep (all in-scope statuses), web search (Germany drug trials, Scheibenbogen, Mitodicure/MDC002). Papers: Europe PMC sweep 2026-10-08..10 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (no Phase 1 start found). New CT.gov hits (NCT07352254, NCT03773003, NCT05890599, MS/registry studies) are non-drug or out of scope.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (204 total)
+  - Screened out: post-COVID venular dysfunction preprint, fibrin hypothesis, fluoroquinolone hypothesis (long-COVID-only / tangential).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-10).
+- Delivered: no issue (nothing new or changed).
+
 ## 2026-10-09 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, post-COVID, long COVID, post-acute infection; all in-scope statuses), web search (Germany drug trials, Scheibenbogen, Mitodicure/Wirth). Papers: Europe PMC sweep 2026-10-07..09 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
