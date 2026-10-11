@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-10-11 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweeps (ME/CFS, CFS, post-COVID, long COVID, post-acute infection; all in-scope statuses), web search (Germany drug trials, Scheibenbogen, Mitodicure). Papers: Europe PMC sweep 2026-10-08..11 (ME/CFS terms, Scheibenbogen), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. NCT07621068 (hyperbaric oxygen, device, no German site in sweep) out of scope.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (204 total)
+  - Screened out: long-COVID-only / tangential hits (venular dysfunction preprint, fibrin hypothesis, fluoroquinolone hypothesis).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-11).
+- Delivered: no issue (nothing new or changed).
+
 ## 2026-10-10 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 condition+Germany sweep (all in-scope statuses), web search (Germany drug trials, Scheibenbogen, Mitodicure/MDC002). Papers: Europe PMC sweep 2026-10-08..10 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
