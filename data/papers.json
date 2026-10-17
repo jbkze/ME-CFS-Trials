@@ -1,8 +1,23 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-10-16",
+  "last_check": "2026-10-17",
   "papers": [
+    {
+      "id": "seidel-2026-tixagevimab-cilgavimab-mecfs-spike",
+      "title": "Exploratory clinical and immunological changes following Tixagevimab/Cilgavimab administration in immunodeficient patients with SARS-CoV-2-associated ME/CFS and persistent circulating spike protein",
+      "authors": "Seidel M, Anft M, Wiemers L, Seibert FS, Bertram S, Rosiewicz K, Stervbo U, Westhoff TH, Babel N",
+      "journal": "Immunology Letters",
+      "date": "Oct 2026 (online Oct 7, 2026)",
+      "summary": "Nine people with long-COVID ME/CFS and a weak immune system, who still had a piece of the coronavirus (spike protein) in their blood, were given an antibody drug that targets the virus. One type of autoantibody (antibodies that mistakenly attack the body's own receptors) went down, but spike levels and symptoms did not change clearly.",
+      "why": "It tests the idea that leftover virus pieces keep ME/CFS going. The result is weak and the study is tiny with no comparison group, so it is only a lead, not evidence the drug works.",
+      "link": "https://doi.org/10.1016/j.imlet.2026.107247",
+      "first_seen": "2026-10-17",
+      "last_checked": "2026-10-17",
+      "flags": [],
+      "isNew": true,
+      "notes": "Babel group (Germany); not Wirth/Scheibenbogen. Small non-randomized observational study (n=9 paired). Confirmed via Europe PMC record (PMID 42843426) on 2026-10-17."
+    },
     {
       "id": "nguyen-2026-ipsc-myotubes-mecfs-drug-repurposing",
       "title": "iPSC-Derived Myotubes from ME/CFS Patients Reveal Signature Genes, Isoforms and Pathways with Drug Repurposing Potential",

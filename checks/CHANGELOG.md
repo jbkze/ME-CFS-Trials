@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-17 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, CFS, post-COVID, long COVID; all in-scope statuses), web search (Germany drug trials, Scheibenbogen). Papers: Europe PMC sweep 2026-10-01..17 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. NCT05926505 (anakinra) remains screened out; other CT.gov hits observational/device/behavioural, out of scope.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 1 new (205 total): Seidel et al., Immunology Letters — tixagevimab/cilgavimab in immunodeficient long-COVID ME/CFS (small, exploratory, no clinical change).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-17).
+- Delivered: issue "Research watch 2026-10-17" (one new paper).
+
 ## 2026-10-16 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; all in-scope statuses), web search (Germany drug trials, Scheibenbogen, Mitodicure/MDC002). Papers: Europe PMC sweep 2026-10-01..16 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
