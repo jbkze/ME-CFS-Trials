@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-18 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweeps (CFS and ME/CFS+Germany; all in-scope statuses), web search (Germany drug trials, Mitodicure/MDC002, Scheibenbogen). Papers: Europe PMC sweep 2026-10-01..18 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. Other CT.gov hits (e.g. NCT07317401 IHHT, hypoxia device, not a drug) out of scope.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 1 new (206 total): Weaver et al., J Pediatr — pediatric ME/CFS symptom burden vs adults (CDC MCAM study).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-18).
+- Delivered: issue "Research watch 2026-10-18" (one new paper).
+
 ## 2026-10-17 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, CFS, post-COVID, long COVID; all in-scope statuses), web search (Germany drug trials, Scheibenbogen). Papers: Europe PMC sweep 2026-10-01..17 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
