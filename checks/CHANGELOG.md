@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-19 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (CFS/ME/CFS; all in-scope statuses), web search (Germany drug trials, Mitodicure/MDC002, Scheibenbogen). Papers: Europe PMC sweep 2026-10-10..19 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. New CT.gov hits (NCT07352254 outreach care, NCT03773003 probiotics/fatigue biology, registries, yoga) are non-drug or observational, out of scope.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (206 total); Europe PMC hits were tangential or already tracked.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-19).
+- Delivered: no issue (nothing new).
+
 ## 2026-10-18 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweeps (CFS and ME/CFS+Germany; all in-scope statuses), web search (Germany drug trials, Mitodicure/MDC002, Scheibenbogen). Papers: Europe PMC sweep 2026-10-01..18 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
