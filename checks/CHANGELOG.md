@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-20 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, CFS, post-COVID, long COVID, post-acute infection syndrome; all in-scope statuses), web search (Scheibenbogen, Mitodicure/MDC002). Papers: Europe PMC sweep 2026-10-18..20 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. Other CT.gov hits non-drug/observational (or NCT05926505 anakinra, previously screened out).
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (206 total).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-20).
+- Delivered: no issue (nothing new).
+
 ## 2026-10-19 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (CFS/ME/CFS; all in-scope statuses), web search (Germany drug trials, Mitodicure/MDC002, Scheibenbogen). Papers: Europe PMC sweep 2026-10-10..19 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
