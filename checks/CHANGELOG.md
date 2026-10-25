@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-25 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, CFS, post-COVID, long COVID, post-acute infection syndrome; all in-scope statuses), mitodicure.com/pipeline, web search (Scheibenbogen, general). Papers: Europe PMC sweep 2026-10-25, web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox studies). NCT05926505 (anakinra) remains screened out; other CT.gov hits observational/device/behavioural.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — no new papers (206 total).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-25).
+- Delivered: no issue (nothing new).
+
 ## 2026-10-24 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, CFS, post-COVID, long COVID, post-acute infection syndrome; all in-scope statuses), mitodicure.com/pipeline, web search (Scheibenbogen, Wirth/Mitodicure). Papers: Europe PMC sweep 2026-10-23..24 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
