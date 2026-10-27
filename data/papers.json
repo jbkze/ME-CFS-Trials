@@ -1,8 +1,25 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-10-26",
+  "last_check": "2026-10-27",
   "papers": [
+    {
+      "id": "naik-2026-ldn-postcovid-fatigue-rct",
+      "title": "Low Dose Naltrexone for Post-COVID Fatigue Syndrome: A Randomized Controlled Trial",
+      "authors": "Naik H, Boulter T, Cooke E, et al. (Nacul L, senior author)",
+      "journal": "medRxiv (preprint)",
+      "date": "Oct 2026 (posted Oct 26, 2026)",
+      "summary": "160 people in Canada with ME/CFS-like fatigue after COVID took either low-dose naltrexone (a cheap, old drug used at a tiny dose) or a dummy pill for 16 weeks. Fatigue, pain, symptoms and daily steps were no different between the two groups.",
+      "why": "This is a large, well-designed test of a drug many patients already take, and it found no benefit. It has not yet been peer-reviewed.",
+      "link": "https://doi.org/10.64898/2026.10.22.26363582",
+      "first_seen": "2026-10-27",
+      "last_checked": "2026-10-27",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Preprint; decentralized RCT in British Columbia and Ontario; primary outcome Fatigue Severity Scale."
+    },
     {
       "id": "weaver-2026-pediatric-mecfs-mcam",
       "title": "Characterizing Pediatric Myalgic Encephalomyelitis/Chronic Fatigue Syndrome: Symptom Burden, Functional Impairment, and Comparison With Adults in the Multi-Site Clinical Assessment of ME/CFS (MCAM) Study",

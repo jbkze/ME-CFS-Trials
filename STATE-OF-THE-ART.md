@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/state_of_the_art.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last content change: **2026-09-26** · last reviewed: **2026-10-26**
+- Last content change: **2026-10-27** · last reviewed: **2026-10-27**
 
 A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.
 
@@ -27,6 +27,7 @@ One leading model, from Wirth and Scheibenbogen, of how the findings may connect
 | ❌ No clear benefit | Immunoadsorption vs sham | Removed the antibodies, but patients felt no better than with a sham | [Stortz 2026](https://doi.org/10.1016/j.lanepe.2026.101744) |
 | ❌ No clear benefit | Repurposed drugs | Rivaroxaban, colchicine, famotidine-loratadine: small, temporary benefit only | [Wall 2026](https://doi.org/10.1016/S1473-3099(26)00242-2) |
 | ❌ No clear benefit | Structured care programme | No better function after a year (Charité) | [Peters 2026](https://doi.org/10.1016/j.amjmed.2026.09.013) |
+| ❌ No clear benefit | Low-dose naltrexone | No benefit over placebo for fatigue in a 160-person post-COVID trial (preprint) | [Naik 2026](https://doi.org/10.64898/2026.10.22.26363582) |
 | ⏳ Being tested in Germany | Bupropion | Post-COVID fatigue, placebo-controlled | [RAPID_ELAPSE](https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00) |
 | ⏳ Being tested in Germany | Immunoadsorption | Antibody-positive patients, Berlin | [IMPACT](https://clinicaltrials.gov/study/NCT07529197); [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) |
 | ⏳ Being tested in Germany | Inebilizumab | Relapse after immunoadsorption, placebo-controlled | [PIONEER_PAIS](https://clinicaltrials.gov/study/NCT07724834) |

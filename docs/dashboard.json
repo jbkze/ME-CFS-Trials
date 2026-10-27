@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-26",
-  "lastRunAt": "2026-10-26T04:05:01Z",
-  "lastRun": "26 Oct 2026",
-  "nextRun": "Next run ~27 Oct 2026",
+  "generated": "2026-10-27",
+  "lastRunAt": "2026-10-27T04:05:32Z",
+  "lastRun": "27 Oct 2026",
+  "nextRun": "Next run ~28 Oct 2026",
   "studies": [
     {
       "id": "nct07529197",
@@ -55,7 +55,7 @@
         }
       ],
       "firstSeen": "2026-06-25",
-      "lastChecked": "2026-10-26",
+      "lastChecked": "2026-10-27",
       "lastStatusChange": ""
     },
     {
@@ -114,7 +114,7 @@
         }
       ],
       "firstSeen": "2026-06-27",
-      "lastChecked": "2026-10-26",
+      "lastChecked": "2026-10-27",
       "lastStatusChange": ""
     },
     {
@@ -213,7 +213,7 @@
         }
       ],
       "firstSeen": "2026-08-15",
-      "lastChecked": "2026-10-26",
+      "lastChecked": "2026-10-27",
       "lastStatusChange": ""
     },
     {
@@ -251,7 +251,7 @@
       },
       "sites": [],
       "firstSeen": "2026-06-25",
-      "lastChecked": "2026-10-26",
+      "lastChecked": "2026-10-27",
       "lastStatusChange": ""
     },
     {
@@ -309,7 +309,7 @@
         }
       ],
       "firstSeen": "2026-07-30",
-      "lastChecked": "2026-10-26",
+      "lastChecked": "2026-10-27",
       "lastStatusChange": ""
     },
     {
@@ -361,7 +361,7 @@
         }
       ],
       "firstSeen": "2026-07-30",
-      "lastChecked": "2026-10-26",
+      "lastChecked": "2026-10-27",
       "lastStatusChange": ""
     },
     {
@@ -413,11 +413,28 @@
         }
       ],
       "firstSeen": "2026-06-30",
-      "lastChecked": "2026-10-26",
+      "lastChecked": "2026-10-27",
       "lastStatusChange": "2025-09-30"
     }
   ],
   "papers": [
+    {
+      "id": "naik-2026-ldn-postcovid-fatigue-rct",
+      "title": "Low Dose Naltrexone for Post-COVID Fatigue Syndrome: A Randomized Controlled Trial",
+      "authors": "Naik H, Boulter T, Cooke E, et al. (Nacul L, senior author)",
+      "journal": "medRxiv (preprint)",
+      "date": "Oct 2026 (posted Oct 26, 2026)",
+      "published": "2026-10-26",
+      "summary": "160 people in Canada with ME/CFS-like fatigue after COVID took either low-dose naltrexone (a cheap, old drug used at a tiny dose) or a dummy pill for 16 weeks. Fatigue, pain, symptoms and daily steps were no different between the two groups.",
+      "why": "This is a large, well-designed test of a drug many patients already take, and it found no benefit. It has not yet been peer-reviewed.",
+      "link": "https://doi.org/10.64898/2026.10.22.26363582",
+      "researchers": [],
+      "topics": [
+        "treatment"
+      ],
+      "firstSeen": "2026-10-27",
+      "isNew": true
+    },
     {
       "id": "seidel-2026-tixagevimab-cilgavimab-mecfs-spike",
       "title": "Exploratory clinical and immunological changes following Tixagevimab/Cilgavimab administration in immunodeficient patients with SARS-CoV-2-associated ME/CFS and persistent circulating spike protein",
@@ -4118,8 +4135,8 @@
     }
   ],
   "overview": {
-    "updated": "2026-09-26",
-    "reviewed": "2026-10-26",
+    "updated": "2026-10-27",
+    "reviewed": "2026-10-27",
     "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.",
     "model": {
       "title": "How the pieces may fit together",
@@ -4429,6 +4446,20 @@
             "link": "https://mitodicure.com/",
             "status": "soon",
             "statusLabel": "Planned"
+          }
+        ]
+      },
+      {
+        "name": "Low-dose naltrexone",
+        "result": "negative",
+        "note": "No benefit over placebo for fatigue in a 160-person post-COVID trial (preprint)",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "naik-2026-ldn-postcovid-fatigue-rct",
+            "label": "Naik 2026",
+            "title": "Low Dose Naltrexone for Post-COVID Fatigue Syndrome: A Randomized Controlled Trial",
+            "link": "https://doi.org/10.64898/2026.10.22.26363582"
           }
         ]
       }
@@ -5308,7 +5339,7 @@
         "confidence": "contested",
         "confidenceLabel": "Mixed / contested",
         "updated": "2026-09-23",
-        "paperCount": 41,
+        "paperCount": 42,
         "points": [
           {
             "text": "Early positive signals: the antibody-neutraliser BC007 in a placebo-controlled long-COVID trial, daratumumab in a small pilot, and hyperbaric oxygen in a Charité cohort (no placebo group). All need confirmation.",

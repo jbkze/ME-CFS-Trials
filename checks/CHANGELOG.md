@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-27 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), mitodicure.com/pipeline, web search (Wirth/Scheibenbogen). Papers: Europe PMC sweep 2026-10-15..27 (ME/CFS terms).
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox studies). NCT05926505 (anakinra) remains screened out.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 1 new (207 total): Naik et al., low-dose naltrexone RCT in post-COVID fatigue syndrome (medRxiv) — negative result. Other hits tangential, skipped.
+- State of the art: treatment board gained "Low-dose naltrexone" (negative); other sections unchanged.
+- Delivered: issue "Research watch 2026-10-27".
+
 ## 2026-10-26 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, all in-scope statuses), web search (Scheibenbogen, Wirth/Mitodicure, general). Papers: Europe PMC sweep 2026-10-18..26 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
