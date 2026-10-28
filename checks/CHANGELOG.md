@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-28 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), CTIS API (RAPID_REVIVE), web search (Wirth/Mitodicure, Scheibenbogen, general). Papers: Europe PMC sweep 2026-10-08..28 (ME/CFS terms + Scheibenbogen/Wirth/Paul/Bellmann-Strobl author query), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (no registration or 2026 update found). NCT05926505 (anakinra, pulmonary-phenotype PACS) remains screened out; other CT.gov hits observational/device/behavioural.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 3 new (210 total): Bigleri et al., transient improvement after zoster vaccine in one ME/CFS patient (case report); Jones & Younger, TSPO genotype in ME/CFS/FM/MS (medRxiv); Nemat-Gorgani et al., glymphatic/autophagy perspective (IJMS). No Wirth/Scheibenbogen papers this window. Other hits (bioinformatics, Unani review, scoping reviews) skipped.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-28).
+- Delivered: issue "Research watch 2026-10-28".
+
 ## 2026-10-27 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), mitodicure.com/pipeline, web search (Wirth/Scheibenbogen). Papers: Europe PMC sweep 2026-10-15..27 (ME/CFS terms).
 - **Trials** — no new trials; no status or detail changes

@@ -7,7 +7,7 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.09.04.26361413
 url: https://doi.org/10.64898/2026.09.04.26361413
-pdf: https://doi.org/10.64898/2026.09.04.26361413
+pdf: literature/papers/2026-khanum-clinical-phenotypes-post-acute/paper.pdf
 text: null
 tags: [skeletal-muscle, microbiome, infection-trigger]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: khanum2026
 # Clinical Phenotypes of Post-Acute Sequelae of SARS-CoV-2 (PASC) Infection: A Longitudinal Cohort Study from Karachi, Pakistan
 
 ## Related files
+![[literature/papers/2026-khanum-clinical-phenotypes-post-acute/paper.pdf]]
 - [[literature/papers/2026-khanum-clinical-phenotypes-post-acute/citation.bib]]
 
 ## Summary
 
 A year-long study of long-COVID patients in Karachi, Pakistan tracked their symptoms alongside leftover virus detected in stool samples and blood serotonin (a gut/mood signalling chemical) levels. Most symptoms eased over time, but muscle pain, weakness and fatigue persisted in many, and people who still had detectable virus in their stool were more likely to report breathlessness, fatigue, weakness and joint pain.
-
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 
