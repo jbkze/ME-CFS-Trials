@@ -7,7 +7,7 @@ year: 2026
 venue: "Research Square (preprint)"
 doi: 10.21203/rs.3.rs-9593874/v1
 url: https://doi.org/10.21203/rs.3.rs-9593874/v1
-pdf: https://doi.org/10.21203/rs.3.rs-9593874/v1
+pdf: literature/papers/2026-navarro-long-covid-prevalence-impact/paper.pdf
 text: null
 tags: [treatment, infection-trigger, diagnostic-criteria, epidemiology]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: navarro2026
 # Chronic Fatigue Syndrome in Long COVID: prevalence and impact on health-related quality of life and health status. A cross-sectional study. BioICOPER study
 
 ## Related files
+![[literature/papers/2026-navarro-long-covid-prevalence-impact/paper.pdf]]
 - [[literature/papers/2026-navarro-long-covid-prevalence-impact/citation.bib]]
 
 ## Summary
 
 Among 304 people with long COVID in Spain, a substantial subgroup met older, formal Chronic Fatigue Syndrome criteria. That subgroup had noticeably worse quality of life and overall health than the long-COVID patients who didn't meet those criteria.
-
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

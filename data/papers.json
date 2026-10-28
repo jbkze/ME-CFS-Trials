@@ -1,8 +1,59 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-10-27",
+  "last_check": "2026-10-28",
   "papers": [
+    {
+      "id": "nemat-gorgani-2026-glymphatic-autophagy-mecfs-longcovid",
+      "title": "The Glymphatic-Meningeal Lymphatic System and Autophagy in ME/CFS and Long COVID: A Mechanistic Perspective",
+      "authors": "Nemat-Gorgani M, Jensen MA, Davis RW",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "Oct 2026 (online Oct 21, 2026)",
+      "summary": "This perspective article suggests that the brain's waste-clearing system, together with the cell's own recycling process (autophagy), may not work properly in ME/CFS and long COVID, and explains how that could contribute to symptoms.",
+      "why": "It offers a hypothesis that could point to new ways to test and treat the illness, but it is a proposal and not new patient data.",
+      "link": "https://doi.org/10.3390/ijms27209351",
+      "notes": "Review/perspective from the Davis group (Stanford); hypothesis only.",
+      "first_seen": "2026-10-28",
+      "last_checked": "2026-10-28",
+      "flags": [
+        "new"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "jones-2026-tspo-genotype-fibromyalgia-mecfs-ms",
+      "title": "Fibromyalgia, Chronic Fatigue Syndrome, and Multiple Sclerosis are associated with lower translocator protein binding affinity genotypes",
+      "authors": "Jones C, Younger J",
+      "journal": "medRxiv (preprint)",
+      "date": "Oct 2026 (posted Oct 21, 2026)",
+      "summary": "Researchers checked a gene variant that affects brain-scan dyes used to look for inflammation in the brain. People with ME/CFS, fibromyalgia or multiple sclerosis more often carried the variants that bind the dye less well than healthy people did.",
+      "why": "Many brain-inflammation scans depend on this gene, so results in ME/CFS could be skewed by it. The study is small and has not yet been peer-reviewed.",
+      "link": "https://doi.org/10.64898/2026.10.19.26365953",
+      "notes": "Preprint; 21 ME/CFS participants, 86 total; genotype rs6971 (TSPO).",
+      "first_seen": "2026-10-28",
+      "last_checked": "2026-10-28",
+      "flags": [
+        "new"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bigleri-2026-zoster-vaccine-mecfs-case",
+      "title": "Transient clinical improvement and immune modulation following recombinant Zoster vaccination in a patient with ME/CFS",
+      "authors": "Bigleri A, Alimo ET, Abouda A, et al. (Elahi S, senior author)",
+      "journal": "Brain, Behavior, & Immunity – Health",
+      "date": "Oct 2026 (online Oct 13, 2026)",
+      "summary": "A woman in her 60s with severe, long-standing ME/CFS felt much better for a short time after each shingles vaccine dose, with better sleep, thinking, pain and movement, before relapsing. Blood tests showed some immune cells working better for a while.",
+      "why": "It is a single case, so it proves nothing, but it hints that giving the immune system a jolt can briefly ease symptoms, which may help researchers understand what is stuck.",
+      "link": "https://doi.org/10.1016/j.bbih.2026.101388",
+      "notes": "Single-patient case report with flow cytometry and galectin-9 measurements; not evidence of treatment effect.",
+      "first_seen": "2026-10-28",
+      "last_checked": "2026-10-28",
+      "flags": [
+        "new"
+      ],
+      "isNew": true
+    },
     {
       "id": "naik-2026-ldn-postcovid-fatigue-rct",
       "title": "Low Dose Naltrexone for Post-COVID Fatigue Syndrome: A Randomized Controlled Trial",
@@ -14,10 +65,8 @@
       "link": "https://doi.org/10.64898/2026.10.22.26363582",
       "first_seen": "2026-10-27",
       "last_checked": "2026-10-27",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "Preprint; decentralized RCT in British Columbia and Ontario; primary outcome Fatigue Severity Scale."
     },
     {
