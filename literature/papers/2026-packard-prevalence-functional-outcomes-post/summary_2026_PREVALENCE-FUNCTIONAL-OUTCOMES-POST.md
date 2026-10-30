@@ -7,7 +7,7 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.08.31.26356614
 url: https://doi.org/10.64898/2026.08.31.26356614
-pdf: https://doi.org/10.64898/2026.08.31.26356614
+pdf: literature/papers/2026-packard-prevalence-functional-outcomes-post/paper.pdf
 text: null
 tags: [exercise-physiology, post-exertional-malaise, diagnostic-criteria, epidemiology]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: packard2026
 # Prevalence and Functional Outcomes of Post-Exertional Malaise among Adults with prior COVID-19: Results from a Representative Survey of New York City Residents
 
 ## Related files
+![[literature/papers/2026-packard-prevalence-functional-outcomes-post/paper.pdf]]
 - [[literature/papers/2026-packard-prevalence-functional-outcomes-post/citation.bib]]
 
 ## Summary
 
 A survey of over 9,600 New York City adults who previously had COVID-19 found that about one in five still gets post-exertional malaise (PEM) -- a crash after physical or mental effort -- and roughly 4% have symptoms lasting long enough to meet ME/CFS criteria.
-
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

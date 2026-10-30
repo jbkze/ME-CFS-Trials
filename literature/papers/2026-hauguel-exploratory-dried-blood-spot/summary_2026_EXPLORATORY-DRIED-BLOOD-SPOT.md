@@ -7,7 +7,7 @@ year: 2026
 venue: "medRxiv (preprint)"
 doi: 10.64898/2026.06.08.26355197
 url: https://doi.org/10.64898/2026.06.08.26355197
-pdf: https://doi.org/10.64898/2026.06.08.26355197
+pdf: literature/papers/2026-hauguel-exploratory-dried-blood-spot/paper.pdf
 text: null
 tags: [metabolism, exercise-physiology, post-exertional-malaise, biomarker]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: hauguel2026
 # Exploratory Dried Blood Spot Metabolomics Identifies Pathway-Level Convergence with ME/CFS Biology in a Self-Reported PEM-like Fatigue Phenotype
 
 ## Related files
+![[literature/papers/2026-hauguel-exploratory-dried-blood-spot/paper.pdf]]
 - [[literature/papers/2026-hauguel-exploratory-dried-blood-spot/citation.bib]]
 
 ## Summary
 
 Finger-prick blood-spot samples from 1,784 people in a large community health study were tested for metabolic chemicals. People who reported a post-exertional-malaise-like 'crash after activity' pattern showed the same kinds of energy-production, fat, and stress-hormone chemical differences previously found in diagnosed ME/CFS patients — using a much larger, cheaper sample method than earlier studies.
-
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

@@ -7,7 +7,7 @@ year: 2026
 venue: "Research Square (preprint, not yet peer-reviewed)"
 doi: 10.21203/rs.3.rs-10070418/v1
 url: https://doi.org/10.21203/rs.3.rs-10070418/v1
-pdf: https://doi.org/10.21203/rs.3.rs-10070418/v1
+pdf: literature/papers/2026-maes-physio-affective-symptoms-long/paper.pdf
 text: null
 tags: [infection-trigger]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: maes2026
 # The physio-affective symptoms of Long COVID are strongly predicted by the severity of the acute infectious phase, and lowered antioxidants, nitric oxide, and alanine transaminase levels
 
 ## Related files
+![[literature/papers/2026-maes-physio-affective-symptoms-long/paper.pdf]]
 - [[literature/papers/2026-maes-physio-affective-symptoms-long/citation.bib]]
 
 ## Summary
 
 Followed 71 long-COVID patients for six months and found that mood symptoms, CFS/ME-type fatigue symptoms, breathing problems, and nervous-system symptoms all rise and fall together as one combined package rather than being separate problems. How severe a person's original COVID infection was — including low levels of antioxidants and nitric oxide, molecules that help protect cells and blood vessels — strongly predicted how bad this combined symptom package became.
-
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

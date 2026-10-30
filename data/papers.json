@@ -1,8 +1,25 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-10-28",
+  "last_check": "2026-10-30",
   "papers": [
+    {
+      "id": "syed-2026-wasf3-brain-metabolism-cognition",
+      "title": "Stress-inducible WASF3 regulates brain metabolism and cognitive function",
+      "authors": "Syed AM, Ma J, Wang PY, Son Y, Penjweini R, Mattu N, Knutson JR, Nakamori-Yamashita S, Springer DA, Ganguly A, Liu C, Hwang PM",
+      "journal": "Proceedings of the National Academy of Sciences (PNAS)",
+      "date": "Oct 2026 (online Oct 27, 2026)",
+      "summary": "In mice, a protein called WASF3, which is switched on by cell stress and is raised in ME/CFS, slowed the energy-making machinery of brain cells and worsened learning. Mice without it kept their memory better under stress.",
+      "why": "It offers a possible biological explanation for the 'brain fog' in ME/CFS and a protein that could one day be targeted, but it is mouse work and not yet tested in patients.",
+      "link": "https://doi.org/10.1073/pnas.2617198123",
+      "notes": "Hwang lab (NIH). Mouse study; links WASF3 to mitochondrial function and cognition.",
+      "first_seen": "2026-10-30",
+      "last_checked": "2026-10-30",
+      "flags": [
+        "new"
+      ],
+      "isNew": true
+    },
     {
       "id": "nemat-gorgani-2026-glymphatic-autophagy-mecfs-longcovid",
       "title": "The Glymphatic-Meningeal Lymphatic System and Autophagy in ME/CFS and Long COVID: A Mechanistic Perspective",
@@ -15,10 +32,8 @@
       "notes": "Review/perspective from the Davis group (Stanford); hypothesis only.",
       "first_seen": "2026-10-28",
       "last_checked": "2026-10-28",
-      "flags": [
-        "new"
-      ],
-      "isNew": true
+      "flags": [],
+      "isNew": false
     },
     {
       "id": "jones-2026-tspo-genotype-fibromyalgia-mecfs-ms",
@@ -32,10 +47,8 @@
       "notes": "Preprint; 21 ME/CFS participants, 86 total; genotype rs6971 (TSPO).",
       "first_seen": "2026-10-28",
       "last_checked": "2026-10-28",
-      "flags": [
-        "new"
-      ],
-      "isNew": true
+      "flags": [],
+      "isNew": false
     },
     {
       "id": "bigleri-2026-zoster-vaccine-mecfs-case",
@@ -49,10 +62,8 @@
       "notes": "Single-patient case report with flow cytometry and galectin-9 measurements; not evidence of treatment effect.",
       "first_seen": "2026-10-28",
       "last_checked": "2026-10-28",
-      "flags": [
-        "new"
-      ],
-      "isNew": true
+      "flags": [],
+      "isNew": false
     },
     {
       "id": "naik-2026-ldn-postcovid-fatigue-rct",

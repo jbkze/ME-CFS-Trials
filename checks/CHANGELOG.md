@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-30 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), mitodicure.com/pipeline, web search (Scheibenbogen, general). Papers: Europe PMC sweep 2026-10-20..30 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. NCT05926505 (anakinra) remains screened out; other CT.gov hits observational/device/behavioural.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 1 new (211 total): Syed et al. (Hwang lab), WASF3 regulates brain metabolism and cognition in mice (PNAS). Preprints.org items (Kell/Pretorius, Dangmann/Schleip) and a Research Square HRV preprint skipped (non-major venues / tangential). No Wirth/Scheibenbogen papers this window.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-30).
+- Delivered: issue "Research watch 2026-10-30".
+
 ## 2026-10-28 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), CTIS API (RAPID_REVIVE), web search (Wirth/Mitodicure, Scheibenbogen, general). Papers: Europe PMC sweep 2026-10-08..28 (ME/CFS terms + Scheibenbogen/Wirth/Paul/Bellmann-Strobl author query), web search.
 - **Trials** — no new trials; no status or detail changes
