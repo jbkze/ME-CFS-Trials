@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-10-31 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), CTIS API (RAPID_REVIVE), mitodicure.com/pipeline, web search (Wirth/Mitodicure, Scheibenbogen, general). Papers: Europe PMC sweep 2026-10-24..31 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox studies). NCT05926505 (anakinra) remains screened out; other CT.gov hits observational/device/behavioural.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (211 total). Preprints.org (Kell/Pretorius), Research Square HRV and an HIV-fatigue omics paper skipped (non-major venues / tangential). No Wirth/Scheibenbogen papers this window.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-10-31).
+- Delivered: no issue (nothing new).
+
 ## 2026-10-30 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), mitodicure.com/pipeline, web search (Scheibenbogen, general). Papers: Europe PMC sweep 2026-10-20..30 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
