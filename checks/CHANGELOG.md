@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-11-02 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, CFS, post-COVID, Long COVID; in-scope statuses), web search (Wirth/Mitodicure, Scheibenbogen, general). Papers: Europe PMC sweep 2026-10-31..11-02 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (no new public information). NCT05926505 (anakinra) remains screened out; other CT.gov hits observational/device/behavioural. NCT07621068 (hyperbaric oxygen, Israel) is not a drug study and has no German site.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (211 total). Two Europe PMC hits (psychological problems in chronically ill children; EEG imaging review) tangential, skipped.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-02).
+- Delivered: no issue (nothing new).
+
 ## 2026-11-01 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), web search (Wirth/Mitodicure, Scheibenbogen). Papers: Europe PMC sweep 2026-10-31..11-01 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
