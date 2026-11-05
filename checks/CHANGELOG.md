@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-11-05 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID; in-scope statuses), web search (Scheibenbogen, Germany recruiting). Papers: Europe PMC sweep 2026-11-02..05 (ME/CFS terms), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. Other CT.gov Germany hits observational/behavioural/other.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (211 total). Two Europe PMC hits (genetics case report; symptom-cluster cross-sectional study) tangential, skipped.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-05).
+- Delivered: no issue (nothing new).
+
 ## 2026-11-04 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, post-COVID, Long COVID; in-scope statuses), mitodicure.com/pipeline, web search (Wirth/Mitodicure, Scheibenbogen, general). Papers: Europe PMC sweep 2026-11-02..04 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes
