@@ -7,7 +7,7 @@ year: 2026
 venue: "Journal of Translational Medicine"
 doi: 10.1186/s12967-026-09018-9
 url: https://doi.org/10.1186/s12967-026-09018-9
-pdf: https://doi.org/10.1186/s12967-026-09018-9
+pdf: literature/papers/2026-habermann-muscle-symptoms-latent-physiological/paper.pdf
 text: null
 tags: [skeletal-muscle, microbiome, treatment]
 status: to-read
@@ -19,13 +19,12 @@ bibtex_key: habermann2026b
 # Muscle symptoms and a latent physiological symptom-dysregulation factor in ME/CFS: exploratory analyses by sex and age-defined menopausal-status proxy group
 
 ## Related files
+![[literature/papers/2026-habermann-muscle-symptoms-latent-physiological/paper.pdf]]
 - [[literature/papers/2026-habermann-muscle-symptoms-latent-physiological/citation.bib]]
 
 ## Summary
 
 Using the same large German patient survey as their earlier papers (745 people with ME/CFS), these researchers found that muscle problems (like weakness and pain) tend to show up together with breathing problems, heart/blood-pressure symptoms, temperature-control problems, vision problems and gut problems — as one connected package rather than separate issues. This package looked the same regardless of how long someone had been sick, but showed up somewhat differently in women versus men and before versus after menopause.
-
-> _No PDF available_ — publisher does not serve a headless-downloadable open-access PDF. Retrieve via institutional access (Shibboleth) or interlibrary loan; DOI kept in `pdf:`/`url:`.
 
 ## Why this matters
 

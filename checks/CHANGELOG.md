@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-11-11 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, CFS, post-COVID, Long COVID updated since 2026-11-01), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (last 3 days, ME/CFS terms), Europe PMC sweep 2026-11-08..11, web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. NCT07798570 (CICR-NAM, UKSH Kiel) screened out: general post-COVID syndrome (not ME/CFS-specific), dietary supplement / food for special medicinal purposes, not a drug study.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 1 new (212 total): Meadows et al., LIFT protocol (pyridostigmine + low-dose naltrexone RCT, Trials, Aug 2026, newly indexed in PubMed). Skipped as tangential: JAK/STAT post-COVID autoimmunity review, NAFLD fatigue study, Vienna PEM questionnaire, PASS questionnaire preprint, CDC IACC commentary, TGF-β receptor post-COVID proteomics.
+- State of the art: treatment board — added "Pyridostigmine + low-dose naltrexone" (testing); sections unchanged.
+- Literature archive: LIFT folder added (PDF fetched); Habermann PDF now fetched.
+- Delivered: GitHub issue "Research watch 2026-11-11".
+
 ## 2026-11-10 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 Germany sweep (ME/CFS, CFS, post-COVID; in-scope statuses), web search (Scheibenbogen, Mitodicure/MDC002). Papers: Europe PMC sweep 2026-11-08..10 (ME/CFS terms), web search.
 - **Trials** — no new trials; no status or detail changes

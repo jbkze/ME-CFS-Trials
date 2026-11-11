@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/state_of_the_art.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last content change: **2026-10-27** · last reviewed: **2026-11-10**
+- Last content change: **2026-11-11** · last reviewed: **2026-11-11**
 
 A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.
 
@@ -33,6 +33,7 @@ One leading model, from Wirth and Scheibenbogen, of how the findings may connect
 | ⏳ Being tested in Germany | Inebilizumab | Relapse after immunoadsorption, placebo-controlled | [PIONEER_PAIS](https://clinicaltrials.gov/study/NCT07724834) |
 | ⏳ Being tested in Germany | Low-dose aripiprazole | Brain-related symptoms, placebo-controlled | [PAISE-AriSE](https://clinicaltrials.gov/study/NCT07714213) |
 | ⏳ Being tested in Germany | MDC002 | Wirth's muscle-energy drug; first human study | [MDC002](https://mitodicure.com/) |
+| ⏳ Being tested in Germany | Pyridostigmine + low-dose naltrexone | US placebo-controlled LIFT trial (160 people) testing each drug alone and together; protocol only | [Meadows 2026](https://doi.org/10.1186/s13063-026-09943-6) |
 
 ## What ME/CFS is
 

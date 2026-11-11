@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-10",
-  "lastRunAt": "2026-11-10T04:04:35Z",
-  "lastRun": "10 Nov 2026",
-  "nextRun": "Next run ~11 Nov 2026",
+  "generated": "2026-11-11",
+  "lastRunAt": "2026-11-11T04:05:18Z",
+  "lastRun": "11 Nov 2026",
+  "nextRun": "Next run ~12 Nov 2026",
   "studies": [
     {
       "id": "nct07529197",
@@ -55,7 +55,7 @@
         }
       ],
       "firstSeen": "2026-06-25",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-11",
       "lastStatusChange": ""
     },
     {
@@ -114,7 +114,7 @@
         }
       ],
       "firstSeen": "2026-06-27",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-11",
       "lastStatusChange": ""
     },
     {
@@ -213,7 +213,7 @@
         }
       ],
       "firstSeen": "2026-08-15",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-11",
       "lastStatusChange": ""
     },
     {
@@ -251,7 +251,7 @@
       },
       "sites": [],
       "firstSeen": "2026-06-25",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-11",
       "lastStatusChange": ""
     },
     {
@@ -309,7 +309,7 @@
         }
       ],
       "firstSeen": "2026-07-30",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-11",
       "lastStatusChange": ""
     },
     {
@@ -361,7 +361,7 @@
         }
       ],
       "firstSeen": "2026-07-30",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-11",
       "lastStatusChange": ""
     },
     {
@@ -413,11 +413,28 @@
         }
       ],
       "firstSeen": "2026-06-30",
-      "lastChecked": "2026-11-10",
+      "lastChecked": "2026-11-11",
       "lastStatusChange": "2025-09-30"
     }
   ],
   "papers": [
+    {
+      "id": "meadows-2026-lift-pyridostigmine-ldn-protocol",
+      "title": "Pyridostigmine and low-dose naltrexone for ME/CFS: study protocol for the Life Improvement Trial (LIFT), a randomized, double-blind, placebo-controlled clinical trial",
+      "authors": "Meadows D, Squires J, Dibble J, Palwayi S, Felsenstein D, Tannenbaum L, Li P, Xiao W, Bergquist J, Systrom D",
+      "journal": "Trials",
+      "date": "Aug 2026 (published Aug 12, 2026)",
+      "published": "2026-08-12",
+      "summary": "This is a study plan (a protocol, not results yet) for a US trial in 160 people with ME/CFS. Each person gets pyridostigmine (an old drug that boosts nerve signalling), low-dose naltrexone (an old drug used at a tiny dose), both, or dummy pills for 13 weeks, with exercise tests and daily-life measures to see what helps.",
+      "why": "Both drugs are already widely used off-label for ME/CFS without solid proof; this is one of the first careful tests of them alone and together in ME/CFS itself, so its results will matter — though this paper reports no outcomes yet.",
+      "link": "https://doi.org/10.1186/s13063-026-09943-6",
+      "researchers": [],
+      "topics": [
+        "treatment"
+      ],
+      "firstSeen": "2026-11-11",
+      "isNew": true
+    },
     {
       "id": "syed-2026-wasf3-brain-metabolism-cognition",
       "title": "Stress-inducible WASF3 regulates brain metabolism and cognitive function",
@@ -4207,8 +4224,8 @@
     }
   ],
   "overview": {
-    "updated": "2026-10-27",
-    "reviewed": "2026-11-10",
+    "updated": "2026-11-11",
+    "reviewed": "2026-11-11",
     "intro": "A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.",
     "model": {
       "title": "How the pieces may fit together",
@@ -4532,6 +4549,20 @@
             "label": "Naik 2026",
             "title": "Low Dose Naltrexone for Post-COVID Fatigue Syndrome: A Randomized Controlled Trial",
             "link": "https://doi.org/10.64898/2026.10.22.26363582"
+          }
+        ]
+      },
+      {
+        "name": "Pyridostigmine + low-dose naltrexone",
+        "result": "testing",
+        "note": "US placebo-controlled LIFT trial (160 people) testing each drug alone and together; protocol only",
+        "refs": [
+          {
+            "kind": "paper",
+            "id": "meadows-2026-lift-pyridostigmine-ldn-protocol",
+            "label": "Meadows 2026",
+            "title": "Pyridostigmine and low-dose naltrexone for ME/CFS: study protocol for the Life Improvement Trial (LIFT), a randomized, double-blind, placebo-controlled clinical trial",
+            "link": "https://doi.org/10.1186/s13063-026-09943-6"
           }
         ]
       }
@@ -5411,7 +5442,7 @@
         "confidence": "contested",
         "confidenceLabel": "Mixed / contested",
         "updated": "2026-09-23",
-        "paperCount": 42,
+        "paperCount": 43,
         "points": [
           {
             "text": "Early positive signals: the antibody-neutraliser BC007 in a placebo-controlled long-COVID trial, daratumumab in a small pilot, and hyperbaric oxygen in a Charité cohort (no placebo group). All need confirmation.",
