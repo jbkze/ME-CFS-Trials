@@ -1,5 +1,15 @@
 # Check log
 
+## 2026-11-12 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, CFS, post-COVID, Long COVID, PASC updated since 2026-11-05), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (ME/CFS + post-COVID terms, 2026-11-10..12; Wirth/Scheibenbogen author search since 2026-09), Europe PMC, medRxiv 2026-11-08..12, web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox studies). NCT07798570 (CICR-NAM) remains screened out (supplement, general post-COVID).
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (212 total; LIFT `isNew` cleared). Skipped as tangential: hyperbaric oxygen long COVID observational study (Korea), long COVID miRNA/hepatitis biomarkers, post-COVID rehab/app/cognition studies; Kedor Peters et al. (Am J Med) already tracked.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-12).
+- Delivered: no issue (nothing new).
+
 ## 2026-11-11 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, CFS, post-COVID, Long COVID updated since 2026-11-01), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (last 3 days, ME/CFS terms), Europe PMC sweep 2026-11-08..11, web search.
 - **Trials** — no new trials; no status or detail changes
