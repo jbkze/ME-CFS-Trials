@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-11-14 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, CFS, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19 updated since 2026-11-06), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, 2026-11-12..14), Europe PMC 2026-11-11..14, medRxiv 2026-11-11..14, web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered. NCT07798570 (CICR-NAM) remains screened out (supplement, general post-COVID).
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 3 new (215 total): Cano-Perales et al. (HLA, HLA-B*15 protective against long COVID); Samaan et al. (J Virol, weaker EBV antibody immunity in neuropsychiatric long COVID); Joshi et al. (medRxiv, altered herpesvirus-specific immune memory in long COVID). None Wirth/Scheibenbogen. Skipped as tangential/out of venue: Kell & Pretorius homocysteine hypothesis (Preprints.org), gut-microbiota/fatigue cross-sectional study, CeASE sympathetic-block protocol, tDCS, meditation, ECHO, rehab and guideline items.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-14) — new papers are small/exploratory and consistent with the existing "Viruses & triggers" and "Genes" sections.
+- Literature archive: **skipped** — the intake script hard-codes a personal contact address that it sends to Unpaywall/NCBI, and the session's privacy guard refused to run it. Fix: have the script read the contact from an environment variable instead of the source file.
+- Delivered: GitHub issue "Research watch 2026-11-14".
+
 ## 2026-11-13 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, myalgic encephalomyelitis, post-COVID, Long COVID updated since 2026-11-06), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, 2026-11-11..13), Europe PMC 2026-11-10..13, medRxiv 2026-11-10..13, web search.
 - **Trials** — no new trials; no status or detail changes

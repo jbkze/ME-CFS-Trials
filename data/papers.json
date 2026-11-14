@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-11-13",
+  "last_check": "2026-11-14",
   "papers": [
     {
       "id": "meadows-2026-lift-pyridostigmine-ldn-protocol",
@@ -3185,6 +3185,58 @@
       "flags": [],
       "isNew": false,
       "notes": "Confirmed via Crossref (Trends in Genetics, 2026-09). Review article; not Wirth/Scheibenbogen."
+    },
+    {
+      "id": "cano-perales-2026-hla-b15-protective-longcovid",
+      "title": "Comprehensive Immunogenetic Analysis of Long COVID Reveals HLA-B*15 as an Independent Protective Factor",
+      "authors": "Cano-Perales JL, Ortuño Pastor PJ, Rosales-Castillo A, Bernal M, Vilchez JR, Jimenez P, Marín-Sánchez A, Rodriguez-Nicolas A, Lizama-Muñoz A, Ballesta L, Sainz J, Ruiz-Cabello F, López-Nevot MA, Gutiérrez-Bautista JF",
+      "journal": "HLA: Immune Response Genetics",
+      "date": "Nov 2026",
+      "published": "2026-11",
+      "summary": "Researchers in Spain compared the immune-system genes (HLA genes, which help the body show viruses to its defence cells) of about 450 people hospitalised with COVID-19 with those of nearly 1,000 healthy people. People carrying one gene version, HLA-B*15, were less likely to go on to develop long COVID, even after accounting for age, sex and intensive care.",
+      "why": "Supports the idea that how well a person's immune system recognises the virus early on helps decide who gets long-lasting illness; the authors say it still needs to be confirmed in larger, independent groups.",
+      "link": "https://doi.org/10.1111/tan.71089",
+      "first_seen": "2026-11-14",
+      "last_checked": "2026-11-14",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "HLA 108(5):e71089, Nov 2026 (PMID 43023789). Case-control: 453 hospitalised COVID-19 patients (168 with long COVID) vs 959 controls, Granada, Spain. No high-resolution allele survived multiple-testing correction; low-resolution HLA-B*15 serotype independently protective. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
+    },
+    {
+      "id": "samaan-2026-ebv-humoral-neuropsychiatric-longcovid",
+      "title": "Neuropsychiatric long COVID is associated with altered SARS-CoV-2-specific cellular-humoral coordination and diminished EBV-specific humoral immunity up to 12 months post-COVID-19 symptom onset",
+      "authors": "Samaan P, Budylowski P, Matveev V, Russell V, Srighanthan J, Cheung AM, Ostrowski M",
+      "journal": "Journal of Virology",
+      "date": "Nov 2026 (online Nov 13, 2026)",
+      "summary": "In a small Toronto study (27 people with long COVID affecting the brain and mood vs 27 who recovered), the two arms of the immune system against the COVID virus (T cells and antibodies) did not work in step in the long COVID group. They also had lower antibody levels against Epstein-Barr virus (a common dormant herpesvirus), and weaker antibodies against it months after infection went along with fatigue a year later.",
+      "why": "Adds to evidence that a weakened grip on dormant herpesviruses like Epstein-Barr virus may be part of how post-viral fatigue illness develops, and points to possible early warning signs.",
+      "link": "https://doi.org/10.1128/jvi.00935-26",
+      "first_seen": "2026-11-14",
+      "last_checked": "2026-11-14",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "J Virol e0093526, online ahead of print Nov 13, 2026 (PMID 43023729); cohort NCT05125510. University of Toronto / UHN. Small sample (27 vs 27); EBV reactivation markers found in only one participant. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
+    },
+    {
+      "id": "joshi-2026-herpesvirus-immunity-longcovid-kirby",
+      "title": "Altered herpesvirus-specific immune response is associated with long COVID",
+      "authors": "Joshi RV, Khan RM, Jackson KJ, Ballouz S, Jacka B, Ni L, Findell-Aghnatios N, Aggarwal A, Turville SG, Singh M, Kim KW, Yau C, Byrne A, Brew BJ, Dore GJ, Darley DR, Matthews GV, Kelleher AD, Phetsouphanh C",
+      "journal": "medRxiv (preprint)",
+      "date": "Nov 2026 (posted Nov 12, 2026)",
+      "summary": "Australian researchers followed people with long COVID and people who recovered for up to two years, looking at their immune memory of two common dormant herpesviruses (Epstein-Barr virus and cytomegalovirus). Antibody amounts were normal, but early on the antibodies gripped the viruses less tightly and some helper immune cells responded less; no active virus was found in blood or stool, and weaker Epstein-Barr antibodies went along with poorer quality of life and not recovering.",
+      "why": "A second independent study this week pointing the same way — that long COVID involves subtle changes in how the body keeps dormant herpesviruses in check, rather than obvious virus reactivation. Not yet peer-reviewed.",
+      "link": "https://doi.org/10.64898/2026.11.11.26367525",
+      "first_seen": "2026-11-14",
+      "last_checked": "2026-11-14",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "medRxiv preprint posted 2026-11-12, Kirby Institute, UNSW Sydney (ADAPT cohort; sampling at 4, 8 and 24 months). Not peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via medRxiv API record."
     }
   ]
 }
