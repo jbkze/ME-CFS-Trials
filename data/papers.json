@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-11-14",
+  "last_check": "2026-11-15",
   "papers": [
     {
       "id": "meadows-2026-lift-pyridostigmine-ldn-protocol",
@@ -3198,10 +3198,8 @@
       "link": "https://doi.org/10.1111/tan.71089",
       "first_seen": "2026-11-14",
       "last_checked": "2026-11-14",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "HLA 108(5):e71089, Nov 2026 (PMID 43023789). Case-control: 453 hospitalised COVID-19 patients (168 with long COVID) vs 959 controls, Granada, Spain. No high-resolution allele survived multiple-testing correction; low-resolution HLA-B*15 serotype independently protective. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
     },
     {
@@ -3215,10 +3213,8 @@
       "link": "https://doi.org/10.1128/jvi.00935-26",
       "first_seen": "2026-11-14",
       "last_checked": "2026-11-14",
-      "flags": [
-        "new"
-      ],
-      "isNew": true,
+      "flags": [],
+      "isNew": false,
       "notes": "J Virol e0093526, online ahead of print Nov 13, 2026 (PMID 43023729); cohort NCT05125510. University of Toronto / UHN. Small sample (27 vs 27); EBV reactivation markers found in only one participant. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
     },
     {
@@ -3232,11 +3228,45 @@
       "link": "https://doi.org/10.64898/2026.11.11.26367525",
       "first_seen": "2026-11-14",
       "last_checked": "2026-11-14",
+      "flags": [],
+      "isNew": false,
+      "notes": "medRxiv preprint posted 2026-11-12, Kirby Institute, UNSW Sydney (ADAPT cohort; sampling at 4, 8 and 24 months). Not peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via medRxiv API record."
+    },
+    {
+      "id": "todorova-2026-treg-oxidative-stress-mecfs-longcovid",
+      "title": "Treg and Oxidative Stress Biomarker Profiles in Long COVID and Myalgic Encephalomyelitis/Chronic Fatigue Syndrome",
+      "authors": "Todorova Y, Dimitrova R, Kalfova T, Petrov S, Bozhkova M, Ivanovska M, Dudova D, Murdjeva M, Taskov H, Maes M, Nikolova M",
+      "journal": "International Journal of Molecular Sciences",
+      "date": "Oct 2026 (published Oct 22, 2026)",
+      "published": "2026-10-22",
+      "summary": "Bulgarian researchers compared blood from 125 people with ME/CFS, 89 with long COVID and 80 healthy people. A small set of immune cells — mainly 'regulatory' T cells (cells that calm the immune system) and inflammation-driving T cells — plus signs of oxidative stress (chemical wear-and-tear on cells) told people with ME/CFS apart from healthy people quite well, but long COVID much less clearly.",
+      "why": "Adds to evidence that ME/CFS involves a measurable, lasting immune imbalance that could one day help with diagnosis; the authors suggest ME/CFS may reflect deeper exhaustion of the body's repair systems than long COVID. Not yet confirmed in other groups.",
+      "link": "https://doi.org/10.3390/ijms27219422",
+      "first_seen": "2026-11-15",
+      "last_checked": "2026-11-15",
       "flags": [
         "new"
       ],
       "isNew": true,
-      "notes": "medRxiv preprint posted 2026-11-12, Kirby Institute, UNSW Sydney (ADAPT cohort; sampling at 4, 8 and 24 months). Not peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via medRxiv API record."
+      "notes": "PMID 43027675, newly indexed in PubMed 2026-11-13. Medical University of Plovdiv / NCIPD Sofia (Nikolova, Maes). Companion to the already-tracked Petrov et al. paper from the same cohort. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed/Europe PMC record with DOI."
+    },
+    {
+      "id": "ljungstrom-2026-extracellular-vesicles-mecfs-fm-longcovid",
+      "title": "AlphaScreen profiling of extracellular vesicle-associated platelet, immune, and vascular markers reveals disease-specific signatures in ME/CFS, fibromyalgia, and long COVID",
+      "authors": "Ljungstrom M, Masia E, Vicent MJ, Oltra E",
+      "journal": "bioRxiv (preprint)",
+      "date": "Nov 2026 (posted Nov 13, 2026)",
+      "published": "2026-11-13",
+      "summary": "Spanish researchers looked at extracellular vesicles (tiny packages that cells release into the blood) from people with ME/CFS, fibromyalgia, both, long COVID, and healthy people — 10 per group. Each illness showed its own pattern of markers from platelets, immune cells and blood vessels, with long COVID showing the biggest changes.",
+      "why": "Hints that these blood 'packages' could one day help tell ME/CFS, fibromyalgia and long COVID apart, and points again at blood vessels and clotting cells. Very small and not yet peer-reviewed, so an early lead only.",
+      "link": "https://doi.org/10.64898/2026.11.10.765688",
+      "first_seen": "2026-11-15",
+      "last_checked": "2026-11-15",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "bioRxiv preprint (immunology) posted 2026-11-13; Universidad Católica de Valencia / Príncipe Felipe Research Center (Oltra group). n=10 per group. Not peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via bioRxiv API record."
     }
   ]
 }

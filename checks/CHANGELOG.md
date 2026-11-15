@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-11-15 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19 updated since 2026-11-08), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-13..15), Europe PMC 2026-11-12..15, medRxiv + bioRxiv 2026-11-12..15, web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox / safety pharmacology studies). NCT07798570 (CICR-NAM) remains screened out (supplement, general post-COVID).
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — 2 new (217 total; previous run's `isNew` cleared): Todorova et al. (Int J Mol Sci, Treg/oxidative-stress biomarker signature separating ME/CFS from controls); Ljungstrom et al. (bioRxiv, extracellular-vesicle marker signatures in ME/CFS, fibromyalgia and long COVID, n=10/group). None Wirth/Scheibenbogen. Skipped as tangential: telerehabilitation pilot (Azcue, already noted), gut microbiota study (already skipped), mitochondria review (Kononova), EV cargo in long COVID (Oda), long COVID substance use/endocrine/nutrition/cardiac/OSA items, ECHO model.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-15) — new papers are small/exploratory and consistent with the existing immune and biomarker sections.
+- Literature archive: **skipped** — the intake script still holds a personal contact address that it sends to external APIs; the session's privacy guard blocks it. Fix: read the contact from an environment variable.
+- Delivered: GitHub issue "Research watch 2026-11-15".
+
 ## 2026-11-14 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, CFS, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19 updated since 2026-11-06), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, 2026-11-12..14), Europe PMC 2026-11-11..14, medRxiv 2026-11-11..14, web search.
 - **Trials** — no new trials; no status or detail changes
