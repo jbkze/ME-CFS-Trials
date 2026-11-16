@@ -2,7 +2,7 @@
 
 > Auto-generated from `data/state_of_the_art.json` by `scripts/render_trials.py`. **Do not edit by hand** — edit the JSON and re-run the script.
 
-- Last content change: **2026-11-11** · last reviewed: **2026-11-15**
+- Last content change: **2026-11-16** · last reviewed: **2026-11-16**
 
 A short, plain-language summary of what research currently shows about ME/CFS, built only from the papers and trials tracked on this page and revised as new results come in.
 
@@ -31,7 +31,7 @@ One leading model, from Wirth and Scheibenbogen, of how the findings may connect
 | ⏳ Being tested in Germany | Bupropion | Post-COVID fatigue, placebo-controlled | [RAPID_ELAPSE](https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=2025-524443-12-00) |
 | ⏳ Being tested in Germany | Immunoadsorption | Antibody-positive patients, Berlin | [IMPACT](https://clinicaltrials.gov/study/NCT07529197); [IA-Surv](https://drks.de/search/en/trial/DRKS00033897) |
 | ⏳ Being tested in Germany | Inebilizumab | Relapse after immunoadsorption, placebo-controlled | [PIONEER_PAIS](https://clinicaltrials.gov/study/NCT07724834) |
-| ⏳ Being tested in Germany | Low-dose aripiprazole | Brain-related symptoms, placebo-controlled | [PAISE-AriSE](https://clinicaltrials.gov/study/NCT07714213) |
+| ⏳ Being tested in Germany | Low-dose aripiprazole | Placebo-controlled Charité trial planned; a US chart review hinted at better daily function | [PAISE-AriSE](https://clinicaltrials.gov/study/NCT07714213); [Cui 2026](https://doi.org/10.1016/j.bbih.2026.101379) |
 | ⏳ Being tested in Germany | MDC002 | Wirth's muscle-energy drug; first human study | [MDC002](https://mitodicure.com/) |
 | ⏳ Being tested in Germany | Pyridostigmine + low-dose naltrexone | US placebo-controlled LIFT trial (160 people) testing each drug alone and together; protocol only | [Meadows 2026](https://doi.org/10.1186/s13063-026-09943-6) |
 

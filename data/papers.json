@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-11-15",
+  "last_check": "2026-11-16",
   "papers": [
     {
       "id": "meadows-2026-lift-pyridostigmine-ldn-protocol",
@@ -3247,7 +3247,7 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "PMID 43027675, newly indexed in PubMed 2026-11-13. Medical University of Plovdiv / NCIPD Sofia (Nikolova, Maes). Companion to the already-tracked Petrov et al. paper from the same cohort. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed/Europe PMC record with DOI."
     },
     {
@@ -3265,8 +3265,44 @@
       "flags": [
         "new"
       ],
-      "isNew": true,
+      "isNew": false,
       "notes": "bioRxiv preprint (immunology) posted 2026-11-13; Universidad Católica de Valencia / Príncipe Felipe Research Center (Oltra group). n=10 per group. Not peer-reviewed. Not Wirth/Scheibenbogen-affiliated. Confirmed via bioRxiv API record."
+    },
+    {
+      "id": "cui-2026-low-dose-aripiprazole-longcovid-retrospective",
+      "title": "Low-dose aripiprazole for long COVID symptom management: A retrospective observational study",
+      "authors": "Cui JL, Kalaycioglu M, Ricciardiello Mejia GC, Tian L, Geng LN, McComsey G, Macorni V, Ballon J, Chopra A, Quach TC, Grewal M, Paleru AM, Xin V, Robinson ML, Grossman L, Shafer R, Bonilla H",
+      "journal": "Brain, Behavior, & Immunity - Health",
+      "date": "Dec 2026 (published online Oct 6, 2026)",
+      "published": "2026-10-06",
+      "summary": "Stanford doctors looked back at the records of 50 long COVID patients who had been given a very small dose of aripiprazole (a psychiatric drug that, at tiny doses, is thought to calm brain inflammation). On average their ability to manage daily life improved a little, though the main symptoms such as fatigue, brain fog and crashes after activity did not clearly get better, and the drug was well tolerated.",
+      "why": "Low-dose aripiprazole is already used off-label and is being tested properly in a planned placebo-controlled Charité trial; this record review is only a weak hint (no comparison group), so that trial is what will really tell.",
+      "link": "https://doi.org/10.1016/j.bbih.2026.101379",
+      "first_seen": "2026-11-16",
+      "last_checked": "2026-11-16",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Brain Behav Immun Health 58:101379; PMID 43032818, PMC13763430. Retrospective chart review, n=50, Stanford long COVID clinic, doses 0.1-2 mg (median 1 mg). Functional Status Scale improved 3.78->3.28; no significant change in symptom severity/composite score. No control group. Related tracked trial: NCT07714213 (PAISE-AriSE, Charité). Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
+    },
+    {
+      "id": "faghy-2026-acid-base-repeated-exercise-longcovid",
+      "title": "The effects of submaximal exercise on acid-base balance in people with long COVID",
+      "authors": "Faghy MA, Thomas C, Owen R, Ashton RE, Pallagi S, Grigg MJ, Bewick T, Broom D, Richardson D, Gough LA",
+      "journal": "Experimental Physiology",
+      "date": "Nov 2026 (online ahead of print Nov 14, 2026)",
+      "published": "2026-11-14",
+      "summary": "UK researchers had 30 people with long COVID and 15 healthy people do a moderate exercise test on two days in a row and checked how acidic their blood became. On average the groups looked the same, but after the second day a third of the long COVID group showed too much acid in the blood (metabolic acidosis), compared with about one in ten healthy people.",
+      "why": "Suggests a subgroup whose body struggles to clear acid after repeated effort, which could help explain crashes after activity (post-exertional malaise) and fits ideas about overloaded muscle salt and acid balance; small and needs confirming.",
+      "link": "https://doi.org/10.1113/EP093996",
+      "first_seen": "2026-11-16",
+      "last_checked": "2026-11-16",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Exp Physiol, online 2026-11-14; PMID 43032912, PMC13768969. Two submaximal CPETs 24 h apart; capillary pH, HCO3-, anion gap, electrolytes, lactate. Whole-group: no differences; subgroup: acidosis in 5/30 (day 1) and 10/30 (day 2) LC vs 1/18 and 2/18 controls. Loughborough/Derby/Coventry. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
     }
   ]
 }
