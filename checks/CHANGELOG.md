@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-11-17 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19, post-acute infection syndrome updated since 2026-11-09), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-15..17), Europe PMC 2026-11-15..17, medRxiv + bioRxiv 2026-11-15..17 (all pages), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox / safety pharmacology studies). NCT06251518 (Vimida, updated 2026-11-16) is completed and not a drug study — out of scope. NCT07798570 (CICR-NAM) remains screened out.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (219 total; previous run's `isNew` cleared). Skipped as tangential: Gaber et al. (ME/CFS-like fatigue and functional neurological disorder, onset sequence), Evering et al. (predictors of long COVID after untreated mild COVID), Agostini et al. (complementary-health use survey), Wild et al. (Research Square, deep-learning platelet/aggregate image segmentation — methods only), plus items already skipped on earlier runs. Slaughter et al. medRxiv revision (biobank GWAS replication) already tracked.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-17).
+- Literature archive: **skipped** — the intake script still holds a personal contact address; the session's privacy guard blocks it. Fix: read the contact from an environment variable.
+- Delivered: no issue (nothing new).
+
 ## 2026-11-16 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19, post-acute infection syndrome updated since 2026-11-08), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen, Mitodicure/MDC002). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-14..16), Europe PMC 2026-11-14..16, medRxiv + bioRxiv 2026-11-14..16, web search.
 - **Trials** — no new trials; no status or detail changes
