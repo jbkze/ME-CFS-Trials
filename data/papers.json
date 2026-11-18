@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-11-17",
+  "last_check": "2026-11-18",
   "papers": [
     {
       "id": "meadows-2026-lift-pyridostigmine-ldn-protocol",
@@ -3303,6 +3303,24 @@
       ],
       "isNew": false,
       "notes": "Exp Physiol, online 2026-11-14; PMID 43032912, PMC13768969. Two submaximal CPETs 24 h apart; capillary pH, HCO3-, anion gap, electrolytes, lactate. Whole-group: no differences; subgroup: acidosis in 5/30 (day 1) and 10/30 (day 2) LC vs 1/18 and 2/18 controls. Loughborough/Derby/Coventry. Not Wirth/Scheibenbogen-affiliated. Confirmed via PubMed record."
+    },
+    {
+      "id": "brand-2026-primary-care-guidelines-postcovid-pais",
+      "title": "Recommendations for the primary care management of post COVID and post acute infectious syndrome: a comparative analysis of international guidelines",
+      "authors": "Brand M, Bellmann-Strobl J, Franke C, Scheibenbogen C, Wittke K",
+      "journal": "Frontiers in Medicine",
+      "date": "Nov 2026 (published Nov 2, 2026)",
+      "published": "2026-11-02",
+      "summary": "A Charité team including Carmen Scheibenbogen compared six official guidelines (from Germany, Switzerland, the UK, the US, the WHO and a European medical society) on how family doctors should look after people with post-COVID and similar illnesses that follow an infection. The guidelines differ a lot in detail and practical use; most suggest diagnosing by symptoms and by ruling out other diseases, most cover rehabilitation, self-management and psychological support, and very few name specific medicines because the evidence is thin.",
+      "why": "Family doctors are the first stop for most patients, yet this shows they still have little clear, agreed guidance to work from — and almost none on drug treatment, which underlines why the ongoing medicine trials are needed.",
+      "link": "https://doi.org/10.3389/fmed.2026.1957295",
+      "first_seen": "2026-11-18",
+      "last_checked": "2026-11-18",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Front Med (Lausanne) 13:1957295, eCollection 2026; PMID 43041406, PMC13770876 (indexed in PubMed 2026-11-18). Review / comparative guideline analysis, no new patient data. Scheibenbogen group (Charité Institute of Medical Immunology; Wittke senior author) — high priority. Confirmed via PubMed record; DOI resolves to frontiersin.org."
     }
   ]
 }
