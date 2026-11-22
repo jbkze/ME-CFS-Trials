@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-11-22 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19, post-acute infection syndrome, PASC updated since 2026-11-15; worldwide ME/CFS first-posted since 2026-11-12), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen/Charité, Mitodicure/MDC002, German ME/CFS drug studies). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-20..22), Europe PMC 2026-11-19..22, medRxiv + bioRxiv 2026-11-19..22 (all pages), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox / safety pharmacology studies). NCT07714213 still not yet recruiting although its listed start (2026-10) has passed; NCT07724834 listed start 2026-12. Screened out again: NCT07940920 (UK), NCT07932002 (US only), NCT06251518 (completed, not a drug).
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (220 total; no `isNew` flags set). Skipped: TIMES questionnaire psychometrics Part II (medRxiv revision, measurement tool rather than mechanism/treatment), a Research Square preprint on p53/NRF2 activation in COVID/Long COVID models (marginal venue, not peer-reviewed), plus items already skipped on earlier runs.
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-22).
+- Literature archive: **skipped** — the intake script still holds a personal contact address that it sends to external APIs; the session's privacy guard blocks it. Fix: read the contact from an environment variable.
+- Delivered: no issue (nothing new).
+
 ## 2026-11-21 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19, post-acute infection syndrome, PASC updated since 2026-11-14; worldwide ME/CFS first-posted since 2026-11-10; watch-item drug queries for tafasitamab, daratumumab, BC007/rovunaptabin, MDC002, efgartigimod, semaglutide), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen/Charité, Mitodicure/MDC002, German post-COVID drug studies). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-19..21), Europe PMC 2026-11-18..21, medRxiv + bioRxiv 2026-11-18..21 (all pages), web search.
 - **Trials** — no new trials; no status or detail changes
