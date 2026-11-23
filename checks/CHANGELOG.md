@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-11-23 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19, post-acute infection syndrome, PASC updated since 2026-11-15; worldwide ME/CFS first-posted since 2026-11-12), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen/Charité, German ME/CFS drug studies). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-21..23), Europe PMC 2026-11-21..23, medRxiv + bioRxiv 2026-11-21..23 (all pages), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox / safety pharmacology studies). NCT07714213 still not yet recruiting although its listed start (2026-10) has passed; NCT07724834 listed start 2026-12. Screened out again: NCT07940920 (UK), NCT07932002 (US only), NCT06251518 (completed, not a drug). Web leads (ReMEdi/PHOE-01, inebilizumab, rapamycin RCT) already known from earlier runs; nothing new.
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (220 total; no `isNew` flags set). Skipped: Wang et al. (medRxiv, LLM model that predicts long-COVID course in women — methods), Domínguez-Martín et al. and the TIMES Part II preprint (already skipped earlier), Valdivieso-Martínez et al. (J Clin Med, healthcare-burden study from 2023).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-23).
+- Literature archive: **skipped**. The intake script still contains a personal contact address that it sends to external APIs, and the session's privacy guard blocks that. Fix: read the contact from an environment variable.
+- Delivered: no issue (nothing new).
+
 ## 2026-11-22 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19, post-acute infection syndrome, PASC updated since 2026-11-15; worldwide ME/CFS first-posted since 2026-11-12), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen/Charité, Mitodicure/MDC002, German ME/CFS drug studies). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-20..22), Europe PMC 2026-11-19..22, medRxiv + bioRxiv 2026-11-19..22 (all pages), web search.
 - **Trials** — no new trials; no status or detail changes
