@@ -1,5 +1,16 @@
 # Check log
 
+## 2026-11-24 (scheduled autonomous)
+- Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS / chronic fatigue syndrome / myalgic encephalomyelitis with open or planned status; ME/CFS and post-COVID updated since 2026-11-20; worldwide ME/CFS first-posted since 2026-11-10), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen/Charité, German ME/CFS drug studies). Papers: PubMed (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-23..24), Europe PMC 2026-11-23..24, medRxiv + bioRxiv 2026-11-23..24 (all pages), web search.
+- **Trials** — no new trials; no status or detail changes
+  - New: none | Newly open: none | Status changed: none | Closed since last: none | Details changed: none
+  - All 7 tracked trials unchanged. MDC002 still unregistered (pipeline page: ready for GLP tox / safety pharmacology studies). NCT07714213 still not yet recruiting although its listed start (2026-10) has passed; NCT07724834 listed start 2026-12. Screened out again: NCT07932002 (US only); NCT05778006 / NCT06005246 (registry/cohort, not drug studies).
+  - Trials tracked: 7 (open: 3, planned: 3, closed/out of scope: 1)
+- **Papers** — none new (220 total; no `isNew` flags set). Skipped: Jeyaraman et al. (J Transl Med, general narrative review), Feng et al. (J Health Psychol, CFS-like symptoms survey in healthcare workers), Fukuda et al. (Preprints.org, HPA-axis insufficiency in Long COVID — marginal preprint venue), George et al. (bioRxiv, machine-learning reanalysis of Long COVID transcriptomes — hypothesis-generating only).
+- State of the art: reviewed, unchanged (`reviewed` bumped to 2026-11-24).
+- Literature archive: **skipped** (no new papers; intake script still sends a personal contact address to external APIs — should read it from an environment variable).
+- Delivered: no issue (nothing new).
+
 ## 2026-11-23 (scheduled autonomous)
 - Sources checked — trials: ClinicalTrials.gov API v2 (status re-check of NCT07529197, NCT07724834, NCT07714213; Germany sweep for ME/CFS, chronic fatigue syndrome, myalgic encephalomyelitis, post-COVID, Long COVID, post-acute COVID-19, post-acute infection syndrome, PASC updated since 2026-11-15; worldwide ME/CFS first-posted since 2026-11-12), CTIS retrieve API (2024-511628-16-00 Ended; 2025-524443-12-00 Authorised, unchanged), mitodicure.com/pipeline (MDC002), web search (Scheibenbogen/Charité, German ME/CFS drug studies). Papers: PubMed sweep (ME/CFS + post-COVID terms + Wirth/Scheibenbogen authors, entry date 2026-11-21..23), Europe PMC 2026-11-21..23, medRxiv + bioRxiv 2026-11-21..23 (all pages), web search.
 - **Trials** — no new trials; no status or detail changes
