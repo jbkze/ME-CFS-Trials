@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "description": "Companion to trials.json: notable ME/CFS research papers (pathomechanism, biomarkers, drug targets, treatment/trial results, genetics), prioritising Wirth/Scheibenbogen but NOT Germany-restricted. Seeded 2026-06-26 with a one-time comprehensive backfill of landmark + recent work (each verified via DOI/PubMed); routine runs add newer papers going forward. Shown on the dashboard's Papers tab. STYLE: write 'summary' and 'why' for a layperson — plain language, short sentences, jargon only where unavoidable and explained in a few words. Confirm each via DOI/journal/preprint before recording; never fabricate.",
-  "last_check": "2026-11-27",
+  "last_check": "2026-11-28",
   "papers": [
     {
       "id": "meadows-2026-lift-pyridostigmine-ldn-protocol",
@@ -3321,6 +3321,24 @@
       ],
       "isNew": false,
       "notes": "Front Med (Lausanne) 13:1957295, eCollection 2026; PMID 43041406, PMC13770876 (indexed in PubMed 2026-11-18). Review / comparative guideline analysis, no new patient data. Scheibenbogen group (Charité Institute of Medical Immunology; Wittke senior author) — high priority. Confirmed via PubMed record; DOI resolves to frontiersin.org."
+    },
+    {
+      "id": "mccauley-2026-igg-gut-microbiota-pi-mecfs",
+      "title": "Functional enrichment of immune targeted gut microbiota in post-infectious myalgic encephalomyelitis/chronic fatigue syndrome",
+      "authors": "McCauley K, Vizioli C, Ahmed A, Mistry S, Burns A, Quiñones M, Nath A, Walitt B, Barb J",
+      "journal": "Scientific Reports",
+      "date": "Aug 2026 (published Aug 19, 2026)",
+      "published": "2026-08-19",
+      "summary": "Scientists at the US National Institutes of Health checked which gut bacteria the immune system has 'tagged' with antibodies in 16 people with ME/CFS that began after an infection and 19 healthy people. They found little sign of bacteria leaking from the gut into the blood, but the tagged bacteria in patients showed a different pattern of activity, especially stress and defence genes.",
+      "why": "Adds careful data to the 'leaky gut' idea in ME/CFS: it argues against large-scale leakage of gut bacteria but suggests the immune system and gut bacteria interact differently in patients. It is a small study, so it needs confirming.",
+      "link": "https://doi.org/10.1038/s41598-026-64807-y",
+      "first_seen": "2026-11-28",
+      "last_checked": "2026-11-28",
+      "flags": [
+        "new"
+      ],
+      "isNew": true,
+      "notes": "Confirmed via Europe PMC full text (PMC13796053; DOI 10.1038/s41598-026-64807-y; received 2026-02-04, accepted 2026-07-28, epub 2026-08-19). Part of the NIH intramural deep-phenotyping study of PI-ME/CFS (Walitt, Nath). Not Wirth/Scheibenbogen-affiliated. Indexed in Europe PMC only this week, hence picked up now."
     }
   ]
 }
